@@ -1,0 +1,291 @@
+baseURL = "/tutorials/merger"
+title = "GroupDocs API References"
+staticdir = 'content/static'
+enableRobotsTXT = true
+enableGitInfo = true
+disableKinds = ["taxonomy", "taxonomyTerm", "page", "RSS"]
+
+# Hugo allows theme composition (and inheritance). The precedence is from left to right.
+theme = ["api-theme"]
+
+[params.menu]
+zh = "groupdocs-zh"
+ru = "groupdocs-ru"
+ar = "groupdocs-ar"
+cs = "groupdocs-cs"
+de = "groupdocs-de"
+el = "groupdocs-el"
+es = "groupdocs-es"
+fr = "groupdocs-fr"
+hi = "groupdocs-hi"
+hu = "groupdocs-hu"
+id = "groupdocs-id"
+it = "groupdocs-it"
+ja = "groupdocs-ja"
+ko = "groupdocs-ko"
+nl = "groupdocs-nl"
+pl = "groupdocs-pl"
+pt = "groupdocs-pt"
+sv = "groupdocs-sv"
+th = "groupdocs-th"
+tr = "groupdocs-tr"
+vi = "groupdocs-vi"
+zh-hant = "groupdocs-zht"
+
+defaultContentLang = 'en'
+[languages]
+  [languages.en]
+    contentDir = 'content/english'
+    languageName = 'English'
+	  languageCode = "en"
+    flag = "flag-us"
+    weight = 10
+  [languages.ru]
+    contentDir = 'content/russian'
+    languageName = 'Русский'
+	languageCode = "ru"
+    flag = "flag-ru"
+    weight = 11
+  [languages.zh]
+    contentDir = 'content/chinese'
+    languageName = "简体中文"
+    languageCode = "zh"
+    flag = "flag-cn"
+    weight = 12
+  [languages.ar]
+    contentDir = 'content/arabic'
+    languageName = "عربي"
+    languageCode = "ar"
+    flag = "flag-sa"
+    weight = 13
+  [languages.fr]
+    contentDir = 'content/french'
+    languageName = "Français"
+    languageCode = "fr"
+    flag = "flag-fr"
+    weight = 14
+  [languages.de]
+    contentDir = 'content/german'
+    languageName = "Deutsch"
+    languageCode = "de"
+    flag = "flag-de"
+    weight = 15
+  [languages.it]
+    contentDir = 'content/italian'
+    languageName = "Italiano"
+    languageCode = "it"
+    flag = "flag-it"
+    weight = 16
+  [languages.es]
+    contentDir = 'content/spanish'
+    languageName = "Español"
+    languageCode = "es"
+    flag = "flag-es"
+    weight = 17
+  [languages.sv]
+    contentDir = 'content/swedish'
+    languageName = "Svenska"
+    languageCode = "sv"
+    flag = "flag-se"
+    weight = 18
+  [languages.tr]
+    contentDir = 'content/turkish'
+    languageName = "Türkçe"
+    languageCode = "tr"
+    flag = "flag-tr"
+    weight = 19
+  [languages.pt]
+    contentDir = 'content/portuguese'
+    languageName = "Português"
+    languageCode = "pt"
+    flag = "flag-br"
+    weight = 20
+  [languages.ko]
+    contentDir = 'content/korean'
+    languageName = "한국인"
+    languageCode = "ko"
+    flag = "flag-kr"
+    weight = 21
+  [languages.vi]
+    contentDir = 'content/vietnamese'
+    languageName = "Tiếng Việt"
+    languageCode = "vi"
+    flag = "flag-vn"
+    weight = 22
+  [languages.id]
+    contentDir = 'content/indonesian'
+    languageName = "Indonesian"
+    languageCode = "id"
+    flag = "flag-id"
+    weight = 23
+  [languages.ja]
+    contentDir = 'content/japanese'
+    languageName = "日本語"
+    languageCode = "ja"
+    flag = "flag-jp"
+    weight = 24
+  [languages.pl]
+    contentDir = 'content/polish'
+    languageName = "Polski"
+    languageCode = "pl"
+    flag = "flag-pl"
+    weight = 25
+  [languages.nl]
+    contentDir = 'content/dutch'
+    languageName = "Nederlands"
+    languageCode = "nl"
+    flag = "flag-nl"
+    weight = 26
+  [languages.hu]
+    contentDir = 'content/hungarian'
+    languageName = "Magyar"
+    languageCode = "hu"
+    flag = "flag-hu"
+    weight = 27
+  [languages.hi]
+    contentDir = 'content/hindi'
+    languageName = "हिन्दी"
+    languageCode = "hi"
+    flag = "flag-in"
+    weight = 28
+  [languages.th]
+    contentDir = 'content/thai'
+    languageName = "ไทย"
+    languageCode = "th"
+    flag = "flag-th"
+    weight = 29
+  [languages.el]
+    contentDir = 'content/greek'
+    languageName = "Ελληνικά"
+    languageCode = "el"
+    flag = "flag-gr"
+    weight = 30
+  [languages.cs]
+    contentDir = 'content/czech'
+    languageName = "čeština"
+    languageCode = "cs"
+    flag = "flag-cz"
+    weight = 31
+  [languages.zh-hant]
+    contentDir = 'content/hongkong'
+    languageName = "繁體中文"
+    languageCode = "zh-hant"
+    flag = "flag-tw"
+    weight = 32
+	
+ignoreFiles = ["(?i:readme.md)", '\.spin$']
+
+# Image processing configuration.
+[imaging]
+resampleFilter = "CatmullRom"
+quality = 75
+anchor = "smart"
+
+[services]
+[services.googleAnalytics]
+# Comment out the next line to disable GA tracking. Also disables the feature described in [params.ui.feedback].
+# id = "UA-00000000-0"
+
+[markup]
+	[markup.tableOfContents]
+		endLevel = 2
+		ordered = true
+		startLevel = 2
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineAnchors = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = false
+    tabWidth = 4
+
+# Everything below this are Site Params
+
+[params]
+copyright = "The GroupDocs Authors"
+privacy_policy = "https://policies.google.com/privacy"
+topbar_search_active = false
+logo_rel_link = ""
+
+# Containerize Menu
+[params.containerize]
+menu = "groupdocs-en"
+
+[params.meta]
+msapplication_TileColor = "#2b5797"
+msapplication_config = "https://cms.admin.containerize.com/templates/groupdocs/images/browserconfig.xml"
+theme_color = "#ffffff"
+author = "GroupDocs"
+
+# Title of 404 page
+title_404_page = "404 - Page Not Found | GroupDocs API References"
+
+# Open Grapgh settings
+title = "GroupDocs API References"
+images = ["images/groupdocs-image-for-open-graph.jpg"]
+description = "Class Libraries & REST APIs for the developers to manipulate & process Files from Word, Excel, PowerPoint, Visio, PDF, CAD & several other categories in Web, Desktop or Mobile apps. Develop & deploy on Windows, Linux, MacOS & Android platforms."
+
+# Specify a value here if your content directory is not in your repo's root directory
+# github_subdir = ""
+
+# Google Custom Search Engine ID. Remove or comment out to disable search.
+# gcs_engine_id = "011737558837375720776:fsdu1nryfng"
+
+# User interface configuration
+[params.ui]
+# Enable to show the side bar menu in its compact state.
+sidebar_menu_compact = true
+#  Set to true to disable breadcrumb navigation.
+breadcrumb_disable = false
+#  Set to true to hide the sidebar search box (the top nav search box will still be displayed if search is enabled)
+sidebar_search_disable = true
+#  Set to false if you don't want to display a logo (/assets/icons/logo.svg) in the top nav bar
+navbar_logo = false
+# Set to true to disable the About link in the site footer
+footer_about_disable = false
+
+
+[minify]
+  disableCSS = false
+  disableHTML = false
+  disableJS = false
+  disableJSON = false
+  disableSVG = false
+  disableXML = false
+  minifyOutput = true
+  [minify.tdewolff]
+    [minify.tdewolff.css]
+      decimals = -1
+      keepCSS2 = true
+    [minify.tdewolff.html]
+      keepConditionalComments = true
+      keepDefaultAttrVals = true
+      keepDocumentTags = true
+      keepEndTags = true
+      keepQuotes = false
+      keepWhitespace = false
+    [minify.tdewolff.js]
+    [minify.tdewolff.json]
+    [minify.tdewolff.svg]
+      decimals = -1
+    [minify.tdewolff.xml]
+      keepWhitespace = false
+
+[Taxonomies]
+
+[deployment]
+[[deployment.matchers]]
+# Set custom content type for /sitemap.xml
+#pattern = "^sitemap\\.xml$"
+#pattern = "^[a-z]\\.xml$"
+pattern = "^.+\\.(xml)$"
+contentType = "application/xml"
+gzip = true
+force = true

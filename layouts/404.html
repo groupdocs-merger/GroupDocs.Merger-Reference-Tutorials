@@ -1,0 +1,12 @@
+{{ define "main"}}
+    <main id="main">
+      <div class="error404">
+        <div class="content404">
+          <h4>Page Not Found</h4>
+          <h2>404</h2>
+          <p>The page you are looking for does not exist</p>
+          <span><a href="javascript:history.go(-1)" class="backButton">Go Back</a> <a href='{{ "/" | relURL }}'>Home Page</a> </span>
+        </div>
+      </div>
+    </main>
+{{ end }}

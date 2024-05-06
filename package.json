@@ -1,0 +1,16 @@
+{
+  "name": "groupdocs-merger-api-references",
+  "version": "1.0.0",
+  "description": "Groupdocs.merger API References.",
+  "main": "none.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "autoprefixer": "^9.8.0",
+    "postcss-cli": "^9.1.0"
+  }
+}
