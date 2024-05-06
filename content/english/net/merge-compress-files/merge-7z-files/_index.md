@@ -1,0 +1,51 @@
+---
+title: How to Merge 7z Files using GroupDocs.Merger for .NET
+linktitle: How to Merge 7z Files using GroupDocs.Merger for .NET
+second_title: GroupDocs.Merger .NET API
+description: 
+type: docs
+weight: 10
+url: /net/merge-compress-files/merge-7z-files/
+---
+
+## Complete Source Code
+```csharp
+using System;
+using System.IO;
+
+namespace GroupDocs.Merger.Examples.CSharp.BasicUsage
+{
+    /// <summary>
+    /// This example demonstrates how to merge multiple 7Z files into single file.
+    /// For more details about merging Archive (.7z) files please check this documentation article 
+    /// https://docs.groupdocs.com/merger/net/merge/archives/
+    /// </summary>
+    internal static class Merge7z
+    {
+        public static void Run()
+        {
+            Console.WriteLine("=======================================================================");
+            Console.WriteLine();
+            Console.WriteLine("Example Basic Usage: Merge7z");
+            Console.WriteLine();
+
+            string outputFolder = "Your Output Directory";
+            string outputFile = Path.Combine(outputFolder, "merged.7z");
+            
+            // Load the source 7Z file
+            using (var merger = new GroupDocs.Merger.Merger(Constants.SAMPLE_7Z))
+            {
+                // Add another 7Z file to merge
+                merger.Join(Constants.SAMPLE_7Z);
+                // Merge 7Z files and save result
+                merger.Save(outputFile);
+            }
+
+            Console.WriteLine("\n7Z files merge completed successfully. \nCheck output in {0}", outputFolder);
+        }
+    }
+}
+
+            
+            
+```
