@@ -1,6 +1,6 @@
 ---
-title: Guide to Merging VSSM Files using GroupDocs.Merger for .NET
-linktitle: Guide to Merging VSSM Files using GroupDocs.Merger for .NET
+title: Guide to Merging VSSM Files
+linktitle: Guide to Merging VSSM Files
 second_title: GroupDocs.Merger .NET API
 description: Learn how to merge VSSM files effortlessly using GroupDocs.Merger for .NET. Step-by-step guide for C# developers.
 type: docs
