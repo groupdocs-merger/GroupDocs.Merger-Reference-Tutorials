@@ -19,3 +19,4 @@ Effortlessly merge various document formats in .NET using GroupDocs.Merger. Seam
 ### [Visio Merging](./visio-merging/)
 
 ### [Presentation Merging](./presentation-merging/)
+Merge various presentation file formats effortlessly. Follow our tutorials to merge PPS, PPSX, PPT, and OTP files efficiently.

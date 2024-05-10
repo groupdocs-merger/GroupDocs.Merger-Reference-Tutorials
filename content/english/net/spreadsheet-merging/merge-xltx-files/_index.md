@@ -1,14 +1,14 @@
 ---
-title: Merge XLTX Files using GroupDocs.Merger for .NET
-linktitle: Merge XLTX Files using GroupDocs.Merger for .NET
+title: Merge XLTX Files
+linktitle: Merge XLTX Files
 second_title: GroupDocs.Merger .NET API
-description: Learn how to merge XLTX files using GroupDocs.Merger for .NET effortlessly. Start merging XLTX files and streamline your document management tasks efficiently.
+description: Learn how to merge XLTX files effortlessly. Start merging XLTX files and streamline your document management tasks efficiently.
 type: docs
 weight: 17
-url: /net/spreadsheet-merging/merge-xltx-files-groupdocs-merger-dotnet/
+url: /net/spreadsheet-merging/merge-xltx-files/
 ---
 ## Introduction
-In this tutorial, we will explore how to merge XLTX (Excel Template) files using GroupDocs.Merger for .NET. GroupDocs.Merger is a powerful document manipulation API that enables developers to combine, split, and manipulate various document formats seamlessly within .NET applications. This tutorial specifically focuses on merging XLTX files programmatically.
+In this tutorial, we will explore how to merge XLTX (Excel Template) files. GroupDocs.Merger is a powerful document manipulation API that enables developers to combine, split, and manipulate various document formats seamlessly within .NET applications. This tutorial specifically focuses on merging XLTX files programmatically.
 ## Prerequisites
 Before we begin, ensure you have the following prerequisites set up:
 - Development Environment: Install Visual Studio or any .NET-supported IDE.

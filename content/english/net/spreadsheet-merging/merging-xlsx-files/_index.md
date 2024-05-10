@@ -5,10 +5,10 @@ second_title: GroupDocs.Merger .NET API
 description: Learn how to merge XLSX files effortlessly in .NET using GroupDocs.Merger. Follow this step-by-step tutorial for seamless document management.
 type: docs
 weight: 14
-url: /net/spreadsheet-merging/merging-xlsx-files-groupdocs-merger-dotnet/
+url: /net/spreadsheet-merging/merging-xlsx-files/
 ---
 ## Introduction
-In the realm of document manipulation and management within .NET applications, GroupDocs.Merger stands out as a powerful tool for merging various file formats seamlessly. This tutorial delves into merging XLSX (Excel) files using GroupDocs.Merger for .NET, providing step-by-step guidance on how to efficiently merge spreadsheet files in a .NET environment. Whether you're a seasoned developer or just starting with .NET, this tutorial will equip you with the necessary knowledge to integrate file merging capabilities into your projects.
+In the realm of document manipulation and management within .NET applications, GroupDocs.Merger stands out as a powerful tool for merging various file formats seamlessly. This tutorial delves into merging XLSX (Excel) files, providing step-by-step guidance on how to efficiently merge spreadsheet files in a .NET environment. Whether you're a seasoned developer or just starting with .NET, this tutorial will equip you with the necessary knowledge to integrate file merging capabilities into your projects.
 ## Prerequisites
 Before diving into the tutorial, ensure you have the following prerequisites set up:
 1. Visual Studio: Install Visual Studio, a comprehensive integrated development environment (IDE) for .NET development.
@@ -45,7 +45,7 @@ Console.WriteLine("\nXLSX files merge completed successfully. \nCheck output in 
 ```
 
 ## Conclusion
-In this tutorial, we explored how to merge XLSX files using GroupDocs.Merger for .NET. By following the outlined steps, you can seamlessly integrate file merging capabilities into your .NET applications, enhancing document management efficiency.
+In this tutorial, we explored how to merge XLSX files. By following the outlined steps, you can seamlessly integrate file merging capabilities into your .NET applications, enhancing document management efficiency.
 
 ## FAQ's
 ### Can GroupDocs.Merger handle other file formats besides XLSX?

@@ -1,14 +1,14 @@
 ---
-title: Merging XLS Files using GroupDocs.Merger for .NET
-linktitle: Merging XLS Files using GroupDocs.Merger for .NET
+title: Merging XLS Files
+linktitle: Merging XLS Files
 second_title: GroupDocs.Merger .NET API
 description: Learn how to merge Excel files in .NET using GroupDocs.Merger for seamless document manipulation. Follow our step-by-step tutorial.
 type: docs
 weight: 11
-url: /net/spreadsheet-merging/merging-xls-files-groupdocs-merger-dotnet/
+url: /net/spreadsheet-merging/merging-xls-files/
 ---
 ## Introduction
-In this tutorial, we will explore how to merge XLS (Excel) files using GroupDocs.Merger for .NET. GroupDocs.Merger is a powerful document manipulation API that enables developers to merge, split, rearrange, and manipulate documents effortlessly within their .NET applications. Specifically, we will focus on merging XLS files step by step using GroupDocs.Merger's intuitive methods.
+In this tutorial, we will explore how to merge XLS (Excel) files. GroupDocs.Merger is a powerful document manipulation API that enables developers to merge, split, rearrange, and manipulate documents effortlessly within their .NET applications. Specifically, we will focus on merging XLS files step by step using GroupDocs.Merger's intuitive methods.
 ## Prerequisites
 Before we begin, ensure you have the following prerequisites set up:
 - Visual Studio: Install Visual Studio on your machine.
@@ -48,7 +48,7 @@ Console.WriteLine("\nXLS files merge completed successfully. \nCheck output in {
 ```
 
 ## Conclusion
-In this tutorial, we have learned how to merge XLS files using GroupDocs.Merger for .NET. By following the provided steps, you can efficiently combine multiple Excel files programmatically within your .NET applications.
+In this tutorial, we have learned how to merge XLS files. By following the provided steps, you can efficiently combine multiple Excel files programmatically within your .NET applications.
 
 ## FAQ's
 ### Is GroupDocs.Merger compatible with other document formats?

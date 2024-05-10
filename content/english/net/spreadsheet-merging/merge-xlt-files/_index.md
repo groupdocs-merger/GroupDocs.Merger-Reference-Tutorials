@@ -1,14 +1,14 @@
 ---
-title: Merge XLT Files using GroupDocs.Merger for .NET
-linktitle: Merge XLT Files using GroupDocs.Merger for .NET
+title: Merge XLT Files
+linktitle: Merge XLT Files
 second_title: GroupDocs.Merger .NET API
-description: Learn how to merge XLT files using GroupDocs.Merger for .NET. Combine Excel templates programmatically in C# with this step-by-step guide.
+description: Learn how to merge XLT files. Combine Excel templates programmatically in C# with this step-by-step guide.
 type: docs
 weight: 15
-url: /net/spreadsheet-merging/merge-xlt-files-groupdocs-merger-dotnet/
+url: /net/spreadsheet-merging/merge-xlt-files/
 ---
 ## Introduction
-In this tutorial, we'll explore how to merge XLT (Excel Template) files using GroupDocs.Merger for .NET. GroupDocs.Merger is a powerful API that allows developers to manipulate various document formats, including Excel files, programmatically. By merging XLT files, you can combine multiple templates into a single document, streamlining your workflow and enhancing efficiency.
+In this tutorial, we'll explore how to merge XLT (Excel Template) files. GroupDocs.Merger is a powerful API that allows developers to manipulate various document formats, including Excel files, programmatically. By merging XLT files, you can combine multiple templates into a single document, streamlining your workflow and enhancing efficiency.
 ## Prerequisites
 Before we begin, ensure you have the following prerequisites:
 1. GroupDocs.Merger for .NET: You can download the API from [here](https://releases.groupdocs.com/merger/net/).
@@ -50,10 +50,10 @@ In this code snippet:
 - `merger.Save()` is called to merge the XLT files and save the result to the specified `outputFile`.
 
 ## Conclusion
-In this tutorial, we've explored how to merge XLT files using GroupDocs.Merger for .NET. By following these steps, you can efficiently combine multiple Excel templates into a unified document, enhancing document management capabilities within your .NET applications.
+In this tutorial, we've explored how to merge XLT files. By following these steps, you can efficiently combine multiple Excel templates into a unified document, enhancing document management capabilities within your .NET applications.
 
 ## FAQ's
-### Can I merge more than two XLT files using GroupDocs.Merger for .NET?
+### Can I merge more than two XLT files?
 Yes, you can merge multiple XLT files by sequentially adding them using `merger.Join()`.
 ### Is GroupDocs.Merger compatible with other Excel file formats like XLSX or XLS?
 Yes, GroupDocs.Merger supports various Excel file formats, including XLSX, XLS, and XLT.

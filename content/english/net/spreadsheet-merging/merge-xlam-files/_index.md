@@ -2,14 +2,14 @@
 title: Merge XLAM Files
 linktitle: Merge XLAM Files
 second_title: GroupDocs.Merger .NET API
-description: Learn how to merge XLAM files effortlessly using GroupDocs.Merger for .NET. Simplify your document management tasks with this powerful API.
+description: Learn how to merge XLAM files effortlessly. Simplify your document management tasks with this powerful API.
 type: docs
 weight: 10
-url: /net/spreadsheet-merging/merge-xlam-files-groupdocs-merger-dotnet/
+url: /net/spreadsheet-merging/merge-xlam-files/
 ---
 ## Introduction
 
-In this tutorial, we'll explore how to merge XLAM (Microsoft Excel Add-In) files using GroupDocs.Merger for .NET. GroupDocs.Merger is a powerful document manipulation API that enables developers to work with various document formats programmatically. By leveraging this API, you can seamlessly combine multiple XLAM files into a single file, streamlining your document management processes.
+In this tutorial, we'll explore how to merge XLAM (Microsoft Excel Add-In) files. GroupDocs.Merger is a powerful document manipulation API that enables developers to work with various document formats programmatically. By leveraging this API, you can seamlessly combine multiple XLAM files into a single file, streamlining your document management processes.
 
 ## Prerequisites
 
@@ -61,7 +61,7 @@ Console.WriteLine("\nXLAM files merge completed successfully. \nCheck output in 
 
 ## Conclusion
 
-In this tutorial, we've learned how to merge XLAM files using GroupDocs.Merger for .NET. By following these steps, you can efficiently combine multiple XLAM files into a single document, streamlining your document processing tasks.
+In this tutorial, we've learned how to merge XLAM files. By following these steps, you can efficiently combine multiple XLAM files into a single document, streamlining your document processing tasks.
 
 ## FAQ's
 

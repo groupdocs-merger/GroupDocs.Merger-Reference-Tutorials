@@ -2,13 +2,13 @@
 title: Merging XLTM Files
 linktitle: Merging XLTM Files
 second_title: GroupDocs.Merger .NET API
-description: Learn how to merge XLTM files programmatically using GroupDocs.Merger for .NET. Step-by-step guide with code examples.
+description: Learn how to merge XLTM files programmatically. Step-by-step guide with code examples.
 type: docs
 weight: 16
-url: /net/spreadsheet-merging/merging-xltm-files-groupdocs-merger-dotnet/
+url: /net/spreadsheet-merging/merging-xltm-files/
 ---
 ## Introduction
-In this tutorial, we will explore how to merge XLTM (Excel Macro-Enabled Template) files using GroupDocs.Merger for .NET. GroupDocs.Merger for .NET is a powerful library that enables developers to manipulate and merge various document formats programmatically. This guide will walk you through the process of merging XLTM files step by step using C#.
+In this tutorial, we will explore how to merge XLTM (Excel Macro-Enabled Template) files. GroupDocs.Merger for .NET is a powerful library that enables developers to manipulate and merge various document formats programmatically. This guide will walk you through the process of merging XLTM files step by step using C#.
 ## Prerequisites
 Before getting started, ensure you have the following prerequisites in place:
 - Visual Studio installed on your system.
@@ -23,7 +23,7 @@ using System;
 using System.IO;
 ```
 
-Now, let's dive into merging XLTM files using GroupDocs.Merger for .NET.
+Now, let's dive into merging XLTM files.
 ## Step 1: Initialize Output Directory
 ```csharp
 using System;
@@ -52,7 +52,7 @@ Console.WriteLine("\nXLTM files merge completed successfully. \nCheck output in 
 This code will display a message indicating the successful completion of the merge operation along with the output directory path.
 
 ## Conclusion
-By following this tutorial, you've learned how to merge XLTM files using GroupDocs.Merger for .NET. This library offers extensive capabilities for document manipulation, providing developers with a robust toolset for handling document-related tasks programmatically.
+By following this tutorial, you've learned how to merge XLTM files. This library offers extensive capabilities for document manipulation, providing developers with a robust toolset for handling document-related tasks programmatically.
 
 ## FAQ's
 ### Can GroupDocs.Merger merge other document formats besides XLTM?
