@@ -32,9 +32,9 @@ ZIP files are a common format for file compression, and merging them is essentia
 
 In conclusion, GroupDocs.Merger for .NET tutorials provide developers with the tools and knowledge to merge and compress files effortlessly. Whether you're dealing with 7z, TAR, or ZIP files, our step-by-step guides ensure smooth integration and efficient file management within your .NET applications. Start optimizing your file merging process today.
 ## Merge Compress Files Tutorials
-### [How to Merge 7z Files using GroupDocs.Merger for .NET](./merge-7z-files/)
+### [How to Merge 7z Files](./merge-7z-files/)
 Effortlessly merge 7z files using GroupDocs.Merger for .NET. Follow our step-by-step guide to combine multiple archives into one seamlessly.
 ### [Merging Tar Files](./merging-tar-files/)
 Learn how to merge TAR files programmatically using GroupDocs.Merger for .NET. Follow our step-by-step guide to handle TAR archives efficiently.
-### [Guide to Merging Zip Files using GroupDocs.Merger for .NET](./guide-merging-zip-files/)
+### [Guide to Merging Zip Files](./guide-merging-zip-files/)
 Learn how to merge ZIP files programmatically using GroupDocs.Merger for .NET. This tutorial provides a detailed guide for developers.

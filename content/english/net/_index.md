@@ -42,7 +42,7 @@ Effortlessly merge PPS, PPSX, PPT, and OTP presentation files with our tutorials
 Read more about [Presentation Merging](./presentation-merging/)
 
 With GroupDocs.Merger for .NET, merging and managing your files has never been easier. Dive into our tutorials today and unlock the full potential of document manipulation in your .NET applications!
-## Tutorials and Examples of GroupDocs.Merger for .NET 
+## GroupDocs.Merger for .NET Tutorials
 ### [Merge Compress Files](./merge-compress-files/)
 Merge and compress various file formats effortlessly tutorials. Learn to combine 7z, TAR, and ZIP files seamlessly with our step-by-step guides.
 ### [Image Merging](./image-merging/)
