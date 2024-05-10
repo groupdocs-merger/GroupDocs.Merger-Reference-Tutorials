@@ -1,6 +1,6 @@
 ---
-title: Merging RTF Files with GroupDocs.Merger for .NET
-linktitle: Merging RTF Files with GroupDocs.Merger for .NET
+title: Merging RTF Files
+linktitle: Merging RTF Files
 second_title: GroupDocs.Merger .NET API
 description: Learn how to merge RTF files in .NET effortlessly using GroupDocs.Merger for seamless document processing.
 type: docs

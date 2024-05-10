@@ -8,12 +8,12 @@ description:
 is_root: true
 ---
 
-### [Merge Compress Files with GroupDocs Merger .NET](./merge-compress-files/)
-
+### [Merge Compress Files](./merge-compress-files/)
+Merge and compress various file formats effortlessly tutorials. Learn to combine 7z, TAR, and ZIP files seamlessly with our step-by-step guides.
 ### [Image Merging](./image-merging/)
-
+Merge BMP, GIF, PNG, SVG, SVGZ, TIF, and TIFF files seamlessly with GroupDocs.Merger .NET. Efficiently integrate document manipulation into your .NET applications.
 ### [Document Merging](./document-merging/)
-
+Effortlessly merge various document formats in .NET using GroupDocs.Merger. Seamlessly combine DOC, DOCX, PDF, and more. Enhance your document management today!
 ### [Spreadsheet Merging](./spreadsheet-merging/)
 
 ### [Visio Merging](./visio-merging/)

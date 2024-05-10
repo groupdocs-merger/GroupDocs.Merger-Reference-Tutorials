@@ -1,6 +1,6 @@
 ---
-title: Merging TIFF Files with GroupDocs.Merger for .NET
-linktitle: Merging TIFF Files with GroupDocs.Merger for .NET
+title: Merging TIFF Files
+linktitle: Merging TIFF Files
 second_title: GroupDocs.Merger .NET API
 description: Learn how to merge TIFF files using GroupDocs.Merger for .NET. Merge, split, and modify documents seamlessly within your .NET applications.
 type: docs

@@ -1,6 +1,6 @@
 ---
-title: How to Merge DOCX Files with GroupDocs.Merger for .NET
-linktitle: How to Merge DOCX Files with GroupDocs.Merger for .NET
+title: How to Merge DOCX Files
+linktitle: How to Merge DOCX Files
 second_title: GroupDocs.Merger .NET API
 description: Learn how to merge DOCX files programmatically in .NET using GroupDocs.Merger, simplifying document manipulation tasks efficiently.
 type: docs

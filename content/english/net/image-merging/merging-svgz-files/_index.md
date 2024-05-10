@@ -1,6 +1,6 @@
 ---
-title: Merging SVGZ Files with GroupDocs.Merger for .NET
-linktitle: Merging SVGZ Files with GroupDocs.Merger for .NET
+title: Merging SVGZ Files
+linktitle: Merging SVGZ Files
 second_title: GroupDocs.Merger .NET API
 description: Learn how to merge SVGZ files using GroupDocs.Merger for .NET with this step-by-step tutorial. Enhance your document manipulation skills.
 type: docs

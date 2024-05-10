@@ -1,6 +1,6 @@
 ---
-title: Merging Tar Files with GroupDocs.Merger for .NET
-linktitle: Merging Tar Files with GroupDocs.Merger for .NET
+title: Merging Tar Files
+linktitle: Merging Tar Files
 second_title: GroupDocs.Merger .NET API
 description: Learn how to merge TAR files programmatically using GroupDocs.Merger for .NET. Follow our step-by-step guide to handle TAR archives efficiently.
 type: docs

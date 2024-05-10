@@ -1,6 +1,6 @@
 ---
-title: How to Merge XLSB Files with GroupDocs.Merger for .NET
-linktitle: How to Merge XLSB Files with GroupDocs.Merger for .NET
+title: How to Merge XLSB Files
+linktitle: How to Merge XLSB Files
 second_title: GroupDocs.Merger .NET API
 description: Learn how to merge XLSB files using GroupDocs.Merger for .NET. This step-by-step guide simplifies document manipulation tasks.
 type: docs

@@ -1,6 +1,6 @@
 ---
-title: Merging XLTM Files with GroupDocs.Merger for .NET
-linktitle: Merging XLTM Files with GroupDocs.Merger for .NET
+title: Merging XLTM Files
+linktitle: Merging XLTM Files
 second_title: GroupDocs.Merger .NET API
 description: Learn how to merge XLTM files programmatically using GroupDocs.Merger for .NET. Step-by-step guide with code examples.
 type: docs

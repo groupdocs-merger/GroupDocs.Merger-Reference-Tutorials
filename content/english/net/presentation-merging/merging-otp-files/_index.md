@@ -1,6 +1,6 @@
 ---
-title: Merging OTP Files with GroupDocs.Merger for .NET
-linktitle: Merging OTP Files with GroupDocs.Merger for .NET
+title: Merging OTP Files
+linktitle: Merging OTP Files
 second_title: GroupDocs.Merger .NET API
 description: Learn how to merge OTP files using GroupDocs.Merger for .NET. This step-by-step guide will walk you through the process seamlessly.
 type: docs

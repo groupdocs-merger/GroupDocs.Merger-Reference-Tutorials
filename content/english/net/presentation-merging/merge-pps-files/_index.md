@@ -1,6 +1,6 @@
 ---
-title: Merge PPS Files with GroupDocs.Merger for .NET
-linktitle: Merge PPS Files with GroupDocs.Merger for .NET
+title: Merge PPS Files
+linktitle: Merge PPS Files
 second_title: GroupDocs.Merger .NET API
 description: Learn how to merge PPS files seamlessly using GroupDocs.Merger for .NET. Step-by-step guide with code examples. Enhance your document manipulation skills.
 type: docs

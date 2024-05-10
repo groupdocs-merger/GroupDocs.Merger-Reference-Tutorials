@@ -1,6 +1,6 @@
 ---
-title: Guide to Merging VTX Files with GroupDocs.Merger for .NET
-linktitle: Guide to Merging VTX Files with GroupDocs.Merger for .NET
+title: Guide to Merging VTX Files
+linktitle: Guide to Merging VTX Files
 second_title: GroupDocs.Merger .NET API
 description: Learn how to merge VTX files programmatically using GroupDocs.Merger for .NET. Step-by-step guide with code examples.
 type: docs

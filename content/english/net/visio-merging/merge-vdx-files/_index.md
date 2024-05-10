@@ -1,6 +1,6 @@
 ---
-title: Merge VDX Files with GroupDocs.Merger for .NET
-linktitle: Merge VDX Files with GroupDocs.Merger for .NET
+title: Merge VDX Files
+linktitle: Merge VDX Files
 second_title: GroupDocs.Merger .NET API
 description: Learn how to merge VDX files programmatically using GroupDocs.Merger for .NET. This tutorial provides a step-by-step guide.
 type: docs

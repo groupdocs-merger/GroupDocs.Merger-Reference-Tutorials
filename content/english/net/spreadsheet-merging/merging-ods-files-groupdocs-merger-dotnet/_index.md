@@ -1,6 +1,6 @@
 ---
-title: Merging ODS Files with GroupDocs.Merger for .NET
-linktitle: Merging ODS Files with GroupDocs.Merger for .NET
+title: Merging ODS Files
+linktitle: Merging ODS Files
 second_title: GroupDocs.Merger .NET API
 description: Learn how to merge ODS files using GroupDocs.Merger for .NET effortlessly. Follow our step-by-step guide for seamless document manipulation.
 type: docs

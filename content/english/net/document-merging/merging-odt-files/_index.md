@@ -1,6 +1,6 @@
 ---
-title: Merging ODT Files with GroupDocs.Merger for .NET
-linktitle: Merging ODT Files with GroupDocs.Merger for .NET
+title: Merging ODT Files
+linktitle: Merging ODT Files
 second_title: GroupDocs.Merger .NET API
 description: Learn how to merge ODT files using GroupDocs.Merger for .NET effortlessly. Enhance your document management capabilities with this powerful library.
 type: docs

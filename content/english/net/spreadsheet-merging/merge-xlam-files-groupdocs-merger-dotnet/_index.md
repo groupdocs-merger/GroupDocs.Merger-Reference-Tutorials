@@ -1,6 +1,6 @@
 ---
-title: Merge XLAM Files with GroupDocs.Merger for .NET
-linktitle: Merge XLAM Files with GroupDocs.Merger for .NET
+title: Merge XLAM Files
+linktitle: Merge XLAM Files
 second_title: GroupDocs.Merger .NET API
 description: Learn how to merge XLAM files effortlessly using GroupDocs.Merger for .NET. Simplify your document management tasks with this powerful API.
 type: docs
