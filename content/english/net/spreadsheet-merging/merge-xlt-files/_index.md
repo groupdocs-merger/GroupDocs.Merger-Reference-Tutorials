@@ -18,7 +18,8 @@ Before we begin, ensure you have the following prerequisites:
 ## Import Namespaces
 To get started, import the necessary namespaces in your C# project:
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 ## Step 1: Set Up the Output Directory
@@ -35,17 +36,17 @@ string outputFile = Path.Combine(outputFolder, "merged.xlt");
 Utilize GroupDocs.Merger to load and merge the source XLT files. Here, we'll demonstrate merging two XLT files.
 ```csharp
 // Load the source XLT file
-using (var merger = new GroupDocs.Merger.Merger(Constants.SAMPLE_XLT))
+using (var merger = new GroupDocs.Merger.Merger("Your Sample File"))
 {
     // Add another XLT file to merge
-    merger.Join(Constants.SAMPLE_XLT_2);
+    merger.Join("Your Sample File");
     // Merge XLT files and save result
     merger.Save(outputFile);
 }
 Console.WriteLine("\nXLT files merge completed successfully. \nCheck output in {0}", outputFolder);
 ```
 In this code snippet:
-- `Constants.SAMPLE_XLT` and `Constants.SAMPLE_XLT_2` represent paths to the source XLT files.
+- `"Your Sample File"` and `"Your Sample File"` represent paths to the source XLT files.
 - `merger.Join()` is used to add another XLT file for merging.
 - `merger.Save()` is called to merge the XLT files and save the result to the specified `outputFile`.
 

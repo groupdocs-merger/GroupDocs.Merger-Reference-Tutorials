@@ -18,7 +18,8 @@ Before getting started, ensure you have the following prerequisites:
 ## Import Namespaces
 Begin by importing the necessary namespaces in your C# project:
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 ## Step 1: Define Output Folder and File Name
@@ -30,10 +31,10 @@ string outputFile = Path.Combine(outputFolder, "merged.docx");
 ## Step 2: Load Source DOCX Files
 Next, load the source DOCX files that you want to merge. Here we'll use the `Merger` class from GroupDocs.Merger to handle the merging process.
 ```csharp
-using (var merger = new Merger(Constants.SAMPLE_DOCX))
+using (var merger = new Merger("Your Sample Document File"X))
 {
     // Add another DOCX file to merge
-    merger.Join(Constants.SAMPLE_DOCX_2);
+    merger.Join("Your Sample Document File"X_2);
     
     // Merge DOCX files and save result
     merger.Save(outputFile);

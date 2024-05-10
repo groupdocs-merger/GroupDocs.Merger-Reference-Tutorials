@@ -18,7 +18,8 @@ Before getting started, ensure you have the following:
 ## Import Namespaces
 First, include the necessary namespaces in your C# code:
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 ## Step 1: Set up Output Directory
@@ -32,15 +33,15 @@ Replace `"Your Output Directory"` with your desired directory path.
 Load the source VDX file and add other VDX files to merge:
 ```csharp
 // Load the source VDX file
-using (var merger = new GroupDocs.Merger.Merger(Constants.SAMPLE_VDX))
+using (var merger = new GroupDocs.Merger.Merger("Your Sample File"))
 {
     // Add another VDX file to merge
-    merger.Join(Constants.SAMPLE_VDX_2);
+    merger.Join("Your Sample File");
     // Merge VDX files and save result
     merger.Save(outputFile);
 }
 ```
-Replace `Constants.SAMPLE_VDX` and `Constants.SAMPLE_VDX_2` with the paths to your actual VDX files.
+Replace `"Your Sample File"` and `"Your Sample File"` with the paths to your actual VDX files.
 ## Step 3: Save and Confirm
 Finally, display a message indicating successful completion and check the output:
 ```csharp

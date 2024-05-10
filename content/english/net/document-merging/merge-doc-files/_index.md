@@ -17,7 +17,8 @@ Before we begin, ensure that you have the following prerequisites set up:
 ## Import Namespaces
 To start working with GroupDocs.Merger for .NET, import the necessary namespaces into your C# project:
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 ## Step 1: Set Up Output Directory
@@ -30,19 +31,19 @@ Replace `"Your Output Directory"` with the path to your desired output folder.
 ## Step 2: Load Source DOC Files
 Next, load the source DOC files that you want to merge using GroupDocs.Merger:
 ```csharp
-using (var merger = new Merger(Constants.SAMPLE_DOC))
+using (var merger = new Merger("Your Sample Document File"))
 {
     // Add another DOC file to merge
-    merger.Join(Constants.SAMPLE_DOC_2);
+    merger.Join("Your Sample Document File 2");
     // Merge DOC files and save result
     merger.Save(outputFile);
 }
 ```
 In this code snippet:
-- `Constants.SAMPLE_DOC` and `Constants.SAMPLE_DOC_2` represent the paths to the DOC files you wish to merge.
+- `"Your Sample Document File"` and `"Your Sample Document File 2"` represent the paths to the DOC files you wish to merge.
 - `merger.Join(...)` is used to add another DOC file to the merge operation.
 - `merger.Save(outputFile)` combines the loaded DOC files and saves the merged document to the specified output file (`merged.doc`).
-Ensure that you replace `Constants.SAMPLE_DOC` and `Constants.SAMPLE_DOC_2` with the actual paths to your DOC files.
+Ensure that you replace `"Your Sample Document File"` and `"Your Sample Document File 2"` with the actual paths to your DOC files.
 ## Conclusion
 In this tutorial, we have covered the process of merging DOC files using GroupDocs.Merger for .NET. By following the steps outlined above, you can effectively combine multiple DOC files into a single document programmatically. GroupDocs.Merger for .NET provides a straightforward and efficient way to manipulate document formats within your .NET applications.
 

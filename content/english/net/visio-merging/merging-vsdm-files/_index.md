@@ -19,7 +19,8 @@ Before diving into this tutorial, ensure you have the following prerequisites se
 ## Import Namespaces
 First, let's import the necessary namespaces into our C# project.
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 ## Step 1: Load Source VSDM Files
@@ -31,10 +32,10 @@ string outputFile = Path.Combine(outputFolder, "merged.vsdm");
 ## Step 2: Merge VSDM Files
 Next, use the GroupDocs.Merger library to load and merge the VSDM files. Start by instantiating the `Merger` class with the path to the first VSDM file.
 ```csharp
-using (var merger = new GroupDocs.Merger.Merger(Constants.SAMPLE_VSDM))
+using (var merger = new GroupDocs.Merger.Merger("Your Sample File"))
 {
     // Add another VSDM file to merge
-    merger.Join(Constants.SAMPLE_VSDM_2);
+    merger.Join("Your Sample File");
     // Merge VSDM files and save result
     merger.Save(outputFile);
 }

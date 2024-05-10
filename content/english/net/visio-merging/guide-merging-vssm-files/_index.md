@@ -18,7 +18,8 @@ Before we begin, ensure you have the following set up:
 ## Import Namespaces
 To get started, import the necessary namespaces for using GroupDocs.Merger in your C# project:
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 ## Step 1: Set Up Output Directory and File Paths
@@ -31,17 +32,17 @@ Replace `"YourOutputDirectory"` with the path where you want to save the merged 
 ## Step 2: Merge VSSM Files
 Load the source VSSM file, add another VSSM file to merge, and then save the merged output to the specified file path:
 ```csharp
-using (var merger = new GroupDocs.Merger.Merger(Constants.SAMPLE_VSSM))
+using (var merger = new GroupDocs.Merger.Merger("Your Sample File"))
 {
     // Add another VSSM file to merge
-    merger.Join(Constants.SAMPLE_VSSM_2);
+    merger.Join("Your Sample File");
     // Merge VSSM files and save result
     merger.Save(outputFile);
 }
 Console.WriteLine("\nVSSM files merge completed successfully. \nCheck output in {0}", outputFolder);
 ```
 In the code snippet above:
-- `Constants.SAMPLE_VSSM` and `Constants.SAMPLE_VSSM_2` represent the paths to the VSSM files you want to merge. Replace these with the actual file paths.
+- `"Your Sample File"` and `"Your Sample File"` represent the paths to the VSSM files you want to merge. Replace these with the actual file paths.
 
 ## Conclusion
 You've successfully merged VSSM files using GroupDocs.Merger for .NET. This tutorial covered the basic steps required to achieve this using C#. Feel free to explore more features and capabilities offered by GroupDocs.Merger for your document manipulation needs.

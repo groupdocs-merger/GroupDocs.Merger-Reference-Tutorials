@@ -19,7 +19,8 @@ Before you begin, ensure you have the following prerequisites set up:
 ## Import Namespaces
 Before diving into the code, make sure to import the necessary namespaces in your C# project:
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 ## Step 1: Set Output Directory
@@ -35,10 +36,10 @@ string outputFile = Path.Combine(outputFolder, "merged.vstm");
 ## Step 3: Load Source VSTM File
 Initialize the `Merger` object by loading the source VSTM file.
 ```csharp
-using (var merger = new GroupDocs.Merger.Merger(Constants.SAMPLE_VSTM))
+using (var merger = new GroupDocs.Merger.Merger("Your Sample File"))
 {
     // Add another VSTM file to merge
-    merger.Join(Constants.SAMPLE_VSTM_2);
+    merger.Join("Your Sample File");
     // Merge VSTM files and save result
     merger.Save(outputFile);
 }

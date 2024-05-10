@@ -19,7 +19,8 @@ Before we begin, ensure you have the following prerequisites:
 ## Import Namespaces
 First, include the necessary namespaces to use GroupDocs.Merger in your C# project:
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 
@@ -35,16 +36,16 @@ Replace `"Your Output Directory"` with the path where you want to save the merge
 Load the source DOCM files and merge them together using GroupDocs.Merger:
 ```csharp
 // Load the source DOCM file
-using (var merger = new GroupDocs.Merger.Merger(Constants.SAMPLE_DOCM))
+using (var merger = new GroupDocs.Merger.Merger("Your Sample Document File"M))
 {
     // Add another DOCM file to merge
-    merger.Join(Constants.SAMPLE_DOCM_2);
+    merger.Join("Your Sample Document File"M_2);
     // Merge DOCM files and save result
     merger.Save(outputFile);
 }
 ```
 In this code:
-- `Constants.SAMPLE_DOCM` and `Constants.SAMPLE_DOCM_2` are placeholders for your input DOCM files.
+- `"Your Sample Document File"M` and `"Your Sample Document File"M_2` are placeholders for your input DOCM files.
 - `merger.Join(...)` adds another DOCM file to the merging process.
 - `merger.Save(outputFile)` saves the merged DOCM file to the specified location.
 ## Step 3: Display Completion Message

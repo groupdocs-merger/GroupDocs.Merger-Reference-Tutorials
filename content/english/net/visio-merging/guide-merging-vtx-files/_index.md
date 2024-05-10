@@ -18,7 +18,8 @@ Before proceeding, ensure you have the following set up:
 ## Import Namespaces
 Begin by importing the necessary namespaces into your C# project:
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 ## Step 1: Load the Source VTX File
@@ -31,10 +32,10 @@ string outputFile = Path.Combine(outputFolder, "merged.vtx");
 Now, use the GroupDocs.Merger library to load and merge VTX files:
 ```csharp
 // Load the source VTX file
-using (var merger = new GroupDocs.Merger.Merger(Constants.SAMPLE_VTX))
+using (var merger = new GroupDocs.Merger.Merger("Your Sample File"))
 {
     // Add another VTX file to merge
-    merger.Join(Constants.SAMPLE_VTX_2);
+    merger.Join("Your Sample File");
     // Merge VTX files and save result
     merger.Save(outputFile);
 }

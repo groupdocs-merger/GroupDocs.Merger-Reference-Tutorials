@@ -18,7 +18,8 @@ Before you begin, ensure you have the following prerequisites set up:
 ## Import Namespaces
 First, import the necessary namespaces into your .NET project:
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 ## Step 1: Set Up Output Directory
@@ -33,21 +34,21 @@ string outputFile = Path.Combine(outputFolder, "merged.gif");
 This step defines the full path and filename for the merged GIF output.
 ## Step 3: Load Source GIF File
 ```csharp
-using (var merger = new Merger(Constants.SAMPLE_GIF))
+using (var merger = new Merger("Your Sample File"))
 {
     // Define image join options with vertical join mode
     var joinOptions = new ImageJoinOptions(ImageJoinMode.Vertical);
     // Add another GIF file to merge
-    merger.Join(Constants.SAMPLE_GIF, joinOptions);
+    merger.Join("Your Sample File", joinOptions);
     // Merge GIF files and save result
     merger.Save(outputFile);
 }
 Console.WriteLine("\nGIF files merge completed successfully. \nCheck output in {0}", outputFolder);
 ```
 Here's a breakdown of the code:
-- `using (var merger = new Merger(Constants.SAMPLE_GIF))`: Load the source GIF file.
+- `using (var merger = new Merger("Your Sample File"))`: Load the source GIF file.
 - `var joinOptions = new ImageJoinOptions(ImageJoinMode.Vertical)`: Define image join options with a vertical join mode.
-- `merger.Join(Constants.SAMPLE_GIF, joinOptions)`: Add another GIF file to merge.
+- `merger.Join("Your Sample File", joinOptions)`: Add another GIF file to merge.
 - `merger.Save(outputFile)`: Merge GIF files and save the result to `outputFile`.
 - `Console.WriteLine(...)`: Display a success message along with the output folder path.
 

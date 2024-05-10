@@ -18,7 +18,8 @@ Before diving into the tutorial, ensure you have the following prerequisites set
 ## Import Namespaces
 Begin by importing the necessary namespaces to access GroupDocs.Merger functionalities:
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 ## Step 1: Set Up Output Directory
@@ -30,10 +31,10 @@ string outputFile = Path.Combine(outputFolder, "merged.xlsx");
 ## Step 2: Load and Merge XLSX Files
 Initialize the merger and load the source XLSX file to start merging:
 ```csharp
-using (var merger = new GroupDocs.Merger.Merger(Constants.SAMPLE_XLSX))
+using (var merger = new GroupDocs.Merger.Merger("Your Sample File"))
 {
     // Add another XLSX file to merge
-    merger.Join(Constants.SAMPLE_XLSX_2);
+    merger.Join("Your Sample File");
     // Merge XLSX files and save result
     merger.Save(outputFile);
 }

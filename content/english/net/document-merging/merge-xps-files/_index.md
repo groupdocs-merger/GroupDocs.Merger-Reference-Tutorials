@@ -18,7 +18,8 @@ Before diving into the tutorial, ensure you have the following prerequisites set
 ## Import Namespaces
 Start by including the necessary namespaces in your C# project:
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 ## Step 1: Set Up Output Directory
@@ -30,9 +31,9 @@ string outputFile = Path.Combine(outputFolder, "merged.xps");
 ## Step 2: Load and Merge XPS Files
 Initialize the `Merger` object by loading the source XPS file and then join another XPS file to merge them:
 ```csharp
-using (var merger = new Merger(Constants.SAMPLE_XPS))
+using (var merger = new Merger("Your Sample File"))
 {
-    merger.Join(Constants.SAMPLE_XPS_2);
+    merger.Join("Your Sample File");
     merger.Save(outputFile);
 }
 ```

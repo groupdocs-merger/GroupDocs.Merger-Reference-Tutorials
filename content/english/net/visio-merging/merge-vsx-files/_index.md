@@ -18,7 +18,8 @@ Before we begin, ensure you have the following prerequisites set up:
 ## Import Namespaces
 Start by including the necessary namespaces to access the functionality of GroupDocs.Merger in your project:
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 ## Step 1: Load Source VSX File

@@ -19,7 +19,8 @@ Before diving into this tutorial, ensure you have the following prerequisites:
 Begin by importing the necessary namespaces into your C# project.
 
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 
@@ -33,10 +34,10 @@ In this step, you specify the output directory where the merged TAR file will be
 ## Step 2: Load and Merge TAR Files
 ```csharp
 // Load the source TAR file
-using (var merger = new Merger(Constants.SAMPLE_TAR))
+using (var merger = new Merger("Your Sample File"))
 {
     // Add another TAR file to merge (if needed)
-    merger.Join(Constants.SAMPLE_TAR);
+    merger.Join("Your Sample File");
     // Merge TAR files and save result
     merger.Save(outputFile);
 }

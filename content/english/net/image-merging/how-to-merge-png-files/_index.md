@@ -18,7 +18,8 @@ Before diving into the tutorial, ensure you have the following:
 ## Import Namespaces
 Begin by importing the necessary namespaces into your C# project:
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 ## Step 1: Load Source PNG Files
@@ -30,13 +31,13 @@ string outputFile = Path.Combine(outputFolder, "merged.png");
 ## Step 2: Merge PNG Files
 Load the source PNG files and merge them together:
 ```csharp
-using (var merger = new Merger(Constants.SAMPLE_PNG))
+using (var merger = new Merger("Your Sample File"))
 {
     // Define image join options with horizontal join mode
     var joinOptions = new ImageJoinOptions(ImageJoinMode.Horizontal);
     
     // Add another PNG file to merge
-    merger.Join(Constants.SAMPLE_PNG, joinOptions);
+    merger.Join("Your Sample File", joinOptions);
     
     // Merge PNG files and save result
     merger.Save(outputFile);

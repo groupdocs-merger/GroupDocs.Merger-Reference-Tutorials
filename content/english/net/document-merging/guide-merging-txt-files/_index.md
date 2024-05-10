@@ -18,7 +18,8 @@ Before diving into merging TXT files with GroupDocs.Merger for .NET, ensure you 
 ## Import Namespaces
 First, import the necessary namespaces in your .NET project to utilize GroupDocs.Merger functionalities:
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 

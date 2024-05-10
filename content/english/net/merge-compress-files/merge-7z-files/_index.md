@@ -18,7 +18,8 @@ Before you begin, ensure you have the following:
 ## Import Namespaces
 First, include the necessary namespaces in your C# code:
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 ## Step 1: Load Source 7Z File
@@ -30,9 +31,9 @@ string outputFile = Path.Combine(outputFolder, "merged.7z");
 ## Step 2: Merge 7Z Files
 Load the source 7Z file and add another 7Z file that you wish to merge:
 ```csharp
-using (var merger = new Merger(Constants.SAMPLE_7Z))
+using (var merger = new Merger("Your Sample File"))
 {
-    merger.Join(Constants.SAMPLE_7Z);
+    merger.Join("Your Sample File");
     merger.Save(outputFile);
 }
 ```

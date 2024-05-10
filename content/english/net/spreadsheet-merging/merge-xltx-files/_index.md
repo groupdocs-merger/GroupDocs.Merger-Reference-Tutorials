@@ -18,7 +18,8 @@ Before we begin, ensure you have the following prerequisites set up:
 ## Import Namespaces
 To get started, include the necessary namespaces in your project:
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 ## Step 1: Initialize Output Directory

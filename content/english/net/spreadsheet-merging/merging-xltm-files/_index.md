@@ -19,14 +19,16 @@ Before getting started, ensure you have the following prerequisites in place:
 ## Import Namespaces
 Begin by importing the necessary namespaces into your C# project.
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 
 Now, let's dive into merging XLTM files.
 ## Step 1: Initialize Output Directory
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 string outputFolder = "Your Output Directory";
 string outputFile = Path.Combine(outputFolder, "merged.xltm");
@@ -35,16 +37,16 @@ Replace `"Your Output Directory"` with the path where you want to save the merge
 ## Step 2: Merge XLTM Files
 ```csharp
 // Load the source XLTM file
-using (var merger = new GroupDocs.Merger.Merger(Constants.SAMPLE_XLTM))
+using (var merger = new GroupDocs.Merger.Merger("Your Sample File"))
 {
     // Add another XLTM file to merge
-    merger.Join(Constants.SAMPLE_XLTM_2);
+    merger.Join("Your Sample File");
     // Merge XLTM files and save result
     merger.Save(outputFile);
 }
 ```
 In this code snippet:
-- `Constants.SAMPLE_XLTM` and `Constants.SAMPLE_XLTM_2` represent the paths to your input XLTM files. Ensure to replace these with the actual file paths.
+- `"Your Sample File"` and `"Your Sample File"` represent the paths to your input XLTM files. Ensure to replace these with the actual file paths.
 ## Step 3: Display Output Location
 ```csharp
 Console.WriteLine("\nXLTM files merge completed successfully. \nCheck output in {0}", outputFolder);

@@ -18,7 +18,8 @@ Before proceeding, ensure you have the following prerequisites set up:
 ## Import Namespaces
 Begin by importing the necessary namespaces in your C# project:
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 
@@ -32,12 +33,12 @@ string outputFile = Path.Combine(outputFolder, "merged.tiff");
 ## Step 2: Load Source TIFF File
 Initialize the `Merger` object by loading the source TIFF file.
 ```csharp
-using (var merger = new Merger(Constants.SAMPLE_TIFF))
+using (var merger = new Merger("Your Sample File"))
 {
     // Define image join options with vertical join mode
     var joinOptions = new ImageJoinOptions(ImageJoinMode.Vertical);
     // Add another TIFF file to merge
-    merger.Join(Constants.SAMPLE_TIFF, joinOptions);
+    merger.Join("Your Sample File", joinOptions);
     // Merge TIFF files and save result
     merger.Save(outputFile);
 }

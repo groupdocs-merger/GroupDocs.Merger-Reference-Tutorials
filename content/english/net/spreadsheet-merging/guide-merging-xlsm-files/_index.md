@@ -18,7 +18,8 @@ Before you begin, ensure you have the following:
 ## Import Namespaces
 First, include the necessary namespaces in your .NET project:
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 ## Step 1: Define Output Folder and File Name
@@ -31,10 +32,10 @@ string outputFile = Path.Combine(outputFolder, "merged.xlsm");
 Next, load the source XLSM files and merge them into a single file:
 ```csharp
 // Load the source XLSM file
-using (var merger = new GroupDocs.Merger.Merger(Constants.SAMPLE_XLSM))
+using (var merger = new GroupDocs.Merger.Merger("Your Sample File"))
 {
     // Add another XLSM file to merge
-    merger.Join(Constants.SAMPLE_XLSM_2);
+    merger.Join("Your Sample File");
     // Merge XLSM files and save result
     merger.Save(outputFile);
 }

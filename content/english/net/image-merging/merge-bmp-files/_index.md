@@ -18,7 +18,8 @@ Before we begin, ensure you have the following:
 ## Import Namespaces
 Start by importing the necessary namespaces for using GroupDocs.Merger in your C# project:
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 Let's break down the process of merging BMP files into manageable steps:
@@ -31,13 +32,13 @@ string outputFile = Path.Combine(outputFolder, "merged.bmp");
 ## Step 2: Load Source BMP Files
 Instantiate the `Merger` object by providing the path to the source BMP file.
 ```csharp
-using (var merger = new Merger(Constants.SAMPLE_BMP))
+using (var merger = new Merger("Your Sample File"))
 {
     // Define image join options with vertical join mode
     var joinOptions = new ImageJoinOptions(ImageJoinMode.Vertical);
     
     // Add another BMP file to merge
-    merger.Join(Constants.SAMPLE_BMP, joinOptions);
+    merger.Join("Your Sample File", joinOptions);
     
     // Merge BMP files and save result
     merger.Save(outputFile);

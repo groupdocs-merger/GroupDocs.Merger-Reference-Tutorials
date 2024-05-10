@@ -19,7 +19,8 @@ Before we get started, ensure you have the following prerequisites in place:
 ## Import Namespaces
 First, you'll need to import the necessary namespaces in your C# project to access the functionalities of GroupDocs.Merger:
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 
@@ -33,9 +34,9 @@ string outputFile = Path.Combine(outputFolder, "merged.ppsx");
 ## Step 2: Load and Merge PPSX Files
 Instantiate a `Merger` object from the GroupDocs.Merger library, and then use the `Join` method to add the PPSX files you want to merge.
 ```csharp
-using (var merger = new Merger(Constants.SAMPLE_PPSX))
+using (var merger = new Merger("Your Sample File"))
 {
-    merger.Join(Constants.SAMPLE_PPSX_2);
+    merger.Join("Your Sample File");
     merger.Save(outputFile);
 }
 ```

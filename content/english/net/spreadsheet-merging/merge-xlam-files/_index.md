@@ -24,7 +24,8 @@ Before diving into this tutorial, ensure you have the following prerequisites in
 First, include the necessary namespaces to access the GroupDocs.Merger functionality in your C# project.
 
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 
@@ -44,9 +45,9 @@ string outputFile = Path.Combine(outputFolder, "merged.xlam");
 Load the source XLAM file and add another XLAM file to merge.
 
 ```csharp
-using (var merger = new GroupDocs.Merger.Merger(Constants.SAMPLE_XLAM))
+using (var merger = new GroupDocs.Merger.Merger("Your Sample File"))
 {
-    merger.Join(Constants.SAMPLE_XLAM_2);
+    merger.Join("Your Sample File");
     merger.Save(outputFile);
 }
 ```

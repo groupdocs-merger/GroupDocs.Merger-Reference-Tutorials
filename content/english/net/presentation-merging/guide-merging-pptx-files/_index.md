@@ -18,7 +18,8 @@ Before diving into the implementation, ensure you have the following prerequisit
 ## Import Namespaces
 Start by importing the required namespaces into your C# project:
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 
@@ -32,9 +33,9 @@ string outputFile = Path.Combine(outputFolder, "merged.pptx");
 ## Step 2: Load and Merge PPTX Files
 Next, load the source PPTX file and add another PPTX file to merge using `GroupDocs.Merger.Merger`.
 ```csharp
-using (var merger = new GroupDocs.Merger.Merger(Constants.SAMPLE_PPTX))
+using (var merger = new GroupDocs.Merger.Merger("Your Sample File"))
 {
-    merger.Join(Constants.SAMPLE_PPTX_2); // Add another PPTX file to merge
+    merger.Join("Your Sample File"); // Add another PPTX file to merge
     merger.Save(outputFile); // Merge PPTX files and save result
 }
 ```

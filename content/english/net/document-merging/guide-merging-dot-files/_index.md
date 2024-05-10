@@ -19,7 +19,8 @@ Before we begin, make sure you have the following prerequisites:
 ## Import Namespaces
 To get started, you need to import the necessary namespaces in your C# project:
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 ## Step 1: Set Up Your Project
@@ -35,10 +36,10 @@ string outputFile = Path.Combine(outputFolder, "merged.dot");
 ## Step 2.2: Load and Merge Files
 ```csharp
 // Load the source DOT file
-using (var merger = new GroupDocs.Merger.Merger(Constants.SAMPLE_DOT))
+using (var merger = new GroupDocs.Merger.Merger("Your Sample File"))
 {
     // Add another DOT file to merge
-    merger.Join(Constants.SAMPLE_DOT_2);
+    merger.Join("Your Sample File");
     // Merge DOT files and save result
     merger.Save(outputFile);
 }

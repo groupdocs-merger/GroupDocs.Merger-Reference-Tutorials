@@ -18,7 +18,8 @@ Before we begin, ensure you have the following prerequisites:
 ## Import Namespaces
 Start by importing the necessary namespaces into your project:
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 ## Step 1: Initialize Merger and Define Output Settings
@@ -31,10 +32,10 @@ string outputFile = Path.Combine(outputFolder, "merged.tif");
 Initialize the `Merger` object by loading a source TIF file and add another TIF file to merge.
 ```csharp
 // Load the source TIF file
-using (var merger = new Merger(Constants.SAMPLE_TIF))
+using (var merger = new Merger("Your Sample File"))
 {
     // Add another TIF file to merge
-    merger.Join(Constants.SAMPLE_TIF);
+    merger.Join("Your Sample File");
     // Merge TIF files and save result
     merger.Save(outputFile);
 }

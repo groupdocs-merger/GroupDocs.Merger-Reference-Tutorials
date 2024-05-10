@@ -18,7 +18,8 @@ Before you begin, ensure you have the following:
 ## Import Namespaces
 Start by including the necessary namespaces in your C# project:
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 ## Step 1: Set Up Output Directory
@@ -30,10 +31,10 @@ string outputFolder = "Your Output Directory";
 Now, specify the path for the merged OTP file and initialize the `Merger` object with the source OTP file:
 ```csharp
 string outputFile = Path.Combine(outputFolder, "merged.otp");
-using (var merger = new Merger(Constants.SAMPLE_OTP))
+using (var merger = new Merger("Your Sample File"))
 {
     // Add another OTP file to merge
-    merger.Join(Constants.SAMPLE_OTP_2);
+    merger.Join("Your Sample File");
     
     // Merge OTP files and save result
     merger.Save(outputFile);

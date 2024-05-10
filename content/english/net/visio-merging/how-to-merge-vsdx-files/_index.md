@@ -18,7 +18,8 @@ Before you begin, ensure you have the following:
 ## Import Namespaces
 Before you start coding, include the necessary namespaces in your C# file:
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 ## Step 1: Set Up the Output Folder
@@ -34,10 +35,10 @@ string outputFile = Path.Combine(outputFolder, "merged.vsdx");
 ## Step 3: Load and Merge VSDX Files
 Initialize the `Merger` object with the source VSDX file.
 ```csharp
-using (var merger = new GroupDocs.Merger.Merger(Constants.SAMPLE_VSDX))
+using (var merger = new GroupDocs.Merger.Merger("Your Sample File"))
 {
     // Add another VSDX file to merge
-    merger.Join(Constants.SAMPLE_VSDX_2);
+    merger.Join("Your Sample File");
     
     // Merge VSDX files and save the result
     merger.Save(outputFile);

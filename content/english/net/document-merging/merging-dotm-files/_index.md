@@ -19,7 +19,8 @@ Before you begin, ensure you have the following prerequisites set up:
 ## Import Namespaces
 Start by importing the necessary namespaces in your C# project to utilize GroupDocs.Merger effectively:
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 
@@ -34,15 +35,15 @@ Replace `"YourOutputDirectory"` with your desired path.
 ## Step 2: Load and Merge DOTM Files
 Initialize the `Merger` object from GroupDocs.Merger with the source DOTM file.
 ```csharp
-using (var merger = new GroupDocs.Merger.Merger(Constants.SAMPLE_DOTM))
+using (var merger = new GroupDocs.Merger.Merger("Your Sample File"))
 {
     // Add another DOTM file to merge
-    merger.Join(Constants.SAMPLE_DOTM_2);
+    merger.Join("Your Sample File");
     // Merge DOTM files and save result
     merger.Save(outputFile);
 }
 ```
-Here, `Constants.SAMPLE_DOTM` and `Constants.SAMPLE_DOTM_2` represent the paths to the DOTM files you want to merge.
+Here, `"Your Sample File"` and `"Your Sample File"` represent the paths to the DOTM files you want to merge.
 ## Step 3: Display Merge Completion Message
 Inform the user that the merging process has been successfully completed and specify the output folder.
 ```csharp

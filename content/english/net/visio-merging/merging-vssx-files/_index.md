@@ -18,7 +18,8 @@ Before diving into this tutorial, ensure you have the following prerequisites se
 ## Import Namespaces
 To get started, you'll need to import the necessary namespaces in your .NET project:
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 ## Step 1: Set Up Your Output Directory
@@ -37,15 +38,15 @@ Here, `"merged.vssx"` is the name of the merged file.
 Now, let's load and merge the VSSX files using GroupDocs.Merger:
 ```csharp
 // Load the source VSSX file
-using (var merger = new GroupDocs.Merger.Merger(Constants.SAMPLE_VSSX))
+using (var merger = new GroupDocs.Merger.Merger("Your Sample File"))
 {
     // Add another VSSX file to merge
-    merger.Join(Constants.SAMPLE_VSSX_2);
+    merger.Join("Your Sample File");
     // Merge VSSX files and save result
     merger.Save(outputFile);
 }
 ```
-Replace `Constants.SAMPLE_VSSX` and `Constants.SAMPLE_VSSX_2` with the paths to your actual VSSX files.
+Replace `"Your Sample File"` and `"Your Sample File"` with the paths to your actual VSSX files.
 ## Step 4: Check the Merged Output
 After executing the merging process, verify the output location to access the merged VSSX file:
 ```csharp

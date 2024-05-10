@@ -18,7 +18,8 @@ Before diving into the tutorial, ensure you have the following prerequisites set
 ## Import Namespaces
 First, you need to import the necessary namespaces in your C# code:
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 ## Step 1: Set up the Output Directory
@@ -32,17 +33,17 @@ Replace `"Your Output Directory"` with the path to your desired output directory
 Use the `Merger` class from GroupDocs.Merger to load and merge the RTF files:
 ```csharp
 // Load the source RTF file
-using (var merger = new Merger(Constants.SAMPLE_RTF))
+using (var merger = new Merger("Your Sample File"))
 {
     // Add another RTF file to merge
-    merger.Join(Constants.SAMPLE_RTF_2);
+    merger.Join("Your Sample File");
     // Merge RTF files and save result
     merger.Save(outputFile);
 }
 ```
 In this code snippet:
-- `Constants.SAMPLE_RTF` and `Constants.SAMPLE_RTF_2` represent the paths to the RTF files you want to merge.
-- `merger.Join()` is used to add another RTF file (`Constants.SAMPLE_RTF_2`) to the merging process.
+- `"Your Sample File"` and `"Your Sample File"` represent the paths to the RTF files you want to merge.
+- `merger.Join()` is used to add another RTF file (`"Your Sample File"`) to the merging process.
 - `merger.Save()` is used to save the merged RTF file to the specified output path (`outputFile`).
 ## Step 3: Display Success Message
 Finally, display a success message indicating the completion of the merging process:

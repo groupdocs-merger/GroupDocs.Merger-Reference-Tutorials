@@ -24,7 +24,8 @@ Before you begin, ensure you have the following prerequisites:
 First, you need to import the necessary namespaces in your C# project to use GroupDocs.Merger functionalities.
 
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 
@@ -44,19 +45,19 @@ Replace `"Your Output Directory"` with the desired path where you want to save t
 Next, load the source SVG files and specify how you want to join them (in this case, vertically) using GroupDocs.Merger.
 
 ```csharp
-using (var merger = new Merger(Constants.SAMPLE_SVG))
+using (var merger = new Merger("Your Sample File"))
 {
     // Define image join options with vertical join mode
     var joinOptions = new ImageJoinOptions(ImageJoinMode.Vertical);
     // Add another SVG file to merge
-    merger.Join(Constants.SAMPLE_SVG, joinOptions);
+    merger.Join("Your Sample File", joinOptions);
     // Merge SVG files and save result
     merger.Save(outputFile);
 }
 ```
 
 Here:
-- `Constants.SAMPLE_SVG` represents the path to your source SVG file.
+- `"Your Sample File"` represents the path to your source SVG file.
 - `ImageJoinMode.Vertical` specifies that the SVG files should be joined vertically.
 
 ## Step 3: Running the Merging Process

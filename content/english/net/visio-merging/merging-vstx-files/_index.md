@@ -19,7 +19,8 @@ Before diving into this tutorial, make sure you have the following prerequisites
 ## Import Namespaces
 Start by importing the necessary namespaces into your C# project:
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 ## Step 1: Set Up Your Output Directory
@@ -33,16 +34,16 @@ Replace `"Your Output Directory"` with the desired path on your system.
 Next, utilize GroupDocs.Merger to load and merge the VSTX files:
 ```csharp
 // Load the source VSTX file
-using (var merger = new GroupDocs.Merger.Merger(Constants.SAMPLE_VSTX))
+using (var merger = new GroupDocs.Merger.Merger("Your Sample File"))
 {
     // Add another VSTX file to merge
-    merger.Join(Constants.SAMPLE_VSTX_2);
+    merger.Join("Your Sample File");
     // Merge VSTX files and save result
     merger.Save(outputFile);
 }
 ```
 In this snippet:
-- `Constants.SAMPLE_VSTX` and `Constants.SAMPLE_VSTX_2` represent paths to your source VSTX files. Replace these with your file paths.
+- `"Your Sample File"` and `"Your Sample File"` represent paths to your source VSTX files. Replace these with your file paths.
 ## Step 3: Display Merge Completion
 Finally, inform the user that the merging process has completed successfully:
 ```csharp

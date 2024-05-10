@@ -19,7 +19,8 @@ Before diving into the tutorial, ensure you have the following:
 ## Import Namespaces
 To get started, import the necessary namespaces into your C# project:
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 ## Step 1: Set Up Output Directory and File Name
@@ -33,10 +34,10 @@ Replace `"YourOutputDirectory"` with the path where you want to save the merged 
 Next, use GroupDocs.Merger to merge multiple DOTX files into a single document.
 ```csharp
 // Load the source DOTX file
-using (var merger = new GroupDocs.Merger.Merger(Constants.SAMPLE_DOTX))
+using (var merger = new GroupDocs.Merger.Merger("Your Sample File"))
 {
     // Add another DOTX file to merge
-    merger.Join(Constants.SAMPLE_DOTX_2);
+    merger.Join("Your Sample File");
     
     // Merge DOTX files and save result
     merger.Save(outputFile);
@@ -44,7 +45,7 @@ using (var merger = new GroupDocs.Merger.Merger(Constants.SAMPLE_DOTX))
 Console.WriteLine("\nDOTX files merge completed successfully. \nCheck output in {0}", outputFolder);
 ```
 In this code snippet:
-- `Constants.SAMPLE_DOTX` and `Constants.SAMPLE_DOTX_2` represent paths to the DOTX files you want to merge. Replace these with your actual file paths.
+- `"Your Sample File"` and `"Your Sample File"` represent paths to the DOTX files you want to merge. Replace these with your actual file paths.
 - `merger.Join()` is used to add additional DOTX files to the merger.
 - `merger.Save()` combines the DOTX files and saves the merged result to the specified `outputFile` path.
 

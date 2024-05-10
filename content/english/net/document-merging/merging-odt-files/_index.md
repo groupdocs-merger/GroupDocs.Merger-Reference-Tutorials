@@ -18,7 +18,8 @@ Before diving into the tutorial, ensure you have the following prerequisites set
 ## Import Namespaces
 Begin by importing the necessary namespaces into your C# project to leverage GroupDocs.Merger functionalities:
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 ## Step 1: Set Up Output Directory
@@ -31,15 +32,15 @@ Replace `"YourOutputDirectory"` with your desired output directory path.
 ## Step 2: Load Source ODT Files
 Initialize the GroupDocs.Merger `Merger` object by loading the source ODT file:
 ```csharp
-using (var merger = new GroupDocs.Merger.Merger(Constants.SAMPLE_ODT))
+using (var merger = new GroupDocs.Merger.Merger("Your Sample File"))
 {
     // Add another ODT file to merge
-    merger.Join(Constants.SAMPLE_ODT_2);
+    merger.Join("Your Sample File");
     // Merge ODT files and save result
     merger.Save(outputFile);
 }
 ```
-Replace `Constants.SAMPLE_ODT` and `Constants.SAMPLE_ODT_2` with the paths to your ODT files.
+Replace `"Your Sample File"` and `"Your Sample File"` with the paths to your ODT files.
 ## Step 3: Execute Merging Process
 Execute the merging process by joining the ODT files and saving the merged output:
 ```csharp

@@ -18,7 +18,8 @@ Before you begin, ensure you have the following:
 ## Import Namespaces
 First, include the necessary namespaces for accessing GroupDocs.Merger functionalities:
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 
@@ -33,17 +34,17 @@ Replace `"Your Output Directory"` with the desired path on your system.
 ## Step 2: Load the Source SVGZ File
 Use GroupDocs.Merger to load the source SVGZ file:
 ```csharp
-using (var merger = new Merger(Constants.SAMPLE_SVGZ))
+using (var merger = new Merger("Your Sample File"))
 {
     // Define image join options with vertical join mode
     var joinOptions = new ImageJoinOptions(ImageJoinMode.Vertical);
     // Add another SVGZ file to merge
-    merger.Join(Constants.SAMPLE_SVGZ, joinOptions);
+    merger.Join("Your Sample File", joinOptions);
     // Merge SVGZ files and save result
     merger.Save(outputFile);
 }
 ```
-Replace `Constants.SAMPLE_SVGZ` with the path to your SVGZ file.
+Replace `"Your Sample File"` with the path to your SVGZ file.
 ## Step 3: Execute the Merge Operation
 Execute the merging process and save the merged SVGZ file:
 ```csharp

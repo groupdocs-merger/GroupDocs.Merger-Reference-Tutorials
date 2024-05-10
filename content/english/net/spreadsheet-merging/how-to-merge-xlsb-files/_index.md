@@ -19,7 +19,8 @@ Before we dive into the tutorial, ensure you have the following prerequisites se
 ## Import Namespaces
 Before you begin coding, import the necessary namespaces into your C# project:
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 ## Step 1: Set Up Your Output Directory
@@ -33,10 +34,10 @@ string outputFile = Path.Combine(outputFolder, "merged.xlsb");
 ## Step 3: Load the Source XLSB File
 ```csharp
 // Load the source XLSB file
-using (var merger = new GroupDocs.Merger.Merger(Constants.SAMPLE_XLSB))
+using (var merger = new GroupDocs.Merger.Merger("Your Sample File"))
 {
     // Add another XLSB file to merge
-    merger.Join(Constants.SAMPLE_XLSB_2);
+    merger.Join("Your Sample File");
     // Merge XLSB files and save result
     merger.Save(outputFile);
 }

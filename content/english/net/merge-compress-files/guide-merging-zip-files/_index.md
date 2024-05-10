@@ -18,7 +18,8 @@ Before diving into the tutorial, ensure you have the following prerequisites set
 ## Import Namespaces
 First, import the necessary namespaces into your C# project to access the functionalities of GroupDocs.Merger:
 ```csharp
-using System;
+using System; 
+using GroupDocs.Merger;
 using System.IO;
 ```
 
