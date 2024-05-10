@@ -27,9 +27,6 @@ using System.IO;
 Now, let's dive into merging XLTM files.
 ## Step 1: Initialize Output Directory
 ```csharp
-using System; 
-using GroupDocs.Merger;
-using System.IO;
 string outputFolder = "Your Output Directory";
 string outputFile = Path.Combine(outputFolder, "merged.xltm");
 ```
@@ -46,7 +43,7 @@ using (var merger = new GroupDocs.Merger.Merger("Your Sample File"))
 }
 ```
 In this code snippet:
-- `"Your Sample File"` and `"Your Sample File"` represent the paths to your input XLTM files. Ensure to replace these with the actual file paths.
+- "Your Sample File" and "Your Sample File" represent the paths to your input XLTM files. Ensure to replace these with the actual file paths.
 ## Step 3: Display Output Location
 ```csharp
 Console.WriteLine("\nXLTM files merge completed successfully. \nCheck output in {0}", outputFolder);
@@ -67,6 +64,3 @@ Yes, you can access a free trial of GroupDocs.Merger [here](https://releases.gro
 You can refer to the complete documentation for GroupDocs.Merger [here](https://reference.groupdocs.com/merger/net/).
 ### Where can I get technical support for GroupDocs.Merger?
 For technical assistance and support, visit the GroupDocs.Merger forum [here](https://forum.groupdocs.com/c/merger/32).
-
-            
-```
