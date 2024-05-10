@@ -1,6 +1,6 @@
 ---
-title: Merging VSDM Files using GroupDocs.Merger for .NET
-linktitle: Merging VSDM Files using GroupDocs.Merger for .NET
+title: Merging VSDM Files
+linktitle: Merging VSDM Files
 second_title: GroupDocs.Merger .NET API
 description: Learn how to merge VSDM files using GroupDocs.Merger for .NET. Simplify your document management tasks with this easy-to-use library.
 type: docs

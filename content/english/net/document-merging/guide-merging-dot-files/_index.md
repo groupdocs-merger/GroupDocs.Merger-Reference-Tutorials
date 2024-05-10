@@ -1,6 +1,6 @@
 ---
-title: Guide to Merging DOT Files using GroupDocs.Merger for .NET
-linktitle: Guide to Merging DOT Files using GroupDocs.Merger for .NET
+title: Guide to Merging DOT Files
+linktitle: Guide to Merging DOT Files
 second_title: GroupDocs.Merger .NET API
 description: Learn how to merge DOT (Graphviz) files programmatically using GroupDocs.Merger for .NET. Merge, combine, and manipulate DOT files with ease.
 type: docs

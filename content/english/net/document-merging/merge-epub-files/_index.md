@@ -1,6 +1,6 @@
 ---
-title: Merge EPUB Files using GroupDocs.Merger for .NET
-linktitle: Merge EPUB Files using GroupDocs.Merger for .NET
+title: Merge EPUB Files
+linktitle: Merge EPUB Files
 second_title: GroupDocs.Merger .NET API
 description: Learn how to merge EPUB files programmatically using GroupDocs.Merger for .NET. Follow our step-by-step tutorial.
 type: docs

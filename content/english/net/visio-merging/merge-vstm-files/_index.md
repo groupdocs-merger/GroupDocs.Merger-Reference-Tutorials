@@ -1,6 +1,6 @@
 ---
-title: Merge VSTM Files using GroupDocs.Merger for .NET
-linktitle: Merge VSTM Files using GroupDocs.Merger for .NET
+title: Merge VSTM Files
+linktitle: Merge VSTM Files
 second_title: GroupDocs.Merger .NET API
 description: Learn how to merge VSTM files effortlessly using GroupDocs.Merger for .NET. Follow our step-by-step tutorial and your document manipulation capabilities.
 type: docs

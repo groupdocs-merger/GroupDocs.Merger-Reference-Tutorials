@@ -15,7 +15,7 @@ Merge BMP, GIF, PNG, SVG, SVGZ, TIF, and TIFF files seamlessly with GroupDocs.Me
 ### [Document Merging](./document-merging/)
 Effortlessly merge various document formats in .NET using GroupDocs.Merger. Seamlessly combine DOC, DOCX, PDF, and more. Enhance your document management today!
 ### [Spreadsheet Merging](./spreadsheet-merging/)
-
+Effortlessly merge XLAM, XLS, XLSB, XLSM, XLSX, XLT, XLTM, XLTX, and ODS files in .NET using GroupDocs.Merger. Simplify document management tasks.
 ### [Visio Merging](./visio-merging/)
 
 ### [Presentation Merging](./presentation-merging/)

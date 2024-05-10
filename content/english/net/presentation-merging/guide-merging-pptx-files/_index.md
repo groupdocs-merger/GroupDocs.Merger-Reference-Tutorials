@@ -1,6 +1,6 @@
 ---
-title: Guide to Merging PPTX Files using GroupDocs.Merger for .NET
-linktitle: Guide to Merging PPTX Files using GroupDocs.Merger for .NET
+title: Guide to Merging PPTX Files
+linktitle: Guide to Merging PPTX Files
 second_title: GroupDocs.Merger .NET API
 description: Learn how to merge PPTX files using GroupDocs.Merger for .NET. Streamline document management with this powerful .NET library.
 type: docs

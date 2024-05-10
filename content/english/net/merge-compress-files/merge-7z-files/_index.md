@@ -1,6 +1,6 @@
 ---
-title: How to Merge 7z Files using GroupDocs.Merger for .NET
-linktitle: How to Merge 7z Files using GroupDocs.Merger for .NET
+title: How to Merge 7z Files
+linktitle: How to Merge 7z Files
 second_title: GroupDocs.Merger .NET API
 description: Effortlessly merge 7z files using GroupDocs.Merger for .NET. Follow our step-by-step guide to combine multiple archives into one seamlessly.
 type: docs

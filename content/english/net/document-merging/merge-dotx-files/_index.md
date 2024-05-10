@@ -1,6 +1,6 @@
 ---
-title: Merge DOTX Files using GroupDocs.Merger for .NET
-linktitle: Merge DOTX Files using GroupDocs.Merger for .NET
+title: Merge DOTX Files
+linktitle: Merge DOTX Files
 second_title: GroupDocs.Merger .NET API
 description: Learn how to merge DOTX files in .NET using GroupDocs.Merger effortlessly. Enhance your document manipulation capabilities.
 type: docs

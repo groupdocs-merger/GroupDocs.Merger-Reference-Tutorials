@@ -1,6 +1,6 @@
 ---
-title: Merge VSX Files using GroupDocs.Merger for .NET
-linktitle: Merge VSX Files using GroupDocs.Merger for .NET
+title: Merge VSX Files
+linktitle: Merge VSX Files
 second_title: GroupDocs.Merger .NET API
 description: Learn how to merge VSX files effortlessly using GroupDocs.Merger for .NET. This comprehensive guide simplifies document manipulation tasks.
 type: docs
