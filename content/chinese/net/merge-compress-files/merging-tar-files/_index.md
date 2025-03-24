@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Merger for .NET 以编程方式合并 
 weight: 11
 url: /zh/net/merge-compress-files/merging-tar-files/
 ---
+
+# 合并 Tar 文件
+
 ## 介绍
 在软件开发中，以编程方式操作和合并文件的能力对于高效的数据处理至关重要。 GroupDocs.Merger for .NET 是一个功能强大的库，使开发人员能够在其 .NET 应用程序中无缝合并 TAR（磁带存档）文件。本教程将指导您完成使用 GroupDocs.Merger 合并 TAR 文件的过程，并提供分步说明和代码示例。
 ## 先决条件

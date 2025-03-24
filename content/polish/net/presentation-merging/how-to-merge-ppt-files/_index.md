@@ -6,6 +6,9 @@ description: Dowiedz się, jak bez wysiłku łączyć pliki programu PowerPoint 
 weight: 12
 url: /pl/net/presentation-merging/how-to-merge-ppt-files/
 ---
+
+# Jak scalić pliki PPT
+
 ## Wstęp
 W tym samouczku omówimy sposób scalania plików programu PowerPoint (PPT) przy użyciu programu GroupDocs.Merger dla platformy .NET. GroupDocs.Merger dla .NET to potężny interfejs API, który umożliwia programistom płynne manipulowanie i łączenie różnych formatów dokumentów, w tym prezentacji programu PowerPoint, w aplikacjach .NET.
 ## Warunki wstępne

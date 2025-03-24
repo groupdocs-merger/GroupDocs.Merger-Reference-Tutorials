@@ -6,6 +6,9 @@ description: XLSB ファイルをマージする方法を学びます。この�
 weight: 12
 url: /ja/net/spreadsheet-merging/how-to-merge-xlsb-files/
 ---
+
+# XLSB ファイルをマージする方法
+
 ## 導入
 このチュートリアルでは、XLSB (Excel Binary Workbook) ファイルをマージする方法を説明します。 GroupDocs.Merger for .NET は、開発者が .NET アプリケーション内でさまざまなドキュメント形式をシームレスにマージ、分割、操作できるようにする強力なドキュメント操作 API です。特に、この多用途ライブラリを使用して XLSB ファイルをマージすることに焦点を当てます。
 ## 前提条件

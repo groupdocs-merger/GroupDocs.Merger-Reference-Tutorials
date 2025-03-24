@@ -6,6 +6,9 @@ description: Mescle arquivos 7z sem esforço usando GroupDocs.Merger for .NET. S
 weight: 10
 url: /pt/net/merge-compress-files/merge-7z-files/
 ---
+
+# Como mesclar arquivos 7z
+
 ## Introdução
 mesclagem de arquivos 7z pode ser feita com eficiência usando GroupDocs.Merger for .NET, uma poderosa biblioteca de manipulação de documentos. Este tutorial irá guiá-lo através do processo passo a passo, permitindo que você mescle seus arquivos 7z com facilidade.
 ## Pré-requisitos

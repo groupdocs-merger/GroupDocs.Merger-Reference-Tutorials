@@ -6,6 +6,9 @@ description: Tìm hiểu cách hợp nhất các tệp XPS bằng GroupDocs.Merg
 weight: 20
 url: /vi/net/document-merging/merge-xps-files/
 ---
+
+# Hợp nhất các tệp XPS
+
 ## Giới thiệu
 Trong lĩnh vực quản lý và thao tác tài liệu, GroupDocs.Merger for .NET cung cấp một bộ công cụ mạnh mẽ để hợp nhất các tệp XPS (Đặc tả giấy XML) một cách liền mạch. Hướng dẫn này đi sâu vào các yếu tố cần thiết của việc sử dụng GroupDocs.Merger cho .NET để hợp nhất các tệp XPS một cách hiệu quả trong các ứng dụng .NET của bạn. Bằng cách làm theo hướng dẫn này, bạn sẽ tìm hiểu các bước cần thiết để tận dụng thư viện này một cách hiệu quả cho nhu cầu xử lý tài liệu của mình.
 ## Điều kiện tiên quyết

@@ -6,6 +6,9 @@ description: GroupDocs.Merger for .NET'i kullanarak 7z dosyalarını zahmetsizce
 weight: 10
 url: /tr/net/merge-compress-files/merge-7z-files/
 ---
+
+# 7z Dosyaları Nasıl Birleştirilir
+
 ## giriiş
 7z dosyalarının birleştirilmesi, güçlü bir belge işleme kitaplığı olan GroupDocs.Merger for .NET kullanılarak verimli bir şekilde yapılabilir. Bu eğitim, süreç boyunca size adım adım rehberlik edecek ve 7z dosyalarınızı kolaylıkla ve sorunsuz bir şekilde birleştirmenize olanak tanıyacaktır.
 ## Önkoşullar

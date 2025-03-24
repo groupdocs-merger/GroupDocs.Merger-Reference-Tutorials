@@ -7,6 +7,9 @@ weight: 24
 url: /it/net/visio-merging/
 ---
 
+# Unione di Visio
+
+
 ## introduzione
 
 Stai cercando di semplificare i processi di gestione dei documenti? Immergiti nei nostri tutorial curati progettati per guidarti attraverso l'unione perfetta dei file Visio utilizzando GroupDocs.Merger per .NET. Che tu stia unendo file VDX, VSDM, VSDX, VSSM, VSSX, VSTM, VSTX, VSX o VTX, ti offriamo la soluzione con istruzioni dettagliate passo passo ed esempi di codice.

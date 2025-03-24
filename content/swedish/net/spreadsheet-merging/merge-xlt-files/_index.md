@@ -6,6 +6,9 @@ description: Lär dig hur du slår samman XLT-filer. Kombinera Excel-mallar prog
 weight: 15
 url: /sv/net/spreadsheet-merging/merge-xlt-files/
 ---
+
+# Slå samman XLT-filer
+
 ## Introduktion
 I den här handledningen kommer vi att utforska hur man slår ihop XLT-filer (Excel-mall). GroupDocs.Merger är ett kraftfullt API som tillåter utvecklare att manipulera olika dokumentformat, inklusive Excel-filer, programmatiskt. Genom att slå samman XLT-filer kan du kombinera flera mallar till ett enda dokument, vilket effektiviserar ditt arbetsflöde och förbättrar effektiviteten.
 ## Förutsättningar

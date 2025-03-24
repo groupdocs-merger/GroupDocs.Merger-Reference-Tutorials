@@ -6,6 +6,9 @@ description: Learn how to merge SVGZ files using GroupDocs.Merger for .NET with 
 weight: 14
 url: /net/image-merging/merging-svgz-files/
 ---
+
+# Merging SVGZ Files
+
 ## Introduction
 In this tutorial, we will explore how to merge SVGZ (Scalable Vector Graphics) files using GroupDocs.Merger for .NET. GroupDocs.Merger is a powerful document manipulation API that allows developers to perform various operations on different document formats, including merging, splitting, and rearranging pages.
 ## Prerequisites

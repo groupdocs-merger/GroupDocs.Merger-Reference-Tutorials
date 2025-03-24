@@ -6,6 +6,9 @@ description: Découvrez comment fusionner des fichiers PDF par programmation dan
 weight: 19
 url: /fr/net/document-merging/merging-pdf-files/
 ---
+
+# Fusion de fichiers PDF
+
 ## Introduction
 Dans le domaine de la gestion et de la manipulation de documents, la fusion de fichiers PDF est une tâche courante rencontrée par les développeurs. GroupDocs.Merger pour .NET fournit une solution robuste pour combiner de manière transparente des documents PDF au sein d'applications .NET. Ce didacticiel vous guidera tout au long du processus de fusion de fichiers PDF à l'aide de GroupDocs.Merger, en présentant la mise en œuvre et l'utilisation étape par étape.
 ## Conditions préalables

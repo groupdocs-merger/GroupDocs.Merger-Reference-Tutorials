@@ -6,6 +6,9 @@ description: Hợp nhất các tệp XLSM một cách liền mạch với GroupD
 weight: 13
 url: /vi/net/spreadsheet-merging/guide-merging-xlsm-files/
 ---
+
+# Hướng dẫn gộp file XLSM
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách hợp nhất các tệp XLSM (Sổ làm việc hỗ trợ macro Excel). GroupDocs.Merger là một thư viện mạnh mẽ cho phép các nhà phát triển thao tác với các định dạng tài liệu, bao gồm hợp nhất, chia tách và sửa đổi các tệp theo chương trình.
 ## Điều kiện tiên quyết

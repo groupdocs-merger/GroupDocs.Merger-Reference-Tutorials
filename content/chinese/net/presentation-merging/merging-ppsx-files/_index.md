@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Merger for .NET 轻松合并 PPSX 文件。按照�
 weight: 11
 url: /zh/net/presentation-merging/merging-ppsx-files/
 ---
+
+# 合并 PPSX 文件
+
 ## 介绍
 在本教程中，我们将深入研究使用强大的 GroupDocs.Merger for .NET 库合并 PPSX 文件。 GroupDocs.Merger 简化了以编程方式将多个 PowerPoint 幻灯片 (PPSX) 文件合并为单个合并文件的过程。无论您是开发应用程序还是需要自动执行文件操作任务，GroupDocs.Merger 都能提供高效的解决方案。
 ## 先决条件

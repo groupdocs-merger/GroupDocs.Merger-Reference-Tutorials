@@ -6,6 +6,9 @@ url: /zh-hant/net/
 description: 使用 GroupDocs.Merger .NET 輕鬆合併和壓縮各種檔案格式。了解有關合併圖像、文件等的逐步教學！
 is_root: true
 ---
+
+# GroupDocs.Merger for .NET 的教學與範例
+
 ## 介紹
 
 使用 GroupDocs.Merger for .NET 輕鬆管理您的檔案！這個綜合教學系列提供如何利用 GroupDocs.Merger 的強大功能無縫合併和壓縮各種檔案格式的逐步指導。無論您要處理影像、文件、電子表格、簡報，甚至 Visio 文件，我們都能滿足您的需求。

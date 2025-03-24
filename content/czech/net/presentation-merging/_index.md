@@ -6,6 +6,9 @@ description: Snadno slučujte různé formáty prezentačních souborů. Postupu
 weight: 25
 url: /cs/net/presentation-merging/
 ---
+
+# Sloučení prezentace
+
 ## Úvod
 
 Slučte své prezentační soubory bez námahy. Ať už se jedná o soubory PPS, PPSX, PPT nebo OTP, naše výukové programy nabízejí podrobné pokyny spolu s praktickými příklady kódu, jak zjednodušit úlohy slučování dokumentů.

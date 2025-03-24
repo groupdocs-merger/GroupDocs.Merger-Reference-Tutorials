@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan egyesíthet programozottan DOCX-fájlokat .NET-
 weight: 12
 url: /hu/net/document-merging/how-to-merge-docx-files/
 ---
+
+# DOCX fájlok egyesítése
+
 ## Bevezetés
 A .NET-fejlesztés világában a DOCX-fájlok programozott egyesítése hatékony lehetőség lehet különféle alkalmazások számára. A GroupDocs.Merger for .NET átfogó megoldást kínál a DOCX-fájlok hatékony egyesítésére. Ez az oktatóanyag végigvezeti Önt a GroupDocs.Merger for .NET használatának folyamatán, amellyel több DOCX fájlt zökkenőmentesen egyesíthet egyetlen dokumentumba.
 ## Előfeltételek

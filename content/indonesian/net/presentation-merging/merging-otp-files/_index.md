@@ -6,6 +6,9 @@ description: Pelajari cara menggabungkan file OTP menggunakan GroupDocs.Merger u
 weight: 14
 url: /id/net/presentation-merging/merging-otp-files/
 ---
+
+# Menggabungkan File OTP
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara menggabungkan file OTP (OpenDocument Presentation Template) menggunakan GroupDocs.Merger untuk .NET. GroupDocs.Merger adalah API manipulasi dokumen canggih yang memungkinkan pengembang menggabungkan, membagi, dan memanipulasi berbagai format file dengan mulus.
 ## Prasyarat

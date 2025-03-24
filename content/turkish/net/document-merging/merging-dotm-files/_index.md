@@ -6,6 +6,9 @@ description: GroupDocs.Merger for .NET'i kullanarak DOTM dosyalarını programl�
 weight: 14
 url: /tr/net/document-merging/merging-dotm-files/
 ---
+
+# DOTM Dosyalarını Birleştirme
+
 ## giriiş
 Bu öğreticide, .NET için GroupDocs.Merger kullanarak DOTM (Word Makro Etkin Şablon) dosyalarının nasıl birleştirileceğini inceleyeceğiz. GroupDocs.Merger, geliştiricilerin .NET uygulamalarında çeşitli belge formatlarını sorunsuz bir şekilde değiştirmelerine ve birleştirmelerine olanak tanıyan güçlü bir API'dir. Bu kılavuzu takip ederek bu işlevselliği projelerinize nasıl entegre edeceğinizi adım adım öğreneceksiniz.
 ## Önkoşullar

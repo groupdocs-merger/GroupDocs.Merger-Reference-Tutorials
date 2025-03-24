@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Merger for .NET 轻松合并 VSSM 文�
 weight: 13
 url: /zh/net/visio-merging/guide-merging-vssm-files/
 ---
+
+# VSSM 文件合并指南
+
 ## 介绍
 在本教程中，您将学习如何使用 GroupDocs.Merger for .NET 合并 VSSM（Visio 宏启用绘图）文件。GroupDocs.Merger 是一个功能强大的库，使开发人员能够无缝地操作和合并各种文档格式。
 ## 先决条件

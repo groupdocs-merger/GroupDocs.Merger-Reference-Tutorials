@@ -6,6 +6,9 @@ description: Leer hoe u VSSX-bestanden moeiteloos kunt samenvoegen in .NET-toepa
 weight: 14
 url: /nl/net/visio-merging/merging-vssx-files/
 ---
+
+# VSSX-bestanden samenvoegen
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u VSSX-bestanden kunt samenvoegen met GroupDocs.Merger voor .NET. GroupDocs.Merger voor .NET is een krachtige bibliotheek waarmee ontwikkelaars verschillende documentformaten naadloos kunnen manipuleren en samenvoegen binnen hun .NET-toepassingen. Het samenvoegen van VSSX-bestanden kan met name handig zijn als u meerdere Visual Studio-stencilbestanden in één bestand moet combineren voor eenvoudiger beheer en distributie.
 ## Vereisten

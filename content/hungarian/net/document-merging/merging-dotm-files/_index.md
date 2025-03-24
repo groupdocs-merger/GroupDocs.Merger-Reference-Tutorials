@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan egyesíthet programozottan DOTM-fájlokat a Gro
 weight: 14
 url: /hu/net/document-merging/merging-dotm-files/
 ---
+
+# DOTM fájlok egyesítése
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet egyesíteni a DOTM (Word Macro-Enabled Template) fájlokat a GroupDocs.Merger for .NET használatával. A GroupDocs.Merger egy hatékony API, amely lehetővé teszi a fejlesztők számára a különböző dokumentumformátumok zökkenőmentes kezelését és kombinálását .NET-alkalmazásaikon belül. Az útmutató követésével lépésről lépésre megtanulhatja, hogyan integrálhatja ezt a funkciót projektjeibe.
 ## Előfeltételek

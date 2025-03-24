@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Merger for .NET 合併 GIF 檔案。�
 weight: 11
 url: /zh-hant/net/image-merging/merging-gif-files/
 ---
+
+# 合併 GIF 文件
+
 ## 介紹
 在本教學中，您將學習如何使用 GroupDocs.Merger for .NET 合併 GIF 檔案。 GroupDocs.Merger 是一個功能強大的 API，可讓開發人員以程式設計方式操作文件格式。透過執行下面概述的步驟，您將能夠有效地將多個 GIF 檔案合併為單一輸出 GIF 檔案。
 ## 先決條件

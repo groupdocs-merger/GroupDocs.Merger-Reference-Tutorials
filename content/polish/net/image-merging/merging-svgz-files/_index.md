@@ -6,6 +6,9 @@ description: tego samouczka krok po kroku dowiesz się, jak scalić pliki SVGZ p
 weight: 14
 url: /pl/net/image-merging/merging-svgz-files/
 ---
+
+# Łączenie plików SVGZ
+
 ## Wstęp
 W tym samouczku przyjrzymy się, jak scalić pliki SVGZ (Scalable Vector Graphics) za pomocą GroupDocs.Merger dla .NET. GroupDocs.Merger to potężny interfejs API do manipulacji dokumentami, który umożliwia programistom wykonywanie różnych operacji na różnych formatach dokumentów, w tym łączenie, dzielenie i zmienianie układu stron.
 ## Warunki wstępne

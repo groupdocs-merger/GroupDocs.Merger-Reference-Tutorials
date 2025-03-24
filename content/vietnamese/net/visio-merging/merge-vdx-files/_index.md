@@ -6,6 +6,9 @@ description: Tìm hiểu cách hợp nhất các tệp VDX theo chương trình 
 weight: 10
 url: /vi/net/visio-merging/merge-vdx-files/
 ---
+
+# Hợp nhất các tệp VDX
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách hợp nhất các tệp VDX (Visio Vẽ XML) bằng GroupDocs.Merger cho .NET. GroupDocs.Merger là API thao tác tài liệu mạnh mẽ cho phép hợp nhất liền mạch các định dạng tệp khác nhau, bao gồm cả tệp VDX. Hướng dẫn này sẽ hướng dẫn bạn từng bước trong quá trình hợp nhất các tệp VDX bằng cách sử dụng C# trong môi trường .NET.
 ## Điều kiện tiên quyết

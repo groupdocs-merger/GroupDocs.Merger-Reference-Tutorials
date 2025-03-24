@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie XLT-Dateien zusammenführen. Kombinieren Sie 
 weight: 15
 url: /de/net/spreadsheet-merging/merge-xlt-files/
 ---
+
+# XLT-Dateien zusammenführen
+
 ## Einführung
 In diesem Tutorial erfahren Sie, wie Sie XLT-Dateien (Excel-Vorlagen) zusammenführen. GroupDocs.Merger ist eine leistungsstarke API, die es Entwicklern ermöglicht, verschiedene Dokumentformate, einschließlich Excel-Dateien, programmgesteuert zu bearbeiten. Durch das Zusammenführen von XLT-Dateien können Sie mehrere Vorlagen in einem einzigen Dokument kombinieren und so Ihren Arbeitsablauf optimieren und die Effizienz steigern.
 ## Voraussetzungen

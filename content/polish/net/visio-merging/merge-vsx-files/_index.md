@@ -6,6 +6,9 @@ description: Dowiedz się, jak bez wysiłku łączyć pliki VSX za pomocą Group
 weight: 17
 url: /pl/net/visio-merging/merge-vsx-files/
 ---
+
+# Scal pliki VSX
+
 ## Wstęp
 W tym samouczku przyjrzymy się, jak scalić pliki VSX za pomocą GroupDocs.Merger dla .NET. GroupDocs.Merger dla .NET to potężny interfejs API, który umożliwia programistom programowe manipulowanie różnymi formatami dokumentów. Ten przewodnik przeprowadzi Cię krok po kroku przez proces łączenia plików VSX (Visio Drawing), korzystając z możliwości GroupDocs.Merger.
 ## Warunki wstępne

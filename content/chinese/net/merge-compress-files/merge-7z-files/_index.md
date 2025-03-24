@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Merger for .NET 轻松合并 7z 文件。按照我
 weight: 10
 url: /zh/net/merge-compress-files/merge-7z-files/
 ---
+
+# 如何合并 7z 文件
+
 ## 介绍
 可以使用强大的文档操作库 GroupDocs.Merger for .NET 高效地合并 7z 文件。本教程将逐步指导您完成整个过程，让您轻松无缝地合并 7z 文件。
 ## 先决条件

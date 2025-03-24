@@ -6,6 +6,9 @@ description: Tìm hiểu cách hợp nhất các tệp ZIP theo chương trình 
 weight: 12
 url: /vi/net/merge-compress-files/guide-merging-zip-files/
 ---
+
+# Hướng dẫn gộp file Zip
+
 ## Giới thiệu
 Trong lĩnh vực quản lý và thao tác tài liệu, GroupDocs.Merger dành cho .NET nổi bật như một công cụ mạnh mẽ dành cho các nhà phát triển đang tìm cách hợp nhất và thao tác các định dạng tệp khác nhau một cách liền mạch. Hướng dẫn này sẽ hướng dẫn bạn quy trình hợp nhất các tệp ZIP bằng GroupDocs.Merger cho .NET. Đến cuối hướng dẫn này, bạn sẽ được trang bị kiến thức để hợp nhất các tệp ZIP theo chương trình trong các ứng dụng .NET của mình.
 ## Điều kiện tiên quyết

@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Merger 在 .NET 应用程序中轻松�
 weight: 14
 url: /zh/net/visio-merging/merging-vssx-files/
 ---
+
+# 合并 VSSX 文件
+
 ## 介绍
 在本教程中，我们将探讨如何使用 GroupDocs.Merger for .NET 合并 VSSX 文件。GroupDocs.Merger for .NET 是一个功能强大的库，允许开发人员在其 .NET 应用程序中无缝操作和合并各种文档格式。当您需要将多个 Visual Studio Stencil 文件合并为一个文件以方便管理和分发时，合并 VSSX 文件特别有用。
 ## 先决条件

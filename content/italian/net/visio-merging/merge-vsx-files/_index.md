@@ -6,6 +6,9 @@ description: Scopri come unire file VSX senza sforzo utilizzando GroupDocs.Merge
 weight: 17
 url: /it/net/visio-merging/merge-vsx-files/
 ---
+
+# Unisci file VSX
+
 ## introduzione
 In questo tutorial esploreremo come unire file VSX utilizzando GroupDocs.Merger per .NET. GroupDocs.Merger per .NET è una potente API che consente agli sviluppatori di manipolare vari formati di documenti a livello di codice. Questa guida ti guiderà passo passo attraverso il processo di unione dei file VSX (Visio Drawing), utilizzando le funzionalità di GroupDocs.Merger.
 ## Prerequisiti

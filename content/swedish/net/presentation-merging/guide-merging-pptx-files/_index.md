@@ -6,6 +6,9 @@ description: Lär dig hur du slår samman PPTX-filer med GroupDocs.Merger för .
 weight: 13
 url: /sv/net/presentation-merging/guide-merging-pptx-files/
 ---
+
+# Guide för att slå samman PPTX-filer
+
 ## Introduktion
 I den här handledningen kommer vi att undersöka hur du slår samman PowerPoint-presentationer (PPTX-filer) med GroupDocs.Merger för .NET. GroupDocs.Merger för .NET är ett kraftfullt bibliotek som möjliggör sömlös manipulation och sammanslagning av olika dokumentformat, inklusive PPTX-filer, i dina .NET-applikationer. Genom att utnyttja det här biblioteket kan du effektivt kombinera flera PowerPoint-presentationer till en enda fil, vilket effektiviserar dokumenthanteringsuppgifterna.
 ## Förutsättningar

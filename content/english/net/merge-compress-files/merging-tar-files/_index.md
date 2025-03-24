@@ -6,6 +6,9 @@ description: Learn how to merge TAR files programmatically using GroupDocs.Merge
 weight: 11
 url: /net/merge-compress-files/merging-tar-files/
 ---
+
+# Merging Tar Files
+
 ## Introduction
 In software development, the ability to manipulate and merge files programmatically can be crucial for efficient data handling. GroupDocs.Merger for .NET is a powerful library that enables developers to merge TAR (Tape Archive) files seamlessly within their .NET applications. This tutorial will guide you through the process of merging TAR files using GroupDocs.Merger, providing step-by-step instructions and code examples.
 ## Prerequisites

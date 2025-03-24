@@ -6,6 +6,9 @@ description: Leer hoe u TIF-bestanden programmatisch samenvoegt met GroupDocs.Me
 weight: 15
 url: /nl/net/image-merging/merge-tif-files/
 ---
+
+# TIF-bestanden samenvoegen
+
 ## Invoering
 In deze zelfstudie gaan we dieper in op het gebruik van GroupDocs.Merger voor .NET om TIF-bestanden efficiënt samen te voegen. GroupDocs.Merger voor .NET is een krachtige API voor documentmanipulatie waarmee ontwikkelaars programmatisch verschillende bewerkingen op documenten kunnen uitvoeren, waaronder het samenvoegen, splitsen en herschikken van pagina's.
 ## Vereisten

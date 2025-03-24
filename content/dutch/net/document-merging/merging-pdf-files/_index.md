@@ -6,6 +6,9 @@ description: Leer hoe u PDF-bestanden programmatisch kunt samenvoegen in .NET me
 weight: 19
 url: /nl/net/document-merging/merging-pdf-files/
 ---
+
+# PDF-bestanden samenvoegen
+
 ## Invoering
 Op het gebied van documentbeheer en -manipulatie is het samenvoegen van PDF-bestanden een veel voorkomende taak waar ontwikkelaars mee te maken krijgen. GroupDocs.Merger voor .NET biedt een robuuste oplossing voor het naadloos combineren van PDF-documenten binnen .NET-toepassingen. Deze tutorial leidt u door het proces van het samenvoegen van PDF-bestanden met GroupDocs.Merger, waarbij stapsgewijze implementatie en gebruik worden getoond.
 ## Vereisten

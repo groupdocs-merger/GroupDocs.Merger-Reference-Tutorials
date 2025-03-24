@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan egyesíthet TIFF-fájlokat a GroupDocs.Merger f
 weight: 16
 url: /hu/net/image-merging/merging-tiff-files/
 ---
+
+# TIFF fájlok egyesítése
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet TIFF-fájlokat egyesíteni a GroupDocs.Merger for .NET könyvtár használatával. A GroupDocs.Merger egy hatékony dokumentum-manipulációs API, amely lehetővé teszi a fejlesztők számára, hogy a .NET-alkalmazásokon belül zökkenőmentesen egyesítsék, feloszthassák és módosítsák a különböző dokumentumformátumokat.
 ## Előfeltételek

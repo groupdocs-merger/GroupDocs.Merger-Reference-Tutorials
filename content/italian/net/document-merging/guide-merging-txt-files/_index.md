@@ -6,6 +6,9 @@ description: Unisci file TXT senza problemi in .NET utilizzando GroupDocs.Merger
 weight: 18
 url: /it/net/document-merging/guide-merging-txt-files/
 ---
+
+# Guida all'unione di file TXT con GroupDocs.Merger per .NET
+
 ## introduzione
 Nel mondo dello sviluppo .NET, la manipolazione e l'unione di file di testo è un requisito comune per varie applicazioni. GroupDocs.Merger per .NET offre una potente soluzione per unire perfettamente file TXT all'interno dei tuoi progetti .NET. Questa guida completa ti guiderà attraverso il processo di unione dei file TXT passo dopo passo utilizzando GroupDocs.Merger.
 ## Prerequisiti

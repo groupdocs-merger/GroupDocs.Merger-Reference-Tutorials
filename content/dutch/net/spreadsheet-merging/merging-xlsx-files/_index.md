@@ -6,6 +6,9 @@ description: Leer hoe u XLSX-bestanden moeiteloos kunt samenvoegen in .NET met b
 weight: 14
 url: /nl/net/spreadsheet-merging/merging-xlsx-files/
 ---
+
+# XLSX-bestanden samenvoegen
+
 ## Invoering
 Op het gebied van documentmanipulatie en -beheer binnen .NET-toepassingen onderscheidt GroupDocs.Merger zich als een krachtig hulpmiddel voor het naadloos samenvoegen van verschillende bestandsformaten. Deze tutorial gaat dieper in op het samenvoegen van XLSX-bestanden (Excel) en biedt stapsgewijze begeleiding voor het efficiënt samenvoegen van spreadsheetbestanden in een .NET-omgeving. Of u nu een doorgewinterde ontwikkelaar bent of net begint met .NET, deze tutorial zal u voorzien van de nodige kennis om de mogelijkheden voor het samenvoegen van bestanden in uw projecten te integreren.
 ## Vereisten

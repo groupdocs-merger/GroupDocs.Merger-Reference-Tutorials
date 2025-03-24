@@ -6,6 +6,9 @@ description: تعرف على كيفية دمج ملفات OTP باستخدام G
 weight: 14
 url: /ar/net/presentation-merging/merging-otp-files/
 ---
+
+# دمج ملفات OTP
+
 ## مقدمة
 في هذا البرنامج التعليمي، سنستكشف كيفية دمج ملفات OTP (قالب عرض OpenDocument) باستخدام GroupDocs.Merger لـ .NET. GroupDocs.Merger عبارة عن واجهة برمجة تطبيقات قوية لمعالجة المستندات تتيح للمطورين دمج تنسيقات الملفات المختلفة وتقسيمها ومعالجتها بسلاسة.
 ## المتطلبات الأساسية

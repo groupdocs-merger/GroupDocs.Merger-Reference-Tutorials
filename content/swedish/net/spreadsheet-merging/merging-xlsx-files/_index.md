@@ -6,6 +6,9 @@ description: Lär dig hur du enkelt sammanfogar XLSX-filer i .NET med GroupDocs.
 weight: 14
 url: /sv/net/spreadsheet-merging/merging-xlsx-files/
 ---
+
+# Slår ihop XLSX-filer
+
 ## Introduktion
 När det gäller dokumenthantering och hantering inom .NET-applikationer framstår GroupDocs.Merger som ett kraftfullt verktyg för att sömlöst sammanfoga olika filformat. Denna handledning fördjupar sig i att slå samman XLSX-filer (Excel) och ger steg-för-steg-guide om hur man effektivt sammanfogar kalkylarksfiler i en .NET-miljö. Oavsett om du är en erfaren utvecklare eller precis har börjat med .NET, kommer denna handledning att utrusta dig med nödvändig kunskap för att integrera filsammanfogningsfunktioner i dina projekt.
 ## Förutsättningar

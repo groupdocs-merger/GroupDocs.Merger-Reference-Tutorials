@@ -6,6 +6,9 @@ url: /cs/net/
 description: Bez námahy slučujte a komprimujte různé formáty souborů pomocí GroupDocs.Merger .NET. Naučte se krok za krokem návody na slučování obrázků, dokumentů a dalších!
 is_root: true
 ---
+
+# Návody a příklady GroupDocs.Merger pro .NET
+
 ## Úvod
 
 Spravujte své soubory bez námahy pomocí GroupDocs.Merger pro .NET! Tato obsáhlá série výukových programů poskytuje podrobné pokyny, jak využít sílu GroupDocs.Merger k bezproblémovému slučování a kompresi různých formátů souborů. Ať už pracujete s obrázky, dokumenty, tabulkami, prezentacemi nebo dokonce soubory Visio, máme pro vás vše.

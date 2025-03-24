@@ -6,6 +6,9 @@ description: GroupDocs.Merger를 사용하여 .NET에서 프로그래밍 방식�
 weight: 12
 url: /ko/net/document-merging/how-to-merge-docx-files/
 ---
+
+# DOCX 파일을 병합하는 방법
+
 ## 소개
 .NET 개발 세계에서 프로그래밍 방식으로 DOCX 파일을 병합하는 것은 다양한 애플리케이션에 대한 강력한 기능이 될 수 있습니다. .NET용 GroupDocs.Merger는 DOCX 파일을 효율적으로 병합하기 위한 포괄적인 솔루션을 제공합니다. 이 자습서에서는 .NET용 GroupDocs.Merger를 사용하여 여러 DOCX 파일을 단일 문서로 원활하게 병합하는 과정을 안내합니다.
 ## 전제 조건

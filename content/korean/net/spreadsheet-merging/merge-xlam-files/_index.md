@@ -6,6 +6,9 @@ description: XLAM 파일을 손쉽게 병합하는 방법을 알아보세요. �
 weight: 10
 url: /ko/net/spreadsheet-merging/merge-xlam-files/
 ---
+
+# XLAM 파일 병합
+
 ## 소개
 
 이 자습서에서는 XLAM(Microsoft Excel 추가 기능) 파일을 병합하는 방법을 살펴보겠습니다. GroupDocs.Merger는 개발자가 프로그래밍 방식으로 다양한 문서 형식으로 작업할 수 있도록 하는 강력한 문서 조작 API입니다. 이 API를 활용하면 여러 XLAM 파일을 단일 파일로 원활하게 결합하여 문서 관리 프로세스를 간소화할 수 있습니다.

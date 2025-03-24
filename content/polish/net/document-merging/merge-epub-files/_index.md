@@ -6,6 +6,9 @@ description: Dowiedz się, jak programowo scalić pliki EPUB przy użyciu progra
 weight: 17
 url: /pl/net/document-merging/merge-epub-files/
 ---
+
+# Scal pliki EPUB
+
 ## Wstęp
 W tym samouczku przyjrzymy się, jak scalić pliki EPUB za pomocą GroupDocs.Merger dla .NET. GroupDocs.Merger dla .NET to potężna biblioteka, która umożliwia programistom płynne manipulowanie i łączenie różnych formatów dokumentów w aplikacjach .NET. W szczególności skupimy się na krokowym łączeniu plików EPUB przy użyciu tej biblioteki.
 ## Warunki wstępne

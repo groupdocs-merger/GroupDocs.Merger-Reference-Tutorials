@@ -6,6 +6,9 @@ description: Dowiedz się, jak programowo scalić pliki DOTM przy użyciu GroupD
 weight: 14
 url: /pl/net/document-merging/merging-dotm-files/
 ---
+
+# Łączenie plików DOTM
+
 ## Wstęp
 W tym samouczku przyjrzymy się, jak scalić pliki DOTM (szablon z obsługą makr programu Word) przy użyciu programu GroupDocs.Merger dla platformy .NET. GroupDocs.Merger to potężny interfejs API, który umożliwia programistom płynne manipulowanie i łączenie różnych formatów dokumentów w aplikacjach .NET. Postępując zgodnie z tym przewodnikiem, dowiesz się krok po kroku, jak zintegrować tę funkcjonalność ze swoimi projektami.
 ## Warunki wstępne

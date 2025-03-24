@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie DOCM-Dateien mit GroupDocs.Merger für .NET n
 weight: 11
 url: /de/net/document-merging/merging-docm-files/
 ---
+
+# Zusammenführen von DOCM-Dateien
+
 ## Einführung
 In diesem Tutorial erfahren Sie, wie Sie DOCM-Dateien (Microsoft Word Macro-Enabled Document) mithilfe von GroupDocs.Merger für .NET zusammenführen. Diese Bibliothek bietet leistungsstarke Dokumentbearbeitungsfunktionen, mit denen Entwickler verschiedene Dokumentformate nahtlos in ihren .NET-Anwendungen zusammenführen, aufteilen, extrahieren und bearbeiten können.
 ## Voraussetzungen

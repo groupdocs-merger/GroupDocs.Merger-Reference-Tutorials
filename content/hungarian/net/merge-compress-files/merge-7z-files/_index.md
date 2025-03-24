@@ -6,6 +6,9 @@ description: Könnyedén egyesítsen 7z fájlokat a GroupDocs.Merger for .NET se
 weight: 10
 url: /hu/net/merge-compress-files/merge-7z-files/
 ---
+
+# 7z fájlok egyesítése
+
 ## Bevezetés
 7z fájlok egyesítése hatékonyan elvégezhető a GroupDocs.Merger for .NET használatával, amely egy hatékony dokumentumkezelési könyvtár. Ez az oktatóanyag lépésről lépésre végigvezeti a folyamaton, lehetővé téve a 7z-fájlok zökkenőmentes és egyszerű egyesítését.
 ## Előfeltételek

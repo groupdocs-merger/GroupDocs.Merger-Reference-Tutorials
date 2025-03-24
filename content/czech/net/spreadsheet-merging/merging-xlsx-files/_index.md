@@ -6,6 +6,9 @@ description: Naučte se, jak bez námahy sloučit soubory XLSX v .NET pomocí Gr
 weight: 14
 url: /cs/net/spreadsheet-merging/merging-xlsx-files/
 ---
+
+# Sloučení souborů XLSX
+
 ## Úvod
 V oblasti manipulace a správy dokumentů v rámci aplikací .NET vyniká GroupDocs.Merger jako výkonný nástroj pro bezproblémové slučování různých formátů souborů. Tento výukový program se ponoří do slučování souborů XLSX (Excel) a poskytuje podrobné pokyny, jak efektivně sloučit soubory tabulkového procesoru v prostředí .NET. Ať už jste zkušený vývojář nebo s .NET teprve začínáte, tento tutoriál vás vybaví nezbytnými znalostmi pro integraci možností slučování souborů do vašich projektů.
 ## Předpoklady

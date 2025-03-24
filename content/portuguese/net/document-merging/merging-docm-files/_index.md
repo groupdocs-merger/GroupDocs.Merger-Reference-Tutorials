@@ -6,6 +6,9 @@ description: Aprenda como mesclar arquivos DOCM perfeitamente usando GroupDocs.M
 weight: 11
 url: /pt/net/document-merging/merging-docm-files/
 ---
+
+# Mesclando arquivos DOCM
+
 ## Introdução
 Neste tutorial, exploraremos como mesclar arquivos DOCM (documento habilitado para macro do Microsoft Word) usando GroupDocs.Merger para .NET. Esta biblioteca fornece recursos poderosos de manipulação de documentos, permitindo que os desenvolvedores mesclem, dividam, extraiam e manipulem vários formatos de documentos perfeitamente em seus aplicativos .NET.
 ## Pré-requisitos

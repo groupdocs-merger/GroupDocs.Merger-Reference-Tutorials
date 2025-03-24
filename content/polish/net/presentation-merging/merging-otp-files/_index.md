@@ -6,6 +6,9 @@ description: Dowiedz się, jak scalić pliki OTP za pomocą GroupDocs.Merger dla
 weight: 14
 url: /pl/net/presentation-merging/merging-otp-files/
 ---
+
+# Łączenie plików OTP
+
 ## Wstęp
 W tym samouczku przyjrzymy się, jak scalić pliki OTP (szablon prezentacji OpenDocument) za pomocą GroupDocs.Merger dla .NET. GroupDocs.Merger to potężny interfejs API do manipulacji dokumentami, który umożliwia programistom płynne łączenie, dzielenie i manipulowanie różnymi formatami plików.
 ## Warunki wstępne

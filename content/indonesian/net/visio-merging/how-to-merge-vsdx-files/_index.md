@@ -6,6 +6,9 @@ description: Pelajari cara menggabungkan file VSDX secara terprogram menggunakan
 weight: 12
 url: /id/net/visio-merging/how-to-merge-vsdx-files/
 ---
+
+# Cara Menggabungkan File VSDX
+
 ## Perkenalan
 Dalam tutorial ini, Anda akan mempelajari cara menggabungkan file VSDX (Visio Drawing) menggunakan GroupDocs.Merger untuk .NET. GroupDocs.Merger for .NET adalah API canggih yang memungkinkan Anda memanipulasi dan menggabungkan berbagai format dokumen dengan mulus dalam aplikasi .NET Anda.
 ## Prasyarat

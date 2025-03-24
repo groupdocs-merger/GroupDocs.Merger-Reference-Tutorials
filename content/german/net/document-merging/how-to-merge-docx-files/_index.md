@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit GroupDocs.Merger DOCX-Dateien programmges
 weight: 12
 url: /de/net/document-merging/how-to-merge-docx-files/
 ---
+
+# So führen Sie DOCX-Dateien zusammen
+
 ## Einführung
 In der Welt der .NET-Entwicklung kann das programmgesteuerte Zusammenführen von DOCX-Dateien eine leistungsstarke Funktion für verschiedene Anwendungen sein. GroupDocs.Merger für .NET bietet eine umfassende Lösung zum effizienten Zusammenführen von DOCX-Dateien. Dieses Tutorial führt Sie durch den Prozess der Verwendung von GroupDocs.Merger für .NET zum nahtlosen Zusammenführen mehrerer DOCX-Dateien in ein einziges Dokument.
 ## Voraussetzungen

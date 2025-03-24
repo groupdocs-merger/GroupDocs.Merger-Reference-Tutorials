@@ -6,6 +6,9 @@ description: Aprenda a fusionar archivos PPS sin problemas utilizando GroupDocs.
 weight: 10
 url: /es/net/presentation-merging/merge-pps-files/
 ---
+
+# Fusionar archivos PPS
+
 ## Introducción
 En el mundo del desarrollo .NET, manipular archivos de documentos de manera eficiente es crucial. GroupDocs.Merger para .NET proporciona potentes herramientas para fusionar y manipular varios formatos de documentos sin problemas. En este tutorial, nos centraremos en fusionar archivos PPS (presentación de diapositivas de PowerPoint) usando GroupDocs.Merger para .NET. Ya sea que sea un desarrollador experimentado o esté comenzando, esta guía lo guiará a través del proceso paso a paso.
 ## Requisitos previos

@@ -6,6 +6,9 @@ description: Tìm hiểu cách hợp nhất các tệp VSSX một cách dễ dà
 weight: 14
 url: /vi/net/visio-merging/merging-vssx-files/
 ---
+
+# Hợp nhất các tệp VSSX
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách hợp nhất các tệp VSSX bằng GroupDocs.Merger cho .NET. GroupDocs.Merger for .NET là một thư viện mạnh mẽ cho phép các nhà phát triển thao tác và hợp nhất các định dạng tài liệu khác nhau một cách liền mạch trong các ứng dụng .NET của họ. Việc hợp nhất các tệp VSSX có thể đặc biệt hữu ích khi bạn cần kết hợp nhiều tệp Visual Studio stencil thành một tệp duy nhất để quản lý và phân phối dễ dàng hơn.
 ## Điều kiện tiên quyết

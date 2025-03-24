@@ -6,6 +6,9 @@ description: Tìm hiểu cách hợp nhất các tệp PDF theo chương trình 
 weight: 19
 url: /vi/net/document-merging/merging-pdf-files/
 ---
+
+# Hợp nhất các tệp PDF
+
 ## Giới thiệu
 Trong lĩnh vực quản lý và thao tác tài liệu, việc hợp nhất các tệp PDF là một nhiệm vụ phổ biến mà các nhà phát triển gặp phải. GroupDocs.Merger for .NET cung cấp giải pháp mạnh mẽ để kết hợp các tài liệu PDF một cách liền mạch trong các ứng dụng .NET. Hướng dẫn này sẽ hướng dẫn bạn quy trình hợp nhất các tệp PDF bằng GroupDocs.Merger, trình bày cách triển khai và sử dụng từng bước.
 ## Điều kiện tiên quyết

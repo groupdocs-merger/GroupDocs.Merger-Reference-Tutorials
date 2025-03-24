@@ -6,6 +6,9 @@ description: Découvrez comment fusionner des fichiers EPUB par programme à l'a
 weight: 17
 url: /fr/net/document-merging/merge-epub-files/
 ---
+
+# Fusionner des fichiers EPUB
+
 ## Introduction
 Dans ce didacticiel, nous explorerons comment fusionner des fichiers EPUB à l'aide de GroupDocs.Merger pour .NET. GroupDocs.Merger pour .NET est une bibliothèque puissante qui permet aux développeurs de manipuler et de fusionner différents formats de documents de manière transparente au sein de leurs applications .NET. Plus précisément, nous nous concentrerons sur la fusion des fichiers EPUB étape par étape à l'aide de cette bibliothèque.
 ## Conditions préalables

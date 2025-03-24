@@ -6,6 +6,9 @@ description: tomto podrobném návodu se dozvíte, jak sloučit soubory SVGZ pom
 weight: 14
 url: /cs/net/image-merging/merging-svgz-files/
 ---
+
+# Sloučení souborů SVGZ
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak sloučit soubory SVGZ (Scalable Vector Graphics) pomocí GroupDocs.Merger pro .NET. GroupDocs.Merger je výkonné API pro manipulaci s dokumenty, které umožňuje vývojářům provádět různé operace s různými formáty dokumentů, včetně slučování, rozdělování a přeskupování stránek.
 ## Předpoklady

@@ -6,6 +6,9 @@ description: Naučte se, jak programově sloučit soubory SVG pomocí GroupDocs.
 weight: 13
 url: /cs/net/image-merging/guide-merging-svg-files/
 ---
+
+# Průvodce slučováním souborů SVG
+
 ## Úvod
 V tomto tutoriálu se naučíte, jak sloučit soubory SVG (Scalable Vector Graphics) pomocí GroupDocs.Merger pro .NET. GroupDocs.Merger je výkonné API pro manipulaci s dokumenty, které umožňuje bezproblémové slučování, rozdělování a manipulaci s různými formáty dokumentů. Podle tohoto podrobného průvodce budete moci zkombinovat více souborů SVG do jednoho souboru SVG pomocí C#.
 

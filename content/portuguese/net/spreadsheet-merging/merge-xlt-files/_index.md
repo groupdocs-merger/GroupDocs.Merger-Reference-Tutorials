@@ -6,6 +6,9 @@ description: Aprenda como mesclar arquivos XLT. Combine modelos do Excel program
 weight: 15
 url: /pt/net/spreadsheet-merging/merge-xlt-files/
 ---
+
+# Mesclar arquivos XLT
+
 ## Introdução
 Neste tutorial, exploraremos como mesclar arquivos XLT (modelo Excel). GroupDocs.Merger é uma API poderosa que permite aos desenvolvedores manipular vários formatos de documentos, incluindo arquivos Excel, de forma programática. Ao mesclar arquivos XLT, você pode combinar vários modelos em um único documento, agilizando seu fluxo de trabalho e aumentando a eficiência.
 ## Pré-requisitos

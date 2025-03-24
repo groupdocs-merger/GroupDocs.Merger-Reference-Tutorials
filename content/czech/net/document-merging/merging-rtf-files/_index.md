@@ -6,6 +6,9 @@ description: Naučte se sloučit soubory RTF v .NET bez námahy pomocí GroupDoc
 weight: 21
 url: /cs/net/document-merging/merging-rtf-files/
 ---
+
+# Sloučení souborů RTF
+
 ## Úvod
 Ve světě vývoje .NET je bezproblémové slučování souborů RTF (Rich Text Format) pro mnoho aplikací zásadním úkolem. GroupDocs.Merger for .NET poskytuje výkonné řešení, jak toho dosáhnout efektivně. Tento tutoriál vás krok za krokem provede procesem slučování souborů RTF pomocí GroupDocs.Merger for .NET. Na konci tohoto tutoriálu budete vybaveni znalostmi pro snadné slučování souborů RTF v rámci vašich projektů .NET.
 ## Předpoklady

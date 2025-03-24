@@ -6,6 +6,9 @@ description: Naučte se, jak bez námahy sloučit soubory XLTX. Začněte slučo
 weight: 17
 url: /cs/net/spreadsheet-merging/merge-xltx-files/
 ---
+
+# Sloučit soubory XLTX
+
 ## Úvod
 tomto tutoriálu prozkoumáme, jak sloučit soubory XLTX (Excel Template). GroupDocs.Merger je výkonné API pro manipulaci s dokumenty, které umožňuje vývojářům bezproblémově kombinovat, rozdělovat a manipulovat s různými formáty dokumentů v rámci aplikací .NET. Tento tutoriál se konkrétně zaměřuje na programové slučování souborů XLTX.
 ## Předpoklady

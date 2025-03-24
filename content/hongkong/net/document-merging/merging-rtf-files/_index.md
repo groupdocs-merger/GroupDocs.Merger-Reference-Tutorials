@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Merger 輕鬆合併 .NET 中的 RTF �
 weight: 21
 url: /zh-hant/net/document-merging/merging-rtf-files/
 ---
+
+# 合併 RTF 文件
+
 ## 介紹
 在 .NET 開發領域，無縫合併 RTF（富文本格式）文件對於許多應用程式來說是一項至關重要的任務。 GroupDocs.Merger for .NET 提供了一個強大的解決方案來有效地完成此任務。本教學將引導您逐步完成使用 GroupDocs.Merger for .NET 合併 RTF 檔案的流程。在本教學結束時，您將掌握在 .NET 專案中輕鬆合併 RTF 檔案的知識。
 ## 先決條件

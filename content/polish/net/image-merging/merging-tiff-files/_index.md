@@ -6,6 +6,9 @@ description: Dowiedz się, jak łączyć pliki TIFF za pomocą GroupDocs.Merger 
 weight: 16
 url: /pl/net/image-merging/merging-tiff-files/
 ---
+
+# Łączenie plików TIFF
+
 ## Wstęp
 W tym samouczku omówimy sposób scalania plików TIFF przy użyciu biblioteki GroupDocs.Merger for .NET. GroupDocs.Merger to potężny interfejs API do manipulacji dokumentami, który umożliwia programistom płynne łączenie, dzielenie i modyfikowanie różnych formatów dokumentów w aplikacjach .NET.
 ## Warunki wstępne

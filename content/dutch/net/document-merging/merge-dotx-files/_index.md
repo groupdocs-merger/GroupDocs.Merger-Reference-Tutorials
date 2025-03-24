@@ -6,6 +6,9 @@ description: Leer hoe u DOTX-bestanden moeiteloos kunt samenvoegen in .NET met G
 weight: 15
 url: /nl/net/document-merging/merge-dotx-files/
 ---
+
+# DOTX-bestanden samenvoegen
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u DOTX-bestanden (Word-sjabloon) kunt samenvoegen met GroupDocs.Merger voor .NET. GroupDocs.Merger is een krachtige API waarmee ontwikkelaars verschillende documentformaten naadloos kunnen manipuleren binnen .NET-applicaties. Door gebruik te maken van deze API kunt u met slechts een paar regels code op efficiënte wijze meerdere DOTX-bestanden samenvoegen tot één document.
 ## Vereisten

@@ -6,6 +6,9 @@ description: Naučte se, jak programově sloučit soubory EPUB pomocí GroupDocs
 weight: 17
 url: /cs/net/document-merging/merge-epub-files/
 ---
+
+# Sloučit soubory EPUB
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak sloučit soubory EPUB pomocí GroupDocs.Merger pro .NET. GroupDocs.Merger for .NET je výkonná knihovna, která umožňuje vývojářům bezproblémově manipulovat a spojovat různé formáty dokumentů v rámci jejich aplikací .NET. Konkrétně se zaměříme na postupné slučování souborů EPUB pomocí této knihovny.
 ## Předpoklady

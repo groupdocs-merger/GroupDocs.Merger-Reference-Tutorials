@@ -8,6 +8,9 @@ url: /zh/
 is_root: true
 ---
 
+# 使用 GroupDocs.Merger 轻松合并和拆分文档
+
+
 欢迎来到 GroupDocs.Merger 教程的最终目的地，该教程涵盖了包括 .NET 和 Java 在内的一系列平台。无论您是第一次深入文档操作还是寻求高级技术，我们的综合指南都提供分步说明，帮助您轻松掌握合并和压缩文件。从图像到文档、电子表格、演示文稿和 Visio 文件，我们的教程可满足不同平台的不同需求。探索 GroupDocs.Merger 的强大功能，以简化您的工作流程并在所有支持的平台上提升您的文件管理功能。
 
 ## .NET 教程的 GroupDocs.Merger

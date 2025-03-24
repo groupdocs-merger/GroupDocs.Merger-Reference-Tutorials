@@ -6,6 +6,9 @@ description: Naučte se, jak sloučit soubory PDF programově v .NET pomocí Gro
 weight: 19
 url: /cs/net/document-merging/merging-pdf-files/
 ---
+
+# Sloučení souborů PDF
+
 ## Úvod
 oblasti správy a manipulace s dokumenty je slučování souborů PDF běžným úkolem, se kterým se vývojáři setkávají. GroupDocs.Merger for .NET poskytuje robustní řešení pro bezproblémové kombinování dokumentů PDF v rámci aplikací .NET. Tento tutoriál vás provede procesem slučování souborů PDF pomocí GroupDocs.Merger a ukáže vám krok za krokem implementaci a použití.
 ## Předpoklady

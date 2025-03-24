@@ -6,6 +6,9 @@ description: GroupDocs.Merger for .NET を使用してプログラムで VTX フ
 weight: 18
 url: /ja/net/visio-merging/guide-merging-vtx-files/
 ---
+
+# VTX ファイルの結合ガイド
+
 ## 導入
 このチュートリアルでは、GroupDocs.Merger for .NET を使用して VTX (Visio 図面テンプレート) ファイルを結合する方法について説明します。GroupDocs.Merger for .NET は、開発者が VTX ファイルを含むさまざまなファイル形式を操作できるようにする強力なドキュメント操作 API です。
 ## 前提条件

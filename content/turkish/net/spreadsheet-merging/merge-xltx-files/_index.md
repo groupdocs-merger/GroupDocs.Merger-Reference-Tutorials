@@ -6,6 +6,9 @@ description: XLTX dosyalarını zahmetsizce nasıl birleştireceğinizi öğreni
 weight: 17
 url: /tr/net/spreadsheet-merging/merge-xltx-files/
 ---
+
+# XLTX Dosyalarını Birleştir
+
 ## giriiş
 Bu derste XLTX (Excel Şablonu) dosyalarının nasıl birleştirileceğini inceleyeceğiz. GroupDocs.Merger, geliştiricilerin .NET uygulamaları içinde çeşitli belge formatlarını sorunsuz bir şekilde birleştirmesine, bölmesine ve işlemesine olanak tanıyan güçlü bir belge işleme API'sidir. Bu eğitim özellikle XLTX dosyalarını programlı olarak birleştirmeye odaklanmaktadır.
 ## Önkoşullar

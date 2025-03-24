@@ -6,6 +6,9 @@ description: Tìm hiểu cách hợp nhất các tệp VTX theo chương trình 
 weight: 18
 url: /vi/net/visio-merging/guide-merging-vtx-files/
 ---
+
+# Hướng dẫn gộp file VTX
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách hợp nhất các tệp VTX (Mẫu bản vẽ Visio) bằng GroupDocs.Merger cho .NET. GroupDocs.Merger for .NET là API thao tác tài liệu mạnh mẽ cho phép các nhà phát triển làm việc với nhiều định dạng tệp khác nhau, bao gồm cả tệp VTX.
 ## Điều kiện tiên quyết

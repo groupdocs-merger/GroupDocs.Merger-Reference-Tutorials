@@ -6,6 +6,9 @@ description: 了解如何以编程方式合并 XLTM 文件。带有代码示例�
 weight: 16
 url: /zh/net/spreadsheet-merging/merging-xltm-files/
 ---
+
+# 合并 XLTM 文件
+
 ## 介绍
 在本教程中，我们将探讨如何合并 XLTM（Excel 启用宏的模板）文件。 GroupDocs.Merger for .NET 是一个功能强大的库，使开发人员能够以编程方式操作和合并各种文档格式。本指南将引导您使用 C# 逐步完成合并 XLTM 文件的过程。
 ## 先决条件

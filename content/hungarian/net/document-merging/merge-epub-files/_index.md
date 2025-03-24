@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan egyesíthet programozottan EPUB-fájlokat a Gro
 weight: 17
 url: /hu/net/document-merging/merge-epub-files/
 ---
+
+# EPUB-fájlok egyesítése
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet EPUB-fájlokat egyesíteni a GroupDocs.Merger for .NET használatával. A GroupDocs.Merger for .NET egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy zökkenőmentesen kezeljék és egyesítsék a különböző dokumentumformátumokat .NET-alkalmazásaikon belül. Konkrétan az EPUB-fájlok egyesítésére összpontosítunk ennek a könyvtárnak a használatával.
 ## Előfeltételek

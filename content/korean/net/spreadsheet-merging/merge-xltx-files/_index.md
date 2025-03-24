@@ -6,6 +6,9 @@ description: XLTX 파일을 손쉽게 병합하는 방법을 알아보세요. XL
 weight: 17
 url: /ko/net/spreadsheet-merging/merge-xltx-files/
 ---
+
+# XLTX 파일 병합
+
 ## 소개
 이 튜토리얼에서는 XLTX(Excel 템플릿) 파일을 병합하는 방법을 살펴보겠습니다. GroupDocs.Merger는 개발자가 .NET 애플리케이션 내에서 다양한 문서 형식을 원활하게 결합, 분할 및 조작할 수 있도록 하는 강력한 문서 조작 API입니다. 이 튜토리얼에서는 특히 프로그래밍 방식으로 XLTX 파일을 병합하는 데 중점을 둡니다.
 ## 전제 조건

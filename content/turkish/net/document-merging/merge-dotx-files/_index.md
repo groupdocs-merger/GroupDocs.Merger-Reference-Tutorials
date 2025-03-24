@@ -6,6 +6,9 @@ description: GroupDocs.Merger'ı kullanarak DOTX dosyalarını .NET'te zahmetsiz
 weight: 15
 url: /tr/net/document-merging/merge-dotx-files/
 ---
+
+# DOTX Dosyalarını Birleştir
+
 ## giriiş
 Bu öğreticide, GroupDocs.Merger for .NET'i kullanarak DOTX (Word Şablonu) dosyalarının nasıl birleştirileceğini inceleyeceğiz. GroupDocs.Merger, geliştiricilerin .NET uygulamaları içinde çeşitli belge formatlarını sorunsuz bir şekilde değiştirmesine olanak tanıyan güçlü bir API'dir. Bu API'yi kullanarak, birden fazla DOTX dosyasını yalnızca birkaç satır kodla tek bir belgede verimli bir şekilde birleştirebilirsiniz.
 ## Önkoşullar

@@ -6,6 +6,9 @@ description: Combine varios formatos de archivos de presentación sin esfuerzo. 
 weight: 25
 url: /es/net/presentation-merging/
 ---
+
+# Fusión de presentaciones
+
 ## Introducción
 
 Fusiona tus archivos de presentación sin esfuerzo. Ya sean archivos PPS, PPSX, PPT u OTP, nuestros tutoriales ofrecen orientación paso a paso, acompañada de ejemplos de código prácticos, para agilizar sus tareas de combinación de documentos.

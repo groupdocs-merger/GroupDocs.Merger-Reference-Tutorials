@@ -6,6 +6,9 @@ description: تعرف على كيفية دمج ملفات DOCX برمجيًا ف
 weight: 12
 url: /ar/net/document-merging/how-to-merge-docx-files/
 ---
+
+# كيفية دمج ملفات DOCX
+
 ## مقدمة
 في عالم تطوير .NET، يمكن أن يكون دمج ملفات DOCX برمجيًا بمثابة قدرة قوية لمختلف التطبيقات. يوفر GroupDocs.Merger for .NET حلاً شاملاً لدمج ملفات DOCX بكفاءة. سيرشدك هذا البرنامج التعليمي خلال عملية استخدام GroupDocs.Merger لـ .NET لدمج ملفات DOCX متعددة في مستند واحد بسلاسة.
 ## المتطلبات الأساسية

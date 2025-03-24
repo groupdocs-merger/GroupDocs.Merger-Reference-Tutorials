@@ -6,6 +6,9 @@ description: Fusionnez des fichiers XLSM en toute transparence avec GroupDocs.Me
 weight: 13
 url: /fr/net/spreadsheet-merging/guide-merging-xlsm-files/
 ---
+
+# Guide de fusion de fichiers XLSM
+
 ## Introduction
 Dans ce didacticiel, nous allons explorer comment fusionner des fichiers XLSM (Excel Macro-Enabled Workbook). GroupDocs.Merger est une bibliothèque puissante qui permet aux développeurs de manipuler les formats de documents, notamment la fusion, le fractionnement et la modification de fichiers par programme.
 ## Conditions préalables

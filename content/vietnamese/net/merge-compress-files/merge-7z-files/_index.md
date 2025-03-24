@@ -6,6 +6,9 @@ description: Hợp nhất các tệp 7z một cách dễ dàng bằng GroupDocs.
 weight: 10
 url: /vi/net/merge-compress-files/merge-7z-files/
 ---
+
+# Cách hợp nhất các tập tin 7z
+
 ## Giới thiệu
 Việc hợp nhất các tệp 7z có thể được thực hiện một cách hiệu quả bằng cách sử dụng GroupDocs.Merger for .NET, một thư viện thao tác tài liệu mạnh mẽ. Hướng dẫn này sẽ hướng dẫn bạn thực hiện quy trình từng bước một, cho phép bạn hợp nhất liền mạch các tệp 7z của mình một cách dễ dàng.
 ## Điều kiện tiên quyết

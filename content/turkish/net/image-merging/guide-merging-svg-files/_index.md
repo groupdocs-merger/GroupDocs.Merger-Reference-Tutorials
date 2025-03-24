@@ -6,6 +6,9 @@ description: GroupDocs.Merger for .NET'i kullanarak SVG dosyalarını programlı
 weight: 13
 url: /tr/net/image-merging/guide-merging-svg-files/
 ---
+
+# SVG Dosyalarını Birleştirme Kılavuzu
+
 ## giriiş
 Bu eğitimde, GroupDocs.Merger for .NET'i kullanarak SVG (Ölçeklenebilir Vektör Grafikleri) dosyalarını nasıl birleştireceğinizi öğreneceksiniz. GroupDocs.Merger, çeşitli belge formatlarını sorunsuz bir şekilde birleştirmenize, bölmenize ve değiştirmenize olanak tanıyan güçlü bir belge işleme API'sidir. Bu adım adım kılavuzu izleyerek birden fazla SVG dosyasını C# kullanarak tek bir SVG dosyasında birleştirebileceksiniz.
 

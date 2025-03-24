@@ -6,6 +6,9 @@ description: Leer hoe u VSDM-bestanden samenvoegt met GroupDocs.Merger voor .NET
 weight: 11
 url: /nl/net/visio-merging/merging-vsdm-files/
 ---
+
+# VSDM-bestanden samenvoegen
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u VSDM-bestanden (Visio Macro-Enabled Drawing) kunt samenvoegen met behulp van de krachtige GroupDocs.Merger voor .NET-bibliotheek. Deze bibliotheek maakt naadloze manipulatie van verschillende documentformaten binnen .NET-toepassingen mogelijk, inclusief het samenvoegen, splitsen en wijzigen van documenteigenschappen.
 ## Vereisten

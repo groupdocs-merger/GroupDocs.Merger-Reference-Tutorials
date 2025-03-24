@@ -6,6 +6,9 @@ description: Leer hoe u XLSB-bestanden samenvoegt. Deze stapsgewijze handleiding
 weight: 12
 url: /nl/net/spreadsheet-merging/how-to-merge-xlsb-files/
 ---
+
+# XLSB-bestanden samenvoegen
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u XLSB-bestanden (Excel Binary Workbook) kunt samenvoegen. GroupDocs.Merger voor .NET is een krachtige API voor documentmanipulatie waarmee ontwikkelaars verschillende documentformaten naadloos kunnen samenvoegen, splitsen en manipuleren binnen hun .NET-applicaties. We zullen ons specifiek concentreren op het samenvoegen van XLSB-bestanden met behulp van deze veelzijdige bibliotheek.
 ## Vereisten

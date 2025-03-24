@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie VTX-Dateien mit GroupDocs.Merger für .NET pr
 weight: 18
 url: /de/net/visio-merging/guide-merging-vtx-files/
 ---
+
+# Anleitung zum Zusammenführen von VTX-Dateien
+
 ## Einführung
 In diesem Tutorial erfahren Sie, wie Sie VTX-Dateien (Visio Drawing Template) mithilfe von GroupDocs.Merger für .NET zusammenführen. GroupDocs.Merger für .NET ist eine leistungsstarke API zur Dokumentbearbeitung, mit der Entwickler mit verschiedenen Dateiformaten, einschließlich VTX-Dateien, arbeiten können.
 ## Voraussetzungen

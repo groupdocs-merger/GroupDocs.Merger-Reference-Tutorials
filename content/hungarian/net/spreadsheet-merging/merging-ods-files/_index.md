@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan egyesíthet könnyedén ODS fájlokat. Kövesse
 weight: 18
 url: /hu/net/spreadsheet-merging/merging-ods-files/
 ---
+
+# ODS fájlok egyesítése
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet ODS (OpenDocument Spreadsheet) fájlokat egyesíteni. A GroupDocs.Merger for .NET egy hatékony API, amely lehetővé teszi a fejlesztők számára, hogy zökkenőmentesen kezeljék és egyesítsék a különböző dokumentumformátumokat. Leírjuk az ODS-fájlok e könyvtár használatával programozott egyesítéséhez szükséges lépéseket.
 ## Előfeltételek

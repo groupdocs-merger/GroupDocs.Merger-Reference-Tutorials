@@ -6,6 +6,9 @@ description: GroupDocs.Merger for .NET を使用して PowerPoint (PPT) ファ�
 weight: 12
 url: /ja/net/presentation-merging/how-to-merge-ppt-files/
 ---
+
+# PPT ファイルを結合する方法
+
 ## 導入
 このチュートリアルでは、GroupDocs.Merger for .NET を使用して PowerPoint (PPT) ファイルを結合する方法について説明します。GroupDocs.Merger for .NET は、開発者が PowerPoint プレゼンテーションを含むさまざまなドキュメント形式を .NET アプリケーション内でシームレスに操作および結合できるようにする強力な API です。
 ## 前提条件

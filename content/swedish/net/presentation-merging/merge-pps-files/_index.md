@@ -6,6 +6,9 @@ description: Lär dig hur du sammanfogar PPS-filer sömlöst med GroupDocs.Merge
 weight: 10
 url: /sv/net/presentation-merging/merge-pps-files/
 ---
+
+# Slå samman PPS-filer
+
 ## Introduktion
 I en värld av .NET-utveckling är det avgörande att manipulera dokumentfiler effektivt. GroupDocs.Merger för .NET tillhandahåller kraftfulla verktyg för att slå samman och manipulera olika dokumentformat sömlöst. I den här handledningen kommer vi att fokusera på att slå samman PPS-filer (PowerPoint Slide Show) med GroupDocs.Merger för .NET. Oavsett om du är en erfaren utvecklare eller precis har börjat, kommer den här guiden att leda dig genom processen steg för steg.
 ## Förutsättningar

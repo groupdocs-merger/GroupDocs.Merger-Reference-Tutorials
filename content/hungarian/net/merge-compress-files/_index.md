@@ -6,6 +6,9 @@ description: Különböző fájlformátumok egyszerű egyesítése és tömörí
 weight: 20
 url: /hu/net/merge-compress-files/
 ---
+
+# Tömörítési fájlok egyesítése
+
 ## Bevezetés
 
 

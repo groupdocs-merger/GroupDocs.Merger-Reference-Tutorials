@@ -6,6 +6,9 @@ description: 了解如何合并 XLSB 文件。本分步指南可简化文档操�
 weight: 12
 url: /zh/net/spreadsheet-merging/how-to-merge-xlsb-files/
 ---
+
+# 如何合并 XLSB 文件
+
 ## 介绍
 在本教程中，我们将探讨如何合并 XLSB（Excel 二进制工作簿）文件。GroupDocs.Merger for .NET 是一个功能强大的文档操作 API，允许开发人员在其 .NET 应用程序中无缝合并、拆分和操作各种文档格式。具体来说，我们将重点介绍如何使用这个多功能库合并 XLSB 文件。
 ## 先决条件

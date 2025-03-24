@@ -6,6 +6,9 @@ description: Çeşitli dosya formatlarını zahmetsizce birleştirme ve sıkış
 weight: 20
 url: /tr/net/merge-compress-files/
 ---
+
+# Sıkıştırılmış Dosyaları Birleştir
+
 ## giriiş
 
 

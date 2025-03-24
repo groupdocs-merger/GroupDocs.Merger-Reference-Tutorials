@@ -6,6 +6,9 @@ url: /pl/net/
 description: Bez wysiłku łącz i kompresuj różne formaty plików za pomocą GroupDocs.Merger .NET. Poznaj szczegółowe samouczki dotyczące łączenia obrazów, dokumentów i nie tylko!
 is_root: true
 ---
+
+# Poradniki i przykłady GroupDocs.Merger dla .NET
+
 ## Wstęp
 
 Z łatwością zarządzaj swoimi plikami za pomocą GroupDocs.Merger dla .NET! Ta obszerna seria samouczków zawiera wskazówki krok po kroku dotyczące wykorzystania możliwości GroupDocs.Merger do płynnego łączenia i kompresowania różnych formatów plików. Niezależnie od tego, czy masz do czynienia z obrazami, dokumentami, arkuszami kalkulacyjnymi, prezentacjami, czy nawet plikami programu Visio, mamy dla Ciebie wsparcie.

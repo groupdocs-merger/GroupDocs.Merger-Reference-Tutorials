@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan egyesíthet könnyedén DOTX-fájlokat .NET-ben
 weight: 15
 url: /hu/net/document-merging/merge-dotx-files/
 ---
+
+# Egyesítse a DOTX fájlokat
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan egyesíthet DOTX (Word Template) fájlokat a GroupDocs.Merger for .NET használatával. A GroupDocs.Merger egy hatékony API, amely lehetővé teszi a fejlesztők számára, hogy zökkenőmentesen kezeljék a különböző dokumentumformátumokat a .NET-alkalmazásokon belül. Ennek az API-nak a kihasználásával hatékonyan egyesíthet több DOTX fájlt egyetlen dokumentumba, mindössze néhány sornyi kóddal.
 ## Előfeltételek

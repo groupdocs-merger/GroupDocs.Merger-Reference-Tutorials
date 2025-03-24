@@ -6,6 +6,9 @@ description: 通过本综合教程学习如何使用 GroupDocs.Merger for .NET �
 weight: 10
 url: /zh/net/image-merging/merge-bmp-files/
 ---
+
+# 合并 BMP 文件
+
 ## 介绍
 在本教程中，我们将探讨如何使用 GroupDocs.Merger for .NET 合并 BMP（位图）文件。 GroupDocs.Merger 是一个功能强大的 API，使开发人员能够在其 .NET 应用程序中以编程方式操作和合并各种文档格式。在本指南结束时，您将能够一步一步有效地合并 BMP 文件。
 ## 先决条件

@@ -6,6 +6,9 @@ description: Naučte se, jak programově sloučit soubory VSDX pomocí GroupDocs
 weight: 12
 url: /cs/net/visio-merging/how-to-merge-vsdx-files/
 ---
+
+# Jak sloučit soubory VSDX
+
 ## Úvod
 V tomto tutoriálu se dozvíte, jak sloučit soubory VSDX (Visio Drawing) pomocí GroupDocs.Merger for .NET. GroupDocs.Merger for .NET je výkonné rozhraní API, které vám umožňuje bezproblémově manipulovat a spojovat různé formáty dokumentů v rámci vašich aplikací .NET.
 ## Předpoklady

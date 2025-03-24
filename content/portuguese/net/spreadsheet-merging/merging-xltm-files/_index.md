@@ -6,6 +6,9 @@ description: Aprenda como mesclar arquivos XLTM programaticamente. Guia passo a 
 weight: 16
 url: /pt/net/spreadsheet-merging/merging-xltm-files/
 ---
+
+# Mesclando arquivos XLTM
+
 ## Introdução
 Neste tutorial, exploraremos como mesclar arquivos XLTM (modelo habilitado para macro do Excel). GroupDocs.Merger for .NET é uma biblioteca poderosa que permite aos desenvolvedores manipular e mesclar vários formatos de documentos de forma programática. Este guia orientará você no processo de mesclagem de arquivos XLTM passo a passo usando C#.
 ## Pré-requisitos

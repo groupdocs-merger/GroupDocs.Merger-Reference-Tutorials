@@ -6,6 +6,9 @@ description: Hợp nhất các định dạng tệp trình bày khác nhau một
 weight: 25
 url: /vi/net/presentation-merging/
 ---
+
+# Hợp nhất bản trình bày
+
 ## Giới thiệu
 
 Hợp nhất các tập tin trình bày của bạn một cách dễ dàng. Cho dù đó là tệp PPS, PPSX, PPT hay OTP, hướng dẫn của chúng tôi đều cung cấp hướng dẫn từng bước, kèm theo các ví dụ mã thực tế, để hợp lý hóa các tác vụ hợp nhất tài liệu của bạn.

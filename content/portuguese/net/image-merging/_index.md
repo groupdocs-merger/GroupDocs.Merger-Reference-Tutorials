@@ -6,6 +6,9 @@ description: Mesclar arquivos BMP, GIF, PNG, SVG, SVGZ, TIF e TIFF perfeitamente
 weight: 21
 url: /pt/net/image-merging/
 ---
+
+# Mesclagem de imagens
+
 ## Introdução
 
 Quer saber como agilizar as tarefas de mesclagem de arquivos em seus aplicativos .NET? Mergulhe em nossa lista abrangente de tutoriais com vários formatos de arquivo como BMP, GIF, PNG, SVG, SVGZ, TIF e TIFF, todos mesclados perfeitamente usando GroupDocs.Merger for .NET.

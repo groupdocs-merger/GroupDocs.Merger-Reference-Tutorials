@@ -6,6 +6,9 @@ description: ODS 파일을 손쉽게 병합하는 방법을 알아보세요. 원
 weight: 18
 url: /ko/net/spreadsheet-merging/merging-ods-files/
 ---
+
+# ODS 파일 병합
+
 ## 소개
 이번 튜토리얼에서는 ODS(OpenDocument 스프레드시트) 파일을 병합하는 방법을 살펴보겠습니다. .NET용 GroupDocs.Merger는 개발자가 다양한 문서 형식을 원활하게 조작하고 병합할 수 있는 강력한 API입니다. 이 라이브러리를 사용하여 프로그래밍 방식으로 ODS 파일을 병합하는 데 필요한 단계를 다루겠습니다.
 ## 전제 조건

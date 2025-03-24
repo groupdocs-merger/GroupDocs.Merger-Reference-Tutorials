@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan egyesíthet PPTX fájlokat a GroupDocs.Merger f
 weight: 13
 url: /hu/net/presentation-merging/guide-merging-pptx-files/
 ---
+
+# Útmutató a PPTX fájlok egyesítéséhez
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet PowerPoint-prezentációkat (PPTX-fájlokat) egyesíteni a GroupDocs.Merger for .NET használatával. A GroupDocs.Merger for .NET egy hatékony könyvtár, amely lehetővé teszi a különböző dokumentumformátumok, köztük a PPTX-fájlok zökkenőmentes kezelését és egyesítése a .NET-alkalmazásokon belül. A könyvtár kihasználásával több PowerPoint-prezentációt hatékonyan kombinálhat egyetlen fájlba, és egyszerűsítheti a dokumentumkezelési feladatokat.
 ## Előfeltételek

@@ -8,6 +8,9 @@ url: /id/
 is_root: true
 ---
 
+# Gabungkan dan Pisahkan Dokumen dengan Mudah dengan GroupDocs.Merger
+
+
 Selamat datang di tujuan akhir untuk tutorial GroupDocs.Merger, yang mencakup spektrum platform termasuk .NET dan Java. Baik Anda mempelajari manipulasi dokumen untuk pertama kalinya atau mencari teknik tingkat lanjut, panduan komprehensif kami menawarkan petunjuk langkah demi langkah untuk menguasai penggabungan dan kompresi file dengan mudah. Dari gambar hingga dokumen, spreadsheet, presentasi, dan file Visio, tutorial kami memenuhi beragam kebutuhan di berbagai platform. Jelajahi kekuatan GroupDocs.Merger untuk menyederhanakan alur kerja Anda dan meningkatkan kemampuan manajemen file Anda di semua platform yang didukung.
 
 ## GroupDocs.Merger untuk Tutorial .NET

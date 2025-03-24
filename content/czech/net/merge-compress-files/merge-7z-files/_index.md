@@ -6,6 +6,9 @@ description: Bez námahy slučujte soubory 7z pomocí GroupDocs.Merger pro .NET.
 weight: 10
 url: /cs/net/merge-compress-files/merge-7z-files/
 ---
+
+# Jak sloučit soubory 7z
+
 ## Úvod
 Slučování souborů 7z lze efektivně provádět pomocí GroupDocs.Merger for .NET, výkonné knihovny pro manipulaci s dokumenty. Tento tutoriál vás provede procesem krok za krokem a umožní vám bezproblémově sloučit soubory 7z s lehkostí.
 ## Předpoklady

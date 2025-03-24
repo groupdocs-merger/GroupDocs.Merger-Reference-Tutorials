@@ -6,6 +6,9 @@ description: Merge BMP, GIF, PNG, SVG, SVGZ, TIF, and TIFF files seamlessly with
 weight: 21
 url: /net/image-merging/
 ---
+
+# Image Merging
+
 ## Introduction
 
 Wondering how to streamline file merging tasks in your .NET applications? Dive into our comprehensive tutorial listing featuring various file formats like BMP, GIF, PNG, SVG, SVGZ, TIF, and TIFF, all merged seamlessly using GroupDocs.Merger for .NET.

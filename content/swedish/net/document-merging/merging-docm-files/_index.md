@@ -6,6 +6,9 @@ description: Lär dig hur du sammanfogar DOCM-filer sömlöst med GroupDocs.Merg
 weight: 11
 url: /sv/net/document-merging/merging-docm-files/
 ---
+
+# Slår ihop DOCM-filer
+
 ## Introduktion
 I den här handledningen kommer vi att undersöka hur man slår samman DOCM-filer (Microsoft Word Macro-Enabled Document) med GroupDocs.Merger för .NET. Det här biblioteket tillhandahåller kraftfulla dokumentmanipuleringsfunktioner som gör det möjligt för utvecklare att slå samman, dela, extrahera och manipulera olika dokumentformat sömlöst i sina .NET-applikationer.
 ## Förutsättningar

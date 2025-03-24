@@ -6,6 +6,9 @@ url: /sv/net/
 description: Sammanfoga och komprimera olika filformat enkelt med GroupDocs.Merger .NET. Lär dig steg-för-steg handledning om att slå samman bilder, dokument och mer!
 is_root: true
 ---
+
+# Handledningar och exempel på GroupDocs.Merger för .NET
+
 ## Introduktion
 
 Hantera dina filer enkelt med GroupDocs.Merger för .NET! Denna omfattande handledningsserie ger steg-för-steg-vägledning för att utnyttja kraften i GroupDocs.Merger för att slå samman och komprimera olika filformat sömlöst. Oavsett om du har att göra med bilder, dokument, kalkylblad, presentationer eller till och med Visio-filer, har vi dig täckt.

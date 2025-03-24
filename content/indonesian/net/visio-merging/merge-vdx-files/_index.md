@@ -6,6 +6,9 @@ description: Pelajari cara menggabungkan file VDX secara terprogram menggunakan 
 weight: 10
 url: /id/net/visio-merging/merge-vdx-files/
 ---
+
+# Gabungkan File VDX
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara menggabungkan file VDX (Visio Drawing XML) menggunakan GroupDocs.Merger untuk .NET. GroupDocs.Merger adalah API manipulasi dokumen canggih yang memungkinkan penggabungan berbagai format file dengan lancar, termasuk file VDX. Tutorial ini akan memandu Anda melalui proses penggabungan file VDX langkah demi langkah menggunakan C# di lingkungan .NET.
 ## Prasyarat

@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan egyesíthet könnyedén ODT-fájlokat a GroupDo
 weight: 16
 url: /hu/net/document-merging/merging-odt-files/
 ---
+
+# ODT fájlok egyesítése
+
 ## Bevezetés
 A .NET-fejlesztés világában elengedhetetlen a dokumentumkezelési feladatok, például a fájlok egyesítése hatékony kezelése. A GroupDocs.Merger for .NET robusztus megoldást kínál a különböző fájlformátumok zökkenőmentes kombinálására. Ebben az oktatóanyagban az ODT (Open Document Text) fájlok egyesítésének folyamatát mutatjuk be a GroupDocs.Merger for .NET használatával. Ennek az útmutatónak a végére készen lesz arra, hogy az ODT-fájlokat könnyedén egyesítse .NET-alkalmazásaiban.
 ## Előfeltételek

@@ -6,6 +6,9 @@ description: Dowiedz się, jak scalać pliki Excel w platformie .NET przy użyci
 weight: 11
 url: /pl/net/spreadsheet-merging/merging-xls-files/
 ---
+
+# Łączenie plików XLS
+
 ## Wstęp
 W tym samouczku omówimy, jak scalić pliki XLS (Excel). GroupDocs.Merger to potężny interfejs API do manipulacji dokumentami, który umożliwia programistom łatwe łączenie, dzielenie, zmienianie kolejności i manipulowanie dokumentami w aplikacjach .NET. W szczególności skupimy się na krok po kroku łączenia plików XLS przy użyciu intuicyjnych metod GroupDocs.Merger.
 ## Warunki wstępne

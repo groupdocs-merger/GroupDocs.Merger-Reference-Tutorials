@@ -6,6 +6,9 @@ description: Dowiedz się, jak bez wysiłku łączyć pliki ODS. Postępuj zgodn
 weight: 18
 url: /pl/net/spreadsheet-merging/merging-ods-files/
 ---
+
+# Łączenie plików ODS
+
 ## Wstęp
 W tym samouczku przyjrzymy się, jak scalić pliki ODS (arkusz kalkulacyjny OpenDocument). GroupDocs.Merger dla .NET to potężny interfejs API, który umożliwia programistom płynne manipulowanie i łączenie różnych formatów dokumentów. Omówimy niezbędne kroki, aby programowo scalić pliki ODS przy użyciu tej biblioteki.
 ## Warunki wstępne

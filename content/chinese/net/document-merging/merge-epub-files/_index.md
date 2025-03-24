@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Merger for .NET 以编程方式合并 
 weight: 17
 url: /zh/net/document-merging/merge-epub-files/
 ---
+
+# 合并 EPUB 文件
+
 ## 介绍
 在本教程中，我们将探讨如何使用 GroupDocs.Merger for .NET 合并 EPUB 文件。 GroupDocs.Merger for .NET 是一个功能强大的库，允许开发人员在其 .NET 应用程序中无缝操作和合并各种文档格式。具体来说，我们将重点关注使用此库逐步合并 EPUB 文件。
 ## 先决条件

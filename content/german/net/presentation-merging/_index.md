@@ -6,6 +6,9 @@ description: Fügen Sie mühelos verschiedene Präsentationsdateiformate zusamme
 weight: 25
 url: /de/net/presentation-merging/
 ---
+
+# Zusammenführen von Präsentationen
+
 ## Einführung
 
 Fügen Sie Ihre Präsentationsdateien mühelos zusammen. Ob PPS-, PPSX-, PPT- oder OTP-Dateien, unsere Tutorials bieten eine Schritt-für-Schritt-Anleitung mit praktischen Codebeispielen, um das Zusammenführen von Dokumenten zu vereinfachen.

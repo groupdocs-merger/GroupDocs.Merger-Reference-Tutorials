@@ -7,6 +7,9 @@ weight: 23
 url: /pl/net/spreadsheet-merging/
 ---
 
+# Łączenie arkuszy kalkulacyjnych
+
+
 ## Wstęp
 
 Jeśli jesteś programistą .NET i chcesz usprawnić swoje zadania związane z zarządzaniem dokumentami, GroupDocs.Merger dla .NET oferuje kompleksowe rozwiązanie. W tym artykule omówimy różne samouczki dotyczące łączenia różnych typów plików arkuszy kalkulacyjnych za pomocą GroupDocs.Merger.

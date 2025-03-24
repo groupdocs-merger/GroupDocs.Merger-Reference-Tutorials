@@ -6,6 +6,9 @@ description: Přečtěte si, jak sloučit soubory XLSB. Tento podrobný průvodc
 weight: 12
 url: /cs/net/spreadsheet-merging/how-to-merge-xlsb-files/
 ---
+
+# Jak sloučit soubory XLSB
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak sloučit soubory XLSB (Excel Binary Workbook). GroupDocs.Merger for .NET je výkonné rozhraní API pro manipulaci s dokumenty, které umožňuje vývojářům bezproblémově slučovat, rozdělovat a manipulovat s různými formáty dokumentů v rámci jejich aplikací .NET. Konkrétně se zaměříme na slučování souborů XLSB pomocí této univerzální knihovny.
 ## Předpoklady

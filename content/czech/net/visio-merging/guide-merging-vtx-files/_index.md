@@ -6,6 +6,9 @@ description: Naučte se, jak sloučit soubory VTX programově pomocí GroupDocs.
 weight: 18
 url: /cs/net/visio-merging/guide-merging-vtx-files/
 ---
+
+# Průvodce sloučením souborů VTX
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak sloučit soubory VTX (Visio Drawing Template) pomocí GroupDocs.Merger pro .NET. GroupDocs.Merger for .NET je výkonné API pro manipulaci s dokumenty, které umožňuje vývojářům pracovat s různými formáty souborů, včetně souborů VTX.
 ## Předpoklady

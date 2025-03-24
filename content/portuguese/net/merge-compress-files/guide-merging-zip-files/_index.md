@@ -6,6 +6,9 @@ description: Aprenda como mesclar arquivos ZIP programaticamente usando GroupDoc
 weight: 12
 url: /pt/net/merge-compress-files/guide-merging-zip-files/
 ---
+
+# Guia para mesclar arquivos Zip
+
 ## Introdução
 No domínio da manipulação e gerenciamento de documentos, GroupDocs.Merger for .NET se destaca como uma ferramenta poderosa para desenvolvedores que buscam mesclar e manipular vários formatos de arquivo de forma integrada. Este tutorial irá guiá-lo através do processo de mesclagem de arquivos ZIP usando GroupDocs.Merger for .NET. Ao final deste tutorial, você estará equipado com o conhecimento necessário para mesclar arquivos ZIP programaticamente em seus aplicativos .NET.
 ## Pré-requisitos

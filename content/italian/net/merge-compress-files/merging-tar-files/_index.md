@@ -6,6 +6,9 @@ description: Scopri come unire i file TAR a livello di codice utilizzando GroupD
 weight: 11
 url: /it/net/merge-compress-files/merging-tar-files/
 ---
+
+# Unione di file Tar
+
 ## introduzione
 Nello sviluppo del software, la capacità di manipolare e unire i file a livello di codice può essere cruciale per una gestione efficiente dei dati. GroupDocs.Merger per .NET è una potente libreria che consente agli sviluppatori di unire file TAR (Tape Archive) senza problemi all'interno delle loro applicazioni .NET. Questo tutorial ti guiderà attraverso il processo di unione dei file TAR utilizzando GroupDocs.Merger, fornendo istruzioni dettagliate ed esempi di codice.
 ## Prerequisiti

@@ -6,6 +6,9 @@ description: Naučte se sloučit soubory TAR programově pomocí GroupDocs.Merge
 weight: 11
 url: /cs/net/merge-compress-files/merging-tar-files/
 ---
+
+# Sloučení souborů Tar
+
 ## Úvod
 Při vývoji softwaru může být schopnost programově manipulovat a slučovat soubory zásadní pro efektivní manipulaci s daty. GroupDocs.Merger for .NET je výkonná knihovna, která umožňuje vývojářům bezproblémově slučovat soubory TAR (Tape Archive) v rámci jejich aplikací .NET. Tento tutoriál vás provede procesem slučování souborů TAR pomocí GroupDocs.Merger a poskytne vám podrobné pokyny a příklady kódu.
 ## Předpoklady

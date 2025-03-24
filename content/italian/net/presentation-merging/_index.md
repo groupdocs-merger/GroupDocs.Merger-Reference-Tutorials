@@ -6,6 +6,9 @@ description: Unisci facilmente vari formati di file di presentazione. Segui i no
 weight: 25
 url: /it/net/presentation-merging/
 ---
+
+# Unione delle presentazioni
+
 ## introduzione
 
 Unisci i file di presentazione senza sforzo. Che si tratti di file PPS, PPSX, PPT o OTP, i nostri tutorial offrono una guida passo passo, accompagnata da esempi pratici di codice, per semplificare le attività di unione dei documenti.

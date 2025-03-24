@@ -6,6 +6,9 @@ description: Apprenez à fusionner des fichiers XLTX sans effort. Commencez à f
 weight: 17
 url: /fr/net/spreadsheet-merging/merge-xltx-files/
 ---
+
+# Fusionner les fichiers XLTX
+
 ## Introduction
 Dans ce didacticiel, nous explorerons comment fusionner des fichiers XLTX (modèle Excel). GroupDocs.Merger est une puissante API de manipulation de documents qui permet aux développeurs de combiner, diviser et manipuler divers formats de documents de manière transparente dans les applications .NET. Ce didacticiel se concentre spécifiquement sur la fusion de fichiers XLTX par programme.
 ## Conditions préalables

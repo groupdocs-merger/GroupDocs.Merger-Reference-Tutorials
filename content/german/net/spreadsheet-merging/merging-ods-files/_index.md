@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie ODS-Dateien mühelos zusammenführen. Folgen 
 weight: 18
 url: /de/net/spreadsheet-merging/merging-ods-files/
 ---
+
+# ODS-Dateien zusammenführen
+
 ## Einführung
 In diesem Tutorial erfahren Sie, wie Sie ODS-Dateien (OpenDocument Spreadsheet) zusammenführen. GroupDocs.Merger für .NET ist eine leistungsstarke API, mit der Entwickler verschiedene Dokumentformate nahtlos bearbeiten und zusammenführen können. Wir behandeln die notwendigen Schritte zum programmgesteuerten Zusammenführen von ODS-Dateien mithilfe dieser Bibliothek.
 ## Voraussetzungen

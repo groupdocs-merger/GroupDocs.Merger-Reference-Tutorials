@@ -6,6 +6,9 @@ description: A GroupDocs.Merger segítségével zökkenőmentesen egyesítse a T
 weight: 18
 url: /hu/net/document-merging/guide-merging-txt-files/
 ---
+
+# Útmutató a TXT-fájlok egyesítéséhez GroupDocs.Merger for .NET-hez
+
 ## Bevezetés
 .NET fejlesztés világában a szöveges fájlok kezelése és egyesítése gyakori követelmény a különféle alkalmazásoknál. A GroupDocs.Merger for .NET hatékony megoldást kínál a TXT-fájlok zökkenőmentes egyesítésére a .NET-projektekben. Ez az átfogó útmutató lépésről lépésre végigvezeti a TXT-fájlok egyesítésének folyamatán a GroupDocs.Merger használatával.
 ## Előfeltételek

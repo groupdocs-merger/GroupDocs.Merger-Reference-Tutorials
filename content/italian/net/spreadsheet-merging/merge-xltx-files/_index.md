@@ -6,6 +6,9 @@ description: Scopri come unire i file XLTX senza sforzo. Inizia a unire file XLT
 weight: 17
 url: /it/net/spreadsheet-merging/merge-xltx-files/
 ---
+
+# Unisci file XLTX
+
 ## introduzione
 In questo tutorial esploreremo come unire file XLTX (modello Excel). GroupDocs.Merger è una potente API per la manipolazione dei documenti che consente agli sviluppatori di combinare, dividere e manipolare vari formati di documenti senza problemi all'interno delle applicazioni .NET. Questo tutorial si concentra specificamente sull'unione di file XLTX a livello di codice.
 ## Prerequisiti

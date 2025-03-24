@@ -6,6 +6,9 @@ description: ODS ファイルを簡単にマージする方法を学びましょ
 weight: 18
 url: /ja/net/spreadsheet-merging/merging-ods-files/
 ---
+
+# ODS ファイルのマージ
+
 ## 導入
 このチュートリアルでは、ODS (OpenDocument Spreadsheet) ファイルをマージする方法を説明します。 GroupDocs.Merger for .NET は、開発者がさまざまなドキュメント形式をシームレスに操作およびマージできるようにする強力な API です。このライブラリを使用して ODS ファイルをプログラムでマージするために必要な手順について説明します。
 ## 前提条件

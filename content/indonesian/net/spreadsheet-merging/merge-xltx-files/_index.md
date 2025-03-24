@@ -6,6 +6,9 @@ description: Pelajari cara menggabungkan file XLTX dengan mudah. Mulai gabungkan
 weight: 17
 url: /id/net/spreadsheet-merging/merge-xltx-files/
 ---
+
+# Gabungkan File XLTX
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara menggabungkan file XLTX (Template Excel). GroupDocs.Merger adalah API manipulasi dokumen canggih yang memungkinkan pengembang menggabungkan, membagi, dan memanipulasi berbagai format dokumen dengan mulus dalam aplikasi .NET. Tutorial ini secara khusus berfokus pada penggabungan file XLTX secara terprogram.
 ## Prasyarat

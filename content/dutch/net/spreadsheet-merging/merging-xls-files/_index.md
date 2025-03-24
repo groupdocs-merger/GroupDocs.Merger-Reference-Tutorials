@@ -6,6 +6,9 @@ description: Leer hoe u Excel-bestanden in .NET kunt samenvoegen met GroupDocs.M
 weight: 11
 url: /nl/net/spreadsheet-merging/merging-xls-files/
 ---
+
+# XLS-bestanden samenvoegen
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u XLS-bestanden (Excel) kunt samenvoegen. GroupDocs.Merger is een krachtige API voor documentmanipulatie waarmee ontwikkelaars documenten moeiteloos kunnen samenvoegen, splitsen, herschikken en manipuleren binnen hun .NET-applicaties. We zullen ons specifiek concentreren op het stap voor stap samenvoegen van XLS-bestanden met behulp van de intuïtieve methoden van GroupDocs.Merger.
 ## Vereisten

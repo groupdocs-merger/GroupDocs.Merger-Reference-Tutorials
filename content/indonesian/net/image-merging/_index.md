@@ -6,6 +6,9 @@ description: Gabungkan file BMP, GIF, PNG, SVG, SVGZ, TIF, dan TIFF secara mulus
 weight: 21
 url: /id/net/image-merging/
 ---
+
+# Penggabungan Gambar
+
 ## Perkenalan
 
 Ingin tahu cara menyederhanakan tugas penggabungan file di aplikasi .NET Anda? Selami daftar tutorial komprehensif kami yang menampilkan berbagai format file seperti BMP, GIF, PNG, SVG, SVGZ, TIF, dan TIFF, semuanya digabungkan dengan mulus menggunakan GroupDocs.Merger untuk .NET.

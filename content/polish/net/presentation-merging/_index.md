@@ -6,6 +6,9 @@ description: Scalaj różne formaty plików prezentacji bez wysiłku. Skorzystaj
 weight: 25
 url: /pl/net/presentation-merging/
 ---
+
+# Łączenie prezentacji
+
 ## Wstęp
 
 Scal swoje pliki prezentacji bez wysiłku. Niezależnie od tego, czy są to pliki PPS, PPSX, PPT czy OTP, nasze samouczki zawierają wskazówki krok po kroku wraz z praktycznymi przykładami kodu, aby usprawnić zadania łączenia dokumentów.

@@ -6,6 +6,9 @@ description: Dowiedz się, jak scalić pliki VSTX za pomocą GroupDocs.Merger dl
 weight: 16
 url: /pl/net/visio-merging/merging-vstx-files/
 ---
+
+# Łączenie plików VSTX z GroupDocs.Merger dla .NET
+
 ## Wstęp
 tym samouczku omówimy sposób łączenia plików VSTX za pomocą GroupDocs.Merger dla .NET. GroupDocs.Merger dla .NET to potężna biblioteka, która umożliwia programistom płynne manipulowanie różnymi formatami dokumentów w aplikacjach .NET. Łączenie plików VSTX jest częstym zadaniem podczas przetwarzania dokumentów, zwłaszcza podczas prezentacji w programie Microsoft PowerPoint.
 ## Warunki wstępne

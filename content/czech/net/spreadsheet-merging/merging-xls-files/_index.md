@@ -6,6 +6,9 @@ description: Naučte se sloučit soubory Excelu v .NET pomocí GroupDocs.Merger 
 weight: 11
 url: /cs/net/spreadsheet-merging/merging-xls-files/
 ---
+
+# Sloučení souborů XLS
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak sloučit soubory XLS (Excel). GroupDocs.Merger je výkonné API pro manipulaci s dokumenty, které umožňuje vývojářům snadno slučovat, rozdělovat, přeskupovat a manipulovat s dokumenty v rámci jejich aplikací .NET. Konkrétně se zaměříme na slučování XLS souborů krok za krokem pomocí intuitivních metod GroupDocs.Merger.
 ## Předpoklady

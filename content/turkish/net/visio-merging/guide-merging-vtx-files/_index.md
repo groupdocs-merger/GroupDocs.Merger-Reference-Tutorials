@@ -6,6 +6,9 @@ description: GroupDocs.Merger for .NET'i kullanarak VTX dosyalarını programlı
 weight: 18
 url: /tr/net/visio-merging/guide-merging-vtx-files/
 ---
+
+# VTX Dosyalarını Birleştirme Kılavuzu
+
 ## giriiş
 Bu öğreticide, GroupDocs.Merger for .NET kullanarak VTX (Visio Çizim Şablonu) dosyalarının nasıl birleştirileceğini inceleyeceğiz. GroupDocs.Merger for .NET, geliştiricilerin VTX dosyaları da dahil olmak üzere çeşitli dosya formatlarıyla çalışmasına olanak tanıyan güçlü bir belge işleme API'sidir.
 ## Önkoşullar

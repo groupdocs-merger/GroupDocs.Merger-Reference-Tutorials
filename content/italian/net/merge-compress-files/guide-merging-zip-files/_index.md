@@ -6,6 +6,9 @@ description: Scopri come unire i file ZIP a livello di codice utilizzando GroupD
 weight: 12
 url: /it/net/merge-compress-files/guide-merging-zip-files/
 ---
+
+# Guida all'unione di file zip
+
 ## introduzione
 Nel campo della manipolazione e gestione dei documenti, GroupDocs.Merger per .NET si distingue come un potente strumento per gli sviluppatori che cercano di unire e manipolare vari formati di file senza problemi. Questo tutorial ti guiderà attraverso il processo di unione dei file ZIP utilizzando GroupDocs.Merger per .NET. Al termine di questa esercitazione avrai le conoscenze necessarie per unire i file ZIP a livello di codice nelle tue applicazioni .NET.
 ## Prerequisiti

@@ -6,6 +6,9 @@ description: Aprenda como mesclar arquivos PNG usando GroupDocs.Merger for .NET.
 weight: 12
 url: /pt/net/image-merging/how-to-merge-png-files/
 ---
+
+# Como mesclar arquivos PNG
+
 ## Introdução
 Neste tutorial, aprenderemos como mesclar arquivos PNG usando GroupDocs.Merger for .NET. GroupDocs.Merger é uma biblioteca poderosa que permite aos desenvolvedores manipular e combinar vários formatos de documentos perfeitamente. Seguindo este guia, você poderá mesclar arquivos PNG sem esforço em seus aplicativos .NET.
 ## Pré-requisitos

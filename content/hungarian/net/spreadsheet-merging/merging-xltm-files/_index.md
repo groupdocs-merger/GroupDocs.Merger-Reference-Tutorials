@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan lehet XLTM-fájlokat programozottan egyesíteni
 weight: 16
 url: /hu/net/spreadsheet-merging/merging-xltm-files/
 ---
+
+# XLTM fájlok egyesítése
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet XLTM (Excel Macro-Enabled Template) fájlokat egyesíteni. A GroupDocs.Merger for .NET egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy programozottan kezeljék és egyesítsék a különböző dokumentumformátumokat. Ez az útmutató lépésről lépésre végigvezeti az XLTM-fájlok egyesítésének folyamatán a C# használatával.
 ## Előfeltételek

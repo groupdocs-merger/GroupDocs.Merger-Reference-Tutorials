@@ -6,6 +6,9 @@ description: Lär dig hur du sammanfogar SVG-filer programmatiskt med GroupDocs.
 weight: 13
 url: /sv/net/image-merging/guide-merging-svg-files/
 ---
+
+# Guide för att slå ihop SVG-filer
+
 ## Introduktion
 I den här handledningen kommer du att lära dig hur du slår ihop SVG-filer (Scalable Vector Graphics) med GroupDocs.Merger för .NET. GroupDocs.Merger är ett kraftfullt dokumentmanipulerings-API som låter dig slå samman, dela och manipulera olika dokumentformat sömlöst. Genom att följa denna steg-för-steg-guide kommer du att kunna kombinera flera SVG-filer till en enda SVG-fil med C#.
 

@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Merger 在 .NET 中以程式設計方�
 weight: 19
 url: /zh-hant/net/document-merging/merging-pdf-files/
 ---
+
+# 合併 PDF 文件
+
 ## 介紹
 在文件管理和操作領域，合併 PDF 文件是開發人員遇到的常見任務。 GroupDocs.Merger for .NET 提供了一個強大的解決方案，可在 .NET 應用程式中無縫組合 PDF 文件。本教學將引導您完成使用 GroupDocs.Merger 合併 PDF 檔案的流程，以展示逐步實施和使用。
 ## 先決條件

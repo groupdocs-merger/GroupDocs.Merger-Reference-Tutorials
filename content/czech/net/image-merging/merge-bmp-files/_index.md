@@ -6,6 +6,9 @@ description: Naučte se sloučit soubory BMP pomocí GroupDocs.Merger for .NET v
 weight: 10
 url: /cs/net/image-merging/merge-bmp-files/
 ---
+
+# Sloučit soubory BMP
+
 ## Úvod
 tomto tutoriálu prozkoumáme, jak sloučit soubory BMP (Bitmap) pomocí GroupDocs.Merger pro .NET. GroupDocs.Merger je výkonné API, které umožňuje vývojářům manipulovat a slučovat různé formáty dokumentů programově v rámci jejich aplikací .NET. Na konci této příručky budete schopni efektivně sloučit soubory BMP krok za krokem.
 ## Předpoklady

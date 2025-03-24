@@ -6,6 +6,9 @@ description: Fusionnez les fichiers TXT de manière transparente dans .NET à l'
 weight: 18
 url: /fr/net/document-merging/guide-merging-txt-files/
 ---
+
+# Guide de fusion de fichiers TXT avec GroupDocs.Merger pour .NET
+
 ## Introduction
 Dans le monde du développement .NET, la manipulation et la fusion de fichiers texte sont une exigence courante pour diverses applications. GroupDocs.Merger pour .NET offre une solution puissante pour fusionner des fichiers TXT de manière transparente au sein de vos projets .NET. Ce guide complet vous guidera pas à pas tout au long du processus de fusion de fichiers TXT à l'aide de GroupDocs.Merger.
 ## Conditions préalables

@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Merger for .NET 以编程方式合并 
 weight: 15
 url: /zh/net/image-merging/merge-tif-files/
 ---
+
+# 合并 TIF 文件
+
 ## 介绍
 在本教程中，我们将深入研究使用 GroupDocs.Merger for .NET 高效合并 TIF 文件。 GroupDocs.Merger for .NET 是一个功能强大的文档操作 API，使开发人员能够以编程方式对文档执行各种操作，包括合并、拆分和重新排列页面。
 ## 先决条件

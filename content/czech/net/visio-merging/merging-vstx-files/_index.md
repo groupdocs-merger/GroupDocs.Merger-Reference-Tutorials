@@ -6,6 +6,9 @@ description: Přečtěte si, jak sloučit soubory VSTX pomocí GroupDocs.Merger 
 weight: 16
 url: /cs/net/visio-merging/merging-vstx-files/
 ---
+
+# Sloučení souborů VSTX s GroupDocs.Merger pro .NET
+
 ## Úvod
 tomto tutoriálu se ponoříme do toho, jak sloučit soubory VSTX pomocí GroupDocs.Merger for .NET. GroupDocs.Merger for .NET je výkonná knihovna, která umožňuje vývojářům bezproblémově manipulovat s různými formáty dokumentů v rámci jejich aplikací .NET. Slučování souborů VSTX je běžným úkolem při zpracování dokumentů, zejména při práci s prezentacemi v aplikaci Microsoft PowerPoint.
 ## Předpoklady

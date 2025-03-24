@@ -6,6 +6,9 @@ description: Ezzel az átfogó oktatóanyaggal megtudhatja, hogyan egyesíthet B
 weight: 10
 url: /hu/net/image-merging/merge-bmp-files/
 ---
+
+# BMP fájlok egyesítése
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan egyesíthet BMP (Bitmap) fájlokat a GroupDocs.Merger for .NET használatával. A GroupDocs.Merger egy hatékony API, amely lehetővé teszi a fejlesztők számára, hogy .NET-alkalmazásaikon belül programozottan kezeljék és egyesítsék a különféle dokumentumformátumokat. Az útmutató végére lépésről lépésre képes lesz hatékonyan egyesíteni a BMP fájlokat.
 ## Előfeltételek

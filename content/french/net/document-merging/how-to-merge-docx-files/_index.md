@@ -6,6 +6,9 @@ description: Découvrez comment fusionner des fichiers DOCX par programme dans .
 weight: 12
 url: /fr/net/document-merging/how-to-merge-docx-files/
 ---
+
+# Comment fusionner des fichiers DOCX
+
 ## Introduction
 Dans le monde du développement .NET, la fusion de fichiers DOCX par programmation peut constituer une fonctionnalité puissante pour diverses applications. GroupDocs.Merger pour .NET fournit une solution complète pour fusionner efficacement les fichiers DOCX. Ce didacticiel vous guidera tout au long du processus d'utilisation de GroupDocs.Merger pour .NET pour fusionner plusieurs fichiers DOCX en un seul document de manière transparente.
 ## Conditions préalables

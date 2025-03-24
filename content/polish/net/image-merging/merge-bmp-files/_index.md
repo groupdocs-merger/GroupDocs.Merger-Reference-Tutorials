@@ -6,6 +6,9 @@ description: Z tego obszernego samouczka dowiesz się, jak łączyć pliki BMP p
 weight: 10
 url: /pl/net/image-merging/merge-bmp-files/
 ---
+
+# Scal pliki BMP
+
 ## Wstęp
 tym samouczku dowiemy się, jak scalić pliki BMP (bitmapy) przy użyciu narzędzia GroupDocs.Merger dla platformy .NET. GroupDocs.Merger to potężny interfejs API, który umożliwia programistom manipulowanie i programowe łączenie różnych formatów dokumentów w aplikacjach .NET. Pod koniec tego przewodnika będziesz w stanie krok po kroku skutecznie scalać pliki BMP.
 ## Warunki wstępne

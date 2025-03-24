@@ -6,6 +6,9 @@ description: Dowiedz się, jak łączyć pliki PPTX za pomocą GroupDocs.Merger 
 weight: 13
 url: /pl/net/presentation-merging/guide-merging-pptx-files/
 ---
+
+# Przewodnik po łączeniu plików PPTX
+
 ## Wstęp
 W tym samouczku dowiemy się, jak scalić prezentacje programu PowerPoint (pliki PPTX) przy użyciu programu GroupDocs.Merger dla platformy .NET. GroupDocs.Merger dla .NET to potężna biblioteka, która umożliwia płynną manipulację i łączenie różnych formatów dokumentów, w tym plików PPTX, w aplikacjach .NET. Wykorzystując tę bibliotekę, możesz efektywnie łączyć wiele prezentacji programu PowerPoint w jeden plik, usprawniając zadania związane z zarządzaniem dokumentami.
 ## Warunki wstępne

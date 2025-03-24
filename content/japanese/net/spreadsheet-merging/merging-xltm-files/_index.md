@@ -6,6 +6,9 @@ description: XLTM ファイルをプログラムでマージする方法を学�
 weight: 16
 url: /ja/net/spreadsheet-merging/merging-xltm-files/
 ---
+
+# XLTM ファイルの結合
+
 ## 導入
 このチュートリアルでは、XLTM (Excel マクロ対応テンプレート) ファイルを結合する方法について説明します。GroupDocs.Merger for .NET は、開発者がさまざまなドキュメント形式をプログラムで操作および結合できるようにする強力なライブラリです。このガイドでは、C# を使用して XLTM ファイルを結合するプロセスを段階的に説明します。
 ## 前提条件

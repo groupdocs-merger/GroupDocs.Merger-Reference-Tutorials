@@ -6,6 +6,9 @@ description: Dễ dàng hợp nhất các tệp PPSX với GroupDocs.Merger cho 
 weight: 11
 url: /vi/net/presentation-merging/merging-ppsx-files/
 ---
+
+# Hợp nhất các tệp PPSX
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ đi sâu vào việc hợp nhất các tệp PPSX bằng thư viện GroupDocs.Merger for .NET mạnh mẽ. GroupDocs.Merger đơn giản hóa quá trình kết hợp nhiều tệp PowerPoint Slide Show (PPSX) thành một tệp hợp nhất theo chương trình. Cho dù bạn đang phát triển một ứng dụng hay cần tự động hóa các tác vụ thao tác với tệp, GroupDocs.Merger đều cung cấp một giải pháp hiệu quả.
 ## Điều kiện tiên quyết

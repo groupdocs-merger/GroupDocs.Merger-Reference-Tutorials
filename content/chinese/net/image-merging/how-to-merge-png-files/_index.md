@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Merger for .NET 合并 PNG 文件。�
 weight: 12
 url: /zh/net/image-merging/how-to-merge-png-files/
 ---
+
+# 如何合并 PNG 文件
+
 ## 介绍
 在本教程中，我们将学习如何使用 GroupDocs.Merger for .NET 合并 PNG 文件。 GroupDocs.Merger 是一个功能强大的库，允许开发人员无缝地操作和组合各种文档格式。通过遵循本指南，您将能够在 .NET 应用程序中轻松合并 PNG 文件。
 ## 先决条件

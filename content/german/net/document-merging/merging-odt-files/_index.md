@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie ODT-Dateien mit GroupDocs.Merger für .NET m�
 weight: 16
 url: /de/net/document-merging/merging-odt-files/
 ---
+
+# ODT-Dateien zusammenführen
+
 ## Einführung
 In der Welt der .NET-Entwicklung ist die effiziente Verwaltung von Dokumentbearbeitungsaufgaben wie das Zusammenführen von Dateien unerlässlich. GroupDocs.Merger für .NET bietet eine robuste Lösung zum nahtlosen Kombinieren verschiedener Dateiformate. In diesem Tutorial werden wir uns mit dem Zusammenführen von ODT-Dateien (Open Document Text) mithilfe von GroupDocs.Merger für .NET befassen. Am Ende dieses Handbuchs sind Sie in der Lage, ODT-Dateien mühelos in Ihren .NET-Anwendungen zusammenzuführen.
 ## Voraussetzungen

@@ -7,6 +7,9 @@ weight: 23
 url: /nl/net/spreadsheet-merging/
 ---
 
+# Spreadsheets samenvoegen
+
+
 ## Invoering
 
 Als u een .NET-ontwikkelaar bent en uw documentbeheertaken wilt stroomlijnen, biedt GroupDocs.Merger voor .NET een uitgebreide oplossing. In dit artikel zullen we verschillende tutorials verkennen over het samenvoegen van verschillende soorten spreadsheetbestanden met GroupDocs.Merger.

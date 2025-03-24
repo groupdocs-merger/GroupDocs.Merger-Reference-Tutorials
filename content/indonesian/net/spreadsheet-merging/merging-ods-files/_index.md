@@ -6,6 +6,9 @@ description: Pelajari cara menggabungkan file ODS dengan mudah. Ikuti panduan la
 weight: 18
 url: /id/net/spreadsheet-merging/merging-ods-files/
 ---
+
+# Menggabungkan File ODS
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara menggabungkan file ODS (OpenDocument Spreadsheet). GroupDocs.Merger for .NET adalah API canggih yang memungkinkan pengembang memanipulasi dan menggabungkan berbagai format dokumen dengan mulus. Kami akan membahas langkah-langkah yang diperlukan untuk menggabungkan file ODS secara terprogram menggunakan perpustakaan ini.
 ## Prasyarat

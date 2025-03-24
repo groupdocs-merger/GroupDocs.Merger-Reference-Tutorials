@@ -6,6 +6,9 @@ description: 원활한 문서 처리를 위해 GroupDocs.Merger를 사용하여 
 weight: 21
 url: /ko/net/document-merging/merging-rtf-files/
 ---
+
+# RTF 파일 병합
+
 ## 소개
 .NET 개발 세계에서 RTF(Rich Text Format) 파일을 원활하게 병합하는 것은 많은 응용 프로그램에서 중요한 작업입니다. .NET용 GroupDocs.Merger는 이를 효율적으로 수행할 수 있는 강력한 솔루션을 제공합니다. 이 튜토리얼에서는 .NET용 GroupDocs.Merger를 사용하여 RTF 파일을 병합하는 과정을 단계별로 안내합니다. 이 튜토리얼을 마치면 .NET 프로젝트 내에서 RTF 파일을 쉽게 병합할 수 있는 지식을 갖추게 될 것입니다.
 ## 전제 조건

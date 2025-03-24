@@ -7,6 +7,9 @@ weight: 23
 url: /sv/net/spreadsheet-merging/
 ---
 
+# Sammanfogning av kalkylark
+
+
 ## Introduktion
 
 Om du är en .NET-utvecklare som vill effektivisera dina dokumenthanteringsuppgifter, erbjuder GroupDocs.Merger för .NET en heltäckande lösning. I den här artikeln kommer vi att utforska olika handledningar om att slå samman olika typer av kalkylarksfiler med GroupDocs.Merger.

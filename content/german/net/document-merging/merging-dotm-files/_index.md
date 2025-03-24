@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie DOTM-Dateien mit GroupDocs.Merger für .NET p
 weight: 14
 url: /de/net/document-merging/merging-dotm-files/
 ---
+
+# Zusammenführen von DOTM-Dateien
+
 ## Einführung
 In diesem Tutorial erfahren Sie, wie Sie DOTM-Dateien (Word Macro-Enabled Template) mit GroupDocs.Merger für .NET zusammenführen. GroupDocs.Merger ist eine leistungsstarke API, mit der Entwickler verschiedene Dokumentformate nahtlos in ihren .NET-Anwendungen bearbeiten und kombinieren können. In dieser Anleitung erfahren Sie Schritt für Schritt, wie Sie diese Funktionalität in Ihre Projekte integrieren.
 ## Voraussetzungen

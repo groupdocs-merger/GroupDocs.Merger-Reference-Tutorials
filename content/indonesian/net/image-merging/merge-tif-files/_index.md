@@ -6,6 +6,9 @@ description: Pelajari cara menggabungkan file TIF secara terprogram menggunakan 
 weight: 15
 url: /id/net/image-merging/merge-tif-files/
 ---
+
+# Gabungkan File TIF
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari penggunaan GroupDocs.Merger untuk .NET untuk menggabungkan file TIF secara efisien. GroupDocs.Merger for .NET adalah API manipulasi dokumen canggih yang memungkinkan pengembang melakukan berbagai operasi pada dokumen secara terprogram, termasuk menggabungkan, memisahkan, dan menata ulang halaman.
 ## Prasyarat

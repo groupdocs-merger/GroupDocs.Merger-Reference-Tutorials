@@ -6,6 +6,9 @@ description: Scopri come unire facilmente file VSSX nelle applicazioni .NET util
 weight: 14
 url: /it/net/visio-merging/merging-vssx-files/
 ---
+
+# Unione di file VSSX
+
 ## introduzione
 In questo tutorial esploreremo come unire file VSSX utilizzando GroupDocs.Merger per .NET. GroupDocs.Merger per .NET è una potente libreria che consente agli sviluppatori di manipolare e unire vari formati di documenti senza problemi all'interno delle loro applicazioni .NET. L'unione di file VSSX può essere particolarmente utile quando è necessario combinare più file Stencil di Visual Studio in un unico file per una gestione e una distribuzione più semplici.
 ## Prerequisiti

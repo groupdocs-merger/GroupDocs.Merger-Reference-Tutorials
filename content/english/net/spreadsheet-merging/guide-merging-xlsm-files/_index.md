@@ -6,6 +6,9 @@ description: Merge XLSM files seamlessly with GroupDocs.Merger for .NET. Efficie
 weight: 13
 url: /net/spreadsheet-merging/guide-merging-xlsm-files/
 ---
+
+# Guide to Merging XLSM Files
+
 ## Introduction
 In this tutorial, we'll explore how to merge XLSM (Excel Macro-Enabled Workbook) files. GroupDocs.Merger is a powerful library that allows developers to manipulate document formats, including merging, splitting, and modifying files programmatically.
 ## Prerequisites

@@ -6,6 +6,9 @@ description: XLT 파일을 병합하는 방법을 알아보세요. 이 단계별
 weight: 15
 url: /ko/net/spreadsheet-merging/merge-xlt-files/
 ---
+
+# XLT 파일 병합
+
 ## 소개
 이 튜토리얼에서는 XLT(Excel 템플릿) 파일을 병합하는 방법을 살펴보겠습니다. GroupDocs.Merger는 개발자가 Excel 파일을 비롯한 다양한 문서 형식을 프로그래밍 방식으로 조작할 수 있는 강력한 API입니다. XLT 파일을 병합하면 여러 템플릿을 단일 문서로 결합하여 작업 흐름을 간소화하고 효율성을 높일 수 있습니다.
 ## 전제 조건

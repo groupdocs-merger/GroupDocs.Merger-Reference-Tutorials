@@ -6,6 +6,9 @@ description: Tanulja meg, hogyan egyesíthet könnyedén VSSX-fájlokat .NET-alk
 weight: 14
 url: /hu/net/visio-merging/merging-vssx-files/
 ---
+
+# VSSX fájlok egyesítése
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet VSSX-fájlokat egyesíteni a GroupDocs.Merger for .NET használatával. A GroupDocs.Merger for .NET egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy zökkenőmentesen kezeljék és egyesítsék a különböző dokumentumformátumokat .NET-alkalmazásaikon belül. A VSSX-fájlok egyesítése különösen hasznos lehet, ha több Visual Studio Stencil-fájlt kell egyetlen fájlba egyesíteni a könnyebb kezelés és terjesztés érdekében.
 ## Előfeltételek

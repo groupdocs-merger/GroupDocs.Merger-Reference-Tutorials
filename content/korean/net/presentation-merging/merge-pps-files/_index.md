@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Merger를 사용하여 PPS 파일을 원활하게
 weight: 10
 url: /ko/net/presentation-merging/merge-pps-files/
 ---
+
+# PPS 파일 병합
+
 ## 소개
 .NET 개발 세계에서는 문서 파일을 효율적으로 조작하는 것이 중요합니다. .NET용 GroupDocs.Merger는 다양한 문서 형식을 원활하게 병합하고 조작할 수 있는 강력한 도구를 제공합니다. 이 자습서에서는 .NET용 GroupDocs.Merger를 사용하여 PPS(PowerPoint 슬라이드 쇼) 파일을 병합하는 방법에 중점을 둡니다. 숙련된 개발자이든 이제 막 시작하는 개발자이든 이 가이드는 프로세스를 단계별로 안내합니다.
 ## 전제 조건

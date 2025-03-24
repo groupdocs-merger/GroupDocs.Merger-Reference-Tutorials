@@ -6,6 +6,9 @@ description: Lär dig hur du sammanfogar XLTX-filer utan ansträngning. Börja s
 weight: 17
 url: /sv/net/spreadsheet-merging/merge-xltx-files/
 ---
+
+# Slå samman XLTX-filer
+
 ## Introduktion
 den här handledningen kommer vi att utforska hur man slår ihop XLTX-filer (Excel-mall). GroupDocs.Merger är ett kraftfullt API för dokumentmanipulering som gör det möjligt för utvecklare att kombinera, dela och manipulera olika dokumentformat sömlöst i .NET-applikationer. Denna handledning fokuserar specifikt på att sammanfoga XLTX-filer programmatiskt.
 ## Förutsättningar

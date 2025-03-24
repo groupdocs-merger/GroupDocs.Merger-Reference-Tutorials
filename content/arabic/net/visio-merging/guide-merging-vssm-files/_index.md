@@ -6,6 +6,9 @@ description: تعرف على كيفية دمج ملفات VSSM بسهولة با
 weight: 13
 url: /ar/net/visio-merging/guide-merging-vssm-files/
 ---
+
+# دليل لدمج ملفات VSSM
+
 ## مقدمة
 ستتعلم في هذا البرنامج التعليمي كيفية دمج ملفات VSSM (الرسم الممكّن لـ Visio Macro) باستخدام GroupDocs.Merger لـ .NET. GroupDocs.Merger هي مكتبة قوية تمكن المطورين من التعامل مع تنسيقات المستندات المختلفة ودمجها بسلاسة.
 ## المتطلبات الأساسية

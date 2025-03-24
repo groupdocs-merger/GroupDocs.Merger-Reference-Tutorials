@@ -6,6 +6,9 @@ description: Bezproblemowo łącz pliki BMP, GIF, PNG, SVG, SVGZ, TIF i TIFF za 
 weight: 21
 url: /pl/net/image-merging/
 ---
+
+# Łączenie obrazów
+
 ## Wstęp
 
 Zastanawiasz się, jak usprawnić zadania łączenia plików w aplikacjach .NET? Zapoznaj się z naszą obszerną listą samouczków zawierającą różne formaty plików, takie jak BMP, GIF, PNG, SVG, SVGZ, TIF i TIFF, wszystkie płynnie połączone za pomocą GroupDocs.Merger dla .NET.

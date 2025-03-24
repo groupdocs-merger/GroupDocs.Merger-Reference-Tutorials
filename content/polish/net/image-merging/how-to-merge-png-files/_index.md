@@ -6,6 +6,9 @@ description: Dowiedz się, jak łączyć pliki PNG za pomocą GroupDocs.Merger d
 weight: 12
 url: /pl/net/image-merging/how-to-merge-png-files/
 ---
+
+# Jak scalić pliki PNG
+
 ## Wstęp
 W tym samouczku nauczymy się łączyć pliki PNG za pomocą GroupDocs.Merger dla .NET. GroupDocs.Merger to potężna biblioteka, która umożliwia programistom płynne manipulowanie i łączenie różnych formatów dokumentów. Postępując zgodnie z tym przewodnikiem, będziesz mógł bez wysiłku łączyć pliki PNG w aplikacjach .NET.
 ## Warunki wstępne

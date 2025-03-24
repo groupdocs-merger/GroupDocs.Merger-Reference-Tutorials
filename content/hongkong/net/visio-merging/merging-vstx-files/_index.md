@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Merger for .NET 合併 VSTX 檔案。�
 weight: 16
 url: /zh-hant/net/visio-merging/merging-vstx-files/
 ---
+
+# 使用 GroupDocs.Merger for .NET 合併 VSTX 文件
+
 ## 介紹
 在本教學中，我們將深入研究如何使用 GroupDocs.Merger for .NET 合併 VSTX 檔案。 GroupDocs.Merger for .NET 是一個功能強大的程式庫，可讓開發人員在其 .NET 應用程式中無縫操作各種文件格式。合併 VSTX 文件是文件處理中的常見任務，尤其是在處理 Microsoft PowerPoint 中的簡報時。
 ## 先決條件

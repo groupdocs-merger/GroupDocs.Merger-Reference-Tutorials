@@ -6,6 +6,9 @@ description: Tìm hiểu cách hợp nhất các tệp VSTM một cách dễ dà
 weight: 15
 url: /vi/net/visio-merging/merge-vstm-files/
 ---
+
+# Hợp nhất các tệp VSTM
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách hợp nhất các tệp VSTM (VSTemplate) bằng GroupDocs.Merger cho .NET. GroupDocs.Merger là một API thao tác tài liệu mạnh mẽ cho phép các nhà phát triển hợp nhất, phân tách và thao tác liền mạch các định dạng tài liệu khác nhau trong các ứng dụng .NET của họ.
 ## Điều kiện tiên quyết

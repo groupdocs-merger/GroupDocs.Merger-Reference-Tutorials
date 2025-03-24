@@ -6,6 +6,9 @@ description: Gabungkan berbagai format file presentasi dengan mudah. Ikuti tutor
 weight: 25
 url: /id/net/presentation-merging/
 ---
+
+# Penggabungan Presentasi
+
 ## Perkenalan
 
 Gabungkan file presentasi Anda dengan mudah. Baik itu file PPS, PPSX, PPT, atau OTP, tutorial kami menawarkan panduan langkah demi langkah, disertai dengan contoh kode praktis, untuk menyederhanakan tugas penggabungan dokumen Anda.

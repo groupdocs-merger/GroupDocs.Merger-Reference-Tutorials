@@ -6,6 +6,9 @@ description: Unisci file BMP, GIF, PNG, SVG, SVGZ, TIF e TIFF senza problemi con
 weight: 21
 url: /it/net/image-merging/
 ---
+
+# Unione di immagini
+
 ## introduzione
 
 Ti chiedi come semplificare le attività di unione dei file nelle tue applicazioni .NET? Immergiti nel nostro elenco completo di tutorial con vari formati di file come BMP, GIF, PNG, SVG, SVGZ, TIF e TIFF, tutti uniti perfettamente utilizzando GroupDocs.Merger per .NET.

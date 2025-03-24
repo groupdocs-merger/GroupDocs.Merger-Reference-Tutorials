@@ -6,6 +6,9 @@ description: Scopri come unire i file TIF a livello di codice utilizzando GroupD
 weight: 15
 url: /it/net/image-merging/merge-tif-files/
 ---
+
+# Unisci file TIF
+
 ## introduzione
 In questo tutorial, approfondiremo l'utilizzo di GroupDocs.Merger per .NET per unire i file TIF in modo efficiente. GroupDocs.Merger per .NET è una potente API di manipolazione dei documenti che consente agli sviluppatori di eseguire varie operazioni sui documenti a livello di codice, tra cui l'unione, la divisione e la riorganizzazione delle pagine.
 ## Prerequisiti

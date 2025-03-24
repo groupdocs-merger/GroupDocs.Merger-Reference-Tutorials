@@ -6,6 +6,9 @@ description: Naučte se, jak programově sloučit soubory ZIP pomocí GroupDocs.
 weight: 12
 url: /cs/net/merge-compress-files/guide-merging-zip-files/
 ---
+
+# Průvodce slučováním souborů ZIP
+
 ## Úvod
 oblasti manipulace a správy dokumentů GroupDocs.Merger for .NET vyniká jako výkonný nástroj pro vývojáře, kteří se snaží hladce slučovat a manipulovat s různými formáty souborů. Tento tutoriál vás provede procesem slučování souborů ZIP pomocí GroupDocs.Merger pro .NET. Na konci tohoto tutoriálu budete vybaveni znalostmi pro programové slučování souborů ZIP ve vašich aplikacích .NET.
 ## Předpoklady

@@ -6,6 +6,9 @@ description: Slå enkelt samman 7z-filer med GroupDocs.Merger för .NET. Följ v
 weight: 10
 url: /sv/net/merge-compress-files/merge-7z-files/
 ---
+
+# Hur man slår ihop 7z-filer
+
 ## Introduktion
 Sammanfogning av 7z-filer kan göras effektivt med GroupDocs.Merger för .NET, ett kraftfullt dokumentmanipuleringsbibliotek. Denna handledning guidar dig genom processen steg för steg, så att du enkelt kan sammanfoga dina 7z-filer.
 ## Förutsättningar

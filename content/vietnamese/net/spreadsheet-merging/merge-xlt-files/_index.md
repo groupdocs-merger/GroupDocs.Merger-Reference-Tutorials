@@ -6,6 +6,9 @@ description: Tìm hiểu cách hợp nhất các tệp XLT. Kết hợp các m�
 weight: 15
 url: /vi/net/spreadsheet-merging/merge-xlt-files/
 ---
+
+# Hợp nhất các tệp XLT
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách hợp nhất các tệp XLT (Mẫu Excel). GroupDocs.Merger là một API mạnh mẽ cho phép các nhà phát triển thao tác với nhiều định dạng tài liệu khác nhau, bao gồm cả tệp Excel, theo chương trình. Bằng cách hợp nhất các tệp XLT, bạn có thể kết hợp nhiều mẫu vào một tài liệu duy nhất, hợp lý hóa quy trình làm việc của bạn và nâng cao hiệu quả.
 ## Điều kiện tiên quyết

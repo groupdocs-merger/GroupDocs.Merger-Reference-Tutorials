@@ -6,6 +6,9 @@ description: Aprenda como mesclar arquivos XLTX sem esforço. Comece a mesclar a
 weight: 17
 url: /pt/net/spreadsheet-merging/merge-xltx-files/
 ---
+
+# Mesclar arquivos XLTX
+
 ## Introdução
 Neste tutorial, exploraremos como mesclar arquivos XLTX (modelo Excel). GroupDocs.Merger é uma API poderosa de manipulação de documentos que permite aos desenvolvedores combinar, dividir e manipular vários formatos de documentos perfeitamente em aplicativos .NET. Este tutorial se concentra especificamente na mesclagem de arquivos XLTX programaticamente.
 ## Pré-requisitos

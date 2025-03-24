@@ -6,6 +6,9 @@ description: Dowiedz się, jak scalić pliki XLSB. Ten przewodnik krok po kroku 
 weight: 12
 url: /pl/net/spreadsheet-merging/how-to-merge-xlsb-files/
 ---
+
+# Jak scalić pliki XLSB
+
 ## Wstęp
 W tym samouczku przyjrzymy się, jak scalić pliki XLSB (Excel Binary Workbook). GroupDocs.Merger dla .NET to potężny interfejs API do manipulacji dokumentami, który umożliwia programistom łączenie, dzielenie i płynne manipulowanie różnymi formatami dokumentów w aplikacjach .NET. W szczególności skupimy się na łączeniu plików XLSB przy użyciu tej wszechstronnej biblioteki.
 ## Warunki wstępne

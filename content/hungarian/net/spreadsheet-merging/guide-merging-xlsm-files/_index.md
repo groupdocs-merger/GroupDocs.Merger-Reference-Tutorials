@@ -6,6 +6,9 @@ description: Egyesítse zökkenőmentesen az XLSM fájlokat a GroupDocs.Merger f
 weight: 13
 url: /hu/net/spreadsheet-merging/guide-merging-xlsm-files/
 ---
+
+# Útmutató az XLSM-fájlok egyesítéséhez
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan egyesíthet XLSM (Excel Macro-Enabled Workbook) fájlokat. A GroupDocs.Merger egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára a dokumentumformátumok kezelését, beleértve a fájlok egyesítését, felosztását és programozott módosítását.
 ## Előfeltételek

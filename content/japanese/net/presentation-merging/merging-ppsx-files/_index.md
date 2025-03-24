@@ -6,6 +6,9 @@ description: GroupDocs.Merger for .NET を使用すると、PPSX ファイルを
 weight: 11
 url: /ja/net/presentation-merging/merging-ppsx-files/
 ---
+
+# PPSXファイルの結合
+
 ## 導入
 このチュートリアルでは、強力な GroupDocs.Merger for .NET ライブラリを使用した PPSX ファイルのマージについて詳しく説明します。 GroupDocs.Merger は、プログラムによって複数の PowerPoint Slide Show (PPSX) ファイルを 1 つの統合ファイルに結合するプロセスを簡素化します。アプリケーションを開発している場合でも、ファイル操作タスクを自動化する必要がある場合でも、GroupDocs.Merger は効率的なソリューションを提供します。
 ## 前提条件

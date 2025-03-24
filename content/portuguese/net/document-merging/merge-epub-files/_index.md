@@ -6,6 +6,9 @@ description: Aprenda como mesclar arquivos EPUB programaticamente usando GroupDo
 weight: 17
 url: /pt/net/document-merging/merge-epub-files/
 ---
+
+# Mesclar arquivos EPUB
+
 ## Introdução
 Neste tutorial, exploraremos como mesclar arquivos EPUB usando GroupDocs.Merger for .NET. GroupDocs.Merger for .NET é uma biblioteca poderosa que permite aos desenvolvedores manipular e mesclar vários formatos de documentos perfeitamente em seus aplicativos .NET. Especificamente, vamos nos concentrar na fusão de arquivos EPUB passo a passo usando esta biblioteca.
 ## Pré-requisitos

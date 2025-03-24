@@ -6,6 +6,9 @@ url: /vi/net/
 description: Dễ dàng hợp nhất và nén các định dạng tệp khác nhau bằng GroupDocs.Merger .NET. Tìm hiểu hướng dẫn từng bước về cách hợp nhất hình ảnh, tài liệu và hơn thế nữa!
 is_root: true
 ---
+
+# Hướng dẫn và ví dụ về GroupDocs.Merger cho .NET
+
 ## Giới thiệu
 
 Quản lý tệp của bạn dễ dàng với GroupDocs.Merger cho .NET! Chuỗi hướng dẫn toàn diện này cung cấp hướng dẫn từng bước về cách tận dụng sức mạnh của GroupDocs.Merger để hợp nhất và nén các định dạng tệp khác nhau một cách liền mạch. Cho dù bạn đang xử lý hình ảnh, tài liệu, bảng tính, bản trình bày hay thậm chí là tệp Visio, chúng tôi đều có thể hỗ trợ bạn.

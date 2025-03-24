@@ -6,6 +6,9 @@ description: XLAM dosyalarını zahmetsizce nasıl birleştireceğinizi öğreni
 weight: 10
 url: /tr/net/spreadsheet-merging/merge-xlam-files/
 ---
+
+# XLAM Dosyalarını Birleştir
+
 ## giriiş
 
 Bu eğitimde XLAM (Microsoft Excel Eklentisi) dosyalarının nasıl birleştirileceğini inceleyeceğiz. GroupDocs.Merger, geliştiricilerin çeşitli belge formatlarıyla programlı olarak çalışmasına olanak tanıyan güçlü bir belge işleme API'sidir. Bu API'yi kullanarak birden fazla XLAM dosyasını sorunsuz bir şekilde tek bir dosyada birleştirerek belge yönetimi süreçlerinizi kolaylaştırabilirsiniz.

@@ -6,6 +6,9 @@ description: Aprenda como mesclar arquivos SVG programaticamente usando GroupDoc
 weight: 13
 url: /pt/net/image-merging/guide-merging-svg-files/
 ---
+
+# Guia para mesclar arquivos SVG
+
 ## Introdução
 Neste tutorial, você aprenderá como mesclar arquivos SVG (Scalable Vector Graphics) usando GroupDocs.Merger para .NET. GroupDocs.Merger é uma API poderosa de manipulação de documentos que permite mesclar, dividir e manipular vários formatos de documentos perfeitamente. Seguindo este guia passo a passo, você poderá combinar vários arquivos SVG em um único arquivo SVG usando C#.
 

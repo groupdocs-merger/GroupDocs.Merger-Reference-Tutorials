@@ -6,6 +6,9 @@ description: Leer hoe u DOT-bestanden (Graphviz) programmatisch samenvoegt met G
 weight: 13
 url: /nl/net/document-merging/guide-merging-dot-files/
 ---
+
+# Gids voor het samenvoegen van DOT-bestanden
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u DOT-bestanden (Graphviz) kunt samenvoegen met GroupDocs.Merger voor .NET. GroupDocs.Merger voor .NET is een krachtige API waarmee ontwikkelaars gemakkelijk verschillende documentformaten, inclusief DOT-bestanden, kunnen manipuleren. Aan het einde van deze handleiding begrijpt u hoe u meerdere DOT-bestanden programmatisch kunt combineren tot één bestand met behulp van GroupDocs.Merger.
 ## Vereisten

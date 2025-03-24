@@ -6,6 +6,9 @@ description: Tìm hiểu cách hợp nhất các tệp DOCM một cách liền m
 weight: 11
 url: /vi/net/document-merging/merging-docm-files/
 ---
+
+# Hợp nhất các tệp DOCM
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách hợp nhất các tệp DOCM (Tài liệu hỗ trợ macro Microsoft Word) bằng GroupDocs.Merger cho .NET. Thư viện này cung cấp các tính năng thao tác tài liệu mạnh mẽ, cho phép các nhà phát triển hợp nhất, phân tách, trích xuất và thao tác liền mạch các định dạng tài liệu khác nhau trong các ứng dụng .NET của họ.
 ## Điều kiện tiên quyết

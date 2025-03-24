@@ -6,6 +6,9 @@ description: Leer hoe u XLTM-bestanden programmatisch samenvoegt. Stapsgewijze h
 weight: 16
 url: /nl/net/spreadsheet-merging/merging-xltm-files/
 ---
+
+# XLTM-bestanden samenvoegen
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u XLTM-bestanden (Excel Macro-Enabled Template) kunt samenvoegen. GroupDocs.Merger voor .NET is een krachtige bibliotheek waarmee ontwikkelaars verschillende documentformaten programmatisch kunnen manipuleren en samenvoegen. Deze handleiding leidt u stap voor stap door het proces van het samenvoegen van XLTM-bestanden met behulp van C#.
 ## Vereisten

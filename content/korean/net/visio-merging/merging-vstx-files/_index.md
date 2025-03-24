@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Merger를 사용하여 VSTX 파일을 병합하�
 weight: 16
 url: /ko/net/visio-merging/merging-vstx-files/
 ---
+
+# .NET용 GroupDocs.Merger를 사용하여 VSTX 파일 병합
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Merger를 사용하여 VSTX 파일을 병합하는 방법을 살펴보겠습니다. .NET용 GroupDocs.Merger는 개발자가 .NET 응용 프로그램 내에서 다양한 문서 형식을 원활하게 조작할 수 있게 해주는 강력한 라이브러리입니다. VSTX 파일 병합은 문서 처리, 특히 Microsoft PowerPoint에서 프레젠테이션을 처리할 때 일반적인 작업입니다.
 ## 전제 조건

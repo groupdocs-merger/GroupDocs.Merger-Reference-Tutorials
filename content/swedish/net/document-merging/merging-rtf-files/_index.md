@@ -6,6 +6,9 @@ description: Lär dig hur du enkelt sammanfogar RTF-filer i .NET med GroupDocs.M
 weight: 21
 url: /sv/net/document-merging/merging-rtf-files/
 ---
+
+# Slår ihop RTF-filer
+
 ## Introduktion
 I en värld av .NET-utveckling är en sömlös sammanslagning av RTF-filer (Rich Text Format) en avgörande uppgift för många applikationer. GroupDocs.Merger för .NET tillhandahåller en kraftfull lösning för att åstadkomma detta effektivt. Denna handledning guidar dig genom processen att slå samman RTF-filer med GroupDocs.Merger för .NET steg för steg. I slutet av denna handledning kommer du att vara utrustad med kunskapen för att enkelt sammanfoga RTF-filer i dina .NET-projekt.
 ## Förutsättningar

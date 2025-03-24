@@ -6,6 +6,9 @@ description: Ebből a lépésről lépésre mutató oktatóanyagból megtudhatja
 weight: 14
 url: /hu/net/image-merging/merging-svgz-files/
 ---
+
+# SVGZ fájlok egyesítése
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet egyesíteni az SVGZ (Scalable Vector Graphics) fájlokat a GroupDocs.Merger for .NET segítségével. A GroupDocs.Merger egy hatékony dokumentumkezelési API, amely lehetővé teszi a fejlesztők számára, hogy különféle műveleteket hajtsanak végre különböző dokumentumformátumokon, beleértve az oldalak egyesítését, felosztását és átrendezését.
 ## Előfeltételek

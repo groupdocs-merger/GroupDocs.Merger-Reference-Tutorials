@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan egyesíthet programozottan SVG-fájlokat a Grou
 weight: 13
 url: /hu/net/image-merging/guide-merging-svg-files/
 ---
+
+# Útmutató az SVG-fájlok egyesítéséhez
+
 ## Bevezetés
 Ebből az oktatóanyagból megtudhatja, hogyan egyesíthet SVG (Scalable Vector Graphics) fájlokat a GroupDocs.Merger for .NET segítségével. A GroupDocs.Merger egy hatékony dokumentumkezelési API, amely lehetővé teszi a különböző dokumentumformátumok zökkenőmentes összevonását, felosztását és kezelését. Ha követi ezt a lépésenkénti útmutatót, akkor több SVG-fájlt is összevonhat egyetlen SVG-fájlba a C# használatával.
 

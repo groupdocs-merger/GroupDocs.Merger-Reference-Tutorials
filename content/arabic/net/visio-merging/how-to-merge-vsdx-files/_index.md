@@ -6,6 +6,9 @@ description: تعرف على كيفية دمج ملفات VSDX برمجياً ب
 weight: 12
 url: /ar/net/visio-merging/how-to-merge-vsdx-files/
 ---
+
+# كيفية دمج ملفات VSDX
+
 ## مقدمة
 ستتعلم في هذا البرنامج التعليمي كيفية دمج ملفات VSDX (رسم Visio) باستخدام GroupDocs.Merger لـ .NET. GroupDocs.Merger for .NET عبارة عن واجهة برمجة تطبيقات قوية تسمح لك بمعالجة تنسيقات المستندات المختلفة ودمجها بسلاسة داخل تطبيقات .NET الخاصة بك.
 ## المتطلبات الأساسية

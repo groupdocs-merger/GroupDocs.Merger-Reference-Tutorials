@@ -6,6 +6,9 @@ description: Könnyedén egyesítsen különféle prezentációs fájlformátumo
 weight: 25
 url: /hu/net/presentation-merging/
 ---
+
+# Bemutató összevonás
+
 ## Bevezetés
 
 Könnyedén egyesítse prezentációs fájljait. Legyen szó PPS-, PPSX-, PPT- vagy OTP-fájlokról, oktatóanyagaink lépésenkénti útmutatást kínálnak gyakorlati kódpéldák kíséretében a dokumentum-egyesítési feladatok egyszerűsítéséhez.

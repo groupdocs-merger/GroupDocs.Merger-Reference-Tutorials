@@ -6,6 +6,9 @@ description: Gabungkan dan kompres berbagai format file tutorial dengan mudah. P
 weight: 20
 url: /id/net/merge-compress-files/
 ---
+
+# Gabungkan File Kompres
+
 ## Perkenalan
 
 

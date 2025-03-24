@@ -6,6 +6,9 @@ description: Přečtěte si, jak sloučit soubory XLT. Kombinujte šablony Excel
 weight: 15
 url: /cs/net/spreadsheet-merging/merge-xlt-files/
 ---
+
+# Sloučit soubory XLT
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak sloučit soubory XLT (Excel Template). GroupDocs.Merger je výkonné API, které umožňuje vývojářům programově manipulovat s různými formáty dokumentů, včetně souborů aplikace Excel. Sloučením souborů XLT můžete zkombinovat více šablon do jednoho dokumentu, zefektivnit váš pracovní postup a zvýšit efektivitu.
 ## Předpoklady

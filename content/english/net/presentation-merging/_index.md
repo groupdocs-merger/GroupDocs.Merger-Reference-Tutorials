@@ -6,6 +6,9 @@ description: Merge various presentation file formats effortlessly. Follow our tu
 weight: 25
 url: /net/presentation-merging/
 ---
+
+# Presentation Merging
+
 ## Introduction
 
 Merge your presentation files effortlessly. Whether it's PPS, PPSX, PPT, or OTP files, our tutorials offer step-by-step guidance, accompanied by practical code examples, to streamline your document merging tasks.

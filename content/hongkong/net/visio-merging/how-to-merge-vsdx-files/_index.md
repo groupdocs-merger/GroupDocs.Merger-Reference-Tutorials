@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Merger for .NET 以程式設計方式�
 weight: 12
 url: /zh-hant/net/visio-merging/how-to-merge-vsdx-files/
 ---
+
+# 如何合併 VSDX 文件
+
 ## 介紹
 在本教學中，您將了解如何使用 GroupDocs.Merger for .NET 合併 VSDX (Visio 繪圖) 檔案。 GroupDocs.Merger for .NET 是一個功能強大的 API，可讓您在 .NET 應用程式中無縫操作和合併各種文件格式。
 ## 先決條件

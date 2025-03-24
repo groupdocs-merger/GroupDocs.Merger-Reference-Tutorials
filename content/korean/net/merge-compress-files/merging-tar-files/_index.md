@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Merger를 사용하여 프로그래밍 방식으�
 weight: 11
 url: /ko/net/merge-compress-files/merging-tar-files/
 ---
+
+# Tar 파일 병합
+
 ## 소개
 소프트웨어 개발에서 파일을 프로그래밍 방식으로 조작하고 병합하는 기능은 효율적인 데이터 처리에 매우 중요할 수 있습니다. .NET용 GroupDocs.Merger는 개발자가 .NET 응용 프로그램 내에서 TAR(테이프 아카이브) 파일을 원활하게 병합할 수 있게 해주는 강력한 라이브러리입니다. 이 튜토리얼에서는 GroupDocs.Merger를 사용하여 TAR 파일을 병합하는 과정을 안내하고 단계별 지침과 코드 예제를 제공합니다.
 ## 전제 조건

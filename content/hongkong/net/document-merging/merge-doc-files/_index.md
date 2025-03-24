@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Merger for .NET 以程式設計方式�
 weight: 10
 url: /zh-hant/net/document-merging/merge-doc-files/
 ---
+
+# 使用 GroupDocs.Merger for .NET 合併 DOC 文件
+
 ## 介紹
 在本教學中，我們將探討如何使用 GroupDocs.Merger for .NET 合併 DOC 檔案。 GroupDocs.Merger for .NET 是一個功能強大的 API，可讓開發人員以程式設計方式組合、分割和操作各種文件格式。透過利用此 API，您可以將多個 DOC 檔案無縫合併到一個文件中。我們將提供逐步說明，引導您完成使用 GroupDocs.Merger for .NET 合併 DOC 檔案的流程。
 ## 先決條件

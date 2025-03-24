@@ -6,6 +6,9 @@ description: Scopri come unire i file SVG a livello di codice utilizzando GroupD
 weight: 13
 url: /it/net/image-merging/guide-merging-svg-files/
 ---
+
+# Guida all'unione di file SVG
+
 ## introduzione
 In questo tutorial imparerai come unire file SVG (Scalable Vector Graphics) utilizzando GroupDocs.Merger per .NET. GroupDocs.Merger è una potente API per la manipolazione dei documenti che ti consente di unire, dividere e manipolare vari formati di documenti senza problemi. Seguendo questa guida passo passo, sarai in grado di combinare più file SVG in un singolo file SVG utilizzando C#.
 

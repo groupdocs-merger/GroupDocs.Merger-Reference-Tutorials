@@ -6,6 +6,9 @@ description: Naučte se, jak programově sloučit soubory DOCX v .NET pomocí Gr
 weight: 12
 url: /cs/net/document-merging/how-to-merge-docx-files/
 ---
+
+# Jak sloučit soubory DOCX
+
 ## Úvod
 Ve světě vývoje .NET může být programové slučování souborů DOCX výkonnou funkcí pro různé aplikace. GroupDocs.Merger for .NET poskytuje komplexní řešení pro efektivní slučování souborů DOCX. Tento tutoriál vás provede procesem používání GroupDocs.Merger for .NET k bezproblémovému sloučení více souborů DOCX do jednoho dokumentu.
 ## Předpoklady

@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Merger for .NET 合并 TIFF 文件。�
 weight: 16
 url: /zh/net/image-merging/merging-tiff-files/
 ---
+
+# 合并 TIFF 文件
+
 ## 介绍
 在本教程中，我们将探讨如何使用 GroupDocs.Merger for .NET 库合并 TIFF 文件。 GroupDocs.Merger 是一个功能强大的文档操作 API，允许开发人员在 .NET 应用程序中无缝合并、拆分和修改各种文档格式。
 ## 先决条件

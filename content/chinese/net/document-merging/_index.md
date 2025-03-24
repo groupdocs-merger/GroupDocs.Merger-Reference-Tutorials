@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Merger 轻松合并 .NET 中的各种文档格式�
 weight: 22
 url: /zh/net/document-merging/
 ---
+
+# 文档合并
+
 ## 介绍
 
 您是 .NET 开发人员，正在寻找无缝合并各种文档格式的有效方法吗？GroupDocs.Merger for .NET 是您的终极解决方案。在此综合教程列表中，我们将深入研究如何轻松合并 DOC、DOCX、PDF 和其他格式。

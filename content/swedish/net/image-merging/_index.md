@@ -6,6 +6,9 @@ description: Slå ihop BMP-, GIF-, PNG-, SVG-, SVGZ-, TIF- och TIFF-filer söml�
 weight: 21
 url: /sv/net/image-merging/
 ---
+
+# Bildsammanslagning
+
 ## Introduktion
 
 Undrar du hur man effektiviserar filsammanfogningsuppgifter i dina .NET-applikationer? Dyk in i vår omfattande självstudielista med olika filformat som BMP, GIF, PNG, SVG, SVGZ, TIF och TIFF, alla sammanfogade sömlöst med GroupDocs.Merger för .NET.

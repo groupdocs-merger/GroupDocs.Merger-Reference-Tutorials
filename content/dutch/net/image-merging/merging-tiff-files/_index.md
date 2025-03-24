@@ -6,6 +6,9 @@ description: Leer hoe u TIFF-bestanden samenvoegt met GroupDocs.Merger voor .NET
 weight: 16
 url: /nl/net/image-merging/merging-tiff-files/
 ---
+
+# TIFF-bestanden samenvoegen
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u TIFF-bestanden kunt samenvoegen met behulp van de GroupDocs.Merger voor .NET-bibliotheek. GroupDocs.Merger is een krachtige API voor documentmanipulatie waarmee ontwikkelaars verschillende documentformaten naadloos kunnen samenvoegen, splitsen en wijzigen binnen .NET-applicaties.
 ## Vereisten

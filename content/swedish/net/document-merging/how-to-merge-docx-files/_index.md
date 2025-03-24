@@ -6,6 +6,9 @@ description: Lär dig hur du sammanfogar DOCX-filer programmatiskt i .NET med Gr
 weight: 12
 url: /sv/net/document-merging/how-to-merge-docx-files/
 ---
+
+# Hur man slår ihop DOCX-filer
+
 ## Introduktion
 I en värld av .NET-utveckling kan sammanslagning av DOCX-filer programmatiskt vara en kraftfull funktion för olika applikationer. GroupDocs.Merger för .NET tillhandahåller en omfattande lösning för att effektivt sammanfoga DOCX-filer. Denna handledning guidar dig genom processen att använda GroupDocs.Merger för .NET för att sömlöst sammanfoga flera DOCX-filer till ett enda dokument.
 ## Förutsättningar

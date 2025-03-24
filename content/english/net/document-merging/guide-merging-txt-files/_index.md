@@ -6,6 +6,9 @@ description: Merge TXT files seamlessly in .NET using GroupDocs.Merger. Step-by-
 weight: 18
 url: /net/document-merging/guide-merging-txt-files/
 ---
+
+# Guide to Merging TXT Files with GroupDocs.Merger for .NET
+
 ## Introduction
 In the world of .NET development, manipulating and merging text files is a common requirement for various applications. GroupDocs.Merger for .NET offers a powerful solution for merging TXT files seamlessly within your .NET projects. This comprehensive guide will walk you through the process of merging TXT files step by step using GroupDocs.Merger.
 ## Prerequisites

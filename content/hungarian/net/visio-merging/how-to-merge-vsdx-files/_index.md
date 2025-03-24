@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan egyesíthet programozottan VSDX-fájlokat a Gro
 weight: 12
 url: /hu/net/visio-merging/how-to-merge-vsdx-files/
 ---
+
+# VSDX fájlok egyesítése
+
 ## Bevezetés
 Ebből az oktatóanyagból megtudhatja, hogyan egyesíthet VSDX (Visio Drawing) fájlokat a GroupDocs.Merger for .NET használatával. A GroupDocs.Merger for .NET egy hatékony API, amely lehetővé teszi a különböző dokumentumformátumok zökkenőmentes kezelését és egyesítése .NET-alkalmazásaiban.
 ## Előfeltételek

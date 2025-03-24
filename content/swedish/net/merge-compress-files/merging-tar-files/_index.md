@@ -6,6 +6,9 @@ description: Lär dig hur du sammanfogar TAR-filer programmatiskt med GroupDocs.
 weight: 11
 url: /sv/net/merge-compress-files/merging-tar-files/
 ---
+
+# Slår ihop Tar-filer
+
 ## Introduktion
 Inom mjukvaruutveckling kan förmågan att manipulera och sammanfoga filer programmatiskt vara avgörande för effektiv datahantering. GroupDocs.Merger för .NET är ett kraftfullt bibliotek som gör det möjligt för utvecklare att slå samman TAR-filer (Tape Archive) sömlöst i sina .NET-applikationer. Den här handledningen guidar dig genom processen att slå samman TAR-filer med GroupDocs.Merger, med steg-för-steg-instruktioner och kodexempel.
 ## Förutsättningar

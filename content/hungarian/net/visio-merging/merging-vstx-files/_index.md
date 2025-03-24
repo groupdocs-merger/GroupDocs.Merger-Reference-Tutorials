@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan egyesíthet VSTX fájlokat a GroupDocs.Merger f
 weight: 16
 url: /hu/net/visio-merging/merging-vstx-files/
 ---
+
+# VSTX fájlok egyesítése a GroupDocs.Merger for .NET szolgáltatással
+
 ## Bevezetés
 Ebben az oktatóanyagban a VSTX-fájlok egyesítését vizsgáljuk meg a GroupDocs.Merger for .NET használatával. A GroupDocs.Merger for .NET egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy zökkenőmentesen kezeljék a különböző dokumentumformátumokat .NET-alkalmazásaikon belül. A VSTX fájlok egyesítése gyakori feladat a dokumentumfeldolgozás során, különösen a Microsoft PowerPoint bemutatóinak kezelésekor.
 ## Előfeltételek

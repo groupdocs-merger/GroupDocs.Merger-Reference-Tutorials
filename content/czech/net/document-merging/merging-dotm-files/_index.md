@@ -6,6 +6,9 @@ description: Naučte se, jak sloučit soubory DOTM programově pomocí GroupDocs
 weight: 14
 url: /cs/net/document-merging/merging-dotm-files/
 ---
+
+# Sloučení souborů DOTM
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak sloučit soubory DOTM (Word Macro-Enabled Template) pomocí GroupDocs.Merger pro .NET. GroupDocs.Merger je výkonné API, které umožňuje vývojářům bezproblémově manipulovat a kombinovat různé formáty dokumentů v rámci jejich aplikací .NET. Podle tohoto průvodce se krok za krokem naučíte integrovat tuto funkci do svých projektů.
 ## Předpoklady

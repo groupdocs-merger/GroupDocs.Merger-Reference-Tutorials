@@ -6,6 +6,9 @@ description: Tìm hiểu cách hợp nhất các tệp DOTM theo chương trình
 weight: 14
 url: /vi/net/document-merging/merging-dotm-files/
 ---
+
+# Hợp nhất các tệp DOTM
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách hợp nhất các tệp DOTM (Mẫu hỗ trợ macro Word) bằng GroupDocs.Merger cho .NET. GroupDocs.Merger là một API mạnh mẽ cho phép các nhà phát triển thao tác và kết hợp các định dạng tài liệu khác nhau một cách liền mạch trong các ứng dụng .NET của họ. Bằng cách làm theo hướng dẫn này, bạn sẽ tìm hiểu từng bước cách tích hợp chức năng này vào các dự án của mình.
 ## Điều kiện tiên quyết

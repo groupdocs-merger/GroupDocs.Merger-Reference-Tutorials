@@ -6,6 +6,9 @@ description: Slučujte a komprimujte různé formáty souborů bez námahy tutor
 weight: 20
 url: /cs/net/merge-compress-files/
 ---
+
+# Sloučit komprimované soubory
+
 ## Úvod
 
 

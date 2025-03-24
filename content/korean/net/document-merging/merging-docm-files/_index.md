@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Merger를 사용하여 DOCM 파일을 원활하�
 weight: 11
 url: /ko/net/document-merging/merging-docm-files/
 ---
+
+# DOCM 파일 병합
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Merger를 사용하여 DOCM(Microsoft Word 매크로 사용 문서) 파일을 병합하는 방법을 살펴보겠습니다. 이 라이브러리는 강력한 문서 조작 기능을 제공하므로 개발자는 .NET 애플리케이션 내에서 다양한 문서 형식을 원활하게 병합, 분할, 추출 및 조작할 수 있습니다.
 ## 전제 조건

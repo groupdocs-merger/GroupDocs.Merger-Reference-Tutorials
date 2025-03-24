@@ -6,6 +6,9 @@ description: Lär dig hur du slår samman XLSB-filer. Denna steg-för-steg-guide
 weight: 12
 url: /sv/net/spreadsheet-merging/how-to-merge-xlsb-files/
 ---
+
+# Hur man slår ihop XLSB-filer
+
 ## Introduktion
 I den här handledningen kommer vi att utforska hur man slår ihop XLSB-filer (Excel Binary Workbook). GroupDocs.Merger för .NET är ett kraftfullt API för dokumentmanipulering som låter utvecklare slå samman, dela upp och manipulera olika dokumentformat sömlöst i sina .NET-applikationer. Specifikt kommer vi att fokusera på att slå samman XLSB-filer med detta mångsidiga bibliotek.
 ## Förutsättningar

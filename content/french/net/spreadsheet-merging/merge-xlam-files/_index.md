@@ -6,6 +6,9 @@ description: Apprenez à fusionner des fichiers XLAM sans effort. Simplifiez vos
 weight: 10
 url: /fr/net/spreadsheet-merging/merge-xlam-files/
 ---
+
+# Fusionner les fichiers XLAM
+
 ## Introduction
 
 Dans ce didacticiel, nous allons explorer comment fusionner des fichiers XLAM (Microsoft Excel Add-In). GroupDocs.Merger est une puissante API de manipulation de documents qui permet aux développeurs de travailler avec différents formats de documents par programme. En tirant parti de cette API, vous pouvez combiner de manière transparente plusieurs fichiers XLAM en un seul fichier, rationalisant ainsi vos processus de gestion de documents.

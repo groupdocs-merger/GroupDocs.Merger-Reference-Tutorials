@@ -6,6 +6,9 @@ description: Bez námahy slučujte různé formáty dokumentů v .NET pomocí Gr
 weight: 22
 url: /cs/net/document-merging/
 ---
+
+# Sloučení dokumentů
+
 ## Úvod
 
 Jste vývojář .NET, který hledá efektivní způsoby, jak hladce sloučit různé formáty dokumentů? GroupDocs.Merger for .NET je vaše dokonalé řešení. V tomto komplexním seznamu výukových programů se bez námahy ponoříme do sloučení formátů DOC, DOCX, PDF a dalších.

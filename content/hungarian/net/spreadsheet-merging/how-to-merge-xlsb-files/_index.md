@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan lehet XLSB-fájlokat egyesíteni. Ez a lépése
 weight: 12
 url: /hu/net/spreadsheet-merging/how-to-merge-xlsb-files/
 ---
+
+# XLSB fájlok egyesítése
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet XLSB (Excel Binary Workbook) fájlokat egyesíteni. A GroupDocs.Merger for .NET egy hatékony dokumentumkezelési API, amely lehetővé teszi a fejlesztők számára, hogy .NET-alkalmazásaikon belül zökkenőmentesen egyesítsék, feloszthassák és kezeljék a különböző dokumentumformátumokat. Konkrétan az XLSB-fájlok egyesítésére fogunk összpontosítani ennek a sokoldalú könyvtárnak a használatával.
 ## Előfeltételek

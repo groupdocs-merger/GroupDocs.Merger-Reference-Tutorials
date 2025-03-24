@@ -6,6 +6,9 @@ description: Scopri come unire i file EPUB a livello di codice utilizzando Group
 weight: 17
 url: /it/net/document-merging/merge-epub-files/
 ---
+
+# Unisci file EPUB
+
 ## introduzione
 In questo tutorial esploreremo come unire file EPUB utilizzando GroupDocs.Merger per .NET. GroupDocs.Merger per .NET è una potente libreria che consente agli sviluppatori di manipolare e unire vari formati di documenti senza problemi all'interno delle loro applicazioni .NET. Nello specifico, ci concentreremo sull'unione dei file EPUB passo dopo passo utilizzando questa libreria.
 ## Prerequisiti

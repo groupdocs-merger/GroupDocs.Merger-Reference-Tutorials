@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Merger for .NET 以程式設計方式�
 weight: 11
 url: /zh-hant/net/merge-compress-files/merging-tar-files/
 ---
+
+# 合併 Tar 文件
+
 ## 介紹
 在軟體開發中，以程式設計方式操作和合併文件的能力對於高效的數據處理至關重要。 GroupDocs.Merger for .NET 是一個功能強大的程式庫，使開發人員能夠在其 .NET 應用程式中無縫合併 TAR（磁帶存檔）檔案。本教學將引導您完成使用 GroupDocs.Merger 合併 TAR 檔案的過程，並提供逐步說明和程式碼範例。
 ## 先決條件

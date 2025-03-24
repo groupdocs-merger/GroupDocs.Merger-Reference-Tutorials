@@ -6,6 +6,9 @@ description: Tìm hiểu cách hợp nhất các tệp VSTX bằng GroupDocs.Mer
 weight: 16
 url: /vi/net/visio-merging/merging-vstx-files/
 ---
+
+# Hợp nhất các tệp VSTX với GroupDocs.Merger cho .NET
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng tôi sẽ đi sâu vào cách hợp nhất các tệp VSTX bằng GroupDocs.Merger cho .NET. GroupDocs.Merger for .NET là một thư viện mạnh mẽ cho phép các nhà phát triển thao tác liền mạch các định dạng tài liệu khác nhau trong các ứng dụng .NET của họ. Hợp nhất các tệp VSTX là một tác vụ phổ biến trong xử lý tài liệu, đặc biệt là khi xử lý các bài thuyết trình trong Microsoft PowerPoint.
 ## Điều kiện tiên quyết

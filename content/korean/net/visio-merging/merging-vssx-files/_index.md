@@ -6,6 +6,9 @@ description: GroupDocs.Merger를 사용하여 .NET 애플리케이션에서 VSSX
 weight: 14
 url: /ko/net/visio-merging/merging-vssx-files/
 ---
+
+# VSSX 파일 병합
+
 ## 소개
 이 튜토리얼에서는 .NET용 GroupDocs.Merger를 사용하여 VSSX 파일을 병합하는 방법을 살펴보겠습니다. .NET용 GroupDocs.Merger는 개발자가 .NET 응용 프로그램 내에서 다양한 문서 형식을 원활하게 조작하고 병합할 수 있게 해주는 강력한 라이브러리입니다. VSSX 파일 병합은 보다 쉬운 관리 및 배포를 위해 여러 Visual Studio 스텐실 파일을 단일 파일로 결합해야 할 때 특히 유용할 수 있습니다.
 ## 전제 조건

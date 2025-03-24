@@ -6,6 +6,9 @@ description: Naučte se, jak hladce sloučit soubory PPS pomocí GroupDocs.Merge
 weight: 10
 url: /cs/net/presentation-merging/merge-pps-files/
 ---
+
+# Sloučit soubory PPS
+
 ## Úvod
 Ve světě vývoje .NET je efektivní manipulace se soubory dokumentů zásadní. GroupDocs.Merger for .NET poskytuje výkonné nástroje pro bezproblémové slučování a manipulaci s různými formáty dokumentů. V tomto tutoriálu se zaměříme na slučování souborů PPS (PowerPoint Slide Show) pomocí GroupDocs.Merger for .NET. Ať už jste zkušený vývojář nebo teprve začínáte, tento průvodce vás provede procesem krok za krokem.
 ## Předpoklady

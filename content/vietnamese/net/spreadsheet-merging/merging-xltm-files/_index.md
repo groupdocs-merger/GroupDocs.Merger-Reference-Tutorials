@@ -6,6 +6,9 @@ description: Tìm hiểu cách hợp nhất các tệp XLTM theo chương trình
 weight: 16
 url: /vi/net/spreadsheet-merging/merging-xltm-files/
 ---
+
+# Hợp nhất các tệp XLTM
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách hợp nhất các tệp XLTM (Mẫu hỗ trợ macro Excel). GroupDocs.Merger for .NET là một thư viện mạnh mẽ cho phép các nhà phát triển thao tác và hợp nhất các định dạng tài liệu khác nhau theo chương trình. Hướng dẫn này sẽ hướng dẫn bạn từng bước về quy trình hợp nhất các tệp XLTM bằng C#.
 ## Điều kiện tiên quyết

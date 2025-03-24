@@ -6,6 +6,9 @@ description: Mescle facilmente vários formatos de documentos em .NET usando Gro
 weight: 22
 url: /pt/net/document-merging/
 ---
+
+# Mesclagem de documentos
+
 ## Introdução
 
 Você é um desenvolvedor .NET que busca maneiras eficientes de mesclar vários formatos de documentos de maneira integrada? GroupDocs.Merger for .NET é a sua solução definitiva. Nesta lista abrangente de tutoriais, nos aprofundamos na fusão de DOC, DOCX, PDF e outros formatos sem esforço.

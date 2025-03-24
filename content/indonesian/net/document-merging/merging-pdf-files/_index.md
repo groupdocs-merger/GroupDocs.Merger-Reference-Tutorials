@@ -6,6 +6,9 @@ description: Pelajari cara menggabungkan file PDF secara terprogram di .NET meng
 weight: 19
 url: /id/net/document-merging/merging-pdf-files/
 ---
+
+# Menggabungkan File PDF
+
 ## Perkenalan
 Dalam bidang manajemen dan manipulasi dokumen, menggabungkan file PDF adalah tugas umum yang dihadapi pengembang. GroupDocs.Merger untuk .NET memberikan solusi tangguh untuk menggabungkan dokumen PDF dengan lancar dalam aplikasi .NET. Tutorial ini akan memandu Anda melalui proses menggabungkan file PDF menggunakan GroupDocs.Merger, menampilkan penerapan dan penggunaan langkah demi langkah.
 ## Prasyarat

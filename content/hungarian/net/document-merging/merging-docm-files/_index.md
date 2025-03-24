@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan egyesíthet zökkenőmentesen DOCM-fájlokat a 
 weight: 11
 url: /hu/net/document-merging/merging-docm-files/
 ---
+
+# DOCM-fájlok egyesítése
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet egyesíteni a DOCM (Microsoft Word Macro-Enabled Document) fájlokat a GroupDocs.Merger for .NET használatával. Ez a könyvtár hatékony dokumentumkezelési funkciókat kínál, amelyek lehetővé teszik a fejlesztők számára, hogy .NET-alkalmazásaikon belül zökkenőmentesen egyesítsék, feloszthassák, kivonják és kezeljék a különböző dokumentumformátumokat.
 ## Előfeltételek

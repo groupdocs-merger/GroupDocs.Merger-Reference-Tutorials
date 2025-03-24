@@ -6,6 +6,9 @@ description: 이 포괄적인 튜토리얼을 통해 .NET용 GroupDocs.Merger를
 weight: 10
 url: /ko/net/image-merging/merge-bmp-files/
 ---
+
+# BMP 파일 병합
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Merger를 사용하여 BMP(비트맵) 파일을 병합하는 방법을 살펴보겠습니다. GroupDocs.Merger는 개발자가 .NET 응용 프로그램 내에서 프로그래밍 방식으로 다양한 문서 형식을 조작하고 병합할 수 있도록 하는 강력한 API입니다. 이 가이드가 끝나면 BMP 파일을 단계별로 효율적으로 병합할 수 있습니다.
 ## 전제 조건

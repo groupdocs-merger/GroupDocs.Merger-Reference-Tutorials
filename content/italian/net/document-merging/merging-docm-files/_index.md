@@ -6,6 +6,9 @@ description: Scopri come unire file DOCM senza problemi utilizzando GroupDocs.Me
 weight: 11
 url: /it/net/document-merging/merging-docm-files/
 ---
+
+# Unione di file DOCM
+
 ## introduzione
 In questo tutorial esploreremo come unire file DOCM (Microsoft Word Macro-Enabled Document) utilizzando GroupDocs.Merger per .NET. Questa libreria fornisce potenti funzionalità di manipolazione dei documenti, consentendo agli sviluppatori di unire, dividere, estrarre e manipolare vari formati di documenti senza problemi all'interno delle loro applicazioni .NET.
 ## Prerequisiti

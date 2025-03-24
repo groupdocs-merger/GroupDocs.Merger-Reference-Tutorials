@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Merger .NET 無縫合併 BMP、GIF、PNG、SVG、S
 weight: 21
 url: /zh-hant/net/image-merging/
 ---
+
+# 影像合併
+
 ## 介紹
 
 想知道如何簡化 .NET 應用程式中的檔案合併任務？深入了解我們的綜合教程列表，其中包含 BMP、GIF、PNG、SVG、SVGZ、TIF 和 TIFF 等各種文件格式，所有文件格式均使用 GroupDocs.Merger for .NET 無縫合併。

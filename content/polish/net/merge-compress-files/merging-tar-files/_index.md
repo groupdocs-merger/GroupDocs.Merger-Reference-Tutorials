@@ -6,6 +6,9 @@ description: Dowiedz się, jak programowo scalić pliki TAR przy użyciu program
 weight: 11
 url: /pl/net/merge-compress-files/merging-tar-files/
 ---
+
+# Łączenie plików Tar
+
 ## Wstęp
 rozwoju oprogramowania możliwość programowego manipulowania plikami i łączenia ich może mieć kluczowe znaczenie dla wydajnej obsługi danych. GroupDocs.Merger dla .NET to potężna biblioteka, która umożliwia programistom płynne łączenie plików TAR (archiwum taśm) w aplikacjach .NET. Ten samouczek poprowadzi Cię przez proces łączenia plików TAR przy użyciu GroupDocs.Merger, dostarczając instrukcje krok po kroku i przykłady kodu.
 ## Warunki wstępne

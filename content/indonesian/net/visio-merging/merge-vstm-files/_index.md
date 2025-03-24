@@ -6,6 +6,9 @@ description: Pelajari cara menggabungkan file VSTM dengan mudah menggunakan Grou
 weight: 15
 url: /id/net/visio-merging/merge-vstm-files/
 ---
+
+# Gabungkan File VSTM
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara menggabungkan file VSTM (VSTemplate) menggunakan GroupDocs.Merger untuk .NET. GroupDocs.Merger adalah API manipulasi dokumen canggih yang memungkinkan pengembang menggabungkan, membagi, dan memanipulasi berbagai format dokumen dengan mulus dalam aplikasi .NET mereka.
 ## Prasyarat

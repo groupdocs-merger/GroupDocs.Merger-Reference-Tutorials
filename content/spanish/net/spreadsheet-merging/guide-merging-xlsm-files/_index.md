@@ -6,6 +6,9 @@ description: Combine archivos XLSM sin problemas con GroupDocs.Merger para .NET.
 weight: 13
 url: /es/net/spreadsheet-merging/guide-merging-xlsm-files/
 ---
+
+# Guía para fusionar archivos XLSM
+
 ## Introducción
 En este tutorial, exploraremos cómo fusionar archivos XLSM (libro de trabajo habilitado para macros de Excel). GroupDocs.Merger es una poderosa biblioteca que permite a los desarrolladores manipular formatos de documentos, incluida la combinación, división y modificación de archivos mediante programación.
 ## Requisitos previos

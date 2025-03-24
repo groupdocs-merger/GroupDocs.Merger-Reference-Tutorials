@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan egyesíthet könnyedén VSSM-fájlokat a GroupD
 weight: 13
 url: /hu/net/visio-merging/guide-merging-vssm-files/
 ---
+
+# Útmutató a VSSM-fájlok egyesítéséhez
+
 ## Bevezetés
 Ebből az oktatóanyagból megtudhatja, hogyan egyesíthet VSSM (Visio Macro-Enabled Drawing) fájlokat a GroupDocs.Merger for .NET segítségével. A GroupDocs.Merger egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy zökkenőmentesen kezeljék és egyesítsék a különböző dokumentumformátumokat.
 ## Előfeltételek

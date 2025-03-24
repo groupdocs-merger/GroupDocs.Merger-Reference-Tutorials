@@ -6,6 +6,9 @@ description: Pelajari cara menggabungkan file DOCM dengan lancar menggunakan Gro
 weight: 11
 url: /id/net/document-merging/merging-docm-files/
 ---
+
+# Menggabungkan File DOCM
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara menggabungkan file DOCM (Microsoft Word Macro-Enabled Document) menggunakan GroupDocs.Merger untuk .NET. Pustaka ini menyediakan fitur manipulasi dokumen yang kuat, memungkinkan pengembang untuk menggabungkan, membagi, mengekstrak, dan memanipulasi berbagai format dokumen dengan mulus dalam aplikasi .NET mereka.
 ## Prasyarat

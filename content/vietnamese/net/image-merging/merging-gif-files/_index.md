@@ -6,6 +6,9 @@ description: Tìm hiểu cách hợp nhất các tệp GIF bằng GroupDocs.Merg
 weight: 11
 url: /vi/net/image-merging/merging-gif-files/
 ---
+
+# Hợp nhất các tệp GIF
+
 ## Giới thiệu
 Trong hướng dẫn này, bạn sẽ tìm hiểu cách hợp nhất các tệp GIF bằng GroupDocs.Merger cho .NET. GroupDocs.Merger là một API mạnh mẽ cho phép các nhà phát triển thao tác với các định dạng tài liệu theo chương trình. Bằng cách làm theo các bước được nêu bên dưới, bạn sẽ có thể hợp nhất nhiều tệp GIF thành một tệp GIF đầu ra một cách hiệu quả.
 ## Điều kiện tiên quyết

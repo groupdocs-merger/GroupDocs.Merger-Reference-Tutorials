@@ -6,6 +6,9 @@ description: Bez wysiłku łącz i kompresuj różne formaty plików. Dowiedz si
 weight: 20
 url: /pl/net/merge-compress-files/
 ---
+
+# Scal pliki kompresyjne
+
 ## Wstęp
 
 

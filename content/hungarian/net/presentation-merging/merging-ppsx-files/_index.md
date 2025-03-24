@@ -6,6 +6,9 @@ description: Egyszerűen egyesítse a PPSX fájlokat a GroupDocs.Merger for .NET
 weight: 11
 url: /hu/net/presentation-merging/merging-ppsx-files/
 ---
+
+# PPSX fájlok egyesítése
+
 ## Bevezetés
 Ebben az oktatóanyagban a PPSX-fájlok egyesítésével foglalkozunk a hatékony GroupDocs.Merger for .NET könyvtár használatával. A GroupDocs.Merger leegyszerűsíti a több PowerPoint Slide Show (PPSX) fájl egyetlen konszolidált fájlba programozással történő kombinálásának folyamatát. Akár alkalmazást fejleszt, akár fájlkezelési feladatokat szeretne automatizálni, a GroupDocs.Merger hatékony megoldást kínál.
 ## Előfeltételek

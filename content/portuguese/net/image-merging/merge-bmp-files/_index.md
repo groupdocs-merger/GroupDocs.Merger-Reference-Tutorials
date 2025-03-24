@@ -6,6 +6,9 @@ description: Aprenda como mesclar arquivos BMP usando GroupDocs.Merger for .NET 
 weight: 10
 url: /pt/net/image-merging/merge-bmp-files/
 ---
+
+# Mesclar arquivos BMP
+
 ## Introdução
 Neste tutorial, exploraremos como mesclar arquivos BMP (Bitmap) usando GroupDocs.Merger para .NET. GroupDocs.Merger é uma API poderosa que permite aos desenvolvedores manipular e mesclar vários formatos de documentos programaticamente em seus aplicativos .NET. Ao final deste guia, você será capaz de mesclar arquivos BMP com eficiência, passo a passo.
 ## Pré-requisitos

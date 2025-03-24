@@ -6,6 +6,9 @@ description: Pelajari cara menggabungkan file XLSB. Panduan langkah demi langkah
 weight: 12
 url: /id/net/spreadsheet-merging/how-to-merge-xlsb-files/
 ---
+
+# Cara Menggabungkan File XLSB
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara menggabungkan file XLSB (Excel Binary Workbook). GroupDocs.Merger for .NET adalah API manipulasi dokumen canggih yang memungkinkan pengembang menggabungkan, membagi, dan memanipulasi berbagai format dokumen dengan mulus dalam aplikasi .NET mereka. Secara khusus, kami akan fokus pada penggabungan file XLSB menggunakan perpustakaan serbaguna ini.
 ## Prasyarat

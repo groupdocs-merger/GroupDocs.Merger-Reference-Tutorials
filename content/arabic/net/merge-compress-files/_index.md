@@ -6,6 +6,9 @@ description: دمج وضغط تنسيقات الملفات المختلفة دو
 weight: 20
 url: /ar/net/merge-compress-files/
 ---
+
+# دمج الملفات المضغوطة
+
 ## مقدمة
 
 

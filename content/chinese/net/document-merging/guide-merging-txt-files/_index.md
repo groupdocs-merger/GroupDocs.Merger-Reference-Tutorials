@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Merger 在 .NET 中无缝合并 TXT 文件。开�
 weight: 18
 url: /zh/net/document-merging/guide-merging-txt-files/
 ---
+
+# 使用 GroupDocs.Merger for .NET 合并 TXT 文件的指南
+
 ## 介绍
 在 .NET 开发领域，操作和合并文本文件是各种应用程序的常见要求。GroupDocs.Merger for .NET 提供了一个强大的解决方案，可在您的 .NET 项目中无缝合并 TXT 文件。本综合指南将引导您逐步完成使用 GroupDocs.Merger 合并 TXT 文件的过程。
 ## 先决条件

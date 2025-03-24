@@ -6,6 +6,9 @@ description: Aprenda como mesclar arquivos XLSX sem esforço no .NET usando Grou
 weight: 14
 url: /pt/net/spreadsheet-merging/merging-xlsx-files/
 ---
+
+# Mesclando arquivos XLSX
+
 ## Introdução
 No domínio da manipulação e gerenciamento de documentos em aplicativos .NET, GroupDocs.Merger se destaca como uma ferramenta poderosa para mesclar vários formatos de arquivo perfeitamente. Este tutorial se aprofunda na mesclagem de arquivos XLSX (Excel), fornecendo orientação passo a passo sobre como mesclar arquivos de planilha com eficiência em um ambiente .NET. Quer você seja um desenvolvedor experiente ou esteja apenas começando com .NET, este tutorial fornecerá o conhecimento necessário para integrar recursos de mesclagem de arquivos em seus projetos.
 ## Pré-requisitos

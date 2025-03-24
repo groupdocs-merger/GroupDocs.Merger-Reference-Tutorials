@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Merger 在 .NET 中轻松合并 XLSX �
 weight: 14
 url: /zh/net/spreadsheet-merging/merging-xlsx-files/
 ---
+
+# 合并 XLSX 文件
+
 ## 介绍
 在 .NET 应用程序的文档操作和管理领域，GroupDocs.Merger 是一款功能强大的工具，可无缝合并各种文件格式。本教程深入探讨了 XLSX (Excel) 文件的合并，并提供了有关如何在 .NET 环境中有效合并电子表格文件的分步指南。无论您是经验丰富的开发人员还是刚开始使用 .NET，本教程都将为您提供将文件合并功能集成到项目中所需的知识。
 ## 先决条件

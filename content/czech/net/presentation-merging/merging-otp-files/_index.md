@@ -6,6 +6,9 @@ description: Přečtěte si, jak sloučit soubory OTP pomocí GroupDocs.Merger f
 weight: 14
 url: /cs/net/presentation-merging/merging-otp-files/
 ---
+
+# Sloučení souborů OTP
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak sloučit soubory OTP (OpenDocument Presentation Template) pomocí GroupDocs.Merger pro .NET. GroupDocs.Merger je výkonné API pro manipulaci s dokumenty, které umožňuje vývojářům bezproblémově kombinovat, rozdělovat a manipulovat s různými formáty souborů.
 ## Předpoklady

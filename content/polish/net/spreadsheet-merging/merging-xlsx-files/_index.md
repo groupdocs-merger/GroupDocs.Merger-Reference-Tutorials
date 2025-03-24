@@ -6,6 +6,9 @@ description: Dowiedz się, jak bez wysiłku łączyć pliki XLSX w platformie .N
 weight: 14
 url: /pl/net/spreadsheet-merging/merging-xlsx-files/
 ---
+
+# Łączenie plików XLSX
+
 ## Wstęp
 W dziedzinie manipulacji dokumentami i zarządzania nimi w aplikacjach .NET GroupDocs.Merger wyróżnia się jako potężne narzędzie do płynnego łączenia różnych formatów plików. W tym samouczku szczegółowo opisano łączenie plików XLSX (Excel) i przedstawiono wskazówki krok po kroku dotyczące wydajnego scalania plików arkuszy kalkulacyjnych w środowisku .NET. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz pracę z platformą .NET, ten samouczek wyposaży Cię w wiedzę niezbędną do zintegrowania możliwości łączenia plików z Twoimi projektami.
 ## Warunki wstępne

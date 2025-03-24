@@ -6,6 +6,9 @@ description: 了解如何合并 XLT 文件。通过此分步指南，在 C# 中�
 weight: 15
 url: /zh/net/spreadsheet-merging/merge-xlt-files/
 ---
+
+# 合并 XLT 文件
+
 ## 介绍
 在本教程中，我们将探讨如何合并 XLT（Excel 模板）文件。 GroupDocs.Merger 是一个功能强大的 API，允许开发人员以编程方式操作各种文档格式，包括 Excel 文件。通过合并 XLT 文件，您可以将多个模板合并到一个文档中，从而简化工作流程并提高效率。
 ## 先决条件

@@ -6,6 +6,9 @@ description: Tìm hiểu cách hợp nhất các tệp RTF trong .NET một các
 weight: 21
 url: /vi/net/document-merging/merging-rtf-files/
 ---
+
+# Hợp nhất các tệp RTF
+
 ## Giới thiệu
 Trong thế giới phát triển .NET, việc hợp nhất các tệp RTF (Rich Text Format) một cách liền mạch là một nhiệm vụ quan trọng đối với nhiều ứng dụng. GroupDocs.Merger for .NET cung cấp một giải pháp mạnh mẽ để thực hiện việc này một cách hiệu quả. Hướng dẫn này sẽ hướng dẫn bạn từng bước trong quá trình hợp nhất các tệp RTF bằng GroupDocs.Merger cho .NET. Đến cuối hướng dẫn này, bạn sẽ được trang bị kiến thức để hợp nhất các tệp RTF một cách dễ dàng trong các dự án .NET của mình.
 ## Điều kiện tiên quyết

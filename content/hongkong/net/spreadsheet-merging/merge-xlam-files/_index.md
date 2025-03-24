@@ -6,6 +6,9 @@ description: 了解如何輕鬆合併 XLAM 檔案。使用這個強大的 API �
 weight: 10
 url: /zh-hant/net/spreadsheet-merging/merge-xlam-files/
 ---
+
+# 合併 XLAM 文件
+
 ## 介紹
 
 在本教學中，我們將探討如何合併 XLAM（Microsoft Excel 加載項）檔案。 GroupDocs.Merger 是一個功能強大的文件操作 API，使開發人員能夠以程式設計方式處理各種文件格式。透過利用此 API，您可以將多個 XLAM 檔案無縫組合到一個檔案中，從而簡化文件管理流程。

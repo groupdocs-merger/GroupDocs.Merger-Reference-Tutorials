@@ -6,6 +6,9 @@ description: Tìm hiểu cách hợp nhất các tệp TIFF bằng GroupDocs.Mer
 weight: 16
 url: /vi/net/image-merging/merging-tiff-files/
 ---
+
+# Hợp nhất các tệp TIFF
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách hợp nhất các tệp TIFF bằng thư viện GroupDocs.Merger cho .NET. GroupDocs.Merger là một API thao tác tài liệu mạnh mẽ cho phép các nhà phát triển hợp nhất, phân tách và sửa đổi các định dạng tài liệu khác nhau một cách liền mạch trong các ứng dụng .NET.
 ## Điều kiện tiên quyết

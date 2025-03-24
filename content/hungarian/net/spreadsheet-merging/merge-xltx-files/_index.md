@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan egyesíthet könnyedén XLTX fájlokat. Kezdje 
 weight: 17
 url: /hu/net/spreadsheet-merging/merge-xltx-files/
 ---
+
+# XLTX fájlok egyesítése
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet XLTX (Excel sablon) fájlokat egyesíteni. A GroupDocs.Merger egy hatékony dokumentum-manipulációs API, amely lehetővé teszi a fejlesztők számára, hogy a .NET-alkalmazásokon belül zökkenőmentesen kombinálják, felosztják és kezeljék a különböző dokumentumformátumokat. Ez az oktatóanyag kifejezetten az XLTX-fájlok programozott egyesítésére összpontosít.
 ## Előfeltételek

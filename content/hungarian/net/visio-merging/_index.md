@@ -7,6 +7,9 @@ weight: 24
 url: /hu/net/visio-merging/
 ---
 
+# Visio egyesítése
+
+
 ## Bevezetés
 
 Racionalizálni szeretné dokumentumkezelési folyamatait? Merüljön el kurált oktatóanyagainkban, amelyek célja, hogy végigvezessék a Visio-fájlok zökkenőmentes egyesítésén a GroupDocs.Merger for .NET segítségével. Akár VDX-, VSDM-, VSDX-, VSSM-, VSSX-, VSTM-, VSTX-, VSX- vagy VTX-fájlokat egyesít, részletes, lépésről lépésre szóló utasításokkal és kódmintákkal látjuk el.

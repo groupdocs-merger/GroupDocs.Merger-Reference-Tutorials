@@ -6,6 +6,9 @@ description: Naučte se, jak hladce sloučit soubory DOCM pomocí GroupDocs.Merg
 weight: 11
 url: /cs/net/document-merging/merging-docm-files/
 ---
+
+# Sloučení souborů DOCM
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak sloučit soubory DOCM (dokument Microsoft Word Macro-Enabled Document) pomocí GroupDocs.Merger for .NET. Tato knihovna poskytuje výkonné funkce pro manipulaci s dokumenty a umožňuje vývojářům bezproblémově slučovat, rozdělovat, extrahovat a manipulovat s různými formáty dokumentů v rámci jejich aplikací .NET.
 ## Předpoklady

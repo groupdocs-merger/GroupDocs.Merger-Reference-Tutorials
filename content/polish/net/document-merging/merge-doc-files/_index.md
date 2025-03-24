@@ -6,6 +6,9 @@ description: Dowiedz się, jak programowo scalić pliki DOC przy użyciu GroupDo
 weight: 10
 url: /pl/net/document-merging/merge-doc-files/
 ---
+
+# Scal pliki DOC za pomocą GroupDocs.Merger dla .NET
+
 ## Wstęp
 W tym samouczku przyjrzymy się, jak scalić pliki DOC za pomocą GroupDocs.Merger dla .NET. GroupDocs.Merger dla .NET to potężny interfejs API, który umożliwia programistom łączenie, dzielenie i programowe manipulowanie różnymi formatami dokumentów. Wykorzystując ten interfejs API, możesz bezproblemowo scalić wiele plików DOC w jeden dokument. Dostarczymy instrukcje krok po kroku, które przeprowadzą Cię przez proces łączenia plików DOC przy użyciu GroupDocs.Merger dla .NET.
 ## Warunki wstępne

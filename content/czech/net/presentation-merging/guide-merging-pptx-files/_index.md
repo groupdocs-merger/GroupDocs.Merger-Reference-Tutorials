@@ -6,6 +6,9 @@ description: Přečtěte si, jak sloučit soubory PPTX pomocí GroupDocs.Merger 
 weight: 13
 url: /cs/net/presentation-merging/guide-merging-pptx-files/
 ---
+
+# Průvodce sloučením souborů PPTX
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak sloučit prezentace PowerPoint (soubory PPTX) pomocí GroupDocs.Merger pro .NET. GroupDocs.Merger for .NET je výkonná knihovna, která umožňuje bezproblémovou manipulaci a slučování různých formátů dokumentů, včetně souborů PPTX, v rámci vašich aplikací .NET. Využitím této knihovny můžete efektivně kombinovat více prezentací v PowerPointu do jednoho souboru a zjednodušit tak úlohy správy dokumentů.
 ## Předpoklady

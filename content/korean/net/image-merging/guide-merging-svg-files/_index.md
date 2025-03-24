@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Merger를 사용하여 프로그래밍 방식으�
 weight: 13
 url: /ko/net/image-merging/guide-merging-svg-files/
 ---
+
+# SVG 파일 병합 가이드
+
 ## 소개
 이 튜토리얼에서는 .NET용 GroupDocs.Merger를 사용하여 SVG(Scalable Vector Graphics) 파일을 병합하는 방법을 배웁니다. GroupDocs.Merger는 다양한 문서 형식을 원활하게 병합, 분할 및 조작할 수 있는 강력한 문서 조작 API입니다. 이 단계별 가이드를 따르면 C#을 사용하여 여러 SVG 파일을 단일 SVG 파일로 결합할 수 있습니다.
 

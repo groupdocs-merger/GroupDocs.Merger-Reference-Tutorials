@@ -6,6 +6,9 @@ description: Naučte se programově sloučit soubory XLTM. Podrobný průvodce s
 weight: 16
 url: /cs/net/spreadsheet-merging/merging-xltm-files/
 ---
+
+# Sloučení souborů XLTM
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak sloučit soubory XLTM (Excel Macro-Enabled Template). GroupDocs.Merger for .NET je výkonná knihovna, která umožňuje vývojářům programově manipulovat a slučovat různé formáty dokumentů. Tato příručka vás provede procesem slučování souborů XLTM krok za krokem pomocí jazyka C#.
 ## Předpoklady

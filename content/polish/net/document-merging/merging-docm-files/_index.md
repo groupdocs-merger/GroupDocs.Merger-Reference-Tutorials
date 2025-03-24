@@ -6,6 +6,9 @@ description: Dowiedz się, jak bezproblemowo scalać pliki DOCM za pomocą Group
 weight: 11
 url: /pl/net/document-merging/merging-docm-files/
 ---
+
+# Łączenie plików DOCM
+
 ## Wstęp
 W tym samouczku omówimy sposób scalania plików DOCM (dokument Microsoft Word z obsługą makr) przy użyciu programu GroupDocs.Merger dla platformy .NET. Ta biblioteka zapewnia zaawansowane funkcje manipulowania dokumentami, umożliwiając programistom łączenie, dzielenie, wyodrębnianie i płynne manipulowanie różnymi formatami dokumentów w aplikacjach .NET.
 ## Warunki wstępne

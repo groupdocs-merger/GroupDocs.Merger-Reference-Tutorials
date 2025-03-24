@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Merger 在 .NET 中以编程方式合�
 weight: 12
 url: /zh/net/document-merging/how-to-merge-docx-files/
 ---
+
+# 如何合并 DOCX 文件
+
 ## 介绍
 在 .NET 开发领域，以编程方式合并 DOCX 文件对于各种应用程序来说是一项强大的功能。GroupDocs.Merger for .NET 提供了高效合并 DOCX 文件的全面解决方案。本教程将指导您完成使用 GroupDocs.Merger for .NET 将多个 DOCX 文件无缝合并为单个文档的过程。
 ## 先决条件

@@ -6,6 +6,9 @@ description: Aprenda como mesclar arquivos PDF programaticamente em .NET usando 
 weight: 19
 url: /pt/net/document-merging/merging-pdf-files/
 ---
+
+# Mesclando arquivos PDF
+
 ## Introdução
 No domínio do gerenciamento e manipulação de documentos, mesclar arquivos PDF é uma tarefa comum que os desenvolvedores encontram. GroupDocs.Merger for .NET fornece uma solução robusta para combinar documentos PDF perfeitamente em aplicativos .NET. Este tutorial irá guiá-lo através do processo de mesclagem de arquivos PDF usando GroupDocs.Merger, mostrando implementação e uso passo a passo.
 ## Pré-requisitos

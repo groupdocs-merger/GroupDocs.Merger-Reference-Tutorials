@@ -6,6 +6,9 @@ description: Leer hoe u XLAM-bestanden moeiteloos kunt samenvoegen. Vereenvoudig
 weight: 10
 url: /nl/net/spreadsheet-merging/merge-xlam-files/
 ---
+
+# XLAM-bestanden samenvoegen
+
 ## Invoering
 
 In deze zelfstudie onderzoeken we hoe u XLAM-bestanden (Microsoft Excel Add-In) kunt samenvoegen. GroupDocs.Merger is een krachtige API voor documentmanipulatie waarmee ontwikkelaars programmatisch met verschillende documentformaten kunnen werken. Door gebruik te maken van deze API kunt u meerdere XLAM-bestanden naadloos combineren tot één enkel bestand, waardoor uw documentbeheerprocessen worden gestroomlijnd.

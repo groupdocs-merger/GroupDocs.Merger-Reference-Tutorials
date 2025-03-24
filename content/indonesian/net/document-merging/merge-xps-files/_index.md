@@ -6,6 +6,9 @@ description: Pelajari cara menggabungkan file XPS menggunakan GroupDocs.Merger u
 weight: 20
 url: /id/net/document-merging/merge-xps-files/
 ---
+
+# Gabungkan File XPS
+
 ## Perkenalan
 Di bidang manipulasi dan manajemen dokumen, GroupDocs.Merger for .NET menawarkan perangkat canggih untuk menggabungkan file XPS (Spesifikasi Kertas XML) dengan mulus. Tutorial ini mendalami pentingnya menggunakan GroupDocs.Merger untuk .NET untuk menggabungkan file XPS secara efisien dalam aplikasi .NET Anda. Dengan mengikuti panduan ini, Anda akan mempelajari langkah-langkah yang diperlukan untuk memanfaatkan perpustakaan ini secara efektif untuk kebutuhan pemrosesan dokumen Anda.
 ## Prasyarat

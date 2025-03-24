@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie PowerPoint-Dateien (PPT) mit GroupDocs.Merger
 weight: 12
 url: /de/net/presentation-merging/how-to-merge-ppt-files/
 ---
+
+# So führen Sie PPT-Dateien zusammen
+
 ## Einführung
 In diesem Tutorial erfahren Sie, wie Sie PowerPoint-Dateien (PPT) mit GroupDocs.Merger für .NET zusammenführen. GroupDocs.Merger für .NET ist eine leistungsstarke API, mit der Entwickler verschiedene Dokumentformate, einschließlich PowerPoint-Präsentationen, nahtlos in ihren .NET-Anwendungen bearbeiten und zusammenführen können.
 ## Voraussetzungen

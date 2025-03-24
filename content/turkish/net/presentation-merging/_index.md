@@ -6,6 +6,9 @@ description: Çeşitli sunum dosyası formatlarını zahmetsizce birleştirin. P
 weight: 25
 url: /tr/net/presentation-merging/
 ---
+
+# Sunum Birleştirme
+
 ## giriiş
 
 Sunum dosyalarınızı zahmetsizce birleştirin. PPS, PPSX, PPT veya OTP dosyaları olsun, eğitimlerimiz belge birleştirme görevlerinizi kolaylaştırmak için pratik kod örnekleri eşliğinde adım adım rehberlik sunar.

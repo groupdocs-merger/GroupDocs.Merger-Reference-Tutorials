@@ -6,6 +6,9 @@ description: Přečtěte si, jak sloučit soubory VSDM pomocí GroupDocs.Merger 
 weight: 11
 url: /cs/net/visio-merging/merging-vsdm-files/
 ---
+
+# Sloučení souborů VSDM
+
 ## Úvod
 tomto tutoriálu prozkoumáme, jak sloučit soubory VSDM (Visio Macro-Enabled Drawing) pomocí výkonné knihovny GroupDocs.Merger for .NET. Tato knihovna umožňuje bezproblémovou manipulaci s různými formáty dokumentů v rámci aplikací .NET, včetně slučování, rozdělování a úpravy vlastností dokumentu.
 ## Předpoklady

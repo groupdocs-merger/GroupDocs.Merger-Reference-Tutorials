@@ -6,6 +6,9 @@ description: Voeg PPSX-bestanden eenvoudig samen met GroupDocs.Merger voor .NET.
 weight: 11
 url: /nl/net/presentation-merging/merging-ppsx-files/
 ---
+
+# PPSX-bestanden samenvoegen
+
 ## Invoering
 In deze zelfstudie gaan we dieper in op het samenvoegen van PPSX-bestanden met behulp van de krachtige GroupDocs.Merger voor .NET-bibliotheek. GroupDocs.Merger vereenvoudigt het proces van het programmatisch combineren van meerdere PowerPoint Slide Show (PPSX)-bestanden tot één geconsolideerd bestand. Of u nu een applicatie ontwikkelt of bestandsmanipulatietaken moet automatiseren, GroupDocs.Merger biedt een efficiënte oplossing.
 ## Vereisten

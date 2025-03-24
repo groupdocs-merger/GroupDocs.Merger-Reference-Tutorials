@@ -6,6 +6,9 @@ description: Tìm hiểu cách hợp nhất các tệp TIF theo chương trình 
 weight: 15
 url: /vi/net/image-merging/merge-tif-files/
 ---
+
+# Hợp nhất các tệp TIF
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ đi sâu vào cách sử dụng GroupDocs.Merger cho .NET để hợp nhất các tệp TIF một cách hiệu quả. GroupDocs.Merger dành cho .NET là một API thao tác tài liệu mạnh mẽ cho phép các nhà phát triển thực hiện nhiều thao tác khác nhau trên tài liệu theo chương trình, bao gồm hợp nhất, chia tách và sắp xếp lại các trang.
 ## Điều kiện tiên quyết

@@ -6,6 +6,9 @@ description: 轻松合并各种演示文件格式。按照我们的教程有效�
 weight: 25
 url: /zh/net/presentation-merging/
 ---
+
+# 演示文稿合并
+
 ## 介绍
 
 轻松合并您的演示文稿文件。无论是 PPS、PPSX、PPT 还是 OTP 文件，我们的教程都提供分步指导，并附有实用的代码示例，以简化您的文档合并任务。

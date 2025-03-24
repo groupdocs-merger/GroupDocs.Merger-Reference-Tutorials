@@ -6,6 +6,9 @@ description: Aprenda como mesclar arquivos PowerPoint (PPT) usando GroupDocs.Mer
 weight: 12
 url: /pt/net/presentation-merging/how-to-merge-ppt-files/
 ---
+
+# Como mesclar arquivos PPT
+
 ## Introdução
 Neste tutorial, exploraremos como mesclar arquivos PowerPoint (PPT) usando GroupDocs.Merger para .NET. GroupDocs.Merger for .NET é uma API poderosa que permite aos desenvolvedores manipular e mesclar vários formatos de documentos, incluindo apresentações em PowerPoint, perfeitamente em seus aplicativos .NET.
 ## Pré-requisitos

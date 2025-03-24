@@ -6,6 +6,9 @@ description: Découvrez comment fusionner des fichiers PNG à l'aide de GroupDoc
 weight: 12
 url: /fr/net/image-merging/how-to-merge-png-files/
 ---
+
+# Comment fusionner des fichiers PNG
+
 ## Introduction
 Dans ce didacticiel, nous apprendrons comment fusionner des fichiers PNG à l'aide de GroupDocs.Merger pour .NET. GroupDocs.Merger est une bibliothèque puissante qui permet aux développeurs de manipuler et de combiner de manière transparente différents formats de documents. En suivant ce guide, vous pourrez fusionner des fichiers PNG sans effort dans vos applications .NET.
 ## Conditions préalables

@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie SVG-Dateien programmgesteuert mit GroupDocs.M
 weight: 13
 url: /de/net/image-merging/guide-merging-svg-files/
 ---
+
+# Anleitung zum Zusammenführen von SVG-Dateien
+
 ## Einführung
 In diesem Tutorial erfahren Sie, wie Sie SVG-Dateien (Scalable Vector Graphics) mit GroupDocs.Merger für .NET zusammenführen. GroupDocs.Merger ist eine leistungsstarke API zur Dokumentbearbeitung, mit der Sie verschiedene Dokumentformate nahtlos zusammenführen, teilen und bearbeiten können. Wenn Sie dieser Schritt-für-Schritt-Anleitung folgen, können Sie mit C# mehrere SVG-Dateien zu einer einzigen SVG-Datei kombinieren.
 

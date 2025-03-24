@@ -6,6 +6,9 @@ description: Dễ dàng hợp nhất các định dạng tài liệu khác nhau 
 weight: 22
 url: /vi/net/document-merging/
 ---
+
+# Hợp nhất tài liệu
+
 ## Giới thiệu
 
 Bạn có phải là nhà phát triển .NET đang tìm kiếm những cách hiệu quả để hợp nhất các định dạng tài liệu khác nhau một cách liền mạch không? GroupDocs.Merger dành cho .NET là giải pháp tối ưu của bạn. Trong danh sách hướng dẫn toàn diện này, chúng tôi đi sâu vào việc hợp nhất DOC, DOCX, PDF và các định dạng khác một cách dễ dàng.

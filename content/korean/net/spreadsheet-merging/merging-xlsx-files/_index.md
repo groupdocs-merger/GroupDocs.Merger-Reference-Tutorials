@@ -6,6 +6,9 @@ description: GroupDocs.Merger를 사용하여 .NET에서 XLSX 파일을 손쉽�
 weight: 14
 url: /ko/net/spreadsheet-merging/merging-xlsx-files/
 ---
+
+# XLSX 파일 병합
+
 ## 소개
 .NET 응용 프로그램 내의 문서 조작 및 관리 영역에서 GroupDocs.Merger는 다양한 파일 형식을 원활하게 병합하는 강력한 도구로 돋보입니다. 이 튜토리얼에서는 XLSX(Excel) 파일 병합에 대해 자세히 알아보고 .NET 환경에서 스프레드시트 파일을 효율적으로 병합하는 방법에 대한 단계별 지침을 제공합니다. 숙련된 개발자이든 이제 막 .NET을 시작하는 개발자이든 이 튜토리얼은 파일 병합 기능을 프로젝트에 통합하는 데 필요한 지식을 제공합니다.
 ## 전제 조건

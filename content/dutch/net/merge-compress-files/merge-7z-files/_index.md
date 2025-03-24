@@ -6,6 +6,9 @@ description: Voeg moeiteloos 7z-bestanden samen met GroupDocs.Merger voor .NET. 
 weight: 10
 url: /nl/net/merge-compress-files/merge-7z-files/
 ---
+
+# Hoe 7z-bestanden samen te voegen
+
 ## Invoering
 Het samenvoegen van 7z-bestanden kan efficiënt worden gedaan met GroupDocs.Merger voor .NET, een krachtige bibliotheek voor documentmanipulatie. Deze tutorial begeleidt u stap voor stap door het proces, zodat u uw 7z-bestanden eenvoudig naadloos kunt samenvoegen.
 ## Vereisten

@@ -6,6 +6,9 @@ description: XLAM ファイルを簡単に結合する方法を学びます。�
 weight: 10
 url: /ja/net/spreadsheet-merging/merge-xlam-files/
 ---
+
+# XLAM ファイルを結合する
+
 ## 導入
 
 このチュートリアルでは、XLAM (Microsoft Excel アドイン) ファイルを結合する方法について説明します。GroupDocs.Merger は、開発者がさまざまなドキュメント形式をプログラムで操作できるようにする強力なドキュメント操作 API です。この API を活用することで、複数の XLAM ファイルを 1 つのファイルにシームレスに結合し、ドキュメント管理プロセスを効率化できます。

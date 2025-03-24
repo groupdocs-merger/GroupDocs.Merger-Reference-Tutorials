@@ -8,6 +8,9 @@ url: /zh-hant/
 is_root: true
 ---
 
+# 使用 GroupDocs.Merger 輕鬆合併和分割文檔
+
+
 歡迎來到 GroupDocs.Merger 教學課程的最終目的地，該教學涵蓋了包括 .NET 和 Java 在內的一系列平台。無論您是第一次深入文件操作還是尋求高級技術，我們的綜合指南都提供逐步說明，幫助您輕鬆掌握合併和壓縮文件。從圖像到文件、電子表格、簡報和 Visio 文件，我們的教學課程可滿足不同平台的不同需求。探索 GroupDocs.Merger 的強大功能，以簡化您的工作流程並在所有支援的平台上提升您的檔案管理功能。
 
 ## .NET 教學的 GroupDocs.Merger

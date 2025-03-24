@@ -6,6 +6,9 @@ description: Slå samman TXT-filer sömlöst i .NET med GroupDocs.Merger. Steg-f
 weight: 18
 url: /sv/net/document-merging/guide-merging-txt-files/
 ---
+
+# Guide till att slå samman TXT-filer med GroupDocs.Merger för .NET
+
 ## Introduktion
 en värld av .NET-utveckling är manipulering och sammanslagning av textfiler ett vanligt krav för olika applikationer. GroupDocs.Merger för .NET erbjuder en kraftfull lösning för att sömlöst sammanfoga TXT-filer i dina .NET-projekt. Den här omfattande guiden leder dig genom processen att slå samman TXT-filer steg för steg med hjälp av GroupDocs.Merger.
 ## Förutsättningar

@@ -6,6 +6,9 @@ description: Leer hoe u PPS-bestanden naadloos kunt samenvoegen met GroupDocs.Me
 weight: 10
 url: /nl/net/presentation-merging/merge-pps-files/
 ---
+
+# PPS-bestanden samenvoegen
+
 ## Invoering
 In de wereld van .NET-ontwikkeling is het efficiënt manipuleren van documentbestanden cruciaal. GroupDocs.Merger voor .NET biedt krachtige tools om verschillende documentformaten naadloos samen te voegen en te manipuleren. In deze zelfstudie concentreren we ons op het samenvoegen van PPS-bestanden (PowerPoint Slide Show) met behulp van GroupDocs.Merger voor .NET. Of u nu een doorgewinterde ontwikkelaar bent of net begint, deze gids begeleidt u stap voor stap door het proces.
 ## Vereisten

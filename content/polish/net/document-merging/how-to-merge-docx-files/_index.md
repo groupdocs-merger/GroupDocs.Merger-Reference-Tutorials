@@ -6,6 +6,9 @@ description: Dowiedz się, jak programowo łączyć pliki DOCX w .NET przy użyc
 weight: 12
 url: /pl/net/document-merging/how-to-merge-docx-files/
 ---
+
+# Jak scalić pliki DOCX
+
 ## Wstęp
 W świecie programowania .NET programowe łączenie plików DOCX może być potężną możliwością w różnych zastosowaniach. GroupDocs.Merger dla .NET zapewnia kompleksowe rozwiązanie do wydajnego łączenia plików DOCX. Ten samouczek poprowadzi Cię przez proces używania GroupDocs.Merger dla .NET do płynnego łączenia wielu plików DOCX w jeden dokument.
 ## Warunki wstępne

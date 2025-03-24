@@ -6,6 +6,9 @@ description: XLSB dosyalarını nasıl birleştireceğinizi öğrenin. Bu adım 
 weight: 12
 url: /tr/net/spreadsheet-merging/how-to-merge-xlsb-files/
 ---
+
+# XLSB Dosyaları Nasıl Birleştirilir
+
 ## giriiş
 Bu eğitimde XLSB (Excel İkili Çalışma Kitabı) dosyalarının nasıl birleştirileceğini inceleyeceğiz. GroupDocs.Merger for .NET, geliştiricilerin .NET uygulamaları dahilinde çeşitli belge formatlarını sorunsuz bir şekilde birleştirmesine, bölmesine ve değiştirmesine olanak tanıyan güçlü bir belge işleme API'sidir. Özellikle, bu çok yönlü kitaplığı kullanarak XLSB dosyalarını birleştirmeye odaklanacağız.
 ## Önkoşullar

@@ -6,6 +6,9 @@ description: Scopri come unire file XLSB. Questa guida passo passo semplifica le
 weight: 12
 url: /it/net/spreadsheet-merging/how-to-merge-xlsb-files/
 ---
+
+# Come unire file XLSB
+
 ## introduzione
 In questo tutorial esploreremo come unire file XLSB (Excel Binary Workbook). GroupDocs.Merger per .NET è una potente API per la manipolazione dei documenti che consente agli sviluppatori di unire, dividere e manipolare vari formati di documenti senza problemi all'interno delle loro applicazioni .NET. Nello specifico, ci concentreremo sull'unione di file XLSB utilizzando questa versatile libreria.
 ## Prerequisiti

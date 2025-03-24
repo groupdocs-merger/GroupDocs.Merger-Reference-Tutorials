@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Merger for .NET 以编程方式合并 
 weight: 14
 url: /zh/net/document-merging/merging-dotm-files/
 ---
+
+# 合并 DOTM 文件
+
 ## 介绍
 在本教程中，我们将探讨如何使用 GroupDocs.Merger for .NET 合并 DOTM（Word 宏启用模板）文件。GroupDocs.Merger 是一个功能强大的 API，允许开发人员在其 .NET 应用程序中无缝操作和组合各种文档格式。通过遵循本指南，您将逐步了解如何将此功能集成到您的项目中。
 ## 先决条件

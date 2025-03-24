@@ -6,6 +6,9 @@ description: Scopri come unire file PowerPoint (PPT) utilizzando GroupDocs.Merge
 weight: 12
 url: /it/net/presentation-merging/how-to-merge-ppt-files/
 ---
+
+# Come unire file PPT
+
 ## introduzione
 In questo tutorial esploreremo come unire file PowerPoint (PPT) utilizzando GroupDocs.Merger per .NET. GroupDocs.Merger per .NET è una potente API che consente agli sviluppatori di manipolare e unire vari formati di documenti, comprese le presentazioni PowerPoint, senza problemi all'interno delle loro applicazioni .NET.
 ## Prerequisiti

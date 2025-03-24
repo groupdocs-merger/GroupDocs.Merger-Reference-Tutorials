@@ -6,6 +6,9 @@ description: 이 단계별 튜토리얼을 통해 .NET용 GroupDocs.Merger를 �
 weight: 14
 url: /ko/net/image-merging/merging-svgz-files/
 ---
+
+# SVGZ 파일 병합
+
 ## 소개
 이 튜토리얼에서는 .NET용 GroupDocs.Merger를 사용하여 SVGZ(Scalable Vector Graphics) 파일을 병합하는 방법을 살펴보겠습니다. GroupDocs.Merger는 개발자가 페이지 병합, 분할, 재배열을 포함하여 다양한 문서 형식에 대해 다양한 작업을 수행할 수 있는 강력한 문서 조작 API입니다.
 ## 전제 조건

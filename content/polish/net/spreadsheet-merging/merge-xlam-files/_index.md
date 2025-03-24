@@ -6,6 +6,9 @@ description: Dowiedz się, jak bez wysiłku łączyć pliki XLAM. Uprość swoje
 weight: 10
 url: /pl/net/spreadsheet-merging/merge-xlam-files/
 ---
+
+# Scal pliki XLAM
+
 ## Wstęp
 
 W tym samouczku dowiemy się, jak scalić pliki XLAM (dodatek do programu Microsoft Excel). GroupDocs.Merger to potężny interfejs API do manipulacji dokumentami, który umożliwia programistom programową pracę z różnymi formatami dokumentów. Wykorzystując ten interfejs API, możesz bezproblemowo połączyć wiele plików XLAM w jeden, usprawniając procesy zarządzania dokumentami.

@@ -6,6 +6,9 @@ description: Mesclar arquivos TXT perfeitamente em .NET usando GroupDocs.Merger.
 weight: 18
 url: /pt/net/document-merging/guide-merging-txt-files/
 ---
+
+# Guia para mesclar arquivos TXT com GroupDocs.Merger para .NET
+
 ## Introdução
 No mundo do desenvolvimento .NET, manipular e mesclar arquivos de texto é um requisito comum para vários aplicativos. GroupDocs.Merger for .NET oferece uma solução poderosa para mesclar arquivos TXT perfeitamente em seus projetos .NET. Este guia completo orientará você no processo de mesclagem de arquivos TXT passo a passo usando GroupDocs.Merger.
 ## Pré-requisitos

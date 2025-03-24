@@ -6,6 +6,9 @@ description: Tìm hiểu cách hợp nhất các tệp SVG theo chương trình 
 weight: 13
 url: /vi/net/image-merging/guide-merging-svg-files/
 ---
+
+# Hướng dẫn gộp file SVG
+
 ## Giới thiệu
 Trong hướng dẫn này, bạn sẽ tìm hiểu cách hợp nhất các tệp SVG (Đồ họa vectơ có thể mở rộng) bằng GroupDocs.Merger cho .NET. GroupDocs.Merger là một API thao tác tài liệu mạnh mẽ cho phép bạn hợp nhất, phân tách và thao tác các định dạng tài liệu khác nhau một cách liền mạch. Bằng cách làm theo hướng dẫn từng bước này, bạn sẽ có thể kết hợp nhiều tệp SVG thành một tệp SVG bằng C#.
 

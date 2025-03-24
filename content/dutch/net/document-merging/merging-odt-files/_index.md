@@ -6,6 +6,9 @@ description: Leer hoe u ODT-bestanden moeiteloos kunt samenvoegen met GroupDocs.
 weight: 16
 url: /nl/net/document-merging/merging-odt-files/
 ---
+
+# ODT-bestanden samenvoegen
+
 ## Invoering
 In de wereld van .NET-ontwikkeling is het efficiënt beheren van documentmanipulatietaken, zoals het samenvoegen van bestanden, essentieel. GroupDocs.Merger voor .NET biedt een robuuste oplossing voor het naadloos combineren van verschillende bestandsformaten. In deze zelfstudie gaan we dieper in op het proces van het samenvoegen van ODT-bestanden (Open Document Text) met behulp van GroupDocs.Merger voor .NET. Aan het einde van deze handleiding bent u in staat om moeiteloos ODT-bestanden samen te voegen binnen uw .NET-toepassingen.
 ## Vereisten

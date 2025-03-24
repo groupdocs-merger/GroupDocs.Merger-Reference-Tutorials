@@ -6,6 +6,9 @@ description: Tìm hiểu cách hợp nhất các tệp PPTX bằng GroupDocs.Mer
 weight: 13
 url: /vi/net/presentation-merging/guide-merging-pptx-files/
 ---
+
+# Hướng dẫn gộp file PPTX
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách hợp nhất các bản trình bày PowerPoint (tệp PPTX) bằng GroupDocs.Merger cho .NET. GroupDocs.Merger for .NET là một thư viện mạnh mẽ cho phép thao tác và hợp nhất liền mạch các định dạng tài liệu khác nhau, bao gồm các tệp PPTX, trong các ứng dụng .NET của bạn. Bằng cách tận dụng thư viện này, bạn có thể kết hợp nhiều bản trình bày PowerPoint vào một tệp một cách hiệu quả, hợp lý hóa các tác vụ quản lý tài liệu.
 ## Điều kiện tiên quyết

@@ -6,6 +6,9 @@ description: Aprenda a fusionar archivos XLT. Combine plantillas de Excel median
 weight: 15
 url: /es/net/spreadsheet-merging/merge-xlt-files/
 ---
+
+# Fusionar archivos XLT
+
 ## Introducción
 En este tutorial, exploraremos cómo fusionar archivos XLT (plantilla de Excel). GroupDocs.Merger es una potente API que permite a los desarrolladores manipular varios formatos de documentos, incluidos archivos de Excel, mediante programación. Al fusionar archivos XLT, puede combinar varias plantillas en un solo documento, optimizando su flujo de trabajo y mejorando la eficiencia.
 ## Requisitos previos

@@ -6,6 +6,9 @@ description: Dowiedz się, jak bez wysiłku łączyć pliki VSSX w aplikacjach .
 weight: 14
 url: /pl/net/visio-merging/merging-vssx-files/
 ---
+
+# Łączenie plików VSSX
+
 ## Wstęp
 W tym samouczku przyjrzymy się, jak scalić pliki VSSX za pomocą GroupDocs.Merger dla .NET. GroupDocs.Merger dla .NET to potężna biblioteka, która umożliwia programistom płynne manipulowanie i łączenie różnych formatów dokumentów w aplikacjach .NET. Scalanie plików VSSX może być szczególnie przydatne, gdy trzeba połączyć wiele plików wzornika programu Visual Studio w jeden plik w celu łatwiejszego zarządzania i dystrybucji.
 ## Warunki wstępne

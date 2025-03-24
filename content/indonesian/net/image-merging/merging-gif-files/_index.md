@@ -6,6 +6,9 @@ description: Pelajari cara menggabungkan file GIF menggunakan GroupDocs.Merger u
 weight: 11
 url: /id/net/image-merging/merging-gif-files/
 ---
+
+# Menggabungkan File GIF
+
 ## Perkenalan
 Dalam tutorial ini, Anda akan mempelajari cara menggabungkan file GIF menggunakan GroupDocs.Merger untuk .NET. GroupDocs.Merger adalah API canggih yang memungkinkan pengembang memanipulasi format dokumen secara terprogram. Dengan mengikuti langkah-langkah yang diuraikan di bawah ini, Anda akan dapat menggabungkan beberapa file GIF secara efisien menjadi satu file GIF keluaran.
 ## Prasyarat

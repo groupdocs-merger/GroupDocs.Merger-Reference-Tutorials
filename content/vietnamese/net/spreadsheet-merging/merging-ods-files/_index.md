@@ -6,6 +6,9 @@ description: Tìm hiểu cách hợp nhất các tệp ODS một cách dễ dàn
 weight: 18
 url: /vi/net/spreadsheet-merging/merging-ods-files/
 ---
+
+# Hợp nhất các tệp ODS
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách hợp nhất các tệp ODS (Bảng tính OpenDocument). GroupDocs.Merger for .NET là một API mạnh mẽ cho phép các nhà phát triển thao tác và hợp nhất các định dạng tài liệu khác nhau một cách liền mạch. Chúng tôi sẽ đề cập đến các bước cần thiết để hợp nhất các tệp ODS theo chương trình bằng thư viện này.
 ## Điều kiện tiên quyết

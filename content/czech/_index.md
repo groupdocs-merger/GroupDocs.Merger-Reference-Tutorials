@@ -8,6 +8,9 @@ url: /cs/
 is_root: true
 ---
 
+# Slučujte a rozdělujte dokumenty bez námahy s GroupDocs.Merger
+
+
 Vítejte v konečném cíli výukových programů GroupDocs.Merger, které pokrývají spektrum platforem včetně .NET a Java. Ať už se poprvé ponoříte do manipulace s dokumenty nebo hledáte pokročilé techniky, naši obsáhlí průvodci nabízejí podrobné pokyny, jak bez námahy zvládnout slučování a komprimaci souborů. Od obrázků po dokumenty, tabulky, prezentace a soubory Visio, naše výukové programy uspokojí různé potřeby na různých platformách. Prozkoumejte sílu GroupDocs.Merger pro zefektivnění vašeho pracovního postupu a zvýšení možností správy souborů na všech podporovaných platformách.
 
 ## GroupDocs.Merger pro .NET výukové programy
