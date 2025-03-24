@@ -6,6 +6,9 @@ description: GroupDocs.Merger for .NET を使用して PPTX ファイルをマ�
 weight: 13
 url: /ja/net/presentation-merging/guide-merging-pptx-files/
 ---
+
+# PPTX ファイルの結合ガイド
+
 ## 導入
 このチュートリアルでは、GroupDocs.Merger for .NET を使用して PowerPoint プレゼンテーション (PPTX ファイル) を結合する方法を説明します。 GroupDocs.Merger for .NET は、.NET アプリケーション内で PPTX ファイルを含むさまざまなドキュメント形式のシームレスな操作とマージを可能にする強力なライブラリです。このライブラリを利用すると、複数の PowerPoint プレゼンテーションを 1 つのファイルに効率的に結合でき、ドキュメント管理タスクを合理化できます。
 ## 前提条件

@@ -6,6 +6,9 @@ description: XLSM ファイルを GroupDocs.Merge for .NET とシームレスに
 weight: 13
 url: /ja/net/spreadsheet-merging/guide-merging-xlsm-files/
 ---
+
+# XLSM ファイルのマージに関するガイド
+
 ## 導入
 このチュートリアルでは、XLSM (Excel マクロ有効ワークブック) ファイルをマージする方法を説明します。 GroupDocs.Merger は、開発者がプログラムによるファイルの結合、分割、変更などのドキュメント形式を操作できるようにする強力なライブラリです。
 ## 前提条件

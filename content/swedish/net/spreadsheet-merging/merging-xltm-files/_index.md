@@ -6,6 +6,9 @@ description: Lär dig hur du sammanfogar XLTM-filer programmatiskt. Steg-för-st
 weight: 16
 url: /sv/net/spreadsheet-merging/merging-xltm-files/
 ---
+
+# Slår ihop XLTM-filer
+
 ## Introduktion
 I den här handledningen kommer vi att utforska hur man slår ihop XLTM-filer (Excel Macro-Enabled Template). GroupDocs.Merger för .NET är ett kraftfullt bibliotek som gör det möjligt för utvecklare att manipulera och slå samman olika dokumentformat programmatiskt. Den här guiden leder dig genom processen att slå samman XLTM-filer steg för steg med C#.
 ## Förutsättningar

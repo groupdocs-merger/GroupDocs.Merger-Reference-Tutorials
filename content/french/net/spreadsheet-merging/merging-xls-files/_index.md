@@ -6,6 +6,9 @@ description: Découvrez comment fusionner des fichiers Excel dans .NET à l'aide
 weight: 11
 url: /fr/net/spreadsheet-merging/merging-xls-files/
 ---
+
+# Fusion de fichiers XLS
+
 ## Introduction
 Dans ce didacticiel, nous explorerons comment fusionner des fichiers XLS (Excel). GroupDocs.Merger est une puissante API de manipulation de documents qui permet aux développeurs de fusionner, diviser, réorganiser et manipuler des documents sans effort au sein de leurs applications .NET. Plus précisément, nous nous concentrerons sur la fusion de fichiers XLS étape par étape à l'aide des méthodes intuitives de GroupDocs.Merger.
 ## Conditions préalables

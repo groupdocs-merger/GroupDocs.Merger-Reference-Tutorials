@@ -6,6 +6,9 @@ description: Tìm hiểu cách hợp nhất các tệp PNG bằng GroupDocs.Merg
 weight: 12
 url: /vi/net/image-merging/how-to-merge-png-files/
 ---
+
+# Cách hợp nhất các tệp PNG
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ tìm hiểu cách hợp nhất các tệp PNG bằng GroupDocs.Merger cho .NET. GroupDocs.Merger là một thư viện mạnh mẽ cho phép các nhà phát triển thao tác và kết hợp các định dạng tài liệu khác nhau một cách liền mạch. Bằng cách làm theo hướng dẫn này, bạn sẽ có thể hợp nhất các tệp PNG một cách dễ dàng trong các ứng dụng .NET của mình.
 ## Điều kiện tiên quyết

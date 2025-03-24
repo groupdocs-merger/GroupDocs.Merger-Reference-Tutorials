@@ -6,6 +6,9 @@ description: Scopri come unire i file DOC a livello di codice utilizzando GroupD
 weight: 10
 url: /it/net/document-merging/merge-doc-files/
 ---
+
+# Unisci file DOC con GroupDocs.Merger per .NET
+
 ## introduzione
 In questo tutorial esploreremo come unire file DOC utilizzando GroupDocs.Merger per .NET. GroupDocs.Merger per .NET è una potente API che consente agli sviluppatori di combinare, dividere e manipolare vari formati di documenti a livello di codice. Sfruttando questa API, puoi unire senza problemi più file DOC in un unico documento. Forniremo istruzioni dettagliate per guidarti attraverso il processo di unione dei file DOC utilizzando GroupDocs.Merger per .NET.
 ## Prerequisiti

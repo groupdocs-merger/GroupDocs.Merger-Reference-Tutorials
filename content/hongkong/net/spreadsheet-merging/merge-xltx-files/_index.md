@@ -6,6 +6,9 @@ description: 了解如何輕鬆合併 XLTX 檔案。開始合併 XLTX 檔案並�
 weight: 17
 url: /zh-hant/net/spreadsheet-merging/merge-xltx-files/
 ---
+
+# 合併 XLTX 文件
+
 ## 介紹
 在本教學中，我們將探討如何合併 XLTX（Excel 範本）檔案。 GroupDocs.Merger 是一個功能強大的文件操作 API，使開發人員能夠在 .NET 應用程式中無縫組合、分割和操作各種文件格式。本教學特別著重以程式設計方式合併 XLTX 檔案。
 ## 先決條件

@@ -6,6 +6,9 @@ description: GroupDocs.Merger for .NET を使用して VSDM ファイルをマ�
 weight: 11
 url: /ja/net/visio-merging/merging-vsdm-files/
 ---
+
+# VSDM ファイルのマージ
+
 ## 導入
 このチュートリアルでは、強力な GroupDocs.Merger for .NET ライブラリを使用して VSDM (Visio マクロ対応図面) ファイルを結合する方法について説明します。このライブラリを使用すると、結合、分割、ドキュメント プロパティの変更など、.NET アプリケーション内でさまざまなドキュメント形式をシームレスに操作できます。
 ## 前提条件

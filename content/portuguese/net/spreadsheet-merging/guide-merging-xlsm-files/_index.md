@@ -6,6 +6,9 @@ description: Mesclar arquivos XLSM perfeitamente com GroupDocs.Merger for .NET. 
 weight: 13
 url: /pt/net/spreadsheet-merging/guide-merging-xlsm-files/
 ---
+
+# Guia para mesclar arquivos XLSM
+
 ## Introdução
 Neste tutorial, exploraremos como mesclar arquivos XLSM (Excel Macro-Enabled Workbook). GroupDocs.Merger é uma biblioteca poderosa que permite aos desenvolvedores manipular formatos de documentos, incluindo mesclar, dividir e modificar arquivos programaticamente.
 ## Pré-requisitos

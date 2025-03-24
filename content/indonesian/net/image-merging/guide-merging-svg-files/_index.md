@@ -6,6 +6,9 @@ description: Pelajari cara menggabungkan file SVG secara terprogram menggunakan 
 weight: 13
 url: /id/net/image-merging/guide-merging-svg-files/
 ---
+
+# Panduan Menggabungkan File SVG
+
 ## Perkenalan
 Dalam tutorial ini, Anda akan mempelajari cara menggabungkan file SVG (Scalable Vector Graphics) menggunakan GroupDocs.Merger untuk .NET. GroupDocs.Merger adalah API manipulasi dokumen canggih yang memungkinkan Anda menggabungkan, membagi, dan memanipulasi berbagai format dokumen dengan mulus. Dengan mengikuti panduan langkah demi langkah ini, Anda akan dapat menggabungkan beberapa file SVG menjadi satu file SVG menggunakan C#.
 

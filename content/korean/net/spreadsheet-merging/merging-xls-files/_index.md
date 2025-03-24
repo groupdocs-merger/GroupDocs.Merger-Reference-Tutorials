@@ -6,6 +6,9 @@ description: 원활한 문서 조작을 위해 GroupDocs.Merger를 사용하여 
 weight: 11
 url: /ko/net/spreadsheet-merging/merging-xls-files/
 ---
+
+# XLS 파일 병합
+
 ## 소개
 이번 튜토리얼에서는 XLS(Excel) 파일을 병합하는 방법을 살펴보겠습니다. GroupDocs.Merger는 개발자가 .NET 응용 프로그램 내에서 문서를 쉽게 병합, 분할, 재배열 및 조작할 수 있도록 하는 강력한 문서 조작 API입니다. 특히 GroupDocs.Merger의 직관적인 방법을 사용하여 XLS 파일을 단계별로 병합하는 데 중점을 둘 것입니다.
 ## 전제 조건

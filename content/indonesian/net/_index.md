@@ -6,6 +6,9 @@ url: /id/net/
 description: Gabungkan dan kompres berbagai format file dengan mudah menggunakan GroupDocs.Merger .NET. Pelajari tutorial langkah demi langkah tentang menggabungkan gambar, dokumen, dan banyak lagi!
 is_root: true
 ---
+
+# Tutorial dan Contoh GroupDocs.Merger untuk .NET
+
 ## Perkenalan
 
 Kelola file Anda dengan mudah menggunakan GroupDocs.Merger untuk .NET! Seri tutorial komprehensif ini memberikan panduan langkah demi langkah dalam memanfaatkan kekuatan GroupDocs.Merger untuk menggabungkan dan mengompresi berbagai format file dengan mulus. Baik Anda berurusan dengan gambar, dokumen, spreadsheet, presentasi, atau bahkan file Visio, kami siap membantu Anda.

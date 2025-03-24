@@ -6,6 +6,9 @@ description: Naučte se sloučit soubory XPS pomocí GroupDocs.Merger for .NET b
 weight: 20
 url: /cs/net/document-merging/merge-xps-files/
 ---
+
+# Sloučit soubory XPS
+
 ## Úvod
 oblasti manipulace a správy dokumentů nabízí GroupDocs.Merger for .NET výkonnou sadu nástrojů pro bezproblémové slučování souborů XPS (XML Paper Specification). Tento výukový program se ponoří do základů používání GroupDocs.Merger pro .NET k efektivnímu slučování souborů XPS ve vašich aplikacích .NET. Podle této příručky se naučíte nezbytné kroky k efektivnímu využití této knihovny pro vaše potřeby zpracování dokumentů.
 ## Předpoklady

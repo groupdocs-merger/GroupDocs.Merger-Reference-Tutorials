@@ -6,6 +6,9 @@ description: GroupDocs.Merger for .NET を使用して VSTM ファイルを簡�
 weight: 15
 url: /ja/net/visio-merging/merge-vstm-files/
 ---
+
+# VSTM ファイルを結合する
+
 ## 導入
 このチュートリアルでは、GroupDocs.Merger for .NET を使用して VSTM (VSTemplate) ファイルを結合する方法について説明します。GroupDocs.Merger は、開発者が .NET アプリケーション内でさまざまなドキュメント形式をシームレスに結合、分割、操作できるようにする強力なドキュメント操作 API です。
 ## 前提条件

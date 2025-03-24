@@ -6,6 +6,9 @@ description: Learn how to merge PDF files programmatically in .NET using GroupDo
 weight: 19
 url: /net/document-merging/merging-pdf-files/
 ---
+
+# Merging PDF Files
+
 ## Introduction
 In the realm of document management and manipulation, merging PDF files is a common task that developers encounter. GroupDocs.Merger for .NET provides a robust solution for combining PDF documents seamlessly within .NET applications. This tutorial will guide you through the process of merging PDF files using GroupDocs.Merger, showcasing step-by-step implementation and usage.
 ## Prerequisites

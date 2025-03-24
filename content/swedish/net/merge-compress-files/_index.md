@@ -6,6 +6,9 @@ description: Sammanfoga och komprimera olika filformat utan ansträngning handle
 weight: 20
 url: /sv/net/merge-compress-files/
 ---
+
+# Slå samman komprimera filer
+
 ## Introduktion
 
 

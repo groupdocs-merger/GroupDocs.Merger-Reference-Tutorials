@@ -6,6 +6,9 @@ description: Leer hoe u DOCM-bestanden naadloos kunt samenvoegen met GroupDocs.M
 weight: 11
 url: /nl/net/document-merging/merging-docm-files/
 ---
+
+# DOCM-bestanden samenvoegen
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u DOCM-bestanden (Microsoft Word Macro-Enabled Document) kunt samenvoegen met GroupDocs.Merger voor .NET. Deze bibliotheek biedt krachtige functies voor documentmanipulatie, waardoor ontwikkelaars verschillende documentformaten naadloos kunnen samenvoegen, splitsen, extraheren en manipuleren binnen hun .NET-applicaties.
 ## Vereisten

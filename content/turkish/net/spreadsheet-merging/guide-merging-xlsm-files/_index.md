@@ -6,6 +6,9 @@ description: XLSM dosyalarını GroupDocs.Merger for .NET ile sorunsuz bir şeki
 weight: 13
 url: /tr/net/spreadsheet-merging/guide-merging-xlsm-files/
 ---
+
+# XLSM Dosyalarını Birleştirme Kılavuzu
+
 ## giriiş
 Bu eğitimde XLSM (Excel Makro Etkin Çalışma Kitabı) dosyalarının nasıl birleştirileceğini inceleyeceğiz. GroupDocs.Merger, geliştiricilerin dosyaları programlı olarak birleştirme, bölme ve değiştirme dahil olmak üzere belge formatlarını değiştirmesine olanak tanıyan güçlü bir kitaplıktır.
 ## Önkoşullar

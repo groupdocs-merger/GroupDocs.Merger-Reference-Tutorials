@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Merger를 사용하여 프로그래밍 방식으�
 weight: 12
 url: /ko/net/visio-merging/how-to-merge-vsdx-files/
 ---
+
+# VSDX 파일을 병합하는 방법
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Merger를 사용하여 VSDX(Visio Drawing) 파일을 병합하는 방법을 알아봅니다. .NET용 GroupDocs.Merger는 .NET 응용 프로그램 내에서 다양한 문서 형식을 원활하게 조작하고 병합할 수 있는 강력한 API입니다.
 ## 전제 조건

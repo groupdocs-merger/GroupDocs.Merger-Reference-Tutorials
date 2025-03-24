@@ -6,6 +6,9 @@ description: Scopri come unire facilmente i file XLSX in .NET utilizzando GroupD
 weight: 14
 url: /it/net/spreadsheet-merging/merging-xlsx-files/
 ---
+
+# Unione di file XLSX
+
 ## introduzione
 Nel campo della manipolazione e gestione dei documenti all'interno delle applicazioni .NET, GroupDocs.Merger si distingue come un potente strumento per unire perfettamente vari formati di file. Questo tutorial approfondisce l'unione di file XLSX (Excel), fornendo indicazioni dettagliate su come unire in modo efficiente i file di fogli di calcolo in un ambiente .NET. Che tu sia uno sviluppatore esperto o che tu abbia appena iniziato con .NET, questo tutorial ti fornirà le conoscenze necessarie per integrare le funzionalità di unione dei file nei tuoi progetti.
 ## Prerequisiti

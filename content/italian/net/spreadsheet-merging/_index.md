@@ -7,6 +7,9 @@ weight: 23
 url: /it/net/spreadsheet-merging/
 ---
 
+# Unione di fogli di calcolo
+
+
 ## introduzione
 
 Se sei uno sviluppatore .NET che desidera semplificare le attività di gestione dei documenti, GroupDocs.Merger per .NET offre una soluzione completa. In questo articolo esploreremo vari tutorial sull'unione di diversi tipi di file di fogli di calcolo utilizzando GroupDocs.Merger.

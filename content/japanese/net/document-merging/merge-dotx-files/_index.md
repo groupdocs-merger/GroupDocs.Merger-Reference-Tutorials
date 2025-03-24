@@ -6,6 +6,9 @@ description: GroupDocs.Merger を使用して .NET で DOTX ファイルを簡�
 weight: 15
 url: /ja/net/document-merging/merge-dotx-files/
 ---
+
+# DOTX ファイルを結合する
+
 ## 導入
 このチュートリアルでは、GroupDocs.Merger for .NET を使用して DOTX (Word テンプレート) ファイルをマージする方法を説明します。 GroupDocs.Merger は、開発者が .NET アプリケーション内でさまざまなドキュメント形式をシームレスに操作できるようにする強力な API です。この API を活用すると、わずか数行のコードで複数の DOTX ファイルを 1 つのドキュメントに効率的に結合できます。
 ## 前提条件

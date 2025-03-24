@@ -6,6 +6,9 @@ description: Fusionnez sans effort divers formats de documents dans .NET à l'ai
 weight: 22
 url: /fr/net/document-merging/
 ---
+
+# Fusion de documents
+
 ## Introduction
 
 Êtes-vous un développeur .NET à la recherche de moyens efficaces pour fusionner différents formats de documents de manière transparente ? GroupDocs.Merger pour .NET est votre solution ultime. Dans cette liste complète de didacticiels, nous approfondissons la fusion sans effort de DOC, DOCX, PDF et d'autres formats.

@@ -6,6 +6,9 @@ description: Leer hoe u ZIP-bestanden programmatisch samenvoegt met GroupDocs.Me
 weight: 12
 url: /nl/net/merge-compress-files/guide-merging-zip-files/
 ---
+
+# Gids voor het samenvoegen van zip-bestanden
+
 ## Invoering
 Op het gebied van documentmanipulatie en -beheer onderscheidt GroupDocs.Merger voor .NET zich als een krachtig hulpmiddel voor ontwikkelaars die verschillende bestandsformaten naadloos willen samenvoegen en manipuleren. Deze tutorial begeleidt u bij het samenvoegen van ZIP-bestanden met GroupDocs.Merger voor .NET. Aan het einde van deze tutorial beschikt u over de kennis om ZIP-bestanden programmatisch samen te voegen in uw .NET-toepassingen.
 ## Vereisten

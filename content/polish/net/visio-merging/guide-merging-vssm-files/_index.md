@@ -6,6 +6,9 @@ description: Dowiedz się, jak bez wysiłku łączyć pliki VSSM za pomocą Grou
 weight: 13
 url: /pl/net/visio-merging/guide-merging-vssm-files/
 ---
+
+# Przewodnik po łączeniu plików VSSM
+
 ## Wstęp
 W tym samouczku dowiesz się, jak scalić pliki VSSM (rysowanie z obsługą makr programu Visio) przy użyciu programu GroupDocs.Merger dla .NET. GroupDocs.Merger to potężna biblioteka, która umożliwia programistom płynne manipulowanie i łączenie różnych formatów dokumentów.
 ## Warunki wstępne

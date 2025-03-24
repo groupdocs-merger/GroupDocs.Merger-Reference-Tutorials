@@ -6,6 +6,9 @@ description: Fusionnez et compressez facilement divers formats de fichiers avec 
 weight: 20
 url: /fr/net/merge-compress-files/
 ---
+
+# Fusionner les fichiers compressés
+
 ## Introduction
 
 

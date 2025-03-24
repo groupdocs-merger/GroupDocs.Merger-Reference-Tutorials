@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan egyesíthet GIF-fájlokat a GroupDocs.Merger fo
 weight: 11
 url: /hu/net/image-merging/merging-gif-files/
 ---
+
+# GIF fájlok egyesítése
+
 ## Bevezetés
 Ebből az oktatóanyagból megtudhatja, hogyan egyesíthet GIF-fájlokat a GroupDocs.Merger for .NET használatával. A GroupDocs.Merger egy hatékony API, amely lehetővé teszi a fejlesztők számára a dokumentumformátumok programozott kezelését. Az alábbi lépések követésével több GIF-fájlt is hatékonyan egyesíthet egyetlen kimeneti GIF-fájlba.
 ## Előfeltételek

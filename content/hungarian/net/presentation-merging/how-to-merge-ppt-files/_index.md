@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan egyesíthet könnyedén PowerPoint (PPT) fájlo
 weight: 12
 url: /hu/net/presentation-merging/how-to-merge-ppt-files/
 ---
+
+# PPT fájlok egyesítése
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan egyesíthet PowerPoint (PPT) fájlokat a GroupDocs.Merger for .NET segítségével. A GroupDocs.Merger for .NET egy hatékony API, amely lehetővé teszi a fejlesztők számára, hogy .NET-alkalmazásaikon belül zökkenőmentesen kezeljék és egyesítsék a különféle dokumentumformátumokat, beleértve a PowerPoint prezentációkat is.
 ## Előfeltételek

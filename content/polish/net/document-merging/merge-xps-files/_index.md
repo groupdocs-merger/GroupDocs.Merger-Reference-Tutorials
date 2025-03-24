@@ -6,6 +6,9 @@ description: Dowiedz się, jak bez wysiłku łączyć pliki XPS za pomocą Group
 weight: 20
 url: /pl/net/document-merging/merge-xps-files/
 ---
+
+# Scal pliki XPS
+
 ## Wstęp
 dziedzinie manipulacji dokumentami i zarządzania nimi GroupDocs.Merger dla .NET oferuje potężny zestaw narzędzi do płynnego łączenia plików XPS (Specyfikacja papieru XML). W tym samouczku przedstawiono podstawowe informacje dotyczące korzystania z programu GroupDocs.Merger dla platformy .NET w celu wydajnego łączenia plików XPS w aplikacjach platformy .NET. Postępując zgodnie z tym przewodnikiem, nauczysz się niezbędnych kroków, aby efektywnie wykorzystać tę bibliotekę do potrzeb przetwarzania dokumentów.
 ## Warunki wstępne

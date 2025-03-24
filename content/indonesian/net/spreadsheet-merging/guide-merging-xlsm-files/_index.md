@@ -6,6 +6,9 @@ description: Gabungkan file XLSM secara mulus dengan GroupDocs.Merger untuk .NET
 weight: 13
 url: /id/net/spreadsheet-merging/guide-merging-xlsm-files/
 ---
+
+# Panduan Menggabungkan File XLSM
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara menggabungkan file XLSM (Excel Macro-Enabled Workbook). GroupDocs.Merger adalah perpustakaan canggih yang memungkinkan pengembang memanipulasi format dokumen, termasuk menggabungkan, memisahkan, dan memodifikasi file secara terprogram.
 ## Prasyarat

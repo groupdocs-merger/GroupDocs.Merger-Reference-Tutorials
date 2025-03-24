@@ -6,6 +6,9 @@ description: Unisci facilmente file 7z utilizzando GroupDocs.Merger per .NET. Se
 weight: 10
 url: /it/net/merge-compress-files/merge-7z-files/
 ---
+
+# Come unire file 7z
+
 ## introduzione
 L'unione di file 7z può essere eseguita in modo efficiente utilizzando GroupDocs.Merger per .NET, una potente libreria per la manipolazione dei documenti. Questo tutorial ti guiderà attraverso il processo passo dopo passo, permettendoti di unire facilmente i tuoi file 7z.
 ## Prerequisiti

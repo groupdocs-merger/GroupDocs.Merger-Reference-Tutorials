@@ -6,6 +6,9 @@ description: Tìm hiểu cách hợp nhất các tệp XLSB. Hướng dẫn từ
 weight: 12
 url: /vi/net/spreadsheet-merging/how-to-merge-xlsb-files/
 ---
+
+# Cách hợp nhất các tệp XLSB
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách hợp nhất các tệp XLSB (Sổ làm việc nhị phân Excel). GroupDocs.Merger for .NET là một API thao tác tài liệu mạnh mẽ cho phép các nhà phát triển hợp nhất, phân tách và thao tác liền mạch các định dạng tài liệu khác nhau trong các ứng dụng .NET của họ. Cụ thể, chúng tôi sẽ tập trung vào việc hợp nhất các tệp XLSB bằng thư viện đa năng này.
 ## Điều kiện tiên quyết

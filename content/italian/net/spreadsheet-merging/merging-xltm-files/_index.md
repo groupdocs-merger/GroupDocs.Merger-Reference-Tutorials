@@ -6,6 +6,9 @@ description: Scopri come unire i file XLTM a livello di codice. Guida passo pass
 weight: 16
 url: /it/net/spreadsheet-merging/merging-xltm-files/
 ---
+
+# Unione di file XLTM
+
 ## introduzione
 In questo tutorial esploreremo come unire file XLTM (Excel Macro-Enabled Template). GroupDocs.Merger per .NET è una potente libreria che consente agli sviluppatori di manipolare e unire vari formati di documenti a livello di codice. Questa guida ti guiderà attraverso il processo di unione dei file XLTM passo dopo passo utilizzando C#.
 ## Prerequisiti

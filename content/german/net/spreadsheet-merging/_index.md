@@ -7,6 +7,9 @@ weight: 23
 url: /de/net/spreadsheet-merging/
 ---
 
+# Zusammenführen von Tabellenkalkulationen
+
+
 ## Einführung
 
 Wenn Sie als .NET-Entwickler Ihre Dokumentenverwaltungsaufgaben optimieren möchten, bietet GroupDocs.Merger für .NET eine umfassende Lösung. In diesem Artikel werden wir verschiedene Tutorials zum Zusammenführen verschiedener Arten von Tabellenkalkulationsdateien mit GroupDocs.Merger untersuchen.

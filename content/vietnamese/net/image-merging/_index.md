@@ -6,6 +6,9 @@ description: Hợp nhất các tệp BMP, GIF, PNG, SVG, SVGZ, TIF và TIFF mộ
 weight: 21
 url: /vi/net/image-merging/
 ---
+
+# Hợp nhất hình ảnh
+
 ## Giới thiệu
 
 Bạn đang thắc mắc về cách hợp lý hóa các tác vụ hợp nhất tệp trong ứng dụng .NET của mình? Đi sâu vào danh sách hướng dẫn toàn diện của chúng tôi bao gồm các định dạng tệp khác nhau như BMP, GIF, PNG, SVG, SVGZ, TIF và TIFF, tất cả đều được hợp nhất liền mạch bằng GroupDocs.Merger cho .NET.

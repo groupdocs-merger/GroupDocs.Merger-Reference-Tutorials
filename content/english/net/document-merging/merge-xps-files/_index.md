@@ -6,6 +6,9 @@ description: Learn how to merge XPS files using GroupDocs.Merger for .NET effort
 weight: 20
 url: /net/document-merging/merge-xps-files/
 ---
+
+# Merge XPS Files
+
 ## Introduction
 In the realm of document manipulation and management, GroupDocs.Merger for .NET offers a powerful toolkit for merging XPS (XML Paper Specification) files seamlessly. This tutorial dives into the essentials of using GroupDocs.Merger for .NET to merge XPS files efficiently within your .NET applications. By following this guide, you'll learn the necessary steps to leverage this library effectively for your document processing needs.
 ## Prerequisites

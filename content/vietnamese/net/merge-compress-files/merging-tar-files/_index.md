@@ -6,6 +6,9 @@ description: Tìm hiểu cách hợp nhất các tệp TAR theo chương trình 
 weight: 11
 url: /vi/net/merge-compress-files/merging-tar-files/
 ---
+
+# Hợp nhất các tập tin Tar
+
 ## Giới thiệu
 Trong phát triển phần mềm, khả năng thao tác và hợp nhất các tệp theo chương trình có thể rất quan trọng để xử lý dữ liệu hiệu quả. GroupDocs.Merger for .NET là một thư viện mạnh mẽ cho phép các nhà phát triển hợp nhất các tệp TAR (Tape Archive) một cách liền mạch trong các ứng dụng .NET của họ. Hướng dẫn này sẽ hướng dẫn bạn quy trình hợp nhất các tệp TAR bằng GroupDocs.Merger, cung cấp hướng dẫn từng bước và ví dụ về mã.
 ## Điều kiện tiên quyết

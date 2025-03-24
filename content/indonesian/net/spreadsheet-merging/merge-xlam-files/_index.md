@@ -6,6 +6,9 @@ description: Pelajari cara menggabungkan file XLAM dengan mudah. Sederhanakan tu
 weight: 10
 url: /id/net/spreadsheet-merging/merge-xlam-files/
 ---
+
+# Gabungkan File XLAM
+
 ## Perkenalan
 
 Dalam tutorial ini, kita akan mempelajari cara menggabungkan file XLAM (Microsoft Excel Add-In). GroupDocs.Merger adalah API manipulasi dokumen canggih yang memungkinkan pengembang bekerja dengan berbagai format dokumen secara terprogram. Dengan memanfaatkan API ini, Anda dapat dengan mudah menggabungkan beberapa file XLAM ke dalam satu file, menyederhanakan proses manajemen dokumen Anda.

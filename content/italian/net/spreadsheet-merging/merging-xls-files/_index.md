@@ -6,6 +6,9 @@ description: Scopri come unire file Excel in .NET utilizzando GroupDocs.Merger p
 weight: 11
 url: /it/net/spreadsheet-merging/merging-xls-files/
 ---
+
+# Unione di file XLS
+
 ## introduzione
 In questo tutorial esploreremo come unire file XLS (Excel). GroupDocs.Merger è una potente API per la manipolazione dei documenti che consente agli sviluppatori di unire, dividere, riorganizzare e manipolare i documenti senza sforzo all'interno delle loro applicazioni .NET. Nello specifico, ci concentreremo sull'unione dei file XLS passo dopo passo utilizzando i metodi intuitivi di GroupDocs.Merger.
 ## Prerequisiti

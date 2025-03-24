@@ -6,6 +6,9 @@ description: Bezproblemowo łącz pliki 7z za pomocą GroupDocs.Merger dla .NET.
 weight: 10
 url: /pl/net/merge-compress-files/merge-7z-files/
 ---
+
+# Jak połączyć pliki 7z
+
 ## Wstęp
 Scalanie plików 7z można efektywnie wykonać za pomocą GroupDocs.Merger dla .NET, potężnej biblioteki do manipulacji dokumentami. Ten samouczek poprowadzi Cię krok po kroku przez proces, umożliwiając bezproblemowe i łatwe scalanie plików 7z.
 ## Warunki wstępne

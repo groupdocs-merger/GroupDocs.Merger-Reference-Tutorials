@@ -6,6 +6,9 @@ description: Tìm hiểu cách hợp nhất các tệp PowerPoint (PPT) bằng G
 weight: 12
 url: /vi/net/presentation-merging/how-to-merge-ppt-files/
 ---
+
+# Cách hợp nhất các tệp PPT
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách hợp nhất các tệp PowerPoint (PPT) bằng GroupDocs.Merger cho .NET. GroupDocs.Merger dành cho .NET là một API mạnh mẽ cho phép các nhà phát triển thao tác và hợp nhất các định dạng tài liệu khác nhau, bao gồm cả bản trình bày PowerPoint, một cách liền mạch trong các ứng dụng .NET của họ.
 ## Điều kiện tiên quyết

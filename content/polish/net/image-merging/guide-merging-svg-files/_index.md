@@ -6,6 +6,9 @@ description: Dowiedz się, jak programowo łączyć pliki SVG przy użyciu Group
 weight: 13
 url: /pl/net/image-merging/guide-merging-svg-files/
 ---
+
+# Przewodnik po łączeniu plików SVG
+
 ## Wstęp
 W tym samouczku dowiesz się, jak scalać pliki SVG (Scalable Vector Graphics) za pomocą GroupDocs.Merger dla .NET. GroupDocs.Merger to potężny interfejs API do manipulacji dokumentami, który umożliwia płynne łączenie, dzielenie i manipulowanie różnymi formatami dokumentów. Postępując zgodnie z tym przewodnikiem krok po kroku, będziesz mógł połączyć wiele plików SVG w jeden plik SVG przy użyciu języka C#.
 

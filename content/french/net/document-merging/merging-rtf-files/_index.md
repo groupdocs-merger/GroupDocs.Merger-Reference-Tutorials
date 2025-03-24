@@ -6,6 +6,9 @@ description: Apprenez à fusionner des fichiers RTF dans .NET sans effort à l'a
 weight: 21
 url: /fr/net/document-merging/merging-rtf-files/
 ---
+
+# Fusion de fichiers RTF
+
 ## Introduction
 Dans le monde du développement .NET, la fusion transparente de fichiers RTF (Rich Text Format) est une tâche cruciale pour de nombreuses applications. GroupDocs.Merger pour .NET fournit une solution puissante pour y parvenir efficacement. Ce didacticiel vous guidera étape par étape tout au long du processus de fusion de fichiers RTF à l'aide de GroupDocs.Merger pour .NET. À la fin de ce didacticiel, vous disposerez des connaissances nécessaires pour fusionner des fichiers RTF sans effort au sein de vos projets .NET.
 ## Conditions préalables

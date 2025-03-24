@@ -6,6 +6,9 @@ description: Slå samman XLSM-filer sömlöst med GroupDocs.Merger för .NET. Ko
 weight: 13
 url: /sv/net/spreadsheet-merging/guide-merging-xlsm-files/
 ---
+
+# Guide för att slå samman XLSM-filer
+
 ## Introduktion
 I den här handledningen kommer vi att undersöka hur man slår ihop XLSM-filer (Excel Macro-Enabled Workbook). GroupDocs.Merger är ett kraftfullt bibliotek som gör det möjligt för utvecklare att manipulera dokumentformat, inklusive sammanslagning, delning och modifiering av filer programmatiskt.
 ## Förutsättningar

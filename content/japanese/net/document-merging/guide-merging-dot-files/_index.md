@@ -6,6 +6,9 @@ description: GroupDocs.Merger for .NET を使用してプログラムで DOT (Gr
 weight: 13
 url: /ja/net/document-merging/guide-merging-dot-files/
 ---
+
+# DOT ファイルの結合ガイド
+
 ## 導入
 このチュートリアルでは、GroupDocs.Merger for .NET を使用して DOT (Graphviz) ファイルをマージする方法を説明します。 GroupDocs.Merger for .NET は、開発者が DOT ファイルを含むさまざまなドキュメント形式を簡単に操作できるようにする強力な API です。このガイドを最後まで読むと、GroupDocs.Merger を使用してプログラムで複数の DOT ファイルを 1 つのファイルに結合する方法が理解できるようになります。
 ## 前提条件

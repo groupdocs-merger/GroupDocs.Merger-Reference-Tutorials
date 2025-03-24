@@ -6,6 +6,9 @@ description: Tìm hiểu cách hợp nhất các tệp SVGZ bằng GroupDocs.Mer
 weight: 14
 url: /vi/net/image-merging/merging-svgz-files/
 ---
+
+# Hợp nhất các tệp SVGZ
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách hợp nhất các tệp SVGZ (Đồ họa vectơ có thể mở rộng) bằng GroupDocs.Merger cho .NET. GroupDocs.Merger là API thao tác tài liệu mạnh mẽ cho phép các nhà phát triển thực hiện nhiều thao tác khác nhau trên các định dạng tài liệu khác nhau, bao gồm hợp nhất, chia tách và sắp xếp lại các trang.
 ## Điều kiện tiên quyết

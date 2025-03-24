@@ -6,6 +6,9 @@ description: Learn how to merge DOCX files programmatically in .NET using GroupD
 weight: 12
 url: /net/document-merging/how-to-merge-docx-files/
 ---
+
+# How to Merge DOCX Files
+
 ## Introduction
 In the world of .NET development, merging DOCX files programmatically can be a powerful capability for various applications. GroupDocs.Merger for .NET provides a comprehensive solution for merging DOCX files efficiently. This tutorial will guide you through the process of using GroupDocs.Merger for .NET to merge multiple DOCX files into a single document seamlessly.
 ## Prerequisites

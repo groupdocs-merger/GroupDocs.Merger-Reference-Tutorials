@@ -6,6 +6,9 @@ description: Egyesítse zökkenőmentesen a BMP, GIF, PNG, SVG, SVGZ, TIF és TI
 weight: 21
 url: /hu/net/image-merging/
 ---
+
+# Kép egyesítése
+
 ## Bevezetés
 
 Kíváncsi arra, hogyan egyszerűsítheti a fájlegyesítési feladatokat .NET-alkalmazásaiban? Merüljön el az átfogó oktatóanyag listánkban, amely különféle fájlformátumokat, például BMP, GIF, PNG, SVG, SVGZ, TIF és TIFF fájlokat tartalmaz, amelyek mindegyike zökkenőmentesen egyesül a GroupDocs.Merger for .NET segítségével.

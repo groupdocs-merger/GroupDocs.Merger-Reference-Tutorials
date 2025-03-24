@@ -6,6 +6,9 @@ description: Tìm hiểu cách hợp nhất các tệp VSDX theo chương trình
 weight: 12
 url: /vi/net/visio-merging/how-to-merge-vsdx-files/
 ---
+
+# Cách hợp nhất các tệp VSDX
+
 ## Giới thiệu
 Trong hướng dẫn này, bạn sẽ tìm hiểu cách hợp nhất các tệp VSDX (Visio drawing) bằng GroupDocs.Merger cho .NET. GroupDocs.Merger for .NET là một API mạnh mẽ cho phép bạn thao tác và hợp nhất các định dạng tài liệu khác nhau một cách liền mạch trong các ứng dụng .NET của mình.
 ## Điều kiện tiên quyết

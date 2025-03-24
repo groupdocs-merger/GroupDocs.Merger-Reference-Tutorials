@@ -6,6 +6,9 @@ description: Découvrez comment fusionner des fichiers OTP à l'aide de GroupDoc
 weight: 14
 url: /fr/net/presentation-merging/merging-otp-files/
 ---
+
+# Fusion de fichiers OTP
+
 ## Introduction
 Dans ce didacticiel, nous allons explorer comment fusionner des fichiers OTP (OpenDocument Presentation Template) à l'aide de GroupDocs.Merger pour .NET. GroupDocs.Merger est une puissante API de manipulation de documents qui permet aux développeurs de combiner, diviser et manipuler différents formats de fichiers de manière transparente.
 ## Conditions préalables

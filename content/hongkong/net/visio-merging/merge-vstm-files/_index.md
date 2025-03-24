@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Merger for .NET 輕鬆合併 VSTM 檔�
 weight: 15
 url: /zh-hant/net/visio-merging/merge-vstm-files/
 ---
+
+# 合併 VSTM 文件
+
 ## 介紹
 在本教學中，我們將探討如何使用 GroupDocs.Merger for .NET 合併 VSTM (VSTemplate) 檔案。 GroupDocs.Merger 是一個功能強大的文件操作 API，可讓開發人員在其 .NET 應用程式中無縫地合併、分割和操作各種文件格式。
 ## 先決條件

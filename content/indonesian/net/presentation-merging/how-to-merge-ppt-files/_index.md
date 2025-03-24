@@ -6,6 +6,9 @@ description: Pelajari cara menggabungkan file PowerPoint (PPT) menggunakan Group
 weight: 12
 url: /id/net/presentation-merging/how-to-merge-ppt-files/
 ---
+
+# Cara Menggabungkan File PPT
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara menggabungkan file PowerPoint (PPT) menggunakan GroupDocs.Merger untuk .NET. GroupDocs.Merger untuk .NET adalah API canggih yang memungkinkan pengembang memanipulasi dan menggabungkan berbagai format dokumen, termasuk presentasi PowerPoint, dengan lancar dalam aplikasi .NET mereka.
 ## Prasyarat

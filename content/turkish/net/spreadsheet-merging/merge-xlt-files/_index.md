@@ -6,6 +6,9 @@ description: XLT dosyalarını nasıl birleştireceğinizi öğrenin. Bu adım a
 weight: 15
 url: /tr/net/spreadsheet-merging/merge-xlt-files/
 ---
+
+# XLT Dosyalarını Birleştir
+
 ## giriiş
 Bu eğitimde XLT (Excel Şablonu) dosyalarının nasıl birleştirileceğini inceleyeceğiz. GroupDocs.Merger, geliştiricilerin Excel dosyaları da dahil olmak üzere çeşitli belge formatlarını programlı olarak değiştirmesine olanak tanıyan güçlü bir API'dir. XLT dosyalarını birleştirerek birden fazla şablonu tek bir belgede birleştirerek iş akışınızı kolaylaştırabilir ve verimliliği artırabilirsiniz.
 ## Önkoşullar

@@ -6,6 +6,9 @@ url: /zh/net/
 description: 使用 GroupDocs.Merger .NET 轻松合并和压缩各种文件格式。了解有关合并图像、文档等的分步教程！
 is_root: true
 ---
+
+# GroupDocs.Merger for .NET 的教程和示例
+
 ## 介绍
 
 使用 GroupDocs.Merger for .NET 轻松管理您的文件！这个综合教程系列提供了如何利用 GroupDocs.Merger 的强大功能无缝合并和压缩各种文件格式的分步指导。无论您要处理图像、文档、电子表格、演示文稿，甚至 Visio 文件，我们都能满足您的需求。

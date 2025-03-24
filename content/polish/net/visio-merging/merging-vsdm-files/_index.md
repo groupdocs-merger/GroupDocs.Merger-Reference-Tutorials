@@ -6,6 +6,9 @@ description: Dowiedz się, jak scalić pliki VSDM za pomocą GroupDocs.Merger dl
 weight: 11
 url: /pl/net/visio-merging/merging-vsdm-files/
 ---
+
+# Łączenie plików VSDM
+
 ## Wstęp
 tym samouczku omówimy sposób scalania plików VSDM (rysowanie z obsługą makr programu Visio) przy użyciu zaawansowanej biblioteki GroupDocs.Merger dla platformy .NET. Ta biblioteka umożliwia płynną manipulację różnymi formatami dokumentów w aplikacjach .NET, w tym łączenie, dzielenie i modyfikowanie właściwości dokumentów.
 ## Warunki wstępne

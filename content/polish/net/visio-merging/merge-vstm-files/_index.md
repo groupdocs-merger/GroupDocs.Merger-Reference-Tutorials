@@ -6,6 +6,9 @@ description: Dowiedz się, jak łatwo łączyć pliki VSTM za pomocą GroupDocs.
 weight: 15
 url: /pl/net/visio-merging/merge-vstm-files/
 ---
+
+# Scal pliki VSTM
+
 ## Wstęp
 tym samouczku przyjrzymy się, jak scalić pliki VSTM (VSTemplate) za pomocą GroupDocs.Merger dla .NET. GroupDocs.Merger to potężny interfejs API do manipulacji dokumentami, który umożliwia programistom łączenie, dzielenie i płynne manipulowanie różnymi formatami dokumentów w aplikacjach .NET.
 ## Warunki wstępne

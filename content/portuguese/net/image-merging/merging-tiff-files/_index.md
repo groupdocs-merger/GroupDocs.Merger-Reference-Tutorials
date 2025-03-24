@@ -6,6 +6,9 @@ description: Aprenda como mesclar arquivos TIFF usando GroupDocs.Merger for .NET
 weight: 16
 url: /pt/net/image-merging/merging-tiff-files/
 ---
+
+# Mesclando arquivos TIFF
+
 ## Introdução
 Neste tutorial, exploraremos como mesclar arquivos TIFF usando a biblioteca GroupDocs.Merger for .NET. GroupDocs.Merger é uma poderosa API de manipulação de documentos que permite aos desenvolvedores mesclar, dividir e modificar vários formatos de documentos perfeitamente em aplicativos .NET.
 ## Pré-requisitos

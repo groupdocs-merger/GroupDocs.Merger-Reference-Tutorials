@@ -6,6 +6,9 @@ description: Learn how to merge XLTX files effortlessly. Start merging XLTX file
 weight: 17
 url: /net/spreadsheet-merging/merge-xltx-files/
 ---
+
+# Merge XLTX Files
+
 ## Introduction
 In this tutorial, we will explore how to merge XLTX (Excel Template) files. GroupDocs.Merger is a powerful document manipulation API that enables developers to combine, split, and manipulate various document formats seamlessly within .NET applications. This tutorial specifically focuses on merging XLTX files programmatically.
 ## Prerequisites

@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan egyesíthet könnyedén XPS-fájlokat a GroupDo
 weight: 20
 url: /hu/net/document-merging/merge-xps-files/
 ---
+
+# XPS fájlok egyesítése
+
 ## Bevezetés
 dokumentumkezelés és -kezelés területén a GroupDocs.Merger for .NET hatékony eszközkészletet kínál az XPS (XML Paper Specification) fájlok zökkenőmentes egyesítéséhez. Ez az oktatóanyag a GroupDocs.Merger for .NET használatának alapjait mutatja be az XPS-fájlok hatékony egyesítése érdekében a .NET-alkalmazásokban. Ha követi ezt az útmutatót, megtudhatja, milyen lépések szükségesek ahhoz, hogy ezt a könyvtárat hatékonyan felhasználhassa dokumentumfeldolgozási igényeihez.
 ## Előfeltételek

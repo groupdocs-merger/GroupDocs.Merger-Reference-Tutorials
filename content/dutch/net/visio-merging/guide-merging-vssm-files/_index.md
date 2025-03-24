@@ -6,6 +6,9 @@ description: Leer hoe u VSSM-bestanden moeiteloos kunt samenvoegen met GroupDocs
 weight: 13
 url: /nl/net/visio-merging/guide-merging-vssm-files/
 ---
+
+# Gids voor het samenvoegen van VSSM-bestanden
+
 ## Invoering
 In deze zelfstudie leert u hoe u VSSM-bestanden (Visio Macro-Enabled Drawing) kunt samenvoegen met GroupDocs.Merger voor .NET. GroupDocs.Merger is een krachtige bibliotheek waarmee ontwikkelaars verschillende documentformaten naadloos kunnen manipuleren en samenvoegen.
 ## Vereisten

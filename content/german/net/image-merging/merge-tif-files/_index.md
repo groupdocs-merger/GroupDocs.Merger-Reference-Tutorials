@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie TIF-Dateien programmgesteuert mit GroupDocs.M
 weight: 15
 url: /de/net/image-merging/merge-tif-files/
 ---
+
+# TIF-Dateien zusammenführen
+
 ## Einführung
 In diesem Tutorial befassen wir uns intensiv mit der Verwendung von GroupDocs.Merger für .NET zum effizienten Zusammenführen von TIF-Dateien. GroupDocs.Merger für .NET ist eine leistungsstarke API zur Dokumentbearbeitung, die es Entwicklern ermöglicht, verschiedene Vorgänge an Dokumenten programmgesteuert auszuführen, einschließlich Zusammenführen, Teilen und Neuanordnen von Seiten.
 ## Voraussetzungen

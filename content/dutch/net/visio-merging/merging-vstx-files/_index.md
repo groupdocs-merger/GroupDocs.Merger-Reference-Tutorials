@@ -6,6 +6,9 @@ description: Leer hoe u VSTX-bestanden samenvoegt met GroupDocs.Merger voor .NET
 weight: 16
 url: /nl/net/visio-merging/merging-vstx-files/
 ---
+
+# VSTX-bestanden samenvoegen met GroupDocs.Merger voor .NET
+
 ## Invoering
 In deze zelfstudie gaan we dieper in op het samenvoegen van VSTX-bestanden met GroupDocs.Merger voor .NET. GroupDocs.Merger voor .NET is een krachtige bibliotheek waarmee ontwikkelaars verschillende documentformaten naadloos kunnen manipuleren binnen hun .NET-toepassingen. Het samenvoegen van VSTX-bestanden is een veel voorkomende taak bij documentverwerking, vooral als het gaat om presentaties in Microsoft PowerPoint.
 ## Vereisten

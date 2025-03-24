@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Merger for .NET 以编程方式合并 
 weight: 13
 url: /zh/net/document-merging/guide-merging-dot-files/
 ---
+
+# 合并 DOT 文件的指南
+
 ## 介绍
 在本教程中，我们将探索如何使用 GroupDocs.Merger for .NET 合并 DOT (Graphviz) 文件。 GroupDocs.Merger for .NET 是一个功能强大的 API，允许开发人员轻松操作各种文档格式，包括 DOT 文件。在本指南结束时，您将了解如何使用 GroupDocs.Merger 以编程方式将多个 DOT 文件合并为一个文件。
 ## 先决条件

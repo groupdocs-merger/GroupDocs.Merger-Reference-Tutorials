@@ -6,6 +6,9 @@ description: GroupDocs.Merger for .NET'i kullanarak PPS dosyalarını sorunsuz b
 weight: 10
 url: /tr/net/presentation-merging/merge-pps-files/
 ---
+
+# PPS Dosyalarını Birleştir
+
 ## giriiş
 .NET geliştirme dünyasında, belge dosyalarının verimli bir şekilde işlenmesi çok önemlidir. GroupDocs.Merger for .NET, çeşitli belge formatlarını sorunsuz bir şekilde birleştirmek ve değiştirmek için güçlü araçlar sağlar. Bu öğreticide, GroupDocs.Merger for .NET'i kullanarak PPS (PowerPoint Slayt Gösterisi) dosyalarını birleştirmeye odaklanacağız. İster deneyimli bir geliştirici olun ister yeni başlıyor olun, bu kılavuz süreç boyunca size adım adım yol gösterecektir.
 ## Önkoşullar

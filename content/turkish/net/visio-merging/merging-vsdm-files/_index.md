@@ -6,6 +6,9 @@ description: GroupDocs.Merger for .NET'i kullanarak VSDM dosyalarını nasıl bi
 weight: 11
 url: /tr/net/visio-merging/merging-vsdm-files/
 ---
+
+# VSDM Dosyalarını Birleştirme
+
 ## giriiş
 Bu öğreticide, güçlü GroupDocs.Merger for .NET kitaplığını kullanarak VSDM (Visio Makro Etkin Çizim) dosyalarının nasıl birleştirileceğini keşfedeceğiz. Bu kitaplık, belge özelliklerini birleştirme, bölme ve değiştirme de dahil olmak üzere, .NET uygulamaları içindeki çeşitli belge biçimlerinin kesintisiz olarak değiştirilmesine olanak tanır.
 ## Önkoşullar

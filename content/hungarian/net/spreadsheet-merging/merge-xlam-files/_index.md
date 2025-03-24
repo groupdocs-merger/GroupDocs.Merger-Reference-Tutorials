@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan egyesíthet könnyedén XLAM fájlokat. Egyszer
 weight: 10
 url: /hu/net/spreadsheet-merging/merge-xlam-files/
 ---
+
+# XLAM fájlok egyesítése
+
 ## Bevezetés
 
 Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet XLAM (Microsoft Excel-bővítmény) fájlokat egyesíteni. A GroupDocs.Merger egy hatékony dokumentumkezelési API, amely lehetővé teszi a fejlesztők számára, hogy programozottan dolgozzanak különféle dokumentumformátumokkal. Ennek az API-nak a kihasználásával zökkenőmentesen kombinálhat több XLAM fájlt egyetlen fájlba, és egyszerűsíti a dokumentumkezelési folyamatokat.

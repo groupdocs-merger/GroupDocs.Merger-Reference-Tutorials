@@ -6,6 +6,9 @@ description: GroupDocs.Merger for .NET を使用してプログラムで DOTM �
 weight: 14
 url: /ja/net/document-merging/merging-dotm-files/
 ---
+
+# DOTM ファイルのマージ
+
 ## 導入
 このチュートリアルでは、GroupDocs.Merger for .NET を使用して DOTM (Word Macro-Enabled Template) ファイルをマージする方法を説明します。 GroupDocs.Merger は、開発者が .NET アプリケーション内でさまざまなドキュメント形式をシームレスに操作および結合できるようにする強力な API です。このガイドに従うことで、この機能をプロジェクトに統合する方法を段階的に学習できます。
 ## 前提条件

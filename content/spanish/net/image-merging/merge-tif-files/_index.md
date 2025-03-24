@@ -6,6 +6,9 @@ description: Aprenda a fusionar archivos TIF mediante programación utilizando G
 weight: 15
 url: /es/net/image-merging/merge-tif-files/
 ---
+
+# Fusionar archivos TIF
+
 ## Introducción
 En este tutorial, profundizaremos en el uso de GroupDocs.Merger para .NET para fusionar archivos TIF de manera eficiente. GroupDocs.Merger para .NET es una potente API de manipulación de documentos que permite a los desarrolladores realizar diversas operaciones en documentos mediante programación, incluida la combinación, división y reorganización de páginas.
 ## Requisitos previos

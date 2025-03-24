@@ -6,6 +6,9 @@ description: Aprenda a fusionar archivos ODS sin esfuerzo. Siga nuestra guía pa
 weight: 18
 url: /es/net/spreadsheet-merging/merging-ods-files/
 ---
+
+# Fusionar archivos ODS
+
 ## Introducción
 En este tutorial, exploraremos cómo fusionar archivos ODS (Hoja de cálculo OpenDocument). GroupDocs.Merger para .NET es una potente API que permite a los desarrolladores manipular y combinar varios formatos de documentos sin problemas. Cubriremos los pasos necesarios para fusionar archivos ODS mediante programación usando esta biblioteca.
 ## Requisitos previos

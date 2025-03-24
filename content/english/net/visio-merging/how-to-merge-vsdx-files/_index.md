@@ -6,6 +6,9 @@ description: Learn how to merge VSDX files programmatically using GroupDocs.Merg
 weight: 12
 url: /net/visio-merging/how-to-merge-vsdx-files/
 ---
+
+# How to Merge VSDX Files
+
 ## Introduction
 In this tutorial, you'll learn how to merge VSDX (Visio Drawing) files using GroupDocs.Merger for .NET. GroupDocs.Merger for .NET is a powerful API that allows you to manipulate and merge various document formats seamlessly within your .NET applications.
 ## Prerequisites

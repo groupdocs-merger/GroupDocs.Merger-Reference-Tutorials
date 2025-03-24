@@ -7,6 +7,9 @@ weight: 24
 url: /sv/net/visio-merging/
 ---
 
+# Visio sammanslagning
+
+
 ## Introduktion
 
 Vill du effektivisera dina dokumenthanteringsprocesser? Dyk in i våra utvalda handledningar som är utformade för att guida dig genom den sömlösa sammanslagningen av Visio-filer med GroupDocs.Merger för .NET. Oavsett om du slår ihop VDX-, VSDM-, VSDX-, VSSM-, VSSX-, VSTM-, VSTX-, VSX- eller VTX-filer, har vi dig täckt med detaljerade steg-för-steg-instruktioner och kodexempel.

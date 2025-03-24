@@ -6,6 +6,9 @@ description: Mesclar e compactar vários formatos de arquivo com tutoriais sem e
 weight: 20
 url: /pt/net/merge-compress-files/
 ---
+
+# Mesclar arquivos compactados
+
 ## Introdução
 
 

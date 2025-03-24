@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Merger for .NET 輕鬆合併 PowerPoin
 weight: 12
 url: /zh-hant/net/presentation-merging/how-to-merge-ppt-files/
 ---
+
+# 如何合併 PPT 文件
+
 ## 介紹
 在本教學中，我們將探討如何使用 GroupDocs.Merger for .NET 合併 PowerPoint (PPT) 檔案。 GroupDocs.Merger for .NET 是一個功能強大的 API，可讓開發人員在其 .NET 應用程式中無縫地操作和合併各種文件格式，包括 PowerPoint 簡報。
 ## 先決條件

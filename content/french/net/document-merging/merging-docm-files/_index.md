@@ -6,6 +6,9 @@ description: Découvrez comment fusionner des fichiers DOCM de manière transpar
 weight: 11
 url: /fr/net/document-merging/merging-docm-files/
 ---
+
+# Fusion de fichiers DOCM
+
 ## Introduction
 Dans ce didacticiel, nous allons explorer comment fusionner des fichiers DOCM (Microsoft Word Macro-Enabled Document) à l'aide de GroupDocs.Merger pour .NET. Cette bibliothèque fournit de puissantes fonctionnalités de manipulation de documents, permettant aux développeurs de fusionner, diviser, extraire et manipuler divers formats de documents de manière transparente au sein de leurs applications .NET.
 ## Conditions préalables

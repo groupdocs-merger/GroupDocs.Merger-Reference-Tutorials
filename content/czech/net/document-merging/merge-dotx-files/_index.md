@@ -6,6 +6,9 @@ description: Naučte se sloučit soubory DOTX v .NET pomocí GroupDocs.Merger be
 weight: 15
 url: /cs/net/document-merging/merge-dotx-files/
 ---
+
+# Sloučit soubory DOTX
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak sloučit soubory DOTX (Word Template) pomocí GroupDocs.Merger pro .NET. GroupDocs.Merger je výkonné rozhraní API, které umožňuje vývojářům bezproblémově manipulovat s různými formáty dokumentů v rámci aplikací .NET. Využitím tohoto rozhraní API můžete efektivně sloučit více souborů DOTX do jednoho dokumentu pomocí pouhých několika řádků kódu.
 ## Předpoklady

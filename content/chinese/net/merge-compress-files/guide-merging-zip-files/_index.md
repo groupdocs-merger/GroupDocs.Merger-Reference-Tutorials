@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Merger for .NET 以编程方式合并 
 weight: 12
 url: /zh/net/merge-compress-files/guide-merging-zip-files/
 ---
+
+# 合并 Zip 文件指南
+
 ## 介绍
 在文档操作和管理领域，GroupDocs.Merger for .NET 是一款功能强大的工具，适合那些希望无缝合并和操作各种文件格式的开发人员。本教程将指导您完成使用 GroupDocs.Merger for .NET 合并 ZIP 文件的过程。在本教程结束时，您将掌握在 .NET 应用程序中以编程方式合并 ZIP 文件的知识。
 ## 先决条件

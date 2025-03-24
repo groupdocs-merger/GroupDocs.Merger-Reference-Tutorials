@@ -6,6 +6,9 @@ description: Voeg moeiteloos verschillende bestandsformaten samen en comprimeer 
 weight: 20
 url: /nl/net/merge-compress-files/
 ---
+
+# Compressiebestanden samenvoegen
+
 ## Invoering
 
 

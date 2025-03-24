@@ -6,6 +6,9 @@ description: Voeg moeiteloos verschillende presentatiebestandsformaten samen. Vo
 weight: 25
 url: /nl/net/presentation-merging/
 ---
+
+# Presentatie samenvoegen
+
 ## Invoering
 
 Voeg uw presentatiebestanden moeiteloos samen. Of het nu gaat om PPS-, PPSX-, PPT- of OTP-bestanden, onze tutorials bieden stapsgewijze begeleiding, vergezeld van praktische codevoorbeelden, om uw taken voor het samenvoegen van documenten te stroomlijnen.

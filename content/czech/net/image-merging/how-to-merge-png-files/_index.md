@@ -6,6 +6,9 @@ description: Přečtěte si, jak sloučit soubory PNG pomocí GroupDocs.Merger f
 weight: 12
 url: /cs/net/image-merging/how-to-merge-png-files/
 ---
+
+# Jak sloučit soubory PNG
+
 ## Úvod
 V tomto tutoriálu se naučíme, jak sloučit soubory PNG pomocí GroupDocs.Merger for .NET. GroupDocs.Merger je výkonná knihovna, která umožňuje vývojářům bezproblémově manipulovat a kombinovat různé formáty dokumentů. Podle tohoto průvodce budete moci bez námahy sloučit soubory PNG ve svých aplikacích .NET.
 ## Předpoklady

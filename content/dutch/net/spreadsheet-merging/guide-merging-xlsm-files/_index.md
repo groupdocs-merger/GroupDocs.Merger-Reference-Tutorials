@@ -6,6 +6,9 @@ description: Voeg XLSM-bestanden naadloos samen met GroupDocs.Merger voor .NET. 
 weight: 13
 url: /nl/net/spreadsheet-merging/guide-merging-xlsm-files/
 ---
+
+# Handleiding voor het samenvoegen van XLSM-bestanden
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u XLSM-bestanden (Excel Macro-Enabled Workbook) kunt samenvoegen. GroupDocs.Merger is een krachtige bibliotheek waarmee ontwikkelaars documentformaten kunnen manipuleren, inclusief het programmatisch samenvoegen, splitsen en wijzigen van bestanden.
 ## Vereisten

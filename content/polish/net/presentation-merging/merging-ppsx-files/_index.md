@@ -6,6 +6,9 @@ description: Z łatwością łącz pliki PPSX za pomocą GroupDocs.Merger dla .N
 weight: 11
 url: /pl/net/presentation-merging/merging-ppsx-files/
 ---
+
+# Łączenie plików PPSX
+
 ## Wstęp
 tym samouczku zajmiemy się łączeniem plików PPSX przy użyciu potężnej biblioteki GroupDocs.Merger dla .NET. GroupDocs.Merger upraszcza proces programowego łączenia wielu plików pokazu slajdów programu PowerPoint (PPSX) w jeden skonsolidowany plik. Niezależnie od tego, czy tworzysz aplikację, czy chcesz zautomatyzować zadania manipulacji plikami, GroupDocs.Merger oferuje wydajne rozwiązanie.
 ## Warunki wstępne

@@ -6,6 +6,9 @@ description: Bezproblémově slučujte soubory XLSM s GroupDocs.Merger pro .NET.
 weight: 13
 url: /cs/net/spreadsheet-merging/guide-merging-xlsm-files/
 ---
+
+# Průvodce slučováním souborů XLSM
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak sloučit soubory XLSM (Excel Macro-Enabled Workbook). GroupDocs.Merger je výkonná knihovna, která umožňuje vývojářům manipulovat s formáty dokumentů, včetně slučování, rozdělování a programové úpravy souborů.
 ## Předpoklady

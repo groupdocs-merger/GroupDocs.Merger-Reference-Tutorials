@@ -6,6 +6,9 @@ description: Aprenda como mesclar arquivos Excel em .NET usando GroupDocs.Merger
 weight: 11
 url: /pt/net/spreadsheet-merging/merging-xls-files/
 ---
+
+# Mesclando arquivos XLS
+
 ## Introdução
 Neste tutorial, exploraremos como mesclar arquivos XLS (Excel). GroupDocs.Merger é uma poderosa API de manipulação de documentos que permite aos desenvolvedores mesclar, dividir, reorganizar e manipular documentos sem esforço em seus aplicativos .NET. Especificamente, vamos nos concentrar na fusão de arquivos XLS passo a passo usando os métodos intuitivos do GroupDocs.Merger.
 ## Pré-requisitos

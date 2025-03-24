@@ -6,6 +6,9 @@ description: Pelajari cara menggabungkan file TAR secara terprogram menggunakan 
 weight: 11
 url: /id/net/merge-compress-files/merging-tar-files/
 ---
+
+# Menggabungkan File Tar
+
 ## Perkenalan
 Dalam pengembangan perangkat lunak, kemampuan untuk memanipulasi dan menggabungkan file secara terprogram sangat penting untuk penanganan data yang efisien. GroupDocs.Merger untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang menggabungkan file TAR (Tape Archive) dengan mulus dalam aplikasi .NET mereka. Tutorial ini akan memandu Anda melalui proses penggabungan file TAR menggunakan GroupDocs.Merger, memberikan petunjuk langkah demi langkah dan contoh kode.
 ## Prasyarat

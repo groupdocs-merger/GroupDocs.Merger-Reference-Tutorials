@@ -6,6 +6,9 @@ description: Learn how to merge DOTX files in .NET using GroupDocs.Merger effort
 weight: 15
 url: /net/document-merging/merge-dotx-files/
 ---
+
+# Merge DOTX Files
+
 ## Introduction
 In this tutorial, we'll explore how to merge DOTX (Word Template) files using GroupDocs.Merger for .NET. GroupDocs.Merger is a powerful API that enables developers to manipulate various document formats seamlessly within .NET applications. By leveraging this API, you can efficiently merge multiple DOTX files into a single document with just a few lines of code.
 ## Prerequisites

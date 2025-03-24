@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan egyesíthet PNG-fájlokat a GroupDocs.Merger fo
 weight: 12
 url: /hu/net/image-merging/how-to-merge-png-files/
 ---
+
+# PNG fájlok egyesítése
+
 ## Bevezetés
 Ebben az oktatóanyagban megtudjuk, hogyan lehet PNG-fájlokat egyesíteni a GroupDocs.Merger for .NET használatával. A GroupDocs.Merger egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára a különböző dokumentumformátumok zökkenőmentes kezelését és kombinálását. Az útmutató követésével könnyedén egyesítheti a PNG-fájlokat .NET-alkalmazásaiban.
 ## Előfeltételek

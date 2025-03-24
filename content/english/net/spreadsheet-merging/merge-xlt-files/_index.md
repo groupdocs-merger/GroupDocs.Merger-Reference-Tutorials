@@ -6,6 +6,9 @@ description: Learn how to merge XLT files. Combine Excel templates programmatica
 weight: 15
 url: /net/spreadsheet-merging/merge-xlt-files/
 ---
+
+# Merge XLT Files
+
 ## Introduction
 In this tutorial, we'll explore how to merge XLT (Excel Template) files. GroupDocs.Merger is a powerful API that allows developers to manipulate various document formats, including Excel files, programmatically. By merging XLT files, you can combine multiple templates into a single document, streamlining your workflow and enhancing efficiency.
 ## Prerequisites

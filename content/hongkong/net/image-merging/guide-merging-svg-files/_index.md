@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Merger for .NET 以程式設計方式�
 weight: 13
 url: /zh-hant/net/image-merging/guide-merging-svg-files/
 ---
+
+# 合併 SVG 檔案指南
+
 ## 介紹
 在本教學中，您將學習如何使用 GroupDocs.Merger for .NET 合併 SVG（可縮放向量圖形）檔案。 GroupDocs.Merger 是一個功能強大的文件操作 API，可讓您無縫地合併、分割和操作各種文件格式。透過遵循此逐步指南，您將能夠使用 C# 將多個 SVG 檔案合併為一個 SVG 檔案。
 

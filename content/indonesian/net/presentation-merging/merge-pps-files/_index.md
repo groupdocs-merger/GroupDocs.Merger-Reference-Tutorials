@@ -6,6 +6,9 @@ description: Pelajari cara menggabungkan file PPS dengan lancar menggunakan Grou
 weight: 10
 url: /id/net/presentation-merging/merge-pps-files/
 ---
+
+# Gabungkan File PPS
+
 ## Perkenalan
 Dalam dunia pengembangan .NET, memanipulasi file dokumen secara efisien sangatlah penting. GroupDocs.Merger for .NET menyediakan alat canggih untuk menggabungkan dan memanipulasi berbagai format dokumen dengan mulus. Dalam tutorial ini, kami akan fokus pada penggabungan file PPS (PowerPoint Slide Show) menggunakan GroupDocs.Merger untuk .NET. Baik Anda seorang pengembang berpengalaman atau baru memulai, panduan ini akan memandu Anda melalui proses langkah demi langkah.
 ## Prasyarat

@@ -6,6 +6,9 @@ description: Aprenda cómo fusionar archivos VTX mediante programación usando G
 weight: 18
 url: /es/net/visio-merging/guide-merging-vtx-files/
 ---
+
+# Guía para fusionar archivos VTX
+
 ## Introducción
 En este tutorial, exploraremos cómo fusionar archivos VTX (Plantilla de dibujo de Visio) usando GroupDocs.Merger para .NET. GroupDocs.Merger para .NET es una potente API de manipulación de documentos que permite a los desarrolladores trabajar con varios formatos de archivos, incluidos archivos VTX.
 ## Requisitos previos

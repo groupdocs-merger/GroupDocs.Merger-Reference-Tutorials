@@ -7,6 +7,9 @@ weight: 24
 url: /pl/net/visio-merging/
 ---
 
+# Łączenie Visio
+
+
 ## Wstęp
 
 Chcesz usprawnić procesy zarządzania dokumentami? Zapoznaj się z naszymi wyselekcjonowanymi samouczkami, które poprowadzą Cię przez proces płynnego łączenia plików programu Visio przy użyciu programu GroupDocs.Merger dla platformy .NET. Niezależnie od tego, czy łączysz pliki VDX, VSDM, VSDX, VSSM, VSSX, VSTM, VSTX, VSX czy VTX, zapewniamy szczegółowe instrukcje krok po kroku i próbki kodu.

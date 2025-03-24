@@ -6,6 +6,9 @@ description: Pelajari cara menggabungkan file XLTM secara terprogram. Panduan la
 weight: 16
 url: /id/net/spreadsheet-merging/merging-xltm-files/
 ---
+
+# Menggabungkan File XLTM
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara menggabungkan file XLTM (Excel Macro-Enabled Template). GroupDocs.Merger for .NET adalah perpustakaan canggih yang memungkinkan pengembang memanipulasi dan menggabungkan berbagai format dokumen secara terprogram. Panduan ini akan memandu Anda melalui proses penggabungan file XLTM langkah demi langkah menggunakan C#.
 ## Prasyarat

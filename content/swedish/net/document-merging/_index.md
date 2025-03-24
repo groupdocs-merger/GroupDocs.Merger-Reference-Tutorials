@@ -6,6 +6,9 @@ description: Slå enkelt samman olika dokumentformat i .NET med GroupDocs.Merger
 weight: 22
 url: /sv/net/document-merging/
 ---
+
+# Sammanfoga dokument
+
 ## Introduktion
 
 Är du en .NET-utvecklare som söker effektiva sätt att kombinera olika dokumentformat sömlöst? GroupDocs.Merger för .NET är din ultimata lösning. I den här omfattande handledningslistan fördjupar vi oss i att slå samman DOC, DOCX, PDF och andra format utan ansträngning.

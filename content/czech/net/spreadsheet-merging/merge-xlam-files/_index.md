@@ -6,6 +6,9 @@ description: Naučte se, jak bez námahy sloučit soubory XLAM. Zjednodušte si 
 weight: 10
 url: /cs/net/spreadsheet-merging/merge-xlam-files/
 ---
+
+# Sloučit soubory XLAM
+
 ## Úvod
 
 V tomto tutoriálu prozkoumáme, jak sloučit soubory XLAM (doplněk pro Microsoft Excel). GroupDocs.Merger je výkonné API pro manipulaci s dokumenty, které umožňuje vývojářům programově pracovat s různými formáty dokumentů. Využitím tohoto rozhraní API můžete bez problémů zkombinovat více souborů XLAM do jednoho souboru a zjednodušit tak procesy správy dokumentů.

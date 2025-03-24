@@ -6,6 +6,9 @@ description: Dowiedz się, jak bezproblemowo scalać pliki PPS za pomocą GroupD
 weight: 10
 url: /pl/net/presentation-merging/merge-pps-files/
 ---
+
+# Scal pliki PPS
+
 ## Wstęp
 W świecie programowania .NET efektywne manipulowanie plikami dokumentów ma kluczowe znaczenie. GroupDocs.Merger dla .NET zapewnia zaawansowane narzędzia do płynnego łączenia i manipulowania różnymi formatami dokumentów. W tym samouczku skupimy się na łączeniu plików PPS (Pokaz slajdów programu PowerPoint) przy użyciu programu GroupDocs.Merger dla platformy .NET. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz, ten przewodnik przeprowadzi Cię przez proces krok po kroku.
 ## Warunki wstępne

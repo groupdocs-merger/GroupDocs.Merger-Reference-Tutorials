@@ -6,6 +6,9 @@ description: XLT ファイルをマージする方法を学びます。このス
 weight: 15
 url: /ja/net/spreadsheet-merging/merge-xlt-files/
 ---
+
+# XLT ファイルを結合する
+
 ## 導入
 このチュートリアルでは、XLT (Excel テンプレート) ファイルを結合する方法を説明します。 GroupDocs.Merger は、開発者が Excel ファイルなどのさまざまなドキュメント形式をプログラムで操作できるようにする強力な API です。 XLT ファイルを結合すると、複数のテンプレートを 1 つのドキュメントに結合できるため、ワークフローが合理化され、効率が向上します。
 ## 前提条件

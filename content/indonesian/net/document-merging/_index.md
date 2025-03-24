@@ -6,6 +6,9 @@ description: Gabungkan berbagai format dokumen dengan mudah di .NET menggunakan 
 weight: 22
 url: /id/net/document-merging/
 ---
+
+# Penggabungan Dokumen
+
 ## Perkenalan
 
 Apakah Anda seorang pengembang .NET yang mencari cara efisien untuk menggabungkan berbagai format dokumen dengan lancar? GroupDocs.Merger untuk .NET adalah solusi utama Anda. Dalam daftar tutorial komprehensif ini, kami mempelajari cara menggabungkan DOC, DOCX, PDF, dan format lainnya dengan mudah.

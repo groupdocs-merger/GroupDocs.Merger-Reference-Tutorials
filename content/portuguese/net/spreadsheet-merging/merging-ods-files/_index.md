@@ -6,6 +6,9 @@ description: Aprenda como mesclar arquivos ODS sem esforço. Siga nosso guia pas
 weight: 18
 url: /pt/net/spreadsheet-merging/merging-ods-files/
 ---
+
+# Mesclando arquivos ODS
+
 ## Introdução
 Neste tutorial, exploraremos como mesclar arquivos ODS (Planilha OpenDocument). GroupDocs.Merger for .NET é uma API poderosa que permite aos desenvolvedores manipular e mesclar vários formatos de documentos perfeitamente. Abordaremos as etapas necessárias para mesclar arquivos ODS programaticamente usando esta biblioteca.
 ## Pré-requisitos

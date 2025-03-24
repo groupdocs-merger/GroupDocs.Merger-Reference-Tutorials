@@ -6,6 +6,9 @@ description: Bezproblemowo łącz pliki TXT w platformie .NET za pomocą GroupDo
 weight: 18
 url: /pl/net/document-merging/guide-merging-txt-files/
 ---
+
+# Przewodnik po łączeniu plików TXT za pomocą GroupDocs.Merger dla .NET
+
 ## Wstęp
 świecie programowania .NET manipulowanie i łączenie plików tekstowych jest powszechnym wymogiem w przypadku różnych aplikacji. GroupDocs.Merger dla .NET oferuje zaawansowane rozwiązanie do płynnego łączenia plików TXT w ramach projektów .NET. Ten obszerny przewodnik przeprowadzi Cię krok po kroku przez proces łączenia plików TXT przy użyciu GroupDocs.Merger.
 ## Warunki wstępne

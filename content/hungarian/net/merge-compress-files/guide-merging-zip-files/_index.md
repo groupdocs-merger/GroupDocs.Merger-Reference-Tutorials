@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan egyesíthet programozott ZIP-fájlokat a GroupD
 weight: 12
 url: /hu/net/merge-compress-files/guide-merging-zip-files/
 ---
+
+# Útmutató a ZIP-fájlok egyesítéséhez
+
 ## Bevezetés
 dokumentumkezelés és -kezelés területén a GroupDocs.Merger for .NET hatékony eszköz a különböző fájlformátumok zökkenőmentes egyesítésére és manipulálására törekvő fejlesztők számára. Ez az oktatóanyag végigvezeti a ZIP-fájlok egyesítésének folyamatán a GroupDocs.Merger for .NET használatával. Ennek az oktatóanyagnak a végére elsajátítja a ZIP-fájlok programozott egyesítése .NET-alkalmazásaiban.
 ## Előfeltételek

@@ -6,6 +6,9 @@ description: Scopri come unire file XLT. Combina i modelli Excel a livello di co
 weight: 15
 url: /it/net/spreadsheet-merging/merge-xlt-files/
 ---
+
+# Unisci file XLT
+
 ## introduzione
 In questo tutorial esploreremo come unire file XLT (modello Excel). GroupDocs.Merger è una potente API che consente agli sviluppatori di manipolare vari formati di documenti, inclusi i file Excel, a livello di codice. Unendo i file XLT, puoi combinare più modelli in un unico documento, semplificando il flusso di lavoro e migliorando l'efficienza.
 ## Prerequisiti

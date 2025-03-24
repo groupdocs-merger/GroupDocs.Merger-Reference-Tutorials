@@ -6,6 +6,9 @@ url: /pt/net/
 description: Mescle e compacte facilmente vários formatos de arquivo usando GroupDocs.Merger .NET. Aprenda tutoriais passo a passo sobre como mesclar imagens, documentos e muito mais!
 is_root: true
 ---
+
+# Tutoriais e exemplos de GroupDocs.Merger para .NET
+
 ## Introdução
 
 Gerencie seus arquivos sem esforço com GroupDocs.Merger for .NET! Esta série abrangente de tutoriais fornece orientação passo a passo sobre como aproveitar o poder do GroupDocs.Merger para mesclar e compactar vários formatos de arquivo perfeitamente. Esteja você lidando com imagens, documentos, planilhas, apresentações ou até mesmo arquivos do Visio, nós temos o que você precisa.

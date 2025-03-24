@@ -6,6 +6,9 @@ description: Voeg BMP-, GIF-, PNG-, SVG-, SVGZ-, TIF- en TIFF-bestanden naadloos
 weight: 21
 url: /nl/net/image-merging/
 ---
+
+# Afbeelding samenvoegen
+
 ## Invoering
 
 Vraagt u zich af hoe u taken voor het samenvoegen van bestanden in uw .NET-applicaties kunt stroomlijnen? Duik in onze uitgebreide tutoriallijst met verschillende bestandsformaten zoals BMP, GIF, PNG, SVG, SVGZ, TIF en TIFF, allemaal naadloos samengevoegd met GroupDocs.Merger voor .NET.

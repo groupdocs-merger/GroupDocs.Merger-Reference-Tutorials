@@ -6,6 +6,9 @@ description: Découvrez comment fusionner des fichiers TAR par programme à l'ai
 weight: 11
 url: /fr/net/merge-compress-files/merging-tar-files/
 ---
+
+# Fusionner des fichiers Tar
+
 ## Introduction
 Dans le développement de logiciels, la capacité de manipuler et de fusionner des fichiers par programmation peut être cruciale pour une gestion efficace des données. GroupDocs.Merger pour .NET est une bibliothèque puissante qui permet aux développeurs de fusionner des fichiers TAR (Tape Archive) de manière transparente au sein de leurs applications .NET. Ce didacticiel vous guidera tout au long du processus de fusion de fichiers TAR à l'aide de GroupDocs.Merger, en fournissant des instructions étape par étape et des exemples de code.
 ## Conditions préalables

@@ -6,6 +6,9 @@ description: Dowiedz się, jak bez wysiłku łączyć pliki DOTX w .NET za pomoc
 weight: 15
 url: /pl/net/document-merging/merge-dotx-files/
 ---
+
+# Scal pliki DOTX
+
 ## Wstęp
 W tym samouczku omówimy sposób scalania plików DOTX (szablon programu Word) przy użyciu narzędzia GroupDocs.Merger dla platformy .NET. GroupDocs.Merger to potężny interfejs API, który umożliwia programistom płynne manipulowanie różnymi formatami dokumentów w aplikacjach .NET. Wykorzystując ten interfejs API, możesz efektywnie połączyć wiele plików DOTX w jeden dokument za pomocą zaledwie kilku linijek kodu.
 ## Warunki wstępne

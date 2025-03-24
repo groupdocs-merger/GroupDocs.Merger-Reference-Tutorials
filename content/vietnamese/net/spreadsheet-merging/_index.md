@@ -7,6 +7,9 @@ weight: 23
 url: /vi/net/spreadsheet-merging/
 ---
 
+# Hợp nhất bảng tính
+
+
 ## Giới thiệu
 
 Nếu bạn là nhà phát triển .NET đang tìm cách hợp lý hóa các tác vụ quản lý tài liệu của mình thì GroupDocs.Merger for .NET sẽ cung cấp một giải pháp toàn diện. Trong bài viết này, chúng ta sẽ khám phá nhiều hướng dẫn khác nhau về cách hợp nhất các loại tệp bảng tính khác nhau bằng GroupDocs.Merger.

@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan lehet XLT-fájlokat egyesíteni. Ezzel a lépé
 weight: 15
 url: /hu/net/spreadsheet-merging/merge-xlt-files/
 ---
+
+# XLT fájlok egyesítése
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet XLT (Excel-sablon) fájlokat egyesíteni. A GroupDocs.Merger egy hatékony API, amely lehetővé teszi a fejlesztők számára, hogy programozottan kezeljék a különböző dokumentumformátumokat, beleértve az Excel fájlokat is. Az XLT-fájlok egyesítésével több sablont egyetlen dokumentumba egyesíthet, így leegyszerűsítve a munkafolyamatot és növelve a hatékonyságot.
 ## Előfeltételek

@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan egyesíthet programozottan PDF-fájlokat a .NET
 weight: 19
 url: /hu/net/document-merging/merging-pdf-files/
 ---
+
+# PDF fájlok egyesítése
+
 ## Bevezetés
 dokumentumkezelés és -kezelés területén a PDF-fájlok egyesítése gyakori feladat, amellyel a fejlesztők találkoznak. A GroupDocs.Merger for .NET robusztus megoldást kínál a PDF dokumentumok .NET alkalmazásokon belüli zökkenőmentes kombinálására. Ez az oktatóanyag végigvezeti a PDF-fájlok GroupDocs.Merger használatával történő egyesítésének folyamatán, lépésről lépésre bemutatva a megvalósítást és a felhasználást.
 ## Előfeltételek

@@ -6,6 +6,9 @@ description: GroupDocs.Merger for .NET'i kullanarak EPUB dosyalarını programl�
 weight: 17
 url: /tr/net/document-merging/merge-epub-files/
 ---
+
+# EPUB Dosyalarını Birleştir
+
 ## giriiş
 Bu eğitimde, GroupDocs.Merger for .NET'i kullanarak EPUB dosyalarının nasıl birleştirileceğini inceleyeceğiz. GroupDocs.Merger for .NET, geliştiricilerin .NET uygulamalarında çeşitli belge formatlarını sorunsuz bir şekilde değiştirmelerine ve birleştirmelerine olanak tanıyan güçlü bir kitaplıktır. Özellikle, bu kitaplığı kullanarak EPUB dosyalarını adım adım birleştirmeye odaklanacağız.
 ## Önkoşullar

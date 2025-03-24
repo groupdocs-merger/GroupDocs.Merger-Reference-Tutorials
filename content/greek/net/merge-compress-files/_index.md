@@ -6,6 +6,9 @@ description: Συγχώνευση και συμπίεση διαφόρων μο�
 weight: 20
 url: /el/net/merge-compress-files/
 ---
+
+# Συγχώνευση αρχείων συμπίεσης
+
 ## Εισαγωγή
 
 

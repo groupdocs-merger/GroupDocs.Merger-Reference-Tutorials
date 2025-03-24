@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Merger를 사용하여 OTP 파일을 병합하는
 weight: 14
 url: /ko/net/presentation-merging/merging-otp-files/
 ---
+
+# OTP 파일 병합
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Merger를 사용하여 OTP(OpenDocument Presentation Template) 파일을 병합하는 방법을 살펴보겠습니다. GroupDocs.Merger는 개발자가 다양한 파일 형식을 원활하게 결합, 분할 및 조작할 수 있는 강력한 문서 조작 API입니다.
 ## 전제 조건

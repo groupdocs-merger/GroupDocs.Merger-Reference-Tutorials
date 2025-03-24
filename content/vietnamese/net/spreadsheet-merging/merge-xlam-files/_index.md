@@ -6,6 +6,9 @@ description: Tìm hiểu cách hợp nhất các tệp XLAM một cách dễ dà
 weight: 10
 url: /vi/net/spreadsheet-merging/merge-xlam-files/
 ---
+
+# Hợp nhất các tệp XLAM
+
 ## Giới thiệu
 
 Trong hướng dẫn này, chúng ta sẽ khám phá cách hợp nhất các tệp XLAM (Microsoft Excel Add-In). GroupDocs.Merger là một API thao tác tài liệu mạnh mẽ cho phép các nhà phát triển làm việc với nhiều định dạng tài liệu khác nhau theo chương trình. Bằng cách tận dụng API này, bạn có thể kết hợp liền mạch nhiều tệp XLAM thành một tệp duy nhất, hợp lý hóa quy trình quản lý tài liệu của mình.

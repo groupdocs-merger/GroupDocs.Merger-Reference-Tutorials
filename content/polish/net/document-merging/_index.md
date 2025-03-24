@@ -6,6 +6,9 @@ description: Bez wysiłku łącz różne formaty dokumentów w .NET za pomocą G
 weight: 22
 url: /pl/net/document-merging/
 ---
+
+# Łączenie dokumentów
+
 ## Wstęp
 
 Czy jesteś programistą .NET i szukasz skutecznych sposobów płynnego łączenia różnych formatów dokumentów? GroupDocs.Merger dla .NET to najlepsze rozwiązanie. W tej obszernej liście samouczków zagłębiamy się w łatwe łączenie formatów DOC, DOCX, PDF i innych.

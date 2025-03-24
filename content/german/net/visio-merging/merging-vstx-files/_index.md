@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie VSTX-Dateien mit GroupDocs.Merger für .NET z
 weight: 16
 url: /de/net/visio-merging/merging-vstx-files/
 ---
+
+# Zusammenführen von VSTX-Dateien mit GroupDocs.Merger für .NET
+
 ## Einführung
 In diesem Tutorial erfahren Sie, wie Sie VSTX-Dateien mit GroupDocs.Merger für .NET zusammenführen. GroupDocs.Merger für .NET ist eine leistungsstarke Bibliothek, mit der Entwickler verschiedene Dokumentformate nahtlos in ihren .NET-Anwendungen bearbeiten können. Das Zusammenführen von VSTX-Dateien ist eine häufige Aufgabe bei der Dokumentverarbeitung, insbesondere bei Präsentationen in Microsoft PowerPoint.
 ## Voraussetzungen

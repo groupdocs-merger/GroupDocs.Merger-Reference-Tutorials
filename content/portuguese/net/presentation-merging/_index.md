@@ -6,6 +6,9 @@ description: Mescle vários formatos de arquivo de apresentação sem esforço. 
 weight: 25
 url: /pt/net/presentation-merging/
 ---
+
+# Mesclagem de apresentação
+
 ## Introdução
 
 Mescle seus arquivos de apresentação sem esforço. Quer se trate de arquivos PPS, PPSX, PPT ou OTP, nossos tutoriais oferecem orientação passo a passo, acompanhada de exemplos práticos de código, para agilizar suas tarefas de mesclagem de documentos.

@@ -6,6 +6,9 @@ description: Merge and compress various file formats effortlessly tutorials. Lea
 weight: 20
 url: /net/merge-compress-files/
 ---
+
+# Merge Compress Files
+
 ## Introduction
 
 

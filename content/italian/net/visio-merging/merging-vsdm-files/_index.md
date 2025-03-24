@@ -6,6 +6,9 @@ description: Scopri come unire file VSDM utilizzando GroupDocs.Merger per .NET. 
 weight: 11
 url: /it/net/visio-merging/merging-vsdm-files/
 ---
+
+# Unione di file VSDM
+
 ## introduzione
 In questo tutorial esploreremo come unire file VSDM (Visio Macro-Enabled Drawing) utilizzando la potente libreria GroupDocs.Merger per .NET. Questa libreria consente la manipolazione fluida di vari formati di documenti all'interno delle applicazioni .NET, inclusa l'unione, la divisione e la modifica delle proprietà dei documenti.
 ## Prerequisiti

@@ -6,6 +6,9 @@ description: Pelajari cara menggabungkan file ZIP secara terprogram menggunakan 
 weight: 12
 url: /id/net/merge-compress-files/guide-merging-zip-files/
 ---
+
+# Panduan Menggabungkan File Zip
+
 ## Perkenalan
 Di bidang manipulasi dan manajemen dokumen, GroupDocs.Merger untuk .NET menonjol sebagai alat yang ampuh bagi pengembang yang ingin menggabungkan dan memanipulasi berbagai format file dengan mulus. Tutorial ini akan memandu Anda melalui proses menggabungkan file ZIP menggunakan GroupDocs.Merger untuk .NET. Di akhir tutorial ini, Anda akan dibekali dengan pengetahuan untuk menggabungkan file ZIP secara terprogram dalam aplikasi .NET Anda.
 ## Prasyarat

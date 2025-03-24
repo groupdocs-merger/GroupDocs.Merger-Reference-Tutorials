@@ -6,6 +6,9 @@ description: Tutorials zum mühelosen Zusammenführen und Komprimieren verschied
 weight: 20
 url: /de/net/merge-compress-files/
 ---
+
+# Komprimierte Dateien zusammenführen
+
 ## Einführung
 
 

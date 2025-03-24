@@ -6,6 +6,9 @@ description: Découvrez comment fusionner des fichiers XLTM par programme. Guide
 weight: 16
 url: /fr/net/spreadsheet-merging/merging-xltm-files/
 ---
+
+# Fusion de fichiers XLTM
+
 ## Introduction
 Dans ce didacticiel, nous allons explorer comment fusionner des fichiers XLTM (Excel Macro-Enabled Template). GroupDocs.Merger pour .NET est une bibliothèque puissante qui permet aux développeurs de manipuler et de fusionner divers formats de documents par programme. Ce guide vous guidera pas à pas tout au long du processus de fusion de fichiers XLTM à l'aide de C#.
 ## Conditions préalables

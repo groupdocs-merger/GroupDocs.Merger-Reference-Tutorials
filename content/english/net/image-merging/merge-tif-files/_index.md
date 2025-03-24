@@ -6,6 +6,9 @@ description: Learn how to merge TIF files programmatically using GroupDocs.Merge
 weight: 15
 url: /net/image-merging/merge-tif-files/
 ---
+
+# Merge TIF Files
+
 ## Introduction
 In this tutorial, we will delve into using GroupDocs.Merger for .NET to merge TIF files efficiently. GroupDocs.Merger for .NET is a powerful document manipulation API that enables developers to perform various operations on documents programmatically, including merging, splitting, and rearranging pages.
 ## Prerequisites

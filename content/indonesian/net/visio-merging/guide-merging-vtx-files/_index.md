@@ -6,6 +6,9 @@ description: Pelajari cara menggabungkan file VTX secara terprogram menggunakan 
 weight: 18
 url: /id/net/visio-merging/guide-merging-vtx-files/
 ---
+
+# Panduan Menggabungkan File VTX
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara menggabungkan file VTX (Visio Drawing Template) menggunakan GroupDocs.Merger untuk .NET. GroupDocs.Merger for .NET adalah API manipulasi dokumen canggih yang memungkinkan pengembang bekerja dengan berbagai format file, termasuk file VTX.
 ## Prasyarat

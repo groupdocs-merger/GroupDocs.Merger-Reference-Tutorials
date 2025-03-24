@@ -6,6 +6,9 @@ description: Aprenda como mesclar arquivos ODT usando GroupDocs.Merger for .NET 
 weight: 16
 url: /pt/net/document-merging/merging-odt-files/
 ---
+
+# Mesclando arquivos ODT
+
 ## Introdução
 No mundo do desenvolvimento .NET, é essencial gerenciar com eficiência tarefas de manipulação de documentos, como mesclar arquivos. GroupDocs.Merger for .NET oferece uma solução robusta para combinar vários formatos de arquivo perfeitamente. Neste tutorial, nos aprofundaremos no processo de mesclagem de arquivos ODT (Open Document Text) usando GroupDocs.Merger para .NET. Ao final deste guia, você estará equipado para mesclar arquivos ODT sem esforço em seus aplicativos .NET.
 ## Pré-requisitos

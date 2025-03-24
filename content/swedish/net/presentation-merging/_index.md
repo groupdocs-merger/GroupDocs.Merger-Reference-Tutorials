@@ -6,6 +6,9 @@ description: Slå ihop olika presentationsfilformat utan ansträngning. Följ v�
 weight: 25
 url: /sv/net/presentation-merging/
 ---
+
+# Sammanfogning av presentationer
+
 ## Introduktion
 
 Slå ihop dina presentationsfiler utan ansträngning. Oavsett om det är PPS-, PPSX-, PPT- eller OTP-filer erbjuder våra tutorials steg-för-steg-vägledning, tillsammans med praktiska kodexempel, för att effektivisera dina dokumentsammanfogningsuppgifter.

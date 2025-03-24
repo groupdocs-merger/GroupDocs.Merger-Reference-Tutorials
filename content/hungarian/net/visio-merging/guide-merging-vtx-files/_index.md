@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan egyesíthet programozottan VTX-fájlokat a Grou
 weight: 18
 url: /hu/net/visio-merging/guide-merging-vtx-files/
 ---
+
+# Útmutató a VTX fájlok egyesítéséhez
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan egyesíthet VTX (Visio Drawing Template) fájlokat a GroupDocs.Merger for .NET segítségével. A GroupDocs.Merger for .NET egy hatékony dokumentumkezelési API, amely lehetővé teszi a fejlesztők számára, hogy különféle fájlformátumokkal dolgozzanak, beleértve a VTX fájlokat is.
 ## Előfeltételek

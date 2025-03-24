@@ -6,6 +6,9 @@ description: Lär dig hur du enkelt sammanfogar VSX-filer med GroupDocs.Merger f
 weight: 17
 url: /sv/net/visio-merging/merge-vsx-files/
 ---
+
+# Slå ihop VSX-filer
+
 ## Introduktion
 I den här handledningen kommer vi att utforska hur man slår ihop VSX-filer med GroupDocs.Merger för .NET. GroupDocs.Merger för .NET är ett kraftfullt API som gör det möjligt för utvecklare att manipulera olika dokumentformat programmatiskt. Den här guiden leder dig genom processen att sammanfoga VSX (Visio Drawing)-filer steg-för-steg, med hjälp av funktionerna i GroupDocs.Merger.
 ## Förutsättningar

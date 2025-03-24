@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Merger를 사용하여 XLSM 파일을 원활하�
 weight: 13
 url: /ko/net/spreadsheet-merging/guide-merging-xlsm-files/
 ---
+
+# XLSM 파일 병합 가이드
+
 ## 소개
 이 자습서에서는 XLSM(Excel 매크로 사용 통합 문서) 파일을 병합하는 방법을 살펴보겠습니다. GroupDocs.Merger는 개발자가 프로그래밍 방식으로 파일을 병합, 분할, 수정하는 등 문서 형식을 조작할 수 있는 강력한 라이브러리입니다.
 ## 전제 조건

@@ -6,6 +6,9 @@ description: Dowiedz się, jak programowo łączyć pliki XLTM. Przewodnik krok 
 weight: 16
 url: /pl/net/spreadsheet-merging/merging-xltm-files/
 ---
+
+# Łączenie plików XLTM
+
 ## Wstęp
 W tym samouczku przyjrzymy się, jak scalić pliki XLTM (szablon programu Excel z obsługą makr). GroupDocs.Merger dla .NET to potężna biblioteka, która umożliwia programistom programowe manipulowanie i łączenie różnych formatów dokumentów. Ten przewodnik przeprowadzi Cię krok po kroku przez proces łączenia plików XLTM przy użyciu języka C#.
 ## Warunki wstępne

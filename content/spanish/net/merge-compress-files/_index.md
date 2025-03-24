@@ -6,6 +6,9 @@ description: Tutoriales para fusionar y comprimir varios formatos de archivos si
 weight: 20
 url: /es/net/merge-compress-files/
 ---
+
+# Fusionar archivos comprimidos
+
 ## Introducción
 
 

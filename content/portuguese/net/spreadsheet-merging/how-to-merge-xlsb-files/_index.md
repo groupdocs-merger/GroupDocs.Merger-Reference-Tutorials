@@ -6,6 +6,9 @@ description: Aprenda como mesclar arquivos XLSB. Este guia passo a passo simplif
 weight: 12
 url: /pt/net/spreadsheet-merging/how-to-merge-xlsb-files/
 ---
+
+# Como mesclar arquivos XLSB
+
 ## Introdução
 Neste tutorial, exploraremos como mesclar arquivos XLSB (Excel Binary Workbook). GroupDocs.Merger for .NET é uma poderosa API de manipulação de documentos que permite aos desenvolvedores mesclar, dividir e manipular vários formatos de documentos perfeitamente em seus aplicativos .NET. Especificamente, vamos nos concentrar na mesclagem de arquivos XLSB usando esta biblioteca versátil.
 ## Pré-requisitos

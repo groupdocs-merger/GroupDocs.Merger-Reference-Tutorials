@@ -6,6 +6,9 @@ description: GroupDocs.Merger .NET을 사용하여 BMP, GIF, PNG, SVG, SVGZ, TIF
 weight: 21
 url: /ko/net/image-merging/
 ---
+
+# 이미지 병합
+
 ## 소개
 
 .NET 애플리케이션에서 파일 병합 작업을 간소화하는 방법이 궁금하십니까? .NET용 GroupDocs.Merger를 사용하여 원활하게 병합된 BMP, GIF, PNG, SVG, SVGZ, TIF 및 TIFF와 같은 다양한 파일 형식을 갖춘 포괄적인 튜토리얼 목록을 살펴보세요.

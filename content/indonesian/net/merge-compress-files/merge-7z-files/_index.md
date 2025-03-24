@@ -6,6 +6,9 @@ description: Gabungkan file 7z dengan mudah menggunakan GroupDocs.Merger untuk .
 weight: 10
 url: /id/net/merge-compress-files/merge-7z-files/
 ---
+
+# Cara Menggabungkan File 7z
+
 ## Perkenalan
 Menggabungkan file 7z dapat dilakukan secara efisien menggunakan GroupDocs.Merger untuk .NET, pustaka manipulasi dokumen yang canggih. Tutorial ini akan memandu Anda melalui proses langkah demi langkah, memungkinkan Anda menggabungkan file 7z dengan mudah dengan mudah.
 ## Prasyarat

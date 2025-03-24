@@ -6,6 +6,9 @@ description: Přečtěte si, jak sloučit soubory TIFF pomocí GroupDocs.Merger 
 weight: 16
 url: /cs/net/image-merging/merging-tiff-files/
 ---
+
+# Sloučení souborů TIFF
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak sloučit soubory TIFF pomocí knihovny GroupDocs.Merger for .NET. GroupDocs.Merger je výkonné API pro manipulaci s dokumenty, které umožňuje vývojářům bezproblémově slučovat, rozdělovat a upravovat různé formáty dokumentů v rámci aplikací .NET.
 ## Předpoklady

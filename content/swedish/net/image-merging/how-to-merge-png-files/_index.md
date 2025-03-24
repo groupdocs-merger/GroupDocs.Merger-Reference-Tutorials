@@ -6,6 +6,9 @@ description: Lär dig hur du slår ihop PNG-filer med GroupDocs.Merger för .NET
 weight: 12
 url: /sv/net/image-merging/how-to-merge-png-files/
 ---
+
+# Hur man slår ihop PNG-filer
+
 ## Introduktion
 I den här handledningen kommer vi att lära oss hur man slår ihop PNG-filer med GroupDocs.Merger för .NET. GroupDocs.Merger är ett kraftfullt bibliotek som låter utvecklare manipulera och kombinera olika dokumentformat sömlöst. Genom att följa den här guiden kommer du att kunna slå samman PNG-filer utan ansträngning i dina .NET-applikationer.
 ## Förutsättningar

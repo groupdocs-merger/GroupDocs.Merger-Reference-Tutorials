@@ -6,6 +6,9 @@ description: Tanulja meg, hogyan egyesíthet könnyedén RTF-fájlokat .NET-ben 
 weight: 21
 url: /hu/net/document-merging/merging-rtf-files/
 ---
+
+# RTF fájlok egyesítése
+
 ## Bevezetés
 A .NET fejlesztés világában az RTF (Rich Text Format) fájlok zökkenőmentes egyesítése számos alkalmazás számára kulcsfontosságú feladat. A GroupDocs.Merger for .NET hatékony megoldást kínál ennek hatékony megvalósítására. Ez az oktatóanyag lépésről lépésre végigvezeti az RTF-fájlok egyesítésének folyamatán a GroupDocs.Merger for .NET használatával. Ennek az oktatóanyagnak a végére birtokában lesz annak a tudásnak, amellyel könnyedén egyesítheti az RTF-fájlokat .NET-projektjei között.
 ## Előfeltételek

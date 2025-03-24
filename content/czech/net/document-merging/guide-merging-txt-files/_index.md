@@ -6,6 +6,9 @@ description: Bezproblémově slučujte soubory TXT v .NET pomocí GroupDocs.Merg
 weight: 18
 url: /cs/net/document-merging/guide-merging-txt-files/
 ---
+
+# Průvodce sloučením souborů TXT s GroupDocs.Merger pro .NET
+
 ## Úvod
 Ve světě vývoje .NET je manipulace a slučování textových souborů běžným požadavkem pro různé aplikace. GroupDocs.Merger for .NET nabízí výkonné řešení pro bezproblémové slučování souborů TXT v rámci vašich projektů .NET. Tento komplexní průvodce vás provede procesem slučování souborů TXT krok za krokem pomocí GroupDocs.Merger.
 ## Předpoklady

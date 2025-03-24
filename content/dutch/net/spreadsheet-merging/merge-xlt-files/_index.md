@@ -6,6 +6,9 @@ description: Leer hoe u XLT-bestanden samenvoegt. Combineer Excel-sjablonen prog
 weight: 15
 url: /nl/net/spreadsheet-merging/merge-xlt-files/
 ---
+
+# XLT-bestanden samenvoegen
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u XLT-bestanden (Excel-sjabloon) kunt samenvoegen. GroupDocs.Merger is een krachtige API waarmee ontwikkelaars verschillende documentformaten, waaronder Excel-bestanden, programmatisch kunnen manipuleren. Door XLT-bestanden samen te voegen, kunt u meerdere sjablonen combineren in één document, waardoor uw workflow wordt gestroomlijnd en de efficiëntie wordt verbeterd.
 ## Vereisten

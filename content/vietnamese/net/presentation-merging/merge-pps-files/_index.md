@@ -6,6 +6,9 @@ description: Tìm hiểu cách hợp nhất các tệp PPS một cách liền m�
 weight: 10
 url: /vi/net/presentation-merging/merge-pps-files/
 ---
+
+# Hợp nhất các tệp PPS
+
 ## Giới thiệu
 Trong thế giới phát triển .NET, việc thao tác các tệp tài liệu một cách hiệu quả là rất quan trọng. GroupDocs.Merger for .NET cung cấp các công cụ mạnh mẽ để hợp nhất và thao tác liền mạch các định dạng tài liệu khác nhau. Trong hướng dẫn này, chúng tôi sẽ tập trung vào việc hợp nhất các tệp PPS (PowerPoint Slide Show) bằng GroupDocs.Merger cho .NET. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu, hướng dẫn này sẽ hướng dẫn bạn thực hiện quy trình từng bước.
 ## Điều kiện tiên quyết

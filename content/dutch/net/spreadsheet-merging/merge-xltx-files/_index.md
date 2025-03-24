@@ -6,6 +6,9 @@ description: Leer hoe u XLTX-bestanden moeiteloos kunt samenvoegen. Begin met he
 weight: 17
 url: /nl/net/spreadsheet-merging/merge-xltx-files/
 ---
+
+# XLTX-bestanden samenvoegen
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u XLTX-bestanden (Excel-sjabloon) kunt samenvoegen. GroupDocs.Merger is een krachtige API voor documentmanipulatie waarmee ontwikkelaars verschillende documentformaten naadloos kunnen combineren, splitsen en manipuleren binnen .NET-applicaties. Deze tutorial richt zich specifiek op het programmatisch samenvoegen van XLTX-bestanden.
 ## Vereisten

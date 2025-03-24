@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Merger를 사용하여 ODT 파일을 손쉽게 �
 weight: 16
 url: /ko/net/document-merging/merging-odt-files/
 ---
+
+# ODT 파일 병합
+
 ## 소개
 .NET 개발 세계에서는 파일 병합과 같은 문서 조작 작업을 효율적으로 관리하는 것이 필수적입니다. .NET용 GroupDocs.Merger는 다양한 파일 형식을 원활하게 결합하기 위한 강력한 솔루션을 제공합니다. 이 튜토리얼에서는 .NET용 GroupDocs.Merger를 사용하여 ODT(Open Document Text) 파일을 병합하는 프로세스를 자세히 살펴보겠습니다. 이 가이드가 끝나면 .NET 응용 프로그램 내에서 ODT 파일을 쉽게 병합할 수 있게 됩니다.
 ## 전제 조건

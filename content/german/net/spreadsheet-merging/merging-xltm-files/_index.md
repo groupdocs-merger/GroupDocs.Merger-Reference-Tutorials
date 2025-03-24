@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie XLTM-Dateien programmgesteuert zusammenführe
 weight: 16
 url: /de/net/spreadsheet-merging/merging-xltm-files/
 ---
+
+# XLTM-Dateien zusammenführen
+
 ## Einführung
 In diesem Tutorial erfahren Sie, wie Sie XLTM-Dateien (Excel Macro-Enabled Template) zusammenführen. GroupDocs.Merger für .NET ist eine leistungsstarke Bibliothek, die es Entwicklern ermöglicht, verschiedene Dokumentformate programmgesteuert zu bearbeiten und zusammenzuführen. Diese Anleitung führt Sie Schritt für Schritt durch den Prozess des Zusammenführens von XLTM-Dateien mit C#.
 ## Voraussetzungen

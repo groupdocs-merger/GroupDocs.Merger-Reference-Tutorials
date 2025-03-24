@@ -7,6 +7,9 @@ weight: 24
 url: /vi/net/visio-merging/
 ---
 
+# Hợp nhất Visio
+
+
 ## Giới thiệu
 
 Bạn đang tìm cách hợp lý hóa quy trình quản lý tài liệu của mình? Đi sâu vào các hướng dẫn tuyển chọn của chúng tôi được thiết kế để hướng dẫn bạn cách hợp nhất liền mạch các tệp Visio bằng GroupDocs.Merger cho .NET. Cho dù bạn đang hợp nhất các tệp VDX, VSDM, VSDX, VSSM, VSSX, VSTM, VSTX, VSX hoặc VTX, chúng tôi đều cung cấp cho bạn các hướng dẫn chi tiết từng bước và mẫu mã.

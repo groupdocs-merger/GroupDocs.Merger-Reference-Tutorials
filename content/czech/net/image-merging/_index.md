@@ -6,6 +6,9 @@ description: Bezproblémově slučujte soubory BMP, GIF, PNG, SVG, SVGZ, TIF a T
 weight: 21
 url: /cs/net/image-merging/
 ---
+
+# Sloučení obrázků
+
 ## Úvod
 
 Zajímá vás, jak zefektivnit úlohy slučování souborů ve vašich aplikacích .NET? Ponořte se do našeho komplexního seznamu výukových programů obsahujících různé formáty souborů, jako jsou BMP, GIF, PNG, SVG, SVGZ, TIF a TIFF, všechny hladce sloučené pomocí GroupDocs.Merger pro .NET.

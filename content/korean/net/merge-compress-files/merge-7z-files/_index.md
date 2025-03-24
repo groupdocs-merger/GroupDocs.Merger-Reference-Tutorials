@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Merger를 사용하여 7z 파일을 손쉽게 병
 weight: 10
 url: /ko/net/merge-compress-files/merge-7z-files/
 ---
+
+# 7z 파일을 병합하는 방법
+
 ## 소개
 7z 파일 병합은 강력한 문서 조작 라이브러리인 .NET용 GroupDocs.Merger를 사용하여 효율적으로 수행할 수 있습니다. 이 튜토리얼에서는 프로세스를 단계별로 안내하여 7z 파일을 쉽게 원활하게 병합할 수 있습니다.
 ## 전제 조건

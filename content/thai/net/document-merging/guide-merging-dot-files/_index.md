@@ -6,6 +6,9 @@ description: เรียนรู้วิธีผสานไฟล์ DOT (G
 weight: 13
 url: /th/net/document-merging/guide-merging-dot-files/
 ---
+
+# คำแนะนำในการรวมไฟล์ DOT
+
 ## การแนะนำ
 ในบทช่วยสอนนี้ เราจะสำรวจวิธีการผสานไฟล์ DOT (Graphviz) โดยใช้ GroupDocs.Merger สำหรับ .NET GroupDocs.Merger for .NET เป็น API ที่ทรงพลังซึ่งช่วยให้นักพัฒนาจัดการรูปแบบเอกสารต่างๆ รวมถึงไฟล์ DOT ได้อย่างง่ายดาย ในตอนท้ายของคู่มือนี้ คุณจะเข้าใจวิธีรวมไฟล์ DOT หลายไฟล์เป็นไฟล์เดียวโดยทางโปรแกรมโดยใช้ GroupDocs.Merger
 ## ข้อกำหนดเบื้องต้น

@@ -7,6 +7,9 @@ weight: 23
 url: /fr/net/spreadsheet-merging/
 ---
 
+# Fusion de feuilles de calcul
+
+
 ## Introduction
 
 Si vous êtes un développeur .NET cherchant à rationaliser vos tâches de gestion de documents, GroupDocs.Merger pour .NET offre une solution complète. Dans cet article, nous explorerons divers didacticiels sur la fusion de différents types de feuilles de calcul à l'aide de GroupDocs.Merger.

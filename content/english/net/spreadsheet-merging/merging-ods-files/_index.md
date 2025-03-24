@@ -6,6 +6,9 @@ description: Learn how to merge ODS files effortlessly. Follow our step-by-step 
 weight: 18
 url: /net/spreadsheet-merging/merging-ods-files/
 ---
+
+# Merging ODS Files
+
 ## Introduction
 In this tutorial, we will explore how to merge ODS (OpenDocument Spreadsheet) files. GroupDocs.Merger for .NET is a powerful API that allows developers to manipulate and merge various document formats seamlessly. We'll cover the necessary steps to merge ODS files programmatically using this library.
 ## Prerequisites

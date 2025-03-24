@@ -6,6 +6,9 @@ description: 了解如何輕鬆合併 ODS 檔案。請按照我們的逐步指�
 weight: 18
 url: /zh-hant/net/spreadsheet-merging/merging-ods-files/
 ---
+
+# 合併 ODS 文件
+
 ## 介紹
 在本教學中，我們將探討如何合併 ODS（OpenDocument 電子表格）檔案。 GroupDocs.Merger for .NET 是一個功能強大的 API，可讓開發人員無縫地操作和合併各種文件格式。我們將介紹使用此程式庫以程式設計方式合併 ODS 檔案的必要步驟。
 ## 先決條件

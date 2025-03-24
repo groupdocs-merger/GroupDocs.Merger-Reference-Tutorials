@@ -6,6 +6,9 @@ description: XLTX ファイルを簡単にマージする方法を学びまし�
 weight: 17
 url: /ja/net/spreadsheet-merging/merge-xltx-files/
 ---
+
+# XLTX ファイルを結合する
+
 ## 導入
 このチュートリアルでは、XLTX (Excel テンプレート) ファイルを結合する方法について説明します。GroupDocs.Merger は、開発者が .NET アプリケーション内でさまざまなドキュメント形式をシームレスに結合、分割、操作できるようにする強力なドキュメント操作 API です。このチュートリアルでは、XLTX ファイルをプログラムで結合することに特に焦点を当てています。
 ## 前提条件

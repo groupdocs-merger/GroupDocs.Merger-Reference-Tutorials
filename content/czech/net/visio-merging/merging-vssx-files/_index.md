@@ -6,6 +6,9 @@ description: Naučte se, jak bez námahy sloučit soubory VSSX v aplikacích .NE
 weight: 14
 url: /cs/net/visio-merging/merging-vssx-files/
 ---
+
+# Sloučení souborů VSSX
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak sloučit soubory VSSX pomocí GroupDocs.Merger pro .NET. GroupDocs.Merger for .NET je výkonná knihovna, která umožňuje vývojářům bezproblémově manipulovat a spojovat různé formáty dokumentů v rámci jejich aplikací .NET. Sloučení souborů VSSX může být zvláště užitečné, když potřebujete zkombinovat více souborů Visual Studio Stencil do jednoho souboru pro snadnější správu a distribuci.
 ## Předpoklady

@@ -6,6 +6,9 @@ description: ODS dosyalarını zahmetsizce nasıl birleştireceğinizi öğrenin
 weight: 18
 url: /tr/net/spreadsheet-merging/merging-ods-files/
 ---
+
+# ODS Dosyalarını Birleştirme
+
 ## giriiş
 Bu eğitimde ODS (OpenDocument Elektronik Tablosu) dosyalarının nasıl birleştirileceğini inceleyeceğiz. GroupDocs.Merger for .NET, geliştiricilerin çeşitli belge formatlarını sorunsuz bir şekilde değiştirmesine ve birleştirmesine olanak tanıyan güçlü bir API'dir. Bu kitaplığı kullanarak ODS dosyalarını programlı olarak birleştirmek için gerekli adımları ele alacağız.
 ## Önkoşullar

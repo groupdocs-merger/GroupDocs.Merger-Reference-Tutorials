@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan egyesíthet Excel-fájlokat .NET-ben a GroupDoc
 weight: 11
 url: /hu/net/spreadsheet-merging/merging-xls-files/
 ---
+
+# XLS fájlok egyesítése
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet XLS (Excel) fájlokat egyesíteni. A GroupDocs.Merger egy hatékony dokumentumkezelési API, amely lehetővé teszi a fejlesztők számára, hogy könnyedén egyesítsék, feloszthassák, átrendezzék és kezeljék a dokumentumokat .NET-alkalmazásaikon belül. Konkrétan az XLS fájlok egyesítésére fogunk összpontosítani lépésről lépésre a GroupDocs.Merger intuitív módszereivel.
 ## Előfeltételek

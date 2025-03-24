@@ -6,6 +6,9 @@ description: TAR dosyalarını GroupDocs.Merger for .NET kullanarak programlı o
 weight: 11
 url: /tr/net/merge-compress-files/merging-tar-files/
 ---
+
+# Tar Dosyalarını Birleştirme
+
 ## giriiş
 Yazılım geliştirmede, dosyaları programlı olarak işleme ve birleştirme yeteneği, verimli veri işleme için çok önemli olabilir. GroupDocs.Merger for .NET, geliştiricilerin TAR (Teyp Arşivi) dosyalarını .NET uygulamalarıyla sorunsuz bir şekilde birleştirmelerine olanak tanıyan güçlü bir kitaplıktır. Bu eğitim, adım adım talimatlar ve kod örnekleri sağlayarak GroupDocs.Merger'ı kullanarak TAR dosyalarını birleştirme sürecinde size rehberlik edecektir.
 ## Önkoşullar

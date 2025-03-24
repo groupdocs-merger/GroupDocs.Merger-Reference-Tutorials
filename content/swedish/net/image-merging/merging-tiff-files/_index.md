@@ -6,6 +6,9 @@ description: Lär dig hur du slår samman TIFF-filer med GroupDocs.Merger för .
 weight: 16
 url: /sv/net/image-merging/merging-tiff-files/
 ---
+
+# Slår ihop TIFF-filer
+
 ## Introduktion
 I den här handledningen kommer vi att undersöka hur man slår samman TIFF-filer med hjälp av biblioteket GroupDocs.Merger for .NET. GroupDocs.Merger är ett kraftfullt dokumentmanipulerings-API som låter utvecklare slå samman, dela upp och modifiera olika dokumentformat sömlöst i .NET-applikationer.
 ## Förutsättningar

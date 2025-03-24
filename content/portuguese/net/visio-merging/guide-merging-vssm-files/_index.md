@@ -6,6 +6,9 @@ description: Aprenda como mesclar arquivos VSSM sem esforço usando GroupDocs.Me
 weight: 13
 url: /pt/net/visio-merging/guide-merging-vssm-files/
 ---
+
+# Guia para mesclar arquivos VSSM
+
 ## Introdução
 Neste tutorial, você aprenderá como mesclar arquivos VSSM (Visio Macro-Enabled Drawing) usando GroupDocs.Merger for .NET. GroupDocs.Merger é uma biblioteca poderosa que permite aos desenvolvedores manipular e mesclar vários formatos de documentos perfeitamente.
 ## Pré-requisitos

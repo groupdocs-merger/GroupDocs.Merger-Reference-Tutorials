@@ -6,6 +6,9 @@ description: Tìm hiểu cách hợp nhất các tệp Excel trong .NET bằng G
 weight: 11
 url: /vi/net/spreadsheet-merging/merging-xls-files/
 ---
+
+# Hợp nhất các tệp XLS
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách hợp nhất các tệp XLS (Excel). GroupDocs.Merger là API thao tác tài liệu mạnh mẽ cho phép các nhà phát triển hợp nhất, phân tách, sắp xếp lại và thao tác tài liệu một cách dễ dàng trong các ứng dụng .NET của họ. Cụ thể, chúng tôi sẽ tập trung vào việc hợp nhất các tệp XLS từng bước bằng các phương pháp trực quan của GroupDocs.Merger.
 ## Điều kiện tiên quyết

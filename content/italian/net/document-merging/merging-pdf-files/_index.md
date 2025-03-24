@@ -6,6 +6,9 @@ description: Scopri come unire i file PDF a livello di codice in .NET utilizzand
 weight: 19
 url: /it/net/document-merging/merging-pdf-files/
 ---
+
+# Unione di file PDF
+
 ## introduzione
 Nell'ambito della gestione e manipolazione dei documenti, l'unione di file PDF è un compito comune che gli sviluppatori incontrano. GroupDocs.Merger per .NET fornisce una soluzione solida per combinare perfettamente documenti PDF all'interno delle applicazioni .NET. Questo tutorial ti guiderà attraverso il processo di unione dei file PDF utilizzando GroupDocs.Merger, mostrando l'implementazione e l'utilizzo passo passo.
 ## Prerequisiti

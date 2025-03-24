@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Merger를 사용하여 프로그래밍 방식으�
 weight: 12
 url: /ko/net/merge-compress-files/guide-merging-zip-files/
 ---
+
+# Zip 파일 병합 가이드
+
 ## 소개
 문서 조작 및 관리 영역에서 .NET용 GroupDocs.Merger는 다양한 파일 형식을 원활하게 병합하고 조작하려는 개발자를 위한 강력한 도구입니다. 이 자습서에서는 .NET용 GroupDocs.Merger를 사용하여 ZIP 파일을 병합하는 과정을 안내합니다. 이 자습서를 마치면 .NET 애플리케이션에서 프로그래밍 방식으로 ZIP 파일을 병합하는 방법에 대한 지식을 갖추게 됩니다.
 ## 전제 조건

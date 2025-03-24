@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Merger for .NET 无缝合并 XLSM 文件。以编�
 weight: 13
 url: /zh/net/spreadsheet-merging/guide-merging-xlsm-files/
 ---
+
+# XLSM 文件合并指南
+
 ## 介绍
 在本教程中，我们将探讨如何合并 XLSM（Excel 宏启用工作簿）文件。GroupDocs.Merger 是一个功能强大的库，允许开发人员操作文档格式，包括以编程方式合并、拆分和修改文件。
 ## 先决条件

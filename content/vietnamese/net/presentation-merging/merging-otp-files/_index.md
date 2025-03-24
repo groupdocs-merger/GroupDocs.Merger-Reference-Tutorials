@@ -6,6 +6,9 @@ description: Tìm hiểu cách hợp nhất các tệp OTP bằng GroupDocs.Merg
 weight: 14
 url: /vi/net/presentation-merging/merging-otp-files/
 ---
+
+# Hợp nhất các tệp OTP
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách hợp nhất các tệp OTP (Mẫu bản trình bày OpenDocument) bằng GroupDocs.Merger cho .NET. GroupDocs.Merger là một API thao tác tài liệu mạnh mẽ cho phép các nhà phát triển kết hợp, phân chia và thao tác các định dạng tệp khác nhau một cách liền mạch.
 ## Điều kiện tiên quyết

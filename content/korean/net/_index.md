@@ -6,6 +6,9 @@ url: /ko/net/
 description: GroupDocs.Merger .NET을 사용하여 다양한 파일 형식을 손쉽게 병합하고 압축합니다. 이미지, 문서 등을 병합하는 방법에 대한 단계별 튜토리얼을 알아보세요!
 is_root: true
 ---
+
+# .NET용 GroupDocs.Merger의 자습서 및 예
+
 ## 소개
 
 .NET용 GroupDocs.Merger를 사용하여 파일을 손쉽게 관리하세요! 이 포괄적인 튜토리얼 시리즈는 GroupDocs.Merger의 기능을 활용하여 다양한 파일 형식을 원활하게 병합하고 압축하는 방법에 대한 단계별 지침을 제공합니다. 이미지, 문서, 스프레드시트, 프레젠테이션은 물론 Visio 파일까지 무엇을 다루든 우리가 도와드리겠습니다.

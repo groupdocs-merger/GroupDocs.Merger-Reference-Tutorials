@@ -6,6 +6,9 @@ description: Learn how to merge VSSX files effortlessly in .NET applications usi
 weight: 14
 url: /net/visio-merging/merging-vssx-files/
 ---
+
+# Merging VSSX Files
+
 ## Introduction
 In this tutorial, we will explore how to merge VSSX files using GroupDocs.Merger for .NET. GroupDocs.Merger for .NET is a powerful library that allows developers to manipulate and merge various document formats seamlessly within their .NET applications. Merging VSSX files can be particularly useful when you need to combine multiple Visual Studio Stencil files into a single file for easier management and distribution.
 ## Prerequisites

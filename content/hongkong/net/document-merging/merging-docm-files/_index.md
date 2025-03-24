@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Merger for .NET 無縫合併 DOCM 檔�
 weight: 11
 url: /zh-hant/net/document-merging/merging-docm-files/
 ---
+
+# 合併 DOCM 文件
+
 ## 介紹
 在本教學中，我們將探討如何使用 GroupDocs.Merger for .NET 合併 DOCM（Microsoft Word 啟用巨集的文件）檔案。該程式庫提供了強大的文件操作功能，允許開發人員在其 .NET 應用程式中無縫地合併、分割、提取和操作各種文件格式。
 ## 先決條件

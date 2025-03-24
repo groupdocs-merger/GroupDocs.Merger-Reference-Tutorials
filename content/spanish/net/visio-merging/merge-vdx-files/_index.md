@@ -6,6 +6,9 @@ description: Aprenda a fusionar archivos VDX mediante programación utilizando G
 weight: 10
 url: /es/net/visio-merging/merge-vdx-files/
 ---
+
+# Fusionar archivos VDX
+
 ## Introducción
 En este tutorial, exploraremos cómo fusionar archivos VDX (Visio Drawing XML) usando GroupDocs.Merger para .NET. GroupDocs.Merger es una potente API de manipulación de documentos que permite la combinación perfecta de varios formatos de archivos, incluidos los archivos VDX. Este tutorial lo guiará a través del proceso de fusionar archivos VDX paso a paso usando C# en un entorno .NET.
 ## Requisitos previos

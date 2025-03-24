@@ -6,6 +6,9 @@ description: GroupDocs.Merger for .NET を使用して OTP ファイルをマー
 weight: 14
 url: /ja/net/presentation-merging/merging-otp-files/
 ---
+
+# OTP ファイルの結合
+
 ## 導入
 このチュートリアルでは、GroupDocs.Merger for .NET を使用して OTP (OpenDocument プレゼンテーション テンプレート) ファイルを結合する方法について説明します。GroupDocs.Merger は、開発者がさまざまなファイル形式をシームレスに結合、分割、操作できるようにする強力なドキュメント操作 API です。
 ## 前提条件

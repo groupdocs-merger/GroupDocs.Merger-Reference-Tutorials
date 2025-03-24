@@ -6,6 +6,9 @@ description: Leer hoe u DOCX-bestanden programmatisch kunt samenvoegen in .NET m
 weight: 12
 url: /nl/net/document-merging/how-to-merge-docx-files/
 ---
+
+# Hoe DOCX-bestanden samen te voegen
+
 ## Invoering
 In de wereld van .NET-ontwikkeling kan het programmatisch samenvoegen van DOCX-bestanden een krachtige mogelijkheid zijn voor verschillende toepassingen. GroupDocs.Merger voor .NET biedt een uitgebreide oplossing voor het efficiënt samenvoegen van DOCX-bestanden. Deze tutorial begeleidt u bij het gebruik van GroupDocs.Merger voor .NET om meerdere DOCX-bestanden naadloos samen te voegen tot één document.
 ## Vereisten

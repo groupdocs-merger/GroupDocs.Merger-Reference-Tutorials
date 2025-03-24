@@ -6,6 +6,9 @@ description: BMP, GIF, PNG, SVG, SVGZ, TIF ve TIFF dosyalarını GroupDocs.Merge
 weight: 21
 url: /tr/net/image-merging/
 ---
+
+# Görüntü Birleştirme
+
 ## giriiş
 
 .NET uygulamalarınızda dosya birleştirme görevlerini nasıl kolaylaştıracağınızı mı merak ediyorsunuz? Tamamı .NET için GroupDocs.Merger kullanılarak sorunsuz bir şekilde birleştirilen BMP, GIF, PNG, SVG, SVGZ, TIF ve TIFF gibi çeşitli dosya formatlarını içeren kapsamlı eğitim listemize dalın.

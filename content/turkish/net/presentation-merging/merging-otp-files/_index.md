@@ -6,6 +6,9 @@ description: GroupDocs.Merger for .NET'i kullanarak OTP dosyalarını nasıl bir
 weight: 14
 url: /tr/net/presentation-merging/merging-otp-files/
 ---
+
+# OTP Dosyalarını Birleştirme
+
 ## giriiş
 Bu eğitimde, GroupDocs.Merger for .NET kullanarak OTP (OpenDocument Sunum Şablonu) dosyalarının nasıl birleştirileceğini inceleyeceğiz. GroupDocs.Merger, geliştiricilerin çeşitli dosya formatlarını sorunsuz bir şekilde birleştirmesine, bölmesine ve değiştirmesine olanak tanıyan güçlü bir belge işleme API'sidir.
 ## Önkoşullar

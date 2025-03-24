@@ -6,6 +6,9 @@ description: Aprenda como mesclar arquivos DOTM programaticamente usando GroupDo
 weight: 14
 url: /pt/net/document-merging/merging-dotm-files/
 ---
+
+# Mesclando arquivos DOTM
+
 ## Introdução
 Neste tutorial, exploraremos como mesclar arquivos DOTM (modelo habilitado para macro do Word) usando GroupDocs.Merger para .NET. GroupDocs.Merger é uma API poderosa que permite aos desenvolvedores manipular e combinar vários formatos de documentos perfeitamente em seus aplicativos .NET. Seguindo este guia, você aprenderá passo a passo como integrar essa funcionalidade em seus projetos.
 ## Pré-requisitos

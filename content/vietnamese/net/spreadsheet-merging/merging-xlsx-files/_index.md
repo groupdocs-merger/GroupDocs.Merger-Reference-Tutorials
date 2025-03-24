@@ -6,6 +6,9 @@ description: Tìm hiểu cách hợp nhất các tệp XLSX một cách dễ dà
 weight: 14
 url: /vi/net/spreadsheet-merging/merging-xlsx-files/
 ---
+
+# Hợp nhất các tệp XLSX
+
 ## Giới thiệu
 Trong lĩnh vực thao tác và quản lý tài liệu trong các ứng dụng .NET, GroupDocs.Merger nổi bật như một công cụ mạnh mẽ để hợp nhất các định dạng tệp khác nhau một cách liền mạch. Hướng dẫn này đi sâu vào việc hợp nhất các tệp XLSX (Excel), cung cấp hướng dẫn từng bước về cách hợp nhất các tệp bảng tính một cách hiệu quả trong môi trường .NET. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu với .NET, hướng dẫn này sẽ trang bị cho bạn kiến thức cần thiết để tích hợp khả năng hợp nhất tệp vào dự án của bạn.
 ## Điều kiện tiên quyết

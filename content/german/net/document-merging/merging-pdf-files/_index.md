@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie PDF-Dateien programmgesteuert in .NET mit Gro
 weight: 19
 url: /de/net/document-merging/merging-pdf-files/
 ---
+
+# PDF-Dateien zusammenführen
+
 ## Einführung
 Im Bereich der Dokumentenverwaltung und -bearbeitung ist das Zusammenführen von PDF-Dateien eine häufige Aufgabe für Entwickler. GroupDocs.Merger für .NET bietet eine robuste Lösung zum nahtlosen Zusammenführen von PDF-Dokumenten in .NET-Anwendungen. Dieses Tutorial führt Sie durch den Prozess des Zusammenführens von PDF-Dateien mit GroupDocs.Merger und zeigt Ihnen Schritt für Schritt die Implementierung und Verwendung.
 ## Voraussetzungen

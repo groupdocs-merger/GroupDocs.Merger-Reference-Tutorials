@@ -6,6 +6,9 @@ description: Découvrez comment fusionner des fichiers XLSX sans effort dans .NE
 weight: 14
 url: /fr/net/spreadsheet-merging/merging-xlsx-files/
 ---
+
+# Fusion de fichiers XLSX
+
 ## Introduction
 Dans le domaine de la manipulation et de la gestion de documents au sein des applications .NET, GroupDocs.Merger se distingue comme un outil puissant pour fusionner de manière transparente différents formats de fichiers. Ce didacticiel aborde la fusion de fichiers XLSX (Excel), en fournissant des conseils étape par étape sur la manière de fusionner efficacement des feuilles de calcul dans un environnement .NET. Que vous soyez un développeur chevronné ou que vous débutiez tout juste avec .NET, ce didacticiel vous fournira les connaissances nécessaires pour intégrer des fonctionnalités de fusion de fichiers dans vos projets.
 ## Conditions préalables

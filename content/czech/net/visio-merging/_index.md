@@ -7,6 +7,9 @@ weight: 24
 url: /cs/net/visio-merging/
 ---
 
+# Sloučení aplikace Visio
+
+
 ## Úvod
 
 Hledáte zefektivnění procesů správy dokumentů? Ponořte se do našich kurátorských výukových programů navržených tak, aby vás provedly bezproblémovým slučováním souborů Visio pomocí GroupDocs.Merger pro .NET. Ať už slučujete soubory VDX, VSDM, VSDX, VSSM, VSSX, VSTM, VSTX, VSX nebo VTX, máme pro vás podrobné pokyny krok za krokem a ukázky kódu.

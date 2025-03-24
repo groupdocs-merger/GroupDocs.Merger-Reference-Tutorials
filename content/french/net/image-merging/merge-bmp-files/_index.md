@@ -6,6 +6,9 @@ description: Découvrez comment fusionner des fichiers BMP à l'aide de GroupDoc
 weight: 10
 url: /fr/net/image-merging/merge-bmp-files/
 ---
+
+# Fusionner les fichiers BMP
+
 ## Introduction
 Dans ce didacticiel, nous verrons comment fusionner des fichiers BMP (Bitmap) à l'aide de GroupDocs.Merger pour .NET. GroupDocs.Merger est une API puissante qui permet aux développeurs de manipuler et de fusionner divers formats de documents par programme au sein de leurs applications .NET. À la fin de ce guide, vous serez en mesure de fusionner efficacement des fichiers BMP, étape par étape.
 ## Conditions préalables

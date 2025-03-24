@@ -6,6 +6,9 @@ description: Découvrez comment fusionner des fichiers ZIP par programme à l'ai
 weight: 12
 url: /fr/net/merge-compress-files/guide-merging-zip-files/
 ---
+
+# Guide de fusion de fichiers Zip
+
 ## Introduction
 Dans le domaine de la manipulation et de la gestion de documents, GroupDocs.Merger pour .NET se distingue comme un outil puissant pour les développeurs cherchant à fusionner et manipuler divers formats de fichiers de manière transparente. Ce didacticiel vous guidera tout au long du processus de fusion de fichiers ZIP à l'aide de GroupDocs.Merger pour .NET. À la fin de ce didacticiel, vous disposerez des connaissances nécessaires pour fusionner des fichiers ZIP par programmation dans vos applications .NET.
 ## Conditions préalables

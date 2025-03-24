@@ -6,6 +6,9 @@ description: Aprenda a fusionar archivos DOTX en .NET usando GroupDocs.Merger si
 weight: 15
 url: /es/net/document-merging/merge-dotx-files/
 ---
+
+# Fusionar archivos DOTX
+
 ## Introducción
 En este tutorial, exploraremos cómo fusionar archivos DOTX (plantilla de Word) usando GroupDocs.Merger para .NET. GroupDocs.Merger es una potente API que permite a los desarrolladores manipular varios formatos de documentos sin problemas dentro de aplicaciones .NET. Al aprovechar esta API, puede fusionar de manera eficiente varios archivos DOTX en un solo documento con solo unas pocas líneas de código.
 ## Requisitos previos

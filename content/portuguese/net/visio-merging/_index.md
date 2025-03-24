@@ -7,6 +7,9 @@ weight: 24
 url: /pt/net/visio-merging/
 ---
 
+# Mesclagem do Visio
+
+
 ## Introdução
 
 Você está procurando agilizar seus processos de gerenciamento de documentos? Mergulhe em nossos tutoriais selecionados projetados para orientá-lo na mesclagem perfeita de arquivos do Visio usando GroupDocs.Merger for .NET. Esteja você mesclando arquivos VDX, VSDM, VSDX, VSSM, VSSX, VSTM, VSTX, VSX ou VTX, oferecemos instruções passo a passo detalhadas e exemplos de código.

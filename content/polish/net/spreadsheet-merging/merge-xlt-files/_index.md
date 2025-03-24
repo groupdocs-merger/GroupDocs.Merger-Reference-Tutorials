@@ -6,6 +6,9 @@ description: Dowiedz się, jak scalić pliki XLT. Połącz programowo szablony p
 weight: 15
 url: /pl/net/spreadsheet-merging/merge-xlt-files/
 ---
+
+# Scal pliki XLT
+
 ## Wstęp
 W tym samouczku przyjrzymy się, jak scalić pliki XLT (szablon programu Excel). GroupDocs.Merger to potężny interfejs API, który umożliwia programistom programowe manipulowanie różnymi formatami dokumentów, w tym plikami Excel. Łącząc pliki XLT, możesz połączyć wiele szablonów w jeden dokument, usprawniając przepływ pracy i zwiększając wydajność.
 ## Warunki wstępne

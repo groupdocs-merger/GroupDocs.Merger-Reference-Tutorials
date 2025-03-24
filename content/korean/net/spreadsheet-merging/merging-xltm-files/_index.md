@@ -6,6 +6,9 @@ description: 프로그래밍 방식으로 XLTM 파일을 병합하는 방법을 
 weight: 16
 url: /ko/net/spreadsheet-merging/merging-xltm-files/
 ---
+
+# XLTM 파일 병합
+
 ## 소개
 이 튜토리얼에서는 XLTM(Excel Macro-Enabled Template) 파일을 병합하는 방법을 살펴보겠습니다. .NET용 GroupDocs.Merger는 개발자가 프로그래밍 방식으로 다양한 문서 형식을 조작하고 병합할 수 있는 강력한 라이브러리입니다. 이 가이드에서는 C#을 사용하여 XLTM 파일을 병합하는 과정을 단계별로 안내합니다.
 ## 전제 조건

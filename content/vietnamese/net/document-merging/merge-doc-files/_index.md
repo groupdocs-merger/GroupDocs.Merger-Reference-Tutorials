@@ -6,6 +6,9 @@ description: Tìm hiểu cách hợp nhất các tệp DOC theo chương trình 
 weight: 10
 url: /vi/net/document-merging/merge-doc-files/
 ---
+
+# Hợp nhất các tệp DOC với GroupDocs.Merger cho .NET
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách hợp nhất các tệp DOC bằng GroupDocs.Merger cho .NET. GroupDocs.Merger cho .NET là một API mạnh mẽ cho phép các nhà phát triển kết hợp, phân tách và thao tác các định dạng tài liệu khác nhau theo chương trình. Bằng cách tận dụng API này, bạn có thể hợp nhất liền mạch nhiều tệp DOC vào một tài liệu. Chúng tôi sẽ cung cấp hướng dẫn từng bước để hướng dẫn bạn quá trình hợp nhất các tệp DOC bằng GroupDocs.Merger cho .NET.
 ## Điều kiện tiên quyết

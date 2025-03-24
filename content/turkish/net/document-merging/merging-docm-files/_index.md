@@ -6,6 +6,9 @@ description: GroupDocs.Merger for .NET'i kullanarak DOCM dosyalarını sorunsuz 
 weight: 11
 url: /tr/net/document-merging/merging-docm-files/
 ---
+
+# DOCM Dosyalarını Birleştirme
+
 ## giriiş
 Bu öğreticide, .NET için GroupDocs.Merger kullanarak DOCM (Microsoft Word Makro Etkin Belge) dosyalarının nasıl birleştirileceğini inceleyeceğiz. Bu kitaplık, geliştiricilerin .NET uygulamalarında çeşitli belge formatlarını sorunsuz bir şekilde birleştirmesine, bölmesine, ayıklamasına ve işlemesine olanak tanıyan güçlü belge işleme özellikleri sağlar.
 ## Önkoşullar

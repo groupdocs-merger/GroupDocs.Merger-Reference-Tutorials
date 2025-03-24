@@ -7,6 +7,9 @@ weight: 23
 url: /pt/net/spreadsheet-merging/
 ---
 
+# Mesclagem de planilhas
+
+
 ## Introdução
 
 Se você é um desenvolvedor .NET que deseja agilizar suas tarefas de gerenciamento de documentos, o GroupDocs.Merger for .NET oferece uma solução abrangente. Neste artigo, exploraremos vários tutoriais sobre como mesclar diferentes tipos de arquivos de planilha usando GroupDocs.Merger.

@@ -6,6 +6,9 @@ description: GroupDocs.Merger를 사용하여 .NET에서 DOTX 파일을 손쉽�
 weight: 15
 url: /ko/net/document-merging/merge-dotx-files/
 ---
+
+# DOTX 파일 병합
+
 ## 소개
 이 튜토리얼에서는 .NET용 GroupDocs.Merger를 사용하여 DOTX(Word 템플릿) 파일을 병합하는 방법을 살펴보겠습니다. GroupDocs.Merger는 개발자가 .NET 응용 프로그램 내에서 다양한 문서 형식을 원활하게 조작할 수 있게 해주는 강력한 API입니다. 이 API를 활용하면 단 몇 줄의 코드만으로 여러 DOTX 파일을 단일 문서로 효율적으로 병합할 수 있습니다.
 ## 전제 조건

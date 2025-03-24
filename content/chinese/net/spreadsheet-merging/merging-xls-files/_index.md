@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Merger 在 .NET 中合并 Excel 文件
 weight: 11
 url: /zh/net/spreadsheet-merging/merging-xls-files/
 ---
+
+# 合并 XLS 文件
+
 ## 介绍
 在本教程中，我们将探讨如何合并 XLS（Excel）文件。GroupDocs.Merger 是一个功能强大的文档操作 API，使开发人员能够在其 .NET 应用程序中轻松合并、拆分、重新排列和操作文档。具体来说，我们将重点介绍如何使用 GroupDocs.Merger 的直观方法逐步合并 XLS 文件。
 ## 先决条件

@@ -6,6 +6,9 @@ description: Führen Sie PPSX-Dateien einfach mit GroupDocs.Merger für .NET zus
 weight: 11
 url: /de/net/presentation-merging/merging-ppsx-files/
 ---
+
+# PPSX-Dateien zusammenführen
+
 ## Einführung
 In diesem Tutorial beschäftigen wir uns mit dem Zusammenführen von PPSX-Dateien mithilfe der leistungsstarken Bibliothek GroupDocs.Merger für .NET. GroupDocs.Merger vereinfacht das programmgesteuerte Zusammenführen mehrerer PowerPoint-Diashowdateien (PPSX) zu einer einzigen konsolidierten Datei. Egal, ob Sie eine Anwendung entwickeln oder Dateibearbeitungsaufgaben automatisieren müssen, GroupDocs.Merger bietet eine effiziente Lösung.
 ## Voraussetzungen

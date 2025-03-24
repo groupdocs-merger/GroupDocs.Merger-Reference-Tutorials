@@ -6,6 +6,9 @@ description: Tìm hiểu cách hợp nhất các tệp ODT bằng GroupDocs.Merg
 weight: 16
 url: /vi/net/document-merging/merging-odt-files/
 ---
+
+# Hợp nhất các tệp ODT
+
 ## Giới thiệu
 Trong thế giới phát triển .NET, việc quản lý hiệu quả các tác vụ thao tác tài liệu như hợp nhất các tệp là điều cần thiết. GroupDocs.Merger for .NET cung cấp một giải pháp mạnh mẽ để kết hợp liền mạch các định dạng tệp khác nhau. Trong hướng dẫn này, chúng ta sẽ đi sâu vào quá trình hợp nhất các tệp ODT (Văn bản tài liệu mở) bằng GroupDocs.Merger cho .NET. Đến cuối hướng dẫn này, bạn sẽ được trang bị để hợp nhất các tệp ODT một cách dễ dàng trong các ứng dụng .NET của mình.
 ## Điều kiện tiên quyết

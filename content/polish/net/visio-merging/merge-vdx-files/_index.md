@@ -6,6 +6,9 @@ description: Dowiedz się, jak programowo scalić pliki VDX przy użyciu GroupDo
 weight: 10
 url: /pl/net/visio-merging/merge-vdx-files/
 ---
+
+# Scal pliki VDX
+
 ## Wstęp
 W tym samouczku omówimy sposób scalania plików VDX (Visio Drawing XML) przy użyciu programu GroupDocs.Merger dla platformy .NET. GroupDocs.Merger to potężny interfejs API do manipulacji dokumentami, który umożliwia płynne łączenie różnych formatów plików, w tym plików VDX. Ten samouczek przeprowadzi Cię krok po kroku przez proces łączenia plików VDX przy użyciu języka C# w środowisku .NET.
 ## Warunki wstępne

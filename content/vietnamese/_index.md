@@ -8,6 +8,9 @@ url: /vi/
 is_root: true
 ---
 
+# Hợp nhất và phân chia tài liệu dễ dàng với GroupDocs.Merger
+
+
 Chào mừng bạn đến với điểm đến cuối cùng dành cho các hướng dẫn GroupDocs.Merger, bao gồm nhiều nền tảng bao gồm .NET và Java. Cho dù bạn đang tìm hiểu thao tác tài liệu lần đầu tiên hay đang tìm kiếm các kỹ thuật nâng cao, các hướng dẫn toàn diện của chúng tôi đều cung cấp hướng dẫn từng bước để làm chủ việc hợp nhất và nén tệp một cách dễ dàng. Từ hình ảnh đến tài liệu, bảng tính, bản trình bày và tệp Visio, hướng dẫn của chúng tôi đáp ứng nhu cầu đa dạng trên nhiều nền tảng khác nhau. Khám phá sức mạnh của GroupDocs.Merger để hợp lý hóa quy trình làm việc của bạn và nâng cao khả năng quản lý tệp của bạn trên tất cả các nền tảng được hỗ trợ.
 
 ## Hướng dẫn GroupDocs.Merger cho .NET

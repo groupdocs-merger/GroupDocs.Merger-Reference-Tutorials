@@ -6,6 +6,9 @@ description: Pelajari cara menggabungkan file XLT. Gabungkan templat Excel secar
 weight: 15
 url: /id/net/spreadsheet-merging/merge-xlt-files/
 ---
+
+# Gabungkan File XLT
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara menggabungkan file XLT (Template Excel). GroupDocs.Merger adalah API canggih yang memungkinkan pengembang memanipulasi berbagai format dokumen, termasuk file Excel, secara terprogram. Dengan menggabungkan file XLT, Anda dapat menggabungkan beberapa templat ke dalam satu dokumen, menyederhanakan alur kerja dan meningkatkan efisiensi.
 ## Prasyarat

@@ -6,6 +6,9 @@ description: さまざまなファイル形式を簡単に結合および圧縮�
 weight: 20
 url: /ja/net/merge-compress-files/
 ---
+
+# ファイルを結合して圧縮する
+
 ## 導入
 
 

@@ -6,6 +6,9 @@ description: Lär dig hur du sammanfogar PDF-filer programmatiskt i .NET med Gro
 weight: 19
 url: /sv/net/document-merging/merging-pdf-files/
 ---
+
+# Slå ihop PDF-filer
+
 ## Introduktion
 När det gäller dokumenthantering och manipulation är sammanslagning av PDF-filer en vanlig uppgift som utvecklare stöter på. GroupDocs.Merger för .NET ger en robust lösning för att kombinera PDF-dokument sömlöst i .NET-applikationer. Denna handledning guidar dig genom processen att slå samman PDF-filer med GroupDocs.Merger, och visar steg-för-steg-implementering och användning.
 ## Förutsättningar

@@ -6,6 +6,9 @@ description: Tìm hiểu cách hợp nhất các tệp DOTX trong .NET bằng Gr
 weight: 15
 url: /vi/net/document-merging/merge-dotx-files/
 ---
+
+# Hợp nhất các tệp DOTX
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách hợp nhất các tệp DOTX (Mẫu Word) bằng GroupDocs.Merger cho .NET. GroupDocs.Merger là một API mạnh mẽ cho phép các nhà phát triển thao tác liền mạch các định dạng tài liệu khác nhau trong các ứng dụng .NET. Bằng cách tận dụng API này, bạn có thể hợp nhất nhiều tệp DOTX vào một tài liệu một cách hiệu quả chỉ bằng một vài dòng mã.
 ## Điều kiện tiên quyết

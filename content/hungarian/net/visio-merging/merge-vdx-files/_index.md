@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan egyesíthet programozottan VDX-fájlokat a Grou
 weight: 10
 url: /hu/net/visio-merging/merge-vdx-files/
 ---
+
+# VDX fájlok egyesítése
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet egyesíteni a VDX (Visio Drawing XML) fájlokat a GroupDocs.Merger for .NET használatával. A GroupDocs.Merger egy hatékony dokumentumkezelési API, amely lehetővé teszi a különböző fájlformátumok, köztük a VDX-fájlok zökkenőmentes egyesítését. Ez az oktatóanyag lépésről lépésre végigvezeti a VDX-fájlok egyesítésének folyamatán a C# használatával .NET környezetben.
 ## Előfeltételek

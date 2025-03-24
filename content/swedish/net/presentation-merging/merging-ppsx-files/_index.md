@@ -6,6 +6,9 @@ description: Slå ihop PPSX-filer enkelt med GroupDocs.Merger för .NET. Följ v
 weight: 11
 url: /sv/net/presentation-merging/merging-ppsx-files/
 ---
+
+# Slår ihop PPSX-filer
+
 ## Introduktion
 den här handledningen kommer vi att fördjupa oss i att slå samman PPSX-filer med hjälp av det kraftfulla GroupDocs.Merger for .NET-biblioteket. GroupDocs.Merger förenklar processen att kombinera flera PowerPoint Slide Show-filer (PPSX) till en enda konsoliderad fil programmatiskt. Oavsett om du utvecklar en applikation eller behöver automatisera filmanipuleringsuppgifter, erbjuder GroupDocs.Merger en effektiv lösning.
 ## Förutsättningar

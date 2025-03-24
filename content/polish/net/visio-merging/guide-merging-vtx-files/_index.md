@@ -6,6 +6,9 @@ description: Dowiedz się, jak programowo scalić pliki VTX za pomocą GroupDocs
 weight: 18
 url: /pl/net/visio-merging/guide-merging-vtx-files/
 ---
+
+# Przewodnik po łączeniu plików VTX
+
 ## Wstęp
 W tym samouczku omówimy sposób scalania plików VTX (szablon rysunku programu Visio) przy użyciu programu GroupDocs.Merger dla platformy .NET. GroupDocs.Merger dla .NET to potężny interfejs API do manipulacji dokumentami, który umożliwia programistom pracę z różnymi formatami plików, w tym plikami VTX.
 ## Warunki wstępne

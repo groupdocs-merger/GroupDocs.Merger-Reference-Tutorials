@@ -6,6 +6,9 @@ description: Fusionnez sans effort des fichiers 7z à l'aide de GroupDocs.Merger
 weight: 10
 url: /fr/net/merge-compress-files/merge-7z-files/
 ---
+
+# Comment fusionner des fichiers 7z
+
 ## Introduction
 La fusion de fichiers 7z peut être effectuée efficacement à l'aide de GroupDocs.Merger pour .NET, une puissante bibliothèque de manipulation de documents. Ce didacticiel vous guidera étape par étape tout au long du processus, vous permettant de fusionner facilement et en toute transparence vos fichiers 7z.
 ## Conditions préalables

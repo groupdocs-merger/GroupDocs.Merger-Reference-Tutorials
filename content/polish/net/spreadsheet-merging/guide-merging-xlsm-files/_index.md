@@ -6,6 +6,9 @@ description: Bezproblemowo łącz pliki XLSM za pomocą GroupDocs.Merger dla .NE
 weight: 13
 url: /pl/net/spreadsheet-merging/guide-merging-xlsm-files/
 ---
+
+# Przewodnik po łączeniu plików XLSM
+
 ## Wstęp
 W tym samouczku dowiemy się, jak scalić pliki XLSM (skoroszyt programu Excel z obsługą makr). GroupDocs.Merger to potężna biblioteka, która umożliwia programistom manipulowanie formatami dokumentów, w tym programowe łączenie, dzielenie i modyfikowanie plików.
 ## Warunki wstępne

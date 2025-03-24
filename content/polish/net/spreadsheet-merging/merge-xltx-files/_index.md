@@ -6,6 +6,9 @@ description: Dowiedz się, jak bez wysiłku łączyć pliki XLTX. Rozpocznij sca
 weight: 17
 url: /pl/net/spreadsheet-merging/merge-xltx-files/
 ---
+
+# Scal pliki XLTX
+
 ## Wstęp
 tym samouczku przyjrzymy się, jak scalić pliki XLTX (szablon programu Excel). GroupDocs.Merger to potężny interfejs API do manipulacji dokumentami, który umożliwia programistom płynne łączenie, dzielenie i manipulowanie różnymi formatami dokumentów w aplikacjach .NET. Ten samouczek skupia się szczególnie na programowym łączeniu plików XLTX.
 ## Warunki wstępne

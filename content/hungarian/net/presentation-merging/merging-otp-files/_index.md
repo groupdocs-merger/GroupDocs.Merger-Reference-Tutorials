@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan egyesíthet OTP-fájlokat a GroupDocs.Merger fo
 weight: 14
 url: /hu/net/presentation-merging/merging-otp-files/
 ---
+
+# OTP fájlok egyesítése
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan egyesíthet OTP (OpenDocument Presentation Template) fájlokat a GroupDocs.Merger for .NET használatával. A GroupDocs.Merger egy hatékony dokumentum-manipulációs API, amely lehetővé teszi a fejlesztők számára a különböző fájlformátumok zökkenőmentes kombinálását, felosztását és kezelését.
 ## Előfeltételek

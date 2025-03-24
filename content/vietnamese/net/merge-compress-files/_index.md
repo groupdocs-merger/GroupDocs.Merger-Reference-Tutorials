@@ -6,6 +6,9 @@ description: Hướng dẫn hợp nhất và nén các định dạng tệp khá
 weight: 20
 url: /vi/net/merge-compress-files/
 ---
+
+# Hợp nhất các tập tin nén
+
 ## Giới thiệu
 
 

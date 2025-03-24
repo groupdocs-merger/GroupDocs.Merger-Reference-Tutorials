@@ -7,6 +7,9 @@ weight: 23
 url: /hu/net/spreadsheet-merging/
 ---
 
+# Táblázat egyesítése
+
+
 ## Bevezetés
 
 Ha Ön .NET-fejlesztő, aki szeretné egyszerűsíteni dokumentumkezelési feladatait, a GroupDocs.Merger for .NET átfogó megoldást kínál. Ebben a cikkben különféle oktatóanyagokat fogunk felfedezni a különböző típusú táblázatfájlok GroupDocs.Merger használatával történő egyesítéséhez.

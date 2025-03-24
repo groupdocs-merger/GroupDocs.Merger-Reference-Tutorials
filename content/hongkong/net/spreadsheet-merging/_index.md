@@ -7,6 +7,9 @@ weight: 23
 url: /zh-hant/net/spreadsheet-merging/
 ---
 
+# 試算表合併
+
+
 ## 介紹
 
 如果您是一位希望簡化文件管理任務的 .NET 開發人員，GroupDocs.Merger for .NET 可以提供全面的解決方案。在本文中，我們將探索使用 GroupDocs.Merger 合併不同類型的電子表格檔案的各種教學。

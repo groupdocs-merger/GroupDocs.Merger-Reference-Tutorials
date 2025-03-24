@@ -6,6 +6,9 @@ description: Hợp nhất các tệp TXT một cách liền mạch trong .NET b�
 weight: 18
 url: /vi/net/document-merging/guide-merging-txt-files/
 ---
+
+# Hướng dẫn hợp nhất tệp TXT với GroupDocs.Merger cho .NET
+
 ## Giới thiệu
 Trong thế giới phát triển .NET, thao tác và hợp nhất các tệp văn bản là một yêu cầu chung cho các ứng dụng khác nhau. GroupDocs.Merger for .NET cung cấp một giải pháp mạnh mẽ để hợp nhất các tệp TXT một cách liền mạch trong các dự án .NET của bạn. Hướng dẫn toàn diện này sẽ hướng dẫn bạn từng bước về quy trình hợp nhất các tệp TXT bằng GroupDocs.Merger.
 ## Điều kiện tiên quyết

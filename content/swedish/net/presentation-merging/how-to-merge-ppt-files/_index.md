@@ -6,6 +6,9 @@ description: Lär dig hur du sammanfogar PowerPoint-filer (PPT) med GroupDocs.Me
 weight: 12
 url: /sv/net/presentation-merging/how-to-merge-ppt-files/
 ---
+
+# Hur man slår ihop PPT-filer
+
 ## Introduktion
 I den här handledningen kommer vi att undersöka hur du slår ihop PowerPoint-filer (PPT) med GroupDocs.Merger för .NET. GroupDocs.Merger för .NET är ett kraftfullt API som låter utvecklare manipulera och slå samman olika dokumentformat, inklusive PowerPoint-presentationer, sömlöst i sina .NET-applikationer.
 ## Förutsättningar

@@ -6,6 +6,9 @@ description: Aprenda como mesclar arquivos DOCX programaticamente em .NET usando
 weight: 12
 url: /pt/net/document-merging/how-to-merge-docx-files/
 ---
+
+# Como mesclar arquivos DOCX
+
 ## Introdução
 No mundo do desenvolvimento .NET, mesclar arquivos DOCX programaticamente pode ser um recurso poderoso para vários aplicativos. GroupDocs.Merger for .NET fornece uma solução abrangente para mesclar arquivos DOCX com eficiência. Este tutorial irá guiá-lo através do processo de uso do GroupDocs.Merger for .NET para mesclar vários arquivos DOCX em um único documento de forma integrada.
 ## Pré-requisitos

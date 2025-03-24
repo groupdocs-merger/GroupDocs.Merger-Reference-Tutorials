@@ -6,6 +6,9 @@ description: Leer hoe u moeiteloos RTF-bestanden in .NET kunt samenvoegen met Gr
 weight: 21
 url: /nl/net/document-merging/merging-rtf-files/
 ---
+
+# RTF-bestanden samenvoegen
+
 ## Invoering
 In de wereld van .NET-ontwikkeling is het naadloos samenvoegen van RTF-bestanden (Rich Text Format) voor veel toepassingen een cruciale taak. GroupDocs.Merger voor .NET biedt een krachtige oplossing om dit efficiënt te bereiken. Deze tutorial leidt u stap voor stap door het proces van het samenvoegen van RTF-bestanden met GroupDocs.Merger voor .NET. Aan het einde van deze tutorial beschikt u over de kennis om moeiteloos RTF-bestanden samen te voegen binnen uw .NET-projecten.
 ## Vereisten

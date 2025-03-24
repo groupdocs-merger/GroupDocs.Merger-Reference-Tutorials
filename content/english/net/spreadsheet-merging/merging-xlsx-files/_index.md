@@ -6,6 +6,9 @@ description: Learn how to merge XLSX files effortlessly in .NET using GroupDocs.
 weight: 14
 url: /net/spreadsheet-merging/merging-xlsx-files/
 ---
+
+# Merging XLSX Files
+
 ## Introduction
 In the realm of document manipulation and management within .NET applications, GroupDocs.Merger stands out as a powerful tool for merging various file formats seamlessly. This tutorial delves into merging XLSX (Excel) files, providing step-by-step guidance on how to efficiently merge spreadsheet files in a .NET environment. Whether you're a seasoned developer or just starting with .NET, this tutorial will equip you with the necessary knowledge to integrate file merging capabilities into your projects.
 ## Prerequisites

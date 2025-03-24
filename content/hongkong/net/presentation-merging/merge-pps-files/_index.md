@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Merger for .NET 無縫合併 PPS 檔�
 weight: 10
 url: /zh-hant/net/presentation-merging/merge-pps-files/
 ---
+
+# 合併 PPS 文件
+
 ## 介紹
 在 .NET 開發領域，有效地操作文件文件至關重要。 GroupDocs.Merger for .NET 提供了強大的工具來無縫合併和操作各種文件格式。在本教學中，我們將重點放在使用 GroupDocs.Merger for .NET 合併 PPS（PowerPoint 投影片）檔案。無論您是經驗豐富的開發人員還是剛起步，本指南都將逐步引導您完成整個過程。
 ## 先決條件

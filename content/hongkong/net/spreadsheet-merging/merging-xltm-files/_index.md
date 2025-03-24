@@ -6,6 +6,9 @@ description: 了解如何以程式設計方式合併 XLTM 檔案。帶有程式�
 weight: 16
 url: /zh-hant/net/spreadsheet-merging/merging-xltm-files/
 ---
+
+# 合併 XLTM 文件
+
 ## 介紹
 在本教學中，我們將探討如何合併 XLTM（Excel 啟用巨集的範本）檔案。 GroupDocs.Merger for .NET 是一個功能強大的程式庫，使開發人員能夠以程式設計方式操作和合併各種文件格式。本指南將引導您使用 C# 逐步完成合併 XLTM 檔案的過程。
 ## 先決條件

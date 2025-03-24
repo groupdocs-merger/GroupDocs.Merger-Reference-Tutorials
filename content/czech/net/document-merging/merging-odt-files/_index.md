@@ -6,6 +6,9 @@ description: Naučte se, jak sloučit soubory ODT pomocí GroupDocs.Merger for .
 weight: 16
 url: /cs/net/document-merging/merging-odt-files/
 ---
+
+# Sloučení souborů ODT
+
 ## Úvod
 Ve světě vývoje .NET je efektivní řízení úloh manipulace s dokumenty, jako je slučování souborů, zásadní. GroupDocs.Merger for .NET nabízí robustní řešení pro bezproblémové kombinování různých formátů souborů. V tomto tutoriálu se ponoříme do procesu slučování souborů ODT (Open Document Text) pomocí GroupDocs.Merger for .NET. Na konci této příručky budete připraveni bez námahy sloučit soubory ODT v rámci vašich aplikací .NET.
 ## Předpoklady

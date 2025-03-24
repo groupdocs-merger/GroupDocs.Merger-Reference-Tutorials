@@ -6,6 +6,9 @@ description: XLTM dosyalarını programlı olarak nasıl birleştireceğinizi ö
 weight: 16
 url: /tr/net/spreadsheet-merging/merging-xltm-files/
 ---
+
+# XLTM Dosyalarını Birleştirme
+
 ## giriiş
 Bu derste XLTM (Excel Makro Etkin Şablon) dosyalarının nasıl birleştirileceğini inceleyeceğiz. GroupDocs.Merger for .NET, geliştiricilerin çeşitli belge formatlarını programlı olarak değiştirmesine ve birleştirmesine olanak tanıyan güçlü bir kitaplıktır. Bu kılavuz, XLTM dosyalarını C# kullanarak adım adım birleştirme sürecinde size yol gösterecektir.
 ## Önkoşullar

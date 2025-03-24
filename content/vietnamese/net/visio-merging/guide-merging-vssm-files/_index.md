@@ -6,6 +6,9 @@ description: Tìm hiểu cách hợp nhất các tệp VSSM một cách dễ dà
 weight: 13
 url: /vi/net/visio-merging/guide-merging-vssm-files/
 ---
+
+# Hướng dẫn gộp file VSSM
+
 ## Giới thiệu
 Trong hướng dẫn này, bạn sẽ tìm hiểu cách hợp nhất các tệp VSSM (Bản vẽ hỗ trợ macro Visio) bằng GroupDocs.Merger cho .NET. GroupDocs.Merger là một thư viện mạnh mẽ cho phép các nhà phát triển thao tác và hợp nhất các định dạng tài liệu khác nhau một cách liền mạch.
 ## Điều kiện tiên quyết

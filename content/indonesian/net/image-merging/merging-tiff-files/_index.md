@@ -6,6 +6,9 @@ description: Pelajari cara menggabungkan file TIFF menggunakan GroupDocs.Merger 
 weight: 16
 url: /id/net/image-merging/merging-tiff-files/
 ---
+
+# Menggabungkan File TIFF
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara menggabungkan file TIFF menggunakan perpustakaan GroupDocs.Merger untuk .NET. GroupDocs.Merger adalah API manipulasi dokumen canggih yang memungkinkan pengembang menggabungkan, membagi, dan memodifikasi berbagai format dokumen dengan mulus dalam aplikasi .NET.
 ## Prasyarat

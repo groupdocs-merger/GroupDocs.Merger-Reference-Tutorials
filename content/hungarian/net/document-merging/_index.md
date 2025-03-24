@@ -6,6 +6,9 @@ description: Könnyedén egyesítsen különféle dokumentumformátumokat a .NET
 weight: 22
 url: /hu/net/document-merging/
 ---
+
+# Dokumentum egyesítése
+
 ## Bevezetés
 
 Ön .NET-fejlesztő, aki hatékony módszereket keres a különböző dokumentumformátumok zökkenőmentes egyesítésére? A GroupDocs.Merger for .NET a tökéletes megoldás. Ebben az átfogó oktatóanyag-listában a DOC, DOCX, PDF és más formátumok könnyed összevonásával foglalkozunk.

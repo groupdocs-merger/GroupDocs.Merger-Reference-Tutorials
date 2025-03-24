@@ -6,6 +6,9 @@ description: Lär dig hur du sammanfogar EPUB-filer programmatiskt med GroupDocs
 weight: 17
 url: /sv/net/document-merging/merge-epub-files/
 ---
+
+# Slå samman EPUB-filer
+
 ## Introduktion
 I den här handledningen kommer vi att utforska hur man slår samman EPUB-filer med GroupDocs.Merger för .NET. GroupDocs.Merger för .NET är ett kraftfullt bibliotek som låter utvecklare manipulera och slå samman olika dokumentformat sömlöst i sina .NET-applikationer. Specifikt kommer vi att fokusera på att slå samman EPUB-filer steg-för-steg med hjälp av det här biblioteket.
 ## Förutsättningar

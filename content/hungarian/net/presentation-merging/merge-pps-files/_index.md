@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan egyesíthet zökkenőmentesen PPS-fájlokat a G
 weight: 10
 url: /hu/net/presentation-merging/merge-pps-files/
 ---
+
+# PPS fájlok egyesítése
+
 ## Bevezetés
 A .NET-fejlesztés világában a dokumentumfájlok hatékony kezelése kulcsfontosságú. A GroupDocs.Merger for .NET hatékony eszközöket kínál a különböző dokumentumformátumok zökkenőmentes egyesítéséhez és kezeléséhez. Ebben az oktatóanyagban a PPS (PowerPoint diavetítés) fájlok egyesítésére összpontosítunk a GroupDocs.Merger for .NET használatával. Akár tapasztalt fejlesztő, akár csak most kezdő, ez az útmutató lépésről lépésre végigvezeti a folyamaton.
 ## Előfeltételek

@@ -6,6 +6,9 @@ description: 輕鬆合併各種簡報文件格式。按照我們的教學有效�
 weight: 25
 url: /zh-hant/net/presentation-merging/
 ---
+
+# 簡報合併
+
 ## 介紹
 
 輕鬆合併您的簡報文件。無論是 PPS、PPSX、PPT 或 OTP 文件，我們的教學課程都提供逐步指導，並附有實用的程式碼範例，以簡化您的文件合併任務。

@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie ZIP-Dateien mit GroupDocs.Merger für .NET pr
 weight: 12
 url: /de/net/merge-compress-files/guide-merging-zip-files/
 ---
+
+# Anleitung zum Zusammenführen von ZIP-Dateien
+
 ## Einführung
 Im Bereich der Dokumentenbearbeitung und -verwaltung zeichnet sich GroupDocs.Merger für .NET als leistungsstarkes Tool für Entwickler aus, die verschiedene Dateiformate nahtlos zusammenführen und bearbeiten möchten. Dieses Tutorial führt Sie durch den Prozess des Zusammenführens von ZIP-Dateien mit GroupDocs.Merger für .NET. Am Ende dieses Tutorials verfügen Sie über das Wissen, ZIP-Dateien programmgesteuert in Ihren .NET-Anwendungen zusammenzuführen.
 ## Voraussetzungen

@@ -6,6 +6,9 @@ url: /net/
 description: Effortlessly merge and compress various file formats using GroupDocs.Merger .NET. Learn step-by-step tutorials on merging images, documents, and more!
 is_root: true
 ---
+
+# Tutorials and Examples of GroupDocs.Merger for .NET
+
 ## Introduction
 
 Effortlessly manage your files with GroupDocs.Merger for .NET! This comprehensive tutorial series provides step-by-step guidance on leveraging the power of GroupDocs.Merger to merge and compress various file formats seamlessly. Whether you're dealing with images, documents, spreadsheets, presentations, or even Visio files, we've got you covered.

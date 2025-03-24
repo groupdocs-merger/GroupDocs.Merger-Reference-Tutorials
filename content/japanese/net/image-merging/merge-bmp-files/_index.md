@@ -6,6 +6,9 @@ description: この包括的なチュートリアルで、GroupDocs.Merger for .
 weight: 10
 url: /ja/net/image-merging/merge-bmp-files/
 ---
+
+# BMP ファイルを結合する
+
 ## 導入
 このチュートリアルでは、GroupDocs.Merger for .NET を使用して BMP (ビットマップ) ファイルをマージする方法を説明します。 GroupDocs.Merger は、開発者が .NET アプリケーション内でプログラムによってさまざまなドキュメント形式を操作およびマージできるようにする強力な API です。このガイドを終えると、BMP ファイルを段階的に効率的にマージできるようになります。
 ## 前提条件

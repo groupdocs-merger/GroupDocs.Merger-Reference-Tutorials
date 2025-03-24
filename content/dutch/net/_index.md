@@ -6,6 +6,9 @@ url: /nl/net/
 description: Moeiteloos verschillende bestandsformaten samenvoegen en comprimeren met GroupDocs.Merger .NET. Leer stapsgewijze tutorials over het samenvoegen van afbeeldingen, documenten en meer!
 is_root: true
 ---
+
+# Tutorials en voorbeelden van GroupDocs.Merger voor .NET
+
 ## Invoering
 
 Beheer uw bestanden moeiteloos met GroupDocs.Merger voor .NET! Deze uitgebreide tutorialserie biedt stapsgewijze begeleiding bij het benutten van de kracht van GroupDocs.Merger om verschillende bestandsindelingen naadloos samen te voegen en te comprimeren. Of u nu te maken heeft met afbeeldingen, documenten, spreadsheets, presentaties of zelfs Visio-bestanden, wij staan voor u klaar.

@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan egyesíthet könnyedén VSTM-fájlokat a GroupD
 weight: 15
 url: /hu/net/visio-merging/merge-vstm-files/
 ---
+
+# VSTM fájlok egyesítése
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet egyesíteni a VSTM (VSTemplate) fájlokat a GroupDocs.Merger for .NET használatával. A GroupDocs.Merger egy hatékony dokumentum-manipulációs API, amely lehetővé teszi a fejlesztők számára, hogy .NET-alkalmazásaikon belül zökkenőmentesen egyesítsék, feloszthassák és kezeljék a különböző dokumentumformátumokat.
 ## Előfeltételek

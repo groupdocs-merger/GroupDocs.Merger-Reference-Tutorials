@@ -6,6 +6,9 @@ description: Lär dig hur du slår samman OTP-filer med GroupDocs.Merger för .N
 weight: 14
 url: /sv/net/presentation-merging/merging-otp-files/
 ---
+
+# Slår samman OTP-filer
+
 ## Introduktion
 I den här handledningen kommer vi att utforska hur man slår ihop OTP-filer (OpenDocument Presentation Template) med GroupDocs.Merger för .NET. GroupDocs.Merger är ett kraftfullt dokumentmanipulerings-API som låter utvecklare kombinera, dela upp och manipulera olika filformat sömlöst.
 ## Förutsättningar

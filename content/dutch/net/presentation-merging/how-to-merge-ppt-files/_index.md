@@ -6,6 +6,9 @@ description: Leer hoe u moeiteloos PowerPoint-bestanden (PPT) kunt samenvoegen m
 weight: 12
 url: /nl/net/presentation-merging/how-to-merge-ppt-files/
 ---
+
+# Hoe PPT-bestanden samen te voegen
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u PowerPoint-bestanden (PPT) kunt samenvoegen met GroupDocs.Merger voor .NET. GroupDocs.Merger voor .NET is een krachtige API waarmee ontwikkelaars verschillende documentformaten, waaronder PowerPoint-presentaties, naadloos kunnen manipuleren en samenvoegen binnen hun .NET-toepassingen.
 ## Vereisten

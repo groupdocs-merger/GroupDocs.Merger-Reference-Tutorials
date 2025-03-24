@@ -6,6 +6,9 @@ description: Leer hoe u TAR-bestanden programmatisch samenvoegt met GroupDocs.Me
 weight: 11
 url: /nl/net/merge-compress-files/merging-tar-files/
 ---
+
+# Tar-bestanden samenvoegen
+
 ## Invoering
 Bij softwareontwikkeling kan de mogelijkheid om bestanden programmatisch te manipuleren en samen te voegen cruciaal zijn voor een efficiënte gegevensverwerking. GroupDocs.Merger voor .NET is een krachtige bibliotheek waarmee ontwikkelaars TAR-bestanden (Tape Archive) naadloos kunnen samenvoegen binnen hun .NET-applicaties. Deze tutorial leidt u door het proces van het samenvoegen van TAR-bestanden met behulp van GroupDocs.Merger, met stapsgewijze instructies en codevoorbeelden.
 ## Vereisten

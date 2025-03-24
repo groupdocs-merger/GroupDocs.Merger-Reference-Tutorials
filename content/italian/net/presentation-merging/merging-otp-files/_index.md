@@ -6,6 +6,9 @@ description: Scopri come unire file OTP utilizzando GroupDocs.Merger per .NET. Q
 weight: 14
 url: /it/net/presentation-merging/merging-otp-files/
 ---
+
+# Unione di file OTP
+
 ## introduzione
 In questo tutorial esploreremo come unire file OTP (OpenDocument Presentation Template) utilizzando GroupDocs.Merger per .NET. GroupDocs.Merger è una potente API per la manipolazione dei documenti che consente agli sviluppatori di combinare, dividere e manipolare vari formati di file senza problemi.
 ## Prerequisiti

@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan egyesíthet könnyedén XLSX fájlokat .NET-ben
 weight: 14
 url: /hu/net/spreadsheet-merging/merging-xlsx-files/
 ---
+
+# XLSX fájlok egyesítése
+
 ## Bevezetés
 A .NET-alkalmazásokon belüli dokumentumkezelés és -kezelés területén a GroupDocs.Merger hatékony eszköz a különféle fájlformátumok zökkenőmentes egyesítésére. Ez az oktatóanyag az XLSX (Excel) fájlok egyesítésével foglalkozik, és lépésről lépésre útmutatást ad a táblázatkezelő fájlok hatékony egyesítéséhez .NET környezetben. Akár tapasztalt fejlesztő, akár csak most kezdi a .NET-et, ez az oktatóanyag felvértezi a szükséges ismeretekkel ahhoz, hogy a fájlegyesítési lehetőségeket integrálja projektjeibe.
 ## Előfeltételek

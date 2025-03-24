@@ -6,6 +6,9 @@ description: Dowiedz się, jak programowo scalić pliki VSDX przy użyciu GroupD
 weight: 12
 url: /pl/net/visio-merging/how-to-merge-vsdx-files/
 ---
+
+# Jak scalić pliki VSDX
+
 ## Wstęp
 W tym samouczku dowiesz się, jak scalić pliki VSDX (rysunek Visio) za pomocą GroupDocs.Merger dla .NET. GroupDocs.Merger dla .NET to potężny interfejs API, który umożliwia płynne manipulowanie i łączenie różnych formatów dokumentów w aplikacjach .NET.
 ## Warunki wstępne

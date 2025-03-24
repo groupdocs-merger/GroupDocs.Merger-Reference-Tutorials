@@ -6,6 +6,9 @@ description: PPSX dosyalarını GroupDocs.Merger for .NET ile kolayca birleştir
 weight: 11
 url: /tr/net/presentation-merging/merging-ppsx-files/
 ---
+
+# PPSX Dosyalarını Birleştirme
+
 ## giriiş
 Bu eğitimde, güçlü GroupDocs.Merger for .NET kitaplığını kullanarak PPSX dosyalarını birleştirmeyi ele alacağız. GroupDocs.Merger, birden fazla PowerPoint Slayt Gösterisi (PPSX) dosyasını program aracılığıyla tek bir birleştirilmiş dosyada birleştirme işlemini basitleştirir. İster bir uygulama geliştiriyor olun ister dosya işleme görevlerini otomatikleştirmeye ihtiyaç duyuyor olun, GroupDocs.Merger etkili bir çözüm sunar.
 ## Önkoşullar

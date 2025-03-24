@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Merger for .NET 輕鬆合併 PPSX 檔案。按照�
 weight: 11
 url: /zh-hant/net/presentation-merging/merging-ppsx-files/
 ---
+
+# 合併 PPSX 文件
+
 ## 介紹
 在本教程中，我們將深入研究使用強大的 GroupDocs.Merger for .NET 程式庫合併 PPSX 檔案。 GroupDocs.Merger 簡化了以程式設計方式將多個 PowerPoint 投影片 (PPSX) 檔案合併為單一合併檔案的流程。無論您是開發應用程式還是需要自動執行檔案操作任務，GroupDocs.Merger 都能提供高效的解決方案。
 ## 先決條件

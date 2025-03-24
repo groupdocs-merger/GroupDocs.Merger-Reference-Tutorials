@@ -7,6 +7,9 @@ weight: 23
 url: /cs/net/spreadsheet-merging/
 ---
 
+# Sloučení tabulky
+
+
 ## Úvod
 
 Pokud jste vývojář .NET a chcete zefektivnit své úkoly správy dokumentů, GroupDocs.Merger for .NET nabízí komplexní řešení. V tomto článku prozkoumáme různé návody na slučování různých typů tabulkových souborů pomocí GroupDocs.Merger.

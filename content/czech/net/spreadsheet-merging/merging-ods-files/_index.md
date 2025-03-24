@@ -6,6 +6,9 @@ description: Naučte se, jak sloučit soubory ODS bez námahy. Postupujte podle 
 weight: 18
 url: /cs/net/spreadsheet-merging/merging-ods-files/
 ---
+
+# Sloučení souborů ODS
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak sloučit soubory ODS (OpenDocument Spreadsheet). GroupDocs.Merger for .NET je výkonné API, které umožňuje vývojářům bezproblémově manipulovat a spojovat různé formáty dokumentů. Probereme nezbytné kroky ke sloučení souborů ODS programově pomocí této knihovny.
 ## Předpoklady

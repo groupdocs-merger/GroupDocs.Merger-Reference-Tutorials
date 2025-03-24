@@ -6,6 +6,9 @@ description: Aprenda como mesclar arquivos PPS perfeitamente usando GroupDocs.Me
 weight: 10
 url: /pt/net/presentation-merging/merge-pps-files/
 ---
+
+# Mesclar arquivos PPS
+
 ## Introdução
 No mundo do desenvolvimento .NET, a manipulação eficiente de arquivos de documentos é crucial. GroupDocs.Merger for .NET fornece ferramentas poderosas para mesclar e manipular vários formatos de documentos perfeitamente. Neste tutorial, vamos nos concentrar na mesclagem de arquivos PPS (PowerPoint Slide Show) usando GroupDocs.Merger para .NET. Quer você seja um desenvolvedor experiente ou esteja apenas começando, este guia irá guiá-lo passo a passo pelo processo.
 ## Pré-requisitos

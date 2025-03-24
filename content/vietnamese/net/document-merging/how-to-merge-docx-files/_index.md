@@ -6,6 +6,9 @@ description: Tìm hiểu cách hợp nhất các tệp DOCX theo chương trình
 weight: 12
 url: /vi/net/document-merging/how-to-merge-docx-files/
 ---
+
+# Cách hợp nhất các tệp DOCX
+
 ## Giới thiệu
 Trong thế giới phát triển .NET, việc hợp nhất các tệp DOCX theo chương trình có thể là một khả năng mạnh mẽ cho nhiều ứng dụng khác nhau. GroupDocs.Merger for .NET cung cấp giải pháp toàn diện để hợp nhất các tệp DOCX một cách hiệu quả. Hướng dẫn này sẽ hướng dẫn bạn quy trình sử dụng GroupDocs.Merger cho .NET để hợp nhất nhiều tệp DOCX vào một tài liệu một cách liền mạch.
 ## Điều kiện tiên quyết
