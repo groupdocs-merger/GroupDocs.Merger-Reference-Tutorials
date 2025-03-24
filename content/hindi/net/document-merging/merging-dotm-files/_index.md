@@ -3,7 +3,6 @@ title: DOTM फ़ाइलें मर्ज करना
 linktitle: DOTM फ़ाइलें मर्ज करना
 second_title: GroupDocs.Merger .NET API
 description: .NET के लिए GroupDocs.Merger का उपयोग करके प्रोग्रामेटिक रूप से DOTM फ़ाइलों को मर्ज करना सीखें। यह व्यापक गाइड डेवलपर्स के लिए चरण-दर-चरण निर्देश प्रदान करता है।
-type: docs
 weight: 14
 url: /hi/net/document-merging/merging-dotm-files/
 ---

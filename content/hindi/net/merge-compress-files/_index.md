@@ -3,7 +3,6 @@ title: कंप्रेस फ़ाइलें मर्ज करें
 linktitle: कंप्रेस फ़ाइलें मर्ज करें
 second_title: GroupDocs.Merger .NET API
 description: विभिन्न फ़ाइल स्वरूपों को आसानी से मर्ज और संपीड़ित करने के ट्यूटोरियल। हमारे चरण-दर-चरण मार्गदर्शिकाओं के साथ 7z, TAR और ZIP फ़ाइलों को सहजता से संयोजित करना सीखें।
-type: docs
 weight: 20
 url: /hi/net/merge-compress-files/
 ---

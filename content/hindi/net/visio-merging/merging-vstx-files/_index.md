@@ -3,7 +3,6 @@ title: .NET के लिए GroupDocs.Merger के साथ VSTX फ़ाइ
 linktitle: .NET के लिए GroupDocs.Merger के साथ VSTX फ़ाइलें मर्ज करना
 second_title: GroupDocs.Merger .NET API
 description: .NET के लिए GroupDocs.Merger का उपयोग करके VSTX फ़ाइलों को मर्ज करना सीखें। C# में कुशल दस्तावेज़ हेरफेर के लिए इस चरण-दर-चरण मार्गदर्शिका का पालन करें।
-type: docs
 weight: 16
 url: /hi/net/visio-merging/merging-vstx-files/
 ---
@@ -64,4 +63,4 @@ Console.WriteLine("\nVSTX files merge completed successfully. \nCheck output in 
 ### क्या GroupDocs.Merger for .NET बड़े पैमाने पर दस्तावेज़ प्रसंस्करण कार्यों के लिए उपयुक्त है?
 हां, GroupDocs.Merger बड़े दस्तावेज़ों और बैच संचालन के कुशल संचालन के लिए अनुकूलित है।
 ### मुझे .NET के लिए GroupDocs.Merger के लिए अतिरिक्त समर्थन या दस्तावेज़ कहां मिल सकता है?
- दौरा करना[GroupDocs.Merger मंच](https://forum.groupdocs.com/c/merger/32) या देखें[प्रलेखन](https://reference.groupdocs.com/merger/net/) व्यापक संसाधनों के लिए.
+ दौरा करना[GroupDocs.Merger मंच](https://forum.groupdocs.com/c/merger/32) या देखें[प्रलेखन](https://tutorials.groupdocs.com/merger/net/) व्यापक संसाधनों के लिए.

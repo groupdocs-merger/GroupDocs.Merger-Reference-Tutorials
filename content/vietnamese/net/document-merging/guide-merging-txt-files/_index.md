@@ -3,7 +3,6 @@ title: Hướng dẫn hợp nhất tệp TXT với GroupDocs.Merger cho .NET
 linktitle: Hướng dẫn hợp nhất tệp TXT với GroupDocs.Merger cho .NET
 second_title: API GroupDocs.Merger .NET
 description: Hợp nhất các tệp TXT một cách liền mạch trong .NET bằng GroupDocs.Merger. Hướng dẫn từng bước dành cho nhà phát triển. Tài liệu và hỗ trợ có sẵn.
-type: docs
 weight: 18
 url: /vi/net/document-merging/guide-merging-txt-files/
 ---
@@ -63,7 +62,7 @@ Có, GroupDocs.Merger hỗ trợ hợp nhất nhiều định dạng tệp khác
 ### GroupDocs.Merger có tương thích với các ứng dụng .NET Core không?
 Có, GroupDocs.Merger tương thích với cả .NET Framework và .NET Core.
 ### Tôi có thể tìm thêm tài liệu và hỗ trợ cho GroupDocs.Merger ở đâu?
- Tham khảo đến[tài liệu](https://reference.groupdocs.com/merger/net/) để có tài liệu tham khảo API chi tiết. Bạn cũng có thể tìm kiếm sự trợ giúp từ[diễn đàn GroupDocs](https://forum.groupdocs.com/c/merger/32) cho bất kỳ truy vấn.
+ Tham khảo đến[tài liệu](https://tutorials.groupdocs.com/merger/net/) để có tài liệu tham khảo API chi tiết. Bạn cũng có thể tìm kiếm sự trợ giúp từ[diễn đàn GroupDocs](https://forum.groupdocs.com/c/merger/32) cho bất kỳ truy vấn.
 ### Có bản dùng thử miễn phí GroupDocs.Merger cho .NET không?
  Có, bạn có thể khám phá một[phiên bản dùng thử miễn phí](https://releases.groupdocs.com/) của GroupDocs.Merger để đánh giá khả năng của nó.
 ### Làm cách nào tôi có thể nhận được giấy phép tạm thời cho GroupDocs.Merger?

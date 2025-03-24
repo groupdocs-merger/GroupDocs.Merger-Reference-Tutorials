@@ -3,7 +3,6 @@ title: XLTX-bestanden samenvoegen
 linktitle: XLTX-bestanden samenvoegen
 second_title: GroupDocs.Merger .NET API
 description: Leer hoe u XLTX-bestanden moeiteloos kunt samenvoegen. Begin met het samenvoegen van XLTX-bestanden en stroomlijn uw documentbeheertaken efficiënt.
-type: docs
 weight: 17
 url: /nl/net/spreadsheet-merging/merge-xltx-files/
 ---
@@ -63,4 +62,4 @@ Ja, voor GroupDocs.Merger voor .NET is het niet nodig dat Microsoft Excel op de 
 ### Blijft GroupDocs.Merger voor .NET de opmaak behouden tijdens het samenvoegproces?
 Ja, GroupDocs.Merger zorgt ervoor dat de opmaak en gegevensintegriteit behouden blijven bij het samenvoegen van XLTX-bestanden.
 ### Waar kan ik meer ondersteuning of documentatie vinden voor GroupDocs.Merger voor .NET?
- Bezoek de[GroupDocs.Merger-forum](https://forum.groupdocs.com/c/merger/32) voor ondersteuning en raadpleeg de[documentatie](https://reference.groupdocs.com/merger/net/) voor gedetailleerde begeleiding.
+ Bezoek de[GroupDocs.Merger-forum](https://forum.groupdocs.com/c/merger/32) voor ondersteuning en raadpleeg de[documentatie](https://tutorials.groupdocs.com/merger/net/) voor gedetailleerde begeleiding.

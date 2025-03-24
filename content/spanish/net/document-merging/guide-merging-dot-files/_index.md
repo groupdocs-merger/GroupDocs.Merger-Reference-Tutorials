@@ -3,7 +3,6 @@ title: Guía para fusionar archivos DOT
 linktitle: Guía para fusionar archivos DOT
 second_title: API GroupDocs.Merger .NET
 description: Aprenda a fusionar archivos DOT (Graphviz) mediante programación utilizando GroupDocs.Merger para .NET. Fusione, combine y manipule archivos DOT con facilidad.
-type: docs
 weight: 13
 url: /es/net/document-merging/guide-merging-dot-files/
 ---
@@ -13,7 +12,7 @@ En este tutorial, exploraremos cómo fusionar archivos DOT (Graphviz) usando Gro
 Antes de comenzar, asegúrese de tener los siguientes requisitos previos:
 - Conocimientos básicos de programación en C# y .NET.
 - Visual Studio instalado en su máquina.
--  GroupDocs.Merger para la biblioteca .NET. Puedes descargarlo desde el[Documentación de GroupDocs.Merger para .NET](https://reference.groupdocs.com/merger/net/).
+-  GroupDocs.Merger para la biblioteca .NET. Puedes descargarlo desde el[Documentación de GroupDocs.Merger para .NET](https://tutorials.groupdocs.com/merger/net/).
 - Accede a los archivos DOT que deseas fusionar.
 
 ## Importar espacios de nombres

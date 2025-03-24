@@ -3,7 +3,6 @@ title: XLT Dosyalarını Birleştir
 linktitle: XLT Dosyalarını Birleştir
 second_title: GroupDocs.Merger .NET API'si
 description: XLT dosyalarını nasıl birleştireceğinizi öğrenin. Bu adım adım kılavuzla Excel şablonlarını C#'ta programlı bir şekilde birleştirin.
-type: docs
 weight: 15
 url: /tr/net/spreadsheet-merging/merge-xlt-files/
 ---
@@ -59,7 +58,7 @@ Evet, birden çok XLT dosyasını kullanarak bunları sırayla ekleyerek birleş
 ### GroupDocs.Merger, XLSX veya XLS gibi diğer Excel dosya formatlarıyla uyumlu mu?
 Evet, GroupDocs.Merger, XLSX, XLS ve XLT dahil olmak üzere çeşitli Excel dosya formatlarını destekler.
 ### GroupDocs.Merger for .NET için daha fazla örneği ve belgeyi nerede bulabilirim?
- Ayrıntılı belgeler ve kod örnekleri mevcuttur[Burada](https://reference.groupdocs.com/merger/net/).
+ Ayrıntılı belgeler ve kod örnekleri mevcuttur[Burada](https://tutorials.groupdocs.com/merger/net/).
 ### GroupDocs.Merger'ın deneme sürümü mevcut mu?
  Evet, ücretsiz deneme sürümünü şuradan indirebilirsiniz:[Burada](https://releases.groupdocs.com/).
 ### GroupDocs.Merger ile ilgili nasıl teknik destek veya yardım alabilirim?

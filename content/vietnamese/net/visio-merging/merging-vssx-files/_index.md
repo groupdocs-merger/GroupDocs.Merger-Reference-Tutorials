@@ -3,7 +3,6 @@ title: Hợp nhất các tệp VSSX
 linktitle: Hợp nhất các tệp VSSX
 second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp VSSX một cách dễ dàng trong các ứng dụng .NET bằng GroupDocs.Merger, nâng cao hiệu quả quản lý tài liệu.
-type: docs
 weight: 14
 url: /vi/net/visio-merging/merging-vssx-files/
 ---
@@ -63,7 +62,7 @@ Có, GroupDocs.Merger for .NET hỗ trợ hợp nhất nhiều định dạng t�
 ### GroupDocs.Merger cho .NET có tương thích với các ứng dụng .NET Core không?
 Có, GroupDocs.Merger for .NET tương thích với cả môi trường .NET Framework và .NET Core.
 ### Tôi có thể tìm tài liệu hoặc hỗ trợ bổ sung cho GroupDocs.Merger cho .NET ở đâu?
- Bạn có thể khám phá các tài liệu toàn diện[đây](https://reference.groupdocs.com/merger/net/) và tìm kiếm sự hỗ trợ trong[diễn đàn GroupDocs](https://forum.groupdocs.com/c/merger/32).
+ Bạn có thể khám phá các tài liệu toàn diện[đây](https://tutorials.groupdocs.com/merger/net/) và tìm kiếm sự hỗ trợ trong[diễn đàn GroupDocs](https://forum.groupdocs.com/c/merger/32).
 ### GroupDocs.Merger cho .NET có cung cấp bản dùng thử miễn phí không?
  Có, bạn có thể bắt đầu với bản dùng thử miễn phí GroupDocs.Merger cho .NET từ[đây](https://releases.groupdocs.com/).
 ### Làm cách nào tôi có thể nhận được giấy phép tạm thời cho GroupDocs.Merger cho .NET?

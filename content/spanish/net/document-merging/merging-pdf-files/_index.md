@@ -3,7 +3,6 @@ title: Fusionar archivos PDF
 linktitle: Fusionar archivos PDF
 second_title: API GroupDocs.Merger .NET
 description: Aprenda a fusionar archivos PDF mediante programación en .NET utilizando GroupDocs.Merger para una gestión de documentos perfecta.
-type: docs
 weight: 19
 url: /es/net/document-merging/merging-pdf-files/
 ---

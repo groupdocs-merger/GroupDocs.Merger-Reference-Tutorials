@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: reference.groupdocs.com(tutorials-merger)(family)(Production)
+name: tutorials.groupdocs.com(tutorials-merger)(family)(Production)
 
 # Controls when the action will run. 
 on:
@@ -35,10 +35,10 @@ jobs:
       - name: Checkout theme repo
         uses: actions/checkout@main
         with:
-          repository: groupdocs/api-theme
+          repository: groupdocs/tutorials-theme
           token: ${{ secrets.REPO_TOKEN }}
           fetch-depth: 0
-          path: themes/api-theme      
+          path: themes/tutorials-theme      
       # Step 2 - Sets up the latest version of Hugo
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -53,7 +53,7 @@ jobs:
       - name: Build
         run: hugo --configDir config/merger --environment production --minify
         
-      - name: Deploy apireference2.groupdocs.com(tutorials-merger)(family)(Production) to S3
+      - name: Deploy apiqa-tutorials.groupdocs.com(tutorials-merger)(family)(Production) to S3
         run: hugo --configDir config/merger --environment production deploy --target "Production" --maxDeletes 0
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY }}
@@ -63,7 +63,7 @@ jobs:
         uses: chetan/invalidate-cloudfront-action@v2
         env:
           DISTRIBUTION: ${{ secrets.AWS_DISTRIBUTION_PROD }}
-          PATHS: /tutorials/merger/*
+          PATHS: /merger/*
           AWS_REGION: 'us-west-2'
           AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS }}

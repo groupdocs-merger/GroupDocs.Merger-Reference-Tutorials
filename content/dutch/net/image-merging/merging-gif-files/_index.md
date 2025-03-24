@@ -3,7 +3,6 @@ title: GIF-bestanden samenvoegen
 linktitle: GIF-bestanden samenvoegen
 second_title: GroupDocs.Merger .NET API
 description: Leer hoe u GIF-bestanden kunt samenvoegen met GroupDocs.Merger voor .NET. Combineer meerdere GIF's programmatisch met stapsgewijze instructies.
-type: docs
 weight: 11
 url: /nl/net/image-merging/merging-gif-files/
 ---
@@ -63,6 +62,6 @@ Ja, GroupDocs.Merger ondersteunt het samenvoegen van verschillende documentforma
 ### Vraag: Hoe kan ik technische ondersteuning krijgen voor GroupDocs.Merger?
  Voor technische assistentie kunt u terecht op GroupDocs.Merger[forum](https://forum.groupdocs.com/c/merger/32) waar u vragen kunt stellen en met de gemeenschap kunt communiceren.
 ### Vraag: Waar kan ik gedetailleerde documentatie vinden voor GroupDocs.Merger voor .NET?
- Ontdek de uitgebreide documentatie[hier](https://reference.groupdocs.com/merger/net/) voor gedetailleerd inzicht in het gebruik van GroupDocs.Merger in uw .NET-applicaties.
+ Ontdek de uitgebreide documentatie[hier](https://tutorials.groupdocs.com/merger/net/) voor gedetailleerd inzicht in het gebruik van GroupDocs.Merger in uw .NET-applicaties.
 ### V: Kan ik een tijdelijke licentie verkrijgen voor GroupDocs.Merger?
  Ja, u kunt een tijdelijke licentie verkrijgen via[hier](https://purchase.groupdocs.com/temporary-license/) om de mogelijkheden van GroupDocs.Merger te evalueren alvorens tot aankoop over te gaan.

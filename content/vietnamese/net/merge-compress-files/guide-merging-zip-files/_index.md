@@ -3,7 +3,6 @@ title: Hướng dẫn gộp file Zip
 linktitle: Hướng dẫn gộp file Zip
 second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp ZIP theo chương trình bằng GroupDocs.Merger cho .NET. Hướng dẫn này cung cấp hướng dẫn chi tiết cho các nhà phát triển.
-type: docs
 weight: 12
 url: /vi/net/merge-compress-files/guide-merging-zip-files/
 ---

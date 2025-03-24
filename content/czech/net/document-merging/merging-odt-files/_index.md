@@ -3,7 +3,6 @@ title: Sloučení souborů ODT
 linktitle: Sloučení souborů ODT
 second_title: GroupDocs.Merger .NET API
 description: Naučte se, jak sloučit soubory ODT pomocí GroupDocs.Merger for .NET bez námahy. Vylepšete své možnosti správy dokumentů pomocí této výkonné knihovny.
-type: docs
 weight: 16
 url: /cs/net/document-merging/merging-odt-files/
 ---

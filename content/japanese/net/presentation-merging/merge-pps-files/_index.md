@@ -3,7 +3,6 @@ title: PPS ファイルを結合する
 linktitle: PPS ファイルを結合する
 second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger for .NET を使用して PPS ファイルをシームレスにマージする方法を学びます。コード例を含むステップバイステップのガイド。文書操作スキルを向上させます。
-type: docs
 weight: 10
 url: /ja/net/presentation-merging/merge-pps-files/
 ---
@@ -61,7 +60,7 @@ Console.WriteLine("\nPPS files merge completed successfully. \nCheck output in {
 ### GroupDocs.Merger はドキュメント結合のバッチ処理に適していますか?
 もちろんです。GroupDocs.Merger をバッチ処理タスクに活用して、複数のドキュメントを同時に結合することができます。
 ### GroupDocs.Merger for .NET の完全なドキュメントはどこで入手できますか?
-包括的なドキュメントが利用可能[ここ](https://reference.groupdocs.com/merger/net/).
+包括的なドキュメントが利用可能[ここ](https://tutorials.groupdocs.com/merger/net/).
 ### GroupDocs.Merger for .NET の一時ライセンスを取得するにはどうすればよいですか?
 臨時免許証は以下から取得できます。[ここ](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs はトラブルシューティングや問い合わせに対するサポートを提供していますか?

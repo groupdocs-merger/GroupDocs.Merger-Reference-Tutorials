@@ -3,7 +3,6 @@ title: XLAM fájlok egyesítése
 linktitle: XLAM fájlok egyesítése
 second_title: GroupDocs.Merger .NET API
 description: Ismerje meg, hogyan egyesíthet könnyedén XLAM fájlokat. Egyszerűsítse dokumentumkezelési feladatait ezzel a hatékony API-val.
-type: docs
 weight: 10
 url: /hu/net/spreadsheet-merging/merge-xlam-files/
 ---
@@ -80,7 +79,7 @@ Igen, a kereskedelmi felhasználáshoz engedély szükséges. Ideiglenes jogosí
 
 ### K: Hol találok további erőforrásokat és támogatást a GroupDocs.Merger számára?
 
- Meglátogathatja a[GroupDocs.Merger dokumentáció](https://reference.groupdocs.com/merger/net/) részletes API-referenciáért, és nézze meg a[GroupDocs fórum](https://forum.groupdocs.com/c/merger/32) közösségi támogatásért.
+ Meglátogathatja a[GroupDocs.Merger dokumentáció](https://tutorials.groupdocs.com/merger/net/) részletes API-referenciáért, és nézze meg a[GroupDocs fórum](https://forum.groupdocs.com/c/merger/32) közösségi támogatásért.
 
 ### K: Kipróbálhatom a GroupDocs.Mergert vásárlás előtt?
 

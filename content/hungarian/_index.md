@@ -3,7 +3,6 @@ title: Egyesítse és ossza fel a dokumentumokat könnyedén a GroupDocs.Merger 
 linktitle: GroupDocs.Merger oktatóanyagok
 additionalTitle: GroupDocs API referenciák
 description: Könnyedén egyesítsen, ossza fel és tömörítse a dokumentumokat .NET és Java platformokon a GroupDocs.Merger szakértői útmutatóinkkal. Oldja fel a zökkenőmentes fájlkezelést!
-type: docs
 weight: 11
 url: /hu/
 is_root: true

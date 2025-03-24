@@ -3,7 +3,6 @@ title: BMP 파일 병합
 linktitle: BMP 파일 병합
 second_title: GroupDocs.Merger .NET API
 description: 이 포괄적인 튜토리얼을 통해 .NET용 GroupDocs.Merger를 사용하여 BMP 파일을 병합하는 방법을 알아보세요. .NET 애플리케이션을 효율적으로 개발하세요.
-type: docs
 weight: 10
 url: /ko/net/image-merging/merge-bmp-files/
 ---

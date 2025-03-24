@@ -3,7 +3,6 @@ title: XLTM Dosyalarını Birleştirme
 linktitle: XLTM Dosyalarını Birleştirme
 second_title: GroupDocs.Merger .NET API'si
 description: XLTM dosyalarını programlı olarak nasıl birleştireceğinizi öğrenin. Kod örnekleri içeren adım adım kılavuz.
-type: docs
 weight: 16
 url: /tr/net/spreadsheet-merging/merging-xltm-files/
 ---
@@ -61,6 +60,6 @@ Evet, GroupDocs.Merger, DOCX, XLSX, PPTX, PDF ve daha fazlası gibi çeşitli be
 ### GroupDocs.Merger'ın ücretsiz deneme sürümü mevcut mu?
  Evet, GroupDocs.Merger'ın ücretsiz deneme sürümüne erişebilirsiniz[Burada](https://releases.groupdocs.com/).
 ### GroupDocs.Merger belgelerini nerede bulabilirim?
-GroupDocs.Merger'ın tüm belgelerine başvurabilirsiniz.[Burada](https://reference.groupdocs.com/merger/net/).
+GroupDocs.Merger'ın tüm belgelerine başvurabilirsiniz.[Burada](https://tutorials.groupdocs.com/merger/net/).
 ### GroupDocs.Merger için nereden teknik destek alabilirim?
  Teknik yardım ve destek için GroupDocs.Merger forumunu ziyaret edin[Burada](https://forum.groupdocs.com/c/merger/32).

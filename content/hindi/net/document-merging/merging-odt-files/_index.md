@@ -3,7 +3,6 @@ title: ODT फ़ाइलें मर्ज करना
 linktitle: ODT फ़ाइलें मर्ज करना
 second_title: GroupDocs.Merger .NET API
 description: .NET के लिए GroupDocs.Merger का उपयोग करके ODT फ़ाइलों को आसानी से मर्ज करना सीखें। इस शक्तिशाली लाइब्रेरी के साथ अपनी दस्तावेज़ प्रबंधन क्षमताओं को बढ़ाएँ।
-type: docs
 weight: 16
 url: /hi/net/document-merging/merging-odt-files/
 ---

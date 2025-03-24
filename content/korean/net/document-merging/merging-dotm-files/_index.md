@@ -3,7 +3,6 @@ title: DOTM 파일 병합
 linktitle: DOTM 파일 병합
 second_title: GroupDocs.Merger .NET API
 description: .NET용 GroupDocs.Merger를 사용하여 프로그래밍 방식으로 DOTM 파일을 병합하는 방법을 알아보세요. 이 포괄적인 가이드는 개발자를 위한 단계별 지침을 제공합니다.
-type: docs
 weight: 14
 url: /ko/net/document-merging/merging-dotm-files/
 ---

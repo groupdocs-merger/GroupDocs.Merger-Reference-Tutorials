@@ -3,7 +3,6 @@ title: ファイルを結合して圧縮する
 linktitle: ファイルを結合して圧縮する
 second_title: GroupDocs.Merger .NET API
 description: さまざまなファイル形式を簡単に結合および圧縮するチュートリアル。ステップバイステップのガイドに従って、7z、TAR、ZIP ファイルをシームレスに結合する方法を学びます。
-type: docs
 weight: 20
 url: /ja/net/merge-compress-files/
 ---

@@ -3,7 +3,6 @@ title: Sloučení souborů VSDM
 linktitle: Sloučení souborů VSDM
 second_title: GroupDocs.Merger .NET API
 description: Přečtěte si, jak sloučit soubory VSDM pomocí GroupDocs.Merger for .NET. Zjednodušte si úkoly správy dokumentů pomocí této snadno použitelné knihovny.
-type: docs
 weight: 11
 url: /cs/net/visio-merging/merging-vsdm-files/
 ---

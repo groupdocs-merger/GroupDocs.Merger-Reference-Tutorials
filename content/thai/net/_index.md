@@ -1,7 +1,6 @@
 ---
 title: บทช่วยสอนและตัวอย่าง GroupDocs.Merger สำหรับ .NET
 linktitle: GroupDocs.Merger สำหรับบทช่วยสอน .NET
-type: docs
 weight: 10
 url: /th/net/
 description: ผสานและบีบอัดรูปแบบไฟล์ต่างๆ ได้อย่างง่ายดายโดยใช้ GroupDocs.Merger .NET เรียนรู้คำแนะนำทีละขั้นตอนเกี่ยวกับการรวมรูปภาพ เอกสาร และอื่นๆ อีกมากมาย!

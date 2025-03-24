@@ -3,7 +3,6 @@ title: Sloučit soubory TIF
 linktitle: Sloučit soubory TIF
 second_title: GroupDocs.Merger .NET API
 description: Naučte se, jak programově sloučit soubory TIF pomocí GroupDocs.Merger for .NET. Efektivní rozhraní API pro manipulaci s dokumenty pro vývojáře .NET.
-type: docs
 weight: 15
 url: /cs/net/image-merging/merge-tif-files/
 ---

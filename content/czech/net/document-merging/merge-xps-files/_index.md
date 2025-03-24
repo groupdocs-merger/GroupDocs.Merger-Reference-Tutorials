@@ -3,7 +3,6 @@ title: Sloučit soubory XPS
 linktitle: Sloučit soubory XPS
 second_title: GroupDocs.Merger .NET API
 description: Naučte se sloučit soubory XPS pomocí GroupDocs.Merger for .NET bez námahy. Zjednodušte zpracování dokumentů ve vašich aplikacích .NET.
-type: docs
 weight: 20
 url: /cs/net/document-merging/merge-xps-files/
 ---
@@ -52,7 +51,7 @@ Ano, GroupDocs.Merger podporuje slučování různých formátů dokumentů, jak
 ### Mohu manipulovat s jednotlivými stránkami v dokumentech pomocí GroupDocs.Merger?
 Rozhodně vám GroupDocs.Merger umožňuje extrahovat, odstraňovat, měnit pořadí a otáčet stránky v dokumentech.
 ### Kde najdu další dokumentaci k GroupDocs.Merger pro .NET?
- K dispozici je podrobná dokumentace[tady](https://reference.groupdocs.com/merger/net/).
+ K dispozici je podrobná dokumentace[tady](https://tutorials.groupdocs.com/merger/net/).
 ### Podporuje GroupDocs.Merger for .NET dočasné možnosti licencování?
  Ano, dočasné licence lze získat[tady](https://purchase.groupdocs.com/temporary-license/).
 ### Jak mohu vyhledat pomoc nebo podporu související s GroupDocs.Merger?

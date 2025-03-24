@@ -3,7 +3,6 @@ title: Hợp nhất các tệp VSDM
 linktitle: Hợp nhất các tệp VSDM
 second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp VSDM bằng GroupDocs.Merger cho .NET. Đơn giản hóa các tác vụ quản lý tài liệu của bạn với thư viện dễ sử dụng này.
-type: docs
 weight: 11
 url: /vi/net/visio-merging/merging-vsdm-files/
 ---

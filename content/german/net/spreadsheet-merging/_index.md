@@ -3,7 +3,6 @@ title: Zusammenführen von Tabellenkalkulationen
 linktitle: Zusammenführen von Tabellenkalkulationen
 second_title: GroupDocs.Merger .NET API
 description: Führen Sie mit GroupDocs.Merger mühelos XLAM-, XLS-, XLSB-, XLSM-, XLSX-, XLT-, XLTM-, XLTX- und ODS-Dateien in .NET zusammen. Vereinfachen Sie Dokumentenverwaltungsaufgaben.
-type: docs
 weight: 23
 url: /de/net/spreadsheet-merging/
 ---

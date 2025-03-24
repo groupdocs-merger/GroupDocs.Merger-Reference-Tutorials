@@ -3,7 +3,6 @@ title: คำแนะนำในการรวมไฟล์ TXT กับ G
 linktitle: คำแนะนำในการรวมไฟล์ TXT กับ GroupDocs.Merger สำหรับ .NET
 second_title: GroupDocs.Merger .NET API
 description: รวมไฟล์ TXT ได้อย่างราบรื่นใน .NET โดยใช้ GroupDocs.Merger คำแนะนำทีละขั้นตอนสำหรับนักพัฒนา มีเอกสารและการสนับสนุน
-type: docs
 weight: 18
 url: /th/net/document-merging/guide-merging-txt-files/
 ---
@@ -63,7 +62,7 @@ Console.WriteLine("\nTXT files merge completed successfully. \nCheck output in {
 ### GroupDocs.Merger เข้ากันได้กับแอปพลิเคชัน .NET Core หรือไม่
 ใช่ GroupDocs.Merger เข้ากันได้กับทั้ง .NET Framework และ .NET Core
 ### ฉันจะหาเอกสารและการสนับสนุนเพิ่มเติมสำหรับ GroupDocs.Merger ได้ที่ไหน
- อ้างถึง[เอกสารประกอบ](https://reference.groupdocs.com/merger/net/) สำหรับการอ้างอิง API โดยละเอียด คุณสามารถขอความช่วยเหลือจาก[ฟอรัม GroupDocs](https://forum.groupdocs.com/c/merger/32) สำหรับข้อสงสัยใดๆ
+ อ้างถึง[เอกสารประกอบ](https://tutorials.groupdocs.com/merger/net/) สำหรับการอ้างอิง API โดยละเอียด คุณสามารถขอความช่วยเหลือจาก[ฟอรัม GroupDocs](https://forum.groupdocs.com/c/merger/32) สำหรับข้อสงสัยใดๆ
 ### มีการทดลองใช้ GroupDocs.Merger สำหรับ .NET ฟรีหรือไม่
  ใช่ คุณสามารถสำรวจได้[รุ่นทดลองใช้ฟรี](https://releases.groupdocs.com/) ของ GroupDocs.Merger เพื่อประเมินความสามารถ
 ### ฉันจะขอรับใบอนุญาตชั่วคราวสำหรับ GroupDocs.Merger ได้อย่างไร

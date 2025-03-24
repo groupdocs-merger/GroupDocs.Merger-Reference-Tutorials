@@ -3,7 +3,6 @@ title: Slå samman DOTX-filer
 linktitle: Slå samman DOTX-filer
 second_title: GroupDocs.Merger .NET API
 description: Lär dig hur du sammanfogar DOTX-filer i .NET med GroupDocs.Merger utan ansträngning. Förbättra dina dokumenthanteringsmöjligheter.
-type: docs
 weight: 15
 url: /sv/net/document-merging/merge-dotx-files/
 ---
@@ -13,7 +12,7 @@ I den här handledningen kommer vi att undersöka hur man slår samman DOTX-file
 Innan du dyker in i handledningen, se till att du har följande:
 - Visual Studio installerat på din dator
 - .NET SDK (kompatibel version) installerad
--  GroupDocs.Merger för .NET installerat (se[installationsguide](https://reference.groupdocs.com/merger/net/) för detaljer)
+-  GroupDocs.Merger för .NET installerat (se[installationsguide](https://tutorials.groupdocs.com/merger/net/) för detaljer)
 - Grundläggande kunskaper i C#-programmering
 
 ## Importera namnområden
@@ -58,7 +57,7 @@ Ja, GroupDocs.Merger stöder sammanslagning av olika dokumentformat som DOCX, XL
 ### Är GroupDocs.Merger kompatibel med .NET Core?
 Ja, GroupDocs.Merger är kompatibel med både .NET Framework och .NET Core.
 ### Var kan jag hitta ytterligare support eller dokumentation för GroupDocs.Merger?
- Du kan hänvisa till[GroupDocs.Merger dokumentation](https://reference.groupdocs.com/merger/net/) för detaljerade API-referenser och användningsexempel.
+ Du kan hänvisa till[GroupDocs.Merger dokumentation](https://tutorials.groupdocs.com/merger/net/) för detaljerade API-referenser och användningsexempel.
 ### Erbjuder GroupDocs.Merger en gratis provperiod?
  Ja, du kan komma åt en[gratis testversion](https://releases.groupdocs.com/) för att utvärdera GroupDocs.Merger.
 ### Hur kan jag köpa en licens för GroupDocs.Merger?

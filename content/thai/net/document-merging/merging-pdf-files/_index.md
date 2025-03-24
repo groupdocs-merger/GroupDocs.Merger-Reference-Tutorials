@@ -3,7 +3,6 @@ title: การรวมไฟล์ PDF
 linktitle: การรวมไฟล์ PDF
 second_title: GroupDocs.Merger .NET API
 description: เรียนรู้วิธีผสานไฟล์ PDF โดยทางโปรแกรมใน .NET โดยใช้ GroupDocs.Merger เพื่อการจัดการเอกสารที่ราบรื่น
-type: docs
 weight: 19
 url: /th/net/document-merging/merging-pdf-files/
 ---

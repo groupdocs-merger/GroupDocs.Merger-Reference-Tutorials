@@ -3,7 +3,6 @@ title: Scal i podziel dokumenty bez wysiłku dzięki GroupDocs.Merger
 linktitle: Poradniki GroupDocs.Merger
 additionalTitle: Referencje API GroupDocs
 description: Bez wysiłku łącz, dziel i kompresuj dokumenty na platformach .NET i Java dzięki naszym specjalistycznym samouczkom na temat GroupDocs.Merger. Odblokuj płynne zarządzanie plikami!
-type: docs
 weight: 11
 url: /pl/
 is_root: true

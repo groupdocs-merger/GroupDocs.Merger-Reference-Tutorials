@@ -3,7 +3,6 @@ title: Guide för att slå samman PPTX-filer
 linktitle: Guide för att slå samman PPTX-filer
 second_title: GroupDocs.Merger .NET API
 description: Lär dig hur du slår samman PPTX-filer med GroupDocs.Merger för .NET. Effektivisera dokumenthanteringen med detta kraftfulla .NET-bibliotek.
-type: docs
 weight: 13
 url: /sv/net/presentation-merging/guide-merging-pptx-files/
 ---

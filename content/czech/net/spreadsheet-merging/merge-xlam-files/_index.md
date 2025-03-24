@@ -3,7 +3,6 @@ title: Sloučit soubory XLAM
 linktitle: Sloučit soubory XLAM
 second_title: GroupDocs.Merger .NET API
 description: Naučte se, jak bez námahy sloučit soubory XLAM. Zjednodušte si úkoly správy dokumentů pomocí tohoto výkonného rozhraní API.
-type: docs
 weight: 10
 url: /cs/net/spreadsheet-merging/merge-xlam-files/
 ---
@@ -80,7 +79,7 @@ Ano, pro komerční využití je nutná licence. Dočasnou licenci můžete zís
 
 ### Otázka: Kde najdu další zdroje a podporu pro GroupDocs.Merger?
 
- Můžete navštívit[GroupDocs.Merger dokumentace](https://reference.groupdocs.com/merger/net/) pro podrobnou referenci API a podívejte se na[fórum GroupDocs](https://forum.groupdocs.com/c/merger/32) za podporu komunity.
+ Můžete navštívit[GroupDocs.Merger dokumentace](https://tutorials.groupdocs.com/merger/net/) pro podrobnou referenci API a podívejte se na[fórum GroupDocs](https://forum.groupdocs.com/c/merger/32) za podporu komunity.
 
 ### Otázka: Mohu vyzkoušet GroupDocs.Merger před nákupem?
 

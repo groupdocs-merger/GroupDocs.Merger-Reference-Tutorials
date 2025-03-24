@@ -3,7 +3,6 @@ title: 如何合併 7z 文件
 linktitle: 如何合併 7z 文件
 second_title: GroupDocs.Merger .NET API
 description: 使用 GroupDocs.Merger for .NET 輕鬆合併 7z 檔案。按照我們的逐步指南將多個檔案無縫地合併為一個。
-type: docs
 weight: 10
 url: /zh-hant/net/merge-compress-files/merge-7z-files/
 ---

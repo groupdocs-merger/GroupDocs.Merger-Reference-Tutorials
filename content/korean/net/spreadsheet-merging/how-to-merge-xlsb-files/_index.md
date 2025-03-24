@@ -3,7 +3,6 @@ title: XLSB 파일을 병합하는 방법
 linktitle: XLSB 파일을 병합하는 방법
 second_title: GroupDocs.Merger .NET API
 description: XLSB 파일을 병합하는 방법을 알아보세요. 이 단계별 가이드는 문서 조작 작업을 단순화합니다.
-type: docs
 weight: 12
 url: /ko/net/spreadsheet-merging/how-to-merge-xlsb-files/
 ---
@@ -54,7 +53,7 @@ Console.WriteLine("\nXLSB files merge completed successfully. \nCheck output in 
 ### GroupDocs.Merger는 XLSB 외에 다른 파일 형식을 처리할 수 있습니까?
 예, GroupDocs.Merger는 DOCX, PDF, XLSX, PPTX 등을 포함한 광범위한 문서 형식을 지원합니다.
 ### GroupDocs.Merger에 대한 추가 문서는 어디서 찾을 수 있나요?
- 방문하다[선적 서류 비치](https://reference.groupdocs.com/merger/net/) 자세한 사용 지침 및 API 참조를 확인하세요.
+ 방문하다[선적 서류 비치](https://tutorials.groupdocs.com/merger/net/) 자세한 사용 지침 및 API 참조를 확인하세요.
 ### GroupDocs.Merger에 대한 무료 평가판이 있습니까?
  예, 액세스할 수 있습니다[무료 시험판](https://releases.groupdocs.com/)GroupDocs.Merger의 기능을 살펴보세요.
 ### GroupDocs.Merger에 대한 기술 지원을 받으려면 어떻게 해야 합니까?

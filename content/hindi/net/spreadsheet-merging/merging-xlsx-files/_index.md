@@ -3,7 +3,6 @@ title: XLSX फ़ाइलें मर्ज करना
 linktitle: XLSX फ़ाइलें मर्ज करना
 second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger का उपयोग करके XLSX फ़ाइलों को .NET में आसानी से मर्ज करना सीखें। निर्बाध दस्तावेज़ प्रबंधन के लिए इस चरण-दर-चरण ट्यूटोरियल का पालन करें।
-type: docs
 weight: 14
 url: /hi/net/spreadsheet-merging/merging-xlsx-files/
 ---
@@ -54,7 +53,7 @@ Console.WriteLine("\nXLSX files merge completed successfully. \nCheck output in 
 ### क्या GroupDocs.Merger .NET कोर अनुप्रयोगों के साथ संगत है?
 हां, GroupDocs.Merger का उपयोग .NET फ्रेमवर्क और .NET कोर परियोजनाओं दोनों के साथ किया जा सकता है।
 ### मैं GroupDocs.Merger के लिए विस्तृत दस्तावेज़ कहां पा सकता हूं?
- विस्तृत दस्तावेज़ उपलब्ध है[यहाँ](https://reference.groupdocs.com/merger/net/).
+ विस्तृत दस्तावेज़ उपलब्ध है[यहाँ](https://tutorials.groupdocs.com/merger/net/).
 ### क्या GroupDocs.Merger निःशुल्क परीक्षण की पेशकश करता है?
  हां, आप निःशुल्क परीक्षण का लाभ उठा सकते हैं[यहाँ](https://releases.groupdocs.com/).
 ### मैं GroupDocs.Merger के लिए समर्थन कैसे प्राप्त कर सकता हूं?

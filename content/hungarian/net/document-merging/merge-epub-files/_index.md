@@ -3,7 +3,6 @@ title: EPUB-fájlok egyesítése
 linktitle: EPUB-fájlok egyesítése
 second_title: GroupDocs.Merger .NET API
 description: Ismerje meg, hogyan egyesíthet programozottan EPUB-fájlokat a GroupDocs.Merger for .NET használatával. Kövesse lépésről lépésre bemutató oktatóanyagunkat.
-type: docs
 weight: 17
 url: /hu/net/document-merging/merge-epub-files/
 ---

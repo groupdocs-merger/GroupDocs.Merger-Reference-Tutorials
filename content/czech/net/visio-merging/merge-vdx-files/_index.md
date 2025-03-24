@@ -3,7 +3,6 @@ title: Sloučit soubory VDX
 linktitle: Sloučit soubory VDX
 second_title: GroupDocs.Merger .NET API
 description: Naučte se, jak sloučit soubory VDX programově pomocí GroupDocs.Merger for .NET. Tento tutoriál poskytuje průvodce krok za krokem.
-type: docs
 weight: 10
 url: /cs/net/visio-merging/merge-vdx-files/
 ---

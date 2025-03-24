@@ -3,7 +3,6 @@ title: Hợp nhất các tệp XLTM
 linktitle: Hợp nhất các tệp XLTM
 second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp XLTM theo chương trình. Hướng dẫn từng bước với các ví dụ về mã.
-type: docs
 weight: 16
 url: /vi/net/spreadsheet-merging/merging-xltm-files/
 ---
@@ -61,6 +60,6 @@ Có, GroupDocs.Merger hỗ trợ hợp nhất nhiều định dạng tài liệu
 ### Có bản dùng thử miễn phí cho GroupDocs.Merger không?
  Có, bạn có thể truy cập bản dùng thử miễn phí của GroupDocs.Merger[đây](https://releases.groupdocs.com/).
 ### Tôi có thể tìm tài liệu về GroupDocs.Merger ở đâu?
-Bạn có thể tham khảo tài liệu đầy đủ về GroupDocs.Merger[đây](https://reference.groupdocs.com/merger/net/).
+Bạn có thể tham khảo tài liệu đầy đủ về GroupDocs.Merger[đây](https://tutorials.groupdocs.com/merger/net/).
 ### Tôi có thể nhận hỗ trợ kỹ thuật cho GroupDocs.Merger ở đâu?
  Để được hỗ trợ và hỗ trợ kỹ thuật, hãy truy cập diễn đàn GroupDocs.Merger[đây](https://forum.groupdocs.com/c/merger/32).

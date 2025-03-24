@@ -3,7 +3,6 @@ title: PPS Dosyalarını Birleştir
 linktitle: PPS Dosyalarını Birleştir
 second_title: GroupDocs.Merger .NET API'si
 description: GroupDocs.Merger for .NET'i kullanarak PPS dosyalarını sorunsuz bir şekilde nasıl birleştireceğinizi öğrenin. Kod örnekleri içeren adım adım kılavuz. Belge işleme becerilerinizi geliştirin.
-type: docs
 weight: 10
 url: /tr/net/presentation-merging/merge-pps-files/
 ---
@@ -61,7 +60,7 @@ Evet, GroupDocs.Merger, DOCX, PDF, XLSX ve daha fazlası dahil olmak üzere çe�
 ### GroupDocs.Merger, belge birleştirme işlemlerinin toplu işlenmesi için uygun mudur?
 Kesinlikle, birden fazla belgeyi aynı anda birleştirmek amacıyla toplu işleme görevleri için GroupDocs.Merger'dan yararlanabilirsiniz.
 ### GroupDocs.Merger for .NET'in tam belgelerini nerede bulabilirim?
- Kapsamlı belgeler mevcuttur[Burada](https://reference.groupdocs.com/merger/net/).
+ Kapsamlı belgeler mevcuttur[Burada](https://tutorials.groupdocs.com/merger/net/).
 ### GroupDocs.Merger for .NET için nasıl geçici lisans alabilirim?
  adresinden geçici lisans alabilirsiniz.[Burada](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs sorun giderme ve sorgular için destek sağlıyor mu?

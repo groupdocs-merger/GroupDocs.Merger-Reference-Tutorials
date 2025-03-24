@@ -3,7 +3,6 @@ title: دمج ملفات VSX
 linktitle: دمج ملفات VSX
 second_title: GroupDocs.Merger .NET API
 description: تعرف على كيفية دمج ملفات VSX بسهولة باستخدام GroupDocs.Merger لـ .NET. يعمل هذا الدليل الشامل على تبسيط مهام معالجة المستندات.
-type: docs
 weight: 17
 url: /ar/net/visio-merging/merge-vsx-files/
 ---
@@ -12,7 +11,7 @@ url: /ar/net/visio-merging/merge-vsx-files/
 ## المتطلبات الأساسية
 قبل أن نبدأ، تأكد من إعداد المتطلبات الأساسية التالية:
 - بيئة التطوير: قم بتثبيت Visual Studio أو IDE آخر لتطوير .NET.
--  GroupDocs.Merger لـ .NET: احصل على واجهة برمجة التطبيقات (API) من[GroupDocs.Merger لوثائق .NET](https://reference.groupdocs.com/merger/net/).
+-  GroupDocs.Merger لـ .NET: احصل على واجهة برمجة التطبيقات (API) من[GroupDocs.Merger لوثائق .NET](https://tutorials.groupdocs.com/merger/net/).
 - نماذج ملفات VSX: قم بإعداد ملفات VSX التي تنوي دمجها لأغراض الاختبار.
 
 ## استيراد مساحات الأسماء

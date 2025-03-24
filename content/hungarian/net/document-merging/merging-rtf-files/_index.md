@@ -3,7 +3,6 @@ title: RTF fájlok egyesítése
 linktitle: RTF fájlok egyesítése
 second_title: GroupDocs.Merger .NET API
 description: Tanulja meg, hogyan egyesíthet könnyedén RTF-fájlokat .NET-ben a GroupDocs.Merger segítségével a zökkenőmentes dokumentumfeldolgozás érdekében.
-type: docs
 weight: 21
 url: /hu/net/document-merging/merging-rtf-files/
 ---
@@ -61,7 +60,7 @@ Igen, a GroupDocs.Merger támogatja a különféle dokumentumformátumok, közt�
 ### Alkalmas-e a GroupDocs.Merger nagyszabású dokumentumfeldolgozásra?
 Természetesen a GroupDocs.Merger célja a nagy dokumentumok hatékony kezelése.
 ### Hol találok további dokumentációt és támogatást a GroupDocs.Mergerhez?
- Meglátogatni a[dokumentáció](https://reference.groupdocs.com/merger/net/) és[támogatói fórum](https://forum.groupdocs.com/c/merger/32) részletes útmutatásért és segítségért.
+ Meglátogatni a[dokumentáció](https://tutorials.groupdocs.com/merger/net/) és[támogatói fórum](https://forum.groupdocs.com/c/merger/32) részletes útmutatásért és segítségért.
 ### Kipróbálhatom a GroupDocs.Mergert vásárlás előtt?
  Igen, felfedezheti a[ingyenes próbaverzió](https://releases.groupdocs.com/) GroupDocs.Merger.
 ### Hogyan szerezhetek ideiglenes licencet a GroupDocs.Merger számára?

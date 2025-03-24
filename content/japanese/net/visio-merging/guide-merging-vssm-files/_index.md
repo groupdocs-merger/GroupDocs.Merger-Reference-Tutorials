@@ -3,7 +3,6 @@ title: VSSM ファイルのマージに関するガイド
 linktitle: VSSM ファイルのマージに関するガイド
 second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger for .NET を使用して VSSM ファイルを簡単にマージする方法を学びます。 C# 開発者向けのステップバイステップ ガイド。
-type: docs
 weight: 13
 url: /ja/net/visio-merging/guide-merging-vssm-files/
 ---
@@ -53,7 +52,7 @@ GroupDocs.Merger for .NET を使用して VSSM ファイルが正常にマージ
 ### GroupDocs.Merger は大規模なドキュメント処理に適していますか?
 はい、GroupDocs.Merger はパフォーマンスが最適化されており、大きなドキュメントを効率的に処理できます。
 ### GroupDocs.Merger の詳細なドキュメントはどこで見つけられますか?
-参照するには[ドキュメンテーション](https://reference.groupdocs.com/merger/net/)総合的な指導を行います。
+参照するには[ドキュメンテーション](https://tutorials.groupdocs.com/merger/net/)総合的な指導を行います。
 ### GroupDocs 製品のテクニカル サポートを受けるにはどうすればよいですか?
 訪問[GroupDocs サポートフォーラム](https://forum.groupdocs.com/c/merger/32)支援と議論のため。
 ### GroupDocs は評価用の無料トライアルを提供していますか?

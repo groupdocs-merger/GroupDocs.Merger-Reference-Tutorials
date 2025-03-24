@@ -3,7 +3,6 @@ title: Gabungkan File XLTX
 linktitle: Gabungkan File XLTX
 second_title: GroupDocs.Merger .NET API
 description: Pelajari cara menggabungkan file XLTX dengan mudah. Mulai gabungkan file XLTX dan sederhanakan tugas manajemen dokumen Anda secara efisien.
-type: docs
 weight: 17
 url: /id/net/spreadsheet-merging/merge-xltx-files/
 ---
@@ -63,4 +62,4 @@ Ya, GroupDocs.Merger untuk .NET tidak memerlukan Microsoft Excel untuk diinstal 
 ### Apakah GroupDocs.Merger for .NET mempertahankan pemformatan selama proses penggabungan?
 Ya, GroupDocs.Merger memastikan bahwa pemformatan dan integritas data tetap terjaga saat menggabungkan file XLTX.
 ### Di mana saya dapat menemukan lebih banyak dukungan atau dokumentasi untuk GroupDocs.Merger untuk .NET?
- Mengunjungi[GroupDocs.Forum penggabungan](https://forum.groupdocs.com/c/merger/32) untuk dukungan dan lihat[dokumentasi](https://reference.groupdocs.com/merger/net/) untuk panduan rinci.
+ Mengunjungi[GroupDocs.Forum penggabungan](https://forum.groupdocs.com/c/merger/32) untuk dukungan dan lihat[dokumentasi](https://tutorials.groupdocs.com/merger/net/) untuk panduan rinci.

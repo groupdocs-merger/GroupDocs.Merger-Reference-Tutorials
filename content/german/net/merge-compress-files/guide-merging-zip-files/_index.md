@@ -3,7 +3,6 @@ title: Anleitung zum Zusammenführen von ZIP-Dateien
 linktitle: Anleitung zum Zusammenführen von ZIP-Dateien
 second_title: GroupDocs.Merger .NET API
 description: Erfahren Sie, wie Sie ZIP-Dateien mit GroupDocs.Merger für .NET programmgesteuert zusammenführen. Dieses Tutorial bietet eine ausführliche Anleitung für Entwickler.
-type: docs
 weight: 12
 url: /de/net/merge-compress-files/guide-merging-zip-files/
 ---

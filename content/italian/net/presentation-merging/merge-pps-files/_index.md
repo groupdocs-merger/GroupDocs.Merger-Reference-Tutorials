@@ -3,7 +3,6 @@ title: Unisci file PPS
 linktitle: Unisci file PPS
 second_title: API GroupDocs.Merger .NET
 description: Scopri come unire file PPS senza problemi utilizzando GroupDocs.Merger per .NET. Guida passo passo con esempi di codice. Migliora le tue capacità di manipolazione dei documenti.
-type: docs
 weight: 10
 url: /it/net/presentation-merging/merge-pps-files/
 ---
@@ -61,7 +60,7 @@ Sì, GroupDocs.Merger supporta l'unione di vari formati di documenti tra cui DOC
 ### GroupDocs.Merger è adatto per l'elaborazione batch di fusioni di documenti?
 Assolutamente, puoi sfruttare GroupDocs.Merger per attività di elaborazione batch per unire più documenti contemporaneamente.
 ### Dove posso trovare la documentazione completa per GroupDocs.Merger per .NET?
- La documentazione completa è disponibile[Qui](https://reference.groupdocs.com/merger/net/).
+ La documentazione completa è disponibile[Qui](https://tutorials.groupdocs.com/merger/net/).
 ### Come posso ottenere una licenza temporanea per GroupDocs.Merger per .NET?
  Puoi ottenere una licenza temporanea da[Qui](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs fornisce supporto per la risoluzione dei problemi e le domande?

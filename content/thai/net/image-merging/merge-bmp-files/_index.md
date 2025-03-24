@@ -3,7 +3,6 @@ title: รวมไฟล์ BMP
 linktitle: รวมไฟล์ BMP
 second_title: GroupDocs.Merger .NET API
 description: เรียนรู้วิธีผสานไฟล์ BMP โดยใช้ GroupDocs.Merger สำหรับ .NET ด้วยบทช่วยสอนที่ครอบคลุมนี้ พัฒนาแอพพลิเคชั่น .NET ของคุณอย่างมีประสิทธิภาพ
-type: docs
 weight: 10
 url: /th/net/image-merging/merge-bmp-files/
 ---

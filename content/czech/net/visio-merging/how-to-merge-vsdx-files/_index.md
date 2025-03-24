@@ -3,7 +3,6 @@ title: Jak sloučit soubory VSDX
 linktitle: Jak sloučit soubory VSDX
 second_title: GroupDocs.Merger .NET API
 description: Naučte se, jak programově sloučit soubory VSDX pomocí GroupDocs.Merger for .NET. Tento kurz poskytuje podrobné pokyny s ukázkami kódu.
-type: docs
 weight: 12
 url: /cs/net/visio-merging/how-to-merge-vsdx-files/
 ---
@@ -59,7 +58,7 @@ Ano, GroupDocs.Merger podporuje slučování různých formátů včetně PDF, W
 ### Je GroupDocs.Merger for .NET kompatibilní s .NET Core?
 Ano, GroupDocs.Merger for .NET je kompatibilní s .NET Core spolu s tradičním .NET Framework.
 ### Kde najdu podrobnou dokumentaci k GroupDocs.Merger pro .NET?
- Viz komplexní[dokumentace](https://reference.groupdocs.com/merger/net/) pro GroupDocs.Merger pro .NET.
+ Viz komplexní[dokumentace](https://tutorials.groupdocs.com/merger/net/) pro GroupDocs.Merger pro .NET.
 ### Jak mohu získat dočasnou licenci pro GroupDocs.Merger for .NET?
  Dočasnou licenci můžete získat od[dočasná licenční stránka](https://purchase.groupdocs.com/temporary-license/).
 ### Jaké možnosti podpory jsou k dispozici pro GroupDocs.Merger for .NET?

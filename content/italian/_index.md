@@ -3,7 +3,6 @@ title: Unisci e dividi documenti senza sforzo con GroupDocs.Merger
 linktitle: Esercitazioni su GroupDocs.Merger
 additionalTitle: Riferimenti API GroupDocs
 description: Unisci, dividi e comprimi facilmente documenti su piattaforme .NET e Java con i nostri tutorial degli esperti su GroupDocs.Merger. Sblocca la gestione dei file senza soluzione di continuità!
-type: docs
 weight: 11
 url: /it/
 is_root: true

@@ -3,7 +3,6 @@ title: Sloučení souborů VSTX s GroupDocs.Merger pro .NET
 linktitle: Sloučení souborů VSTX s GroupDocs.Merger pro .NET
 second_title: GroupDocs.Merger .NET API
 description: Přečtěte si, jak sloučit soubory VSTX pomocí GroupDocs.Merger for .NET. Postupujte podle tohoto podrobného průvodce pro efektivní manipulaci s dokumenty v C#.
-type: docs
 weight: 16
 url: /cs/net/visio-merging/merging-vstx-files/
 ---
@@ -64,4 +63,4 @@ Během operace sloučení můžete určit různé možnosti, jako jsou čísla s
 ### Je GroupDocs.Merger for .NET vhodný pro rozsáhlé úlohy zpracování dokumentů?
 Ano, GroupDocs.Merger je optimalizován pro efektivní manipulaci s velkými dokumenty a dávkové operace.
 ### Kde najdu další podporu nebo dokumentaci pro GroupDocs.Merger for .NET?
- Navštivte[Fórum GroupDocs.Merger](https://forum.groupdocs.com/c/merger/32) nebo odkazovat na[dokumentace](https://reference.groupdocs.com/merger/net/) pro komplexní zdroje.
+ Navštivte[Fórum GroupDocs.Merger](https://forum.groupdocs.com/c/merger/32) nebo odkazovat na[dokumentace](https://tutorials.groupdocs.com/merger/net/) pro komplexní zdroje.

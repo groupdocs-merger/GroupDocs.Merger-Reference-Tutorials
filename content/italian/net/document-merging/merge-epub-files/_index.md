@@ -3,7 +3,6 @@ title: Unisci file EPUB
 linktitle: Unisci file EPUB
 second_title: API GroupDocs.Merger .NET
 description: Scopri come unire i file EPUB a livello di codice utilizzando GroupDocs.Merger per .NET. Segui il nostro tutorial passo dopo passo.
-type: docs
 weight: 17
 url: /it/net/document-merging/merge-epub-files/
 ---

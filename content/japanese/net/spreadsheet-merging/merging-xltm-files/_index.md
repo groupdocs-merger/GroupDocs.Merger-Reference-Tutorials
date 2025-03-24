@@ -3,7 +3,6 @@ title: XLTM ファイルの結合
 linktitle: XLTM ファイルの結合
 second_title: GroupDocs.Merger .NET API
 description: XLTM ファイルをプログラムでマージする方法を学びます。コード例付きのステップバイステップ ガイド。
-type: docs
 weight: 16
 url: /ja/net/spreadsheet-merging/merging-xltm-files/
 ---
@@ -61,6 +60,6 @@ Console.WriteLine("\nXLTM files merge completed successfully. \nCheck output in 
 ### GroupDocs.Merger の無料トライアルはありますか?
 はい、GroupDocs.Mergerの無料トライアルをご利用いただけます。[ここ](https://releases.groupdocs.com/).
 ### GroupDocs.Merger のドキュメントはどこにありますか?
-GroupDocs.Merger の完全なドキュメントを参照できます。[ここ](https://reference.groupdocs.com/merger/net/).
+GroupDocs.Merger の完全なドキュメントを参照できます。[ここ](https://tutorials.groupdocs.com/merger/net/).
 ### GroupDocs.Merger のテクニカル サポートはどこで受けられますか?
 技術的な支援とサポートについては、GroupDocs.Merger フォーラムにアクセスしてください。[ここ](https://forum.groupdocs.com/c/merger/32).

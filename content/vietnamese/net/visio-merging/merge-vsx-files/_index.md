@@ -3,7 +3,6 @@ title: Hợp nhất các tệp VSX
 linktitle: Hợp nhất các tệp VSX
 second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp VSX một cách dễ dàng bằng GroupDocs.Merger cho .NET. Hướng dẫn toàn diện này giúp đơn giản hóa các tác vụ thao tác tài liệu.
-type: docs
 weight: 17
 url: /vi/net/visio-merging/merge-vsx-files/
 ---
@@ -12,7 +11,7 @@ Trong hướng dẫn này, chúng ta sẽ khám phá cách hợp nhất các t�
 ## Điều kiện tiên quyết
 Trước khi chúng tôi bắt đầu, hãy đảm bảo bạn đã thiết lập các điều kiện tiên quyết sau:
 - Môi trường phát triển: Cài đặt Visual Studio hoặc IDE khác để phát triển .NET.
--  GroupDocs.Merger for .NET: Lấy API từ[Tài liệu GroupDocs.Merger cho .NET](https://reference.groupdocs.com/merger/net/).
+-  GroupDocs.Merger for .NET: Lấy API từ[Tài liệu GroupDocs.Merger cho .NET](https://tutorials.groupdocs.com/merger/net/).
 - Tệp VSX mẫu: Chuẩn bị các tệp VSX bạn định hợp nhất cho mục đích thử nghiệm.
 
 ## Nhập không gian tên

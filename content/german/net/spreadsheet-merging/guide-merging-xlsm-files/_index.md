@@ -3,7 +3,6 @@ title: Anleitung zum Zusammenführen von XLSM-Dateien
 linktitle: Anleitung zum Zusammenführen von XLSM-Dateien
 second_title: GroupDocs.Merger .NET API
 description: Führen Sie XLSM-Dateien nahtlos mit GroupDocs.Merger für .NET zusammen. Kombinieren Sie Excel-Arbeitsmappen effizient programmgesteuert. Verbessern Sie Ihre Möglichkeiten zur Dokumentbearbeitung.
-type: docs
 weight: 13
 url: /de/net/spreadsheet-merging/guide-merging-xlsm-files/
 ---

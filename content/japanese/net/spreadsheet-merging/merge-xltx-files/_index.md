@@ -3,7 +3,6 @@ title: XLTX ファイルを結合する
 linktitle: XLTX ファイルを結合する
 second_title: GroupDocs.Merger .NET API
 description: XLTX ファイルを簡単にマージする方法を学びましょう。 XLTX ファイルのマージを開始し、ドキュメント管理タスクを効率的に合理化します。
-type: docs
 weight: 17
 url: /ja/net/spreadsheet-merging/merge-xltx-files/
 ---
@@ -63,4 +62,4 @@ Console.WriteLine("\nXLTX files merge completed successfully. \nCheck output in 
 ### GroupDocs.Merger for .NET は、マージ プロセス中に書式設定を保持しますか?
 はい、GroupDocs.Merger は、XLTX ファイルをマージするときにフォーマットとデータの整合性が維持されることを保証します。
 ### GroupDocs.Merger for .NET のサポートやドキュメントはどこで入手できますか?
-訪問[GroupDocs.Merger フォーラム](https://forum.groupdocs.com/c/merger/32)サポートについては、を参照してください。[ドキュメンテーション](https://reference.groupdocs.com/merger/net/)詳細なガイダンスについては、こちらをご覧ください。
+訪問[GroupDocs.Merger フォーラム](https://forum.groupdocs.com/c/merger/32)サポートについては、を参照してください。[ドキュメンテーション](https://tutorials.groupdocs.com/merger/net/)詳細なガイダンスについては、こちらをご覧ください。

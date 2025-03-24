@@ -3,7 +3,6 @@ title: TIFF फ़ाइलें मर्ज करना
 linktitle: TIFF फ़ाइलें मर्ज करना
 second_title: GroupDocs.Merger .NET API
 description: .NET के लिए GroupDocs.Merger का उपयोग करके TIFF फ़ाइलों को मर्ज करना सीखें। अपने .NET अनुप्रयोगों में दस्तावेज़ों को सहजता से मर्ज, विभाजित और संशोधित करें।
-type: docs
 weight: 16
 url: /hi/net/image-merging/merging-tiff-files/
 ---
@@ -60,6 +59,6 @@ Console.WriteLine("\nTIFF files merge completed successfully. \nCheck output in 
 ### क्या GroupDocs.Merger मूल्यांकन के लिए परीक्षण संस्करण प्रदान करता है?
  हां, आप यहां से GroupDocs.Merger का निःशुल्क परीक्षण एक्सेस कर सकते हैं[यहाँ](https://releases.groupdocs.com/).
 ### मैं GroupDocs.Merger के लिए व्यापक दस्तावेज़ कहां पा सकता हूं?
- दस्तावेज़ देखें[यहाँ](https://reference.groupdocs.com/merger/net/) विस्तृत API संदर्भ और मार्गदर्शिका के लिए.
+ दस्तावेज़ देखें[यहाँ](https://tutorials.groupdocs.com/merger/net/) विस्तृत API संदर्भ और मार्गदर्शिका के लिए.
 ### मैं GroupDocs.Merger के लिए समर्थन कैसे प्राप्त कर सकता हूं?
  ग्रुपडॉक्स समुदाय फोरम पर जाएँ[यहाँ](https://forum.groupdocs.com/c/merger/32) समर्थन और चर्चा के लिए।

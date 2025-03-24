@@ -3,7 +3,6 @@ title: Hợp nhất các tệp OTP
 linktitle: Hợp nhất các tệp OTP
 second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp OTP bằng GroupDocs.Merger cho .NET. Hướng dẫn từng bước này sẽ hướng dẫn bạn thực hiện quy trình một cách liền mạch.
-type: docs
 weight: 14
 url: /vi/net/presentation-merging/merging-otp-files/
 ---

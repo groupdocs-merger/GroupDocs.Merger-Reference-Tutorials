@@ -3,7 +3,6 @@ title: Łączenie plików PDF
 linktitle: Łączenie plików PDF
 second_title: GroupDocs.Merger API .NET
 description: Dowiedz się, jak programowo łączyć pliki PDF w platformie .NET przy użyciu programu GroupDocs.Merger w celu płynnego zarządzania dokumentami.
-type: docs
 weight: 19
 url: /pl/net/document-merging/merging-pdf-files/
 ---

@@ -3,7 +3,6 @@ title: Fusión de hojas de cálculo
 linktitle: Fusión de hojas de cálculo
 second_title: API GroupDocs.Merger .NET
 description: Combine sin esfuerzo archivos XLAM, XLS, XLSB, XLSM, XLSX, XLT, XLTM, XLTX y ODS en .NET usando GroupDocs.Merger. Simplifique las tareas de gestión de documentos.
-type: docs
 weight: 23
 url: /es/net/spreadsheet-merging/
 ---

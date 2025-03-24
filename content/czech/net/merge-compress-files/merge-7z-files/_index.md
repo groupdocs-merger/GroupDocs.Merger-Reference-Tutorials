@@ -3,7 +3,6 @@ title: Jak sloučit soubory 7z
 linktitle: Jak sloučit soubory 7z
 second_title: GroupDocs.Merger .NET API
 description: Bez námahy slučujte soubory 7z pomocí GroupDocs.Merger pro .NET. Postupujte podle našeho podrobného průvodce a plynule zkombinujte více archivů do jednoho.
-type: docs
 weight: 10
 url: /cs/net/merge-compress-files/merge-7z-files/
 ---

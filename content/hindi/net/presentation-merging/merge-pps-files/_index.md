@@ -3,7 +3,6 @@ title: पीपीएस फ़ाइलें मर्ज करें
 linktitle: पीपीएस फ़ाइलें मर्ज करें
 second_title: GroupDocs.Merger .NET API
 description: .NET के लिए GroupDocs.Merger का उपयोग करके पीपीएस फ़ाइलों को निर्बाध रूप से मर्ज करना सीखें। कोड उदाहरणों के साथ चरण-दर-चरण मार्गदर्शिका। अपने दस्तावेज़ हेरफेर कौशल को बढ़ाएँ।
-type: docs
 weight: 10
 url: /hi/net/presentation-merging/merge-pps-files/
 ---
@@ -61,7 +60,7 @@ Console.WriteLine("\nPPS files merge completed successfully. \nCheck output in {
 ### क्या GroupDocs.Merger दस्तावेज़ विलय के बैच प्रसंस्करण के लिए उपयुक्त है?
 बिल्कुल, आप एक साथ कई दस्तावेजों को मर्ज करने के लिए बैच प्रोसेसिंग कार्यों के लिए GroupDocs.Merger का लाभ उठा सकते हैं।
 ### मैं .NET के लिए GroupDocs.Merger का पूरा दस्तावेज़ कहां पा सकता हूं?
- विस्तृत दस्तावेज उपलब्ध है[यहाँ](https://reference.groupdocs.com/merger/net/).
+ विस्तृत दस्तावेज उपलब्ध है[यहाँ](https://tutorials.groupdocs.com/merger/net/).
 ### मैं .NET के लिए GroupDocs.Merger हेतु अस्थायी लाइसेंस कैसे प्राप्त कर सकता हूं?
  आप यहां से अस्थायी लाइसेंस प्राप्त कर सकते हैं[यहाँ](https://purchase.groupdocs.com/temporary-license/).
 ### क्या ग्रुपडॉक्स समस्या निवारण और प्रश्नों के लिए समर्थन प्रदान करता है?

@@ -3,7 +3,6 @@ title: Menggabungkan File ODS
 linktitle: Menggabungkan File ODS
 second_title: GroupDocs.Merger .NET API
 description: Pelajari cara menggabungkan file ODS dengan mudah. Ikuti panduan langkah demi langkah kami untuk manipulasi dokumen yang lancar.
-type: docs
 weight: 18
 url: /id/net/spreadsheet-merging/merging-ods-files/
 ---

@@ -3,7 +3,6 @@ title: Menggabungkan File XLTM
 linktitle: Menggabungkan File XLTM
 second_title: GroupDocs.Merger .NET API
 description: Pelajari cara menggabungkan file XLTM secara terprogram. Panduan langkah demi langkah dengan contoh kode.
-type: docs
 weight: 16
 url: /id/net/spreadsheet-merging/merging-xltm-files/
 ---
@@ -61,6 +60,6 @@ Ya, GroupDocs.Merger mendukung penggabungan berbagai format dokumen seperti DOCX
 ### Apakah ada uji coba gratis yang tersedia untuk GroupDocs.Merger?
  Ya, Anda dapat mengakses uji coba gratis GroupDocs.Merger[Di Sini](https://releases.groupdocs.com/).
 ### Di mana saya dapat menemukan dokumentasi untuk GroupDocs.Merger?
-Anda dapat merujuk ke dokumentasi lengkap untuk GroupDocs.Merger[Di Sini](https://reference.groupdocs.com/merger/net/).
+Anda dapat merujuk ke dokumentasi lengkap untuk GroupDocs.Merger[Di Sini](https://tutorials.groupdocs.com/merger/net/).
 ### Di mana saya bisa mendapatkan dukungan teknis untuk GroupDocs.Merger?
  Untuk bantuan dan dukungan teknis, kunjungi forum GroupDocs.Merger[Di Sini](https://forum.groupdocs.com/c/merger/32).

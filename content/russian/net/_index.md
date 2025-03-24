@@ -1,7 +1,6 @@
 ---
 title: Учебники и примеры GroupDocs.Merger для .NET
 linktitle: Учебные пособия по GroupDocs.Merger для .NET
-type: docs
 weight: 10
 url: /ru/net/
 description: Легко объединяйте и сжимайте файлы различных форматов с помощью GroupDocs.Merger .NET. Изучите пошаговые руководства по объединению изображений, документов и многого другого!

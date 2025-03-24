@@ -3,7 +3,6 @@ title: RTF Dosyalarını Birleştirme
 linktitle: RTF Dosyalarını Birleştirme
 second_title: GroupDocs.Merger .NET API'si
 description: Sorunsuz belge işleme için GroupDocs.Merger'ı kullanarak RTF dosyalarını .NET'te zahmetsizce nasıl birleştireceğinizi öğrenin.
-type: docs
 weight: 21
 url: /tr/net/document-merging/merging-rtf-files/
 ---
@@ -61,7 +60,7 @@ Evet, GroupDocs.Merger, DOCX, XLSX, PDF ve daha fazlasını içeren çeşitli be
 ### GroupDocs.Merger büyük ölçekli belge işlemeye uygun mu?
 GroupDocs.Merger kesinlikle büyük belgeleri verimli bir şekilde işlemek için tasarlanmıştır.
 ### GroupDocs.Merger için daha fazla belge ve desteği nerede bulabilirim?
- Ziyaret edin[dokümantasyon](https://reference.groupdocs.com/merger/net/) Ve[destek Forumu](https://forum.groupdocs.com/c/merger/32) Ayrıntılı rehberlik ve yardım için.
+ Ziyaret edin[dokümantasyon](https://tutorials.groupdocs.com/merger/net/) Ve[destek Forumu](https://forum.groupdocs.com/c/merger/32) Ayrıntılı rehberlik ve yardım için.
 ### Satın almadan önce GroupDocs.Merger'ı deneyebilir miyim?
  Evet, keşfedebilirsiniz[ücretsiz deneme](https://releases.groupdocs.com/) GroupDocs.Merger'ın.
 ### GroupDocs.Merger için geçici lisansı nasıl edinebilirim?

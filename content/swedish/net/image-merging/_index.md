@@ -3,7 +3,6 @@ title: Bildsammanslagning
 linktitle: Bildsammanslagning
 second_title: GroupDocs.Merger .NET API
 description: Slå ihop BMP-, GIF-, PNG-, SVG-, SVGZ-, TIF- och TIFF-filer sömlöst med GroupDocs.Merger .NET. Integrera dokumenthantering effektivt i dina .NET-applikationer.
-type: docs
 weight: 21
 url: /sv/net/image-merging/
 ---

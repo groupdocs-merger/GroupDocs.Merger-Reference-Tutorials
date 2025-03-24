@@ -3,7 +3,6 @@ title: Cách hợp nhất các tệp VSDX
 linktitle: Cách hợp nhất các tệp VSDX
 second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp VSDX theo chương trình bằng GroupDocs.Merger cho .NET. Hướng dẫn này cung cấp hướng dẫn từng bước với các mẫu mã.
-type: docs
 weight: 12
 url: /vi/net/visio-merging/how-to-merge-vsdx-files/
 ---
@@ -59,7 +58,7 @@ Có, GroupDocs.Merger hỗ trợ hợp nhất nhiều định dạng khác nhau 
 ### GroupDocs.Merger cho .NET có tương thích với .NET Core không?
 Có, GroupDocs.Merger cho .NET tương thích với .NET Core cùng với .NET Framework truyền thống.
 ### Tôi có thể tìm tài liệu chi tiết về GroupDocs.Merger cho .NET ở đâu?
- Tham khảo toàn diện[tài liệu](https://reference.groupdocs.com/merger/net/) cho GroupDocs.Merger cho .NET.
+ Tham khảo toàn diện[tài liệu](https://tutorials.groupdocs.com/merger/net/) cho GroupDocs.Merger cho .NET.
 ### Làm cách nào tôi có thể nhận được giấy phép tạm thời cho GroupDocs.Merger cho .NET?
  Bạn có thể nhận được giấy phép tạm thời từ[trang giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/).
 ### Những tùy chọn hỗ trợ nào có sẵn cho GroupDocs.Merger dành cho .NET?

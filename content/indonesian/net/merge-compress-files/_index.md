@@ -3,7 +3,6 @@ title: Gabungkan File Kompres
 linktitle: Gabungkan File Kompres
 second_title: GroupDocs.Merger .NET API
 description: Gabungkan dan kompres berbagai format file tutorial dengan mudah. Pelajari cara menggabungkan file 7z, TAR, dan ZIP secara mulus dengan panduan langkah demi langkah kami.
-type: docs
 weight: 20
 url: /id/net/merge-compress-files/
 ---

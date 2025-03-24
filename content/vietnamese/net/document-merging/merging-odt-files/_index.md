@@ -3,7 +3,6 @@ title: Hợp nhất các tệp ODT
 linktitle: Hợp nhất các tệp ODT
 second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp ODT bằng GroupDocs.Merger cho .NET một cách dễ dàng. Nâng cao khả năng quản lý tài liệu của bạn với thư viện mạnh mẽ này.
-type: docs
 weight: 16
 url: /vi/net/document-merging/merging-odt-files/
 ---

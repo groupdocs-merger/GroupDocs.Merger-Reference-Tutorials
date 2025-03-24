@@ -3,7 +3,6 @@ title: VSDM-bestanden samenvoegen
 linktitle: VSDM-bestanden samenvoegen
 second_title: GroupDocs.Merger .NET API
 description: Leer hoe u VSDM-bestanden samenvoegt met GroupDocs.Merger voor .NET. Vereenvoudig uw documentbeheertaken met deze gebruiksvriendelijke bibliotheek.
-type: docs
 weight: 11
 url: /nl/net/visio-merging/merging-vsdm-files/
 ---

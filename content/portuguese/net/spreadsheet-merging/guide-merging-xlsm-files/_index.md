@@ -3,7 +3,6 @@ title: Guia para mesclar arquivos XLSM
 linktitle: Guia para mesclar arquivos XLSM
 second_title: API GroupDocs.Merger .NET
 description: Mesclar arquivos XLSM perfeitamente com GroupDocs.Merger for .NET. Combine pastas de trabalho do Excel de maneira eficiente e programática. Aprimore seus recursos de manipulação de documentos.
-type: docs
 weight: 13
 url: /pt/net/spreadsheet-merging/guide-merging-xlsm-files/
 ---

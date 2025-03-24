@@ -1,7 +1,6 @@
 ---
 title: Poradniki i przykłady GroupDocs.Merger dla .NET
 linktitle: GroupDocs.Merger dla samouczków .NET
-type: docs
 weight: 10
 url: /pl/net/
 description: Bez wysiłku łącz i kompresuj różne formaty plików za pomocą GroupDocs.Merger .NET. Poznaj szczegółowe samouczki dotyczące łączenia obrazów, dokumentów i nie tylko!

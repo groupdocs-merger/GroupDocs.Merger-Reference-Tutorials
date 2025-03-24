@@ -3,7 +3,6 @@ title: Fusionner les fichiers VSTM
 linktitle: Fusionner les fichiers VSTM
 second_title: API GroupDocs.Merger .NET
 description: Découvrez comment fusionner des fichiers VSTM sans effort à l'aide de GroupDocs.Merger pour .NET. Suivez notre tutoriel étape par étape et vos capacités de manipulation de documents.
-type: docs
 weight: 15
 url: /fr/net/visio-merging/merge-vstm-files/
 ---

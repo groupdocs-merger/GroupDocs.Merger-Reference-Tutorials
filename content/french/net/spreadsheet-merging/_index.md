@@ -3,7 +3,6 @@ title: Fusion de feuilles de calcul
 linktitle: Fusion de feuilles de calcul
 second_title: API GroupDocs.Merger .NET
 description: Fusionnez sans effort les fichiers XLAM, XLS, XLSB, XLSM, XLSX, XLT, XLTM, XLTX et ODS dans .NET à l'aide de GroupDocs.Merger. Simplifiez les tâches de gestion des documents.
-type: docs
 weight: 23
 url: /fr/net/spreadsheet-merging/
 ---

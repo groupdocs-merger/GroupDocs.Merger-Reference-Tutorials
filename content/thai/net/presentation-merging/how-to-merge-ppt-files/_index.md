@@ -3,7 +3,6 @@ title: วิธีการรวมไฟล์ PPT
 linktitle: วิธีการรวมไฟล์ PPT
 second_title: GroupDocs.Merger .NET API
 description: เรียนรู้วิธีผสานไฟล์ PowerPoint (PPT) โดยใช้ GroupDocs.Merger สำหรับ .NET ได้อย่างง่ายดาย ปรับปรุงแอปพลิเคชัน .NET ของคุณด้วย API อันทรงพลังนี้
-type: docs
 weight: 12
 url: /th/net/presentation-merging/how-to-merge-ppt-files/
 ---

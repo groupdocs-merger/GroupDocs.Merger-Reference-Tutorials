@@ -3,7 +3,6 @@ title: Sloučit soubory PPS
 linktitle: Sloučit soubory PPS
 second_title: GroupDocs.Merger .NET API
 description: Naučte se, jak hladce sloučit soubory PPS pomocí GroupDocs.Merger for .NET. Podrobný průvodce s příklady kódu. Vylepšete své dovednosti v manipulaci s dokumenty.
-type: docs
 weight: 10
 url: /cs/net/presentation-merging/merge-pps-files/
 ---
@@ -61,7 +60,7 @@ Ano, GroupDocs.Merger podporuje slučování různých formátů dokumentů vče
 ### Je GroupDocs.Merger vhodný pro dávkové zpracování sloučení dokumentů?
 Rozhodně můžete využít GroupDocs.Merger pro úlohy dávkového zpracování ke sloučení více dokumentů současně.
 ### Kde najdu úplnou dokumentaci k GroupDocs.Merger for .NET?
- K dispozici je obsáhlá dokumentace[tady](https://reference.groupdocs.com/merger/net/).
+ K dispozici je obsáhlá dokumentace[tady](https://tutorials.groupdocs.com/merger/net/).
 ### Jak mohu získat dočasnou licenci pro GroupDocs.Merger for .NET?
  Dočasnou licenci můžete získat od[tady](https://purchase.groupdocs.com/temporary-license/).
 ### Poskytuje GroupDocs podporu pro odstraňování problémů a dotazy?

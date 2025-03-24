@@ -3,7 +3,6 @@ title: Объединение файлов PPSX
 linktitle: Объединение файлов PPSX
 second_title: GroupDocs.Merger .NET API
 description: Легко объединяйте файлы PPSX с помощью GroupDocs.Merger для .NET. Следуйте нашему пошаговому руководству, чтобы автоматизировать задачи по объединению файлов! Улучшите рабочий процесс управления документами.
-type: docs
 weight: 11
 url: /ru/net/presentation-merging/merging-ppsx-files/
 ---
@@ -55,7 +54,7 @@ Console.WriteLine("\nPPSX files merge completed successfully. \nCheck output in 
 ### Могу ли я объединить зашифрованные файлы PPSX с помощью GroupDocs.Merger?
 GroupDocs.Merger может обрабатывать как зашифрованные, так и защищенные паролем файлы, обеспечивая безопасное манипулирование документами.
 ### Где я могу найти дополнительную поддержку или документацию для GroupDocs.Merger?
- Изучите всестороннюю[документация](https://reference.groupdocs.com/merger/net/) и обратиться к[форум поддержки](https://forum.groupdocs.com/c/merger/32) для оказания помощи.
+ Изучите всестороннюю[документация](https://tutorials.groupdocs.com/merger/net/) и обратиться к[форум поддержки](https://forum.groupdocs.com/c/merger/32) для оказания помощи.
 ### Требуется ли GroupDocs.Merger лицензия для коммерческого использования?
  Да, для коммерческого использования требуется действующая лицензия. Вы можете получить лицензию от[страница покупки](https://purchase.groupdocs.com/buy) или используйте[временная лицензия](https://purchase.groupdocs.com/temporary-license/) для оценки.
 ### Могу ли я попробовать GroupDocs.Merger перед покупкой?

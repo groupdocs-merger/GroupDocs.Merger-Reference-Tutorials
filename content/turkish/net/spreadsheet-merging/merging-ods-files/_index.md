@@ -3,7 +3,6 @@ title: ODS Dosyalarını Birleştirme
 linktitle: ODS Dosyalarını Birleştirme
 second_title: GroupDocs.Merger .NET API'si
 description: ODS dosyalarını zahmetsizce nasıl birleştireceğinizi öğrenin. Kusursuz belge işleme için adım adım kılavuzumuzu izleyin.
-type: docs
 weight: 18
 url: /tr/net/spreadsheet-merging/merging-ods-files/
 ---

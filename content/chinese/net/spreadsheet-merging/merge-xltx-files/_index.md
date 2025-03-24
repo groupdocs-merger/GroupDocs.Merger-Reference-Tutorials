@@ -3,7 +3,6 @@ title: 合并 XLTX 文件
 linktitle: 合并 XLTX 文件
 second_title: GroupDocs.Merger .NET API
 description: 了解如何轻松合并 XLTX 文件。开始合并 XLTX 文件并高效简化您的文档管理任务。
-type: docs
 weight: 17
 url: /zh/net/spreadsheet-merging/merge-xltx-files/
 ---
@@ -63,4 +62,4 @@ Console.WriteLine("\nXLTX files merge completed successfully. \nCheck output in 
 ### GroupDocs.Merger for .NET 在合并过程中是否保留格式？
 是的，GroupDocs.Merger 确保在合并 XLTX 文件时保持格式和数据完整性。
 ### 在哪里可以找到有关 GroupDocs.Merger for .NET 的更多支持或文档？
-参观[GroupDocs.Merger 论坛](https://forum.groupdocs.com/c/merger/32)寻求支持并参阅[文档](https://reference.groupdocs.com/merger/net/)以获取详细指导。
+参观[GroupDocs.Merger 论坛](https://forum.groupdocs.com/c/merger/32)寻求支持并参阅[文档](https://tutorials.groupdocs.com/merger/net/)以获取详细指导。

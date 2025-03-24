@@ -3,7 +3,6 @@ title: Объединение файлов XPS
 linktitle: Объединение файлов XPS
 second_title: GroupDocs.Merger .NET API
 description: Узнайте, как легко объединять файлы XPS с помощью GroupDocs.Merger для .NET. Упростите обработку документов в своих приложениях .NET.
-type: docs
 weight: 20
 url: /ru/net/document-merging/merge-xps-files/
 ---
@@ -52,7 +51,7 @@ Console.WriteLine("\nXPS files merge completed successfully. \nCheck output in {
 ### Могу ли я манипулировать отдельными страницами документов с помощью GroupDocs.Merger?
 Конечно, GroupDocs.Merger позволяет извлекать, удалять, изменять порядок и вращать страницы в документах.
 ### Где я могу найти дополнительную документацию по GroupDocs.Merger для .NET?
- Подробная документация доступна[здесь](https://reference.groupdocs.com/merger/net/).
+ Подробная документация доступна[здесь](https://tutorials.groupdocs.com/merger/net/).
 ### Поддерживает ли GroupDocs.Merger для .NET варианты временного лицензирования?
  Да, временные лицензии можно получить.[здесь](https://purchase.groupdocs.com/temporary-license/).
 ### Как я могу обратиться за помощью или поддержкой, связанной с GroupDocs.Merger?

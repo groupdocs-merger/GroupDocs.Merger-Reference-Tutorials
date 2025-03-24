@@ -3,7 +3,6 @@ title: Gabungkan File DOTX
 linktitle: Gabungkan File DOTX
 second_title: GroupDocs.Merger .NET API
 description: Pelajari cara menggabungkan file DOTX di .NET menggunakan GroupDocs.Merger dengan mudah. Tingkatkan kemampuan manipulasi dokumen Anda.
-type: docs
 weight: 15
 url: /id/net/document-merging/merge-dotx-files/
 ---
@@ -13,7 +12,7 @@ Dalam tutorial ini, kita akan mempelajari cara menggabungkan file DOTX (Word Tem
 Sebelum mendalami tutorial, pastikan Anda memiliki hal berikut:
 - Visual Studio diinstal pada mesin Anda
 - .NET SDK (versi yang kompatibel) diinstal
--  GroupDocs.Merger untuk .NET diinstal (lihat[petunjuk pemasangan](https://reference.groupdocs.com/merger/net/) untuk detailnya)
+-  GroupDocs.Merger untuk .NET diinstal (lihat[petunjuk pemasangan](https://tutorials.groupdocs.com/merger/net/) untuk detailnya)
 - Pengetahuan dasar tentang pemrograman C#
 
 ## Impor Namespace
@@ -58,7 +57,7 @@ Ya, GroupDocs.Merger mendukung penggabungan berbagai format dokumen seperti DOCX
 ### Apakah GroupDocs.Merger kompatibel dengan .NET Core?
 Ya, GroupDocs.Merger kompatibel dengan .NET Framework dan .NET Core.
 ### Di mana saya dapat menemukan dukungan atau dokumentasi tambahan untuk GroupDocs.Merger?
- Anda dapat merujuk ke[Dokumentasi GroupDocs.Merger](https://reference.groupdocs.com/merger/net/) untuk referensi API terperinci dan contoh penggunaan.
+ Anda dapat merujuk ke[Dokumentasi GroupDocs.Merger](https://tutorials.groupdocs.com/merger/net/) untuk referensi API terperinci dan contoh penggunaan.
 ### Apakah GroupDocs.Merger menawarkan uji coba gratis?
  Ya, Anda dapat mengakses a[versi percobaan gratis](https://releases.groupdocs.com/) untuk mengevaluasi GroupDocs.Merger.
 ### Bagaimana saya bisa membeli lisensi untuk GroupDocs.Merger?

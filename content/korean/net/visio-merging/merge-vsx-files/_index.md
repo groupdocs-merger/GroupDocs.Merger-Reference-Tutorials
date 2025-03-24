@@ -3,7 +3,6 @@ title: VSX 파일 병합
 linktitle: VSX 파일 병합
 second_title: GroupDocs.Merger .NET API
 description: .NET용 GroupDocs.Merger를 사용하여 VSX 파일을 손쉽게 병합하는 방법을 알아보세요. 이 포괄적인 가이드는 문서 조작 작업을 단순화합니다.
-type: docs
 weight: 17
 url: /ko/net/visio-merging/merge-vsx-files/
 ---
@@ -12,7 +11,7 @@ url: /ko/net/visio-merging/merge-vsx-files/
 ## 전제 조건
 시작하기 전에 다음 전제 조건이 설정되어 있는지 확인하세요.
 - 개발 환경: .NET 개발을 위해 Visual Studio 또는 다른 IDE를 설치합니다.
--  .NET용 GroupDocs.Merger: 다음에서 API를 얻습니다.[.NET 문서용 GroupDocs.Merger](https://reference.groupdocs.com/merger/net/).
+-  .NET용 GroupDocs.Merger: 다음에서 API를 얻습니다.[.NET 문서용 GroupDocs.Merger](https://tutorials.groupdocs.com/merger/net/).
 - 샘플 VSX 파일: 테스트 목적으로 병합하려는 VSX 파일을 준비합니다.
 
 ## 네임스페이스 가져오기

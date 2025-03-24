@@ -3,7 +3,6 @@ title: Συγχώνευση αρχείων VSX
 linktitle: Συγχώνευση αρχείων VSX
 second_title: GroupDocs.Merger .NET API
 description: Μάθετε πώς να συγχωνεύετε αρχεία VSX χωρίς κόπο χρησιμοποιώντας το GroupDocs.Merger για .NET. Αυτός ο περιεκτικός οδηγός απλοποιεί τις εργασίες χειρισμού εγγράφων.
-type: docs
 weight: 17
 url: /el/net/visio-merging/merge-vsx-files/
 ---
@@ -12,7 +11,7 @@ url: /el/net/visio-merging/merge-vsx-files/
 ## Προαπαιτούμενα
 Πριν ξεκινήσουμε, βεβαιωθείτε ότι έχετε ρυθμίσει τις ακόλουθες προϋποθέσεις:
 - Περιβάλλον ανάπτυξης: Εγκαταστήστε το Visual Studio ή άλλο IDE για ανάπτυξη .NET.
--  GroupDocs.Merger για .NET: Λάβετε το API από το[GroupDocs.Merger for .NET Documentation](https://reference.groupdocs.com/merger/net/).
+-  GroupDocs.Merger για .NET: Λάβετε το API από το[GroupDocs.Merger for .NET Documentation](https://tutorials.groupdocs.com/merger/net/).
 - Δείγμα αρχείων VSX: Προετοιμάστε τα αρχεία VSX που σκοπεύετε να συγχωνεύσετε για δοκιμαστικούς σκοπούς.
 
 ## Εισαγωγή χώρων ονομάτων

@@ -3,7 +3,6 @@ title: 合并 DOT 文件的指南
 linktitle: 合并 DOT 文件的指南
 second_title: GroupDocs.Merger .NET API
 description: 了解如何使用 GroupDocs.Merger for .NET 以编程方式合并 DOT (Graphviz) 文件。轻松合并、组合和操作 DOT 文件。
-type: docs
 weight: 13
 url: /zh/net/document-merging/guide-merging-dot-files/
 ---
@@ -13,7 +12,7 @@ url: /zh/net/document-merging/guide-merging-dot-files/
 在我们开始之前，请确保您具备以下先决条件：
 - C# 和 .NET 编程的基础知识。
 - Visual Studio 安装在您的计算机上。
--  .NET 库的 GroupDocs.Merger。您可以从[.NET 文档的 GroupDocs.Merger](https://reference.groupdocs.com/merger/net/).
+-  .NET 库的 GroupDocs.Merger。您可以从[.NET 文档的 GroupDocs.Merger](https://tutorials.groupdocs.com/merger/net/).
 - 访问要合并的 DOT 文件。
 
 ## 导入命名空间

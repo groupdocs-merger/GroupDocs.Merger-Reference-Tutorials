@@ -3,7 +3,6 @@ title: Slučujte a rozdělujte dokumenty bez námahy s GroupDocs.Merger
 linktitle: Výukové programy GroupDocs.Merger
 additionalTitle: Reference API GroupDocs
 description: Slučujte, rozdělujte a komprimujte dokumenty bez námahy napříč platformami .NET a Java pomocí našich odborných výukových programů na GroupDocs.Merger. Odemkněte bezproblémovou správu souborů!
-type: docs
 weight: 11
 url: /cs/
 is_root: true

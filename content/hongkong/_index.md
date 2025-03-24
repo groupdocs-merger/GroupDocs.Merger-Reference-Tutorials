@@ -3,7 +3,6 @@ title: 使用 GroupDocs.Merger 輕鬆合併和分割文檔
 linktitle: GroupDocs.合併教程
 additionalTitle: GroupDocs API 參考
 description: 透過 GroupDocs.Merger 上的專家教學課程，輕鬆跨 .NET 和 Java 平台合併、分割和壓縮文件。解鎖無縫文件管理！
-type: docs
 weight: 11
 url: /zh-hant/
 is_root: true

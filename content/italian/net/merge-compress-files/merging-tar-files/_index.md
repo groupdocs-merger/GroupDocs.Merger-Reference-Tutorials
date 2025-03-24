@@ -3,7 +3,6 @@ title: Unione di file Tar
 linktitle: Unione di file Tar
 second_title: API GroupDocs.Merger .NET
 description: Scopri come unire i file TAR a livello di codice utilizzando GroupDocs.Merger per .NET. Segui la nostra guida passo passo per gestire gli archivi TAR in modo efficiente.
-type: docs
 weight: 11
 url: /it/net/merge-compress-files/merging-tar-files/
 ---

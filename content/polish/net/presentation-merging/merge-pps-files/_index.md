@@ -3,7 +3,6 @@ title: Scal pliki PPS
 linktitle: Scal pliki PPS
 second_title: GroupDocs.Merger API .NET
 description: Dowiedz się, jak bezproblemowo scalać pliki PPS za pomocą GroupDocs.Merger dla .NET. Przewodnik krok po kroku z przykładami kodu. Zwiększ swoje umiejętności manipulowania dokumentami.
-type: docs
 weight: 10
 url: /pl/net/presentation-merging/merge-pps-files/
 ---
@@ -61,7 +60,7 @@ Tak, GroupDocs.Merger obsługuje łączenie różnych formatów dokumentów, w t
 ### Czy GroupDocs.Merger nadaje się do wsadowego przetwarzania scalanych dokumentów?
 Oczywiście możesz wykorzystać GroupDocs.Merger do zadań przetwarzania wsadowego w celu jednoczesnego łączenia wielu dokumentów.
 ### Gdzie mogę znaleźć pełną dokumentację GroupDocs.Merger dla .NET?
- Dostępna jest obszerna dokumentacja[Tutaj](https://reference.groupdocs.com/merger/net/).
+ Dostępna jest obszerna dokumentacja[Tutaj](https://tutorials.groupdocs.com/merger/net/).
 ### Jak mogę uzyskać tymczasową licencję na GroupDocs.Merger dla .NET?
  Możesz uzyskać tymczasową licencję od[Tutaj](https://purchase.groupdocs.com/temporary-license/).
 ### Czy GroupDocs zapewnia pomoc w zakresie rozwiązywania problemów i zapytań?

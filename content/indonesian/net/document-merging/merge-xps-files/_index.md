@@ -3,7 +3,6 @@ title: Gabungkan File XPS
 linktitle: Gabungkan File XPS
 second_title: GroupDocs.Merger .NET API
 description: Pelajari cara menggabungkan file XPS menggunakan GroupDocs.Merger untuk .NET dengan mudah. Sederhanakan pemrosesan dokumen di aplikasi .NET Anda.
-type: docs
 weight: 20
 url: /id/net/document-merging/merge-xps-files/
 ---
@@ -52,7 +51,7 @@ Ya, GroupDocs.Merger mendukung penggabungan berbagai format dokumen seperti PDF,
 ### Bisakah saya memanipulasi halaman individual dalam dokumen menggunakan GroupDocs.Merger?
 Tentu saja, GroupDocs.Merger memungkinkan Anda mengekstrak, menghapus, menyusun ulang, dan memutar halaman dalam dokumen.
 ### Di mana saya dapat menemukan dokumentasi lebih lanjut untuk GroupDocs.Merger untuk .NET?
- Dokumentasi terperinci tersedia[Di Sini](https://reference.groupdocs.com/merger/net/).
+ Dokumentasi terperinci tersedia[Di Sini](https://tutorials.groupdocs.com/merger/net/).
 ### Apakah GroupDocs.Merger untuk .NET mendukung opsi lisensi sementara?
  Ya, lisensi sementara dapat diperoleh[Di Sini](https://purchase.groupdocs.com/temporary-license/).
 ### Bagaimana saya dapat mencari bantuan atau dukungan terkait GroupDocs.Merger?

@@ -3,7 +3,6 @@ title: ODS 파일 병합
 linktitle: ODS 파일 병합
 second_title: GroupDocs.Merger .NET API
 description: ODS 파일을 손쉽게 병합하는 방법을 알아보세요. 원활한 문서 조작을 위한 단계별 가이드를 따르세요.
-type: docs
 weight: 18
 url: /ko/net/spreadsheet-merging/merging-ods-files/
 ---

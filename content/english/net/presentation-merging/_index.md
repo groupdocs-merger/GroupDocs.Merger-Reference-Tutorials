@@ -3,7 +3,6 @@ title: Presentation Merging
 linktitle: Presentation Merging
 second_title: GroupDocs.Merger .NET API
 description: Merge various presentation file formats effortlessly. Follow our tutorials to merge PPS, PPSX, PPT, and OTP files efficiently. #GroupDocs.Merger
-type: docs
 weight: 25
 url: /net/presentation-merging/
 ---

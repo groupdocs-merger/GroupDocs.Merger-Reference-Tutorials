@@ -3,7 +3,6 @@ title: Voeg DOC-bestanden samen met GroupDocs.Merger voor .NET
 linktitle: Voeg DOC-bestanden samen met GroupDocs.Merger voor .NET
 second_title: GroupDocs.Merger .NET API
 description: Leer hoe u DOC-bestanden programmatisch samenvoegt met GroupDocs.Merger voor .NET. Volg onze stapsgewijze handleiding om meerdere documenten naadloos in één te combineren.
-type: docs
 weight: 10
 url: /nl/net/document-merging/merge-doc-files/
 ---

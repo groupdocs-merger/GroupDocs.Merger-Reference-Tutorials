@@ -3,7 +3,6 @@ title: 프레젠테이션 병합
 linktitle: 프레젠테이션 병합
 second_title: GroupDocs.Merger .NET API
 description: 다양한 프리젠테이션 파일 형식을 손쉽게 병합하세요. 튜토리얼을 따라 PPS, PPSX, PPT 및 OTP 파일을 효율적으로 병합하세요. #GroupDocs.Merger
-type: docs
 weight: 25
 url: /ko/net/presentation-merging/
 ---

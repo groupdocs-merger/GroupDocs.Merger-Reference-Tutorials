@@ -3,7 +3,6 @@ title: Come unire file PNG
 linktitle: Come unire file PNG
 second_title: API GroupDocs.Merger .NET
 description: Scopri come unire file PNG utilizzando GroupDocs.Merger per .NET. Guida dettagliata per un'integrazione perfetta nelle tue applicazioni .NET.
-type: docs
 weight: 12
 url: /it/net/image-merging/how-to-merge-png-files/
 ---
@@ -59,7 +58,7 @@ Sì, GroupDocs.Merger supporta un'ampia gamma di formati di documenti e immagini
 ### Posso personalizzare le opzioni di fusione come l'orientamento o il layout?
 Assolutamente! GroupDocs.Merger offre varie opzioni per controllare il modo in cui documenti e immagini vengono uniti, consentendo una personalizzazione flessibile.
 ### Dove posso trovare ulteriori risorse e supporto per GroupDocs.Merger?
- Visitare il[Forum GroupDocs.Merger](https://forum.groupdocs.com/c/merger/32) per il supporto della comunità ed esplorare il[documentazione](https://reference.groupdocs.com/merger/net/) per una guida dettagliata.
+ Visitare il[Forum GroupDocs.Merger](https://forum.groupdocs.com/c/merger/32) per il supporto della comunità ed esplorare il[documentazione](https://tutorials.groupdocs.com/merger/net/) per una guida dettagliata.
 ### È disponibile una versione di prova per testare GroupDocs.Merger prima dell'acquisto?
  Sì, puoi scaricare una versione di prova gratuita da[Sito web di GroupDocs](https://releases.groupdocs.com/) valutare le capacità della biblioteca.
 ### Come posso ottenere una licenza temporanea per GroupDocs.Merger?

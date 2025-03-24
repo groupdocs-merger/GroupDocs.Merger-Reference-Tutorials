@@ -3,7 +3,6 @@ title: स्प्रेडशीट विलय
 linktitle: स्प्रेडशीट विलय
 second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger का उपयोग करके XLAM, XLS, XLSB, XLSM, XLSX, XLT, XLTM, XLTX और ODS फ़ाइलों को .NET में आसानी से मर्ज करें। दस्तावेज़ प्रबंधन कार्यों को सरल बनाएं.
-type: docs
 weight: 23
 url: /hi/net/spreadsheet-merging/
 ---

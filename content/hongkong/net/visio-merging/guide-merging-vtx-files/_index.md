@@ -3,7 +3,6 @@ title: 合併 VTX 文件指南
 linktitle: 合併 VTX 文件指南
 second_title: GroupDocs.Merger .NET API
 description: 了解如何使用 GroupDocs.Merger for .NET 以程式設計方式合併 VTX 檔案。帶有程式碼範例的分步指南。
-type: docs
 weight: 18
 url: /zh-hant/net/visio-merging/guide-merging-vtx-files/
 ---
@@ -49,7 +48,7 @@ Console.WriteLine("\nVTX files merge completed successfully. \nCheck output in {
 ### 我可以使用 GroupDocs.Merger for .NET 將多個 VTX 檔案合併為一個輸出嗎？
 是的，您可以使用以下命令將多個 VTX 檔案合併為一個：`Join` GroupDocs.Merger 提供的方法。
 ### 在哪裡可以找到更多關於 GroupDocs.Merger for .NET 的文件？
-參觀[文件](https://reference.groupdocs.com/merger/net/)有關詳細的 API 參考和使用範例。
+參觀[文件](https://tutorials.groupdocs.com/merger/net/)有關詳細的 API 參考和使用範例。
 ### GroupDocs.Merger for .NET 是否有試用版？
 是的，您可以下載一個[免費試用](https://releases.groupdocs.com/)購買前先探索 GroupDocs.Merger 的功能。
 ### 如何獲得 GroupDocs.Merger for .NET 的技術支援？

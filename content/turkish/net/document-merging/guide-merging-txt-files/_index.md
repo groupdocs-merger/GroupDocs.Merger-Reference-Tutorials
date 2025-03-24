@@ -3,7 +3,6 @@ title: TXT Dosyalarını GroupDocs.Merger for .NET ile Birleştirme Kılavuzu
 linktitle: TXT Dosyalarını GroupDocs.Merger for .NET ile Birleştirme Kılavuzu
 second_title: GroupDocs.Merger .NET API'si
 description: GroupDocs.Merger'ı kullanarak TXT dosyalarını .NET'te sorunsuz bir şekilde birleştirin. Geliştiriciler için adım adım kılavuz. Belgeler ve destek mevcuttur.
-type: docs
 weight: 18
 url: /tr/net/document-merging/guide-merging-txt-files/
 ---
@@ -63,7 +62,7 @@ Evet, GroupDocs.Merger, TXT dosyalarının yanı sıra PDF, Word, Excel ve Power
 ### GroupDocs.Merger .NET Core uygulamalarıyla uyumlu mu?
 Evet, GroupDocs.Merger hem .NET Framework hem de .NET Core ile uyumludur.
 ### GroupDocs.Merger için daha fazla belge ve desteği nerede bulabilirim?
- Bakın[dokümantasyon](https://reference.groupdocs.com/merger/net/) ayrıntılı API referansları için. Ayrıca şu adresten de yardım isteyebilirsiniz:[GroupDocs forumu](https://forum.groupdocs.com/c/merger/32) herhangi bir sorunuz için.
+ Bakın[dokümantasyon](https://tutorials.groupdocs.com/merger/net/) ayrıntılı API referansları için. Ayrıca şu adresten de yardım isteyebilirsiniz:[GroupDocs forumu](https://forum.groupdocs.com/c/merger/32) herhangi bir sorunuz için.
 ### GroupDocs.Merger for .NET'in ücretsiz deneme sürümü var mı?
  Evet, keşfedebilirsiniz[ücretsiz deneme sürümü](https://releases.groupdocs.com/) yeteneklerini değerlendirmek için GroupDocs.Merger'ın.
 ### GroupDocs.Merger için nasıl geçici lisans alabilirim?

@@ -3,7 +3,6 @@ title: Útmutató a TXT-fájlok egyesítéséhez GroupDocs.Merger for .NET-hez
 linktitle: Útmutató a TXT-fájlok egyesítéséhez GroupDocs.Merger for .NET-hez
 second_title: GroupDocs.Merger .NET API
 description: A GroupDocs.Merger segítségével zökkenőmentesen egyesítse a TXT-fájlokat a .NET-ben. Lépésről lépésre útmutató fejlesztőknek. Dokumentáció és támogatás elérhető.
-type: docs
 weight: 18
 url: /hu/net/document-merging/guide-merging-txt-files/
 ---
@@ -63,7 +62,7 @@ Igen, a GroupDocs.Merger a TXT fájlok mellett támogatja a különféle fájlfo
 ### A GroupDocs.Merger kompatibilis a .NET Core alkalmazásokkal?
 Igen, a GroupDocs.Merger a .NET-keretrendszerrel és a .NET Core-al is kompatibilis.
 ### Hol találok további dokumentációt és támogatást a GroupDocs.Mergerhez?
- Utal[dokumentáció](https://reference.groupdocs.com/merger/net/) részletes API-referenciákért. Segítséget kérhet továbbá a[GroupDocs fórum](https://forum.groupdocs.com/c/merger/32) bármilyen kérdésre.
+ Utal[dokumentáció](https://tutorials.groupdocs.com/merger/net/) részletes API-referenciákért. Segítséget kérhet továbbá a[GroupDocs fórum](https://forum.groupdocs.com/c/merger/32) bármilyen kérdésre.
 ### Létezik ingyenes próbaverzió a GroupDocs.Merger for .NET számára?
  Igen, felfedezheti a[ingyenes próbaverzió](https://releases.groupdocs.com/) a GroupDocs.Merger programban, hogy értékelje képességeit.
 ### Hogyan szerezhetek ideiglenes licencet a GroupDocs.Merger számára?

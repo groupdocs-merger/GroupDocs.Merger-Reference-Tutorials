@@ -3,7 +3,6 @@ title: Jak scalić pliki XLSB
 linktitle: Jak scalić pliki XLSB
 second_title: GroupDocs.Merger API .NET
 description: Dowiedz się, jak scalić pliki XLSB. Ten przewodnik krok po kroku upraszcza zadania związane z manipulacją dokumentami.
-type: docs
 weight: 12
 url: /pl/net/spreadsheet-merging/how-to-merge-xlsb-files/
 ---
@@ -54,7 +53,7 @@ Wykonując poniższe kroki, możesz łatwo scalić pliki XLSB. To API upraszcza 
 ### Czy GroupDocs.Merger obsługuje inne formaty plików oprócz XLSB?
 Tak, GroupDocs.Merger obsługuje szeroką gamę formatów dokumentów, w tym DOCX, PDF, XLSX, PPTX i inne.
 ### Gdzie mogę znaleźć więcej dokumentacji dla GroupDocs.Merger?
- Odwiedzić[dokumentacja](https://reference.groupdocs.com/merger/net/) szczegółowe instrukcje użytkowania i odniesienia do API.
+ Odwiedzić[dokumentacja](https://tutorials.groupdocs.com/merger/net/) szczegółowe instrukcje użytkowania i odniesienia do API.
 ### Czy dostępna jest bezpłatna wersja próbna programu GroupDocs.Merger?
  Tak, możesz uzyskać dostęp do[bezpłatna wersja próbna](https://releases.groupdocs.com/)aby poznać funkcje GroupDocs.Merger.
 ### Jak mogę uzyskać pomoc techniczną dotyczącą GroupDocs.Merger?

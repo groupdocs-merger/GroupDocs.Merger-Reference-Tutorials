@@ -3,7 +3,6 @@ title: Gabungkan File EPUB
 linktitle: Gabungkan File EPUB
 second_title: GroupDocs.Merger .NET API
 description: Pelajari cara menggabungkan file EPUB secara terprogram menggunakan GroupDocs.Merger untuk .NET. Ikuti tutorial langkah demi langkah kami.
-type: docs
 weight: 17
 url: /id/net/document-merging/merge-epub-files/
 ---

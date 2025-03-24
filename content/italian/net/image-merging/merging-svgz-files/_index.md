@@ -3,7 +3,6 @@ title: Unione di file SVGZ
 linktitle: Unione di file SVGZ
 second_title: API GroupDocs.Merger .NET
 description: Scopri come unire i file SVGZ utilizzando GroupDocs.Merger per .NET con questo tutorial passo passo. Migliora le tue capacità di manipolazione dei documenti.
-type: docs
 weight: 14
 url: /it/net/image-merging/merging-svgz-files/
 ---
@@ -59,7 +58,7 @@ In questo tutorial, abbiamo imparato come unire i file SVGZ utilizzando GroupDoc
 ### GroupDocs.Merger può gestire altri formati di file oltre a SVGZ?
 Sì, GroupDocs.Merger supporta vari formati di documenti, tra cui PDF, Word, Excel, PowerPoint e altri.
 ### Dove posso trovare la documentazione dettagliata per GroupDocs.Merger?
- Visitare il[documentazione](https://reference.groupdocs.com/merger/net/) per informazioni complete ed esempi di utilizzo.
+ Visitare il[documentazione](https://tutorials.groupdocs.com/merger/net/) per informazioni complete ed esempi di utilizzo.
 ### È disponibile una prova gratuita per GroupDocs.Merger?
  Sì, puoi accedere alla prova gratuita[Qui](https://releases.groupdocs.com/).
 ### Come posso ottenere supporto per GroupDocs.Merger?

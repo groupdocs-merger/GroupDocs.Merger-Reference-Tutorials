@@ -3,7 +3,6 @@ title: XLS फ़ाइलें मर्ज करना
 linktitle: XLS फ़ाइलें मर्ज करना
 second_title: GroupDocs.Merger .NET API
 description: सहज दस्तावेज़ हेरफेर के लिए GroupDocs.Merger का उपयोग करके .NET में Excel फ़ाइलों को मर्ज करना सीखें। हमारे चरण-दर-चरण ट्यूटोरियल का पालन करें।
-type: docs
 weight: 11
 url: /hi/net/spreadsheet-merging/merging-xls-files/
 ---

@@ -3,7 +3,6 @@ title: .NET용 GroupDocs.Merger를 사용하여 DOC 파일 병합
 linktitle: .NET용 GroupDocs.Merger를 사용하여 DOC 파일 병합
 second_title: GroupDocs.Merger .NET API
 description: .NET용 GroupDocs.Merger를 사용하여 프로그래밍 방식으로 DOC 파일을 병합하는 방법을 알아보세요. 여러 문서를 하나로 원활하게 결합하려면 단계별 가이드를 따르세요.
-type: docs
 weight: 10
 url: /ko/net/document-merging/merge-doc-files/
 ---

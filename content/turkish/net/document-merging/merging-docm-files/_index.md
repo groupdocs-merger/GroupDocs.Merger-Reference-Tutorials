@@ -3,7 +3,6 @@ title: DOCM Dosyalarını Birleştirme
 linktitle: DOCM Dosyalarını Birleştirme
 second_title: GroupDocs.Merger .NET API'si
 description: GroupDocs.Merger for .NET'i kullanarak DOCM dosyalarını sorunsuz bir şekilde nasıl birleştireceğinizi öğrenin. .NET uygulamaları için basit ve etkili belge işleme.
-type: docs
 weight: 11
 url: /tr/net/document-merging/merging-docm-files/
 ---

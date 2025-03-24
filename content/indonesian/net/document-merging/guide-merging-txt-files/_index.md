@@ -3,7 +3,6 @@ title: Panduan Menggabungkan File TXT dengan GroupDocs.Merger untuk .NET
 linktitle: Panduan Menggabungkan File TXT dengan GroupDocs.Merger untuk .NET
 second_title: GroupDocs.Merger .NET API
 description: Gabungkan file TXT dengan mulus di .NET menggunakan GroupDocs.Merger. Panduan langkah demi langkah untuk pengembang. Dokumentasi dan dukungan tersedia.
-type: docs
 weight: 18
 url: /id/net/document-merging/guide-merging-txt-files/
 ---
@@ -63,7 +62,7 @@ Ya, GroupDocs.Merger mendukung penggabungan berbagai format file seperti PDF, Wo
 ### Apakah GroupDocs.Merger kompatibel dengan aplikasi .NET Core?
 Ya, GroupDocs.Merger kompatibel dengan .NET Framework dan .NET Core.
 ### Di mana saya dapat menemukan dokumentasi dan dukungan lebih lanjut untuk GroupDocs.Merger?
- Mengacu kepada[dokumentasi](https://reference.groupdocs.com/merger/net/) untuk referensi API terperinci. Anda juga dapat meminta bantuan dari[Forum Grup Dokumen](https://forum.groupdocs.com/c/merger/32) untuk pertanyaan apa pun.
+ Mengacu kepada[dokumentasi](https://tutorials.groupdocs.com/merger/net/) untuk referensi API terperinci. Anda juga dapat meminta bantuan dari[Forum Grup Dokumen](https://forum.groupdocs.com/c/merger/32) untuk pertanyaan apa pun.
 ### Apakah ada uji coba gratis yang tersedia untuk GroupDocs.Merger untuk .NET?
  Ya, Anda dapat menjelajahi a[versi percobaan gratis](https://releases.groupdocs.com/) GroupDocs.Merger untuk mengevaluasi kemampuannya.
 ### Bagaimana saya bisa mendapatkan lisensi sementara untuk GroupDocs.Merger?

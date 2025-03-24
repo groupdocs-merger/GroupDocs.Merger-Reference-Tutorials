@@ -3,7 +3,6 @@ title: VSDX 파일을 병합하는 방법
 linktitle: VSDX 파일을 병합하는 방법
 second_title: GroupDocs.Merger .NET API
 description: .NET용 GroupDocs.Merger를 사용하여 프로그래밍 방식으로 VSDX 파일을 병합하는 방법을 알아보세요. 이 튜토리얼에서는 코드 샘플과 함께 단계별 지침을 제공합니다.
-type: docs
 weight: 12
 url: /ko/net/visio-merging/how-to-merge-vsdx-files/
 ---
@@ -59,7 +58,7 @@ Console.WriteLine("\nVSDX files merge completed successfully. \nCheck output in 
 ### .NET용 GroupDocs.Merger는 .NET Core와 호환됩니까?
 예, .NET용 GroupDocs.Merger는 기존 .NET Framework와 함께 .NET Core와 호환됩니다.
 ### .NET용 GroupDocs.Merger에 대한 자세한 설명서는 어디서 찾을 수 있나요?
- 종합적인 내용을 참고하세요[선적 서류 비치](https://reference.groupdocs.com/merger/net/) .NET용 GroupDocs.Merger용.
+ 종합적인 내용을 참고하세요[선적 서류 비치](https://tutorials.groupdocs.com/merger/net/) .NET용 GroupDocs.Merger용.
 ### .NET용 GroupDocs.Merger의 임시 라이센스를 얻으려면 어떻게 해야 합니까?
  임시면허를 발급받으실 수 있습니다.[임시 라이센스 페이지](https://purchase.groupdocs.com/temporary-license/).
 ### .NET용 GroupDocs.Merger에 어떤 지원 옵션을 사용할 수 있나요?

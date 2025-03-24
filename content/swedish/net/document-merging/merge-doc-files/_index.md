@@ -3,7 +3,6 @@ title: Slå samman DOC-filer med GroupDocs.Merger för .NET
 linktitle: Slå samman DOC-filer med GroupDocs.Merger för .NET
 second_title: GroupDocs.Merger .NET API
 description: Lär dig hur du sammanfogar DOC-filer programmatiskt med GroupDocs.Merger för .NET. Följ vår steg-för-steg-guide för att sömlöst kombinera flera dokument till ett.
-type: docs
 weight: 10
 url: /sv/net/document-merging/merge-doc-files/
 ---

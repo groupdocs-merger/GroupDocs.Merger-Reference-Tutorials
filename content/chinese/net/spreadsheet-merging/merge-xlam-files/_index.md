@@ -3,7 +3,6 @@ title: 合并 XLAM 文件
 linktitle: 合并 XLAM 文件
 second_title: GroupDocs.Merger .NET API
 description: 了解如何轻松合并 XLAM 文件。使用这个强大的 API 简化您的文档管理任务。
-type: docs
 weight: 10
 url: /zh/net/spreadsheet-merging/merge-xlam-files/
 ---
@@ -80,7 +79,7 @@ Console.WriteLine("\nXLAM files merge completed successfully. \nCheck output in 
 
 ### 问：在哪里可以找到有关 GroupDocs.Merger 的更多资源和支持？
 
-您可以访问[GroupDocs.Merge 文档](https://reference.groupdocs.com/merger/net/)详细的 API 参考并查看[GroupDocs 论坛](https://forum.groupdocs.com/c/merger/32)以获得社区支持。
+您可以访问[GroupDocs.Merge 文档](https://tutorials.groupdocs.com/merger/net/)详细的 API 参考并查看[GroupDocs 论坛](https://forum.groupdocs.com/c/merger/32)以获得社区支持。
 
 ### 问：我可以在购买前试用 GroupDocs.Merger 吗？
 

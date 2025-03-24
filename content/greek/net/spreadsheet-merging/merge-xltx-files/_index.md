@@ -3,7 +3,6 @@ title: Συγχώνευση αρχείων XLTX
 linktitle: Συγχώνευση αρχείων XLTX
 second_title: GroupDocs.Merger .NET API
 description: Μάθετε πώς να συγχωνεύετε αρχεία XLTX χωρίς κόπο. Ξεκινήστε τη συγχώνευση αρχείων XLTX και βελτιστοποιήστε αποτελεσματικά τις εργασίες διαχείρισης εγγράφων σας.
-type: docs
 weight: 17
 url: /el/net/spreadsheet-merging/merge-xltx-files/
 ---
@@ -63,4 +62,4 @@ Console.WriteLine("\nXLTX files merge completed successfully. \nCheck output in 
 ### Διατηρεί το GroupDocs.Merger για .NET τη μορφοποίηση κατά τη διαδικασία συγχώνευσης;
 Ναι, το GroupDocs.Merger διασφαλίζει ότι η μορφοποίηση και η ακεραιότητα των δεδομένων διατηρούνται κατά τη συγχώνευση αρχείων XLTX.
 ### Πού μπορώ να βρω περισσότερη υποστήριξη ή τεκμηρίωση για το GroupDocs.Merger για .NET;
- Επισκέψου το[Φόρουμ GroupDocs.Merger](https://forum.groupdocs.com/c/merger/32) για υποστήριξη και ανατρέξτε στο[τεκμηρίωση](https://reference.groupdocs.com/merger/net/) για λεπτομερή καθοδήγηση.
+ Επισκέψου το[Φόρουμ GroupDocs.Merger](https://forum.groupdocs.com/c/merger/32) για υποστήριξη και ανατρέξτε στο[τεκμηρίωση](https://tutorials.groupdocs.com/merger/net/) για λεπτομερή καθοδήγηση.

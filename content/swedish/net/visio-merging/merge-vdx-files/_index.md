@@ -3,7 +3,6 @@ title: Slå samman VDX-filer
 linktitle: Slå samman VDX-filer
 second_title: GroupDocs.Merger .NET API
 description: Lär dig hur du sammanfogar VDX-filer programmatiskt med GroupDocs.Merger för .NET. Denna handledning ger en steg-för-steg-guide.
-type: docs
 weight: 10
 url: /sv/net/visio-merging/merge-vdx-files/
 ---

@@ -3,7 +3,6 @@ title: Συγχώνευση παρουσίασης
 linktitle: Συγχώνευση παρουσίασης
 second_title: GroupDocs.Merger .NET API
 description: Συγχωνεύστε διάφορες μορφές αρχείων παρουσίασης χωρίς κόπο. Ακολουθήστε τους οδηγούς μας για να συγχωνεύσετε αποτελεσματικά αρχεία PPS, PPSX, PPT και OTP. #GroupDocs.Merger
-type: docs
 weight: 25
 url: /el/net/presentation-merging/
 ---

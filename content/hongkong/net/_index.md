@@ -1,7 +1,6 @@
 ---
 title: GroupDocs.Merger for .NET 的教學與範例
 linktitle: .NET 教學的 GroupDocs.Merger
-type: docs
 weight: 10
 url: /zh-hant/net/
 description: 使用 GroupDocs.Merger .NET 輕鬆合併和壓縮各種檔案格式。了解有關合併圖像、文件等的逐步教學！

@@ -3,7 +3,6 @@ title: Hợp nhất tài liệu
 linktitle: Hợp nhất tài liệu
 second_title: API GroupDocs.Merger .NET
 description: Dễ dàng hợp nhất các định dạng tài liệu khác nhau trong .NET bằng GroupDocs.Merger. Kết hợp liền mạch DOC, DOCX, PDF, v.v. Tăng cường quản lý tài liệu của bạn ngay hôm nay!
-type: docs
 weight: 22
 url: /vi/net/document-merging/
 ---

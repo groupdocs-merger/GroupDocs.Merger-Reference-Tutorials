@@ -3,7 +3,6 @@ title: DOTM fájlok egyesítése
 linktitle: DOTM fájlok egyesítése
 second_title: GroupDocs.Merger .NET API
 description: Ismerje meg, hogyan egyesíthet programozottan DOTM-fájlokat a GroupDocs.Merger for .NET használatával. Ez az átfogó útmutató lépésről lépésre nyújt útmutatást a fejlesztőknek.
-type: docs
 weight: 14
 url: /hu/net/document-merging/merging-dotm-files/
 ---

@@ -3,7 +3,6 @@ title: Jak sloučit soubory DOCX
 linktitle: Jak sloučit soubory DOCX
 second_title: GroupDocs.Merger .NET API
 description: Naučte se, jak programově sloučit soubory DOCX v .NET pomocí GroupDocs.Merger, což efektivně zjednoduší úlohy manipulace s dokumenty.
-type: docs
 weight: 12
 url: /cs/net/document-merging/how-to-merge-docx-files/
 ---
@@ -13,7 +12,7 @@ Ve světě vývoje .NET může být programové slučování souborů DOCX výko
 Než začnete, ujistěte se, že máte následující předpoklady:
 - Visual Studio nainstalované na vašem počítači.
 - Základní znalost vývoje C# a .NET.
--  Nainstalovaná knihovna GroupDocs.Merger for .NET (viz[dokumentace](https://reference.groupdocs.com/merger/net/) podrobnosti o instalaci).
+-  Nainstalovaná knihovna GroupDocs.Merger for .NET (viz[dokumentace](https://tutorials.groupdocs.com/merger/net/) podrobnosti o instalaci).
 
 ## Import jmenných prostorů
 Začněte importováním potřebných jmenných prostorů do vašeho projektu C#:
@@ -49,7 +48,7 @@ Ano, GroupDocs.Merger podporuje různé formáty dokumentů včetně DOCX, PDF, 
 ### Mohu přizpůsobit proces slučování, jako je určení rozsahů stránek nebo přidání vodoznaků?
 Rozhodně, GroupDocs.Merger poskytuje flexibilní API pro přizpůsobení procesu sloučení podle vašich požadavků.
 ### Kde najdu další podporu nebo dokumentaci pro GroupDocs.Merger for .NET?
- Můžete odkazovat na[dokumentace](https://reference.groupdocs.com/merger/net/) pro podrobné odkazy na API a příklady.
+ Můžete odkazovat na[dokumentace](https://tutorials.groupdocs.com/merger/net/) pro podrobné odkazy na API a příklady.
 ### Nabízí GroupDocs.Merger for .NET bezplatnou zkušební verzi?
  Ano, můžete začít s a[zkušební verze zdarma](https://releases.groupdocs.com/) k prozkoumání funkcí před nákupem.
 ### Jak mohu získat dočasnou licenci pro GroupDocs.Merger for .NET?

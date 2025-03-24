@@ -3,7 +3,6 @@ title: Guide till att slå samman TXT-filer med GroupDocs.Merger för .NET
 linktitle: Guide till att slå samman TXT-filer med GroupDocs.Merger för .NET
 second_title: GroupDocs.Merger .NET API
 description: Slå samman TXT-filer sömlöst i .NET med GroupDocs.Merger. Steg-för-steg-guide för utvecklare. Dokumentation och support finns.
-type: docs
 weight: 18
 url: /sv/net/document-merging/guide-merging-txt-files/
 ---
@@ -63,7 +62,7 @@ Ja, GroupDocs.Merger stöder sammanslagning av olika filformat som PDF, Word, Ex
 ### Är GroupDocs.Merger kompatibel med .NET Core-applikationer?
 Ja, GroupDocs.Merger är kompatibel med både .NET Framework och .NET Core.
 ### Var kan jag hitta ytterligare dokumentation och support för GroupDocs.Merger?
- Referera till[dokumentation](https://reference.groupdocs.com/merger/net/) för detaljerade API-referenser. Du kan också söka hjälp från[GroupDocs forum](https://forum.groupdocs.com/c/merger/32) för eventuella frågor.
+ Referera till[dokumentation](https://tutorials.groupdocs.com/merger/net/) för detaljerade API-referenser. Du kan också söka hjälp från[GroupDocs forum](https://forum.groupdocs.com/c/merger/32) för eventuella frågor.
 ### Finns det en gratis testversion tillgänglig för GroupDocs.Merger för .NET?
  Ja, du kan utforska en[gratis testversion](https://releases.groupdocs.com/) av GroupDocs.Merger för att utvärdera dess kapacitet.
 ### Hur kan jag få en tillfällig licens för GroupDocs.Merger?

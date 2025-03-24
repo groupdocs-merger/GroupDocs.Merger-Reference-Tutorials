@@ -3,7 +3,6 @@ title: Scal pliki DOTX
 linktitle: Scal pliki DOTX
 second_title: GroupDocs.Merger API .NET
 description: Dowiedz się, jak bez wysiłku łączyć pliki DOTX w .NET za pomocą GroupDocs.Merger. Zwiększ swoje możliwości manipulowania dokumentami.
-type: docs
 weight: 15
 url: /pl/net/document-merging/merge-dotx-files/
 ---
@@ -13,7 +12,7 @@ W tym samouczku omówimy sposób scalania plików DOTX (szablon programu Word) p
 Zanim zagłębisz się w samouczek, upewnij się, że posiadasz następujące elementy:
 - Program Visual Studio zainstalowany na Twoim komputerze
 - Zainstalowany zestaw .NET SDK (wersja kompatybilna).
--  Zainstalowano GroupDocs.Merger dla .NET (patrz[instrukcja instalacji](https://reference.groupdocs.com/merger/net/) dla szczegółów)
+-  Zainstalowano GroupDocs.Merger dla .NET (patrz[instrukcja instalacji](https://tutorials.groupdocs.com/merger/net/) dla szczegółów)
 - Podstawowa znajomość programowania w języku C#
 
 ## Importuj przestrzenie nazw
@@ -58,7 +57,7 @@ Tak, GroupDocs.Merger obsługuje łączenie różnych formatów dokumentów, tak
 ### Czy GroupDocs.Merger jest kompatybilny z .NET Core?
 Tak, GroupDocs.Merger jest kompatybilny zarówno z .NET Framework, jak i .NET Core.
 ### Gdzie mogę znaleźć dodatkowe wsparcie lub dokumentację dotyczącą GroupDocs.Merger?
- Możesz zapoznać się z[Dokumentacja GroupDocs.Merger](https://reference.groupdocs.com/merger/net/) szczegółowe odniesienia do API i przykłady użycia.
+ Możesz zapoznać się z[Dokumentacja GroupDocs.Merger](https://tutorials.groupdocs.com/merger/net/) szczegółowe odniesienia do API i przykłady użycia.
 ### Czy GroupDocs.Merger oferuje bezpłatną wersję próbną?
  Tak, możesz uzyskać dostęp do[bezpłatna wersja próbna](https://releases.groupdocs.com/) do oceny GroupDocs.Merger.
 ### Jak mogę kupić licencję na GroupDocs.Merger?

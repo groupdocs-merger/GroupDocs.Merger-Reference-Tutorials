@@ -3,7 +3,6 @@ title: Sloučit soubory EPUB
 linktitle: Sloučit soubory EPUB
 second_title: GroupDocs.Merger .NET API
 description: Naučte se, jak programově sloučit soubory EPUB pomocí GroupDocs.Merger for .NET. Postupujte podle našeho podrobného návodu.
-type: docs
 weight: 17
 url: /cs/net/document-merging/merge-epub-files/
 ---

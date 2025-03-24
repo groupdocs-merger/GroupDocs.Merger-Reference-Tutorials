@@ -3,7 +3,6 @@ title: Scal pliki XLTX
 linktitle: Scal pliki XLTX
 second_title: GroupDocs.Merger API .NET
 description: Dowiedz się, jak bez wysiłku łączyć pliki XLTX. Rozpocznij scalanie plików XLTX i efektywnie usprawnij swoje zadania związane z zarządzaniem dokumentami.
-type: docs
 weight: 17
 url: /pl/net/spreadsheet-merging/merge-xltx-files/
 ---
@@ -63,4 +62,4 @@ Tak, GroupDocs.Merger dla .NET nie wymaga zainstalowania na komputerze programu 
 ### Czy GroupDocs.Merger for .NET zachowuje formatowanie podczas procesu scalania?
 Tak, GroupDocs.Merger zapewnia zachowanie formatowania i integralności danych podczas łączenia plików XLTX.
 ### Gdzie mogę znaleźć więcej pomocy lub dokumentacji dotyczącej GroupDocs.Merger dla .NET?
- Odwiedzić[Forum GroupDocs.Merger](https://forum.groupdocs.com/c/merger/32) uzyskać wsparcie i zapoznać się z[dokumentacja](https://reference.groupdocs.com/merger/net/) szczegółowe wskazówki.
+ Odwiedzić[Forum GroupDocs.Merger](https://forum.groupdocs.com/c/merger/32) uzyskać wsparcie i zapoznać się z[dokumentacja](https://tutorials.groupdocs.com/merger/net/) szczegółowe wskazówki.

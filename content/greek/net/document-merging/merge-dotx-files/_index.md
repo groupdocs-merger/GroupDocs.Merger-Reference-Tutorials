@@ -3,7 +3,6 @@ title: Συγχώνευση αρχείων DOTX
 linktitle: Συγχώνευση αρχείων DOTX
 second_title: GroupDocs.Merger .NET API
 description: Μάθετε πώς να συγχωνεύετε αρχεία DOTX στο .NET χρησιμοποιώντας το GroupDocs.Merger χωρίς κόπο. Βελτιώστε τις δυνατότητες χειρισμού εγγράφων σας.
-type: docs
 weight: 15
 url: /el/net/document-merging/merge-dotx-files/
 ---
@@ -13,7 +12,7 @@ url: /el/net/document-merging/merge-dotx-files/
 Πριν βουτήξετε στο σεμινάριο, βεβαιωθείτε ότι έχετε τα εξής:
 - Το Visual Studio είναι εγκατεστημένο στον υπολογιστή σας
 - Εγκατεστημένο .NET SDK (συμβατή έκδοση).
--  Εγκαταστάθηκε το GroupDocs.Merger για .NET (ανατρέξτε στο[οδηγός εγκατάστασης](https://reference.groupdocs.com/merger/net/) για λεπτομέρειες)
+-  Εγκαταστάθηκε το GroupDocs.Merger για .NET (ανατρέξτε στο[οδηγός εγκατάστασης](https://tutorials.groupdocs.com/merger/net/) για λεπτομέρειες)
 - Βασικές γνώσεις προγραμματισμού C#
 
 ## Εισαγωγή χώρων ονομάτων
@@ -58,7 +57,7 @@ Console.WriteLine("\nDOTX files merge completed successfully. \nCheck output in 
 ### Είναι το GroupDocs.Merger συμβατό με .NET Core;
 Ναι, το GroupDocs.Merger είναι συμβατό τόσο με .NET Framework όσο και με .NET Core.
 ### Πού μπορώ να βρω πρόσθετη υποστήριξη ή τεκμηρίωση για το GroupDocs.Merger;
- Μπορείτε να ανατρέξετε στο[Τεκμηρίωση GroupDocs.Merger](https://reference.groupdocs.com/merger/net/) για λεπτομερή παραδείγματα αναφοράς και χρήσης API.
+ Μπορείτε να ανατρέξετε στο[Τεκμηρίωση GroupDocs.Merger](https://tutorials.groupdocs.com/merger/net/) για λεπτομερή παραδείγματα αναφοράς και χρήσης API.
 ### Το GroupDocs.Merger προσφέρει δωρεάν δοκιμή;
  Ναι, μπορείτε να έχετε πρόσβαση σε ένα[δωρεάν δοκιμαστική έκδοση](https://releases.groupdocs.com/) για την αξιολόγηση GroupDocs.Merger.
 ### Πώς μπορώ να αγοράσω άδεια χρήσης για το GroupDocs.Merger;

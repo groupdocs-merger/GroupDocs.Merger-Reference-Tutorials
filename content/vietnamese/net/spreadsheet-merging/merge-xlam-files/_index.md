@@ -3,7 +3,6 @@ title: Hợp nhất các tệp XLAM
 linktitle: Hợp nhất các tệp XLAM
 second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp XLAM một cách dễ dàng. Đơn giản hóa các tác vụ quản lý tài liệu của bạn bằng API mạnh mẽ này.
-type: docs
 weight: 10
 url: /vi/net/spreadsheet-merging/merge-xlam-files/
 ---
@@ -80,7 +79,7 @@ Có, cần có giấy phép để sử dụng thương mại. Bạn có thể xi
 
 ### Câu hỏi: Tôi có thể tìm thêm tài nguyên và hỗ trợ cho GroupDocs.Merger ở đâu?
 
- Bạn có thể ghé thăm[Tài liệu GroupDocs.Merger](https://reference.groupdocs.com/merger/net/) để tham khảo API chi tiết và kiểm tra[diễn đàn GroupDocs](https://forum.groupdocs.com/c/merger/32) để hỗ trợ cộng đồng.
+ Bạn có thể ghé thăm[Tài liệu GroupDocs.Merger](https://tutorials.groupdocs.com/merger/net/) để tham khảo API chi tiết và kiểm tra[diễn đàn GroupDocs](https://forum.groupdocs.com/c/merger/32) để hỗ trợ cộng đồng.
 
 ### Câu hỏi: Tôi có thể dùng thử GroupDocs.Merger trước khi mua không?
 

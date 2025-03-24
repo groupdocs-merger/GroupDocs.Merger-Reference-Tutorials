@@ -3,7 +3,6 @@ title: Slår ihop DOCM-filer
 linktitle: Slår ihop DOCM-filer
 second_title: GroupDocs.Merger .NET API
 description: Lär dig hur du sammanfogar DOCM-filer sömlöst med GroupDocs.Merger för .NET. Enkel och effektiv dokumenthantering för .NET-applikationer.
-type: docs
 weight: 11
 url: /sv/net/document-merging/merging-docm-files/
 ---

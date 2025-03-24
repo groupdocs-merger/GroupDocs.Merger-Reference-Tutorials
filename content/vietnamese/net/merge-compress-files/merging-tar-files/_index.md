@@ -3,7 +3,6 @@ title: Hợp nhất các tập tin Tar
 linktitle: Hợp nhất các tập tin Tar
 second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp TAR theo chương trình bằng GroupDocs.Merger cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để xử lý các kho lưu trữ TAR một cách hiệu quả.
-type: docs
 weight: 11
 url: /vi/net/merge-compress-files/merging-tar-files/
 ---

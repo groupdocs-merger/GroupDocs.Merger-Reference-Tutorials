@@ -3,7 +3,6 @@ title: Hợp nhất và phân chia tài liệu dễ dàng với GroupDocs.Merger
 linktitle: Hướng dẫn về GroupDocs.Merger
 additionalTitle: Tài liệu tham khảo API GroupDocs
 description: Dễ dàng hợp nhất, phân tách và nén tài liệu trên các nền tảng .NET và Java với hướng dẫn chuyên môn của chúng tôi về GroupDocs.Merger. Mở khóa quản lý tập tin liền mạch!
-type: docs
 weight: 11
 url: /vi/
 is_root: true

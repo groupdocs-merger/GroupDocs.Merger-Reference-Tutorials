@@ -3,7 +3,6 @@ title: XLTX fájlok egyesítése
 linktitle: XLTX fájlok egyesítése
 second_title: GroupDocs.Merger .NET API
 description: Ismerje meg, hogyan egyesíthet könnyedén XLTX fájlokat. Kezdje el az XLTX-fájlok egyesítését, és hatékonyan egyszerűsítse dokumentumkezelési feladatait.
-type: docs
 weight: 17
 url: /hu/net/spreadsheet-merging/merge-xltx-files/
 ---
@@ -63,4 +62,4 @@ Igen, a GroupDocs.Merger for .NET-hez nem szükséges a Microsoft Excel telepít
 ### A GroupDocs.Merger for .NET megőrzi a formázást az egyesítési folyamat során?
 Igen, a GroupDocs.Merger biztosítja a formázás és az adatok integritásának megőrzését az XLTX fájlok egyesítésekor.
 ### Hol találok további támogatást vagy dokumentációt a GroupDocs.Merger for .NET-hez?
- Meglátogatni a[GroupDocs.Merger fórum](https://forum.groupdocs.com/c/merger/32) támogatásért, és tekintse meg a[dokumentáció](https://reference.groupdocs.com/merger/net/) részletes útmutatásért.
+ Meglátogatni a[GroupDocs.Merger fórum](https://forum.groupdocs.com/c/merger/32) támogatásért, és tekintse meg a[dokumentáció](https://tutorials.groupdocs.com/merger/net/) részletes útmutatásért.

@@ -3,7 +3,6 @@ title: Slå samman XLTX-filer
 linktitle: Slå samman XLTX-filer
 second_title: GroupDocs.Merger .NET API
 description: Lär dig hur du sammanfogar XLTX-filer utan ansträngning. Börja slå samman XLTX-filer och effektivisera dina dokumenthanteringsuppgifter effektivt.
-type: docs
 weight: 17
 url: /sv/net/spreadsheet-merging/merge-xltx-files/
 ---
@@ -63,4 +62,4 @@ Ja, GroupDocs.Merger för .NET kräver inte att Microsoft Excel är installerat 
 ### Behåller GroupDocs.Merger for .NET formatering under sammanslagningsprocessen?
 Ja, GroupDocs.Merger säkerställer att formatering och dataintegritet bibehålls när XLTX-filer slås samman.
 ### Var kan jag hitta mer support eller dokumentation för GroupDocs.Merger för .NET?
- Besök[GroupDocs.Merger-forum](https://forum.groupdocs.com/c/merger/32) för support och hänvisa till[dokumentation](https://reference.groupdocs.com/merger/net/) för detaljerad vägledning.
+ Besök[GroupDocs.Merger-forum](https://forum.groupdocs.com/c/merger/32) för support och hänvisa till[dokumentation](https://tutorials.groupdocs.com/merger/net/) för detaljerad vägledning.

@@ -3,7 +3,6 @@ title: PPS fájlok egyesítése
 linktitle: PPS fájlok egyesítése
 second_title: GroupDocs.Merger .NET API
 description: Ismerje meg, hogyan egyesíthet zökkenőmentesen PPS-fájlokat a GroupDocs.Merger for .NET segítségével. Útmutató lépésről lépésre kódpéldákkal. Fejlessze dokumentumkezelési készségeit.
-type: docs
 weight: 10
 url: /hu/net/presentation-merging/merge-pps-files/
 ---
@@ -61,7 +60,7 @@ Igen, a GroupDocs.Merger támogatja a különböző dokumentumformátumok, közt
 ### Alkalmas-e a GroupDocs.Merger dokumentum-egyesítések kötegelt feldolgozására?
 Természetesen a GroupDocs.Merger segítségével kötegelt feldolgozási feladatokat végezhet több dokumentum egyidejű egyesítésére.
 ### Hol találom a GroupDocs.Merger for .NET teljes dokumentációját?
- A teljes körű dokumentáció elérhető[itt](https://reference.groupdocs.com/merger/net/).
+ A teljes körű dokumentáció elérhető[itt](https://tutorials.groupdocs.com/merger/net/).
 ### Hogyan szerezhetek ideiglenes licencet a GroupDocs.Merger for .NET számára?
  Ideiglenes jogosítványt kaphat[itt](https://purchase.groupdocs.com/temporary-license/).
 ### A GroupDocs támogatja a hibaelhárítást és a lekérdezéseket?

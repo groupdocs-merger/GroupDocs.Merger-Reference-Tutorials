@@ -3,7 +3,6 @@ title: Menggabungkan File Tar
 linktitle: Menggabungkan File Tar
 second_title: GroupDocs.Merger .NET API
 description: Pelajari cara menggabungkan file TAR secara terprogram menggunakan GroupDocs.Merger untuk .NET. Ikuti panduan langkah demi langkah kami untuk menangani arsip TAR secara efisien.
-type: docs
 weight: 11
 url: /id/net/merge-compress-files/merging-tar-files/
 ---

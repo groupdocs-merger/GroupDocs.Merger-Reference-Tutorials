@@ -3,7 +3,6 @@ title: Gabungkan File XLT
 linktitle: Gabungkan File XLT
 second_title: GroupDocs.Merger .NET API
 description: Pelajari cara menggabungkan file XLT. Gabungkan templat Excel secara terprogram dalam C# dengan panduan langkah demi langkah ini.
-type: docs
 weight: 15
 url: /id/net/spreadsheet-merging/merge-xlt-files/
 ---
@@ -59,7 +58,7 @@ Ya, Anda dapat menggabungkan beberapa file XLT dengan menambahkannya secara beru
 ### Apakah GroupDocs.Merger kompatibel dengan format file Excel lainnya seperti XLSX atau XLS?
 Ya, GroupDocs.Merger mendukung berbagai format file Excel, termasuk XLSX, XLS, dan XLT.
 ### Di mana saya dapat menemukan lebih banyak contoh dan dokumentasi untuk GroupDocs.Merger untuk .NET?
- Dokumentasi terperinci dan contoh kode tersedia[Di Sini](https://reference.groupdocs.com/merger/net/).
+ Dokumentasi terperinci dan contoh kode tersedia[Di Sini](https://tutorials.groupdocs.com/merger/net/).
 ### Apakah ada versi uji coba GroupDocs.Merger yang tersedia untuk pengujian?
  Ya, Anda dapat mengunduh versi uji coba gratis dari[Di Sini](https://releases.groupdocs.com/).
 ### Bagaimana saya bisa mendapatkan dukungan teknis atau bantuan dengan GroupDocs.Merger?

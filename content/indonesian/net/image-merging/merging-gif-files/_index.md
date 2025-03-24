@@ -3,7 +3,6 @@ title: Menggabungkan File GIF
 linktitle: Menggabungkan File GIF
 second_title: GroupDocs.Merger .NET API
 description: Pelajari cara menggabungkan file GIF menggunakan GroupDocs.Merger untuk .NET. Gabungkan beberapa GIF secara terprogram dengan petunjuk langkah demi langkah.
-type: docs
 weight: 11
 url: /id/net/image-merging/merging-gif-files/
 ---
@@ -63,6 +62,6 @@ Ya, GroupDocs.Merger mendukung penggabungan berbagai format dokumen, termasuk PD
 ### T: Bagaimana saya bisa mendapatkan dukungan teknis untuk GroupDocs.Merger?
  Untuk bantuan teknis, kunjungi GroupDocs.Merger[forum](https://forum.groupdocs.com/c/merger/32) tempat Anda dapat mengajukan pertanyaan dan terlibat dengan komunitas.
 ### T: Di mana saya dapat menemukan dokumentasi terperinci untuk GroupDocs.Merger untuk .NET?
- Jelajahi dokumentasi komprehensif[Di Sini](https://reference.groupdocs.com/merger/net/) untuk wawasan mendetail tentang penggunaan GroupDocs.Merger di aplikasi .NET Anda.
+ Jelajahi dokumentasi komprehensif[Di Sini](https://tutorials.groupdocs.com/merger/net/) untuk wawasan mendetail tentang penggunaan GroupDocs.Merger di aplikasi .NET Anda.
 ### T: Dapatkah saya memperoleh lisensi sementara untuk GroupDocs.Merger?
  Ya, Anda bisa mendapatkan lisensi sementara dari[Di Sini](https://purchase.groupdocs.com/temporary-license/) untuk mengevaluasi kemampuan GroupDocs.Merger sebelum membeli.

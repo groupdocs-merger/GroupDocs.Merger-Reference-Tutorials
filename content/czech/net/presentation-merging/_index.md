@@ -3,7 +3,6 @@ title: Sloučení prezentace
 linktitle: Sloučení prezentace
 second_title: GroupDocs.Merger .NET API
 description: Snadno slučujte různé formáty prezentačních souborů. Postupujte podle našich výukových programů pro efektivní sloučení souborů PPS, PPSX, PPT a OTP. #GroupDocs.Merger
-type: docs
 weight: 25
 url: /cs/net/presentation-merging/
 ---

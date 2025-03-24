@@ -3,7 +3,6 @@ title: Объединить файлы DOTX
 linktitle: Объединить файлы DOTX
 second_title: GroupDocs.Merger .NET API
 description: Узнайте, как легко объединить файлы DOTX в .NET с помощью GroupDocs.Merger. Расширьте свои возможности манипулирования документами.
-type: docs
 weight: 15
 url: /ru/net/document-merging/merge-dotx-files/
 ---
@@ -13,7 +12,7 @@ url: /ru/net/document-merging/merge-dotx-files/
 Прежде чем приступить к изучению руководства, убедитесь, что у вас есть следующее:
 - Visual Studio установлена на вашем компьютере
 - Установлен .NET SDK (совместимая версия)
--  Установлен GroupDocs.Merger для .NET (см.[инструкция по установке](https://reference.groupdocs.com/merger/net/) подробности)
+-  Установлен GroupDocs.Merger для .NET (см.[инструкция по установке](https://tutorials.groupdocs.com/merger/net/) подробности)
 - Базовые знания программирования на C#.
 
 ## Импортировать пространства имен
@@ -58,7 +57,7 @@ Console.WriteLine("\nDOTX files merge completed successfully. \nCheck output in 
 ### Совместим ли GroupDocs.Merger с .NET Core?
 Да, GroupDocs.Merger совместим как с .NET Framework, так и с .NET Core.
 ### Где я могу найти дополнительную поддержку или документацию для GroupDocs.Merger?
- Вы можете обратиться к[Документация GroupDocs.Merger](https://reference.groupdocs.com/merger/net/) для получения подробной информации по API и примеров использования.
+ Вы можете обратиться к[Документация GroupDocs.Merger](https://tutorials.groupdocs.com/merger/net/) для получения подробной информации по API и примеров использования.
 ### Предлагает ли GroupDocs.Merger бесплатную пробную версию?
  Да, вы можете получить доступ к[бесплатная пробная версия](https://releases.groupdocs.com/) для оценки GroupDocs.Merger.
 ### Как я могу приобрести лицензию на GroupDocs.Merger?

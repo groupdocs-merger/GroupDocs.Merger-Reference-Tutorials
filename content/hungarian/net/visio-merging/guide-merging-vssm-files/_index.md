@@ -3,7 +3,6 @@ title: Útmutató a VSSM-fájlok egyesítéséhez
 linktitle: Útmutató a VSSM-fájlok egyesítéséhez
 second_title: GroupDocs.Merger .NET API
 description: Ismerje meg, hogyan egyesíthet könnyedén VSSM-fájlokat a GroupDocs.Merger for .NET segítségével. Lépésről lépésre útmutató C# fejlesztőknek.
-type: docs
 weight: 13
 url: /hu/net/visio-merging/guide-merging-vssm-files/
 ---
@@ -53,7 +52,7 @@ Igen, a GroupDocs.Merger támogatja a különféle formátumok, köztük a PDF, 
 ### Alkalmas-e a GroupDocs.Merger nagyszabású dokumentumfeldolgozásra?
 Igen, a GroupDocs.Merger a teljesítményre van optimalizálva, és hatékonyan képes kezelni a nagy dokumentumokat.
 ### Hol találom a GroupDocs.Merger részletes dokumentációját?
- Hivatkozhat a[dokumentáció](https://reference.groupdocs.com/merger/net/) átfogó útmutatásért.
+ Hivatkozhat a[dokumentáció](https://tutorials.groupdocs.com/merger/net/) átfogó útmutatásért.
 ### Hogyan kaphatok technikai támogatást a GroupDocs termékekhez?
  Meglátogatni a[GroupDocs támogatási fórum](https://forum.groupdocs.com/c/merger/32)segítségért és megbeszélésekért.
 ### A GroupDocs ingyenes próbaverziót kínál az értékeléshez?

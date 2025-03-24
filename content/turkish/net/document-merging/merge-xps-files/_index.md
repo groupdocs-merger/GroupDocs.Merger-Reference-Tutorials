@@ -3,7 +3,6 @@ title: XPS Dosyalarını Birleştir
 linktitle: XPS Dosyalarını Birleştir
 second_title: GroupDocs.Merger .NET API'si
 description: GroupDocs.Merger for .NET'i kullanarak XPS dosyalarını zahmetsizce nasıl birleştireceğinizi öğrenin. .NET uygulamalarınızda belge işlemeyi basitleştirin.
-type: docs
 weight: 20
 url: /tr/net/document-merging/merge-xps-files/
 ---
@@ -52,7 +51,7 @@ Evet, GroupDocs.Merger, PDF, DOCX, XLSX ve daha fazlası gibi çeşitli belge fo
 ### GroupDocs.Merger'ı kullanarak belgelerdeki sayfaları tek tek değiştirebilir miyim?
 Kesinlikle GroupDocs.Merger, belgeler içindeki sayfaları çıkarmanıza, kaldırmanıza, yeniden sıralamanıza ve döndürmenize olanak tanır.
 ### GroupDocs.Merger for .NET'e ilişkin daha fazla belgeyi nerede bulabilirim?
- Detaylı dokümantasyon mevcut[Burada](https://reference.groupdocs.com/merger/net/).
+ Detaylı dokümantasyon mevcut[Burada](https://tutorials.groupdocs.com/merger/net/).
 ### GroupDocs.Merger for .NET geçici lisanslama seçeneklerini destekliyor mu?
  Evet, geçici lisanslar alınabilir[Burada](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs.Merger ile ilgili nasıl yardım veya destek alabilirim?

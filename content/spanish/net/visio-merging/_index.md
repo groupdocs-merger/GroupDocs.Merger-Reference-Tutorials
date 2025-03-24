@@ -3,7 +3,6 @@ title: Fusión de Visio
 linktitle: Fusión de Visio
 second_title: API GroupDocs.Merger .NET
 description: Fusione archivos VDX, VSDM, VSDX, VSSM, VSSX, VSTM, VSTX, VSX, VTX fácilmente utilizando GroupDocs.Merger para .NET. Tutoriales paso a paso para fusionar documentos sin problemas.
-type: docs
 weight: 24
 url: /es/net/visio-merging/
 ---

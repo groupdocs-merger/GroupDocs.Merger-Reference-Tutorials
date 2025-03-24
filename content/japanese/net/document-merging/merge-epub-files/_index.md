@@ -3,7 +3,6 @@ title: EPUB ファイルを結合する
 linktitle: EPUB ファイルを結合する
 second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger for .NET を使用して EPUB ファイルをプログラムで結合する方法を学びます。ステップバイステップのチュートリアルに従ってください。
-type: docs
 weight: 17
 url: /ja/net/document-merging/merge-epub-files/
 ---

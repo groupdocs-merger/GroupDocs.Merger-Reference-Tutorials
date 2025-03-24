@@ -3,7 +3,6 @@ title: 合併 XLT 文件
 linktitle: 合併 XLT 文件
 second_title: GroupDocs.Merger .NET API
 description: 了解如何合併 XLT 檔案。透過此逐步指南，在 C# 中以程式設計方式組合 Excel 範本。
-type: docs
 weight: 15
 url: /zh-hant/net/spreadsheet-merging/merge-xlt-files/
 ---
@@ -59,7 +58,7 @@ Console.WriteLine("\nXLT files merge completed successfully. \nCheck output in {
 ### GroupDocs.Merger 是否與其他 Excel 檔案格式（如 XLSX 或 XLS）相容？
 是的，GroupDocs.Merger 支援各種 Excel 檔案格式，包括 XLSX、XLS 和 XLT。
 ### 在哪裡可以找到有關 GroupDocs.Merger for .NET 的更多範例和文件？
-提供詳細的文件和程式碼範例[這裡](https://reference.groupdocs.com/merger/net/).
+提供詳細的文件和程式碼範例[這裡](https://tutorials.groupdocs.com/merger/net/).
 ### GroupDocs.Merger 是否有試用版可供測試？
 是的，您可以從以下位置下載免費試用版[這裡](https://releases.groupdocs.com/).
 ### 我如何獲得 GroupDocs.Merger 的技術支援或協助？

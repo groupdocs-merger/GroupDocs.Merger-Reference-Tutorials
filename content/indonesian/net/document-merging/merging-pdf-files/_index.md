@@ -3,7 +3,6 @@ title: Menggabungkan File PDF
 linktitle: Menggabungkan File PDF
 second_title: GroupDocs.Merger .NET API
 description: Pelajari cara menggabungkan file PDF secara terprogram di .NET menggunakan GroupDocs.Merger untuk pengelolaan dokumen yang lancar.
-type: docs
 weight: 19
 url: /id/net/document-merging/merging-pdf-files/
 ---

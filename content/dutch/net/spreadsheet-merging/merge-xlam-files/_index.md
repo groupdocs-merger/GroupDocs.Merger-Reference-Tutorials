@@ -3,7 +3,6 @@ title: XLAM-bestanden samenvoegen
 linktitle: XLAM-bestanden samenvoegen
 second_title: GroupDocs.Merger .NET API
 description: Leer hoe u XLAM-bestanden moeiteloos kunt samenvoegen. Vereenvoudig uw documentbeheertaken met deze krachtige API.
-type: docs
 weight: 10
 url: /nl/net/spreadsheet-merging/merge-xlam-files/
 ---
@@ -80,7 +79,7 @@ Ja, voor commercieel gebruik is een licentie vereist. Een tijdelijke licentie ku
 
 ### Vraag: Waar kan ik meer bronnen en ondersteuning vinden voor GroupDocs.Merger?
 
- U kunt een bezoek brengen aan de[GroupDocs.Merger-documentatie](https://reference.groupdocs.com/merger/net/) voor gedetailleerde API-referentie en bekijk de[GroupDocs-forum](https://forum.groupdocs.com/c/merger/32) voor gemeenschapssteun.
+ U kunt een bezoek brengen aan de[GroupDocs.Merger-documentatie](https://tutorials.groupdocs.com/merger/net/) voor gedetailleerde API-referentie en bekijk de[GroupDocs-forum](https://forum.groupdocs.com/c/merger/32) voor gemeenschapssteun.
 
 ### Vraag: Kan ik GroupDocs.Merger uitproberen voordat ik een aankoop doe?
 

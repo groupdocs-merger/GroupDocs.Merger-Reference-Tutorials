@@ -3,7 +3,6 @@ title: Tar ファイルのマージ
 linktitle: Tar ファイルのマージ
 second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger for .NET を使用してプログラムで TAR ファイルをマージする方法を学びます。TAR アーカイブを効率的に処理するには、ステップ バイ ステップ ガイドに従ってください。
-type: docs
 weight: 11
 url: /ja/net/merge-compress-files/merging-tar-files/
 ---

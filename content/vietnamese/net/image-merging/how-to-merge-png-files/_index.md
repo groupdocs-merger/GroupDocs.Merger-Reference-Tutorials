@@ -3,7 +3,6 @@ title: Cách hợp nhất các tệp PNG
 linktitle: Cách hợp nhất các tệp PNG
 second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp PNG bằng GroupDocs.Merger cho .NET. Hướng dẫn từng bước để tích hợp liền mạch trong các ứng dụng .NET của bạn.
-type: docs
 weight: 12
 url: /vi/net/image-merging/how-to-merge-png-files/
 ---
@@ -59,7 +58,7 @@ Có, GroupDocs.Merger hỗ trợ nhiều định dạng tài liệu và hình �
 ### Tôi có thể tùy chỉnh các tùy chọn hợp nhất như hướng hoặc bố cục không?
 Tuyệt đối! GroupDocs.Merger cung cấp nhiều tùy chọn khác nhau để kiểm soát cách hợp nhất tài liệu và hình ảnh, cho phép tùy chỉnh linh hoạt.
 ### Tôi có thể tìm thêm tài nguyên và hỗ trợ cho GroupDocs.Merger ở đâu?
- Tham quan[Diễn đàn GroupDocs.Merger](https://forum.groupdocs.com/c/merger/32) để được hỗ trợ cộng đồng và khám phá[tài liệu](https://reference.groupdocs.com/merger/net/) để được hướng dẫn chi tiết.
+ Tham quan[Diễn đàn GroupDocs.Merger](https://forum.groupdocs.com/c/merger/32) để được hỗ trợ cộng đồng và khám phá[tài liệu](https://tutorials.groupdocs.com/merger/net/) để được hướng dẫn chi tiết.
 ### Có phiên bản dùng thử nào để kiểm tra GroupDocs.Merger trước khi mua không?
  Có, bạn có thể tải xuống bản dùng thử miễn phí từ[Trang web GroupDocs](https://releases.groupdocs.com/) để đánh giá năng lực của thư viện.
 ### Làm cách nào tôi có thể nhận được giấy phép tạm thời cho GroupDocs.Merger?

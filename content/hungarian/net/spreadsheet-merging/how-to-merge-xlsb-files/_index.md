@@ -3,7 +3,6 @@ title: XLSB fájlok egyesítése
 linktitle: XLSB fájlok egyesítése
 second_title: GroupDocs.Merger .NET API
 description: Ismerje meg, hogyan lehet XLSB-fájlokat egyesíteni. Ez a lépésenkénti útmutató leegyszerűsíti a dokumentumkezelési feladatokat.
-type: docs
 weight: 12
 url: /hu/net/spreadsheet-merging/how-to-merge-xlsb-files/
 ---
@@ -54,7 +53,7 @@ Az alábbi lépések követésével könnyedén egyesítheti az XLSB fájlokat. 
 ### A GroupDocs.Merger kezelhet más fájlformátumokat az XLSB-n kívül?
 Igen, a GroupDocs.Merger a dokumentumformátumok széles skáláját támogatja, beleértve a DOCX, PDF, XLSX, PPTX és egyebeket.
 ### Hol találok további dokumentációt a GroupDocs.Mergerhez?
- Meglátogatni a[dokumentáció](https://reference.groupdocs.com/merger/net/) részletes használati utasításokért és API-referenciákért.
+ Meglátogatni a[dokumentáció](https://tutorials.groupdocs.com/merger/net/) részletes használati utasításokért és API-referenciákért.
 ### Van ingyenes próbaverzió a GroupDocs.Merger számára?
  Igen, hozzáférhet a[ingyenes próbaverzió](https://releases.groupdocs.com/)hogy felfedezze a GroupDocs.Merger szolgáltatásait.
 ### Hogyan kaphatok technikai támogatást a GroupDocs.Merger programhoz?

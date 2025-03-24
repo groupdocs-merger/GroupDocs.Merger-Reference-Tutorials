@@ -3,7 +3,6 @@ title: DOTX-bestanden samenvoegen
 linktitle: DOTX-bestanden samenvoegen
 second_title: GroupDocs.Merger .NET API
 description: Leer hoe u DOTX-bestanden moeiteloos kunt samenvoegen in .NET met GroupDocs.Merger. Verbeter uw mogelijkheden voor documentmanipulatie.
-type: docs
 weight: 15
 url: /nl/net/document-merging/merge-dotx-files/
 ---
@@ -13,7 +12,7 @@ In deze zelfstudie onderzoeken we hoe u DOTX-bestanden (Word-sjabloon) kunt same
 Voordat u in de zelfstudie duikt, moet u ervoor zorgen dat u over het volgende beschikt:
 - Visual Studio is op uw computer geïnstalleerd
 - .NET SDK (compatibele versie) geïnstalleerd
--  GroupDocs.Merger voor .NET geïnstalleerd (raadpleeg de[installatie gids](https://reference.groupdocs.com/merger/net/) voor details)
+-  GroupDocs.Merger voor .NET geïnstalleerd (raadpleeg de[installatie gids](https://tutorials.groupdocs.com/merger/net/) voor details)
 - Basiskennis van programmeren in C#
 
 ## Naamruimten importeren
@@ -58,7 +57,7 @@ Ja, GroupDocs.Merger ondersteunt het samenvoegen van verschillende documentforma
 ### Is GroupDocs.Merger compatibel met .NET Core?
 Ja, GroupDocs.Merger is compatibel met zowel .NET Framework als .NET Core.
 ### Waar kan ik aanvullende ondersteuning of documentatie voor GroupDocs.Merger vinden?
- U kunt verwijzen naar de[GroupDocs.Merger-documentatie](https://reference.groupdocs.com/merger/net/) voor gedetailleerde API-referentie en gebruiksvoorbeelden.
+ U kunt verwijzen naar de[GroupDocs.Merger-documentatie](https://tutorials.groupdocs.com/merger/net/) voor gedetailleerde API-referentie en gebruiksvoorbeelden.
 ### Biedt GroupDocs.Merger een gratis proefperiode?
  Ja, u heeft toegang tot a[gratis proefversie](https://releases.groupdocs.com/) om GroupDocs.Merger te evalueren.
 ### Hoe kan ik een licentie kopen voor GroupDocs.Merger?

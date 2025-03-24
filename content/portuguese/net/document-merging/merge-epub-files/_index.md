@@ -3,7 +3,6 @@ title: Mesclar arquivos EPUB
 linktitle: Mesclar arquivos EPUB
 second_title: API GroupDocs.Merger .NET
 description: Aprenda como mesclar arquivos EPUB programaticamente usando GroupDocs.Merger for .NET. Siga nosso tutorial passo a passo.
-type: docs
 weight: 17
 url: /pt/net/document-merging/merge-epub-files/
 ---

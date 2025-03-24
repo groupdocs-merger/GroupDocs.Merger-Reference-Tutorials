@@ -3,7 +3,6 @@ title: VSX fájlok egyesítése
 linktitle: VSX fájlok egyesítése
 second_title: GroupDocs.Merger .NET API
 description: Ismerje meg, hogyan egyesíthet könnyedén VSX-fájlokat a GroupDocs.Merger for .NET segítségével. Ez az átfogó útmutató leegyszerűsíti a dokumentumkezelési feladatokat.
-type: docs
 weight: 17
 url: /hu/net/visio-merging/merge-vsx-files/
 ---
@@ -12,7 +11,7 @@ Ebben az oktatóanyagban megvizsgáljuk, hogyan egyesíthet VSX fájlokat a Grou
 ## Előfeltételek
 Mielőtt elkezdené, győződjön meg arról, hogy beállította a következő előfeltételeket:
 - Fejlesztői környezet: Telepítse a Visual Studio-t vagy egy másik IDE-t a .NET-fejlesztéshez.
--  GroupDocs.Merger for .NET: Szerezze be az API-t a[GroupDocs.Merger for .NET Documentation](https://reference.groupdocs.com/merger/net/).
+-  GroupDocs.Merger for .NET: Szerezze be az API-t a[GroupDocs.Merger for .NET Documentation](https://tutorials.groupdocs.com/merger/net/).
 - Minta VSX-fájlok: Készítse elő az egyesíteni kívánt VSX-fájlokat tesztelési célokra.
 
 ## Névterek importálása

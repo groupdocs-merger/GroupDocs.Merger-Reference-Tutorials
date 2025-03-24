@@ -3,7 +3,6 @@ title: VDX 파일 병합
 linktitle: VDX 파일 병합
 second_title: GroupDocs.Merger .NET API
 description: .NET용 GroupDocs.Merger를 사용하여 프로그래밍 방식으로 VDX 파일을 병합하는 방법을 알아보세요. 이 튜토리얼에서는 단계별 가이드를 제공합니다.
-type: docs
 weight: 10
 url: /ko/net/visio-merging/merge-vdx-files/
 ---

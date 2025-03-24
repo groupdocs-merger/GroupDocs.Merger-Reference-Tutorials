@@ -3,7 +3,6 @@ title: 合併 BMP 文件
 linktitle: 合併 BMP 文件
 second_title: GroupDocs.Merger .NET API
 description: 透過這個綜合教程，了解如何使用 GroupDocs.Merger for .NET 合併 BMP 檔案。高效開發您的 .NET 應用程式。
-type: docs
 weight: 10
 url: /zh-hant/net/image-merging/merge-bmp-files/
 ---

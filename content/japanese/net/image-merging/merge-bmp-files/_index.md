@@ -3,7 +3,6 @@ title: BMP ファイルを結合する
 linktitle: BMP ファイルを結合する
 second_title: GroupDocs.Merger .NET API
 description: この包括的なチュートリアルで、GroupDocs.Merger for .NET を使用して BMP ファイルを結合する方法を学びます。.NET アプリケーションを効率的に開発します。
-type: docs
 weight: 10
 url: /ja/net/image-merging/merge-bmp-files/
 ---

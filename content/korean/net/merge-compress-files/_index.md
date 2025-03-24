@@ -3,7 +3,6 @@ title: 압축 파일 병합
 linktitle: 압축 파일 병합
 second_title: GroupDocs.Merger .NET API
 description: 다양한 파일 형식을 손쉽게 병합하고 압축하는 튜토리얼입니다. 단계별 가이드를 통해 7z, TAR 및 ZIP 파일을 원활하게 결합하는 방법을 알아보세요.
-type: docs
 weight: 20
 url: /ko/net/merge-compress-files/
 ---

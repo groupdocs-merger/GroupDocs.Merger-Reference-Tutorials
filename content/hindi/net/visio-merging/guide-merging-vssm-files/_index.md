@@ -3,7 +3,6 @@ title: VSSM फ़ाइलों को मर्ज करने के लि
 linktitle: VSSM फ़ाइलों को मर्ज करने के लिए गाइड
 second_title: GroupDocs.Merger .NET API
 description: .NET के लिए GroupDocs.Merger का उपयोग करके आसानी से VSSM फ़ाइलें मर्ज करना सीखें। C# डेवलपर्स के लिए चरण-दर-चरण मार्गदर्शिका।
-type: docs
 weight: 13
 url: /hi/net/visio-merging/guide-merging-vssm-files/
 ---
@@ -53,7 +52,7 @@ Console.WriteLine("\nVSSM files merge completed successfully. \nCheck output in 
 ### क्या GroupDocs.Merger बड़े पैमाने पर दस्तावेज़ प्रसंस्करण के लिए उपयुक्त है?
 हाँ, GroupDocs.Merger प्रदर्शन के लिए अनुकूलित है और बड़े दस्तावेज़ों को कुशलतापूर्वक संभाल सकता है।
 ### मैं GroupDocs.Merger के लिए विस्तृत दस्तावेज़ कहां पा सकता हूं?
- आप इसका संदर्भ ले सकते हैं[प्रलेखन](https://reference.groupdocs.com/merger/net/) व्यापक मार्गदर्शन के लिए.
+ आप इसका संदर्भ ले सकते हैं[प्रलेखन](https://tutorials.groupdocs.com/merger/net/) व्यापक मार्गदर्शन के लिए.
 ### मैं GroupDocs उत्पादों के लिए तकनीकी सहायता कैसे प्राप्त कर सकता हूँ?
  दौरा करना[ग्रुपडॉक्स सहायता मंच](https://forum.groupdocs.com/c/merger/32)सहायता और चर्चा के लिए.
 ### क्या GroupDocs मूल्यांकन के लिए निःशुल्क परीक्षण की पेशकश करता है?

@@ -3,7 +3,6 @@ title: Slår ihop PPSX-filer
 linktitle: Slår ihop PPSX-filer
 second_title: GroupDocs.Merger .NET API
 description: Slå ihop PPSX-filer enkelt med GroupDocs.Merger för .NET. Följ vår steg-för-steg-guide för att automatisera filsammanfogningsuppgifter! Förbättra ditt arbetsflöde för dokumenthantering.
-type: docs
 weight: 11
 url: /sv/net/presentation-merging/merging-ppsx-files/
 ---
@@ -55,7 +54,7 @@ Ja, GroupDocs.Merger stöder ett brett utbud av dokumentformat, inklusive DOCX, 
 ### Kan jag slå samman krypterade PPSX-filer med GroupDocs.Merger?
 GroupDocs.Merger kan hantera både krypterade och lösenordsskyddade filer, vilket säkerställer säker dokumenthantering.
 ### Var kan jag hitta ytterligare support eller dokumentation för GroupDocs.Merger?
- Utforska det omfattande[dokumentation](https://reference.groupdocs.com/merger/net/) och nå ut till[supportforum](https://forum.groupdocs.com/c/merger/32) för assistens.
+ Utforska det omfattande[dokumentation](https://tutorials.groupdocs.com/merger/net/) och nå ut till[supportforum](https://forum.groupdocs.com/c/merger/32) för assistens.
 ### Kräver GroupDocs.Merger en licens för kommersiellt bruk?
  Ja, en giltig licens krävs för kommersiell användning. Du kan få en licens från[köpsidan](https://purchase.groupdocs.com/buy) eller använd en[tillfällig licens](https://purchase.groupdocs.com/temporary-license/) för utvärdering.
 ### Kan jag prova GroupDocs.Merger innan jag köper?

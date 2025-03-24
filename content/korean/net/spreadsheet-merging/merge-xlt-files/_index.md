@@ -3,7 +3,6 @@ title: XLT 파일 병합
 linktitle: XLT 파일 병합
 second_title: GroupDocs.Merger .NET API
 description: XLT 파일을 병합하는 방법을 알아보세요. 이 단계별 가이드를 사용하여 C#에서 프로그래밍 방식으로 Excel 템플릿을 결합하세요.
-type: docs
 weight: 15
 url: /ko/net/spreadsheet-merging/merge-xlt-files/
 ---
@@ -59,7 +58,7 @@ Console.WriteLine("\nXLT files merge completed successfully. \nCheck output in {
 ### GroupDocs.Merger는 XLSX 또는 XLS와 같은 다른 Excel 파일 형식과 호환됩니까?
 예, GroupDocs.Merger는 XLSX, XLS 및 XLT를 포함한 다양한 Excel 파일 형식을 지원합니다.
 ### .NET용 GroupDocs.Merger에 대한 추가 예제와 설명서는 어디에서 찾을 수 있나요?
- 자세한 문서와 코드 샘플을 이용할 수 있습니다.[여기](https://reference.groupdocs.com/merger/net/).
+ 자세한 문서와 코드 샘플을 이용할 수 있습니다.[여기](https://tutorials.groupdocs.com/merger/net/).
 ### 테스트에 사용할 수 있는 GroupDocs.Merger 평가판이 있습니까?
  예, 다음에서 무료 평가판을 다운로드할 수 있습니다.[여기](https://releases.groupdocs.com/).
 ### GroupDocs.Merger에 대한 기술 지원이나 지원을 받으려면 어떻게 해야 합니까?

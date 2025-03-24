@@ -3,7 +3,6 @@ title: EPUB-bestanden samenvoegen
 linktitle: EPUB-bestanden samenvoegen
 second_title: GroupDocs.Merger .NET API
 description: Leer hoe u EPUB-bestanden programmatisch samenvoegt met GroupDocs.Merger voor .NET. Volg onze stap-voor-stap handleiding.
-type: docs
 weight: 17
 url: /nl/net/document-merging/merge-epub-files/
 ---

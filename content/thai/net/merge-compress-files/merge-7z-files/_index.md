@@ -3,7 +3,6 @@ title: วิธีรวมไฟล์ 7z
 linktitle: วิธีรวมไฟล์ 7z
 second_title: GroupDocs.Merger .NET API
 description: รวมไฟล์ 7z ได้อย่างง่ายดายโดยใช้ GroupDocs.Merger สำหรับ .NET ปฏิบัติตามคำแนะนำทีละขั้นตอนของเราเพื่อรวมไฟล์เก็บถาวรหลายรายการเป็นไฟล์เดียวได้อย่างราบรื่น
-type: docs
 weight: 10
 url: /th/net/merge-compress-files/merge-7z-files/
 ---

@@ -3,7 +3,6 @@ title: EPUB फ़ाइलें मर्ज करें
 linktitle: EPUB फ़ाइलें मर्ज करें
 second_title: GroupDocs.Merger .NET API
 description: .NET के लिए GroupDocs.Merger का उपयोग करके EPUB फ़ाइलों को प्रोग्रामेटिक रूप से मर्ज करना सीखें। हमारे चरण-दर-चरण ट्यूटोरियल का अनुसरण करें।
-type: docs
 weight: 17
 url: /hi/net/document-merging/merge-epub-files/
 ---

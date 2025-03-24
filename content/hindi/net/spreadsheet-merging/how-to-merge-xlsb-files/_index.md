@@ -3,7 +3,6 @@ title: XLSB फ़ाइलों को कैसे मर्ज करें
 linktitle: XLSB फ़ाइलों को कैसे मर्ज करें
 second_title: GroupDocs.Merger .NET API
 description: XLSB फ़ाइलों को मर्ज करने का तरीका जानें। यह चरण-दर-चरण मार्गदर्शिका दस्तावेज़ हेरफेर कार्यों को सरल बनाती है।
-type: docs
 weight: 12
 url: /hi/net/spreadsheet-merging/how-to-merge-xlsb-files/
 ---
@@ -54,7 +53,7 @@ Console.WriteLine("\nXLSB files merge completed successfully. \nCheck output in 
 ### क्या GroupDocs.Merger XLSB के अलावा अन्य फ़ाइल स्वरूपों को संभाल सकता है?
 हां, GroupDocs.Merger DOCX, PDF, XLSX, PPTX और अन्य सहित दस्तावेज़ प्रारूपों की एक विस्तृत श्रृंखला का समर्थन करता है।
 ### मुझे GroupDocs.Merger के लिए और अधिक दस्तावेज़ कहां मिल सकते हैं?
- दौरा करना[प्रलेखन](https://reference.groupdocs.com/merger/net/) विस्तृत उपयोग निर्देशों और एपीआई संदर्भों के लिए।
+ दौरा करना[प्रलेखन](https://tutorials.groupdocs.com/merger/net/) विस्तृत उपयोग निर्देशों और एपीआई संदर्भों के लिए।
 ### क्या GroupDocs.Merger के लिए कोई निःशुल्क परीक्षण उपलब्ध है?
  हां, आप ए तक पहुंच सकते हैं[मुफ्त परीक्षण](https://releases.groupdocs.com/)GroupDocs.Merger की विशेषताओं का पता लगाने के लिए।
 ### मैं GroupDocs.Merger के लिए तकनीकी सहायता कैसे प्राप्त कर सकता हूं?

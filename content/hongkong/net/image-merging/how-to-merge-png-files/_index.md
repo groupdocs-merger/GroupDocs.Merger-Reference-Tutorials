@@ -3,7 +3,6 @@ title: 如何合併 PNG 文件
 linktitle: 如何合併 PNG 文件
 second_title: GroupDocs.Merger .NET API
 description: 了解如何使用 GroupDocs.Merger for .NET 合併 PNG 檔案。在 .NET 應用程式中無縫整合的逐步指南。
-type: docs
 weight: 12
 url: /zh-hant/net/image-merging/how-to-merge-png-files/
 ---
@@ -59,7 +58,7 @@ Console.WriteLine("\nPNG files merge completed successfully. \nCheck output in {
 ### 我可以自訂合併選項，例如方向或佈局嗎？
 絕對地！ GroupDocs.Merger 提供了各種選項來控製文件和影像的合併方式，從而實現靈活的自訂。
 ### 在哪裡可以找到更多關於 GroupDocs.Merger 的資源和支援？
-參觀[GroupDocs.Merger 論壇](https://forum.groupdocs.com/c/merger/32)尋求社區支持並探索[文件](https://reference.groupdocs.com/merger/net/)以獲得詳細指導。
+參觀[GroupDocs.Merger 論壇](https://forum.groupdocs.com/c/merger/32)尋求社區支持並探索[文件](https://tutorials.groupdocs.com/merger/net/)以獲得詳細指導。
 ### 是否有試用版可用於在購買前測試 GroupDocs.Merger？
 是的，您可以從以下位置下載免費試用版：[集團文件網站](https://releases.groupdocs.com/)評估圖書館的能力。
 ### 如何取得 GroupDocs.Merger 的臨時授權？

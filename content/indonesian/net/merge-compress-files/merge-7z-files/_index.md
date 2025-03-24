@@ -3,7 +3,6 @@ title: Cara Menggabungkan File 7z
 linktitle: Cara Menggabungkan File 7z
 second_title: GroupDocs.Merger .NET API
 description: Gabungkan file 7z dengan mudah menggunakan GroupDocs.Merger untuk .NET. Ikuti panduan langkah demi langkah kami untuk menggabungkan beberapa arsip menjadi satu dengan lancar.
-type: docs
 weight: 10
 url: /id/net/merge-compress-files/merge-7z-files/
 ---

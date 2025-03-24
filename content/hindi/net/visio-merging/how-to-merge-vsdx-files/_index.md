@@ -3,7 +3,6 @@ title: वीएसडीएक्स फाइलों को कैसे म
 linktitle: वीएसडीएक्स फाइलों को कैसे मर्ज करें
 second_title: GroupDocs.Merger .NET API
 description: .NET के लिए GroupDocs.Merger का उपयोग करके VSDX फ़ाइलों को प्रोग्रामेटिक रूप से मर्ज करना सीखें। यह ट्यूटोरियल कोड नमूनों के साथ चरण-दर-चरण निर्देश प्रदान करता है।
-type: docs
 weight: 12
 url: /hi/net/visio-merging/how-to-merge-vsdx-files/
 ---
@@ -59,7 +58,7 @@ Console.WriteLine("\nVSDX files merge completed successfully. \nCheck output in 
 ### क्या GroupDocs.Merger for .NET .NET कोर के साथ संगत है?
 हां, .NET के लिए GroupDocs.Merger पारंपरिक .NET फ्रेमवर्क के साथ .NET कोर के साथ संगत है।
 ### मैं .NET के लिए GroupDocs.Merger के लिए विस्तृत दस्तावेज़ कहां पा सकता हूं?
- व्यापक संदर्भ देखें[प्रलेखन](https://reference.groupdocs.com/merger/net/) .NET के लिए GroupDocs.Merger के लिए।
+ व्यापक संदर्भ देखें[प्रलेखन](https://tutorials.groupdocs.com/merger/net/) .NET के लिए GroupDocs.Merger के लिए।
 ### मैं .NET के लिए GroupDocs.Merger हेतु अस्थायी लाइसेंस कैसे प्राप्त कर सकता हूं?
  आप अस्थायी लाइसेंस प्राप्त कर सकते हैं[अस्थायी लाइसेंस पृष्ठ](https://purchase.groupdocs.com/temporary-license/).
 ### .NET के लिए GroupDocs.Merger के लिए कौन से समर्थन विकल्प उपलब्ध हैं?

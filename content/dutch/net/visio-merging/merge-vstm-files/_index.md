@@ -3,7 +3,6 @@ title: VSTM-bestanden samenvoegen
 linktitle: VSTM-bestanden samenvoegen
 second_title: GroupDocs.Merger .NET API
 description: Leer hoe u VSTM-bestanden moeiteloos kunt samenvoegen met GroupDocs.Merger voor .NET. Volg onze stapsgewijze zelfstudie en uw mogelijkheden voor documentmanipulatie.
-type: docs
 weight: 15
 url: /nl/net/visio-merging/merge-vstm-files/
 ---

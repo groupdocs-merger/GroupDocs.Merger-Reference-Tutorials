@@ -3,7 +3,6 @@ title: Συγχώνευση και διαίρεση εγγράφων χωρίς 
 linktitle: GroupDocs.Merger Tutorials
 additionalTitle: Αναφορές API GroupDocs
 description: Συγχωνεύστε, διαχωρίστε και συμπιέστε έγγραφα χωρίς κόπο σε πλατφόρμες .NET και Java με τους ειδικούς μας οδηγούς για το GroupDocs.Merger. Ξεκλειδώστε απρόσκοπτη διαχείριση αρχείων!
-type: docs
 weight: 11
 url: /el/
 is_root: true

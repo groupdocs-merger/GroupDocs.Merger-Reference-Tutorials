@@ -3,7 +3,6 @@ title: Zusammenführen von XLS-Dateien
 linktitle: Zusammenführen von XLS-Dateien
 second_title: GroupDocs.Merger .NET API
 description: Erfahren Sie, wie Sie Excel-Dateien in .NET mit GroupDocs.Merger zur nahtlosen Dokumentbearbeitung zusammenführen. Folgen Sie unserem Schritt-für-Schritt-Tutorial.
-type: docs
 weight: 11
 url: /de/net/spreadsheet-merging/merging-xls-files/
 ---

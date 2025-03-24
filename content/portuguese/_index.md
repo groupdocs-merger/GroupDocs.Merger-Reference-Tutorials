@@ -3,7 +3,6 @@ title: Mesclar e dividir documentos sem esforço com GroupDocs.Merger
 linktitle: Tutoriais GroupDocs.Merger
 additionalTitle: Referências da API GroupDocs
 description: Mescle, divida e compacte facilmente documentos em plataformas .NET e Java com nossos tutoriais especializados em GroupDocs.Merger. Desbloqueie o gerenciamento de arquivos perfeito!
-type: docs
 weight: 11
 url: /pt/
 is_root: true

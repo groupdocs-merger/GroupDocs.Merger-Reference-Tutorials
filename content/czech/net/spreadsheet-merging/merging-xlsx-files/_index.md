@@ -3,7 +3,6 @@ title: Sloučení souborů XLSX
 linktitle: Sloučení souborů XLSX
 second_title: GroupDocs.Merger .NET API
 description: Naučte se, jak bez námahy sloučit soubory XLSX v .NET pomocí GroupDocs.Merger. Postupujte podle tohoto podrobného návodu pro bezproblémovou správu dokumentů.
-type: docs
 weight: 14
 url: /cs/net/spreadsheet-merging/merging-xlsx-files/
 ---
@@ -54,7 +53,7 @@ Ano, GroupDocs.Merger podporuje slučování různých formátů souborů, jako 
 ### Je GroupDocs.Merger kompatibilní s aplikacemi .NET Core?
 Ano, GroupDocs.Merger lze použít s projekty .NET Framework i .NET Core.
 ### Kde najdu podrobnou dokumentaci k GroupDocs.Merger?
- K dispozici je podrobná dokumentace[tady](https://reference.groupdocs.com/merger/net/).
+ K dispozici je podrobná dokumentace[tady](https://tutorials.groupdocs.com/merger/net/).
 ### Nabízí GroupDocs.Merger bezplatnou zkušební verzi?
  Ano, máte přístup k bezplatné zkušební verzi[tady](https://releases.groupdocs.com/).
 ### Jak mohu získat podporu pro GroupDocs.Merger?

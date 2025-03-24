@@ -3,7 +3,6 @@ title: TIF-bestanden samenvoegen
 linktitle: TIF-bestanden samenvoegen
 second_title: GroupDocs.Merger .NET API
 description: Leer hoe u TIF-bestanden programmatisch samenvoegt met GroupDocs.Merger voor .NET. Efficiënte API voor documentmanipulatie voor .NET-ontwikkelaars.
-type: docs
 weight: 15
 url: /nl/net/image-merging/merge-tif-files/
 ---

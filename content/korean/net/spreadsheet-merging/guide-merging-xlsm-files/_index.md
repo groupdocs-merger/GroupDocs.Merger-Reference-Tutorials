@@ -3,7 +3,6 @@ title: XLSM 파일 병합 가이드
 linktitle: XLSM 파일 병합 가이드
 second_title: GroupDocs.Merger .NET API
 description: .NET용 GroupDocs.Merger를 사용하여 XLSM 파일을 원활하게 병합합니다. 프로그래밍 방식으로 Excel 통합 문서를 효율적으로 결합합니다. 문서 조작 능력을 강화하세요.
-type: docs
 weight: 13
 url: /ko/net/spreadsheet-merging/guide-merging-xlsm-files/
 ---

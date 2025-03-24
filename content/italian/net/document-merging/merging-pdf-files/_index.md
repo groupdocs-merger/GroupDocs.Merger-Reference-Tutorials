@@ -3,7 +3,6 @@ title: Unione di file PDF
 linktitle: Unione di file PDF
 second_title: API GroupDocs.Merger .NET
 description: Scopri come unire i file PDF a livello di codice in .NET utilizzando GroupDocs.Merger per una gestione dei documenti fluida.
-type: docs
 weight: 19
 url: /it/net/document-merging/merging-pdf-files/
 ---

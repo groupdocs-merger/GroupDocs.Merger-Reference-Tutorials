@@ -3,7 +3,6 @@ title: รวมไฟล์ PPS
 linktitle: รวมไฟล์ PPS
 second_title: GroupDocs.Merger .NET API
 description: เรียนรู้วิธีผสานไฟล์ PPS ได้อย่างราบรื่นโดยใช้ GroupDocs.Merger สำหรับ .NET คำแนะนำทีละขั้นตอนพร้อมตัวอย่างโค้ด เพิ่มทักษะการจัดการเอกสารของคุณ
-type: docs
 weight: 10
 url: /th/net/presentation-merging/merge-pps-files/
 ---
@@ -61,7 +60,7 @@ Console.WriteLine("\nPPS files merge completed successfully. \nCheck output in {
 ### GroupDocs.Merger เหมาะสำหรับการประมวลผลการรวมเอกสารเป็นชุดหรือไม่
 แน่นอน คุณสามารถใช้ประโยชน์จาก GroupDocs.Merger สำหรับงานประมวลผลเป็นชุดเพื่อรวมเอกสารหลายชุดพร้อมกันได้
 ### ฉันจะหาเอกสารฉบับเต็มสำหรับ GroupDocs.Merger for .NET ได้ที่ไหน
- มีเอกสารประกอบครบถ้วน[ที่นี่](https://reference.groupdocs.com/merger/net/).
+ มีเอกสารประกอบครบถ้วน[ที่นี่](https://tutorials.groupdocs.com/merger/net/).
 ### ฉันจะขอรับใบอนุญาตชั่วคราวสำหรับ GroupDocs.Merger สำหรับ .NET ได้อย่างไร
  คุณสามารถรับใบอนุญาตชั่วคราวได้จาก[ที่นี่](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs ให้การสนับสนุนสำหรับการแก้ไขปัญหาและการสอบถามหรือไม่

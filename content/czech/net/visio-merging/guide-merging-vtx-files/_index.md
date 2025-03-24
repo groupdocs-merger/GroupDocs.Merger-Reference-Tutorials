@@ -3,7 +3,6 @@ title: Průvodce sloučením souborů VTX
 linktitle: Průvodce sloučením souborů VTX
 second_title: GroupDocs.Merger .NET API
 description: Naučte se, jak sloučit soubory VTX programově pomocí GroupDocs.Merger for .NET. Podrobný průvodce s příklady kódu.
-type: docs
 weight: 18
 url: /cs/net/visio-merging/guide-merging-vtx-files/
 ---
@@ -49,7 +48,7 @@ tomto tutoriálu jste se naučili, jak sloučit soubory VTX pomocí GroupDocs.Me
 ### Mohu sloučit více souborů VTX do jednoho výstupu pomocí GroupDocs.Merger for .NET?
  Ano, můžete sloučit více souborů VTX do jednoho pomocí`Join` metoda poskytovaná GroupDocs.Merger.
 ### Kde najdu další dokumentaci k GroupDocs.Merger pro .NET?
- Navštivte[dokumentace](https://reference.groupdocs.com/merger/net/) pro podrobné reference API a příklady použití.
+ Navštivte[dokumentace](https://tutorials.groupdocs.com/merger/net/) pro podrobné tutorials API a příklady použití.
 ### Je k dispozici zkušební verze pro GroupDocs.Merger pro .NET?
  Ano, můžete si stáhnout a[zkušební verze zdarma](https://releases.groupdocs.com/) prozkoumat možnosti GroupDocs.Merger před nákupem.
 ### Jak mohu získat technickou podporu pro GroupDocs.Merger pro .NET?

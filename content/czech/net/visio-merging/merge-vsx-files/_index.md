@@ -3,7 +3,6 @@ title: Sloučit soubory VSX
 linktitle: Sloučit soubory VSX
 second_title: GroupDocs.Merger .NET API
 description: Naučte se, jak sloučit soubory VSX bez námahy pomocí GroupDocs.Merger for .NET. Tato obsáhlá příručka zjednodušuje úlohy manipulace s dokumenty.
-type: docs
 weight: 17
 url: /cs/net/visio-merging/merge-vsx-files/
 ---
@@ -12,7 +11,7 @@ V tomto tutoriálu prozkoumáme, jak sloučit soubory VSX pomocí GroupDocs.Merg
 ## Předpoklady
 Než začneme, ujistěte se, že máte nastaveny následující předpoklady:
 - Vývojové prostředí: Nainstalujte Visual Studio nebo jiné IDE pro vývoj .NET.
--  GroupDocs.Merger for .NET: Získejte rozhraní API z[GroupDocs.Merger pro dokumentaci .NET](https://reference.groupdocs.com/merger/net/).
+-  GroupDocs.Merger for .NET: Získejte rozhraní API z[GroupDocs.Merger pro dokumentaci .NET](https://tutorials.groupdocs.com/merger/net/).
 - Ukázkové soubory VSX: Připravte soubory VSX, které chcete sloučit, pro účely testování.
 
 ## Import jmenných prostorů

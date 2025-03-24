@@ -3,7 +3,6 @@ title: Jak scalić pliki DOCX
 linktitle: Jak scalić pliki DOCX
 second_title: GroupDocs.Merger API .NET
 description: Dowiedz się, jak programowo łączyć pliki DOCX w .NET przy użyciu GroupDocs.Merger, co skutecznie upraszcza zadania manipulacji dokumentami.
-type: docs
 weight: 12
 url: /pl/net/document-merging/how-to-merge-docx-files/
 ---
@@ -13,7 +12,7 @@ W świecie programowania .NET programowe łączenie plików DOCX może być pot�
 Przed rozpoczęciem upewnij się, że spełnione są następujące wymagania wstępne:
 - Program Visual Studio zainstalowany na Twoim komputerze.
 - Podstawowa znajomość programowania w C# i .NET.
--  Zainstalowana biblioteka GroupDocs.Merger for .NET (patrz[dokumentacja](https://reference.groupdocs.com/merger/net/) w celu uzyskania szczegółów instalacji).
+-  Zainstalowana biblioteka GroupDocs.Merger for .NET (patrz[dokumentacja](https://tutorials.groupdocs.com/merger/net/) w celu uzyskania szczegółów instalacji).
 
 ## Importuj przestrzenie nazw
 Rozpocznij od zaimportowania niezbędnych przestrzeni nazw do projektu C#:
@@ -49,7 +48,7 @@ Tak, GroupDocs.Merger obsługuje różne formaty dokumentów, w tym DOCX, PDF, X
 ### Czy mogę dostosować proces scalania, na przykład określić zakresy stron lub dodać znaki wodne?
 Oczywiście GroupDocs.Merger zapewnia elastyczne interfejsy API umożliwiające dostosowanie procesu scalania do Twoich wymagań.
 ### Gdzie mogę znaleźć dodatkową pomoc lub dokumentację dotyczącą GroupDocs.Merger dla .NET?
- Możesz zapoznać się z[dokumentacja](https://reference.groupdocs.com/merger/net/) szczegółowe odniesienia do API i przykłady.
+ Możesz zapoznać się z[dokumentacja](https://tutorials.groupdocs.com/merger/net/) szczegółowe odniesienia do API i przykłady.
 ### Czy GroupDocs.Merger dla .NET oferuje bezpłatną wersję próbną?
  Tak, możesz zacząć od[bezpłatna wersja próbna](https://releases.groupdocs.com/) aby zapoznać się z funkcjami przed dokonaniem zakupu.
 ### Jak mogę uzyskać tymczasową licencję na GroupDocs.Merger dla .NET?

@@ -3,7 +3,6 @@ title: Cách hợp nhất các tệp XLSB
 linktitle: Cách hợp nhất các tệp XLSB
 second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp XLSB. Hướng dẫn từng bước này giúp đơn giản hóa các tác vụ thao tác tài liệu.
-type: docs
 weight: 12
 url: /vi/net/spreadsheet-merging/how-to-merge-xlsb-files/
 ---
@@ -54,7 +53,7 @@ Bằng cách làm theo các bước sau, bạn có thể dễ dàng hợp nhất
 ### GroupDocs.Merger có thể xử lý các định dạng tệp khác ngoài XLSB không?
 Có, GroupDocs.Merger hỗ trợ nhiều định dạng tài liệu bao gồm DOCX, PDF, XLSX, PPTX, v.v.
 ### Tôi có thể tìm thêm tài liệu về GroupDocs.Merger ở đâu?
- Tham quan[tài liệu](https://reference.groupdocs.com/merger/net/) để biết hướng dẫn sử dụng chi tiết và tài liệu tham khảo API.
+ Tham quan[tài liệu](https://tutorials.groupdocs.com/merger/net/) để biết hướng dẫn sử dụng chi tiết và tài liệu tham khảo API.
 ### Có bản dùng thử miễn phí cho GroupDocs.Merger không?
  Có, bạn có thể truy cập một[dùng thử miễn phí](https://releases.groupdocs.com/)để khám phá các tính năng của GroupDocs.Merger.
 ### Làm cách nào tôi có thể nhận được hỗ trợ kỹ thuật cho GroupDocs.Merger?

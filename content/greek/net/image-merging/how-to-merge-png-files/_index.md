@@ -3,7 +3,6 @@ title: Πώς να συγχωνεύσετε αρχεία PNG
 linktitle: Πώς να συγχωνεύσετε αρχεία PNG
 second_title: GroupDocs.Merger .NET API
 description: Μάθετε πώς να συγχωνεύετε αρχεία PNG χρησιμοποιώντας το GroupDocs.Merger για .NET. Οδηγός βήμα προς βήμα για απρόσκοπτη ενσωμάτωση στις εφαρμογές σας .NET.
-type: docs
 weight: 12
 url: /el/net/image-merging/how-to-merge-png-files/
 ---
@@ -59,7 +58,7 @@ Console.WriteLine("\nPNG files merge completed successfully. \nCheck output in {
 ### Μπορώ να προσαρμόσω τις επιλογές συγχώνευσης, όπως προσανατολισμό ή διάταξη;
 Απολύτως! Το GroupDocs.Merger προσφέρει διάφορες επιλογές για τον έλεγχο του τρόπου συγχώνευσης εγγράφων και εικόνων, επιτρέποντας την ευέλικτη προσαρμογή.
 ### Πού μπορώ να βρω περισσότερους πόρους και υποστήριξη για το GroupDocs.Merger;
- Επισκέψου το[Φόρουμ GroupDocs.Merger](https://forum.groupdocs.com/c/merger/32) για υποστήριξη της κοινότητας και να εξερευνήσετε το[τεκμηρίωση](https://reference.groupdocs.com/merger/net/) για λεπτομερή καθοδήγηση.
+ Επισκέψου το[Φόρουμ GroupDocs.Merger](https://forum.groupdocs.com/c/merger/32) για υποστήριξη της κοινότητας και να εξερευνήσετε το[τεκμηρίωση](https://tutorials.groupdocs.com/merger/net/) για λεπτομερή καθοδήγηση.
 ### Υπάρχει διαθέσιμη δοκιμαστική έκδοση για δοκιμή του GroupDocs.Merger πριν από την αγορά;
  Ναι, μπορείτε να κάνετε λήψη μιας δωρεάν δοκιμής από το[Ιστότοπος GroupDocs](https://releases.groupdocs.com/) να αξιολογήσει τις δυνατότητες της βιβλιοθήκης.
 ### Πώς μπορώ να αποκτήσω μια προσωρινή άδεια για το GroupDocs.Merger;

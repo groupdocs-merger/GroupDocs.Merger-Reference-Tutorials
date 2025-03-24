@@ -3,7 +3,6 @@ title: Как объединить файлы XLSB
 linktitle: Как объединить файлы XLSB
 second_title: GroupDocs.Merger .NET API
 description: Узнайте, как объединить файлы XLSB. Это пошаговое руководство упрощает задачи манипулирования документами.
-type: docs
 weight: 12
 url: /ru/net/spreadsheet-merging/how-to-merge-xlsb-files/
 ---
@@ -54,7 +53,7 @@ Console.WriteLine("\nXLSB files merge completed successfully. \nCheck output in 
 ### Может ли GroupDocs.Merger обрабатывать файлы других форматов, кроме XLSB?
 Да, GroupDocs.Merger поддерживает широкий спектр форматов документов, включая DOCX, PDF, XLSX, PPTX и другие.
 ### Где я могу найти дополнительную документацию для GroupDocs.Merger?
- Посетить[документация](https://reference.groupdocs.com/merger/net/) подробные инструкции по использованию и ссылки на API.
+ Посетить[документация](https://tutorials.groupdocs.com/merger/net/) подробные инструкции по использованию и ссылки на API.
 ### Доступна ли бесплатная пробная версия GroupDocs.Merger?
  Да, вы можете получить доступ к[бесплатная пробная версия](https://releases.groupdocs.com/)чтобы изучить возможности GroupDocs.Merger.
 ### Как я могу получить техническую поддержку для GroupDocs.Merger?

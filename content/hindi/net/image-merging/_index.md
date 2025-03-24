@@ -3,7 +3,6 @@ title: छवि विलय
 linktitle: छवि विलय
 second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger .NET के साथ BMP, GIF, PNG, SVG, SVGZ, TIF, और TIFF फ़ाइलों को सहजता से मर्ज करें। अपने .NET अनुप्रयोगों में दस्तावेज़ हेरफेर को कुशलतापूर्वक एकीकृत करें।
-type: docs
 weight: 21
 url: /hi/net/image-merging/
 ---

@@ -3,7 +3,6 @@ title: 图像合并
 linktitle: 图像合并
 second_title: GroupDocs.Merger .NET API
 description: 使用 GroupDocs.Merger .NET 无缝合并 BMP、GIF、PNG、SVG、SVGZ、TIF 和 TIFF 文件。高效地将文档操作集成到您的 .NET 应用程序中。
-type: docs
 weight: 21
 url: /zh/net/image-merging/
 ---

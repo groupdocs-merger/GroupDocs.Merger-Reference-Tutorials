@@ -3,7 +3,6 @@ title: 合并 GIF 文件
 linktitle: 合并 GIF 文件
 second_title: GroupDocs.Merger .NET API
 description: 了解如何使用 GroupDocs.Merger for .NET 合并 GIF 文件。通过分步说明以编程方式合并多个 GIF。
-type: docs
 weight: 11
 url: /zh/net/image-merging/merging-gif-files/
 ---
@@ -63,6 +62,6 @@ Console.WriteLine("\nGIF files merge completed successfully. \nCheck output in {
 ### 问：如何获得 GroupDocs.Merger 的技术支持？
 如需技术帮助，请访问 GroupDocs.Merger[论坛](https://forum.groupdocs.com/c/merger/32)您可以在这里提出问题并与社区互动。
 ### 问：在哪里可以找到 GroupDocs.Merger for .NET 的详细文档？
-探索全面的文档[这里](https://reference.groupdocs.com/merger/net/)有关在 .NET 应用程序中使用 GroupDocs.Merger 的详细见解。
+探索全面的文档[这里](https://tutorials.groupdocs.com/merger/net/)有关在 .NET 应用程序中使用 GroupDocs.Merger 的详细见解。
 ### 问：我可以获得 GroupDocs.Merger 的临时许可证吗？
 是的，您可以从以下地址获得临时许可证[这里](https://purchase.groupdocs.com/temporary-license/)在购买之前评估 GroupDocs.Merger 的功能。

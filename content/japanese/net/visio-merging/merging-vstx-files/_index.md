@@ -3,7 +3,6 @@ title: VSTX ファイルと GroupDocs.Merger for .NET のマージ
 linktitle: VSTX ファイルと GroupDocs.Merger for .NET のマージ
 second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger for .NET を使用して VSTX ファイルをマージする方法を学びます。 C# でドキュメントを効率的に操作するには、このステップバイステップ ガイドに従ってください。
-type: docs
 weight: 16
 url: /ja/net/visio-merging/merging-vstx-files/
 ---
@@ -64,4 +63,4 @@ Console.WriteLine("\nVSTX files merge completed successfully. \nCheck output in 
 ### GroupDocs.Merger for .NET は大規模なドキュメント処理タスクに適していますか?
 はい、GroupDocs.Merger は、大規模なドキュメントとバッチ操作を効率的に処理できるように最適化されています。
 ### GroupDocs.Merger for .NET の追加サポートやドキュメントはどこで入手できますか?
-訪問[GroupDocs.Merger フォーラム](https://forum.groupdocs.com/c/merger/32)または、[ドキュメンテーション](https://reference.groupdocs.com/merger/net/)包括的なリソースについては。
+訪問[GroupDocs.Merger フォーラム](https://forum.groupdocs.com/c/merger/32)または、[ドキュメンテーション](https://tutorials.groupdocs.com/merger/net/)包括的なリソースについては。

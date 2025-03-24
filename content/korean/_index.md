@@ -3,7 +3,6 @@ title: GroupDocs.Merger를 사용하여 손쉽게 문서 병합 및 분할
 linktitle: GroupDocs.Merger 튜토리얼
 additionalTitle: GroupDocs API 참조
 description: GroupDocs.Merger에 대한 전문가 튜토리얼을 통해 .NET 및 Java 플랫폼 전반에서 문서를 쉽게 병합, 분할 및 압축할 수 있습니다. 원활한 파일 관리를 잠금 해제하세요!
-type: docs
 weight: 11
 url: /ko/
 is_root: true

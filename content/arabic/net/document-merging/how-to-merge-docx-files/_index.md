@@ -3,7 +3,6 @@ title: كيفية دمج ملفات DOCX
 linktitle: كيفية دمج ملفات DOCX
 second_title: GroupDocs.Merger .NET API
 description: تعرف على كيفية دمج ملفات DOCX برمجيًا في .NET باستخدام GroupDocs.Merger، مما يبسط مهام معالجة المستندات بكفاءة.
-type: docs
 weight: 12
 url: /ar/net/document-merging/how-to-merge-docx-files/
 ---
@@ -13,7 +12,7 @@ url: /ar/net/document-merging/how-to-merge-docx-files/
 قبل البدء، تأكد من توفر المتطلبات الأساسية التالية:
 - تم تثبيت Visual Studio على جهازك.
 - الفهم الأساسي لتطوير C# و.NET.
--  تم تثبيت GroupDocs.Merger لمكتبة .NET (راجع[توثيق](https://reference.groupdocs.com/merger/net/) للحصول على تفاصيل التثبيت).
+-  تم تثبيت GroupDocs.Merger لمكتبة .NET (راجع[توثيق](https://tutorials.groupdocs.com/merger/net/) للحصول على تفاصيل التثبيت).
 
 ## استيراد مساحات الأسماء
 ابدأ باستيراد مساحات الأسماء الضرورية في مشروع C# الخاص بك:
@@ -49,7 +48,7 @@ using (var merger = new Merger("Your Sample Document File"X))
 ### هل يمكنني تخصيص عملية الدمج، مثل تحديد نطاقات الصفحات أو إضافة علامات مائية؟
 بالتأكيد، يوفر GroupDocs.Merger واجهات برمجة تطبيقات مرنة لتخصيص عملية الدمج وفقًا لمتطلباتك.
 ### أين يمكنني العثور على دعم أو وثائق إضافية لـ GroupDocs.Merger لـ .NET؟
- يمكنك الرجوع إلى[توثيق](https://reference.groupdocs.com/merger/net/) للحصول على مرجع وأمثلة API مفصلة.
+ يمكنك الرجوع إلى[توثيق](https://tutorials.groupdocs.com/merger/net/) للحصول على مرجع وأمثلة API مفصلة.
 ### هل يقدم GroupDocs.Merger for .NET نسخة تجريبية مجانية؟
  نعم، يمكنك البدء بـ[تجربة مجانية](https://releases.groupdocs.com/) لاستكشاف الميزات قبل إجراء عملية الشراء.
 ### كيف يمكنني الحصول على ترخيص مؤقت لـ GroupDocs.Merger لـ .NET؟

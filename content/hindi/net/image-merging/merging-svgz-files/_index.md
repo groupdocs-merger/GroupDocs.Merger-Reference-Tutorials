@@ -3,7 +3,6 @@ title: SVGZ फ़ाइलें मर्ज करना
 linktitle: SVGZ फ़ाइलें मर्ज करना
 second_title: GroupDocs.Merger .NET API
 description: इस चरण-दर-चरण ट्यूटोरियल के साथ जानें कि .NET के लिए GroupDocs.Merger का उपयोग करके SVGZ फ़ाइलों को कैसे मर्ज किया जाए। अपने दस्तावेज़ हेरफेर कौशल को बढ़ाएँ।
-type: docs
 weight: 14
 url: /hi/net/image-merging/merging-svgz-files/
 ---
@@ -59,7 +58,7 @@ Console.WriteLine("\nSVGZ files merge completed successfully. \nCheck output in 
 ### क्या GroupDocs.Merger SVGZ के अलावा अन्य फ़ाइल स्वरूपों को संभाल सकता है?
 हां, GroupDocs.Merger पीडीएफ, वर्ड, एक्सेल, पावरपॉइंट और अन्य सहित विभिन्न दस्तावेज़ प्रारूपों का समर्थन करता है।
 ### मैं GroupDocs.Merger के लिए विस्तृत दस्तावेज़ कहां पा सकता हूं?
- दौरा करना[प्रलेखन](https://reference.groupdocs.com/merger/net/) विस्तृत जानकारी और उपयोग के उदाहरणों के लिए.
+ दौरा करना[प्रलेखन](https://tutorials.groupdocs.com/merger/net/) विस्तृत जानकारी और उपयोग के उदाहरणों के लिए.
 ### क्या GroupDocs.Merger के लिए कोई निःशुल्क परीक्षण उपलब्ध है?
  हां, आप निःशुल्क परीक्षण का लाभ उठा सकते हैं[यहाँ](https://releases.groupdocs.com/).
 ### मैं GroupDocs.Merger के लिए समर्थन कैसे प्राप्त कर सकता हूं?

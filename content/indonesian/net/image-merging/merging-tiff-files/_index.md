@@ -3,7 +3,6 @@ title: Menggabungkan File TIFF
 linktitle: Menggabungkan File TIFF
 second_title: GroupDocs.Merger .NET API
 description: Pelajari cara menggabungkan file TIFF menggunakan GroupDocs.Merger untuk .NET. Gabungkan, pisahkan, dan ubah dokumen dengan lancar dalam aplikasi .NET Anda.
-type: docs
 weight: 16
 url: /id/net/image-merging/merging-tiff-files/
 ---
@@ -60,6 +59,6 @@ Tentu saja, GroupDocs.Merger dirancang untuk menangani volume dokumen besar seca
 ### Apakah GroupDocs.Merger menawarkan versi uji coba untuk evaluasi?
  Ya, Anda dapat mengakses uji coba gratis GroupDocs.Merger dari[Di Sini](https://releases.groupdocs.com/).
 ### Di mana saya dapat menemukan dokumentasi komprehensif untuk GroupDocs.Merger?
- Lihat dokumentasi[Di Sini](https://reference.groupdocs.com/merger/net/) untuk referensi dan panduan API terperinci.
+ Lihat dokumentasi[Di Sini](https://tutorials.groupdocs.com/merger/net/) untuk referensi dan panduan API terperinci.
 ### Bagaimana saya bisa mendapatkan dukungan untuk GroupDocs.Merger?
  Kunjungi forum komunitas GroupDocs[Di Sini](https://forum.groupdocs.com/c/merger/32) untuk dukungan dan diskusi.

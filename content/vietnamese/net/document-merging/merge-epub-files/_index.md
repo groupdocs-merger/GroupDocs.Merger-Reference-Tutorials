@@ -3,7 +3,6 @@ title: Hợp nhất các tệp EPUB
 linktitle: Hợp nhất các tệp EPUB
 second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp EPUB theo chương trình bằng GroupDocs.Merger cho .NET. Thực hiện theo hướng dẫn từng bước của chúng tôi.
-type: docs
 weight: 17
 url: /vi/net/document-merging/merge-epub-files/
 ---

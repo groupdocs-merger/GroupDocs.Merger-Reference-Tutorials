@@ -3,7 +3,6 @@ title: DOTX 파일 병합
 linktitle: DOTX 파일 병합
 second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger를 사용하여 .NET에서 DOTX 파일을 손쉽게 병합하는 방법을 알아보세요. 문서 조작 능력을 강화하세요.
-type: docs
 weight: 15
 url: /ko/net/document-merging/merge-dotx-files/
 ---
@@ -13,7 +12,7 @@ url: /ko/net/document-merging/merge-dotx-files/
 튜토리얼을 시작하기 전에 다음 사항을 확인하세요.
 - 컴퓨터에 설치된 Visual Studio
 - .NET SDK(호환 버전) 설치됨
--  .NET용 GroupDocs.Merger가 설치되었습니다(참조:[설치 설명서](https://reference.groupdocs.com/merger/net/) 자세한 내용은)
+-  .NET용 GroupDocs.Merger가 설치되었습니다(참조:[설치 설명서](https://tutorials.groupdocs.com/merger/net/) 자세한 내용은)
 - C# 프로그래밍에 대한 기본 지식
 
 ## 네임스페이스 가져오기
@@ -58,7 +57,7 @@ Console.WriteLine("\nDOTX files merge completed successfully. \nCheck output in 
 ### GroupDocs.Merger는 .NET Core와 호환되나요?
 예, GroupDocs.Merger는 .NET Framework 및 .NET Core 모두와 호환됩니다.
 ### GroupDocs.Merger에 대한 추가 지원이나 문서는 어디서 찾을 수 있나요?
- 당신은[GroupDocs.Merger 문서](https://reference.groupdocs.com/merger/net/) 자세한 API 참조 및 사용 예시를 확인하세요.
+ 당신은[GroupDocs.Merger 문서](https://tutorials.groupdocs.com/merger/net/) 자세한 API 참조 및 사용 예시를 확인하세요.
 ### GroupDocs.Merger는 무료 평가판을 제공합니까?
  예, 액세스할 수 있습니다[무료 평가판](https://releases.groupdocs.com/) GroupDocs.Merger를 평가합니다.
 ### GroupDocs.Merger 라이선스를 어떻게 구매할 수 있나요?

@@ -3,7 +3,6 @@ title: Scal pliki XLAM
 linktitle: Scal pliki XLAM
 second_title: GroupDocs.Merger API .NET
 description: Dowiedz się, jak bez wysiłku łączyć pliki XLAM. Uprość swoje zadania związane z zarządzaniem dokumentami dzięki temu potężnemu interfejsowi API.
-type: docs
 weight: 10
 url: /pl/net/spreadsheet-merging/merge-xlam-files/
 ---
@@ -80,7 +79,7 @@ Tak, do użytku komercyjnego wymagana jest licencja. Licencję tymczasową możn
 
 ### P: Gdzie mogę znaleźć więcej zasobów i wsparcia dla GroupDocs.Merger?
 
- Możesz odwiedzić[Dokumentacja GroupDocs.Merger](https://reference.groupdocs.com/merger/net/) aby uzyskać szczegółowe informacje o interfejsie API i sprawdź plik[Forum GroupDocs](https://forum.groupdocs.com/c/merger/32) za wsparcie społeczności.
+ Możesz odwiedzić[Dokumentacja GroupDocs.Merger](https://tutorials.groupdocs.com/merger/net/) aby uzyskać szczegółowe informacje o interfejsie API i sprawdź plik[Forum GroupDocs](https://forum.groupdocs.com/c/merger/32) za wsparcie społeczności.
 
 ### P: Czy mogę wypróbować GroupDocs.Merger przed zakupem?
 

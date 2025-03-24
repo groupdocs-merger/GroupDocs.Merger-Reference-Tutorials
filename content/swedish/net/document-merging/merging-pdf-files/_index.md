@@ -3,7 +3,6 @@ title: Slå ihop PDF-filer
 linktitle: Slå ihop PDF-filer
 second_title: GroupDocs.Merger .NET API
 description: Lär dig hur du sammanfogar PDF-filer programmatiskt i .NET med GroupDocs.Merger för sömlös dokumenthantering.
-type: docs
 weight: 19
 url: /sv/net/document-merging/merging-pdf-files/
 ---

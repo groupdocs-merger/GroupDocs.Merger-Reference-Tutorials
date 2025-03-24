@@ -3,7 +3,6 @@ title: VSDM फ़ाइलें मर्ज करना
 linktitle: VSDM फ़ाइलें मर्ज करना
 second_title: GroupDocs.Merger .NET API
 description: .NET के लिए GroupDocs.Merger का उपयोग करके VSDM फ़ाइलों को मर्ज करना सीखें। इस उपयोग में आसान लाइब्रेरी के साथ अपने दस्तावेज़ प्रबंधन कार्यों को सरल बनाएँ।
-type: docs
 weight: 11
 url: /hi/net/visio-merging/merging-vsdm-files/
 ---

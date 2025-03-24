@@ -3,7 +3,6 @@ title: Jak scalić pliki VSDX
 linktitle: Jak scalić pliki VSDX
 second_title: GroupDocs.Merger API .NET
 description: Dowiedz się, jak programowo scalić pliki VSDX przy użyciu GroupDocs.Merger dla .NET. Ten samouczek zawiera instrukcje krok po kroku z przykładami kodu.
-type: docs
 weight: 12
 url: /pl/net/visio-merging/how-to-merge-vsdx-files/
 ---
@@ -59,7 +58,7 @@ Tak, GroupDocs.Merger obsługuje łączenie różnych formatów, w tym PDF, Word
 ### Czy GroupDocs.Merger dla .NET jest kompatybilny z .NET Core?
 Tak, GroupDocs.Merger dla .NET jest kompatybilny z .NET Core i tradycyjnym .NET Framework.
 ### Gdzie mogę znaleźć szczegółową dokumentację GroupDocs.Merger dla .NET?
- Zapoznaj się z całością[dokumentacja](https://reference.groupdocs.com/merger/net/) dla GroupDocs.Merger dla .NET.
+ Zapoznaj się z całością[dokumentacja](https://tutorials.groupdocs.com/merger/net/) dla GroupDocs.Merger dla .NET.
 ### Jak mogę uzyskać tymczasową licencję na GroupDocs.Merger dla .NET?
  Możesz uzyskać tymczasową licencję od[strona licencji tymczasowej](https://purchase.groupdocs.com/temporary-license/).
 ### Jakie opcje pomocy są dostępne dla GroupDocs.Merger dla .NET?

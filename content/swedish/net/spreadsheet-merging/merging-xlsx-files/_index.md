@@ -3,7 +3,6 @@ title: Slår ihop XLSX-filer
 linktitle: Slår ihop XLSX-filer
 second_title: GroupDocs.Merger .NET API
 description: Lär dig hur du enkelt sammanfogar XLSX-filer i .NET med GroupDocs.Merger. Följ denna steg-för-steg handledning för sömlös dokumenthantering.
-type: docs
 weight: 14
 url: /sv/net/spreadsheet-merging/merging-xlsx-files/
 ---
@@ -54,7 +53,7 @@ Ja, GroupDocs.Merger stöder sammanslagning av olika filformat som DOCX, PPTX, P
 ### Är GroupDocs.Merger kompatibel med .NET Core-applikationer?
 Ja, GroupDocs.Merger kan användas med både .NET Framework och .NET Core-projekt.
 ### Var kan jag hitta detaljerad dokumentation för GroupDocs.Merger?
- Detaljerad dokumentation finns tillgänglig[här](https://reference.groupdocs.com/merger/net/).
+ Detaljerad dokumentation finns tillgänglig[här](https://tutorials.groupdocs.com/merger/net/).
 ### Erbjuder GroupDocs.Merger en gratis provperiod?
  Ja, du kan få tillgång till en gratis provperiod[här](https://releases.groupdocs.com/).
 ### Hur kan jag få support för GroupDocs.Merger?

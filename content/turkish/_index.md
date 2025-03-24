@@ -3,7 +3,6 @@ title: GroupDocs.Merger ile Belgeleri Zahmetsizce Birleştirin ve Bölün
 linktitle: GroupDocs.Birleşme Eğitimleri
 additionalTitle: GroupDocs API Referansları
 description: GroupDocs.Merger'daki uzman eğitimlerimizle belgeleri .NET ve Java platformlarında zahmetsizce birleştirin, bölün ve sıkıştırın. Kusursuz dosya yönetiminin kilidini açın!
-type: docs
 weight: 11
 url: /tr/
 is_root: true

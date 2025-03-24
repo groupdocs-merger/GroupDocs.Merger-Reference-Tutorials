@@ -3,7 +3,6 @@ title: Gabungkan File DOC dengan GroupDocs.Merger untuk .NET
 linktitle: Gabungkan File DOC dengan GroupDocs.Merger untuk .NET
 second_title: GroupDocs.Merger .NET API
 description: Pelajari cara menggabungkan file DOC secara terprogram menggunakan GroupDocs.Merger untuk .NET. Ikuti panduan langkah demi langkah kami untuk menggabungkan beberapa dokumen menjadi satu dengan lancar.
-type: docs
 weight: 10
 url: /id/net/document-merging/merge-doc-files/
 ---

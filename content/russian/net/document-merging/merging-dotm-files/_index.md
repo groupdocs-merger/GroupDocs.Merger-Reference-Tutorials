@@ -3,7 +3,6 @@ title: Объединение файлов DOTM
 linktitle: Объединение файлов DOTM
 second_title: GroupDocs.Merger .NET API
 description: Узнайте, как программно объединять файлы DOTM с помощью GroupDocs.Merger для .NET. Это подробное руководство содержит пошаговые инструкции для разработчиков.
-type: docs
 weight: 14
 url: /ru/net/document-merging/merging-dotm-files/
 ---

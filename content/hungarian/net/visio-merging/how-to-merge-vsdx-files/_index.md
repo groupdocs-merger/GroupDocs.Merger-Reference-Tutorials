@@ -3,7 +3,6 @@ title: VSDX fájlok egyesítése
 linktitle: VSDX fájlok egyesítése
 second_title: GroupDocs.Merger .NET API
 description: Ismerje meg, hogyan egyesíthet programozottan VSDX-fájlokat a GroupDocs.Merger for .NET használatával. Ez az oktatóanyag lépésenkénti utasításokat tartalmaz kódmintákkal.
-type: docs
 weight: 12
 url: /hu/net/visio-merging/how-to-merge-vsdx-files/
 ---
@@ -59,7 +58,7 @@ Igen, a GroupDocs.Merger támogatja a különféle formátumok, köztük a PDF, 
 ### A GroupDocs.Merger for .NET kompatibilis a .NET Core-val?
 Igen, a GroupDocs.Merger for .NET kompatibilis a .NET Core-val, valamint a hagyományos .NET-keretrendszerrel.
 ### Hol találom a GroupDocs.Merger for .NET részletes dokumentációját?
- Lásd az átfogó[dokumentáció](https://reference.groupdocs.com/merger/net/) a GroupDocs.Merger for .NET számára.
+ Lásd az átfogó[dokumentáció](https://tutorials.groupdocs.com/merger/net/) a GroupDocs.Merger for .NET számára.
 ### Hogyan szerezhetek ideiglenes licencet a GroupDocs.Merger for .NET számára?
  Ideiglenes jogosítványt kaphat a[ideiglenes licenc oldal](https://purchase.groupdocs.com/temporary-license/).
 ### Milyen támogatási lehetőségek állnak rendelkezésre a GroupDocs.Merger for .NET számára?

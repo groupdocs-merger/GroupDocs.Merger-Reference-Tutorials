@@ -3,7 +3,6 @@ title: XLSX fájlok egyesítése
 linktitle: XLSX fájlok egyesítése
 second_title: GroupDocs.Merger .NET API
 description: Ismerje meg, hogyan egyesíthet könnyedén XLSX fájlokat .NET-ben a GroupDocs.Merger segítségével. Kövesse ezt a lépésenkénti oktatóanyagot a zökkenőmentes dokumentumkezelés érdekében.
-type: docs
 weight: 14
 url: /hu/net/spreadsheet-merging/merging-xlsx-files/
 ---
@@ -54,7 +53,7 @@ Igen, a GroupDocs.Merger támogatja a különféle fájlformátumok, például D
 ### A GroupDocs.Merger kompatibilis a .NET Core alkalmazásokkal?
 Igen, a GroupDocs.Merger használható .NET Framework és .NET Core projektekkel is.
 ### Hol találom a GroupDocs.Merger részletes dokumentációját?
- A részletes dokumentáció elérhető[itt](https://reference.groupdocs.com/merger/net/).
+ A részletes dokumentáció elérhető[itt](https://tutorials.groupdocs.com/merger/net/).
 ### A GroupDocs.Merger ingyenes próbaverziót kínál?
  Igen, hozzáférhet az ingyenes próbaverzióhoz[itt](https://releases.groupdocs.com/).
 ### Hogyan kaphatok támogatást a GroupDocs.Merger programhoz?

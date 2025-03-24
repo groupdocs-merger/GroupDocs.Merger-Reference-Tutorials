@@ -3,7 +3,6 @@ title: Sloučení souborů PPSX
 linktitle: Sloučení souborů PPSX
 second_title: GroupDocs.Merger .NET API
 description: Slučujte soubory PPSX snadno pomocí GroupDocs.Merger pro .NET. Postupujte podle našeho podrobného průvodce pro automatizaci úloh slučování souborů! Vylepšete svůj pracovní postup správy dokumentů.
-type: docs
 weight: 11
 url: /cs/net/presentation-merging/merging-ppsx-files/
 ---
@@ -55,7 +54,7 @@ Ano, GroupDocs.Merger podporuje širokou škálu formátů dokumentů, včetně 
 ### Mohu sloučit šifrované soubory PPSX pomocí GroupDocs.Merger?
 GroupDocs.Merger dokáže zpracovávat šifrované soubory i soubory chráněné heslem, což zajišťuje bezpečnou manipulaci s dokumenty.
 ### Kde najdu další podporu nebo dokumentaci pro GroupDocs.Merger?
- Prozkoumejte komplexní[dokumentace](https://reference.groupdocs.com/merger/net/) a oslovit[Fórum podpory](https://forum.groupdocs.com/c/merger/32) pro pomoc.
+ Prozkoumejte komplexní[dokumentace](https://tutorials.groupdocs.com/merger/net/) a oslovit[Fórum podpory](https://forum.groupdocs.com/c/merger/32) pro pomoc.
 ### Vyžaduje GroupDocs.Merger licenci pro komerční použití?
  Ano, pro komerční použití je vyžadována platná licence. Licenci můžete získat od[nákupní stránku](https://purchase.groupdocs.com/buy) nebo použijte a[dočasná licence](https://purchase.groupdocs.com/temporary-license/) pro hodnocení.
 ### Mohu vyzkoušet GroupDocs.Merger před nákupem?

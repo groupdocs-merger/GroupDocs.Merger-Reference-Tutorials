@@ -3,7 +3,6 @@ title: XLSM ファイルのマージに関するガイド
 linktitle: XLSM ファイルのマージに関するガイド
 second_title: GroupDocs.Merger .NET API
 description: XLSM ファイルを GroupDocs.Merge for .NET とシームレスにマージします。 Excel ワークブックをプログラムで効率的に結合します。ドキュメントの操作能力を強化します。
-type: docs
 weight: 13
 url: /ja/net/spreadsheet-merging/guide-merging-xlsm-files/
 ---

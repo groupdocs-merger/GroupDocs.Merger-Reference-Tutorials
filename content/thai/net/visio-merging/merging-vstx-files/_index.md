@@ -3,7 +3,6 @@ title: การรวมไฟล์ VSTX เข้ากับ GroupDocs.Merge
 linktitle: การรวมไฟล์ VSTX เข้ากับ GroupDocs.Merger สำหรับ .NET
 second_title: GroupDocs.Merger .NET API
 description: เรียนรู้วิธีผสานไฟล์ VSTX โดยใช้ GroupDocs.Merger สำหรับ .NET ปฏิบัติตามคำแนะนำทีละขั้นตอนนี้เพื่อการจัดการเอกสารที่มีประสิทธิภาพใน C#
-type: docs
 weight: 16
 url: /th/net/visio-merging/merging-vstx-files/
 ---
@@ -64,4 +63,4 @@ Console.WriteLine("\nVSTX files merge completed successfully. \nCheck output in 
 ### GroupDocs.Merger for .NET เหมาะสำหรับงานประมวลผลเอกสารขนาดใหญ่หรือไม่
 ใช่ GroupDocs.Merger ได้รับการปรับให้เหมาะสมเพื่อการจัดการเอกสารขนาดใหญ่และการดำเนินงานเป็นชุดอย่างมีประสิทธิภาพ
 ### ฉันจะหาการสนับสนุนหรือเอกสารเพิ่มเติมสำหรับ GroupDocs.Merger for .NET ได้ที่ไหน
- เยี่ยมชม[ฟอรัม GroupDocs.Merger](https://forum.groupdocs.com/c/merger/32) หรืออ้างถึง[เอกสารประกอบ](https://reference.groupdocs.com/merger/net/) เพื่อทรัพยากรที่ครอบคลุม
+ เยี่ยมชม[ฟอรัม GroupDocs.Merger](https://forum.groupdocs.com/c/merger/32) หรืออ้างถึง[เอกสารประกอบ](https://tutorials.groupdocs.com/merger/net/) เพื่อทรัพยากรที่ครอบคลุม

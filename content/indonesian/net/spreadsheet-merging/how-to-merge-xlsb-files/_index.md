@@ -3,7 +3,6 @@ title: Cara Menggabungkan File XLSB
 linktitle: Cara Menggabungkan File XLSB
 second_title: GroupDocs.Merger .NET API
 description: Pelajari cara menggabungkan file XLSB. Panduan langkah demi langkah ini menyederhanakan tugas manipulasi dokumen.
-type: docs
 weight: 12
 url: /id/net/spreadsheet-merging/how-to-merge-xlsb-files/
 ---
@@ -54,7 +53,7 @@ Dengan mengikuti langkah-langkah ini, Anda dapat dengan mudah menggabungkan file
 ### Bisakah GroupDocs.Merger menangani format file lain selain XLSB?
 Ya, GroupDocs.Merger mendukung berbagai format dokumen termasuk DOCX, PDF, XLSX, PPTX, dan banyak lagi.
 ### Di mana saya dapat menemukan lebih banyak dokumentasi untuk GroupDocs.Merger?
- Mengunjungi[dokumentasi](https://reference.groupdocs.com/merger/net/) untuk petunjuk penggunaan terperinci dan referensi API.
+ Mengunjungi[dokumentasi](https://tutorials.groupdocs.com/merger/net/) untuk petunjuk penggunaan terperinci dan referensi API.
 ### Apakah ada uji coba gratis yang tersedia untuk GroupDocs.Merger?
  Ya, Anda dapat mengakses a[uji coba gratis](https://releases.groupdocs.com/)untuk menjelajahi fitur GroupDocs.Merger.
 ### Bagaimana saya bisa mendapatkan dukungan teknis untuk GroupDocs.Merger?

@@ -3,7 +3,6 @@ title: Guia para mesclar arquivos PPTX
 linktitle: Guia para mesclar arquivos PPTX
 second_title: API GroupDocs.Merger .NET
 description: Aprenda como mesclar arquivos PPTX usando GroupDocs.Merger for .NET. Simplifique o gerenciamento de documentos com esta poderosa biblioteca .NET.
-type: docs
 weight: 13
 url: /pt/net/presentation-merging/guide-merging-pptx-files/
 ---

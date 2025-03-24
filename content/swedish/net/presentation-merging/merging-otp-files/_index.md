@@ -3,7 +3,6 @@ title: Slår samman OTP-filer
 linktitle: Slår samman OTP-filer
 second_title: GroupDocs.Merger .NET API
 description: Lär dig hur du slår samman OTP-filer med GroupDocs.Merger för .NET. Denna steg-för-steg guide kommer att leda dig genom processen sömlöst.
-type: docs
 weight: 14
 url: /sv/net/presentation-merging/merging-otp-files/
 ---

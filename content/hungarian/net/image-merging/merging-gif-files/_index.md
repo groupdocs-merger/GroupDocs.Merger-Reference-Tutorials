@@ -3,7 +3,6 @@ title: GIF fájlok egyesítése
 linktitle: GIF fájlok egyesítése
 second_title: GroupDocs.Merger .NET API
 description: Ismerje meg, hogyan egyesíthet GIF-fájlokat a GroupDocs.Merger for .NET használatával. Kombináljon több GIF-et programozottan, lépésenkénti utasításokkal.
-type: docs
 weight: 11
 url: /hu/net/image-merging/merging-gif-files/
 ---
@@ -63,6 +62,6 @@ Igen, a GroupDocs.Merger támogatja a különféle dokumentumformátumok, közt�
 ### K: Hogyan kaphatok technikai támogatást a GroupDocs.Merger programhoz?
  Technikai segítségért keresse fel a GroupDocs.Merger webhelyet[fórum](https://forum.groupdocs.com/c/merger/32) ahol kérdéseket tehet fel és kapcsolatba léphet a közösséggel.
 ### K: Hol találom a GroupDocs.Merger for .NET részletes dokumentációját?
- Tekintse meg az átfogó dokumentációt[itt](https://reference.groupdocs.com/merger/net/) részletes betekintést nyújt a GroupDocs.Merger használatába a .NET-alkalmazásokban.
+ Tekintse meg az átfogó dokumentációt[itt](https://tutorials.groupdocs.com/merger/net/) részletes betekintést nyújt a GroupDocs.Merger használatába a .NET-alkalmazásokban.
 ### K: Kaphatok ideiglenes licencet a GroupDocs.Merger számára?
  Igen, ideiglenes engedélyt szerezhetsz innen[itt](https://purchase.groupdocs.com/temporary-license/) hogy vásárlás előtt értékelje a GroupDocs.Merger képességeit.

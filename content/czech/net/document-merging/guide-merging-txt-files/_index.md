@@ -3,7 +3,6 @@ title: Průvodce sloučením souborů TXT s GroupDocs.Merger pro .NET
 linktitle: Průvodce sloučením souborů TXT s GroupDocs.Merger pro .NET
 second_title: GroupDocs.Merger .NET API
 description: Bezproblémově slučujte soubory TXT v .NET pomocí GroupDocs.Merger. Podrobný průvodce pro vývojáře. Dokumentace a dostupná podpora.
-type: docs
 weight: 18
 url: /cs/net/document-merging/guide-merging-txt-files/
 ---
@@ -63,7 +62,7 @@ Ano, GroupDocs.Merger podporuje kromě souborů TXT slučování různých form�
 ### Je GroupDocs.Merger kompatibilní s aplikacemi .NET Core?
 Ano, GroupDocs.Merger je kompatibilní s .NET Framework i .NET Core.
 ### Kde najdu další dokumentaci a podporu pro GroupDocs.Merger?
- Odkazovat na[dokumentace](https://reference.groupdocs.com/merger/net/) pro podrobné API reference. Můžete také požádat o pomoc u[fórum GroupDocs](https://forum.groupdocs.com/c/merger/32) pro případné dotazy.
+ Odkazovat na[dokumentace](https://tutorials.groupdocs.com/merger/net/) pro podrobné API tutorials. Můžete také požádat o pomoc u[fórum GroupDocs](https://forum.groupdocs.com/c/merger/32) pro případné dotazy.
 ### Je k dispozici bezplatná zkušební verze pro GroupDocs.Merger pro .NET?
  Ano, můžete prozkoumat a[zkušební verze zdarma](https://releases.groupdocs.com/) GroupDocs.Merger k vyhodnocení jejích schopností.
 ### Jak mohu získat dočasnou licenci pro GroupDocs.Merger?

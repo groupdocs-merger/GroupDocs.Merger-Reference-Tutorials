@@ -3,7 +3,6 @@ title: คำแนะนำในการรวมไฟล์ XLSM
 linktitle: คำแนะนำในการรวมไฟล์ XLSM
 second_title: GroupDocs.Merger .NET API
 description: รวมไฟล์ XLSM เข้ากับ GroupDocs.Merger for .NET ได้อย่างราบรื่น รวมสมุดงาน Excel อย่างมีประสิทธิภาพโดยทางโปรแกรม เพิ่มความสามารถในการจัดการเอกสารของคุณ
-type: docs
 weight: 13
 url: /th/net/spreadsheet-merging/guide-merging-xlsm-files/
 ---

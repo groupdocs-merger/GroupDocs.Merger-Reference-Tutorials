@@ -3,7 +3,6 @@ title: DOCM ファイルの結合
 linktitle: DOCM ファイルの結合
 second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger for .NET を使用して DOCM ファイルをシームレスに結合する方法を学びます。.NET アプリケーション用のシンプルで効率的なドキュメント操作。
-type: docs
 weight: 11
 url: /ja/net/document-merging/merging-docm-files/
 ---

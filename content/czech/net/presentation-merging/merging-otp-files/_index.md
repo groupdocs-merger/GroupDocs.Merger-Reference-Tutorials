@@ -3,7 +3,6 @@ title: Sloučení souborů OTP
 linktitle: Sloučení souborů OTP
 second_title: GroupDocs.Merger .NET API
 description: Přečtěte si, jak sloučit soubory OTP pomocí GroupDocs.Merger for .NET. Tento průvodce vás krok za krokem provede celým procesem.
-type: docs
 weight: 14
 url: /cs/net/presentation-merging/merging-otp-files/
 ---

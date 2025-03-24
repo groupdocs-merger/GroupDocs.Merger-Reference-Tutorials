@@ -3,7 +3,6 @@ title: Συγχώνευση αρχείων ODS
 linktitle: Συγχώνευση αρχείων ODS
 second_title: GroupDocs.Merger .NET API
 description: Μάθετε πώς να συγχωνεύετε αρχεία ODS χωρίς κόπο. Ακολουθήστε τον οδηγό βήμα προς βήμα για απρόσκοπτη επεξεργασία εγγράφων.
-type: docs
 weight: 18
 url: /el/net/spreadsheet-merging/merging-ods-files/
 ---

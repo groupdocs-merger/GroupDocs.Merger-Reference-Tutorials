@@ -3,7 +3,6 @@ title: 簡報合併
 linktitle: 簡報合併
 second_title: GroupDocs.Merger .NET API
 description: 輕鬆合併各種簡報文件格式。按照我們的教學有效地合併 PPS、PPSX、PPT 和 OTP 檔案。 #GroupDocs.Merger
-type: docs
 weight: 25
 url: /zh-hant/net/presentation-merging/
 ---

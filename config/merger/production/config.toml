@@ -1,4 +1,4 @@
-baseURL = "https://reference.groupdocs.com/tutorials/merger"
+baseURL = "https://tutorials.groupdocs.com/merger"
 
 # Google Tag Manager settings
 [params.gtm]
@@ -6,4 +6,4 @@ gtm_id = "GTM-WZTNN8"
 
 [[deployment.targets]]
 name = "Production"
-URL = "s3://reference.groupdocs.com/?prefix=tutorials/merger/&region=us-west-2"
+URL = "s3://tutorials.groupdocs.com/?prefix=merger/&region=us-west-2"

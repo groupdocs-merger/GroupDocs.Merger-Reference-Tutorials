@@ -3,7 +3,6 @@ title: Dokumente mühelos zusammenführen und aufteilen mit GroupDocs.Merger
 linktitle: GroupDocs.Merger-Tutorials
 additionalTitle: GroupDocs API-Referenzen
 description: Mit unseren Experten-Tutorials zu GroupDocs.Merger können Sie Dokumente zwischen .NET- und Java-Plattformen mühelos zusammenführen, aufteilen und komprimieren. Schalten Sie nahtlose Dateiverwaltung frei!
-type: docs
 weight: 11
 url: /de/
 is_root: true

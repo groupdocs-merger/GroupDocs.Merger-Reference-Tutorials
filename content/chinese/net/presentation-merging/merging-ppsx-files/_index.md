@@ -3,7 +3,6 @@ title: 合并 PPSX 文件
 linktitle: 合并 PPSX 文件
 second_title: GroupDocs.Merger .NET API
 description: 使用 GroupDocs.Merger for .NET 轻松合并 PPSX 文件。按照我们的分步指南自动执行文件合并任务！增强您的文档管理工作流程。
-type: docs
 weight: 11
 url: /zh/net/presentation-merging/merging-ppsx-files/
 ---
@@ -55,7 +54,7 @@ Console.WriteLine("\nPPSX files merge completed successfully. \nCheck output in 
 ### 我可以使用 GroupDocs.Merger 合并加密的 PPSX 文件吗？
 GroupDocs.Merger 可以处理加密和受密码保护的文件，确保安全的文档操作。
 ### 在哪里可以找到有关 GroupDocs.Merger 的其他支持或文档？
-探索全面的[文档](https://reference.groupdocs.com/merger/net/)并联系[支持论坛](https://forum.groupdocs.com/c/merger/32)寻求帮助。
+探索全面的[文档](https://tutorials.groupdocs.com/merger/net/)并联系[支持论坛](https://forum.groupdocs.com/c/merger/32)寻求帮助。
 ### GroupDocs.Merger 用于商业用途需要许可证吗？
 是的，商业使用需要有效的许可证。您可以从[购买页面](https://purchase.groupdocs.com/buy)或使用[临时执照](https://purchase.groupdocs.com/temporary-license/)进行评估。
 ### 我可以在购买前尝试 GroupDocs.Merger 吗？

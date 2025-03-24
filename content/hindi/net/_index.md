@@ -1,7 +1,6 @@
 ---
 title: .NET के लिए GroupDocs.Merger के ट्यूटोरियल और उदाहरण
 linktitle: .NET ट्यूटोरियल के लिए GroupDocs.Merger
-type: docs
 weight: 10
 url: /hi/net/
 description: GroupDocs.Merger .NET का उपयोग करके विभिन्न फ़ाइल स्वरूपों को आसानी से मर्ज और संपीड़ित करें। छवियों, दस्तावेज़ों और बहुत कुछ को मर्ज करने पर चरण-दर-चरण ट्यूटोरियल सीखें!

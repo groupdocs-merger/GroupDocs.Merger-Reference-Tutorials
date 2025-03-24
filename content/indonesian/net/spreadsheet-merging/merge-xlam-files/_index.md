@@ -3,7 +3,6 @@ title: Gabungkan File XLAM
 linktitle: Gabungkan File XLAM
 second_title: GroupDocs.Merger .NET API
 description: Pelajari cara menggabungkan file XLAM dengan mudah. Sederhanakan tugas manajemen dokumen Anda dengan API canggih ini.
-type: docs
 weight: 10
 url: /id/net/spreadsheet-merging/merge-xlam-files/
 ---
@@ -80,7 +79,7 @@ Ya, lisensi diperlukan untuk penggunaan komersial. Anda dapat memperoleh lisensi
 
 ### T: Di mana saya dapat menemukan lebih banyak sumber daya dan dukungan untuk GroupDocs.Merger?
 
- Anda dapat mengunjungi[Dokumentasi GroupDocs.Merger](https://reference.groupdocs.com/merger/net/) untuk referensi API terperinci dan lihat[Forum Grup Dokumen](https://forum.groupdocs.com/c/merger/32) untuk dukungan masyarakat.
+ Anda dapat mengunjungi[Dokumentasi GroupDocs.Merger](https://tutorials.groupdocs.com/merger/net/) untuk referensi API terperinci dan lihat[Forum Grup Dokumen](https://forum.groupdocs.com/c/merger/32) untuk dukungan masyarakat.
 
 ### T: Dapatkah saya mencoba GroupDocs.Merger sebelum membeli?
 

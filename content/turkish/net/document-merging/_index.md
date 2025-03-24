@@ -3,7 +3,6 @@ title: Belge Birleştirme
 linktitle: Belge Birleştirme
 second_title: GroupDocs.Merger .NET API'si
 description: GroupDocs.Merger'ı kullanarak .NET'teki çeşitli belge formatlarını zahmetsizce birleştirin. DOC, DOCX, PDF ve daha fazlasını sorunsuz bir şekilde birleştirin. Belge yönetiminizi bugün geliştirin!
-type: docs
 weight: 22
 url: /tr/net/document-merging/
 ---

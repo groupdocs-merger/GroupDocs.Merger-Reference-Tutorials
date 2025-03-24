@@ -3,7 +3,6 @@ title: Sloučit soubory XLT
 linktitle: Sloučit soubory XLT
 second_title: GroupDocs.Merger .NET API
 description: Přečtěte si, jak sloučit soubory XLT. Kombinujte šablony Excelu programově v C# s tímto podrobným průvodcem.
-type: docs
 weight: 15
 url: /cs/net/spreadsheet-merging/merge-xlt-files/
 ---
@@ -59,7 +58,7 @@ Ano, můžete sloučit více souborů XLT jejich postupným přidáváním pomoc
 ### Je GroupDocs.Merger kompatibilní s jinými formáty souborů aplikace Excel, jako jsou XLSX nebo XLS?
 Ano, GroupDocs.Merger podporuje různé formáty souborů Excel, včetně XLSX, XLS a XLT.
 ### Kde najdu další příklady a dokumentaci pro GroupDocs.Merger pro .NET?
- K dispozici je podrobná dokumentace a ukázky kódu[tady](https://reference.groupdocs.com/merger/net/).
+ K dispozici je podrobná dokumentace a ukázky kódu[tady](https://tutorials.groupdocs.com/merger/net/).
 ### Je k dispozici zkušební verze GroupDocs.Merger pro testování?
  Ano, můžete si stáhnout bezplatnou zkušební verzi z[tady](https://releases.groupdocs.com/).
 ### Jak mohu získat technickou podporu nebo pomoc s GroupDocs.Merger?

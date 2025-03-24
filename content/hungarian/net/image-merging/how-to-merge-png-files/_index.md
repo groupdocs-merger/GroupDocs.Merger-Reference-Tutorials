@@ -3,7 +3,6 @@ title: PNG fájlok egyesítése
 linktitle: PNG fájlok egyesítése
 second_title: GroupDocs.Merger .NET API
 description: Ismerje meg, hogyan egyesíthet PNG-fájlokat a GroupDocs.Merger for .NET használatával. Lépésről lépésre útmutató a .NET-alkalmazásokba való zökkenőmentes integrációhoz.
-type: docs
 weight: 12
 url: /hu/net/image-merging/how-to-merge-png-files/
 ---
@@ -59,7 +58,7 @@ Igen, a GroupDocs.Merger a dokumentum- és képformátumok széles skáláját t
 ### Testreszabhatom az egyesítési beállításokat, például a tájolást vagy az elrendezést?
 Teljesen! A GroupDocs.Merger különféle lehetőségeket kínál a dokumentumok és képek egyesítésének szabályozására, lehetővé téve a rugalmas testreszabást.
 ### Hol találok további erőforrásokat és támogatást a GroupDocs.Merger számára?
- Meglátogatni a[GroupDocs.Merger fórum](https://forum.groupdocs.com/c/merger/32) közösségi támogatásért és fedezze fel a[dokumentáció](https://reference.groupdocs.com/merger/net/) részletes útmutatásért.
+ Meglátogatni a[GroupDocs.Merger fórum](https://forum.groupdocs.com/c/merger/32) közösségi támogatásért és fedezze fel a[dokumentáció](https://tutorials.groupdocs.com/merger/net/) részletes útmutatásért.
 ### Rendelkezésre áll a GroupDocs.Merger próbaverziója a vásárlás előtt?
  Igen, letölthet egy ingyenes próbaverziót a webhelyről[GroupDocs webhely](https://releases.groupdocs.com/) hogy értékelje a könyvtár képességeit.
 ### Hogyan szerezhetek ideiglenes licencet a GroupDocs.Merger számára?

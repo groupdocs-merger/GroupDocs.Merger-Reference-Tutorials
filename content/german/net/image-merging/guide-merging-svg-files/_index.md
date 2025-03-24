@@ -3,7 +3,6 @@ title: Anleitung zum Zusammenführen von SVG-Dateien
 linktitle: Anleitung zum Zusammenführen von SVG-Dateien
 second_title: GroupDocs.Merger .NET API
 description: Erfahren Sie, wie Sie SVG-Dateien programmgesteuert mit GroupDocs.Merger für .NET zusammenführen. Kombinieren Sie mühelos mehrere SVG-Dokumente.
-type: docs
 weight: 13
 url: /de/net/image-merging/guide-merging-svg-files/
 ---
@@ -90,7 +89,7 @@ A: Ja, GroupDocs.Merger ist für die effiziente Abwicklung umfangreicher Dokumen
 
 ### F4: Wo finde ich weitere Beispiele und Dokumentation für GroupDocs.Merger?
 
- A: Erkunden Sie die[GroupDocs.Merger-Dokumentation](https://reference.groupdocs.com/merger/net/) für umfassende Anleitungen und Beispiele.
+ A: Erkunden Sie die[GroupDocs.Merger-Dokumentation](https://tutorials.groupdocs.com/merger/net/) für umfassende Anleitungen und Beispiele.
 
 ### F5: Wie kann ich Support für GroupDocs.Merger erhalten?
 

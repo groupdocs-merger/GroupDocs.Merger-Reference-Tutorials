@@ -3,7 +3,6 @@ title: Hoe VSDX-bestanden samen te voegen
 linktitle: Hoe VSDX-bestanden samen te voegen
 second_title: GroupDocs.Merger .NET API
 description: Leer hoe u VSDX-bestanden programmatisch samenvoegt met GroupDocs.Merger voor .NET. Deze zelfstudie biedt stapsgewijze instructies met codevoorbeelden.
-type: docs
 weight: 12
 url: /nl/net/visio-merging/how-to-merge-vsdx-files/
 ---
@@ -59,7 +58,7 @@ Ja, GroupDocs.Merger ondersteunt het samenvoegen van verschillende formaten, waa
 ### Is GroupDocs.Merger voor .NET compatibel met .NET Core?
 Ja, GroupDocs.Merger voor .NET is compatibel met .NET Core en het traditionele .NET Framework.
 ### Waar kan ik gedetailleerde documentatie vinden voor GroupDocs.Merger voor .NET?
- Raadpleeg het uitgebreide[documentatie](https://reference.groupdocs.com/merger/net/) voor GroupDocs.Merger voor .NET.
+ Raadpleeg het uitgebreide[documentatie](https://tutorials.groupdocs.com/merger/net/) voor GroupDocs.Merger voor .NET.
 ### Hoe kan ik een tijdelijke licentie verkrijgen voor GroupDocs.Merger voor .NET?
  U kunt een tijdelijke licentie aanvragen bij de[tijdelijke licentiepagina](https://purchase.groupdocs.com/temporary-license/).
 ### Welke ondersteuningsopties zijn beschikbaar voor GroupDocs.Merger voor .NET?

@@ -3,7 +3,6 @@ title: VSX Dosyalarını Birleştir
 linktitle: VSX Dosyalarını Birleştir
 second_title: GroupDocs.Merger .NET API'si
 description: GroupDocs.Merger for .NET'i kullanarak VSX dosyalarını zahmetsizce nasıl birleştireceğinizi öğrenin. Bu kapsamlı kılavuz, belge işleme görevlerini basitleştirir.
-type: docs
 weight: 17
 url: /tr/net/visio-merging/merge-vsx-files/
 ---
@@ -12,7 +11,7 @@ Bu öğreticide, GroupDocs.Merger for .NET'i kullanarak VSX dosyalarının nası
 ## Önkoşullar
 Başlamadan önce aşağıdaki önkoşulları oluşturduğunuzdan emin olun:
 - Geliştirme Ortamı: Visual Studio'yu veya .NET geliştirmesi için başka bir IDE'yi yükleyin.
--  .NET için GroupDocs.Merger: API'yi şuradan edinin:[.NET Belgeleri için GroupDocs.Merger](https://reference.groupdocs.com/merger/net/).
+-  .NET için GroupDocs.Merger: API'yi şuradan edinin:[.NET Belgeleri için GroupDocs.Merger](https://tutorials.groupdocs.com/merger/net/).
 - Örnek VSX Dosyaları: Birleştirmeyi düşündüğünüz VSX dosyalarını test amacıyla hazırlayın.
 
 ## Ad Alanlarını İçe Aktar

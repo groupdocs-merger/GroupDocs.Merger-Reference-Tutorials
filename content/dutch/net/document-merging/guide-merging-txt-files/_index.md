@@ -3,7 +3,6 @@ title: Gids voor het samenvoegen van TXT-bestanden met GroupDocs.Merger voor .NE
 linktitle: Gids voor het samenvoegen van TXT-bestanden met GroupDocs.Merger voor .NET
 second_title: GroupDocs.Merger .NET API
 description: Voeg TXT-bestanden naadloos samen in .NET met behulp van GroupDocs.Merger. Stapsgewijze handleiding voor ontwikkelaars. Documentatie en ondersteuning beschikbaar.
-type: docs
 weight: 18
 url: /nl/net/document-merging/guide-merging-txt-files/
 ---
@@ -63,7 +62,7 @@ Ja, GroupDocs.Merger ondersteunt naast TXT-bestanden het samenvoegen van verschi
 ### Is GroupDocs.Merger compatibel met .NET Core-applicaties?
 Ja, GroupDocs.Merger is compatibel met zowel .NET Framework als .NET Core.
 ### Waar kan ik verdere documentatie en ondersteuning voor GroupDocs.Merger vinden?
- Verwijs naar de[documentatie](https://reference.groupdocs.com/merger/net/) voor gedetailleerde API-referenties. U kunt ook hulp inroepen bij de[GroupDocs-forum](https://forum.groupdocs.com/c/merger/32) voor eventuele vragen.
+ Verwijs naar de[documentatie](https://tutorials.groupdocs.com/merger/net/) voor gedetailleerde API-referenties. U kunt ook hulp inroepen bij de[GroupDocs-forum](https://forum.groupdocs.com/c/merger/32) voor eventuele vragen.
 ### Is er een gratis proefversie beschikbaar voor GroupDocs.Merger voor .NET?
  Ja, u kunt een verkennen[gratis proefversie](https://releases.groupdocs.com/) van GroupDocs.Merger om de mogelijkheden ervan te evalueren.
 ### Hoe kan ik een tijdelijke licentie voor GroupDocs.Merger verkrijgen?

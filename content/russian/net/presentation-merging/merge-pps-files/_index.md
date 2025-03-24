@@ -3,7 +3,6 @@ title: Объединить файлы PPS
 linktitle: Объединить файлы PPS
 second_title: GroupDocs.Merger .NET API
 description: Узнайте, как легко объединить файлы PPS с помощью GroupDocs.Merger для .NET. Пошаговое руководство с примерами кода. Совершенствуйте свои навыки работы с документами.
-type: docs
 weight: 10
 url: /ru/net/presentation-merging/merge-pps-files/
 ---
@@ -61,7 +60,7 @@ Console.WriteLine("\nPPS files merge completed successfully. \nCheck output in {
 ### Подходит ли GroupDocs.Merger для пакетной обработки слияний документов?
 Конечно, вы можете использовать GroupDocs.Merger для задач пакетной обработки и одновременного объединения нескольких документов.
 ### Где я могу найти полную документацию по GroupDocs.Merger для .NET?
- Полная документация доступна[здесь](https://reference.groupdocs.com/merger/net/).
+ Полная документация доступна[здесь](https://tutorials.groupdocs.com/merger/net/).
 ### Как получить временную лицензию на GroupDocs.Merger для .NET?
  Вы можете получить временную лицензию[здесь](https://purchase.groupdocs.com/temporary-license/).
 ### Предоставляет ли GroupDocs поддержку по устранению неполадок и запросам?

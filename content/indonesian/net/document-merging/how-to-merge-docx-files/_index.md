@@ -3,7 +3,6 @@ title: Cara Menggabungkan File DOCX
 linktitle: Cara Menggabungkan File DOCX
 second_title: GroupDocs.Merger .NET API
 description: Pelajari cara menggabungkan file DOCX secara terprogram di .NET menggunakan GroupDocs.Merger, menyederhanakan tugas manipulasi dokumen secara efisien.
-type: docs
 weight: 12
 url: /id/net/document-merging/how-to-merge-docx-files/
 ---
@@ -13,7 +12,7 @@ Dalam dunia pengembangan .NET, menggabungkan file DOCX secara terprogram dapat m
 Sebelum memulai, pastikan Anda memiliki prasyarat berikut:
 - Visual Studio diinstal pada mesin Anda.
 - Pemahaman dasar tentang pengembangan C# dan .NET.
--  GroupDocs.Merger untuk perpustakaan .NET diinstal (lihat[dokumentasi](https://reference.groupdocs.com/merger/net/) untuk detail pemasangan).
+-  GroupDocs.Merger untuk perpustakaan .NET diinstal (lihat[dokumentasi](https://tutorials.groupdocs.com/merger/net/) untuk detail pemasangan).
 
 ## Impor Namespace
 Mulailah dengan mengimpor namespace yang diperlukan dalam proyek C# Anda:
@@ -49,7 +48,7 @@ Ya, GroupDocs.Merger mendukung berbagai format dokumen termasuk DOCX, PDF, XLSX,
 ### Bisakah saya menyesuaikan proses penggabungan, seperti menentukan rentang halaman atau menambahkan tanda air?
 Tentu saja, GroupDocs.Merger menyediakan API fleksibel untuk menyesuaikan proses penggabungan sesuai kebutuhan Anda.
 ### Di mana saya dapat menemukan dukungan atau dokumentasi tambahan untuk GroupDocs.Merger untuk .NET?
- Anda dapat merujuk ke[dokumentasi](https://reference.groupdocs.com/merger/net/) untuk referensi dan contoh API terperinci.
+ Anda dapat merujuk ke[dokumentasi](https://tutorials.groupdocs.com/merger/net/) untuk referensi dan contoh API terperinci.
 ### Apakah GroupDocs.Merger untuk .NET menawarkan uji coba gratis?
  Ya, Anda dapat memulai dengan a[uji coba gratis](https://releases.groupdocs.com/) untuk menjelajahi fitur sebelum melakukan pembelian.
 ### Bagaimana saya bisa mendapatkan lisensi sementara untuk GroupDocs.Merger untuk .NET?

@@ -3,7 +3,6 @@ title: Visio 合併
 linktitle: Visio 合併
 second_title: GroupDocs.Merger .NET API
 description: 使用 GroupDocs.Merger for .NET 輕鬆合併 VDX、VSDM、VSDX、VSSM、VSSX、VSTM、VSTX、VSX、VTX 檔案。無縫文檔合併的逐步教學。
-type: docs
 weight: 24
 url: /zh-hant/net/visio-merging/
 ---

@@ -3,7 +3,6 @@ title: Sloučení souborů RTF
 linktitle: Sloučení souborů RTF
 second_title: GroupDocs.Merger .NET API
 description: Naučte se sloučit soubory RTF v .NET bez námahy pomocí GroupDocs.Merger pro bezproblémové zpracování dokumentů.
-type: docs
 weight: 21
 url: /cs/net/document-merging/merging-rtf-files/
 ---
@@ -61,7 +60,7 @@ Ano, GroupDocs.Merger podporuje slučování různých formátů dokumentů vče
 ### Je GroupDocs.Merger vhodný pro zpracování rozsáhlých dokumentů?
 Rozhodně je GroupDocs.Merger navržen tak, aby efektivně zpracovával velké dokumenty.
 ### Kde najdu další dokumentaci a podporu pro GroupDocs.Merger?
- Navštivte[dokumentace](https://reference.groupdocs.com/merger/net/) a[Fórum podpory](https://forum.groupdocs.com/c/merger/32) pro podrobné pokyny a pomoc.
+ Navštivte[dokumentace](https://tutorials.groupdocs.com/merger/net/) a[Fórum podpory](https://forum.groupdocs.com/c/merger/32) pro podrobné pokyny a pomoc.
 ### Mohu vyzkoušet GroupDocs.Merger před nákupem?
  Ano, můžete prozkoumat a[zkušební verze zdarma](https://releases.groupdocs.com/) GroupDocs.Merger.
 ### Jak získám dočasnou licenci pro GroupDocs.Merger?

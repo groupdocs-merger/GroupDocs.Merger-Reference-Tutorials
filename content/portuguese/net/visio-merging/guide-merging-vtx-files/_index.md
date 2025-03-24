@@ -3,7 +3,6 @@ title: Guia para mesclar arquivos VTX
 linktitle: Guia para mesclar arquivos VTX
 second_title: API GroupDocs.Merger .NET
 description: Aprenda como mesclar arquivos VTX programaticamente usando GroupDocs.Merger for .NET. Guia passo a passo com exemplos de código.
-type: docs
 weight: 18
 url: /pt/net/visio-merging/guide-merging-vtx-files/
 ---
@@ -49,7 +48,7 @@ Neste tutorial, você aprendeu como mesclar arquivos VTX usando GroupDocs.Merger
 ### Posso mesclar vários arquivos VTX em uma única saída usando GroupDocs.Merger for .NET?
  Sim, você pode mesclar vários arquivos VTX em um usando o`Join` método fornecido por GroupDocs.Merger.
 ### Onde posso encontrar mais documentação para GroupDocs.Merger for .NET?
- Visite a[documentação](https://reference.groupdocs.com/merger/net/) para referências detalhadas de API e exemplos de uso.
+ Visite a[documentação](https://tutorials.groupdocs.com/merger/net/) para referências detalhadas de API e exemplos de uso.
 ### Existe uma versão de teste disponível para GroupDocs.Merger for .NET?
  Sim, você pode baixar um[teste grátis](https://releases.groupdocs.com/) para explorar os recursos do GroupDocs.Merger antes de comprar.
 ### Como posso obter suporte técnico para GroupDocs.Merger for .NET?

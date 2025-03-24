@@ -1,7 +1,6 @@
 ---
 title: Oktatóanyagok és példák a GroupDocs.Merger for .NET-hez
 linktitle: GroupDocs.Merger for .NET Tutorials
-type: docs
 weight: 10
 url: /hu/net/
 description: Könnyedén egyesíthet és tömöríthet különféle fájlformátumokat a GroupDocs.Merger .NET segítségével. Tanuljon meg lépésről lépésre bemutató oktatóanyagokat a képek, dokumentumok és egyebek egyesítéséről!

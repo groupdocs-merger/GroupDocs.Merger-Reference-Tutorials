@@ -3,7 +3,6 @@ title: Unisci file compressi
 linktitle: Unisci file compressi
 second_title: API GroupDocs.Merger .NET
 description: Unisci e comprimi vari formati di file senza sforzo tutorial. Impara a combinare facilmente file 7z, TAR e ZIP con le nostre guide dettagliate.
-type: docs
 weight: 20
 url: /it/net/merge-compress-files/
 ---

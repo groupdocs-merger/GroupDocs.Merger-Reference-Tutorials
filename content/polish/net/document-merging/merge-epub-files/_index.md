@@ -3,7 +3,6 @@ title: Scal pliki EPUB
 linktitle: Scal pliki EPUB
 second_title: GroupDocs.Merger API .NET
 description: Dowiedz się, jak programowo scalić pliki EPUB przy użyciu programu GroupDocs.Merger dla platformy .NET. Postępuj zgodnie z naszym samouczkiem krok po kroku.
-type: docs
 weight: 17
 url: /pl/net/document-merging/merge-epub-files/
 ---

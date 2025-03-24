@@ -3,7 +3,6 @@ title: PNG फ़ाइलों को कैसे मर्ज करें
 linktitle: PNG फ़ाइलों को कैसे मर्ज करें
 second_title: GroupDocs.Merger .NET API
 description: .NET के लिए GroupDocs.Merger का उपयोग करके PNG फ़ाइलों को मर्ज करना सीखें। आपके .NET अनुप्रयोगों में निर्बाध एकीकरण के लिए चरण-दर-चरण मार्गदर्शिका।
-type: docs
 weight: 12
 url: /hi/net/image-merging/how-to-merge-png-files/
 ---
@@ -59,7 +58,7 @@ Console.WriteLine("\nPNG files merge completed successfully. \nCheck output in {
 ### क्या मैं ओरिएंटेशन या लेआउट जैसे विलय विकल्पों को अनुकूलित कर सकता हूँ?
 बिल्कुल! GroupDocs.Merger दस्तावेज़ों और छवियों को मर्ज करने के तरीके को नियंत्रित करने के लिए विभिन्न विकल्प प्रदान करता है, जिससे लचीले अनुकूलन की अनुमति मिलती है।
 ### मुझे GroupDocs.Merger के लिए अधिक संसाधन और समर्थन कहां मिल सकता है?
- दौरा करना[GroupDocs.Merger मंच](https://forum.groupdocs.com/c/merger/32) सामुदायिक समर्थन के लिए और अन्वेषण करें[प्रलेखन](https://reference.groupdocs.com/merger/net/) विस्तृत मार्गदर्शन के लिए.
+ दौरा करना[GroupDocs.Merger मंच](https://forum.groupdocs.com/c/merger/32) सामुदायिक समर्थन के लिए और अन्वेषण करें[प्रलेखन](https://tutorials.groupdocs.com/merger/net/) विस्तृत मार्गदर्शन के लिए.
 ### क्या खरीदने से पहले GroupDocs.Merger का परीक्षण करने के लिए कोई परीक्षण संस्करण उपलब्ध है?
  हाँ, आप नि:शुल्क परीक्षण डाउनलोड कर सकते हैं[ग्रुपडॉक्स वेबसाइट](https://releases.groupdocs.com/) पुस्तकालय की क्षमताओं का मूल्यांकन करना।
 ### मैं GroupDocs.Merger के लिए अस्थायी लाइसेंस कैसे प्राप्त कर सकता हूं?

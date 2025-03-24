@@ -3,7 +3,6 @@ title: VTX ファイルの結合ガイド
 linktitle: VTX ファイルの結合ガイド
 second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger for .NET を使用してプログラムで VTX ファイルをマージする方法を学びます。コード例を使用したステップバイステップ ガイド。
-type: docs
 weight: 18
 url: /ja/net/visio-merging/guide-merging-vtx-files/
 ---
@@ -49,7 +48,7 @@ Console.WriteLine("\nVTX files merge completed successfully. \nCheck output in {
 ### GroupDocs.Merger for .NET を使用して、複数の VTX ファイルを 1 つの出力にマージできますか?
 はい、次のコマンドを使用して、複数の VTX ファイルを 1 つにマージできます。`Join` GroupDocs.Merger によって提供されるメソッド。
 ### GroupDocs.Merger for .NET に関するその他のドキュメントはどこで見つけられますか?
-訪問[ドキュメンテーション](https://reference.groupdocs.com/merger/net/)詳細な API リファレンスと使用例については、を参照してください。
+訪問[ドキュメンテーション](https://tutorials.groupdocs.com/merger/net/)詳細な API リファレンスと使用例については、を参照してください。
 ### GroupDocs.Merger for .NET の試用版はありますか?
 はい、ダウンロードできます[無料トライアル](https://releases.groupdocs.com/)購入する前に GroupDocs.Merger の機能を確認してください。
 ### GroupDocs.Merger for .NET のテクニカル サポートを受けるにはどうすればよいですか?

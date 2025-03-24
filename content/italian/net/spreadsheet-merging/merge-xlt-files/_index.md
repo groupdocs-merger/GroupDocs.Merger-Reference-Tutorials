@@ -3,7 +3,6 @@ title: Unisci file XLT
 linktitle: Unisci file XLT
 second_title: API GroupDocs.Merger .NET
 description: Scopri come unire file XLT. Combina i modelli Excel a livello di codice in C# con questa guida passo passo.
-type: docs
 weight: 15
 url: /it/net/spreadsheet-merging/merge-xlt-files/
 ---
@@ -59,7 +58,7 @@ Sì, puoi unire più file XLT aggiungendoli in sequenza utilizzando`merger.Join(
 ### GroupDocs.Merger è compatibile con altri formati di file Excel come XLSX o XLS?
 Sì, GroupDocs.Merger supporta vari formati di file Excel, inclusi XLSX, XLS e XLT.
 ### Dove posso trovare altri esempi e documentazione per GroupDocs.Merger per .NET?
- Sono disponibili documentazione dettagliata ed esempi di codice[Qui](https://reference.groupdocs.com/merger/net/).
+ Sono disponibili documentazione dettagliata ed esempi di codice[Qui](https://tutorials.groupdocs.com/merger/net/).
 ### È disponibile una versione di prova di GroupDocs.Merger per il test?
  Sì, puoi scaricare una versione di prova gratuita da[Qui](https://releases.groupdocs.com/).
 ### Come posso ottenere supporto tecnico o assistenza con GroupDocs.Merger?

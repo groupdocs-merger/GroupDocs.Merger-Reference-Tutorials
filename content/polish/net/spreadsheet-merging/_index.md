@@ -3,7 +3,6 @@ title: Łączenie arkuszy kalkulacyjnych
 linktitle: Łączenie arkuszy kalkulacyjnych
 second_title: GroupDocs.Merger API .NET
 description: Bezproblemowo łącz pliki XLAM, XLS, XLSB, XLSM, XLSX, XLT, XLTM, XLTX i ODS w .NET za pomocą GroupDocs.Merger. Uprość zadania związane z zarządzaniem dokumentami.
-type: docs
 weight: 23
 url: /pl/net/spreadsheet-merging/
 ---

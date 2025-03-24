@@ -3,7 +3,6 @@ title: Unione di file TIFF
 linktitle: Unione di file TIFF
 second_title: API GroupDocs.Merger .NET
 description: Scopri come unire file TIFF utilizzando GroupDocs.Merger per .NET. Unisci, dividi e modifica documenti senza problemi all'interno delle tue applicazioni .NET.
-type: docs
 weight: 16
 url: /it/net/image-merging/merging-tiff-files/
 ---
@@ -60,6 +59,6 @@ Assolutamente sì, GroupDocs.Merger è progettato per gestire in modo efficiente
 ### GroupDocs.Merger offre versioni di prova a scopo di valutazione?
  Sì, puoi accedere a una prova gratuita di GroupDocs.Merger da[Qui](https://releases.groupdocs.com/).
 ### Dove posso trovare la documentazione completa per GroupDocs.Merger?
- Fare riferimento alla documentazione[Qui](https://reference.groupdocs.com/merger/net/) per riferimenti e guide API dettagliati.
+ Fare riferimento alla documentazione[Qui](https://tutorials.groupdocs.com/merger/net/) per riferimenti e guide API dettagliati.
 ### Come posso ottenere supporto per GroupDocs.Merger?
  Visita il forum della community di GroupDocs[Qui](https://forum.groupdocs.com/c/merger/32) per supporto e discussioni.

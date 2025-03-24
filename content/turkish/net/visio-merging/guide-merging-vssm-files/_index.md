@@ -3,7 +3,6 @@ title: VSSM Dosyalarını Birleştirme Kılavuzu
 linktitle: VSSM Dosyalarını Birleştirme Kılavuzu
 second_title: GroupDocs.Merger .NET API'si
 description: GroupDocs.Merger for .NET'i kullanarak VSSM dosyalarını zahmetsizce nasıl birleştireceğinizi öğrenin. C# geliştiricileri için adım adım kılavuz.
-type: docs
 weight: 13
 url: /tr/net/visio-merging/guide-merging-vssm-files/
 ---
@@ -53,7 +52,7 @@ Evet, GroupDocs.Merger, PDF, DOCX, XLSX, PPTX ve daha fazlası dahil olmak üzer
 ### GroupDocs.Merger büyük ölçekli belge işlemeye uygun mu?
 Evet, GroupDocs.Merger performans açısından optimize edilmiştir ve büyük belgeleri verimli bir şekilde işleyebilir.
 ### GroupDocs.Merger'a ilişkin ayrıntılı belgeleri nerede bulabilirim?
- Şuraya başvurabilirsiniz:[dokümantasyon](https://reference.groupdocs.com/merger/net/) kapsamlı rehberlik için.
+ Şuraya başvurabilirsiniz:[dokümantasyon](https://tutorials.groupdocs.com/merger/net/) kapsamlı rehberlik için.
 ### GroupDocs ürünleri için nasıl teknik destek alabilirim?
  Ziyaret edin[GroupDocs destek forumu](https://forum.groupdocs.com/c/merger/32)Yardım ve tartışmalar için.
 ### GroupDocs değerlendirme için ücretsiz deneme sunuyor mu?

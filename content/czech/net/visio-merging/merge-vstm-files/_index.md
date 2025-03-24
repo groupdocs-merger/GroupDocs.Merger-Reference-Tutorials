@@ -3,7 +3,6 @@ title: Sloučit soubory VSTM
 linktitle: Sloučit soubory VSTM
 second_title: GroupDocs.Merger .NET API
 description: Naučte se, jak sloučit soubory VSTM bez námahy pomocí GroupDocs.Merger for .NET. Postupujte podle našeho podrobného návodu a řiďte se možnostmi manipulace s dokumenty.
-type: docs
 weight: 15
 url: /cs/net/visio-merging/merge-vstm-files/
 ---

@@ -3,7 +3,6 @@ title: So führen Sie DOCX-Dateien zusammen
 linktitle: So führen Sie DOCX-Dateien zusammen
 second_title: GroupDocs.Merger .NET API
 description: Erfahren Sie, wie Sie mit GroupDocs.Merger DOCX-Dateien programmgesteuert in .NET zusammenführen und so die Dokumentbearbeitungsaufgaben effizient vereinfachen.
-type: docs
 weight: 12
 url: /de/net/document-merging/how-to-merge-docx-files/
 ---
@@ -13,7 +12,7 @@ In der Welt der .NET-Entwicklung kann das programmgesteuerte Zusammenführen von
 Stellen Sie vor dem Start sicher, dass die folgenden Voraussetzungen erfüllt sind:
 - Visual Studio ist auf Ihrem Computer installiert.
 - Grundlegende Kenntnisse der C#- und .NET-Entwicklung.
--  GroupDocs.Merger für .NET-Bibliothek installiert (siehe[Dokumentation](https://reference.groupdocs.com/merger/net/) für Installationsdetails).
+-  GroupDocs.Merger für .NET-Bibliothek installiert (siehe[Dokumentation](https://tutorials.groupdocs.com/merger/net/) für Installationsdetails).
 
 ## Namespaces importieren
 Beginnen Sie mit dem Importieren der erforderlichen Namespaces in Ihr C#-Projekt:
@@ -49,7 +48,7 @@ Ja, GroupDocs.Merger unterstützt eine Vielzahl von Dokumentformaten, darunter D
 ### Kann ich den Zusammenführungsprozess anpassen, z. B. Seitenbereiche angeben oder Wasserzeichen hinzufügen?
 Absolut, GroupDocs.Merger bietet flexible APIs, um den Zusammenführungsprozess entsprechend Ihren Anforderungen anzupassen.
 ### Wo finde ich zusätzliche Unterstützung oder Dokumentation für GroupDocs.Merger für .NET?
- Sie können sich auf die beziehen[Dokumentation](https://reference.groupdocs.com/merger/net/) Ausführliche API-Referenzen und Beispiele finden Sie hier.
+ Sie können sich auf die beziehen[Dokumentation](https://tutorials.groupdocs.com/merger/net/) Ausführliche API-Referenzen und Beispiele finden Sie hier.
 ### Bietet GroupDocs.Merger für .NET eine kostenlose Testversion an?
  Ja, Sie können beginnen mit einem[Kostenlose Testphase](https://releases.groupdocs.com/) um die Funktionen zu erkunden, bevor Sie einen Kauf tätigen.
 ### Wie kann ich eine temporäre Lizenz für GroupDocs.Merger für .NET erhalten?

@@ -3,7 +3,6 @@ title: Unisci file DOC con GroupDocs.Merger per .NET
 linktitle: Unisci file DOC con GroupDocs.Merger per .NET
 second_title: API GroupDocs.Merger .NET
 description: Scopri come unire i file DOC a livello di codice utilizzando GroupDocs.Merger per .NET. Segui la nostra guida passo passo per combinare facilmente più documenti in uno solo.
-type: docs
 weight: 10
 url: /it/net/document-merging/merge-doc-files/
 ---

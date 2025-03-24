@@ -3,7 +3,6 @@ title: Как объединить файлы DOCX
 linktitle: Как объединить файлы DOCX
 second_title: GroupDocs.Merger .NET API
 description: Узнайте, как программно объединять файлы DOCX в .NET с помощью GroupDocs.Merger, что эффективно упрощает задачи манипулирования документами.
-type: docs
 weight: 12
 url: /ru/net/document-merging/how-to-merge-docx-files/
 ---
@@ -13,7 +12,7 @@ url: /ru/net/document-merging/how-to-merge-docx-files/
 Прежде чем приступить к работе, убедитесь, что у вас есть следующие предварительные условия:
 - Visual Studio установлена на вашем компьютере.
 - Базовое понимание разработки на C# и .NET.
--  Установлена библиотека GroupDocs.Merger для .NET (см.[документация](https://reference.groupdocs.com/merger/net/) подробности установки).
+-  Установлена библиотека GroupDocs.Merger для .NET (см.[документация](https://tutorials.groupdocs.com/merger/net/) подробности установки).
 
 ## Импортировать пространства имен
 Начните с импорта необходимых пространств имен в проект C#:
@@ -49,7 +48,7 @@ using (var merger = new Merger("Your Sample Document File"X))
 ### Могу ли я настроить процесс слияния, например указать диапазоны страниц или добавить водяные знаки?
 Конечно, GroupDocs.Merger предоставляет гибкие API для настройки процесса слияния в соответствии с вашими требованиями.
 ### Где я могу найти дополнительную поддержку или документацию для GroupDocs.Merger для .NET?
- Вы можете обратиться к[документация](https://reference.groupdocs.com/merger/net/) для получения подробной информации по API и примеров.
+ Вы можете обратиться к[документация](https://tutorials.groupdocs.com/merger/net/) для получения подробной информации по API и примеров.
 ### Предлагает ли GroupDocs.Merger для .NET бесплатную пробную версию?
  Да, вы можете начать с[бесплатная пробная версия](https://releases.groupdocs.com/) чтобы изучить возможности перед совершением покупки.
 ### Как получить временную лицензию на GroupDocs.Merger для .NET?

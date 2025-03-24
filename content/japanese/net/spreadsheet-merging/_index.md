@@ -3,7 +3,6 @@ title: スプレッドシートの結合
 linktitle: スプレッドシートの結合
 second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger を使用すると、XLAM、XLS、XLSB、XLSM、XLSX、XLT、XLTM、XLTX、ODS ファイルを .NET で簡単にマージできます。文書管理タスクを簡素化します。
-type: docs
 weight: 23
 url: /ja/net/spreadsheet-merging/
 ---

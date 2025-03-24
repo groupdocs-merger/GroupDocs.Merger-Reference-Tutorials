@@ -3,7 +3,6 @@ title: GroupDocs.Merger for .NET で DOC ファイルを結合する
 linktitle: GroupDocs.Merger for .NET で DOC ファイルを結合する
 second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger for .NET を使用して DOC ファイルをプログラムで結合する方法を学びます。ステップバイステップのガイドに従って、複数のドキュメントを 1 つにシームレスに結合します。
-type: docs
 weight: 10
 url: /ja/net/document-merging/merge-doc-files/
 ---

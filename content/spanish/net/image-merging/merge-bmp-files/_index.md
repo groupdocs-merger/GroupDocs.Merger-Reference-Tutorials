@@ -3,7 +3,6 @@ title: Fusionar archivos BMP
 linktitle: Fusionar archivos BMP
 second_title: API GroupDocs.Merger .NET
 description: Aprenda a fusionar archivos BMP usando GroupDocs.Merger para .NET con este completo tutorial. Desarrolle sus aplicaciones .NET de manera eficiente.
-type: docs
 weight: 10
 url: /es/net/image-merging/merge-bmp-files/
 ---

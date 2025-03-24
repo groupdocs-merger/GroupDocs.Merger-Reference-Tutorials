@@ -3,7 +3,6 @@ title: 合併 XLS 文件
 linktitle: 合併 XLS 文件
 second_title: GroupDocs.Merger .NET API
 description: 了解如何使用 GroupDocs.Merger 在 .NET 中合併 Excel 文件以實現無縫文件操作。請按照我們的逐步教學進行操作。
-type: docs
 weight: 11
 url: /zh-hant/net/spreadsheet-merging/merging-xls-files/
 ---

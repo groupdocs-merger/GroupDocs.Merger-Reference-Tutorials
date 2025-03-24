@@ -1,7 +1,6 @@
 ---
 title: Tutoriales y ejemplos de GroupDocs.Merger para .NET
 linktitle: Tutoriales de GroupDocs.Merger para .NET
-type: docs
 weight: 10
 url: /es/net/
 description: Fusione y comprima sin esfuerzo varios formatos de archivos utilizando GroupDocs.Merger .NET. ¡Aprenda tutoriales paso a paso sobre cómo fusionar imágenes, documentos y más!

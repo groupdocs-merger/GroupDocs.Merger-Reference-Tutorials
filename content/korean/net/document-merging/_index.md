@@ -3,7 +3,6 @@ title: 문서 병합
 linktitle: 문서 병합
 second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger를 사용하여 .NET의 다양한 문서 형식을 손쉽게 병합합니다. DOC, DOCX, PDF 등을 원활하게 결합합니다. 오늘 문서 관리를 강화해보세요!
-type: docs
 weight: 22
 url: /ko/net/document-merging/
 ---

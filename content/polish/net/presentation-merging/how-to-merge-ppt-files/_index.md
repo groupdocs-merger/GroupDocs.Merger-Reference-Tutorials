@@ -3,7 +3,6 @@ title: Jak scalić pliki PPT
 linktitle: Jak scalić pliki PPT
 second_title: GroupDocs.Merger API .NET
 description: Dowiedz się, jak bez wysiłku łączyć pliki programu PowerPoint (PPT) za pomocą programu GroupDocs.Merger dla platformy .NET. Ulepsz swoje aplikacje .NET dzięki temu potężnemu interfejsowi API.
-type: docs
 weight: 12
 url: /pl/net/presentation-merging/how-to-merge-ppt-files/
 ---

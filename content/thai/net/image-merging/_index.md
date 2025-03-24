@@ -3,7 +3,6 @@ title: การรวมรูปภาพ
 linktitle: การรวมรูปภาพ
 second_title: GroupDocs.Merger .NET API
 description: รวมไฟล์ BMP, GIF, PNG, SVG, SVGZ, TIF และ TIFF ได้อย่างราบรื่นด้วย GroupDocs.Merger .NET รวมการจัดการเอกสารเข้ากับแอปพลิเคชัน .NET ของคุณอย่างมีประสิทธิภาพ
-type: docs
 weight: 21
 url: /th/net/image-merging/
 ---

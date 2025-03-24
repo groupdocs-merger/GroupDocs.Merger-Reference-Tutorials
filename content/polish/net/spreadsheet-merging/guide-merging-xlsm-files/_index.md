@@ -3,7 +3,6 @@ title: Przewodnik po łączeniu plików XLSM
 linktitle: Przewodnik po łączeniu plików XLSM
 second_title: GroupDocs.Merger API .NET
 description: Bezproblemowo łącz pliki XLSM za pomocą GroupDocs.Merger dla .NET. Efektywnie łącz programowo skoroszyty programu Excel. Zwiększ swoje możliwości manipulowania dokumentami.
-type: docs
 weight: 13
 url: /pl/net/spreadsheet-merging/guide-merging-xlsm-files/
 ---

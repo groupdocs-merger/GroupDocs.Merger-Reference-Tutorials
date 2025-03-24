@@ -3,7 +3,6 @@ title: DOC Dosyalarını GroupDocs.Merger for .NET ile Birleştirme
 linktitle: DOC Dosyalarını GroupDocs.Merger for .NET ile Birleştirme
 second_title: GroupDocs.Merger .NET API'si
 description: GroupDocs.Merger for .NET'i kullanarak DOC dosyalarını programlı olarak nasıl birleştireceğinizi öğrenin. Birden fazla belgeyi sorunsuz bir şekilde tek bir belgede birleştirmek için adım adım kılavuzumuzu izleyin.
-type: docs
 weight: 10
 url: /tr/net/document-merging/merge-doc-files/
 ---

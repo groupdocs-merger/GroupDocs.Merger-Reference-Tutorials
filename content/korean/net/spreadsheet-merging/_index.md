@@ -3,7 +3,6 @@ title: 스프레드시트 병합
 linktitle: 스프레드시트 병합
 second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger를 사용하여 .NET의 XLAM, XLS, XLSB, XLSM, XLSX, XLT, XLTM, XLTX 및 ODS 파일을 손쉽게 병합합니다. 문서 관리 작업을 단순화합니다.
-type: docs
 weight: 23
 url: /ko/net/spreadsheet-merging/
 ---

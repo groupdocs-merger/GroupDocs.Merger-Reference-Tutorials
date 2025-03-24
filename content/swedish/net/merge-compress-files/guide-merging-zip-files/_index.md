@@ -3,7 +3,6 @@ title: Guide för att slå samman zip-filer
 linktitle: Guide för att slå samman zip-filer
 second_title: GroupDocs.Merger .NET API
 description: Lär dig hur du sammanfogar ZIP-filer programmatiskt med GroupDocs.Merger för .NET. Denna handledning ger en detaljerad guide för utvecklare.
-type: docs
 weight: 12
 url: /sv/net/merge-compress-files/guide-merging-zip-files/
 ---

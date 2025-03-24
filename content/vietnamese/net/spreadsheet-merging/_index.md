@@ -3,7 +3,6 @@ title: Hợp nhất bảng tính
 linktitle: Hợp nhất bảng tính
 second_title: API GroupDocs.Merger .NET
 description: Dễ dàng hợp nhất các tệp XLAM, XLS, XLSB, XLSM, XLSX, XLT, XLTM, XLTX và ODS trong .NET bằng GroupDocs.Merger. Đơn giản hóa công việc quản lý tài liệu.
-type: docs
 weight: 23
 url: /vi/net/spreadsheet-merging/
 ---

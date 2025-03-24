@@ -3,7 +3,6 @@ title: Fusionner les fichiers XLAM
 linktitle: Fusionner les fichiers XLAM
 second_title: API GroupDocs.Merger .NET
 description: Apprenez à fusionner des fichiers XLAM sans effort. Simplifiez vos tâches de gestion de documents avec cette puissante API.
-type: docs
 weight: 10
 url: /fr/net/spreadsheet-merging/merge-xlam-files/
 ---
@@ -80,7 +79,7 @@ Oui, une licence est requise pour un usage commercial. Vous pouvez obtenir une l
 
 ### Q : Où puis-je trouver davantage de ressources et d'assistance pour GroupDocs.Merger ?
 
- Vous pouvez visiter le[Documentation GroupDocs.Merger](https://reference.groupdocs.com/merger/net/) pour une référence détaillée de l'API et consultez le[Forum GroupDocs](https://forum.groupdocs.com/c/merger/32) pour le soutien de la communauté.
+ Vous pouvez visiter le[Documentation GroupDocs.Merger](https://tutorials.groupdocs.com/merger/net/) pour une référence détaillée de l'API et consultez le[Forum GroupDocs](https://forum.groupdocs.com/c/merger/32) pour le soutien de la communauté.
 
 ### Q : Puis-je essayer GroupDocs.Merger avant d'acheter ?
 

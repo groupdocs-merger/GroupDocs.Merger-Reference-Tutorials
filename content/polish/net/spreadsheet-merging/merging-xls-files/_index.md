@@ -3,7 +3,6 @@ title: Łączenie plików XLS
 linktitle: Łączenie plików XLS
 second_title: GroupDocs.Merger API .NET
 description: Dowiedz się, jak scalać pliki Excel w platformie .NET przy użyciu narzędzia GroupDocs.Merger w celu płynnej manipulacji dokumentami. Postępuj zgodnie z naszym samouczkiem krok po kroku.
-type: docs
 weight: 11
 url: /pl/net/spreadsheet-merging/merging-xls-files/
 ---

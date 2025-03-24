@@ -3,7 +3,6 @@ title: XLAM-Dateien zusammenführen
 linktitle: XLAM-Dateien zusammenführen
 second_title: GroupDocs.Merger .NET API
 description: Erfahren Sie, wie Sie XLAM-Dateien mühelos zusammenführen. Vereinfachen Sie Ihre Dokumentverwaltungsaufgaben mit dieser leistungsstarken API.
-type: docs
 weight: 10
 url: /de/net/spreadsheet-merging/merge-xlam-files/
 ---
@@ -80,7 +79,7 @@ Ja, für die kommerzielle Nutzung ist eine Lizenz erforderlich. Eine temporäre 
 
 ### F: Wo finde ich weitere Ressourcen und Unterstützung für GroupDocs.Merger?
 
- Sie können die besuchen[GroupDocs.Merger-Dokumentation](https://reference.groupdocs.com/merger/net/) Für eine detaillierte API-Referenz schauen Sie sich die an[GroupDocs-Forum](https://forum.groupdocs.com/c/merger/32) für die Unterstützung der Gemeinschaft.
+ Sie können die besuchen[GroupDocs.Merger-Dokumentation](https://tutorials.groupdocs.com/merger/net/) Für eine detaillierte API-Referenz schauen Sie sich die an[GroupDocs-Forum](https://forum.groupdocs.com/c/merger/32) für die Unterstützung der Gemeinschaft.
 
 ### F: Kann ich GroupDocs.Merger vor dem Kauf testen?
 

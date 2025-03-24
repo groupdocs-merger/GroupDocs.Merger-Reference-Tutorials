@@ -3,7 +3,6 @@ title: 合并 DOTM 文件
 linktitle: 合并 DOTM 文件
 second_title: GroupDocs.Merger .NET API
 description: 了解如何使用 GroupDocs.Merger for .NET 以编程方式合并 DOTM 文件。本综合指南为开发人员提供了分步说明。
-type: docs
 weight: 14
 url: /zh/net/document-merging/merging-dotm-files/
 ---

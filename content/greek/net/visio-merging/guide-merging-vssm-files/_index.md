@@ -3,7 +3,6 @@ title: Οδηγός συγχώνευσης αρχείων VSSM
 linktitle: Οδηγός συγχώνευσης αρχείων VSSM
 second_title: GroupDocs.Merger .NET API
 description: Μάθετε πώς να συγχωνεύετε αρχεία VSSM χωρίς κόπο χρησιμοποιώντας το GroupDocs.Merger για .NET. Οδηγός βήμα προς βήμα για προγραμματιστές C#.
-type: docs
 weight: 13
 url: /el/net/visio-merging/guide-merging-vssm-files/
 ---
@@ -53,7 +52,7 @@ Console.WriteLine("\nVSSM files merge completed successfully. \nCheck output in 
 ### Είναι το GroupDocs.Merger κατάλληλο για επεξεργασία εγγράφων μεγάλης κλίμακας;
 Ναι, το GroupDocs.Merger είναι βελτιστοποιημένο για απόδοση και μπορεί να χειριστεί αποτελεσματικά μεγάλα έγγραφα.
 ### Πού μπορώ να βρω λεπτομερή τεκμηρίωση για το GroupDocs.Merger;
- Μπορείτε να ανατρέξετε στο[τεκμηρίωση](https://reference.groupdocs.com/merger/net/) για ολοκληρωμένη καθοδήγηση.
+ Μπορείτε να ανατρέξετε στο[τεκμηρίωση](https://tutorials.groupdocs.com/merger/net/) για ολοκληρωμένη καθοδήγηση.
 ### Πώς μπορώ να λάβω τεχνική υποστήριξη για προϊόντα GroupDocs;
  Επισκέψου το[Φόρουμ υποστήριξης GroupDocs](https://forum.groupdocs.com/c/merger/32)για βοήθεια και συζητήσεις.
 ### Το GroupDocs προσφέρει δωρεάν δοκιμή για αξιολόγηση;

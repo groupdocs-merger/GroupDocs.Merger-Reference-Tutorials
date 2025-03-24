@@ -3,7 +3,6 @@ title: XPS 파일 병합
 linktitle: XPS 파일 병합
 second_title: GroupDocs.Merger .NET API
 description: .NET용 GroupDocs.Merger를 사용하여 XPS 파일을 손쉽게 병합하는 방법을 알아보세요. .NET 애플리케이션에서 문서 처리를 단순화합니다.
-type: docs
 weight: 20
 url: /ko/net/document-merging/merge-xps-files/
 ---
@@ -52,7 +51,7 @@ Console.WriteLine("\nXPS files merge completed successfully. \nCheck output in {
 ### GroupDocs.Merger를 사용하여 문서 내의 개별 페이지를 조작할 수 있습니까?
 물론, GroupDocs.Merger를 사용하면 문서 내에서 페이지를 추출, 제거, 재정렬 및 회전할 수 있습니다.
 ### .NET용 GroupDocs.Merger에 대한 추가 문서는 어디에서 찾을 수 있습니까?
- 자세한 문서가 제공됩니다.[여기](https://reference.groupdocs.com/merger/net/).
+ 자세한 문서가 제공됩니다.[여기](https://tutorials.groupdocs.com/merger/net/).
 ### .NET용 GroupDocs.Merger는 임시 라이센스 옵션을 지원합니까?
  예, 임시 라이센스를 얻을 수 있습니다[여기](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs.Merger와 관련된 도움을 구하려면 어떻게 해야 합니까?

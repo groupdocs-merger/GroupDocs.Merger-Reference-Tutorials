@@ -3,7 +3,6 @@ title: Объединить файлы VSX
 linktitle: Объединить файлы VSX
 second_title: GroupDocs.Merger .NET API
 description: Узнайте, как легко объединять файлы VSX с помощью GroupDocs.Merger для .NET. Это подробное руководство упрощает задачи по манипулированию документами.
-type: docs
 weight: 17
 url: /ru/net/visio-merging/merge-vsx-files/
 ---
@@ -12,7 +11,7 @@ url: /ru/net/visio-merging/merge-vsx-files/
 ## Предварительные условия
 Прежде чем мы начнем, убедитесь, что у вас настроены следующие предварительные условия:
 - Среда разработки: установите Visual Studio или другую среду разработки для .NET.
--  GroupDocs.Merger для .NET: получите API из[GroupDocs.Merger для документации .NET](https://reference.groupdocs.com/merger/net/).
+-  GroupDocs.Merger для .NET: получите API из[GroupDocs.Merger для документации .NET](https://tutorials.groupdocs.com/merger/net/).
 - Примеры файлов VSX. Подготовьте файлы VSX, которые вы собираетесь объединить, для целей тестирования.
 
 ## Импортировать пространства имен

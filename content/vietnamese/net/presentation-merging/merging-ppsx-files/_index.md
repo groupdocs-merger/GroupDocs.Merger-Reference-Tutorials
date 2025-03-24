@@ -3,7 +3,6 @@ title: Hợp nhất các tệp PPSX
 linktitle: Hợp nhất các tệp PPSX
 second_title: API GroupDocs.Merger .NET
 description: Dễ dàng hợp nhất các tệp PPSX với GroupDocs.Merger cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để tự động hóa các tác vụ hợp nhất tệp! Tăng cường quy trình quản lý tài liệu của bạn.
-type: docs
 weight: 11
 url: /vi/net/presentation-merging/merging-ppsx-files/
 ---
@@ -55,7 +54,7 @@ Có, GroupDocs.Merger hỗ trợ nhiều định dạng tài liệu, bao gồm D
 ### Tôi có thể hợp nhất các tệp PPSX được mã hóa bằng GroupDocs.Merger không?
 GroupDocs.Merger có thể xử lý cả tệp được mã hóa và bảo vệ bằng mật khẩu, đảm bảo thao tác tài liệu an toàn.
 ### Tôi có thể tìm tài liệu hoặc hỗ trợ bổ sung cho GroupDocs.Merger ở đâu?
- Khám phá toàn diện[tài liệu](https://reference.groupdocs.com/merger/net/) và tiếp cận với[diễn đàn hỗ trợ](https://forum.groupdocs.com/c/merger/32) để được hỗ trợ.
+ Khám phá toàn diện[tài liệu](https://tutorials.groupdocs.com/merger/net/) và tiếp cận với[diễn đàn hỗ trợ](https://forum.groupdocs.com/c/merger/32) để được hỗ trợ.
 ### GroupDocs.Merger có yêu cầu giấy phép sử dụng thương mại không?
  Có, cần có giấy phép hợp lệ để sử dụng thương mại. Bạn có thể nhận được giấy phép từ[trang mua hàng](https://purchase.groupdocs.com/buy) hoặc sử dụng một[giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/) để đánh giá.
 ### Tôi có thể dùng thử GroupDocs.Merger trước khi mua không?

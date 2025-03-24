@@ -3,7 +3,6 @@ title: 合併 Zip 檔案指南
 linktitle: 合併 Zip 檔案指南
 second_title: GroupDocs.Merger .NET API
 description: 了解如何使用 GroupDocs.Merger for .NET 以程式設計方式合併 ZIP 檔案。本教程為開發人員提供了詳細的指南。
-type: docs
 weight: 12
 url: /zh-hant/net/merge-compress-files/guide-merging-zip-files/
 ---

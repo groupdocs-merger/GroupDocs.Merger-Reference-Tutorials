@@ -3,7 +3,6 @@ title: 使用 GroupDocs.Merger 轻松合并和拆分文档
 linktitle: GroupDocs.合并教程
 additionalTitle: GroupDocs API 参考
 description: 通过 GroupDocs.Merger 上的专家教程，轻松跨 .NET 和 Java 平台合并、拆分和压缩文档。解锁无缝文件管理！
-type: docs
 weight: 11
 url: /zh/
 is_root: true

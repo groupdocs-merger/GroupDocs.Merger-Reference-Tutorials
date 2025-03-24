@@ -3,7 +3,6 @@ title: دمج ملفات DOC مع GroupDocs.Merger لـ .NET
 linktitle: دمج ملفات DOC مع GroupDocs.Merger لـ .NET
 second_title: GroupDocs.Merger .NET API
 description: تعرف على كيفية دمج ملفات DOC برمجياً باستخدام GroupDocs.Merger لـ .NET. اتبع دليلنا خطوة بخطوة لدمج مستندات متعددة في مستند واحد بسلاسة.
-type: docs
 weight: 10
 url: /ar/net/document-merging/merge-doc-files/
 ---

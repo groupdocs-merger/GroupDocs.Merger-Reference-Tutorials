@@ -3,7 +3,6 @@ title: دمج العرض
 linktitle: دمج العرض
 second_title: GroupDocs.Merger .NET API
 description: دمج تنسيقات ملفات العروض التقديمية المختلفة دون عناء. اتبع برامجنا التعليمية لدمج ملفات PPS وPPSX وPPT وOTP بكفاءة. #GroupDocs.Merger
-type: docs
 weight: 25
 url: /ar/net/presentation-merging/
 ---

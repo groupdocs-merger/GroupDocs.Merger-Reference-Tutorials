@@ -3,7 +3,6 @@ title: Guida all'unione di file PPTX
 linktitle: Guida all'unione di file PPTX
 second_title: API GroupDocs.Merger .NET
 description: Scopri come unire file PPTX utilizzando GroupDocs.Merger per .NET. Semplifica la gestione dei documenti con questa potente libreria .NET.
-type: docs
 weight: 13
 url: /it/net/presentation-merging/guide-merging-pptx-files/
 ---

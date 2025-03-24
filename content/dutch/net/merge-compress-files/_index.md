@@ -3,7 +3,6 @@ title: Compressiebestanden samenvoegen
 linktitle: Compressiebestanden samenvoegen
 second_title: GroupDocs.Merger .NET API
 description: Voeg moeiteloos verschillende bestandsformaten samen en comprimeer deze tutorials. Leer hoe u 7z-, TAR- en ZIP-bestanden naadloos kunt combineren met onze stapsgewijze handleidingen.
-type: docs
 weight: 20
 url: /nl/net/merge-compress-files/
 ---

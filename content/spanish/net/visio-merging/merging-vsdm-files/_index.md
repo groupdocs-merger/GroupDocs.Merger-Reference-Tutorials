@@ -3,7 +3,6 @@ title: Fusionar archivos VSDM
 linktitle: Fusionar archivos VSDM
 second_title: API GroupDocs.Merger .NET
 description: Aprenda a fusionar archivos VSDM usando GroupDocs.Merger para .NET. Simplifique sus tareas de gestión de documentos con esta biblioteca fácil de usar.
-type: docs
 weight: 11
 url: /es/net/visio-merging/merging-vsdm-files/
 ---

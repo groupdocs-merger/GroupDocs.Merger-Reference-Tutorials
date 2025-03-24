@@ -3,7 +3,6 @@ title: 如何合并 PNG 文件
 linktitle: 如何合并 PNG 文件
 second_title: GroupDocs.Merger .NET API
 description: 了解如何使用 GroupDocs.Merger for .NET 合并 PNG 文件。在 .NET 应用程序中无缝集成的分步指南。
-type: docs
 weight: 12
 url: /zh/net/image-merging/how-to-merge-png-files/
 ---
@@ -59,7 +58,7 @@ Console.WriteLine("\nPNG files merge completed successfully. \nCheck output in {
 ### 我可以自定义合并选项，例如方向或布局吗？
 当然！GroupDocs.Merger 提供各种选项来控制文档和图像的合并方式，允许灵活定制。
 ### 在哪里可以找到有关 GroupDocs.Merger 的更多资源和支持？
-参观[GroupDocs.Merger 论坛](https://forum.groupdocs.com/c/merger/32)寻求社区支持并探索[文档](https://reference.groupdocs.com/merger/net/)以获取详细指导。
+参观[GroupDocs.Merger 论坛](https://forum.groupdocs.com/c/merger/32)寻求社区支持并探索[文档](https://tutorials.groupdocs.com/merger/net/)以获取详细指导。
 ### 购买之前是否有试用版可供测试 GroupDocs.Merger？
 是的，你可以从[集团文档网站](https://releases.groupdocs.com/)评估图书馆的能力。
 ### 如何获得 GroupDocs.Merger 的临时许可证？

@@ -3,7 +3,6 @@ title: Bemutató összevonás
 linktitle: Bemutató összevonás
 second_title: GroupDocs.Merger .NET API
 description: Könnyedén egyesítsen különféle prezentációs fájlformátumokat. Kövesse oktatóanyagainkat a PPS, PPSX, PPT és OTP fájlok hatékony egyesítéséhez. #GroupDocs.Merger
-type: docs
 weight: 25
 url: /hu/net/presentation-merging/
 ---

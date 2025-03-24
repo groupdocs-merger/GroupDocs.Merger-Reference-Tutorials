@@ -3,7 +3,6 @@ title: Jak sloučit soubory PNG
 linktitle: Jak sloučit soubory PNG
 second_title: GroupDocs.Merger .NET API
 description: Přečtěte si, jak sloučit soubory PNG pomocí GroupDocs.Merger for .NET. Podrobný průvodce pro bezproblémovou integraci do vašich aplikací .NET.
-type: docs
 weight: 12
 url: /cs/net/image-merging/how-to-merge-png-files/
 ---
@@ -59,7 +58,7 @@ Ano, GroupDocs.Merger podporuje širokou škálu formátů dokumentů a obrázk�
 ### Mohu přizpůsobit možnosti sloučení, jako je orientace nebo rozvržení?
 Absolutně! GroupDocs.Merger nabízí různé možnosti řízení slučování dokumentů a obrázků, což umožňuje flexibilní přizpůsobení.
 ### Kde najdu další zdroje a podporu pro GroupDocs.Merger?
- Navštivte[Fórum GroupDocs.Merger](https://forum.groupdocs.com/c/merger/32) za podporu komunity a prozkoumejte[dokumentace](https://reference.groupdocs.com/merger/net/) pro podrobný návod.
+ Navštivte[Fórum GroupDocs.Merger](https://forum.groupdocs.com/c/merger/32) za podporu komunity a prozkoumejte[dokumentace](https://tutorials.groupdocs.com/merger/net/) pro podrobný návod.
 ### Je k dispozici zkušební verze pro testování GroupDocs.Merger před zakoupením?
  Ano, můžete si stáhnout bezplatnou zkušební verzi z[Web GroupDocs](https://releases.groupdocs.com/) zhodnotit možnosti knihovny.
 ### Jak mohu získat dočasnou licenci pro GroupDocs.Merger?

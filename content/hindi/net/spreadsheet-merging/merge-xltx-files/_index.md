@@ -3,7 +3,6 @@ title: XLTX फ़ाइलें मर्ज करें
 linktitle: XLTX फ़ाइलें मर्ज करें
 second_title: GroupDocs.Merger .NET API
 description: जानें कि XLTX फ़ाइलों को आसानी से कैसे मर्ज किया जाए। XLTX फ़ाइलों को मर्ज करना शुरू करें और अपने दस्तावेज़ प्रबंधन कार्यों को कुशलतापूर्वक सुव्यवस्थित करें।
-type: docs
 weight: 17
 url: /hi/net/spreadsheet-merging/merge-xltx-files/
 ---
@@ -63,4 +62,4 @@ Console.WriteLine("\nXLTX files merge completed successfully. \nCheck output in 
 ### क्या .NET के लिए GroupDocs.Merger मर्ज प्रक्रिया के दौरान फ़ॉर्मेटिंग को सुरक्षित रखता है?
 हां, GroupDocs.Merger यह सुनिश्चित करता है कि XLTX फ़ाइलों को मर्ज करते समय स्वरूपण और डेटा अखंडता बनाए रखी जाए।
 ### मुझे .NET के लिए GroupDocs.Merger के लिए अधिक समर्थन या दस्तावेज़ कहां मिल सकता है?
- दौरा करना[GroupDocs.Merger मंच](https://forum.groupdocs.com/c/merger/32) सहायता के लिए संपर्क करें और देखें[प्रलेखन](https://reference.groupdocs.com/merger/net/) विस्तृत मार्गदर्शन के लिए.
+ दौरा करना[GroupDocs.Merger मंच](https://forum.groupdocs.com/c/merger/32) सहायता के लिए संपर्क करें और देखें[प्रलेखन](https://tutorials.groupdocs.com/merger/net/) विस्तृत मार्गदर्शन के लिए.

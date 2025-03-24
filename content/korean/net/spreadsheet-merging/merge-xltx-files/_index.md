@@ -3,7 +3,6 @@ title: XLTX 파일 병합
 linktitle: XLTX 파일 병합
 second_title: GroupDocs.Merger .NET API
 description: XLTX 파일을 손쉽게 병합하는 방법을 알아보세요. XLTX 파일 병합을 시작하고 문서 관리 작업을 효율적으로 간소화하세요.
-type: docs
 weight: 17
 url: /ko/net/spreadsheet-merging/merge-xltx-files/
 ---
@@ -63,4 +62,4 @@ Console.WriteLine("\nXLTX files merge completed successfully. \nCheck output in 
 ### .NET용 GroupDocs.Merger는 병합 프로세스 중에 서식을 유지합니까?
 예, GroupDocs.Merger는 XLTX 파일을 병합할 때 형식 및 데이터 무결성이 유지되도록 보장합니다.
 ### .NET용 GroupDocs.Merger에 대한 추가 지원이나 설명서는 어디서 찾을 수 있나요?
- 방문하다[GroupDocs.Merger 포럼](https://forum.groupdocs.com/c/merger/32) 지원을 받으려면 다음을 참조하세요.[선적 서류 비치](https://reference.groupdocs.com/merger/net/) 자세한 안내를 위해.
+ 방문하다[GroupDocs.Merger 포럼](https://forum.groupdocs.com/c/merger/32) 지원을 받으려면 다음을 참조하세요.[선적 서류 비치](https://tutorials.groupdocs.com/merger/net/) 자세한 안내를 위해.
