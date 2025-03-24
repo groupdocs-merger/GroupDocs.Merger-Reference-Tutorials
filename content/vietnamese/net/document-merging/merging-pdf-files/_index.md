@@ -3,7 +3,6 @@ title: Hợp nhất các tệp PDF
 linktitle: Hợp nhất các tệp PDF
 second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp PDF theo chương trình trong .NET bằng GroupDocs.Merger để quản lý tài liệu liền mạch.
-type: docs
 weight: 19
 url: /vi/net/document-merging/merging-pdf-files/
 ---

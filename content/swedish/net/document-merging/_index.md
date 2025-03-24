@@ -3,7 +3,6 @@ title: Sammanfoga dokument
 linktitle: Sammanfoga dokument
 second_title: GroupDocs.Merger .NET API
 description: Slå enkelt samman olika dokumentformat i .NET med GroupDocs.Merger. Kombinera sömlöst DOC, DOCX, PDF och mer. Förbättra din dokumenthantering idag!
-type: docs
 weight: 22
 url: /sv/net/document-merging/
 ---

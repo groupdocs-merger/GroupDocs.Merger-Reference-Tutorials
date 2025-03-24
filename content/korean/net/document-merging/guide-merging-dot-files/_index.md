@@ -3,7 +3,6 @@ title: DOT 파일 병합 가이드
 linktitle: DOT 파일 병합 가이드
 second_title: GroupDocs.Merger .NET API
 description: .NET용 GroupDocs.Merger를 사용하여 프로그래밍 방식으로 DOT(Graphviz) 파일을 병합하는 방법을 알아보세요. DOT 파일을 쉽게 병합, 결합 및 조작할 수 있습니다.
-type: docs
 weight: 13
 url: /ko/net/document-merging/guide-merging-dot-files/
 ---
@@ -13,7 +12,7 @@ url: /ko/net/document-merging/guide-merging-dot-files/
 시작하기 전에 다음 필수 구성 요소가 있는지 확인하세요.
 - C# 및 .NET 프로그래밍에 대한 기본 지식.
 - 컴퓨터에 Visual Studio가 설치되어 있습니다.
--  .NET 라이브러리용 GroupDocs.Merger. 다음에서 다운로드할 수 있습니다.[.NET 문서용 GroupDocs.Merger](https://reference.groupdocs.com/merger/net/).
+-  .NET 라이브러리용 GroupDocs.Merger. 다음에서 다운로드할 수 있습니다.[.NET 문서용 GroupDocs.Merger](https://tutorials.groupdocs.com/merger/net/).
 - 병합하려는 DOT 파일에 액세스합니다.
 
 ## 네임스페이스 가져오기

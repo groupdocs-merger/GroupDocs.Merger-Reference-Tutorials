@@ -3,7 +3,6 @@ title: プレゼンテーションの結合
 linktitle: プレゼンテーションの結合
 second_title: GroupDocs.Merger .NET API
 description: さまざまなプレゼンテーション ファイル形式を簡単に結合できます。チュートリアルに従って、PPS、PPSX、PPT、OTP ファイルを効率的に結合してください。#GroupDocs.Merger
-type: docs
 weight: 25
 url: /ja/net/presentation-merging/
 ---

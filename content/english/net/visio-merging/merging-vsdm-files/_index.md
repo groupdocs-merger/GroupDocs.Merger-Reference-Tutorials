@@ -3,7 +3,6 @@ title: Merging VSDM Files
 linktitle: Merging VSDM Files
 second_title: GroupDocs.Merger .NET API
 description: Learn how to merge VSDM files using GroupDocs.Merger for .NET. Simplify your document management tasks with this easy-to-use library.
-type: docs
 weight: 11
 url: /net/visio-merging/merging-vsdm-files/
 ---
@@ -13,7 +12,7 @@ In this tutorial, we'll explore how to merge VSDM (Visio Macro-Enabled Drawing) 
 Before diving into this tutorial, ensure you have the following prerequisites set up:
 - Visual Studio installed on your machine.
 - Basic knowledge of C# and .NET framework.
-- GroupDocs.Merger for .NET library downloaded and referenced in your project.
+- GroupDocs.Merger for .NET library downloaded and tutorialsd in your project.
 - Access to the VSDM files you want to merge.
 
 ## Import Namespaces

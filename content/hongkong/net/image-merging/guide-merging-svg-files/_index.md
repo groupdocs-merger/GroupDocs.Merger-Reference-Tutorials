@@ -3,7 +3,6 @@ title: 合併 SVG 檔案指南
 linktitle: 合併 SVG 檔案指南
 second_title: GroupDocs.Merger .NET API
 description: 了解如何使用 GroupDocs.Merger for .NET 以程式設計方式合併 SVG 檔案。輕鬆組合多個 SVG 文件。
-type: docs
 weight: 13
 url: /zh-hant/net/image-merging/guide-merging-svg-files/
 ---
@@ -90,7 +89,7 @@ Console.WriteLine("\nSVG files merge completed successfully. \nCheck output in {
 
 ### 問題 4：在哪裡可以找到更多 GroupDocs.Merger 的範例和文件？
 
-答：探索[GroupDocs.Merge 文檔](https://reference.groupdocs.com/merger/net/)獲取全面的指導和範例。
+答：探索[GroupDocs.Merge 文檔](https://tutorials.groupdocs.com/merger/net/)獲取全面的指導和範例。
 
 ### Q5：如何獲得 GroupDocs.Merger 的支援？
 

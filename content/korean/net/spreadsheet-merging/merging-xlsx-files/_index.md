@@ -3,7 +3,6 @@ title: XLSX 파일 병합
 linktitle: XLSX 파일 병합
 second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger를 사용하여 .NET에서 XLSX 파일을 손쉽게 병합하는 방법을 알아보세요. 원활한 문서 관리를 위해 이 단계별 튜토리얼을 따르세요.
-type: docs
 weight: 14
 url: /ko/net/spreadsheet-merging/merging-xlsx-files/
 ---
@@ -54,7 +53,7 @@ Console.WriteLine("\nXLSX files merge completed successfully. \nCheck output in 
 ### GroupDocs.Merger는 .NET Core 애플리케이션과 호환되나요?
 예, GroupDocs.Merger는 .NET Framework 및 .NET Core 프로젝트 모두에서 사용할 수 있습니다.
 ### GroupDocs.Merger에 대한 자세한 문서는 어디서 찾을 수 있나요?
- 자세한 문서가 제공됩니다.[여기](https://reference.groupdocs.com/merger/net/).
+ 자세한 문서가 제공됩니다.[여기](https://tutorials.groupdocs.com/merger/net/).
 ### GroupDocs.Merger는 무료 평가판을 제공합니까?
  예, 무료 평가판에 액세스할 수 있습니다[여기](https://releases.groupdocs.com/).
 ### GroupDocs.Merger에 대한 지원을 받으려면 어떻게 해야 합니까?

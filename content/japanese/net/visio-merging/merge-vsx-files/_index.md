@@ -3,7 +3,6 @@ title: VSX ファイルをマージする
 linktitle: VSX ファイルをマージする
 second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger for .NET を使用して VSX ファイルを簡単にマージする方法を学びます。この包括的なガイドにより、ドキュメントの操作タスクが簡素化されます。
-type: docs
 weight: 17
 url: /ja/net/visio-merging/merge-vsx-files/
 ---
@@ -12,7 +11,7 @@ url: /ja/net/visio-merging/merge-vsx-files/
 ## 前提条件
 始める前に、次の前提条件が設定されていることを確認してください。
 - 開発環境: Visual Studio または .NET 開発用の別の IDE をインストールします。
--  GroupDocs.Merger for .NET: API を次の場所から取得します。[GroupDocs.Merger for .NET ドキュメント](https://reference.groupdocs.com/merger/net/).
+-  GroupDocs.Merger for .NET: API を次の場所から取得します。[GroupDocs.Merger for .NET ドキュメント](https://tutorials.groupdocs.com/merger/net/).
 - サンプル VSX ファイル: テスト目的でマージする VSX ファイルを準備します。
 
 ## 名前空間のインポート

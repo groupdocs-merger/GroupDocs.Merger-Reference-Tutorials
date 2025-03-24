@@ -3,7 +3,6 @@ title: SVGZ fájlok egyesítése
 linktitle: SVGZ fájlok egyesítése
 second_title: GroupDocs.Merger .NET API
 description: Ebből a lépésről lépésre mutató oktatóanyagból megtudhatja, hogyan egyesíthet SVGZ-fájlokat a GroupDocs.Merger for .NET használatával. Fejlessze dokumentumkezelési készségeit.
-type: docs
 weight: 14
 url: /hu/net/image-merging/merging-svgz-files/
 ---
@@ -59,7 +58,7 @@ Ebben az oktatóanyagban megtanultuk, hogyan egyesíthet SVGZ fájlokat a GroupD
 ### A GroupDocs.Merger kezelhet más fájlformátumokat is az SVGZ-n kívül?
 Igen, a GroupDocs.Merger különféle dokumentumformátumokat támogat, beleértve a PDF, Word, Excel, PowerPoint és egyebeket.
 ### Hol találom a GroupDocs.Merger részletes dokumentációját?
- Meglátogatni a[dokumentáció](https://reference.groupdocs.com/merger/net/) átfogó információkért és használati példákért.
+ Meglátogatni a[dokumentáció](https://tutorials.groupdocs.com/merger/net/) átfogó információkért és használati példákért.
 ### Van ingyenes próbaverzió a GroupDocs.Merger számára?
  Igen, hozzáférhet az ingyenes próbaverzióhoz[itt](https://releases.groupdocs.com/).
 ### Hogyan kaphatok támogatást a GroupDocs.Merger programhoz?

@@ -3,7 +3,6 @@ title: Mesclar arquivos XLTX
 linktitle: Mesclar arquivos XLTX
 second_title: API GroupDocs.Merger .NET
 description: Aprenda como mesclar arquivos XLTX sem esforço. Comece a mesclar arquivos XLTX e simplifique suas tarefas de gerenciamento de documentos com eficiência.
-type: docs
 weight: 17
 url: /pt/net/spreadsheet-merging/merge-xltx-files/
 ---
@@ -63,4 +62,4 @@ Sim, o GroupDocs.Merger for .NET não requer a instalação do Microsoft Excel n
 ### O GroupDocs.Merger for .NET preserva a formatação durante o processo de mesclagem?
 Sim, GroupDocs.Merger garante que a formatação e a integridade dos dados sejam mantidas ao mesclar arquivos XLTX.
 ### Onde posso encontrar mais suporte ou documentação para GroupDocs.Merger for .NET?
- Visite a[Fórum GroupDocs.Merger](https://forum.groupdocs.com/c/merger/32) para obter suporte e consulte o[documentação](https://reference.groupdocs.com/merger/net/) para orientação detalhada.
+ Visite a[Fórum GroupDocs.Merger](https://forum.groupdocs.com/c/merger/32) para obter suporte e consulte o[documentação](https://tutorials.groupdocs.com/merger/net/) para orientação detalhada.

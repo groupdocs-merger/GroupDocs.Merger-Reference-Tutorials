@@ -3,7 +3,6 @@ title: دمج المستندات وتقسيمها بسهولة باستخدام 
 linktitle: دروس GroupDocs.Merger
 additionalTitle: مراجع واجهة برمجة تطبيقات GroupDocs
 description: يمكنك دمج المستندات وتقسيمها وضغطها بسهولة عبر منصات .NET وJava من خلال برامجنا التعليمية المتخصصة على GroupDocs.Merger. فتح إدارة الملفات بسلاسة!
-type: docs
 weight: 11
 url: /ar/
 is_root: true

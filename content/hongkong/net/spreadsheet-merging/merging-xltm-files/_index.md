@@ -3,7 +3,6 @@ title: 合併 XLTM 文件
 linktitle: 合併 XLTM 文件
 second_title: GroupDocs.Merger .NET API
 description: 了解如何以程式設計方式合併 XLTM 檔案。帶有程式碼範例的分步指南。
-type: docs
 weight: 16
 url: /zh-hant/net/spreadsheet-merging/merging-xltm-files/
 ---
@@ -61,6 +60,6 @@ Console.WriteLine("\nXLTM files merge completed successfully. \nCheck output in 
 ### GroupDocs.Merger 是否有免費試用版？
 是的，您可以免費試用 GroupDocs.Merger[這裡](https://releases.groupdocs.com/).
 ### 在哪裡可以找到 GroupDocs.Merger 的文檔？
-您可以參考 GroupDocs.Merger 的完整文檔[這裡](https://reference.groupdocs.com/merger/net/).
+您可以參考 GroupDocs.Merger 的完整文檔[這裡](https://tutorials.groupdocs.com/merger/net/).
 ### 在哪裡可以獲得 GroupDocs.Merger 的技術支援？
 如需技術協助和支持，請造訪 GroupDocs.Merger 論壇[這裡](https://forum.groupdocs.com/c/merger/32).

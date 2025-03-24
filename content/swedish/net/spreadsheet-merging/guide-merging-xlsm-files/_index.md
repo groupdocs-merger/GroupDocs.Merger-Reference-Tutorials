@@ -3,7 +3,6 @@ title: Guide för att slå samman XLSM-filer
 linktitle: Guide för att slå samman XLSM-filer
 second_title: GroupDocs.Merger .NET API
 description: Slå samman XLSM-filer sömlöst med GroupDocs.Merger för .NET. Kombinera effektivt Excel-arbetsböcker programmatiskt. Förbättra dina dokumenthanteringsmöjligheter.
-type: docs
 weight: 13
 url: /sv/net/spreadsheet-merging/guide-merging-xlsm-files/
 ---

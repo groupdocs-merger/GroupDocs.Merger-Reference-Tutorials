@@ -3,7 +3,6 @@ title: Sloučení souborů ODS
 linktitle: Sloučení souborů ODS
 second_title: GroupDocs.Merger .NET API
 description: Naučte se, jak sloučit soubory ODS bez námahy. Postupujte podle našeho podrobného průvodce pro bezproblémovou manipulaci s dokumenty.
-type: docs
 weight: 18
 url: /cs/net/spreadsheet-merging/merging-ods-files/
 ---

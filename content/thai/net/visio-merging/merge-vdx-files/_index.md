@@ -3,7 +3,6 @@ title: รวมไฟล์ VDX
 linktitle: รวมไฟล์ VDX
 second_title: GroupDocs.Merger .NET API
 description: เรียนรู้วิธีผสานไฟล์ VDX โดยทางโปรแกรมโดยใช้ GroupDocs.Merger สำหรับ .NET บทช่วยสอนนี้จะให้คำแนะนำทีละขั้นตอน
-type: docs
 weight: 10
 url: /th/net/visio-merging/merge-vdx-files/
 ---

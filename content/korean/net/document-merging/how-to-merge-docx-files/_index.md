@@ -3,7 +3,6 @@ title: DOCX 파일을 병합하는 방법
 linktitle: DOCX 파일을 병합하는 방법
 second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger를 사용하여 .NET에서 프로그래밍 방식으로 DOCX 파일을 병합하여 문서 조작 작업을 효율적으로 단순화하는 방법을 알아보세요.
-type: docs
 weight: 12
 url: /ko/net/document-merging/how-to-merge-docx-files/
 ---
@@ -13,7 +12,7 @@ url: /ko/net/document-merging/how-to-merge-docx-files/
 시작하기 전에 다음 필수 구성 요소가 있는지 확인하세요.
 - 컴퓨터에 Visual Studio가 설치되어 있습니다.
 - C# 및 .NET 개발에 대한 기본 이해.
--  .NET 라이브러리용 GroupDocs.Merger가 설치되었습니다(참조:[선적 서류 비치](https://reference.groupdocs.com/merger/net/) 자세한 설치 내용은)
+-  .NET 라이브러리용 GroupDocs.Merger가 설치되었습니다(참조:[선적 서류 비치](https://tutorials.groupdocs.com/merger/net/) 자세한 설치 내용은)
 
 ## 네임스페이스 가져오기
 C# 프로젝트에서 필요한 네임스페이스를 가져오는 것부터 시작하세요.
@@ -49,7 +48,7 @@ using (var merger = new Merger("Your Sample Document File"X))
 ### 페이지 범위 지정, 워터마크 추가 등 병합 프로세스를 사용자 정의할 수 있나요?
 물론, GroupDocs.Merger는 요구 사항에 따라 병합 프로세스를 사용자 정의할 수 있는 유연한 API를 제공합니다.
 ### .NET용 GroupDocs.Merger에 대한 추가 지원이나 설명서는 어디서 찾을 수 있나요?
- 당신은[선적 서류 비치](https://reference.groupdocs.com/merger/net/) 자세한 API 참조 및 예시를 확인하세요.
+ 당신은[선적 서류 비치](https://tutorials.groupdocs.com/merger/net/) 자세한 API 참조 및 예시를 확인하세요.
 ### .NET용 GroupDocs.Merger는 무료 평가판을 제공합니까?
  예, 다음과 같이 시작할 수 있습니다.[무료 시험판](https://releases.groupdocs.com/) 구매하기 전에 기능을 살펴보세요.
 ### .NET용 GroupDocs.Merger의 임시 라이센스를 얻으려면 어떻게 해야 합니까?

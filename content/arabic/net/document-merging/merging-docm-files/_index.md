@@ -3,7 +3,6 @@ title: دمج ملفات DOCM
 linktitle: دمج ملفات DOCM
 second_title: GroupDocs.Merger .NET API
 description: تعرف على كيفية دمج ملفات DOCM بسلاسة باستخدام GroupDocs.Merger لـ .NET. معالجة بسيطة وفعالة للمستندات لتطبيقات .NET.
-type: docs
 weight: 11
 url: /ar/net/document-merging/merging-docm-files/
 ---

@@ -3,7 +3,6 @@ title: VSX फ़ाइलें मर्ज करें
 linktitle: VSX फ़ाइलें मर्ज करें
 second_title: GroupDocs.Merger .NET API
 description: .NET के लिए GroupDocs.Merger का उपयोग करके आसानी से VSX फ़ाइलों को मर्ज करना सीखें। यह व्यापक गाइड दस्तावेज़ हेरफेर कार्यों को सरल बनाता है।
-type: docs
 weight: 17
 url: /hi/net/visio-merging/merge-vsx-files/
 ---
@@ -12,7 +11,7 @@ url: /hi/net/visio-merging/merge-vsx-files/
 ## आवश्यक शर्तें
 शुरू करने से पहले, सुनिश्चित करें कि आपके पास निम्नलिखित पूर्वापेक्षाएँ स्थापित हैं:
 - विकास वातावरण: .NET विकास के लिए Visual Studio या कोई अन्य IDE स्थापित करें।
--  .NET के लिए GroupDocs.Merger: एपीआई प्राप्त करें[.NET दस्तावेज़ीकरण के लिए GroupDocs.Merger](https://reference.groupdocs.com/merger/net/).
+-  .NET के लिए GroupDocs.Merger: एपीआई प्राप्त करें[.NET दस्तावेज़ीकरण के लिए GroupDocs.Merger](https://tutorials.groupdocs.com/merger/net/).
 - नमूना VSX फ़ाइलें: परीक्षण प्रयोजनों के लिए उन VSX फ़ाइलों को तैयार करें जिन्हें आप मर्ज करना चाहते हैं।
 
 ## नामस्थान आयात करें

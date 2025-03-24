@@ -3,7 +3,6 @@ title: Sloučení souborů GIF
 linktitle: Sloučení souborů GIF
 second_title: GroupDocs.Merger .NET API
 description: Přečtěte si, jak sloučit soubory GIF pomocí GroupDocs.Merger for .NET. Programově zkombinujte více GIFů pomocí podrobných pokynů.
-type: docs
 weight: 11
 url: /cs/net/image-merging/merging-gif-files/
 ---
@@ -63,6 +62,6 @@ Ano, GroupDocs.Merger podporuje slučování různých formátů dokumentů, vč
 ### Otázka: Jak mohu získat technickou podporu pro GroupDocs.Merger?
  Pro technickou pomoc navštivte GroupDocs.Merger[Fórum](https://forum.groupdocs.com/c/merger/32) kde můžete klást otázky a zapojit se do komunity.
 ### Otázka: Kde najdu podrobnou dokumentaci k GroupDocs.Merger for .NET?
- Prozkoumejte komplexní dokumentaci[tady](https://reference.groupdocs.com/merger/net/) pro podrobné informace o používání GroupDocs.Merger ve vašich aplikacích .NET.
+ Prozkoumejte komplexní dokumentaci[tady](https://tutorials.groupdocs.com/merger/net/) pro podrobné informace o používání GroupDocs.Merger ve vašich aplikacích .NET.
 ### Otázka: Mohu získat dočasnou licenci pro GroupDocs.Merger?
  Ano, můžete získat dočasnou licenci od[tady](https://purchase.groupdocs.com/temporary-license/) k vyhodnocení schopností GroupDocs.Merger před nákupem.

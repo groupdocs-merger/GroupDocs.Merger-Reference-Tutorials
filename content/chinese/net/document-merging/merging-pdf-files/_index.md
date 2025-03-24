@@ -3,7 +3,6 @@ title: 合并 PDF 文件
 linktitle: 合并 PDF 文件
 second_title: GroupDocs.Merger .NET API
 description: 了解如何使用 GroupDocs.Merger 在 .NET 中以编程方式合并 PDF 文件，以实现无缝文档管理。
-type: docs
 weight: 19
 url: /zh/net/document-merging/merging-pdf-files/
 ---

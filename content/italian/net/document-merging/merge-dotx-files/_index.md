@@ -3,7 +3,6 @@ title: Unisci file DOTX
 linktitle: Unisci file DOTX
 second_title: API GroupDocs.Merger .NET
 description: Scopri come unire file DOTX in .NET utilizzando GroupDocs.Merger senza sforzo. Migliora le tue capacità di manipolazione dei documenti.
-type: docs
 weight: 15
 url: /it/net/document-merging/merge-dotx-files/
 ---
@@ -13,7 +12,7 @@ In questo tutorial esploreremo come unire file DOTX (modello Word) utilizzando G
 Prima di immergerti nel tutorial, assicurati di avere quanto segue:
 - Visual Studio installato sul tuo computer
 - .NET SDK (versione compatibile) installato
--  GroupDocs.Merger per .NET installato (fare riferimento al file[guida d'installazione](https://reference.groupdocs.com/merger/net/) per dettagli)
+-  GroupDocs.Merger per .NET installato (fare riferimento al file[guida d'installazione](https://tutorials.groupdocs.com/merger/net/) per dettagli)
 - Conoscenza base della programmazione C#
 
 ## Importa spazi dei nomi
@@ -58,7 +57,7 @@ Sì, GroupDocs.Merger supporta l'unione di vari formati di documenti come DOCX, 
 ### GroupDocs.Merger è compatibile con .NET Core?
 Sì, GroupDocs.Merger è compatibile sia con .NET Framework che con .NET Core.
 ### Dove posso trovare ulteriore supporto o documentazione per GroupDocs.Merger?
- Puoi fare riferimento a[Documentazione GroupDocs.Merger](https://reference.groupdocs.com/merger/net/) per riferimenti API dettagliati ed esempi di utilizzo.
+ Puoi fare riferimento a[Documentazione GroupDocs.Merger](https://tutorials.groupdocs.com/merger/net/) per riferimenti API dettagliati ed esempi di utilizzo.
 ### GroupDocs.Merger offre una prova gratuita?
  Sì, puoi accedere a[versione di prova gratuita](https://releases.groupdocs.com/) per valutare GroupDocs.Merger.
 ### Come posso acquistare una licenza per GroupDocs.Merger?

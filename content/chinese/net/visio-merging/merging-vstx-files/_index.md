@@ -3,7 +3,6 @@ title: 使用 GroupDocs.Merger for .NET 合并 VSTX 文件
 linktitle: 使用 GroupDocs.Merger for .NET 合并 VSTX 文件
 second_title: GroupDocs.Merger .NET API
 description: 了解如何使用 GroupDocs.Merger for .NET 合并 VSTX 文件。请按照此分步指南在 C# 中进行高效的文档操作。
-type: docs
 weight: 16
 url: /zh/net/visio-merging/merging-vstx-files/
 ---
@@ -64,4 +63,4 @@ Console.WriteLine("\nVSTX files merge completed successfully. \nCheck output in 
 ### GroupDocs.Merger for .NET 是否适合大规模文档处理任务？
 是的，GroupDocs.Merger 针对大型文档和批量操作的高效处理进行了优化。
 ### 在哪里可以找到 GroupDocs.Merger for .NET 的其他支持或文档？
-参观[GroupDocs.Merger 论坛](https://forum.groupdocs.com/c/merger/32)或参考[文档](https://reference.groupdocs.com/merger/net/)以获得综合资源。
+参观[GroupDocs.Merger 论坛](https://forum.groupdocs.com/c/merger/32)或参考[文档](https://tutorials.groupdocs.com/merger/net/)以获得综合资源。

@@ -3,7 +3,6 @@ title: Fusionar archivos TIF
 linktitle: Fusionar archivos TIF
 second_title: API GroupDocs.Merger .NET
 description: Aprenda a fusionar archivos TIF mediante programación utilizando GroupDocs.Merger para .NET. API de manipulación eficiente de documentos para desarrolladores .NET.
-type: docs
 weight: 15
 url: /es/net/image-merging/merge-tif-files/
 ---

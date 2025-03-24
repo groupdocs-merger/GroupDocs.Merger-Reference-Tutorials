@@ -3,7 +3,6 @@ title: Gabungkan dan Pisahkan Dokumen dengan Mudah dengan GroupDocs.Merger
 linktitle: GroupDocs.Tutorial Penggabungan
 additionalTitle: Referensi API GroupDocs
 description: Gabungkan, pisahkan, dan kompres dokumen dengan mudah di seluruh platform .NET dan Java dengan tutorial ahli kami di GroupDocs.Merger. Buka kunci manajemen file yang lancar!
-type: docs
 weight: 11
 url: /id/
 is_root: true

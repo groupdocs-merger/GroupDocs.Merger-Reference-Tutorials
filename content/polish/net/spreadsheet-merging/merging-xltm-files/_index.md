@@ -3,7 +3,6 @@ title: Łączenie plików XLTM
 linktitle: Łączenie plików XLTM
 second_title: GroupDocs.Merger API .NET
 description: Dowiedz się, jak programowo łączyć pliki XLTM. Przewodnik krok po kroku z przykładami kodu.
-type: docs
 weight: 16
 url: /pl/net/spreadsheet-merging/merging-xltm-files/
 ---
@@ -61,6 +60,6 @@ Tak, GroupDocs.Merger obsługuje łączenie różnych formatów dokumentów, tak
 ### Czy dostępna jest bezpłatna wersja próbna programu GroupDocs.Merger?
  Tak, możesz uzyskać dostęp do bezpłatnej wersji próbnej GroupDocs.Merger[Tutaj](https://releases.groupdocs.com/).
 ### Gdzie mogę znaleźć dokumentację dotyczącą GroupDocs.Merger?
-Możesz zapoznać się z pełną dokumentacją GroupDocs.Merger[Tutaj](https://reference.groupdocs.com/merger/net/).
+Możesz zapoznać się z pełną dokumentacją GroupDocs.Merger[Tutaj](https://tutorials.groupdocs.com/merger/net/).
 ### Gdzie mogę uzyskać pomoc techniczną dotyczącą GroupDocs.Merger?
  Aby uzyskać pomoc techniczną i wsparcie, odwiedź forum GroupDocs.Merger[Tutaj](https://forum.groupdocs.com/c/merger/32).

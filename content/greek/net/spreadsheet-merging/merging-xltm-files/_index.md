@@ -3,7 +3,6 @@ title: Συγχώνευση αρχείων XLTM
 linktitle: Συγχώνευση αρχείων XLTM
 second_title: GroupDocs.Merger .NET API
 description: Μάθετε πώς να συγχωνεύετε αρχεία XLTM μέσω προγραμματισμού. Οδηγός βήμα προς βήμα με παραδείγματα κώδικα.
-type: docs
 weight: 16
 url: /el/net/spreadsheet-merging/merging-xltm-files/
 ---
@@ -61,6 +60,6 @@ Console.WriteLine("\nXLTM files merge completed successfully. \nCheck output in 
 ### Υπάρχει διαθέσιμη δωρεάν δοκιμή για το GroupDocs.Merger;
  Ναι, μπορείτε να αποκτήσετε πρόσβαση σε μια δωρεάν δοκιμή του GroupDocs.Merger[εδώ](https://releases.groupdocs.com/).
 ### Πού μπορώ να βρω τεκμηρίωση για το GroupDocs.Merger;
-Μπορείτε να ανατρέξετε στην πλήρη τεκμηρίωση για το GroupDocs.Merger[εδώ](https://reference.groupdocs.com/merger/net/).
+Μπορείτε να ανατρέξετε στην πλήρη τεκμηρίωση για το GroupDocs.Merger[εδώ](https://tutorials.groupdocs.com/merger/net/).
 ### Πού μπορώ να λάβω τεχνική υποστήριξη για το GroupDocs.Merger;
  Για τεχνική βοήθεια και υποστήριξη, επισκεφτείτε το φόρουμ GroupDocs.Merger[εδώ](https://forum.groupdocs.com/c/merger/32).

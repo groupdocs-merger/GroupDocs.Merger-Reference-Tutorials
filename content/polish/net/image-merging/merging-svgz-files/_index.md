@@ -3,7 +3,6 @@ title: Łączenie plików SVGZ
 linktitle: Łączenie plików SVGZ
 second_title: GroupDocs.Merger API .NET
 description: tego samouczka krok po kroku dowiesz się, jak scalić pliki SVGZ przy użyciu narzędzia GroupDocs.Merger dla platformy .NET. Zwiększ swoje umiejętności manipulowania dokumentami.
-type: docs
 weight: 14
 url: /pl/net/image-merging/merging-svgz-files/
 ---
@@ -59,7 +58,7 @@ W tym samouczku nauczyliśmy się łączyć pliki SVGZ za pomocą programu Group
 ### Czy GroupDocs.Merger obsługuje inne formaty plików oprócz SVGZ?
 Tak, GroupDocs.Merger obsługuje różne formaty dokumentów, w tym PDF, Word, Excel, PowerPoint i inne.
 ### Gdzie mogę znaleźć szczegółową dokumentację dotyczącą GroupDocs.Merger?
- Odwiedzić[dokumentacja](https://reference.groupdocs.com/merger/net/) w celu uzyskania wyczerpujących informacji i przykładów użycia.
+ Odwiedzić[dokumentacja](https://tutorials.groupdocs.com/merger/net/) w celu uzyskania wyczerpujących informacji i przykładów użycia.
 ### Czy dostępna jest bezpłatna wersja próbna programu GroupDocs.Merger?
  Tak, możesz uzyskać dostęp do bezpłatnego okresu próbnego[Tutaj](https://releases.groupdocs.com/).
 ### Jak mogę uzyskać pomoc dotyczącą GroupDocs.Merger?

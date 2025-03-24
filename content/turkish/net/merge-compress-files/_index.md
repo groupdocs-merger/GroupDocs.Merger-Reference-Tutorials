@@ -3,7 +3,6 @@ title: Sıkıştırılmış Dosyaları Birleştir
 linktitle: Sıkıştırılmış Dosyaları Birleştir
 second_title: GroupDocs.Merger .NET API'si
 description: Çeşitli dosya formatlarını zahmetsizce birleştirme ve sıkıştırma öğreticileri. Adım adım kılavuzlarımızla 7z, TAR ve ZIP dosyalarını sorunsuz bir şekilde birleştirmeyi öğrenin.
-type: docs
 weight: 20
 url: /tr/net/merge-compress-files/
 ---

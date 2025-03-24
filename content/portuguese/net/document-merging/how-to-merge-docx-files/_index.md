@@ -3,7 +3,6 @@ title: Como mesclar arquivos DOCX
 linktitle: Como mesclar arquivos DOCX
 second_title: API GroupDocs.Merger .NET
 description: Aprenda como mesclar arquivos DOCX programaticamente em .NET usando GroupDocs.Merger, simplificando com eficiência as tarefas de manipulação de documentos.
-type: docs
 weight: 12
 url: /pt/net/document-merging/how-to-merge-docx-files/
 ---
@@ -13,7 +12,7 @@ No mundo do desenvolvimento .NET, mesclar arquivos DOCX programaticamente pode s
 Antes de começar, certifique-se de ter os seguintes pré-requisitos:
 - Visual Studio instalado em sua máquina.
 - Compreensão básica do desenvolvimento em C# e .NET.
--  Biblioteca GroupDocs.Merger for .NET instalada (consulte[documentação](https://reference.groupdocs.com/merger/net/) para detalhes de instalação).
+-  Biblioteca GroupDocs.Merger for .NET instalada (consulte[documentação](https://tutorials.groupdocs.com/merger/net/) para detalhes de instalação).
 
 ## Importar namespaces
 Comece importando os namespaces necessários em seu projeto C#:
@@ -49,7 +48,7 @@ Sim, GroupDocs.Merger oferece suporte a uma variedade de formatos de documentos,
 ### Posso personalizar o processo de mesclagem, como especificar intervalos de páginas ou adicionar marcas d'água?
 Com certeza, GroupDocs.Merger fornece APIs flexíveis para personalizar o processo de mesclagem de acordo com suas necessidades.
 ### Onde posso encontrar suporte ou documentação adicional para GroupDocs.Merger for .NET?
- Você pode consultar o[documentação](https://reference.groupdocs.com/merger/net/) para referência detalhada da API e exemplos.
+ Você pode consultar o[documentação](https://tutorials.groupdocs.com/merger/net/) para referência detalhada da API e exemplos.
 ### GroupDocs.Merger for .NET oferece uma avaliação gratuita?
  Sim, você pode começar com um[teste grátis](https://releases.groupdocs.com/) para explorar os recursos antes de fazer uma compra.
 ### Como posso obter uma licença temporária do GroupDocs.Merger for .NET?

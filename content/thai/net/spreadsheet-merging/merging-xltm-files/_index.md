@@ -3,7 +3,6 @@ title: การรวมไฟล์ XLTM
 linktitle: การรวมไฟล์ XLTM
 second_title: GroupDocs.Merger .NET API
 description: เรียนรู้วิธีผสานไฟล์ XLTM โดยทางโปรแกรม คำแนะนำทีละขั้นตอนพร้อมตัวอย่างโค้ด
-type: docs
 weight: 16
 url: /th/net/spreadsheet-merging/merging-xltm-files/
 ---
@@ -61,6 +60,6 @@ Console.WriteLine("\nXLTM files merge completed successfully. \nCheck output in 
 ### GroupDocs.Merger มีรุ่นทดลองใช้ฟรีหรือไม่
  ใช่ คุณสามารถเข้าถึง GroupDocs.Merger รุ่นทดลองใช้ฟรีได้[ที่นี่](https://releases.groupdocs.com/).
 ### ฉันจะหาเอกสารสำหรับ GroupDocs.Merger ได้ที่ไหน
-คุณสามารถดูเอกสารประกอบฉบับสมบูรณ์สำหรับ GroupDocs.Merger[ที่นี่](https://reference.groupdocs.com/merger/net/).
+คุณสามารถดูเอกสารประกอบฉบับสมบูรณ์สำหรับ GroupDocs.Merger[ที่นี่](https://tutorials.groupdocs.com/merger/net/).
 ### ฉันจะรับการสนับสนุนด้านเทคนิคสำหรับ GroupDocs.Merger ได้ที่ไหน
  หากต้องการความช่วยเหลือและการสนับสนุนด้านเทคนิค โปรดไปที่ฟอรัม GroupDocs.Merger[ที่นี่](https://forum.groupdocs.com/c/merger/32).

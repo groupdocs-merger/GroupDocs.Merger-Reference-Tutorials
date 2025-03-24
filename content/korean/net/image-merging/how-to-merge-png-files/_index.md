@@ -3,7 +3,6 @@ title: PNG 파일을 병합하는 방법
 linktitle: PNG 파일을 병합하는 방법
 second_title: GroupDocs.Merger .NET API
 description: .NET용 GroupDocs.Merger를 사용하여 PNG 파일을 병합하는 방법을 알아보세요. .NET 애플리케이션의 원활한 통합을 위한 단계별 가이드입니다.
-type: docs
 weight: 12
 url: /ko/net/image-merging/how-to-merge-png-files/
 ---
@@ -59,7 +58,7 @@ Console.WriteLine("\nPNG files merge completed successfully. \nCheck output in {
 ### 방향이나 레이아웃과 같은 병합 옵션을 사용자 정의할 수 있나요?
 전적으로! GroupDocs.Merger는 문서와 이미지가 병합되는 방식을 제어할 수 있는 다양한 옵션을 제공하므로 유연한 사용자 정의가 가능합니다.
 ### GroupDocs.Merger에 대한 추가 리소스와 지원은 어디서 찾을 수 있나요?
- 방문하다[GroupDocs.Merger 포럼](https://forum.groupdocs.com/c/merger/32) 지역사회 지원을 위해[선적 서류 비치](https://reference.groupdocs.com/merger/net/) 자세한 안내를 위해.
+ 방문하다[GroupDocs.Merger 포럼](https://forum.groupdocs.com/c/merger/32) 지역사회 지원을 위해[선적 서류 비치](https://tutorials.groupdocs.com/merger/net/) 자세한 안내를 위해.
 ### 구매하기 전에 GroupDocs.Merger를 테스트할 수 있는 평가판이 있습니까?
  예, 다음에서 무료 평가판을 다운로드할 수 있습니다.[GroupDocs 웹사이트](https://releases.groupdocs.com/) 도서관의 능력을 평가합니다.
 ### GroupDocs.Merger에 대한 임시 라이센스를 얻으려면 어떻게 해야 합니까?

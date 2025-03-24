@@ -3,7 +3,6 @@ title: Penggabungan Spreadsheet
 linktitle: Penggabungan Spreadsheet
 second_title: GroupDocs.Merger .NET API
 description: Gabungkan file XLAM, XLS, XLSB, XLSM, XLSX, XLT, XLTM, XLTX, dan ODS dengan mudah di .NET menggunakan GroupDocs.Merger. Sederhanakan tugas manajemen dokumen.
-type: docs
 weight: 23
 url: /id/net/spreadsheet-merging/
 ---

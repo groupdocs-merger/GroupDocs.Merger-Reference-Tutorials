@@ -3,7 +3,6 @@ title: Como mesclar arquivos XLSB
 linktitle: Como mesclar arquivos XLSB
 second_title: API GroupDocs.Merger .NET
 description: Aprenda como mesclar arquivos XLSB. Este guia passo a passo simplifica as tarefas de manipulação de documentos.
-type: docs
 weight: 12
 url: /pt/net/spreadsheet-merging/how-to-merge-xlsb-files/
 ---
@@ -54,7 +53,7 @@ Seguindo estas etapas, você pode mesclar facilmente arquivos XLSB. Esta API sim
 ### O GroupDocs.Merger pode lidar com outros formatos de arquivo além do XLSB?
 Sim, GroupDocs.Merger oferece suporte a uma ampla variedade de formatos de documentos, incluindo DOCX, PDF, XLSX, PPTX e muito mais.
 ### Onde posso encontrar mais documentação para GroupDocs.Merger?
- Visite a[documentação](https://reference.groupdocs.com/merger/net/) para obter instruções de uso detalhadas e referências de API.
+ Visite a[documentação](https://tutorials.groupdocs.com/merger/net/) para obter instruções de uso detalhadas e referências de API.
 ### Existe um teste gratuito disponível para GroupDocs.Merger?
  Sim, você pode acessar um[teste grátis](https://releases.groupdocs.com/)para explorar os recursos do GroupDocs.Merger.
 ### Como posso obter suporte técnico para GroupDocs.Merger?

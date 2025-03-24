@@ -3,7 +3,6 @@ title: VSTM 파일 병합
 linktitle: VSTM 파일 병합
 second_title: GroupDocs.Merger .NET API
 description: .NET용 GroupDocs.Merger를 사용하여 VSTM 파일을 손쉽게 병합하는 방법을 알아보세요. 단계별 튜토리얼과 문서 조작 기능을 따라해보세요.
-type: docs
 weight: 15
 url: /ko/net/visio-merging/merge-vstm-files/
 ---

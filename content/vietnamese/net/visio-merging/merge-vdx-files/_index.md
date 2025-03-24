@@ -3,7 +3,6 @@ title: Hợp nhất các tệp VDX
 linktitle: Hợp nhất các tệp VDX
 second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp VDX theo chương trình bằng GroupDocs.Merger cho .NET. Hướng dẫn này cung cấp hướng dẫn từng bước.
-type: docs
 weight: 10
 url: /vi/net/visio-merging/merge-vdx-files/
 ---

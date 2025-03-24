@@ -3,7 +3,6 @@ title: Sloučení souborů DOTM
 linktitle: Sloučení souborů DOTM
 second_title: GroupDocs.Merger .NET API
 description: Naučte se, jak sloučit soubory DOTM programově pomocí GroupDocs.Merger for .NET. Tato komplexní příručka poskytuje vývojářům podrobné pokyny.
-type: docs
 weight: 14
 url: /cs/net/document-merging/merging-dotm-files/
 ---

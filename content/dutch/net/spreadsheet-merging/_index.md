@@ -3,7 +3,6 @@ title: Spreadsheets samenvoegen
 linktitle: Spreadsheets samenvoegen
 second_title: GroupDocs.Merger .NET API
 description: Voeg moeiteloos XLAM-, XLS-, XLSB-, XLSM-, XLSX-, XLT-, XLTM-, XLTX- en ODS-bestanden samen in .NET met behulp van GroupDocs.Merger. Vereenvoudig documentbeheertaken.
-type: docs
 weight: 23
 url: /nl/net/spreadsheet-merging/
 ---

@@ -3,7 +3,6 @@ title: Slå ihop VSX-filer
 linktitle: Slå ihop VSX-filer
 second_title: GroupDocs.Merger .NET API
 description: Lär dig hur du enkelt sammanfogar VSX-filer med GroupDocs.Merger för .NET. Den här omfattande guiden förenklar dokumentmanipuleringsuppgifter.
-type: docs
 weight: 17
 url: /sv/net/visio-merging/merge-vsx-files/
 ---
@@ -12,7 +11,7 @@ I den här handledningen kommer vi att utforska hur man slår ihop VSX-filer med
 ## Förutsättningar
 Innan vi börjar, se till att du har ställt in följande förutsättningar:
 - Utvecklingsmiljö: Installera Visual Studio eller annan IDE för .NET-utveckling.
--  GroupDocs.Merger för .NET: Skaffa API:t från[GroupDocs.Merger för .NET-dokumentation](https://reference.groupdocs.com/merger/net/).
+-  GroupDocs.Merger för .NET: Skaffa API:t från[GroupDocs.Merger för .NET-dokumentation](https://tutorials.groupdocs.com/merger/net/).
 - Exempel på VSX-filer: Förbered VSX-filerna som du tänker slå samman för teständamål.
 
 ## Importera namnområden

@@ -1,7 +1,6 @@
 ---
 title: .NET için GroupDocs.Merger Öğreticileri ve Örnekleri
 linktitle: .NET Eğitimleri için GroupDocs.Merger
-type: docs
 weight: 10
 url: /tr/net/
 description: GroupDocs.Merger .NET'i kullanarak çeşitli dosya formatlarını zahmetsizce birleştirin ve sıkıştırın. Görüntüleri, belgeleri ve daha fazlasını birleştirmeyle ilgili adım adım eğitimleri öğrenin!

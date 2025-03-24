@@ -3,7 +3,6 @@ title: PPTX ファイルの結合ガイド
 linktitle: PPTX ファイルの結合ガイド
 second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger for .NET を使用して PPTX ファイルをマージする方法を学びます。この強力な .NET ライブラリを使用してドキュメント管理を合理化します。
-type: docs
 weight: 13
 url: /ja/net/presentation-merging/guide-merging-pptx-files/
 ---

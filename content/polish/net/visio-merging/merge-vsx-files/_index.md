@@ -3,7 +3,6 @@ title: Scal pliki VSX
 linktitle: Scal pliki VSX
 second_title: GroupDocs.Merger API .NET
 description: Dowiedz się, jak bez wysiłku łączyć pliki VSX za pomocą GroupDocs.Merger dla .NET. Ten obszerny przewodnik upraszcza zadania związane z manipulacją dokumentami.
-type: docs
 weight: 17
 url: /pl/net/visio-merging/merge-vsx-files/
 ---
@@ -12,7 +11,7 @@ W tym samouczku przyjrzymy się, jak scalić pliki VSX za pomocą GroupDocs.Merg
 ## Warunki wstępne
 Zanim zaczniemy, upewnij się, że masz skonfigurowane następujące wymagania wstępne:
 - Środowisko programistyczne: Zainstaluj Visual Studio lub inne IDE do programowania .NET.
--  GroupDocs.Merger dla .NET: Uzyskaj interfejs API z[GroupDocs.Merger dla dokumentacji .NET](https://reference.groupdocs.com/merger/net/).
+-  GroupDocs.Merger dla .NET: Uzyskaj interfejs API z[GroupDocs.Merger dla dokumentacji .NET](https://tutorials.groupdocs.com/merger/net/).
 - Przykładowe pliki VSX: Przygotuj pliki VSX, które chcesz połączyć w celach testowych.
 
 ## Importuj przestrzenie nazw

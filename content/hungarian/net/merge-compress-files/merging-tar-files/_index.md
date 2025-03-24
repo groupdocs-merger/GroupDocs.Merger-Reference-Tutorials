@@ -3,7 +3,6 @@ title: Tar Files egyesítése
 linktitle: Tar Files egyesítése
 second_title: GroupDocs.Merger .NET API
 description: Ismerje meg, hogyan egyesíthet programozottan TAR-fájlokat a GroupDocs.Merger for .NET használatával. Kövesse lépésenkénti útmutatónkat a TAR-archívumok hatékony kezeléséhez.
-type: docs
 weight: 11
 url: /hu/net/merge-compress-files/merging-tar-files/
 ---

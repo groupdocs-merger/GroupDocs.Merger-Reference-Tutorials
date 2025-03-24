@@ -3,7 +3,6 @@ title: Mesclar arquivos VDX
 linktitle: Mesclar arquivos VDX
 second_title: API GroupDocs.Merger .NET
 description: Aprenda como mesclar arquivos VDX programaticamente usando GroupDocs.Merger for .NET. Este tutorial fornece um guia passo a passo.
-type: docs
 weight: 10
 url: /pt/net/visio-merging/merge-vdx-files/
 ---

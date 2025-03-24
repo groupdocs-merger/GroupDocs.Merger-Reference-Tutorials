@@ -3,7 +3,6 @@ title: Fusionar archivos DOTM
 linktitle: Fusionar archivos DOTM
 second_title: API GroupDocs.Merger .NET
 description: Aprenda a fusionar archivos DOTM mediante programación utilizando GroupDocs.Merger para .NET. Esta guía completa proporciona instrucciones paso a paso para los desarrolladores.
-type: docs
 weight: 14
 url: /es/net/document-merging/merging-dotm-files/
 ---

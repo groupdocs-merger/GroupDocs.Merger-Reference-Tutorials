@@ -3,7 +3,6 @@ title: การรวมไฟล์ ODT
 linktitle: การรวมไฟล์ ODT
 second_title: GroupDocs.Merger .NET API
 description: เรียนรู้วิธีผสานไฟล์ ODT โดยใช้ GroupDocs.Merger สำหรับ .NET ได้อย่างง่ายดาย ปรับปรุงความสามารถในการจัดการเอกสารของคุณด้วยไลบรารีอันทรงพลังนี้
-type: docs
 weight: 16
 url: /th/net/document-merging/merging-odt-files/
 ---

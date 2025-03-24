@@ -3,7 +3,6 @@ title: XLSX ファイルのマージ
 linktitle: XLSX ファイルのマージ
 second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger を使用して、.NET で XLSX ファイルを簡単にマージする方法を学びます。シームレスなドキュメント管理については、この段階的なチュートリアルに従ってください。
-type: docs
 weight: 14
 url: /ja/net/spreadsheet-merging/merging-xlsx-files/
 ---
@@ -54,7 +53,7 @@ Console.WriteLine("\nXLSX files merge completed successfully. \nCheck output in 
 ### GroupDocs.Merger は .NET Core アプリケーションと互換性がありますか?
 はい、GroupDocs.Merger は .NET Framework プロジェクトと .NET Core プロジェクトの両方で使用できます。
 ### GroupDocs.Merger の詳細なドキュメントはどこで見つけられますか?
-詳細なドキュメントが利用可能です[ここ](https://reference.groupdocs.com/merger/net/).
+詳細なドキュメントが利用可能です[ここ](https://tutorials.groupdocs.com/merger/net/).
 ### GroupDocs.Merger には無料トライアルがありますか?
 はい、無料トライアルをご利用いただけます[ここ](https://releases.groupdocs.com/).
 ### GroupDocs.Merger のサポートを受けるにはどうすればよいですか?

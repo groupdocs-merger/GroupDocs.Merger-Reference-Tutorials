@@ -3,7 +3,6 @@ title: Průvodce slučováním souborů XLSM
 linktitle: Průvodce slučováním souborů XLSM
 second_title: GroupDocs.Merger .NET API
 description: Bezproblémově slučujte soubory XLSM s GroupDocs.Merger pro .NET. Efektivně programově kombinujte excelové sešity. Vylepšete své možnosti manipulace s dokumenty.
-type: docs
 weight: 13
 url: /cs/net/spreadsheet-merging/guide-merging-xlsm-files/
 ---

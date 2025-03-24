@@ -3,7 +3,6 @@ title: Menggabungkan File PPSX
 linktitle: Menggabungkan File PPSX
 second_title: GroupDocs.Merger .NET API
 description: Gabungkan file PPSX dengan mudah dengan GroupDocs.Merger untuk .NET. Ikuti panduan langkah demi langkah kami untuk mengotomatiskan tugas penggabungan file! Tingkatkan alur kerja manajemen dokumen Anda.
-type: docs
 weight: 11
 url: /id/net/presentation-merging/merging-ppsx-files/
 ---
@@ -55,7 +54,7 @@ Ya, GroupDocs.Merger mendukung berbagai format dokumen, termasuk DOCX, XLSX, PPT
 ### Bisakah saya menggabungkan file PPSX terenkripsi menggunakan GroupDocs.Merger?
 GroupDocs.Merger dapat menangani file terenkripsi dan dilindungi kata sandi, memastikan manipulasi dokumen aman.
 ### Di mana saya dapat menemukan dukungan atau dokumentasi tambahan untuk GroupDocs.Merger?
- Jelajahi yang komprehensif[dokumentasi](https://reference.groupdocs.com/merger/net/) dan menjangkau[forum dukungan](https://forum.groupdocs.com/c/merger/32) untuk bantuan.
+ Jelajahi yang komprehensif[dokumentasi](https://tutorials.groupdocs.com/merger/net/) dan menjangkau[forum dukungan](https://forum.groupdocs.com/c/merger/32) untuk bantuan.
 ### Apakah GroupDocs.Merger memerlukan lisensi untuk penggunaan komersial?
  Ya, lisensi yang valid diperlukan untuk penggunaan komersial. Anda dapat memperoleh lisensi dari[halaman pembelian](https://purchase.groupdocs.com/buy) atau gunakan a[izin sementara](https://purchase.groupdocs.com/temporary-license/) untuk evaluasi.
 ### Bisakah saya mencoba GroupDocs.Merger sebelum membeli?

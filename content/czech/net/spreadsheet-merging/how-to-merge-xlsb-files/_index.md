@@ -3,7 +3,6 @@ title: Jak sloučit soubory XLSB
 linktitle: Jak sloučit soubory XLSB
 second_title: GroupDocs.Merger .NET API
 description: Přečtěte si, jak sloučit soubory XLSB. Tento podrobný průvodce zjednodušuje úlohy manipulace s dokumenty.
-type: docs
 weight: 12
 url: /cs/net/spreadsheet-merging/how-to-merge-xlsb-files/
 ---
@@ -54,7 +53,7 @@ Pomocí těchto kroků můžete snadno sloučit soubory XLSB. Toto rozhraní API
 ### Dokáže GroupDocs.Merger zpracovat jiné formáty souborů kromě XLSB?
 Ano, GroupDocs.Merger podporuje širokou škálu formátů dokumentů včetně DOCX, PDF, XLSX, PPTX a dalších.
 ### Kde najdu další dokumentaci k GroupDocs.Merger?
- Navštivte[dokumentace](https://reference.groupdocs.com/merger/net/) pro podrobné pokyny k použití a odkazy na API.
+ Navštivte[dokumentace](https://tutorials.groupdocs.com/merger/net/) pro podrobné pokyny k použití a odkazy na API.
 ### Je k dispozici bezplatná zkušební verze pro GroupDocs.Merger?
  Ano, máte přístup k a[zkušební verze zdarma](https://releases.groupdocs.com/)prozkoumat funkce GroupDocs.Merger.
 ### Jak mohu získat technickou podporu pro GroupDocs.Merger?

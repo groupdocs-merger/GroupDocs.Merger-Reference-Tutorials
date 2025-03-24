@@ -3,7 +3,6 @@ title: DOCM-fájlok egyesítése
 linktitle: DOCM-fájlok egyesítése
 second_title: GroupDocs.Merger .NET API
 description: Ismerje meg, hogyan egyesíthet zökkenőmentesen DOCM-fájlokat a GroupDocs.Merger for .NET segítségével. Egyszerű és hatékony dokumentumkezelés .NET alkalmazásokhoz.
-type: docs
 weight: 11
 url: /hu/net/document-merging/merging-docm-files/
 ---

@@ -3,7 +3,6 @@ title: Merge and Split Documents Effortlessly with GroupDocs.Merger
 linktitle: GroupDocs.Merger Tutorials
 additionalTitle: GroupDocs API References
 description: Effortlessly merge, split, and compress documents across .NET and Java platforms with our expert tutorials on GroupDocs.Merger. Unlock seamless file management!
-type: docs
 weight: 11
 url: /
 is_root: true

@@ -3,7 +3,6 @@ title: Hợp nhất các tệp PPS
 linktitle: Hợp nhất các tệp PPS
 second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp PPS một cách liền mạch bằng GroupDocs.Merger cho .NET. Hướng dẫn từng bước với các ví dụ về mã. Nâng cao kỹ năng thao tác tài liệu của bạn.
-type: docs
 weight: 10
 url: /vi/net/presentation-merging/merge-pps-files/
 ---
@@ -61,7 +60,7 @@ Có, GroupDocs.Merger hỗ trợ hợp nhất nhiều định dạng tài liệu
 ### GroupDocs.Merger có phù hợp để xử lý hàng loạt việc hợp nhất tài liệu không?
 Hoàn toàn có thể, bạn có thể tận dụng GroupDocs.Merger cho các tác vụ xử lý hàng loạt để hợp nhất nhiều tài liệu cùng một lúc.
 ### Tôi có thể tìm tài liệu đầy đủ về GroupDocs.Merger cho .NET ở đâu?
- Tài liệu đầy đủ có sẵn[đây](https://reference.groupdocs.com/merger/net/).
+ Tài liệu đầy đủ có sẵn[đây](https://tutorials.groupdocs.com/merger/net/).
 ### Làm cách nào tôi có thể nhận được giấy phép tạm thời cho GroupDocs.Merger cho .NET?
  Bạn có thể nhận được giấy phép tạm thời từ[đây](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs có cung cấp hỗ trợ cho việc khắc phục sự cố và truy vấn không?

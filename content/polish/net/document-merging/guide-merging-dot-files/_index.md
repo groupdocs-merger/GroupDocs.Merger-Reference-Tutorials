@@ -3,7 +3,6 @@ title: Przewodnik po łączeniu plików DOT
 linktitle: Przewodnik po łączeniu plików DOT
 second_title: GroupDocs.Merger API .NET
 description: Dowiedz się, jak programowo scalić pliki DOT (Graphviz) przy użyciu GroupDocs.Merger dla .NET. Z łatwością łącz, łącz i manipuluj plikami DOT.
-type: docs
 weight: 13
 url: /pl/net/document-merging/guide-merging-dot-files/
 ---
@@ -13,7 +12,7 @@ W tym samouczku przyjrzymy się, jak scalić pliki DOT (Graphviz) za pomocą Gro
 Zanim zaczniemy, upewnij się, że masz następujące wymagania wstępne:
 - Podstawowa znajomość programowania w C# i .NET.
 - Program Visual Studio zainstalowany na Twoim komputerze.
--  Biblioteka GroupDocs.Merger dla .NET. Można go pobrać z[Dokumentacja GroupDocs.Merger dla platformy .NET](https://reference.groupdocs.com/merger/net/).
+-  Biblioteka GroupDocs.Merger dla .NET. Można go pobrać z[Dokumentacja GroupDocs.Merger dla platformy .NET](https://tutorials.groupdocs.com/merger/net/).
 - Dostęp do plików DOT, które chcesz scalić.
 
 ## Importuj przestrzenie nazw

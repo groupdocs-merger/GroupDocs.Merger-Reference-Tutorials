@@ -3,7 +3,6 @@ title: Unione di file OTP
 linktitle: Unione di file OTP
 second_title: API GroupDocs.Merger .NET
 description: Scopri come unire file OTP utilizzando GroupDocs.Merger per .NET. Questa guida passo passo ti guiderà attraverso il processo senza problemi.
-type: docs
 weight: 14
 url: /it/net/presentation-merging/merging-otp-files/
 ---

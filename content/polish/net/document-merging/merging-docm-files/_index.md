@@ -3,7 +3,6 @@ title: Łączenie plików DOCM
 linktitle: Łączenie plików DOCM
 second_title: GroupDocs.Merger API .NET
 description: Dowiedz się, jak bezproblemowo scalać pliki DOCM za pomocą GroupDocs.Merger dla .NET. Prosta i wydajna manipulacja dokumentami dla aplikacji .NET.
-type: docs
 weight: 11
 url: /pl/net/document-merging/merging-docm-files/
 ---

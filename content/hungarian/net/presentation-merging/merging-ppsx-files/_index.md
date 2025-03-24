@@ -3,7 +3,6 @@ title: PPSX fájlok egyesítése
 linktitle: PPSX fájlok egyesítése
 second_title: GroupDocs.Merger .NET API
 description: Egyszerűen egyesítse a PPSX fájlokat a GroupDocs.Merger for .NET segítségével. Kövesse lépésről lépésre útmutatónkat a fájlegyesítési feladatok automatizálásához! Fokozza a dokumentumkezelési munkafolyamatot.
-type: docs
 weight: 11
 url: /hu/net/presentation-merging/merging-ppsx-files/
 ---
@@ -55,7 +54,7 @@ Igen, a GroupDocs.Merger a dokumentumformátumok széles skáláját támogatja,
 ### Egyesíthetek titkosított PPSX fájlokat a GroupDocs.Merger segítségével?
 GroupDocs.Merger titkosított és jelszóval védett fájlokat is képes kezelni, így biztosítva a biztonságos dokumentumkezelést.
 ### Hol találok további támogatást vagy dokumentációt a GroupDocs.Mergerhez?
- Fedezze fel az átfogó[dokumentáció](https://reference.groupdocs.com/merger/net/) és nyúljon a[támogatói fórum](https://forum.groupdocs.com/c/merger/32) segítségért.
+ Fedezze fel az átfogó[dokumentáció](https://tutorials.groupdocs.com/merger/net/) és nyúljon a[támogatói fórum](https://forum.groupdocs.com/c/merger/32) segítségért.
 ### A GroupDocs.Merger engedélyt igényel kereskedelmi használatra?
  Igen, a kereskedelmi használatra érvényes engedély szükséges. Engedélyt szerezhet a[vásárlási oldal](https://purchase.groupdocs.com/buy) vagy használja a[ideiglenes engedély](https://purchase.groupdocs.com/temporary-license/) értékeléshez.
 ### Kipróbálhatom a GroupDocs.Mergert vásárlás előtt?

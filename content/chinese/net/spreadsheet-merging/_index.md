@@ -3,7 +3,6 @@ title: 电子表格合并
 linktitle: 电子表格合并
 second_title: GroupDocs.Merger .NET API
 description: 使用 GroupDocs.Merger 轻松合并 .NET 中的 XLAM、XLS、XLSB、XLSM、XLSX、XLT、XLTM、XLTX 和 ODS 文件。简化文档管理任务。
-type: docs
 weight: 23
 url: /zh/net/spreadsheet-merging/
 ---

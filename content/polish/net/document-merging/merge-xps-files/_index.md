@@ -3,7 +3,6 @@ title: Scal pliki XPS
 linktitle: Scal pliki XPS
 second_title: GroupDocs.Merger API .NET
 description: Dowiedz się, jak bez wysiłku łączyć pliki XPS za pomocą GroupDocs.Merger dla .NET. Uprość przetwarzanie dokumentów w aplikacjach .NET.
-type: docs
 weight: 20
 url: /pl/net/document-merging/merge-xps-files/
 ---
@@ -52,7 +51,7 @@ Tak, GroupDocs.Merger obsługuje łączenie różnych formatów dokumentów, tak
 ### Czy mogę manipulować pojedynczymi stronami w dokumentach za pomocą GroupDocs.Merger?
 Absolutnie GroupDocs.Merger umożliwia wyodrębnianie, usuwanie, zmianę kolejności i obracanie stron w dokumentach.
 ### Gdzie mogę znaleźć dalszą dokumentację dotyczącą GroupDocs.Merger dla .NET?
- Dostępna jest szczegółowa dokumentacja[Tutaj](https://reference.groupdocs.com/merger/net/).
+ Dostępna jest szczegółowa dokumentacja[Tutaj](https://tutorials.groupdocs.com/merger/net/).
 ### Czy GroupDocs.Merger for .NET obsługuje opcje licencjonowania tymczasowego?
  Tak, można uzyskać licencje tymczasowe[Tutaj](https://purchase.groupdocs.com/temporary-license/).
 ### Jak mogę uzyskać pomoc lub wsparcie związane z GroupDocs.Merger?

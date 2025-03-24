@@ -3,7 +3,6 @@ title: एक्सपीएस फ़ाइलें मर्ज करें
 linktitle: एक्सपीएस फ़ाइलें मर्ज करें
 second_title: GroupDocs.Merger .NET API
 description: .NET के लिए GroupDocs.Merger का उपयोग करके आसानी से XPS फ़ाइलों को मर्ज करना सीखें। अपने .NET अनुप्रयोगों में दस्तावेज़ प्रसंस्करण को सरल बनाएं।
-type: docs
 weight: 20
 url: /hi/net/document-merging/merge-xps-files/
 ---
@@ -52,7 +51,7 @@ Console.WriteLine("\nXPS files merge completed successfully. \nCheck output in {
 ### क्या मैं GroupDocs.Merger का उपयोग करके दस्तावेज़ों के भीतर अलग-अलग पृष्ठों में हेरफेर कर सकता हूँ?
 बिल्कुल, GroupDocs.Merger आपको दस्तावेज़ों के भीतर पृष्ठों को निकालने, हटाने, पुन: व्यवस्थित करने और घुमाने की अनुमति देता है।
 ### मुझे .NET के लिए GroupDocs.Merger के लिए और दस्तावेज़ कहां मिल सकते हैं?
- विस्तृत दस्तावेज़ उपलब्ध है[यहाँ](https://reference.groupdocs.com/merger/net/).
+ विस्तृत दस्तावेज़ उपलब्ध है[यहाँ](https://tutorials.groupdocs.com/merger/net/).
 ### क्या .NET के लिए GroupDocs.Merger अस्थायी लाइसेंसिंग विकल्पों का समर्थन करता है?
  हाँ, अस्थायी लाइसेंस प्राप्त किया जा सकता है[यहाँ](https://purchase.groupdocs.com/temporary-license/).
 ### मैं GroupDocs.Merger से संबंधित सहायता या समर्थन कैसे प्राप्त कर सकता हूं?

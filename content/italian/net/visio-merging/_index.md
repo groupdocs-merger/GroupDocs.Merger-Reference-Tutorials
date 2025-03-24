@@ -3,7 +3,6 @@ title: Unione di Visio
 linktitle: Unione di Visio
 second_title: API GroupDocs.Merger .NET
 description: Unisci facilmente file VDX, VSDM, VSDX, VSSM, VSSX, VSTM, VSTX, VSX, VTX utilizzando GroupDocs.Merger per .NET. Tutorial passo passo per unire facilmente i documenti.
-type: docs
 weight: 24
 url: /it/net/visio-merging/
 ---

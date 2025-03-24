@@ -3,7 +3,6 @@ title: รวมไฟล์ VSX
 linktitle: รวมไฟล์ VSX
 second_title: GroupDocs.Merger .NET API
 description: เรียนรู้วิธีผสานไฟล์ VSX ได้อย่างง่ายดายโดยใช้ GroupDocs.Merger สำหรับ .NET คู่มือที่ครอบคลุมนี้ช่วยลดความยุ่งยากในการจัดการเอกสาร
-type: docs
 weight: 17
 url: /th/net/visio-merging/merge-vsx-files/
 ---
@@ -12,7 +11,7 @@ url: /th/net/visio-merging/merge-vsx-files/
 ## ข้อกำหนดเบื้องต้น
 ก่อนที่เราจะเริ่มต้น ตรวจสอบให้แน่ใจว่าคุณได้ตั้งค่าข้อกำหนดเบื้องต้นต่อไปนี้:
 - สภาพแวดล้อมการพัฒนา: ติดตั้ง Visual Studio หรือ IDE อื่นสำหรับการพัฒนา .NET
--  GroupDocs.Merger สำหรับ .NET: รับ API จาก[GroupDocs.Merger สำหรับเอกสาร .NET](https://reference.groupdocs.com/merger/net/).
+-  GroupDocs.Merger สำหรับ .NET: รับ API จาก[GroupDocs.Merger สำหรับเอกสาร .NET](https://tutorials.groupdocs.com/merger/net/).
 - ไฟล์ VSX ตัวอย่าง: เตรียมไฟล์ VSX ที่คุณต้องการรวมเพื่อการทดสอบ
 
 ## นำเข้าเนมสเปซ

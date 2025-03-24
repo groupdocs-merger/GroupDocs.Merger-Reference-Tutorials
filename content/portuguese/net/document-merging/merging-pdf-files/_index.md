@@ -3,7 +3,6 @@ title: Mesclando arquivos PDF
 linktitle: Mesclando arquivos PDF
 second_title: API GroupDocs.Merger .NET
 description: Aprenda como mesclar arquivos PDF programaticamente em .NET usando GroupDocs.Merger para gerenciamento de documentos perfeito.
-type: docs
 weight: 19
 url: /pt/net/document-merging/merging-pdf-files/
 ---

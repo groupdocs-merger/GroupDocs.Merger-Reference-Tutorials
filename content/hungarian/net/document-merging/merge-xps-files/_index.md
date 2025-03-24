@@ -3,7 +3,6 @@ title: XPS fájlok egyesítése
 linktitle: XPS fájlok egyesítése
 second_title: GroupDocs.Merger .NET API
 description: Ismerje meg, hogyan egyesíthet könnyedén XPS-fájlokat a GroupDocs.Merger for .NET segítségével. Egyszerűsítse a dokumentumfeldolgozást .NET-alkalmazásaiban.
-type: docs
 weight: 20
 url: /hu/net/document-merging/merge-xps-files/
 ---
@@ -52,7 +51,7 @@ Igen, a GroupDocs.Merger támogatja a különféle dokumentumformátumok, péld�
 ### Módosíthatom a dokumentumokon belüli egyes oldalakat a GroupDocs.Merger segítségével?
 A GroupDocs.Merger abszolút lehetővé teszi a dokumentumokon belüli oldalak kibontását, eltávolítását, átrendezését és elforgatását.
 ### Hol találhatok további dokumentációt a GroupDocs.Merger for .NET-hez?
- A részletes dokumentáció elérhető[itt](https://reference.groupdocs.com/merger/net/).
+ A részletes dokumentáció elérhető[itt](https://tutorials.groupdocs.com/merger/net/).
 ### A GroupDocs.Merger for .NET támogatja az ideiglenes licencelési lehetőségeket?
  Igen, ideiglenes engedélyeket lehet szerezni[itt](https://purchase.groupdocs.com/temporary-license/).
 ### Hogyan kérhetek segítséget vagy támogatást a GroupDocs.Mergerrel kapcsolatban?

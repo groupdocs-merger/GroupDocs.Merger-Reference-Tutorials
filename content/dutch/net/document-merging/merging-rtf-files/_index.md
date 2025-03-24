@@ -3,7 +3,6 @@ title: RTF-bestanden samenvoegen
 linktitle: RTF-bestanden samenvoegen
 second_title: GroupDocs.Merger .NET API
 description: Leer hoe u moeiteloos RTF-bestanden in .NET kunt samenvoegen met GroupDocs.Merger voor een naadloze documentverwerking.
-type: docs
 weight: 21
 url: /nl/net/document-merging/merging-rtf-files/
 ---
@@ -61,7 +60,7 @@ Ja, GroupDocs.Merger ondersteunt het samenvoegen van verschillende documentforma
 ### Is GroupDocs.Merger geschikt voor grootschalige documentverwerking?
 Absoluut, GroupDocs.Merger is ontworpen om grote documenten efficiënt te verwerken.
 ### Waar kan ik meer documentatie en ondersteuning vinden voor GroupDocs.Merger?
- Bezoek de[documentatie](https://reference.groupdocs.com/merger/net/) En[Helpforum](https://forum.groupdocs.com/c/merger/32) voor gedetailleerde begeleiding en hulp.
+ Bezoek de[documentatie](https://tutorials.groupdocs.com/merger/net/) En[Helpforum](https://forum.groupdocs.com/c/merger/32) voor gedetailleerde begeleiding en hulp.
 ### Kan ik GroupDocs.Merger uitproberen voordat ik een aankoop doe?
  Ja, u kunt een verkennen[gratis proefperiode](https://releases.groupdocs.com/) van GroupDocs.Merger.
 ### Hoe verkrijg ik een tijdelijke licentie voor GroupDocs.Merger?

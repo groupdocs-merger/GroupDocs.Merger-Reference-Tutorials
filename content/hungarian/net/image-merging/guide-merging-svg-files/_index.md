@@ -3,7 +3,6 @@ title: Útmutató az SVG-fájlok egyesítéséhez
 linktitle: Útmutató az SVG-fájlok egyesítéséhez
 second_title: GroupDocs.Merger .NET API
 description: Ismerje meg, hogyan egyesíthet programozottan SVG-fájlokat a GroupDocs.Merger for .NET használatával. Több SVG dokumentumot könnyedén kombinálhat.
-type: docs
 weight: 13
 url: /hu/net/image-merging/guide-merging-svg-files/
 ---
@@ -90,7 +89,7 @@ V: Igen, a GroupDocs.Merger célja a nagyméretű dokumentumműveletek hatékony
 
 ### 4. kérdés: Hol találok további példákat és dokumentációt a GroupDocs.Merger programhoz?
 
- V: Fedezze fel a[GroupDocs.Merger dokumentáció](https://reference.groupdocs.com/merger/net/) átfogó útmutatásért és példákért.
+ V: Fedezze fel a[GroupDocs.Merger dokumentáció](https://tutorials.groupdocs.com/merger/net/) átfogó útmutatásért és példákért.
 
 ### 5. kérdés: Hogyan kaphatok támogatást a GroupDocs.Merger programhoz?
 

@@ -3,7 +3,6 @@ title: Οδηγός συγχώνευσης αρχείων DOT
 linktitle: Οδηγός συγχώνευσης αρχείων DOT
 second_title: GroupDocs.Merger .NET API
 description: Μάθετε πώς να συγχωνεύετε αρχεία DOT (Graphviz) μέσω προγραμματισμού χρησιμοποιώντας το GroupDocs.Merger για .NET. Συγχωνεύστε, συνδυάστε και χειριστείτε αρχεία DOT με ευκολία.
-type: docs
 weight: 13
 url: /el/net/document-merging/guide-merging-dot-files/
 ---
@@ -13,7 +12,7 @@ url: /el/net/document-merging/guide-merging-dot-files/
 Πριν ξεκινήσουμε, βεβαιωθείτε ότι έχετε τις ακόλουθες προϋποθέσεις:
 - Βασικές γνώσεις προγραμματισμού C# και .NET.
 - Το Visual Studio είναι εγκατεστημένο στον υπολογιστή σας.
--  GroupDocs.Merger για τη βιβλιοθήκη .NET. Μπορείτε να το κατεβάσετε από το[GroupDocs.Merger για τεκμηρίωση .NET](https://reference.groupdocs.com/merger/net/).
+-  GroupDocs.Merger για τη βιβλιοθήκη .NET. Μπορείτε να το κατεβάσετε από το[GroupDocs.Merger για τεκμηρίωση .NET](https://tutorials.groupdocs.com/merger/net/).
 - Πρόσβαση στα αρχεία DOT που θέλετε να συγχωνεύσετε.
 
 ## Εισαγωγή χώρων ονομάτων

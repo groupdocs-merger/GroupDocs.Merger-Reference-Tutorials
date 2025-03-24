@@ -3,7 +3,6 @@ title: Gabungkan File VSX
 linktitle: Gabungkan File VSX
 second_title: GroupDocs.Merger .NET API
 description: Pelajari cara menggabungkan file VSX dengan mudah menggunakan GroupDocs.Merger untuk .NET. Panduan komprehensif ini menyederhanakan tugas manipulasi dokumen.
-type: docs
 weight: 17
 url: /id/net/visio-merging/merge-vsx-files/
 ---
@@ -12,7 +11,7 @@ Dalam tutorial ini, kita akan mempelajari cara menggabungkan file VSX menggunaka
 ## Prasyarat
 Sebelum kita mulai, pastikan Anda telah menyiapkan prasyarat berikut:
 - Lingkungan Pengembangan: Instal Visual Studio atau IDE lain untuk pengembangan .NET.
--  GroupDocs.Merger untuk .NET: Dapatkan API dari[GroupDocs.Merger untuk Dokumentasi .NET](https://reference.groupdocs.com/merger/net/).
+-  GroupDocs.Merger untuk .NET: Dapatkan API dari[GroupDocs.Merger untuk Dokumentasi .NET](https://tutorials.groupdocs.com/merger/net/).
 - Contoh File VSX: Siapkan file VSX yang ingin Anda gabungkan untuk tujuan pengujian.
 
 ## Impor Namespace

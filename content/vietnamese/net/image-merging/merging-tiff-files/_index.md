@@ -3,7 +3,6 @@ title: Hợp nhất các tệp TIFF
 linktitle: Hợp nhất các tệp TIFF
 second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp TIFF bằng GroupDocs.Merger cho .NET. Hợp nhất, phân tách và sửa đổi tài liệu một cách liền mạch trong các ứng dụng .NET của bạn.
-type: docs
 weight: 16
 url: /vi/net/image-merging/merging-tiff-files/
 ---
@@ -60,6 +59,6 @@ Hoàn toàn có thể, GroupDocs.Merger được thiết kế để xử lý kh�
 ### GroupDocs.Merger có cung cấp phiên bản dùng thử để đánh giá không?
  Có, bạn có thể truy cập bản dùng thử miễn phí của GroupDocs.Merger từ[đây](https://releases.groupdocs.com/).
 ### Tôi có thể tìm tài liệu toàn diện về GroupDocs.Merger ở đâu?
- Tham khảo tài liệu[đây](https://reference.groupdocs.com/merger/net/) để biết tài liệu tham khảo và hướng dẫn API chi tiết.
+ Tham khảo tài liệu[đây](https://tutorials.groupdocs.com/merger/net/) để biết tài liệu tham khảo và hướng dẫn API chi tiết.
 ### Làm cách nào tôi có thể nhận được hỗ trợ cho GroupDocs.Merger?
  Truy cập diễn đàn cộng đồng GroupDocs[đây](https://forum.groupdocs.com/c/merger/32) để được hỗ trợ và thảo luận.

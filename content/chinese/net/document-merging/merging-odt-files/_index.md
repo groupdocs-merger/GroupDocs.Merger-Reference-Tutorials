@@ -3,7 +3,6 @@ title: 合并 ODT 文件
 linktitle: 合并 ODT 文件
 second_title: GroupDocs.Merger .NET API
 description: 了解如何使用 GroupDocs.Merger for .NET 轻松合并 ODT 文件。使用这个强大的库增强您的文档管理能力。
-type: docs
 weight: 16
 url: /zh/net/document-merging/merging-odt-files/
 ---

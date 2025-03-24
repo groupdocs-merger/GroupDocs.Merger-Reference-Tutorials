@@ -3,7 +3,6 @@ title: PDF 파일 병합
 linktitle: PDF 파일 병합
 second_title: GroupDocs.Merger .NET API
 description: 원활한 문서 관리를 위해 GroupDocs.Merger를 사용하여 .NET에서 프로그래밍 방식으로 PDF 파일을 병합하는 방법을 알아보세요.
-type: docs
 weight: 19
 url: /ko/net/document-merging/merging-pdf-files/
 ---

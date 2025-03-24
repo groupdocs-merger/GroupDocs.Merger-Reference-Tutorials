@@ -3,7 +3,6 @@ title: Guida all'unione di file TXT con GroupDocs.Merger per .NET
 linktitle: Guida all'unione di file TXT con GroupDocs.Merger per .NET
 second_title: API GroupDocs.Merger .NET
 description: Unisci file TXT senza problemi in .NET utilizzando GroupDocs.Merger. Guida passo passo per gli sviluppatori. Documentazione e supporto disponibili.
-type: docs
 weight: 18
 url: /it/net/document-merging/guide-merging-txt-files/
 ---
@@ -63,7 +62,7 @@ Sì, GroupDocs.Merger supporta l'unione di vari formati di file come PDF, Word, 
 ### GroupDocs.Merger è compatibile con le applicazioni .NET Core?
 Sì, GroupDocs.Merger è compatibile sia con .NET Framework che con .NET Core.
 ### Dove posso trovare ulteriore documentazione e supporto per GroupDocs.Merger?
- Fare riferimento al[documentazione](https://reference.groupdocs.com/merger/net/) per riferimenti API dettagliati. Puoi anche chiedere assistenza a[Forum di GroupDocs](https://forum.groupdocs.com/c/merger/32) per qualsiasi domanda.
+ Fare riferimento al[documentazione](https://tutorials.groupdocs.com/merger/net/) per riferimenti API dettagliati. Puoi anche chiedere assistenza a[Forum di GroupDocs](https://forum.groupdocs.com/c/merger/32) per qualsiasi domanda.
 ### È disponibile una versione di prova gratuita di GroupDocs.Merger per .NET?
  Sì, puoi esplorare a[versione di prova gratuita](https://releases.groupdocs.com/) di GroupDocs.Merger per valutarne le capacità.
 ### Come posso ottenere una licenza temporanea per GroupDocs.Merger?

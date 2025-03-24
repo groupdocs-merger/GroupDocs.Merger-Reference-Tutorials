@@ -3,7 +3,6 @@ title: Táblázat egyesítése
 linktitle: Táblázat egyesítése
 second_title: GroupDocs.Merger .NET API
 description: Könnyedén egyesítse az XLAM, XLS, XLSB, XLSM, XLSX, XLT, XLTM, XLTX és ODS fájlokat a .NET-ben a GroupDocs.Merger segítségével. A dokumentumkezelési feladatok egyszerűsítése.
-type: docs
 weight: 23
 url: /hu/net/spreadsheet-merging/
 ---

@@ -3,7 +3,6 @@ title: Fusion de documents
 linktitle: Fusion de documents
 second_title: API GroupDocs.Merger .NET
 description: Fusionnez sans effort divers formats de documents dans .NET à l'aide de GroupDocs.Merger. Combinez en toute transparence DOC, DOCX, PDF et bien plus encore. Améliorez votre gestion documentaire dès aujourd'hui !
-type: docs
 weight: 22
 url: /fr/net/document-merging/
 ---

@@ -3,7 +3,6 @@ title: GroupDocs.Merger でドキュメントを簡単に結合および分割
 linktitle: GroupDocs.Merger チュートリアル
 additionalTitle: GroupDocs API リファレンス
 description: GroupDocs.Merger に関する当社の専門家によるチュートリアルを使用すると、.NET および Java プラットフォーム間でドキュメントを簡単に結合、分割、圧縮できます。シームレスなファイル管理を実現します。
-type: docs
 weight: 11
 url: /ja/
 is_root: true

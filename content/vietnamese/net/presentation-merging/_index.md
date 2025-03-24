@@ -3,7 +3,6 @@ title: Hợp nhất bản trình bày
 linktitle: Hợp nhất bản trình bày
 second_title: API GroupDocs.Merger .NET
 description: Hợp nhất các định dạng tệp trình bày khác nhau một cách dễ dàng. Làm theo hướng dẫn của chúng tôi để hợp nhất các tệp PPS, PPSX, PPT và OTP một cách hiệu quả. #GroupDocs.Sáp nhập
-type: docs
 weight: 25
 url: /vi/net/presentation-merging/
 ---

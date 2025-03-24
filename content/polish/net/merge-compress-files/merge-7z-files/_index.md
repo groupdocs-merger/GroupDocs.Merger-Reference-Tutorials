@@ -3,7 +3,6 @@ title: Jak połączyć pliki 7z
 linktitle: Jak połączyć pliki 7z
 second_title: GroupDocs.Merger API .NET
 description: Bezproblemowo łącz pliki 7z za pomocą GroupDocs.Merger dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby płynnie połączyć wiele archiwów w jedno.
-type: docs
 weight: 10
 url: /pl/net/merge-compress-files/merge-7z-files/
 ---

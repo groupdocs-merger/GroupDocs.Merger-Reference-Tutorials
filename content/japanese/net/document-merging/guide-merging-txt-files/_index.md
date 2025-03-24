@@ -3,7 +3,6 @@ title: GroupDocs.Merger for .NET を使用して TXT ファイルをマージす
 linktitle: GroupDocs.Merger for .NET を使用して TXT ファイルをマージするためのガイド
 second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger を使用して、.NET で TXT ファイルをシームレスにマージします。開発者向けのステップバイステップのガイド。ドキュメントとサポートが利用可能です。
-type: docs
 weight: 18
 url: /ja/net/document-merging/guide-merging-txt-files/
 ---
@@ -63,7 +62,7 @@ Console.WriteLine("\nTXT files merge completed successfully. \nCheck output in {
 ### GroupDocs.Merger は .NET Core アプリケーションと互換性がありますか?
 はい、GroupDocs.Merger は .NET Framework と .NET Core の両方と互換性があります。
 ### GroupDocs.Merger のさらなるドキュメントとサポートはどこで見つけられますか?
-を参照してください。[ドキュメンテーション](https://reference.groupdocs.com/merger/net/)詳細な API リファレンスについては、に支援を求めることもできます。[GroupDocs フォーラム](https://forum.groupdocs.com/c/merger/32)あらゆる質問に対応します。
+を参照してください。[ドキュメンテーション](https://tutorials.groupdocs.com/merger/net/)詳細な API リファレンスについては、に支援を求めることもできます。[GroupDocs フォーラム](https://forum.groupdocs.com/c/merger/32)あらゆる質問に対応します。
 ### GroupDocs.Merger for .NET に利用できる無料トライアルはありますか?
 はい、探索できます[無料試用版](https://releases.groupdocs.com/)GroupDocs.Merger の機能を評価してください。
 ### GroupDocs.Merger の一時ライセンスを取得するにはどうすればよいですか?

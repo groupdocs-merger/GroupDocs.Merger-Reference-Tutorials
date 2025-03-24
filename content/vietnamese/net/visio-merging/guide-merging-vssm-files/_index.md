@@ -3,7 +3,6 @@ title: Hướng dẫn gộp file VSSM
 linktitle: Hướng dẫn gộp file VSSM
 second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp VSSM một cách dễ dàng bằng GroupDocs.Merger cho .NET. Hướng dẫn từng bước dành cho nhà phát triển C#.
-type: docs
 weight: 13
 url: /vi/net/visio-merging/guide-merging-vssm-files/
 ---
@@ -53,7 +52,7 @@ Có, GroupDocs.Merger hỗ trợ hợp nhất nhiều định dạng khác nhau 
 ### GroupDocs.Merger có phù hợp để xử lý tài liệu quy mô lớn không?
 Có, GroupDocs.Merger được tối ưu hóa về hiệu suất và có thể xử lý các tài liệu lớn một cách hiệu quả.
 ### Tôi có thể tìm tài liệu chi tiết về GroupDocs.Merger ở đâu?
- Bạn có thể tham khảo các[tài liệu](https://reference.groupdocs.com/merger/net/) để được hướng dẫn toàn diện.
+ Bạn có thể tham khảo các[tài liệu](https://tutorials.groupdocs.com/merger/net/) để được hướng dẫn toàn diện.
 ### Làm cách nào tôi có thể nhận được hỗ trợ kỹ thuật cho các sản phẩm GroupDocs?
  Tham quan[Diễn đàn hỗ trợ GroupDocs](https://forum.groupdocs.com/c/merger/32)để được hỗ trợ và thảo luận.
 ### GroupDocs có cung cấp bản dùng thử miễn phí để đánh giá không?

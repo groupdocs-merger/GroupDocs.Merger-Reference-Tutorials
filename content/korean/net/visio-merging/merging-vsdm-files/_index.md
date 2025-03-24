@@ -3,7 +3,6 @@ title: VSDM 파일 병합
 linktitle: VSDM 파일 병합
 second_title: GroupDocs.Merger .NET API
 description: .NET용 GroupDocs.Merger를 사용하여 VSDM 파일을 병합하는 방법을 알아보세요. 사용하기 쉬운 이 라이브러리로 문서 관리 작업을 단순화하세요.
-type: docs
 weight: 11
 url: /ko/net/visio-merging/merging-vsdm-files/
 ---

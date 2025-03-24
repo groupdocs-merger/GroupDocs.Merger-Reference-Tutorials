@@ -3,7 +3,6 @@ title: XLT-bestanden samenvoegen
 linktitle: XLT-bestanden samenvoegen
 second_title: GroupDocs.Merger .NET API
 description: Leer hoe u XLT-bestanden samenvoegt. Combineer Excel-sjablonen programmatisch in C# met deze stapsgewijze handleiding.
-type: docs
 weight: 15
 url: /nl/net/spreadsheet-merging/merge-xlt-files/
 ---
@@ -59,7 +58,7 @@ Ja, u kunt meerdere XLT-bestanden samenvoegen door ze achtereenvolgens toe te vo
 ### Is GroupDocs.Merger compatibel met andere Excel-bestandsformaten zoals XLSX of XLS?
 Ja, GroupDocs.Merger ondersteunt verschillende Excel-bestandsindelingen, waaronder XLSX, XLS en XLT.
 ### Waar kan ik meer voorbeelden en documentatie vinden voor GroupDocs.Merger voor .NET?
- Gedetailleerde documentatie en codevoorbeelden zijn beschikbaar[hier](https://reference.groupdocs.com/merger/net/).
+ Gedetailleerde documentatie en codevoorbeelden zijn beschikbaar[hier](https://tutorials.groupdocs.com/merger/net/).
 ### Is er een proefversie van GroupDocs.Merger beschikbaar om te testen?
  Ja, u kunt een gratis proefversie downloaden van[hier](https://releases.groupdocs.com/).
 ### Hoe kan ik technische ondersteuning of hulp krijgen bij GroupDocs.Merger?

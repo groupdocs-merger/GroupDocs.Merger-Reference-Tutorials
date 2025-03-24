@@ -3,7 +3,6 @@ title: RTF 파일 병합
 linktitle: RTF 파일 병합
 second_title: GroupDocs.Merger .NET API
 description: 원활한 문서 처리를 위해 GroupDocs.Merger를 사용하여 .NET에서 RTF 파일을 손쉽게 병합하는 방법을 알아보세요.
-type: docs
 weight: 21
 url: /ko/net/document-merging/merging-rtf-files/
 ---
@@ -61,7 +60,7 @@ Console.WriteLine("\nRTF files merge completed successfully. \nCheck output in {
 ### GroupDocs.Merger는 대규모 문서 처리에 적합합니까?
 물론, GroupDocs.Merger는 대용량 문서를 효율적으로 처리하도록 설계되었습니다.
 ### GroupDocs.Merger에 대한 추가 문서와 지원은 어디서 찾을 수 있나요?
- 방문하다[선적 서류 비치](https://reference.groupdocs.com/merger/net/) 그리고[지원 포럼](https://forum.groupdocs.com/c/merger/32) 자세한 안내와 도움을 받으려면
+ 방문하다[선적 서류 비치](https://tutorials.groupdocs.com/merger/net/) 그리고[지원 포럼](https://forum.groupdocs.com/c/merger/32) 자세한 안내와 도움을 받으려면
 ### 구매하기 전에 GroupDocs.Merger를 사용해 볼 수 있나요?
  예, 다음을 탐색할 수 있습니다.[무료 시험판](https://releases.groupdocs.com/) GroupDocs.Merger.
 ### GroupDocs.Merger에 대한 임시 라이센스를 얻으려면 어떻게 해야 합니까?

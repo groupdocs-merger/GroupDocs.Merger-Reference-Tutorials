@@ -3,7 +3,6 @@ title: Łączenie dokumentów
 linktitle: Łączenie dokumentów
 second_title: GroupDocs.Merger API .NET
 description: Bez wysiłku łącz różne formaty dokumentów w .NET za pomocą GroupDocs.Merger. Bezproblemowo łącz dokumenty DOC, DOCX, PDF i inne. Usprawnij zarządzanie dokumentami już dziś!
-type: docs
 weight: 22
 url: /pl/net/document-merging/
 ---

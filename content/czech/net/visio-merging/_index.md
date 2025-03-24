@@ -3,7 +3,6 @@ title: Sloučení aplikace Visio
 linktitle: Sloučení aplikace Visio
 second_title: GroupDocs.Merger .NET API
 description: Pomocí GroupDocs.Merger for .NET můžete snadno sloučit soubory VDX, VSDM, VSDX, VSSM, VSSX, VSTM, VSTX, VSX, VTX. Výukové programy krok za krokem pro bezproblémové slučování dokumentů.
-type: docs
 weight: 24
 url: /cs/net/visio-merging/
 ---

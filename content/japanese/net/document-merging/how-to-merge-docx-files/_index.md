@@ -3,7 +3,6 @@ title: DOCX ファイルを結合する方法
 linktitle: DOCX ファイルを結合する方法
 second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger を使用して .NET で DOCX ファイルをプログラム的に結合し、ドキュメント操作タスクを効率的に簡素化する方法を学習します。
-type: docs
 weight: 12
 url: /ja/net/document-merging/how-to-merge-docx-files/
 ---
@@ -13,7 +12,7 @@ url: /ja/net/document-merging/how-to-merge-docx-files/
 始める前に、次の前提条件を満たしていることを確認してください。
 - Visual Studio がマシンにインストールされていること。
 - C# および .NET 開発に関する基本的な理解。
--  GroupDocs.Merger for .NETライブラリがインストールされている（[ドキュメンテーション](https://reference.groupdocs.com/merger/net/)インストールの詳細については、こちらをご覧ください。
+-  GroupDocs.Merger for .NETライブラリがインストールされている（[ドキュメンテーション](https://tutorials.groupdocs.com/merger/net/)インストールの詳細については、こちらをご覧ください。
 
 ## 名前空間のインポート
 まず、C# プロジェクトに必要な名前空間をインポートします。
@@ -49,7 +48,7 @@ using (var merger = new Merger("Your Sample Document File"X))
 ### ページ範囲の指定や透かしの追加など、結合プロセスをカスタマイズできますか?
 もちろんです。GroupDocs.Merger は、要件に応じてマージ プロセスをカスタマイズするための柔軟な API を提供します。
 ### GroupDocs.Merger for .NET の追加サポートやドキュメントはどこで入手できますか?
-参照するには[ドキュメンテーション](https://reference.groupdocs.com/merger/net/)詳細な API リファレンスと例については、こちらをご覧ください。
+参照するには[ドキュメンテーション](https://tutorials.groupdocs.com/merger/net/)詳細な API リファレンスと例については、こちらをご覧ください。
 ### GroupDocs.Merger for .NET には無料試用版がありますか?
 はい、始めることができます[無料トライアル](https://releases.groupdocs.com/)購入する前に機能を調べてください。
 ### GroupDocs.Merger for .NET の一時ライセンスを取得するにはどうすればよいですか?

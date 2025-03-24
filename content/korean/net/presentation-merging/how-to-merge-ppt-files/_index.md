@@ -3,7 +3,6 @@ title: PPT 파일을 병합하는 방법
 linktitle: PPT 파일을 병합하는 방법
 second_title: GroupDocs.Merger .NET API
 description: .NET용 GroupDocs.Merger를 사용하여 PowerPoint(PPT) 파일을 손쉽게 병합하는 방법을 알아보세요. 이 강력한 API를 사용하여 .NET 애플리케이션을 강화하세요.
-type: docs
 weight: 12
 url: /ko/net/presentation-merging/how-to-merge-ppt-files/
 ---

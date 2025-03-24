@@ -3,7 +3,6 @@ title: Guia para mesclar arquivos DOT
 linktitle: Guia para mesclar arquivos DOT
 second_title: API GroupDocs.Merger .NET
 description: Aprenda como mesclar arquivos DOT (Graphviz) programaticamente usando GroupDocs.Merger para .NET. Mesclar, combinar e manipular arquivos DOT com facilidade.
-type: docs
 weight: 13
 url: /pt/net/document-merging/guide-merging-dot-files/
 ---
@@ -13,7 +12,7 @@ Neste tutorial, exploraremos como mesclar arquivos DOT (Graphviz) usando GroupDo
 Antes de começarmos, certifique-se de ter os seguintes pré-requisitos:
 - Conhecimento básico de programação C# e .NET.
 - Visual Studio instalado em sua máquina.
--  Biblioteca GroupDocs.Merger para .NET. Você pode baixá-lo no[Documentação do GroupDocs.Merger para .NET](https://reference.groupdocs.com/merger/net/).
+-  Biblioteca GroupDocs.Merger para .NET. Você pode baixá-lo no[Documentação do GroupDocs.Merger para .NET](https://tutorials.groupdocs.com/merger/net/).
 - Acesso aos arquivos DOT que você deseja mesclar.
 
 ## Importar namespaces

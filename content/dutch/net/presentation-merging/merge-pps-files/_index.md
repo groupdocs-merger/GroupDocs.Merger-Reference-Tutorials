@@ -3,7 +3,6 @@ title: PPS-bestanden samenvoegen
 linktitle: PPS-bestanden samenvoegen
 second_title: GroupDocs.Merger .NET API
 description: Leer hoe u PPS-bestanden naadloos kunt samenvoegen met GroupDocs.Merger voor .NET. Stapsgewijze handleiding met codevoorbeelden. Verbeter uw vaardigheden op het gebied van documentmanipulatie.
-type: docs
 weight: 10
 url: /nl/net/presentation-merging/merge-pps-files/
 ---
@@ -61,7 +60,7 @@ Ja, GroupDocs.Merger ondersteunt het samenvoegen van verschillende documentforma
 ### Is GroupDocs.Merger geschikt voor batchverwerking van documentsamenvoegingen?
 Absoluut, u kunt GroupDocs.Merger gebruiken voor batchverwerkingstaken om meerdere documenten tegelijkertijd samen te voegen.
 ### Waar kan ik de volledige documentatie voor GroupDocs.Merger voor .NET vinden?
- De uitgebreide documentatie is beschikbaar[hier](https://reference.groupdocs.com/merger/net/).
+ De uitgebreide documentatie is beschikbaar[hier](https://tutorials.groupdocs.com/merger/net/).
 ### Hoe kan ik een tijdelijke licentie verkrijgen voor GroupDocs.Merger voor .NET?
  U kunt een tijdelijke licentie verkrijgen via[hier](https://purchase.groupdocs.com/temporary-license/).
 ### Biedt GroupDocs ondersteuning voor probleemoplossing en vragen?

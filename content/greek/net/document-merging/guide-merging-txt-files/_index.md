@@ -3,7 +3,6 @@ title: Οδηγός συγχώνευσης αρχείων TXT με GroupDocs.Mer
 linktitle: Οδηγός συγχώνευσης αρχείων TXT με GroupDocs.Merger για .NET
 second_title: GroupDocs.Merger .NET API
 description: Συγχώνευση αρχείων TXT απρόσκοπτα στο .NET χρησιμοποιώντας το GroupDocs.Merger. Οδηγός βήμα προς βήμα για προγραμματιστές. Τεκμηρίωση και υποστήριξη διαθέσιμη.
-type: docs
 weight: 18
 url: /el/net/document-merging/guide-merging-txt-files/
 ---
@@ -63,7 +62,7 @@ Console.WriteLine("\nTXT files merge completed successfully. \nCheck output in {
 ### Είναι το GroupDocs.Merger συμβατό με εφαρμογές .NET Core;
 Ναι, το GroupDocs.Merger είναι συμβατό τόσο με .NET Framework όσο και με .NET Core.
 ### Πού μπορώ να βρω περαιτέρω τεκμηρίωση και υποστήριξη για το GroupDocs.Merger;
- Αναφέρομαι στο[τεκμηρίωση](https://reference.groupdocs.com/merger/net/) για λεπτομερείς αναφορές API. Μπορείτε επίσης να ζητήσετε βοήθεια από το[Φόρουμ GroupDocs](https://forum.groupdocs.com/c/merger/32) για τυχόν απορίες.
+ Αναφέρομαι στο[τεκμηρίωση](https://tutorials.groupdocs.com/merger/net/) για λεπτομερείς αναφορές API. Μπορείτε επίσης να ζητήσετε βοήθεια από το[Φόρουμ GroupDocs](https://forum.groupdocs.com/c/merger/32) για τυχόν απορίες.
 ### Υπάρχει διαθέσιμη δωρεάν δοκιμή για το GroupDocs.Merger για .NET;
  Ναι, μπορείτε να εξερευνήσετε α[δωρεάν δοκιμαστική έκδοση](https://releases.groupdocs.com/) του GroupDocs.Merger για την αξιολόγηση των δυνατοτήτων του.
 ### Πώς μπορώ να αποκτήσω μια προσωρινή άδεια για το GroupDocs.Merger;

@@ -3,7 +3,6 @@ title: วิธีรวมไฟล์ DOCX
 linktitle: วิธีรวมไฟล์ DOCX
 second_title: GroupDocs.Merger .NET API
 description: เรียนรู้วิธีผสานไฟล์ DOCX โดยทางโปรแกรมใน .NET โดยใช้ GroupDocs.Merger ทำให้งานการจัดการเอกสารง่ายขึ้นอย่างมีประสิทธิภาพ
-type: docs
 weight: 12
 url: /th/net/document-merging/how-to-merge-docx-files/
 ---
@@ -13,7 +12,7 @@ url: /th/net/document-merging/how-to-merge-docx-files/
 ก่อนที่จะเริ่มต้น ตรวจสอบให้แน่ใจว่าคุณมีข้อกำหนดเบื้องต้นต่อไปนี้:
 - ติดตั้ง Visual Studio บนเครื่องของคุณแล้ว
 - ความเข้าใจพื้นฐานเกี่ยวกับการพัฒนา C# และ .NET
--  ติดตั้ง GroupDocs.Merger สำหรับไลบรารี .NET แล้ว (โปรดดูที่[เอกสารประกอบ](https://reference.groupdocs.com/merger/net/) สำหรับรายละเอียดการติดตั้ง)
+-  ติดตั้ง GroupDocs.Merger สำหรับไลบรารี .NET แล้ว (โปรดดูที่[เอกสารประกอบ](https://tutorials.groupdocs.com/merger/net/) สำหรับรายละเอียดการติดตั้ง)
 
 ## นำเข้าเนมสเปซ
 เริ่มต้นด้วยการนำเข้าเนมสเปซที่จำเป็นในโปรเจ็กต์ C# ของคุณ:
@@ -49,7 +48,7 @@ using (var merger = new Merger("Your Sample Document File"X))
 ### ฉันสามารถปรับแต่งกระบวนการผสาน เช่น การระบุช่วงหน้าหรือเพิ่มลายน้ำได้หรือไม่
 GroupDocs.Merger มี API ที่ยืดหยุ่นเพื่อปรับแต่งกระบวนการผสานตามความต้องการของคุณอย่างแน่นอน
 ### ฉันจะหาการสนับสนุนหรือเอกสารเพิ่มเติมสำหรับ GroupDocs.Merger for .NET ได้ที่ไหน
- คุณสามารถอ้างถึง[เอกสารประกอบ](https://reference.groupdocs.com/merger/net/) สำหรับการอ้างอิงและตัวอย่าง API โดยละเอียด
+ คุณสามารถอ้างถึง[เอกสารประกอบ](https://tutorials.groupdocs.com/merger/net/) สำหรับการอ้างอิงและตัวอย่าง API โดยละเอียด
 ### GroupDocs.Merger สำหรับ .NET ให้ทดลองใช้ฟรีหรือไม่
  ใช่ คุณสามารถเริ่มต้นด้วย[ทดลองฟรี](https://releases.groupdocs.com/) เพื่อสำรวจคุณสมบัติก่อนตัดสินใจซื้อ
 ### ฉันจะขอรับใบอนุญาตชั่วคราวสำหรับ GroupDocs.Merger สำหรับ .NET ได้อย่างไร

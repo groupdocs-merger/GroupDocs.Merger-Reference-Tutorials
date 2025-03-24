@@ -3,7 +3,6 @@ title: 合并 RTF 文件
 linktitle: 合并 RTF 文件
 second_title: GroupDocs.Merger .NET API
 description: 了解如何使用 GroupDocs.Merger 轻松合并 .NET 中的 RTF 文件以实现无缝文档处理。
-type: docs
 weight: 21
 url: /zh/net/document-merging/merging-rtf-files/
 ---
@@ -61,7 +60,7 @@ Console.WriteLine("\nRTF files merge completed successfully. \nCheck output in {
 ### GroupDocs.Merger适合大规模文档处理吗？
 当然，GroupDocs.Merger 旨在有效地处理大型文档。
 ### 在哪里可以找到有关 GroupDocs.Merger 的更多文档和支持？
-参观[文档](https://reference.groupdocs.com/merger/net/)和[支持论坛](https://forum.groupdocs.com/c/merger/32)以获得详细的指导和帮助。
+参观[文档](https://tutorials.groupdocs.com/merger/net/)和[支持论坛](https://forum.groupdocs.com/c/merger/32)以获得详细的指导和帮助。
 ### 我可以在购买前尝试 GroupDocs.Merger 吗？
 是的，你可以探索[免费试用](https://releases.groupdocs.com/) GroupDocs.Merge 的。
 ### 如何获得 GroupDocs.Merger 的临时许可证？

@@ -3,7 +3,6 @@ title: 合併 DOTX 文件
 linktitle: 合併 DOTX 文件
 second_title: GroupDocs.Merger .NET API
 description: 了解如何使用 GroupDocs.Merger 輕鬆合併 .NET 中的 DOTX 檔案。增強您的文件處理能力。
-type: docs
 weight: 15
 url: /zh-hant/net/document-merging/merge-dotx-files/
 ---
@@ -13,7 +12,7 @@ url: /zh-hant/net/document-merging/merge-dotx-files/
 在深入學習本教學之前，請確保您具備以下條件：
 - 您的電腦上安裝了 Visual Studio
 - 安裝.NET SDK（相容版本）
--  GroupDocs.Merger for .NET 安裝（請參閱[安裝指南](https://reference.groupdocs.com/merger/net/)詳情）
+-  GroupDocs.Merger for .NET 安裝（請參閱[安裝指南](https://tutorials.groupdocs.com/merger/net/)詳情）
 - C# 程式設計基礎知識
 
 ## 導入命名空間
@@ -58,7 +57,7 @@ Console.WriteLine("\nDOTX files merge completed successfully. \nCheck output in 
 ### GroupDocs.Merger 與 .NET Core 相容嗎？
 是的，GroupDocs.Merger 與 .NET Framework 和 .NET Core 也相容。
 ### 在哪裡可以找到有關 GroupDocs.Merger 的其他支援或文件？
-您可以參考[GroupDocs.Merge 文檔](https://reference.groupdocs.com/merger/net/)詳細的API參考和使用範例。
+您可以參考[GroupDocs.Merge 文檔](https://tutorials.groupdocs.com/merger/net/)詳細的API參考和使用範例。
 ### GroupDocs.Merger 是否提供免費試用？
 是的，您可以訪問[免費試用版](https://releases.groupdocs.com/)評估 GroupDocs.Merger。
 ### 如何購買 GroupDocs.Merger 的許可證？

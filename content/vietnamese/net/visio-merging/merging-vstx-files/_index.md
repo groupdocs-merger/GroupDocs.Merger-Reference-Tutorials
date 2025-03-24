@@ -3,7 +3,6 @@ title: Hợp nhất các tệp VSTX với GroupDocs.Merger cho .NET
 linktitle: Hợp nhất các tệp VSTX với GroupDocs.Merger cho .NET
 second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp VSTX bằng GroupDocs.Merger cho .NET. Hãy làm theo hướng dẫn từng bước này để thao tác tài liệu hiệu quả trong C#.
-type: docs
 weight: 16
 url: /vi/net/visio-merging/merging-vstx-files/
 ---
@@ -64,4 +63,4 @@ Hoàn toàn có thể, bạn có thể chỉ định nhiều tùy chọn khác n
 ### GroupDocs.Merger dành cho .NET có phù hợp với các tác vụ xử lý tài liệu quy mô lớn không?
 Có, GroupDocs.Merger được tối ưu hóa để xử lý hiệu quả các tài liệu lớn và hoạt động hàng loạt.
 ### Tôi có thể tìm tài liệu hoặc hỗ trợ bổ sung cho GroupDocs.Merger cho .NET ở đâu?
- Tham quan[Diễn đàn GroupDocs.Merger](https://forum.groupdocs.com/c/merger/32) hoặc tham khảo[tài liệu](https://reference.groupdocs.com/merger/net/) để có nguồn tài nguyên toàn diện.
+ Tham quan[Diễn đàn GroupDocs.Merger](https://forum.groupdocs.com/c/merger/32) hoặc tham khảo[tài liệu](https://tutorials.groupdocs.com/merger/net/) để có nguồn tài nguyên toàn diện.

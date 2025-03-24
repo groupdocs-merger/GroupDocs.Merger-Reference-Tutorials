@@ -3,7 +3,6 @@ title: DOCX फ़ाइलों को कैसे मर्ज करें
 linktitle: DOCX फ़ाइलों को कैसे मर्ज करें
 second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger का उपयोग करके .NET में प्रोग्रामेटिक रूप से DOCX फ़ाइलों को मर्ज करना सीखें, दस्तावेज़ हेरफेर कार्यों को कुशलतापूर्वक सरल बनाएं।
-type: docs
 weight: 12
 url: /hi/net/document-merging/how-to-merge-docx-files/
 ---
@@ -13,7 +12,7 @@ url: /hi/net/document-merging/how-to-merge-docx-files/
 आरंभ करने से पहले, सुनिश्चित करें कि आपके पास निम्नलिखित पूर्वापेक्षाएँ हैं:
 - आपकी मशीन पर विज़ुअल स्टूडियो स्थापित है।
 - C# और .NET विकास की बुनियादी समझ।
--  .NET पुस्तकालय स्थापित करने के लिए GroupDocs.Merger (देखें[प्रलेखन](https://reference.groupdocs.com/merger/net/) स्थापना विवरण के लिए)
+-  .NET पुस्तकालय स्थापित करने के लिए GroupDocs.Merger (देखें[प्रलेखन](https://tutorials.groupdocs.com/merger/net/) स्थापना विवरण के लिए)
 
 ## नामस्थान आयात करें
 अपने C# प्रोजेक्ट में आवश्यक नामस्थानों को आयात करके आरंभ करें:
@@ -49,7 +48,7 @@ using (var merger = new Merger("Your Sample Document File"X))
 ### क्या मैं मर्ज प्रक्रिया को अनुकूलित कर सकता हूं, जैसे पृष्ठ श्रेणियां निर्दिष्ट करना या वॉटरमार्क जोड़ना?
 बिल्कुल, GroupDocs.Merger आपकी आवश्यकताओं के अनुसार मर्ज प्रक्रिया को अनुकूलित करने के लिए लचीला API प्रदान करता है।
 ### मुझे .NET के लिए GroupDocs.Merger के लिए अतिरिक्त समर्थन या दस्तावेज़ कहां मिल सकता है?
- आप इसका संदर्भ ले सकते हैं[प्रलेखन](https://reference.groupdocs.com/merger/net/) विस्तृत API संदर्भ और उदाहरण के लिए.
+ आप इसका संदर्भ ले सकते हैं[प्रलेखन](https://tutorials.groupdocs.com/merger/net/) विस्तृत API संदर्भ और उदाहरण के लिए.
 ### क्या .NET के लिए GroupDocs.Merger निःशुल्क परीक्षण की पेशकश करता है?
  हां, आप इसके साथ शुरुआत कर सकते हैं[मुफ्त परीक्षण](https://releases.groupdocs.com/) खरीदारी करने से पहले सुविधाओं का पता लगाएं।
 ### मैं .NET के लिए GroupDocs.Merger हेतु अस्थायी लाइसेंस कैसे प्राप्त कर सकता हूं?

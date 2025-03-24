@@ -3,7 +3,6 @@ title: VSTX fájlok egyesítése a GroupDocs.Merger for .NET szolgáltatással
 linktitle: VSTX fájlok egyesítése a GroupDocs.Merger for .NET szolgáltatással
 second_title: GroupDocs.Merger .NET API
 description: Ismerje meg, hogyan egyesíthet VSTX fájlokat a GroupDocs.Merger for .NET használatával. Kövesse ezt a lépésről lépésre szóló útmutatót a hatékony dokumentumkezeléshez C# nyelven.
-type: docs
 weight: 16
 url: /hu/net/visio-merging/merging-vstx-files/
 ---
@@ -64,4 +63,4 @@ Az egyesítési művelet során természetesen megadhat különféle beállítá
 ### A GroupDocs.Merger for .NET alkalmas nagyméretű dokumentumfeldolgozási feladatokra?
 Igen, a GroupDocs.Merger nagyméretű dokumentumok és kötegelt műveletek hatékony kezelésére van optimalizálva.
 ### Hol találok további támogatást vagy dokumentációt a GroupDocs.Merger for .NET-hez?
- Meglátogatni a[GroupDocs.Merger fórum](https://forum.groupdocs.com/c/merger/32) vagy hivatkozzon a[dokumentáció](https://reference.groupdocs.com/merger/net/) átfogó forrásokért.
+ Meglátogatni a[GroupDocs.Merger fórum](https://forum.groupdocs.com/c/merger/32) vagy hivatkozzon a[dokumentáció](https://tutorials.groupdocs.com/merger/net/) átfogó forrásokért.

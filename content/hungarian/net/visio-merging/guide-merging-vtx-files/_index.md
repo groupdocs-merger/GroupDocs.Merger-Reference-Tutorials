@@ -3,7 +3,6 @@ title: Útmutató a VTX fájlok egyesítéséhez
 linktitle: Útmutató a VTX fájlok egyesítéséhez
 second_title: GroupDocs.Merger .NET API
 description: Ismerje meg, hogyan egyesíthet programozottan VTX-fájlokat a GroupDocs.Merger for .NET használatával. Útmutató lépésről lépésre kódpéldákkal.
-type: docs
 weight: 18
 url: /hu/net/visio-merging/guide-merging-vtx-files/
 ---
@@ -49,7 +48,7 @@ Ebben az oktatóanyagban megtanulta, hogyan lehet VTX-fájlokat egyesíteni a Gr
 ### Egyesíthetek több VTX fájlt egyetlen kimenetbe a GroupDocs.Merger for .NET használatával?
  Igen, több VTX fájlt egyesíthet egybe a segítségével`Join` a GroupDocs.Merger által biztosított módszer.
 ### Hol találok további dokumentációt a GroupDocs.Merger for .NET-hez?
- Meglátogatni a[dokumentáció](https://reference.groupdocs.com/merger/net/) részletes API-referenciákért és használati példákért.
+ Meglátogatni a[dokumentáció](https://tutorials.groupdocs.com/merger/net/) részletes API-referenciákért és használati példákért.
 ### Létezik próbaverzió a GroupDocs.Merger for .NET számára?
  Igen, letöltheti a[ingyenes próbaverzió](https://releases.groupdocs.com/) hogy a vásárlás előtt feltárja a GroupDocs.Merger képességeit.
 ### Hogyan kaphatok technikai támogatást a GroupDocs.Merger for .NET-hez?

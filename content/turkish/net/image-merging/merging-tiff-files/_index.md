@@ -3,7 +3,6 @@ title: TIFF Dosyalarını Birleştirme
 linktitle: TIFF Dosyalarını Birleştirme
 second_title: GroupDocs.Merger .NET API'si
 description: GroupDocs.Merger for .NET'i kullanarak TIFF dosyalarını nasıl birleştireceğinizi öğrenin. .NET uygulamalarınızda belgeleri sorunsuz bir şekilde birleştirin, bölün ve değiştirin.
-type: docs
 weight: 16
 url: /tr/net/image-merging/merging-tiff-files/
 ---
@@ -60,6 +59,6 @@ GroupDocs.Merger kesinlikle büyük belge hacimlerini verimli bir şekilde yöne
 ### GroupDocs.Merger değerlendirme için deneme sürümleri sunuyor mu?
  Evet, GroupDocs.Merger'ın ücretsiz deneme sürümüne şu adresten erişebilirsiniz:[Burada](https://releases.groupdocs.com/).
 ### GroupDocs.Merger'a ilişkin kapsamlı belgeleri nerede bulabilirim?
- Belgelere bakın[Burada](https://reference.groupdocs.com/merger/net/) ayrıntılı API referansları ve kılavuzları için.
+ Belgelere bakın[Burada](https://tutorials.groupdocs.com/merger/net/) ayrıntılı API referansları ve kılavuzları için.
 ### GroupDocs.Merger için nasıl destek alabilirim?
  GroupDocs topluluk forumunu ziyaret edin[Burada](https://forum.groupdocs.com/c/merger/32) Destek ve tartışmalar için.

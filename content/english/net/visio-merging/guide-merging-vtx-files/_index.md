@@ -3,7 +3,6 @@ title: Guide to Merging VTX Files
 linktitle: Guide to Merging VTX Files
 second_title: GroupDocs.Merger .NET API
 description: Learn how to merge VTX files programmatically using GroupDocs.Merger for .NET. Step-by-step guide with code examples.
-type: docs
 weight: 18
 url: /net/visio-merging/guide-merging-vtx-files/
 ---
@@ -12,7 +11,7 @@ In this tutorial, we will explore how to merge VTX (Visio Drawing Template) file
 ## Prerequisites
 Before proceeding, ensure you have the following set up:
 - Visual Studio installed on your machine.
-- GroupDocs.Merger for .NET library downloaded and referenced in your project.
+- GroupDocs.Merger for .NET library downloaded and tutorialsd in your project.
 - Basic knowledge of C# programming.
 
 ## Import Namespaces
@@ -49,7 +48,7 @@ In this tutorial, you've learned how to merge VTX files using GroupDocs.Merger f
 ### Can I merge multiple VTX files into a single output using GroupDocs.Merger for .NET?
 Yes, you can merge multiple VTX files into one using the `Join` method provided by GroupDocs.Merger.
 ### Where can I find more documentation for GroupDocs.Merger for .NET?
-Visit the [documentation](https://reference.groupdocs.com/merger/net/) for detailed API references and usage examples.
+Visit the [documentation](https://tutorials.groupdocs.com/merger/net/) for detailed API tutorialss and usage examples.
 ### Is there a trial version available for GroupDocs.Merger for .NET?
 Yes, you can download a [free trial](https://releases.groupdocs.com/) to explore the capabilities of GroupDocs.Merger before purchasing.
 ### How can I get technical support for GroupDocs.Merger for .NET?

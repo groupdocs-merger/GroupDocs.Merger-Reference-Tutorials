@@ -3,7 +3,6 @@ title: 7z Dosyaları Nasıl Birleştirilir
 linktitle: 7z Dosyaları Nasıl Birleştirilir
 second_title: GroupDocs.Merger .NET API'si
 description: GroupDocs.Merger for .NET'i kullanarak 7z dosyalarını zahmetsizce birleştirin. Birden fazla arşivi sorunsuz bir şekilde tek bir arşivde birleştirmek için adım adım kılavuzumuzu izleyin.
-type: docs
 weight: 10
 url: /tr/net/merge-compress-files/merge-7z-files/
 ---

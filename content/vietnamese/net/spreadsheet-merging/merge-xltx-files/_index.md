@@ -3,7 +3,6 @@ title: Hợp nhất các tệp XLTX
 linktitle: Hợp nhất các tệp XLTX
 second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp XLTX một cách dễ dàng. Bắt đầu hợp nhất các tệp XLTX và hợp lý hóa các tác vụ quản lý tài liệu của bạn một cách hiệu quả.
-type: docs
 weight: 17
 url: /vi/net/spreadsheet-merging/merge-xltx-files/
 ---
@@ -63,4 +62,4 @@ Có, GroupDocs.Merger dành cho .NET không yêu cầu cài đặt Microsoft Exc
 ### GroupDocs.Merger dành cho .NET có giữ nguyên định dạng trong quá trình hợp nhất không?
 Có, GroupDocs.Merger đảm bảo rằng định dạng và tính toàn vẹn của dữ liệu được duy trì khi hợp nhất các tệp XLTX.
 ### Tôi có thể tìm thêm hỗ trợ hoặc tài liệu về GroupDocs.Merger cho .NET ở đâu?
- Tham quan[Diễn đàn GroupDocs.Merger](https://forum.groupdocs.com/c/merger/32) để được hỗ trợ và tham khảo[tài liệu](https://reference.groupdocs.com/merger/net/) để được hướng dẫn chi tiết.
+ Tham quan[Diễn đàn GroupDocs.Merger](https://forum.groupdocs.com/c/merger/32) để được hỗ trợ và tham khảo[tài liệu](https://tutorials.groupdocs.com/merger/net/) để được hướng dẫn chi tiết.

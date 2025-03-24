@@ -3,7 +3,6 @@ title: Jak scalić pliki PNG
 linktitle: Jak scalić pliki PNG
 second_title: GroupDocs.Merger API .NET
 description: Dowiedz się, jak łączyć pliki PNG za pomocą GroupDocs.Merger dla .NET. Przewodnik krok po kroku dotyczący bezproblemowej integracji z aplikacjami .NET.
-type: docs
 weight: 12
 url: /pl/net/image-merging/how-to-merge-png-files/
 ---
@@ -59,7 +58,7 @@ Tak, GroupDocs.Merger obsługuje szeroką gamę formatów dokumentów i obrazów
 ### Czy mogę dostosować opcje scalania, takie jak orientacja lub układ?
 Absolutnie! GroupDocs.Merger oferuje różne opcje kontrolowania sposobu łączenia dokumentów i obrazów, co pozwala na elastyczne dostosowywanie.
 ### Gdzie mogę znaleźć więcej zasobów i wsparcia dla GroupDocs.Merger?
- Odwiedzić[Forum GroupDocs.Merger](https://forum.groupdocs.com/c/merger/32) o wsparcie społeczności i poznaj[dokumentacja](https://reference.groupdocs.com/merger/net/) szczegółowe wskazówki.
+ Odwiedzić[Forum GroupDocs.Merger](https://forum.groupdocs.com/c/merger/32) o wsparcie społeczności i poznaj[dokumentacja](https://tutorials.groupdocs.com/merger/net/) szczegółowe wskazówki.
 ### Czy dostępna jest wersja próbna umożliwiająca przetestowanie GroupDocs.Merger przed zakupem?
  Tak, możesz pobrać bezpłatną wersję próbną ze strony[Witryna GroupDocs](https://releases.groupdocs.com/) ocenić możliwości biblioteki.
 ### Jak mogę uzyskać tymczasową licencję na GroupDocs.Merger?

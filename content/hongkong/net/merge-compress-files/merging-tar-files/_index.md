@@ -3,7 +3,6 @@ title: 合併 Tar 文件
 linktitle: 合併 Tar 文件
 second_title: GroupDocs.Merger .NET API
 description: 了解如何使用 GroupDocs.Merger for .NET 以程式設計方式合併 TAR 檔案。按照我們的逐步指南高效處理 TAR 檔案。
-type: docs
 weight: 11
 url: /zh-hant/net/merge-compress-files/merging-tar-files/
 ---

@@ -3,7 +3,6 @@ title: RTF-Dateien zusammenführen
 linktitle: RTF-Dateien zusammenführen
 second_title: GroupDocs.Merger .NET API
 description: Erfahren Sie, wie Sie mithilfe von GroupDocs.Merger RTF-Dateien in .NET mühelos zusammenführen und so eine nahtlose Dokumentenverarbeitung ermöglichen.
-type: docs
 weight: 21
 url: /de/net/document-merging/merging-rtf-files/
 ---
@@ -61,7 +60,7 @@ Ja, GroupDocs.Merger unterstützt das Zusammenführen verschiedener Dokumentform
 ### Ist GroupDocs.Merger für die Verarbeitung umfangreicher Dokumente geeignet?
 GroupDocs.Merger ist auf jeden Fall darauf ausgelegt, große Dokumente effizient zu verarbeiten.
 ### Wo finde ich weitere Dokumentation und Unterstützung für GroupDocs.Merger?
- Besuche den[Dokumentation](https://reference.groupdocs.com/merger/net/) Und[Hilfeforum](https://forum.groupdocs.com/c/merger/32) für detaillierte Anleitung und Unterstützung.
+ Besuche den[Dokumentation](https://tutorials.groupdocs.com/merger/net/) Und[Hilfeforum](https://forum.groupdocs.com/c/merger/32) für detaillierte Anleitung und Unterstützung.
 ### Kann ich GroupDocs.Merger vor dem Kauf testen?
  Ja, Sie können a erkunden[Kostenlose Testphase](https://releases.groupdocs.com/) von GroupDocs.Merger.
 ### Wie erhalte ich eine temporäre Lizenz für GroupDocs.Merger?

@@ -3,7 +3,6 @@ title: Hur man slår ihop DOCX-filer
 linktitle: Hur man slår ihop DOCX-filer
 second_title: GroupDocs.Merger .NET API
 description: Lär dig hur du sammanfogar DOCX-filer programmatiskt i .NET med GroupDocs.Merger, vilket förenklar dokumenthanteringsuppgifter effektivt.
-type: docs
 weight: 12
 url: /sv/net/document-merging/how-to-merge-docx-files/
 ---
@@ -13,7 +12,7 @@ I en värld av .NET-utveckling kan sammanslagning av DOCX-filer programmatiskt v
 Innan du börjar, se till att du har följande förutsättningar:
 - Visual Studio installerat på din dator.
 - Grundläggande förståelse för C# och .NET utveckling.
--  GroupDocs.Merger för .NET-biblioteket installerat (se[dokumentation](https://reference.groupdocs.com/merger/net/) för installationsdetaljer).
+-  GroupDocs.Merger för .NET-biblioteket installerat (se[dokumentation](https://tutorials.groupdocs.com/merger/net/) för installationsdetaljer).
 
 ## Importera namnområden
 Börja med att importera de nödvändiga namnrymden i ditt C#-projekt:
@@ -49,7 +48,7 @@ Ja, GroupDocs.Merger stöder en mängd olika dokumentformat inklusive DOCX, PDF,
 ### Kan jag anpassa sammanfogningsprocessen, som att ange sidintervall eller lägga till vattenstämplar?
 Absolut, GroupDocs.Merger tillhandahåller flexibla API:er för att anpassa sammanslagningsprocessen enligt dina krav.
 ### Var kan jag hitta ytterligare support eller dokumentation för GroupDocs.Merger för .NET?
- Du kan hänvisa till[dokumentation](https://reference.groupdocs.com/merger/net/) för detaljerad API-referens och exempel.
+ Du kan hänvisa till[dokumentation](https://tutorials.groupdocs.com/merger/net/) för detaljerad API-referens och exempel.
 ### Erbjuder GroupDocs.Merger för .NET en gratis provperiod?
  Ja, du kan komma igång med en[gratis provperiod](https://releases.groupdocs.com/) att utforska funktionerna innan du gör ett köp.
 ### Hur kan jag få en tillfällig licens för GroupDocs.Merger för .NET?

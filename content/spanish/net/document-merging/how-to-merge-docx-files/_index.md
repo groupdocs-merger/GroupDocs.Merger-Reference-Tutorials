@@ -3,7 +3,6 @@ title: Cómo fusionar archivos DOCX
 linktitle: Cómo fusionar archivos DOCX
 second_title: API GroupDocs.Merger .NET
 description: Aprenda a fusionar archivos DOCX mediante programación en .NET usando GroupDocs.Merger, simplificando las tareas de manipulación de documentos de manera eficiente.
-type: docs
 weight: 12
 url: /es/net/document-merging/how-to-merge-docx-files/
 ---
@@ -13,7 +12,7 @@ En el mundo del desarrollo .NET, fusionar archivos DOCX mediante programación p
 Antes de comenzar, asegúrese de tener los siguientes requisitos previos:
 - Visual Studio instalado en su máquina.
 - Conocimientos básicos del desarrollo de C# y .NET.
--  Biblioteca GroupDocs.Merger para .NET instalada (consulte[documentación](https://reference.groupdocs.com/merger/net/) para detalles de instalación).
+-  Biblioteca GroupDocs.Merger para .NET instalada (consulte[documentación](https://tutorials.groupdocs.com/merger/net/) para detalles de instalación).
 
 ## Importar espacios de nombres
 Comience importando los espacios de nombres necesarios en su proyecto C#:
@@ -49,7 +48,7 @@ Sí, GroupDocs.Merger admite una variedad de formatos de documentos, incluidos D
 ### ¿Puedo personalizar el proceso de combinación, como especificar rangos de páginas o agregar marcas de agua?
 Por supuesto, GroupDocs.Merger proporciona API flexibles para personalizar el proceso de fusión según sus requisitos.
 ### ¿Dónde puedo encontrar soporte o documentación adicional para GroupDocs.Merger para .NET?
- Puedes consultar el[documentación](https://reference.groupdocs.com/merger/net/) para obtener referencias detalladas de API y ejemplos.
+ Puedes consultar el[documentación](https://tutorials.groupdocs.com/merger/net/) para obtener referencias detalladas de API y ejemplos.
 ### ¿GroupDocs.Merger para .NET ofrece una prueba gratuita?
  Sí, puedes empezar con un[prueba gratis](https://releases.groupdocs.com/) para explorar las funciones antes de realizar una compra.
 ### ¿Cómo puedo obtener una licencia temporal de GroupDocs.Merger para .NET?

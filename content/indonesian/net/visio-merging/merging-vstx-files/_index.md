@@ -3,7 +3,6 @@ title: Menggabungkan File VSTX dengan GroupDocs.Merger untuk .NET
 linktitle: Menggabungkan File VSTX dengan GroupDocs.Merger untuk .NET
 second_title: GroupDocs.Merger .NET API
 description: Pelajari cara menggabungkan file VSTX menggunakan GroupDocs.Merger untuk .NET. Ikuti panduan langkah demi langkah ini untuk manipulasi dokumen yang efisien di C#.
-type: docs
 weight: 16
 url: /id/net/visio-merging/merging-vstx-files/
 ---
@@ -64,4 +63,4 @@ Tentu saja, Anda dapat menentukan berbagai opsi seperti nomor halaman, rotasi, d
 ### Apakah GroupDocs.Merger untuk .NET cocok untuk tugas pemrosesan dokumen skala besar?
 Ya, GroupDocs.Merger dioptimalkan untuk penanganan dokumen besar dan operasi batch secara efisien.
 ### Di mana saya dapat menemukan dukungan atau dokumentasi tambahan untuk GroupDocs.Merger untuk .NET?
- Mengunjungi[GroupDocs.Forum penggabungan](https://forum.groupdocs.com/c/merger/32) atau rujuk ke[dokumentasi](https://reference.groupdocs.com/merger/net/) untuk sumber daya yang komprehensif.
+ Mengunjungi[GroupDocs.Forum penggabungan](https://forum.groupdocs.com/c/merger/32) atau rujuk ke[dokumentasi](https://tutorials.groupdocs.com/merger/net/) untuk sumber daya yang komprehensif.

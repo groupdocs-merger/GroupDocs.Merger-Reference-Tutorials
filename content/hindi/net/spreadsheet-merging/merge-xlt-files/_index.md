@@ -3,7 +3,6 @@ title: XLT फ़ाइलें मर्ज करें
 linktitle: XLT फ़ाइलें मर्ज करें
 second_title: GroupDocs.Merger .NET API
 description: XLT फ़ाइलों को मर्ज करना सीखें. इस चरण-दर-चरण मार्गदर्शिका के साथ Excel टेम्पलेट्स को C# में प्रोग्रामेटिक रूप से संयोजित करें।
-type: docs
 weight: 15
 url: /hi/net/spreadsheet-merging/merge-xlt-files/
 ---
@@ -59,7 +58,7 @@ Console.WriteLine("\nXLT files merge completed successfully. \nCheck output in {
 ### क्या GroupDocs.Merger XLSX या XLS जैसे अन्य Excel फ़ाइल स्वरूपों के साथ संगत है?
 हां, GroupDocs.Merger XLSX, XLS और XLT सहित विभिन्न Excel फ़ाइल स्वरूपों का समर्थन करता है।
 ### मैं .NET के लिए GroupDocs.Merger के लिए अधिक उदाहरण और दस्तावेज़ कहां पा सकता हूं?
- विस्तृत दस्तावेज़ और कोड नमूने उपलब्ध हैं[यहाँ](https://reference.groupdocs.com/merger/net/).
+ विस्तृत दस्तावेज़ और कोड नमूने उपलब्ध हैं[यहाँ](https://tutorials.groupdocs.com/merger/net/).
 ### क्या परीक्षण के लिए GroupDocs.Merger का परीक्षण संस्करण उपलब्ध है?
  हां, आप यहां से निःशुल्क परीक्षण संस्करण डाउनलोड कर सकते हैं[यहाँ](https://releases.groupdocs.com/).
 ### मैं GroupDocs.Merger के साथ तकनीकी सहायता या सहायता कैसे प्राप्त कर सकता हूं?

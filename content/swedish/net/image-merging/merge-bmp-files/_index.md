@@ -3,7 +3,6 @@ title: Slå samman BMP-filer
 linktitle: Slå samman BMP-filer
 second_title: GroupDocs.Merger .NET API
 description: Lär dig hur du slår samman BMP-filer med GroupDocs.Merger för .NET med denna omfattande handledning. Utveckla dina .NET-applikationer effektivt.
-type: docs
 weight: 10
 url: /sv/net/image-merging/merge-bmp-files/
 ---

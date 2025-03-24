@@ -3,7 +3,6 @@ title: Fusionar archivos XLTM
 linktitle: Fusionar archivos XLTM
 second_title: API GroupDocs.Merger .NET
 description: Aprenda cómo fusionar archivos XLTM mediante programación. Guía paso a paso con ejemplos de código.
-type: docs
 weight: 16
 url: /es/net/spreadsheet-merging/merging-xltm-files/
 ---
@@ -61,6 +60,6 @@ Sí, GroupDocs.Merger admite la combinación de varios formatos de documentos, c
 ### ¿Hay una prueba gratuita disponible para GroupDocs.Merger?
  Sí, puedes acceder a una prueba gratuita de GroupDocs.Merger[aquí](https://releases.groupdocs.com/).
 ### ¿Dónde puedo encontrar documentación para GroupDocs.Merger?
-Puede consultar la documentación completa de GroupDocs.Merger[aquí](https://reference.groupdocs.com/merger/net/).
+Puede consultar la documentación completa de GroupDocs.Merger[aquí](https://tutorials.groupdocs.com/merger/net/).
 ### ¿Dónde puedo obtener soporte técnico para GroupDocs.Merger?
  Para obtener asistencia y soporte técnico, visite el foro GroupDocs.Merger[aquí](https://forum.groupdocs.com/c/merger/32).

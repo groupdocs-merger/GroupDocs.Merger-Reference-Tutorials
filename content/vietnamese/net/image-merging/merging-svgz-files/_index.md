@@ -3,7 +3,6 @@ title: Hợp nhất các tệp SVGZ
 linktitle: Hợp nhất các tệp SVGZ
 second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp SVGZ bằng GroupDocs.Merger cho .NET với hướng dẫn từng bước này. Nâng cao kỹ năng thao tác tài liệu của bạn.
-type: docs
 weight: 14
 url: /vi/net/image-merging/merging-svgz-files/
 ---
@@ -59,7 +58,7 @@ Trong hướng dẫn này, chúng ta đã tìm hiểu cách hợp nhất các t�
 ### GroupDocs.Merger có thể xử lý các định dạng tệp khác ngoài SVGZ không?
 Có, GroupDocs.Merger hỗ trợ nhiều định dạng tài liệu khác nhau, bao gồm PDF, Word, Excel, PowerPoint, v.v.
 ### Tôi có thể tìm tài liệu chi tiết về GroupDocs.Merger ở đâu?
- Tham quan[tài liệu](https://reference.groupdocs.com/merger/net/) để biết thông tin toàn diện và ví dụ sử dụng.
+ Tham quan[tài liệu](https://tutorials.groupdocs.com/merger/net/) để biết thông tin toàn diện và ví dụ sử dụng.
 ### Có bản dùng thử miễn phí cho GroupDocs.Merger không?
  Có, bạn có thể truy cập bản dùng thử miễn phí[đây](https://releases.groupdocs.com/).
 ### Làm cách nào tôi có thể nhận được hỗ trợ cho GroupDocs.Merger?

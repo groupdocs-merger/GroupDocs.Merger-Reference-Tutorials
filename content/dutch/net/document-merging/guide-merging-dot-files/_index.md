@@ -3,7 +3,6 @@ title: Gids voor het samenvoegen van DOT-bestanden
 linktitle: Gids voor het samenvoegen van DOT-bestanden
 second_title: GroupDocs.Merger .NET API
 description: Leer hoe u DOT-bestanden (Graphviz) programmatisch samenvoegt met GroupDocs.Merger voor .NET. Voeg DOT-bestanden eenvoudig samen, combineer en manipuleer ze.
-type: docs
 weight: 13
 url: /nl/net/document-merging/guide-merging-dot-files/
 ---
@@ -13,7 +12,7 @@ In deze zelfstudie onderzoeken we hoe u DOT-bestanden (Graphviz) kunt samenvoege
 Voordat we beginnen, zorg ervoor dat u aan de volgende vereisten voldoet:
 - Basiskennis van programmeren in C# en .NET.
 - Visual Studio is op uw computer geïnstalleerd.
--  GroupDocs.Merger voor .NET-bibliotheek. Je kunt het downloaden van de[GroupDocs.Merger voor .NET-documentatie](https://reference.groupdocs.com/merger/net/).
+-  GroupDocs.Merger voor .NET-bibliotheek. Je kunt het downloaden van de[GroupDocs.Merger voor .NET-documentatie](https://tutorials.groupdocs.com/merger/net/).
 - Toegang tot de DOT-bestanden die u wilt samenvoegen.
 
 ## Naamruimten importeren

@@ -1,7 +1,6 @@
 ---
 title: .NET용 GroupDocs.Merger의 자습서 및 예
 linktitle: .NET 자습서용 GroupDocs.Merger
-type: docs
 weight: 10
 url: /ko/net/
 description: GroupDocs.Merger .NET을 사용하여 다양한 파일 형식을 손쉽게 병합하고 압축합니다. 이미지, 문서 등을 병합하는 방법에 대한 단계별 튜토리얼을 알아보세요!

@@ -3,7 +3,6 @@ title: Slå ihop XPS-filer
 linktitle: Slå ihop XPS-filer
 second_title: GroupDocs.Merger .NET API
 description: Lär dig hur du sammanfogar XPS-filer med GroupDocs.Merger för .NET utan ansträngning. Förenkla dokumentbehandlingen i dina .NET-applikationer.
-type: docs
 weight: 20
 url: /sv/net/document-merging/merge-xps-files/
 ---
@@ -52,7 +51,7 @@ Ja, GroupDocs.Merger stöder sammanslagning av olika dokumentformat som PDF, DOC
 ### Kan jag manipulera enskilda sidor i dokument med GroupDocs.Merger?
 Absolut, GroupDocs.Merger låter dig extrahera, ta bort, ordna om och rotera sidor i dokument.
 ### Var kan jag hitta ytterligare dokumentation för GroupDocs.Merger för .NET?
- Detaljerad dokumentation finns tillgänglig[här](https://reference.groupdocs.com/merger/net/).
+ Detaljerad dokumentation finns tillgänglig[här](https://tutorials.groupdocs.com/merger/net/).
 ### Har GroupDocs.Merger för .NET stöd för tillfälliga licensieringsalternativ?
  Ja, tillfälliga licenser kan erhållas[här](https://purchase.groupdocs.com/temporary-license/).
 ### Hur kan jag söka hjälp eller support relaterat till GroupDocs.Merger?

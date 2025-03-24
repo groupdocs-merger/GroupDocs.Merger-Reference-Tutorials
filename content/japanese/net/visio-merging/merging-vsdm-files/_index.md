@@ -3,7 +3,6 @@ title: VSDM ファイルのマージ
 linktitle: VSDM ファイルのマージ
 second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger for .NET を使用して VSDM ファイルをマージする方法を学びます。この使いやすいライブラリを使用して、ドキュメント管理タスクを簡素化します。
-type: docs
 weight: 11
 url: /ja/net/visio-merging/merging-vsdm-files/
 ---

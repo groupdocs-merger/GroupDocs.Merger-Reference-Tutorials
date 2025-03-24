@@ -3,7 +3,6 @@ title: वीटीएक्स फाइलों को मर्ज करन
 linktitle: वीटीएक्स फाइलों को मर्ज करने के लिए गाइड
 second_title: GroupDocs.Merger .NET API
 description: .NET के लिए GroupDocs.Merger का उपयोग करके VTX फ़ाइलों को प्रोग्रामेटिक रूप से मर्ज करना सीखें। कोड उदाहरणों के साथ चरण-दर-चरण मार्गदर्शिका।
-type: docs
 weight: 18
 url: /hi/net/visio-merging/guide-merging-vtx-files/
 ---
@@ -49,7 +48,7 @@ Console.WriteLine("\nVTX files merge completed successfully. \nCheck output in {
 ### क्या मैं .NET के लिए GroupDocs.Merger का उपयोग करके एकाधिक VTX फ़ाइलों को एक ही आउटपुट में मर्ज कर सकता हूँ?
  हाँ, आप इसका उपयोग करके अनेक VTX फ़ाइलों को एक में मर्ज कर सकते हैं`Join` GroupDocs.Merger द्वारा प्रदान की गई विधि।
 ### मुझे .NET के लिए GroupDocs.Merger के लिए और अधिक दस्तावेज़ कहां मिल सकते हैं?
- दौरा करना[प्रलेखन](https://reference.groupdocs.com/merger/net/) विस्तृत एपीआई संदर्भों और उपयोग के उदाहरणों के लिए।
+ दौरा करना[प्रलेखन](https://tutorials.groupdocs.com/merger/net/) विस्तृत एपीआई संदर्भों और उपयोग के उदाहरणों के लिए।
 ### क्या .NET के लिए GroupDocs.Merger का कोई परीक्षण संस्करण उपलब्ध है?
  हाँ, आप डाउनलोड कर सकते हैं[मुफ्त परीक्षण](https://releases.groupdocs.com/) खरीदने से पहले GroupDocs.Merger की क्षमताओं का पता लगाना।
 ### मैं .NET के लिए GroupDocs.Merger के लिए तकनीकी सहायता कैसे प्राप्त कर सकता हूँ?

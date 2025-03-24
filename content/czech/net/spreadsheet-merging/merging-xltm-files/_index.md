@@ -3,7 +3,6 @@ title: Sloučení souborů XLTM
 linktitle: Sloučení souborů XLTM
 second_title: GroupDocs.Merger .NET API
 description: Naučte se programově sloučit soubory XLTM. Podrobný průvodce s příklady kódu.
-type: docs
 weight: 16
 url: /cs/net/spreadsheet-merging/merging-xltm-files/
 ---
@@ -61,6 +60,6 @@ Ano, GroupDocs.Merger podporuje slučování různých formátů dokumentů, jak
 ### Je k dispozici bezplatná zkušební verze pro GroupDocs.Merger?
  Ano, máte přístup k bezplatné zkušební verzi GroupDocs.Merger[tady](https://releases.groupdocs.com/).
 ### Kde najdu dokumentaci k GroupDocs.Merger?
-Můžete se podívat na úplnou dokumentaci pro GroupDocs.Merger[tady](https://reference.groupdocs.com/merger/net/).
+Můžete se podívat na úplnou dokumentaci pro GroupDocs.Merger[tady](https://tutorials.groupdocs.com/merger/net/).
 ### Kde mohu získat technickou podporu pro GroupDocs.Merger?
  Pro technickou pomoc a podporu navštivte fórum GroupDocs.Merger[tady](https://forum.groupdocs.com/c/merger/32).

@@ -3,7 +3,6 @@ title: Zusammenführen von Tar-Dateien
 linktitle: Zusammenführen von Tar-Dateien
 second_title: GroupDocs.Merger .NET API
 description: Erfahren Sie, wie Sie TAR-Dateien mit GroupDocs.Merger für .NET programmgesteuert zusammenführen. Folgen Sie unserer Schritt-für-Schritt-Anleitung, um TAR-Archive effizient zu handhaben.
-type: docs
 weight: 11
 url: /de/net/merge-compress-files/merging-tar-files/
 ---

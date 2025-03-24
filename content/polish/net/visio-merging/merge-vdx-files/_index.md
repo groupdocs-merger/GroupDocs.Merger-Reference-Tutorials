@@ -3,7 +3,6 @@ title: Scal pliki VDX
 linktitle: Scal pliki VDX
 second_title: GroupDocs.Merger API .NET
 description: Dowiedz się, jak programowo scalić pliki VDX przy użyciu GroupDocs.Merger dla .NET. Ten samouczek zawiera przewodnik krok po kroku.
-type: docs
 weight: 10
 url: /pl/net/visio-merging/merge-vdx-files/
 ---

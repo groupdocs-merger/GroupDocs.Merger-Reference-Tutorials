@@ -3,7 +3,6 @@ title: Mesclando arquivos ODS
 linktitle: Mesclando arquivos ODS
 second_title: API GroupDocs.Merger .NET
 description: Aprenda como mesclar arquivos ODS sem esforço. Siga nosso guia passo a passo para uma manipulação perfeita de documentos.
-type: docs
 weight: 18
 url: /pt/net/spreadsheet-merging/merging-ods-files/
 ---

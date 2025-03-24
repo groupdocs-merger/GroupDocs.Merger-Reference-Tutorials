@@ -3,7 +3,6 @@ title: Συγχώνευση αρχείων XLT
 linktitle: Συγχώνευση αρχείων XLT
 second_title: GroupDocs.Merger .NET API
 description: Μάθετε πώς να συγχωνεύετε αρχεία XLT. Συνδυάστε πρότυπα του Excel μέσω προγραμματισμού σε C# με αυτόν τον οδηγό βήμα προς βήμα.
-type: docs
 weight: 15
 url: /el/net/spreadsheet-merging/merge-xlt-files/
 ---
@@ -59,7 +58,7 @@ Console.WriteLine("\nXLT files merge completed successfully. \nCheck output in {
 ### Είναι το GroupDocs.Merger συμβατό με άλλες μορφές αρχείων Excel, όπως το XLSX ή το XLS;
 Ναι, το GroupDocs.Merger υποστηρίζει διάφορες μορφές αρχείων Excel, συμπεριλαμβανομένων των XLSX, XLS και XLT.
 ### Πού μπορώ να βρω περισσότερα παραδείγματα και τεκμηρίωση για το GroupDocs.Merger για .NET;
- Λεπτομερής τεκμηρίωση και δείγματα κωδικών είναι διαθέσιμα[εδώ](https://reference.groupdocs.com/merger/net/).
+ Λεπτομερής τεκμηρίωση και δείγματα κωδικών είναι διαθέσιμα[εδώ](https://tutorials.groupdocs.com/merger/net/).
 ### Υπάρχει διαθέσιμη δοκιμαστική έκδοση του GroupDocs.Merger για δοκιμή;
  Ναι, μπορείτε να κάνετε λήψη μιας δωρεάν δοκιμαστικής έκδοσης από[εδώ](https://releases.groupdocs.com/).
 ### Πώς μπορώ να λάβω τεχνική υποστήριξη ή βοήθεια με το GroupDocs.Merger;

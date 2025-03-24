@@ -3,7 +3,6 @@ title: XLAM फ़ाइलें मर्ज करें
 linktitle: XLAM फ़ाइलें मर्ज करें
 second_title: GroupDocs.Merger .NET API
 description: जानें कि XLAM फ़ाइलों को आसानी से कैसे मर्ज किया जाए। इस शक्तिशाली एपीआई के साथ अपने दस्तावेज़ प्रबंधन कार्यों को सरल बनाएं।
-type: docs
 weight: 10
 url: /hi/net/spreadsheet-merging/merge-xlam-files/
 ---
@@ -80,7 +79,7 @@ Console.WriteLine("\nXLAM files merge completed successfully. \nCheck output in 
 
 ### प्रश्न: मुझे GroupDocs.Merger के लिए अधिक संसाधन और समर्थन कहां मिल सकता है?
 
- आप विजिट कर सकते हैं[GroupDocs.Merger दस्तावेज़ीकरण](https://reference.groupdocs.com/merger/net/) विस्तृत एपीआई संदर्भ के लिए और इसकी जांच करें[ग्रुपडॉक्स फोरम](https://forum.groupdocs.com/c/merger/32) सामुदायिक समर्थन के लिए.
+ आप विजिट कर सकते हैं[GroupDocs.Merger दस्तावेज़ीकरण](https://tutorials.groupdocs.com/merger/net/) विस्तृत एपीआई संदर्भ के लिए और इसकी जांच करें[ग्रुपडॉक्स फोरम](https://forum.groupdocs.com/c/merger/32) सामुदायिक समर्थन के लिए.
 
 ### प्रश्न: क्या मैं खरीदने से पहले GroupDocs.Merger आज़मा सकता हूँ?
 

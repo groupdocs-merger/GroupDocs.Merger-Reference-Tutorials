@@ -3,7 +3,6 @@ title: Sloučení souborů PDF
 linktitle: Sloučení souborů PDF
 second_title: GroupDocs.Merger .NET API
 description: Naučte se, jak sloučit soubory PDF programově v .NET pomocí GroupDocs.Merger pro bezproblémovou správu dokumentů.
-type: docs
 weight: 19
 url: /cs/net/document-merging/merging-pdf-files/
 ---

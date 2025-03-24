@@ -3,7 +3,6 @@ title: Sloučit soubory BMP
 linktitle: Sloučit soubory BMP
 second_title: GroupDocs.Merger .NET API
 description: Naučte se sloučit soubory BMP pomocí GroupDocs.Merger for .NET v tomto komplexním kurzu. Vyvíjejte své .NET aplikace efektivně.
-type: docs
 weight: 10
 url: /cs/net/image-merging/merge-bmp-files/
 ---

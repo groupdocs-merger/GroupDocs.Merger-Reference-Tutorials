@@ -3,7 +3,6 @@ title: 如何合併 VSDX 文件
 linktitle: 如何合併 VSDX 文件
 second_title: GroupDocs.Merger .NET API
 description: 了解如何使用 GroupDocs.Merger for .NET 以程式設計方式合併 VSDX 檔案。本教程提供了帶有程式碼範例的逐步說明。
-type: docs
 weight: 12
 url: /zh-hant/net/visio-merging/how-to-merge-vsdx-files/
 ---
@@ -59,7 +58,7 @@ Console.WriteLine("\nVSDX files merge completed successfully. \nCheck output in 
 ### GroupDocs.Merger for .NET 是否與 .NET Core 相容？
 是的，GroupDocs.Merger for .NET 與 .NET Core 以及傳統的 .NET Framework 相容。
 ### 在哪裡可以找到 GroupDocs.Merger for .NET 的詳細文件？
-參考綜合[文件](https://reference.groupdocs.com/merger/net/)適用於 .NET 的 GroupDocs.Merger。
+參考綜合[文件](https://tutorials.groupdocs.com/merger/net/)適用於 .NET 的 GroupDocs.Merger。
 ### 如何取得 GroupDocs.Merger for .NET 的臨時授權？
 您可以從以下機構獲得臨時許可證[臨時許可證頁面](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs.Merger for .NET 提供哪些支援選項？

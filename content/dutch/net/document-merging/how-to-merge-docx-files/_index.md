@@ -3,7 +3,6 @@ title: Hoe DOCX-bestanden samen te voegen
 linktitle: Hoe DOCX-bestanden samen te voegen
 second_title: GroupDocs.Merger .NET API
 description: Leer hoe u DOCX-bestanden programmatisch kunt samenvoegen in .NET met behulp van GroupDocs.Merger, waardoor taken voor documentmanipulatie efficiënt worden vereenvoudigd.
-type: docs
 weight: 12
 url: /nl/net/document-merging/how-to-merge-docx-files/
 ---
@@ -13,7 +12,7 @@ In de wereld van .NET-ontwikkeling kan het programmatisch samenvoegen van DOCX-b
 Zorg ervoor dat u aan de volgende vereisten voldoet voordat u aan de slag gaat:
 - Visual Studio is op uw computer geïnstalleerd.
 - Basiskennis van C# en .NET-ontwikkeling.
--  GroupDocs.Merger voor .NET-bibliotheek geïnstalleerd (zie[documentatie](https://reference.groupdocs.com/merger/net/) voor installatiedetails).
+-  GroupDocs.Merger voor .NET-bibliotheek geïnstalleerd (zie[documentatie](https://tutorials.groupdocs.com/merger/net/) voor installatiedetails).
 
 ## Naamruimten importeren
 Begin met het importeren van de benodigde naamruimten in uw C#-project:
@@ -49,7 +48,7 @@ Ja, GroupDocs.Merger ondersteunt verschillende documentformaten, waaronder DOCX,
 ### Kan ik het samenvoegproces aanpassen, zoals het opgeven van paginabereiken of het toevoegen van watermerken?
 Absoluut, GroupDocs.Merger biedt flexibele API's om het samenvoegproces aan te passen aan uw vereisten.
 ### Waar kan ik aanvullende ondersteuning of documentatie vinden voor GroupDocs.Merger voor .NET?
- U kunt verwijzen naar de[documentatie](https://reference.groupdocs.com/merger/net/) voor gedetailleerde API-referentie en voorbeelden.
+ U kunt verwijzen naar de[documentatie](https://tutorials.groupdocs.com/merger/net/) voor gedetailleerde API-referentie en voorbeelden.
 ### Biedt GroupDocs.Merger voor .NET een gratis proefperiode?
  Ja, u kunt aan de slag met een[gratis proefperiode](https://releases.groupdocs.com/) om de functies te verkennen voordat u een aankoop doet.
 ### Hoe kan ik een tijdelijke licentie verkrijgen voor GroupDocs.Merger voor .NET?

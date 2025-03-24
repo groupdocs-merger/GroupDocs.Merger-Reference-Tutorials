@@ -3,7 +3,6 @@ title: Zip 파일 병합 가이드
 linktitle: Zip 파일 병합 가이드
 second_title: GroupDocs.Merger .NET API
 description: .NET용 GroupDocs.Merger를 사용하여 프로그래밍 방식으로 ZIP 파일을 병합하는 방법을 알아보세요. 이 튜토리얼은 개발자를 위한 자세한 가이드를 제공합니다.
-type: docs
 weight: 12
 url: /ko/net/merge-compress-files/guide-merging-zip-files/
 ---

@@ -3,7 +3,6 @@ title: دمج جداول البيانات
 linktitle: دمج جداول البيانات
 second_title: GroupDocs.Merger .NET API
 description: يمكنك بسهولة دمج ملفات XLAM وXLS وXLSB وXLSM وXLSX وXLT وXLTM وXLTX وODS في .NET باستخدام GroupDocs.Merger. تبسيط مهام إدارة المستندات.
-type: docs
 weight: 23
 url: /ar/net/spreadsheet-merging/
 ---

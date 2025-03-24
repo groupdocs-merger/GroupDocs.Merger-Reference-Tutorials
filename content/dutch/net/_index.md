@@ -1,7 +1,6 @@
 ---
 title: Tutorials en voorbeelden van GroupDocs.Merger voor .NET
 linktitle: GroupDocs.Merger voor .NET-zelfstudies
-type: docs
 weight: 10
 url: /nl/net/
 description: Moeiteloos verschillende bestandsformaten samenvoegen en comprimeren met GroupDocs.Merger .NET. Leer stapsgewijze tutorials over het samenvoegen van afbeeldingen, documenten en meer!

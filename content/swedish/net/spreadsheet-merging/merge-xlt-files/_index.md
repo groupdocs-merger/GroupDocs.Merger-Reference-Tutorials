@@ -3,7 +3,6 @@ title: Slå samman XLT-filer
 linktitle: Slå samman XLT-filer
 second_title: GroupDocs.Merger .NET API
 description: Lär dig hur du slår samman XLT-filer. Kombinera Excel-mallar programmatiskt i C# med denna steg-för-steg-guide.
-type: docs
 weight: 15
 url: /sv/net/spreadsheet-merging/merge-xlt-files/
 ---
@@ -59,7 +58,7 @@ Ja, du kan slå samman flera XLT-filer genom att sekventiellt lägga till dem me
 ### Är GroupDocs.Merger kompatibel med andra Excel-filformat som XLSX eller XLS?
 Ja, GroupDocs.Merger stöder olika Excel-filformat, inklusive XLSX, XLS och XLT.
 ### Var kan jag hitta fler exempel och dokumentation för GroupDocs.Merger för .NET?
- Detaljerad dokumentation och kodexempel finns tillgängliga[här](https://reference.groupdocs.com/merger/net/).
+ Detaljerad dokumentation och kodexempel finns tillgängliga[här](https://tutorials.groupdocs.com/merger/net/).
 ### Finns det en testversion av GroupDocs.Merger tillgänglig för testning?
  Ja, du kan ladda ner en gratis testversion från[här](https://releases.groupdocs.com/).
 ### Hur kan jag få teknisk support eller hjälp med GroupDocs.Merger?

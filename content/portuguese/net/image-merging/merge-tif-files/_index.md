@@ -3,7 +3,6 @@ title: Mesclar arquivos TIF
 linktitle: Mesclar arquivos TIF
 second_title: API GroupDocs.Merger .NET
 description: Aprenda como mesclar arquivos TIF programaticamente usando GroupDocs.Merger for .NET. API eficiente de manipulação de documentos para desenvolvedores .NET.
-type: docs
 weight: 15
 url: /pt/net/image-merging/merge-tif-files/
 ---

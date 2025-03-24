@@ -3,7 +3,6 @@ title: 合并 PPTX 文件指南
 linktitle: 合并 PPTX 文件指南
 second_title: GroupDocs.Merger .NET API
 description: 了解如何使用 GroupDocs.Merger for .NET 合并 PPTX 文件。利用这个强大的 .NET 库简化文档管理。
-type: docs
 weight: 13
 url: /zh/net/presentation-merging/guide-merging-pptx-files/
 ---

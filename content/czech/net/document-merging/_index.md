@@ -3,7 +3,6 @@ title: Sloučení dokumentů
 linktitle: Sloučení dokumentů
 second_title: GroupDocs.Merger .NET API
 description: Bez námahy slučujte různé formáty dokumentů v .NET pomocí GroupDocs.Merger. Bezproblémově kombinujte DOC, DOCX, PDF a další. Vylepšete svou správu dokumentů ještě dnes!
-type: docs
 weight: 22
 url: /cs/net/document-merging/
 ---

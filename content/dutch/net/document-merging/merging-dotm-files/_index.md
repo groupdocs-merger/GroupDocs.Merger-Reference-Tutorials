@@ -3,7 +3,6 @@ title: DOTM-bestanden samenvoegen
 linktitle: DOTM-bestanden samenvoegen
 second_title: GroupDocs.Merger .NET API
 description: Leer hoe u DOTM-bestanden programmatisch samenvoegt met GroupDocs.Merger voor .NET. Deze uitgebreide handleiding biedt stapsgewijze instructies voor ontwikkelaars.
-type: docs
 weight: 14
 url: /nl/net/document-merging/merging-dotm-files/
 ---

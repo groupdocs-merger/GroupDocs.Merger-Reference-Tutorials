@@ -3,7 +3,6 @@ title: Συγχώνευση αρχείων PPS
 linktitle: Συγχώνευση αρχείων PPS
 second_title: GroupDocs.Merger .NET API
 description: Μάθετε πώς να συγχωνεύετε αρχεία PPS απρόσκοπτα χρησιμοποιώντας το GroupDocs.Merger για .NET. Οδηγός βήμα προς βήμα με παραδείγματα κώδικα. Βελτιώστε τις δεξιότητες χειρισμού εγγράφων σας.
-type: docs
 weight: 10
 url: /el/net/presentation-merging/merge-pps-files/
 ---
@@ -61,7 +60,7 @@ Console.WriteLine("\nPPS files merge completed successfully. \nCheck output in {
 ### Είναι το GroupDocs.Merger κατάλληλο για ομαδική επεξεργασία συγχωνεύσεων εγγράφων;
 Οπωσδήποτε, μπορείτε να αξιοποιήσετε το GroupDocs.Merger για εργασίες μαζικής επεξεργασίας για να συγχωνεύσετε πολλά έγγραφα ταυτόχρονα.
 ### Πού μπορώ να βρω την πλήρη τεκμηρίωση για το GroupDocs.Merger για .NET;
- Η πλήρης τεκμηρίωση είναι διαθέσιμη[εδώ](https://reference.groupdocs.com/merger/net/).
+ Η πλήρης τεκμηρίωση είναι διαθέσιμη[εδώ](https://tutorials.groupdocs.com/merger/net/).
 ### Πώς μπορώ να αποκτήσω μια προσωρινή άδεια για το GroupDocs.Merger για .NET;
  Μπορείτε να πάρετε μια προσωρινή άδεια από[εδώ](https://purchase.groupdocs.com/temporary-license/).
 ### Το GroupDocs παρέχει υποστήριξη για αντιμετώπιση προβλημάτων και ερωτήματα;

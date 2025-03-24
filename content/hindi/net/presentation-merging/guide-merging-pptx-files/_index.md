@@ -3,7 +3,6 @@ title: पीपीटीएक्स फाइलों को मर्ज क
 linktitle: पीपीटीएक्स फाइलों को मर्ज करने के लिए गाइड
 second_title: GroupDocs.Merger .NET API
 description: .NET के लिए GroupDocs.Merger का उपयोग करके PPTX फ़ाइलों को मर्ज करना सीखें। इस शक्तिशाली .NET लाइब्रेरी के साथ दस्तावेज़ प्रबंधन को सुव्यवस्थित करें।
-type: docs
 weight: 13
 url: /hi/net/presentation-merging/guide-merging-pptx-files/
 ---

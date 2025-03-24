@@ -3,7 +3,6 @@ title: बीएमपी फ़ाइलें मर्ज करें
 linktitle: बीएमपी फ़ाइलें मर्ज करें
 second_title: GroupDocs.Merger .NET API
 description: इस व्यापक ट्यूटोरियल के साथ जानें कि .NET के लिए GroupDocs.Merger का उपयोग करके BMP फ़ाइलों को कैसे मर्ज किया जाए। अपने .NET अनुप्रयोगों को कुशलतापूर्वक विकसित करें।
-type: docs
 weight: 10
 url: /hi/net/image-merging/merge-bmp-files/
 ---

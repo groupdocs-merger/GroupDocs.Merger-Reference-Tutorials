@@ -3,7 +3,6 @@ title: XLSM फ़ाइलों को मर्ज करने के लि
 linktitle: XLSM फ़ाइलों को मर्ज करने के लिए गाइड
 second_title: GroupDocs.Merger .NET API
 description: .NET के लिए GroupDocs.Merger के साथ XLSM फ़ाइलों को सहजता से मर्ज करें। Excel कार्यपुस्तिकाओं को प्रोग्रामेटिक रूप से कुशलतापूर्वक संयोजित करें। अपनी दस्तावेज़ हेरफेर क्षमताओं को बढ़ाएँ।
-type: docs
 weight: 13
 url: /hi/net/spreadsheet-merging/guide-merging-xlsm-files/
 ---

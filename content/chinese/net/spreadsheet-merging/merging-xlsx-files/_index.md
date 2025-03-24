@@ -3,7 +3,6 @@ title: 合并 XLSX 文件
 linktitle: 合并 XLSX 文件
 second_title: GroupDocs.Merger .NET API
 description: 了解如何使用 GroupDocs.Merger 在 .NET 中轻松合并 XLSX 文件。按照此分步教程进行无缝文档管理。
-type: docs
 weight: 14
 url: /zh/net/spreadsheet-merging/merging-xlsx-files/
 ---
@@ -54,7 +53,7 @@ Console.WriteLine("\nXLSX files merge completed successfully. \nCheck output in 
 ### GroupDocs.Merger 是否与 .NET Core 应用程序兼容？
 是的，GroupDocs.Merger 可以与 .NET Framework 和 .NET Core 项目一起使用。
 ### 在哪里可以找到 GroupDocs.Merger 的详细文档？
-提供详细文档[这里](https://reference.groupdocs.com/merger/net/).
+提供详细文档[这里](https://tutorials.groupdocs.com/merger/net/).
 ### GroupDocs.Merger 是否提供免费试用？
 是的，您可以免费试用[这里](https://releases.groupdocs.com/).
 ### 我如何获得 GroupDocs.Merger 的支持？

@@ -3,7 +3,6 @@ title: دمج الصور
 linktitle: دمج الصور
 second_title: GroupDocs.Merger .NET API
 description: دمج ملفات BMP وGIF وPNG وSVG وSVGZ وTIF وTIFF بسلاسة مع GroupDocs.Merger .NET. دمج معالجة المستندات بكفاءة في تطبيقات .NET الخاصة بك.
-type: docs
 weight: 21
 url: /ar/net/image-merging/
 ---

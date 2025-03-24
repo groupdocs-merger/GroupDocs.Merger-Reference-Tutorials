@@ -3,7 +3,6 @@ title: DOCX Dosyaları Nasıl Birleştirilir
 linktitle: DOCX Dosyaları Nasıl Birleştirilir
 second_title: GroupDocs.Merger .NET API'si
 description: Belge düzenleme görevlerini verimli bir şekilde basitleştirerek, GroupDocs.Merger'ı kullanarak DOCX dosyalarını .NET'te programlı olarak nasıl birleştireceğinizi öğrenin.
-type: docs
 weight: 12
 url: /tr/net/document-merging/how-to-merge-docx-files/
 ---
@@ -13,7 +12,7 @@ url: /tr/net/document-merging/how-to-merge-docx-files/
 Başlamadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
 - Makinenizde Visual Studio yüklü.
 - C# ve .NET geliştirmenin temel anlayışı.
--  .NET kitaplığı için GroupDocs.Merger yüklü (bkz.[dokümantasyon](https://reference.groupdocs.com/merger/net/) kurulum ayrıntıları için).
+-  .NET kitaplığı için GroupDocs.Merger yüklü (bkz.[dokümantasyon](https://tutorials.groupdocs.com/merger/net/) kurulum ayrıntıları için).
 
 ## Ad Alanlarını İçe Aktar
 C# projenize gerekli ad alanlarını içe aktararak başlayın:
@@ -49,7 +48,7 @@ Evet, GroupDocs.Merger, DOCX, PDF, XLSX, PPTX ve daha fazlasını içeren çeşi
 ### Sayfa aralıklarını belirlemek veya filigran eklemek gibi birleştirme sürecini özelleştirebilir miyim?
 Kesinlikle GroupDocs.Merger, birleştirme sürecini gereksinimlerinize göre özelleştirmek için esnek API'ler sağlar.
 ### GroupDocs.Merger for .NET için ek desteği veya belgeleri nerede bulabilirim?
- Şuraya başvurabilirsiniz:[dokümantasyon](https://reference.groupdocs.com/merger/net/) ayrıntılı API referansı ve örnekler için.
+ Şuraya başvurabilirsiniz:[dokümantasyon](https://tutorials.groupdocs.com/merger/net/) ayrıntılı API referansı ve örnekler için.
 ### GroupDocs.Merger for .NET ücretsiz deneme olanağı sunuyor mu?
  Evet, şu şekilde başlayabilirsiniz:[ücretsiz deneme](https://releases.groupdocs.com/) Bir satın alma işlemi yapmadan önce özellikleri keşfetmek için.
 ### GroupDocs.Merger for .NET için nasıl geçici lisans alabilirim?

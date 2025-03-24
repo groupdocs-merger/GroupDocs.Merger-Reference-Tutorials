@@ -3,7 +3,6 @@ title: Hướng dẫn gộp file DOT
 linktitle: Hướng dẫn gộp file DOT
 second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp DOT (Graphviz) theo chương trình bằng GroupDocs.Merger cho .NET. Hợp nhất, kết hợp và thao tác các tệp DOT một cách dễ dàng.
-type: docs
 weight: 13
 url: /vi/net/document-merging/guide-merging-dot-files/
 ---
@@ -13,7 +12,7 @@ Trong hướng dẫn này, chúng ta sẽ khám phá cách hợp nhất các t�
 Trước khi chúng tôi bắt đầu, hãy đảm bảo bạn có các điều kiện tiên quyết sau:
 - Kiến thức cơ bản về lập trình C# và .NET.
 - Visual Studio được cài đặt trên máy của bạn.
--  GroupDocs.Merger cho thư viện .NET. Bạn có thể tải nó xuống từ[Tài liệu GroupDocs.Merger dành cho .NET](https://reference.groupdocs.com/merger/net/).
+-  GroupDocs.Merger cho thư viện .NET. Bạn có thể tải nó xuống từ[Tài liệu GroupDocs.Merger dành cho .NET](https://tutorials.groupdocs.com/merger/net/).
 - Truy cập vào các tệp DOT mà bạn muốn hợp nhất.
 
 ## Nhập không gian tên

@@ -3,7 +3,6 @@ title: Slår ihop TIFF-filer
 linktitle: Slår ihop TIFF-filer
 second_title: GroupDocs.Merger .NET API
 description: Lär dig hur du slår samman TIFF-filer med GroupDocs.Merger för .NET. Slå samman, dela och ändra dokument sömlöst i dina .NET-applikationer.
-type: docs
 weight: 16
 url: /sv/net/image-merging/merging-tiff-files/
 ---
@@ -60,6 +59,6 @@ Absolut, GroupDocs.Merger är designad för att hantera stora dokumentvolymer ef
 ### Erbjuder GroupDocs.Merger testversioner för utvärdering?
  Ja, du kan få tillgång till en gratis testversion av GroupDocs.Merger från[här](https://releases.groupdocs.com/).
 ### Var kan jag hitta omfattande dokumentation för GroupDocs.Merger?
- Se dokumentationen[här](https://reference.groupdocs.com/merger/net/) för detaljerade API-referenser och guider.
+ Se dokumentationen[här](https://tutorials.groupdocs.com/merger/net/) för detaljerade API-referenser och guider.
 ### Hur kan jag få support för GroupDocs.Merger?
  Besök GroupDocs community-forum[här](https://forum.groupdocs.com/c/merger/32) för stöd och diskussioner.

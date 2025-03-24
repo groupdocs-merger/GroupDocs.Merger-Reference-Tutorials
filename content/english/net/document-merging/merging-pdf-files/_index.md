@@ -3,7 +3,6 @@ title: Merging PDF Files
 linktitle: Merging PDF Files
 second_title: GroupDocs.Merger .NET API
 description: Learn how to merge PDF files programmatically in .NET using GroupDocs.Merger for seamless document management.
-type: docs
 weight: 19
 url: /net/document-merging/merging-pdf-files/
 ---

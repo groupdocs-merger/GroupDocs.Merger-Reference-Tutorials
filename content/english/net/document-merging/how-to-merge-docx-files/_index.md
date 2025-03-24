@@ -3,7 +3,6 @@ title: How to Merge DOCX Files
 linktitle: How to Merge DOCX Files
 second_title: GroupDocs.Merger .NET API
 description: Learn how to merge DOCX files programmatically in .NET using GroupDocs.Merger, simplifying document manipulation tasks efficiently.
-type: docs
 weight: 12
 url: /net/document-merging/how-to-merge-docx-files/
 ---
@@ -13,7 +12,7 @@ In the world of .NET development, merging DOCX files programmatically can be a p
 Before getting started, ensure you have the following prerequisites:
 - Visual Studio installed on your machine.
 - Basic understanding of C# and .NET development.
-- GroupDocs.Merger for .NET library installed (refer to [documentation](https://reference.groupdocs.com/merger/net/) for installation details).
+- GroupDocs.Merger for .NET library installed (refer to [documentation](https://tutorials.groupdocs.com/merger/net/) for installation details).
 
 ## Import Namespaces
 Begin by importing the necessary namespaces in your C# project:
@@ -49,7 +48,7 @@ Yes, GroupDocs.Merger supports a variety of document formats including DOCX, PDF
 ### Can I customize the merge process, such as specifying page ranges or adding watermarks?
 Absolutely, GroupDocs.Merger provides flexible APIs to customize the merge process according to your requirements.
 ### Where can I find additional support or documentation for GroupDocs.Merger for .NET?
-You can refer to the [documentation](https://reference.groupdocs.com/merger/net/) for detailed API reference and examples.
+You can refer to the [documentation](https://tutorials.groupdocs.com/merger/net/) for detailed API tutorials and examples.
 ### Does GroupDocs.Merger for .NET offer a free trial?
 Yes, you can get started with a [free trial](https://releases.groupdocs.com/) to explore the features before making a purchase.
 ### How can I obtain a temporary license for GroupDocs.Merger for .NET?

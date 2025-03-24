@@ -3,7 +3,6 @@ title: 使用 GroupDocs.Merger for .NET 合併 TXT 檔案的指南
 linktitle: 使用 GroupDocs.Merger for .NET 合併 TXT 檔案的指南
 second_title: GroupDocs.Merger .NET API
 description: 使用 GroupDocs.Merger 在 .NET 中無縫合併 TXT 檔案。開發人員的分步指南。提供文件和支援。
-type: docs
 weight: 18
 url: /zh-hant/net/document-merging/guide-merging-txt-files/
 ---
@@ -63,7 +62,7 @@ Console.WriteLine("\nTXT files merge completed successfully. \nCheck output in {
 ### GroupDocs.Merger 與 .NET Core 應用程式相容嗎？
 是的，GroupDocs.Merger 與 .NET Framework 和 .NET Core 也相容。
 ### 在哪裡可以找到有關 GroupDocs.Merger 的更多文件和支援？
-請參閱[文件](https://reference.groupdocs.com/merger/net/)取得詳細的 API 參考。您也可以向以下機構尋求協助[集團文檔論壇](https://forum.groupdocs.com/c/merger/32)如有任何疑問。
+請參閱[文件](https://tutorials.groupdocs.com/merger/net/)取得詳細的 API 參考。您也可以向以下機構尋求協助[集團文檔論壇](https://forum.groupdocs.com/c/merger/32)如有任何疑問。
 ### GroupDocs.Merger for .NET 是否有免費試用版？
 是的，您可以探索[免費試用版](https://releases.groupdocs.com/)GroupDocs.Merger 來評估其功能。
 ### 如何取得 GroupDocs.Merger 的臨時授權？

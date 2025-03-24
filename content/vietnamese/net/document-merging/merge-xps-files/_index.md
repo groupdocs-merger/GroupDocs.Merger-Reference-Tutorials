@@ -3,7 +3,6 @@ title: Hợp nhất các tệp XPS
 linktitle: Hợp nhất các tệp XPS
 second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp XPS bằng GroupDocs.Merger cho .NET một cách dễ dàng. Đơn giản hóa việc xử lý tài liệu trong các ứng dụng .NET của bạn.
-type: docs
 weight: 20
 url: /vi/net/document-merging/merge-xps-files/
 ---
@@ -52,7 +51,7 @@ Có, GroupDocs.Merger hỗ trợ hợp nhất nhiều định dạng tài liệu
 ### Tôi có thể thao tác các trang riêng lẻ trong tài liệu bằng GroupDocs.Merger không?
 Hoàn toàn có thể, GroupDocs.Merger cho phép bạn trích xuất, xóa, sắp xếp lại và xoay các trang trong tài liệu.
 ### Tôi có thể tìm thêm tài liệu về GroupDocs.Merger cho .NET ở đâu?
- Tài liệu chi tiết có sẵn[đây](https://reference.groupdocs.com/merger/net/).
+ Tài liệu chi tiết có sẵn[đây](https://tutorials.groupdocs.com/merger/net/).
 ### GroupDocs.Merger cho .NET có hỗ trợ các tùy chọn cấp phép tạm thời không?
  Có, có thể lấy được giấy phép tạm thời[đây](https://purchase.groupdocs.com/temporary-license/).
 ### Làm cách nào tôi có thể tìm kiếm sự trợ giúp hoặc hỗ trợ liên quan đến GroupDocs.Merger?

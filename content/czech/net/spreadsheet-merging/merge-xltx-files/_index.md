@@ -3,7 +3,6 @@ title: Sloučit soubory XLTX
 linktitle: Sloučit soubory XLTX
 second_title: GroupDocs.Merger .NET API
 description: Naučte se, jak bez námahy sloučit soubory XLTX. Začněte slučovat soubory XLTX a efektivně zefektivněte úkoly správy dokumentů.
-type: docs
 weight: 17
 url: /cs/net/spreadsheet-merging/merge-xltx-files/
 ---
@@ -63,4 +62,4 @@ Ano, GroupDocs.Merger for .NET nevyžaduje instalaci aplikace Microsoft Excel do
 ### Zachová GroupDocs.Merger for .NET během procesu sloučení formátování?
 Ano, GroupDocs.Merger zajišťuje zachování formátování a integrity dat při slučování souborů XLTX.
 ### Kde najdu další podporu nebo dokumentaci pro GroupDocs.Merger pro .NET?
- Navštivte[Fórum GroupDocs.Merger](https://forum.groupdocs.com/c/merger/32) pro podporu a viz[dokumentace](https://reference.groupdocs.com/merger/net/) pro podrobný návod.
+ Navštivte[Fórum GroupDocs.Merger](https://forum.groupdocs.com/c/merger/32) pro podporu a viz[dokumentace](https://tutorials.groupdocs.com/merger/net/) pro podrobný návod.

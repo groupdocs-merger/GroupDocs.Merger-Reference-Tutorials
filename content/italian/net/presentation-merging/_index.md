@@ -3,7 +3,6 @@ title: Unione delle presentazioni
 linktitle: Unione delle presentazioni
 second_title: API GroupDocs.Merger .NET
 description: Unisci facilmente vari formati di file di presentazione. Segui i nostri tutorial per unire file PPS, PPSX, PPT e OTP in modo efficiente. #GroupDocs.Merger
-type: docs
 weight: 25
 url: /it/net/presentation-merging/
 ---

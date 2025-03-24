@@ -3,7 +3,6 @@ title: Slå samman TIF-filer
 linktitle: Slå samman TIF-filer
 second_title: GroupDocs.Merger .NET API
 description: Lär dig hur du sammanfogar TIF-filer programmatiskt med GroupDocs.Merger för .NET. Effektivt API för dokumentmanipulering för .NET-utvecklare.
-type: docs
 weight: 15
 url: /sv/net/image-merging/merge-tif-files/
 ---

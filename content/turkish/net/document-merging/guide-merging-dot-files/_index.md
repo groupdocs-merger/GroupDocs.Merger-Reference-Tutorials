@@ -3,7 +3,6 @@ title: DOT Dosyalarını Birleştirme Kılavuzu
 linktitle: DOT Dosyalarını Birleştirme Kılavuzu
 second_title: GroupDocs.Merger .NET API'si
 description: .NET için GroupDocs.Merger'ı kullanarak DOT (Graphviz) dosyalarını programlı olarak nasıl birleştireceğinizi öğrenin. DOT dosyalarını kolaylıkla birleştirin, birleştirin ve değiştirin.
-type: docs
 weight: 13
 url: /tr/net/document-merging/guide-merging-dot-files/
 ---
@@ -13,7 +12,7 @@ Bu eğitimde, GroupDocs.Merger for .NET'i kullanarak DOT (Graphviz) dosyaların�
 Başlamadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
 - Temel C# ve .NET programlama bilgisi.
 - Makinenizde Visual Studio yüklü.
--  .NET kitaplığı için GroupDocs.Merger. adresinden indirebilirsiniz.[.NET belgeleri için GroupDocs.Merger](https://reference.groupdocs.com/merger/net/).
+-  .NET kitaplığı için GroupDocs.Merger. adresinden indirebilirsiniz.[.NET belgeleri için GroupDocs.Merger](https://tutorials.groupdocs.com/merger/net/).
 - Birleştirmek istediğiniz DOT dosyalarına erişim.
 
 ## Ad Alanlarını İçe Aktar

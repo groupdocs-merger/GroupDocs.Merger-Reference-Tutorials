@@ -3,7 +3,6 @@ title: Cách hợp nhất các tệp DOCX
 linktitle: Cách hợp nhất các tệp DOCX
 second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp DOCX theo chương trình trong .NET bằng GroupDocs.Merger, đơn giản hóa các tác vụ thao tác tài liệu một cách hiệu quả.
-type: docs
 weight: 12
 url: /vi/net/document-merging/how-to-merge-docx-files/
 ---
@@ -13,7 +12,7 @@ Trong thế giới phát triển .NET, việc hợp nhất các tệp DOCX theo 
 Trước khi bắt đầu, hãy đảm bảo bạn có các điều kiện tiên quyết sau:
 - Visual Studio được cài đặt trên máy của bạn.
 - Hiểu biết cơ bản về phát triển C# và .NET.
--  GroupDocs.Merger cho thư viện .NET đã được cài đặt (tham khảo[tài liệu](https://reference.groupdocs.com/merger/net/) để biết chi tiết cài đặt).
+-  GroupDocs.Merger cho thư viện .NET đã được cài đặt (tham khảo[tài liệu](https://tutorials.groupdocs.com/merger/net/) để biết chi tiết cài đặt).
 
 ## Nhập không gian tên
 Bắt đầu bằng cách nhập các vùng tên cần thiết trong dự án C# của bạn:
@@ -49,7 +48,7 @@ Có, GroupDocs.Merger hỗ trợ nhiều định dạng tài liệu bao gồm DO
 ### Tôi có thể tùy chỉnh quy trình hợp nhất, chẳng hạn như chỉ định phạm vi trang hoặc thêm hình mờ không?
 Hoàn toàn có thể, GroupDocs.Merger cung cấp các API linh hoạt để tùy chỉnh quy trình hợp nhất theo yêu cầu của bạn.
 ### Tôi có thể tìm tài liệu hoặc hỗ trợ bổ sung cho GroupDocs.Merger cho .NET ở đâu?
- Bạn có thể tham khảo các[tài liệu](https://reference.groupdocs.com/merger/net/) để biết các ví dụ và tài liệu tham khảo API chi tiết.
+ Bạn có thể tham khảo các[tài liệu](https://tutorials.groupdocs.com/merger/net/) để biết các ví dụ và tài liệu tham khảo API chi tiết.
 ### GroupDocs.Merger cho .NET có cung cấp bản dùng thử miễn phí không?
  Có, bạn có thể bắt đầu với một[dùng thử miễn phí](https://releases.groupdocs.com/) để khám phá các tính năng trước khi mua hàng.
 ### Làm cách nào tôi có thể nhận được giấy phép tạm thời cho GroupDocs.Merger cho .NET?

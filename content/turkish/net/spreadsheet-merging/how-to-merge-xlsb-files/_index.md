@@ -3,7 +3,6 @@ title: XLSB Dosyaları Nasıl Birleştirilir
 linktitle: XLSB Dosyaları Nasıl Birleştirilir
 second_title: GroupDocs.Merger .NET API'si
 description: XLSB dosyalarını nasıl birleştireceğinizi öğrenin. Bu adım adım kılavuz, belge işleme görevlerini basitleştirir.
-type: docs
 weight: 12
 url: /tr/net/spreadsheet-merging/how-to-merge-xlsb-files/
 ---
@@ -54,7 +53,7 @@ Bu adımları izleyerek XLSB dosyalarını kolayca birleştirebilirsiniz. Bu API
 ### GroupDocs.Merger, XLSB'nin yanı sıra diğer dosya formatlarını da işleyebilir mi?
 Evet, GroupDocs.Merger, DOCX, PDF, XLSX, PPTX ve daha fazlasını içeren çok çeşitli belge formatlarını destekler.
 ### GroupDocs.Merger için daha fazla belgeyi nerede bulabilirim?
- Ziyaret edin[dokümantasyon](https://reference.groupdocs.com/merger/net/) ayrıntılı kullanım talimatları ve API referansları için.
+ Ziyaret edin[dokümantasyon](https://tutorials.groupdocs.com/merger/net/) ayrıntılı kullanım talimatları ve API referansları için.
 ### GroupDocs.Merger'ın ücretsiz deneme sürümü mevcut mu?
  Evet, şu adrese erişebilirsiniz:[ücretsiz deneme](https://releases.groupdocs.com/)GroupDocs.Merger'ın özelliklerini keşfetmek için.
 ### GroupDocs.Merger için nasıl teknik destek alabilirim?

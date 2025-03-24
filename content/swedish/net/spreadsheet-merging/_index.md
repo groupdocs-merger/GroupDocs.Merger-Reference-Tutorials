@@ -3,7 +3,6 @@ title: Sammanfogning av kalkylark
 linktitle: Sammanfogning av kalkylark
 second_title: GroupDocs.Merger .NET API
 description: Slå enkelt ihop XLAM-, XLS-, XLSB-, XLSM-, XLSX-, XLT-, XLTM-, XLTX- och ODS-filer i .NET med GroupDocs.Merger. Förenkla dokumenthanteringsuppgifter.
-type: docs
 weight: 23
 url: /sv/net/spreadsheet-merging/
 ---

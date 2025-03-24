@@ -3,7 +3,6 @@ title: كيفية دمج ملفات PPT
 linktitle: كيفية دمج ملفات PPT
 second_title: GroupDocs.Merger .NET API
 description: تعرف على كيفية دمج ملفات PowerPoint (PPT) باستخدام GroupDocs.Merger لـ .NET دون عناء. قم بتحسين تطبيقات .NET الخاصة بك باستخدام واجهة برمجة التطبيقات القوية هذه.
-type: docs
 weight: 12
 url: /ar/net/presentation-merging/how-to-merge-ppt-files/
 ---

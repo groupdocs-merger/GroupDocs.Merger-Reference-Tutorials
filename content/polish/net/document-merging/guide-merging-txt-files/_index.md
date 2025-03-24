@@ -3,7 +3,6 @@ title: Przewodnik po łączeniu plików TXT za pomocą GroupDocs.Merger dla .NET
 linktitle: Przewodnik po łączeniu plików TXT za pomocą GroupDocs.Merger dla .NET
 second_title: GroupDocs.Merger API .NET
 description: Bezproblemowo łącz pliki TXT w platformie .NET za pomocą GroupDocs.Merger. Przewodnik krok po kroku dla programistów. Dostępna dokumentacja i wsparcie.
-type: docs
 weight: 18
 url: /pl/net/document-merging/guide-merging-txt-files/
 ---
@@ -63,7 +62,7 @@ Tak, GroupDocs.Merger obsługuje łączenie różnych formatów plików, takich 
 ### Czy GroupDocs.Merger jest kompatybilny z aplikacjami .NET Core?
 Tak, GroupDocs.Merger jest kompatybilny zarówno z .NET Framework, jak i .NET Core.
 ### Gdzie mogę znaleźć dalszą dokumentację i wsparcie dotyczące GroupDocs.Merger?
- Patrz[dokumentacja](https://reference.groupdocs.com/merger/net/) szczegółowe odniesienia do API. Możesz także zwrócić się o pomoc do[Forum GroupDocs](https://forum.groupdocs.com/c/merger/32) na wszelkie pytania.
+ Patrz[dokumentacja](https://tutorials.groupdocs.com/merger/net/) szczegółowe odniesienia do API. Możesz także zwrócić się o pomoc do[Forum GroupDocs](https://forum.groupdocs.com/c/merger/32) na wszelkie pytania.
 ### Czy dostępna jest bezpłatna wersja próbna programu GroupDocs.Merger dla platformy .NET?
  Tak, możesz poznać m.in[bezpłatna wersja próbna](https://releases.groupdocs.com/) GroupDocs.Merger w celu oceny jego możliwości.
 ### Jak mogę uzyskać tymczasową licencję na GroupDocs.Merger?

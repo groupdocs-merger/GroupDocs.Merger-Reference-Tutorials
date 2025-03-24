@@ -3,7 +3,6 @@ title: Slå samman och dela dokument enkelt med GroupDocs.Merger
 linktitle: Instruktioner för GroupDocs.Merger
 additionalTitle: GroupDocs API-referenser
 description: Sammanfoga, dela och komprimera dokument enkelt över .NET- och Java-plattformar med våra experthandledningar om GroupDocs.Merger. Lås upp sömlös filhantering!
-type: docs
 weight: 11
 url: /sv/
 is_root: true

@@ -3,7 +3,6 @@ title: पीडीएफ फाइलों को मर्ज करना
 linktitle: पीडीएफ फाइलों को मर्ज करना
 second_title: GroupDocs.Merger .NET API
 description: निर्बाध दस्तावेज़ प्रबंधन के लिए GroupDocs.Merger का उपयोग करके .NET में PDF फ़ाइलों को प्रोग्रामेटिक रूप से मर्ज करना सीखें।
-type: docs
 weight: 19
 url: /hi/net/document-merging/merging-pdf-files/
 ---

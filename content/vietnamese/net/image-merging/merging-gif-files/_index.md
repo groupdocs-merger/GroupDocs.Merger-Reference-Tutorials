@@ -3,7 +3,6 @@ title: Hợp nhất các tệp GIF
 linktitle: Hợp nhất các tệp GIF
 second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp GIF bằng GroupDocs.Merger cho .NET. Kết hợp nhiều ảnh GIF theo chương trình với hướng dẫn từng bước.
-type: docs
 weight: 11
 url: /vi/net/image-merging/merging-gif-files/
 ---
@@ -63,6 +62,6 @@ Có, GroupDocs.Merger hỗ trợ hợp nhất nhiều định dạng tài liệu
 ### Câu hỏi: Làm cách nào tôi có thể nhận được hỗ trợ kỹ thuật cho GroupDocs.Merger?
  Để được hỗ trợ kỹ thuật, hãy truy cập GroupDocs.Merger[diễn đàn](https://forum.groupdocs.com/c/merger/32) nơi bạn có thể đặt câu hỏi và tương tác với cộng đồng.
 ### Câu hỏi: Tôi có thể tìm tài liệu chi tiết về GroupDocs.Merger cho .NET ở đâu?
- Khám phá tài liệu toàn diện[đây](https://reference.groupdocs.com/merger/net/) để biết thông tin chi tiết về cách sử dụng GroupDocs.Merger trong các ứng dụng .NET của bạn.
+ Khám phá tài liệu toàn diện[đây](https://tutorials.groupdocs.com/merger/net/) để biết thông tin chi tiết về cách sử dụng GroupDocs.Merger trong các ứng dụng .NET của bạn.
 ### Câu hỏi: Tôi có thể xin giấy phép tạm thời cho GroupDocs.Merger không?
  Có, bạn có thể xin giấy phép tạm thời từ[đây](https://purchase.groupdocs.com/temporary-license/) để đánh giá khả năng của GroupDocs.Merger trước khi mua.

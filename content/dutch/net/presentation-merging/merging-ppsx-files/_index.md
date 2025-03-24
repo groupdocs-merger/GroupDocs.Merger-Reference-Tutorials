@@ -3,7 +3,6 @@ title: PPSX-bestanden samenvoegen
 linktitle: PPSX-bestanden samenvoegen
 second_title: GroupDocs.Merger .NET API
 description: Voeg PPSX-bestanden eenvoudig samen met GroupDocs.Merger voor .NET. Volg onze stapsgewijze handleiding om taken voor het samenvoegen van bestanden te automatiseren! Verbeter uw documentbeheerworkflow.
-type: docs
 weight: 11
 url: /nl/net/presentation-merging/merging-ppsx-files/
 ---
@@ -55,7 +54,7 @@ Ja, GroupDocs.Merger ondersteunt een breed scala aan documentformaten, waaronder
 ### Kan ik gecodeerde PPSX-bestanden samenvoegen met GroupDocs.Merger?
 GroupDocs.Merger kan zowel gecodeerde als met een wachtwoord beveiligde bestanden verwerken, waardoor veilige documentmanipulatie wordt gegarandeerd.
 ### Waar kan ik aanvullende ondersteuning of documentatie voor GroupDocs.Merger vinden?
- Ontdek het uitgebreide[documentatie](https://reference.groupdocs.com/merger/net/) en neem contact op met de[Helpforum](https://forum.groupdocs.com/c/merger/32) Voor assistentie.
+ Ontdek het uitgebreide[documentatie](https://tutorials.groupdocs.com/merger/net/) en neem contact op met de[Helpforum](https://forum.groupdocs.com/c/merger/32) Voor assistentie.
 ### Heeft GroupDocs.Merger een licentie nodig voor commercieel gebruik?
  Ja, voor commercieel gebruik is een geldige licentie vereist. Een licentie kunt u verkrijgen bij de[aankooppagina](https://purchase.groupdocs.com/buy) of gebruik een[tijdelijke licentie](https://purchase.groupdocs.com/temporary-license/) voor evaluatie.
 ### Kan ik GroupDocs.Merger uitproberen voordat ik een aankoop doe?

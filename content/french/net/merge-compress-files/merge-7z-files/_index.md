@@ -3,7 +3,6 @@ title: Comment fusionner des fichiers 7z
 linktitle: Comment fusionner des fichiers 7z
 second_title: API GroupDocs.Merger .NET
 description: Fusionnez sans effort des fichiers 7z à l'aide de GroupDocs.Merger pour .NET. Suivez notre guide étape par étape pour combiner plusieurs archives en une seule de manière transparente.
-type: docs
 weight: 10
 url: /fr/net/merge-compress-files/merge-7z-files/
 ---

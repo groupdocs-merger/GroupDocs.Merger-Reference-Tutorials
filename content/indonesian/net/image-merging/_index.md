@@ -3,7 +3,6 @@ title: Penggabungan Gambar
 linktitle: Penggabungan Gambar
 second_title: GroupDocs.Merger .NET API
 description: Gabungkan file BMP, GIF, PNG, SVG, SVGZ, TIF, dan TIFF secara mulus dengan GroupDocs.Merger .NET. Integrasikan manipulasi dokumen secara efisien ke dalam aplikasi .NET Anda.
-type: docs
 weight: 21
 url: /id/net/image-merging/
 ---

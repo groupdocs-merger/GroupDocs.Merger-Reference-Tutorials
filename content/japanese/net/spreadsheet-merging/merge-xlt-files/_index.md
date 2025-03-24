@@ -3,7 +3,6 @@ title: XLT ファイルを結合する
 linktitle: XLT ファイルを結合する
 second_title: GroupDocs.Merger .NET API
 description: XLT ファイルをマージする方法を学びます。このステップバイステップ ガイドを使用して、C# でプログラム的に Excel テンプレートを結合します。
-type: docs
 weight: 15
 url: /ja/net/spreadsheet-merging/merge-xlt-files/
 ---
@@ -59,7 +58,7 @@ Console.WriteLine("\nXLT files merge completed successfully. \nCheck output in {
 ### GroupDocs.Merger は、XLSX や XLS などの他の Excel ファイル形式と互換性がありますか?
 はい、GroupDocs.Merger は、XLSX、XLS、XLT などのさまざまな Excel ファイル形式をサポートしています。
 ### GroupDocs.Merger for .NET のその他の例やドキュメントはどこで見つけられますか?
-詳細なドキュメントとコードサンプルが利用可能です[ここ](https://reference.groupdocs.com/merger/net/).
+詳細なドキュメントとコードサンプルが利用可能です[ここ](https://tutorials.groupdocs.com/merger/net/).
 ### テストに利用できる GroupDocs.Merger の試用版はありますか?
 はい、無料試用版を次からダウンロードできます。[ここ](https://releases.groupdocs.com/).
 ### GroupDocs.Merger に関するテクニカル サポートや支援を受けるにはどうすればよいですか?

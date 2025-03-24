@@ -3,7 +3,6 @@ title: دمج ملفات القطران
 linktitle: دمج ملفات القطران
 second_title: GroupDocs.Merger .NET API
 description: تعرف على كيفية دمج ملفات TAR برمجياً باستخدام GroupDocs.Merger لـ .NET. اتبع دليلنا خطوة بخطوة للتعامل مع أرشيفات TAR بكفاءة.
-type: docs
 weight: 11
 url: /ar/net/merge-compress-files/merging-tar-files/
 ---

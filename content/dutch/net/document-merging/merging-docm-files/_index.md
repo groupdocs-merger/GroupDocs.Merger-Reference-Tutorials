@@ -3,7 +3,6 @@ title: DOCM-bestanden samenvoegen
 linktitle: DOCM-bestanden samenvoegen
 second_title: GroupDocs.Merger .NET API
 description: Leer hoe u DOCM-bestanden naadloos kunt samenvoegen met GroupDocs.Merger voor .NET. Eenvoudige en efficiënte documentmanipulatie voor .NET-toepassingen.
-type: docs
 weight: 11
 url: /nl/net/document-merging/merging-docm-files/
 ---

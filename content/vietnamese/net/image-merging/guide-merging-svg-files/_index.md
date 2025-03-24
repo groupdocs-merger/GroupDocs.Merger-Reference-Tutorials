@@ -3,7 +3,6 @@ title: Hướng dẫn gộp file SVG
 linktitle: Hướng dẫn gộp file SVG
 second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp SVG theo chương trình bằng GroupDocs.Merger cho .NET. Kết hợp nhiều tài liệu SVG một cách dễ dàng.
-type: docs
 weight: 13
 url: /vi/net/image-merging/guide-merging-svg-files/
 ---
@@ -90,7 +89,7 @@ Trả lời: Có, GroupDocs.Merger được thiết kế để xử lý các ho�
 
 ### Câu hỏi 4: Tôi có thể tìm thêm ví dụ và tài liệu về GroupDocs.Merger ở đâu?
 
- A: Khám phá[Tài liệu GroupDocs.Merger](https://reference.groupdocs.com/merger/net/) để được hướng dẫn đầy đủ và có ví dụ.
+ A: Khám phá[Tài liệu GroupDocs.Merger](https://tutorials.groupdocs.com/merger/net/) để được hướng dẫn đầy đủ và có ví dụ.
 
 ### Câu hỏi 5: Làm cách nào tôi có thể nhận được hỗ trợ cho GroupDocs.Merger?
 

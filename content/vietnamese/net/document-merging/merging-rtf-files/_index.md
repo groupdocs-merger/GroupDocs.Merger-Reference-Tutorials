@@ -3,7 +3,6 @@ title: Hợp nhất các tệp RTF
 linktitle: Hợp nhất các tệp RTF
 second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp RTF trong .NET một cách dễ dàng bằng GroupDocs.Merger để xử lý tài liệu liền mạch.
-type: docs
 weight: 21
 url: /vi/net/document-merging/merging-rtf-files/
 ---
@@ -61,7 +60,7 @@ Có, GroupDocs.Merger hỗ trợ hợp nhất nhiều định dạng tài liệu
 ### GroupDocs.Merger có phù hợp để xử lý tài liệu quy mô lớn không?
 Hoàn toàn có thể, GroupDocs.Merger được thiết kế để xử lý các tài liệu lớn một cách hiệu quả.
 ### Tôi có thể tìm thêm tài liệu và hỗ trợ cho GroupDocs.Merger ở đâu?
- Tham quan[tài liệu](https://reference.groupdocs.com/merger/net/) Và[diễn đàn hỗ trợ](https://forum.groupdocs.com/c/merger/32) để được hướng dẫn và hỗ trợ chi tiết.
+ Tham quan[tài liệu](https://tutorials.groupdocs.com/merger/net/) Và[diễn đàn hỗ trợ](https://forum.groupdocs.com/c/merger/32) để được hướng dẫn và hỗ trợ chi tiết.
 ### Tôi có thể dùng thử GroupDocs.Merger trước khi mua không?
  Có, bạn có thể khám phá một[dùng thử miễn phí](https://releases.groupdocs.com/) của GroupDocs.Merger.
 ### Làm cách nào để có được giấy phép tạm thời cho GroupDocs.Merger?

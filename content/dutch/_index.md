@@ -3,7 +3,6 @@ title: Documenten moeiteloos samenvoegen en splitsen met GroupDocs.Merger
 linktitle: GroupDocs.Merger-tutorials
 additionalTitle: GroupDocs API-referenties
 description: Voeg moeiteloos documenten samen, splits en comprimeer ze op .NET- en Java-platforms met onze deskundige tutorials over GroupDocs.Merger. Ontgrendel naadloos bestandsbeheer!
-type: docs
 weight: 11
 url: /nl/
 is_root: true

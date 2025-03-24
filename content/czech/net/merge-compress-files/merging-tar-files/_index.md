@@ -3,7 +3,6 @@ title: Sloučení souborů Tar
 linktitle: Sloučení souborů Tar
 second_title: GroupDocs.Merger .NET API
 description: Naučte se sloučit soubory TAR programově pomocí GroupDocs.Merger for .NET. Postupujte podle našeho podrobného průvodce, abyste mohli efektivně zpracovávat archivy TAR.
-type: docs
 weight: 11
 url: /cs/net/merge-compress-files/merging-tar-files/
 ---

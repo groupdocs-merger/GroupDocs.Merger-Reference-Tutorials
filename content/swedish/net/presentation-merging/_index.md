@@ -3,7 +3,6 @@ title: Sammanfogning av presentationer
 linktitle: Sammanfogning av presentationer
 second_title: GroupDocs.Merger .NET API
 description: Slå ihop olika presentationsfilformat utan ansträngning. Följ våra tutorials för att kombinera PPS-, PPSX-, PPT- och OTP-filer effektivt. #GroupDocs.Merger
-type: docs
 weight: 25
 url: /sv/net/presentation-merging/
 ---

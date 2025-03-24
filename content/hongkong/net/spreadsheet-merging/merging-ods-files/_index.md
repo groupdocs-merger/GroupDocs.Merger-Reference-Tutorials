@@ -3,7 +3,6 @@ title: 合併 ODS 文件
 linktitle: 合併 ODS 文件
 second_title: GroupDocs.Merger .NET API
 description: 了解如何輕鬆合併 ODS 檔案。請按照我們的逐步指南進行無縫文件操作。
-type: docs
 weight: 18
 url: /zh-hant/net/spreadsheet-merging/merging-ods-files/
 ---

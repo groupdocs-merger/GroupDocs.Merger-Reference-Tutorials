@@ -3,7 +3,6 @@ title: VTX Dosyalarını Birleştirme Kılavuzu
 linktitle: VTX Dosyalarını Birleştirme Kılavuzu
 second_title: GroupDocs.Merger .NET API'si
 description: GroupDocs.Merger for .NET'i kullanarak VTX dosyalarını programlı olarak nasıl birleştireceğinizi öğrenin. Kod örnekleri içeren adım adım kılavuz.
-type: docs
 weight: 18
 url: /tr/net/visio-merging/guide-merging-vtx-files/
 ---
@@ -49,7 +48,7 @@ Bu öğreticide, GroupDocs.Merger for .NET'i kullanarak VTX dosyalarını nasıl
 ### GroupDocs.Merger for .NET'i kullanarak birden fazla VTX dosyasını tek bir çıktıda birleştirebilir miyim?
  Evet, birden fazla VTX dosyasını tek bir dosyada birleştirebilirsiniz.`Join` GroupDocs.Merger tarafından sağlanan yöntem.
 ### GroupDocs.Merger for .NET'e ilişkin daha fazla belgeyi nerede bulabilirim?
- Ziyaret edin[dokümantasyon](https://reference.groupdocs.com/merger/net/) ayrıntılı API referansları ve kullanım örnekleri için.
+ Ziyaret edin[dokümantasyon](https://tutorials.groupdocs.com/merger/net/) ayrıntılı API referansları ve kullanım örnekleri için.
 ### GroupDocs.Merger for .NET'in deneme sürümü mevcut mu?
  Evet, indirebilirsiniz[ücretsiz deneme](https://releases.groupdocs.com/) Satın almadan önce GroupDocs.Merger'ın yeteneklerini keşfetmek için.
 ### GroupDocs.Merger for .NET için nasıl teknik destek alabilirim?

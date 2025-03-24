@@ -3,7 +3,6 @@ title: 合并 XPS 文件
 linktitle: 合并 XPS 文件
 second_title: GroupDocs.Merger .NET API
 description: 了解如何使用 GroupDocs.Merger for .NET 轻松合并 XPS 文件。简化 .NET 应用程序中的文档处理。
-type: docs
 weight: 20
 url: /zh/net/document-merging/merge-xps-files/
 ---
@@ -52,7 +51,7 @@ Console.WriteLine("\nXPS files merge completed successfully. \nCheck output in {
 ### 我可以使用 GroupDocs.Merger 操作文档中的各个页面吗？
 当然，GroupDocs.Merger 允许您提取、删除、重新排序和旋转文档中的页面。
 ### 在哪里可以找到有关 GroupDocs.Merger for .NET 的更多文档？
-提供详细文档[这里](https://reference.groupdocs.com/merger/net/).
+提供详细文档[这里](https://tutorials.groupdocs.com/merger/net/).
 ### GroupDocs.Merger for .NET 支持临时许可选项吗？
 是的，可以获得临时许可证[这里](https://purchase.groupdocs.com/temporary-license/).
 ### 我如何寻求与 GroupDocs.Merger 相关的帮助或支持？

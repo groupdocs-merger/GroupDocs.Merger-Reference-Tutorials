@@ -3,7 +3,6 @@ title: Fusionner les fichiers XLTX
 linktitle: Fusionner les fichiers XLTX
 second_title: API GroupDocs.Merger .NET
 description: Apprenez à fusionner des fichiers XLTX sans effort. Commencez à fusionner des fichiers XLTX et rationalisez efficacement vos tâches de gestion de documents.
-type: docs
 weight: 17
 url: /fr/net/spreadsheet-merging/merge-xltx-files/
 ---
@@ -63,4 +62,4 @@ Oui, GroupDocs.Merger pour .NET ne nécessite pas l'installation de Microsoft Ex
 ### GroupDocs.Merger pour .NET préserve-t-il le formatage pendant le processus de fusion ?
 Oui, GroupDocs.Merger garantit que le formatage et l'intégrité des données sont conservés lors de la fusion de fichiers XLTX.
 ### Où puis-je trouver plus d’assistance ou de documentation pour GroupDocs.Merger pour .NET ?
- Visiter le[Forum GroupDocs.Merger](https://forum.groupdocs.com/c/merger/32) pour obtenir de l'aide et reportez-vous au[Documentation](https://reference.groupdocs.com/merger/net/) pour des conseils détaillés.
+ Visiter le[Forum GroupDocs.Merger](https://forum.groupdocs.com/c/merger/32) pour obtenir de l'aide et reportez-vous au[Documentation](https://tutorials.groupdocs.com/merger/net/) pour des conseils détaillés.

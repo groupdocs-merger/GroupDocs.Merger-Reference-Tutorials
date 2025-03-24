@@ -3,7 +3,6 @@ title: Afbeelding samenvoegen
 linktitle: Afbeelding samenvoegen
 second_title: GroupDocs.Merger .NET API
 description: Voeg BMP-, GIF-, PNG-, SVG-, SVGZ-, TIF- en TIFF-bestanden naadloos samen met GroupDocs.Merger .NET. Integreer documentmanipulatie efficiënt in uw .NET-applicaties.
-type: docs
 weight: 21
 url: /nl/net/image-merging/
 ---

@@ -3,7 +3,6 @@ title: XLTX Dosyalarını Birleştir
 linktitle: XLTX Dosyalarını Birleştir
 second_title: GroupDocs.Merger .NET API'si
 description: XLTX dosyalarını zahmetsizce nasıl birleştireceğinizi öğrenin. XLTX dosyalarını birleştirmeye başlayın ve belge yönetimi görevlerinizi verimli bir şekilde kolaylaştırın.
-type: docs
 weight: 17
 url: /tr/net/spreadsheet-merging/merge-xltx-files/
 ---
@@ -63,4 +62,4 @@ Evet, GroupDocs.Merger for .NET, makinede Microsoft Excel'in kurulu olmasını g
 ### GroupDocs.Merger for .NET, birleştirme işlemi sırasında biçimlendirmeyi koruyor mu?
 Evet, GroupDocs.Merger, XLTX dosyaları birleştirirken biçimlendirmenin ve veri bütünlüğünün korunmasını sağlar.
 ### GroupDocs.Merger for .NET için daha fazla desteği veya belgeyi nerede bulabilirim?
- Ziyaret edin[GroupDocs.Merger forumu](https://forum.groupdocs.com/c/merger/32) destek için ve bkz.[dokümantasyon](https://reference.groupdocs.com/merger/net/) ayrıntılı rehberlik için.
+ Ziyaret edin[GroupDocs.Merger forumu](https://forum.groupdocs.com/c/merger/32) destek için ve bkz.[dokümantasyon](https://tutorials.groupdocs.com/merger/net/) ayrıntılı rehberlik için.

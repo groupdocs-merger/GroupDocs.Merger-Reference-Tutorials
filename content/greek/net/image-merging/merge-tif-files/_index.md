@@ -3,7 +3,6 @@ title: Συγχώνευση αρχείων TIF
 linktitle: Συγχώνευση αρχείων TIF
 second_title: GroupDocs.Merger .NET API
 description: Μάθετε πώς να συγχωνεύετε αρχεία TIF μέσω προγραμματισμού χρησιμοποιώντας το GroupDocs.Merger για .NET. Αποτελεσματικό API χειρισμού εγγράφων για προγραμματιστές .NET.
-type: docs
 weight: 15
 url: /el/net/image-merging/merge-tif-files/
 ---

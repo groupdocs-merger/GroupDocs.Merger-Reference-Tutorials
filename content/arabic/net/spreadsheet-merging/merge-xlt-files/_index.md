@@ -3,7 +3,6 @@ title: دمج ملفات XLT
 linktitle: دمج ملفات XLT
 second_title: GroupDocs.Merger .NET API
 description: تعرف على كيفية دمج ملفات XLT. يمكنك دمج قوالب Excel برمجيًا في لغة C# باستخدام هذا الدليل التفصيلي خطوة بخطوة.
-type: docs
 weight: 15
 url: /ar/net/spreadsheet-merging/merge-xlt-files/
 ---
@@ -59,7 +58,7 @@ Console.WriteLine("\nXLT files merge completed successfully. \nCheck output in {
 ### هل GroupDocs.Merger متوافق مع تنسيقات ملفات Excel الأخرى مثل XLSX أو XLS؟
 نعم، يدعم GroupDocs.Merger العديد من تنسيقات ملفات Excel، بما في ذلك XLSX وXLS وXLT.
 ### أين يمكنني العثور على مزيد من الأمثلة والوثائق الخاصة بـ GroupDocs.Merger لـ .NET؟
- تتوفر وثائق مفصلة وعينات التعليمات البرمجية[هنا](https://reference.groupdocs.com/merger/net/).
+ تتوفر وثائق مفصلة وعينات التعليمات البرمجية[هنا](https://tutorials.groupdocs.com/merger/net/).
 ### هل هناك إصدار تجريبي من GroupDocs.Merger متاح للاختبار؟
  نعم، يمكنك تنزيل نسخة تجريبية مجانية من[هنا](https://releases.groupdocs.com/).
 ### كيف يمكنني الحصول على الدعم الفني أو المساعدة فيما يتعلق بـ GroupDocs.Merger؟

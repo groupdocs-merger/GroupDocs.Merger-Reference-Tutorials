@@ -3,7 +3,6 @@ title: Slår ihop XLTM-filer
 linktitle: Slår ihop XLTM-filer
 second_title: GroupDocs.Merger .NET API
 description: Lär dig hur du sammanfogar XLTM-filer programmatiskt. Steg-för-steg guide med kodexempel.
-type: docs
 weight: 16
 url: /sv/net/spreadsheet-merging/merging-xltm-files/
 ---
@@ -61,6 +60,6 @@ Ja, GroupDocs.Merger stöder sammanslagning av olika dokumentformat som DOCX, XL
 ### Finns det en gratis testversion tillgänglig för GroupDocs.Merger?
  Ja, du kan få tillgång till en gratis testversion av GroupDocs.Merger[här](https://releases.groupdocs.com/).
 ### Var kan jag hitta dokumentation för GroupDocs.Merger?
-Du kan se den fullständiga dokumentationen för GroupDocs.Merger[här](https://reference.groupdocs.com/merger/net/).
+Du kan se den fullständiga dokumentationen för GroupDocs.Merger[här](https://tutorials.groupdocs.com/merger/net/).
 ### Var kan jag få teknisk support för GroupDocs.Merger?
  För teknisk assistans och support, besök GroupDocs.Merger-forumet[här](https://forum.groupdocs.com/c/merger/32).

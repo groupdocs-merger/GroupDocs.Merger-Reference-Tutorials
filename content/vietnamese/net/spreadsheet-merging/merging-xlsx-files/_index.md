@@ -3,7 +3,6 @@ title: Hợp nhất các tệp XLSX
 linktitle: Hợp nhất các tệp XLSX
 second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp XLSX một cách dễ dàng trong .NET bằng GroupDocs.Merger. Hãy làm theo hướng dẫn từng bước này để quản lý tài liệu liền mạch.
-type: docs
 weight: 14
 url: /vi/net/spreadsheet-merging/merging-xlsx-files/
 ---
@@ -54,7 +53,7 @@ Có, GroupDocs.Merger hỗ trợ hợp nhất nhiều định dạng tệp khác
 ### GroupDocs.Merger có tương thích với các ứng dụng .NET Core không?
 Có, GroupDocs.Merger có thể được sử dụng với cả dự án .NET Framework và .NET Core.
 ### Tôi có thể tìm tài liệu chi tiết về GroupDocs.Merger ở đâu?
- Tài liệu chi tiết có sẵn[đây](https://reference.groupdocs.com/merger/net/).
+ Tài liệu chi tiết có sẵn[đây](https://tutorials.groupdocs.com/merger/net/).
 ### GroupDocs.Merger có cung cấp bản dùng thử miễn phí không?
  Có, bạn có thể truy cập bản dùng thử miễn phí[đây](https://releases.groupdocs.com/).
 ### Làm cách nào tôi có thể nhận được hỗ trợ cho GroupDocs.Merger?

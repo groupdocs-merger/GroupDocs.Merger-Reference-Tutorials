@@ -3,7 +3,6 @@ title: 演示文稿合并
 linktitle: 演示文稿合并
 second_title: GroupDocs.Merger .NET API
 description: 轻松合并各种演示文件格式。按照我们的教程有效地合并 PPS、PPSX、PPT 和 OTP 文件。 #GroupDocs.Merger
-type: docs
 weight: 25
 url: /zh/net/presentation-merging/
 ---

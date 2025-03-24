@@ -3,7 +3,6 @@ title: Hợp nhất các tệp TIF
 linktitle: Hợp nhất các tệp TIF
 second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp TIF theo chương trình bằng GroupDocs.Merger cho .NET. API thao tác tài liệu hiệu quả dành cho nhà phát triển .NET.
-type: docs
 weight: 15
 url: /vi/net/image-merging/merge-tif-files/
 ---

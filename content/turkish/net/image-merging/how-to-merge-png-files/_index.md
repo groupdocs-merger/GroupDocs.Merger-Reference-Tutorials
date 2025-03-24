@@ -3,7 +3,6 @@ title: PNG Dosyaları Nasıl Birleştirilir
 linktitle: PNG Dosyaları Nasıl Birleştirilir
 second_title: GroupDocs.Merger .NET API'si
 description: GroupDocs.Merger for .NET'i kullanarak PNG dosyalarını nasıl birleştireceğinizi öğrenin. .NET uygulamalarınızla kusursuz entegrasyon için adım adım kılavuz.
-type: docs
 weight: 12
 url: /tr/net/image-merging/how-to-merge-png-files/
 ---
@@ -59,7 +58,7 @@ Evet, GroupDocs.Merger, JPG, TIFF, PDF, DOCX ve daha fazlasını içeren çok ç
 ### Yön veya düzen gibi birleştirme seçeneklerini özelleştirebilir miyim?
 Kesinlikle! GroupDocs.Merger, belgelerin ve görüntülerin nasıl birleştirileceğini kontrol etmek için çeşitli seçenekler sunarak esnek özelleştirmeye olanak tanır.
 ### GroupDocs.Merger için daha fazla kaynağı ve desteği nerede bulabilirim?
- Ziyaret edin[GroupDocs.Merger forumu](https://forum.groupdocs.com/c/merger/32) topluluk desteği için ve keşfetmek için[dokümantasyon](https://reference.groupdocs.com/merger/net/) ayrıntılı rehberlik için.
+ Ziyaret edin[GroupDocs.Merger forumu](https://forum.groupdocs.com/c/merger/32) topluluk desteği için ve keşfetmek için[dokümantasyon](https://tutorials.groupdocs.com/merger/net/) ayrıntılı rehberlik için.
 ### GroupDocs.Merger'ı satın almadan önce test edebileceğiniz bir deneme sürümü var mı?
  Evet, ücretsiz deneme sürümünü şuradan indirebilirsiniz:[GroupDocs web sitesi](https://releases.groupdocs.com/) Kütüphanenin yeteneklerini değerlendirmek.
 ### GroupDocs.Merger için nasıl geçici lisans alabilirim?

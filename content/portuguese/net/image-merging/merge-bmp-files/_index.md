@@ -3,7 +3,6 @@ title: Mesclar arquivos BMP
 linktitle: Mesclar arquivos BMP
 second_title: API GroupDocs.Merger .NET
 description: Aprenda como mesclar arquivos BMP usando GroupDocs.Merger for .NET com este tutorial abrangente. Desenvolva seus aplicativos .NET com eficiência.
-type: docs
 weight: 10
 url: /pt/net/image-merging/merge-bmp-files/
 ---

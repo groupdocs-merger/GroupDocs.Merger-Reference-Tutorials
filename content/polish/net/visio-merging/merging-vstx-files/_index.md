@@ -3,7 +3,6 @@ title: Łączenie plików VSTX z GroupDocs.Merger dla .NET
 linktitle: Łączenie plików VSTX z GroupDocs.Merger dla .NET
 second_title: GroupDocs.Merger API .NET
 description: Dowiedz się, jak scalić pliki VSTX za pomocą GroupDocs.Merger dla .NET. Postępuj zgodnie z tym przewodnikiem krok po kroku, aby efektywnie manipulować dokumentami w języku C#.
-type: docs
 weight: 16
 url: /pl/net/visio-merging/merging-vstx-files/
 ---
@@ -64,4 +63,4 @@ Oczywiście możesz określić różne opcje, takie jak numeracja stron, rotacja
 ### Czy GroupDocs.Merger dla .NET nadaje się do zadań związanych z przetwarzaniem dokumentów na dużą skalę?
 Tak, GroupDocs.Merger jest zoptymalizowany pod kątem wydajnej obsługi dużych dokumentów i operacji wsadowych.
 ### Gdzie mogę znaleźć dodatkową pomoc lub dokumentację dotyczącą GroupDocs.Merger dla .NET?
- Odwiedzić[Forum GroupDocs.Merger](https://forum.groupdocs.com/c/merger/32) lub zapoznaj się z[dokumentacja](https://reference.groupdocs.com/merger/net/) dla kompleksowych zasobów.
+ Odwiedzić[Forum GroupDocs.Merger](https://forum.groupdocs.com/c/merger/32) lub zapoznaj się z[dokumentacja](https://tutorials.groupdocs.com/merger/net/) dla kompleksowych zasobów.

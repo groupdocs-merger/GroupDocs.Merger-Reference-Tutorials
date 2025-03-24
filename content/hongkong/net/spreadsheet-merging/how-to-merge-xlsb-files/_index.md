@@ -3,7 +3,6 @@ title: 如何合併 XLSB 文件
 linktitle: 如何合併 XLSB 文件
 second_title: GroupDocs.Merger .NET API
 description: 了解如何合併 XLSB 檔案。本逐步指南簡化了文件操作任務。
-type: docs
 weight: 12
 url: /zh-hant/net/spreadsheet-merging/how-to-merge-xlsb-files/
 ---
@@ -54,7 +53,7 @@ Console.WriteLine("\nXLSB files merge completed successfully. \nCheck output in 
 ### GroupDocs.Merger 可以處理 XLSB 以外的其他檔案格式嗎？
 是的，GroupDocs.Merger 支援多種文件格式，包括 DOCX、PDF、XLSX、PPTX 等。
 ### 在哪裡可以找到更多關於 GroupDocs.Merger 的文件？
-參觀[文件](https://reference.groupdocs.com/merger/net/)詳細的使用說明和 API 參考。
+參觀[文件](https://tutorials.groupdocs.com/merger/net/)詳細的使用說明和 API 參考。
 ### GroupDocs.Merger 是否有免費試用版？
 是的，您可以訪問[免費試用](https://releases.groupdocs.com/)探索 GroupDocs.Merger 的功能。
 ### 如何獲得 GroupDocs.Merger 的技術支援？

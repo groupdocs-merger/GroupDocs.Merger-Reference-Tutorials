@@ -3,7 +3,6 @@ title: Łączenie plików OTP
 linktitle: Łączenie plików OTP
 second_title: GroupDocs.Merger API .NET
 description: Dowiedz się, jak scalić pliki OTP za pomocą GroupDocs.Merger dla .NET. Ten przewodnik krok po kroku przeprowadzi Cię płynnie przez cały proces.
-type: docs
 weight: 14
 url: /pl/net/presentation-merging/merging-otp-files/
 ---

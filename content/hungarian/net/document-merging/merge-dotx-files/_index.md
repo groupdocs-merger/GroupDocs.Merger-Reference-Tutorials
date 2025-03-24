@@ -3,7 +3,6 @@ title: Egyesítse a DOTX fájlokat
 linktitle: Egyesítse a DOTX fájlokat
 second_title: GroupDocs.Merger .NET API
 description: Ismerje meg, hogyan egyesíthet könnyedén DOTX-fájlokat .NET-ben a GroupDocs.Merger segítségével. Növelje dokumentumkezelési képességeit.
-type: docs
 weight: 15
 url: /hu/net/document-merging/merge-dotx-files/
 ---
@@ -13,7 +12,7 @@ Ebben az oktatóanyagban megvizsgáljuk, hogyan egyesíthet DOTX (Word Template)
 Mielőtt belevágna az oktatóanyagba, győződjön meg arról, hogy rendelkezik az alábbiakkal:
 - A Visual Studio telepítve van a gépedre
 - .NET SDK (kompatibilis verzió) telepítve
--  A GroupDocs.Merger for .NET telepítve van (lásd a[Telepítési útmutató](https://reference.groupdocs.com/merger/net/) a részletekért)
+-  A GroupDocs.Merger for .NET telepítve van (lásd a[Telepítési útmutató](https://tutorials.groupdocs.com/merger/net/) a részletekért)
 - C# programozási alapismeretek
 
 ## Névterek importálása
@@ -58,7 +57,7 @@ Igen, a GroupDocs.Merger támogatja a különféle dokumentumformátumok, péld�
 ### A GroupDocs.Merger kompatibilis a .NET Core programmal?
 Igen, a GroupDocs.Merger a .NET-keretrendszerrel és a .NET Core-al is kompatibilis.
 ### Hol találok további támogatást vagy dokumentációt a GroupDocs.Mergerhez?
- Hivatkozhat a[GroupDocs.Merger dokumentáció](https://reference.groupdocs.com/merger/net/) részletes API-referenciákért és használati példákért.
+ Hivatkozhat a[GroupDocs.Merger dokumentáció](https://tutorials.groupdocs.com/merger/net/) részletes API-referenciákért és használati példákért.
 ### A GroupDocs.Merger ingyenes próbaverziót kínál?
  Igen, hozzáférhet a[ingyenes próbaverzió](https://releases.groupdocs.com/) a GroupDocs.Merger értékeléséhez.
 ### Hogyan vásárolhatok licencet a GroupDocs.Merger számára?

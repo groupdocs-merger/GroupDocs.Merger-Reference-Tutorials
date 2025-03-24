@@ -3,7 +3,6 @@ title: XLTM-bestanden samenvoegen
 linktitle: XLTM-bestanden samenvoegen
 second_title: GroupDocs.Merger .NET API
 description: Leer hoe u XLTM-bestanden programmatisch samenvoegt. Stapsgewijze handleiding met codevoorbeelden.
-type: docs
 weight: 16
 url: /nl/net/spreadsheet-merging/merging-xltm-files/
 ---
@@ -61,6 +60,6 @@ Ja, GroupDocs.Merger ondersteunt het samenvoegen van verschillende documentforma
 ### Is er een gratis proefversie beschikbaar voor GroupDocs.Merger?
  Ja, u heeft toegang tot een gratis proefversie van GroupDocs.Merger[hier](https://releases.groupdocs.com/).
 ### Waar kan ik documentatie voor GroupDocs.Merger vinden?
- kunt de volledige documentatie voor GroupDocs.Merger raadplegen[hier](https://reference.groupdocs.com/merger/net/).
+ kunt de volledige documentatie voor GroupDocs.Merger raadplegen[hier](https://tutorials.groupdocs.com/merger/net/).
 ### Waar kan ik technische ondersteuning krijgen voor GroupDocs.Merger?
  Bezoek het GroupDocs.Merger-forum voor technische assistentie en ondersteuning[hier](https://forum.groupdocs.com/c/merger/32).

@@ -3,7 +3,6 @@ title: Guida all'unione di file VSSM
 linktitle: Guida all'unione di file VSSM
 second_title: API GroupDocs.Merger .NET
 description: Scopri come unire file VSSM senza sforzo utilizzando GroupDocs.Merger per .NET. Guida dettagliata per gli sviluppatori C#.
-type: docs
 weight: 13
 url: /it/net/visio-merging/guide-merging-vssm-files/
 ---
@@ -53,7 +52,7 @@ Sì, GroupDocs.Merger supporta l'unione di vari formati tra cui PDF, DOCX, XLSX,
 ### GroupDocs.Merger è adatto all'elaborazione di documenti su larga scala?
 Sì, GroupDocs.Merger è ottimizzato per le prestazioni e può gestire in modo efficiente documenti di grandi dimensioni.
 ### Dove posso trovare la documentazione dettagliata per GroupDocs.Merger?
- Puoi fare riferimento a[documentazione](https://reference.groupdocs.com/merger/net/) per una guida completa.
+ Puoi fare riferimento a[documentazione](https://tutorials.groupdocs.com/merger/net/) per una guida completa.
 ### Come posso ottenere supporto tecnico per i prodotti GroupDocs?
  Visitare il[Forum di supporto di GroupDocs](https://forum.groupdocs.com/c/merger/32)per assistenza e discussioni.
 ### GroupDocs offre una prova gratuita per la valutazione?

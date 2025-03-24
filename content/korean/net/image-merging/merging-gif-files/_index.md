@@ -3,7 +3,6 @@ title: GIF 파일 병합
 linktitle: GIF 파일 병합
 second_title: GroupDocs.Merger .NET API
 description: .NET용 GroupDocs.Merger를 사용하여 GIF 파일을 병합하는 방법을 알아보세요. 단계별 지침을 통해 프로그래밍 방식으로 여러 GIF를 결합합니다.
-type: docs
 weight: 11
 url: /ko/net/image-merging/merging-gif-files/
 ---
@@ -63,6 +62,6 @@ Console.WriteLine("\nGIF files merge completed successfully. \nCheck output in {
 ### Q: GroupDocs.Merger에 대한 기술 지원을 받으려면 어떻게 해야 합니까?
  기술 지원이 필요하면 GroupDocs.Merger를 방문하세요.[법정](https://forum.groupdocs.com/c/merger/32) 질문을 하고 커뮤니티에 참여할 수 있는 곳입니다.
 ### Q: .NET용 GroupDocs.Merger에 대한 자세한 설명서는 어디에서 찾을 수 있습니까?
- 포괄적인 문서 살펴보기[여기](https://reference.groupdocs.com/merger/net/) .NET 애플리케이션에서 GroupDocs.Merger 사용에 대한 자세한 통찰력을 얻으려면
+ 포괄적인 문서 살펴보기[여기](https://tutorials.groupdocs.com/merger/net/) .NET 애플리케이션에서 GroupDocs.Merger 사용에 대한 자세한 통찰력을 얻으려면
 ### Q: GroupDocs.Merger에 대한 임시 라이센스를 얻을 수 있습니까?
  예, 다음에서 임시 라이센스를 얻을 수 있습니다.[여기](https://purchase.groupdocs.com/temporary-license/) 구매하기 전에 GroupDocs.Merger의 기능을 평가해 보세요.

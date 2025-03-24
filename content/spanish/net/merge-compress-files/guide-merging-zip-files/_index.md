@@ -3,7 +3,6 @@ title: Guía para fusionar archivos Zip
 linktitle: Guía para fusionar archivos Zip
 second_title: API GroupDocs.Merger .NET
 description: Aprenda a fusionar archivos ZIP mediante programación utilizando GroupDocs.Merger para .NET. Este tutorial proporciona una guía detallada para desarrolladores.
-type: docs
 weight: 12
 url: /es/net/merge-compress-files/guide-merging-zip-files/
 ---

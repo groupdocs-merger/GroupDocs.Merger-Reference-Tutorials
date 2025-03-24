@@ -3,7 +3,6 @@ title: ODT-bestanden samenvoegen
 linktitle: ODT-bestanden samenvoegen
 second_title: GroupDocs.Merger .NET API
 description: Leer hoe u ODT-bestanden moeiteloos kunt samenvoegen met GroupDocs.Merger voor .NET. Verbeter uw documentbeheermogelijkheden met deze krachtige bibliotheek.
-type: docs
 weight: 16
 url: /nl/net/document-merging/merging-odt-files/
 ---

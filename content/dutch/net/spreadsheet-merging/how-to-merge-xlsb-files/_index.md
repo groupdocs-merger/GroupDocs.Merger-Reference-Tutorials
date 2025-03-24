@@ -3,7 +3,6 @@ title: XLSB-bestanden samenvoegen
 linktitle: XLSB-bestanden samenvoegen
 second_title: GroupDocs.Merger .NET API
 description: Leer hoe u XLSB-bestanden samenvoegt. Deze stapsgewijze handleiding vereenvoudigt documentmanipulatietaken.
-type: docs
 weight: 12
 url: /nl/net/spreadsheet-merging/how-to-merge-xlsb-files/
 ---
@@ -54,7 +53,7 @@ Door deze stappen te volgen, kunt u eenvoudig XLSB-bestanden samenvoegen. Deze A
 ### Kan GroupDocs.Merger naast XLSB ook andere bestandsformaten verwerken?
 Ja, GroupDocs.Merger ondersteunt een breed scala aan documentformaten, waaronder DOCX, PDF, XLSX, PPTX en meer.
 ### Waar kan ik meer documentatie voor GroupDocs.Merger vinden?
- Bezoek de[documentatie](https://reference.groupdocs.com/merger/net/) voor gedetailleerde gebruiksinstructies en API-referenties.
+ Bezoek de[documentatie](https://tutorials.groupdocs.com/merger/net/) voor gedetailleerde gebruiksinstructies en API-referenties.
 ### Is er een gratis proefversie beschikbaar voor GroupDocs.Merger?
  Ja, u heeft toegang tot a[gratis proefperiode](https://releases.groupdocs.com/)om de functies van GroupDocs.Merger te verkennen.
 ### Hoe kan ik technische ondersteuning krijgen voor GroupDocs.Merger?

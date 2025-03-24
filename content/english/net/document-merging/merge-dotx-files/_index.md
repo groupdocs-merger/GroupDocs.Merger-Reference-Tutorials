@@ -3,7 +3,6 @@ title: Merge DOTX Files
 linktitle: Merge DOTX Files
 second_title: GroupDocs.Merger .NET API
 description: Learn how to merge DOTX files in .NET using GroupDocs.Merger effortlessly. Enhance your document manipulation capabilities.
-type: docs
 weight: 15
 url: /net/document-merging/merge-dotx-files/
 ---
@@ -13,7 +12,7 @@ In this tutorial, we'll explore how to merge DOTX (Word Template) files using Gr
 Before diving into the tutorial, ensure you have the following:
 - Visual Studio installed on your machine
 - .NET SDK (compatible version) installed
-- GroupDocs.Merger for .NET installed (refer to the [installation guide](https://reference.groupdocs.com/merger/net/) for details)
+- GroupDocs.Merger for .NET installed (refer to the [installation guide](https://tutorials.groupdocs.com/merger/net/) for details)
 - Basic knowledge of C# programming
 
 ## Import Namespaces
@@ -58,7 +57,7 @@ Yes, GroupDocs.Merger supports merging various document formats like DOCX, XLSX,
 ### Is GroupDocs.Merger compatible with .NET Core?
 Yes, GroupDocs.Merger is compatible with both .NET Framework and .NET Core.
 ### Where can I find additional support or documentation for GroupDocs.Merger?
-You can refer to the [GroupDocs.Merger documentation](https://reference.groupdocs.com/merger/net/) for detailed API reference and usage examples.
+You can refer to the [GroupDocs.Merger documentation](https://tutorials.groupdocs.com/merger/net/) for detailed API tutorials and usage examples.
 ### Does GroupDocs.Merger offer a free trial?
 Yes, you can access a [free trial version](https://releases.groupdocs.com/) to evaluate GroupDocs.Merger.
 ### How can I purchase a license for GroupDocs.Merger?

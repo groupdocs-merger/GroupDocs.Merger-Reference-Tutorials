@@ -3,7 +3,6 @@ title: Guida all'unione di file zip
 linktitle: Guida all'unione di file zip
 second_title: API GroupDocs.Merger .NET
 description: Scopri come unire i file ZIP a livello di codice utilizzando GroupDocs.Merger per .NET. Questo tutorial fornisce una guida dettagliata per gli sviluppatori.
-type: docs
 weight: 12
 url: /it/net/merge-compress-files/guide-merging-zip-files/
 ---

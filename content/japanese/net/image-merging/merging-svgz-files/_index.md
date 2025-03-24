@@ -3,7 +3,6 @@ title: SVGZ ファイルの結合
 linktitle: SVGZ ファイルの結合
 second_title: GroupDocs.Merger .NET API
 description: このステップバイステップのチュートリアルで、GroupDocs.Merger for .NET を使用して SVGZ ファイルを結合する方法を学びます。ドキュメント操作スキルを強化します。
-type: docs
 weight: 14
 url: /ja/net/image-merging/merging-svgz-files/
 ---
@@ -59,7 +58,7 @@ Console.WriteLine("\nSVGZ files merge completed successfully. \nCheck output in 
 ### GroupDocs.Merger は SVGZ 以外のファイル形式も処理できますか?
 はい。GroupDocs.Merger は、PDF、Word、Excel、PowerPoint などを含むさまざまなドキュメント形式をサポートしています。
 ### GroupDocs.Merger の詳細なドキュメントはどこで見つけられますか?
-訪問[ドキュメンテーション](https://reference.groupdocs.com/merger/net/)包括的な情報と使用例については、こちらをご覧ください。
+訪問[ドキュメンテーション](https://tutorials.groupdocs.com/merger/net/)包括的な情報と使用例については、こちらをご覧ください。
 ### GroupDocs.Merger の無料トライアルはありますか?
 はい、無料トライアルにアクセスできます[ここ](https://releases.groupdocs.com/).
 ### GroupDocs.Merger のサポートを受けるにはどうすればよいですか?

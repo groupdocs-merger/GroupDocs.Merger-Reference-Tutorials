@@ -3,7 +3,6 @@ title: So fügen Sie PNG-Dateien zusammen
 linktitle: So fügen Sie PNG-Dateien zusammen
 second_title: GroupDocs.Merger .NET API
 description: Erfahren Sie, wie Sie PNG-Dateien mit GroupDocs.Merger für .NET zusammenführen. Schritt-für-Schritt-Anleitung für die nahtlose Integration in Ihre .NET-Anwendungen.
-type: docs
 weight: 12
 url: /de/net/image-merging/how-to-merge-png-files/
 ---
@@ -59,7 +58,7 @@ Ja, GroupDocs.Merger unterstützt eine breite Palette von Dokument- und Bildform
 ### Kann ich die Zusammenführungsoptionen wie Ausrichtung oder Layout anpassen?
 Absolut! GroupDocs.Merger bietet verschiedene Optionen zur Steuerung der Zusammenführung von Dokumenten und Bildern und ermöglicht so eine flexible Anpassung.
 ### Wo finde ich weitere Ressourcen und Unterstützung für GroupDocs.Merger?
- Besuche den[GroupDocs.Merger-Forum](https://forum.groupdocs.com/c/merger/32) für Community-Unterstützung und erkunden Sie die[Dokumentation](https://reference.groupdocs.com/merger/net/) für eine detaillierte Anleitung.
+ Besuche den[GroupDocs.Merger-Forum](https://forum.groupdocs.com/c/merger/32) für Community-Unterstützung und erkunden Sie die[Dokumentation](https://tutorials.groupdocs.com/merger/net/) für eine detaillierte Anleitung.
 ### Gibt es eine Testversion, um GroupDocs.Merger vor dem Kauf zu testen?
  Ja, Sie können eine kostenlose Testversion herunterladen[GroupDocs-Website](https://releases.groupdocs.com/) um die Leistungsfähigkeit der Bibliothek zu bewerten.
 ### Wie kann ich eine temporäre Lizenz für GroupDocs.Merger erhalten?

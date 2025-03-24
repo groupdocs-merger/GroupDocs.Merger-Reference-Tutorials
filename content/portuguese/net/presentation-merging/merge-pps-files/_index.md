@@ -3,7 +3,6 @@ title: Mesclar arquivos PPS
 linktitle: Mesclar arquivos PPS
 second_title: API GroupDocs.Merger .NET
 description: Aprenda como mesclar arquivos PPS perfeitamente usando GroupDocs.Merger for .NET. Guia passo a passo com exemplos de código. Aprimore suas habilidades de manipulação de documentos.
-type: docs
 weight: 10
 url: /pt/net/presentation-merging/merge-pps-files/
 ---
@@ -61,7 +60,7 @@ Sim, GroupDocs.Merger oferece suporte à mesclagem de vários formatos de docume
 ### O GroupDocs.Merger é adequado para processamento em lote de mesclagens de documentos?
 Com certeza, você pode aproveitar GroupDocs.Merger para tarefas de processamento em lote para mesclar vários documentos simultaneamente.
 ### Onde posso encontrar a documentação completa do GroupDocs.Merger for .NET?
- A documentação abrangente está disponível[aqui](https://reference.groupdocs.com/merger/net/).
+ A documentação abrangente está disponível[aqui](https://tutorials.groupdocs.com/merger/net/).
 ### Como posso obter uma licença temporária do GroupDocs.Merger for .NET?
  Você pode obter uma licença temporária em[aqui](https://purchase.groupdocs.com/temporary-license/).
 ### O GroupDocs fornece suporte para solução de problemas e dúvidas?

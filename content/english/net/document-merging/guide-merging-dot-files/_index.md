@@ -3,7 +3,6 @@ title: Guide to Merging DOT Files
 linktitle: Guide to Merging DOT Files
 second_title: GroupDocs.Merger .NET API
 description: Learn how to merge DOT (Graphviz) files programmatically using GroupDocs.Merger for .NET. Merge, combine, and manipulate DOT files with ease.
-type: docs
 weight: 13
 url: /net/document-merging/guide-merging-dot-files/
 ---
@@ -13,7 +12,7 @@ In this tutorial, we will explore how to merge DOT (Graphviz) files using GroupD
 Before we begin, make sure you have the following prerequisites:
 - Basic knowledge of C# and .NET programming.
 - Visual Studio installed on your machine.
-- GroupDocs.Merger for .NET library. You can download it from the [GroupDocs.Merger for .NET documentation](https://reference.groupdocs.com/merger/net/).
+- GroupDocs.Merger for .NET library. You can download it from the [GroupDocs.Merger for .NET documentation](https://tutorials.groupdocs.com/merger/net/).
 - Access to the DOT files you want to merge.
 
 ## Import Namespaces

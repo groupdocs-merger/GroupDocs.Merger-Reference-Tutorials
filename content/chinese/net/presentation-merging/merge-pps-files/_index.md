@@ -3,7 +3,6 @@ title: 合并 PPS 文件
 linktitle: 合并 PPS 文件
 second_title: GroupDocs.Merger .NET API
 description: 了解如何使用 GroupDocs.Merger for .NET 无缝合并 PPS 文件。带有代码示例的分步指南。提高您的文档处理技能。
-type: docs
 weight: 10
 url: /zh/net/presentation-merging/merge-pps-files/
 ---
@@ -61,7 +60,7 @@ Console.WriteLine("\nPPS files merge completed successfully. \nCheck output in {
 ### GroupDocs.Merger是否适合批量处理文档合并？
 当然，您可以利用 GroupDocs.Merger 进行批处理任务来同时合并多个文档。
 ### 在哪里可以找到 GroupDocs.Merger for .NET 的完整文档？
-提供全面的文档[这里](https://reference.groupdocs.com/merger/net/).
+提供全面的文档[这里](https://tutorials.groupdocs.com/merger/net/).
 ### 如何获得 GroupDocs.Merger for .NET 的临时许可证？
 您可以从以下地点获得临时许可证[这里](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs 是否提供故障排除和查询支持？

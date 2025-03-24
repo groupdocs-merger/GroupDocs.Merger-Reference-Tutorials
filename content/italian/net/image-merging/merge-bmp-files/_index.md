@@ -3,7 +3,6 @@ title: Unisci file BMP
 linktitle: Unisci file BMP
 second_title: API GroupDocs.Merger .NET
 description: Scopri come unire file BMP utilizzando GroupDocs.Merger per .NET con questo tutorial completo. Sviluppa le tue applicazioni .NET in modo efficiente.
-type: docs
 weight: 10
 url: /it/net/image-merging/merge-bmp-files/
 ---

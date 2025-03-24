@@ -3,7 +3,6 @@ title: Przewodnik po łączeniu plików ZIP
 linktitle: Przewodnik po łączeniu plików ZIP
 second_title: GroupDocs.Merger API .NET
 description: Dowiedz się, jak programowo scalić pliki ZIP za pomocą GroupDocs.Merger dla .NET. Ten samouczek zawiera szczegółowy przewodnik dla programistów.
-type: docs
 weight: 12
 url: /pl/net/merge-compress-files/guide-merging-zip-files/
 ---

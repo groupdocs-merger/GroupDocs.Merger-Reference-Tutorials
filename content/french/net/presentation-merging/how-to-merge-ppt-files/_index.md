@@ -3,7 +3,6 @@ title: Comment fusionner des fichiers PPT
 linktitle: Comment fusionner des fichiers PPT
 second_title: API GroupDocs.Merger .NET
 description: Découvrez comment fusionner des fichiers PowerPoint (PPT) à l'aide de GroupDocs.Merger pour .NET sans effort. Améliorez vos applications .NET avec cette puissante API.
-type: docs
 weight: 12
 url: /fr/net/presentation-merging/how-to-merge-ppt-files/
 ---

@@ -3,7 +3,6 @@ title: OTP 파일 병합
 linktitle: OTP 파일 병합
 second_title: GroupDocs.Merger .NET API
 description: .NET용 GroupDocs.Merger를 사용하여 OTP 파일을 병합하는 방법을 알아보세요. 이 단계별 가이드는 프로세스를 원활하게 안내합니다.
-type: docs
 weight: 14
 url: /ko/net/presentation-merging/merging-otp-files/
 ---

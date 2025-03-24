@@ -3,7 +3,6 @@ title: Handleiding voor het samenvoegen van XLSM-bestanden
 linktitle: Handleiding voor het samenvoegen van XLSM-bestanden
 second_title: GroupDocs.Merger .NET API
 description: Voeg XLSM-bestanden naadloos samen met GroupDocs.Merger voor .NET. Combineer Excel-werkmappen efficiënt programmatisch. Verbeter uw mogelijkheden voor documentmanipulatie.
-type: docs
 weight: 13
 url: /nl/net/spreadsheet-merging/guide-merging-xlsm-files/
 ---

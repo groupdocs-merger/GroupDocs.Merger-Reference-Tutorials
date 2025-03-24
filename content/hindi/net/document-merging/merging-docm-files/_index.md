@@ -3,7 +3,6 @@ title: DOCM फ़ाइलें मर्ज करना
 linktitle: DOCM फ़ाइलें मर्ज करना
 second_title: GroupDocs.Merger .NET API
 description: .NET के लिए GroupDocs.Merger का उपयोग करके DOCM फ़ाइलों को निर्बाध रूप से मर्ज करना सीखें। .NET अनुप्रयोगों के लिए सरल और कुशल दस्तावेज़ हेरफेर।
-type: docs
 weight: 11
 url: /hi/net/document-merging/merging-docm-files/
 ---

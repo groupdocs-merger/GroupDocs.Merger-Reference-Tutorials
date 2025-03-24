@@ -3,7 +3,6 @@ title: GIF फ़ाइलें मर्ज करना
 linktitle: GIF फ़ाइलें मर्ज करना
 second_title: GroupDocs.Merger .NET API
 description: .NET के लिए GroupDocs.Merger का उपयोग करके GIF फ़ाइलों को मर्ज करना सीखें। चरण-दर-चरण निर्देशों के साथ प्रोग्रामेटिक रूप से कई GIF को संयोजित करें।
-type: docs
 weight: 11
 url: /hi/net/image-merging/merging-gif-files/
 ---
@@ -63,6 +62,6 @@ Console.WriteLine("\nGIF files merge completed successfully. \nCheck output in {
 ### प्रश्न: मैं GroupDocs.Merger के लिए तकनीकी सहायता कैसे प्राप्त कर सकता हूं?
  तकनीकी सहायता के लिए, GroupDocs.Merger पर जाएँ[मंच](https://forum.groupdocs.com/c/merger/32) जहां आप प्रश्न पूछ सकते हैं और समुदाय के साथ जुड़ सकते हैं।
 ### प्रश्न: मुझे .NET के लिए GroupDocs.Merger के लिए विस्तृत दस्तावेज़ कहां मिल सकते हैं?
- व्यापक दस्तावेज़ीकरण का अन्वेषण करें[यहाँ](https://reference.groupdocs.com/merger/net/) आपके .NET अनुप्रयोगों में GroupDocs.Merger का उपयोग करने की विस्तृत जानकारी के लिए।
+ व्यापक दस्तावेज़ीकरण का अन्वेषण करें[यहाँ](https://tutorials.groupdocs.com/merger/net/) आपके .NET अनुप्रयोगों में GroupDocs.Merger का उपयोग करने की विस्तृत जानकारी के लिए।
 ### प्रश्न: क्या मैं GroupDocs.Merger के लिए अस्थायी लाइसेंस प्राप्त कर सकता हूँ?
  हां, आप यहां से अस्थायी लाइसेंस प्राप्त कर सकते हैं[यहाँ](https://purchase.groupdocs.com/temporary-license/) खरीदने से पहले GroupDocs.Merger की क्षमताओं का मूल्यांकन करना।

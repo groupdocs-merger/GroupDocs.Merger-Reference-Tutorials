@@ -3,7 +3,6 @@ title: Merging XLTM Files
 linktitle: Merging XLTM Files
 second_title: GroupDocs.Merger .NET API
 description: Learn how to merge XLTM files programmatically. Step-by-step guide with code examples.
-type: docs
 weight: 16
 url: /net/spreadsheet-merging/merging-xltm-files/
 ---
@@ -61,6 +60,6 @@ Yes, you will need a valid license to use GroupDocs.Merger in a commercial envir
 ### Is there a free trial available for GroupDocs.Merger?
 Yes, you can access a free trial of GroupDocs.Merger [here](https://releases.groupdocs.com/).
 ### Where can I find documentation for GroupDocs.Merger?
-You can refer to the complete documentation for GroupDocs.Merger [here](https://reference.groupdocs.com/merger/net/).
+You can refer to the complete documentation for GroupDocs.Merger [here](https://tutorials.groupdocs.com/merger/net/).
 ### Where can I get technical support for GroupDocs.Merger?
 For technical assistance and support, visit the GroupDocs.Merger forum [here](https://forum.groupdocs.com/c/merger/32).

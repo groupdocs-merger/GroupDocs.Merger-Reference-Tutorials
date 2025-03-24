@@ -3,7 +3,6 @@ title: Объединить файлы XLAM
 linktitle: Объединить файлы XLAM
 second_title: GroupDocs.Merger .NET API
 description: Узнайте, как легко объединять файлы XLAM. Упростите задачи управления документами с помощью этого мощного API.
-type: docs
 weight: 10
 url: /ru/net/spreadsheet-merging/merge-xlam-files/
 ---
@@ -80,7 +79,7 @@ Console.WriteLine("\nXLAM files merge completed successfully. \nCheck output in 
 
 ### Вопрос: Где я могу найти дополнительные ресурсы и поддержку для GroupDocs.Merger?
 
- Вы можете посетить[Документация GroupDocs.Merger](https://reference.groupdocs.com/merger/net/) для получения подробной информации по API и ознакомьтесь с[Форум групповых документов](https://forum.groupdocs.com/c/merger/32) для поддержки сообщества.
+ Вы можете посетить[Документация GroupDocs.Merger](https://tutorials.groupdocs.com/merger/net/) для получения подробной информации по API и ознакомьтесь с[Форум групповых документов](https://forum.groupdocs.com/c/merger/32) для поддержки сообщества.
 
 ### Вопрос: Могу ли я попробовать GroupDocs.Merger перед покупкой?
 

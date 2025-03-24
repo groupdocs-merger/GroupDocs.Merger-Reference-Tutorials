@@ -3,7 +3,6 @@ title: Visio Birleştirme
 linktitle: Visio Birleştirme
 second_title: GroupDocs.Merger .NET API'si
 description: GroupDocs.Merger for .NET'i kullanarak VDX, VSDM, VSDX, VSSM, VSSX, VSTM, VSTX, VSX, VTX dosyalarını kolayca birleştirin. Sorunsuz belge birleştirme için adım adım eğitimler.
-type: docs
 weight: 24
 url: /tr/net/visio-merging/
 ---

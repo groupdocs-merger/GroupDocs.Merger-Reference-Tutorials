@@ -3,7 +3,6 @@ title: Unione di file GIF
 linktitle: Unione di file GIF
 second_title: API GroupDocs.Merger .NET
 description: Scopri come unire file GIF utilizzando GroupDocs.Merger per .NET. Combina più GIF in modo programmatico con istruzioni dettagliate.
-type: docs
 weight: 11
 url: /it/net/image-merging/merging-gif-files/
 ---
@@ -63,6 +62,6 @@ Sì, GroupDocs.Merger supporta l'unione di vari formati di documenti, tra cui PD
 ### D: Come posso ottenere supporto tecnico per GroupDocs.Merger?
  Per assistenza tecnica, visitare GroupDocs.Merger[Forum](https://forum.groupdocs.com/c/merger/32) dove puoi porre domande e interagire con la community.
 ### D: Dove posso trovare la documentazione dettagliata per GroupDocs.Merger per .NET?
- Esplora la documentazione completa[Qui](https://reference.groupdocs.com/merger/net/) per informazioni dettagliate sull'utilizzo di GroupDocs.Merger nelle applicazioni .NET.
+ Esplora la documentazione completa[Qui](https://tutorials.groupdocs.com/merger/net/) per informazioni dettagliate sull'utilizzo di GroupDocs.Merger nelle applicazioni .NET.
 ### D: Posso ottenere una licenza temporanea per GroupDocs.Merger?
  Sì, puoi ottenere una licenza temporanea da[Qui](https://purchase.groupdocs.com/temporary-license/) per valutare le capacità di GroupDocs.Merger prima dell'acquisto.

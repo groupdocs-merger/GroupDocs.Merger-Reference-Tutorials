@@ -3,7 +3,6 @@ title: Průvodce sloučením souborů VSSM
 linktitle: Průvodce sloučením souborů VSSM
 second_title: GroupDocs.Merger .NET API
 description: Naučte se, jak sloučit soubory VSSM bez námahy pomocí GroupDocs.Merger for .NET. Podrobný průvodce pro vývojáře C#.
-type: docs
 weight: 13
 url: /cs/net/visio-merging/guide-merging-vssm-files/
 ---
@@ -53,7 +52,7 @@ Ano, GroupDocs.Merger podporuje slučování různých formátů včetně PDF, D
 ### Je GroupDocs.Merger vhodný pro zpracování rozsáhlých dokumentů?
 Ano, GroupDocs.Merger je optimalizován pro výkon a dokáže efektivně zpracovávat velké dokumenty.
 ### Kde najdu podrobnou dokumentaci k GroupDocs.Merger?
- Můžete odkazovat na[dokumentace](https://reference.groupdocs.com/merger/net/) za komplexní návod.
+ Můžete odkazovat na[dokumentace](https://tutorials.groupdocs.com/merger/net/) za komplexní návod.
 ### Jak mohu získat technickou podporu pro produkty GroupDocs?
  Navštivte[Fórum podpory GroupDocs](https://forum.groupdocs.com/c/merger/32)za pomoc a diskuze.
 ### Nabízí GroupDocs bezplatnou zkušební verzi pro vyzkoušení?

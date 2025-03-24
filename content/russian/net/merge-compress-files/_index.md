@@ -3,7 +3,6 @@ title: Объединение сжатых файлов
 linktitle: Объединение сжатых файлов
 second_title: GroupDocs.Merger .NET API
 description: Объединяйте и сжимайте файлы различных форматов без особых усилий. Научитесь легко комбинировать файлы 7z, TAR и ZIP с помощью наших пошаговых руководств.
-type: docs
 weight: 20
 url: /ru/net/merge-compress-files/
 ---

@@ -3,7 +3,6 @@ title: XLT fájlok egyesítése
 linktitle: XLT fájlok egyesítése
 second_title: GroupDocs.Merger .NET API
 description: Ismerje meg, hogyan lehet XLT-fájlokat egyesíteni. Ezzel a lépésenkénti útmutatóval programozottan kombinálhatja az Excel-sablonokat C# nyelven.
-type: docs
 weight: 15
 url: /hu/net/spreadsheet-merging/merge-xlt-files/
 ---
@@ -59,7 +58,7 @@ Igen, összevonhat több XLT-fájlt, ha egymás után hozzáadja őket`merger.Jo
 ### Kompatibilis a GroupDocs.Merger más Excel fájlformátumokkal, például az XLSX-szel vagy az XLS-szel?
 Igen, a GroupDocs.Merger különféle Excel-fájlformátumokat támogat, beleértve az XLSX-et, az XLS-t és az XLT-t.
 ### Hol találok további példákat és dokumentációt a GroupDocs.Merger for .NET-hez?
- Részletes dokumentáció és kódminták állnak rendelkezésre[itt](https://reference.groupdocs.com/merger/net/).
+ Részletes dokumentáció és kódminták állnak rendelkezésre[itt](https://tutorials.groupdocs.com/merger/net/).
 ### Elérhető a GroupDocs.Merger próbaverziója tesztelésre?
  Igen, letölthet egy ingyenes próbaverziót a webhelyről[itt](https://releases.groupdocs.com/).
 ### Hogyan kaphatok technikai támogatást vagy segítséget a GroupDocs.Mergerrel kapcsolatban?

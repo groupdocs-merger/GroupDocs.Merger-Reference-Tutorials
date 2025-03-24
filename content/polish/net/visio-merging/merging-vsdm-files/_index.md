@@ -3,7 +3,6 @@ title: Łączenie plików VSDM
 linktitle: Łączenie plików VSDM
 second_title: GroupDocs.Merger API .NET
 description: Dowiedz się, jak scalić pliki VSDM za pomocą GroupDocs.Merger dla .NET. Uprość swoje zadania związane z zarządzaniem dokumentami dzięki tej łatwej w obsłudze bibliotece.
-type: docs
 weight: 11
 url: /pl/net/visio-merging/merging-vsdm-files/
 ---

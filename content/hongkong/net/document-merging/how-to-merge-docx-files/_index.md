@@ -3,7 +3,6 @@ title: 如何合併 DOCX 文件
 linktitle: 如何合併 DOCX 文件
 second_title: GroupDocs.Merger .NET API
 description: 了解如何使用 GroupDocs.Merger 在 .NET 中以程式設計方式合併 DOCX 文件，從而有效地簡化文件操作任務。
-type: docs
 weight: 12
 url: /zh-hant/net/document-merging/how-to-merge-docx-files/
 ---
@@ -13,7 +12,7 @@ url: /zh-hant/net/document-merging/how-to-merge-docx-files/
 在開始之前，請確保您具備以下先決條件：
 - Visual Studio 安裝在您的電腦上。
 - 對 C# 和 .NET 開發有基本了解。
--  GroupDocs.Merger for .NET 程式庫已安裝（請參閱[文件](https://reference.groupdocs.com/merger/net/)有關安裝詳細資訊）。
+-  GroupDocs.Merger for .NET 程式庫已安裝（請參閱[文件](https://tutorials.groupdocs.com/merger/net/)有關安裝詳細資訊）。
 
 ## 導入命名空間
 首先在 C# 專案中導入必要的命名空間：
@@ -49,7 +48,7 @@ using (var merger = new Merger("Your Sample Document File"X))
 ### 我可以自訂合併流程，例如指定頁面範圍或新增浮水印嗎？
 當然，GroupDocs.Merger 提供了一個靈活的 API，可根據您的要求自訂合併流程。
 ### 在哪裡可以找到 GroupDocs.Merger for .NET 的其他支援或文件？
-您可以參考[文件](https://reference.groupdocs.com/merger/net/)詳細的 API 參考和範例。
+您可以參考[文件](https://tutorials.groupdocs.com/merger/net/)詳細的 API 參考和範例。
 ### GroupDocs.Merger for .NET 是否提供免費試用？
 是的，您可以開始使用[免費試用](https://releases.groupdocs.com/)在購買前探索功能。
 ### 如何取得 GroupDocs.Merger for .NET 的臨時授權？

@@ -3,7 +3,6 @@ title: XLS ファイルの結合
 linktitle: XLS ファイルの結合
 second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger を使用して .NET で Excel ファイルを結合し、シームレスなドキュメント操作を行う方法を学びます。ステップバイステップのチュートリアルに従ってください。
-type: docs
 weight: 11
 url: /ja/net/spreadsheet-merging/merging-xls-files/
 ---

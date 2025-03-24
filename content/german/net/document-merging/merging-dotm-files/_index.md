@@ -3,7 +3,6 @@ title: Zusammenführen von DOTM-Dateien
 linktitle: Zusammenführen von DOTM-Dateien
 second_title: GroupDocs.Merger .NET API
 description: Erfahren Sie, wie Sie DOTM-Dateien mit GroupDocs.Merger für .NET programmgesteuert zusammenführen. Dieses umfassende Handbuch enthält schrittweise Anweisungen für Entwickler.
-type: docs
 weight: 14
 url: /de/net/document-merging/merging-dotm-files/
 ---

@@ -3,7 +3,6 @@ title: 合并 DOCM 文件
 linktitle: 合并 DOCM 文件
 second_title: GroupDocs.Merger .NET API
 description: 了解如何使用 GroupDocs.Merger for .NET 无缝合并 DOCM 文件。适用于 .NET 应用程序的简单而高效的文档操作。
-type: docs
 weight: 11
 url: /zh/net/document-merging/merging-docm-files/
 ---

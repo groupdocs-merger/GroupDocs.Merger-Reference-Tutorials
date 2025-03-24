@@ -3,7 +3,6 @@ title: Συγχώνευση αρχείων EPUB
 linktitle: Συγχώνευση αρχείων EPUB
 second_title: GroupDocs.Merger .NET API
 description: Μάθετε πώς να συγχωνεύετε αρχεία EPUB μέσω προγραμματισμού χρησιμοποιώντας το GroupDocs.Merger για .NET. Ακολουθήστε το βήμα προς βήμα σεμινάριο μας.
-type: docs
 weight: 17
 url: /el/net/document-merging/merge-epub-files/
 ---

@@ -3,7 +3,6 @@ title: 合併 DOT 文件指南
 linktitle: 合併 DOT 文件指南
 second_title: GroupDocs.Merger .NET API
 description: 了解如何使用 GroupDocs.Merger for .NET 以程式設計方式合併 DOT (Graphviz) 檔案。輕鬆合併、組合和操作 DOT 文件。
-type: docs
 weight: 13
 url: /zh-hant/net/document-merging/guide-merging-dot-files/
 ---
@@ -13,7 +12,7 @@ url: /zh-hant/net/document-merging/guide-merging-dot-files/
 在我們開始之前，請確保您具備以下先決條件：
 - C# 和 .NET 程式設計的基礎知識。
 - Visual Studio 安裝在您的電腦上。
--  .NET 函式庫的 GroupDocs.Merger。您可以從[.NET 文件的 GroupDocs.Merger](https://reference.groupdocs.com/merger/net/).
+-  .NET 函式庫的 GroupDocs.Merger。您可以從[.NET 文件的 GroupDocs.Merger](https://tutorials.groupdocs.com/merger/net/).
 - 存取要合併的 DOT 檔案。
 
 ## 導入命名空間

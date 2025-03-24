@@ -3,7 +3,6 @@ title: Guida all'unione di file XLSM
 linktitle: Guida all'unione di file XLSM
 second_title: API GroupDocs.Merger .NET
 description: Unisci file XLSM senza problemi con GroupDocs.Merger per .NET. Combina in modo efficiente le cartelle di lavoro di Excel a livello di codice. Migliora le tue capacità di manipolazione dei documenti.
-type: docs
 weight: 13
 url: /it/net/spreadsheet-merging/guide-merging-xlsm-files/
 ---

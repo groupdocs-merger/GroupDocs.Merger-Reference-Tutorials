@@ -3,7 +3,6 @@ title: DOTX Dosyalarını Birleştir
 linktitle: DOTX Dosyalarını Birleştir
 second_title: GroupDocs.Merger .NET API'si
 description: GroupDocs.Merger'ı kullanarak DOTX dosyalarını .NET'te zahmetsizce nasıl birleştireceğinizi öğrenin. Belge işleme yeteneklerinizi geliştirin.
-type: docs
 weight: 15
 url: /tr/net/document-merging/merge-dotx-files/
 ---
@@ -13,7 +12,7 @@ Bu öğreticide, GroupDocs.Merger for .NET'i kullanarak DOTX (Word Şablonu) dos
 Eğiticiye dalmadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 - Makinenizde Visual Studio yüklü
 - .NET SDK (uyumlu sürüm) yüklü
--  .NET için GroupDocs.Merger yüklü (bkz.[yükleme Rehberi](https://reference.groupdocs.com/merger/net/) detaylar için)
+-  .NET için GroupDocs.Merger yüklü (bkz.[yükleme Rehberi](https://tutorials.groupdocs.com/merger/net/) detaylar için)
 - C# programlamaya ilişkin temel bilgiler
 
 ## Ad Alanlarını İçe Aktar
@@ -58,7 +57,7 @@ Evet, GroupDocs.Merger, DOCX, XLSX, PPTX, PDF ve daha fazlası gibi çeşitli be
 ### GroupDocs.Merger .NET Core ile uyumlu mu?
 Evet, GroupDocs.Merger hem .NET Framework hem de .NET Core ile uyumludur.
 ### GroupDocs.Merger için ek desteği veya belgeleri nerede bulabilirim?
- Şuraya başvurabilirsiniz:[GroupDocs.Merger belgeleri](https://reference.groupdocs.com/merger/net/) ayrıntılı API referansı ve kullanım örnekleri için.
+ Şuraya başvurabilirsiniz:[GroupDocs.Merger belgeleri](https://tutorials.groupdocs.com/merger/net/) ayrıntılı API referansı ve kullanım örnekleri için.
 ### GroupDocs.Merger ücretsiz deneme olanağı sunuyor mu?
  Evet, şu adrese erişebilirsiniz:[ücretsiz deneme sürümü](https://releases.groupdocs.com/) GroupDocs.Merger'ı değerlendirmek için.
 ### GroupDocs.Merger lisansını nasıl satın alabilirim?

@@ -3,7 +3,6 @@ title: Merging ODS Files
 linktitle: Merging ODS Files
 second_title: GroupDocs.Merger .NET API
 description: Learn how to merge ODS files effortlessly. Follow our step-by-step guide for seamless document manipulation.
-type: docs
 weight: 18
 url: /net/spreadsheet-merging/merging-ods-files/
 ---

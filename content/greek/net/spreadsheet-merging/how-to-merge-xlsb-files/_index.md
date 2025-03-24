@@ -3,7 +3,6 @@ title: Πώς να συγχωνεύσετε αρχεία XLSB
 linktitle: Πώς να συγχωνεύσετε αρχεία XLSB
 second_title: GroupDocs.Merger .NET API
 description: Μάθετε πώς να συγχωνεύετε αρχεία XLSB. Αυτός ο οδηγός βήμα προς βήμα απλοποιεί τις εργασίες χειρισμού εγγράφων.
-type: docs
 weight: 12
 url: /el/net/spreadsheet-merging/how-to-merge-xlsb-files/
 ---
@@ -54,7 +53,7 @@ Console.WriteLine("\nXLSB files merge completed successfully. \nCheck output in 
 ### Μπορεί το GroupDocs.Merger να χειριστεί άλλες μορφές αρχείων εκτός από το XLSB;
 Ναι, το GroupDocs.Merger υποστηρίζει ένα ευρύ φάσμα μορφών εγγράφων, συμπεριλαμβανομένων των DOCX, PDF, XLSX, PPTX και άλλων.
 ### Πού μπορώ να βρω περισσότερη τεκμηρίωση για το GroupDocs.Merger;
- Επισκέψου το[τεκμηρίωση](https://reference.groupdocs.com/merger/net/) για λεπτομερείς οδηγίες χρήσης και αναφορές API.
+ Επισκέψου το[τεκμηρίωση](https://tutorials.groupdocs.com/merger/net/) για λεπτομερείς οδηγίες χρήσης και αναφορές API.
 ### Υπάρχει διαθέσιμη δωρεάν δοκιμή για το GroupDocs.Merger;
  Ναι, μπορείτε να έχετε πρόσβαση σε ένα[δωρεάν δοκιμή](https://releases.groupdocs.com/)για να εξερευνήσετε τις δυνατότητες του GroupDocs.Merger.
 ### Πώς μπορώ να λάβω τεχνική υποστήριξη για το GroupDocs.Merger;

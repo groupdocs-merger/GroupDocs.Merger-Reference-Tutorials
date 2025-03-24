@@ -3,7 +3,6 @@ title: Průvodce sloučením souborů DOT
 linktitle: Průvodce sloučením souborů DOT
 second_title: GroupDocs.Merger .NET API
 description: Naučte se, jak sloučit soubory DOT (Graphviz) programově pomocí GroupDocs.Merger pro .NET. Snadno slučujte, kombinujte a manipulujte se soubory DOT.
-type: docs
 weight: 13
 url: /cs/net/document-merging/guide-merging-dot-files/
 ---
@@ -13,7 +12,7 @@ V tomto tutoriálu prozkoumáme, jak sloučit soubory DOT (Graphviz) pomocí Gro
 Než začneme, ujistěte se, že máte následující předpoklady:
 - Základní znalost programování v C# a .NET.
 - Visual Studio nainstalované na vašem počítači.
--  GroupDocs.Merger pro knihovnu .NET. Můžete si jej stáhnout z[GroupDocs.Merger pro dokumentaci .NET](https://reference.groupdocs.com/merger/net/).
+-  GroupDocs.Merger pro knihovnu .NET. Můžete si jej stáhnout z[GroupDocs.Merger pro dokumentaci .NET](https://tutorials.groupdocs.com/merger/net/).
 - Přístup k souborům DOT, které chcete sloučit.
 
 ## Import jmenných prostorů

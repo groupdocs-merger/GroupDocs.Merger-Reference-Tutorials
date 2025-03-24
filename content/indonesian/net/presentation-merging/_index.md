@@ -3,7 +3,6 @@ title: Penggabungan Presentasi
 linktitle: Penggabungan Presentasi
 second_title: GroupDocs.Merger .NET API
 description: Gabungkan berbagai format file presentasi dengan mudah. Ikuti tutorial kami untuk menggabungkan file PPS, PPSX, PPT, dan OTP secara efisien. #GroupDocs.Penggabungan
-type: docs
 weight: 25
 url: /id/net/presentation-merging/
 ---

@@ -3,7 +3,6 @@ title: Объединение файлов VSSX
 linktitle: Объединение файлов VSSX
 second_title: GroupDocs.Merger .NET API
 description: Узнайте, как легко объединять файлы VSSX в приложениях .NET с помощью GroupDocs.Merger, повышая эффективность управления документами.
-type: docs
 weight: 14
 url: /ru/net/visio-merging/merging-vssx-files/
 ---
@@ -63,7 +62,7 @@ Console.WriteLine("\nVSSX files merge completed successfully. \nCheck output in 
 ### Совместим ли GroupDocs.Merger для .NET с приложениями .NET Core?
 Да, GroupDocs.Merger для .NET совместим со средами .NET Framework и .NET Core.
 ### Где я могу найти дополнительную поддержку или документацию для GroupDocs.Merger для .NET?
- Вы можете изучить подробную документацию[здесь](https://reference.groupdocs.com/merger/net/) и обратиться за помощью в[Форум групповых документов](https://forum.groupdocs.com/c/merger/32).
+ Вы можете изучить подробную документацию[здесь](https://tutorials.groupdocs.com/merger/net/) и обратиться за помощью в[Форум групповых документов](https://forum.groupdocs.com/c/merger/32).
 ### Предлагает ли GroupDocs.Merger для .NET бесплатную пробную версию?
  Да, вы можете начать с бесплатной пробной версии GroupDocs.Merger для .NET с сайта[здесь](https://releases.groupdocs.com/).
 ### Как получить временную лицензию на GroupDocs.Merger для .NET?

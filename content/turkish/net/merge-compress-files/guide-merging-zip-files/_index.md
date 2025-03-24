@@ -3,7 +3,6 @@ title: Zip Dosyalarını Birleştirme Kılavuzu
 linktitle: Zip Dosyalarını Birleştirme Kılavuzu
 second_title: GroupDocs.Merger .NET API'si
 description: GroupDocs.Merger for .NET'i kullanarak ZIP dosyalarını programlı olarak nasıl birleştireceğinizi öğrenin. Bu eğitim, geliştiriciler için ayrıntılı bir kılavuz sağlar.
-type: docs
 weight: 12
 url: /tr/net/merge-compress-files/guide-merging-zip-files/
 ---

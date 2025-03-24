@@ -3,7 +3,6 @@ title: 如何合并 PPT 文件
 linktitle: 如何合并 PPT 文件
 second_title: GroupDocs.Merger .NET API
 description: 了解如何使用 GroupDocs.Merger for .NET 轻松合并 PowerPoint (PPT) 文件。使用这个强大的 API 增强您的 .NET 应用程序。
-type: docs
 weight: 12
 url: /zh/net/presentation-merging/how-to-merge-ppt-files/
 ---

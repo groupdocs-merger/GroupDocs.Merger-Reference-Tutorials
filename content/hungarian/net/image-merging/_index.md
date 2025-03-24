@@ -3,7 +3,6 @@ title: Kép egyesítése
 linktitle: Kép egyesítése
 second_title: GroupDocs.Merger .NET API
 description: Egyesítse zökkenőmentesen a BMP, GIF, PNG, SVG, SVGZ, TIF és TIFF fájlokat a GroupDocs.Merger .NET segítségével. A dokumentumkezelést hatékonyan integrálhatja .NET-alkalmazásaiba.
-type: docs
 weight: 21
 url: /hu/net/image-merging/
 ---

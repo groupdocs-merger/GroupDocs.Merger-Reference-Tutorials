@@ -3,7 +3,6 @@ title: Łączenie plików DOTM
 linktitle: Łączenie plików DOTM
 second_title: GroupDocs.Merger API .NET
 description: Dowiedz się, jak programowo scalić pliki DOTM przy użyciu GroupDocs.Merger dla .NET. Ten obszerny przewodnik zawiera instrukcje krok po kroku dla programistów.
-type: docs
 weight: 14
 url: /pl/net/document-merging/merging-dotm-files/
 ---

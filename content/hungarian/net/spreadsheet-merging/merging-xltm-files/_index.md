@@ -3,7 +3,6 @@ title: XLTM fájlok egyesítése
 linktitle: XLTM fájlok egyesítése
 second_title: GroupDocs.Merger .NET API
 description: Ismerje meg, hogyan lehet XLTM-fájlokat programozottan egyesíteni. Útmutató lépésről lépésre kódpéldákkal.
-type: docs
 weight: 16
 url: /hu/net/spreadsheet-merging/merging-xltm-files/
 ---
@@ -61,6 +60,6 @@ Igen, a GroupDocs.Merger támogatja a különféle dokumentumformátumok, péld�
 ### Van ingyenes próbaverzió a GroupDocs.Merger számára?
  Igen, hozzáférhet a GroupDocs.Merger ingyenes próbaverziójához[itt](https://releases.groupdocs.com/).
 ### Hol találom a GroupDocs.Merger dokumentációját?
-Tekintse meg a GroupDocs.Merger teljes dokumentációját[itt](https://reference.groupdocs.com/merger/net/).
+Tekintse meg a GroupDocs.Merger teljes dokumentációját[itt](https://tutorials.groupdocs.com/merger/net/).
 ### Hol kaphatok technikai támogatást a GroupDocs.Merger programhoz?
  Technikai segítségért és támogatásért keresse fel a GroupDocs.Merger fórumot[itt](https://forum.groupdocs.com/c/merger/32).

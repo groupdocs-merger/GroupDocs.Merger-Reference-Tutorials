@@ -3,7 +3,6 @@ title: 合并 TIFF 文件
 linktitle: 合并 TIFF 文件
 second_title: GroupDocs.Merger .NET API
 description: 了解如何使用 GroupDocs.Merger for .NET 合并 TIFF 文件。在 .NET 应用程序中无缝合并、拆分和修改文档。
-type: docs
 weight: 16
 url: /zh/net/image-merging/merging-tiff-files/
 ---
@@ -60,6 +59,6 @@ Console.WriteLine("\nTIFF files merge completed successfully. \nCheck output in 
 ### GroupDocs.Merger 是否提供用于评估的试用版？
 是的，您可以访问 GroupDocs.Merger 的免费试用版：[这里](https://releases.groupdocs.com/).
 ### 在哪里可以找到 GroupDocs.Merger 的综合文档？
-参考文档[这里](https://reference.groupdocs.com/merger/net/)获取详细的 API 参考和指南。
+参考文档[这里](https://tutorials.groupdocs.com/merger/net/)获取详细的 API 参考和指南。
 ### 我如何获得 GroupDocs.Merger 的支持？
 访问 GroupDocs 社区论坛[这里](https://forum.groupdocs.com/c/merger/32)以寻求支持和讨论。

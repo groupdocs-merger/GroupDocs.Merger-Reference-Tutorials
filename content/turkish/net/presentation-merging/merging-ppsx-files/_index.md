@@ -3,7 +3,6 @@ title: PPSX Dosyalarını Birleştirme
 linktitle: PPSX Dosyalarını Birleştirme
 second_title: GroupDocs.Merger .NET API'si
 description: PPSX dosyalarını GroupDocs.Merger for .NET ile kolayca birleştirin. Dosya birleştirme görevlerini otomatikleştirmek için adım adım kılavuzumuzu izleyin! Belge yönetimi iş akışınızı geliştirin.
-type: docs
 weight: 11
 url: /tr/net/presentation-merging/merging-ppsx-files/
 ---
@@ -55,7 +54,7 @@ Evet, GroupDocs.Merger, DOCX, XLSX, PPTX ve daha fazlasını içeren çok çeşi
 ### GroupDocs.Merger'ı kullanarak şifrelenmiş PPSX dosyalarını birleştirebilir miyim?
 GroupDocs.Merger, hem şifrelenmiş hem de parola korumalı dosyaları işleyebilir, böylece güvenli belge manipülasyonu sağlanır.
 ### GroupDocs.Merger için ek desteği veya belgeleri nerede bulabilirim?
- Kapsamlı olanı keşfedin[dokümantasyon](https://reference.groupdocs.com/merger/net/) ve bize ulaşın[destek Forumu](https://forum.groupdocs.com/c/merger/32) yardım için.
+ Kapsamlı olanı keşfedin[dokümantasyon](https://tutorials.groupdocs.com/merger/net/) ve bize ulaşın[destek Forumu](https://forum.groupdocs.com/c/merger/32) yardım için.
 ### GroupDocs.Merger ticari kullanım için lisans gerektiriyor mu?
  Evet, ticari kullanım için geçerli bir lisans gereklidir. adresinden lisans alabilirsiniz.[satın alma sayfası](https://purchase.groupdocs.com/buy) veya bir kullanın[geçici lisans](https://purchase.groupdocs.com/temporary-license/) Evrim için.
 ### Satın almadan önce GroupDocs.Merger'ı deneyebilir miyim?

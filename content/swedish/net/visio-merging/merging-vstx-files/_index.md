@@ -3,7 +3,6 @@ title: Sammanfoga VSTX-filer med GroupDocs.Merger för .NET
 linktitle: Sammanfoga VSTX-filer med GroupDocs.Merger för .NET
 second_title: GroupDocs.Merger .NET API
 description: Lär dig hur du slår ihop VSTX-filer med GroupDocs.Merger för .NET. Följ denna steg-för-steg-guide för effektiv dokumenthantering i C#.
-type: docs
 weight: 16
 url: /sv/net/visio-merging/merging-vstx-files/
 ---
@@ -64,4 +63,4 @@ Absolut, du kan ange olika alternativ som sidnummer, rotation och dokumentskydd 
 ### Är GroupDocs.Merger för .NET lämplig för storskaliga dokumentbehandlingsuppgifter?
 Ja, GroupDocs.Merger är optimerad för effektiv hantering av stora dokument och batchoperationer.
 ### Var kan jag hitta ytterligare support eller dokumentation för GroupDocs.Merger för .NET?
- Besök[GroupDocs.Merger-forum](https://forum.groupdocs.com/c/merger/32) eller hänvisa till[dokumentation](https://reference.groupdocs.com/merger/net/) för omfattande resurser.
+ Besök[GroupDocs.Merger-forum](https://forum.groupdocs.com/c/merger/32) eller hänvisa till[dokumentation](https://tutorials.groupdocs.com/merger/net/) för omfattande resurser.

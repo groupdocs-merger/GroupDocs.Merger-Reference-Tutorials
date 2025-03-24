@@ -3,7 +3,6 @@ title: Scal pliki XLT
 linktitle: Scal pliki XLT
 second_title: GroupDocs.Merger API .NET
 description: Dowiedz się, jak scalić pliki XLT. Połącz programowo szablony programu Excel w języku C#, korzystając z tego przewodnika krok po kroku.
-type: docs
 weight: 15
 url: /pl/net/spreadsheet-merging/merge-xlt-files/
 ---
@@ -59,7 +58,7 @@ Tak, możesz scalić wiele plików XLT, dodając je sekwencyjnie za pomocą`merg
 ### Czy GroupDocs.Merger jest zgodny z innymi formatami plików Excel, takimi jak XLSX lub XLS?
 Tak, GroupDocs.Merger obsługuje różne formaty plików Excel, w tym XLSX, XLS i XLT.
 ### Gdzie mogę znaleźć więcej przykładów i dokumentacji GroupDocs.Merger dla .NET?
- Dostępna jest szczegółowa dokumentacja i próbki kodu[Tutaj](https://reference.groupdocs.com/merger/net/).
+ Dostępna jest szczegółowa dokumentacja i próbki kodu[Tutaj](https://tutorials.groupdocs.com/merger/net/).
 ### Czy dostępna jest wersja próbna GroupDocs.Merger do testowania?
  Tak, możesz pobrać bezpłatną wersję próbną ze strony[Tutaj](https://releases.groupdocs.com/).
 ### Jak mogę uzyskać wsparcie techniczne lub pomoc dotyczącą GroupDocs.Merger?

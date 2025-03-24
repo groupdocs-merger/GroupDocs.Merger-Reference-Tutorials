@@ -3,7 +3,6 @@ title: Hợp nhất các tệp XLT
 linktitle: Hợp nhất các tệp XLT
 second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp XLT. Kết hợp các mẫu Excel theo chương trình trong C# với hướng dẫn từng bước này.
-type: docs
 weight: 15
 url: /vi/net/spreadsheet-merging/merge-xlt-files/
 ---
@@ -59,7 +58,7 @@ Có, bạn có thể hợp nhất nhiều tệp XLT bằng cách thêm chúng th
 ### GroupDocs.Merger có tương thích với các định dạng tệp Excel khác như XLSX hoặc XLS không?
 Có, GroupDocs.Merger hỗ trợ nhiều định dạng tệp Excel khác nhau, bao gồm XLSX, XLS và XLT.
 ### Tôi có thể tìm thêm ví dụ và tài liệu về GroupDocs.Merger cho .NET ở đâu?
- Tài liệu chi tiết và mẫu mã có sẵn[đây](https://reference.groupdocs.com/merger/net/).
+ Tài liệu chi tiết và mẫu mã có sẵn[đây](https://tutorials.groupdocs.com/merger/net/).
 ### Có phiên bản dùng thử của GroupDocs.Merger để thử nghiệm không?
  Có, bạn có thể tải xuống phiên bản dùng thử miễn phí từ[đây](https://releases.groupdocs.com/).
 ### Làm cách nào tôi có thể nhận được hỗ trợ kỹ thuật hoặc trợ giúp với GroupDocs.Merger?
