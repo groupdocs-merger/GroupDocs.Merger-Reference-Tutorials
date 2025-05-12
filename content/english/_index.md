@@ -39,7 +39,7 @@ GroupDocs.Merger works with over 50 file formats across multiple categories:
 - **Archives**: ZIP, TAR, 7Z 
 - **And many more**
 
-## GroupDocs.Merger for .NET Tutorials
+## [GroupDocs.Merger for .NET Tutorials](./net)
 
 Discover how to integrate powerful document processing capabilities into your .NET applications. Our comprehensive .NET tutorials guide you through every aspect of the GroupDocs.Merger API, from basic operations to advanced implementation scenarios.
 
@@ -70,7 +70,7 @@ With GroupDocs.Merger for .NET, you can create robust document management soluti
 - [Text Operations](./net/text-operations/) - Work with text-based documents efficiently
 - [Licensing](./net/licensing/) - Configure GroupDocs.Merger properly in your projects
 
-## GroupDocs.Merger for Java Tutorials
+## [GroupDocs.Merger for Java Tutorials](./java)
 
 Transform your Java applications with powerful document processing capabilities. Our Java tutorials provide detailed guidance for implementing GroupDocs.Merger in Java environments, with complete examples that work across major platforms including Windows, Linux, and macOS.
 
