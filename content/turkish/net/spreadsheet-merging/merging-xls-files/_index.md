@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API'si
 description: Sorunsuz belge işleme için GroupDocs.Merger'ı kullanarak Excel dosyalarını .NET'te nasıl birleştireceğinizi öğrenin. Adım adım eğitimimizi takip edin.
 weight: 11
 url: /tr/net/spreadsheet-merging/merging-xls-files/
+type: docs
 ---
-
 # XLS Dosyalarını Birleştirme
 
 ## giriiş

@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Merger for Java
 - retrieve document information Java
 - Java document metadata extraction
-
+type: docs
 ---
-
-
 # Retrieving Document Information with GroupDocs.Merger for Java: A Comprehensive Step-by-Step Guide
 
 ## Introduction

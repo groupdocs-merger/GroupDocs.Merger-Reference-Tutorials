@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Aprenda como mesclar arquivos VTX programaticamente usando GroupDocs.Merger for .NET. Guia passo a passo com exemplos de código.
 weight: 18
 url: /pt/net/visio-merging/guide-merging-vtx-files/
+type: docs
 ---
-
 # Guia para mesclar arquivos VTX
 
 ## Introdução

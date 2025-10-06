@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: تعرف على كيفية دمج ملفات ODT باستخدام GroupDocs.Merger لـ .NET دون عناء. عزز قدرات إدارة المستندات لديك باستخدام هذه المكتبة القوية.
 weight: 16
 url: /ar/net/document-merging/merging-odt-files/
+type: docs
 ---
-
 # دمج ملفات ODT
 
 ## مقدمة

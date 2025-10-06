@@ -5,8 +5,8 @@ weight: 10
 url: /net/
 description: "Master document management with comprehensive GroupDocs.Merger for .NET tutorials - merge PDF, Word, Excel, PowerPoint, images and more with C# code examples and step-by-step guides."
 is_root: true
+type: docs
 ---
-
 # Complete GroupDocs.Merger for .NET Tutorials & Code Examples
 
 ## Advanced Document Management with GroupDocs.Merger

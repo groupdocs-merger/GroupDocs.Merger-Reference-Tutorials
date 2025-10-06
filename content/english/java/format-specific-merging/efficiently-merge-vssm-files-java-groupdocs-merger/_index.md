@@ -8,10 +8,8 @@ keywords:
 - merge VSSM files Java
 - GroupDocs Merger for Java
 - Visio XML Drawing Macro-enabled
-
+type: docs
 ---
-
-
 # Mastering File Merging in Java: Efficiently Combine VSSM Files Using GroupDocs.Merger
 
 ## Introduction

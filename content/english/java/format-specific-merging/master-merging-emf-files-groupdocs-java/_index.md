@@ -8,10 +8,8 @@ keywords:
 - merge EMF files Java
 - GroupDocs Merger for Java
 - EMF file merging
-
+type: docs
 ---
-
-
 # How to Merge EMF Files Using GroupDocs.Merger for Java: A Complete Guide
 
 In today's digital landscape, efficient file management is essential for productivity. If you need to merge multiple Enhanced Metafile (EMF) files into a single document, this guide will show you how using **GroupDocs.Merger for Java**.

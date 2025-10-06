@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: يمكنك دمج تنسيقات المستندات المختلفة بسهولة في .NET باستخدام GroupDocs.Merger. اجمع بسلاسة بين DOC وDOCX وPDF والمزيد. تعزيز إدارة المستندات الخاصة بك اليوم!
 weight: 22
 url: /ar/net/document-merging/
+type: docs
 ---
-
 # دمج المستندات
 
 ## مقدمة

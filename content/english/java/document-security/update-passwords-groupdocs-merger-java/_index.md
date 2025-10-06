@@ -8,10 +8,8 @@ keywords:
 - update document passwords
 - GroupDocs.Merger Java
 - document security
-
+type: docs
 ---
-
-
 # How to Secure Your Documents by Updating Passwords with GroupDocs.Merger for Java
 
 ## Introduction

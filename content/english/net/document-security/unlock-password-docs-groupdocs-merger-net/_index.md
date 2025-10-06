@@ -8,10 +8,8 @@ keywords:
 - unlock password-protected documents
 - manage secured files with .NET
 - document management using GroupDocs
-
+type: docs
 ---
-
-
 # How to Unlock Password-Protected Documents Using GroupDocs.Merger for .NET
 
 ## Introduction

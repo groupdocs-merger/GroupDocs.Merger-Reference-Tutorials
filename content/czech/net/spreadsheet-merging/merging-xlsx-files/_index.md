@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Naučte se, jak bez námahy sloučit soubory XLSX v .NET pomocí GroupDocs.Merger. Postupujte podle tohoto podrobného návodu pro bezproblémovou správu dokumentů.
 weight: 14
 url: /cs/net/spreadsheet-merging/merging-xlsx-files/
+type: docs
 ---
-
 # Sloučení souborů XLSX
 
 ## Úvod

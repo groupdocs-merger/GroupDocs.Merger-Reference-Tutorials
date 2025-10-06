@@ -8,10 +8,8 @@ keywords:
 - merge VTX files
 - GroupDocs.Merger for Java
 - Visio Template merging
-
+type: docs
 ---
-
-
 # How to Merge VTX Files Using GroupDocs.Merger for Java: A Step-by-Step Guide
 
 Merging multiple Microsoft Visio Drawing Template (VSTX) files into a single file can save time and streamline workflows in business and design. This guide will demonstrate how to achieve this using **GroupDocs.Merger for Java**, an efficient library designed for document manipulation.

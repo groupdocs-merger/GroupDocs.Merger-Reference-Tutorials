@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Aprenda a fusionar archivos GIF usando GroupDocs.Merger para .NET. Combine varios GIF mediante programación con instrucciones paso a paso.
 weight: 11
 url: /es/net/image-merging/merging-gif-files/
+type: docs
 ---
-
 # Fusionar archivos GIF
 
 ## Introducción

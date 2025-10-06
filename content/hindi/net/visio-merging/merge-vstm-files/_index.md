@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: .NET के लिए GroupDocs.Merger का उपयोग करके आसानी से VSTM फ़ाइलों को मर्ज करना सीखें। हमारे चरण-दर-चरण ट्यूटोरियल और अपने दस्तावेज़ हेरफेर क्षमताओं का पालन करें।
 weight: 15
 url: /hi/net/visio-merging/merge-vstm-files/
+type: docs
 ---
-
 # VSTM फ़ाइलें मर्ज करें
 
 ## परिचय

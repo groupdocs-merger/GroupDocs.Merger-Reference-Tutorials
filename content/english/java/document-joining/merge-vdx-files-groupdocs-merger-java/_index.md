@@ -8,10 +8,8 @@ keywords:
 - merge VDX files
 - GroupDocs.Merger for Java
 - Java document merging
-
+type: docs
 ---
-
-
 # How to Merge VDX Files Efficiently Using GroupDocs.Merger for Java
 
 ## Introduction

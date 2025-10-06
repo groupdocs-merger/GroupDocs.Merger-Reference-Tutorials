@@ -8,10 +8,8 @@ keywords:
 - merge pptm files
 - GroupDocs.Merger for .NET
 - automate merging presentations
-
+type: docs
 ---
-
-
 # How to Merge PowerPoint Open XML (.pptm) Files Using GroupDocs.Merger for .NET
 ## Introduction
 Are you struggling with manually merging multiple PowerPoint presentations? With the growing need to consolidate information from various PPTM files into a single document, automating this process can save you time and effort. This tutorial will guide you through using **GroupDocs.Merger for .NET** to effortlessly merge `.pptm` files.

@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Learn how to merge DOC files programmatically using GroupDocs.Merger for .NET. Follow our step-by-step guide to seamlessly combine multiple documents into one.
 weight: 10
 url: /net/document-merging/merge-doc-files/
+type: docs
 ---
-
 # Merge DOC Files with GroupDocs.Merger for .NET
 
 ## Introduction

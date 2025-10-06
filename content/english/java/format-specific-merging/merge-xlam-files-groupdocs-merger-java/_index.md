@@ -8,10 +8,8 @@ keywords:
 - merge .xlam files
 - GroupDocs Merger for Java
 - document manipulation Java
-
+type: docs
 ---
-
-
 # Efficiently Merge XLAM Files Using GroupDocs.Merger for Java
 
 ## Introduction

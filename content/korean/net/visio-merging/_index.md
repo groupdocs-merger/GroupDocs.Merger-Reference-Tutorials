@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: .NET용 GroupDocs.Merger를 사용하여 VDX, VSDM, VSDX, VSSM, VSSX, VSTM, VSTX, VSX, VTX 파일을 쉽게 병합합니다. 원활한 문서 병합을 위한 단계별 튜토리얼입니다.
 weight: 24
 url: /ko/net/visio-merging/
+type: docs
 ---
-
 # Visio 병합
 
 

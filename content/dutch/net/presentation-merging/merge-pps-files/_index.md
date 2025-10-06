@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Leer hoe u PPS-bestanden naadloos kunt samenvoegen met GroupDocs.Merger voor .NET. Stapsgewijze handleiding met codevoorbeelden. Verbeter uw vaardigheden op het gebied van documentmanipulatie.
 weight: 10
 url: /nl/net/presentation-merging/merge-pps-files/
+type: docs
 ---
-
 # PPS-bestanden samenvoegen
 
 ## Invoering

@@ -8,10 +8,8 @@ keywords:
 - merge PowerPoint files in .NET
 - GroupDocs.Merger for .NET tutorial
 - .NET PowerPoint merging
-
+type: docs
 ---
-
-
 # How to Merge PowerPoint Files in .NET with GroupDocs.Merger
 
 ## Introduction

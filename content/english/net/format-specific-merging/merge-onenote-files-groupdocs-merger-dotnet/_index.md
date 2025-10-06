@@ -8,10 +8,8 @@ keywords:
 - merge OneNote files
 - GroupDocs Merger for .NET
 - .NET document merging
-
+type: docs
 ---
-
-
 # Merge Microsoft OneNote Files Using GroupDocs.Merger for .NET: A Comprehensive Guide
 
 ## Introduction

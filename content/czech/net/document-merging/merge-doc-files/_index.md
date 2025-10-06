@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Naučte se, jak programově sloučit soubory DOC pomocí GroupDocs.Merger for .NET. Postupujte podle našeho podrobného průvodce a plynule zkombinujte více dokumentů do jednoho.
 weight: 10
 url: /cs/net/document-merging/merge-doc-files/
+type: docs
 ---
-
 # Sloučit soubory DOC s GroupDocs.Merger pro .NET
 
 ## Úvod

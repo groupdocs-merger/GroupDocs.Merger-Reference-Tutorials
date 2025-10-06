@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Scopri come unire i file XLTM a livello di codice. Guida passo passo con esempi di codice.
 weight: 16
 url: /it/net/spreadsheet-merging/merging-xltm-files/
+type: docs
 ---
-
 # Unione di file XLTM
 
 ## introduzione

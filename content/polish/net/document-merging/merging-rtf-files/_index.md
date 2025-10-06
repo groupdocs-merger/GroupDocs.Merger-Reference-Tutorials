@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger API .NET
 description: Dowiedz się, jak bezproblemowo scalać pliki RTF w platformie .NET, korzystając z narzędzia GroupDocs.Merger w celu bezproblemowego przetwarzania dokumentów.
 weight: 21
 url: /pl/net/document-merging/merging-rtf-files/
+type: docs
 ---
-
 # Łączenie plików RTF
 
 ## Wstęp

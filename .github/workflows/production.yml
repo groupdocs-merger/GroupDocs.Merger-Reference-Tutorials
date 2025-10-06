@@ -22,10 +22,11 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
 
     # Steps represent a sequence of merger that will be executed as part of the job
     steps:
+          
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout
         uses: actions/checkout@v2
@@ -38,26 +39,39 @@ jobs:
           repository: groupdocs/tutorials-theme
           token: ${{ secrets.REPO_TOKEN }}
           fetch-depth: 0
-          path: themes/tutorials-theme      
+          path: themes/tutorials-theme
+      - name: Install Theme Dependencies
+        run: npm install
+        working-directory: ./themes/tutorials-theme      
       # Step 2 - Sets up the latest version of Hugo
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
-            hugo-version: '0.97.3'
+            hugo-version: 'latest'
             extended: true
       - name: Install Dependicies1
         run:  npm install -D --save autoprefixer
       - name: Install Dependicies2
         run:  npm install -D --save postcss-cli
+      - name: Install Dependicies3
+        run:  npm install -D postcss
       # Also specifies the theme we want to use
       - name: Build
         run: hugo --configDir config/merger --environment production --minify
         
-      - name: Deploy apiqa-tutorials.groupdocs.com(tutorials-merger)(family)(Production) to S3
-        run: hugo --configDir config/merger --environment production deploy --target "Production" --maxDeletes 0
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS }}
+      # Configure AWS credentials
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.ACCESS_KEY }}
+          aws-secret-access-key: ${{ secrets.SECRET_ACCESS }}
+          aws-region: us-west-2
+      - name: Deploy to S3 using AWS CLI
+        run: |
+          aws s3 sync public/ s3://${{ secrets.S3_BUCKET }}/merger/ \
+            --delete \
+            --exclude "*.map" \
+            --cache-control "public, max-age=3600"
       # Invalidate Cloudfront
       - name: invalidate
         uses: chetan/invalidate-cloudfront-action@v2

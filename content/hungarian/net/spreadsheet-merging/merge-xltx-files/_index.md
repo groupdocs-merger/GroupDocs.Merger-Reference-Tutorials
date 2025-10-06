@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Ismerje meg, hogyan egyesíthet könnyedén XLTX fájlokat. Kezdje el az XLTX-fájlok egyesítését, és hatékonyan egyszerűsítse dokumentumkezelési feladatait.
 weight: 17
 url: /hu/net/spreadsheet-merging/merge-xltx-files/
+type: docs
 ---
-
 # XLTX fájlok egyesítése
 
 ## Bevezetés

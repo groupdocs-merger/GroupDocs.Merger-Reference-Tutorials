@@ -5,8 +5,8 @@ weight: 10
 url: /zh/net/
 description: 使用 GroupDocs.Merger .NET 轻松合并和压缩各种文件格式。了解有关合并图像、文档等的分步教程！
 is_root: true
+type: docs
 ---
-
 # GroupDocs.Merger for .NET 的教程和示例
 
 ## 介绍

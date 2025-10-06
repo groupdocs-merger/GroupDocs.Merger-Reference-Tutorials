@@ -3,8 +3,8 @@ title: "Document Page Operations Tutorials for GroupDocs.Merger .NET"
 description: "Complete tutorials for manipulating document pages including moving, removing, swapping, rotating, and changing page orientation with GroupDocs.Merger for .NET."
 weight: 8
 url: "/net/page-operations/"
+type: docs
 ---
-
 # Document Page Operations Tutorials for GroupDocs.Merger .NET
 
 Learn how to manipulate individual pages within documents using our GroupDocs.Merger tutorials for .NET developers. These practical guides demonstrate how to move pages to new positions, remove unwanted pages, exchange page locations, rotate page orientation, and change page layout settings programmatically. Each tutorial includes working C# code examples for common page manipulation tasks, helping you build applications that can precisely control page-level content in merged documents.

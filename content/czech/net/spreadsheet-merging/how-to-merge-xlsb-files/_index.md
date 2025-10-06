@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Přečtěte si, jak sloučit soubory XLSB. Tento podrobný průvodce zjednodušuje úlohy manipulace s dokumenty.
 weight: 12
 url: /cs/net/spreadsheet-merging/how-to-merge-xlsb-files/
+type: docs
 ---
-
 # Jak sloučit soubory XLSB
 
 ## Úvod

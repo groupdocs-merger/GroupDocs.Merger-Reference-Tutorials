@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger for .NET を使用して VSTM ファイルを簡単にマージする方法を学びます。ステップバイステップのチュートリアルに従って、ドキュメント操作機能を体験してください。
 weight: 15
 url: /ja/net/visio-merging/merge-vstm-files/
+type: docs
 ---
-
 # VSTM ファイルを結合する
 
 ## 導入

@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: XLT 파일을 병합하는 방법을 알아보세요. 이 단계별 가이드를 사용하여 C#에서 프로그래밍 방식으로 Excel 템플릿을 결합하세요.
 weight: 15
 url: /ko/net/spreadsheet-merging/merge-xlt-files/
+type: docs
 ---
-
 # XLT 파일 병합
 
 ## 소개

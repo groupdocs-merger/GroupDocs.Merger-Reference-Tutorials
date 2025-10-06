@@ -8,10 +8,8 @@ keywords:
 - merge XPS files with Java
 - GroupDocs.Merger setup
 - Java document merging
-
+type: docs
 ---
-
-
 # How to Load and Merge XPS Files Using GroupDocs.Merger for Java
 
 **Efficiently manage your documents by merging multiple XPS files into one streamlined document with the power of GroupDocs.Merger for Java.**

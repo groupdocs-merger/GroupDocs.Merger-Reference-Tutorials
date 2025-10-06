@@ -6,8 +6,8 @@ description: Gabungkan, pisahkan, dan kompres dokumen dengan mudah di seluruh pl
 weight: 11
 url: /id/
 is_root: true
+type: docs
 ---
-
 # Gabungkan dan Pisahkan Dokumen dengan Mudah dengan GroupDocs.Merger
 
 

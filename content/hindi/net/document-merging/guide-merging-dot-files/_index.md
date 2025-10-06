@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: .NET के लिए GroupDocs.Merger का उपयोग करके DOT (ग्राफ़विज़) फ़ाइलों को प्रोग्रामेटिक रूप से मर्ज करना सीखें। DOT फ़ाइलों को आसानी से मर्ज करें, संयोजित करें और हेरफेर करें।
 weight: 13
 url: /hi/net/document-merging/guide-merging-dot-files/
+type: docs
 ---
-
 # डीओटी फाइलों को मर्ज करने के लिए गाइड
 
 ## परिचय

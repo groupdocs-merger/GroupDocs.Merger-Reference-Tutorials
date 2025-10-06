@@ -6,8 +6,8 @@ description: "Powerful document manipulation API to merge, split, swap & compres
 weight: 11
 url: /
 is_root: true
+type: docs
 ---
-
 # GroupDocs.Merger: Complete Document Merging & Splitting API Solution
 
 ## Transform How You Manage Documents Across Multiple Platforms

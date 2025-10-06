@@ -8,10 +8,8 @@ keywords:
 - merge multiple XLTMs with GroupDocs.Merger for Java
 - GroupDocs.Merger setup Java
 - Java document merging
-
+type: docs
 ---
-
-
 # How to Merge Multiple XLTMs Using GroupDocs.Merger for Java
 
 Welcome to this comprehensive guide on merging multiple XLTM files with GroupDocs.Merger for Java. Whether you're a developer aiming to streamline data processing tasks or an IT professional seeking efficient document management solutions, follow these steps to enhance your project integration.

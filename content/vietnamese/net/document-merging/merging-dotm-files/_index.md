@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp DOTM theo chương trình bằng GroupDocs.Merger cho .NET. Hướng dẫn toàn diện này cung cấp hướng dẫn từng bước cho nhà phát triển.
 weight: 14
 url: /vi/net/document-merging/merging-dotm-files/
+type: docs
 ---
-
 # Hợp nhất các tệp DOTM
 
 ## Giới thiệu

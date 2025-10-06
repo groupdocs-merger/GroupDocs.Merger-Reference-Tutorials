@@ -8,10 +8,8 @@ keywords:
 - move pages in documents with GroupDocs.Merger for .NET
 - document manipulation using GroupDocs.Merger for .NET
 - reorder document pages programmatically
-
+type: docs
 ---
-
-
 # How to Move Pages Within a Document Using GroupDocs.Merger for .NET
 
 ## Introduction

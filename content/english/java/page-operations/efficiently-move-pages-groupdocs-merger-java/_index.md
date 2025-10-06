@@ -8,10 +8,8 @@ keywords:
 - move pages in documents
 - GroupDocs Merger Java
 - reorganize document structure
-
+type: docs
 ---
-
-
 # Efficiently Move Pages in Documents Using GroupDocs.Merger for Java
 
 ## Introduction

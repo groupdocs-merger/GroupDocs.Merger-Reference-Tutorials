@@ -5,8 +5,8 @@ weight: 10
 url: /java/
 description: "Complete step-by-step tutorials for GroupDocs.Merger Java API - learn to merge PDFs, Word, Excel, PowerPoint documents, split files, manage pages, and secure documents easily."
 is_root: true
+type: docs
 ---
-
 # Comprehensive GroupDocs.Merger for Java Tutorials & Examples
 
 ## Master Document Manipulation with GroupDocs.Merger

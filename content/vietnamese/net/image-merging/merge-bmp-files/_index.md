@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp BMP bằng GroupDocs.Merger cho .NET với hướng dẫn toàn diện này. Phát triển ứng dụng .NET của bạn một cách hiệu quả.
 weight: 10
 url: /vi/net/image-merging/merge-bmp-files/
+type: docs
 ---
-
 # Hợp nhất các tệp BMP
 
 ## Giới thiệu

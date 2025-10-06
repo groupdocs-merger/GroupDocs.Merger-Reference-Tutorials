@@ -8,10 +8,8 @@ keywords:
 - Set GroupDocs.Merger License Java
 - InputStream GroupDocs.Merger Java
 - Java Stream License Setup
-
+type: docs
 ---
-
-
 # How to Set GroupDocs.Merger for Java License Using InputStream: A Comprehensive Guide
 ## Introduction
 Setting up your GroupDocs.Merger for Java license efficiently can save time and boost productivity, especially in dynamic or distributed environments. This guide will walk you through setting a license using an `InputStream`, ensuring seamless integration into your Java projects.

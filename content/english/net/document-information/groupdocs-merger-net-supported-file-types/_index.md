@@ -8,10 +8,8 @@ keywords:
 - retrieve supported file types GroupDocs.Merger .NET
 - display document formats GroupDocs Merger
 - integrate GroupDocs.Merger into .NET applications
-
+type: docs
 ---
-
-
 # Retrieve and Display Supported File Types with GroupDocs.Merger for .NET
 
 ## Introduction

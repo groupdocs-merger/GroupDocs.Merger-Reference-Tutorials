@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Merger for Java
 - document page previews
 - Java document management
-
+type: docs
 ---
-
-
 # How to Generate Document Pages Preview Using GroupDocs.Merger for Java
 
 ## Introduction

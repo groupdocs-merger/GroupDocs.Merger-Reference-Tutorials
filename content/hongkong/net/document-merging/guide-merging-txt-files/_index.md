@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: 使用 GroupDocs.Merger 在 .NET 中無縫合併 TXT 檔案。開發人員的分步指南。提供文件和支援。
 weight: 18
 url: /zh-hant/net/document-merging/guide-merging-txt-files/
+type: docs
 ---
-
 # 使用 GroupDocs.Merger for .NET 合併 TXT 檔案的指南
 
 ## 介紹

@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Ismerje meg, hogyan lehet XLTM-fájlokat programozottan egyesíteni. Útmutató lépésről lépésre kódpéldákkal.
 weight: 16
 url: /hu/net/spreadsheet-merging/merging-xltm-files/
+type: docs
 ---
-
 # XLTM fájlok egyesítése
 
 ## Bevezetés

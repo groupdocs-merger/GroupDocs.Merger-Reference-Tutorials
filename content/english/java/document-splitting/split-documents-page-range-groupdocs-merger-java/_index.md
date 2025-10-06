@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Merger for Java
 - split documents by page range
 - document management
-
+type: docs
 ---
-
-
 # Master Document Splitting by Page Range with GroupDocs.Merger for Java
 
 **Unlock Efficient Document Management**: Learn how to split documents into one-page files based on specific page ranges and filters using **GroupDocs.Merger for Java**.

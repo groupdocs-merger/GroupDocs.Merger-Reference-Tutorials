@@ -8,10 +8,8 @@ keywords:
 - load SVG files Java
 - GroupDocs Merger setup Java
 - SVG manipulation with GroupDocs
-
+type: docs
 ---
-
-
 # How to Load SVG Files in Java Using GroupDocs.Merger: A Step-by-Step Guide
 
 ## Introduction

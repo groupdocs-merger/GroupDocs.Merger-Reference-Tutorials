@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: เรียนรู้วิธีผสานไฟล์ XLT รวมเทมเพลต Excel โดยทางโปรแกรมใน C# เข้ากับคำแนะนำทีละขั้นตอนนี้
 weight: 15
 url: /th/net/spreadsheet-merging/merge-xlt-files/
+type: docs
 ---
-
 # รวมไฟล์ XLT
 
 ## การแนะนำ

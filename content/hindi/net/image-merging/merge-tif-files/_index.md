@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: .NET के लिए GroupDocs.Merger का उपयोग करके TIF फ़ाइलों को प्रोग्रामेटिक रूप से मर्ज करना सीखें। .NET डेवलपर्स के लिए कुशल दस्तावेज़ हेरफेर एपीआई।
 weight: 15
 url: /hi/net/image-merging/merge-tif-files/
+type: docs
 ---
-
 # TIF फ़ाइलें मर्ज करें
 
 ## परिचय

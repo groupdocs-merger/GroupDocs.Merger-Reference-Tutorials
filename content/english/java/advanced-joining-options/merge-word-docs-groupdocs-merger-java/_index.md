@@ -8,10 +8,8 @@ keywords:
 - merge Word documents Java
 - seamlessly merge documents
 - GroupDocs.Merger for Java
-
+type: docs
 ---
-
-
 # Seamlessly Merge Word Documents Without New Pages Using GroupDocs.Merger for Java
 
 ## Introduction

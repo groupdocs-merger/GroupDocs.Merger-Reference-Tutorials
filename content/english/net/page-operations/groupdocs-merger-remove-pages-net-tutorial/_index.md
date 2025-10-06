@@ -8,10 +8,8 @@ keywords:
 - remove pages from documents .NET
 - GroupDocs.Merger for .NET setup
 - document management with GroupDocs.Merger
-
+type: docs
 ---
-
-
 # How to Remove Pages from Documents Using GroupDocs.Merger for .NET: A Step-by-Step Guide
 
 ## Introduction

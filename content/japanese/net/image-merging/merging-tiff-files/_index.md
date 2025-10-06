@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger for .NET を使用して TIFF ファイルをマージする方法を学びます。 .NET アプリケーション内でドキュメントをシームレスに結合、分割、変更します。
 weight: 16
 url: /ja/net/image-merging/merging-tiff-files/
+type: docs
 ---
-
 # TIFF ファイルの結合
 
 ## 導入

@@ -6,8 +6,8 @@ description: Slučujte, rozdělujte a komprimujte dokumenty bez námahy napří�
 weight: 11
 url: /cs/
 is_root: true
+type: docs
 ---
-
 # Slučujte a rozdělujte dokumenty bez námahy s GroupDocs.Merger
 
 

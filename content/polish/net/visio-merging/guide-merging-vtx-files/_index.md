@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger API .NET
 description: Dowiedz się, jak programowo scalić pliki VTX za pomocą GroupDocs.Merger dla .NET. Przewodnik krok po kroku z przykładami kodu.
 weight: 18
 url: /pl/net/visio-merging/guide-merging-vtx-files/
+type: docs
 ---
-
 # Przewodnik po łączeniu plików VTX
 
 ## Wstęp

@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: .NET के लिए GroupDocs.Merger का उपयोग करके 7z फ़ाइलों को आसानी से मर्ज करें। कई अभिलेखों को एक में सहजता से संयोजित करने के लिए हमारे चरण-दर-चरण मार्गदर्शिका का पालन करें।
 weight: 10
 url: /hi/net/merge-compress-files/merge-7z-files/
+type: docs
 ---
-
 # 7z फ़ाइलों को कैसे मर्ज करें
 
 ## परिचय

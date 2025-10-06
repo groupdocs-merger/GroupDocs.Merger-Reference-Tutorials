@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger का उपयोग करके .NET में प्रोग्रामेटिक रूप से DOCX फ़ाइलों को मर्ज करना सीखें, दस्तावेज़ हेरफेर कार्यों को कुशलतापूर्वक सरल बनाएं।
 weight: 12
 url: /hi/net/document-merging/how-to-merge-docx-files/
+type: docs
 ---
-
 # DOCX फ़ाइलों को कैसे मर्ज करें
 
 ## परिचय

@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Naučte se programově sloučit soubory XLTM. Podrobný průvodce s příklady kódu.
 weight: 16
 url: /cs/net/spreadsheet-merging/merging-xltm-files/
+type: docs
 ---
-
 # Sloučení souborů XLTM
 
 ## Úvod

@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Egyesítse zökkenőmentesen az XLSM fájlokat a GroupDocs.Merger for .NET segítségével. Hatékonyan kombinálja az Excel-munkafüzeteket programozottan. Növelje dokumentumkezelési képességeit.
 weight: 13
 url: /hu/net/spreadsheet-merging/guide-merging-xlsm-files/
+type: docs
 ---
-
 # Útmutató az XLSM-fájlok egyesítéséhez
 
 ## Bevezetés

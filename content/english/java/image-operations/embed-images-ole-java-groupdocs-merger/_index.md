@@ -8,10 +8,8 @@ keywords:
 - embed images as OLE objects in Java
 - GroupDocs.Merger for Java tutorial
 - document embedding with OLE
-
+type: docs
 ---
-
-
 # How to Embed Images as OLE Objects in Documents Using GroupDocs.Merger for Java
 
 ## Introduction

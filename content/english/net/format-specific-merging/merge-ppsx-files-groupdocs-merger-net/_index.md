@@ -8,10 +8,8 @@ keywords:
 - merge PPSX files
 - GroupDocs Merger .NET
 - PowerPoint presentation merging
-
+type: docs
 ---
-
-
 # Efficiently Merge PowerPoint PPSX Files Using GroupDocs.Merger for .NET
 
 ## Introduction

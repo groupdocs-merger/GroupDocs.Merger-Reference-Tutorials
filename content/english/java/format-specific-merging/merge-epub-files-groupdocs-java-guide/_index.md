@@ -8,10 +8,8 @@ keywords:
 - merge EPUB files Java
 - GroupDocs Merger for Java
 - e-book compilation
-
+type: docs
 ---
-
-
 # How to Merge EPUB Files Using GroupDocs.Merger for Java: A Comprehensive Guide
 
 ## Introduction

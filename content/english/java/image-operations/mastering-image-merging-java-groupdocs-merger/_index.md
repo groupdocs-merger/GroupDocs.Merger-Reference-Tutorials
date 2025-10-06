@@ -8,10 +8,8 @@ keywords:
 - image merging java
 - groupdocs merger bmp
 - java image processing
-
+type: docs
 ---
-
-
 # Mastering Image Merging in Java with GroupDocs.Merger
 
 ## Introduction

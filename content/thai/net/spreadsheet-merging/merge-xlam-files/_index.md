@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: เรียนรู้วิธีผสานไฟล์ XLAM ได้อย่างง่ายดาย ลดความซับซ้อนของงานการจัดการเอกสารของคุณด้วย API อันทรงพลังนี้
 weight: 10
 url: /th/net/spreadsheet-merging/merge-xlam-files/
+type: docs
 ---
-
 # รวมไฟล์ XLAM
 
 ## การแนะนำ

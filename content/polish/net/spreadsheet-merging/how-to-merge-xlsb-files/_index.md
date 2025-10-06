@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger API .NET
 description: Dowiedz się, jak scalić pliki XLSB. Ten przewodnik krok po kroku upraszcza zadania związane z manipulacją dokumentami.
 weight: 12
 url: /pl/net/spreadsheet-merging/how-to-merge-xlsb-files/
+type: docs
 ---
-
 # Jak scalić pliki XLSB
 
 ## Wstęp

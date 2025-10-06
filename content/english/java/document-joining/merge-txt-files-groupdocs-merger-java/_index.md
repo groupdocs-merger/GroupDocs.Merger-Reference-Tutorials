@@ -8,10 +8,8 @@ keywords:
 - merge TXT files
 - GroupDocs.Merger for Java
 - Java document manipulation
-
+type: docs
 ---
-
-
 # How to Merge Multiple TXT Files Using GroupDocs.Merger for Java
 
 ## Introduction

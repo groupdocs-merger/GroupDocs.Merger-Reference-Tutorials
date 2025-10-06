@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Fusionnez les fichiers TXT de manière transparente dans .NET à l'aide de GroupDocs.Merger. Guide étape par étape pour les développeurs. Documentation et support disponibles.
 weight: 18
 url: /fr/net/document-merging/guide-merging-txt-files/
+type: docs
 ---
-
 # Guide de fusion de fichiers TXT avec GroupDocs.Merger pour .NET
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Aprenda como mesclar arquivos DOTX em .NET usando GroupDocs.Merger sem esforço. Aprimore seus recursos de manipulação de documentos.
 weight: 15
 url: /pt/net/document-merging/merge-dotx-files/
+type: docs
 ---
-
 # Mesclar arquivos DOTX
 
 ## Introdução

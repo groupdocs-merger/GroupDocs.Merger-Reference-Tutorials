@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Naučte se, jak programově sloučit soubory EPUB pomocí GroupDocs.Merger for .NET. Postupujte podle našeho podrobného návodu.
 weight: 17
 url: /cs/net/document-merging/merge-epub-files/
+type: docs
 ---
-
 # Sloučit soubory EPUB
 
 ## Úvod

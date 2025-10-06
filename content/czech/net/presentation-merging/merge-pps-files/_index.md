@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Naučte se, jak hladce sloučit soubory PPS pomocí GroupDocs.Merger for .NET. Podrobný průvodce s příklady kódu. Vylepšete své dovednosti v manipulaci s dokumenty.
 weight: 10
 url: /cs/net/presentation-merging/merge-pps-files/
+type: docs
 ---
-
 # Sloučit soubory PPS
 
 ## Úvod

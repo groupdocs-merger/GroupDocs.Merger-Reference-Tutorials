@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: เรียนรู้วิธีผสานไฟล์ DOC โดยทางโปรแกรมโดยใช้ GroupDocs.Merger สำหรับ .NET ปฏิบัติตามคำแนะนำทีละขั้นตอนของเราเพื่อรวมเอกสารหลายฉบับเป็นเอกสารเดียวได้อย่างราบรื่น
 weight: 10
 url: /th/net/document-merging/merge-doc-files/
+type: docs
 ---
-
 # รวมไฟล์ DOC เข้ากับ GroupDocs.Merger สำหรับ .NET
 
 ## การแนะนำ

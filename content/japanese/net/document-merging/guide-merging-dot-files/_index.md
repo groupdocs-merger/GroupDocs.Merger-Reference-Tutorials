@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger for .NET を使用してプログラムで DOT (Graphviz) ファイルをマージする方法を学びます。 DOT ファイルを簡単にマージ、結合、操作します。
 weight: 13
 url: /ja/net/document-merging/guide-merging-dot-files/
+type: docs
 ---
-
 # DOT ファイルの結合ガイド
 
 ## 導入

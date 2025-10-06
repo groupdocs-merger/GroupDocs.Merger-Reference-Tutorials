@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Naučte se sloučit soubory PowerPoint (PPT) pomocí GroupDocs.Merger for .NET bez námahy. Vylepšete své .NET aplikace pomocí tohoto výkonného API.
 weight: 12
 url: /cs/net/presentation-merging/how-to-merge-ppt-files/
+type: docs
 ---
-
 # Jak sloučit soubory PPT
 
 ## Úvod

@@ -8,10 +8,8 @@ keywords:
 - merge text files .NET
 - GroupDocs.Merger for .NET
 - text file merger .NET
-
+type: docs
 ---
-
-
 # How to Merge Text Files Using GroupDocs.Merger for .NET: A Comprehensive Developer's Guide
 
 ## Introduction

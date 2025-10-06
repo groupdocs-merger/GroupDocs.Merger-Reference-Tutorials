@@ -8,10 +8,8 @@ keywords:
 - change document page orientation
 - GroupDocs.Merger for .NET
 - page layout adjustment
-
+type: docs
 ---
-
-
 # How to Change Document Page Orientation Using GroupDocs.Merger for .NET
 
 ## Introduction

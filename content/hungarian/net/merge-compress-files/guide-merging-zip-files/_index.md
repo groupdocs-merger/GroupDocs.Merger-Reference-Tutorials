@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Ismerje meg, hogyan egyesíthet programozott ZIP-fájlokat a GroupDocs.Merger for .NET használatával. Ez az oktatóanyag részletes útmutatót nyújt a fejlesztők számára.
 weight: 12
 url: /hu/net/merge-compress-files/guide-merging-zip-files/
+type: docs
 ---
-
 # Útmutató a ZIP-fájlok egyesítéséhez
 
 ## Bevezetés

@@ -8,10 +8,8 @@ keywords:
 - automate PowerPoint merging
 - GroupDocs.Merger for Java
 - merge PPTX files
-
+type: docs
 ---
-
-
 # Automate PowerPoint Merging with GroupDocs.Merger for Java: A Step-by-Step Guide
 
 ## Introduction

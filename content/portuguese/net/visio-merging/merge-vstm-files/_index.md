@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Aprenda como mesclar arquivos VSTM sem esforço usando GroupDocs.Merger for .NET. Siga nosso tutorial passo a passo e suas capacidades de manipulação de documentos.
 weight: 15
 url: /pt/net/visio-merging/merge-vstm-files/
+type: docs
 ---
-
 # Mesclar arquivos VSTM
 
 ## Introdução

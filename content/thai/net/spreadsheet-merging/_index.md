@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: รวมไฟล์ XLAM, XLS, XLSB, XLSM, XLSX, XLT, XLTM, XLTX และ ODS ใน .NET ได้อย่างง่ายดายโดยใช้ GroupDocs.Merger ลดความซับซ้อนของงานการจัดการเอกสาร
 weight: 23
 url: /th/net/spreadsheet-merging/
+type: docs
 ---
-
 # การรวมสเปรดชีต
 
 

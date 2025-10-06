@@ -8,10 +8,8 @@ keywords:
 - merge ODT files
 - GroupDocs.Merger for .NET
 - document management
-
+type: docs
 ---
-
-
 # How to Efficiently Merge ODT Files with GroupDocs.Merger for .NET
 
 ## Introduction

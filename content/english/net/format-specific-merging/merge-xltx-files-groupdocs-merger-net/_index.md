@@ -8,10 +8,8 @@ keywords:
 - merge XLTX files
 - GroupDocs Merger for .NET
 - Excel template merging
-
+type: docs
 ---
-
-
 # How to Merge XLTX Files Efficiently Using GroupDocs.Merger for .NET
 
 In the data-driven world of today, managing and consolidating files efficiently is essential. Whether you’re a developer or an end-user, merging multiple Microsoft Excel Open XML Template (.xltx) files into one document can save time and streamline workflows. This tutorial guides you through using GroupDocs.Merger for .NET to accomplish this task seamlessly.

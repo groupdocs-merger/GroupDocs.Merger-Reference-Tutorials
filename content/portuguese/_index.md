@@ -6,8 +6,8 @@ description: Mescle, divida e compacte facilmente documentos em plataformas .NET
 weight: 11
 url: /pt/
 is_root: true
+type: docs
 ---
-
 # Mesclar e dividir documentos sem esforço com GroupDocs.Merger
 
 

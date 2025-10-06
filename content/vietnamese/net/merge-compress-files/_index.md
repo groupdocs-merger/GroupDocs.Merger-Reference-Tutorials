@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Hướng dẫn hợp nhất và nén các định dạng tệp khác nhau một cách dễ dàng. Tìm hiểu cách kết hợp các tệp 7z, TAR và ZIP một cách liền mạch với hướng dẫn từng bước của chúng tôi.
 weight: 20
 url: /vi/net/merge-compress-files/
+type: docs
 ---
-
 # Hợp nhất các tập tin nén
 
 ## Giới thiệu

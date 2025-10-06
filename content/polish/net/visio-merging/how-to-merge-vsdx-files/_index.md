@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger API .NET
 description: Dowiedz się, jak programowo scalić pliki VSDX przy użyciu GroupDocs.Merger dla .NET. Ten samouczek zawiera instrukcje krok po kroku z przykładami kodu.
 weight: 12
 url: /pl/net/visio-merging/how-to-merge-vsdx-files/
+type: docs
 ---
-
 # Jak scalić pliki VSDX
 
 ## Wstęp

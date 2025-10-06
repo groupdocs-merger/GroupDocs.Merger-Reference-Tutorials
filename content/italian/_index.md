@@ -6,8 +6,8 @@ description: Unisci, dividi e comprimi facilmente documenti su piattaforme .NET 
 weight: 11
 url: /it/
 is_root: true
+type: docs
 ---
-
 # Unisci e dividi documenti senza sforzo con GroupDocs.Merger
 
 

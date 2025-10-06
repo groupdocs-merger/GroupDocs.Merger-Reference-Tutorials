@@ -8,10 +8,8 @@ keywords:
 - split text file by line intervals
 - GroupDocs.Merger for .NET tutorial
 - automate data segmentation with GroupDocs
-
+type: docs
 ---
-
-
 # How to Split a Text File by Line Intervals Using GroupDocs.Merger for .NET (Tutorial)
 
 ## Introduction

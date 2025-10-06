@@ -8,10 +8,8 @@ keywords:
 - merge VSX files
 - GroupDocs.Merger for Java
 - VSX file management
-
+type: docs
 ---
-
-
 # How to Merge Multiple VSX Files Using GroupDocs.Merger for Java: A Comprehensive Guide
 
 ## Introduction

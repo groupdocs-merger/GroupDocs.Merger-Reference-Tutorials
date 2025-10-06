@@ -8,10 +8,8 @@ keywords:
 - merge BMP files
 - GroupDocs.Merger for .NET
 - image merging
-
+type: docs
 ---
-
-
 # How to Merge BMP Files Using GroupDocs.Merger for .NET: A Comprehensive Guide
 
 ## Introduction

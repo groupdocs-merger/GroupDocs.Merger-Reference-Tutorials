@@ -8,10 +8,8 @@ keywords:
 - merge ODS files Java
 - GroupDocs Merger setup
 - Java spreadsheet merging
-
+type: docs
 ---
-
-
 # How to Merge ODS Files Using GroupDocs.Merger for Java: A Step-by-Step Guide
 
 ## Introduction

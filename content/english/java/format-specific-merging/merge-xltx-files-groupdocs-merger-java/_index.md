@@ -8,10 +8,8 @@ keywords:
 - merge XLTX files Java
 - GroupDocs Merger for Java
 - Excel template merging
-
+type: docs
 ---
-
-
 # How to Merge XLTX Files Using GroupDocs.Merger for Java: A Step-by-Step Guide
 
 ## Introduction

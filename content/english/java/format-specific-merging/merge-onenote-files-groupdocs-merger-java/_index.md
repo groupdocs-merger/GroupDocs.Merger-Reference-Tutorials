@@ -8,10 +8,8 @@ keywords:
 - merge OneNote files Java
 - GroupDocs.Merger library
 - Java document merging
-
+type: docs
 ---
-
-
 # How to Merge Multiple OneNote Files Using GroupDocs.Merger for Java
 
 ## Introduction

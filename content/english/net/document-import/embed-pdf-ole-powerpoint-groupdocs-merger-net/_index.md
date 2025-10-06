@@ -8,10 +8,8 @@ keywords:
 - embed PDF OLE PowerPoint
 - GroupDocs.Merger .NET
 - OLE object embedding
-
+type: docs
 ---
-
-
 # Embed PDF as OLE in PowerPoint using GroupDocs.Merger for .NET: A Step-by-Step Guide
 
 ## Introduction

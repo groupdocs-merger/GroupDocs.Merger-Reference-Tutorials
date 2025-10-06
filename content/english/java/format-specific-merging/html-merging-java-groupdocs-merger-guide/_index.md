@@ -8,10 +8,8 @@ keywords:
 - merge HTML files in Java
 - GroupDocs Merger setup Java
 - HTML merging using GroupDocs
-
+type: docs
 ---
-
-
 # How to Merge HTML Files in Java with GroupDocs.Merger
 
 Welcome to the comprehensive guide on merging multiple HTML files into a single file using GroupDocs Merger for Java. If you've struggled with combining HTML documents before, this tutorial is your perfect solution. By the end of this detailed walkthrough, you'll confidently merge HTML files and integrate GroupDocs.Merger into your projects.

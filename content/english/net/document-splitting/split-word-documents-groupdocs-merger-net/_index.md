@@ -8,10 +8,8 @@ keywords:
 - split Word documents
 - GroupDocs.Merger for .NET
 - document splitting
-
+type: docs
 ---
-
-
 # How to Split Word Documents into Single Pages Using GroupDocs.Merger for .NET
 
 ## Introduction

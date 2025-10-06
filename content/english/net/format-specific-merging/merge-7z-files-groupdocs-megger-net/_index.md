@@ -8,10 +8,8 @@ keywords:
 - merge 7z files .NET
 - GroupDocs.Merger for .NET
 - efficient file merging
-
+type: docs
 ---
-
-
 # How to Merge 7Z Files Using GroupDocs.Merger for .NET
 
 ## Introduction

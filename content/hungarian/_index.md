@@ -6,8 +6,8 @@ description: Könnyedén egyesítsen, ossza fel és tömörítse a dokumentumoka
 weight: 11
 url: /hu/
 is_root: true
+type: docs
 ---
-
 # Egyesítse és ossza fel a dokumentumokat könnyedén a GroupDocs.Merger segítségével
 
 

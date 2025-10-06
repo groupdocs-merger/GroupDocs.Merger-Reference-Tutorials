@@ -6,8 +6,8 @@ description: Voeg moeiteloos documenten samen, splits en comprimeer ze op .NET- 
 weight: 11
 url: /nl/
 is_root: true
+type: docs
 ---
-
 # Documenten moeiteloos samenvoegen en splitsen met GroupDocs.Merger
 
 

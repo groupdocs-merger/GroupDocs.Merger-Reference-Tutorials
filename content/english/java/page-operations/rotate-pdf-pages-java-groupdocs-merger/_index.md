@@ -8,10 +8,8 @@ keywords:
 - rotate pdf pages java
 - groupdocs merger java
 - pdf page rotation in java
-
+type: docs
 ---
-
-
 # Rotate PDF Pages in Java Using GroupDocs.Merger: A Step-by-Step Guide
 
 ## Introduction

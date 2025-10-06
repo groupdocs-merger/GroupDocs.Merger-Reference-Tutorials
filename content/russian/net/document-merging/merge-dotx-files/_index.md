@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Узнайте, как легко объединить файлы DOTX в .NET с помощью GroupDocs.Merger. Расширьте свои возможности манипулирования документами.
 weight: 15
 url: /ru/net/document-merging/merge-dotx-files/
+type: docs
 ---
-
 # Объединить файлы DOTX
 
 ## Введение

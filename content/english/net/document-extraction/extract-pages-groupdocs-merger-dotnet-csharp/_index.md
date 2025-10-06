@@ -8,10 +8,8 @@ keywords:
 - extract pages using GroupDocs.Merger for .NET
 - document extraction with C#
 - GroupDocs.Merger library setup
-
+type: docs
 ---
-
-
 # How to Extract Specific Pages from a Document Using GroupDocs.Merger for .NET in C#
 
 ## Introduction

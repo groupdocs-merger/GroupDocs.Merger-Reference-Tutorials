@@ -8,10 +8,8 @@ keywords:
 - merge tiff files java
 - groupdocs merger library
 - tiff file manipulation
-
+type: docs
 ---
-
-
 # How to Merge TIFF Files Using GroupDocs.Merger for Java: A Step-by-Step Guide
 
 ## Introduction

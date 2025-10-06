@@ -6,8 +6,8 @@ description: 透過 GroupDocs.Merger 上的專家教學課程，輕鬆跨 .NET �
 weight: 11
 url: /zh-hant/
 is_root: true
+type: docs
 ---
-
 # 使用 GroupDocs.Merger 輕鬆合併和分割文檔
 
 

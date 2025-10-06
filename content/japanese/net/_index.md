@@ -5,8 +5,8 @@ weight: 10
 url: /ja/net/
 description: GroupDocs.Merger .NET を使用すると、さまざまなファイル形式を簡単にマージおよび圧縮できます。画像やドキュメントなどを結合するためのステップバイステップのチュートリアルを学習してください。
 is_root: true
+type: docs
 ---
-
 # GroupDocs.Merger for .NET のチュートリアルと例
 
 ## 導入

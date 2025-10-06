@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Aprenda a fusionar archivos RTF en .NET sin esfuerzo utilizando GroupDocs.Merger para un procesamiento de documentos sin problemas.
 weight: 21
 url: /es/net/document-merging/merging-rtf-files/
+type: docs
 ---
-
 # Fusionar archivos RTF
 
 ## Introducción

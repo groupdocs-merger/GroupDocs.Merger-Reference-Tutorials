@@ -8,10 +8,8 @@ keywords:
 - merge 7z files Java
 - GroupDocs Merger Java
 - Java file merging
-
+type: docs
 ---
-
-
 # How to Merge Multiple 7z Files in Java Using GroupDocs.Merger
 
 Merging several .7z compressed files can be challenging, especially when dealing with large datasets. With GroupDocs Merger for Java, you can efficiently combine these files into a single archive. This tutorial will guide you through setting up and using this powerful library to merge .7z files effectively.

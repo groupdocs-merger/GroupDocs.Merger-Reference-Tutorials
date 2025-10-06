@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Merger for Java
 - merge LaTeX documents
 - LaTeX document merging
-
+type: docs
 ---
-
-
 # Efficiently Merge LaTeX Documents Using GroupDocs.Merger for Java
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API'si
 description: XLTX dosyalarını zahmetsizce nasıl birleştireceğinizi öğrenin. XLTX dosyalarını birleştirmeye başlayın ve belge yönetimi görevlerinizi verimli bir şekilde kolaylaştırın.
 weight: 17
 url: /tr/net/spreadsheet-merging/merge-xltx-files/
+type: docs
 ---
-
 # XLTX Dosyalarını Birleştir
 
 ## giriiş

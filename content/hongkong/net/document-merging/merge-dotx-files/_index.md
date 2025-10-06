@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: 了解如何使用 GroupDocs.Merger 輕鬆合併 .NET 中的 DOTX 檔案。增強您的文件處理能力。
 weight: 15
 url: /zh-hant/net/document-merging/merge-dotx-files/
+type: docs
 ---
-
 # 合併 DOTX 文件
 
 ## 介紹

@@ -8,10 +8,8 @@ keywords:
 - merge SVGZ files
 - GroupDocs.Merger for .NET
 - .NET document management
-
+type: docs
 ---
-
-
 # Mastering GroupDocs.Merger for .NET: How to Merge SVGZ Files
 
 ## Introduction

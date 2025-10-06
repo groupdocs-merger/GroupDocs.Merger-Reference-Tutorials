@@ -5,8 +5,8 @@ weight: 10
 url: /el/net/
 description: Συγχώνευση και συμπίεση διαφόρων μορφών αρχείων χωρίς κόπο χρησιμοποιώντας το GroupDocs.Merger .NET. Μάθετε βήμα προς βήμα οδηγούς για τη συγχώνευση εικόνων, εγγράφων και πολλά άλλα!
 is_root: true
+type: docs
 ---
-
 # Tutorials και παραδείγματα GroupDocs.Merger για .NET
 
 ## Εισαγωγή

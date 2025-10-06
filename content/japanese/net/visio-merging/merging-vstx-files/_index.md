@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger for .NET を使用して VSTX ファイルをマージする方法を学びます。 C# でドキュメントを効率的に操作するには、このステップバイステップ ガイドに従ってください。
 weight: 16
 url: /ja/net/visio-merging/merging-vstx-files/
+type: docs
 ---
-
 # VSTX ファイルと GroupDocs.Merger for .NET のマージ
 
 ## 導入

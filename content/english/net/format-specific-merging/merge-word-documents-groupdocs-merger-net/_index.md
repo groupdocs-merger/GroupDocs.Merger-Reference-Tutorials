@@ -8,10 +8,8 @@ keywords:
 - merge word documents
 - groupdocs merger for .net
 - word document management
-
+type: docs
 ---
-
-
 # Seamless Word Document Merging with GroupDocs.Merger for .NET
 
 ## Introduction

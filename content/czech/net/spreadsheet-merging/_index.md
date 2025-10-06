@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Bez námahy slučujte soubory XLAM, XLS, XLSB, XLSM, XLSX, XLT, XLTM, XLTX a ODS v .NET pomocí GroupDocs.Merger. Zjednodušte úkoly správy dokumentů.
 weight: 23
 url: /cs/net/spreadsheet-merging/
+type: docs
 ---
-
 # Sloučení tabulky
 
 

@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger API .NET
 description: Dowiedz się, jak scalić pliki VSTX za pomocą GroupDocs.Merger dla .NET. Postępuj zgodnie z tym przewodnikiem krok po kroku, aby efektywnie manipulować dokumentami w języku C#.
 weight: 16
 url: /pl/net/visio-merging/merging-vstx-files/
+type: docs
 ---
-
 # Łączenie plików VSTX z GroupDocs.Merger dla .NET
 
 ## Wstęp

@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Apprenez à fusionner des fichiers XLTX sans effort. Commencez à fusionner des fichiers XLTX et rationalisez efficacement vos tâches de gestion de documents.
 weight: 17
 url: /fr/net/spreadsheet-merging/merge-xltx-files/
+type: docs
 ---
-
 # Fusionner les fichiers XLTX
 
 ## Introduction

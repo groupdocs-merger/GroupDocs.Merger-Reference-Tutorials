@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger API .NET
 description: Dowiedz się, jak scalić pliki XLT. Połącz programowo szablony programu Excel w języku C#, korzystając z tego przewodnika krok po kroku.
 weight: 15
 url: /pl/net/spreadsheet-merging/merge-xlt-files/
+type: docs
 ---
-
 # Scal pliki XLT
 
 ## Wstęp

@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Merger Java
 - retrieve file types Java
 - supported document formats GroupDocs
-
+type: docs
 ---
-
-
 # How to Retrieve Supported File Types Using GroupDocs.Merger for Java
 
 ## Introduction

@@ -8,10 +8,8 @@ keywords:
 - document management Java
 - GroupDocs.Merger for Java
 - Java document handling
-
+type: docs
 ---
-
-
 # Master Document Management in Java: Advanced Techniques with GroupDocs.Merger
 
 ## Introduction

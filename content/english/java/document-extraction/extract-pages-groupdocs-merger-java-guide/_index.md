@@ -8,10 +8,8 @@ keywords:
 - extract pages java
 - groupdocs merger for java
 - page extraction by range
-
+type: docs
 ---
-
-
 # How to Implement Page Extraction by Range Using GroupDocs.Merger for Java
 
 ## Introduction

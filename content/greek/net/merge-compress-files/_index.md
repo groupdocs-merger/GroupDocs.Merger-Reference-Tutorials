@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Συγχώνευση και συμπίεση διαφόρων μορφών αρχείων χωρίς κόπο tutorials. Μάθετε να συνδυάζετε αρχεία 7z, TAR και ZIP με τους αναλυτικούς οδηγούς μας.
 weight: 20
 url: /el/net/merge-compress-files/
+type: docs
 ---
-
 # Συγχώνευση αρχείων συμπίεσης
 
 ## Εισαγωγή

@@ -8,10 +8,8 @@ keywords:
 - merge mhtml files java
 - groupdocs merger java
 - mhtml file merging
-
+type: docs
 ---
-
-
 # Efficiently Merge MHTML Files Using GroupDocs.Merger for Java: A Step-by-Step Guide
 
 ## Introduction

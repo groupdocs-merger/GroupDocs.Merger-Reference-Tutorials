@@ -8,10 +8,8 @@ keywords:
 - split text file line intervals Java
 - document splitting GroupDocs.Merger
 - Java document manipulation
-
+type: docs
 ---
-
-
 # How to Split a Text File by Line Intervals Using GroupDocs.Merger for Java
 
 ## Introduction

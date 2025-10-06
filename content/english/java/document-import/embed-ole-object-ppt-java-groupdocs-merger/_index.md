@@ -8,10 +8,8 @@ keywords:
 - embed OLE objects in PowerPoint
 - Java GroupDocs.Merger library
 - OLE embedding in Java
-
+type: docs
 ---
-
-
 # Embedding OLE Objects in PowerPoint Presentations using Java
 
 ## Introduction

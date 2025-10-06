@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Ismerje meg, hogyan egyesíthet GIF-fájlokat a GroupDocs.Merger for .NET használatával. Kombináljon több GIF-et programozottan, lépésenkénti utasításokkal.
 weight: 11
 url: /hu/net/image-merging/merging-gif-files/
+type: docs
 ---
-
 # GIF fájlok egyesítése
 
 ## Bevezetés

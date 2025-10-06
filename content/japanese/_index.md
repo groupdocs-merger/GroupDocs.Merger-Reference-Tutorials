@@ -6,8 +6,8 @@ description: GroupDocs.Merger に関する当社の専門家によるチュー�
 weight: 11
 url: /ja/
 is_root: true
+type: docs
 ---
-
 # GroupDocs.Merger でドキュメントを簡単に結合および分割
 
 

@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Voeg VDX-, VSDM-, VSDX-, VSSM-, VSSX-, VSTM-, VSTX-, VSX- en VTX-bestanden eenvoudig samen met GroupDocs.Merger voor .NET. Stapsgewijze zelfstudies voor het naadloos samenvoegen van documenten.
 weight: 24
 url: /nl/net/visio-merging/
+type: docs
 ---
-
 # Visio samenvoegen
 
 

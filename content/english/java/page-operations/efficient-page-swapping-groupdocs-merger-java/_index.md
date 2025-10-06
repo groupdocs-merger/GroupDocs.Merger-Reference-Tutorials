@@ -8,10 +8,8 @@ keywords:
 - Page Swapping in Java
 - GroupDocs.Merger for Java
 - Document Reorganization
-
+type: docs
 ---
-
-
 # Mastering Page Swapping in Java Documents with GroupDocs.Merger
 
 ## Introduction

@@ -8,10 +8,8 @@ keywords:
 - .NET document management
 - GroupDocs.Merger loading
 - document merging .NET
-
+type: docs
 ---
-
-
 # Streamlining .NET Document Management with GroupDocs.Merger
 
 ## Introduction

@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Merger for Java
 - license setup in Java
 - file existence check Java
-
+type: docs
 ---
-
-
 # Mastering GroupDocs.Merger for Java: License Setup & File Existence Checks
 
 ## Introduction

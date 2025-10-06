@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Merger Java
 - add password PowerPoint
 - secure PPTX files
-
+type: docs
 ---
-
-
 # Secure Your PowerPoint Presentations: Add Password to PPTX Files Using GroupDocs.Merger for Java
 
 ## Introduction

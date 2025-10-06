@@ -8,10 +8,8 @@ keywords:
 - add attachments to PDF
 - GroupDocs.Merger for .NET
 - manage documents with GroupDocs
-
+type: docs
 ---
-
-
 # Add Attachments to PDFs Using GroupDocs.Merger for .NET: A Step-by-Step Guide
 
 ## Introduction

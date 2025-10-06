@@ -8,10 +8,8 @@ keywords:
 - merge DOTX files
 - GroupDocs.Merger .NET
 - document merging guide
-
+type: docs
 ---
-
-
 # How to Merge DOTX Files with GroupDocs.Merger in .NET: A Step-by-Step Guide
 
 ## Introduction

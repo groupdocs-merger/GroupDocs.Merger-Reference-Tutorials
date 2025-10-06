@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Merger for .NET
 - retrieve document information .NET
 - extract metadata from documents .NET
-
+type: docs
 ---
-
-
 # How to Retrieve Document Information Using GroupDocs.Merger for .NET
 
 ## Introduction

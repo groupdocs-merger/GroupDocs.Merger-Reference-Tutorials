@@ -8,10 +8,8 @@ keywords:
 - merge PowerPoint files Java
 - GroupDocs.Merger library
 - automate presentation management
-
+type: docs
 ---
-
-
 # How to Merge PowerPoint Files in Java Using GroupDocs.Merger: A Step-by-Step Guide
 
 ## Introduction

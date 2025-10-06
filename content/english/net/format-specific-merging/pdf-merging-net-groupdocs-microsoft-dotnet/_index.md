@@ -8,10 +8,8 @@ keywords:
 - merge PDFs in .NET
 - GroupDocs.Merger for .NET
 - image-to-PDF conversion
-
+type: docs
 ---
-
-
 # How to Merge PDFs in .NET with GroupDocs.Merger
 
 ## Introduction

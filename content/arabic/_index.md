@@ -6,8 +6,8 @@ description: يمكنك دمج المستندات وتقسيمها وضغطها 
 weight: 11
 url: /ar/
 is_root: true
+type: docs
 ---
-
 # دمج المستندات وتقسيمها بسهولة باستخدام GroupDocs.Merger
 
 

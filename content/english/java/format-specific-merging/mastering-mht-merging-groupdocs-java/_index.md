@@ -8,10 +8,8 @@ keywords:
 - merge MHT files
 - GroupDocs.Merger for Java
 - MHT file merging
-
+type: docs
 ---
-
-
 # How to Merge MHT Files Using GroupDocs.Merger for Java: A Complete Guide
 
 In today's fast-paced digital environment, efficiently managing and merging web archives is crucial for businesses and developers. The ability to combine multiple MHT files into a single document can significantly streamline data handling processes. This comprehensive guide will walk you through using GroupDocs.Merger for Java to seamlessly merge MHT files.

@@ -8,10 +8,8 @@ keywords:
 - check document password protection .NET
 - document security GroupDocs Merger
 - verify password protection C#
-
+type: docs
 ---
-
-
 # How to Check Document Password Protection Using GroupDocs.Merger for .NET
 
 ## Introduction

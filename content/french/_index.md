@@ -6,8 +6,8 @@ description: Fusionnez, divisez et compressez sans effort des documents sur les 
 weight: 11
 url: /fr/
 is_root: true
+type: docs
 ---
-
 # Fusionnez et divisez des documents sans effort avec GroupDocs.Merger
 
 

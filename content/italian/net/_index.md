@@ -5,8 +5,8 @@ weight: 10
 url: /it/net/
 description: Unisci e comprimi facilmente vari formati di file utilizzando GroupDocs.Merger .NET. Scopri tutorial passo passo sull'unione di immagini, documenti e altro ancora!
 is_root: true
+type: docs
 ---
-
 # Tutorial ed esempi di GroupDocs.Merger per .NET
 
 ## introduzione

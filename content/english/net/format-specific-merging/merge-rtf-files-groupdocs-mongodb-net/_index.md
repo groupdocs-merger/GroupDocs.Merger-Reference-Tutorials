@@ -8,10 +8,8 @@ keywords:
 - merge RTF files
 - GroupDocs.Merger for .NET
 - document management
-
+type: docs
 ---
-
-
 # How to Efficiently Merge RTF Files Using GroupDocs.Merger for .NET: A Step-by-Step Guide
 
 ## Introduction

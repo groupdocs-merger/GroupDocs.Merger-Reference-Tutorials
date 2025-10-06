@@ -8,10 +8,8 @@ keywords:
 - merge PPTX files GroupDocs.Merger for .NET
 - automate PowerPoint merging with GroupDocs.Merger
 - GroupDocs Merging Guide
-
+type: docs
 ---
-
-
 # How to Merge Multiple PPTX Files Using GroupDocs.Merger for .NET
 
 ## Introduction

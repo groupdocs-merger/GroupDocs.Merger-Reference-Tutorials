@@ -8,10 +8,8 @@ keywords:
 - embed PDF in Word
 - GroupDocs.Merger for .NET
 - OLE object embedding
-
+type: docs
 ---
-
-
 # Embed PDF in Word Using GroupDocs.Merger for .NET: A Step-by-Step Guide
 
 ## Introduction

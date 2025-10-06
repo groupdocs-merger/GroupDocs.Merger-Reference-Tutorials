@@ -3,8 +3,8 @@ title: "Document Import Tutorials for GroupDocs.Merger .NET"
 description: "Learn to import content between different document types including diagrams, PDFs, presentations, spreadsheets, and word processing files with GroupDocs.Merger for .NET."
 weight: 10
 url: "/net/document-import/"
+type: docs
 ---
-
 # Document Import Tutorials for GroupDocs.Merger .NET
 
 Master document import capabilities with our detailed GroupDocs.Merger tutorials for .NET. These step-by-step guides demonstrate how to import content from one document format to another, including techniques for importing to diagrams, PDFs, presentations, spreadsheets, and word processing documents. Each tutorial includes working C# code examples that show how to maintain formatting and structure during import operations, helping you build applications that can transform content between different document ecosystems.

@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp XLTM theo chương trình. Hướng dẫn từng bước với các ví dụ về mã.
 weight: 16
 url: /vi/net/spreadsheet-merging/merging-xltm-files/
+type: docs
 ---
-
 # Hợp nhất các tệp XLTM
 
 ## Giới thiệu

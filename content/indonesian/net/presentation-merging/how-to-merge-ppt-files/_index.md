@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Pelajari cara menggabungkan file PowerPoint (PPT) menggunakan GroupDocs.Merger untuk .NET dengan mudah. Tingkatkan aplikasi .NET Anda dengan API canggih ini.
 weight: 12
 url: /id/net/presentation-merging/how-to-merge-ppt-files/
+type: docs
 ---
-
 # Cara Menggabungkan File PPT
 
 ## Perkenalan

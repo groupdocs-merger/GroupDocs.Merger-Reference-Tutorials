@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: .NET के लिए GroupDocs.Merger के साथ PPSX फ़ाइलों को आसानी से मर्ज करें। फ़ाइल मर्जिंग कार्यों को स्वचालित करने के लिए हमारी चरण-दर-चरण मार्गदर्शिका का पालन करें! अपने दस्तावेज़ प्रबंधन वर्कफ़्लो को बढ़ाएँ।
 weight: 11
 url: /hi/net/presentation-merging/merging-ppsx-files/
+type: docs
 ---
-
 # पीपीएसएक्स फ़ाइलें मर्ज करना
 
 ## परिचय

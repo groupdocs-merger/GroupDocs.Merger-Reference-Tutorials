@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Ismerje meg, hogyan egyesíthet programozottan DOCX-fájlokat .NET-ben a GroupDocs.Merger segítségével, ami hatékonyan leegyszerűsíti a dokumentumkezelési feladatokat.
 weight: 12
 url: /hu/net/document-merging/how-to-merge-docx-files/
+type: docs
 ---
-
 # DOCX fájlok egyesítése
 
 ## Bevezetés

@@ -8,10 +8,8 @@ keywords:
 - merge VSDM files Java
 - GroupDocs Merger for Java
 - VSDM file merging
-
+type: docs
 ---
-
-
 # How to Merge VSDM Files Using GroupDocs.Merger for Java: A Comprehensive Step-by-Step Guide
 
 ## Introduction

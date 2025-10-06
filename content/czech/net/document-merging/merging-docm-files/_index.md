@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Naučte se, jak hladce sloučit soubory DOCM pomocí GroupDocs.Merger for .NET. Jednoduchá a efektivní manipulace s dokumenty pro aplikace .NET.
 weight: 11
 url: /cs/net/document-merging/merging-docm-files/
+type: docs
 ---
-
 # Sloučení souborů DOCM
 
 ## Úvod

@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Combine archivos PPSX fácilmente con GroupDocs.Merger para .NET. ¡Siga nuestra guía paso a paso para automatizar las tareas de combinación de archivos! Mejore su flujo de trabajo de gestión de documentos.
 weight: 11
 url: /es/net/presentation-merging/merging-ppsx-files/
+type: docs
 ---
-
 # Fusionar archivos PPSX
 
 ## Introducción

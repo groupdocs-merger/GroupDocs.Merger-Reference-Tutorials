@@ -8,10 +8,8 @@ keywords:
 - .NET VSDX merging
 - GroupDocs.Merger for .NET
 - Visio diagram merging
-
+type: docs
 ---
-
-
 # Mastering .NET VSDX Merging with GroupDocs.Merger for .NET: A Developer's Guide
 
 ## Introduction

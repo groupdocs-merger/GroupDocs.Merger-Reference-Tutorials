@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Aprenda a fusionar archivos XLT. Combine plantillas de Excel mediante programación en C# con esta guía paso a paso.
 weight: 15
 url: /es/net/spreadsheet-merging/merge-xlt-files/
+type: docs
 ---
-
 # Fusionar archivos XLT
 
 ## Introducción

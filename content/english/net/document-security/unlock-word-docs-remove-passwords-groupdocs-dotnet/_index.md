@@ -8,10 +8,8 @@ keywords:
 - remove passwords from Word documents
 - GroupDocs.Merger for .NET
 - unlock DOCX files
-
+type: docs
 ---
-
-
 # How to Remove Passwords from Word Documents Using GroupDocs.Merger for .NET
 
 ## Introduction

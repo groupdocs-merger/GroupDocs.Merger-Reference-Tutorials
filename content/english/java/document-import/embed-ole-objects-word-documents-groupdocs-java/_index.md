@@ -8,10 +8,8 @@ keywords:
 - embed OLE objects in Word documents
 - GroupDocs Merger for Java tutorial
 - import OLE objects using Java
-
+type: docs
 ---
-
-
 # How to Embed OLE Objects in Word Documents Using GroupDocs.Merger for Java
 
 ## Introduction

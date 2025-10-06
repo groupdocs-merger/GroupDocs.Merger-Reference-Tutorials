@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger API .NET
 description: Dowiedz się, jak bez wysiłku łączyć pliki ODS. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby bezproblemowo manipulować dokumentami.
 weight: 18
 url: /pl/net/spreadsheet-merging/merging-ods-files/
+type: docs
 ---
-
 # Łączenie plików ODS
 
 ## Wstęp

@@ -8,10 +8,8 @@ keywords:
 - remove pages Word documents
 - GroupDocs.Merger for Java
 - programmatically edit Word files
-
+type: docs
 ---
-
-
 # How to Efficiently Remove Specific Pages from Word Documents Using GroupDocs.Merger for Java
 
 ## Introduction

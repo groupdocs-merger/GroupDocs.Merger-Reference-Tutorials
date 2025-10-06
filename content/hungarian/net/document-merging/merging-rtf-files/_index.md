@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Tanulja meg, hogyan egyesíthet könnyedén RTF-fájlokat .NET-ben a GroupDocs.Merger segítségével a zökkenőmentes dokumentumfeldolgozás érdekében.
 weight: 21
 url: /hu/net/document-merging/merging-rtf-files/
+type: docs
 ---
-
 # RTF fájlok egyesítése
 
 ## Bevezetés

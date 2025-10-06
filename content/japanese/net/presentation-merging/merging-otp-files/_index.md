@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger for .NET を使用して OTP ファイルをマージする方法を学びます。このステップ バイ ステップ ガイドでは、プロセスをシームレスに説明します。
 weight: 14
 url: /ja/net/presentation-merging/merging-otp-files/
+type: docs
 ---
-
 # OTP ファイルの結合
 
 ## 導入

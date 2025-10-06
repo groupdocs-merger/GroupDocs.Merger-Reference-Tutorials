@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: .NET के लिए GroupDocs.Merger का उपयोग करके VDX फ़ाइलों को प्रोग्रामेटिक रूप से मर्ज करना सीखें। यह ट्यूटोरियल चरण-दर-चरण मार्गदर्शिका प्रदान करता है.
 weight: 10
 url: /hi/net/visio-merging/merge-vdx-files/
+type: docs
 ---
-
 # VDX फ़ाइलें मर्ज करें
 
 ## परिचय

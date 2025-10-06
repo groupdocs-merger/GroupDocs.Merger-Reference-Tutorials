@@ -8,10 +8,8 @@ keywords:
 - merge XPS files
 - GroupDocs.Merger for .NET
 - combine XPS documents
-
+type: docs
 ---
-
-
 # How to Merge Multiple XPS Files Using GroupDocs.Merger for .NET
 
 ## Introduction

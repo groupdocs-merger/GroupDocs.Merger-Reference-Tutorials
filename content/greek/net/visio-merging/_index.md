@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Συγχώνευση αρχείων VDX, VSDM, VSDX, VSSM, VSSX, VSTM, VSTX, VSX, VTX εύκολα χρησιμοποιώντας το GroupDocs.Merger για .NET. Οδηγίες βήμα προς βήμα για απρόσκοπτη συγχώνευση εγγράφων.
 weight: 24
 url: /el/net/visio-merging/
+type: docs
 ---
-
 # Συγχώνευση Visio
 
 

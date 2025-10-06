@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: 了解如何合并 XLT 文件。通过此分步指南，在 C# 中以编程方式组合 Excel 模板。
 weight: 15
 url: /zh/net/spreadsheet-merging/merge-xlt-files/
+type: docs
 ---
-
 # 合并 XLT 文件
 
 ## 介绍

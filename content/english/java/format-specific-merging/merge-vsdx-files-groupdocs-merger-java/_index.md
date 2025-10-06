@@ -8,10 +8,8 @@ keywords:
 - merge VSDX files Java
 - GroupDocs.Merger for Java tutorial
 - efficiently merge Visio documents
-
+type: docs
 ---
-
-
 # How to Merge VSDX Files Using GroupDocs.Merger for Java: A Step-by-Step Guide
 
 ## Introduction

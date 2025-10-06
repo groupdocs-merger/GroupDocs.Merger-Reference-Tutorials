@@ -5,8 +5,8 @@ weight: 10
 url: /pl/net/
 description: Bez wysiłku łącz i kompresuj różne formaty plików za pomocą GroupDocs.Merger .NET. Poznaj szczegółowe samouczki dotyczące łączenia obrazów, dokumentów i nie tylko!
 is_root: true
+type: docs
 ---
-
 # Poradniki i przykłady GroupDocs.Merger dla .NET
 
 ## Wstęp

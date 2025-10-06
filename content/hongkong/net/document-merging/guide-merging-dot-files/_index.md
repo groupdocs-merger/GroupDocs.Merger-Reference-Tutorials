@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: 了解如何使用 GroupDocs.Merger for .NET 以程式設計方式合併 DOT (Graphviz) 檔案。輕鬆合併、組合和操作 DOT 文件。
 weight: 13
 url: /zh-hant/net/document-merging/guide-merging-dot-files/
+type: docs
 ---
-
 # 合併 DOT 文件指南
 
 ## 介紹

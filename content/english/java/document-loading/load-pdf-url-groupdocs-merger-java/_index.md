@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Merger
 - Java
 - Document Processing
-
+type: docs
 ---
-
-
 # How to Load a PDF from a URL Using GroupDocs.Merger for Java
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Naučte se sloučit soubory RTF v .NET bez námahy pomocí GroupDocs.Merger pro bezproblémové zpracování dokumentů.
 weight: 21
 url: /cs/net/document-merging/merging-rtf-files/
+type: docs
 ---
-
 # Sloučení souborů RTF
 
 ## Úvod

@@ -6,8 +6,8 @@ description: Sammanfoga, dela och komprimera dokument enkelt över .NET- och Jav
 weight: 11
 url: /sv/
 is_root: true
+type: docs
 ---
-
 # Slå samman och dela dokument enkelt med GroupDocs.Merger
 
 

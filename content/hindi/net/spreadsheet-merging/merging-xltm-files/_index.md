@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: XLTM फ़ाइलों को प्रोग्रामेटिक रूप से मर्ज करना सीखें। कोड उदाहरणों के साथ चरण-दर-चरण मार्गदर्शिका।
 weight: 16
 url: /hi/net/spreadsheet-merging/merging-xltm-files/
+type: docs
 ---
-
 # XLTM फ़ाइलें मर्ज करना
 
 ## परिचय

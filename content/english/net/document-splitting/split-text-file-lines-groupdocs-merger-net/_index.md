@@ -8,10 +8,8 @@ keywords:
 - split text file by lines
 - GroupDocs.Merger for .NET
 - text file splitting
-
+type: docs
 ---
-
-
 # Split Text File by Lines with GroupDocs.Merger for .NET
 
 ## Introduction

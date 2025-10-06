@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: .NET के लिए GroupDocs.Merger का उपयोग करके PowerPoint (PPT) फ़ाइलों को आसानी से मर्ज करना सीखें। इस शक्तिशाली API के साथ अपने .NET अनुप्रयोगों को बेहतर बनाएँ।
 weight: 12
 url: /hi/net/presentation-merging/how-to-merge-ppt-files/
+type: docs
 ---
-
 # पीपीटी फाइलों को कैसे मर्ज करें
 
 ## परिचय

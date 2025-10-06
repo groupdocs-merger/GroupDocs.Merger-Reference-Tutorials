@@ -8,10 +8,8 @@ keywords:
 - merge DOTX files Java
 - GroupDocs.Merger setup
 - Java document merging
-
+type: docs
 ---
-
-
 # How to Merge DOTX Files with GroupDocs.Merger for Java: A Step-by-Step Guide
 
 ## Introduction

@@ -8,10 +8,8 @@ keywords:
 - document splitting with GroupDocs.Merger for .NET
 - split specific pages in a Word document
 - extract sections from PDFs programmatically
-
+type: docs
 ---
-
-
 # Mastering Document Splitting with GroupDocs.Merger for .NET
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: .NET के लिए GroupDocs.Merger का उपयोग करके पीपीएस फ़ाइलों को निर्बाध रूप से मर्ज करना सीखें। कोड उदाहरणों के साथ चरण-दर-चरण मार्गदर्शिका। अपने दस्तावेज़ हेरफेर कौशल को बढ़ाएँ।
 weight: 10
 url: /hi/net/presentation-merging/merge-pps-files/
+type: docs
 ---
-
 # पीपीएस फ़ाइलें मर्ज करें
 
 ## परिचय

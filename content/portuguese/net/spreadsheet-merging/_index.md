@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Mescle facilmente arquivos XLAM, XLS, XLSB, XLSM, XLSX, XLT, XLTM, XLTX e ODS em .NET usando GroupDocs.Merger. Simplifique as tarefas de gerenciamento de documentos.
 weight: 23
 url: /pt/net/spreadsheet-merging/
+type: docs
 ---
-
 # Mesclagem de planilhas
 
 

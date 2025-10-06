@@ -8,10 +8,8 @@ keywords:
 - generate document page previews .NET
 - GroupDocs.Merger for .NET
 - document page preview generation
-
+type: docs
 ---
-
-
 # How to Generate Document Page Previews with GroupDocs.Merger in .NET
 
 ## Introduction

@@ -5,8 +5,8 @@ weight: 10
 url: /vi/net/
 description: Dễ dàng hợp nhất và nén các định dạng tệp khác nhau bằng GroupDocs.Merger .NET. Tìm hiểu hướng dẫn từng bước về cách hợp nhất hình ảnh, tài liệu và hơn thế nữa!
 is_root: true
+type: docs
 ---
-
 # Hướng dẫn và ví dụ về GroupDocs.Merger cho .NET
 
 ## Giới thiệu

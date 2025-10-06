@@ -3,8 +3,8 @@ title: "Licensing Tutorials for GroupDocs.Merger Java"
 description: "Complete tutorials for setting up and managing licenses for GroupDocs.Merger in Java applications, including file-based, stream-based, and metered licenses."
 weight: 14
 url: "/java/licensing/"
+type: docs
 ---
-
 # Licensing Tutorials for GroupDocs.Merger Java
 
 Master licensing configuration with our detailed GroupDocs.Merger tutorials for Java developers. These practical guides demonstrate how to set up different license types, implement license validation, configure metered licensing, and troubleshoot common licensing issues. Each tutorial includes working Java code examples that show how to properly initialize the GroupDocs.Merger library with appropriate licensing for both development and production environments, ensuring your document processing applications operate correctly.

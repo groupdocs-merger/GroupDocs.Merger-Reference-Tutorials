@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Naučte se, jak programově sloučit soubory ZIP pomocí GroupDocs.Merger for .NET. Tento tutoriál poskytuje podrobnou příručku pro vývojáře.
 weight: 12
 url: /cs/net/merge-compress-files/guide-merging-zip-files/
+type: docs
 ---
-
 # Průvodce slučováním souborů ZIP
 
 ## Úvod

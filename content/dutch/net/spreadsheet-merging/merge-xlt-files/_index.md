@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Leer hoe u XLT-bestanden samenvoegt. Combineer Excel-sjablonen programmatisch in C# met deze stapsgewijze handleiding.
 weight: 15
 url: /nl/net/spreadsheet-merging/merge-xlt-files/
+type: docs
 ---
-
 # XLT-bestanden samenvoegen
 
 ## Invoering

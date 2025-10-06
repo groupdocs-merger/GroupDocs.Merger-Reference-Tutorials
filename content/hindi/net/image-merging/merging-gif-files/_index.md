@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: .NET के लिए GroupDocs.Merger का उपयोग करके GIF फ़ाइलों को मर्ज करना सीखें। चरण-दर-चरण निर्देशों के साथ प्रोग्रामेटिक रूप से कई GIF को संयोजित करें।
 weight: 11
 url: /hi/net/image-merging/merging-gif-files/
+type: docs
 ---
-
 # GIF फ़ाइलें मर्ज करना
 
 ## परिचय

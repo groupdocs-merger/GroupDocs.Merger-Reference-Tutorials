@@ -6,8 +6,8 @@ description: GroupDocs.Merger'daki uzman eğitimlerimizle belgeleri .NET ve Java
 weight: 11
 url: /tr/
 is_root: true
+type: docs
 ---
-
 # GroupDocs.Merger ile Belgeleri Zahmetsizce Birleştirin ve Bölün
 
 

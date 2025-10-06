@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API'si
 description: Belge düzenleme görevlerini verimli bir şekilde basitleştirerek, GroupDocs.Merger'ı kullanarak DOCX dosyalarını .NET'te programlı olarak nasıl birleştireceğinizi öğrenin.
 weight: 12
 url: /tr/net/document-merging/how-to-merge-docx-files/
+type: docs
 ---
-
 # DOCX Dosyaları Nasıl Birleştirilir
 
 ## giriiş

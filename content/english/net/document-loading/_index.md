@@ -3,8 +3,8 @@ title: "Document Loading Tutorials for GroupDocs.Merger .NET"
 description: "Complete tutorials for loading documents from various sources including local disk, streams, and URLs with GroupDocs.Merger for .NET."
 weight: 2
 url: "/net/document-loading/"
+type: docs
 ---
-
 # Document Loading Tutorials for GroupDocs.Merger .NET
 
 Our document loading tutorials provide comprehensive guidance for accessing and opening documents from different sources using GroupDocs.Merger in .NET. These step-by-step guides demonstrate how to load local files, stream content, access password-protected documents, and retrieve files from URLs. Each tutorial includes working C# code examples, implementation notes, and best practices to help you build applications that efficiently handle document loading with clean, maintainable code.

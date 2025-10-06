@@ -6,8 +6,8 @@ description: С легкостью объединяйте, разделяйте 
 weight: 11
 url: /ru/
 is_root: true
+type: docs
 ---
-
 # Легко объединяйте и разделяйте документы с помощью GroupDocs.Merger
 
 

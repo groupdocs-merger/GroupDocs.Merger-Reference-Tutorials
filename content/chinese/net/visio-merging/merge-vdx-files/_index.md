@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: 了解如何使用 GroupDocs.Merger for .NET 以编程方式合并 VDX 文件。本教程提供了分步指南。
 weight: 10
 url: /zh/net/visio-merging/merge-vdx-files/
+type: docs
 ---
-
 # 合并 VDX 文件
 
 ## 介绍

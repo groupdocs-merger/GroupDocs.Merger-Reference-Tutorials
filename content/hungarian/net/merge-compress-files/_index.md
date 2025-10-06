@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Különböző fájlformátumok egyszerű egyesítése és tömörítése oktatóanyagok. Ismerje meg a 7z-, TAR- és ZIP-fájlok zökkenőmentes kombinálását lépésről lépésre szóló útmutatóink segítségével.
 weight: 20
 url: /hu/net/merge-compress-files/
+type: docs
 ---
-
 # Tömörítési fájlok egyesítése
 
 ## Bevezetés

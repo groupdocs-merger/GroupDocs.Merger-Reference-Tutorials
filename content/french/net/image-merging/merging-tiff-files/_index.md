@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Découvrez comment fusionner des fichiers TIFF à l'aide de GroupDocs.Merger pour .NET. Fusionnez, divisez et modifiez des documents en toute transparence dans vos applications .NET.
 weight: 16
 url: /fr/net/image-merging/merging-tiff-files/
+type: docs
 ---
-
 # Fusion de fichiers TIFF
 
 ## Introduction

@@ -8,10 +8,8 @@ keywords:
 - merge MHTML files .NET
 - GroupDocs.Merger for .NET
 - MHTML file merging
-
+type: docs
 ---
-
-
 # How to Merge MHTML Files in .NET Using GroupDocs.Merger for .NET
 
 ## Introduction

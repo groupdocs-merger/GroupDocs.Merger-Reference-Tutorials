@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Aprenda como mesclar arquivos TAR programaticamente usando GroupDocs.Merger for .NET. Siga nosso guia passo a passo para lidar com arquivos TAR com eficiência.
 weight: 11
 url: /pt/net/merge-compress-files/merging-tar-files/
+type: docs
 ---
-
 # Mesclando arquivos Tar
 
 ## Introdução

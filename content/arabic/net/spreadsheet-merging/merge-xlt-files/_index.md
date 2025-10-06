@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: تعرف على كيفية دمج ملفات XLT. يمكنك دمج قوالب Excel برمجيًا في لغة C# باستخدام هذا الدليل التفصيلي خطوة بخطوة.
 weight: 15
 url: /ar/net/spreadsheet-merging/merge-xlt-files/
+type: docs
 ---
-
 # دمج ملفات XLT
 
 ## مقدمة

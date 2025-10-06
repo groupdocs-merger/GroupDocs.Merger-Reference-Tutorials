@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp DOCM một cách liền mạch bằng GroupDocs.Merger cho .NET. Thao tác tài liệu đơn giản và hiệu quả cho các ứng dụng .NET.
 weight: 11
 url: /vi/net/document-merging/merging-docm-files/
+type: docs
 ---
-
 # Hợp nhất các tệp DOCM
 
 ## Giới thiệu

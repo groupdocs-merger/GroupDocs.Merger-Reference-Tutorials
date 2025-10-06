@@ -6,8 +6,8 @@ description: Dễ dàng hợp nhất, phân tách và nén tài liệu trên cá
 weight: 11
 url: /vi/
 is_root: true
+type: docs
 ---
-
 # Hợp nhất và phân chia tài liệu dễ dàng với GroupDocs.Merger
 
 

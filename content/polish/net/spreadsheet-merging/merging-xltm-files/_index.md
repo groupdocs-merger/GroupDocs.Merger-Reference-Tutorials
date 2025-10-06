@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger API .NET
 description: Dowiedz się, jak programowo łączyć pliki XLTM. Przewodnik krok po kroku z przykładami kodu.
 weight: 16
 url: /pl/net/spreadsheet-merging/merging-xltm-files/
+type: docs
 ---
-
 # Łączenie plików XLTM
 
 ## Wstęp

@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: 使用 GroupDocs.Merger for .NET 轻松合并 PPSX 文件。按照我们的分步指南自动执行文件合并任务！增强您的文档管理工作流程。
 weight: 11
 url: /zh/net/presentation-merging/merging-ppsx-files/
+type: docs
 ---
-
 # 合并 PPSX 文件
 
 ## 介绍

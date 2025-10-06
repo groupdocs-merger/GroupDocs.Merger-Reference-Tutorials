@@ -8,10 +8,8 @@ keywords:
 - merge SVGZ files Java
 - GroupDocs.Merger for Java
 - SVGZ file manipulation
-
+type: docs
 ---
-
-
 # Effortlessly Merge SVGZ Files Using GroupDocs.Merger for Java: A Comprehensive Guide
 
 ## Introduction

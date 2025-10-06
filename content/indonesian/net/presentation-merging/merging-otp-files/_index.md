@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Pelajari cara menggabungkan file OTP menggunakan GroupDocs.Merger untuk .NET. Panduan langkah demi langkah ini akan memandu Anda melalui prosesnya dengan lancar.
 weight: 14
 url: /id/net/presentation-merging/merging-otp-files/
+type: docs
 ---
-
 # Menggabungkan File OTP
 
 ## Perkenalan

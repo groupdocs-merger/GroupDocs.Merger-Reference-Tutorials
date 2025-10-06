@@ -8,10 +8,8 @@ keywords:
 - automate Excel merging with GroupDocs.Merger
 - merge XLSX files .NET
 - GroupDocs.Merger tutorial
-
+type: docs
 ---
-
-
 # Automate Excel Merging with GroupDocs.Merger for .NET: A Step-by-Step Guide
 
 ## Introduction

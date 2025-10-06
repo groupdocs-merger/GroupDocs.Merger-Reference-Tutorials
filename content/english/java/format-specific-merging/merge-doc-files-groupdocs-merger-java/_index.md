@@ -8,10 +8,8 @@ keywords:
 - merge Word documents Java
 - GroupDocs Merger setup
 - merge multiple DOC files
-
+type: docs
 ---
-
-
 # How to Merge Multiple Word Documents Using GroupDocs.Merger for Java
 
 In today's digital age, managing documents efficiently is crucial. Often, you find yourself needing to combine several Word documents into one cohesive file. Whether it’s compiling reports or consolidating research papers, merging multiple DOC files can save time and effort. This comprehensive guide will walk you through the process of using GroupDocs.Merger for Java—a powerful tool designed specifically for this task.

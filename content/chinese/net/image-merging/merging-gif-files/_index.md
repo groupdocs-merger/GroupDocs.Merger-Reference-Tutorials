@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: 了解如何使用 GroupDocs.Merger for .NET 合并 GIF 文件。通过分步说明以编程方式合并多个 GIF。
 weight: 11
 url: /zh/net/image-merging/merging-gif-files/
+type: docs
 ---
-
 # 合并 GIF 文件
 
 ## 介绍

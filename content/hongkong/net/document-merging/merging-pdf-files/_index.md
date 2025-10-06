@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: 了解如何使用 GroupDocs.Merger 在 .NET 中以程式設計方式合併 PDF 文件，以實現無縫文件管理。
 weight: 19
 url: /zh-hant/net/document-merging/merging-pdf-files/
+type: docs
 ---
-
 # 合併 PDF 文件
 
 ## 介紹

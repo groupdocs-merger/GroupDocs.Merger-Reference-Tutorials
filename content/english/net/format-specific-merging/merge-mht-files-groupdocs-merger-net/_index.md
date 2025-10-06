@@ -8,10 +8,8 @@ keywords:
 - merge MHT files
 - GroupDocs.Merger for .NET
 - MHT file merging
-
+type: docs
 ---
-
-
 # How to Merge MHT Files Using GroupDocs.Merger for .NET: A Developer's Guide
 
 ## Introduction

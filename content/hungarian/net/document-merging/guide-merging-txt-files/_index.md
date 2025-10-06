@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: A GroupDocs.Merger segítségével zökkenőmentesen egyesítse a TXT-fájlokat a .NET-ben. Lépésről lépésre útmutató fejlesztőknek. Dokumentáció és támogatás elérhető.
 weight: 18
 url: /hu/net/document-merging/guide-merging-txt-files/
+type: docs
 ---
-
 # Útmutató a TXT-fájlok egyesítéséhez GroupDocs.Merger for .NET-hez
 
 ## Bevezetés

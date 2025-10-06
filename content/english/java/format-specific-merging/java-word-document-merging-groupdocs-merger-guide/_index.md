@@ -8,10 +8,8 @@ keywords:
 - Java Word Document Merging
 - GroupDocs Merger for Java
 - Word Files Joining
-
+type: docs
 ---
-
-
 # Mastering Efficient Word Document Merging in Java with GroupDocs.Merger
 
 ## Introduction

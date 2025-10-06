@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Leer hoe u moeiteloos PowerPoint-bestanden (PPT) kunt samenvoegen met GroupDocs.Merger voor .NET. Verbeter uw .NET-applicaties met deze krachtige API.
 weight: 12
 url: /nl/net/presentation-merging/how-to-merge-ppt-files/
+type: docs
 ---
-
 # Hoe PPT-bestanden samen te voegen
 
 ## Invoering

@@ -8,10 +8,8 @@ keywords:
 - update document password
 - GroupDocs.Merger for .NET
 - document security management
-
+type: docs
 ---
-
-
 # How to Update a Document's Password Using GroupDocs.Merger for .NET
 
 ## Introduction

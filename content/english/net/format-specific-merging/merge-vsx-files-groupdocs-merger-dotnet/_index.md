@@ -8,10 +8,8 @@ keywords:
 - merge VSX files
 - GroupDocs.Merger for .NET
 - VSX file merging
-
+type: docs
 ---
-
-
 # How to Merge VSX Files Using GroupDocs.Merger for .NET: A Comprehensive Guide
 
 ## Introduction

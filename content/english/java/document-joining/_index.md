@@ -3,8 +3,8 @@ title: "Document Joining Tutorials for GroupDocs.Merger Java"
 description: "Learn how to combine multiple documents of the same or different formats using GroupDocs.Merger for Java with these comprehensive tutorials."
 weight: 4
 url: "/java/document-joining/"
+type: docs
 ---
-
 # Document Joining Tutorials for GroupDocs.Merger Java
 
 Our document joining tutorials show you how to merge multiple files into a single document using GroupDocs.Merger in Java. These detailed guides cover combining documents of the same format, cross-joining different file types, merging specific pages from various sources, and implementing advanced joining techniques. Each tutorial includes practical Java code examples for common document combination scenarios, helping you build applications that can create cohesive documents from multiple sources.

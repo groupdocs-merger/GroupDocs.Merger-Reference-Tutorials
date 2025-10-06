@@ -3,8 +3,8 @@ title: "Document Security Tutorials for GroupDocs.Merger .NET"
 description: "Learn to implement password protection, manage document permissions, and handle security features with these GroupDocs.Merger .NET tutorials."
 weight: 7
 url: "/net/document-security/"
+type: docs
 ---
-
 # Document Security Tutorials for GroupDocs.Merger .NET
 
 Our document security tutorials demonstrate how to protect documents using GroupDocs.Merger for .NET. These step-by-step guides show you how to add passwords to documents, set specific permissions, check for password protection, update existing passwords, and remove security features programmatically. Each tutorial includes complete C# code examples for common security scenarios, helping you build applications that maintain document confidentiality and manage access controls effectively.

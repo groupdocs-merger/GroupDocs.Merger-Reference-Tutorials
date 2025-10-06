@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp ODS một cách dễ dàng. Thực hiện theo hướng dẫn từng bước của chúng tôi để thao tác tài liệu liền mạch.
 weight: 18
 url: /vi/net/spreadsheet-merging/merging-ods-files/
+type: docs
 ---
-
 # Hợp nhất các tệp ODS
 
 ## Giới thiệu

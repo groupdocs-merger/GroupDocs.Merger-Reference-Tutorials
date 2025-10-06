@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: .NET के लिए GroupDocs.Merger का उपयोग करके ZIP फ़ाइलों को प्रोग्रामेटिक रूप से मर्ज करना सीखें। यह ट्यूटोरियल डेवलपर्स के लिए एक विस्तृत गाइड प्रदान करता है।
 weight: 12
 url: /hi/net/merge-compress-files/guide-merging-zip-files/
+type: docs
 ---
-
 # ज़िप फ़ाइलों को मर्ज करने के लिए गाइड
 
 ## परिचय

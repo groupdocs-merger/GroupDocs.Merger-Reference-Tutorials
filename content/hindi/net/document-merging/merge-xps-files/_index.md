@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: .NET के लिए GroupDocs.Merger का उपयोग करके आसानी से XPS फ़ाइलों को मर्ज करना सीखें। अपने .NET अनुप्रयोगों में दस्तावेज़ प्रसंस्करण को सरल बनाएं।
 weight: 20
 url: /hi/net/document-merging/merge-xps-files/
+type: docs
 ---
-
 # एक्सपीएस फ़ाइलें मर्ज करें
 
 ## परिचय

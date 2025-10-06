@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Apprenez à fusionner des fichiers ODS sans effort. Suivez notre guide étape par étape pour une manipulation transparente des documents.
 weight: 18
 url: /fr/net/spreadsheet-merging/merging-ods-files/
+type: docs
 ---
-
 # Fusion de fichiers ODS
 
 ## Introduction

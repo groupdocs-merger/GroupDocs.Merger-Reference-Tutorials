@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Hợp nhất các tệp XLSM một cách liền mạch với GroupDocs.Merger cho .NET. Kết hợp hiệu quả các sổ làm việc Excel theo chương trình. Nâng cao khả năng thao tác tài liệu của bạn.
 weight: 13
 url: /vi/net/spreadsheet-merging/guide-merging-xlsm-files/
+type: docs
 ---
-
 # Hướng dẫn gộp file XLSM
 
 ## Giới thiệu

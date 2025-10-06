@@ -8,10 +8,8 @@ keywords:
 - XLAM Merging
 - GroupDocs.Merger for .NET
 - Efficient Document Management
-
+type: docs
 ---
-
-
 # Master Efficient XLAM Merging with GroupDocs.Merger for .NET: A Step-by-Step Guide
 
 ## Introduction

@@ -8,10 +8,8 @@ keywords:
 - merge PowerPoint PPS files
 - GroupDocs Merger for .NET
 - combine multiple presentations
-
+type: docs
 ---
-
-
 # How to Merge Multiple PPS Files into One Using GroupDocs.Merger for .NET
 
 ## Introduction

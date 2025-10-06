@@ -8,10 +8,8 @@ keywords:
 - merge SVG files .NET
 - GroupDocs.Merger for .NET setup
 - programmatically merge SVG
-
+type: docs
 ---
-
-
 # How to Merge SVG Files Using GroupDocs.Merger for .NET: A Comprehensive Guide
 
 ## Introduction

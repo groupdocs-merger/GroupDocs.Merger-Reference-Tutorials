@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Leer hoe u XLSB-bestanden samenvoegt. Deze stapsgewijze handleiding vereenvoudigt documentmanipulatietaken.
 weight: 12
 url: /nl/net/spreadsheet-merging/how-to-merge-xlsb-files/
+type: docs
 ---
-
 # XLSB-bestanden samenvoegen
 
 ## Invoering

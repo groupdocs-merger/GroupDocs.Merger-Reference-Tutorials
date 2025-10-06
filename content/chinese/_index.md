@@ -6,8 +6,8 @@ description: 通过 GroupDocs.Merger 上的专家教程，轻松跨 .NET 和 Jav
 weight: 11
 url: /zh/
 is_root: true
+type: docs
 ---
-
 # 使用 GroupDocs.Merger 轻松合并和拆分文档
 
 

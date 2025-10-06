@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger for .NET を使用して SVG ファイルをプログラムで結合する方法を学びます。複数の SVG ドキュメントを簡単に結合します。
 weight: 13
 url: /ja/net/image-merging/guide-merging-svg-files/
+type: docs
 ---
-
 # SVG ファイルの結合ガイド
 
 ## 導入

@@ -8,10 +8,8 @@ keywords:
 - split documents java
 - GroupDocs Merger Java
 - Java document splitting
-
+type: docs
 ---
-
-
 # How to Split Documents into Multi-Page Files Using GroupDocs.Merger for Java
 
 ## Introduction

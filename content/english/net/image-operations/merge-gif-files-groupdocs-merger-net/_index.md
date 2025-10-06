@@ -8,10 +8,8 @@ keywords:
 - merge GIF files
 - GroupDocs.Merger for .NET
 - C# image operations
-
+type: docs
 ---
-
-
 # How to Merge GIF Files Seamlessly with GroupDocs.Merger for .NET: A Step-by-Step Guide
 
 ## Introduction

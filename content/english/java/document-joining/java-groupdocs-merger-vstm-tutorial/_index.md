@@ -8,10 +8,8 @@ keywords:
 - merge VSTM files in Java
 - using GroupDocs.Merger for Java
 - file merging tutorial
-
+type: docs
 ---
-
-
 # Master File Merging in Java: Comprehensive Guide to Using GroupDocs.Merger for VSTM Files
 
 ## Introduction

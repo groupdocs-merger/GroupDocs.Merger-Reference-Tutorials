@@ -8,10 +8,8 @@ keywords:
 - page swapping with GroupDocs.Merger
 - GroupDocs Merger .NET setup
 - document page swap
-
+type: docs
 ---
-
-
 # Mastering Page Swapping in Documents with GroupDocs.Merger for .NET
 
 ## Introduction

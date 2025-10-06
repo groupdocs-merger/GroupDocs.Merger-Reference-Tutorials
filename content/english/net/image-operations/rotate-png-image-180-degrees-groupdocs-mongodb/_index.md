@@ -8,10 +8,8 @@ keywords:
 - rotate PNG image by 180 degrees GroupDocs.Merger .NET
 - image rotation using GroupDocs.Merger for .NET
 - GroupDocs.Merger rotate PNG
-
+type: docs
 ---
-
-
 # Rotate a PNG Image by 180 Degrees Using GroupDocs.Merger for .NET
 
 ## Introduction

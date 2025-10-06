@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Aprenda a fusionar archivos DOCM sin problemas utilizando GroupDocs.Merger para .NET. Manipulación de documentos simple y eficiente para aplicaciones .NET.
 weight: 11
 url: /es/net/document-merging/merging-docm-files/
+type: docs
 ---
-
 # Fusionar archivos DOCM
 
 ## Introducción

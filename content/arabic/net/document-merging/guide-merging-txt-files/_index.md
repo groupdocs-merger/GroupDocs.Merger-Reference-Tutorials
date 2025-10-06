@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: دمج ملفات TXT بسلاسة في .NET باستخدام GroupDocs.Merger. دليل خطوة بخطوة للمطورين. الوثائق والدعم متاح.
 weight: 18
 url: /ar/net/document-merging/guide-merging-txt-files/
+type: docs
 ---
-
 # دليل لدمج ملفات TXT مع GroupDocs.Merger لـ .NET
 
 ## مقدمة

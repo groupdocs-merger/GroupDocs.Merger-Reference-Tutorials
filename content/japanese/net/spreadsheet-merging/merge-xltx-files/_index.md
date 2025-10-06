@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: XLTX ファイルを簡単にマージする方法を学びましょう。 XLTX ファイルのマージを開始し、ドキュメント管理タスクを効率的に合理化します。
 weight: 17
 url: /ja/net/spreadsheet-merging/merge-xltx-files/
+type: docs
 ---
-
 # XLTX ファイルを結合する
 
 ## 導入

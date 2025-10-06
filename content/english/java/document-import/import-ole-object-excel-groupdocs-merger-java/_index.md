@@ -8,10 +8,8 @@ keywords:
 - import OLE object into Excel
 - embed PDF in Excel with Java
 - use GroupDocs.Merger for document integration
-
+type: docs
 ---
-
-
 # How to Import an OLE Object into Excel Using GroupDocs.Merger for Java: A Step-by-Step Guide
 
 ## Introduction

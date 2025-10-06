@@ -6,8 +6,8 @@ description: Bez wysiłku łącz, dziel i kompresuj dokumenty na platformach .NE
 weight: 11
 url: /pl/
 is_root: true
+type: docs
 ---
-
 # Scal i podziel dokumenty bez wysiłku dzięki GroupDocs.Merger
 
 

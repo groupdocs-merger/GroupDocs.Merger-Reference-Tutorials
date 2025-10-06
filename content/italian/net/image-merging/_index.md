@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Unisci file BMP, GIF, PNG, SVG, SVGZ, TIF e TIFF senza problemi con GroupDocs.Merger .NET. Integra in modo efficiente la manipolazione dei documenti nelle tue applicazioni .NET.
 weight: 21
 url: /it/net/image-merging/
+type: docs
 ---
-
 # Unione di immagini
 
 ## introduzione

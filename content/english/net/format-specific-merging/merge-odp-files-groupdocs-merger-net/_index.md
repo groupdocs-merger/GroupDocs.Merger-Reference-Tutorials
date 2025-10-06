@@ -8,10 +8,8 @@ keywords:
 - merge ODP files
 - GroupDocs.Merger for .NET
 - automate presentation merging
-
+type: docs
 ---
-
-
 # How to Merge ODP Files Using GroupDocs.Merger for .NET: A Complete Guide
 
 ## Introduction

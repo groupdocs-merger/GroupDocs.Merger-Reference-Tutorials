@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger का उपयोग करके आसानी से विभिन्न दस्तावेज़ प्रारूपों को .NET में मर्ज करें। DOC, DOCX, PDF और अन्य को सहजता से संयोजित करें। आज ही अपना दस्तावेज़ प्रबंधन बढ़ाएँ!
 weight: 22
 url: /hi/net/document-merging/
+type: docs
 ---
-
 # दस्तावेज़ विलय
 
 ## परिचय

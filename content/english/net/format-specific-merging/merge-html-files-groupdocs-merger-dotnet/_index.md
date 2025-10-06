@@ -8,10 +8,8 @@ keywords:
 - merge HTML files using GroupDocs.Merger
 - GroupDocs.Merger for .NET setup
 - HTML document merging
-
+type: docs
 ---
-
-
 # How to Merge Multiple HTML Files Using GroupDocs.Merger for .NET: A Comprehensive Guide
 
 ## Introduction

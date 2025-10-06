@@ -3,8 +3,8 @@ title: "Format-Specific Document Merging Tutorials for GroupDocs.Merger Java"
 description: "Complete tutorials for merging specific file formats including PDFs, Word documents, presentations, spreadsheets, and various image formats with GroupDocs.Merger for Java."
 weight: 5
 url: "/java/format-specific-merging/"
+type: docs
 ---
-
 # Format-Specific Document Merging Tutorials for GroupDocs.Merger Java
 
 Master format-specific document merging with our comprehensive GroupDocs.Merger tutorials for Java developers. These step-by-step guides demonstrate how to merge different file types with their unique considerations, including PDFs, Word documents, presentations, spreadsheets, images, and more. Each tutorial provides working Java code examples for handling format-specific requirements and optimizations, helping you build applications that produce high-quality merged documents while preserving format-specific features.

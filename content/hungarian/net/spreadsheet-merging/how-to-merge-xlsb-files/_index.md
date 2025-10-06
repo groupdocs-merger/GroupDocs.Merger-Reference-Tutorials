@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Ismerje meg, hogyan lehet XLSB-fájlokat egyesíteni. Ez a lépésenkénti útmutató leegyszerűsíti a dokumentumkezelési feladatokat.
 weight: 12
 url: /hu/net/spreadsheet-merging/how-to-merge-xlsb-files/
+type: docs
 ---
-
 # XLSB fájlok egyesítése
 
 ## Bevezetés

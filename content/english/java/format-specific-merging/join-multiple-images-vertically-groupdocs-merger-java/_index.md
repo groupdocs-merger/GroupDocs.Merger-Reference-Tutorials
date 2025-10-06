@@ -8,10 +8,8 @@ keywords:
 - join multiple images vertically
 - GroupDocs.Merger for Java
 - image merging tutorial
-
+type: docs
 ---
-
-
 # How to Join Multiple Images Vertically Using GroupDocs.Merger for Java
 
 ## Introduction

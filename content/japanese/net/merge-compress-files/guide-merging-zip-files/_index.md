@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger for .NET を使用してプログラムで ZIP ファイルをマージする方法を学びます。このチュートリアルでは、開発者向けの詳細なガイドを提供します。
 weight: 12
 url: /ja/net/merge-compress-files/guide-merging-zip-files/
+type: docs
 ---
-
 # ZIP ファイルの結合ガイド
 
 ## 導入

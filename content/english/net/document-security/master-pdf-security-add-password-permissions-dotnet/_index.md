@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Merger for .NET
 - PDF security
 - add password to PDF
-
+type: docs
 ---
-
-
 # Master PDF Security: Add Passwords & Permissions Using GroupDocs.Merger for .NET
 
 ## Introduction

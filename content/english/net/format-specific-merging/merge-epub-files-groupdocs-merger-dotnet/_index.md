@@ -8,10 +8,8 @@ keywords:
 - merge EPUB files
 - GroupDocs.Merger for .NET
 - digital publications
-
+type: docs
 ---
-
-
 # Efficiently Merge EPUB Files Using GroupDocs.Merger for .NET: A Step-by-Step Guide
 
 ## Introduction

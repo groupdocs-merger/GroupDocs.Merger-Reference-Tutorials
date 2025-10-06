@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: تعرف على كيفية دمج ملفات DOT (Graphviz) برمجياً باستخدام GroupDocs.Merger لـ .NET. دمج ملفات DOT ودمجها ومعالجتها بسهولة.
 weight: 13
 url: /ar/net/document-merging/guide-merging-dot-files/
+type: docs
 ---
-
 # دليل لدمج ملفات DOT
 
 ## مقدمة

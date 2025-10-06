@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: ผสานรวมรูปแบบไฟล์การนำเสนอต่างๆ ได้อย่างง่ายดาย ทำตามบทช่วยสอนของเราเพื่อรวมไฟล์ PPS, PPSX, PPT และ OTP ได้อย่างมีประสิทธิภาพ #GroupDocsการควบรวมกิจการ
 weight: 25
 url: /th/net/presentation-merging/
+type: docs
 ---
-
 # การรวมการนำเสนอ
 
 ## การแนะนำ

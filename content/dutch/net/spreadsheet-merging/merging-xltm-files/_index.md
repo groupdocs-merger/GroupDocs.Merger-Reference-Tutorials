@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Leer hoe u XLTM-bestanden programmatisch samenvoegt. Stapsgewijze handleiding met codevoorbeelden.
 weight: 16
 url: /nl/net/spreadsheet-merging/merging-xltm-files/
+type: docs
 ---
-
 # XLTM-bestanden samenvoegen
 
 ## Invoering

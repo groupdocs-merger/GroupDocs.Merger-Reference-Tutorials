@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger API .NET
 description: tego samouczka krok po kroku dowiesz się, jak scalić pliki SVGZ przy użyciu narzędzia GroupDocs.Merger dla platformy .NET. Zwiększ swoje umiejętności manipulowania dokumentami.
 weight: 14
 url: /pl/net/image-merging/merging-svgz-files/
+type: docs
 ---
-
 # Łączenie plików SVGZ
 
 ## Wstęp

@@ -8,10 +8,8 @@ keywords:
 - merge TAR files with GroupDocs.Merger for .NET
 - GroupDocs.Merger for .NET setup
 - TAR file merging tutorial
-
+type: docs
 ---
-
-
 # How to Merge Multiple TAR Files Using GroupDocs.Merger for .NET
 
 ## Introduction

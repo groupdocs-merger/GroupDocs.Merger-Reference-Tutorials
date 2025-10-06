@@ -8,10 +8,8 @@ keywords:
 - rotate JPG images .NET
 - GroupDocs.Merger .NET tutorial
 - image rotation in .NET
-
+type: docs
 ---
-
-
 # How to Rotate JPG Images in .NET Using GroupDocs.Merger
 
 ## Introduction

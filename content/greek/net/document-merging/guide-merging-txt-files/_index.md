@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Συγχώνευση αρχείων TXT απρόσκοπτα στο .NET χρησιμοποιώντας το GroupDocs.Merger. Οδηγός βήμα προς βήμα για προγραμματιστές. Τεκμηρίωση και υποστήριξη διαθέσιμη.
 weight: 18
 url: /el/net/document-merging/guide-merging-txt-files/
+type: docs
 ---
-
 # Οδηγός συγχώνευσης αρχείων TXT με GroupDocs.Merger για .NET
 
 ## Εισαγωγή

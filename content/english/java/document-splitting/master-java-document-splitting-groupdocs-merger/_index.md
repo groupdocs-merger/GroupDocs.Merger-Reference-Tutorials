@@ -8,10 +8,8 @@ keywords:
 - Java Document Splitting
 - GroupDocs.Merger for Java
 - Split DOCX Pages
-
+type: docs
 ---
-
-
 # Master Java Document Splitting with GroupDocs.Merger: Split DOCX Pages into Files and Streams
 
 ## Introduction

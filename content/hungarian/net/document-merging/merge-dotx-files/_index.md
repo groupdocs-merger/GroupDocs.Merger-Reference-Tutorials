@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Ismerje meg, hogyan egyesíthet könnyedén DOTX-fájlokat .NET-ben a GroupDocs.Merger segítségével. Növelje dokumentumkezelési képességeit.
 weight: 15
 url: /hu/net/document-merging/merge-dotx-files/
+type: docs
 ---
-
 # Egyesítse a DOTX fájlokat
 
 ## Bevezetés

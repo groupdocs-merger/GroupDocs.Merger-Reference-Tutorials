@@ -8,10 +8,8 @@ keywords:
 - Word document merging in .NET
 - GroupDocs.Merger API
 - .NET application document management
-
+type: docs
 ---
-
-
 # Effortless Word Document Merging in .NET with GroupDocs.Merger API
 
 ## Introduction

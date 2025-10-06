@@ -8,10 +8,8 @@ keywords:
 - remove passwords from documents
 - GroupDocs Merger for Java
 - document security
-
+type: docs
 ---
-
-
 # Remove Passwords from Documents Using GroupDocs.Merger for Java
 ## Introduction
 Managing document security is essential, but removing password protection from files can be challenging. This tutorial guides you through using **GroupDocs.Merger for Java** to efficiently remove passwords from documents, boosting your workflow and productivity.

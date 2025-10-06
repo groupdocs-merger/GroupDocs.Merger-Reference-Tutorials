@@ -8,10 +8,8 @@ keywords:
 - merge XLS files .NET
 - GroupDocs.Merger for .NET tutorial
 - Excel file merging guide
-
+type: docs
 ---
-
-
 # How to Merge XLS Files Using GroupDocs.Merger for .NET
 
 ## Introduction

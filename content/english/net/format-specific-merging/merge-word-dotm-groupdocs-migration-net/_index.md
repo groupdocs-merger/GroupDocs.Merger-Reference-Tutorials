@@ -8,10 +8,8 @@ keywords:
 - merge .dotm files
 - GroupDocs.Merger for .NET
 - Microsoft Word Macro-Enabled Template
-
+type: docs
 ---
-
-
 # How to Merge Microsoft Word Macro-Enabled Templates (.dotm) Using GroupDocs.Merger for .NET
 
 ## Introduction

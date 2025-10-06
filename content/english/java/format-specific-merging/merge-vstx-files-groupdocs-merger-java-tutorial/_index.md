@@ -8,10 +8,8 @@ keywords:
 - merge VSTX files
 - GroupDocs Merger for Java
 - document management
-
+type: docs
 ---
-
-
 # Merge VSTX Files Effortlessly with GroupDocs.Merger for Java: A Comprehensive Guide
 
 ## Introduction

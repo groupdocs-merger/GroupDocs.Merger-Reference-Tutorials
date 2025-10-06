@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Μάθετε πώς να συγχωνεύετε αρχεία XLT. Συνδυάστε πρότυπα του Excel μέσω προγραμματισμού σε C# με αυτόν τον οδηγό βήμα προς βήμα.
 weight: 15
 url: /el/net/spreadsheet-merging/merge-xlt-files/
+type: docs
 ---
-
 # Συγχώνευση αρχείων XLT
 
 ## Εισαγωγή

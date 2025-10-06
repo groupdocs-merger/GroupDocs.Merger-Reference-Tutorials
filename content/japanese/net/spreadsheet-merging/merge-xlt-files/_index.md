@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: XLT ファイルをマージする方法を学びます。このステップバイステップ ガイドを使用して、C# でプログラム的に Excel テンプレートを結合します。
 weight: 15
 url: /ja/net/spreadsheet-merging/merge-xlt-files/
+type: docs
 ---
-
 # XLT ファイルを結合する
 
 ## 導入

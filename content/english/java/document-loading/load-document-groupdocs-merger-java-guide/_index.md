@@ -8,10 +8,8 @@ keywords:
 - load document with GroupDocs.Merger for Java
 - GroupDocs Merger document manipulation
 - Java application document handling
-
+type: docs
 ---
-
-
 # How to Load a Document from Local Disk Using GroupDocs.Merger for Java
 
 ## Introduction

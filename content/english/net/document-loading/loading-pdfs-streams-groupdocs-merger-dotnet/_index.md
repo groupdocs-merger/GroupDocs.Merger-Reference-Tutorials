@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Merger for .NET
 - loading PDFs from streams
 - stream handling in .NET
-
+type: docs
 ---
-
-
 # Loading PDFs from Streams with GroupDocs.Merger for .NET
 
 ## Introduction

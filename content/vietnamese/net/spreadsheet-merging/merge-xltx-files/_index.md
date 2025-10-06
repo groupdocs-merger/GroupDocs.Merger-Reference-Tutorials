@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp XLTX một cách dễ dàng. Bắt đầu hợp nhất các tệp XLTX và hợp lý hóa các tác vụ quản lý tài liệu của bạn một cách hiệu quả.
 weight: 17
 url: /vi/net/spreadsheet-merging/merge-xltx-files/
+type: docs
 ---
-
 # Hợp nhất các tệp XLTX
 
 ## Giới thiệu

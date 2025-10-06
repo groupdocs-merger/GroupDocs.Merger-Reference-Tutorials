@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: .NET के लिए GroupDocs.Merger का उपयोग करके PNG फ़ाइलों को मर्ज करना सीखें। आपके .NET अनुप्रयोगों में निर्बाध एकीकरण के लिए चरण-दर-चरण मार्गदर्शिका।
 weight: 12
 url: /hi/net/image-merging/how-to-merge-png-files/
+type: docs
 ---
-
 # PNG फ़ाइलों को कैसे मर्ज करें
 
 ## परिचय

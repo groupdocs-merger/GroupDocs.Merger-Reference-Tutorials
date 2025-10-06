@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger का उपयोग करके .NET में TXT फ़ाइलों को सहजता से मर्ज करें। डेवलपर्स के लिए चरण-दर-चरण मार्गदर्शिका। दस्तावेज़ीकरण और सहायता उपलब्ध है।
 weight: 18
 url: /hi/net/document-merging/guide-merging-txt-files/
+type: docs
 ---
-
 # .NET के लिए GroupDocs.Merger के साथ TXT फ़ाइलों को मर्ज करने के लिए मार्गदर्शिका
 
 ## परिचय

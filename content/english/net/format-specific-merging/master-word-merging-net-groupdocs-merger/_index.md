@@ -8,10 +8,8 @@ keywords:
 - merge Word documents in .NET
 - GroupDocs.Merger compliance modes
 - Word document merging
-
+type: docs
 ---
-
-
 # Mastering Word Document Merging in .NET with GroupDocs.Merger for Seamless Compliance and Efficiency
 
 ## Introduction

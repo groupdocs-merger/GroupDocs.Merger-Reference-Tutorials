@@ -8,10 +8,8 @@ keywords:
 - join images seamlessly
 - GroupDocs.Merger for .NET
 - image merging
-
+type: docs
 ---
-
-
 # How to Seamlessly Join Images Using GroupDocs.Merger for .NET
 
 ## Introduction

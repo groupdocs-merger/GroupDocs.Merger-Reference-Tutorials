@@ -8,10 +8,8 @@ keywords:
 - embed documents in PDF with Java
 - GroupDocs.Merger for Java setup
 - embedding PPTX into PDF
-
+type: docs
 ---
-
-
 # How to Use GroupDocs.Merger for Java to Embed Documents in a PDF
 
 ## Introduction

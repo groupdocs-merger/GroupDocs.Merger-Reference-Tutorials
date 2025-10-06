@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Lär dig hur du slår samman XLT-filer. Kombinera Excel-mallar programmatiskt i C# med denna steg-för-steg-guide.
 weight: 15
 url: /sv/net/spreadsheet-merging/merge-xlt-files/
+type: docs
 ---
-
 # Slå samman XLT-filer
 
 ## Introduktion

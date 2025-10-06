@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Mesclar e compactar vários formatos de arquivo com tutoriais sem esforço. Aprenda a combinar arquivos 7z, TAR e ZIP perfeitamente com nossos guias passo a passo.
 weight: 20
 url: /pt/net/merge-compress-files/
+type: docs
 ---
-
 # Mesclar arquivos compactados
 
 ## Introdução

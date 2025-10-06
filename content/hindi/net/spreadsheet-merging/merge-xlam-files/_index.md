@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: जानें कि XLAM फ़ाइलों को आसानी से कैसे मर्ज किया जाए। इस शक्तिशाली एपीआई के साथ अपने दस्तावेज़ प्रबंधन कार्यों को सरल बनाएं।
 weight: 10
 url: /hi/net/spreadsheet-merging/merge-xlam-files/
+type: docs
 ---
-
 # XLAM फ़ाइलें मर्ज करें
 
 ## परिचय

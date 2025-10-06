@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: XLTM ファイルをプログラムでマージする方法を学びます。コード例付きのステップバイステップ ガイド。
 weight: 16
 url: /ja/net/spreadsheet-merging/merging-xltm-files/
+type: docs
 ---
-
 # XLTM ファイルの結合
 
 ## 導入

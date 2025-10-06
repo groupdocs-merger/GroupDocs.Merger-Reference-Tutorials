@@ -8,10 +8,8 @@ keywords:
 - merge PDFs with Java
 - GroupDocs.Merger tutorial
 - Java document management
-
+type: docs
 ---
-
-
 # Efficiently Merge PDFs Using GroupDocs.Merger for Java
 
 ## Introduction

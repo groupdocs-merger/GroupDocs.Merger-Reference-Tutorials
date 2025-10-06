@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: ผสานและบีบอัดไฟล์รูปแบบต่างๆ ได้อย่างง่ายดาย เรียนรู้การรวมไฟล์ 7z, TAR และ ZIP ได้อย่างราบรื่นด้วยคำแนะนำทีละขั้นตอนของเรา
 weight: 20
 url: /th/net/merge-compress-files/
+type: docs
 ---
-
 # รวมไฟล์บีบอัด
 
 ## การแนะนำ

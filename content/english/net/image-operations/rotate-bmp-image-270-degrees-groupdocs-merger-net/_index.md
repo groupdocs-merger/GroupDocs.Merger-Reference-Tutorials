@@ -8,10 +8,8 @@ keywords:
 - rotate BMP image 270 degrees GroupDocs.Merger for .NET
 - GroupDocs.Merger for .NET setup and installation
 - image rotation using GroupDocs.Merger
-
+type: docs
 ---
-
-
 # Rotate BMP Image by 270 Degrees Using GroupDocs.Merger for .NET: A Step-by-Step Guide
 
 ## Introduction

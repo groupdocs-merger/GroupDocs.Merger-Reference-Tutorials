@@ -8,10 +8,8 @@ keywords:
 - merge Visio VSTM files
 - GroupDocs.Merger for .NET
 - Visio Macro-Enabled Drawing Template
-
+type: docs
 ---
-
-
 # How to Merge Visio VSTM Files Using GroupDocs.Merger for .NET: A Comprehensive Guide
 
 ## Introduction

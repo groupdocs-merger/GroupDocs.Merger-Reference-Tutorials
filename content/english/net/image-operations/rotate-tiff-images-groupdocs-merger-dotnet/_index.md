@@ -8,10 +8,8 @@ keywords:
 - rotate tiff images
 - groupdocs merger dotnet
 - image manipulation in .net
-
+type: docs
 ---
-
-
 # How to Rotate a TIFF Image Using GroupDocs.Merger for .NET
 
 ## Introduction

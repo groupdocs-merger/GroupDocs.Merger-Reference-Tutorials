@@ -8,10 +8,8 @@ keywords:
 - merge CSV files
 - GroupDocs.Merger for .NET
 - CSV file merging
-
+type: docs
 ---
-
-
 # Efficiently Merge CSV Files with GroupDocs.Merger for .NET
 
 ## Introduction

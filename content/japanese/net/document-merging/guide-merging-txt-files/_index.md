@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger を使用して、.NET で TXT ファイルをシームレスにマージします。開発者向けのステップバイステップのガイド。ドキュメントとサポートが利用可能です。
 weight: 18
 url: /ja/net/document-merging/guide-merging-txt-files/
+type: docs
 ---
-
 # GroupDocs.Merger for .NET を使用して TXT ファイルをマージするためのガイド
 
 ## 導入

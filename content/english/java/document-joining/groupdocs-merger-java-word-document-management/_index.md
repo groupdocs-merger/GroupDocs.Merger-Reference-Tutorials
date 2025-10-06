@@ -8,10 +8,8 @@ keywords:
 - merge Word documents
 - GroupDocs.Merger for Java
 - document merging
-
+type: docs
 ---
-
-
 # Master Document Management: How to Merge Word Documents with GroupDocs.Merger for Java
 
 In today’s fast-paced business environment, managing documents efficiently is crucial. Whether it's consolidating reports or combining multiple drafts into a single document, the ability to merge Word files seamlessly can save time and enhance productivity. This guide focuses on using GroupDocs.Merger for Java—a powerful tool that simplifies merging documents.

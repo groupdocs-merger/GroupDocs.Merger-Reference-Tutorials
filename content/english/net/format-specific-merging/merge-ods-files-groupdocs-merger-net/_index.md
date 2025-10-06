@@ -8,10 +8,8 @@ keywords:
 - merge ODS files
 - GroupDocs.Merger for .NET
 - ODS file merging tutorial
-
+type: docs
 ---
-
-
 # How to Load and Merge ODS Files Using GroupDocs.Merger for .NET
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: जानें कि ODS फ़ाइलों को आसानी से कैसे मर्ज किया जाए। दस्तावेज़ों में सहज हेरफेर के लिए हमारे चरण-दर-चरण गाइड का पालन करें।
 weight: 18
 url: /hi/net/spreadsheet-merging/merging-ods-files/
+type: docs
 ---
-
 # ODS फ़ाइलें मर्ज करना
 
 ## परिचय

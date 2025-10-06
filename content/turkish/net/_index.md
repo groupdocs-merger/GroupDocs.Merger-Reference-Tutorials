@@ -5,8 +5,8 @@ weight: 10
 url: /tr/net/
 description: GroupDocs.Merger .NET'i kullanarak çeşitli dosya formatlarını zahmetsizce birleştirin ve sıkıştırın. Görüntüleri, belgeleri ve daha fazlasını birleştirmeyle ilgili adım adım eğitimleri öğrenin!
 is_root: true
+type: docs
 ---
-
 # .NET için GroupDocs.Merger Öğreticileri ve Örnekleri
 
 ## giriiş

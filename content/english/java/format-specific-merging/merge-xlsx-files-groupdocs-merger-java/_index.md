@@ -8,10 +8,8 @@ keywords:
 - merge XLSX files Java
 - GroupDocs Merger setup
 - Java file merging
-
+type: docs
 ---
-
-
 # Efficiently Merge XLSX Files Using GroupDocs.Merger for Java
 
 ## Introduction

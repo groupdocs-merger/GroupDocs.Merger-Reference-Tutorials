@@ -8,10 +8,8 @@ keywords:
 - merge PDF files
 - GroupDocs Merger for .NET
 - PDF merging with bookmarks
-
+type: docs
 ---
-
-
 # How to Merge PDF Files with Bookmarks Using GroupDocs.Merger for .NET
 
 ## Introduction

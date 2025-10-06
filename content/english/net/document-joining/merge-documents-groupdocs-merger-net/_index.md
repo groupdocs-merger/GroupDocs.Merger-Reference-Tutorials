@@ -8,10 +8,8 @@ keywords:
 - merge multiple document formats
 - GroupDocs.Merger for .NET
 - document management systems
-
+type: docs
 ---
-
-
 # How to Merge Multiple Document Formats Using GroupDocs.Merger for .NET
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp PowerPoint (PPT) bằng GroupDocs.Merger cho .NET một cách dễ dàng. Nâng cao ứng dụng .NET của bạn bằng API mạnh mẽ này.
 weight: 12
 url: /vi/net/presentation-merging/how-to-merge-ppt-files/
+type: docs
 ---
-
 # Cách hợp nhất các tệp PPT
 
 ## Giới thiệu

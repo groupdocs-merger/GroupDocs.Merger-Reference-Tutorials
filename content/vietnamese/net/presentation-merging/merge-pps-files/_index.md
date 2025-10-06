@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp PPS một cách liền mạch bằng GroupDocs.Merger cho .NET. Hướng dẫn từng bước với các ví dụ về mã. Nâng cao kỹ năng thao tác tài liệu của bạn.
 weight: 10
 url: /vi/net/presentation-merging/merge-pps-files/
+type: docs
 ---
-
 # Hợp nhất các tệp PPS
 
 ## Giới thiệu

@@ -8,10 +8,8 @@ keywords:
 - merge PDF pages .NET
 - GroupDocs.Merger tutorial
 - PDF page selection .NET
-
+type: docs
 ---
-
-
 # How to Merge Specific PDF Pages with GroupDocs.Merger for .NET
 
 ## Introduction

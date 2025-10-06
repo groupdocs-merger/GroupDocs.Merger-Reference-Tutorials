@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Ismerje meg, hogyan egyesíthet PPTX fájlokat a GroupDocs.Merger for .NET segítségével. Egyszerűsítse a dokumentumkezelést ezzel a hatékony .NET-könyvtárral.
 weight: 13
 url: /hu/net/presentation-merging/guide-merging-pptx-files/
+type: docs
 ---
-
 # Útmutató a PPTX fájlok egyesítéséhez
 
 ## Bevezetés

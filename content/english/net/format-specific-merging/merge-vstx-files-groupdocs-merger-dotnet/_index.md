@@ -8,10 +8,8 @@ keywords:
 - merge VSTX files
 - GroupDocs Merger .NET
 - Visio file merging
-
+type: docs
 ---
-
-
 # How to Merge VSTX Files Using GroupDocs.Merger for .NET: A Developer's Guide
 
 ## Introduction

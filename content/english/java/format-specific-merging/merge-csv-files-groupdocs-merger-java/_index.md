@@ -8,10 +8,8 @@ keywords:
 - merge CSV files Java
 - GroupDocs.Merger for Java
 - data consolidation
-
+type: docs
 ---
-
-
 # How to Merge Multiple CSV Files Using GroupDocs.Merger for Java
 
 ## Introduction

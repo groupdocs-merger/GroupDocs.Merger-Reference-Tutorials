@@ -8,10 +8,8 @@ keywords:
 - merge Word documents
 - GroupDocs.Merger for .NET setup
 - document management with GroupDocs
-
+type: docs
 ---
-
-
 # Master File Merging with GroupDocs.Merger for .NET: A Comprehensive Guide to Document Joining
 
 In today's digital age, managing multiple Word files can be challenging. Whether preparing reports or consolidating plans, merging DOCX files is essential. This guide explains how to use GroupDocs.Merger for .NET to streamline the process of combining Word documents efficiently.

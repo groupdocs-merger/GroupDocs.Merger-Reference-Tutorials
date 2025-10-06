@@ -8,10 +8,8 @@ keywords:
 - merge XLTM files
 - GroupDocs.Merger for .NET
 - Excel template merging
-
+type: docs
 ---
-
-
 # How to Merge XLTM Files Using GroupDocs.Merger for .NET
 ## Introduction
 Merging Excel Template Files (XLTM) with **GroupDocs.Merger for .NET** simplifies handling large datasets or multiple sources. This comprehensive guide will walk you through loading, merging, and saving XLTM files efficiently.

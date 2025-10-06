@@ -8,10 +8,8 @@ keywords:
 - merge XLT files
 - GroupDocs.Merger for .NET
 - efficient document management
-
+type: docs
 ---
-
-
 # How to Efficiently Merge Multiple XLT Files Using GroupDocs.Merger for .NET: A Developer’s Guide
 
 ## Introduction

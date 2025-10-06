@@ -8,10 +8,8 @@ keywords:
 - Secure PowerPoint presentations
 - Password protect PPTX files
 - GroupDocs.Merger .NET
-
+type: docs
 ---
-
-
 # How to Secure Your PowerPoint Presentations with a Password using GroupDocs.Merger for .NET
 
 ## Introduction

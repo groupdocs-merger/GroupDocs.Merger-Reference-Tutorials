@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: .NET के लिए GroupDocs.Merger का उपयोग करके OTP फ़ाइलों को मर्ज करना सीखें। यह चरण-दर-चरण मार्गदर्शिका आपको प्रक्रिया में निर्बाध रूप से मार्गदर्शन करेगी।
 weight: 14
 url: /hi/net/presentation-merging/merging-otp-files/
+type: docs
 ---
-
 # OTP फ़ाइलें मर्ज करना
 
 ## परिचय

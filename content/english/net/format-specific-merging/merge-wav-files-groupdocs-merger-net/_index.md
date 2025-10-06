@@ -8,10 +8,8 @@ keywords:
 - merge WAV files .NET
 - GroupDocs.Merger for .NET
 - audio file merging
-
+type: docs
 ---
-
-
 # How to Merge WAV Files Using GroupDocs.Merger for .NET
 
 ## Introduction

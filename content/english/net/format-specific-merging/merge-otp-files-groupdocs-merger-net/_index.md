@@ -8,10 +8,8 @@ keywords:
 - merge OTP files
 - GroupDocs Merger for .NET
 - data consolidation with OTP
-
+type: docs
 ---
-
-
 # How to Merge OTP Files Using GroupDocs.Merger for .NET: A Comprehensive Guide
 
 ## Introduction

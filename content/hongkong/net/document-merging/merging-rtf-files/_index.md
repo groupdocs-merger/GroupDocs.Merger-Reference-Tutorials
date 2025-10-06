@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: 了解如何使用 GroupDocs.Merger 輕鬆合併 .NET 中的 RTF 檔案以實現無縫文件處理。
 weight: 21
 url: /zh-hant/net/document-merging/merging-rtf-files/
+type: docs
 ---
-
 # 合併 RTF 文件
 
 ## 介紹

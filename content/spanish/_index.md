@@ -6,8 +6,8 @@ description: Fusione, divida y comprima documentos sin esfuerzo en plataformas .
 weight: 11
 url: /es/
 is_root: true
+type: docs
 ---
-
 # Fusione y divida documentos sin esfuerzo con GroupDocs.Merger
 
 

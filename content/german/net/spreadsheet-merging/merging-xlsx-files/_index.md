@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Erfahren Sie, wie Sie mit GroupDocs.Merger mühelos XLSX-Dateien in .NET zusammenführen. Folgen Sie diesem Schritt-für-Schritt-Tutorial für eine nahtlose Dokumentenverwaltung.
 weight: 14
 url: /de/net/spreadsheet-merging/merging-xlsx-files/
+type: docs
 ---
-
 # Zusammenführen von XLSX-Dateien
 
 ## Einführung

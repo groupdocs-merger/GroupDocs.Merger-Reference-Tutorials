@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Aprenda como mesclar arquivos SVG programaticamente usando GroupDocs.Merger for .NET. Combine vários documentos SVG sem esforço.
 weight: 13
 url: /pt/net/image-merging/guide-merging-svg-files/
+type: docs
 ---
-
 # Guia para mesclar arquivos SVG
 
 ## Introdução

@@ -8,10 +8,8 @@ keywords:
 - merge PNG images Java
 - GroupDocs Merger setup
 - Java image manipulation
-
+type: docs
 ---
-
-
 # How to Merge PNG Images Using GroupDocs.Merger for Java: A Step-by-Step Guide
 
 ## Introduction

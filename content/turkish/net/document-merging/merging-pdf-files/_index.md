@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API'si
 description: Sorunsuz belge yönetimi için GroupDocs.Merger'ı kullanarak PDF dosyalarını .NET'te programlı olarak nasıl birleştireceğinizi öğrenin.
 weight: 19
 url: /tr/net/document-merging/merging-pdf-files/
+type: docs
 ---
-
 # PDF Dosyalarını Birleştirme
 
 ## giriiş

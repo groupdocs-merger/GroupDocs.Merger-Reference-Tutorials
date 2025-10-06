@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Erfahren Sie, wie Sie PDF-Dateien programmgesteuert in .NET mit GroupDocs.Merger für eine nahtlose Dokumentenverwaltung zusammenführen.
 weight: 19
 url: /de/net/document-merging/merging-pdf-files/
+type: docs
 ---
-
 # PDF-Dateien zusammenführen
 
 ## Einführung

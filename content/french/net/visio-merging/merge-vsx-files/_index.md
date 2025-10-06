@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Découvrez comment fusionner des fichiers VSX sans effort à l'aide de GroupDocs.Merger pour .NET. Ce guide complet simplifie les tâches de manipulation de documents.
 weight: 17
 url: /fr/net/visio-merging/merge-vsx-files/
+type: docs
 ---
-
 # Fusionner les fichiers VSX
 
 ## Introduction

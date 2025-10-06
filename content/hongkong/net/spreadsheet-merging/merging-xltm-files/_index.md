@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: 了解如何以程式設計方式合併 XLTM 檔案。帶有程式碼範例的分步指南。
 weight: 16
 url: /zh-hant/net/spreadsheet-merging/merging-xltm-files/
+type: docs
 ---
-
 # 合併 XLTM 文件
 
 ## 介紹

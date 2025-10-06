@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Scopri come unire file VSTX utilizzando GroupDocs.Merger per .NET. Segui questa guida passo passo per una manipolazione efficiente dei documenti in C#.
 weight: 16
 url: /it/net/visio-merging/merging-vstx-files/
+type: docs
 ---
-
 # Unione di file VSTX con GroupDocs.Merger per .NET
 
 ## introduzione

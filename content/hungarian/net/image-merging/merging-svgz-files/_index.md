@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Ebből a lépésről lépésre mutató oktatóanyagból megtudhatja, hogyan egyesíthet SVGZ-fájlokat a GroupDocs.Merger for .NET használatával. Fejlessze dokumentumkezelési készségeit.
 weight: 14
 url: /hu/net/image-merging/merging-svgz-files/
+type: docs
 ---
-
 # SVGZ fájlok egyesítése
 
 ## Bevezetés

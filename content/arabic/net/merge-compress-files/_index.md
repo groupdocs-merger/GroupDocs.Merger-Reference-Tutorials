@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: دمج وضغط تنسيقات الملفات المختلفة دون عناء. تعلم كيفية دمج ملفات 7z وTAR وZIP بسلاسة مع أدلتنا خطوة بخطوة.
 weight: 20
 url: /ar/net/merge-compress-files/
+type: docs
 ---
-
 # دمج الملفات المضغوطة
 
 ## مقدمة

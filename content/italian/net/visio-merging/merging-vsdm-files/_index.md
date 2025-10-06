@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Scopri come unire file VSDM utilizzando GroupDocs.Merger per .NET. Semplifica le attività di gestione dei documenti con questa libreria facile da usare.
 weight: 11
 url: /it/net/visio-merging/merging-vsdm-files/
+type: docs
 ---
-
 # Unione di file VSDM
 
 ## introduzione

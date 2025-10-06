@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Naučte se, jak sloučit soubory VTX programově pomocí GroupDocs.Merger for .NET. Podrobný průvodce s příklady kódu.
 weight: 18
 url: /cs/net/visio-merging/guide-merging-vtx-files/
+type: docs
 ---
-
 # Průvodce sloučením souborů VTX
 
 ## Úvod

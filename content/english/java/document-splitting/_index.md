@@ -3,8 +3,8 @@ title: "Document Splitting Tutorials for GroupDocs.Merger Java"
 description: "Step-by-step tutorials for splitting documents into multiple files by pages, ranges, and other criteria with GroupDocs.Merger for Java."
 weight: 12
 url: "/java/document-splitting/"
+type: docs
 ---
-
 # Document Splitting Tutorials for GroupDocs.Merger Java
 
 Learn to divide documents into smaller components with our comprehensive GroupDocs.Merger splitting tutorials for Java developers. These detailed guides demonstrate how to split documents into multiple smaller files, extract page ranges into separate documents, create single-page documents from originals, and implement text-based splitting for certain formats. Each tutorial provides practical Java code examples for different splitting scenarios, helping you build applications that can decompose large documents into more manageable pieces.

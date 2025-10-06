@@ -8,10 +8,8 @@ keywords:
 - merge TIFF files
 - GroupDocs.Merger .NET
 - multi-page TIFF merging
-
+type: docs
 ---
-
-
 # How to Merge Multi-page TIFFs Effortlessly with GroupDocs.Merger for .NET
 
 ## Introduction

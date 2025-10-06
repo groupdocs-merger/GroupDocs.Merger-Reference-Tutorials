@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: 了解如何使用 GroupDocs.Merger for .NET 無縫合併 PPS 檔案。帶有程式碼範例的分步指南。提升您的文件處理技能。
 weight: 10
 url: /zh-hant/net/presentation-merging/merge-pps-files/
+type: docs
 ---
-
 # 合併 PPS 文件
 
 ## 介紹

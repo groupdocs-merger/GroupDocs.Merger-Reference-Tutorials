@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Erfahren Sie, wie Sie XPS-Dateien mit GroupDocs.Merger für .NET mühelos zusammenführen. Vereinfachen Sie die Dokumentenverarbeitung in Ihren .NET-Anwendungen.
 weight: 20
 url: /de/net/document-merging/merge-xps-files/
+type: docs
 ---
-
 # XPS-Dateien zusammenführen
 
 ## Einführung

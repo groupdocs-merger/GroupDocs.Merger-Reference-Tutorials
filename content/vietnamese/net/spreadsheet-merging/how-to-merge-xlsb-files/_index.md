@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp XLSB. Hướng dẫn từng bước này giúp đơn giản hóa các tác vụ thao tác tài liệu.
 weight: 12
 url: /vi/net/spreadsheet-merging/how-to-merge-xlsb-files/
+type: docs
 ---
-
 # Cách hợp nhất các tệp XLSB
 
 ## Giới thiệu

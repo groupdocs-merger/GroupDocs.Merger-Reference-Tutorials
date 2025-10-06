@@ -8,10 +8,8 @@ keywords:
 - merge RTF files Java
 - GroupDocs Merger API
 - Java document merging
-
+type: docs
 ---
-
-
 # How to Merge RTF Files in Java Using GroupDocs.Merger API: A Comprehensive Guide
 
 In today's digital landscape, efficiently managing documents is essential for both businesses and individuals. Whether consolidating reports or compiling research papers, merging multiple RTF files into a single document can save time and streamline workflows. This tutorial will guide you through using the GroupDocs Merger API in Java to merge RTF files seamlessly.

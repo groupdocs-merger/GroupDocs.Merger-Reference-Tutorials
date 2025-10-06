@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Ismerje meg, hogyan egyesíthet könnyedén ODS fájlokat. Kövesse lépésről lépésre útmutatónkat a zökkenőmentes dokumentumkezeléshez.
 weight: 18
 url: /hu/net/spreadsheet-merging/merging-ods-files/
+type: docs
 ---
-
 # ODS fájlok egyesítése
 
 ## Bevezetés

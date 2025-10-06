@@ -8,10 +8,8 @@ keywords:
 - merge specific pages .NET
 - GroupDocs Merger setup
 - document merging with GroupDocs
-
+type: docs
 ---
-
-
 # How to Merge Specific Pages from Multiple Documents Using GroupDocs.Merger for .NET
 
 ### Introduction

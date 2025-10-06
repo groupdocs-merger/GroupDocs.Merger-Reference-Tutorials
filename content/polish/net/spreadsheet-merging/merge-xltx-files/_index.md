@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger API .NET
 description: Dowiedz się, jak bez wysiłku łączyć pliki XLTX. Rozpocznij scalanie plików XLTX i efektywnie usprawnij swoje zadania związane z zarządzaniem dokumentami.
 weight: 17
 url: /pl/net/spreadsheet-merging/merge-xltx-files/
+type: docs
 ---
-
 # Scal pliki XLTX
 
 ## Wstęp

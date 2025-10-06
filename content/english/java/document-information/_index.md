@@ -3,8 +3,8 @@ title: "Document Information Tutorials for GroupDocs.Merger Java"
 description: "Step-by-step tutorials for retrieving document information, generating previews, and exploring supported file types with GroupDocs.Merger for Java."
 weight: 3
 url: "/java/document-information/"
+type: docs
 ---
-
 # Document Information Tutorials for GroupDocs.Merger Java
 
 Learn how to extract and work with document metadata using our detailed GroupDocs.Merger tutorials for Java. These practical guides demonstrate how to retrieve document properties, generate page previews, determine supported file formats, and explore document structure programmatically. Each tutorial includes complete Java code examples for essential document information operations, helping you build applications that can effectively analyze documents before performing merge operations.

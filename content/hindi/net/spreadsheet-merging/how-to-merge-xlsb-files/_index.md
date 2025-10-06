@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: XLSB फ़ाइलों को मर्ज करने का तरीका जानें। यह चरण-दर-चरण मार्गदर्शिका दस्तावेज़ हेरफेर कार्यों को सरल बनाती है।
 weight: 12
 url: /hi/net/spreadsheet-merging/how-to-merge-xlsb-files/
+type: docs
 ---
-
 # XLSB फ़ाइलों को कैसे मर्ज करें
 
 ## परिचय

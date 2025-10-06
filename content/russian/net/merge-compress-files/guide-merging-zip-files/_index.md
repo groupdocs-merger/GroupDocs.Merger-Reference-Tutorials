@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Узнайте, как программно объединить ZIP-файлы с помощью GroupDocs.Merger для .NET. Это руководство представляет собой подробное руководство для разработчиков.
 weight: 12
 url: /ru/net/merge-compress-files/guide-merging-zip-files/
+type: docs
 ---
-
 # Руководство по объединению ZIP-файлов
 
 ## Введение

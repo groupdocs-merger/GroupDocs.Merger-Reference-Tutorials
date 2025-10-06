@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: .NET के लिए GroupDocs.Merger का उपयोग करके SVG फ़ाइलों को प्रोग्रामेटिक रूप से मर्ज करना सीखें। अनेक SVG दस्तावेज़ों को सहजता से संयोजित करें।
 weight: 13
 url: /hi/net/image-merging/guide-merging-svg-files/
+type: docs
 ---
-
 # एसवीजी फाइलों को मर्ज करने के लिए गाइड
 
 ## परिचय

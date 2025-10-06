@@ -10,10 +10,8 @@ keywords:
 - Java
 - LoadOptions
 - document handling
-
+type: docs
 ---
-
-
 # Load Password-Protected Documents with GroupDocs.Merger for Java: A Comprehensive Guide
 
 ## Introduction

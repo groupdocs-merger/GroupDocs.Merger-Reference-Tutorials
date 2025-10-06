@@ -8,10 +8,8 @@ keywords:
 - split text file java
 - groupdocs merger java tutorial
 - manage large text files
-
+type: docs
 ---
-
-
 # How to Split a Text File into Separate Line Documents with GroupDocs.Merger for Java
 
 ## Introduction

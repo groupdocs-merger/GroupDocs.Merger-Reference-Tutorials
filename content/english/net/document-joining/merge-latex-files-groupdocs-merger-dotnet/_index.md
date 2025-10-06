@@ -8,10 +8,8 @@ keywords:
 - merge LaTeX files
 - GroupDocs.Merger for .NET
 - document management workflow
-
+type: docs
 ---
-
-
 # How to Merge LaTeX Files Efficiently Using GroupDocs.Merger for .NET
 
 ## Introduction

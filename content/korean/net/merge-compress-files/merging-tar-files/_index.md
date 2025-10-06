@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: .NET용 GroupDocs.Merger를 사용하여 프로그래밍 방식으로 TAR 파일을 병합하는 방법을 알아보세요. TAR 아카이브를 효율적으로 처리하려면 단계별 가이드를 따르십시오.
 weight: 11
 url: /ko/net/merge-compress-files/merging-tar-files/
+type: docs
 ---
-
 # Tar 파일 병합
 
 ## 소개

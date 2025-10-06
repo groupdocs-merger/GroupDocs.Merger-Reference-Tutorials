@@ -8,10 +8,8 @@ keywords:
 - merge PowerPoint PPTM files
 - GroupDocs.Merger for Java
 - combine PowerPoint presentations
-
+type: docs
 ---
-
-
 # How to Merge PowerPoint PPTM Files Using GroupDocs.Merger for Java: A Developer's Guide
 
 ## Introduction

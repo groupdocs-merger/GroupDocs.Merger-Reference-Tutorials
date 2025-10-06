@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Узнайте, как объединить файлы XLT. Объедините шаблоны Excel программно на C# с помощью этого пошагового руководства.
 weight: 15
 url: /ru/net/spreadsheet-merging/merge-xlt-files/
+type: docs
 ---
-
 # Объединить файлы XLT
 
 ## Введение

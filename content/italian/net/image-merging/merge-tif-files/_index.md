@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Scopri come unire i file TIF a livello di codice utilizzando GroupDocs.Merger per .NET. API efficiente per la manipolazione dei documenti per sviluppatori .NET.
 weight: 15
 url: /it/net/image-merging/merge-tif-files/
+type: docs
 ---
-
 # Unisci file TIF
 
 ## introduzione

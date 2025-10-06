@@ -8,10 +8,8 @@ keywords:
 - extract specific pages from documents
 - GroupDocs.Merger for Java setup
 - Java document extraction
-
+type: docs
 ---
-
-
 # How to Extract Specific Pages from Documents Using GroupDocs.Merger for Java
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp PNG bằng GroupDocs.Merger cho .NET. Hướng dẫn từng bước để tích hợp liền mạch trong các ứng dụng .NET của bạn.
 weight: 12
 url: /vi/net/image-merging/how-to-merge-png-files/
+type: docs
 ---
-
 # Cách hợp nhất các tệp PNG
 
 ## Giới thiệu

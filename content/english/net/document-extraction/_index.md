@@ -3,8 +3,8 @@ title: "Document Extraction Tutorials for GroupDocs.Merger .NET"
 description: "Step-by-step tutorials for extracting pages, ranges, and content from documents using GroupDocs.Merger for .NET."
 weight: 9
 url: "/net/document-extraction/"
+type: docs
 ---
-
 # Document Extraction Tutorials for GroupDocs.Merger .NET
 
 Our document extraction tutorials provide detailed guidance for selecting and extracting specific content from documents using GroupDocs.Merger in .NET. These comprehensive guides cover extracting pages by page numbers, page ranges, and specific content selections. Each tutorial includes practical C# code examples for different extraction scenarios, helping you build applications that can efficiently extract and repurpose document content for various business needs.

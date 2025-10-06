@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: تعرف على كيفية دمج ملفات PPTX باستخدام GroupDocs.Merger لـ .NET. قم بتبسيط إدارة المستندات باستخدام مكتبة .NET القوية هذه.
 weight: 13
 url: /ar/net/presentation-merging/guide-merging-pptx-files/
+type: docs
 ---
-
 # دليل لدمج ملفات PPTX
 
 ## مقدمة

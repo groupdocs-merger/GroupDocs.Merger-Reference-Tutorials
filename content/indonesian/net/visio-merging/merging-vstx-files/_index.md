@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Pelajari cara menggabungkan file VSTX menggunakan GroupDocs.Merger untuk .NET. Ikuti panduan langkah demi langkah ini untuk manipulasi dokumen yang efisien di C#.
 weight: 16
 url: /id/net/visio-merging/merging-vstx-files/
+type: docs
 ---
-
 # Menggabungkan File VSTX dengan GroupDocs.Merger untuk .NET
 
 ## Perkenalan

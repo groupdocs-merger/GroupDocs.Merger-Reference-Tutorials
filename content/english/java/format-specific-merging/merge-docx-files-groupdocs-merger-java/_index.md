@@ -8,10 +8,8 @@ keywords:
 - merge DOCX files
 - GroupDocs Merger for Java
 - programmatically merge Word documents
-
+type: docs
 ---
-
-
 # How to Merge DOCX Files Easily with GroupDocs.Merger for Java: Step-by-Step Guide
 
 Merging multiple Word documents can be a tedious task when done manually. Whether you're compiling reports, merging book chapters, or consolidating feedback, managing numerous DOCX files can become cumbersome. This guide introduces **GroupDocs.Merger for Java**, an efficient tool that simplifies the process of merging multiple DOCX files seamlessly. By following this tutorial, you'll learn how to merge Word documents programmatically and enhance your document management workflow.

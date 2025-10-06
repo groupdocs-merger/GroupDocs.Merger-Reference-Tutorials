@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Merger for Java
 - join specific pages from documents
 - merge documents using Java
-
+type: docs
 ---
-
-
 # How to Join Specific Pages from Multiple Documents Using GroupDocs.Merger for Java
 
 ## Introduction

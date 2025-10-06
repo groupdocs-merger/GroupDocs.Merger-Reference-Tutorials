@@ -8,10 +8,8 @@ keywords:
 - VTX merging
 - GroupDocs Merger .NET
 - Visio Drawing Template
-
+type: docs
 ---
-
-
 # Mastering VTX Merging in .NET with GroupDocs.Merger: A Developer’s Guide
 
 ## Introduction

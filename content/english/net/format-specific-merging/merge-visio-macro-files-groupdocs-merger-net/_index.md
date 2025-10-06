@@ -8,10 +8,8 @@ keywords:
 - merge Visio Macro files
 - GroupDocs.Merger for .NET
 - VSSM file merging
-
+type: docs
 ---
-
-
 # How to Merge Multiple Visio Macro Enabled Files (.vssm) Using GroupDocs.Merger for .NET
 
 ## Introduction

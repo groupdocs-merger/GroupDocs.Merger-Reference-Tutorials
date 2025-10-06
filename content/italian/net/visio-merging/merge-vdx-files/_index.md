@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Scopri come unire i file VDX a livello di codice utilizzando GroupDocs.Merger per .NET. Questo tutorial fornisce una guida passo passo.
 weight: 10
 url: /it/net/visio-merging/merge-vdx-files/
+type: docs
 ---
-
 # Unisci file VDX
 
 ## introduzione

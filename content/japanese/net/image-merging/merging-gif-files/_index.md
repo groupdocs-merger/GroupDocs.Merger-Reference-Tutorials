@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger for .NET を使用して GIF ファイルをマージする方法を学びます。ステップバイステップの指示に従って、プログラムで複数の GIF を結合します。
 weight: 11
 url: /ja/net/image-merging/merging-gif-files/
+type: docs
 ---
-
 # GIF ファイルの結合
 
 ## 導入

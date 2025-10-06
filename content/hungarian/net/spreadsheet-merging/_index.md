@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Könnyedén egyesítse az XLAM, XLS, XLSB, XLSM, XLSX, XLT, XLTM, XLTX és ODS fájlokat a .NET-ben a GroupDocs.Merger segítségével. A dokumentumkezelési feladatok egyszerűsítése.
 weight: 23
 url: /hu/net/spreadsheet-merging/
+type: docs
 ---
-
 # Táblázat egyesítése
 
 

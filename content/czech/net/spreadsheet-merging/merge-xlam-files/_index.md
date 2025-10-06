@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Naučte se, jak bez námahy sloučit soubory XLAM. Zjednodušte si úkoly správy dokumentů pomocí tohoto výkonného rozhraní API.
 weight: 10
 url: /cs/net/spreadsheet-merging/merge-xlam-files/
+type: docs
 ---
-
 # Sloučit soubory XLAM
 
 ## Úvod

@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Aprenda a fusionar archivos VSSM sin esfuerzo utilizando GroupDocs.Merger para .NET. Guía paso a paso para desarrolladores de C#.
 weight: 13
 url: /es/net/visio-merging/guide-merging-vssm-files/
+type: docs
 ---
-
 # Guía para fusionar archivos VSSM
 
 ## Introducción

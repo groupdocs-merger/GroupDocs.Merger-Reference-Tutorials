@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Naučte se sloučit soubory BMP pomocí GroupDocs.Merger for .NET v tomto komplexním kurzu. Vyvíjejte své .NET aplikace efektivně.
 weight: 10
 url: /cs/net/image-merging/merge-bmp-files/
+type: docs
 ---
-
 # Sloučit soubory BMP
 
 ## Úvod

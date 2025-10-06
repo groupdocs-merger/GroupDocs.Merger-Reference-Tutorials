@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger를 사용하여 .NET에서 프로그래밍 방식으로 DOCX 파일을 병합하여 문서 조작 작업을 효율적으로 단순화하는 방법을 알아보세요.
 weight: 12
 url: /ko/net/document-merging/how-to-merge-docx-files/
+type: docs
 ---
-
 # DOCX 파일을 병합하는 방법
 
 ## 소개

@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Merger for .NET
 - ZIP file handling in C#
 - document merging and splitting
-
+type: docs
 ---
-
-
 # Master GroupDocs.Merger for .NET: Efficient ZIP File Handling in C# Applications
 
 ## Introduction

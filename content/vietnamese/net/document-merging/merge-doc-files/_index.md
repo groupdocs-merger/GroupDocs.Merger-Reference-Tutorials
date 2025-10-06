@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp DOC theo chương trình bằng GroupDocs.Merger cho .NET. Làm theo hướng dẫn từng bước của chúng tôi để kết hợp liền mạch nhiều tài liệu thành một.
 weight: 10
 url: /vi/net/document-merging/merge-doc-files/
+type: docs
 ---
-
 # Hợp nhất các tệp DOC với GroupDocs.Merger cho .NET
 
 ## Giới thiệu

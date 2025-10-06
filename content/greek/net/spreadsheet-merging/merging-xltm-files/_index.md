@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Μάθετε πώς να συγχωνεύετε αρχεία XLTM μέσω προγραμματισμού. Οδηγός βήμα προς βήμα με παραδείγματα κώδικα.
 weight: 16
 url: /el/net/spreadsheet-merging/merging-xltm-files/
+type: docs
 ---
-
 # Συγχώνευση αρχείων XLTM
 
 ## Εισαγωγή

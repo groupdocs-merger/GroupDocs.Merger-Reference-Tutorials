@@ -8,10 +8,8 @@ keywords:
 - merge XLSB files GroupDocs.Merger for .NET
 - GroupDocs.Merger .NET tutorial
 - automate Excel file merging
-
+type: docs
 ---
-
-
 # Mastering File Management: How to Merge XLSB Files Using GroupDocs.Merger for .NET
 
 ## Introduction

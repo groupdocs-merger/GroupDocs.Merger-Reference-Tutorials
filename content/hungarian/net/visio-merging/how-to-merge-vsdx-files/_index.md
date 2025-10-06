@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Ismerje meg, hogyan egyesíthet programozottan VSDX-fájlokat a GroupDocs.Merger for .NET használatával. Ez az oktatóanyag lépésenkénti utasításokat tartalmaz kódmintákkal.
 weight: 12
 url: /hu/net/visio-merging/how-to-merge-vsdx-files/
+type: docs
 ---
-
 # VSDX fájlok egyesítése
 
 ## Bevezetés

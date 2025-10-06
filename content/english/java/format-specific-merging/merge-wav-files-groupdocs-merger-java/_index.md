@@ -8,10 +8,8 @@ keywords:
 - merge WAV files
 - GroupDocs.Merger for Java setup
 - audio file merging with Java
-
+type: docs
 ---
-
-
 # How to Merge WAV Files Efficiently Using GroupDocs.Merger for Java
 
 ## Introduction

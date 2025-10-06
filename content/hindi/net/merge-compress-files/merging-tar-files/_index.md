@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: .NET के लिए GroupDocs.Merger का उपयोग करके TAR फ़ाइलों को प्रोग्रामेटिक रूप से मर्ज करना सीखें। टीएआर अभिलेखागार को कुशलतापूर्वक संभालने के लिए हमारी चरण-दर-चरण मार्गदर्शिका का पालन करें।
 weight: 11
 url: /hi/net/merge-compress-files/merging-tar-files/
+type: docs
 ---
-
 # टार फ़ाइलें मर्ज करना
 
 ## परिचय

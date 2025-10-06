@@ -8,10 +8,8 @@ keywords:
 - rotate PDF pages
 - GroupDocs.Merger for .NET
 - .NET PDF manipulation
-
+type: docs
 ---
-
-
 # How to Rotate PDF Pages in .NET Using GroupDocs.Merger: A Step-by-Step Guide
 
 ## Introduction

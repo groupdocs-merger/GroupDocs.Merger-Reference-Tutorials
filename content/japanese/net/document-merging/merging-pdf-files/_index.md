@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: シームレスなドキュメント管理のために、GroupDocs.Merger を使用して .NET で PDF ファイルをプログラム的に結合する方法を学びます。
 weight: 19
 url: /ja/net/document-merging/merging-pdf-files/
+type: docs
 ---
-
 # PDF ファイルの結合
 
 ## 導入

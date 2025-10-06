@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Merger for .NET
 - merge DOCM files
 - document management with GroupDocs
-
+type: docs
 ---
-
-
 # Master GroupDocs.Merger for .NET: Effortlessly Merge DOCM Files in Your Projects
 
 In today's fast-paced digital landscape, efficiently managing and consolidating documents is crucial for productivity. Whether you're compiling reports or combining various document inputs into a single file, the task can be daunting without the right tools. Enter **GroupDocs.Merger for .NET**, your go-to solution for merging Microsoft Word Macro-Enabled Documents (.docm) seamlessly. This tutorial will guide you through using GroupDocs.Merger to merge DOCM files effortlessly.

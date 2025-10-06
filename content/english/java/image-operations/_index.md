@@ -3,8 +3,8 @@ title: "Image Processing Tutorials for GroupDocs.Merger Java"
 description: "Complete tutorials for working with images, including rotation, merging, and format conversion using GroupDocs.Merger for Java."
 weight: 11
 url: "/java/image-operations/"
+type: docs
 ---
-
 # Image Processing Tutorials for GroupDocs.Merger Java
 
 Our image operation tutorials show you how to manipulate image files using GroupDocs.Merger in Java. These practical guides walk through rotating images in various formats, combining multiple images into a single document, converting between image formats, and optimizing image document operations. Each tutorial includes detailed Java code examples for common image processing scenarios, helping you build applications that effectively handle image documents alongside other file types.

@@ -8,10 +8,8 @@ keywords:
 - vertically join images
 - GroupDocs Merger .NET
 - image merging with GroupDocs
-
+type: docs
 ---
-
-
 # Vertically Join Images with GroupDocs.Merger for .NET: A Comprehensive Guide
 
 ## Introduction

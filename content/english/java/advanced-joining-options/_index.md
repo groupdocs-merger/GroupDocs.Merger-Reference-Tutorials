@@ -3,8 +3,8 @@ title: "Advanced Document Joining Tutorials for GroupDocs.Merger Java"
 description: "Step-by-step tutorials for implementing advanced joining techniques such as bookmarks, section breaks control, and compliance mode settings with GroupDocs.Merger for Java."
 weight: 6
 url: "/java/advanced-joining-options/"
+type: docs
 ---
-
 # Advanced Document Joining Tutorials for GroupDocs.Merger Java
 
 Explore advanced document merging capabilities with our detailed GroupDocs.Merger tutorials for Java. These comprehensive guides cover specialized joining scenarios including preserving PDF bookmarks, controlling section breaks in Word documents, managing page starting behavior, and setting compliance modes during merge operations. Each tutorial includes practical Java code examples for these sophisticated merging techniques, helping you build applications that maintain document integrity and structure during complex joining operations.

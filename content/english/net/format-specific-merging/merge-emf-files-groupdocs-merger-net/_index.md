@@ -8,10 +8,8 @@ keywords:
 - merge EMF files
 - GroupDocs.Merger for .NET
 - EMF file merging
-
+type: docs
 ---
-
-
 # How to Merge EMF Files Using GroupDocs.Merger for .NET: Step-by-Step Guide
 
 ## Introduction

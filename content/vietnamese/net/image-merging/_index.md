@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Hợp nhất các tệp BMP, GIF, PNG, SVG, SVGZ, TIF và TIFF một cách liền mạch với GroupDocs.Merger .NET. Tích hợp hiệu quả thao tác tài liệu vào các ứng dụng .NET của bạn.
 weight: 21
 url: /vi/net/image-merging/
+type: docs
 ---
-
 # Hợp nhất hình ảnh
 
 ## Giới thiệu

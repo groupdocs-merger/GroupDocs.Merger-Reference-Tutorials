@@ -6,8 +6,8 @@ description: GroupDocs.Merger에 대한 전문가 튜토리얼을 통해 .NET �
 weight: 11
 url: /ko/
 is_root: true
+type: docs
 ---
-
 # GroupDocs.Merger를 사용하여 손쉽게 문서 병합 및 분할
 
 

@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Узнайте, как программно объединять файлы DOCX в .NET с помощью GroupDocs.Merger, что эффективно упрощает задачи манипулирования документами.
 weight: 12
 url: /ru/net/document-merging/how-to-merge-docx-files/
+type: docs
 ---
-
 # Как объединить файлы DOCX
 
 ## Введение

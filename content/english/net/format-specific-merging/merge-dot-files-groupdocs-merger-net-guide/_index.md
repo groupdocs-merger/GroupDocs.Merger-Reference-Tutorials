@@ -8,10 +8,8 @@ keywords:
 - merge DOT files
 - GroupDocs Merger .NET
 - DOT file manipulation
-
+type: docs
 ---
-
-
 # Mastering Merging DOT Files with GroupDocs.Merger for .NET: A Step-by-Step Guide
 
 ## Introduction

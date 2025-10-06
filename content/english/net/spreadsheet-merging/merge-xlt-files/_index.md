@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Learn how to merge XLT files. Combine Excel templates programmatically in C# with this step-by-step guide.
 weight: 15
 url: /net/spreadsheet-merging/merge-xlt-files/
+type: docs
 ---
-
 # Merge XLT Files
 
 ## Introduction

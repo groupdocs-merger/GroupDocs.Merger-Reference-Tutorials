@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Learn how to merge DOTM files programmatically using GroupDocs.Merger for .NET. This comprehensive guide provides step-by-step instructions for developers.
 weight: 14
 url: /net/document-merging/merging-dotm-files/
+type: docs
 ---
-
 # Merging DOTM Files
 
 ## Introduction

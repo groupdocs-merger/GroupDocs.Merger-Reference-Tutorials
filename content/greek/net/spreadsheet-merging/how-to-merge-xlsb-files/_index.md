@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Μάθετε πώς να συγχωνεύετε αρχεία XLSB. Αυτός ο οδηγός βήμα προς βήμα απλοποιεί τις εργασίες χειρισμού εγγράφων.
 weight: 12
 url: /el/net/spreadsheet-merging/how-to-merge-xlsb-files/
+type: docs
 ---
-
 # Πώς να συγχωνεύσετε αρχεία XLSB
 
 ## Εισαγωγή

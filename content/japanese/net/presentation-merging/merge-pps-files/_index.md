@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger for .NET を使用して PPS ファイルをシームレスにマージする方法を学びます。コード例を含むステップバイステップのガイド。文書操作スキルを向上させます。
 weight: 10
 url: /ja/net/presentation-merging/merge-pps-files/
+type: docs
 ---
-
 # PPS ファイルを結合する
 
 ## 導入

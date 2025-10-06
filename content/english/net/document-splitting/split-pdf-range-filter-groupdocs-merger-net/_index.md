@@ -8,10 +8,8 @@ keywords:
 - split PDF files by range
 - even/odd filter in documents
 - GroupDocs.Merger for .NET
-
+type: docs
 ---
-
-
 # How to Split PDFs by Page Range with Even/Odd Filters Using GroupDocs.Merger for .NET
 
 ## Introduction

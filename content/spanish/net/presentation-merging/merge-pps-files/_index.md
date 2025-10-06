@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Aprenda a fusionar archivos PPS sin problemas utilizando GroupDocs.Merger para .NET. Guía paso a paso con ejemplos de código. Mejore sus habilidades de manipulación de documentos.
 weight: 10
 url: /es/net/presentation-merging/merge-pps-files/
+type: docs
 ---
-
 # Fusionar archivos PPS
 
 ## Introducción

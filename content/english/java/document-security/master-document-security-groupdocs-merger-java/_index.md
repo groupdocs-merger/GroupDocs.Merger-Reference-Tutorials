@@ -8,10 +8,8 @@ keywords:
 - document security
 - password protection java
 - groupdocs merger java
-
+type: docs
 ---
-
-
 # Mastering Document Security: A Complete Guide to GroupDocs.Merger for Java
 
 ## Introduction

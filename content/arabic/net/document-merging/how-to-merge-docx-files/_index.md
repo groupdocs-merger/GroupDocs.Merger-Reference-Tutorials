@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: تعرف على كيفية دمج ملفات DOCX برمجيًا في .NET باستخدام GroupDocs.Merger، مما يبسط مهام معالجة المستندات بكفاءة.
 weight: 12
 url: /ar/net/document-merging/how-to-merge-docx-files/
+type: docs
 ---
-
 # كيفية دمج ملفات DOCX
 
 ## مقدمة

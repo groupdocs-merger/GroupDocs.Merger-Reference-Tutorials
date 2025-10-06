@@ -8,10 +8,8 @@ keywords:
 - Load PDF from URL in .NET
 - GroupDocs Merger for .NET
 - Secure web requests for document loading
-
+type: docs
 ---
-
-
 # Loading a PDF Document from a URL Using GroupDocs.Merger for .NET
 
 ## Introduction

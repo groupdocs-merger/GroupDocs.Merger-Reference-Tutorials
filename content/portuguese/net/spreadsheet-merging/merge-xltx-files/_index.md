@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Aprenda como mesclar arquivos XLTX sem esforço. Comece a mesclar arquivos XLTX e simplifique suas tarefas de gerenciamento de documentos com eficiência.
 weight: 17
 url: /pt/net/spreadsheet-merging/merge-xltx-files/
+type: docs
 ---
-
 # Mesclar arquivos XLTX
 
 ## Introdução

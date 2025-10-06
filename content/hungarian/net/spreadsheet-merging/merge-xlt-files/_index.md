@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Ismerje meg, hogyan lehet XLT-fájlokat egyesíteni. Ezzel a lépésenkénti útmutatóval programozottan kombinálhatja az Excel-sablonokat C# nyelven.
 weight: 15
 url: /hu/net/spreadsheet-merging/merge-xlt-files/
+type: docs
 ---
-
 # XLT fájlok egyesítése
 
 ## Bevezetés

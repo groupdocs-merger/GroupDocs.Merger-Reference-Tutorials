@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Merger for Java
 - Java document processing
 - merge documents in Java
-
+type: docs
 ---
-
-
 # Master GroupDocs Merger for Java in Document Processing
 
 ## Introduction

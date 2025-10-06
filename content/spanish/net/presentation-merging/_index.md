@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Combine varios formatos de archivos de presentación sin esfuerzo. Siga nuestros tutoriales para fusionar archivos PPS, PPSX, PPT y OTP de manera eficiente. #GroupDocs.Fusión
 weight: 25
 url: /es/net/presentation-merging/
+type: docs
 ---
-
 # Fusión de presentaciones
 
 ## Introducción

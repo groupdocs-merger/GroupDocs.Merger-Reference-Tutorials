@@ -8,10 +8,8 @@ keywords:
 - merge Visio VSDM files .NET
 - GroupDocs.Merger .NET tutorial
 - Visio VSDM file merging
-
+type: docs
 ---
-
-
 # How to Merge Visio VSDM Files Using GroupDocs.Merger for .NET (Step-by-Step Guide)
 
 ## Introduction

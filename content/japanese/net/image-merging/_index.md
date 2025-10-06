@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger .NET を使用して、BMP、GIF、PNG、SVG、SVGZ、TIF、および TIFF ファイルをシームレスにマージします。ドキュメント操作を .NET アプリケーションに効率的に統合します。
 weight: 21
 url: /ja/net/image-merging/
+type: docs
 ---
-
 # 画像の結合
 
 ## 導入

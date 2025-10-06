@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp XLT. Kết hợp các mẫu Excel theo chương trình trong C# với hướng dẫn từng bước này.
 weight: 15
 url: /vi/net/spreadsheet-merging/merge-xlt-files/
+type: docs
 ---
-
 # Hợp nhất các tệp XLT
 
 ## Giới thiệu

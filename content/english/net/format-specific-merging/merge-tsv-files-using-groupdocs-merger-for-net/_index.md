@@ -8,10 +8,8 @@ keywords:
 - merge TSV files .NET
 - GroupDocs.Merger for .NET
 - merge data with GroupDocs
-
+type: docs
 ---
-
-
 # Mastering File Merging: Implementing GroupDocs.Merger for .NET to Merge TSV Files
 
 ## Introduction

@@ -8,10 +8,8 @@ keywords:
 - merge DOCM files in Java
 - GroupDocs Merger setup
 - performance optimization
-
+type: docs
 ---
-
-
 # Merge DOCM Files Using GroupDocs.Merger for Java
 
 ## Introduction

@@ -8,10 +8,8 @@ keywords:
 - change page orientation Java
 - GroupDocs Merger setup
 - document layout modification
-
+type: docs
 ---
-
-
 # Change Page Orientation in Java Using GroupDocs.Merger
 
 ## Introduction

@@ -8,10 +8,8 @@ keywords:
 - embed images in diagrams .NET
 - GroupDocs.Merger for .NET tutorial
 - embedding documents with GroupDocs
-
+type: docs
 ---
-
-
 # Embedding Images in Diagrams Using GroupDocs.Merger for .NET
 
 ## Introduction

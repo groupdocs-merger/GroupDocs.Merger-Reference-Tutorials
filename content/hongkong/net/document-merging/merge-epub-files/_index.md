@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: 了解如何使用 GroupDocs.Merger for .NET 以程式設計方式合併 EPUB 檔案。請按照我們的逐步教學進行操作。
 weight: 17
 url: /zh-hant/net/document-merging/merge-epub-files/
+type: docs
 ---
-
 # 合併 EPUB 文件
 
 ## 介紹

@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: เรียนรู้วิธีผสานไฟล์ XLTX ได้อย่างง่ายดาย เริ่มการรวมไฟล์ XLTX และปรับปรุงงานการจัดการเอกสารของคุณอย่างมีประสิทธิภาพ
 weight: 17
 url: /th/net/spreadsheet-merging/merge-xltx-files/
+type: docs
 ---
-
 # รวมไฟล์ XLTX
 
 ## การแนะนำ

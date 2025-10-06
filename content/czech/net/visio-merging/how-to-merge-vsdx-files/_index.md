@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Naučte se, jak programově sloučit soubory VSDX pomocí GroupDocs.Merger for .NET. Tento kurz poskytuje podrobné pokyny s ukázkami kódu.
 weight: 12
 url: /cs/net/visio-merging/how-to-merge-vsdx-files/
+type: docs
 ---
-
 # Jak sloučit soubory VSDX
 
 ## Úvod

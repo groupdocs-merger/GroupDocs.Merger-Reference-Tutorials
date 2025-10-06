@@ -6,8 +6,8 @@ description: Συγχωνεύστε, διαχωρίστε και συμπιέσ�
 weight: 11
 url: /el/
 is_root: true
+type: docs
 ---
-
 # Συγχώνευση και διαίρεση εγγράφων χωρίς κόπο με το GroupDocs.Merger
 
 

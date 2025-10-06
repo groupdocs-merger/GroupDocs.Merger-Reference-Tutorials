@@ -8,10 +8,8 @@ keywords:
 - merge ODP files
 - GroupDocs Merger for Java
 - Java presentation merging
-
+type: docs
 ---
-
-
 # How to Merge Multiple ODP Files Using GroupDocs.Merger for Java
 
 In today's fast-paced world, managing presentations efficiently can save you time and effort, especially when dealing with multiple OpenDocument Presentation (.odp) files that need consolidation into a single document. Whether it's for streamlining your workflow or simply organizing your data better, merging ODP files is a task you might frequently encounter. In this tutorial, we’ll explore how to effortlessly merge multiple ODP files using GroupDocs.Merger for Java.

@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger API .NET
 description: Bez wysiłku łącz i kompresuj różne formaty plików. Dowiedz się, jak płynnie łączyć pliki 7z, TAR i ZIP, korzystając z naszych przewodników krok po kroku.
 weight: 20
 url: /pl/net/merge-compress-files/
+type: docs
 ---
-
 # Scal pliki kompresyjne
 
 ## Wstęp

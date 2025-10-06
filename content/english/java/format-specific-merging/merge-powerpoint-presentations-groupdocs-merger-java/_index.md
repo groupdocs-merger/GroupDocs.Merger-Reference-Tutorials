@@ -8,10 +8,8 @@ keywords:
 - merge PowerPoint presentations
 - GroupDocs Merger for Java
 - combine PPSX files
-
+type: docs
 ---
-
-
 # How to Merge PowerPoint Presentations Using GroupDocs.Merger for Java
 
 ## Introduction

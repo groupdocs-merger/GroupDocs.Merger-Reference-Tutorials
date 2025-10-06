@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Aprenda como mesclar arquivos XLT. Combine modelos do Excel programaticamente em C# com este guia passo a passo.
 weight: 15
 url: /pt/net/spreadsheet-merging/merge-xlt-files/
+type: docs
 ---
-
 # Mesclar arquivos XLT
 
 ## Introdução

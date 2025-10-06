@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Ismerje meg, hogyan egyesíthet programozottan TIF-fájlokat a GroupDocs.Merger for .NET használatával. Hatékony dokumentumkezelési API .NET fejlesztők számára.
 weight: 15
 url: /hu/net/image-merging/merge-tif-files/
+type: docs
 ---
-
 # TIF fájlok egyesítése
 
 ## Bevezetés

@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Merger for Java
 - document splitting in Java
 - splitting documents using Java
-
+type: docs
 ---
-
-
 # Mastering Document Splitting with GroupDocs.Merger for Java
 
 ## Introduction

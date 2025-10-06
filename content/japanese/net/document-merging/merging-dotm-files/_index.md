@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger for .NET を使用してプログラムで DOTM ファイルをマージする方法を学びます。この包括的なガイドでは、開発者向けに段階的な手順を説明します。
 weight: 14
 url: /ja/net/document-merging/merging-dotm-files/
+type: docs
 ---
-
 # DOTM ファイルのマージ
 
 ## 導入

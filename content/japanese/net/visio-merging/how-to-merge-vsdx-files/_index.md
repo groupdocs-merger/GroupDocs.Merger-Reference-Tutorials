@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger for .NET を使用して VSDX ファイルをプログラムでマージする方法を学びます。このチュートリアルでは、コード サンプルを使用して手順を追って説明します。
 weight: 12
 url: /ja/net/visio-merging/how-to-merge-vsdx-files/
+type: docs
 ---
-
 # VSDX ファイルを結合する方法
 
 ## 導入

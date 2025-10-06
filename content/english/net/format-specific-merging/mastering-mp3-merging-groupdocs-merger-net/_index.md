@@ -8,10 +8,8 @@ keywords:
 - merge MP3 files .NET
 - GroupDocs.Merger MP3 merging
 - C# audio file management
-
+type: docs
 ---
-
-
 # How to Merge MP3 Files Using GroupDocs.Merger for .NET: A Developer's Guide
 
 In today’s digital landscape, efficiently managing audio files is crucial for developers and content creators. Whether you're consolidating multiple tracks into a single file or merging segments of an interview, programmatically manipulating MP3s can save time and streamline workflows. This tutorial introduces GroupDocs.Merger for .NET—a powerful library designed specifically for merging documents, including audio files like MP3s.

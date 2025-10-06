@@ -5,8 +5,8 @@ weight: 10
 url: /ar/net/
 description: يمكنك دمج تنسيقات الملفات المختلفة وضغطها بسهولة باستخدام GroupDocs.Merger .NET. تعلم دروسًا خطوة بخطوة حول دمج الصور والمستندات والمزيد!
 is_root: true
+type: docs
 ---
-
 # دروس وأمثلة لـ GroupDocs.Merger لـ .NET
 
 ## مقدمة

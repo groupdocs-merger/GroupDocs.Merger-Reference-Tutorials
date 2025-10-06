@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger API .NET
 description: Dowiedz się, jak programowo scalić pliki TIF za pomocą GroupDocs.Merger dla .NET. Wydajne API do manipulacji dokumentami dla programistów .NET.
 weight: 15
 url: /pl/net/image-merging/merge-tif-files/
+type: docs
 ---
-
 # Scal pliki TIF
 
 ## Wstęp

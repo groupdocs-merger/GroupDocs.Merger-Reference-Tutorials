@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: XLSB ファイルをマージする方法を学びます。このステップバイステップのガイドでは、ドキュメントの操作タスクを簡素化します。
 weight: 12
 url: /ja/net/spreadsheet-merging/how-to-merge-xlsb-files/
+type: docs
 ---
-
 # XLSB ファイルをマージする方法
 
 ## 導入

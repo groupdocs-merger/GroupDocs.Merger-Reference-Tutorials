@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: 了解如何使用 GroupDocs.Merger for .NET 合併 PNG 檔案。在 .NET 應用程式中無縫整合的逐步指南。
 weight: 12
 url: /zh-hant/net/image-merging/how-to-merge-png-files/
+type: docs
 ---
-
 # 如何合併 PNG 文件
 
 ## 介紹

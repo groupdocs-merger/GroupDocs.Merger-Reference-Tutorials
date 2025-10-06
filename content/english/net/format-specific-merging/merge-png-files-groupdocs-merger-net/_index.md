@@ -8,10 +8,8 @@ keywords:
 - merge PNG files with GroupDocs.Merger for .NET
 - PNG file merging in .NET applications
 - GroupDocs.Merger image joining
-
+type: docs
 ---
-
-
 # Mastering PNG File Merging with GroupDocs.Merger for .NET: A Developer's Guide
 
 ## Introduction

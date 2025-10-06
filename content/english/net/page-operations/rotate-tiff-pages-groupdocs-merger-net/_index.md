@@ -8,10 +8,8 @@ keywords:
 - rotate tiff pages
 - groupdocs merger net
 - tiff page rotation
-
+type: docs
 ---
-
-
 # How to Rotate TIFF Pages Using GroupDocs.Merger for .NET - Step-by-Step Guide
 
 ## Introduction

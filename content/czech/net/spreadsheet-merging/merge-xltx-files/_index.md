@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Naučte se, jak bez námahy sloučit soubory XLTX. Začněte slučovat soubory XLTX a efektivně zefektivněte úkoly správy dokumentů.
 weight: 17
 url: /cs/net/spreadsheet-merging/merge-xltx-files/
+type: docs
 ---
-
 # Sloučit soubory XLTX
 
 ## Úvod

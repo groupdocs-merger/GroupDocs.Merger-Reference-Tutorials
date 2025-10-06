@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Merger .NET license stream
 - dynamic license management GroupDocs
 - stream-based licensing GroupDocs
-
+type: docs
 ---
-
-
 # How to Set a License Using a Stream in GroupDocs.Merger for .NET
 
 ## Introduction

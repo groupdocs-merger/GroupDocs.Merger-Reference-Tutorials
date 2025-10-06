@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger for .NET を使用して VSSM ファイルを簡単にマージする方法を学びます。 C# 開発者向けのステップバイステップ ガイド。
 weight: 13
 url: /ja/net/visio-merging/guide-merging-vssm-files/
+type: docs
 ---
-
 # VSSM ファイルのマージに関するガイド
 
 ## 導入

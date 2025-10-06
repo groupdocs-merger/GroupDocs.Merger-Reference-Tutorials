@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: सहज दस्तावेज़ प्रसंस्करण के लिए GroupDocs.Merger का उपयोग करके .NET में RTF फ़ाइलों को आसानी से मर्ज करना सीखें।
 weight: 21
 url: /hi/net/document-merging/merging-rtf-files/
+type: docs
 ---
-
 # RTF फ़ाइलें मर्ज करना
 
 ## परिचय

@@ -8,10 +8,8 @@ keywords:
 - document merging with GroupDocs.Merger for Java
 - Java document merger API
 - GroupDocs Merger setup
-
+type: docs
 ---
-
-
 # Master Document Merging with GroupDocs.Merger for Java: A Developer’s Guide
 
 ## Introduction

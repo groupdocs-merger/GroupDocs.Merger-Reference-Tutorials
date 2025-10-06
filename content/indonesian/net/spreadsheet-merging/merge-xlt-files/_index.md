@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Pelajari cara menggabungkan file XLT. Gabungkan templat Excel secara terprogram dalam C# dengan panduan langkah demi langkah ini.
 weight: 15
 url: /id/net/spreadsheet-merging/merge-xlt-files/
+type: docs
 ---
-
 # Gabungkan File XLT
 
 ## Perkenalan

@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Ismerje meg, hogyan egyesíthet könnyedén ODT-fájlokat a GroupDocs.Merger for .NET segítségével. Fokozza dokumentumkezelési képességeit ezzel a nagy teljesítményű könyvtárral.
 weight: 16
 url: /hu/net/document-merging/merging-odt-files/
+type: docs
 ---
-
 # ODT fájlok egyesítése
 
 ## Bevezetés

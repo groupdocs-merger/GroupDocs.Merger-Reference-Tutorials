@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: 輕鬆合併和壓縮各種文件格式教學。透過我們的逐步指南，學習如何無縫組合 7z、TAR 和 ZIP 檔案。
 weight: 20
 url: /zh-hant/net/merge-compress-files/
+type: docs
 ---
-
 # 合併壓縮文件
 
 ## 介紹

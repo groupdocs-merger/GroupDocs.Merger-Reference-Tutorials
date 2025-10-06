@@ -8,10 +8,8 @@ keywords:
 - merge Excel files Java
 - GroupDocs Merger setup
 - Excel file management Java
-
+type: docs
 ---
-
-
 # How to Merge Excel Files with GroupDocs.Merger for Java
 
 ## Introduction

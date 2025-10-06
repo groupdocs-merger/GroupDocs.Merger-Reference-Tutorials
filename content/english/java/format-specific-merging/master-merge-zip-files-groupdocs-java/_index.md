@@ -8,10 +8,8 @@ keywords:
 - merge ZIP files Java
 - GroupDocs.Merger for Java
 - Java file handling
-
+type: docs
 ---
-
-
 # Master Merging ZIP Files in Java: Step-by-Step Guide Using GroupDocs.Merger
 
 ## Introduction

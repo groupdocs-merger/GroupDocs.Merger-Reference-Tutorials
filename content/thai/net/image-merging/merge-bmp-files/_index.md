@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: เรียนรู้วิธีผสานไฟล์ BMP โดยใช้ GroupDocs.Merger สำหรับ .NET ด้วยบทช่วยสอนที่ครอบคลุมนี้ พัฒนาแอพพลิเคชั่น .NET ของคุณอย่างมีประสิทธิภาพ
 weight: 10
 url: /th/net/image-merging/merge-bmp-files/
+type: docs
 ---
-
 # รวมไฟล์ BMP
 
 ## การแนะนำ

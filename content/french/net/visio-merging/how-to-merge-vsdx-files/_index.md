@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Découvrez comment fusionner des fichiers VSDX par programme à l'aide de GroupDocs.Merger pour .NET. Ce didacticiel fournit des instructions étape par étape avec des exemples de code.
 weight: 12
 url: /fr/net/visio-merging/how-to-merge-vsdx-files/
+type: docs
 ---
-
 # Comment fusionner des fichiers VSDX
 
 ## Introduction

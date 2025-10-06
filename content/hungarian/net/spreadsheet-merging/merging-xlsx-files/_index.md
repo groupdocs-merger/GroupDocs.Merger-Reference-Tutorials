@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Ismerje meg, hogyan egyesíthet könnyedén XLSX fájlokat .NET-ben a GroupDocs.Merger segítségével. Kövesse ezt a lépésenkénti oktatóanyagot a zökkenőmentes dokumentumkezelés érdekében.
 weight: 14
 url: /hu/net/spreadsheet-merging/merging-xlsx-files/
+type: docs
 ---
-
 # XLSX fájlok egyesítése
 
 ## Bevezetés

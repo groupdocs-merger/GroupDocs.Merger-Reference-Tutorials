@@ -5,8 +5,8 @@ weight: 10
 url: /cs/net/
 description: Bez námahy slučujte a komprimujte různé formáty souborů pomocí GroupDocs.Merger .NET. Naučte se krok za krokem návody na slučování obrázků, dokumentů a dalších!
 is_root: true
+type: docs
 ---
-
 # Návody a příklady GroupDocs.Merger pro .NET
 
 ## Úvod

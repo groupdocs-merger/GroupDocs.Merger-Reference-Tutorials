@@ -8,10 +8,8 @@ keywords:
 - merge PDF files
 - GroupDocs.Merger for .NET
 - PDF merging tutorial
-
+type: docs
 ---
-
-
 # How to Merge PDF Files Efficiently Using GroupDocs.Merger for .NET
 
 ## Introduction

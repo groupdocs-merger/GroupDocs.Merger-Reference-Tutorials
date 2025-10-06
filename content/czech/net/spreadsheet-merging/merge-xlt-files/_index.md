@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Přečtěte si, jak sloučit soubory XLT. Kombinujte šablony Excelu programově v C# s tímto podrobným průvodcem.
 weight: 15
 url: /cs/net/spreadsheet-merging/merge-xlt-files/
+type: docs
 ---
-
 # Sloučit soubory XLT
 
 ## Úvod

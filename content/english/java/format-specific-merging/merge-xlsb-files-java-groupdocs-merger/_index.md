@@ -8,10 +8,8 @@ keywords:
 - merge XLSB files in Java
 - GroupDocs Merger for Java setup
 - Java file merging guide
-
+type: docs
 ---
-
-
 # Merge XLSB Files in Java with GroupDocs.Merger: A Comprehensive Guide
 
 ## Introduction

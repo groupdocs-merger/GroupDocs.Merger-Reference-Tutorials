@@ -8,10 +8,8 @@ keywords:
 - merge XLSM files
 - GroupDocs.Merger for Java
 - Excel file management
-
+type: docs
 ---
-
-
 # How to Merge Multiple XLSM Files Using GroupDocs.Merger for Java
 
 ## Introduction

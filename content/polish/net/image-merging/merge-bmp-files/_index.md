@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger API .NET
 description: Z tego obszernego samouczka dowiesz się, jak łączyć pliki BMP przy użyciu narzędzia GroupDocs.Merger dla platformy .NET. Efektywnie rozwijaj aplikacje .NET.
 weight: 10
 url: /pl/net/image-merging/merge-bmp-files/
+type: docs
 ---
-
 # Scal pliki BMP
 
 ## Wstęp

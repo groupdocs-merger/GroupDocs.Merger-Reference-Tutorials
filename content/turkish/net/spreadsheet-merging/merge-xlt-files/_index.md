@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API'si
 description: XLT dosyalarını nasıl birleştireceğinizi öğrenin. Bu adım adım kılavuzla Excel şablonlarını C#'ta programlı bir şekilde birleştirin.
 weight: 15
 url: /tr/net/spreadsheet-merging/merge-xlt-files/
+type: docs
 ---
-
 # XLT Dosyalarını Birleştir
 
 ## giriiş

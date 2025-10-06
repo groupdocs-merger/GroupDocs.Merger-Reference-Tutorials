@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp XLSX một cách dễ dàng trong .NET bằng GroupDocs.Merger. Hãy làm theo hướng dẫn từng bước này để quản lý tài liệu liền mạch.
 weight: 14
 url: /vi/net/spreadsheet-merging/merging-xlsx-files/
+type: docs
 ---
-
 # Hợp nhất các tệp XLSX
 
 ## Giới thiệu

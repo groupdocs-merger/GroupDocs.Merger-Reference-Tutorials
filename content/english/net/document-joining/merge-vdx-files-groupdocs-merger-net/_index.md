@@ -8,10 +8,8 @@ keywords:
 - merge VDX files
 - GroupDocs.Merger for .NET
 - Visio XML merging
-
+type: docs
 ---
-
-
 # How to Merge VDX Files with GroupDocs.Merger for .NET - Comprehensive Guide
 
 ## Introduction

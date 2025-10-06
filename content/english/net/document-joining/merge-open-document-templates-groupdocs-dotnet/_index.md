@@ -8,10 +8,8 @@ keywords:
 - merge OpenDocument Templates
 - GroupDocs.Merger for .NET
 - ODT file merging
-
+type: docs
 ---
-
-
 # How to Merge OpenDocument Templates (ODT) Using GroupDocs.Merger for .NET
 
 ## Introduction

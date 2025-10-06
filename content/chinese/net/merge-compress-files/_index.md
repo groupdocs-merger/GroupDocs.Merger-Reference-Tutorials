@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: 轻松合并和压缩各种文件格式教程。通过我们的分步指南，学习如何无缝组合 7z、TAR 和 ZIP 文件。
 weight: 20
 url: /zh/net/merge-compress-files/
+type: docs
 ---
-
 # 合并压缩文件
 
 ## 介绍

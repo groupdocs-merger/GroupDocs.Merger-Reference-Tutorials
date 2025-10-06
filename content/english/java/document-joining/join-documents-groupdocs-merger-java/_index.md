@@ -8,10 +8,8 @@ keywords:
 - join documents with GroupDocs.Merger for Java
 - GroupDocs.Merger document merging in Java
 - how to use GroupDocs.Merger for Java
-
+type: docs
 ---
-
-
 # How to Join Documents Using GroupDocs.Merger for Java: A Complete Guide
 
 ## Introduction

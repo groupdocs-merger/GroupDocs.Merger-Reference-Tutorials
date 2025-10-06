@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: ODS ファイルを簡単にマージする方法を学びましょう。シームレスなドキュメント操作については、ステップバイステップのガイドに従ってください。
 weight: 18
 url: /ja/net/spreadsheet-merging/merging-ods-files/
+type: docs
 ---
-
 # ODS ファイルのマージ
 
 ## 導入

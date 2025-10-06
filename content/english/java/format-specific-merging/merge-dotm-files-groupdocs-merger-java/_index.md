@@ -8,10 +8,8 @@ keywords:
 - merge DOTM files
 - GroupDocs Merger Java
 - document merging in Java
-
+type: docs
 ---
-
-
 # Merge DOTM Files Using GroupDocs.Merger for Java: A Developer’s Guide to Document Merging
 
 ## Introduction

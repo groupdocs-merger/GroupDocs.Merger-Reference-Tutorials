@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: जानें कि XLTX फ़ाइलों को आसानी से कैसे मर्ज किया जाए। XLTX फ़ाइलों को मर्ज करना शुरू करें और अपने दस्तावेज़ प्रबंधन कार्यों को कुशलतापूर्वक सुव्यवस्थित करें।
 weight: 17
 url: /hi/net/spreadsheet-merging/merge-xltx-files/
+type: docs
 ---
-
 # XLTX फ़ाइलें मर्ज करें
 
 ## परिचय

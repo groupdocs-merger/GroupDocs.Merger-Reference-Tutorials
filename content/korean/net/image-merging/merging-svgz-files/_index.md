@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: 이 단계별 튜토리얼을 통해 .NET용 GroupDocs.Merger를 사용하여 SVGZ 파일을 병합하는 방법을 알아보세요. 문서 처리 기술을 향상시키세요.
 weight: 14
 url: /ko/net/image-merging/merging-svgz-files/
+type: docs
 ---
-
 # SVGZ 파일 병합
 
 ## 소개

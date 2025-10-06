@@ -8,10 +8,8 @@ keywords:
 - merge TSV files
 - GroupDocs Merger Java
 - TSV file merging
-
+type: docs
 ---
-
-
 # How to Merge Multiple TSV Files Using GroupDocs.Merger for Java: A Comprehensive Guide
 
 In today's data-driven world, managing multiple datasets efficiently is crucial. This tutorial guides you through merging several Tab Separated Values (TSV) files into one cohesive file using the powerful GroupDocs.Merger library in Java.

@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: XLT फ़ाइलों को मर्ज करना सीखें. इस चरण-दर-चरण मार्गदर्शिका के साथ Excel टेम्पलेट्स को C# में प्रोग्रामेटिक रूप से संयोजित करें।
 weight: 15
 url: /hi/net/spreadsheet-merging/merge-xlt-files/
+type: docs
 ---
-
 # XLT फ़ाइलें मर्ज करें
 
 ## परिचय

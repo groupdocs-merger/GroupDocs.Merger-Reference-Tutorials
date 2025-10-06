@@ -8,10 +8,8 @@ keywords:
 - merge VSSX files Java
 - GroupDocs.Merger for Java
 - Visio stencil file merging
-
+type: docs
 ---
-
-
 # How to Merge VSSX Files Using GroupDocs.Merger for Java: A Complete Guide
 
 ## Introduction

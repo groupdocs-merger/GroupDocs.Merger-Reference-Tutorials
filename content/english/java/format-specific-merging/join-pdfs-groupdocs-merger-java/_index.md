@@ -8,10 +8,8 @@ keywords:
 - join PDFs with GroupDocs.Merger
 - merge documents using GroupDocs.Merger for Java
 - combine PDFs and images in Java
-
+type: docs
 ---
-
-
 # How to Join PDFs Using GroupDocs.Merger for Java: A Comprehensive Guide
 
 ## Introduction

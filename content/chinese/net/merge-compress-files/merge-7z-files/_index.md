@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: 使用 GroupDocs.Merger for .NET 轻松合并 7z 文件。按照我们的分步指南将多个档案无缝地合并为一个。
 weight: 10
 url: /zh/net/merge-compress-files/merge-7z-files/
+type: docs
 ---
-
 # 如何合并 7z 文件
 
 ## 介绍

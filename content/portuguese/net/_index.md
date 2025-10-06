@@ -5,8 +5,8 @@ weight: 10
 url: /pt/net/
 description: Mescle e compacte facilmente vários formatos de arquivo usando GroupDocs.Merger .NET. Aprenda tutoriais passo a passo sobre como mesclar imagens, documentos e muito mais!
 is_root: true
+type: docs
 ---
-
 # Tutoriais e exemplos de GroupDocs.Merger para .NET
 
 ## Introdução

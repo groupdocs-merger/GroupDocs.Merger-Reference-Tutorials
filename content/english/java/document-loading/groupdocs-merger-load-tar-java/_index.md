@@ -8,10 +8,8 @@ keywords:
 - load TAR files with GroupDocs.Merger for Java
 - Java archive management
 - GroupDocs.Merger setup
-
+type: docs
 ---
-
-
 # How to Load TAR Files with GroupDocs.Merger for Java
 ## Introduction
 Are you looking to manage and manipulate archive files like TAR in your Java projects effectively? Understanding how to load and work with these archives using GroupDocs.Merger for Java can significantly enhance your application's capabilities. This comprehensive guide will walk you through the process of loading a source TAR file, ensuring seamless integration into your software projects.

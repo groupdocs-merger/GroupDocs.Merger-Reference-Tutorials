@@ -8,10 +8,8 @@ keywords:
 - merge OTT files with Java
 - GroupDocs.Merger for Java
 - Open Document Template merging
-
+type: docs
 ---
-
-
 # Efficiently Merge OTT Files Using GroupDocs.Merger for Java
 
 ## Introduction

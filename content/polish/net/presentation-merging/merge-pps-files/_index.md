@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger API .NET
 description: Dowiedz się, jak bezproblemowo scalać pliki PPS za pomocą GroupDocs.Merger dla .NET. Przewodnik krok po kroku z przykładami kodu. Zwiększ swoje umiejętności manipulowania dokumentami.
 weight: 10
 url: /pl/net/presentation-merging/merge-pps-files/
+type: docs
 ---
-
 # Scal pliki PPS
 
 ## Wstęp

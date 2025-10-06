@@ -8,10 +8,8 @@ keywords:
 - merge Microsoft Word templates
 - GroupDocs Merger for Java
 - document management workflow
-
+type: docs
 ---
-
-
 # How to Merge Microsoft Word Templates Using GroupDocs.Merger for Java
 
 In today's digital landscape, effective document management is crucial, especially when it involves merging multiple Microsoft Word template files (.dot). Whether you're an IT professional or a developer creating document processing applications, combining these templates without losing formatting and content integrity is essential. This comprehensive guide will show you how to use GroupDocs.Merger for Java to seamlessly merge DOT files, improving your workflow efficiency.

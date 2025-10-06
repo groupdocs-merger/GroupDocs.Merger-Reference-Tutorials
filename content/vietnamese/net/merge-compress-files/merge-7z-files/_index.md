@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Hợp nhất các tệp 7z một cách dễ dàng bằng GroupDocs.Merger cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để kết hợp nhiều kho lưu trữ thành một một cách liền mạch.
 weight: 10
 url: /vi/net/merge-compress-files/merge-7z-files/
+type: docs
 ---
-
 # Cách hợp nhất các tập tin 7z
 
 ## Giới thiệu

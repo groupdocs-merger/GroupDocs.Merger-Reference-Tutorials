@@ -8,10 +8,8 @@ keywords:
 - load save EMZ files GroupDocs Merger .NET
 - EMZ file handling in .NET
 - using GroupDocs.Merger for .NET
-
+type: docs
 ---
-
-
 # Load and Save EMZ Files with GroupDocs.Merger for .NET: A Comprehensive Tutorial
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: इस चरण-दर-चरण ट्यूटोरियल के साथ जानें कि .NET के लिए GroupDocs.Merger का उपयोग करके SVGZ फ़ाइलों को कैसे मर्ज किया जाए। अपने दस्तावेज़ हेरफेर कौशल को बढ़ाएँ।
 weight: 14
 url: /hi/net/image-merging/merging-svgz-files/
+type: docs
 ---
-
 # SVGZ फ़ाइलें मर्ज करना
 
 ## परिचय

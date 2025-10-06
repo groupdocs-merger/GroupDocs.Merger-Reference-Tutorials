@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: 了解如何輕鬆合併 XLAM 檔案。使用這個強大的 API 簡化您的文件管理任務。
 weight: 10
 url: /zh-hant/net/spreadsheet-merging/merge-xlam-files/
+type: docs
 ---
-
 # 合併 XLAM 文件
 
 ## 介紹

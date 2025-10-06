@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: विभिन्न प्रेजेंटेशन फ़ाइल फ़ॉर्मेट को आसानी से मर्ज करें। PPS, PPSX, PPT, और OTP फ़ाइलों को कुशलतापूर्वक मर्ज करने के लिए हमारे ट्यूटोरियल का पालन करें। #GroupDocs.Merger
 weight: 25
 url: /hi/net/presentation-merging/
+type: docs
 ---
-
 # प्रस्तुति विलय
 
 ## परिचय

@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Tìm hiểu cách hợp nhất các tệp PPTX bằng GroupDocs.Merger cho .NET. Hợp lý hóa việc quản lý tài liệu với thư viện .NET mạnh mẽ này.
 weight: 13
 url: /vi/net/presentation-merging/guide-merging-pptx-files/
+type: docs
 ---
-
 # Hướng dẫn gộp file PPTX
 
 ## Giới thiệu

@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Merge and compress various file formats effortlessly tutorials. Learn to combine 7z, TAR, and ZIP files seamlessly with our step-by-step guides.
 weight: 20
 url: /net/merge-compress-files/
+type: docs
 ---
-
 # Merge Compress Files
 
 ## Introduction

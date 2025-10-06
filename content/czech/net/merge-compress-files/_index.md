@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: Slučujte a komprimujte různé formáty souborů bez námahy tutoriály. Naučte se hladce kombinovat soubory 7z, TAR a ZIP s našimi podrobnými průvodci.
 weight: 20
 url: /cs/net/merge-compress-files/
+type: docs
 ---
-
 # Sloučit komprimované soubory
 
 ## Úvod

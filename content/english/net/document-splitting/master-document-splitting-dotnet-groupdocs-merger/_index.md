@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Merger
 - .net
 - Document Processing
-
+type: docs
 ---
-
-
 # Mastering Document Splitting in .NET with GroupDocs.Merger
 
 ## Introduction

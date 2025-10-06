@@ -8,10 +8,8 @@ keywords:
 - merge XLSM files with GroupDocs.Merger for .NET
 - GroupDocs.Merger installation
 - XLSM file merging
-
+type: docs
 ---
-
-
 # How to Efficiently Merge XLSM Files Using GroupDocs.Merger for .NET
 
 ## Introduction

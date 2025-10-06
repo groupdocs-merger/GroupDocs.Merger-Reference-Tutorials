@@ -8,10 +8,8 @@ keywords:
 - Embed OLE Objects in Excel
 - OLE Object Embedding .NET
 - GroupDocs.Merger for .NET
-
+type: docs
 ---
-
-
 # How to Embed OLE Objects in Excel Spreadsheets Using GroupDocs.Merger for .NET
 
 ## Introduction

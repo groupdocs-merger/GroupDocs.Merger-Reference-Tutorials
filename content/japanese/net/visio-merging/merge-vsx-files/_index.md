@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: GroupDocs.Merger for .NET を使用して VSX ファイルを簡単にマージする方法を学びます。この包括的なガイドにより、ドキュメントの操作タスクが簡素化されます。
 weight: 17
 url: /ja/net/visio-merging/merge-vsx-files/
+type: docs
 ---
-
 # VSX ファイルをマージする
 
 ## 導入

@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Merger for .NET
 - document joining in .NET
 - merge documents with GroupDocs
-
+type: docs
 ---
-
-
 # How to Easily Join Documents Using GroupDocs.Merger for .NET
 
 ## Introduction

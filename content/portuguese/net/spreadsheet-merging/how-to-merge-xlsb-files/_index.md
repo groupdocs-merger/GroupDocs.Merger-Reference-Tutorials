@@ -5,8 +5,8 @@ second_title: API GroupDocs.Merger .NET
 description: Aprenda como mesclar arquivos XLSB. Este guia passo a passo simplifica as tarefas de manipulação de documentos.
 weight: 12
 url: /pt/net/spreadsheet-merging/how-to-merge-xlsb-files/
+type: docs
 ---
-
 # Como mesclar arquivos XLSB
 
 ## Introdução

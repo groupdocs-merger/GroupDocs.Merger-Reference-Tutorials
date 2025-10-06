@@ -8,10 +8,8 @@ keywords:
 - merge ODT documents Java
 - GroupDocs.Merger for Java
 - Java document merging
-
+type: docs
 ---
-
-
 # How to Merge ODT Documents Using GroupDocs.Merger for Java: A Step-by-Step Guide
 
 ## Introduction

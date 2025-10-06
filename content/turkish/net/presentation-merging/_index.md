@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API'si
 description: Çeşitli sunum dosyası formatlarını zahmetsizce birleştirin. PPS, PPSX, PPT ve OTP dosyalarını verimli bir şekilde birleştirmek için eğitimlerimizi takip edin. #GrupDocs.Birleşme
 weight: 25
 url: /tr/net/presentation-merging/
+type: docs
 ---
-
 # Sunum Birleştirme
 
 ## giriiş

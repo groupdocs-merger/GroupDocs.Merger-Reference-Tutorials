@@ -6,8 +6,8 @@ description: Mit unseren Experten-Tutorials zu GroupDocs.Merger können Sie Doku
 weight: 11
 url: /de/
 is_root: true
+type: docs
 ---
-
 # Dokumente mühelos zusammenführen und aufteilen mit GroupDocs.Merger
 
 

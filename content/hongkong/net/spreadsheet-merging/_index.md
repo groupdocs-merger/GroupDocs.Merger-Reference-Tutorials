@@ -5,8 +5,8 @@ second_title: GroupDocs.Merger .NET API
 description: 使用 GroupDocs.Merger 輕鬆合併 .NET 中的 XLAM、XLS、XLSB、XLSM、XLSX、XLT、XLTM、XLTX 和 ODS 檔案。簡化文件管理任務。
 weight: 23
 url: /zh-hant/net/spreadsheet-merging/
+type: docs
 ---
-
 # 試算表合併
 
 

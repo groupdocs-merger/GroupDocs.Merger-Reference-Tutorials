@@ -8,10 +8,8 @@ keywords:
 - merge EMZ files Java
 - GroupDocs.Merger for Java
 - Java file merging
-
+type: docs
 ---
-
-
 # How to Merge Multiple EMZ Files Using GroupDocs.Merger for Java
 
 ## Introduction
