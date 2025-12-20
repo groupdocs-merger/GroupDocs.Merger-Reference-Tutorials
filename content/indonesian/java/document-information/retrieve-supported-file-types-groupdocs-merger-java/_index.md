@@ -1,19 +1,22 @@
 ---
-title: "How to Retrieve Supported File Types Using GroupDocs.Merger for Java"
-description: "Learn how to retrieve supported file types using GroupDocs.Merger for Java, a java tutorial file types guide to validate document format and get supported extensions."
-date: "2025-12-20"
-weight: 1
-url: "/java/document-information/retrieve-supported-file-types-groupdocs-merger-java/"
+date: '2025-12-20'
+description: Pelajari cara mengambil jenis file yang didukung menggunakan GroupDocs.Merger
+  untuk Java, panduan tutorial Java tentang jenis file untuk memvalidasi format dokumen
+  dan mendapatkan ekstensi yang didukung.
 keywords:
 - GroupDocs.Merger Java
 - retrieve file types Java
 - supported document formats GroupDocs
+title: Cara Mengambil Jenis File yang Didukung Menggunakan GroupDocs.Merger untuk
+  Java
 type: docs
+url: /id/java/document-information/retrieve-supported-file-types-groupdocs-merger-java/
+weight: 1
 ---
 
 # Retrieve Supported File Types Using GroupDocs.Merger for Java
 
-Working with many document formats in a Java application can feel like juggling a handful of puzzle pieces. The moment you try to merge or split a file that isn’t supported, the process stalls. That’s why **retrieving supported file types** early in your workflow is essential—it lets you **validate document format** before you invest any processing time. In this tutorial we’ll walk through everything you need to know to **java get supported extensions** with GroupDocs.Merger, from setup to a clean console output.
+Bekerja dengan banyak format dokumen dalam aplikasi Java dapat terasa seperti menyeimbangkan sekumpulan potongan puzzle. Saat Anda mencoba menggabungkan atau memisahkan file yang tidak didukung, proses akan terhenti. Itulah mengapa **mengambil jenis file yang didukung** di awal alur kerja sangat penting—ini memungkinkan Anda **memvalidasi format dokumen** sebelum menghabiskan waktu pemrosesan. Dalam tutorial ini kami akan membahas semua yang perlu Anda ketahui untuk **java get supported extensions** dengan GroupDocs.Merger, mulai dari penyiapan hingga output konsol yang bersih.
 
 ## Quick Answers
 - **What does “retrieve supported file types” do?** It returns a list of every document extension the library can handle.  
@@ -104,7 +107,7 @@ System.out.println("Supported file types retrieved successfully.");
 
 ## Practical Applications (Why This Matters)
 1. **Document Management Systems:** Populate a “Supported Formats” list dynamically.  
-2. **File Conversion Tools:** Pre‑validate input files before invoking conversion pipelines.  
+2. ** Conversion Tools:** Pre‑validate input files before invoking conversion pipelines.  
 3. **Batch Merging Jobs:** Filter out unsupported files to keep long‑running jobs stable.
 
 ## Performance Tips
