@@ -65,10 +65,3 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.CEPH_S3_QA_SECRET_KEY }}
           AWS_DEFAULT_REGION: us-east-1
           AWS_ENDPOINT_URL: https://s3-admin-qa.dynabic.com
-
-        env:
-          DISTRIBUTION: ${{ secrets.AWS_DISTRIBUTION }}
-          PATHS: /merger/*
-          AWS_REGION: 'us-west-2'
-          AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS }}
