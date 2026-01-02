@@ -80,12 +80,3 @@ jobs:
             -H "X-Api-Key: ${{ secrets.BUNNY_API_KEY }}" \
             --data-urlencode "url=https://tutorials.groupdocs.com/merger" \
             "https://api.dynabic.com/bn/purge?async=true"
-      # Invalidate Cloudfront
-      - name: invalidate
-        uses: chetan/invalidate-cloudfront-action@v2
-        env:
-          DISTRIBUTION: ${{ secrets.AWS_DISTRIBUTION_PROD }}
-          PATHS: /merger/*
-          AWS_REGION: 'us-west-2'
-          AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS }}
