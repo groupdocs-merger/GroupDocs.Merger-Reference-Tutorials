@@ -54,11 +54,24 @@ jobs:
       - name: Build
         run: hugo --configDir config/merger --environment staging --minify
         
-      - name: Deploy apiqa-tutorials.groupdocs.com(tutorials-merger)(family)(Stage) to S3
-        run: hugo --configDir config/merger --environment staging deploy --target "Stage" --maxDeletes 0
+      - name: Sync to Ceph S3
+        run: |
+          aws s3 sync ./public/ s3://tutorials-groupdocs-com/merger/ \
+            --endpoint-url https://s3-qa.dynabic.com \
+            --acl public-read \
+            --delete
         env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.CEPH_S3_QA_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.CEPH_S3_QA_SECRET_KEY }}
+          AWS_DEFAULT_REGION: us-east-1
+          AWS_ENDPOINT_URL: https://s3-admin-qa.dynabic.com
+
+      - name: Purge BunnyCDN Cache
+        run: |
+           curl -siG \
+            -H "X-Api-Key: ${{ secrets.BUNNY_API_KEY }}" \
+            --data-urlencode "url=https://tutorials.groupdocs.com/merger" \
+            "https://api.dynabic.com/bn/purge?async=true"
       # Invalidate Cloudfront
       - name: invalidate
         uses: chetan/invalidate-cloudfront-action@v2

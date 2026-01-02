@@ -60,18 +60,26 @@ jobs:
         run: hugo --configDir config/merger --environment production --minify
         
       # Configure AWS credentials
-      - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v4
-        with:
-          aws-access-key-id: ${{ secrets.ACCESS_KEY }}
-          aws-secret-access-key: ${{ secrets.SECRET_ACCESS }}
-          aws-region: us-west-2
-      - name: Deploy to S3 using AWS CLI
+      - name: Sync to Ceph S3
         run: |
-          aws s3 sync public/ s3://${{ secrets.S3_BUCKET }}/merger/ \
+          aws s3 sync ./public/ s3://tutorials-groupdocs-com/merger/ \
+            --endpoint-url https://s3.dynabic.com \
+            --acl public-read \
             --delete \
             --exclude "*.map" \
             --cache-control "public, max-age=3600"
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.CEPH_S3_LIVE_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.CEPH_S3_LIVE_SECRET_KEY }}
+          AWS_DEFAULT_REGION: us-east-1
+          AWS_ENDPOINT_URL: https://s3-admin.dynabic.com
+
+      - name: Purge BunnyCDN Cache
+        run: |
+           curl -siG \
+            -H "X-Api-Key: ${{ secrets.BUNNY_API_KEY }}" \
+            --data-urlencode "url=https://tutorials.groupdocs.com/merger" \
+            "https://api.dynabic.com/bn/purge?async=true"
       # Invalidate Cloudfront
       - name: invalidate
         uses: chetan/invalidate-cloudfront-action@v2
