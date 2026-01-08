@@ -1,40 +1,40 @@
 ---
-title: "java merge text files with GroupDocs.Merger for Java"
-description: "Learn how to java merge text files using GroupDocs.Merger for Java. Step‑by‑step guide, performance tips, and real‑world use cases."
-date: "2026-01-08"
-weight: 1
-url: "/java/document-joining/merge-txt-files-groupdocs-merger-java/"
+date: '2026-01-08'
+description: 學習如何使用 GroupDocs.Merger for Java 進行文字檔合併。一步一步的指南、效能技巧與實務案例。
 keywords:
 - merge TXT files
 - GroupDocs.Merger for Java
 - Java document manipulation
+title: 使用 GroupDocs.Merger for Java 合併文字檔案
 type: docs
+url: /zh-hant/java/document-joining/merge-txt-files-groupdocs-merger-java/
+weight: 1
 ---
 
-# java merge text files with GroupDocs.Merger for Java
+# 使用 GroupDocs.Merger for Java 合併文字檔案的 Java 示例
 
-Merging several plain‑text documents into one file is a common task when you need to consolidate logs, reports, or notes. In this tutorial you’ll discover **how to java merge text files** quickly and reliably using the powerful **GroupDocs.Merger for Java** library. We'll walk through setup, code, and best‑practice tips so you can add this capability to any Java application today.
+合併多個純文字文件為單一檔案是常見需求，尤其在需要彙總日誌、報告或筆記時。本教學將教您 **如何 java merge text files**，使用功能強大的 **GroupDocs.Merger for Java** 函式庫。我們會逐步說明設定、程式碼以及最佳實踐技巧，讓您今天即可將此功能加入任何 Java 應用程式。
 
 ## Quick Answers
-- **What library can merge TXT files in Java?** GroupDocs.Merger for Java  
-- **Do I need a license for production use?** Yes, a commercial license unlocks full features  
-- **Can I merge more than two files?** Absolutely – call `join` repeatedly for any number of files  
-- **What Java version is required?** JDK 8 or higher is recommended  
-- **Is there a free trial?** Yes, a limited‑function trial is available from the official releases page  
+- **哪個函式庫可以在 Java 中合併 TXT 檔案？** GroupDocs.Merger for Java  
+- **在正式環境使用是否需要授權？** Yes, a commercial license unlocks full features  
+- **可以合併超過兩個檔案嗎？** Absolutely – call `join` repeatedly for any number of files  
+- **需要哪個 Java 版本？** JDK 8 or higher is recommended  
+- **有免費試用嗎？** Yes, a limited‑function trial is available from the official releases page  
 
 ## What is java merge text files?
-The phrase *java merge text files* simply describes the process of programmatically combining multiple `.txt` files into a single output file using Java code. This operation is especially useful for data aggregation, batch reporting, and simplifying file management.
+「*java merge text files*」這個詞語僅描述使用 Java 程式碼以程式化方式將多個 `.txt` 檔案合併為單一輸出檔的過程。此操作特別適用於資料彙總、批次報告以及簡化檔案管理。
 
 ## Why use GroupDocs.Merger for Java?
 - **Unified API** – Works with TXT, PDF, DOCX, XLSX and many other formats.  
 - **High performance** – Optimized I/O handling reduces memory pressure on large merges.  
 - **Simple syntax** – Only a few lines of code are needed to join files.  
-- **Cross‑platform** – Works on Windows, Linux, and macOS without extra native dependencies.
+- **Cross‑platform** – Works on Windows, Linux, and macOS without extra native dependencies.  
 
 ## Prerequisites
 - **Required Libraries:** GroupDocs.Merger for Java. Grab the latest package from the [official releases](https://releases.groupdocs.com/merger/java/).  
 - **Build Tool:** Maven or Gradle (basic familiarity assumed).  
-- **Java Knowledge:** Understanding of file I/O and exception handling.
+- **Java Knowledge:** Understanding of file I/O and exception handling.  
 
 ## Setting Up GroupDocs.Merger for Java
 
@@ -162,7 +162,7 @@ A: Absolutely – it supports PDF, DOCX, XLSX, PPTX, and many more enterprise do
 - **Temporary License:** [Apply for Temporary License](https://purchase.groupdocs.com/temporary-license/)  
 - **Support:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/)  
 
-By following this guide, you now have a complete, production‑ready solution for **java merge text files** using GroupDocs.Merger. Happy coding!
+按照本指南，您現在已擁有一套完整、可投入生產環境的 **java merge text files** 解決方案，使用 GroupDocs.Merger。祝開發順利！
 
 ---
 
