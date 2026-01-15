@@ -1,5 +1,5 @@
 ---
-title: "How to embed PDF in Excel using GroupDocs.Merger for Java: Import an OLE Object – A Step‑by‑Step Guide"
+title: "How to embed PDF in Excel using GroupDocs.Merger for Java - Import an OLE Object – A Step‑by‑Step Guide"
 description: "Learn how to embed PDF in Excel and import document into Excel with GroupDocs.Merger for Java. Follow this detailed guide with code examples and troubleshooting tips."
 date: "2025-12-19"
 weight: 1

@@ -8,7 +8,7 @@ keywords:
 - embed PDF in Excel with Java
 - use GroupDocs.Merger for document integration
 title: 'Πώς να ενσωματώσετε PDF στο Excel χρησιμοποιώντας το GroupDocs.Merger για
-  Java: Εισαγωγή ενός αντικειμένου OLE – Οδηγός βήμα‑προς‑βήμα'
+  Java - Εισαγωγή ενός αντικειμένου OLE – Οδηγός βήμα‑προς‑βήμα'
 type: docs
 url: /el/java/document-import/import-ole-object-excel-groupdocs-merger-java/
 weight: 1

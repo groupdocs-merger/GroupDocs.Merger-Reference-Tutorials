@@ -7,7 +7,7 @@ keywords:
 - import OLE object into Excel
 - embed PDF in Excel with Java
 - use GroupDocs.Merger for document integration
-title: 'GroupDocs.Merger for Java का उपयोग करके Excel में PDF एम्बेड कैसे करें: OLE
+title: 'GroupDocs.Merger for Java का उपयोग करके Excel में PDF एम्बेड कैसे करें - OLE
   ऑब्जेक्ट इम्पोर्ट – चरण-दर-चरण गाइड'
 type: docs
 url: /hi/java/document-import/import-ole-object-excel-groupdocs-merger-java/

@@ -7,7 +7,7 @@ keywords:
 - import OLE object into Excel
 - embed PDF in Excel with Java
 - use GroupDocs.Merger for document integration
-title: 'Jak vložit PDF do Excelu pomocí GroupDocs.Merger pro Javu: Import OLE objektu
+title: 'Jak vložit PDF do Excelu pomocí GroupDocs.Merger pro Javu - Import OLE objektu
   – Průvodce krok za krokem'
 type: docs
 url: /cs/java/document-import/import-ole-object-excel-groupdocs-merger-java/
