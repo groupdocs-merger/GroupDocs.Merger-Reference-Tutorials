@@ -7,7 +7,7 @@ keywords:
 - GroupDocs Merger for Java
 - join specific pages from documents
 - merge documents using Java
-title: 'Jak łączyć strony: łączenie określonych stron z wielu dokumentów przy użyciu
+title: 'Jak łączyć strony - łączenie określonych stron z wielu dokumentów przy użyciu
   GroupDocs.Merger dla Javy'
 type: docs
 url: /pl/java/document-joining/join-pages-groupdocs-merger-java-tutorial/

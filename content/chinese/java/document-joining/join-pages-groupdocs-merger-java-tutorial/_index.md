@@ -5,7 +5,7 @@ keywords:
 - GroupDocs Merger for Java
 - join specific pages from documents
 - merge documents using Java
-title: 如何合并页面：使用 GroupDocs.Merger for Java 合并多个文档中的特定页面
+title: 如何合并页面 - 使用 GroupDocs.Merger for Java 合并多个文档中的特定页面
 type: docs
 url: /zh/java/document-joining/join-pages-groupdocs-merger-java-tutorial/
 weight: 1

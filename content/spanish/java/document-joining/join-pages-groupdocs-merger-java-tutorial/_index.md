@@ -6,7 +6,7 @@ keywords:
 - GroupDocs Merger for Java
 - join specific pages from documents
 - merge documents using Java
-title: 'Cómo combinar páginas: unir páginas específicas de varios documentos usando
+title: 'Cómo combinar páginas - unir páginas específicas de varios documentos usando
   GroupDocs.Merger para Java'
 type: docs
 url: /es/java/document-joining/join-pages-groupdocs-merger-java-tutorial/

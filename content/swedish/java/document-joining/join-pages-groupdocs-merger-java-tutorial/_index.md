@@ -6,7 +6,7 @@ keywords:
 - GroupDocs Merger for Java
 - join specific pages from documents
 - merge documents using Java
-title: 'Hur man slår ihop sidor: Förena specifika sidor från flera dokument med GroupDocs.Merger
+title: 'Hur man slår ihop sidor - Förena specifika sidor från flera dokument med GroupDocs.Merger
   för Java'
 type: docs
 url: /sv/java/document-joining/join-pages-groupdocs-merger-java-tutorial/

@@ -1,5 +1,5 @@
 ---
-title: "How to Merge Pages: Join Specific Pages from Multiple Documents Using GroupDocs.Merger for Java"
+title: "How to Merge Pages - Join Specific Pages from Multiple Documents Using GroupDocs.Merger for Java"
 description: "Learn how to merge pages from PDFs and DOCX files using GroupDocs.Merger for Java. This guide covers setup, page joining, and performance tips."
 date: "2025-12-24"
 weight: 1

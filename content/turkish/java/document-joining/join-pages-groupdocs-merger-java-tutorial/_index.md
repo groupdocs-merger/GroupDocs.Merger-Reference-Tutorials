@@ -7,7 +7,7 @@ keywords:
 - GroupDocs Merger for Java
 - join specific pages from documents
 - merge documents using Java
-title: 'Sayfaları Birleştirme: GroupDocs.Merger for Java ile Birden Çok Belgeden Belirli
+title: 'Sayfaları Birleştirme - GroupDocs.Merger for Java ile Birden Çok Belgeden Belirli
   Sayfaları Birleştirme'
 type: docs
 url: /tr/java/document-joining/join-pages-groupdocs-merger-java-tutorial/

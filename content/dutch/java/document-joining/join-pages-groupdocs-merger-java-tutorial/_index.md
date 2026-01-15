@@ -6,7 +6,7 @@ keywords:
 - GroupDocs Merger for Java
 - join specific pages from documents
 - merge documents using Java
-title: 'Hoe pagina''s samenvoegen: specifieke pagina''s uit meerdere documenten combineren
+title: 'Hoe pagina''s samenvoegen - specifieke pagina''s uit meerdere documenten combineren
   met GroupDocs.Merger voor Java'
 type: docs
 url: /nl/java/document-joining/join-pages-groupdocs-merger-java-tutorial/

@@ -6,7 +6,7 @@ keywords:
 - GroupDocs Merger for Java
 - join specific pages from documents
 - merge documents using Java
-title: 'Cách hợp nhất các trang: Kết hợp các trang cụ thể từ nhiều tài liệu bằng GroupDocs.Merger
+title: 'Cách hợp nhất các trang - Kết hợp các trang cụ thể từ nhiều tài liệu bằng GroupDocs.Merger
   cho Java'
 type: docs
 url: /vi/java/document-joining/join-pages-groupdocs-merger-java-tutorial/

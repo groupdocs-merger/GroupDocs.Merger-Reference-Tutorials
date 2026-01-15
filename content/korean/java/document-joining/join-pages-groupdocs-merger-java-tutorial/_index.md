@@ -6,7 +6,7 @@ keywords:
 - GroupDocs Merger for Java
 - join specific pages from documents
 - merge documents using Java
-title: '페이지 병합 방법: GroupDocs.Merger for Java를 사용하여 여러 문서에서 특정 페이지 결합하기'
+title: '페이지 병합 방법 - GroupDocs.Merger for Java를 사용하여 여러 문서에서 특정 페이지 결합하기'
 type: docs
 url: /ko/java/document-joining/join-pages-groupdocs-merger-java-tutorial/
 weight: 1

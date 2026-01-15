@@ -7,7 +7,7 @@ keywords:
 - GroupDocs Merger for Java
 - join specific pages from documents
 - merge documents using Java
-title: 'Oldalak egyesítése: Különleges oldalak összevonása több dokumentumból a GroupDocs.Merger
+title: 'Oldalak egyesítése - Különleges oldalak összevonása több dokumentumból a GroupDocs.Merger
   for Java segítségével'
 type: docs
 url: /hu/java/document-joining/join-pages-groupdocs-merger-java-tutorial/

@@ -6,7 +6,7 @@ keywords:
 - GroupDocs Merger for Java
 - join specific pages from documents
 - merge documents using Java
-title: 'วิธีรวมหน้า: รวมหน้าที่เฉพาะจากหลายเอกสารโดยใช้ GroupDocs.Merger สำหรับ Java'
+title: 'วิธีรวมหน้า  - รวมหน้าที่เฉพาะจากหลายเอกสารโดยใช้ GroupDocs.Merger สำหรับ Java'
 type: docs
 url: /th/java/document-joining/join-pages-groupdocs-merger-java-tutorial/
 weight: 1

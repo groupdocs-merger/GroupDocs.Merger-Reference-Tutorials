@@ -7,7 +7,7 @@ keywords:
 - GroupDocs Merger for Java
 - join specific pages from documents
 - merge documents using Java
-title: 'Πώς να συγχωνεύσετε σελίδες: Συγχώνευση συγκεκριμένων σελίδων από πολλά έγγραφα
+title: 'Πώς να συγχωνεύσετε σελίδες - Συγχώνευση συγκεκριμένων σελίδων από πολλά έγγραφα
   χρησιμοποιώντας το GroupDocs.Merger για Java'
 type: docs
 url: /el/java/document-joining/join-pages-groupdocs-merger-java-tutorial/

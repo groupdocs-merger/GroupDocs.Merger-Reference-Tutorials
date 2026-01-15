@@ -7,7 +7,7 @@ keywords:
 - GroupDocs Merger for Java
 - join specific pages from documents
 - merge documents using Java
-title: 'पृष्ठों को कैसे मर्ज करें: GroupDocs.Merger for Java का उपयोग करके कई दस्तावेज़ों
+title: 'पृष्ठों को कैसे मर्ज करें - GroupDocs.Merger for Java का उपयोग करके कई दस्तावेज़ों
   से विशिष्ट पृष्ठों को जोड़ें'
 type: docs
 url: /hi/java/document-joining/join-pages-groupdocs-merger-java-tutorial/
