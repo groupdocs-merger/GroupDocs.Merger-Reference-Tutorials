@@ -1,19 +1,20 @@
 ---
-title: "How to Merge Visio Files in Java – Master Guide with GroupDocs.Merger"
-description: "Step-by-step tutorial on how to merge Visio files using GroupDocs.Merger for Java, boosting your document workflow."
-date: "2025-12-21"
-weight: 1
-url: "/java/document-joining/java-groupdocs-merger-vstm-tutorial/"
+date: '2025-12-21'
+description: Java 用 GroupDocs.Merger を使用して Visio ファイルをマージするステップバイステップのチュートリアルで、ドキュメントワークフローを強化します。
 keywords:
 - how to merge visio
 - merge VSTM files in Java
 - using GroupDocs.Merger for Java
 - file merging tutorial
+title: JavaでVisioファイルを結合する方法 – GroupDocs.Mergerによる完全ガイド
 type: docs
+url: /ja/java/document-joining/java-groupdocs-merger-vstm-tutorial/
+weight: 1
 ---
-# How to Merge Visio Files in Java: Comprehensive Guide to Using GroupDocs.Merger for VSTM Files
 
-Merging Visio files can feel like a daunting task, especially when you’re dealing with multiple Visio Macro‑Enabled Drawing Templates (.vstm). In this tutorial you’ll learn **how to merge Visio** documents quickly and reliably using GroupDocs.Merger for Java. By the end, you’ll have a reusable code snippet that consolidates any number of VSTM files into a single, well‑structured document.
+# JavaでVisioファイルをマージする方法: GroupDocs.Mergerを使用したVSTMファイルの包括的ガイド
+
+Visioファイルのマージは、特に複数のVisio Macro‑Enabled Drawing Templates（.vstm）を扱う場合、大変な作業に感じられることがあります。このチュートリアルでは、GroupDocs.Merger for Java を使用して **Visio をマージする方法** を迅速かつ確実に学びます。最後まで読むと、任意の数の VSTM ファイルを単一の構造化されたドキュメントに統合する再利用可能なコードスニペットが手に入ります。
 
 ## Quick Answers
 - **What library handles Visio merging?** GroupDocs.Merger for Java  
@@ -23,7 +24,7 @@ Merging Visio files can feel like a daunting task, especially when you’re deal
 - **Typical merge time?** Seconds for most VSTM files, depending on size and system resources  
 
 ## What is “how to merge visio” referring to?
-The phrase simply describes the process of combining two or more Visio (.vstm) files into a single file. This is useful for consolidating templates, reports, or project diagrams without manually copying content.
+このフレーズは、2つ以上の Visio（.vstm）ファイルを単一のファイルに結合するプロセスを指します。テンプレート、レポート、プロジェクト図などを手動でコピーせずに統合する際に便利です。
 
 ## Why Use GroupDocs.Merger for Visio Merging?
 - **Simplicity:** One‑line API calls handle complex file structures.  
