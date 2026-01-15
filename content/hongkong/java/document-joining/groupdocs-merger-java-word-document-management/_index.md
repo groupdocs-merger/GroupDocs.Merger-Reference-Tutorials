@@ -5,7 +5,7 @@ keywords:
 - merge Word documents
 - GroupDocs.Merger for Java
 - document merging
-title: 精通文件管理：使用 GroupDocs.Merger for Java 合併 Word 文件
+title: 精通文件管理 - 使用 GroupDocs.Merger for Java 合併 Word 文件
 type: docs
 url: /zh-hant/java/document-joining/groupdocs-merger-java-word-document-management/
 weight: 1

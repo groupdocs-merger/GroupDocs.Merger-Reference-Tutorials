@@ -7,7 +7,7 @@ keywords:
 - merge Word documents
 - GroupDocs.Merger for Java
 - document merging
-title: 'Mester dokumentumkezelés: Word dokumentumok egyesítése a GroupDocs.Merger
+title: 'Mester dokumentumkezelés - Word dokumentumok egyesítése a GroupDocs.Merger
   for Java-val'
 type: docs
 url: /hu/java/document-joining/groupdocs-merger-java-word-document-management/

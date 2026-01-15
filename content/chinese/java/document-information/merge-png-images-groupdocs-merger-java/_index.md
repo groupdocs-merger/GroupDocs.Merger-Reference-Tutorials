@@ -175,12 +175,6 @@ A5：在代码中修改 `outputFile` 变量，使用基于业务逻辑的动态�
 
 要进一步深入了解 GroupDocs.Merger 的功能，请查阅其丰富的 [documentation](https://docs.groupdocs.com/merger/java/) 并尝试不同的配置。
 
----
-
-**Last Updated:** 2025-12-21  
-**Tested With:** GroupDocs.Merger latest version (as of 2025)  
-**Author:** GroupDocs  
-
 **Resources**
 
 - **Documentation:** 在 [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/) 查看详细指南  
@@ -189,3 +183,9 @@ A5：在代码中修改 `outputFile` 变量，使用基于业务逻辑的动态�
 - **Purchase:** 在 [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy) 购买许可证或获取试用  
 - **Free Trial & Temporary License:** 在 [GroupDocs Free Trial](https://releases.groupdocs.com/merger/java/) 和 [Temporary License](https://purchase.groupdocs.com/temporary-license/) 获取测试许可证  
 - **Support:** 如需进一步帮助，请访问 [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/)
+
+---
+
+**Last Updated:** 2025-12-21  
+**Tested With:** GroupDocs.Merger latest version (as of 2025)  
+**Author:** GroupDocs  

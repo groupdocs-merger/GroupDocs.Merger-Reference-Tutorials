@@ -6,7 +6,7 @@ keywords:
 - merge Word documents
 - GroupDocs.Merger for Java
 - document merging
-title: 'การจัดการเอกสารขั้นสูง: ผสานเอกสาร Word ด้วย GroupDocs.Merger สำหรับ Java'
+title: 'การจัดการเอกสารขั้นสูง - ผสานเอกสาร Word ด้วย GroupDocs.Merger สำหรับ Java'
 type: docs
 url: /th/java/document-joining/groupdocs-merger-java-word-document-management/
 weight: 1

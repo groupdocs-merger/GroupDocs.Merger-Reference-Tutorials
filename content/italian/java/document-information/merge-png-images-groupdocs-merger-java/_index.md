@@ -7,7 +7,7 @@ keywords:
 - merge PNG images Java
 - GroupDocs Merger setup
 - Java image manipulation
-title: 'Come unire immagini PNG usando GroupDocs.Merger per Java: Guida passo passo'
+title: 'Come unire immagini PNG usando GroupDocs.Merger per Java - Guida passo passo'
 type: docs
 url: /it/java/document-information/merge-png-images-groupdocs-merger-java/
 weight: 1
@@ -177,12 +177,6 @@ Abbiamo esplorato **come unire png** usando GroupDocs.Merger per Java, dalla con
 
 Per approfondire ulteriormente le capacità di GroupDocs.Merger, considera di esplorare la loro ampia [documentazione](https://docs.groupdocs.com/merger/java/) e sperimentare con diverse configurazioni.
 
----
-
-**Ultimo Aggiornamento:** 2025-12-21  
-**Testato Con:** ultima versione di GroupDocs.Merger (al 2025)  
-**Autore:** GroupDocs  
-
 **Risorse**
 
 - **Documentazione:** Scopri guide dettagliate su [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)  
@@ -191,5 +185,11 @@ Per approfondire ulteriormente le capacità di GroupDocs.Merger, considera di es
 - **Acquisto:** Acquista una licenza o ottieni una prova su [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy)  
 - **Prova Gratuita & Licenza Temporanea:** Ottieni licenze per test su [GroupDocs Free Trial](https://releases.groupdocs.com/merger/java/) e [Temporary License](https://purchase.groupdocs.com/temporary-license/)  
 - **Supporto:** Per ulteriore assistenza, visita il [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/)  
+
+---
+
+**Ultimo Aggiornamento:** 2025-12-21  
+**Testato Con:** ultima versione di GroupDocs.Merger (al 2025)  
+**Autore:** GroupDocs  
 
 ---

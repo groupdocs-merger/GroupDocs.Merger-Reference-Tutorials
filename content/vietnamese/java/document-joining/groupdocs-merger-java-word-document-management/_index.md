@@ -7,7 +7,7 @@ keywords:
 - merge Word documents
 - GroupDocs.Merger for Java
 - document merging
-title: 'Quản lý tài liệu chuyên nghiệp: Gộp tài liệu Word bằng GroupDocs.Merger cho
+title: 'Quản lý tài liệu chuyên nghiệp - Gộp tài liệu Word bằng GroupDocs.Merger cho
   Java'
 type: docs
 url: /vi/java/document-joining/groupdocs-merger-java-word-document-management/

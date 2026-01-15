@@ -7,7 +7,7 @@ keywords:
 - merge Word documents
 - GroupDocs.Merger for Java
 - document merging
-title: 'Gestión maestra de documentos: combina documentos Word con GroupDocs.Merger
+title: 'Gestión maestra de documentos - combina documentos Word con GroupDocs.Merger
   para Java'
 type: docs
 url: /es/java/document-joining/groupdocs-merger-java-word-document-management/

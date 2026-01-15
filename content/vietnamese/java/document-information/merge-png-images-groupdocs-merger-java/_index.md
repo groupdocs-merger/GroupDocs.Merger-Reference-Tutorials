@@ -7,7 +7,7 @@ keywords:
 - merge PNG images Java
 - GroupDocs Merger setup
 - Java image manipulation
-title: 'Cách hợp nhất ảnh PNG bằng GroupDocs.Merger cho Java: Hướng dẫn từng bước'
+title: 'Cách hợp nhất ảnh PNG bằng GroupDocs.Merger cho Java - Hướng dẫn từng bước'
 type: docs
 url: /vi/java/document-information/merge-png-images-groupdocs-merger-java/
 weight: 1
@@ -177,12 +177,6 @@ Chúng tôi đã khám phá **cách gộp png** bằng GroupDocs.Merger cho Java
 
 Để nâng cao hơn nữa hiểu biết của bạn về khả năng của GroupDocs.Merger, hãy khám phá tài liệu chi tiết của nó tại [documentation](https://docs.groupdocs.com/merger/java/) và thử nghiệm với các cấu hình khác nhau.
 
----
-
-**Cập nhật lần cuối:** 2025-12-21  
-**Kiểm thử với:** Phiên bản mới nhất của GroupDocs.Merger (tính đến 2025)  
-**Tác giả:** GroupDocs  
-
 **Tài nguyên**
 
 - **Documentation:** Khám phá các hướng dẫn chi tiết tại [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)  
@@ -191,3 +185,9 @@ Chúng tôi đã khám phá **cách gộp png** bằng GroupDocs.Merger cho Java
 - **Purchase:** Mua giấy phép hoặc nhận bản dùng thử tại [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy)  
 - **Free Trial & Temporary License:** Nhận giấy phép để thử nghiệm tại [GroupDocs Free Trial](https://releases.groupdocs.com/merger/java/) và [Temporary License](https://purchase.groupdocs.com/temporary-license/)  
 - **Support:** Để được hỗ trợ thêm, truy cập [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/)
+
+---
+
+**Cập nhật lần cuối:** 2025-12-21  
+**Kiểm thử với:** Phiên bản mới nhất của GroupDocs.Merger (tính đến 2025)  
+**Tác giả:** GroupDocs  

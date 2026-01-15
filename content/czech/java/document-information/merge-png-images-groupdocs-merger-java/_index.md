@@ -7,7 +7,7 @@ keywords:
 - merge PNG images Java
 - GroupDocs Merger setup
 - Java image manipulation
-title: 'Jak sloučit PNG obrázky pomocí GroupDocs.Merger pro Javu: krok za krokem průvodce'
+title: 'Jak sloučit PNG obrázky pomocí GroupDocs.Merger pro Javu - krok za krokem průvodce'
 type: docs
 url: /cs/java/document-information/merge-png-images-groupdocs-merger-java/
 weight: 1
@@ -177,12 +177,6 @@ Prozkoumali jsme **jak sloučit png** obrázky pomocí GroupDocs.Merger pro Java
 
 Pro další rozšíření vašeho porozumění možnostem GroupDocs.Merger zvažte prozkoumání jeho rozsáhlé [documentation](https://docs.groupdocs.com/merger/java/) a experimentování s různými konfiguracemi.
 
----
-
-**Poslední aktualizace:** 2025-12-21  
-**Testováno s:** GroupDocs.Merger latest version (as of 2025)  
-**Autor:** GroupDocs  
-
 **Zdroje**
 
 - **Dokumentace:** Prozkoumejte podrobné průvodce na [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)  
@@ -191,3 +185,9 @@ Pro další rozšíření vašeho porozumění možnostem GroupDocs.Merger zvaž
 - **Nákup:** Buy a license or obtain a trial at [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy)  
 - **Bezplatná zkušební verze a dočasná licence:** Obtain licenses for testing purposes at [GroupDocs Free Trial](https://releases.groupdocs.com/merger/java/) and [Temporary License](https://purchase.groupdocs.com/temporary-license/)  
 - **Podpora:** For further assistance, visit the [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/)
+
+---
+
+**Poslední aktualizace:** 2025-12-21  
+**Testováno s:** GroupDocs.Merger latest version (as of 2025)  
+**Autor:** GroupDocs  

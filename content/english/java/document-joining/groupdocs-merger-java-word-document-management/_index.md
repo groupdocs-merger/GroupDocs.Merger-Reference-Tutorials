@@ -1,5 +1,5 @@
 ---
-title: "Master Document Management: Merge Word Documents with GroupDocs.Merger for Java"
+title: "Master Document Management - Merge Word Documents with GroupDocs.Merger for Java"
 description: "Learn how to merge word documents efficiently using GroupDocs.Merger for Java. Boost productivity, automate report generation, and streamline document management."
 date: "2025-12-21"
 weight: 1

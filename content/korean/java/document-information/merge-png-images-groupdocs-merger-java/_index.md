@@ -6,7 +6,7 @@ keywords:
 - merge PNG images Java
 - GroupDocs Merger setup
 - Java image manipulation
-title: 'Java용 GroupDocs.Merger를 사용하여 PNG 이미지 병합하는 방법: 단계별 가이드'
+title: 'Java용 GroupDocs.Merger를 사용하여 PNG 이미지 병합하는 방법 - 단계별 가이드'
 type: docs
 url: /ko/java/document-information/merge-png-images-groupdocs-merger-java/
 weight: 1
@@ -176,12 +176,6 @@ A5: 애플리케이션 로직에 따라 동적 값을 사용해 코드의 `outpu
 
 GroupDocs.Merger의 기능을 더 깊이 이해하려면 방대한 [documentation](https://docs.groupdocs.com/merger/java/)을 살펴보고 다양한 설정을 실험해 보세요.
 
----
-
-**마지막 업데이트:** 2025-12-21  
-**테스트 환경:** GroupDocs.Merger 최신 버전 (2025년 기준)  
-**작성자:** GroupDocs  
-
 **리소스**
 - **Documentation:** 자세한 가이드는 [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)에서 확인하세요.  
 - **API Reference:** 포괄적인 API 세부 정보는 [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)에서 확인할 수 있습니다.  
@@ -189,3 +183,9 @@ GroupDocs.Merger의 기능을 더 깊이 이해하려면 방대한 [documentatio
 - **Purchase:** 라이선스를 구매하거나 체험판을 받으려면 [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy)를 방문하세요.  
 - **Free Trial & Temporary License:** 테스트용 라이선스는 [GroupDocs Free Trial](https://releases.groupdocs.com/merger/java/) 및 [Temporary License](https://purchase.groupdocs.com/temporary-license/)에서 얻을 수 있습니다.  
 - **Support:** 추가 지원이 필요하면 [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/)을 방문하세요.
+
+---
+
+**마지막 업데이트:** 2025-12-21  
+**테스트 환경:** GroupDocs.Merger 최신 버전 (2025년 기준)  
+**작성자:** GroupDocs  

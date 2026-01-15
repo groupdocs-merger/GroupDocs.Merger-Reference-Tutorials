@@ -6,7 +6,7 @@ keywords:
 - merge Word documents
 - GroupDocs.Merger for Java
 - document merging
-title: 'Mästra dokumenthantering: Slå ihop Word-dokument med GroupDocs.Merger för
+title: 'Mästra dokumenthantering - Slå ihop Word-dokument med GroupDocs.Merger för
   Java'
 type: docs
 url: /sv/java/document-joining/groupdocs-merger-java-word-document-management/

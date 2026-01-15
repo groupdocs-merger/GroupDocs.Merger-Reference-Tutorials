@@ -178,12 +178,6 @@ A5: अपने एप्लिकेशन की लॉजिक के आ�
 
 GroupDocs.Merger की क्षमताओं को और बेहतर समझने के लिए, इसकी विस्तृत [documentation](https://docs.groupdocs.com/merger/java/) देखें और विभिन्न कॉन्फ़िगरेशन के साथ प्रयोग करें।
 
----
-
-**Last Updated:** 2025-12-21  
-**Tested With:** GroupDocs.Merger latest version (as of 2025)  
-**Author:** GroupDocs  
-
 **Resources**
 
 - **Documentation:** विस्तृत गाइड्स देखें: [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)  
@@ -192,3 +186,9 @@ GroupDocs.Merger की क्षमताओं को और बेहतर �
 - **Purchase:** लाइसेंस खरीदें या ट्रायल प्राप्त करें: [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy)  
 - **Free Trial & Temporary License:** परीक्षण उद्देश्यों के लिए लाइसेंस प्राप्त करें: [GroupDocs Free Trial](https://releases.groupdocs.com/merger/java/) और [Temporary License](https://purchase.groupdocs.com/temporary-license/)  
 - **Support:** आगे की सहायता के लिए, [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/) पर जाएँ।
+
+---
+
+**Last Updated:** 2025-12-21  
+**Tested With:** GroupDocs.Merger latest version (as of 2025)  
+**Author:** GroupDocs  

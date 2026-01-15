@@ -5,7 +5,7 @@ keywords:
 - merge PNG images Java
 - GroupDocs Merger setup
 - Java image manipulation
-title: 如何使用 GroupDocs.Merger for Java 合併 PNG 圖像：逐步指南
+title: 如何使用 GroupDocs.Merger for Java 合併 PNG 圖像 - 逐步指南
 type: docs
 url: /zh-hant/java/document-information/merge-png-images-groupdocs-merger-java/
 weight: 1
@@ -175,12 +175,6 @@ A5: 在程式碼中修改 `outputFile` 變數，根據應用邏輯賦予動態�
 
 若想更深入了解 GroupDocs.Merger 的其他功能，建議參考其豐富的 [documentation](https://docs.groupdocs.com/merger/java/) 並嘗試不同設定。
 
----
-
-**最後更新：** 2025-12-21  
-**測試環境：** GroupDocs.Merger 最新版本（截至 2025 年）  
-**作者：** GroupDocs  
-
 **資源**
 
 - **文件說明：** 前往 [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/) 瀏覽詳細指南  
@@ -189,3 +183,9 @@ A5: 在程式碼中修改 `outputFile` 變數，根據應用邏輯賦予動態�
 - **購買：** 前往 [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy) 購買授權或取得試用版  
 - **免費試用與臨時授權：** 在 [GroupDocs Free Trial](https://releases.groupdocs.com/merger/java/) 與 [Temporary License](https://purchase.groupdocs.com/temporary-license/) 取得測試授權  
 - **支援：** 如需進一步協助，請造訪 [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/)
+
+---
+
+**最後更新：** 2025-12-21  
+**測試環境：** GroupDocs.Merger 最新版本（截至 2025 年）  
+**作者：** GroupDocs  

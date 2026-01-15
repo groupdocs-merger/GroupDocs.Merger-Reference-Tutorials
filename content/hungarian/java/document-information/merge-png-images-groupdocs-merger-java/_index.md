@@ -7,7 +7,7 @@ keywords:
 - merge PNG images Java
 - GroupDocs Merger setup
 - Java image manipulation
-title: 'Hogyan egyesítsünk PNG képeket a GroupDocs.Merger for Java segítségével: Lépésről
+title: 'Hogyan egyesítsünk PNG képeket a GroupDocs.Merger for Java segítségével - Lépésről
   lépésre útmutató'
 type: docs
 url: /hu/java/document-information/merge-png-images-groupdocs-merger-java/
@@ -179,12 +179,6 @@ Megvizsgáltuk, **hogyan egyesíts png** képeket a GroupDocs.Merger for Java-va
 
 A GroupDocs.Merger képességeinek további megismeréséhez érdemes átnézni a részletes [dokumentációt](https://docs.groupdocs.com/merger/java/) és kísérletezni különböző beállításokkal.
 
----
-
-**Legutóbb frissítve:** 2025-12-21  
-**Tesztelve:** GroupDocs.Merger legújabb verzióval (2025-ig)  
-**Szerző:** GroupDocs  
-
 **Erőforrások**
 
 - **Documentation:** Explore detailed guides at [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)  
@@ -193,3 +187,9 @@ A GroupDocs.Merger képességeinek további megismeréséhez érdemes átnézni 
 - **Purchase:** Buy a license or obtain a trial at [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy)  
 - **Free Trial & Temporary License:** Obtain licenses for testing purposes at [GroupDocs Free Trial](https://releases.groupdocs.com/merger/java/) and [Temporary License](https://purchase.groupdocs.com/temporary-license/)  
 - **Support:** For further assistance, visit the [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/)
+
+---
+
+**Legutóbb frissítve:** 2025-12-21  
+**Tesztelve:** GroupDocs.Merger legújabb verzióval (2025-ig)  
+**Szerző:** GroupDocs  

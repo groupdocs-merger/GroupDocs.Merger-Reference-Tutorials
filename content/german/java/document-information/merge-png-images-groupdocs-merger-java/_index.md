@@ -7,7 +7,7 @@ keywords:
 - merge PNG images Java
 - GroupDocs Merger setup
 - Java image manipulation
-title: 'Wie man PNG-Bilder mit GroupDocs.Merger für Java zusammenführt: Eine Schritt‑für‑Schritt‑Anleitung'
+title: 'Wie man PNG-Bilder mit GroupDocs.Merger für Java zusammenführt - Eine Schritt‑für‑Schritt‑Anleitung'
 type: docs
 url: /de/java/document-information/merge-png-images-groupdocs-merger-java/
 weight: 1

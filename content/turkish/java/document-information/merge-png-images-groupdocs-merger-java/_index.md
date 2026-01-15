@@ -7,7 +7,7 @@ keywords:
 - merge PNG images Java
 - GroupDocs Merger setup
 - Java image manipulation
-title: 'Java için GroupDocs.Merger kullanarak PNG Görselleri Birleştirme: Adım Adım
+title: 'Java için GroupDocs.Merger kullanarak PNG Görselleri Birleştirme - Adım Adım
   Rehber'
 type: docs
 url: /tr/java/document-information/merge-png-images-groupdocs-merger-java/
@@ -176,12 +176,6 @@ GroupDocs.Merger for Java kullanarak **png nasıl birleştirileceğini** kütüp
 
 GroupDocs.Merger’ın yetenekleri hakkında daha fazla bilgi edinmek için kapsamlı [documentation](https://docs.groupdocs.com/merger/java/) sayfasını incelemeyi ve farklı yapılandırmalarla denemeler yapmayı düşünün.
 
----
-
-**Son Güncelleme:** 2025-12-21  
-**Test Edilen Versiyon:** GroupDocs.Merger en son sürüm (2025 itibarıyla)  
-**Yazar:** GroupDocs  
-
 **Kaynaklar**
 - **Documentation:** Ayrıntılı kılavuzları [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/) adresinde keşfedin  
 - **API Reference:** Kapsamlı API detaylarına [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/) üzerinden ulaşın  
@@ -189,5 +183,11 @@ GroupDocs.Merger’ın yetenekleri hakkında daha fazla bilgi edinmek için kaps
 - **Purchase:** Lisans satın almak veya deneme almak için [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy) adresini ziyaret edin  
 - **Free Trial & Temporary License:** Test amaçlı lisansları [GroupDocs Free Trial](https://releases.groupdocs.com/merger/java/) ve [Temporary License](https://purchase.groupdocs.com/temporary-license/) adreslerinden edinin  
 - **Support:** Daha fazla yardım için [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/) adresini ziyaret edin  
+
+---
+
+**Son Güncelleme:** 2025-12-21  
+**Test Edilen Versiyon:** GroupDocs.Merger en son sürüm (2025 itibarıyla)  
+**Yazar:** GroupDocs  
 
 ---

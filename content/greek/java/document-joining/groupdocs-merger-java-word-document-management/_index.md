@@ -7,7 +7,7 @@ keywords:
 - merge Word documents
 - GroupDocs.Merger for Java
 - document merging
-title: 'Ανώτερη Διαχείριση Εγγράφων: Συγχώνευση Εγγράφων Word με το GroupDocs.Merger
+title: 'Ανώτερη Διαχείριση Εγγράφων - Συγχώνευση Εγγράφων Word με το GroupDocs.Merger
   για Java'
 type: docs
 url: /el/java/document-joining/groupdocs-merger-java-word-document-management/

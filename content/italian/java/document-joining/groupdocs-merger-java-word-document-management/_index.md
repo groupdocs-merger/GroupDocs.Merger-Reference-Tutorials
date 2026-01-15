@@ -7,7 +7,7 @@ keywords:
 - merge Word documents
 - GroupDocs.Merger for Java
 - document merging
-title: 'Gestione avanzata dei documenti: unisci documenti Word con GroupDocs.Merger
+title: 'Gestione avanzata dei documenti - unisci documenti Word con GroupDocs.Merger
   per Java'
 type: docs
 url: /it/java/document-joining/groupdocs-merger-java-word-document-management/

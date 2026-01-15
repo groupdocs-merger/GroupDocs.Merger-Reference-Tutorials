@@ -6,7 +6,7 @@ keywords:
 - merge Word documents
 - GroupDocs.Merger for Java
 - document merging
-title: 'إدارة المستندات المتقنة: دمج مستندات Word باستخدام GroupDocs.Merger لجافا'
+title: 'إدارة المستندات المتقنة - دمج مستندات Word باستخدام GroupDocs.Merger لجافا'
 type: docs
 url: /ar/java/document-joining/groupdocs-merger-java-word-document-management/
 weight: 1

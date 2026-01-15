@@ -6,7 +6,7 @@ keywords:
 - merge Word documents
 - GroupDocs.Merger for Java
 - document merging
-title: '문서 관리 마스터: GroupDocs.Merger for Java로 워드 문서 병합'
+title: '문서 관리 마스터 - GroupDocs.Merger for Java로 워드 문서 병합'
 type: docs
 url: /ko/java/document-joining/groupdocs-merger-java-word-document-management/
 weight: 1
