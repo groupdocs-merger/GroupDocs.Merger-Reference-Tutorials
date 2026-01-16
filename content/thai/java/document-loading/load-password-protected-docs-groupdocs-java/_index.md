@@ -8,7 +8,7 @@ keywords:
 - Java
 - LoadOptions
 - document handling
-title: 'ประมวลผลเอกสารเป็นชุด: โหลดไฟล์ที่มีการป้องกันด้วยรหัสผ่านด้วย GroupDocs.Merger
+title: 'ประมวลผลเอกสารเป็นชุด - โหลดไฟล์ที่มีการป้องกันด้วยรหัสผ่านด้วย GroupDocs.Merger
   สำหรับ Java'
 type: docs
 url: /th/java/document-loading/load-password-protected-docs-groupdocs-java/
@@ -19,31 +19,31 @@ weight: 1
 
 การจัดการเอกสารที่มีการป้องกันด้วยรหัสผ่านเป็นความท้าทายทั่วไปสำหรับนักพัฒนาที่ต้อง **ประมวลผลเอกสารเป็นชุด** ในแอปพลิเคชัน Java ในคู่มือนี้คุณจะได้เรียนรู้วิธีใช้ GroupDocs.Merger for Java เพื่อโหลด แก้ไข และในที่สุดประมวลผลเอกสารเป็นชุดที่ได้รับการป้องกันด้วยรหัสผ่าน เมื่อจบบทเรียนคุณจะสามารถผสานความสามารถนี้เข้าไปในเวิร์กโฟลว์ที่เน้นเอกสารใด ๆ ได้
 
-## Quick Answers
-- **วัตถุประสงค์หลักของคู่มือนี้คืออะไร?** การโหลดไฟล์ที่ป้องกันด้วยรหัสผ่านเพื่อให้คุณสามารถประมวลผลเอกสารเป็นชุดด้วย GroupDocs.Merger  
-- **ต้องใช้ไลบรารีอะไร?** GroupDocs.Merger for Java (เวอร์ชันล่าสุด)  
-- **ต้องมีลิขสิทธิ์หรือไม่?** สามารถใช้รุ่นทดลองฟรีสำหรับการทดสอบ; ต้องมีลิขสิทธิ์ถาวรสำหรับการใช้งานจริง  
-- **รองรับเวอร์ชัน Java ใด?** JDK 8 หรือสูงกว่า  
-- **สามารถประมวลผลหลายไฟล์พร้อมกันได้หรือไม่?** ได้ – หลังจากโหลดแต่ละไฟล์แล้วคุณสามารถเพิ่มเข้าไปในกระบวนการชุด (เช่น merge, split, reorder ฯลฯ)
+## คำตอบด่วน
+- ** คู่มือคู่มือนี้คืออะไร** เอกสารที่ป้องกันด้วยรหัสผ่านเพื่อให้คุณสามารถดูเอกสารเป็นชุดด้วย GroupDocs.Merger
+- **ต้องใช้ไลบรารีอะไร?** GroupDocs.Merger for Java ( บันทึกล่าสุด)
+- **ต้องมีลิขสิทธิ์หรือไม่?** ต้องใช้รุ่นทดลองฟรีสำหรับการทดสอบ; จะต้องมีลิขสิทธิ์ถาวรอย่างแน่นอน
+- **รองรับรองรับ Java ใด ๆ?** JDK8 หรือรองรับ
+- **สามารถจัดเก็บข้อมูลได้หลายไฟล์พร้อมกันได้หรือไม่?** ได้ในภายหลัง – หลังจากนั้นโหลดชุดไฟล์แล้วจึงจำเป็นต้องมี (เช่น รวม, แยก, จัดลำดับใหม่ ฯลฯ)
 
-## What is batch processing of documents?
-การประมวลผลเป็นชุดหมายถึงการจัดการคอลเลกชันของไฟล์ในเวิร์กโฟลว์อัตโนมัติเดียว – การรวม, การแยก, การจัดลำดับหน้าใหม่, หรือการสกัดข้อมูล – โดยไม่ต้องทำการแทรกแซงด้วยมือสำหรับแต่ละเอกสาร เมื่อไฟล์เหล่านั้นถูกป้องกันด้วยรหัสผ่าน คุณต้องระบุข้อมูลรับรองที่ถูกต้องก่อนที่การดำเนินการชุดใด ๆ จะเกิดขึ้น
+## การประมวลผลเอกสารเป็นชุดคืออะไร?
+ไดรฟ์เป็นชุดเพื่อแสดงการควบคุมความร้อนของไฟล์ในโฟลเดอร์โฟลว์อัตโนมัติเดียว – ไดร์เวอร์, ระบบควบคุม, ติดตามหน้าใหม่, ตรวจสอบข้อมูล – เหตุผลที่ทำมัลติฟังก์ชั่นพิเศษสำหรับเอกสารในไฟล์และถูกป้องกันด้วยรหัสผ่านระบุข้อมูลการรับรองความถูกต้องของการดำเนินการชุดใด ๆ ที่จะเกิดขึ้น
 
-## Why use GroupDocs.Merger for Java?
-- **Unified API** สำหรับหลายรูปแบบ (PDF, DOCX, XLSX, PPTX ฯลฯ)  
-- **Built‑in security handling** ผ่าน `LoadOptions`  
-- **Scalable performance** เหมาะกับงานประมวลผลชุดขนาดใหญ่  
-- **Simple integration** กับโปรเจกต์ Java ที่มีอยู่แล้ว
+## เหตุใดจึงต้องใช้ GroupDocs.Merger สำหรับ Java
+- **Unified API** สำหรับหลายรูปแบบ (PDF, DOCX, XLSX, PPTX และอื่นๆ)
+- **การจัดการความปลอดภัยในตัว** ผ่าน `LoadOptions`
+- **ประสิทธิภาพที่ปรับขนาดได้** จะต้องมีงานขนาดใหญ่อีก
+- **Simple integrated** กับโปรเจกต์ Java เท่าที่มีอยู่แล้ว
 
-## Prerequisites
-- **GroupDocs.Merger for Java** library – ติดตั้งผ่าน Maven, Gradle หรือดาวน์โหลดโดยตรง  
-- **Java Development Kit (JDK) 8+**  
-- **IDE** เช่น IntelliJ IDEA หรือ Eclipse  
+## ข้อกำหนดเบื้องต้น
+- **GroupDocs.Merger for Java** ไลบรารี – สามารถติดตั้งผ่าน Maven, Gradle หรือดาวน์โหลดโดยตรง
+- **ชุดพัฒนา Java (JDK) 8+**
+- **IDE** เช่น IntelliJ IDEA หรือ Eclipse
 - ความรู้พื้นฐานด้าน Java
 
-## Setting Up GroupDocs.Merger for Java
+## การตั้งค่า GroupDocs.Merger สำหรับ Java
 
-### Installation Information
+### ข้อมูลการติดตั้ง
 
 **Maven:**  
 
@@ -64,13 +64,13 @@ implementation 'com.groupdocs:groupdocs-merger:latest-version'
 **Direct Download:**  
 สำหรับการดาวน์โหลดโดยตรง ให้เยี่ยมชม [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) เพื่อรับเวอร์ชันล่าสุด
 
-### License Acquisition
+### การได้มาซึ่งใบอนุญาต
 
-1. **Free Trial** – เริ่มต้นด้วยรุ่นทดลองฟรีจาก [GroupDocs download page](https://releases.groupdocs.com/merger/java/)  
-2. **Temporary License** – รับได้จาก [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/) สำหรับการทดสอบระยะยาว  
-3. **Purchase** – หากต้องการการเข้าถึงเต็มรูปแบบและการสนับสนุน ให้พิจารณาซื้อไลเซนส์จาก [GroupDocs Purchase page](https://purchase.groupdocs.com/buy)
+1. **ทดลองใช้ฟรี** – ต้องใช้รุ่นทดลองฟรีจาก [หน้าดาวน์โหลด GroupDocs](https://releases.groupdocs.com/merger/java/)
+2. **Temporary License** – รับได้จาก [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/) สำหรับการตรวจสอบ
+3. **การซื้อ** – บางครั้งอาจเป็นไปได้และไม่จำเป็นต้องพิจารณาซื้อไลเซนส์จาก [หน้าการซื้อ GroupDocs](https://purchase.groupdocs.com/buy)
 
-### Basic Initialization
+### การเริ่มต้นขั้นพื้นฐาน
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -79,11 +79,11 @@ String filePath = "path/to/your/document.docx";
 Merger merger = new Merger(filePath);
 ```
 
-## How to batch process password‑protected documents
+## วิธีการประมวลผลเอกสารที่ป้องกันด้วยรหัสผ่านแบบกลุ่ม
 
-### Loading a Password‑Protected Document
+### การโหลดเอกสารที่ป้องกันด้วยรหัสผ่าน
 
-#### Step 1: Define Load Options with the Password  
+#### ขั้นตอนที่ 1: กำหนดตัวเลือกการโหลดด้วยรหัสผ่าน 
 
 ```java
 import com.groupdocs.merger.domain.options.LoadOptions;
@@ -94,7 +94,7 @@ LoadOptions loadOptions = new LoadOptions("SAMPLE_PASSWORD");
 
 อ็อบเจกต์ `LoadOptions` จะบรรจุรหัสผ่านที่จำเป็นสำหรับการปลดล็อกไฟล์
 
-#### Step 2: Initialize the Merger Using Load Options  
+#### ขั้นตอนที่ 2: เริ่มต้นการรวมข้อมูลโดยใช้ตัวเลือกการโหลด
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -105,7 +105,7 @@ Merger merger = new Merger(filePath, loadOptions);
 
 ตอนนี้เอกสารพร้อมสำหรับการดำเนินการชุดใด ๆ – รวมกับไฟล์อื่น, แยกเป็นหน้า, หรือจัดลำดับเนื้อหาใหม่
 
-#### Step 3: Centralize File Paths with Constants  
+####  ขั้นตอนที่ 3: รวมเส้นทางไฟล์ด้วยค่าคงที่   
 
 ```java
 class Constants {
@@ -115,60 +115,60 @@ class Constants {
 
 การใช้คลาสคอนสแตนท์ช่วยให้โค้ดของคุณสะอาดขึ้น โดยเฉพาะเมื่อคุณต้องจัดการกับหลายสิบหรือหลายร้อยไฟล์ในงานชุด
 
-### Example Batch Workflow (Conceptual)
+### ตัวอย่างเวิร์กโฟลว์แบบกลุ่ม (เชิงแนวคิด)
 
-1. **Collect** เส้นทางไฟล์ที่ป้องกันทั้งหมดลงใน `List<String>`  
-2. **Loop** ผ่านรายการนั้น สร้างอินสแตนซ์ `Merger` สำหรับแต่ละไฟล์พร้อม `LoadOptions` ของตนเอง  
-3. **Add** อินสแตนซ์ `Merger` แต่ละตัวเข้าไปในการดำเนินการรวมหลัก (`Merger.merge(...)`)  
-4. **Dispose** อินสแตนซ์ `Merger` หลังการประมวลผลเพื่อคืนหน่วยความจำ
+1. **รวบรวม** และไฟล์ที่ป้องกันทั้งหมดลงใน `List<String>`
+2. **Loop** ผ่านรายการนั้นสร้าง `Merger` เพิ่มเติมไฟล์พร้อม `LoadOptions` ส่วนตัว
+3. **Add** `Merger` เพิ่มเติมสำหรับการดำเนินการรวมหลัก (`Merger.merge(...)`)
+4. **ทิ้ง** `การควบรวมกิจการ` อีกครั้งเพื่อคืนคืนนี้
 
-> **Pro tip:** ห่อวงจร `loop` ด้วยบล็อก `try‑with‑resources` หรือเรียก `merger.close()` อย่างชัดเจนเพื่อให้แน่ใจว่าทรัพยากรถูกปล่อยอย่างทันท่วงที
+> **เคล็ดลับสำหรับมือโปร:** ห่อวงจร `loop` ด้วยบล็อก `try‑with‑resources` หรือเรียก `merger.close()` ส่วนที่เหลือของทรัพยากรถูกปล่อยอย่างทันท่วงที
 
-## Practical Applications
+## การใช้งานจริง
 
-1. **Document Merging:** รวมสัญญาที่ป้องกันด้วยรหัสผ่านหลายสิบฉบับเป็นไฟล์หลักไฟล์เดียว  
-2. **Page Reordering:** จัดลำดับหน้าข้าม PDF ที่ป้องกันหลายไฟล์โดยไม่ต้องปลดล็อกถาวร  
-3. **Metadata Editing:** ปรับปรุงฟิลด์ผู้เขียนหรือชื่อเรื่องหลังจากให้รหัสผ่านครั้งเดียวแล้ว  
+1. **การรวมเอกสาร:** รวมสัญญาที่ป้องกันด้วยรหัสผ่านหลายสิบฉบับเป็นไฟล์ไฟล์หลักเดียว
+2. **การเรียงลำดับหน้าใหม่:** พิสูจน์ได้เลยหน้าข้าม PDF ที่ป้องกันหลายไฟล์ที่ปลดล็อคถาวร
+3. **การแก้ไขข้อมูลเมตา:** ปรับปรุงการควบคุมหรือชื่อเรื่องหลังจากให้รหัสผ่านอีกครั้งแล้ว
 
-การผสาน GroupDocs.Merger กับคลาวด์สตอเรจ (เช่น AWS S3, Azure Blob) ทำให้คุณดึงไฟล์ที่ป้องกัน, ประมวลผลเป็นชุด, และอัปโหลดผลลัพธ์กลับไป – ทั้งหมดโดยอัตโนมัติ
+การสังเกต GroupDocs.Merger กับเซิร์ฟเวอร์สตอเรจ (เช่น AWS S3, Azure Blob) สืบค้นไฟล์ที่ป้องกัน, ความละเอียดสูงเป็นชุด, และผลลัพธ์กลับมา – อีกครั้งหนึ่งอีกครั้ง
 
-## Performance Considerations for Large Batches
+## ข้อควรพิจารณาด้านประสิทธิภาพสำหรับแบทช์ขนาดใหญ่
 
-- **Memory Management:** ปิดอ็อบเจกต์ `Merger` ทุกครั้งหลังงานเสร็จ  
-- **Batch Size:** ประมวลผลไฟล์เป็นชิ้นส่วน (เช่น 50‑100 เอกสาร) เพื่อหลีกเลี่ยงการใช้หน่วยความจำ JVM มากเกินไป  
-- **Parallelism:** ใช้ `ExecutorService` ของ Java เพื่อรันงาน merge ที่เป็นอิสระพร้อมกัน, แต่ต้องตรวจสอบการใช้ CPU อย่างใกล้ชิด
+- **Memory Management:** ปิดอ็อบเจกต์ `Merger` ทุกครั้งหลังงานเสร็จ
+- **Batch Size:** เอกสารแนบเป็นเอกสาร (เช่น 50‑100 เอกสาร) สำหรับการใช้งาน JVM
+- **Parallelism:** ใช้ `ExecutorService` ของ Java เพื่อที่จะรันงานผสานที่การตรวจสอบทันที แต่ต้องตรวจสอบการใช้ CPU ตัวควบคุม
 
-## Frequently Asked Questions
+## คำถามที่พบบ่อย
 
-**Q: Can I batch process different file types (PDF, DOCX, XLSX) together?**  
-A: Yes. GroupDocs.Merger รองรับรูปแบบหลากหลาย; เพียงให้ `LoadOptions` ที่เหมาะสมกับแต่ละไฟล์
+**ถาม: ฉันสามารถประมวลผลไฟล์ประเภทต่างๆ (PDF, DOCX, XLSX) รวมกันเป็นกลุ่มได้หรือไม่**
+ก. ใช่. GroupDocs.Merger ที่มีรูปแบบที่หลากหลาย; เพียงให้ `LoadOptions` ที่เหมาะกับแต่ละไฟล์
 
-**Q: What happens if a password is incorrect?**  
-A: ไลบรารีจะโยน `PasswordException` ให้คุณจับข้อยกเว้นนี้, บันทึกเหตุการณ์, และอาจข้ามไฟล์นั้นในชุด
+**ถาม: จะเกิดอะไรขึ้นหากรหัสผ่านไม่ถูกต้อง**
+ตอบ: ไลบรารีจะโยน `PasswordException` ให้คุณจับสิ่งนี้, บันทึกการรับประทานอาหาร, เรียนรู้ที่จะข้ามไฟล์นั้นในนั้น
 
-**Q: Is there a limit to how many documents I can merge in one batch?**  
-A: ไม่มีข้อจำกัดที่ตายตัว, แต่ขีดจำกัดจริงขึ้นอยู่กับหน่วยความจำที่มีและขนาด heap ของ JVM. ควรใช้การประมวลผลเป็นชิ้นส่วนสำหรับชุดขนาดใหญ่มาก
+**ถาม: ฉันสามารถรวมเอกสารได้กี่ชุดในชุดเดียว?**
+ตอบ: ไม่มีข้อจำกัดที่ตายตัว แต่ส่วนใหญ่จะขึ้นอยู่กับข้อเท็จจริงที่มีและขนาดฮีปของ JVM เราจะรอดูเป็นชุดสำหรับชุดใหญ่มาก
 
-**Q: Do I need a separate license for each document in a batch?**  
-A: No. ไลเซนส์ GroupDocs.Merger ที่ถูกต้องหนึ่งใบครอบคลุมการดำเนินการทั้งหมดที่ทำโดยไลบรารีในแอปพลิเคชันของคุณ
+**ถาม: ฉันจำเป็นต้องมีใบอนุญาตแยกต่างหากสำหรับเอกสารแต่ละชุดในชุดหรือไม่**
+ตอบ: ไม่ ไลเซนส์ GroupDocs.การควบรวมกิจการที่ถูกต้องหนึ่งใบความเป็นไปได้จะดำเนินการโดยไลบรารีในแอปพลิเคชันของคุณ
 
-**Q: Where can I find more detailed API documentation?**  
-A: เยี่ยมชม [GroupDocs.Merger Java Docs](https://docs.groupdocs.com/merger/java/) เพื่อดูเอกสารอ้างอิงเต็มรูปแบบ
+**ถาม: ฉันจะหาเอกสาร API โดยละเอียดเพิ่มเติมได้ที่ไหน**
+ตอบ: นอกจากนี้ [GroupDocs.Merger Java Docs](https://docs.groupdocs.com/merger/java/) เพื่อดูเอกสารอ้างอิงอย่างเป็นทางการ
 
-## Resources
+## ทรัพยากร
 
-- **Documentation:** [GroupDocs.Merger Java Docs](https://docs.groupdocs.com/merger/java/)  
-- **API Reference:** [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)  
-- **Download:** [Latest Releases](https://releases.groupdocs.com/merger/java/)  
-- **Purchase:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)  
-- **Free Trial:** [Start a Free Trial](https://releases.groupdocs.com/merger/java/)  
-- **Temporary License:** [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-- **Support:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/)
+- **เอกสารประกอบ:** [GroupDocs.Merger Java Docs](https://docs.groupdocs.com/merger/java/)
+- **การอ้างอิง API:** [การอ้างอิง GroupDocs API](https://reference.groupdocs.com/merger/java/)
+- **ดาวน์โหลด:** [รุ่นล่าสุด](https://releases.groupdocs.com/merger/java/)
+- **ซื้อ:** [ซื้อ [ใบอนุญาต GroupDocs](https://purchase.groupdocs.com/buy)
+- **ทดลองใช้ฟรี:** [เริ่มทดลองใช้ฟรี](https://releases.groupdocs.com/merger/java/)
+- **ใบอนุญาตชั่วคราว:** [ขอใบอนุญาตชั่วคราว](https://purchase.groupdocs.com/temporary-license/)
+- **การสนับสนุน:** [ฟอรัมสนับสนุน GroupDocs](https://forum.groupdocs.com/c/merger/)
 
 ---
 
-**Last Updated:** 2026-01-13  
-**Tested With:** GroupDocs.Merger 23.10 (latest at time of writing)  
-**Author:** GroupDocs  
+**อัปเดตล่าสุด:** 2026-01-13
+**ทดสอบกับ:** GroupDocs.Merger 23.10 (เวอร์ชันล่าสุด ณ เวลาที่เขียน)
+**ผู้เขียน:** GroupDocs
 
 ---

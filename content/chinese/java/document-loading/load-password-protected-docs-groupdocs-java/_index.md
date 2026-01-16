@@ -7,7 +7,7 @@ keywords:
 - Java
 - LoadOptions
 - document handling
-title: 批量处理文档：使用 GroupDocs.Merger for Java 加载受密码保护的文件
+title: 批量处理文档 - 使用 GroupDocs.Merger for Java 加载受密码保护的文件
 type: docs
 url: /zh/java/document-loading/load-password-protected-docs-groupdocs-java/
 weight: 1

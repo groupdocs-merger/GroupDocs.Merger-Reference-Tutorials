@@ -6,7 +6,7 @@ keywords:
 - join documents with GroupDocs.Merger for Java
 - GroupDocs.Merger document merging in Java
 - how to use GroupDocs.Merger for Java
-title: 'Jak sloučit PDF v Javě pomocí GroupDocs.Merger: Kompletní průvodce'
+title: 'Jak sloučit PDF v Javě pomocí GroupDocs.Merger - Kompletní průvodce'
 type: docs
 url: /cs/java/document-joining/join-documents-groupdocs-merger-java/
 weight: 1
@@ -187,12 +187,6 @@ Nyní ovládáte, jak **merge PDF with Java** pomocí GroupDocs.Merger, a také 
 
 **Další kroky:** Zkuste sloučit dokumenty ve webové službě nebo prozkoumejte další funkce v oficiální [GroupDocs dokumentaci](https://docs.groupdocs.com/merger/java/).
 
----
-
-**Poslední aktualizace:** 2026-01-13  
-**Testováno s:** GroupDocs.Merger nejnovější verze (k roku 2026)  
-**Autor:** GroupDocs  
-
 ## Zdroje
 Prozkoumejte dále tyto zdroje:
 - [Dokumentace](https://docs.groupdocs.com/merger/java/)
@@ -202,5 +196,11 @@ Prozkoumejte dále tyto zdroje:
 - [Bezplatná zkušební verze](https://releases.groupdocs.com/merger/java/)
 - [Žádost o dočasnou licenci](https://purchase.groupdocs.com/temporary-license/)
 - [Fórum podpory](https://forum.groupdocs.com/c/merger/)
+
+---
+
+**Poslední aktualizace:** 2026-01-13  
+**Testováno s:** GroupDocs.Merger nejnovější verze (k roku 2026)  
+**Autor:** GroupDocs  
 
 ---

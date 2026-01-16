@@ -9,7 +9,7 @@ keywords:
 - Java
 - LoadOptions
 - document handling
-title: 'Dávkové zpracování dokumentů: Načíst soubory chráněné heslem pomocí GroupDocs.Merger
+title: 'Dávkové zpracování dokumentů - Načíst soubory chráněné heslem pomocí GroupDocs.Merger
   pro Javu'
 type: docs
 url: /cs/java/document-loading/load-password-protected-docs-groupdocs-java/

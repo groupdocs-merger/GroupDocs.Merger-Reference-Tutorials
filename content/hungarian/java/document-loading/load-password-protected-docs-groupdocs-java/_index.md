@@ -9,42 +9,42 @@ keywords:
 - Java
 - LoadOptions
 - document handling
-title: 'Kötegelt dokumentumfeldolgozás: Jelszóval védett fájlok betöltése a GroupDocs.Merger
+title: 'Kötegelt dokumentumfeldolgozás - Jelszóval védett fájlok betöltése a GroupDocs.Merger
   for Java segítségével'
 type: docs
 url: /hu/java/document-loading/load-password-protected-docs-groupdocs-java/
 weight: 1
 ---
 
-# Batch Process Documents: Load Password-Protected Files with GroupDocs.Merger for Java
+# Kötegelt feldolgozási dokumentumok: Jelszóval védett fájlok betöltése a GroupDocs.Merger for Java segítségével
 
-A jelszóval védett dokumentumok kezelése gyakori kihívás a fejlesztők számára, akik **kötegelt dokumentumfeldolgozást** szeretnének végezni Java alkalmazásokban. Ebben az útmutatóban megtanulja, hogyan használja a GroupDocs.Merger for Java‑t jelszóval védett fájlok betöltésére, manipulálására, és végül kötegelt feldolgozására. A tutorial végére képes lesz ezt a képességet bármely dokumentum‑központú munkafolyamatba integrálni.
+A jelszóval védett dokumentumok kezelése gyakori kihívás a fejlesztők számára, akik **kötegelt dokumentumfeldolgozást** szeretnének végezni Java alkalmazásokban. Ebben az útmutatóban megtanulja, hogyan használja a GroupDocs.Merger for Java‑t jelszóval védett feldolgozási feldolgozásra, manipulálására, és végül kötegelt. A tutorial végére képes lesz ezt a képességet minden dokumentum-központú munkafolyamatba integrálni.
 
-## Quick Answers
-- **Mi a fő célja ennek az útmutatónak?** Jelszóval védett fájlok betöltése, hogy a GroupDocs.Merger‑rel kötegelt dokumentumfeldolgozást végezzen.  
-- **Melyik könyvtár szükséges?** GroupDocs.Merger for Java (legújabb verzió).  
-- **Szükség van licencre?** Egy ingyenes próba verzió elegendő a teszteléshez; a termeléshez állandó licenc szükséges.  
-- **Melyik Java verzió támogatott?** JDK 8 vagy újabb.  
+## Gyors válaszok
+- **Mi a fő célja ennek az útmutatónak?** Jelszóval védett fájlok betöltése, hogy a GroupDocs.Merger‑rel kötegelt dokumentumfeldolgozást végezzen.
+- **Melyik könyvtár szükséges?** GroupDocs.Merger for Java (legújabb verzió).
+- **Szükség van licenc** Egy ingyenes próba verzió elegendő a teszteléshez; a termeléshez állandó licenc szükséges.
+- **Melyik Java verzió támogatott?** JDK8 vagy újabb.
 - **Feldolgozhatok több fájlt egyszerre?** Igen – miután betöltötte az egyes fájlokat, hozzáadhatja őket egy kötegelt művelethez (összefűzés, felosztás, újrarendezés stb.).
 
-## What is batch processing of documents?
-A kötegelt feldolgozás egy fájlkészlet egyetlen automatizált munkafolyamatban történő kezelése – összefűzés, felosztás, oldalak újrarendezése vagy adatok kinyerése – anélkül, hogy minden egyes dokumentumhoz manuális beavatkozásra lenne szükség. Amikor ezek a fájlok jelszóval védettek, először a megfelelő hitelesítő adatokat kell megadni, mielőtt bármilyen kötegelt művelet végrehajtható lenne.
+## Mi a dokumentumok kötegelt feldolgozása?
+A kötegelt feldolgozás egy fájlkészlet egyetlen automatizált munkafolyamat kezelésének kezelése – összefűzés, felosztás, oldalak újrarendezése vagy adatok kinyerése – anélkül, hogy minden egyes dokumentumhoz manuális beavatkozásra lenne szükség. Amikor ezek a fájlok jelszóval védettek, először a megfelelő hitelesítő adatokat kell megadni, bármilyen kötegelt művelet végrehajtható.
 
-## Why use GroupDocs.Merger for Java?
-- **Unified API** sok formátumhoz (PDF, DOCX, XLSX, PPTX stb.).  
-- **Beépített biztonságkezelés** a `LoadOptions` segítségével.  
-- **Skálázható teljesítmény**, amely nagy‑léptékű kötegelt feladatokhoz is alkalmas.  
-- **Egyszerű integráció** meglévő Java projektekbe.
+## Miért használja a GroupDocs.Merger for Java programot?
+- **Unified API** sok formátumhoz (PDF, DOCX, XLSX, PPTX stb.).
+- **Beépített biztonságkezelés** a `LoadOptions` segítségével.
+- **Skálázható teljesítmény**, amely nagy‑léptékű kötegelt feladatokhoz alkalmas.
+- **Egyszerű integráció** Java projektekbe.
 
-## Prerequisites
-- **GroupDocs.Merger for Java** könyvtár – telepíthető Maven‑nel, Gradle‑nal vagy közvetlen letöltéssel.  
-- **Java Development Kit (JDK) 8+**.  
-- **IDE**, például IntelliJ IDEA vagy Eclipse.  
+## Előfeltételek
+- **GroupDocs.Merger for Java** könyvtár – telepíthető Maven‑nel, Gradle‑nal vagy közvetlen letöltéssel.
+- **Java Development Kit (JDK) 8+**.
+- **IDE**, például IntelliJ IDEA vagy Eclipse.
 - Alapvető Java ismeretek.
 
-## Setting Up GroupDocs.Merger for Java
+## A GroupDocs.Merger for Java beállítása
 
-### Installation Information
+### Telepítési információk
 
 **Maven:**  
 
@@ -62,16 +62,16 @@ A kötegelt feldolgozás egy fájlkészlet egyetlen automatizált munkafolyamatb
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-**Direct Download:**  
+**Közvetlen letöltés:**
 A közvetlen letöltéshez látogasson el a [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) oldalra, ahol a legújabb verziót szerezheti be.
 
-### License Acquisition
+### Licenc beszerzés
 
-1. **Free Trial** – kezdje egy ingyenes próba verzióval a [GroupDocs letöltési oldalról](https://releases.groupdocs.com/merger/java/).  
-2. **Temporary License** – szerezzen egyet a [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/) oldalon a kiterjesztett teszteléshez.  
-3. **Purchase** – teljes hozzáférés és támogatás érdekében vásároljon licencet a [GroupDocs Purchase page](https://purchase.groupdocs.com/buy) oldalon.
+1. **Free Trial** – kezdje egy ingyenes próba verzióval a [GroupDocs letöltési oldalról](https://releases.groupdocs.com/merger/java/).
+2. **Temporary License** – szerezzen egyet a [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/) oldalon a kiterjesztett teszteléshez.
+3. **Vásárlás** – teljes hozzáférés és támogatás vásároljon licencet a [GroupDocs Purchase page](https://purchase.groupdocs.com/buy) oldalon.
 
-### Basic Initialization
+### Alap inicializálás
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -80,11 +80,11 @@ String filePath = "path/to/your/document.docx";
 Merger merger = new Merger(filePath);
 ```
 
-## How to batch process password‑protected documents
+## Jelszóval védett dokumentumok kötegelt feldolgozása
 
-### Loading a Password‑Protected Document
+### Jelszóval védett dokumentum betöltése
 
-#### Step 1: Define Load Options with the Password  
+#### 1. lépés: Betöltési beállítások megadása jelszóval
 
 ```java
 import com.groupdocs.merger.domain.options.LoadOptions;
@@ -95,7 +95,7 @@ LoadOptions loadOptions = new LoadOptions("SAMPLE_PASSWORD");
 
 A `LoadOptions` objektum tartalmazza a fájl feloldásához szükséges jelszót.
 
-#### Step 2: Initialize the Merger Using Load Options  
+#### 2. lépés: Az összevonás inicializálása a betöltési beállításokkal  
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -106,7 +106,7 @@ Merger merger = new Merger(filePath, loadOptions);
 
 Most a dokumentum készen áll bármely kötegelt műveletre – összefűzés más fájlokkal, felosztás oldalakra vagy tartalom újrarendezése.
 
-#### Step 3: Centralize File Paths with Constants  
+#### 3. lépés: Fájlútvonalak központosítása konstansokkal
 
 ```java
 class Constants {
@@ -116,60 +116,60 @@ class Constants {
 
 A konstansok osztály használata tisztán tartja a kódot, különösen ha tucatnyi vagy akár több száz fájlt kell kezelni egy kötegelt feladatban.
 
-### Example Batch Workflow (Conceptual)
+### Példa kötegelt munkafolyamat (koncepcionális)
 
-1. **Collect** az összes védett fájl útvonalát egy `List<String>`‑be.  
-2. **Loop** a listán, minden fájlhoz létrehozva egy `Merger` példányt a saját `LoadOptions`‑ával.  
-3. **Add** minden `Merger` példányt egy fő összeolvasztási művelethez (`Merger.merge(...)`).  
-4. **Dispose** minden `Merger`‑t a feldolgozás után a memória felszabadításához.
+1. **Collect** az összes védett fájl útvonalát egy `List<String>`-be.
+2. **Loop** a listán, minden fájlhoz létrehozva egy `Merger` példányt a saját `LoadOptions`-ával.
+3. **Add** minden `Merger` példányt egy fő összeolvasztási művelethez (`Merger.merge(...)`).
+4. **Dispose** minden `Merger`-t a feldolgozás után a memória felszabadításához.
 
-> **Pro tip:** A ciklust helyezze egy try‑with‑resources blokkba, vagy hívja meg kifejezetten a `merger.close()`‑t, hogy a erőforrások időben felszabaduljanak.
+> **Pro tip:** A helyezze egy try-with-resources blokkba, vagy hívja meg a ciklust a `merger.close()`-t, hogy a erőforrások időben felszabaduljanak.
 
-## Practical Applications
+## Gyakorlati alkalmazások
 
-1. **Document Merging:** Több tucat jelszóval védett szerződés egyetlen fő fájlba kombinálása.  
-2. **Page Reordering:** Oldalak átrendezése több védett PDF‑ben anélkül, hogy véglegesen feloldaná őket.  
-3. **Metadata Editing:** Szerző vagy cím mezők frissítése a jelszó egyszeri megadása után.  
+1. **Document Merging:** Több tucat jelszóval védett szerződés egyetlen fő fájlba kombinálása.
+2. **Oldal átrendezése:** Oldalak átrendezése több védett PDF-ben anélkül, hogy véglegesen feloldaná őket.
+3. **Metaadatok szerkesztése:** Szerző vagy cím mezők frissítése a jelszó egyszeri megadása után.
 
-A GroupDocs.Merger felhő tárolóval (pl. AWS S3, Azure Blob) való integrálása lehetővé teszi a védett fájlok lekérését, kötegelt feldolgozását, és az eredmények visszatöltését – mind programozott módon.
+A GroupDs.Merger felhőtárolóval (pl. AWS S3, Azure Blob) való integrálása lehetővé teszi a védett fájlok lekérését, kötegelt feldolgozását, és az eredmények visszatöltését – mind programozott módon.
 
-## Performance Considerations for Large Batches
+## Teljesítménymegfontolások nagy tételeknél
 
-- **Memory Management:** Zárja le minden `Merger` objektumot, miután a feladata befejeződött.  
-- **Batch Size:** Fájlok feldolgozása darabokban (pl. 50‑100 dokumentum) a JVM heap túlterhelésének elkerülése érdekében.  
-- **Parallelism:** Használja a Java `ExecutorService`‑ét, hogy független összeolvasztási feladatokat párhuzamosan futtasson, de figyelje a CPU‑használatot.
+- **Memory Management:** Zárja le minden `Merger` objektumot, miután a feladata befejeződött.
+- **Batch Size:** Fájlok feldolgozása darabokban (pl. 50‑100 dokumentum) a JVM heap túlterhelésének elkerülése érdekében.
+- **Párhuzamosság:** Használható a Java `ExecutorService`‑ként, hogy független összeolvasási feladatokat párhuzamosan futasson, de figyelje a CPU‑használatot.
 
-## Frequently Asked Questions
+## Gyakran Ismételt Kérdések
 
-**Q: Can I batch process different file types (PDF, DOCX, XLSX) together?**  
-A: Yes. GroupDocs.Merger supports a wide range of formats; just provide the appropriate `LoadOptions` for each file.
+**K: Feldolgozhatok kötegelt módon különböző fájltípusokat (PDF, DOCX, XLSX) együtt?**
+V: Igen. A GroupDocs.Merger számos formátumot támogat; csak adja meg a megfelelő `LoadOptions` beállításokat minden fájlhoz.
 
-**Q: What happens if a password is incorrect?**  
-A: The library throws a `PasswordException`. Catch this exception, log the issue, and optionally skip the file in the batch.
+**K: Mi történik, ha a jelszó helytelen?**
+V: A könyvtár `PasswordException` kivételt dob. Elkapja ezt a kivételt, naplózza a problémát, és opcionálisan kihagyja a fájlt a kötegben.
 
-**Q: Is there a limit to how many documents I can merge in one batch?**  
-A: No hard limit, but practical limits are defined by available memory and JVM heap size. Use chunked processing for very large sets.
+**K: Van-e korlátja annak, hogy hány dokumentumot egyesíthetek egy kötegben?**
+V: Nincs szigorú korlát, de a gyakorlati korlátokat a rendelkezésre álló memória és a JVM heap mérete határozza meg. Nagyon nagy halmazok esetén használjon darabolt feldolgozást.
 
-**Q: Do I need a separate license for each document in a batch?**  
-A: No. A single valid GroupDocs.Merger license covers all operations performed by the library within your application.
+**K: Szükségem van külön licencre minden egyes dokumentumhoz egy kötegben?**
+V: Nem. Egyetlen érvényes GroupDocs.Merger licenc vonatkozik az alkalmazáson belüli könyvtár által végrehajtott összes műveletre.
 
-**Q: Where can I find more detailed API documentation?**  
-A: Visit the [GroupDocs.Merger Java Docs](https://docs.groupdocs.com/merger/java/) for full reference material.
+**K: Hol találok részletesebb API dokumentációt?**
+V: Látogassa meg a [GroupDocs.Merger Java dokumentációját](https://docs.groupdocs.com/merger/java/) a teljes referenciaanyagért.
 
-## Resources
+## Források
 
-- **Documentation:** [GroupDocs.Merger Java Docs](https://docs.groupdocs.com/merger/java/)  
-- **API Reference:** [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)  
-- **Download:** [Latest Releases](https://releases.groupdocs.com/merger/java/)  
-- **Purchase:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)  
-- **Free Trial:** [Start a Free Trial](https://releases.groupdocs.com/merger/java/)  
-- **Temporary License:** [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-- **Support:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/)
+- **Dokumentáció:** [GroupDocs.Merger Java dokumentáció](https://docs.groupdocs.com/merger/java/)
+- **API referencia:** [GroupDocs API referencia](https://reference.groupdocs.com/merger/java/)
+- **Letöltés:** [Legújabb kiadások](https://releases.groupdocs.com/merger/java/)
+- **Vásárlás:** [GroupDocs licenc vásárlása](https://purchase.groupdocs.com/buy)
+- **Ingyenes próba:** [Ingyenes próba indítása](https://releases.groupdocs.com/merger/java/)
+- **Ideiglenes licenc:** [Ideiglenes licenc igénylése](https://purchase.groupdocs.com/temporary-license/)
+- **Támogatás:** [GroupDocs támogatási fórum](https://forum.groupdocs.com/c/merger/)
 
 ---
 
-**Last Updated:** 2026-01-13  
-**Tested With:** GroupDocs.Merger 23.10 (latest at time of writing)  
-**Author:** GroupDocs  
+**Utolsó frissítés:** 2026-01-13
+**Tesztelve:** GroupDocs.Merger 23.10 (a legújabb verzió az írás idején)
+**Szerző:** GroupDocs  
 
 ---

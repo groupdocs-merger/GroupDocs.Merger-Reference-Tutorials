@@ -6,7 +6,7 @@ keywords:
 - join documents with GroupDocs.Merger for Java
 - GroupDocs.Merger document merging in Java
 - how to use GroupDocs.Merger for Java
-title: 'Как объединить PDF с помощью Java, используя GroupDocs.Merger: Полное руководство'
+title: 'Как объединить PDF с помощью Java, используя GroupDocs.Merger - Полное руководство'
 type: docs
 url: /ru/java/document-joining/join-documents-groupdocs-merger-java/
 weight: 1
@@ -187,12 +187,6 @@ GroupDocs.Merger for Java проявляет себя в реальных про
 
 **Следующие шаги:** Попробуйте объединять документы в веб‑службе или изучите дополнительные возможности в официальной [GroupDocs documentation](https://docs.groupdocs.com/merger/java/).
 
----
-
-**Последнее обновление:** 2026-01-13  
-**Тестировано с:** последняя версия GroupDocs.Merger (по состоянию на 2026)  
-**Автор:** GroupDocs  
-
 ## Ресурсы
 Изучайте дальше с этими ресурсами:
 - [Документация](https://docs.groupdocs.com/merger/java/)
@@ -202,5 +196,11 @@ GroupDocs.Merger for Java проявляет себя в реальных про
 - [Бесплатная пробная версия](https://releases.groupdocs.com/merger/java/)
 - [Заявка на временную лицензию](https://purchase.groupdocs.com/temporary-license/)
 - [Форум поддержки](https://forum.groupdocs.com/c/merger/)
+
+---
+
+**Последнее обновление:** 2026-01-13  
+**Тестировано с:** последняя версия GroupDocs.Merger (по состоянию на 2026)  
+**Автор:** GroupDocs  
 
 ---

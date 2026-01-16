@@ -6,7 +6,7 @@ keywords:
 - join documents with GroupDocs.Merger for Java
 - GroupDocs.Merger document merging in Java
 - how to use GroupDocs.Merger for Java
-title: 'วิธีรวมไฟล์ PDF ด้วย Java โดยใช้ GroupDocs.Merger: คู่มือฉบับสมบูรณ์'
+title: 'วิธีรวมไฟล์ PDF ด้วย Java โดยใช้ GroupDocs.Merger - คู่มือฉบับสมบูรณ์'
 type: docs
 url: /th/java/document-joining/join-documents-groupdocs-merger-java/
 weight: 1
@@ -185,12 +185,6 @@ A: แน่นอน. สร้างสตริง `outputPath` ในขณ�
 
 **Next Steps:** ลองรวมเอกสารในเว็บเซอร์วิส, หรือสำรวจฟีเจอร์เพิ่มเติมใน [GroupDocs documentation](https://docs.groupdocs.com/merger/java/) อย่างเป็นทางการ  
 
----
-
-**Last Updated:** 2026-01-13  
-**Tested With:** GroupDocs.Merger เวอร์ชันล่าสุด (ณ ปี 2026)  
-**Author:** GroupDocs  
-
 ## แหล่งข้อมูล
 สำรวจเพิ่มเติมด้วยแหล่งข้อมูลเหล่านี้:
 - [Documentation](https://docs.groupdocs.com/merger/java/)
@@ -200,5 +194,11 @@ A: แน่นอน. สร้างสตริง `outputPath` ในขณ�
 - [Free Trial](https://releases.groupdocs.com/merger/java/)
 - [Temporary License Application](https://purchase.groupdocs.com/temporary-license/)
 - [Support Forum](https://forum.groupdocs.com/c/merger/)
+
+---
+
+**Last Updated:** 2026-01-13  
+**Tested With:** GroupDocs.Merger เวอร์ชันล่าสุด (ณ ปี 2026)  
+**Author:** GroupDocs  
 
 ---

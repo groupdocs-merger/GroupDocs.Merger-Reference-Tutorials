@@ -9,7 +9,7 @@ keywords:
 - Java
 - LoadOptions
 - document handling
-title: 'معالجة دفعية للمستندات: تحميل الملفات المحمية بكلمة مرور باستخدام GroupDocs.Merger
+title: 'معالجة دفعية للمستندات - تحميل الملفات المحمية بكلمة مرور باستخدام GroupDocs.Merger
   لجافا'
 type: docs
 url: /ar/java/document-loading/load-password-protected-docs-groupdocs-java/

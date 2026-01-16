@@ -5,7 +5,7 @@ keywords:
 - join documents with GroupDocs.Merger for Java
 - GroupDocs.Merger document merging in Java
 - how to use GroupDocs.Merger for Java
-title: 使用 GroupDocs.Merger 在 Java 中合并 PDF：完整指南
+title: 使用 GroupDocs.Merger 在 Java 中合并 PDF - 完整指南
 type: docs
 url: /zh/java/document-joining/join-documents-groupdocs-merger-java/
 weight: 1
@@ -186,12 +186,6 @@ A: 完全可以。运行时使用时间戳、用户 ID 或其他变量构建 `ou
 
 **后续步骤：** 在 Web 服务中尝试合并文档，或在官方 [GroupDocs 文档](https://docs.groupdocs.com/merger/java/) 中探索更多功能。
 
----
-
-**最后更新：** 2026-01-13  
-**测试环境：** GroupDocs.Merger 最新版本（截至 2026）  
-**作者：** GroupDocs  
-
 ## 资源
 进一步了解以下资源：
 - [Documentation](https://docs.groupdocs.com/merger/java/)
@@ -201,3 +195,9 @@ A: 完全可以。运行时使用时间戳、用户 ID 或其他变量构建 `ou
 - [Free Trial](https://releases.groupdocs.com/merger/java/)
 - [Temporary License Application](https://purchase.groupdocs.com/temporary-license/)
 - [Support Forum](https://forum.groupdocs.com/c/merger/)
+
+---
+
+**最后更新：** 2026-01-13  
+**测试环境：** GroupDocs.Merger 最新版本（截至 2026）  
+**作者：** GroupDocs  

@@ -8,7 +8,7 @@ keywords:
 - Java
 - LoadOptions
 - document handling
-title: '문서 일괄 처리: GroupDocs.Merger for Java를 사용하여 비밀번호 보호 파일 로드'
+title: '문서 일괄 처리 - GroupDocs.Merger for Java를 사용하여 비밀번호 보호 파일 로드'
 type: docs
 url: /ko/java/document-loading/load-password-protected-docs-groupdocs-java/
 weight: 1
@@ -63,13 +63,13 @@ implementation 'com.groupdocs:groupdocs-merger:latest-version'
 **Direct Download:**  
 직접 다운로드는 [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/)에서 최신 버전을 확인하세요.
 
-### License Acquisition
+### 라이선스 취득
 
-1. **Free Trial** – [GroupDocs 다운로드 페이지](https://releases.groupdocs.com/merger/java/)에서 무료 체험판을 시작합니다.  
-2. **Temporary License** – 확장 테스트를 위해 [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/)에서 발급받습니다.  
-3. **Purchase** – 전체 기능 및 지원을 위해 [GroupDocs Purchase page](https://purchase.groupdocs.com/buy)에서 라이선스를 구매합니다.
+1. **무료 평가판** – [GroupDocs 다운로드 페이지](https://releases.groupdocs.com/merger/java/)에서 무료 체험판을 시작합니다.
+2. **임시 라이선스** – 확장 테스트를 위해 [GroupDocs 임시 라이선스](https://purchase.groupdocs.com/temporary-license/)에서 발급받습니다.
+3. **구매** – 전체 기능 지원을 위해 [GroupDocs 구매 페이지](https://purchase.groupdocs.com/buy)에서 인스턴스를 구매합니다.
 
-### Basic Initialization
+### 기본 초기화
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -116,28 +116,28 @@ class Constants {
 
 ### 예시 배치 워크플로 (개념)
 
-1. **Collect** 모든 보호된 파일 경로를 `List<String>`에 수집합니다.  
-2. **Loop** 리스트를 순회하면서 각 파일에 대해 자체 `LoadOptions`를 사용해 `Merger` 인스턴스를 생성합니다.  
-3. **Add** 각 `Merger` 인스턴스를 마스터 병합 작업(`Merger.merge(...)`)에 추가합니다.  
-4. **Dispose** 처리 후 각 `Merger`를 닫아 메모리를 해제합니다.
+1. **수집** 모든 보호된 파일 경로를 `List<String>`에 수집합니다.
+2. **Loop** 리스트를 초기화하면서 각 파일에 대해 자체 `LoadOptions`를 실행하여 `Merger`를 생성합니다.
+3. **추가** `Merger`자동 각 마스터 포트(`Merger.merge(...)`)에 추가합니다.
+4. **Dispose** 처리 후 각 `Merger`를 닫아 메모리를 떼어냅니다.
 
-> **Pro tip:** 루프를 try‑with‑resources 블록으로 감싸거나 명시적으로 `merger.close()`를 호출해 리소스가 즉시 해제되도록 합니다.
+> **프로 팁:** 루프를 try-with-resources 블록으로 수용하거나 가족적으로 `merger.close()`를 호출해 즉시 휴가를 보내야 합니다.
 
-## Practical Applications
+## 실제 적용
 
-1. **Document Merging:** 수십 개의 비밀번호 보호 계약서를 하나의 마스터 파일로 결합합니다.  
-2. **Page Reordering:** 잠금을 영구적으로 해제하지 않고도 여러 보안 PDF의 페이지 순서를 재배열합니다.  
-3. **Metadata Editing:** 비밀번호를 한 번 제공한 뒤 저자나 제목 필드를 업데이트합니다.  
+1. **문서 병합:** 보안 검색 보안 계약 하나의 마스터 파일로 참여합니다.
+2. **페이지 재정렬:** 잠금을 해제하여 떠나지 않고 다양한 보안 PDF의 페이지를 정렬합니다.
+3. **메타데이터 편집:** 포스틱을 한 번 제공한 뒤 저자 제목 필드를 업데이트합니다.
 
-GroupDocs.Merger를 클라우드 스토리지(AWS S3, Azure Blob 등)와 연동하면 보호된 파일을 가져와 일괄 처리하고 결과를 다시 업로드할 수 있습니다—모두 프로그래밍 방식으로 수행됩니다.
+GroupDocs.Merger를 클라우드 스토리지(AWS S3, Azure Blob 등)와 캐스팅하면 보호된 파일을 변환하고 결과를 다시 업로드할 수 있습니다. 모두 프로그래밍 방식으로 작업됩니다.
 
-## 대규모 배치를 위한 Performance Considerations
+성능 고려 사항
 
-- **Memory Management:** 작업이 끝난 각 `Merger` 객체를 반드시 닫습니다.  
-- **Batch Size:** 파일을 청크(예: 50‑100 문서) 단위로 처리해 JVM 힙이 과부하되지 않도록 합니다.  
-- **Parallelism:** Java `ExecutorService`를 활용해 독립적인 병합 작업을 동시에 실행하되 CPU 사용량을 모니터링합니다.
+- **메모리 관리:** 작업이 완료되면 `Merger`가 완료됩니다.
+- **배치 크기:** 파일을 청크(예: 50‑100 문서) 기본적으로 처리해 JVM 힙이 지원되지 않도록 합니다.
+- **병렬성:** Java `ExecutorService`를 활용해 확장 처리 작업을 동시에 실행하는 CPU 문제를 검토합니다.
 
-## Frequently Asked Questions
+## 자주 묻는 질문
 
 **Q: PDF, DOCX, XLSX 등 서로 다른 파일 형식을 함께 배치 처리할 수 있나요?**  
 A: 예. GroupDocs.Merger는 다양한 포맷을 지원하므로 각 파일에 맞는 `LoadOptions`만 제공하면 됩니다.
@@ -154,7 +154,7 @@ A: 아니요. 유효한 GroupDocs.Merger 라이선스 하나면 애플리케이�
 **Q: 자세한 API 문서는 어디서 찾을 수 있나요?**  
 A: 전체 레퍼런스는 [GroupDocs.Merger Java Docs](https://docs.groupdocs.com/merger/java/)를 방문하세요.
 
-## Resources
+## 자원
 
 - **Documentation:** [GroupDocs.Merger Java Docs](https://docs.groupdocs.com/merger/java/)  
 - **API Reference:** [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)  
@@ -166,6 +166,6 @@ A: 전체 레퍼런스는 [GroupDocs.Merger Java Docs](https://docs.groupdocs.co
 
 ---
 
-**Last Updated:** 2026-01-13  
-**Tested With:** GroupDocs.Merger 23.10 (latest at time of writing)  
-**Author:** GroupDocs
+**최종 업데이트:** 2026년 1월 13일
+**테스트 환경:** GroupDocs.Merger 23.10 (작성 시점 기준 최신 버전)
+**작성자:** GroupDocs

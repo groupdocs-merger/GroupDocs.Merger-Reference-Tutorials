@@ -9,7 +9,7 @@ keywords:
 - Java
 - LoadOptions
 - document handling
-title: 'Xử lý hàng loạt tài liệu: Tải các tệp được bảo vệ bằng mật khẩu với GroupDocs.Merger
+title: 'Xử lý hàng loạt tài liệu - Tải các tệp được bảo vệ bằng mật khẩu với GroupDocs.Merger
   cho Java'
 type: docs
 url: /vi/java/document-loading/load-password-protected-docs-groupdocs-java/

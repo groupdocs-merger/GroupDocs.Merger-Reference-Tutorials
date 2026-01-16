@@ -7,7 +7,7 @@ keywords:
 - Java
 - LoadOptions
 - document handling
-title: 批量處理文件：使用 GroupDocs.Merger for Java 載入受密碼保護的檔案
+title: 批量處理文件 - 使用 GroupDocs.Merger for Java 載入受密碼保護的檔案
 type: docs
 url: /zh-hant/java/document-loading/load-password-protected-docs-groupdocs-java/
 weight: 1

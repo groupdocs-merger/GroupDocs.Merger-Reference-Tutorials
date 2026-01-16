@@ -9,7 +9,7 @@ keywords:
 - Java
 - LoadOptions
 - document handling
-title: 'Toplu Belge İşleme: GroupDocs.Merger for Java ile Şifre Koruması Olan Dosyaları
+title: 'Toplu Belge İşleme - GroupDocs.Merger for Java ile Şifre Koruması Olan Dosyaları
   Yükle'
 type: docs
 url: /tr/java/document-loading/load-password-protected-docs-groupdocs-java/

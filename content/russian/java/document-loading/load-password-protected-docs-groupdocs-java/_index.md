@@ -9,7 +9,7 @@ keywords:
 - Java
 - LoadOptions
 - document handling
-title: 'Пакетная обработка документов: загрузка файлов, защищённых паролем, с помощью
+title: 'Пакетная обработка документов - загрузка файлов, защищённых паролем, с помощью
   GroupDocs.Merger для Java'
 type: docs
 url: /ru/java/document-loading/load-password-protected-docs-groupdocs-java/

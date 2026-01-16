@@ -7,7 +7,7 @@ keywords:
 - join documents with GroupDocs.Merger for Java
 - GroupDocs.Merger document merging in Java
 - how to use GroupDocs.Merger for Java
-title: 'Πώς να συγχωνεύσετε PDF με Java χρησιμοποιώντας το GroupDocs.Merger: Ένας
+title: 'Πώς να συγχωνεύσετε PDF με Java χρησιμοποιώντας το GroupDocs.Merger - Ένας
   πλήρης οδηγός'
 type: docs
 url: /el/java/document-joining/join-documents-groupdocs-merger-java/
@@ -188,12 +188,6 @@ mergerPdf.save(outputFile.getPath());
 
 **Επόμενα Βήματα:** Δοκιμάστε τη συγχώνευση εγγράφων σε μια υπηρεσία web, ή εξερευνήστε πρόσθετες δυνατότητες στην επίσημη [τεκμηρίωση GroupDocs](https://docs.groupdocs.com/merger/java/).
 
----
-
-**Τελευταία Ενημέρωση:** 2026-01-13  
-**Δοκιμή Με:** Τελευταία έκδοση GroupDocs.Merger (ως του 2026)  
-**Συγγραφέας:** GroupDocs  
-
 ## Πόροι
 Εξερευνήστε περαιτέρω με αυτούς τους πόρους:
 
@@ -204,3 +198,9 @@ mergerPdf.save(outputFile.getPath());
 - [Δωρεάν Δοκιμή](https://releases.groupdocs.com/merger/java/)
 - [Αίτηση για Προσωρινή Άδεια](https://purchase.groupdocs.com/temporary-license/)
 - [Φόρουμ Υποστήριξης](https://forum.groupdocs.com/c/merger/)
+
+---
+
+**Τελευταία Ενημέρωση:** 2026-01-13  
+**Δοκιμή Με:** Τελευταία έκδοση GroupDocs.Merger (ως του 2026)  
+**Συγγραφέας:** GroupDocs  

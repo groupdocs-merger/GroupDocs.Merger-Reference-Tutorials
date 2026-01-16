@@ -9,7 +9,7 @@ keywords:
 - Java
 - LoadOptions
 - document handling
-title: 'Επεξεργασία εγγράφων σε δέσμη: Φόρτωση αρχείων προστατευμένων με κωδικό με
+title: 'Επεξεργασία εγγράφων σε δέσμη - Φόρτωση αρχείων προστατευμένων με κωδικό με
   το GroupDocs.Merger για Java'
 type: docs
 url: /el/java/document-loading/load-password-protected-docs-groupdocs-java/

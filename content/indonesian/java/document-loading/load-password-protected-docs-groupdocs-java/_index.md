@@ -9,7 +9,7 @@ keywords:
 - Java
 - LoadOptions
 - document handling
-title: 'Proses Batch Dokumen: Memuat File yang Dilindungi Kata Sandi dengan GroupDocs.Merger
+title: 'Proses Batch Dokumen - Memuat File yang Dilindungi Kata Sandi dengan GroupDocs.Merger
   untuk Java'
 type: docs
 url: /id/java/document-loading/load-password-protected-docs-groupdocs-java/

@@ -9,7 +9,7 @@ keywords:
 - Java
 - LoadOptions
 - document handling
-title: 'Traitement par lots de documents : charger des fichiers protégés par mot de
+title: 'Traitement par lots de documents - charger des fichiers protégés par mot de
   passe avec GroupDocs.Merger pour Java'
 type: docs
 url: /fr/java/document-loading/load-password-protected-docs-groupdocs-java/

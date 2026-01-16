@@ -1,5 +1,5 @@
 ---
-title: "How to Merge PDF with Java Using GroupDocs.Merger: A Complete Guide"
+title: "How to Merge PDF with Java Using GroupDocs.Merger - A Complete Guide"
 description: "Learn how to merge PDF with Java using GroupDocs.Merger, and also combine Excel sheets java. Step‑by‑step setup, code samples, and best practices."
 date: "2026-01-13"
 weight: 1
@@ -186,12 +186,6 @@ You’ve now mastered how to **merge PDF with Java** using GroupDocs.Merger, and
 
 **Next Steps:** Try merging documents in a web service, or explore additional features in the official [GroupDocs documentation](https://docs.groupdocs.com/merger/java/).
 
----
-
-**Last Updated:** 2026-01-13  
-**Tested With:** GroupDocs.Merger latest version (as of 2026)  
-**Author:** GroupDocs  
-
 ## Resources
 Explore further with these resources:
 - [Documentation](https://docs.groupdocs.com/merger/java/)
@@ -201,5 +195,11 @@ Explore further with these resources:
 - [Free Trial](https://releases.groupdocs.com/merger/java/)
 - [Temporary License Application](https://purchase.groupdocs.com/temporary-license/)
 - [Support Forum](https://forum.groupdocs.com/c/merger/)
+
+---
+
+**Last Updated:** 2026-01-13  
+**Tested With:** GroupDocs.Merger latest version (as of 2026)  
+**Author:** GroupDocs  
 
 ---

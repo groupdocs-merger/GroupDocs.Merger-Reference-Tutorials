@@ -7,7 +7,7 @@ keywords:
 - join documents with GroupDocs.Merger for Java
 - GroupDocs.Merger document merging in Java
 - how to use GroupDocs.Merger for Java
-title: 'Cách hợp nhất PDF bằng Java sử dụng GroupDocs.Merger: Hướng dẫn toàn diện'
+title: 'Cách hợp nhất PDF bằng Java sử dụng GroupDocs.Merger - Hướng dẫn toàn diện'
 type: docs
 url: /vi/java/document-joining/join-documents-groupdocs-merger-java/
 weight: 1
@@ -188,12 +188,6 @@ Bạn đã nắm vững cách **merge PDF with Java** bằng GroupDocs.Merger, v
 
 **Bước tiếp theo:** Thử gộp tài liệu trong một dịch vụ web, hoặc khám phá các tính năng bổ sung trong [tài liệu chính thức của GroupDocs](https://docs.groupdocs.com/merger/java/).
 
----
-
-**Cập nhật lần cuối:** 2026-01-13  
-**Kiểm tra với:** GroupDocs.Merger latest version (as of 2026)  
-**Tác giả:** GroupDocs  
-
 ## Tài nguyên
 Khám phá thêm với các tài nguyên sau:
 - [Tài liệu](https://docs.groupdocs.com/merger/java/)
@@ -203,3 +197,9 @@ Khám phá thêm với các tài nguyên sau:
 - [Dùng thử miễn phí](https://releases.groupdocs.com/merger/java/)
 - [Đăng ký giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/)
 - [Diễn đàn hỗ trợ](https://forum.groupdocs.com/c/merger/)
+
+---
+
+**Cập nhật lần cuối:** 2026-01-13  
+**Kiểm tra với:** GroupDocs.Merger latest version (as of 2026)  
+**Tác giả:** GroupDocs  

@@ -7,7 +7,7 @@ keywords:
 - Java
 - LoadOptions
 - document handling
-title: ドキュメントのバッチ処理：GroupDocs.Merger for Javaでパスワード保護されたファイルを読み込む
+title: ドキュメントのバッチ処理 - GroupDocs.Merger for Javaでパスワード保護されたファイルを読み込む
 type: docs
 url: /ja/java/document-loading/load-password-protected-docs-groupdocs-java/
 weight: 1

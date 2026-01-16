@@ -9,7 +9,7 @@ keywords:
 - Java
 - LoadOptions
 - document handling
-title: 'Przetwarzanie wsadowe dokumentów: Ładowanie plików chronionych hasłem przy
+title: 'Przetwarzanie wsadowe dokumentów - Ładowanie plików chronionych hasłem przy
   użyciu GroupDocs.Merger dla Javy'
 type: docs
 url: /pl/java/document-loading/load-password-protected-docs-groupdocs-java/

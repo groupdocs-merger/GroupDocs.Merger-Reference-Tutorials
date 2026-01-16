@@ -9,7 +9,7 @@ keywords:
 - Java
 - LoadOptions
 - document handling
-title: 'बैच प्रोसेस दस्तावेज़: GroupDocs.Merger for Java के साथ पासवर्ड‑सुरक्षित फ़ाइलें
+title: 'बैच प्रोसेस दस्तावेज़ - GroupDocs.Merger for Java के साथ पासवर्ड‑सुरक्षित फ़ाइलें
   लोड करें'
 type: docs
 url: /hi/java/document-loading/load-password-protected-docs-groupdocs-java/

@@ -9,7 +9,7 @@ keywords:
 - Java
 - LoadOptions
 - document handling
-title: 'Batchverwerking van documenten: Laad met wachtwoord beveiligde bestanden met
+title: 'Batchverwerking van documenten - Laad met wachtwoord beveiligde bestanden met
   GroupDocs.Merger voor Java'
 type: docs
 url: /nl/java/document-loading/load-password-protected-docs-groupdocs-java/

@@ -1,5 +1,5 @@
 ---
-title: "Batch Process Documents: Load Password-Protected Files with GroupDocs.Merger for Java"
+title: "Batch Process Documents - Load Password-Protected Files with GroupDocs.Merger for Java"
 description: "Learn how to batch process documents and load password-protected files in Java using GroupDocs.Merger. Follow this step-by-step guide to enhance your document management workflow."
 date: "2026-01-13"
 weight: 1
