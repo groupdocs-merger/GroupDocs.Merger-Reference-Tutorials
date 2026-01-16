@@ -150,12 +150,6 @@ A: Eén licentie dekt onbeperkte implementaties zolang u zich aan de licentievoo
 ## Conclusion
 U heeft nu een solide basis voor **load local document java**‑operaties met GroupDocs.Merger. Van het instellen van de afhankelijkheid tot het oplossen van veelvoorkomende valkuilen, deze gids rust u uit om documentmanipulatie naadloos in elke Java‑applicatie te integreren. Klaar voor de volgende stap? Probeer twee PDF's samen te voegen of specifieke pagina's te extraheren — uw workflow‑automatiseringsreis begint hier.
 
----
-
-**Last Updated:** 2026-01-11  
-**Tested With:** GroupDocs.Merger nieuwste versie (vanaf 2026)  
-**Author:** GroupDocs  
-
 **Resources**  
 - [Documentatie](https://docs.groupdocs.com/merger/java/)  
 - [API‑referentie](https://reference.groupdocs.com/merger/java/)  
@@ -164,3 +158,9 @@ U heeft nu een solide basis voor **load local document java**‑operaties met Gr
 - [Gratis proefversie](https://releases.groupdocs.com/merger/java/)  
 - [Tijdelijke licentie](https://purchase.groupdocs.com/temporary-license/)  
 - [Ondersteuning](https://forum.groupdocs.com/c/merger/)
+
+---
+
+**Last Updated:** 2026-01-11  
+**Tested With:** GroupDocs.Merger nieuwste versie (vanaf 2026)  
+**Author:** GroupDocs  

@@ -150,12 +150,6 @@ A: 一份授權即可支援無限制部署，只要遵守授權條款即可。
 ## 結論
 您現在已具備使用 GroupDocs.Merger 進行 **load local document java** 操作的堅實基礎。從設定相依性到排除常見問題，本指南讓您能將文件操作無縫整合至任何 Java 應用程式。準備好下一步了嗎？試著合併兩個 PDF 或抽取特定頁面——您的工作流程自動化之旅即將展開。
 
----
-
-**最後更新：** 2026-01-11  
-**測試環境：** GroupDocs.Merger 最新版本（截至 2026）  
-**作者：** GroupDocs  
-
 **資源**  
 - [文件說明](https://docs.groupdocs.com/merger/java/)  
 - [API 參考](https://reference.groupdocs.com/merger/java/)  
@@ -164,3 +158,9 @@ A: 一份授權即可支援無限制部署，只要遵守授權條款即可。
 - [免費試用](https://releases.groupdocs.com/merger/java/)  
 - [臨時授權](https://purchase.groupdocs.com/temporary-license/)  
 - [支援](https://forum.groupdocs.com/c/merger/)
+
+---
+
+**最後更新：** 2026-01-11  
+**測試環境：** GroupDocs.Merger 最新版本（截至 2026）  
+**作者：** GroupDocs  

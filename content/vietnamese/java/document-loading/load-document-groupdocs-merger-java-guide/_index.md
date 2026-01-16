@@ -152,12 +152,6 @@ A: Một giấy phép bao phủ mọi triển khai không giới hạn miễn l�
 ## Kết luận
 Bạn đã có nền tảng vững chắc để thực hiện các thao tác **load local document java** bằng GroupDocs.Merger. Từ việc cài đặt phụ thuộc đến khắc phục các lỗi thường gặp, hướng dẫn này trang bị cho bạn khả năng tích hợp thao tác tài liệu một cách liền mạch vào bất kỳ ứng dụng Java nào. Sẵn sàng cho bước tiếp theo? Hãy thử hợp nhất hai PDF hoặc trích xuất các trang cụ thể—hành trình tự động hoá quy trình làm việc của bạn bắt đầu ngay tại đây.
 
----
-
-**Cập nhật lần cuối:** 2026-01-11  
-**Kiểm tra với:** GroupDocs.Merger phiên bản mới nhất (tính đến 2026)  
-**Tác giả:** GroupDocs  
-
 **Tài nguyên**  
 - [Documentation](https://docs.groupdocs.com/merger/java/)  
 - [API Reference](https://reference.groupdocs.com/merger/java/)  
@@ -166,3 +160,9 @@ Bạn đã có nền tảng vững chắc để thực hiện các thao tác **l
 - [Free Trial](https://releases.groupdocs.com/merger/java/)  
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)  
 - [Support](https://forum.groupdocs.com/c/merger/)
+
+---
+
+**Cập nhật lần cuối:** 2026-01-11  
+**Kiểm tra với:** GroupDocs.Merger phiên bản mới nhất (tính đến 2026)  
+**Tác giả:** GroupDocs  

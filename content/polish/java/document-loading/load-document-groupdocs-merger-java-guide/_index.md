@@ -151,12 +151,6 @@ A: Jedna licencja obejmuje nieograniczoną liczbę wdrożeń, pod warunkiem prze
 ## Zakończenie
 Masz teraz solidne podstawy do operacji **load local document java** przy użyciu GroupDocs.Merger. Od konfiguracji zależności po rozwiązywanie typowych problemów, ten przewodnik umożliwia płynną integrację manipulacji dokumentami w dowolnej aplikacji Java. Gotowy na kolejny krok? Spróbuj połączyć dwa pliki PDF lub wyodrębnić konkretne strony — Twoja podróż w automatyzacji przepływu pracy zaczyna się tutaj.
 
----
-
-**Ostatnia aktualizacja:** 2026-01-11  
-**Testowano z:** GroupDocs.Merger najnowsza wersja (stan na 2026)  
-**Autor:** GroupDocs  
-
 ## Zasoby
 - [Dokumentacja](https://docs.groupdocs.com/merger/java/)  
 - [Referencja API](https://reference.groupdocs.com/merger/java/)  
@@ -165,3 +159,9 @@ Masz teraz solidne podstawy do operacji **load local document java** przy użyci
 - [Bezpłatna wersja próbna](https://releases.groupdocs.com/merger/java/)  
 - [Licencja tymczasowa](https://purchase.groupdocs.com/temporary-license/)  
 - [Wsparcie](https://forum.groupdocs.com/c/merger/)
+
+---
+
+**Ostatnia aktualizacja:** 2026-01-11  
+**Testowano z:** GroupDocs.Merger najnowsza wersja (stan na 2026)  
+**Autor:** GroupDocs  

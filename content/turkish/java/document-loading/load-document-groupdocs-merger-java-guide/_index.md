@@ -156,12 +156,6 @@ C: Tek bir lisans, lisans koşullarına uyduğunuz sürece sınırsız dağıtı
 ## Sonuç
 Artık GroupDocs.Merger kullanarak **load local document java** işlemleri için sağlam bir temele sahipsiniz. Bağımlılığı kurmaktan yaygın sorunları gidermeye kadar, bu rehber belge manipülasyonunu herhangi bir Java uygulamasına sorunsuz bir şekilde entegre etmenizi sağlar. Bir sonraki adıma hazır mısınız? İki PDF'yi birleştirmeyi veya belirli sayfaları çıkarmayı deneyin—iş akışı otomasyon yolculuğunuz burada başlıyor.
 
----
-
-**Son Güncelleme:** 2026-01-11  
-**Test Edilen Versiyon:** GroupDocs.Merger en son sürüm (2026 itibarıyla)  
-**Yazar:** GroupDocs  
-
 **Kaynaklar**  
 - [Dokümantasyon](https://docs.groupdocs.com/merger/java/)  
 - [API Referansı](https://reference.groupdocs.com/merger/java/)  
@@ -170,3 +164,9 @@ Artık GroupDocs.Merger kullanarak **load local document java** işlemleri için
 - [Ücretsiz Deneme](https://releases.groupdocs.com/merger/java/)  
 - [Geçici Lisans](https://purchase.groupdocs.com/temporary-license/)  
 - [Destek](https://forum.groupdocs.com/c/merger/)
+
+---
+
+**Son Güncelleme:** 2026-01-11  
+**Test Edilen Versiyon:** GroupDocs.Merger en son sürüm (2026 itibarıyla)  
+**Yazar:** GroupDocs  

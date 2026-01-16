@@ -152,12 +152,6 @@ A: Satu lisensi mencakup penyebaran tak terbatas selama Anda mematuhi ketentuan 
 ## Kesimpulan
 Anda kini memiliki fondasi yang kuat untuk operasi **load local document java** menggunakan GroupDocs.Merger. Dari menyiapkan dependensi hingga memecahkan masalah umum, panduan ini mempersiapkan Anda untuk mengintegrasikan manipulasi dokumen secara mulus ke dalam aplikasi Java apa pun. Siap untuk langkah berikutnya? Cobalah menggabungkan dua PDF atau mengekstrak halaman tertentu—perjalanan otomatisasi alur kerja Anda dimulai di sini.
 
----
-
-**Terakhir Diperbarui:** 2026-01-11  
-**Diuji Dengan:** GroupDocs.Merger latest version (as of 2026)  
-**Penulis:** GroupDocs  
-
 **Sumber Daya**  
 - [Dokumentasi](https://docs.groupdocs.com/merger/java/)  
 - [Referensi API](https://reference.groupdocs.com/merger/java/)  
@@ -166,3 +160,9 @@ Anda kini memiliki fondasi yang kuat untuk operasi **load local document java** 
 - [Uji Coba Gratis](https://releases.groupdocs.com/merger/java/)  
 - [Lisensi Sementara](https://purchase.groupdocs.com/temporary-license/)  
 - [Dukungan](https://forum.groupdocs.com/c/merger/)
+
+---
+
+**Terakhir Diperbarui:** 2026-01-11  
+**Diuji Dengan:** GroupDocs.Merger latest version (as of 2026)  
+**Penulis:** GroupDocs  

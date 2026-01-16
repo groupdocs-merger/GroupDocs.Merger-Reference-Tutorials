@@ -150,12 +150,6 @@ Merger merger = new Merger(filePath);
 ## الخلاصة
 أصبح لديك الآن أساس قوي لعمليات **load local document java** باستخدام GroupDocs.Merger. من إعداد الاعتماد إلى استكشاف الأخطاء الشائعة، يزودك هذا الدليل بدمج معالجة المستندات بسلاسة في أي تطبيق Java. هل أنت مستعد للخطوة التالية؟ جرّب دمج ملفين PDF أو استخراج صفحات محددة—رحلة أتمتة سير العمل تبدأ من هنا.
 
----
-
-**آخر تحديث:** 2026-01-11  
-**تم الاختبار مع:** أحدث إصدار من GroupDocs.Merger (حتى 2026)  
-**المؤلف:** GroupDocs  
-
 **الموارد**  
 - [التوثيق](https://docs.groupdocs.com/merger/java/)  
 - [مرجع API](https://reference.groupdocs.com/merger/java/)  
@@ -164,3 +158,9 @@ Merger merger = new Merger(filePath);
 - [إصدار تجريبي مجاني](https://releases.groupdocs.com/merger/java/)  
 - [ترخيص مؤقت](https://purchase.groupdocs.com/temporary-license/)  
 - [الدعم](https://forum.groupdocs.com/c/merger/)
+
+---
+
+**آخر تحديث:** 2026-01-11  
+**تم الاختبار مع:** أحدث إصدار من GroupDocs.Merger (حتى 2026)  
+**المؤلف:** GroupDocs  

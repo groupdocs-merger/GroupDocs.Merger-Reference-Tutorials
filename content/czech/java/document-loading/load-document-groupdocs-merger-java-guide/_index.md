@@ -152,12 +152,6 @@ A: Jedna licence pokrývá neomezené nasazení, pokud dodržujete licenční po
 ## Závěr
 Nyní máte pevný základ pro operace **load local document java** pomocí GroupDocs.Merger. Od nastavení závislosti po řešení běžných problémů, tento průvodce vás vybaví k bezproblémové integraci manipulace s dokumenty do jakékoli Java aplikace. Připraven na další krok? Vyzkoušejte sloučení dvou PDF nebo extrakci konkrétních stránek—vaše cesta k automatizaci pracovních procesů začíná zde.
 
----
-
-**Poslední aktualizace:** 2026-01-11  
-**Testováno s:** GroupDocs.Merger nejnovější verze (k roku 2026)  
-**Autor:** GroupDocs  
-
 **Zdroje**  
 - [Documentation](https://docs.groupdocs.com/merger/java/)  
 - [API Reference](https://reference.groupdocs.com/merger/java/)  
@@ -166,3 +160,9 @@ Nyní máte pevný základ pro operace **load local document java** pomocí Grou
 - [Free Trial](https://releases.groupdocs.com/merger/java/)  
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)  
 - [Support](https://forum.groupdocs.com/c/merger/)
+
+---
+
+**Poslední aktualizace:** 2026-01-11  
+**Testováno s:** GroupDocs.Merger nejnovější verze (k roku 2026)  
+**Autor:** GroupDocs  

@@ -150,12 +150,6 @@ A: 라이선스 조건을 준수하는 한 하나의 라이선스로 무제한 �
 ## 결론
 이제 GroupDocs.Merger를 사용한 **load local document java** 작업에 대한 탄탄한 기반을 갖추었습니다. 의존성 설정부터 일반적인 문제 해결까지, 이 가이드는 문서 조작을 모든 Java 애플리케이션에 원활히 통합할 수 있도록 도와줍니다. 다음 단계가 준비되셨나요? 두 개의 PDF를 병합하거나 특정 페이지를 추출해 보세요—워크플로 자동화 여정이 여기서 시작됩니다.
 
----
-
-**마지막 업데이트:** 2026-01-11  
-**테스트 환경:** GroupDocs.Merger 최신 버전 (2026년 기준)  
-**작성자:** GroupDocs  
-
 **리소스**  
 - [문서](https://docs.groupdocs.com/merger/java/)  
 - [API 레퍼런스](https://reference.groupdocs.com/merger/java/)  
@@ -164,3 +158,9 @@ A: 라이선스 조건을 준수하는 한 하나의 라이선스로 무제한 �
 - [무료 체험](https://releases.groupdocs.com/merger/java/)  
 - [임시 라이선스](https://purchase.groupdocs.com/temporary-license/)  
 - [지원](https://forum.groupdocs.com/c/merger/)
+
+---
+
+**마지막 업데이트:** 2026-01-11  
+**테스트 환경:** GroupDocs.Merger 최신 버전 (2026년 기준)  
+**작성자:** GroupDocs  

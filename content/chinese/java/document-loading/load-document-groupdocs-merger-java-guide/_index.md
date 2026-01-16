@@ -152,12 +152,6 @@ A: 一个许可证可覆盖无限部署，只要遵守许可条款即可。
 ## 结论
 现在，您已经掌握了使用 GroupDocs.Merger 进行 **load local document java** 操作的完整基础。从依赖配置到常见问题排查，本指南帮助您将文档处理无缝集成到任何 Java 应用中。准备好下一步了吗？尝试合并两个 PDF 或提取特定页面——您的工作流自动化之旅从这里开始。
 
----
-
-**最后更新：** 2026-01-11  
-**测试环境：** GroupDocs.Merger 最新版本（截至 2026）  
-**作者：** GroupDocs  
-
 **资源**  
 - [Documentation](https://docs.groupdocs.com/merger/java/)  
 - [API Reference](https://reference.groupdocs.com/merger/java/)  
@@ -166,3 +160,9 @@ A: 一个许可证可覆盖无限部署，只要遵守许可条款即可。
 - [Free Trial](https://releases.groupdocs.com/merger/java/)  
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)  
 - [Support](https://forum.groupdocs.com/c/merger/)
+
+---
+
+**最后更新：** 2026-01-11  
+**测试环境：** GroupDocs.Merger 最新版本（截至 2026）  
+**作者：** GroupDocs  

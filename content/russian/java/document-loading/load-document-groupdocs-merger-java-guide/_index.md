@@ -153,12 +153,6 @@ When handling big files:
 ## Заключение
 Теперь у вас есть прочная база для операций **load local document java** с использованием GroupDocs.Merger. От настройки зависимости до устранения распространённых проблем, это руководство позволяет вам беспрепятственно интегрировать работу с документами в любое Java‑приложение. Готовы к следующему шагу? Попробуйте объединить два PDF или извлечь определённые страницы — ваше путешествие по автоматизации рабочих процессов начинается здесь.
 
----
-
-**Последнее обновление:** 2026-01-11  
-**Тестировано с:** GroupDocs.Merger latest version (as of 2026)  
-**Автор:** GroupDocs  
-
 **Ресурсы**  
 - [Документация](https://docs.groupdocs.com/merger/java/)  
 - [Справочник API](https://reference.groupdocs.com/merger/java/)  
@@ -167,3 +161,9 @@ When handling big files:
 - [Бесплатная пробная версия](https://releases.groupdocs.com/merger/java/)  
 - [Временная лицензия](https://purchase.groupdocs.com/temporary-license/)  
 - [Поддержка](https://forum.groupdocs.com/c/merger/)
+
+---
+
+**Последнее обновление:** 2026-01-11  
+**Тестировано с:** GroupDocs.Merger latest version (as of 2026)  
+**Автор:** GroupDocs  

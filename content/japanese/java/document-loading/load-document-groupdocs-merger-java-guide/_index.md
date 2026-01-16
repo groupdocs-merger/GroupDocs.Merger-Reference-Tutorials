@@ -149,12 +149,6 @@ A: ライセンス条項を遵守すれば、1 つのライセンスで無制限
 ## 結論
 これで **load local document java** 操作のための堅実な基盤が整いました。依存関係の設定から一般的な落とし穴のトラブルシューティングまで、このガイドは任意の Java アプリケーションにドキュメント操作をシームレスに統合するための手助けとなります。次のステップに進む準備はできましたか？2 つの PDF をマージしたり、特定のページを抽出したりしてみてください—ワークフロー自動化の旅はここから始まります。
 
----
-
-**最終更新日:** 2026-01-11  
-**テスト環境:** GroupDocs.Merger 最新バージョン（2026 年時点）  
-**作者:** GroupDocs  
-
 **リソース**  
 - [Documentation](https://docs.groupdocs.com/merger/java/)  
 - [API Reference](https://reference.groupdocs.com/merger/java/)  
@@ -163,3 +157,9 @@ A: ライセンス条項を遵守すれば、1 つのライセンスで無制限
 - [Free Trial](https://releases.groupdocs.com/merger/java/)  
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)  
 - [Support](https://forum.groupdocs.com/c/merger/)
+
+---
+
+**最終更新日:** 2026-01-11  
+**テスト環境:** GroupDocs.Merger 最新バージョン（2026 年時点）  
+**作者:** GroupDocs  
