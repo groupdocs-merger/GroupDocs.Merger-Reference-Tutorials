@@ -1,28 +1,29 @@
 ---
-title: "remove pagebreaks merging word with GroupDocs.Merger for Java"
-description: "Learn how to remove pagebreaks merging word documents using GroupDocs.Merger for Java, delivering a seamless continuous flow without extra pages."
-date: "2026-01-16"
-weight: 1
-url: "/java/advanced-joining-options/merge-word-docs-groupdocs-merger-java/"
+date: '2026-01-16'
+description: Aprenda como remover quebras de página ao mesclar documentos Word usando
+  o GroupDocs.Merger para Java, proporcionando um fluxo contínuo sem páginas extras.
 keywords:
 - merge Word documents Java
 - seamlessly merge documents
 - GroupDocs.Merger for Java
+title: Remover quebras de página ao mesclar Word com GroupDocs.Merger para Java
 type: docs
+url: /pt/java/advanced-joining-options/merge-word-docs-groupdocs-merger-java/
+weight: 1
 ---
 
-# remove pagebreaks merging word with GroupDocs.Merger for Java
+# remover quebras de página ao mesclar Word com GroupDocs.Merger para Java
 
-Merging multiple Microsoft Word files while **remove pagebreaks merging word** is a common requirement for reports, proposals, and batch‑generated documents. In this tutorial you’ll see how to combine Word files with GroupDocs.Merger for Java so the content flows continuously—no extra blank pages inserted between sections.
+Mesclar vários arquivos Microsoft Word enquanto **remover quebras de página ao mesclar Word** é uma necessidade comum para relatórios, propostas e documentos gerados em lote. Neste tutorial, você verá como combinar arquivos Word com GroupDocs.Merger para Java para que o conteúdo flua continuamente — sem páginas em branco extras inseridas entre as seções.
 
-**What you’ll learn**
+**O que você aprenderá**
 
-- How to install and configure GroupDocs.Merger for Java  
-- Step‑by‑step code to **remove pagebreaks merging word** documents  
-- Real‑world scenarios where a seamless merge saves time and improves readability  
-- Tips for performance and memory handling  
+- Como instalar e configurar o GroupDocs.Merger para Java  
+- Código passo a passo para **remover quebras de página ao mesclar Word** documentos  
+- Cenários do mundo real onde uma mesclagem contínua economiza tempo e melhora a legibilidade  
+- Dicas para desempenho e gerenciamento de memória  
 
-Let’s make sure you have everything you need before we start.
+Vamos garantir que você tenha tudo o que precisa antes de começarmos.
 
 ## Quick Answers
 - **Can GroupDocs.Merger remove page breaks?** Yes, set `WordJoinMode.Continuous`.  
@@ -32,21 +33,21 @@ Let’s make sure you have everything you need before we start.
 - **Is the output a .doc or .docx file?** The API preserves the original format; you can also specify a new extension.
 
 ## What is “remove pagebreaks merging word”?
-When you join several Word files, the default behavior often inserts a page break between each source document. The **remove pagebreaks merging word** technique tells the merger to treat the documents as a single continuous flow, preserving headings, tables, and styles without unnecessary blank pages.
+Quando você une vários arquivos Word, o comportamento padrão costuma inserir uma quebra de página entre cada documento de origem. A técnica **remover quebras de página ao mesclar Word** indica ao mesclador que trate os documentos como um fluxo único contínuo, preservando títulos, tabelas e estilos sem páginas em branco desnecessárias.
 
 ## Why use GroupDocs.Merger for Java?
-GroupDocs.Merger provides a high‑level API that abstracts the complexity of the Office Open XML format. It handles a wide range of formats, offers fine‑grained join options, and works both on‑premises and in cloud‑native environments.
+GroupDocs.Merger fornece uma API de alto nível que abstrai a complexidade do formato Office Open XML. Ela lida com uma ampla variedade de formatos, oferece opções de junção granulares e funciona tanto on‑premises quanto em ambientes nativos de nuvem.
 
 ## Prerequisites
-- **Java Development Kit (JDK)** – version 8 or newer installed.  
-- **GroupDocs.Merger for Java** – the library (latest version).  
-- Basic familiarity with Java project setup (Maven or Gradle).  
+- **Java Development Kit (JDK)** – versão 8 ou mais recente instalada.  
+- **GroupDocs.Merger for Java** – a biblioteca (versão mais recente).  
+- Familiaridade básica com a configuração de projetos Java (Maven ou Gradle).  
 
 ## Setting Up GroupDocs.Merger for Java
 
-Add the library to your project using one of the snippets below.
+Adicione a biblioteca ao seu projeto usando um dos trechos abaixo.
 
-**Maven**
+**Maven**  
 ```xml
 <dependency>
     <groupId>com.groupdocs</groupId>
@@ -55,20 +56,20 @@ Add the library to your project using one of the snippets below.
 </dependency>
 ```
 
-**Gradle**
+**Gradle**  
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-**Direct Download:** You can also download the JAR from the official release page: [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
+**Direct Download:** Você também pode baixar o JAR na página oficial de lançamentos: [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
 ### License Acquisition
-Start with a free trial to evaluate the API. For production workloads, purchase a license or request a temporary key via the links provided later in this guide.
+Comece com um teste gratuito para avaliar a API. Para cargas de trabalho de produção, adquira uma licença ou solicite uma chave temporária pelos links fornecidos mais adiante neste guia.
 
 ## How to remove pagebreaks merging word documents using GroupDocs.Merger for Java
 
 ### Initializing the Merger Object
-First, create a `Merger` instance that points to the primary document. This object will orchestrate the entire merge process.
+Primeiro, crie uma instância `Merger` que aponte para o documento principal. Esse objeto orquestrará todo o processo de mesclagem.
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -80,7 +81,7 @@ Merger merger = new Merger(sourceDocumentPath1);
 ```
 
 ### Configuring Word Join Options
-The `WordJoinOptions` class lets you control how subsequent files are appended. Set the mode to **Continuous** so no extra page break is added.
+A classe `WordJoinOptions` permite controlar como os arquivos subsequentes são anexados. Defina o modo como **Continuous** para que nenhuma quebra de página extra seja adicionada.
 
 ```java
 // Configure join options
@@ -89,7 +90,7 @@ joinOptions.setMode(WordJoinMode.Continuous); // Ensures no new pages
 ```
 
 ### Merging Additional Documents
-Now add the second (or any subsequent) document using the same `joinOptions`. You can repeat this step for as many files as needed.
+Agora adicione o segundo (ou qualquer outro) documento usando o mesmo `joinOptions`. Você pode repetir esta etapa quantas vezes precisar.
 
 ```java
 String sourceDocumentPath2 = "YOUR_DOCUMENT_DIRECTORY/sample_doc2.doc";
@@ -97,7 +98,7 @@ merger.join(sourceDocumentPath2, joinOptions);
 ```
 
 ### Saving the Merged Document
-Finally, write the combined output to disk. The result will be a single Word file where the content flows directly from the first document to the second.
+Por fim, grave a saída combinada no disco. O resultado será um único arquivo Word onde o conteúdo flui diretamente do primeiro documento para o segundo.
 
 ```java
 String outputDirectory = "YOUR_OUTPUT_DIRECTORY";
@@ -111,7 +112,7 @@ merger.save(outputFile);
 - **Unsupported formats:** Ensure the source files are genuine Word documents (`.doc` or `.docx`).  
 
 ## How to merge word documents java with GroupDocs.Merger
-The steps above already demonstrate the core **merge word documents java** workflow. The key is to reuse the same `Merger` instance and apply `WordJoinOptions` for each additional file. This pattern scales to dozens of documents without changing the code structure.
+Os passos acima já demonstram o fluxo central **merge word documents java**. O ponto chave é reutilizar a mesma instância `Merger` e aplicar `WordJoinOptions` para cada arquivo adicional. Esse padrão escala para dezenas de documentos sem alterar a estrutura do código.
 
 ## Practical Applications
 1. **Annual Report Assembly** – Combine quarterly sections into one continuous report.  
