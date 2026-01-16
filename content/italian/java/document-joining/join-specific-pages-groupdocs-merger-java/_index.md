@@ -145,23 +145,6 @@ In questo tutorial, abbiamo esplorato come **unire pagine specifiche in Java** p
 
 Pronto a fare di più? Esplora funzionalità aggiuntive come la divisione dei documenti, l'applicazione di filigrane o la protezione dei file—tutte disponibili tramite la stessa API robusta.
 
-## Sezione FAQ
-
-**D1: Quali versioni di Java sono compatibili con GroupDocs.Merger per Java?**  
-R1: Si consiglia JDK 8 o superiore per la compatibilità.
-
-**D2: Posso usare GroupDocs.Merger per unire PDF e documenti Word insieme?**  
-R2: Sì, la libreria supporta l'unione di vari formati, inclusi PDF e file Word.
-
-**D3: Esiste un limite al numero di pagine che possono essere unite?**  
-R3: La libreria può gestire documenti di grandi dimensioni; le prestazioni dipendono dalle risorse del sistema.
-
-**D4: Come gestisco gli errori durante il processo di unione?**  
-R4: Implementa la gestione degli errori usando blocchi try‑catch per gestire le eccezioni e garantire un'operazione fluida.
-
-**D5: Dove posso trovare più informazioni sulle funzionalità di GroupDocs.Merger per Java?**  
-R5: Visita la [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/) per guide complete e riferimenti API.
-
 ## Domande frequenti aggiuntive
 
 **D: Posso unire pagine da più di due documenti in un'unica operazione?**  

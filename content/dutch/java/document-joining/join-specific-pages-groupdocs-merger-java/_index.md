@@ -146,23 +146,6 @@ In deze tutorial hebben we laten zien hoe **specifieke pagina's java** moeiteloo
 
 Klaar om verder te gaan? Ontdek extra mogelijkheden zoals het splitsen van documenten, het toepassen van watermerken of het beveiligen van bestanden — allemaal beschikbaar via dezelfde robuuste API.
 
-## FAQ‑sectie
-
-**Q1: Welke Java‑versies zijn compatibel met GroupDocs.Merger voor Java?**  
-A1: JDK 8 of hoger wordt aanbevolen voor compatibiliteit.
-
-**Q2: Kan ik GroupDocs.Merger gebruiken om PDF‑ en Word‑documenten samen te voegen?**  
-A2: Ja, de bibliotheek ondersteunt het samenvoegen van diverse formaten, waaronder PDF‑ en Word‑bestanden.
-
-**Q3: Is er een limiet aan het aantal pagina's dat kan worden samengevoegd?**  
-A3: De bibliotheek kan grote documenten aan; de prestaties hangen af van de systeembronnen.
-
-**Q4: Hoe ga ik om met fouten tijdens het samenvoegen?**  
-A4: Implementeer foutafhandeling met try‑catch‑blokken om uitzonderingen te beheren en een soepele werking te garanderen.
-
-**Q5: Waar vind ik meer informatie over de functionaliteiten van GroupDocs.Merger voor Java?**  
-A5: Bezoek de [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/) voor uitgebreide handleidingen en API‑referenties.
-
 ## Extra veelgestelde vragen
 
 **Q: Kan ik pagina's van meer dan twee documenten in één bewerking samenvoegen?**  

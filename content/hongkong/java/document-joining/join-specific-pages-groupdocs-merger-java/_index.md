@@ -146,23 +146,6 @@ merger.save(outputFilePath); // Store the combined output
 
 想更進一步嗎？探索其他功能，如分割文件、套用浮水印或保護檔案——全部皆可透過同一套強大 API 使用。
 
-## 常見問答
-
-**Q1：哪些 Java 版本與 GroupDocs.Merger for Java 相容？**  
-A1：建議使用 JDK 8 或以上版本以確保相容性。
-
-**Q2：我可以使用 GroupDocs.Merger 同時合併 PDF 與 Word 文件嗎？**  
-A2：可以，該函式庫支援合併多種格式，包括 PDF 與 Word 檔案。
-
-**Q3：合併的頁數有上限嗎？**  
-A3：函式庫可處理大型文件；效能取決於系統資源。
-
-**Q4：合併過程中如何處理錯誤？**  
-A4：使用 try‑catch 區塊實作錯誤處理，以管理例外並確保順利執行。
-
-**Q5：在哪裡可以找到有關 GroupDocs.Merger for Java 功能的更多資訊？**  
-A5：請參閱 [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/) 取得完整指南與 API 參考。
-
 ## 其他常見問答
 
 **Q：我可以在一次操作中合併兩個以上文件的頁面嗎？**  

@@ -145,23 +145,6 @@ Neste tutorial, exploramos como **juntar páginas específicas em Java** pode se
 
 Pronto para avançar? Explore capacidades adicionais como dividir documentos, aplicar marcas d'água ou proteger arquivos — tudo disponível através da mesma API robusta.
 
-## Seção de Perguntas Frequentes (FAQ)
-
-**Q1: Quais versões do Java são compatíveis com o GroupDocs.Merger para Java?**  
-A1: JDK 8 ou superior é recomendado para compatibilidade.
-
-**Q2: Posso usar o GroupDocs.Merger para mesclar PDFs e documentos Word juntos?**  
-A2: Sim, a biblioteca suporta a mesclagem de vários formatos, incluindo PDFs e arquivos Word.
-
-**Q3: Existe um limite no número de páginas que podem ser juntadas?**  
-A3: A biblioteca pode lidar com documentos grandes; o desempenho depende dos recursos do sistema.
-
-**Q4: Como lidar com erros durante o processo de mesclagem?**  
-A4: Implemente tratamento de erros usando blocos try‑catch para gerenciar exceções e garantir operação suave.
-
-**Q5: Onde posso encontrar mais informações sobre os recursos do GroupDocs.Merger para Java?**  
-A5: Visite a [Documentação do GroupDocs](https://docs.groupdocs.com/merger/java/) para guias abrangentes e referências de API.
-
 ## Perguntas Frequentes Adicionais
 
 **Q: Posso juntar páginas de mais de dois documentos em uma única operação?**  

@@ -145,23 +145,6 @@ Dalam tutorial ini, kami mengeksplorasi cara **menggabungkan halaman spesifik ja
 
 Siap melangkah lebih jauh? Jelajahi kemampuan tambahan seperti memisahkan dokumen, menerapkan watermark, atau mengamankan file—semua tersedia melalui API yang sama kuatnya.
 
-## Bagian FAQ
-
-**Q1: Versi Java apa yang kompatibel dengan GroupDocs.Merger untuk Java?**  
-A1: JDK 8 atau lebih tinggi direkomendasikan untuk kompatibilitas.
-
-**Q2: Bisakah saya menggunakan GroupDocs.Merger untuk menggabungkan PDF dan dokumen Word bersama-sama?**  
-A2: Ya, perpustakaan mendukung penggabungan berbagai format termasuk PDF dan file Word.
-
-**Q3: Apakah ada batasan jumlah halaman yang dapat digabungkan?**  
-A3: Perpustakaan dapat menangani dokumen besar; kinerja bergantung pada sumber daya sistem.
-
-**Q4: Bagaimana cara menangani kesalahan selama proses penggabungan?**  
-A4: Terapkan penanganan kesalahan menggunakan blok try‑catch untuk mengelola pengecualian dan memastikan operasi berjalan lancar.
-
-**Q5: Di mana saya dapat menemukan informasi lebih lanjut tentang fitur GroupDocs.Merger untuk Java?**  
-A5: Kunjungi [Dokumentasi GroupDocs](https://docs.groupdocs.com/merger/java/) untuk panduan lengkap dan referensi API.
-
 ## Pertanyaan Umum Tambahan
 
 **Q: Bisakah saya menggabungkan halaman dari lebih dari dua dokumen dalam satu operasi?**  

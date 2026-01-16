@@ -145,23 +145,6 @@ Bu öğreticide, **join specific pages java** işlemini GroupDocs.Merger ile nas
 
 Daha ileri gitmek ister misiniz? Belge bölme, filigran ekleme veya dosya güvenliği gibi ek yetenekleri aynı güçlü API üzerinden keşfedin.
 
-## SSS Bölümü
-
-**S1: GroupDocs.Merger for Java hangi Java sürümleriyle uyumludur?**  
-C1: Uyumluluk için JDK 8 veya üzeri önerilir.
-
-**S2: GroupDocs.Merger ile PDF ve Word belgelerini birlikte birleştirebilir miyim?**  
-C2: Evet, kütüphane PDF ve Word dosyaları dahil olmak üzere çeşitli formatları birleştirebilir.
-
-**S3: Birleştirilebilecek sayfa sayısında bir limit var mı?**  
-C3: Kütüphane büyük belgeleri işleyebilir; performans sistem kaynaklarına bağlıdır.
-
-**S4: Birleştirme sırasında hatalar nasıl ele alınır?**  
-C4: İstisnaları yönetmek ve sorunsuz çalışmayı sağlamak için try‑catch blokları kullanın.
-
-**S5: GroupDocs.Merger for Java özellikleri hakkında daha fazla bilgi nereden bulunur?**  
-C5: Kapsamlı kılavuzlar ve API referansları için [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/) adresini ziyaret edin.
-
 ## Ek Sık Sorulan Sorular
 
 **S: Tek bir işlemde iki’den fazla belgeden sayfa birleştirebilir miyim?**  

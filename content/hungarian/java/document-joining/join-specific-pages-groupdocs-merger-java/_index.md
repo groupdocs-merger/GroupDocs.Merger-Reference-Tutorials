@@ -150,23 +150,6 @@ Ebben a tutorialban megvizsgáltuk, hogyan valósítható meg könnyedén a **jo
 
 Készen állsz a továbblépésre? Fedezd fel a további lehetőségeket, mint a dokumentumok szétválasztása, vízjelek alkalmazása vagy fájlok védelme – mindez elérhető ugyanazon erős API-n keresztül.
 
-## GyIK szekció
-
-**Q1: Mely Java verziók kompatibilisek a GroupDocs.Merger for Java-val?**  
-A1: JDK 8 vagy újabb ajánlott a kompatibilitáshoz.
-
-**Q2: Használhatom a GroupDocs.Merger-t PDF-ek és Word dokumentumok egyesítésére?**  
-A2: Igen, a könyvtár támogatja különböző formátumok, köztük PDF és Word fájlok egyesítését.
-
-**Q3: Van korlát a csatlakoztatható oldalak számában?**  
-A3: A könyvtár nagy dokumentumokkal is megbirkózik; a teljesítmény a rendszer erőforrásaitól függ.
-
-**Q4: Hogyan kezeljem a hibákat az egyesítési folyamat során?**  
-A4: Implementálj hibakezelést try‑catch blokkokkal a kivételek kezeléséhez és a zökkenőmentes működés biztosításához.
-
-**Q5: Hol találok további információkat a GroupDocs.Merger for Java funkcióiról?**  
-A5: Látogasd meg a [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/) oldalt a részletes útmutatókért és API referenciákért.
-
 ## További gyakran ismételt kérdések
 
 **Q: Egyetlen műveletben több mint két dokumentumból is csatlakoztathatok oldalakat?**  

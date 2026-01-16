@@ -144,23 +144,6 @@ In this tutorial, we explored how **join specific pages java** can be achieved e
 
 Ready to take it further? Explore additional capabilities such as splitting documents, applying watermarks, or securing files—all available through the same robust API.
 
-## FAQ Section
-
-**Q1: What versions of Java are compatible with GroupDocs.Merger for Java?**  
-A1: JDK 8 or higher is recommended for compatibility.
-
-**Q2: Can I use GroupDocs.Merger to merge PDFs and Word documents together?**  
-A2: Yes, the library supports merging various formats including PDFs and Word files.
-
-**Q3: Is there a limit on the number of pages that can be joined?**  
-A3: The library can handle large documents; performance depends on system resources.
-
-**Q4: How do I handle errors during the merge process?**  
-A4: Implement error handling using try‑catch blocks to manage exceptions and ensure smooth operation.
-
-**Q5: Where can I find more information about GroupDocs.Merger for Java features?**  
-A5: Visit the [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/) for comprehensive guides and API references.
-
 ## Additional Frequently Asked Questions
 
 **Q: Can I join pages from more than two documents in a single operation?**  

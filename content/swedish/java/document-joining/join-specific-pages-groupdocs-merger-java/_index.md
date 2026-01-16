@@ -146,23 +146,6 @@ I den här handledningen har vi utforskat hur **slå samman specifika sidor i Ja
 
 Redo att gå vidare? Utforska ytterligare funktioner som att dela dokument, applicera vattenstämplar eller säkra filer – allt tillgängligt via samma robusta API.
 
-## FAQ‑avsnitt
-
-**Q1: Vilka versioner av Java är kompatibla med GroupDocs.Merger för Java?**  
-A1: JDK 8 eller högre rekommenderas för kompatibilitet.
-
-**Q2: Kan jag använda GroupDocs.Merger för att slå samman PDF‑ och Word‑dokument?**  
-A2: Ja, biblioteket stödjer sammanslagning av olika format inklusive PDF‑ och Word‑filer.
-
-**Q3: Finns det någon gräns för hur många sidor som kan slås samman?**  
-A3: Biblioteket kan hantera stora dokument; prestanda beror på systemresurser.
-
-**Q4: Hur hanterar jag fel under sammanslagningsprocessen?**  
-A4: Implementera felhantering med try‑catch‑block för att hantera undantag och säkerställa smidig drift.
-
-**Q5: Var kan jag hitta mer information om funktionerna i GroupDocs.Merger för Java?**  
-A5: Besök [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/) för omfattande guider och API‑referenser.
-
 ## Ytterligare vanliga frågor
 
 **Q: Kan jag slå samman sidor från mer än två dokument i en enda operation?**  

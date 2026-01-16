@@ -145,23 +145,6 @@ W tym samouczku omówiliśmy, jak **łączenie określonych stron w Javie** moż
 
 Gotowy, aby pójść dalej? Poznaj dodatkowe możliwości, takie jak dzielenie dokumentów, nakładanie znaków wodnych lub zabezpieczanie plików — wszystkie dostępne poprzez to samo solidne API.
 
-## Sekcja FAQ
-
-**Q1: Jakie wersje Javy są kompatybilne z GroupDocs.Merger for Java?**  
-A1: Zalecany jest JDK 8 lub wyższy.
-
-**Q2: Czy mogę używać GroupDocs.Merger do łączenia PDF‑ów i dokumentów Word razem?**  
-A2: Tak, biblioteka obsługuje łączenie różnych formatów, w tym PDF‑ów i plików Word.
-
-**Q3: Czy istnieje limit liczby stron, które można połączyć?**  
-A3: Biblioteka radzi sobie z dużymi dokumentami; wydajność zależy od zasobów systemowych.
-
-**Q4: Jak obsługiwać błędy podczas procesu łączenia?**  
-A4: Implementuj obsługę błędów przy użyciu bloków try‑catch, aby zarządzać wyjątkami i zapewnić płynne działanie.
-
-**Q5: Gdzie mogę znaleźć więcej informacji o funkcjach GroupDocs.Merger for Java?**  
-A5: Odwiedź [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/) po kompleksowe przewodniki i odniesienia API.
-
 ## Dodatkowe często zadawane pytania
 
 **Q: Czy mogę połączyć strony z więcej niż dwóch dokumentów w jednej operacji?**  

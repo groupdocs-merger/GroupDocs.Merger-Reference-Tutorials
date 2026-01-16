@@ -145,23 +145,6 @@ Trong hướng dẫn này, chúng tôi đã khám phá cách **join specific pag
 
 Sẵn sàng tiến xa hơn? Khám phá các khả năng bổ sung như tách tài liệu, áp dụng watermark, hoặc bảo mật tệp — tất cả đều có sẵn qua cùng một API mạnh mẽ.
 
-## Phần Câu hỏi thường gặp
-
-**Q1: Các phiên bản Java nào tương thích với GroupDocs.Merger for Java?**  
-A1: JDK 8 hoặc cao hơn được khuyến nghị để tương thích.
-
-**Q2: Tôi có thể sử dụng GroupDocs.Merger để hợp nhất PDF và tài liệu Word không?**  
-A2: Có, thư viện hỗ trợ hợp nhất nhiều định dạng khác nhau bao gồm PDF và tệp Word.
-
-**Q3: Có giới hạn về số trang có thể được kết hợp không?**  
-A3: Thư viện có thể xử lý các tài liệu lớn; hiệu năng phụ thuộc vào tài nguyên hệ thống.
-
-**Q4: Làm thế nào để xử lý lỗi trong quá trình hợp nhất?**  
-A4: Thực hiện xử lý lỗi bằng các khối try‑catch để quản lý ngoại lệ và đảm bảo hoạt động trơn tru.
-
-**Q5: Tôi có thể tìm thêm thông tin về các tính năng của GroupDocs.Merger for Java ở đâu?**  
-A5: Truy cập [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/) để xem các hướng dẫn chi tiết và tài liệu API.
-
 ## Các câu hỏi thường gặp bổ sung
 
 **Q: Tôi có thể kết hợp các trang từ hơn hai tài liệu trong một thao tác duy nhất không?**  

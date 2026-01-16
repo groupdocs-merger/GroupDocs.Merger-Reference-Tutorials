@@ -150,23 +150,6 @@ merger.save(outputFilePath); // Store the combined output
 
 准备好进一步探索了吗？了解更多功能，如拆分文档、添加水印或保护文件——这些都可通过同一强大的 API 实现。
 
-## 常见问题
-
-**Q1: 哪些 Java 版本与 GroupDocs.Merger for Java 兼容？**  
-A1: 推荐使用 JDK 8 或更高版本以确保兼容性。
-
-**Q2: 我可以使用 GroupDocs.Merger 将 PDF 和 Word 文档合并在一起吗？**  
-A2: 可以，库支持合并包括 PDF 和 Word 文件在内的多种格式。
-
-**Q3: 合并的页面数量是否有限制？**  
-A3: 该库能够处理大型文档；性能取决于系统资源。
-
-**Q4: 合并过程中如何处理错误？**  
-A4: 使用 try‑catch 块实现错误处理，以管理异常并确保平稳运行。
-
-**Q5: 在哪里可以找到有关 GroupDocs.Merger for Java 功能的更多信息？**  
-A5: 请访问 [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/) 获取完整指南和 API 参考。
-
 ## 其他常见问题
 
 **Q: 我可以在一次操作中合并超过两个文档的页面吗？**  

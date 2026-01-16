@@ -145,23 +145,6 @@ V tomto tutoriálu jsme prozkoumali, jak lze **spojit konkrétní stránky v Jav
 
 Jste připraveni posunout to dál? Prozkoumejte další funkce, jako je rozdělení dokumentů, aplikace vodoznaků nebo zabezpečení souborů – vše dostupné prostřednictvím stejného robustního API.
 
-## Sekce FAQ
-
-**Q1: Jaké verze Javy jsou kompatibilní s GroupDocs.Merger pro Javu?**  
-A1: Doporučuje se JDK 8 nebo vyšší pro kompatibilitu.
-
-**Q2: Mohu použít GroupDocs.Merger k sloučení PDF a Word dokumentů dohromady?**  
-A2: Ano, knihovna podporuje sloučení různých formátů včetně PDF a Word souborů.
-
-**Q3: Existuje limit na počet stránek, které lze spojit?**  
-A3: Knihovna zvládne velké dokumenty; výkon závisí na systémových zdrojích.
-
-**Q4: Jak mohu zvládat chyby během procesu sloučení?**  
-A4: Implementujte zpracování chyb pomocí bloků try‑catch pro správu výjimek a zajištění plynulého provozu.
-
-**Q5: Kde mohu najít více informací o funkcích GroupDocs.Merger pro Javu?**  
-A5: Navštivte [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/) pro komplexní průvodce a reference API.
-
 ## Další často kladené otázky
 
 **Q: Mohu spojit stránky z více než dvou dokumentů v jedné operaci?**  
