@@ -6,7 +6,7 @@ keywords:
 - merge DOCM files in Java
 - GroupDocs Merger setup
 - performance optimization
-title: 'Cách hợp nhất tệp DOCM trong Java với GroupDocs.Merger: Hướng dẫn toàn diện'
+title: 'Cách hợp nhất tệp DOCM trong Java với GroupDocs.Merger - Hướng dẫn toàn diện'
 type: docs
 url: /vi/java/document-joining/merge-docm-files-groupdocs-merger-java/
 weight: 1

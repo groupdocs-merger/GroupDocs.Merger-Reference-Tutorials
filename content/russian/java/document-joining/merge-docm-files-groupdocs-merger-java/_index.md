@@ -7,7 +7,7 @@ keywords:
 - merge DOCM files in Java
 - GroupDocs Merger setup
 - performance optimization
-title: 'Как объединить файлы DOCM в Java с помощью GroupDocs.Merger: Полное руководство'
+title: 'Как объединить файлы DOCM в Java с помощью GroupDocs.Merger - Полное руководство'
 type: docs
 url: /ru/java/document-joining/merge-docm-files-groupdocs-merger-java/
 weight: 1
@@ -122,19 +122,6 @@ GroupDocs.Merger works well with cloud storage (AWS S3, Azure Blob) and can be c
 | **OutOfMemoryError** | Увеличьте размер кучи JVM или объединяйте файлы небольшими партиями. |
 | **File Not Found** | Проверьте, что `documentPath` и имена файлов корректны; при необходимости используйте абсолютные пути. |
 | **Macros Lost** | Убедитесь, что используете последнюю версию GroupDocs.Merger; в более старых версиях макросы могут быть утеряны. |
-
-## Раздел FAQ
-
-1. **What is GroupDocs.Merger?**  
-   - Это библиотека, предназначенная для управления и объединения различных форматов документов, включая файлы DOCM.  
-2. **Can I merge more than two files at once?**  
-   - Да, вы можете добавлять несколько документов, последовательно вызывая метод `join`.  
-3. **Is there a file size limit for merging?**  
-   - Хотя GroupDocs.Merger эффективно обрабатывает большие файлы, производительность может зависеть от ресурсов системы.  
-4. **How do I handle merge errors?**  
-   - Реализуйте обработку исключений, чтобы захватывать и управлять возможными проблемами во время объединения.  
-5. **What are some common use cases for this library?**  
-   - Консолидация документов, совместное редактирование, генерация отчётов и т.д.
 
 ## Часто задаваемые вопросы
 

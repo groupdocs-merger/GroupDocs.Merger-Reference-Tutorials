@@ -6,7 +6,7 @@ keywords:
 - merge DOCM files in Java
 - GroupDocs Merger setup
 - performance optimization
-title: 'Jak scalać pliki DOCM w Javie przy użyciu GroupDocs.Merger: Kompletny przewodnik'
+title: 'Jak scalać pliki DOCM w Javie przy użyciu GroupDocs.Merger - Kompletny przewodnik'
 type: docs
 url: /pl/java/document-joining/merge-docm-files-groupdocs-merger-java/
 weight: 1
@@ -121,18 +121,6 @@ GroupDocs.Merger dobrze współpracuje z przechowywaniem w chmurze (AWS S3, Azur
 | **OutOfMemoryError** | Zwiększ rozmiar sterty JVM lub scalaj pliki w mniejszych partiach. |
 | **File Not Found** | Zweryfikuj, że `documentPath` i nazwy plików są poprawne; użyj ścieżek bezwzględnych w razie potrzeby. |
 | **Macros Lost** | Upewnij się, że używasz najnowszej wersji GroupDocs.Merger; starsze wydania mogą usuwać makra. |
-
-## Sekcja FAQ
-1. **Czym jest GroupDocs.Merger?**  
-   - To biblioteka zaprojektowana do zarządzania i scalania różnych formatów dokumentów, w tym plików DOCM.  
-2. **Czy mogę scalić więcej niż dwa pliki jednocześnie?**  
-   - Tak, możesz dodać wiele dokumentów, używając wielokrotnie metody `join`.  
-3. **Czy istnieje limit rozmiaru pliku przy scalaniu?**  
-   - Chociaż GroupDocs.Merger efektywnie obsługuje duże pliki, wydajność może zależeć od zasobów systemowych.  
-4. **Jak radzić sobie z błędami scalania?**  
-   - Zaimplementuj obsługę wyjątków, aby przechwycić i zarządzać wszelkimi problemami podczas procesu scalania.  
-5. **Jakie są typowe przypadki użycia tej biblioteki?**  
-   - Konsolidacja dokumentów, współpraca przy edycji, generowanie raportów itp.
 
 ## Najczęściej zadawane pytania
 

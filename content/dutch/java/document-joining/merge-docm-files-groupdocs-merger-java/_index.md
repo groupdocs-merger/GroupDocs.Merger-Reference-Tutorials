@@ -6,7 +6,7 @@ keywords:
 - merge DOCM files in Java
 - GroupDocs Merger setup
 - performance optimization
-title: 'Hoe DOCM-bestanden samenvoegen in Java met GroupDocs.Merger: Een uitgebreide
+title: 'Hoe DOCM-bestanden samenvoegen in Java met GroupDocs.Merger - Een uitgebreide
   gids'
 type: docs
 url: /nl/java/document-joining/merge-docm-files-groupdocs-merger-java/
@@ -121,18 +121,6 @@ GroupDocs.Merger werkt goed met cloudopslag (AWS S3, Azure Blob) en kan worden g
 | **OutOfMemoryError** | Verhoog de JVM‑heap‑grootte of voeg bestanden samen in kleinere batches. |
 | **File Not Found** | Controleer of `documentPath` en bestandsnamen correct zijn; gebruik absolute paden indien nodig. |
 | **Macros Lost** | Zorg ervoor dat je de nieuwste GroupDocs.Merger‑versie gebruikt; oudere releases kunnen macro's verwijderen. |
-
-## Veelgestelde vragen
-1. **Wat is GroupDocs.Merger?**  
-   - Het is een bibliotheek ontworpen om verschillende documentformaten te beheren en samen te voegen, inclusief DOCM‑bestanden.  
-2. **Kan ik meer dan twee bestanden tegelijk samenvoegen?**  
-   - Ja, je kunt meerdere documenten toevoegen door de `join`‑methode herhaaldelijk te gebruiken.  
-3. **Is er een limiet voor de bestandsgrootte bij het samenvoegen?**  
-   - Hoewel GroupDocs.Merger grote bestanden efficiënt verwerkt, kan de prestaties variëren afhankelijk van de systeembronnen.  
-4. **Hoe ga ik om met samenvoegfouten?**  
-   - Implementeer exception handling om eventuele problemen tijdens het samenvoegproces te vangen en te beheren.  
-5. **Wat zijn enkele veelvoorkomende gebruikssituaties voor deze bibliotheek?**  
-   - Documentconsolidatie, samenwerking bij bewerken, rapportgeneratie, enz.
 
 ## Veelgestelde vragen
 **Q: Behoudt de bibliotheek VBA‑macro's na het samenvoegen?**  

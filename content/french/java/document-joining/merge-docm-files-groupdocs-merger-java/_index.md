@@ -7,7 +7,7 @@ keywords:
 - merge DOCM files in Java
 - GroupDocs Merger setup
 - performance optimization
-title: 'Comment fusionner des fichiers DOCM en Java avec GroupDocs.Merger : guide
+title: 'Comment fusionner des fichiers DOCM en Java avec GroupDocs.Merger - guide
   complet'
 type: docs
 url: /fr/java/document-joining/merge-docm-files-groupdocs-merger-java/
@@ -122,18 +122,6 @@ GroupDocs.Merger fonctionne bien avec le stockage cloud (AWS S3, Azure Blob) et 
 | **OutOfMemoryError** | Augmentez la taille du tas JVM ou fusionnez les fichiers par lots plus petits. |
 | **File Not Found** | Vérifiez que `documentPath` et les noms de fichiers sont corrects ; utilisez des chemins absolus si nécessaire. |
 | **Macros Lost** | Assurez‑vous d’utiliser la dernière version de GroupDocs.Merger ; les versions antérieures peuvent perdre les macros. |
-
-## Section FAQ
-1. **Qu’est‑ce que GroupDocs.Merger ?**  
-   - C’est une bibliothèque conçue pour gérer et fusionner divers formats de documents, y compris les fichiers DOCM.  
-2. **Puis‑je fusionner plus de deux fichiers à la fois ?**  
-   - Oui, vous pouvez ajouter plusieurs documents en utilisant la méthode `join` de façon répétée.  
-3. **Existe‑t‑il une limite de taille de fichier pour la fusion ?**  
-   - Bien que GroupDocs.Merger gère efficacement les gros fichiers, les performances peuvent varier selon les ressources du système.  
-4. **Comment gérer les erreurs de fusion ?**  
-   - Implémentez une gestion des exceptions pour capturer et gérer les problèmes survenant pendant le processus de fusion.  
-5. **Quels sont les cas d’utilisation courants de cette bibliothèque ?**  
-   - Consolidation de documents, édition collaborative, génération de rapports, etc.
 
 ## Questions fréquemment posées
 **Q : La bibliothèque préserve‑t‑elle les macros VBA après la fusion ?**  

@@ -7,7 +7,7 @@ keywords:
 - merge DOCM files in Java
 - GroupDocs Merger setup
 - performance optimization
-title: 'Como Mesclar Arquivos DOCM em Java com GroupDocs.Merger: Um Guia Abrangente'
+title: 'Como Mesclar Arquivos DOCM em Java com GroupDocs.Merger - Um Guia Abrangente'
 type: docs
 url: /pt/java/document-joining/merge-docm-files-groupdocs-merger-java/
 weight: 1
@@ -122,19 +122,6 @@ GroupDocs.Merger funciona bem com armazenamento em nuvem (AWS S3, Azure Blob) e 
 | **OutOfMemoryError** | Aumente o tamanho do heap da JVM ou mescle arquivos em lotes menores. |
 | **File Not Found** | Verifique se `documentPath` e os nomes dos arquivos estão corretos; use caminhos absolutos se necessário. |
 | **Macros Lost** | Certifique‑se de que está usando a versão mais recente do GroupDocs.Merger; versões mais antigas podem perder macros. |
-
-## Seção de Perguntas Frequentes
-
-1. **O que é GroupDocs.Merger?**  
-   - É uma biblioteca projetada para gerenciar e mesclar vários formatos de documento, incluindo arquivos DOCM.  
-2. **Posso mesclar mais de dois arquivos de uma vez?**  
-   - Sim, você pode adicionar vários documentos usando o método `join` repetidamente.  
-3. **Existe um limite de tamanho de arquivo para mesclar?**  
-   - Embora o GroupDocs.Merger lide eficientemente com arquivos grandes, o desempenho pode variar conforme os recursos do sistema.  
-4. **Como lidar com erros de mesclagem?**  
-   - Implemente tratamento de exceções para capturar e gerenciar quaisquer problemas durante o processo de mesclagem.  
-5. **Quais são alguns casos de uso comuns para esta biblioteca?**  
-   - Consolidação de documentos, edição colaborativa, geração de relatórios, etc.
 
 ## Perguntas Frequentes
 

@@ -7,7 +7,7 @@ keywords:
 - merge DOCM files in Java
 - GroupDocs Merger setup
 - performance optimization
-title: 'Hogyan egyesítsünk DOCM fájlokat Java-ban a GroupDocs.Merger-rel: Átfogó útmutató'
+title: 'Hogyan egyesítsünk DOCM fájlokat Java-ban a GroupDocs.Merger-rel - Átfogó útmutató'
 type: docs
 url: /hu/java/document-joining/merge-docm-files-groupdocs-merger-java/
 weight: 1
@@ -121,23 +121,6 @@ A GroupDocs.Merger jól működik felhőalapú tárolókkal (AWS S3, Azure Blob)
 | **OutOfMemoryError** | Növelje a JVM heap méretét vagy kisebb adagokban egyesítse a fájlokat. |
 | **File Not Found** | Ellenőrizze, hogy a `documentPath` és a fájlnevek helyesek; szükség esetén használjon abszolút útvonalakat. |
 | **Macros Lost** | Győződjön meg róla, hogy a legújabb GroupDocs.Merger verziót használja; a régebbi kiadások elveszíthetik a makrókat. |
-
-## Gyakran Ismételt Kérdések
-
-1. **Mi a GroupDocs.Merger?**  
-   - Ez egy könyvtár, amely különböző dokumentumformátumok kezelésére és egyesítésére lett tervezve, beleértve a DOCM fájlokat.
-
-2. **Egyesíthetek egyszerre több mint két fájlt?**  
-   - Igen, többszörös `join` metódus hívással több dokumentumot is hozzáadhat.
-
-3. **Van fájlméret korlát az egyesítésnél?**  
-   - Bár a GroupDocs.Merger hatékonyan kezeli a nagy fájlokat, a teljesítmény a rendszer erőforrásaitól függően változhat.
-
-4. **Hogyan kezeljem az egyesítési hibákat?**  
-   - Valósítson meg kivételkezelést, hogy elkapja és kezelje a folyamat során felmerülő problémákat.
-
-5. **Mik a gyakori felhasználási esetek ehhez a könyvtárhoz?**  
-   - Dokumentumok konszolidálása, együttműködő szerkesztés, jelentéskészítés stb.
 
 ## Gyakran Ismételt Kérdések
 

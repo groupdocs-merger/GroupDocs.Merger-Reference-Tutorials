@@ -6,7 +6,7 @@ keywords:
 - merge DOCM files in Java
 - GroupDocs Merger setup
 - performance optimization
-title: 'Java와 GroupDocs.Merger를 사용하여 DOCM 파일 병합하는 방법: 종합 가이드'
+title: 'Java와 GroupDocs.Merger를 사용하여 DOCM 파일 병합하는 방법 - 종합 가이드'
 type: docs
 url: /ko/java/document-joining/merge-docm-files-groupdocs-merger-java/
 weight: 1
@@ -121,23 +121,6 @@ GroupDocs.Merger는 클라우드 스토리지(AWS S3, Azure Blob)와 잘 연동�
 | **OutOfMemoryError** | JVM 힙 크기를 늘리거나 파일을 더 작은 배치로 병합하세요. |
 | **File Not Found** | `documentPath`와 파일 이름이 정확한지 확인하고, 필요하면 절대 경로를 사용하세요. |
 | **Macros Lost** | 최신 GroupDocs.Merger 버전을 사용하고 있는지 확인하세요; 오래된 릴리스는 매크로를 손실할 수 있습니다. |
-
-## FAQ 섹션
-
-1. **GroupDocs.Merger란?**  
-   - 다양한 문서 형식(DOCM 포함)을 관리하고 병합하도록 설계된 라이브러리입니다.  
-
-2. **두 개 이상의 파일을 한 번에 병합할 수 있나요?**  
-   - 예, `join` 메서드를 반복 호출하여 여러 문서를 추가할 수 있습니다.  
-
-3. **병합에 파일 크기 제한이 있나요?**  
-   - GroupDocs.Merger는 대용량 파일을 효율적으로 처리하지만, 시스템 자원에 따라 성능이 달라질 수 있습니다.  
-
-4. **병합 오류를 어떻게 처리하나요?**  
-   - 예외 처리를 구현하여 병합 과정에서 발생하는 문제를 포착하고 관리하세요.  
-
-5. **이 라이브러리의 일반적인 사용 사례는?**  
-   - 문서 통합, 협업 편집, 보고서 생성 등 다양한 시나리오에 활용됩니다.  
 
 ## 자주 묻는 질문
 

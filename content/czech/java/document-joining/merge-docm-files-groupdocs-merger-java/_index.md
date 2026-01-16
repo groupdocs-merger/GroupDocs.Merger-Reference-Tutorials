@@ -6,7 +6,7 @@ keywords:
 - merge DOCM files in Java
 - GroupDocs Merger setup
 - performance optimization
-title: 'Jak sloučit soubory DOCM v Javě pomocí GroupDocs.Merger: Komplexní průvodce'
+title: 'Jak sloučit soubory DOCM v Javě pomocí GroupDocs.Merger - Komplexní průvodce'
 type: docs
 url: /cs/java/document-joining/merge-docm-files-groupdocs-merger-java/
 weight: 1
@@ -120,19 +120,6 @@ GroupDocs.Merger dobře spolupracuje s cloudovým úložištěm (AWS S3, Azure B
 | **OutOfMemoryError** | Zvyšte velikost haldy JVM nebo sloučte soubory v menších dávkách. |
 | **File Not Found** | Ověřte, že `documentPath` a názvy souborů jsou správné; použijte absolutní cesty, pokud je to nutné. |
 | **Macros Lost** | Ujistěte se, že používáte nejnovější verzi GroupDocs.Merger; starší verze mohou makra ztratit. |
-
-## Sekce FAQ
-
-1. **Co je GroupDocs.Merger?**  
-   - Jedná se o knihovnu určenou ke správě a sloučení různých formátů dokumentů, včetně souborů DOCM.  
-2. **Mohu sloučit více než dva soubory najednou?**  
-   - Ano, můžete přidat více dokumentů opakovaným voláním metody `join`.  
-3. **Existuje limit velikosti souboru pro sloučení?**  
-   - GroupDocs.Merger efektivně zpracovává velké soubory, ale výkon může záviset na dostupných systémových zdrojích.  
-4. **Jak řešit chyby při sloučení?**  
-   - Implementujte zpracování výjimek, abyste zachytili a zvládli případné problémy během procesu sloučení.  
-5. **Jaké jsou typické případy použití této knihovny?**  
-   - Konsolidace dokumentů, kolaborativní editace, generování zpráv atd.
 
 ## Často kladené otázky
 

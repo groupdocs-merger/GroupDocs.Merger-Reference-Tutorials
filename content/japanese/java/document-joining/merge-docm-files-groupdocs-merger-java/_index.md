@@ -5,7 +5,7 @@ keywords:
 - merge DOCM files in Java
 - GroupDocs Merger setup
 - performance optimization
-title: Java と GroupDocs.Merger を使って DOCM ファイルをマージする方法：包括的ガイド
+title: Java と GroupDocs.Merger を使って DOCM ファイルをマージする方法 - 包括的ガイド
 type: docs
 url: /ja/java/document-joining/merge-docm-files-groupdocs-merger-java/
 weight: 1
@@ -120,37 +120,24 @@ GroupDocs.Merger はクラウドストレージ（AWS S3、Azure Blob）と相�
 | **File Not Found** | `documentPath` とファイル名が正しいか確認し、必要に応じて絶対パスを使用してください。 |
 | **Macros Lost** | 最新バージョンの GroupDocs.Merger を使用してください。古いリリースではマクロが失われることがあります。 |
 
-## FAQ Section
+## よくある質問
 
-1. **GroupDocs.Merger とは何ですか？**  
-   - DOCM を含むさまざまなドキュメント形式の管理・マージを行うライブラリです。  
-2. **一度に 2 つ以上のファイルをマージできますか？**  
-   - はい、`join` メソッドを繰り返し呼び出すことで複数ドキュメントを追加できます。  
-3. **マージ時のファイルサイズ上限はありますか？**  
-   - 大容量ファイルも効率的に処理できますが、システムリソースに応じてパフォーマンスは変動します。  
-4. **マージエラーはどう処理すればよいですか？**  
-   - 例外処理を実装して、マージ中に発生する問題を捕捉・管理してください。  
-5. **このライブラリの主なユースケースは何ですか？**  
-   - ドキュメント統合、共同編集、レポート生成などが典型的です。
+**Q: ライブラリはマージ後も VBA マクロを保持しますか？**
+A: はい。GroupDocs.Merger はマクロを保持するため、マージ後の DOCM は元のファイルと全く同じように動作します。
 
-## Frequently Asked Questions
+**Q: クラウドストレージに保存されているドキュメントを、事前にダウンロードせずにマージできますか？**
+A: もちろんです。適切なストリーム API を使用して、S3、Azure Blob、またはその他のクラウドサービスから直接読み取ります。
 
-**Q: Does the library preserve VBA macros after merging?**  
-A: Yes, GroupDocs.Merger retains macros, ensuring the merged DOCM works exactly like the originals.
+**Q: どのバージョンの Java がサポートされていますか？**
+A: Java8 以降は完全にサポートされています。
 
-**Q: Can I merge documents stored in cloud storage without downloading them first?**  
-A: Absolutely. Use the appropriate stream APIs to read directly from S3, Azure Blob, or other cloud services.
+**Q: 大規模なマージ中に進行状況を監視する方法はありますか？**
+A: 非同期処理と統合する場合は、カスタムリスナーを実装するか、マージステータスをポーリングすることができます。
 
-**Q: What Java versions are supported?**  
-A: Java 8 and newer are fully supported.
+**Q: 本番環境ライセンスを取得するにはどうすればよいですか？**
+A: GroupDocs の Web サイトからライセンスを購入するか、評価用の一時ライセンスをリクエストしてください。
 
-**Q: Is there a way to monitor progress during a large merge?**  
-A: You can implement a custom listener or poll the merge status if you integrate with asynchronous processing.
-
-**Q: How do I obtain a production license?**  
-A: Purchase a license from the GroupDocs website or request a temporary license for evaluation.
-
-## Resources
+## リソース
 - [Documentation](https://docs.groupdocs.com/merger/java/)
 - [API Reference](https://reference.groupdocs.com/merger/java/)
 - [Download GroupDocs.Merger](https://releases.groupdocs.com/merger/java/)

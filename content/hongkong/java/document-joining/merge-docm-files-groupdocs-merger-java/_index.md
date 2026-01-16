@@ -5,7 +5,7 @@ keywords:
 - merge DOCM files in Java
 - GroupDocs Merger setup
 - performance optimization
-title: 如何在 Java 中使用 GroupDocs.Merger 合併 DOCM 檔案：完整指南
+title: 如何在 Java 中使用 GroupDocs.Merger 合併 DOCM 檔案 - 完整指南
 type: docs
 url: /zh-hant/java/document-joining/merge-docm-files-groupdocs-merger-java/
 weight: 1
@@ -120,18 +120,6 @@ GroupDocs.Merger 能與雲端儲存 (AWS S3、Azure Blob) 良好配合，亦可�
 | **OutOfMemoryError** | 增加 JVM 堆積大小或將檔案分成較小批次合併。 |
 | **File Not Found** | 確認 `documentPath` 與檔名正確；必要時使用絕對路徑。 |
 | **Macros Lost** | 確保使用最新的 GroupDocs.Merger 版本；較舊的版本可能會遺失巨集。 |
-
-## 常見問答
-1. **什麼是 GroupDocs.Merger？**  
-   - 它是一個設計用於管理與合併各種文件格式（包括 DOCM 檔案）的函式庫。  
-2. **可以一次合併超過兩個檔案嗎？**  
-   - 可以，使用 `join` 方法可重複加入多個文件。  
-3. **合併的檔案大小有上限嗎？**  
-   - 雖然 GroupDocs.Merger 能有效處理大型檔案，但效能會受系統資源影響。  
-4. **如何處理合併錯誤？**  
-   - 實作例外處理以捕捉並管理合併過程中的任何問題。  
-5. **這個函式庫有哪些常見的使用案例？**  
-   - 文件整合、協同編輯、報表產生等。
 
 ## 常見問題
 **Q:** 此函式庫在合併後會保留 VBA 巨集嗎？  
