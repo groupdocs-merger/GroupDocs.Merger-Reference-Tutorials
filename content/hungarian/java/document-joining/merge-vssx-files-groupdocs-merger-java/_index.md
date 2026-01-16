@@ -141,23 +141,6 @@ Készen áll a következő kihívásra? Fedezze fel más Visio formátumok egyes
 
 ## Gyakran Ismételt Kérdések
 
-**Q1: Mi az a VSSX fájl?**  
-A1: A VSSX fájl egy Visio sablonformátum, amely újrahasználható alakzatokat és szimbólumokat tárol a diagramokhoz.
-
-**Q2: Egyesíthetek egyszerre több mint két VSSX fájlt?**  
-A2: Igen, több fájlt is hozzáadhat egymás után a `join` metódus használatával.
-
-**Q3: Mik a rendszerkövetelmények a GroupDocs.Merger for Java-hoz?**  
-A3: JDK 8 vagy újabb, valamint egy kompatibilis IDE vagy szövegszerkesztő Maven/Gradle támogatással.
-
-**Q4: Hogyan kezeljem hatékonyan a nagy VSSX fájlokat?**  
-A4: Optimalizálja a fájlméreteket, használjon tömörített VSSX csomagokat, és figyelje a JVM memóriahasználatot.
-
-**Q5: Van támogatás más Visio formátumokhoz is a VSSX-en kívül?**  
-A5: Természetesen – a GroupDocs.Merger kezeli a VSDX, VDX és több más Visio fájltípust is.
-
-## Gyakran Ismételt Kérdések
-
 **Q: Szükségem van kereskedelmi licencre az egyesítési funkció termelésben való használatához?**  
 A: Igen, egy érvényes GroupDocs.Merger licenc szükséges a termelési telepítésekhez; ingyenes próba érhető el kiértékeléshez.
 

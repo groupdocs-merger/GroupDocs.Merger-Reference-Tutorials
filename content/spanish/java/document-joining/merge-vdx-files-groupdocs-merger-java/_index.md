@@ -165,10 +165,11 @@ R: Envuelve las llamadas de fusión en un bloque `try‑catch` y maneja `IOExcep
 ## Conclusión
 
 Ahora sabes **how to merge vdx** files de manera eficiente usando GroupDocs.Merger para Java. La biblioteca abstrae las complejidades del XML, permitiéndote centrarte en la lógica de negocio en lugar de los detalles del formato de archivo. Experimenta con características adicionales —como conversión de formato o manipulación a nivel de página— para ampliar este flujo de trabajo básico a una canalización completa de automatización documental.
+ 
+**Related Resources:** [Documentation](https://docs.groupdocs.com/merger/java/) | [API Reference](https://reference.groupdocs.com/merger/java/) | [Download](https://releases.groupdocs.com/merger/java/) | [Purchase](https://purchase.groupdocs.com/buy) | [Free Trial](https://releases.groupdocs.com/merger/java/) | [Temporary License](https://purchase.groupdocs.com/temporary-license/) | [Support](https://forum.groupdocs.com/c/merger/)
 
 ---
 
 **Last Updated:** 2025-12-31  
 **Tested With:** GroupDocs.Merger 23.12 (latest at time of writing)  
-**Author:** GroupDocs  
-**Related Resources:** [Documentation](https://docs.groupdocs.com/merger/java/) | [API Reference](https://reference.groupdocs.com/merger/java/) | [Download](https://releases.groupdocs.com/merger/java/) | [Purchase](https://purchase.groupdocs.com/buy) | [Free Trial](https://releases.groupdocs.com/merger/java/) | [Temporary License](https://purchase.groupdocs.com/temporary-license/) | [Support](https://forum.groupdocs.com/c/merger/)
+**Author:** GroupDocs 

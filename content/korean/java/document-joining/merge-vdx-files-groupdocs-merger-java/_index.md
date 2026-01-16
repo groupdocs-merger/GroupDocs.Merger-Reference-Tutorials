@@ -163,10 +163,11 @@ A: 병합 호출을 `try‑catch` 블록으로 감싸고 `IOException`, `MergerE
 ## 결론
 
 이제 **VDX 파일을 효율적으로 병합하는 방법**을 GroupDocs.Merger for Java를 활용해 알게 되었습니다. 라이브러리는 XML 복잡성을 추상화하여 파일 포맷의 세부 사항보다 비즈니스 로직에 집중할 수 있게 해줍니다. 형식 변환이나 페이지 수준 조작과 같은 추가 기능을 실험해 보면서 이 기본 워크플로를 완전한 문서 자동화 파이프라인으로 확장해 보세요.
+ 
+**Related Resources:** [Documentation](https://docs.groupdocs.com/merger/java/) | [API Reference](https://reference.groupdocs.com/merger/java/) | [Download](https://releases.groupdocs.com/merger/java/) | [Purchase](https://purchase.groupdocs.com/buy) | [Free Trial](https://releases.groupdocs.com/merger/java/) | [Temporary License](https://purchase.groupdocs.com/temporary-license/) | [Support](https://forum.groupdocs.com/c/merger/)
 
 ---
 
 **Last Updated:** 2025-12-31  
 **Tested With:** GroupDocs.Merger 23.12 (작성 시 최신 버전)  
-**Author:** GroupDocs  
-**Related Resources:** [Documentation](https://docs.groupdocs.com/merger/java/) | [API Reference](https://reference.groupdocs.com/merger/java/) | [Download](https://releases.groupdocs.com/merger/java/) | [Purchase](https://purchase.groupdocs.com/buy) | [Free Trial](https://releases.groupdocs.com/merger/java/) | [Temporary License](https://purchase.groupdocs.com/temporary-license/) | [Support](https://forum.groupdocs.com/c/merger/)
+**Author:** GroupDocs 

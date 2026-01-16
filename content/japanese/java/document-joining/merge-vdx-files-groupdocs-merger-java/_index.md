@@ -163,10 +163,11 @@ A: マージ呼び出しを `try‑catch` ブロックで囲み、必要に応�
 ## 結論
 
 GroupDocs.Merger for Java を使用して **how to merge vdx** ファイルを効率的にマージする方法が分かりました。ライブラリは XML の複雑さを抽象化し、ファイル形式の細部に煩わされることなくビジネスロジックに集中できます。フォーマット変換やページ単位の操作などの追加機能を試して、この基本的なワークフローを本格的なドキュメント自動化パイプラインへ拡張してください。
+ 
+**関連リソース:** [Documentation](https://docs.groupdocs.com/merger/java/) | [API Reference](https://reference.groupdocs.com/merger/java/) | [Download](https://releases.groupdocs.com/merger/java/) | [Purchase](https://purchase.groupdocs.com/buy) | [Free Trial](https://releases.groupdocs.com/merger/java/) | [Temporary License](https://purchase.groupdocs.com/temporary-license/) | [Support](https://forum.groupdocs.com/c/merger/)
 
 ---
 
 **最終更新日:** 2025-12-31  
 **テスト環境:** GroupDocs.Merger 23.12 (latest at time of writing)  
-**作者:** GroupDocs  
-**関連リソース:** [Documentation](https://docs.groupdocs.com/merger/java/) | [API Reference](https://reference.groupdocs.com/merger/java/) | [Download](https://releases.groupdocs.com/merger/java/) | [Purchase](https://purchase.groupdocs.com/buy) | [Free Trial](https://releases.groupdocs.com/merger/java/) | [Temporary License](https://purchase.groupdocs.com/temporary-license/) | [Support](https://forum.groupdocs.com/c/merger/)
+**作者:** GroupDocs 

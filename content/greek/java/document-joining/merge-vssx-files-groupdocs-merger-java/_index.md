@@ -138,23 +138,6 @@ merger.save(outputFile);
 
 Έτοιμοι για την επόμενη πρόκληση; Εξερευνήστε τη συγχώνευση άλλων μορφών Visio ή ενσωματώστε τη διαδικασία συγχώνευσης σε μια μεγαλύτερη υπηρεσία επεξεργασίας εγγράφων.
 
-## Ενότητα Συχνών Ερωτήσεων
-
-**Q1: What is a VSSX file?**  
-A1: Ένα αρχείο VSSX είναι μια μορφή stencil του Visio που αποθηκεύει επαναχρησιμοποιήσιμα σχήματα και σύμβολα για δημιουργία διαγραμμάτων.
-
-**Q2: Can I merge more than two VSSX files at once?**  
-A2: Ναι, μπορείτε να προσθέσετε πολλαπλά αρχεία διαδοχικά χρησιμοποιώντας τη μέθοδο `join`.
-
-**Q3: What are the system requirements for GroupDocs.Merger for Java?**  
-A3: JDK 8 ή νεότερο και ένα συμβατό IDE ή κειμενογράφο με υποστήριξη Maven/Gradle.
-
-**Q4: How do I handle large VSSX files efficiently?**  
-A4: Βελτιστοποιήστε τα μεγέθη των αρχείων, χρησιμοποιήστε συμπιεσμένα πακέτα VSSX και παρακολουθήστε τη χρήση μνήμης της JVM.
-
-**Q5: Is there support for other Visio formats besides VSSX?**  
-A5: Απόλυτα—το GroupDocs.Merger διαχειρίζεται επίσης VSDX, VDX και αρκετούς άλλους τύπους αρχείων Visio.
-
 ## Συχνές Ερωτήσεις
 
 **Q: Do I need a commercial license to use the merge functionality in production?**  

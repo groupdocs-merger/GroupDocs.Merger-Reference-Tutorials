@@ -139,23 +139,6 @@ Teraz opanowałeś **how to merge visio stencil java** przy użyciu GroupDocs.Me
 
 Gotowy na kolejne wyzwanie? Zbadaj scalanie innych formatów Visio lub zintegrować procedurę scalania w większej usłudze przetwarzania dokumentów.
 
-## Sekcja FAQ
-
-**Q1: What is a VSSX file?**  
-A1: Plik VSSX jest formatem szablonu Visio, który przechowuje wielokrotnego użytku kształty i symbole do diagramowania.
-
-**Q2: Can I merge more than two VSSX files at once?**  
-A2: Tak, możesz dodać wiele plików kolejno, używając metody `join`.
-
-**Q3: What are the system requirements for GroupDocs.Merger for Java?**  
-A3: JDK 8 lub nowszy oraz kompatybilne IDE lub edytor tekstu z obsługą Maven/Gradle.
-
-**Q4: How do I handle large VSSX files efficiently?**  
-A4: Optymalizuj rozmiary plików, używaj spakowanych pakietów VSSX i monitoruj zużycie pamięci JVM.
-
-**Q5: Is there support for other Visio formats besides VSSX?**  
-A5: Oczywiście — GroupDocs.Merger obsługuje także VSDX, VDX i kilka innych formatów Visio.
-
 ## Najczęściej zadawane pytania
 
 **Q: Do I need a commercial license to use the merge functionality in production?**  

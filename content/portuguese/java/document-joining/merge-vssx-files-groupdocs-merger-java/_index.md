@@ -139,23 +139,6 @@ Você agora dominou **como mesclar visio stencil java** arquivos usando o GroupD
 
 Pronto para o próximo desafio? Explore a mesclagem de outros formatos Visio ou integre a rotina de mesclagem em um serviço maior de processamento de documentos.
 
-## Seção de Perguntas Frequentes
-
-**Q1: O que é um arquivo VSSX?**  
-A1: Um arquivo VSSX é um formato de estêncil Visio que armazena formas e símbolos reutilizáveis para diagramas.
-
-**Q2: Posso mesclar mais de dois arquivos VSSX de uma vez?**  
-A2: Sim, você pode adicionar vários arquivos sequencialmente usando o método `join`.
-
-**Q3: Quais são os requisitos de sistema para o GroupDocs.Merger para Java?**  
-A3: JDK 8 ou superior e uma IDE ou editor de texto compatível com suporte a Maven/Gradle.
-
-**Q4: Como lidar eficientemente com arquivos VSSX grandes?**  
-A4: Otimize o tamanho dos arquivos, use pacotes VSSX compactados e monitore o uso de memória da JVM.
-
-**Q5: Há suporte a outros formatos Visio além de VSSX?**  
-A5: Absolutamente — o GroupDocs.Merger também lida com VSDX, VDX e vários outros tipos de arquivos Visio.
-
 ## Perguntas Frequentes
 
 **Q: Preciso de uma licença comercial para usar a funcionalidade de mesclagem em produção?**  

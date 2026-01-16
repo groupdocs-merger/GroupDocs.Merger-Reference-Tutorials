@@ -165,9 +165,10 @@ A: Zabalte volání sloučení do `try‑catch` bloku a ošetřete `IOException`
 
 Nyní víte **jak efektivně sloučit vdx** soubory pomocí GroupDocs.Merger pro Java. Knihovna abstrahuje složitosti XML, což vám umožní soustředit se na obchodní logiku místo zvláštností formátu souboru. Experimentujte s dalšími funkcemi – například konverzí formátu nebo manipulací na úrovni stránek – a rozšiřte tento základní workflow na plnohodnotnou pipeline pro automatizaci dokumentů.
 
+**Související zdroje:** [Documentation](https://docs.groupdocs.com/merger/java/) | [API Reference](https://reference.groupdocs.com/merger/java/) | [Download](https://releases.groupdocs.com/merger/java/) | [Purchase](https://purchase.groupdocs.com/buy) | [Free Trial](https://releases.groupdocs.com/merger/java/) | [Temporary License](https://purchase.groupdocs.com/temporary-license/) | [Support](https://forum.groupdocs.com/c/merger/)
+
 ---
 
 **Poslední aktualizace:** 2025-12-31  
 **Testováno s:** GroupDocs.Merger 23.12 (latest at time of writing)  
 **Autor:** GroupDocs  
-**Související zdroje:** [Documentation](https://docs.groupdocs.com/merger/java/) | [API Reference](https://reference.groupdocs.com/merger/java/) | [Download](https://releases.groupdocs.com/merger/java/) | [Purchase](https://purchase.groupdocs.com/buy) | [Free Trial](https://releases.groupdocs.com/merger/java/) | [Temporary License](https://purchase.groupdocs.com/temporary-license/) | [Support](https://forum.groupdocs.com/c/merger/)

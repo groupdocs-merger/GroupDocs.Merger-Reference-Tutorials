@@ -165,9 +165,10 @@ A: Plaats de samenvoeg‑aanroepen in een `try‑catch`‑blok en verwerk `IOExc
 
 Je weet nu **how to merge vdx** bestanden efficiënt te gebruiken met GroupDocs.Merger voor Java. De bibliotheek abstraheert de XML‑complexiteit, zodat je je kunt concentreren op de bedrijfslogica in plaats van op bestandsformaat‑eigenaardigheden. Experimenteer met extra functies — zoals formaatconversie of paginaniveau‑manipulatie — om deze basisworkflow uit te breiden tot een volledige document‑automatiseringspipeline.
 
+**Gerelateerde bronnen:** [Documentatie](https://docs.groupdocs.com/merger/java/) | [API‑referentie](https://reference.groupdocs.com/merger/java/) | [Download](https://releases.groupdocs.com/merger/java/) | [Aankoop](https://purchase.groupdocs.com/buy) | [Gratis proefversie](https://releases.groupdocs.com/merger/java/) | [Tijdelijke licentie](https://purchase.groupdocs.com/temporary-license/) | [Ondersteuning](https://forum.groupdocs.com/c/merger/)
+
 ---
 
 **Laatst bijgewerkt:** 2025-12-31  
 **Getest met:** GroupDocs.Merger 23.12 (latest at time of writing)  
 **Auteur:** GroupDocs  
-**Gerelateerde bronnen:** [Documentatie](https://docs.groupdocs.com/merger/java/) | [API‑referentie](https://reference.groupdocs.com/merger/java/) | [Download](https://releases.groupdocs.com/merger/java/) | [Aankoop](https://purchase.groupdocs.com/buy) | [Gratis proefversie](https://releases.groupdocs.com/merger/java/) | [Tijdelijke licentie](https://purchase.groupdocs.com/temporary-license/) | [Ondersteuning](https://forum.groupdocs.com/c/merger/)

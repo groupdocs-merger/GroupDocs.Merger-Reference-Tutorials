@@ -164,10 +164,11 @@ merger.save(outputPath + "/merged.vdx");
 ## الخلاصة
 
 أنت الآن تعرف **كيفية دمج ملفات vdx** بفعالية باستخدام GroupDocs.Merger للغة Java. المكتبة تُجرد تعقيدات XML، مما يتيح لك التركيز على منطق الأعمال بدلاً من تفاصيل تنسيق الملفات. جرّب ميزات إضافية—مثل تحويل الصيغ أو التلاعب على مستوى الصفحات—لتوسيع هذا التدفق الأساسي إلى خط أنابيب أتمتة مستندات كامل.
+ 
+**الموارد ذات الصلة:** [Documentation](https://docs.groupdocs.com/merger/java/) | [API Reference](https://reference.groupdocs.com/merger/java/) | [Download](https://releases.groupdocs.com/merger/java/) | [Purchase](https://purchase.groupdocs.com/buy) | [Free Trial](https://releases.groupdocs.com/merger/java/) | [Temporary License](https://purchase.groupdocs.com/temporary-license/) | [Support](https://forum.groupdocs.com/c/merger/)
 
 ---
 
 **آخر تحديث:** 2025-12-31  
 **تم الاختبار مع:** GroupDocs.Merger 23.12 (أحدث إصدار وقت الكتابة)  
-**المؤلف:** GroupDocs  
-**الموارد ذات الصلة:** [Documentation](https://docs.groupdocs.com/merger/java/) | [API Reference](https://reference.groupdocs.com/merger/java/) | [Download](https://releases.groupdocs.com/merger/java/) | [Purchase](https://purchase.groupdocs.com/buy) | [Free Trial](https://releases.groupdocs.com/merger/java/) | [Temporary License](https://purchase.groupdocs.com/temporary-license/) | [Support](https://forum.groupdocs.com/c/merger/)
+**المؤلف:** GroupDocs 

@@ -162,10 +162,11 @@ A: 将合并调用包裹在 `try‑catch` 块中，捕获并处理 `IOException`
 ## 结论
 
 现在，你已经掌握了使用 GroupDocs.Merger for Java 高效 **how to merge vdx** 文件的完整方法。该库抽象了 XML 的细节，让你专注于业务逻辑而非文件格式的琐碎问题。可以进一步尝试格式转换或页面级别的操作，将此基础工作流扩展为完整的文档自动化流水线。
+  
+**相关资源：** [Documentation](https://docs.groupdocs.com/merger/java/) | [API Reference](https://reference.groupdocs.com/merger/java/) | [Download](https://releases.groupdocs.com/merger/java/) | [Purchase](https://purchase.groupdocs.com/buy) | [Free Trial](https://releases.groupdocs.com/merger/java/) | [Temporary License](https://purchase.groupdocs.com/temporary-license/) | [Support](https://forum.groupdocs.com/c/merger/)
 
 ---
 
 **最后更新：** 2025-12-31  
 **测试环境：** GroupDocs.Merger 23.12（撰写时的最新版本）  
-**作者：** GroupDocs  
-**相关资源：** [Documentation](https://docs.groupdocs.com/merger/java/) | [API Reference](https://reference.groupdocs.com/merger/java/) | [Download](https://releases.groupdocs.com/merger/java/) | [Purchase](https://purchase.groupdocs.com/buy) | [Free Trial](https://releases.groupdocs.com/merger/java/) | [Temporary License](https://purchase.groupdocs.com/temporary-license/) | [Support](https://forum.groupdocs.com/c/merger/)
+**作者：** GroupDocs

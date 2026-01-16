@@ -165,9 +165,10 @@ A: Birleştirme çağrılarını `try‑catch` bloğuna alın ve gerektiğinde `
 
 Artık **VDX dosyalarını nasıl birleştiririm** sorusunun cevabını GroupDocs.Merger for Java ile verimli bir şekilde biliyorsunuz. Kütüphane XML karmaşasını soyutlayarak iş mantığınıza odaklanmanızı sağlar. Ek özelliklerle—örneğin format dönüşümü veya sayfa‑seviyesi manipülasyon—bu temel iş akışını tam bir belge otomasyon hattına genişletebilirsiniz.
 
+**Related Resources:** [Documentation](https://docs.groupdocs.com/merger/java/) | [API Reference](https://reference.groupdocs.com/merger/java/) | [Download](https://releases.groupdocs.com/merger/java/) | [Purchase](https://purchase.groupdocs.com/buy) | [Free Trial](https://releases.groupdocs.com/merger/java/) | [Temporary License](https://purchase.groupdocs.com/temporary-license/) | [Support](https://forum.groupdocs.com/c/merger/)
+
 ---
 
 **Last Updated:** 2025-12-31  
 **Tested With:** GroupDocs.Merger 23.12 (yazım zamanı en yeni sürüm)  
 **Author:** GroupDocs  
-**Related Resources:** [Documentation](https://docs.groupdocs.com/merger/java/) | [API Reference](https://reference.groupdocs.com/merger/java/) | [Download](https://releases.groupdocs.com/merger/java/) | [Purchase](https://purchase.groupdocs.com/buy) | [Free Trial](https://releases.groupdocs.com/merger/java/) | [Temporary License](https://purchase.groupdocs.com/temporary-license/) | [Support](https://forum.groupdocs.com/c/merger/)

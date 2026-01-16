@@ -166,9 +166,10 @@ A: Tekerd a egyesítési hívásokat egy `try‑catch` blokkba, és kezeld az `I
 
 Most már tudod, **how to merge vdx** fájlokat hatékonyan a GroupDocs.Merger for Java segítségével. A könyvtár elrejti az XML‑bonyodalmakat, így a vállalati logikára koncentrálhatsz a fájlformátum részletei helyett. Kísérletezz további funkciókkal – például formátumkonverzióval vagy oldal‑szintű manipulációval – hogy ezt az alap munkafolyamatot egy teljes dokumentum‑automatizálási csővezetékké bővítsd.
 
+**Kapcsolódó források:** [Documentation](https://docs.groupdocs.com/merger/java/) | [API Reference](https://reference.groupdocs.com/merger/java/) | [Download](https://releases.groupdocs.com/merger/java/) | [Purchase](https://purchase.groupdocs.com/buy) | [Free Trial](https://releases.groupdocs.com/merger/java/) | [Temporary License](https://purchase.groupdocs.com/temporary-license/) | [Support](https://forum.groupdocs.com/c/merger/)
+
 ---
 
 **Utoljára frissítve:** 2025-12-31  
 **Tesztelt verzió:** GroupDocs.Merger 23.12 (a cikk írásakor legújabb)  
 **Szerző:** GroupDocs  
-**Kapcsolódó források:** [Documentation](https://docs.groupdocs.com/merger/java/) | [API Reference](https://reference.groupdocs.com/merger/java/) | [Download](https://releases.groupdocs.com/merger/java/) | [Purchase](https://purchase.groupdocs.com/buy) | [Free Trial](https://releases.groupdocs.com/merger/java/) | [Temporary License](https://purchase.groupdocs.com/temporary-license/) | [Support](https://forum.groupdocs.com/c/merger/)

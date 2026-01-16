@@ -164,10 +164,11 @@ merger.save(outputPath + "/merged.vdx");
 ## Kết luận
 
 Bạn đã biết **cách gộp vdx** một cách hiệu quả bằng GroupDocs.Merger cho Java. Thư viện này trừu tượng hoá các chi tiết phức tạp của XML, cho phép bạn tập trung vào logic nghiệp vụ thay vì những rắc rối của định dạng tệp. Hãy thử nghiệm các tính năng bổ sung — như chuyển đổi định dạng hoặc thao tác ở mức trang — để mở rộng quy trình cơ bản này thành một pipeline tự động hoá tài liệu hoàn chỉnh.
+ 
+**Tài nguyên liên quan:** [Documentation](https://docs.groupdocs.com/merger/java/) | [API Reference](https://reference.groupdocs.com/merger/java/) | [Download](https://releases.groupdocs.com/merger/java/) | [Purchase](https://purchase.groupdocs.com/buy) | [Free Trial](https://releases.groupdocs.com/merger/java/) | [Temporary License](https://purchase.groupdocs.com/temporary-license/) | [Support](https://forum.groupdocs.com/c/merger/)
 
 ---
 
 **Cập nhật lần cuối:** 2025-12-31  
 **Đã kiểm tra với:** GroupDocs.Merger 23.12 (phiên bản mới nhất tại thời điểm viết)  
-**Tác giả:** GroupDocs  
-**Tài nguyên liên quan:** [Documentation](https://docs.groupdocs.com/merger/java/) | [API Reference](https://reference.groupdocs.com/merger/java/) | [Download](https://releases.groupdocs.com/merger/java/) | [Purchase](https://purchase.groupdocs.com/buy) | [Free Trial](https://releases.groupdocs.com/merger/java/) | [Temporary License](https://purchase.groupdocs.com/temporary-license/) | [Support](https://forum.groupdocs.com/c/merger/)
+**Tác giả:** GroupDocs 

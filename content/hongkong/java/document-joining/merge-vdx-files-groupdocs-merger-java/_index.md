@@ -163,9 +163,10 @@ A: 將合併呼叫包在 `try‑catch` 區塊中，並依需求處理 `IOExcepti
 
 你現在已了解如何使用 GroupDocs.Merger for Java 高效 **how to merge vdx** 檔案。函式庫抽象化了 XML 的複雜細節，讓你專注於業務邏輯而非檔案格式的怪異。可嘗試額外功能——例如格式轉換或頁面層級的操作——將此基本工作流程擴展為完整的文件自動化管線。
 
+**相關資源：** [文件說明](https://docs.groupdocs.com/merger/java/) | [API 參考](https://reference.groupdocs.com/merger/java/) | [下載](https://releases.groupdocs.com/merger/java/) | [購買](https://purchase.groupdocs.com/buy) | [免費試用](https://releases.groupdocs.com/merger/java/) | [臨時授權](https://purchase.groupdocs.com/temporary-license/) | [支援](https://forum.groupdocs.com/c/merger/)
+
 ---
 
 **最後更新：** 2025-12-31  
 **測試環境：** GroupDocs.Merger 23.12 (latest at time of writing)  
 **作者：** GroupDocs  
-**相關資源：** [文件說明](https://docs.groupdocs.com/merger/java/) | [API 參考](https://reference.groupdocs.com/merger/java/) | [下載](https://releases.groupdocs.com/merger/java/) | [購買](https://purchase.groupdocs.com/buy) | [免費試用](https://releases.groupdocs.com/merger/java/) | [臨時授權](https://purchase.groupdocs.com/temporary-license/) | [支援](https://forum.groupdocs.com/c/merger/)

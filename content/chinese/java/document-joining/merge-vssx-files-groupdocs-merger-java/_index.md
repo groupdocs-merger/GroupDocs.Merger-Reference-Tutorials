@@ -137,23 +137,6 @@ merger.save(outputFile);
 
 准备好迎接下一个挑战了吗？探索合并其他 Visio 格式，或将合并例程整合到更大的文档处理服务中。
 
-## FAQ 部分
-
-**Q1: 什么是 VSSX 文件？**  
-A1: VSSX 文件是 Visio 模板格式，用于存储可复用的形状和符号，以便绘图时使用。
-
-**Q2: 能一次合并超过两个 VSSX 文件吗？**  
-A2: 可以，使用 `join` 方法可顺序添加多个文件。
-
-**Q3: GroupDocs.Merger for Java 的系统要求是什么？**  
-A3: JDK 8 或更高版本，以及支持 Maven/Gradle 的 IDE 或文本编辑器。
-
-**Q4: 如何高效处理大型 VSSX 文件？**  
-A4: 优化文件大小，使用压缩的 VSSX 包，并监控 JVM 内存使用情况。
-
-**Q5: 除 VSSX 外，是否支持其他 Visio 格式？**  
-A5: 当然——GroupDocs.Merger 还支持 VSDX、VDX 等多种 Visio 文件类型。
-
 ## 常见问题
 
 **Q: 在生产环境使用合并功能是否需要商业许可证？**  

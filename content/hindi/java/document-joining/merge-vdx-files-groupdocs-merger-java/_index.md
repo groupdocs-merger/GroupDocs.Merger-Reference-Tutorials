@@ -152,9 +152,10 @@ A: मर्ज कॉल्स को `try‑catch` ब्लॉक में �
 ## निष्कर्ष
 अब आप **how to merge vdx** फ़ाइलों को GroupDocs.Merger for Java का उपयोग करके प्रभावी ढंग से मर्ज करना जानते हैं। लाइब्रेरी XML की जटिलताओं को एब्स्ट्रैक्ट करती है, जिससे आप फ़ाइल फ़ॉर्मेट की बारीकियों की बजाय बिज़नेस लॉजिक पर ध्यान केंद्रित कर सकते हैं। अतिरिक्त फीचर्स—जैसे फ़ॉर्मेट कन्वर्ज़न या पेज‑लेवल मैनिपुलेशन—के साथ प्रयोग करें ताकि इस बेसिक वर्कफ़्लो को एक पूर्ण दस्तावेज़ ऑटोमेशन पाइपलाइन में विस्तारित किया जा सके।
 
+**संबंधित संसाधन:** [Documentation](https://docs.groupdocs.com/merger/java/) | [API Reference](https://reference.groupdocs.com/merger/java/) | [Download](https://releases.groupdocs.com/merger/java/) | [Purchase](https://purchase.groupdocs.com/buy) | [Free Trial](https://releases.groupdocs.com/merger/java/) | [Temporary License](https://purchase.groupdocs.com/temporary-license/) | [Support](https://forum.groupdocs.com/c/merger/)
+
 ---
 
 **अंतिम अपडेट:** 2025-12-31  
 **परीक्षण किया गया:** GroupDocs.Merger 23.12 (latest at time of writing)  
 **लेखक:** GroupDocs  
-**संबंधित संसाधन:** [Documentation](https://docs.groupdocs.com/merger/java/) | [API Reference](https://reference.groupdocs.com/merger/java/) | [Download](https://releases.groupdocs.com/merger/java/) | [Purchase](https://purchase.groupdocs.com/buy) | [Free Trial](https://releases.groupdocs.com/merger/java/) | [Temporary License](https://purchase.groupdocs.com/temporary-license/) | [Support](https://forum.groupdocs.com/c/merger/)

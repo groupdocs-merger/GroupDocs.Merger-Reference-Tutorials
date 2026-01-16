@@ -166,9 +166,10 @@ A: Bungkus panggilan penggabungan dalam blok `try‑catch` dan tangani `IOExcept
 
 Anda kini tahu **how to merge vdx** file secara efisien menggunakan GroupDocs.Merger untuk Java. Pustaka mengabstraksi kerumitan XML, memungkinkan Anda fokus pada logika bisnis daripada keanehan format file. Bereksperimenlah dengan fitur tambahan—seperti konversi format atau manipulasi tingkat halaman—untuk memperluas alur kerja dasar ini menjadi pipeline otomatisasi dokumen yang lengkap.
 
+**Sumber Daya Terkait:** [Documentation](https://docs.groupdocs.com/merger/java/) | [API Reference](https://reference.groupdocs.com/merger/java/) | [Download](https://releases.groupdocs.com/merger/java/) | [Purchase](https://purchase.groupdocs.com/buy) | [Free Trial](https://releases.groupdocs.com/merger/java/) | [Temporary License](https://purchase.groupdocs.com/temporary-license/) | [Support](https://forum.groupdocs.com/c/merger/)
+
 ---
 
 **Terakhir Diperbarui:** 2025-12-31  
 **Diuji Dengan:** GroupDocs.Merger 23.12 (latest at time of writing)  
 **Penulis:** GroupDocs  
-**Sumber Daya Terkait:** [Documentation](https://docs.groupdocs.com/merger/java/) | [API Reference](https://reference.groupdocs.com/merger/java/) | [Download](https://releases.groupdocs.com/merger/java/) | [Purchase](https://purchase.groupdocs.com/buy) | [Free Trial](https://releases.groupdocs.com/merger/java/) | [Temporary License](https://purchase.groupdocs.com/temporary-license/) | [Support](https://forum.groupdocs.com/c/merger/)

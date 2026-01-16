@@ -139,23 +139,6 @@ Vous avez maintenant maîtrisé **comment fusionner des fichiers visio stencil j
 
 Prêt pour le prochain défi ? Explorez la fusion d’autres formats Visio ou intégrez la routine de fusion dans un service de traitement de documents plus vaste.
 
-## Section FAQ
-
-**Q1 : Qu’est‑ce qu’un fichier VSSX ?**  
-R1 : Un fichier VSSX est un format de stencil Visio qui stocke des formes et symboles réutilisables pour la création de diagrammes.
-
-**Q2 : Puis‑je fusionner plus de deux fichiers VSSX à la fois ?**  
-R2 : Oui, vous pouvez ajouter plusieurs fichiers séquentiellement en utilisant la méthode `join`.
-
-**Q3 : Quels sont les prérequis système pour GroupDocs.Merger pour Java ?**  
-R3 : JDK 8 ou supérieur et un IDE ou éditeur de texte compatible avec Maven/Gradle.
-
-**Q4 : Comment gérer efficacement de gros fichiers VSSX ?**  
-R4 : Optimisez la taille des fichiers, utilisez des packages VSSX compressés et surveillez l’utilisation de la mémoire JVM.
-
-**Q5 : Le support existe‑t‑il pour d’autres formats Visio en plus de VSSX ?**  
-R5 : Absolument — GroupDocs.Merger gère également VSDX, VDX et plusieurs autres types de fichiers Visio.
-
 ## Questions fréquemment posées
 
 **Q : Dois‑je disposer d’une licence commerciale pour utiliser la fonctionnalité de fusion en production ?**  

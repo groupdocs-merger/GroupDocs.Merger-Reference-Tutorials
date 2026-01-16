@@ -165,10 +165,11 @@ A: Τυλίξτε τις κλήσεις συγχώνευσης σε ένα μπ�
 ## Συμπέρασμα
 
 Τώρα γνωρίζετε **how to merge vdx** αρχεία αποδοτικά χρησιμοποιώντας το GroupDocs.Merger για Java. Η βιβλιοθήκη αφαιρεί τις πολυπλοκότητες του XML, επιτρέποντάς σας να εστιάσετε στη λογική της επιχείρησης αντί στις ιδιαιτερότητες του μορφότυπου αρχείου. Πειραματιστείτε με πρόσθετες λειτουργίες — όπως η μετατροπή μορφής ή η διαχείριση σε επίπεδο σελίδας — για να επεκτείνετε αυτή τη βασική ροή εργασίας σε μια πλήρη γραμμή αυτοματοποίησης εγγράφων.
+  
+**Σχετικοί Πόροι:** [Documentation](https://docs.groupdocs.com/merger/java/) | [API Reference](https://reference.groupdocs.com/merger/java/) | [Download](https://releases.groupdocs.com/merger/java/) | [Purchase](https://purchase.groupdocs.com/buy) | [Free Trial](https://releases.groupdocs.com/merger/java/) | [Temporary License](https://purchase.groupdocs.com/temporary-license/) | [Support](https://forum.groupdocs.com/c/merger/)
 
 ---
 
 **Τελευταία Ενημέρωση:** 2025-12-31  
 **Δοκιμή Με:** GroupDocs.Merger 23.12 (τελευταία τη στιγμή της συγγραφής)  
-**Συγγραφέας:** GroupDocs  
-**Σχετικοί Πόροι:** [Documentation](https://docs.groupdocs.com/merger/java/) | [API Reference](https://reference.groupdocs.com/merger/java/) | [Download](https://releases.groupdocs.com/merger/java/) | [Purchase](https://purchase.groupdocs.com/buy) | [Free Trial](https://releases.groupdocs.com/merger/java/) | [Temporary License](https://purchase.groupdocs.com/temporary-license/) | [Support](https://forum.groupdocs.com/c/merger/)
+**Συγγραφέας:** GroupDocs

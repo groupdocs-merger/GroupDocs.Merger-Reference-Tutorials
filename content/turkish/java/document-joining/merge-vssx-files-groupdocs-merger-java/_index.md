@@ -139,23 +139,6 @@ Artık GroupDocs.Merger for Java kullanarak **how to merge visio stencil java** 
 
 Bir sonraki zorluk için hazır mısınız? Diğer Visio formatlarını birleştirmeyi keşfedin ya da birleştirme rutinini daha büyük bir belge‑işleme servisine entegre edin.
 
-## SSS Bölümü
-
-**S1: VSSX dosyası nedir?**  
-C1: VSSX dosyası, diyagramlar için yeniden kullanılabilir şekil ve sembolleri depolayan bir Visio şablon formatıdır.
-
-**S2: Aynı anda iki’den fazla VSSX dosyasını birleştirebilir miyim?**  
-C2: Evet, `join` metodunu kullanarak birden fazla dosyayı sırasıyla ekleyebilirsiniz.
-
-**S3: GroupDocs.Merger for Java için sistem gereksinimleri nelerdir?**  
-C3: JDK 8 veya üzeri ve Maven/Gradle desteği olan uyumlu bir IDE veya metin düzenleyicidir.
-
-**S4: Büyük VSSX dosyalarını verimli bir şekilde nasıl yönetebilirim?**  
-C4: Dosya boyutlarını optimize edin, sıkıştırılmış VSSX paketlerini kullanın ve JVM bellek kullanımını izleyin.
-
-**S5: VSSX dışındaki diğer Visio formatları için destek var mı?**  
-C5: Kesinlikle—GroupDocs.Merger ayrıca VSDX, VDX ve birkaç diğer Visio dosya türünü de işler.
-
 ## Sıkça Sorulan Sorular
 
 **S: Üretimde birleştirme işlevini kullanmak için ticari lisansa ihtiyacım var mı?**  
