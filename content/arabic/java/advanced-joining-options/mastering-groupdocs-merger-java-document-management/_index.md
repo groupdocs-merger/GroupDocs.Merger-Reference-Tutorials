@@ -6,7 +6,7 @@ keywords:
 - document management Java
 - GroupDocs.Merger for Java
 - Java document handling
-title: 'حفظ المستند المدمج Java: إدارة المستندات المتقنة باستخدام GroupDocs.Merger'
+title: 'حفظ المستند المدمج Java - إدارة المستندات المتقنة باستخدام GroupDocs.Merger'
 type: docs
 url: /ar/java/advanced-joining-options/mastering-groupdocs-merger-java-document-management/
 weight: 1

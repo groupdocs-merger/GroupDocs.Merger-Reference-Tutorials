@@ -6,7 +6,7 @@ keywords:
 - document management Java
 - GroupDocs.Merger for Java
 - Java document handling
-title: 'Сохранить объединённый документ Java: Управление главным документом с помощью
+title: 'Сохранить объединённый документ Java - Управление главным документом с помощью
   GroupDocs.Merger'
 type: docs
 url: /ru/java/advanced-joining-options/mastering-groupdocs-merger-java-document-management/

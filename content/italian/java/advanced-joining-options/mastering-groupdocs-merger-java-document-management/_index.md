@@ -6,7 +6,7 @@ keywords:
 - document management Java
 - GroupDocs.Merger for Java
 - Java document handling
-title: 'Salva documento unito Java: Gestione completa dei documenti con GroupDocs.Merger'
+title: 'Salva documento unito Java - Gestione completa dei documenti con GroupDocs.Merger'
 type: docs
 url: /it/java/advanced-joining-options/mastering-groupdocs-merger-java-document-management/
 weight: 1

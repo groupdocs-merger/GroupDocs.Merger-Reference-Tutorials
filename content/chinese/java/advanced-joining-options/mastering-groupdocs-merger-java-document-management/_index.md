@@ -5,7 +5,7 @@ keywords:
 - document management Java
 - GroupDocs.Merger for Java
 - Java document handling
-title: 保存合并文档（Java）：使用 GroupDocs.Merger 实现文档管理
+title: 保存合并文档（Java） - 使用 GroupDocs.Merger 实现文档管理
 type: docs
 url: /zh/java/advanced-joining-options/mastering-groupdocs-merger-java-document-management/
 weight: 1

@@ -1,5 +1,5 @@
 ---
-title: "Save Merged Document Java: Master Document Management with GroupDocs.Merger"
+title: "Save Merged Document Java - Master Document Management with GroupDocs.Merger"
 description: "Learn how to save merged document java using GroupDocs.Merger, and discover how to merge different file formats efficiently."
 date: "2026-01-16"
 weight: 1

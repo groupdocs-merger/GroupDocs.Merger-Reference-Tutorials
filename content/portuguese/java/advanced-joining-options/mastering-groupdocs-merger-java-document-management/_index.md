@@ -6,7 +6,7 @@ keywords:
 - document management Java
 - GroupDocs.Merger for Java
 - Java document handling
-title: 'Salvar Documento Mesclado em Java: Gerenciamento Mestre de Documentos com
+title: 'Salvar Documento Mesclado em Java - Gerenciamento Mestre de Documentos com
   GroupDocs.Merger'
 type: docs
 url: /pt/java/advanced-joining-options/mastering-groupdocs-merger-java-document-management/

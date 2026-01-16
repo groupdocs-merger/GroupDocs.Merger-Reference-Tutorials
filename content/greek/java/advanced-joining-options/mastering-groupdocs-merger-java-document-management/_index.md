@@ -7,7 +7,7 @@ keywords:
 - document management Java
 - GroupDocs.Merger for Java
 - Java document handling
-title: 'Αποθήκευση Συγχωνευμένου Εγγράφου Java: Διαχείριση Κύριου Εγγράφου με το GroupDocs.Merger'
+title: 'Αποθήκευση Συγχωνευμένου Εγγράφου Java - Διαχείριση Κύριου Εγγράφου με το GroupDocs.Merger'
 type: docs
 url: /el/java/advanced-joining-options/mastering-groupdocs-merger-java-document-management/
 weight: 1

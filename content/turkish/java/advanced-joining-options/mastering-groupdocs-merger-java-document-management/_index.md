@@ -7,7 +7,7 @@ keywords:
 - document management Java
 - GroupDocs.Merger for Java
 - Java document handling
-title: 'Birleştirilmiş Belgeyi Kaydet Java: GroupDocs.Merger ile Ana Belge Yönetimi'
+title: 'Birleştirilmiş Belgeyi Kaydet Java - GroupDocs.Merger ile Ana Belge Yönetimi'
 type: docs
 url: /tr/java/advanced-joining-options/mastering-groupdocs-merger-java-document-management/
 weight: 1

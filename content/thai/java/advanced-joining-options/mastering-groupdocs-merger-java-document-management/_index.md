@@ -6,7 +6,7 @@ keywords:
 - document management Java
 - GroupDocs.Merger for Java
 - Java document handling
-title: 'บันทึกเอกสารที่ผสานรวมใน Java: การจัดการเอกสารหลักด้วย GroupDocs.Merger'
+title: 'บันทึกเอกสารที่ผสานรวมใน Java - การจัดการเอกสารหลักด้วย GroupDocs.Merger'
 type: docs
 url: /th/java/advanced-joining-options/mastering-groupdocs-merger-java-document-management/
 weight: 1

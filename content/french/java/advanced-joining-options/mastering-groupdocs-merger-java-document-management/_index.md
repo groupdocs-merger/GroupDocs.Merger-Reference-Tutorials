@@ -6,7 +6,7 @@ keywords:
 - document management Java
 - GroupDocs.Merger for Java
 - Java document handling
-title: 'Enregistrer le document fusionné Java : Gestion du document maître avec GroupDocs.Merger'
+title: 'Enregistrer le document fusionné Java - Gestion du document maître avec GroupDocs.Merger'
 type: docs
 url: /fr/java/advanced-joining-options/mastering-groupdocs-merger-java-document-management/
 weight: 1

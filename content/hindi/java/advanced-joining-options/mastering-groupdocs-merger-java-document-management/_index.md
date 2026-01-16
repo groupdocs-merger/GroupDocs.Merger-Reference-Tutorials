@@ -6,7 +6,7 @@ keywords:
 - document management Java
 - GroupDocs.Merger for Java
 - Java document handling
-title: 'जावा में मर्ज किया गया दस्तावेज़ सहेजें: GroupDocs.Merger के साथ दस्तावेज़
+title: 'जावा में मर्ज किया गया दस्तावेज़ सहेजें - GroupDocs.Merger के साथ दस्तावेज़
   प्रबंधन में महारत'
 type: docs
 url: /hi/java/advanced-joining-options/mastering-groupdocs-merger-java-document-management/

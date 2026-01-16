@@ -6,7 +6,7 @@ keywords:
 - document management Java
 - GroupDocs.Merger for Java
 - Java document handling
-title: 'Opslaan samengevoegd document Java: Beheer van hoofddocumenten met GroupDocs.Merger'
+title: 'Opslaan samengevoegd document Java - Beheer van hoofddocumenten met GroupDocs.Merger'
 type: docs
 url: /nl/java/advanced-joining-options/mastering-groupdocs-merger-java-document-management/
 weight: 1

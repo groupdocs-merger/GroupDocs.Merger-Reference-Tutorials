@@ -6,7 +6,7 @@ keywords:
 - document management Java
 - GroupDocs.Merger for Java
 - Java document handling
-title: 'Összevont dokumentum mentése Java: Dokumentumkezelés mesterfokon a GroupDocs.Merger-rel'
+title: 'Összevont dokumentum mentése Java - Dokumentumkezelés mesterfokon a GroupDocs.Merger-rel'
 type: docs
 url: /hu/java/advanced-joining-options/mastering-groupdocs-merger-java-document-management/
 weight: 1

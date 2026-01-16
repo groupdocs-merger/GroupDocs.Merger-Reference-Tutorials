@@ -6,7 +6,7 @@ keywords:
 - document management Java
 - GroupDocs.Merger for Java
 - Java document handling
-title: 'Zapisz scalony dokument Java: Zarządzanie dokumentami master z GroupDocs.Merger'
+title: 'Zapisz scalony dokument Java - Zarządzanie dokumentami master z GroupDocs.Merger'
 type: docs
 url: /pl/java/advanced-joining-options/mastering-groupdocs-merger-java-document-management/
 weight: 1

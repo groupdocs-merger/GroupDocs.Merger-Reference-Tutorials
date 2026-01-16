@@ -6,7 +6,7 @@ keywords:
 - document management Java
 - GroupDocs.Merger for Java
 - Java document handling
-title: 'Simpan Dokumen Gabungan Java: Pengelolaan Dokumen Master dengan GroupDocs.Merger'
+title: 'Simpan Dokumen Gabungan Java - Pengelolaan Dokumen Master dengan GroupDocs.Merger'
 type: docs
 url: /id/java/advanced-joining-options/mastering-groupdocs-merger-java-document-management/
 weight: 1

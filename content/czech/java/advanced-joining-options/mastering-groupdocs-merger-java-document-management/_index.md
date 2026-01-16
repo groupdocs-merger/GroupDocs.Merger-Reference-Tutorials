@@ -6,7 +6,7 @@ keywords:
 - document management Java
 - GroupDocs.Merger for Java
 - Java document handling
-title: 'Uložení sloučeného dokumentu v Javě: Správa hlavního dokumentu s GroupDocs.Merger'
+title: 'Uložení sloučeného dokumentu v Javě - Správa hlavního dokumentu s GroupDocs.Merger'
 type: docs
 url: /cs/java/advanced-joining-options/mastering-groupdocs-merger-java-document-management/
 weight: 1

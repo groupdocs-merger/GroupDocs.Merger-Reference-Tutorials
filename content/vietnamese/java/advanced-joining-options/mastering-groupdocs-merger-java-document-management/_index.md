@@ -6,7 +6,7 @@ keywords:
 - document management Java
 - GroupDocs.Merger for Java
 - Java document handling
-title: 'Lưu tài liệu đã hợp nhất Java: Quản lý tài liệu gốc với GroupDocs.Merger'
+title: 'Lưu tài liệu đã hợp nhất Java - Quản lý tài liệu gốc với GroupDocs.Merger'
 type: docs
 url: /vi/java/advanced-joining-options/mastering-groupdocs-merger-java-document-management/
 weight: 1

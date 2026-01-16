@@ -6,7 +6,7 @@ keywords:
 - document management Java
 - GroupDocs.Merger for Java
 - Java document handling
-title: '병합된 문서 저장 Java: GroupDocs.Merger를 활용한 마스터 문서 관리'
+title: '병합된 문서 저장 Java - GroupDocs.Merger를 활용한 마스터 문서 관리'
 type: docs
 url: /ko/java/advanced-joining-options/mastering-groupdocs-merger-java-document-management/
 weight: 1
