@@ -1,19 +1,20 @@
 ---
-title: "How to Split DOCX with GroupDocs.Merger for Java"
-description: "Learn how to split DOCX files using GroupDocs.Merger for Java, covering split docx into files, split options java, and stream extraction."
-date: "2026-02-06"
-weight: 1
-url: "/java/document-splitting/master-java-document-splitting-groupdocs-merger/"
+date: '2026-02-06'
+description: GroupDocs.Merger for Java を使用して DOCX ファイルを分割する方法を学び、DOCX をファイルに分割する手順、Java
+  の分割オプション、ストリーム抽出について解説します。
 keywords:
 - Java Document Splitting
 - GroupDocs.Merger for Java
 - Split DOCX Pages
+title: GroupDocs.Merger for Java を使用した DOCX の分割方法
 type: docs
+url: /ja/java/document-splitting/master-java-document-splitting-groupdocs-merger/
+weight: 1
 ---
 
-# Master Java Document Splitting with GroupDocs.Merger: Split DOCX Pages into Files and Streams
+# GroupDocs.Merger を使用した Java ドキュメント分割のマスター: DOCX ページをファイルとストリームに分割
 
-In this tutorial you’ll discover **how to split docx** documents efficiently with GroupDocs.Merger for Java. Whether you need to break a large contract into separate pages or extract specific sections as streams, we’ll walk you through every step, from setup to real‑world usage.
+このチュートリアルでは、GroupDocs.Merger for Java を使って **how to split docx** ドキュメントを効率的に分割する方法を学びます。大きな契約書をページ単位で分割したい場合や、特定のセクションをストリームとして抽出したい場合など、セットアップから実際の使用例までステップバイステップで解説します。
 
 ## Quick Answers
 - **What library handles DOCX splitting in Java?** GroupDocs.Merger for Java.  
@@ -23,7 +24,7 @@ In this tutorial you’ll discover **how to split docx** documents efficiently w
 - **Which Java versions are supported?** Any JDK 8+ works with the latest GroupDocs.Merger release.
 
 ## What is “how to split docx”?
-Splitting a DOCX means taking a multi‑page Word document and creating individual files (or streams) that contain one or more selected pages. This is useful for modular document delivery, compliance workflows, or on‑the‑fly processing where you don’t want to store temporary files.
+DOCX を分割するとは、複数ページからなる Word 文書から選択したページを 1 つまたは複数のページ単位のファイル（またはストリーム）に変換することです。モジュラーな文書配信やコンプライアンスワークフロー、一時ファイルを保存したくないオンザフライ処理に便利です。
 
 ## Why use GroupDocs.Merger for Java?
 - **Zero‑dependency processing:** Works with pure Java, no native binaries.  
