@@ -1,49 +1,51 @@
 ---
-date: '2025-12-17'
-description: GroupDocs.Merger for Java を使用して、ドキュメントから特定のページ（偶数ページも含む）を抽出する方法を学びましょう。Word、PDF
-  などのページ範囲抽出をマスターしてください。
+date: '2026-02-16'
+description: GroupDocs.Merger for Java を使用して、Word、PDF、その他のドキュメントから特定のページ（偶数ページを含む）を抽出する方法を学びましょう。
 keywords:
 - extract pages java
 - groupdocs merger for java
 - page extraction by range
-title: GroupDocs.Merger for Java を使用して範囲で特定のページを抽出する
+title: GroupDocs.Merger for Java を使って範囲指定で特定ページを抽出する
 type: docs
 url: /ja/java/document-extraction/extract-pages-groupdocs-merger-java-guide/
 weight: 1
 ---
 
-# GroupDocs.Merger for Java を使用した範囲指定で特定ページを抽出する方法
+# 範囲で特定のページを抽出する方法（GroupDocs.Merger for Java）
 
-特定のページ番号範囲を使用してドキュメントから **特定ページを抽出** したいですか？選択的なデータ操作が必要なプロジェクトや、ドキュメント処理のワークフローを効率化したい場合に役立つガイドです。ここでは、Word ファイルなどのドキュメントで指定範囲内の偶数ページを抽出する方法を GroupDocs.Merger for Java がどのように簡素化できるかを見ていきます。
+大きなドキュメント（Word の契約書、PDF レポート、PowerPoint の資料など）から **特定のページを抽出** する必要がある場合、本ガイドでは GroupDocs.Merger for Java を使用したシンプルでプログラム的な方法をご紹介します。範囲でページを抽出する重要性、偶数ページの対象方法、既存の Java プロジェクトへの統合方法が分かります。
 
-**本ガイドで学べること:**
-- GroupDocs.Merger for Java を使用してドキュメントから特定ページを抽出する方法  
-- 環境のセットアップと最適なパフォーマンスのための構成  
-- 抽出プロセスにおける主要パラメータとオプションの理解  
+**学べること**
+- 任意のサポート対象ドキュメントタイプから特定のページを抽出するステップバイステップのプロセス。  
+- 偶数ページ、奇数ページ、またはカスタムページリストなどの範囲オプションの設定方法。  
+- 大きなファイルの取り扱いと一般的な落とし穴を回避するためのヒント。  
 
-それでは実装ガイドに入りましょう。その前に前提条件を確認します。
+## クイック回答
+- **「特定のページを抽出」とは何ですか？** 大きなドキュメントから必要なページだけを選択することです。  
+- **サポートされているフォーマットは何ですか？** Word、PDF、PowerPoint、Excel など多数。  
+- **偶数ページだけを抽出できますか？** はい — `RangeMode.EvenPages` を使用します。  
+- **ライセンスは必要ですか？** 無料トライアルでテストは可能ですが、本番環境ではライセンスが必要です。  
+- **コード行数はどれくらいですか？** 範囲を抽出するだけで20行未満です。  
 
-## Quick Answers
-- **「特定ページを抽出する」とは何ですか？** 大きなドキュメントから必要なページだけを選択することです。  
-- **対応フォーマットは？** Word、PDF、PowerPoint、Excel など多数。  
-- **偶数ページだけ抽出できますか？** はい、`RangeMode.EvenPages` を使用します。  
-- **ライセンスは必要ですか？** テスト用の無料トライアルは利用可能です。製品版ではライセンスが必要です。  
-- **コード行数は？** 範囲抽出は 20 行未満で実装できます。
+## 「特定のページを抽出」とは何か
+特定のページを抽出するとは、元のドキュメントからページのサブセットを取り出し、新しい独立したファイルとして保存することを指します。契約書の条項、章、請求書のセットなど、特定のセクションだけが必要で、全体のドキュメントを送る必要がない場合に便利です。
 
-## Prerequisites
+## なぜ範囲で特定のページを抽出するのか
+対象ページだけを抽出することで、ファイルサイズが削減され、機密情報が保護され、下流処理（例：電子署名や自動レポート作成）が高速化します。範囲ベースの抽出を使用すれば、プログラムでページ 1‑5、すべての偶数ページ、または任意のカスタムリストを手動編集なしで選択できます。
 
-開始する前に、以下を確認してください。  
-1. **必須ライブラリ**: Java プロジェクトに GroupDocs.Merger を依存関係として追加する必要があります。  
-2. **環境設定**: マシンに JDK がインストールされ、適切に設定されていることを確認してください。  
-3. **知識の前提条件**: Java プログラミングと基本的なファイル操作の概念に慣れていることが望ましいです。
+## 前提条件
 
-## Setting Up GroupDocs.Merger for Java
+開始する前に、以下を確認してください：
 
-まずは Maven または Gradle を使ってプロジェクトに必要なライブラリを設定します。
+1. **必要なライブラリ** – Maven または Gradle の依存関係として GroupDocs.Merger for Java を追加。  
+2. **JDK** – Java Development Kit 8 以上がインストールされ、設定されていること。  
+3. **基本的な Java 知識** – ファイル I/O と例外処理に慣れていること。  
 
-### Maven Setup
+## GroupDocs.Merger for Java の設定
 
-`pom.xml` に以下の依存関係を追加してください。
+### Maven 設定
+
+`pom.xml` に依存関係を追加します：
 
 ```xml
 <dependency>
@@ -53,27 +55,27 @@ weight: 1
 </dependency>
 ```
 
-### Gradle Setup
+### Gradle 設定
 
-Gradle プロジェクトの場合は `build.gradle` に次の行を追加します。
+`build.gradle` ファイルに行を追加します：
 
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-### Direct Download
+### 直接ダウンロード
 
-あるいは、[GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) から直接最新バージョンをダウンロードできます。
+最新のバイナリは [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) から取得できます。
 
-#### License Acquisition Steps
+#### ライセンス取得手順
 
-1. **Free Trial**: 機能を試すために無料トライアルをダウンロードします。  
-2. **Temporary License**: 長期テストが必要な場合は一時ライセンスを取得します。  
-3. **Purchase**: GroupDocs.Merger が要件に合致すれば購入を検討してください。
+1. **Free Trial** – API を試すためにトライアルをダウンロード。  
+2. **Temporary License** – 拡張テスト用に一時キーをリクエスト。  
+3. **Purchase** – 本番利用のためにフルライセンスを購入。  
 
-### Basic Initialization and Setup
+### 基本的な初期化と設定
 
-GroupDocs.Merger の初期化とセットアップは以下の通りです。
+以下は `Merger` インスタンスを作成するために必要な最小コードです：
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -82,26 +84,20 @@ String filePath = "YOUR_DOCUMENT_DIRECTORY/YourDocument.docx";
 Merger merger = new Merger(filePath);
 ```
 
-## Implementation Guide
+## 範囲で特定のページを抽出する方法
 
-それでは、GroupDocs.Merger が提供するページ範囲抽出機能に焦点を当てます。
+ここでは、カスタム範囲内の偶数ページを抽出する具体的な手順を説明します。
 
-### Extract Pages by Range
-
-この機能は、ページ番号や範囲に基づいてドキュメントから指定ページを抽出できます。大容量ドキュメントから必要なセクションだけを取り出す際に便利です。
-
-#### Step 1: Define File Paths
-
-入力ファイルと出力ファイルのパスを設定します。
+### 手順 1: 入力と出力のパスを定義
 
 ```java
 String filePath = "YOUR_DOCUMENT_DIRECTORY/YourDocument.docx";
 String filePathOut = "YOUR_OUTPUT_DIRECTORY/ExtractedPages.docx";
 ```
 
-#### Step 2: Configure Extraction Options
+### 手順 2: 抽出オプションを設定
 
-`ExtractOptions` を使用して抽出範囲とモードを指定します。ここでは、特定範囲内の偶数ページを抽出します。
+`ExtractOptions` を使用すると、開始ページ、終了ページ、`RangeMode`（例：偶数、奇数、カスタム）を指定できます。以下の例では、1 から 3 の間の偶数ページのみを抽出し、ページ 2 が保存されます。
 
 ```java
 import com.groupdocs.merger.domain.options.ExtractOptions;
@@ -111,9 +107,7 @@ import com.groupdocs.merger.domain.options.RangeMode;
 ExtractOptions extractOptions = new ExtractOptions(1, 3, RangeMode.EvenPages);
 ```
 
-**Explanation**: `RangeMode.EvenPages` パラメータにより、指定範囲内の偶数ページだけが選択されます。この例ではページ 2 のみが抽出されます。
-
-#### Step 3: Initialize Merger and Extract Pages
+### 手順 3: 抽出を実行し、結果を保存
 
 ```java
 // Initialize Merger with input document path
@@ -126,60 +120,62 @@ merger.extractPages(extractOptions);
 merger.save(filePathOut);
 ```
 
-**Troubleshooting Tips**: 指定した範囲とドキュメント形式が GroupDocs.Merger でサポートされているか確認してください。ファイルアクセス権限やパスが正しくない場合は例外が発生します。
+**プロのコツ:** 抽出ロジックを `try‑catch` ブロックで囲み、`IOException` やフォーマット固有の例外を適切に処理しましょう。
 
-## Practical Applications
+## 実用的な活用例
 
-この機能はさまざまな実務シナリオで活用できます。
+| シナリオ | 抽出が役立つ点 |
+|----------|----------------------|
+| **法務レビュー** | 必要な条項だけを抽出して迅速に分析できる。 |
+| **学術研究** | 教科書の章やセクションを分離して引用できる。 |
+| **財務報告** | 複数ページのレポートから表やステートメントを抽出できる。 |
 
-1. **Legal Document Review** – 契約書の特定セクションを抽出して集中分析。  
-2. **Academic Research** – 教科書や論文から重要章を抜き出す。  
-3. **Financial Reports** – 長大なレポートから関連テーブルやステートメントを分離。
+## パフォーマンス上の考慮点
 
-## Performance Considerations
+- **Memory Management** – 大きな PDF はヒープ領域を大量に消費する可能性があります。`OutOfMemoryError` が発生した場合は JVM ヒープ（`-Xmx2g` など）を増やしてください。  
+- **File I/O** – 大きなファイルの読み書き時はバッファードストリームを使用してディスク遅延を減らします。  
+- **Batch Processing** – 多数のドキュメントから範囲を抽出する必要がある場合は、順次処理するか、制御された同時実行数のスレッドプールを使用してください。  
 
-GroupDocs.Merger を使用する際の最適パフォーマンスのポイント:
+## よくある問題と解決策
 
-- 大容量ドキュメントではメモリ使用量を監視・管理する。  
-- リソース消費を最小化するため、効率的なファイル処理を実施する。  
-- Java のガベージコレクションとメモリ管理のベストプラクティスに従う。
-
-## Common Issues and Solutions
-
-| Issue | Solution |
+| 問題 | 解決策 |
 |-------|----------|
-| **Invalid file path** | フルパスを確認し、アプリケーションに読み書き権限があることを確認してください。 |
-| **Unsupported format** | ドキュメントタイプ（例: DOCX、PDF）がサポート一覧に含まれているか確認してください。 |
-| **Out‑of‑memory errors** | 大きなファイルは小さなチャンクに分割して処理するか、JVM ヒープサイズ (`-Xmx`) を増やしてください。 |
-| **RangeMode not behaving as expected** | 開始/終了値がドキュメントのページ数内に収まっているか再確認してください。 |
+| **無効なファイルパス** | フルパスを確認し、アプリケーションに読み書き権限があることを確認してください。 |
+| **サポートされていない形式** | ドキュメントタイプ（例：DOCX、PDF）がサポート形式に含まれているか確認してください。 |
+| **メモリ不足エラー** | 大きなファイルを小さなチャンクに分割して処理するか、JVM ヒープサイズ（`-Xmx`）を増やしてください。 |
+| **RangeMode が期待通りに動作しない** | 開始/終了値を再確認し、ドキュメントのページ数内に収まっているか確認してください。 |
 
-## FAQ Section
+## よくある質問
 
-1. **奇数ページを抽出するには？**  
-   `ExtractOptions` で `RangeMode.OddPages` を使用します。  
-2. **PDF でも使用できますか？**  
-   はい、GroupDocs.Merger は PDF を含むさまざまなフォーマットをサポートしています。  
-3. **ドキュメントパスが間違っている場合は？**  
-   ファイルパスを再確認し、アクセス権限が正しく設定されているか確認してください。  
-4. **抽出中に例外が発生したらどう対処すべき？**  
-   `try‑catch` ブロックを実装して、IO やフォーマット関連の例外を適切に処理します。  
-5. **抽出できるページ数に上限はありますか？**  
-   本質的なページ数制限はありませんが、非常に大きなドキュメントではメモリ使用量に注意してください。
+**Q: 奇数ページを抽出するにはどうすればよいですか？**  
+A: `ExtractOptions` 作成時に `RangeMode.OddPages` を使用します。
 
-## Resources
+**Q: PDF でも使用できますか？**  
+A: はい、GroupDocs.Merger は PDF、DOCX、PPTX、XLSX など多数のフォーマットをサポートしています。
 
-- [Documentation](https://docs.groupdocs.com/merger/java/)  
-- [API Reference](https://reference.groupdocs.com/merger/java/)  
-- [Download GroupDocs.Merger for Java](https://releases.groupdocs.com/merger/java/)  
-- [Purchase GroupDocs Products](https://purchase.groupdocs.com/buy)  
-- [Free Trial](https://releases.groupdocs.com/merger/java/)  
-- [Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-- [Support Forum](https://forum.groupdocs.com/c/merger/)  
+**Q: ドキュメントのパスが間違っていたらどうなりますか？**  
+A: API は `IOException` をスローします。パスを確認し、ファイル権限をチェックしてください。
 
-このガイドに従えば、Java プロジェクトで GroupDocs.Merger を使用した範囲指定ページ抽出をスムーズに実装できるはずです。コーディングを楽しんでください！
+**Q: 抽出中に例外が発生した場合、どう対処すべきですか？**  
+A: 抽出コードを `try‑catch` ブロックで囲み、トラブルシューティングのために例外詳細をログに記録してください。
+
+**Q: 抽出できるページ数に制限はありますか？**  
+A: 明確な上限はありませんが、非常に大規模な抽出ではより多くのヒープメモリが必要になる場合があります。
+
+## リソース
+
+- [ドキュメント](https://docs.groupdocs.com/merger/java/)
+- [API リファレンス](https://reference.groupdocs.com/merger/java/)
+- [GroupDocs.Merger for Java のダウンロード](https://releases.groupdocs.com/merger/java/)
+- [GroupDocs 製品の購入](https://purchase.groupdocs.com/buy)
+- [無料トライアル](https://releases.groupdocs.com/merger/java/)
+- [一時ライセンス](https://purchase.groupdocs.com/temporary-license/)
+- [サポートフォーラム](https://forum.groupdocs.com/c/merger/)
+
+このガイドに従うことで、GroupDocs.Merger for Java を使用して任意のサポート対象ドキュメントから **特定のページを抽出** する信頼できる方法が手に入ります。コーディングを楽しんでください！
 
 ---
 
-**Last Updated:** 2025-12-17  
-**Tested With:** GroupDocs.Merger latest version (Java)  
-**Author:** GroupDocs
+**最終更新日:** 2026-02-16  
+**テスト環境:** GroupDocs.Merger 最新バージョン（Java）  
+**作者:** GroupDocs
