@@ -1,85 +1,85 @@
 ---
-date: 2025-12-19
-description: GroupDocs.Merger for Java kullanarak ön izlemeler oluşturmayı, PNG görüntülerini
-  birleştirmeyi ve Java'da desteklenen formatları listelemeyi öğrenin – adım adım
-  öğreticiler.
-title: GroupDocs.Merger Java ile Önizlemeler Nasıl Oluşturulur
+date: 2026-02-19
+description: GroupDocs.Merger ile Java’da PDF sayfalarını önizleme, Java’da PNG görüntülerini
+  birleştirme ve Java’da desteklenen formatları listeleme – adım adım rehber.
+title: pdf sayfalarını önizleme java – GroupDocs.Merger önizleme rehberi
 type: docs
 url: /tr/java/document-information/
 weight: 3
 ---
 
-# Önizlemeler Nasıl Oluşturulur – GroupDocs.Merger Java için Belge Bilgisi Eğitimleri
+# preview pdf pages java – GroupDocs.Merger Java ile Önizlemeler Oluşturma
 
-Bu merkezde, GroupDocs.Merger for Java kullanarak neredeyse tüm belge türleri için **how to generate previews** keşfedeceksiniz. Bir web portalı için küçük resimlere, bir belge yönetim sistemi için önizleme sayfalarına veya dosyaları birleştirmeden önce hızlı görsel kontrollerine ihtiyacınız olsun, bu eğitimler süreci adım adım size gösterir. Ayrıca, görüntü birleştirme Java, desteklenen formatların listelenmesi Java ve daha akıllı, daha güvenilir uygulamalar oluşturmanıza yardımcı olan diğer temel belge‑bilgisi işlemleri hakkında rehberlik bulacaksınız.
+Bu hub’da **preview pdf pages java** konusunu GroupDocs.Merger for Java kullanarak keşfedeceksiniz. Bir web portalı için küçük resim (thumbnail) görüntüleri, bir belge‑yönetim sistemi için önizleme sayfaları ya da dosyaları birleştirmeden önce hızlı bir görsel kontrol ihtiyacınız olsun, bu öğreticiler süreci adım adım size anlatıyor. Ayrıca **merge images Java**, **list supported formats Java** ve daha akıllı, daha güvenilir uygulamalar oluşturmanıza yardımcı olacak diğer temel belge‑bilgi işlemleri hakkında da rehber bulacaksınız.
 
 ## Hızlı Yanıtlar
-- **“generate previews” ne anlama geliyor?** Kaynak belgedeki her sayfanın görüntü temsillerini (ör. PNG, JPEG) oluşturur.  
+- **“generate previews” ne anlama geliyor?** Kaynak belgenin her sayfasının PNG, JPEG gibi görüntü temsillerini oluşturur.  
 - **Hangi formatlar destekleniyor?** GroupDocs.Merger için “list supported formats Java” altında listelenen tüm formatlar, PDF, DOCX, PPTX ve görüntü dosyaları dahil.  
-- **Lisans gerekir mi?** Değerlendirme için geçici bir lisans çalışır; üretim için tam lisans gereklidir.  
+- **Lisans gerekli mi?** Değerlendirme için geçici bir lisans yeterlidir; üretim ortamı için tam lisans gerekir.  
 - **Şifre korumalı dosyalar için önizleme oluşturabilir miyim?** Evet – belgeyi açarken şifreyi sağlayın.  
-- **Önizleme oluşturma hızlı mı?** Evet, kütüphane sayfaları akış olarak işler, bu yüzden büyük dosyalar bile verimli bir şekilde işlenir.
+- **Önizleme oluşturma hızlı mı?** Evet, kütüphane sayfaları akış (stream) olarak işler, bu sayede büyük dosyalar bile verimli şekilde işlenir.
 
-## “how to generate previews” GroupDocs.Merger bağlamında ne anlama geliyor?
-Önizlemeler oluşturmak, bir kaynak belgenin her sayfasını tarayıcılar, mobil uygulamalar veya dosya gezginlerinde görüntülenebilen bir raster görüntüye dönüştürmek anlamına gelir. Bu işlevsellik, kullanıcıların bir dosyayı birleştirmeye, düzenlemeye veya indirmeye karar vermeden önce görsel bir ipucu almasını sağlamak için esastır.
+## preview pdf pages java nedir?
+Önizlemeler oluşturmak, bir kaynak belgenin her sayfasını tarayıcılar, mobil uygulamalar veya dosya gezginlerinde gösterilebilecek bir raster görüntüsüne dönüştürmek demektir. Bu özellik, kullanıcıların bir dosyayı birleştirmeden, düzenlemeden veya indirmeden önce görsel bir ipucu almasını sağlamak için çok önemlidir.
 
-## Neden GroupDocs.Merger for Java ile önizlemeler oluşturmalısınız?
-- **Geliştirilmiş kullanıcı deneyimi:** Kullanıcılar, birleştirmek veya indirmek üzere oldukları şeyi tam olarak görür.  
-- **Azaltılmış hatalar:** Görsel doğrulama, yanlış dosyaları erken yakalamaya yardımcı olur.  
-- **Çapraz platform uyumluluğu:** Önizlemeler, standart görüntü formatlarını görüntüleyebilen herhangi bir cihazda çalışır.  
-- **Performans‑optimizasyonu:** Kütüphane, sayfaları talep üzerine işler ve bellek kullanımını en aza indirir.
+## Neden GroupDocs.Merger for Java ile önizleme oluşturmalısınız?
+- **Gelişmiş kullanıcı deneyimi:** Kullanıcılar, birleştirecekleri veya indirecekleri dosyanın tam olarak ne olduğunu görür.  
+- **Hataların azalması:** Görsel doğrulama, yanlış dosyaların erken tespit edilmesine yardımcı olur.  
+- **Çapraz‑platform uyumluluğu:** Önizlemeler, standart görüntü formatlarını gösterebilen herhangi bir cihazda çalışır.  
+- **Performans‑optimizasyonu:** Kütüphane sayfaları talep üzerine işler, bellek kullanımını en aza indirir.
 
 ## Önkoşullar
-- Java 8 ve üzeri yüklü.  
-- Projenize GroupDocs.Merger for Java kütüphanesi eklenmiş (Maven/Gradle).  
-- Geçerli bir GroupDocs geçici veya tam lisans anahtarı.  
+- Java 8 veya üzeri yüklü olmalı.  
+- Projenize GroupDocs.Merger for Java kütüphanesi eklenmiş olmalı (Maven/Gradle).  
+- Geçerli bir GroupDocs geçici veya tam lisans anahtarı bulunmalı.  
 
-## Mevcut Eğitimler
+## Mevcut Öğreticiler
 
-### [GroupDocs.Merger for Java Kullanarak Belge Sayfa Önizlemeleri Nasıl Oluşturulur](./generate-document-page-previews-groupdocs-merger-java/)
-GroupDocs.Merger for Java ile belge sayfa önizlemeleri oluşturmayı öğrenin. Belgelerin görsel temsillerini verimli bir şekilde oluşturarak uygulamalarınızı geliştirin.
+### [How to Generate Document Page Previews Using GroupDocs.Merger for Java](./generate-document-page-previews-groupdocs-merger-java/)
+GroupDocs.Merger for Java ile belge sayfa önizlemeleri oluşturmayı öğrenin. Belgelerin görsel temsillerini verimli bir şekilde üretmek için uygulamalarınızı geliştirin.
 
-### [GroupDocs.Merger for Java ile PNG Görüntüleri Nasıl Birleştirilir&#58; A Step-by-Step Guide](./merge-png-images-groupdocs-merger-java/)
-GroupDocs.Merger for Java kullanarak PNG görüntülerini sorunsuz bir şekilde birleştirmeyi öğrenin. Bu kılavuz, kurulum, uygulama ve net örneklerle pratik uygulamaları kapsar.
+### [How to Merge PNG Images Using GroupDocs.Merger for Java&#58; A Step-by-Step Guide](./merge-png-images-groupdocs-merger-java/)
+GroupDocs.Merger for Java kullanarak PNG görüntüleri sorunsuz bir şekilde birleştirmeyi öğrenin. Bu kılavuz kurulum, uygulama ve net örneklerle pratik kullanım senaryolarını kapsar.
 
-### [GroupDocs.Merger for Java Kullanarak Desteklenen Dosya Türlerini Nasıl Alırsınız](./retrieve-supported-file-types-groupdocs-merger-java/)
-GroupDocs.Merger for Java kullanarak desteklenen dosya türlerini nasıl alacağınızı öğrenin. Bu kılavuz, adım adım talimatlar ve en iyi uygulamaları sunar.
+### [How to Retrieve Supported File Types Using GroupDocs.Merger for Java](./retrieve-supported-file-types-groupdocs-merger-java/)
+GroupDocs.Merger for Java ile desteklenen dosya türlerini nasıl alacağınızı öğrenin. Bu rehber adım adım talimatlar ve en iyi uygulamaları sunar.
 
-### [GroupDocs.Merger for Java ile Belge Bilgilerini Alma&#58; Step‑By‑Step Guide](./groupdocs-merger-java-retrieve-document-info-guide/)
-GroupDocs.Merger for Java kullanarak belge meta verilerini, sayfa sayısı ve yazar detayları dahil, verimli bir şekilde almayı öğrenin. Java uygulamalarınızı bugün geliştirin!
+### [Retrieving Document Information with GroupDocs.Merger for Java&#58; Step‑By‑Step Guide](./groupdocs-merger-java-retrieve-document-info-guide/)
+GroupDocs.Merger for Java’yı kullanarak belge meta verilerini (sayfa sayısı, yazar bilgileri vb.) verimli bir şekilde nasıl alacağınızı öğrenin. Java uygulamalarınızı bugün geliştirin!
 
 ## Ek Kaynaklar
-- [GroupDocs.Merger for Java Belgeleri](https://docs.groupdocs.com/merger/java/)
-- [GroupDocs.Merger for Java API Referansı](https://reference.groupdocs.com/merger/java/)
-- [GroupDocs.Merger for Java İndir](https://releases.groupdocs.com/merger/java/)
+
+- [GroupDocs.Merger for Java Documentation](https://docs.groupdocs.com/merger/java/)
+- [GroupDocs.Merger for Java API Reference](https://reference.groupdocs.com/merger/java/)
+- [Download GroupDocs.Merger for Java](https://releases.groupdocs.com/merger/java/)
 - [GroupDocs.Merger Forum](https://forum.groupdocs.com/c/merger)
-- [Ücretsiz Destek](https://forum.groupdocs.com/)
-- [Geçici Lisans](https://purchase.groupdocs.com/temporary-license/)
+- [Free Support](https://forum.groupdocs.com/)
+- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
 
 ## Yaygın Kullanım Senaryoları
-- **Belge yönetim portalları** – Onaydan önce yüklenen sözleşmelerin küçük resimlerini göster.  
-- **E‑öğrenme platformları** – Slayt desteleri veya PDF'ler için önizleme görüntüleri oluştur.  
-- **Toplu işleme hatları** – Otomatik birleştirmeden önce dosya içeriğini görsel olarak doğrula.  
+- **Belge yönetim portalları** – Onay öncesi yüklenen sözleşmelerin küçük resimlerini göster.  
+- **E‑öğrenme platformları** – Slayt dosyaları veya PDF’ler için önizleme görselleri oluştur.  
+- **Toplu işleme hatları** – Otomatik birleştirme öncesinde dosya içeriğini görsel olarak doğrula.  
 
-## Sıkça Sorulan Sorular
+## Sık Sorulan Sorular
 
-**S: Büyük PDF'ler (yüzlerce sayfa) için önizleme oluşturabilir miyim?**  
-C: Evet. Kütüphane sayfaları tek tek akış olarak işler, bu yüzden çok büyük dosyalarda bile bellek tüketimi düşük kalır.
+**S: Büyük PDF’ler (yüzlerce sayfa) için önizleme oluşturabilir miyim?**  
+C: Evet. Kütüphane sayfaları tek tek akış olarak işler, bu sayede çok büyük dosyalarda bile bellek tüketimi düşük kalır.
 
-**S: Önizlemenin görüntü formatını nasıl değiştiririm?**  
-C: API'de önizleme seçeneklerini yapılandırırken PNG, JPEG veya BMP belirtebilirsiniz.
+**S: Önizleme görüntü formatını nasıl değiştiririm?**  
+C: API’da önizleme seçeneklerini yapılandırırken PNG, JPEG veya BMP belirtebilirsiniz.
 
 **S: Şifreli belgeler için önizleme oluşturmak mümkün mü?**  
-C: Kesinlikle. Yükleme seçeneklerinde şifreyi sağlayın, önizleme oluşturma beklendiği gibi çalışır.
+C: Kesinlikle. Yükleme seçeneklerinde şifreyi sağladığınızda önizleme oluşturma sorunsuz çalışır.
 
 **S: “merge images java” özel bir modül gerektiriyor mu?**  
-C: Hayır. Çekirdek GroupDocs.Merger kütüphanesi, görüntü birleştirme yeteneklerini kutudan çıkar çıkmaz içerir.
+C: Hayır. Core GroupDocs.Merger kütüphanesi, görüntü birleştirme yeteneklerini kutudan çıkar çıkmaz sunar.
 
-**S: “list supported formats java” tarafından desteklenen formatların tam listesini nerede bulabilirim?**  
-C: Yukarıdaki “retrieve supported file types” eğitimini kullanın; bu, tam listeyi döndüren API yöntemini çağırır.
+**S: “list supported formats java” tarafından desteklenen formatların tam listesini nereden bulabilirim?**  
+C: Yukarıdaki “retrieve supported file types” öğreticisini kullanın; API yöntemi tam listeyi döndürür.
 
 ---
 
-**Son Güncelleme:** 2025-12-19  
-**Test Edilen Versiyon:** GroupDocs.Merger 23.12 for Java  
+**Son Güncelleme:** 2026-02-19  
+**Test Edilen Sürüm:** GroupDocs.Merger 23.12 for Java  
 **Yazar:** GroupDocs
