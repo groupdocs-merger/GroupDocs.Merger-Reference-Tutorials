@@ -1,7 +1,7 @@
 ---
-date: '2025-12-19'
-description: GroupDocs.Merger for Java ile Word belgelerine PDF gömmeyi ve PDF'yi
-  Word dosyalarına eklemeyi öğrenin. Sorunsuz OLE gömme için adım adım öğretici.
+date: '2026-02-19'
+description: GroupDocs.Merger for Java ile Word belgelerine PDF gömmeyi ve Word dosyalarına
+  PDF eklemeyi öğrenin. Sorunsuz OLE gömme için adım adım öğretici.
 keywords:
 - embed OLE objects in Word documents
 - GroupDocs Merger for Java tutorial
@@ -13,29 +13,30 @@ url: /tr/java/document-import/embed-ole-objects-word-documents-groupdocs-java/
 weight: 1
 ---
 
-# GroupDocs.Merger for Java kullanarak Word'e PDF gömme
+# GroupDocs.Merger for Java kullanarak pdf'i word'e nasıl gömeriz
 
-PDF'yi doğrudan bir Word belgesine gömmek, iş birliğini büyük ölçüde artırabilir, çünkü okuyucular artık dosyalar arasında geçiş yapmak zorunda kalmaz. Bu rehberde GroupDocs.Merger for Java kullanarak **Word'e PDF nasıl gömülür** keşfedecek ve **PDF'yi Word'e ekleme** iş akışlarıyla ilgili pratik ipuçlarını göreceksiniz. Kütüphaneyi kurmaktan OLE nesnesinin boyut ve konumunu özelleştirmeye kadar her şeyi adım adım anlatacağız.
+Bir PDF dosyasını doğrudan bir Word belgesine gömmek, okuyucuların dosyalar arasında geçiş yapmasına gerek kalmadığı için iş birliğini büyük ölçüde artırır. Bu rehberde **how to embed pdf in word** belgelerini GroupDocs.Merger for Java kullanarak nasıl gömeceğinizi keşfedecek ve **add pdf to word** iş akışları için pratik ipuçları göreceksiniz. Kütüphaneyi kurmaktan OLE nesnesinin boyut ve konumunu özelleştirmeye kadar her adımı adım adım anlatacağız, böylece belge oluşturmayı güvenle otomatikleştirebileceksiniz.
 
 ## Hızlı Yanıtlar
-- **Gerekli kütüphane nedir?** GroupDocs.Merger for Java (en son sürüm)  
-- **Herhangi bir dosya türünü gömebilir miyim?** Evet – PDF'ler, görseller, elektronik tablolar vb., OLE nesneleri olarak  
-- **Lisans gerekli mi?** Geliştirme için ücretsiz deneme çalışır; üretim için ticari lisans gerekir  
-- **Hangi Java IDE en iyisidir?** IntelliJ IDEA, Eclipse veya Maven/Gradle destekleyen herhangi bir IDE  
-- **Uygulama ne kadar sürer?** Temel bir gömme için yaklaşık 10‑15 dakika  
+- **What library is required?** GroupDocs.Merger for Java (latest version)  
+- **Can I embed any file type?** Yes – PDFs, images, spreadsheets, etc., as OLE objects  
+- **Do I need a license?** A free trial works for development; a commercial license is required for production  
+- **Which Java IDE works best?** IntelliJ IDEA, Eclipse, or any IDE that supports Maven/Gradle  
+- **How long does the implementation take?** Roughly 10‑15 minutes for a basic embed  
 
-## Word'e PDF gömme nedir?
-PDF'yi gömmek, Word dosyası içinde bir OLE (Object Linking and Embedding) nesnesi oluşturur. PDF tam işlevsel kalır—kullanıcılar simgeye çift tıklayarak PDF görüntüleyicide açabilir, Word belgesi ise kendi içinde bütünleşik kalır.
+## pdf'i word'e gömme nedir?
+Bir PDF dosyasını gömmek, Word dosyası içinde bir OLE (Object Linking and Embedding) nesnesi oluşturur. PDF tam işlevsel kalır—kullanıcılar ikona çift‑tıklayarak PDF görüntüleyicide açabilir, Word belgesi ise kendi içinde bütünleşik kalır.
 
-## GroupDocs.Merger kullanarak PDF'yi Word'e eklemenin nedeni nedir?
-- **Tek kaynak dokümantasyon:** Sözleşmeleri, kılavuzları veya raporları dış bağlantılar olmadan bir arada tutun.  
-- **Geliştirilmiş erişilebilirlik:** Okuyucular PDF'yi Word ortamından çıkmadan görüntüleyebilir.  
-- **Otomasyona uygun:** Toplu raporlar veya yasal paketleri programlı olarak oluşturmak için mükemmeldir.  
+## GroupDocs.Merger ile pdf'i word'e eklemenin nedeni?
+- **Single‑source documentation:** Sözleşmeleri, kılavuzları veya raporları dış bağlantılar olmadan bir arada tutun.  
+- **Improved accessibility:** Okuyucular PDF'i Word ortamından çıkmadan görüntüleyebilir.  
+- **Automation friendly:** Toplu raporlar veya yasal paketler oluşturmak için programatik olarak mükemmeldir.  
+- **Scalable:** **embed multiple pdfs word** belgelerini aynı iş akışını her dosya için yeniden kullanarak gömebilirsiniz.
 
 ## Önkoşullar
-- **Kütüphaneler ve Bağımlılıklar:** GroupDocs.Merger kütüphanesini Maven veya Gradle aracılığıyla ekleyin.  
-- **Geliştirme Ortamı:** IntelliJ IDEA, Eclipse veya herhangi bir Java IDE.  
-- **Temel Bilgi:** Java ve belge işleme kavramlarına aşina olmak.  
+- **Libraries & Dependencies:** Maven veya Gradle aracılığıyla GroupDocs.Merger kütüphanesini ekleyin.  
+- **Development Environment:** IntelliJ IDEA, Eclipse veya herhangi bir Java IDE.  
+- **Basic Knowledge:** Java ve belge işleme kavramlarına aşina olun.
 
 ## GroupDocs.Merger for Java Kurulumu
 OLE nesnelerini gömmek için önce kütüphaneyi projenize ekleyin.
@@ -51,15 +52,15 @@ Bu bağımlılığı `pom.xml` dosyanıza ekleyin:
 ```
 
 ### Gradle
-`build.gradle` dosyanıza şunu ekleyin:
+Bunu `build.gradle` dosyanıza dahil edin:
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-### Doğrudan İndirme
-Alternatif olarak, en son sürümü [GroupDocs.Merger for Java releases page](https://releases.groupdocs.com/merger/java/) adresinden indirebilirsiniz.
+### Direct Download
+Alternatif olarak, en son sürümü [GroupDocs.Merger for Java releases page](https://releases.groupdocs.com/merger/java/) adresinden indirin.
 
-**Lisans Edinme:** Ücretsiz deneme ile başlayabilir veya satın almadan önce özellikleri değerlendirmek için geçici bir lisans alabilirsiniz. Daha fazla bilgi için [Purchase GroupDocs](https://purchase.groupdocs.com/buy) adresini ziyaret edin.
+**License Acquisition:** Ücretsiz deneme ile başlayabilir veya satın almadan önce özellikleri değerlendirmek için geçici bir lisans alabilirsiniz. Daha fazla bilgi için [Purchase GroupDocs](https://purchase.groupdocs.com/buy) adresini ziyaret edin.
 
 ## Temel Başlatma
 OLE nesneleriyle çalışabilmek için gerekli sınıfları içe aktarın:
@@ -68,9 +69,9 @@ import com.groupdocs.merger.Merger;
 import com.groupdocs.merger.domain.options.OleWordProcessingOptions;
 ```
 
-## PDF'yi Word'e gömmek için Adım Adım Kılavuz
+## pdf'i word'e gömme adım adım rehberi
 
-### Adım 1: Dosya yollarını ve hedef sayfayı tanımlayın
+### Step 1: Dosya yollarını ve hedef sayfayı tanımlayın
 Kaynak Word belgesini, gömmek istediğiniz PDF'i ve OLE nesnesinin görüneceği yeri ayarlayın.
 ```java
 String sourceFilePath = "YOUR_DOCUMENT_DIRECTORY/sample.docx"; // Source Word document path
@@ -79,24 +80,22 @@ String outputFilePath = new File("YOUR_OUTPUT_DIRECTORY",
     "ImportDocumentToWordProcessing-" + Paths.get(sourceFilePath).getFileName().toString()).getPath();
 int pageNumber = 2; // Page number where the OLE object will be inserted
 ```
-
 - **`sourceFilePath`** – mevcut Word dosyasının yolu.  
-- **`embeddedFilePath`** – **PDF'yi Word'e eklemek** istediğiniz PDF.  
+- **`embeddedFilePath`** – **add pdf to word** istediğiniz PDF.  
 - **`outputFilePath`** – yeni belgenin kaydedileceği yer.  
-- **`pageNumber`** – OLE nesnesinin yer alacağı sayfa.  
+- **`pageNumber`** – OLE nesnesinin yer alacağı sayfa.
 
-### Adım 2: OleWordProcessingOptions'ı yapılandırın
-Gömülü PDF'nin görünümünü boyutlarını ayarlayarak özelleştirin.
+### Step 2: OleWordProcessingOptions yapılandırması
+Gömülen PDF'in görünümünü boyutlarını ayarlayarak özelleştirin.
 ```java
 OleWordProcessingOptions oleWordsOptions = new OleWordProcessingOptions(embeddedFilePath, pageNumber);
 oleWordsOptions.setWidth(300); // Set width of the embedded object (in points)
 oleWordsOptions.setHeight(300); // Set height of the embedded object (in points)
 ```
+- **`setWidth()` / `setHeight()`** – PDF simgesinin Word belgesi içinde ne kadar büyük görüneceğini kontrol eder.
 
-- **`setWidth()` / `setHeight()`** – PDF simgesinin Word belgesi içinde ne kadar büyük görüneceğini kontrol eder.  
-
-### Adım 3: Merger'ı başlatın ve OLE nesnesini içe aktarın
-`Merger` örneğini kaynak belge için oluşturun, OLE nesnesini içe aktarın ve sonucu kaydedin.
+### Step 3: Merger'ı başlatın ve OLE nesnesini içe aktarın
+Kaynak belge için bir `Merger` örneği oluşturun, OLE nesnesini içe aktarın ve sonucu kaydedin.
 ```java
 Merger merger = new Merger(sourceFilePath);
 {
@@ -104,15 +103,14 @@ Merger merger = new Merger(sourceFilePath);
     merger.save(outputFilePath); // Save changes to a new output file
 }
 ```
+- **`importDocument()`** – `OleWordProcessingOptions` alır ve PDF'i OLE nesnesi olarak ekler.  
+- **`save()`** – değiştirilmiş belgeyi `outputFilePath` konumuna yazar.
 
-- **`importDocument()`** – `OleWordProcessingOptions` alır ve PDF'yi OLE nesnesi olarak ekler.  
-- **`save()`** – değiştirilmiş belgeyi `outputFilePath` konumuna yazar.  
+### Step 4: (Optional) Ek nesneler için yapılandırmayı yeniden uygulayın
+Daha fazla PDF gömmek istiyorsanız **Step 1‑3**'ü yeni dosya yolları ve sayfa numaralarıyla tekrarlayın. Aynı `OleWordProcessingOptions` sınıfı her nesneyi ayrı ayrı kontrol etmenizi sağlar.
 
-### Adım 4: (İsteğe Bağlı) Ek nesneler için yapılandırmayı yeniden uygulayın
-Daha fazla PDF gömmek gerekiyorsa, yeni dosya yolları ve sayfa numaralarıyla **Adım 1‑3**'ü tekrarlayın. Aynı `OleWordProcessingOptions` sınıfı, her nesneyi ayrı ayrı kontrol etmenizi sağlar.
-
-## OleWordProcessingOptions'ı Yapılandırma (İleri Düzey)
-Nesnenin hizalanması veya bir başlık eklenmesi gibi konumlandırmayı daha da ayarlayabilirsiniz. Aşağıdaki kod parçacığı açıklık için temel yapılandırmayı tekrar eder:
+## OleWordProcessingOptions yapılandırması (İleri Seviye)
+Nesnenin hizalanması veya bir başlık eklenmesi gibi konumlandırmayı daha da ince ayarlayabilirsiniz. Aşağıdaki kod parçacığı açıklık sağlamak için temel yapılandırmayı tekrar eder:
 ```java
 OleWordProcessingOptions oleWordsOptions = new OleWordProcessingOptions(embeddedFilePath, pageNumber);
 oleWordsOptions.setWidth(300); // Width of the embedded object
@@ -120,47 +118,54 @@ oleWordsOptions.setHeight(300); // Height of the embedded object
 ```
 
 ## Pratik Uygulamalar
-PDF'leri gömmek birçok gerçek dünya senaryosunda faydalıdır:
+PDF gömme, birçok gerçek dünya senaryosunda faydalıdır:
 
-1. **Teknik Kılavuzlar** – Ayrıntılı şemaları veya referans PDF'leri doğrudan rehbere ekleyin.  
-2. **Finansal Raporlar** – Ana raporun akışını bozmadan ek denetim PDF'leri ekleyin.  
-3. **Hukuki Sözleşmeler** – Ekleri veya belgeleri OLE nesneleri olarak ekleyerek inceleme sırasında kolay erişim sağlayın.  
+1. **Technical Manuals** – Detaylı şemaları veya referans PDF'lerini doğrudan kılavuza ekleyin.  
+2. **Financial Reports** – Ana rapor akışını bozmadan ek denetim PDF'leri ekleyin.  
+3. **Legal Contracts** – İnceleme sırasında kolay erişim için ekleri veya ekleri OLE nesneleri olarak ekleyin.  
+4. **Marketing Packages** – **insert pdf into word** broşürlerine ürün özelliklerini elinizin altında tutacak şekilde ekleyin.
 
 ## Performans Düşünceleri
-Büyük belgeler veya birden fazla OLE nesnesiyle çalışırken şu ipuçlarını aklınızda tutun:
+Büyük belgeler veya birden fazla OLE nesnesiyle çalışırken şu ipuçlarını aklınızda bulundurun:
 
-- **Gereksiz içeriği kırpın** – sadece gerçekten ihtiyaç duyduğunuz sayfaları gömün.  
-- **Belleği yönetin** – büyük dosyalar için yeterli yığın alanı ayırmak üzere Java’nın `-Xmx` bayrağını kullanın.  
-- **Güncel kalın** – daha yeni GroupDocs.Merger sürümleri genellikle performans iyileştirmeleri içerir.  
+- **Trim unnecessary content** – sadece gerçekten ihtiyacınız olan sayfaları gömün.  
+- **Manage memory** – büyük dosyalar için Java’nın `-Xmx` bayrağını kullanarak yeterli yığın alanı ayırın.  
+- **Stay up‑to‑date** – yeni GroupDocs.Merger sürümleri genellikle performans iyileştirmeleri içerir.
 
-## Sıkça Sorulan Sorular
+## Yaygın Sorunlar ve Çözümler
+- **Incorrect file path:** Word ve PDF yollarının mutlak ya da proje köküne göre doğru göreceli olduğundan emin olun.  
+- **Out‑of‑memory errors:** JVM yığın boyutunu artırın veya belgeleri daha küçük partiler halinde işleyin.  
+- **Corrupted PDF:** PDF'i gömmeden önce bir görüntüleyicide normal olarak açabildiğinden emin olun.  
+- **Missing OLE icon:** Word şablonunun OLE eklemeye karşı korunmadığını kontrol edin.
 
-**S: OLE gömme nedir?**  
-C: Gömme, PDF gibi nesneleri Word belgelerine, özgün işlevselliğini koruyan bağlantılar olarak eklemenizi sağlar.
+## Sık Sorulan Sorular
 
-**S: Tek bir belgede birden fazla OLE nesnesi gömebilir miyim?**  
-C: Evet, her biri ayrı `OleWordProcessingOptions` kullanılarak farklı sayfalara ve boyutlara göre yapılandırılabilir.
+**Q: OLE gömme nedir?**  
+A: OLE, PDF gibi nesneleri Word belgelerine, orijinal işlevselliğini koruyan bağlantılar olarak eklemenizi sağlar.
 
-**S: Gömülü dosyaların boyutu için bir limit var mı?**  
-C: Limit genellikle Word’ün kendi kısıtlamalarına bağlıdır, ancak GroupDocs.Merger büyük dosyaları verimli bir şekilde işler.
+**Q: Tek bir belgede birden fazla OLE nesnesi gömebilir miyim?**  
+A: Evet, her biri ayrı `OleWordProcessingOptions` ile farklı sayfalara ve boyutlara göre yapılandırılabilir.
 
-**S: Gömme hatalarını nasıl çözerim?**  
-C: Dosya yollarının doğru olduğundan ve JVM’nin yeterli belleğe sahip olduğundan emin olun. Kaynak PDF'nin bozuk olmadığını kontrol edin.
+**Q: Gömülen dosyaların boyutu için bir limit var mı?**  
+A: Limit genellikle Word'ün kendi kısıtlamalarına bağlıdır, ancak GroupDocs.Merger büyük dosyaları verimli bir şekilde işler.
 
-**S: Ekleme sonrası gömülü nesneleri değiştirebilir miyim?**  
-C: Word dosyasını Microsoft Word’de yeniden açıp OLE nesnesini düzenleyebilir veya güncellenmiş seçeneklerle Merger kodunu yeniden çalıştırabilirsiniz.
+**Q: Gömme hatalarını nasıl çözerim?**  
+A: Dosya yollarının doğru olduğundan ve JVM'in yeterli belleğe sahip olduğundan emin olun. Kaynak PDF'in bozuk olmadığını kontrol edin.
+
+**Q: Ekleme sonrası gömülen nesneleri değiştirebilir miyim?**  
+A: Word dosyasını Microsoft Word'de yeniden açıp OLE nesnesini düzenleyebilir veya güncellenmiş seçeneklerle Merger kodunu yeniden çalıştırabilirsiniz.
 
 ## Ek Kaynaklar
-- [GroupDocs.Merger Documentation](https://docs.groupdocs.com/merger/java/)  
-- [API Reference](https://reference.groupdocs.com/merger/java/)  
-- [Download Latest Version](https://releases.groupdocs.com/merger/java/)  
-- [Purchase GroupDocs](https://purchase.groupdocs.com/buy)  
-- [Free Trial](https://releases.groupdocs.com/merger/java/)  
-- [Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-- [Support Forum](https://forum.groupdocs.com/c/merger/)  
+- [GroupDocs.Merger Documentation](https://docs.groupdocs.com/merger/java/)
+- [API Reference](https://reference.groupdocs.com/merger/java/)
+- [Download Latest Version](https://releases.groupdocs.com/merger/java/)
+- [Purchase GroupDocs](https://purchase.groupdocs.com/buy)
+- [Free Trial](https://releases.groupdocs.com/merger/java/)
+- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- [Support Forum](https://forum.groupdocs.com/c/merger/)
 
 ---
 
-**Son Güncelleme:** 2025-12-19  
-**Test Edilen Sürüm:** GroupDocs.Merger for Java en son sürüm  
-**Yazar:** GroupDocs
+**Last Updated:** 2026-02-19  
+**Tested With:** GroupDocs.Merger for Java latest version  
+**Author:** GroupDocs
