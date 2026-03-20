@@ -1,47 +1,46 @@
 ---
-date: '2026-01-16'
-description: Dowiedz się, jak zapisać połączony dokument w Javie przy użyciu GroupDocs.Merger
-  i odkryj, jak efektywnie scalać różne formaty plików.
+date: '2026-03-20'
+description: Dowiedz się, jak scalać pliki PDF i DOCX w Javie przy użyciu GroupDocs.Merger,
+  w tym ładowanie z strumieni i obsługę dużych dokumentów.
 keywords:
 - document management Java
 - GroupDocs.Merger for Java
 - Java document handling
-title: 'Zapisz scalony dokument Java - Zarządzanie dokumentami master z GroupDocs.Merger'
+title: Scal PDF i DOCX w Javie – Zapisz połączony dokument
 type: docs
 url: /pl/java/advanced-joining-options/mastering-groupdocs-merger-java-document-management/
 weight: 1
 ---
 
-# Zapisz scalony dokument Java: Zarządzanie dokumentami głównymi z GroupDocs.Merger
+# Scal PDF i DOCX w Javie – Zapisz scalony dokument
 
-Efektywne **zapisz scalony dokument Java** projekty mogą wydawać się przytłaczające, szczególnie gdy musisz obsługiwać wiele typów plików i duże ładunki. W tym samouczku przeprowadzimy Cię przez ładowanie dokumentów ze strumieni, ich scalanie i w końcu **zapisywanie scalonego dokumentu Java**‑style przy użyciu GroupDocs.Merger. Po zakończeniu zrozumiesz nie tylko, jak wykonać podstawowe operacje, ale także jak **scalanie różnych formatów plików**, ładować dokumenty ze strumieni i **obsługa dużych dokumentów Java** aplikacje w sposób płynny.
+Scalanie plików PDF i DOCX w Javie może wydawać się przytłaczające, szczególnie gdy pracujesz ze strumieniami, mieszanymi formatami lub ogromnymi ładunkami. W tym przewodniku pokażemy **jak scalić PDF i DOCX** przy użyciu GroupDocs.Merger, pokażemy jak **załadować dokument ze strumienia**, oraz podamy praktyczne wskazówki dotyczące **obsługi dużych dokumentów w Javie**. Po zakończeniu będziesz mieć gotowe do produkcji rozwiązanie, które możesz wstawić do dowolnej usługi sieciowej lub zadania wsadowego.
 
-## Szybkie odpowiedzi
+## Quick Answers
 - **Jaki jest podstawowy sposób zapisu scalonego dokumentu w Javie?** Użyj `Merger.save(OutputStream)` po załadowaniu plików źródłowych.  
 - **Czy GroupDocs.Merger może scalać różne formaty plików?** Tak – obsługuje DOCX, PDF, PPTX, XLSX i wiele innych.  
 - **Jak załadować dokument z InputStream?** Utwórz instancję `Merger` ze strumieniem: `new Merger(stream)`.  
-- **Co zrobić z dużymi dokumentami?** Używaj buforowanych strumieni i zamykaj je niezwłocznie, aby zwolnić pamięć.  
+- **Co zrobić z dużymi dokumentami?** Używać buforowanych strumieni i zamykać je niezwłocznie, aby zwolnić pamięć.  
 - **Czy wymagana jest licencja do użytku produkcyjnego?** Tak – potrzebna jest ważna licencja GroupDocs do wdrożeń komercyjnych.
 
-## Co to jest „zapisz scalony dokument Java”?
-Zapisanie scalonego dokumentu w Javie oznacza wzięcie jednego lub więcej plików źródłowych, połączenie ich przy użyciu GroupDocs.Merger i zapisanie wyniku w miejscu docelowym (system plików, pamięć w chmurze lub odpowiedź HTTP). Proces jest w pełni oparty na strumieniach, co czyni go idealnym dla usług internetowych i zadań w tle.
+## Co to jest scalanie PDF i DOCX?
+**Scalanie PDF i DOCX** oznacza wzięcie jednego lub kilku plików PDF i DOCX, połączenie ich w jedną całość i zapisanie wyniku na dysku, w chmurze lub jako odpowiedź HTTP. GroupDocs.Merger zajmuje się ciężką pracą, więc nie musisz martwić się specyficznymi dla formatu szczegółami.
 
-## Dlaczego używać GroupDocs.Merger do **scalania różnych formatów plików**?
-GroupDocs.Merger ukrywa złożoność obsługi wewnętrznej struktury każdego formatu. Pozwala skupić się na logice biznesowej — np. generowaniu faktur lub konsolidacji raportów — podczas gdy on zajmuje się specyficznymi dla formatu szczegółami, numeracją stron i zachowaniem metadanych.
+## Dlaczego warto używać GroupDocs.Merger do **scalania różnych formatów plików**?
+GroupDocs.Merger ukrywa złożoność każdego typu dokumentu. Niezależnie od tego, czy łączysz fakturę PDF z kontraktem DOCX, czy łączysz slajdy PPTX z raportem XLSX, biblioteka zachowuje kolejność stron, metadane i stylizację, a Ty możesz skupić się na logice biznesowej.
 
-## Wymagania wstępne
-
-- **GroupDocs.Merger for Java** biblioteka
+## Prerequisites
+- **Biblioteka GroupDocs.Merger for Java**
 - Java 8+ (JDK 8 lub wyższy)
 - Maven lub Gradle do zarządzania zależnościami
 - IDE, takie jak IntelliJ IDEA lub Eclipse
-- Ważna licencja GroupDocs do użytku produkcyjnego (dostępna darmowa wersja próbna)
+- Ważna licencja GroupDocs do użytku produkcyjnego (dostępna wersja próbna)
 
-## Konfiguracja GroupDocs.Merger dla Java
+## Setting Up GroupDocs.Merger for Java
 
 ### Maven
 
-Dodaj następującą zależność do pliku `pom.xml`:
+Add the following dependency to your `pom.xml` file:
 
 ```xml
 <dependency>
@@ -53,24 +52,24 @@ Dodaj następującą zależność do pliku `pom.xml`:
 
 ### Gradle
 
-W pliku `build.gradle` umieść:
+In your `build.gradle`, include:
 
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-### Bezpośrednie pobranie
+### Direct Download
 
-Alternatywnie pobierz najnowszą wersję z [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) i ręcznie dodaj ją do ścieżki bibliotek w swoim projekcie.
+Alternatywnie, pobierz najnowszą wersję z [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) i ręcznie dodaj ją do ścieżki bibliotecznej swojego projektu.
 
-#### Kroki uzyskania licencji
-1. **Free Trial** – przetestuj podstawowe funkcje bez zobowiązań.  
-2. **Temporary License** – zamów klucz krótkoterminowy [tutaj](https://purchase.groupdocs.com/temporary-license/).  
-3. **Purchase** – uzyskaj pełną licencję do nieograniczonego użytku produkcyjnego.
+#### License Acquisition Steps
+1. **Bezpłatna wersja próbna** – przetestuj podstawowe funkcje bez zobowiązań.  
+2. **Licencja tymczasowa** – zamów klucz krótkoterminowy [tutaj](https://purchase.groupdocs.com/temporary-license/).  
+3. **Zakup** – uzyskaj pełną licencję do nieograniczonego użytku produkcyjnego.
 
-#### Podstawowa inicjalizacja
+#### Basic Initialization
 
-Po dodaniu biblioteki, utwórz instancję `Merger`:
+After adding the library, create a `Merger` instance:
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -79,11 +78,11 @@ import com.groupdocs.merger.Merger;
 erMerger = new Merger("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX");
 ```
 
-## Jak **załadować strumień dokumentu** (how to load document stream)
+## Jak **załadować dokument ze strumienia** (load document from stream)
 
-Ładowanie dokumentu z `InputStream` jest niezbędne, gdy pliki są przesyłane przez użytkowników lub pobierane z pamięci w chmurze.
+Loading a document from an `InputStream` is essential when files are uploaded by users or fetched from cloud storage.
 
-### Krok 1 – Utwórz InputStream
+### Step 1 – Create an InputStream
 
 ```java
 import java.io.FileInputStream;
@@ -92,21 +91,21 @@ import java.io.InputStream;
 InputStream stream = new FileInputStream("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX");
 ```
 
-*Dlaczego?* To konwertuje fizyczny plik na strumień bajtów, który `Merger` może wykorzystać bez potrzeby stałego pliku na dysku.
+*Dlaczego?* To konwertuje fizyczny plik na strumień bajtów, który `Merger` może przetworzyć bez potrzeby stałego pliku na dysku.
 
-### Krok 2 – Zainicjalizuj Merger ze strumieniem
+### Step 2 – Initialize Merger with the Stream
 
 ```java
 Merger merger = new Merger(stream);
 ```
 
-*Dlaczego?* Przekazanie strumienia pozwala pracować na danych w pamięci, co jest szybsze w scenariuszach webowych.
+*Dlaczego?* Przekazanie strumienia pozwala pracować na danych w pamięci, co jest szybsze w scenariuszach internetowych.
 
-## Jak **zapisać scalony dokument java** (save merged document java)
+## Jak **zapisać scalony dokument w Javie** (save merged document java)
 
-Po wykonaniu dowolnego scalania, podziału lub manipulacji stronami, musisz zachować wynik.
+Once you have performed any merging, splitting, or page manipulation, you need to persist the result.
 
-### Krok 1 – Zdefiniuj OutputStream
+### Step 1 – Define an OutputStream
 
 ```java
 import java.io.FileOutputStream;
@@ -115,9 +114,9 @@ import java.io.OutputStream;
 OutputStream outputStream = new FileOutputStream("YOUR_OUTPUT_DIRECTORY/merged_output.docx");
 ```
 
-*Dlaczego?* `OutputStream` informuje Javę, gdzie ma zostać zapisany ostateczny plik.
+*Dlaczego?* `OutputStream` informuje Javę, gdzie ma zostać zapisany finalny plik.
 
-### Krok 2 – Zapisz dokument
+### Step 2 – Save the Document
 
 ```java
 merger.save(outputStream);
@@ -125,7 +124,7 @@ merger.save(outputStream);
 
 *Dlaczego?* `save()` finalizuje wszystkie zmiany i zapisuje scaloną zawartość do podanego strumienia.
 
-### Krok 3 – Zamknij strumień
+### Step 3 – Close the Stream
 
 ```java
 outputStream.close();
@@ -133,14 +132,14 @@ outputStream.close();
 
 *Dlaczego?* Zamknięcie zwalnia zasoby systemowe i zapewnia, że wszystkie buforowane dane zostaną zapisane na dysku.
 
-## Jak **obsłużyć duże dokumenty java** (handle large documents java)
+## Jak **obsługiwać duże dokumenty w Javie** (handle large documents java)
 
 Praca z dużymi plikami PDF lub wielogigabajtowymi plikami Word może obciążać pamięć. Stosuj następujące najlepsze praktyki:
 
-- **Używaj buforowanych strumieni** – otocz `FileInputStream`/`FileOutputStream` za pomocą `BufferedInputStream`/`BufferedOutputStream`.  
-- **Przetwarzaj w partiach** – scalaj kilka plików jednocześnie zamiast ładować wszystko naraz.  
-- **Zwalniaj obiekty niezwłocznie** – wywołaj `close()` na strumieniach, gdy skończysz.  
-- **Monitoruj stertę JVM** – zwiększ `-Xmx` w razie potrzeby, ale dąż do niskiego zużycia pamięci.
+- **Używaj buforowanych strumieni** – otaczaj `FileInputStream`/`FileOutputStream` za pomocą `BufferedInputStream`/`BufferedOutputStream`.  
+- **Przetwarzaj w partiach** – scalaj kilka plików naraz zamiast ładować wszystko jednocześnie.  
+- **Zwalniaj obiekty niezwłocznie** – wywołuj `close()` na strumieniach, gdy skończysz.  
+- **Monitoruj stertę JVM** – zwiększ `-Xmx` w razie potrzeby, ale staraj się utrzymać niskie zużycie pamięci.
 
 ## Praktyczne zastosowania
 
@@ -148,26 +147,26 @@ GroupDocs.Merger wyróżnia się w rzeczywistych scenariuszach:
 
 1. **Przetwarzanie wsadowe** – automatyczne łączenie codziennych raportów w jeden PDF.  
 2. **Dynamiczne generowanie dokumentów** – tworzenie faktur w locie z plików szablonów.  
-3. **Integracja międzyplatformowa** – udostępnienie endpointu REST, który przyjmuje przesłane pliki, scala je i zwraca wynik.
+3. **Integracja międzyplatformowa** – udostępnij endpoint REST przyjmujący przesłane pliki, scala je i zwraca wynik.
 
 ## Rozważania dotyczące wydajności
 
 - **Zarządzanie pamięcią** – zawsze zamykaj strumienie (`InputStream`, `OutputStream`).  
-- **Operacje wsadowe** – grupuj pliki, aby zmniejszyć narzut I/O.  
+- **Operacje wsadowe** – grupuj plik​i, aby zmniejszyć narzut I/O.  
 - **Efektywne I/O** – preferuj buforowane I/O dla plików większych niż 10 MB.
 
-## Częste problemy i rozwiązania
+## Typowe problemy i rozwiązania
 
-| Problem | Powód | Rozwiązanie |
+| Problem | Przyczyna | Rozwiązanie |
 |-------|--------|-----|
-| `FileNotFoundException` | Nieprawidłowa ścieżka pliku lub brak uprawnień | Sprawdź ścieżki bezwzględne/względne i upewnij się, że aplikacja ma prawa odczytu/zapisu |
-| `IOException` during save | Strumień nie został zamknięty lub dysk jest pełny | Zamknij wszystkie strumienie, sprawdź wolne miejsce na dysku i użyj try‑with‑resources |
-| Memory spikes with large PDFs | Ładowanie całego pliku do pamięci | Używaj buforowanych strumieni i przetwarzaj w mniejszych partiach |
+| `FileNotFoundException` | Nieprawidłowa ścieżka pliku lub brak uprawnień | Zweryfikuj ścieżki bezwzględne/względne i upewnij się, że aplikacja ma prawa odczytu/zapisu |
+| `IOException` podczas zapisu | Strumień nie zamknięty lub dysk pełny | Zamknij wszystkie strumienie, sprawdź wolne miejsce na dysku i użyj try‑with‑resources |
+| Skoki pamięci przy dużych PDF | Ładowanie całego pliku do pamięci | Używaj buforowanych strumieni i przetwarzaj w mniejszych partiach |
 
 ## Najczęściej zadawane pytania
 
 **Q:** Czy mogę scalać różne formaty plików przy użyciu GroupDocs.Merger?  
-**A:** Tak, biblioteka obsługuje DOCX, PDF, PPTX, XLSX i wiele innych formatów.
+**A:** Tak – biblioteka obsługuje DOCX, PDF, PPTX, XLSX i wiele innych formatów.
 
 **Q:** Jak efektywnie obsługiwać duże dokumenty?  
 **A:** Korzystaj z buforowanych strumieni, przetwarzaj pliki w partiach i zawsze niezwłocznie zamykaj strumienie.
@@ -179,7 +178,7 @@ GroupDocs.Merger wyróżnia się w rzeczywistych scenariuszach:
 **A:** Tak, wystarczy uzyskać odpowiednią licencję od [GroupDocs](https://purchase.groupdocs.com/buy).
 
 **Q:** Co zrobić, gdy napotkam `IOException`?  
-**A:** Dokładnie sprawdź ścieżki plików, zapewnij odpowiednie uprawnienia i otaczaj wywołania I/O blokami try‑catch.
+**A:** Sprawdź ponownie ścieżki plików, upewnij się, że masz odpowiednie uprawnienia i otaczaj wywołania I/O blokami try‑catch.
 
 ## Zasoby
 
@@ -187,11 +186,11 @@ GroupDocs.Merger wyróżnia się w rzeczywistych scenariuszach:
 - **Referencja API**: [API Reference Guide](https://reference.groupdocs.com/merger/java/)  
 - **Pobierz bibliotekę**: [GroupDocs Downloads](https://releases.groupdocs.com/merger/java/)  
 - **Kup licencję**: [Buy GroupDocs License](https://purchase.groupdocs.com/buy)  
-- **Darmowa wersja próbna i licencja tymczasowa**: [Try Out GroupDocs](https://releases.groupdocs.com/merger/java/) oraz [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Bezpłatna wersja próbna i licencja tymczasowa**: [Try Out GroupDocs](https://releases.groupdocs.com/merger/java/) oraz [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)  
 - **Wsparcie**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/)
 
 ---
 
-**Ostatnia aktualizacja:** 2026-01-16  
+**Ostatnia aktualizacja:** 2026-03-20  
 **Testowano z:** najnowszą wersją GroupDocs.Merger (stan na 2026)  
 **Autor:** GroupDocs
