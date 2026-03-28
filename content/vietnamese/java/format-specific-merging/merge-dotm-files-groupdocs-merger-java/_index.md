@@ -1,45 +1,48 @@
 ---
-title: "How to Merge DOTM Files Using GroupDocs.Merger for Java – A Developer’s Guide"
-description: "Learn how to merge dotm files in Java and java merge word templates efficiently with GroupDocs.Merger. Step‑by‑step code, best practices, and FAQs."
-date: "2026-03-28"
-weight: 1
-url: "/java/format-specific-merging/merge-dotm-files-groupdocs-merger-java/"
+date: '2026-03-28'
+description: Tìm hiểu cách hợp nhất các tệp dotm trong Java và hợp nhất mẫu Word trong
+  Java một cách hiệu quả với GroupDocs.Merger. Mã từng bước, các thực tiễn tốt nhất
+  và các câu hỏi thường gặp.
 keywords:
 - merge DOTM files
 - GroupDocs Merger Java
 - document merging in Java
+title: Cách hợp nhất tệp DOTM bằng GroupDocs.Merger cho Java – Hướng dẫn dành cho
+  nhà phát triển
 type: docs
+url: /vi/java/format-specific-merging/merge-dotm-files-groupdocs-merger-java/
+weight: 1
 ---
 
-# How to Merge DOTM Files Using GroupDocs.Merger for Java
+# Cách hợp nhất tệp DOTM bằng GroupDocs.Merger cho Java
 
-In modern Java applications, **how to merge dotm** files quickly and reliably is a common requirement—especially when you need to combine multiple Word templates that contain macros. This guide walks you through the entire process using GroupDocs.Merger for Java, from setting up the library to merging and saving the final document. You’ll also see how to **java merge word templates** without losing formatting or macro functionality.
+Trong các ứng dụng Java hiện đại, **how to merge dotm** tệp nhanh chóng và đáng tin cậy là một yêu cầu phổ biến—đặc biệt khi bạn cần kết hợp nhiều mẫu Word có chứa macro. Hướng dẫn này sẽ đưa bạn qua toàn bộ quy trình sử dụng GroupDocs.Merger cho Java, từ thiết lập thư viện đến hợp nhất và lưu tài liệu cuối cùng. Bạn cũng sẽ thấy cách **java merge word templates** mà không mất định dạng hay chức năng macro.
 
-## Quick Answers
+## Câu trả lời nhanh
 - **What library handles DOTM merging?** GroupDocs.Merger for Java  
 - **Minimum Java version?** JDK 8 or newer  
 - **Typical implementation time?** 10–15 minutes for basic merging  
 - **Can I merge more than two DOTM files?** Yes, call `join` repeatedly  
 - **Do I need a license for production?** Yes, a commercial license is required  
 
-## What is “how to merge dotm” in Java?
-Merging DOTM files means taking two or more Microsoft Word Template files (with macros enabled) and combining them into a single template while preserving styles, sections, and macro code. GroupDocs.Merger abstracts the low‑level file handling, letting you focus on business logic instead of file format intricacies.
+## “how to merge dotm” là gì trong Java?
+Hợp nhất tệp DOTM có nghĩa là lấy hai hoặc nhiều tệp Microsoft Word Template (được bật macro) và kết hợp chúng thành một mẫu duy nhất trong khi giữ nguyên các kiểu, phần và mã macro. GroupDocs.Merger trừu tượng hoá việc xử lý tệp cấp thấp, cho phép bạn tập trung vào logic nghiệp vụ thay vì các chi tiết định dạng tệp.
 
-## Why Use GroupDocs.Merger for Java?
-- **Format‑preserving:** Keeps macro‑enabled content intact.  
-- **Performance‑optimized:** Handles large files with minimal memory overhead.  
-- **Cross‑format support:** Works with DOCX, PDF, PPTX, and more, so you can extend your solution later.  
-- **Simple API:** Only a few lines of code to load, join, and save documents.
+## Tại sao nên sử dụng GroupDocs.Merger cho Java?
+- **Format‑preserving:** Giữ nguyên nội dung có macro.  
+- **Performance‑optimized:** Xử lý tệp lớn với mức sử dụng bộ nhớ tối thiểu.  
+- **Cross‑format support:** Hoạt động với DOCX, PDF, PPTX và hơn nữa, cho phép mở rộng giải pháp sau này.  
+- **Simple API:** Chỉ vài dòng mã để tải, hợp nhất và lưu tài liệu.
 
-## How to Merge DOTM Files in Java
-Below is the end‑to‑end workflow, broken into clear steps you can copy into your project.
+## Cách hợp nhất tệp DOTM trong Java
+Dưới đây là quy trình toàn diện, được chia thành các bước rõ ràng mà bạn có thể sao chép vào dự án của mình.
 
-### Prerequisites
+### Yêu cầu trước
 - **GroupDocs.Merger library** (via Maven, Gradle, or manual download)  
 - **JDK 8+** installed on your development machine  
 - An IDE such as **IntelliJ IDEA**, **Eclipse**, or **NetBeans**  
 
-### Setting Up GroupDocs.Merger for Java
+### Cài đặt GroupDocs.Merger cho Java
 
 #### Maven
 Add the dependency to your `pom.xml`:
@@ -59,11 +62,11 @@ Include the library in `build.gradle`:
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-#### Direct Download
+#### Tải xuống trực tiếp
 Alternatively, download the latest JAR from [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).  
 **License Acquisition:** GroupDocs offers a free trial; purchase a license or request a temporary one for production use.
 
-### Load the Source DOTM File
+### Tải tệp DOTM nguồn
 First, point the API at the primary template you want to keep as the base document.
 
 ```java
@@ -81,7 +84,7 @@ public class LoadSourceDotm {
 }
 ```
 
-### Add Additional DOTM Files (java merge word templates)
+### Thêm các tệp DOTM bổ sung (java merge word templates)
 You can merge as many additional templates as needed by calling `join` for each file.
 
 ```java
@@ -100,7 +103,7 @@ public class AddDotmFileToMerge {
 }
 ```
 
-### Merge and Save the Result
+### Hợp nhất và lưu kết quả
 Define where the combined template should be written and invoke `save`.
 
 ```java
@@ -120,26 +123,26 @@ public class MergeDotmFiles {
 }
 ```
 
-## Practical Applications
+## Ứng dụng thực tiễn
 Understanding real‑world scenarios helps you see the value of **how to merge dotm** files:
 
-1. **Automated Report Generation:** Combine multiple template sections (header, body, footer) into a single report document.  
-2. **Document Consolidation:** Merge contracts, agreements, or policy documents for easier distribution.  
-3. **Template Management:** Build complex forms by stitching together reusable macro‑enabled components.
+1. **Automated Report Generation:** Kết hợp nhiều phần mẫu (đầu trang, nội dung, chân trang) thành một tài liệu báo cáo duy nhất.  
+2. **Document Consolidation:** Kết hợp hợp đồng, thỏa thuận hoặc tài liệu chính sách để phân phối dễ dàng hơn.  
+3. **Template Management:** Xây dựng biểu mẫu phức tạp bằng cách ghép các thành phần có macro có thể tái sử dụng.  
 
-## Performance Considerations & Tips
-- **Memory Management:** Release the `Merger` instance (`merger.close()`) after saving to free native resources.  
-- **Large Files:** If you’re merging files larger than 100 MB, consider processing them in batches to avoid `OutOfMemoryError`.  
-- **Stay Updated:** Keep the GroupDocs.Merger library current to benefit from performance improvements and bug fixes.
+## Các cân nhắc về hiệu suất & mẹo
+- **Memory Management:** Giải phóng đối tượng `Merger` (`merger.close()`) sau khi lưu để giải phóng tài nguyên gốc.  
+- **Large Files:** Nếu hợp nhất các tệp lớn hơn 100 MB, hãy xử lý theo lô để tránh `OutOfMemoryError`.  
+- **Stay Updated:** Giữ thư viện GroupDocs.Merger luôn mới để hưởng lợi từ cải thiện hiệu suất và sửa lỗi.  
 
-## Common Pitfalls & Troubleshooting
-| Symptom | Likely Cause | Fix |
-|---------|--------------|-----|
-| `FileNotFoundException` | Incorrect file path | Verify the absolute or relative path and ensure the file exists. |
-| Macros disappear after merge | Using an older library version | Upgrade to the latest GroupDocs.Merger release. |
-| Out‑of‑memory errors | Merging many large DOTM files at once | Process files sequentially and call `System.gc()` after each merge if needed. |
+## Những vấn đề thường gặp & khắc phục
+| Triệu chứng | Nguyên nhân khả dĩ | Cách khắc phục |
+|------------|--------------------|----------------|
+| `FileNotFoundException` | Đường dẫn tệp không đúng | Kiểm tra đường dẫn tuyệt đối hoặc tương đối và đảm bảo tệp tồn tại. |
+| Macros disappear after merge | Sử dụng phiên bản thư viện cũ | Nâng cấp lên phiên bản GroupDocs.Merger mới nhất. |
+| Out‑of‑memory errors | Hợp nhất nhiều tệp DOTM lớn cùng lúc | Xử lý tệp tuần tự và gọi `System.gc()` sau mỗi lần hợp nhất nếu cần. |
 
-## Frequently Asked Questions
+## Câu hỏi thường gặp
 
 **Q: What are DOTM files?**  
 A: DOTM stands for Microsoft Word Template with Macros Enabled. They let you create reusable documents that contain VBA macros.
@@ -156,7 +159,7 @@ A: It preserves each document’s layout, so mixed portrait and landscape sectio
 **Q: Where can I find more advanced examples, like inserting watermarks or splitting documents?**  
 A: Visit the official [GroupDocs documentation](https://docs.groupdocs.com/merger/java/) for in‑depth guides and API references.
 
-## Conclusion
+## Kết luận
 You now have a complete, production‑ready roadmap for **how to merge dotm** files using GroupDocs.Merger for Java. By loading a base template, joining additional DOTM files, and saving the combined result, you can automate complex document workflows with confidence.  
 
 **Next Steps:** Explore advanced features such as document splitting, watermarking, or converting the merged template to PDF—all available through the same Merger API.
@@ -167,7 +170,7 @@ You now have a complete, production‑ready roadmap for **how to merge dotm** fi
 **Tested With:** GroupDocs.Merger 23.12 (Java)  
 **Author:** GroupDocs  
 
-**Resources**
+**Tài nguyên**
 - Documentation: [GroupDocs Merger Java Docs](https://docs.groupdocs.com/merger/java/)
 - API Reference: [GroupDocs Reference](https://reference.groupdocs.com/merger/java/)
 - Download: [Latest Releases](https://releases.groupdocs.com/merger/java/)
