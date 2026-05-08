@@ -39,7 +39,11 @@ jobs:
           token: ${{ secrets.REPO_TOKEN }}
           ref: beta
           fetch-depth: 0
-          path: themes/tutorials-theme      
+          path: themes/tutorials-theme
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
       # Step 2 - Sets up the latest version of Hugo
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
