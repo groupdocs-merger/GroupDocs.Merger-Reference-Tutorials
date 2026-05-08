@@ -1,19 +1,21 @@
 ---
-title: "Password Protect PowerPoint with GroupDocs.Merger for Java"
-description: "Learn how to password protect PowerPoint files and add password to presentation using GroupDocs.Merger for Java. Follow this step‑by‑step guide to secure PPTX files."
-date: "2026-01-29"
-weight: 1
-url: "/java/document-security/groupdocs-merger-java-add-password-powerpoint-pptx/"
+date: '2026-01-29'
+description: Lernen Sie, wie Sie PowerPoint‑Dateien mit einem Passwort schützen und
+  einer Präsentation mit GroupDocs.Merger für Java ein Passwort hinzufügen. Folgen
+  Sie dieser Schritt‑für‑Schritt‑Anleitung, um PPTX‑Dateien zu sichern.
 keywords:
 - GroupDocs.Merger Java
 - add password PowerPoint
 - secure PPTX files
+title: PowerPoint mit Passwort schützen mit GroupDocs.Merger für Java
 type: docs
+url: /de/java/document-security/groupdocs-merger-java-add-password-powerpoint-pptx/
+weight: 1
 ---
 
 # Password Protect PowerPoint Presentations Using GroupDocs.Merger for Java
 
-In today's collaborative work environments, **password protect PowerPoint** files is a must‑have practice to keep sensitive slide decks safe from accidental leaks or unauthorized access. Whether you’re preparing a board‑room briefing, a client proposal, or internal training material, adding a password ensures only the right people can view or edit the content. In this tutorial you’ll discover **how to secure PPTX** files with GroupDocs.Merger for Java, step by step.
+In heutigen kollaborativen Arbeitsumgebungen ist **Password Protect PowerPoint** ein Muss, um sensible Präsentationen vor versehentlichem Leck oder unbefugtem Zugriff zu schützen. Egal, ob Sie ein Board‑Room‑Briefing, ein Kundenangebot oder internes Schulungsmaterial vorbereiten – ein Passwort stellt sicher, dass nur die richtigen Personen den Inhalt ansehen oder bearbeiten können. In diesem Tutorial erfahren Sie **wie Sie PPTX‑Dateien** mit GroupDocs.Merger for Java Schritt für Schritt sichern.
 
 ## Quick Answers
 - **What does “password protect PowerPoint” mean?** It encrypts a PPTX file so a password is required to open it.  
