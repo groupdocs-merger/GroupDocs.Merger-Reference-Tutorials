@@ -1,19 +1,21 @@
 ---
-title: "How to Split DOCX with GroupDocs.Merger for Java"
-description: "Learn how to split DOCX files using GroupDocs.Merger for Java, covering split docx into files, split options java, and stream extraction."
-date: "2026-02-06"
-weight: 1
-url: "/java/document-splitting/master-java-document-splitting-groupdocs-merger/"
+date: '2026-02-06'
+description: Узнайте, как разделять файлы DOCX с помощью GroupDocs.Merger для Java,
+  охватывая разделение DOCX на файлы, параметры разделения в Java и извлечение из
+  потока.
 keywords:
 - Java Document Splitting
 - GroupDocs.Merger for Java
 - Split DOCX Pages
+title: Как разделить DOCX с помощью GroupDocs.Merger для Java
 type: docs
+url: /ru/java/document-splitting/master-java-document-splitting-groupdocs-merger/
+weight: 1
 ---
 
 # Master Java Document Splitting with GroupDocs.Merger: Split DOCX Pages into Files and Streams
 
-In this tutorial you’ll discover **how to split docx** documents efficiently with GroupDocs.Merger for Java. Whether you need to break a large contract into separate pages or extract specific sections as streams, we’ll walk you through every step, from setup to real‑world usage.
+В этом руководстве вы узнаете **как разделять docx**‑документы эффективно с помощью GroupDocs.Merger for Java. Независимо от того, нужно ли вам разбить большой контракт на отдельные страницы или извлечь определённые разделы в виде потоков, мы пройдём каждый шаг—from настройки до практического применения.
 
 ## Quick Answers
 - **What library handles DOCX splitting in Java?** GroupDocs.Merger for Java.  
@@ -23,7 +25,7 @@ In this tutorial you’ll discover **how to split docx** documents efficiently w
 - **Which Java versions are supported?** Any JDK 8+ works with the latest GroupDocs.Merger release.
 
 ## What is “how to split docx”?
-Splitting a DOCX means taking a multi‑page Word document and creating individual files (or streams) that contain one or more selected pages. This is useful for modular document delivery, compliance workflows, or on‑the‑fly processing where you don’t want to store temporary files.
+Разделение DOCX означает взятие многостраничного Word‑документа и создание отдельных файлов (или потоков), содержащих одну или несколько выбранных страниц. Это полезно для модульной доставки документов, рабочих процессов соответствия или обработки «на лету», когда не хочется сохранять временные файлы.
 
 ## Why use GroupDocs.Merger for Java?
 - **Zero‑dependency processing:** Works with pure Java, no native binaries.  
@@ -51,7 +53,7 @@ Include the library via Maven or Gradle (code blocks unchanged):
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-You can also download the latest release from the official site: [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
+You can also download the latest release from the official site: [выпуски GroupDocs.Merger для Java](https://releases.groupdocs.com/merger/java/).
 
 ### License Acquisition
 - **Trial license:** Get a temporary key from the [GroupDocs.Trial License](https://purchase.groupdocs.com/temporary-license/) page.  
@@ -198,7 +200,7 @@ You now know **how to split docx** files into separate files or in‑memory stre
 A: It’s a Java library that enables merging, splitting, and converting a wide range of document formats, including DOCX, PDF, PPTX, and more.
 
 **Q: How do I obtain a license for GroupDocs.Merger?**  
-A: You can acquire a temporary trial license from the [GroupDocs website](https://purchase.groupdocs.com/temporary-license/) for evaluation. For production use, purchase a full license at the same site.
+A: You can acquire a temporary trial license from the [веб‑сайт GroupDocs](https://purchase.groupdocs.com/temporary-license/) for evaluation. For production use, purchase a full license at the same site.
 
 **Q: Can I split PDF files using the same API?**  
 A: Yes, the `split` method works with PDF, DOCX, PPTX, and other supported formats.
