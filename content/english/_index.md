@@ -7,7 +7,7 @@ weight: 11
 url: /
 is_root: true
 type: docs
-date: 2026-01-16
+date: 2026-03-17
 ---
 
 # GroupDocs.Merger Document Merging API – Complete Guide to Merging & Splitting
@@ -19,7 +19,7 @@ The **GroupDocs.Merger document merging API** gives you a fast, cross‑platform
 - **Which platforms are supported?** .NET (Standard, Framework, Core, Mono) and Java (J2SE 7‑10).  
 - **Do I need external software?** No—no Microsoft Office or Adobe dependencies.  
 - **Can I protect documents?** Yes, you can add, remove, or update passwords and permissions.  
-- **Is there a limit on file size?** The API is optimized for large files and batch operations.
+- **Is there a limit on file size?** The API is optimized for large files and batch operations.  
 
 ## What is GroupDocs.Merger document merging API?
 The GroupDocs.Merger document merging API is a developer‑focused library that abstracts the complexity of handling multiple document formats. It lets you programmatically merge files, split them by pages or ranges, and apply advanced page operations—all while preserving the original layout and metadata.
@@ -32,24 +32,21 @@ The GroupDocs.Merger document merging API is a developer‑focused library that 
 - **Security built‑in:** Easily add or remove passwords and set permissions.
 
 ## Transform How You Manage Documents Across Multiple Platforms
-
 GroupDocs.Merger provides a powerful, cross‑platform solution for document manipulation that streamlines how developers work with files in their applications. Our comprehensive API enables you to merge multiple documents into one, split documents into smaller components, reorder pages, apply security options, and much more—all with minimal code and maximum efficiency.
 
 Whether you're developing in .NET or Java environments, GroupDocs.Merger delivers consistent, high‑performance document processing capabilities that work seamlessly with 50+ popular file formats including PDF, Office documents, images, and more.
 
 ## Key Features & Capabilities
-
-- **Comprehensive Document Merging** – Combine entire documents or specific pages from multiple sources into a single cohesive file  
-- **Cross‑Format Support** – Merge different file formats into a unified document (e.g., DOC, XLSX, and images into a single PDF)  
-- **Smart Document Splitting** – Divide documents by page numbers, ranges, or extract specific pages as separate files  
-- **Advanced Page Operations** – Move, remove, rotate, swap, and extract pages with precise control  
-- **Security Management** – Add, remove, or update document passwords and permissions  
-- **OLE Object Support** – Insert documents as OLE objects within Word, Excel, PowerPoint, and Visio files  
-- **No External Dependencies** – Process documents without requiring Microsoft Office or Adobe software  
-- **High Performance** – Optimized for processing large documents and batch operations efficiently  
+- **Comprehensive Document Merging** – Combine entire documents or specific pages from multiple sources into a single cohesive file.  
+- **Cross‑Format Support** – Merge different file formats into a unified document (e.g., DOC, XLSX, and images into a single PDF).  
+- **Smart Document Splitting** – Divide documents by page numbers, ranges, or extract specific pages as separate files.  
+- **Advanced Page Operations** – Move, remove, rotate, swap, and extract pages with precise control.  
+- **Security Management** – Add, remove, or update document passwords and permissions.  
+- **OLE Object Support** – Insert documents as OLE objects within Word, Excel, PowerPoint, and Visio files.  
+- **No External Dependencies** – Process documents without requiring Microsoft Office or Adobe software.  
+- **High Performance** – Optimized for processing large documents and batch operations efficiently.
 
 ## Supported File Formats
-
 GroupDocs.Merger works with over 50 file formats across multiple categories:
 
 - **Documents**: PDF, DOC, DOCX, RTF, ODT, XPS, EPUB, HTML  
@@ -58,7 +55,7 @@ GroupDocs.Merger works with over 50 file formats across multiple categories:
 - **Images**: JPG, PNG, BMP, GIF, TIFF, SVG  
 - **Diagrams**: VSDX, VSDM, VSSX, VSTX, VDX, VSX, VTX  
 - **Archives**: ZIP, TAR, 7Z  
-- **And many more**  
+- **And many more**
 
 ## [GroupDocs.Merger for .NET Tutorials](./net)
 
@@ -114,7 +111,6 @@ GroupDocs.Merger for Java supports J2SE 7.0 (1.7), J2SE 8.0 (1.8), and Java�
 - [Licensing](./java/licensing/) - Configure GroupDocs.Merger in Java environments  
 
 ## Common Use Cases & Benefits
-
 - **Automated Report Generation:** Merge data‑driven PDFs and Excel sheets into a single report for distribution.  
 - **Legal Document Management:** Split large contracts into individual sections for easier review and signing.  
 - **Content Migration:** Convert and merge legacy documents from multiple formats into a standardized PDF archive.  
@@ -137,8 +133,16 @@ A: It streams data and uses memory‑efficient algorithms, allowing you to proce
 **Q: Is there built‑in support for OCR or text extraction?**  
 A: While the core merging API focuses on structural operations, you can combine it with GroupDocs.Parser for advanced text extraction and OCR needs.
 
+**Q: How do I get started quickly?**  
+A: Install the NuGet package (`GroupDocs.Merger`) for .NET or add the Maven dependency for Java, then follow the “Document Loading” tutorial to load your first file.
+
+**Q: Can I merge different file types into one PDF?**  
+A: Yes – the API can merge PDFs, Word, Excel, images, and many other formats into a single PDF output.
+
 ---
 
-**Last Updated:** 2026-01-16  
+**Last Updated:** 2026-03-17  
 **Tested With:** GroupDocs.Merger 23.12 (latest stable)  
-**Author:** GroupDocs
+**Author:** GroupDocs  
+
+---

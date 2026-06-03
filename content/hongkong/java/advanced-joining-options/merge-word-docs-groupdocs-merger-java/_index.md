@@ -1,50 +1,68 @@
 ---
-date: '2026-01-16'
-description: 學習如何使用 GroupDocs.Merger for Java 合併 Word 文件時移除分頁符，實現無額外頁面的無縫連續流。
+date: '2026-03-17'
+description: 學習如何使用 GroupDocs.Merger for Java 合併 docx 檔案並移除 Word 的分頁符，實現無額外頁面的無縫連續流。
 keywords:
 - merge Word documents Java
 - seamlessly merge documents
 - GroupDocs.Merger for Java
-title: 使用 GroupDocs.Merger for Java 合併 Word 時移除分頁符
+title: 如何使用 GroupDocs.Merger for Java 合併 docx 並移除分頁符
 type: docs
 url: /zh-hant/java/advanced-joining-options/merge-word-docs-groupdocs-merger-java/
 weight: 1
 ---
 
-# 移除分页符合併 Word 與 GroupDocs.Merger for Java
+ need to keep the link unchanged. We'll translate the link text.
 
-合併多個 Microsoft Word 檔案同時 **移除分页符合併 Word** 是報告、提案及批量產生文件的常見需求。在本教學中，您將了解如何使用 GroupDocs.Merger for Java 合併 Word 檔案，使內容連續流暢——各章節之間不會插入額外的空白頁。
+Proceed.
 
-**您將學到**
+---
+
+**Last Updated:** 2026-03-17  
+**Tested With:** GroupDocs.Merger 23.12 (latest at time of writing)  
+**Author:** GroupDocs
+
+Translate.
+
+Now produce final markdown.
+
+Let's craft translations.
+
+Be careful with bold markers.
+
+Proceed to write final answer.# 如何使用 GroupDocs.Merger for Java 合併 docx 並移除分頁符
+
+合併多個 Microsoft Word 檔案同時 **remove pagebreaks merging word** 是報告、提案及批次產生文件的常見需求。在本教學中，您將學習 **how to merge docx** 檔案，使內容連續流暢——各段落之間不會插入額外的空白頁。無論是製作年度報告或串接發票，乾淨的合併都能節省時間並提升可讀性。
+
+**您將學習**
 
 - 如何安裝與設定 GroupDocs.Merger for Java  
-- 步驟式程式碼示範 **移除分页符合併 Word** 文件  
-- 真實情境下無縫合併如何節省時間並提升可讀性  
-- 效能與記憶體處理的技巧  
+- 步驟式程式碼示範 **remove pagebreaks merging word** 文件的合併  
+- 真實案例：無縫合併如何節省時間並提升可讀性  
+- 性能與記憶體處理的技巧  
 
-在開始之前，先確保您已備妥所有必要的項目。
+讓我們先確保您已具備所有必要的環境，然後再開始。
 
-## 快速答覆
-- **GroupDocs.Merger 能移除分頁符嗎？** 可以，設定 `WordJoinMode.Continuous`。  
-- **需要授權嗎？** 免費試用可用於測試；正式環境需購買授權。  
-- **支援哪些 Java 建置工具？** Maven、Gradle 或直接下載 JAR。  
-- **能處理大型文件嗎？** 能，但請留意 JVM 記憶體並考慮使用串流。  
-- **輸出是 .doc 還是 .docx 檔？** API 會保留原始格式，也可自行指定副檔名。
+## 快速解答
+- **GroupDocs.Merger 能移除分頁符嗎？** 可以，設定 `WordJoinMode.Continuous` 即可。  
+- **需要授權嗎？** 免費試用可用於測試；正式上線需購買授權。  
+- **支援哪些 Java 建置工具？** Maven、Gradle，或直接下載 JAR。  
+- **大型文件能正常運作嗎？** 能，但請留意 JVM 記憶體使用並考慮串流處理。  
+- **輸出檔案是 .doc 還是 .docx？** API 會保留原始格式，也可自行指定副檔名。
 
-## 什麼是「移除分页符合併 Word」？
-在合併多個 Word 檔案時，預設行為往往會在每個來源文件之間插入分頁符。**移除分页符合併 Word** 的技巧會告訴合併器將文件視為單一連續流，保留標題、表格與樣式，且不產生不必要的空白頁。
+## 「remove pagebreaks merging word」是什麼？
+當您合併多個 Word 檔案時，預設行為通常會在每個來源文件之間插入分頁符。**remove pagebreaks merging word** 技術會指示合併器將文件視為單一連續流，保留標題、表格與樣式，且不產生不必要的空白頁。
 
-## 為何使用 GroupDocs.Merger for Java？
-GroupDocs.Merger 提供高階 API，抽象化 Office Open XML 格式的複雜性。它支援多種格式、提供細緻的合併選項，且可在本地或雲端環境中運行。
+## 為什麼要使用 GroupDocs.Merger for Java？
+GroupDocs.Merger 提供高階 API，抽象化 Office Open XML 的複雜度。它支援多種格式，提供細緻的合併選項，且可在本地或雲端環境中使用。
 
 ## 前置條件
-- **Java Development Kit (JDK)** – 版本 8 或更新版本已安裝。  
+- **Java Development Kit (JDK)** – 必須安裝 8 版或更新版本。  
 - **GroupDocs.Merger for Java** – 最新版函式庫。  
-- 具備基本的 Java 專案設定知識（Maven 或 Gradle）。  
+- 具備基本的 Java 專案設定知識（Maven 或 Gradle）。
 
 ## 設定 GroupDocs.Merger for Java
 
-使用以下任一範例將函式庫加入您的專案。
+使用以下任一段落將函式庫加入您的專案。
 
 **Maven**  
 ```xml
@@ -60,15 +78,15 @@ GroupDocs.Merger 提供高階 API，抽象化 Office Open XML 格式的複雜性
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-**直接下載**：您也可以從官方發行頁面下載 JAR： [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/)。
+**直接下載：** 您也可以從官方發行頁面下載 JAR：[GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/)。
 
 ### 取得授權
 先使用免費試用版評估 API。正式上線時，請購買授權或透過本指南稍後提供的連結申請臨時金鑰。
 
-## 如何使用 GroupDocs.Merger for Java **移除分页符合併 Word** 文件
+## 如何使用 GroupDocs.Merger for Java 移除分頁符合併 Word 文件
 
 ### 初始化 Merger 物件
-首先，建立指向主要文件的 `Merger` 實例。此物件將負責整個合併流程。
+首先，建立指向主要文件的 `Merger` 實例。此物件負責協調整個合併流程。
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -89,7 +107,7 @@ joinOptions.setMode(WordJoinMode.Continuous); // Ensures no new pages
 ```
 
 ### 合併其他文件
-接著使用相同的 `joinOptions` 加入第二個（或任何後續）文件。需要合併多少檔案，就重複此步驟。
+接著使用相同的 `joinOptions` 加入第二個（或任意後續）文件。需要合併多少檔案就重複此步驟。
 
 ```java
 String sourceDocumentPath2 = "YOUR_DOCUMENT_DIRECTORY/sample_doc2.doc";
@@ -97,7 +115,7 @@ merger.join(sourceDocumentPath2, joinOptions);
 ```
 
 ### 儲存合併後的文件
-最後，將合併結果寫入磁碟。產出將是一個單一的 Word 檔案，內容會直接從第一份文件流向第二份。
+最後，將合併結果寫入磁碟。產出將是一個單一的 Word 檔，內容直接從第一份文件流向第二份文件。
 
 ```java
 String outputDirectory = "YOUR_OUTPUT_DIRECTORY";
@@ -106,51 +124,63 @@ merger.save(outputFile);
 ```
 
 ### 疑難排解小技巧
-- **檔案路徑問題**：確認路徑為絕對路徑或相對於工作目錄正確。  
-- **記憶體壓力**：合併大型檔案時，提升 JVM 堆積大小（`-Xmx2g` 或更高）或分批處理文件。  
-- **不支援的格式**：請確保來源檔案為正規的 Word 文件（`.doc` 或 `.docx`）。  
+- **檔案路徑問題：** 確認路徑為絕對路徑或相對於工作目錄正確。  
+- **記憶體壓力：** 合併大型檔案時，提升 JVM 堆積大小（`-Xmx2g` 或更高）或分批處理文件。  
+- **不支援的格式：** 請確保來源檔案為正規的 Word 文件（`.doc` 或 `.docx`）。
 
-## 如何使用 GroupDocs.Merger 合併 Java Word 文件
-上述步驟已示範核心 **合併 Java Word 文件** 工作流程。關鍵在於重複使用同一個 `Merger` 實例，並為每個新增檔案套用 `WordJoinOptions`。此模式可輕鬆擴展至數十份文件，而不需改變程式結構。
+## 如何合併 docx 而不插入額外頁面
+如果您的目標僅是 **how to merge docx** 檔案而不產生預設分頁符，關鍵就在於前述的 `WordJoinMode.Continuous` 設定。只要重複使用同一個 `Merger` 實例，並在每次呼叫 `join()` 時套用相同的 `WordJoinOptions`，即可確保文件流暢、不中斷。
+
+## 為什麼要合併多個 Word 文件而不產生分頁符？
+合併多個 Word 文件時，若每個來源都從新頁開始，會造成斷裂的視覺效果。移除這些分頁符的好處包括：
+
+- 保持標題與章節之間的視覺連貫。  
+- 透過去除不必要的空白頁減少整體檔案大小。  
+- 改善最終使用者的閱讀體驗，特別是長篇報告或合併合約。
+
+## 常見陷阱：嘗試移除分頁符時
+1. **忘記設定 `WordJoinMode.Continuous`** – 預設模式會插入分頁符。  
+2. **混用 `.doc` 與 `.docx` 而未轉換** – 雖然支援，但樣式可能出現不一致。  
+3. **未關閉 `Merger`** – 未釋放本機資源可能導致長時間服務的記憶體泄漏。
 
 ## 實務應用
-1. **年度報告彙編** – 將季報合併為一份連續的年度報告。  
-2. **批次發票產生** – 將單筆發票檔案合併成一個檔案，以便郵寄。  
-3. **文件管理系統** – 程式化聚合相關政策或合約，免除手動複製貼上。  
+1. **年度報告彙整** – 將季報章節合併為一份連續的年度報告。  
+2. **批次發票產生** – 把單筆發票檔案合併成一個郵寄用的壓縮檔。  
+3. **文件管理系統** – 程式化聚合相關政策或合約，免除手動複製貼上。
 
 ## 效能考量
-- **精簡 I/O**：使用緩衝串流讀寫檔案，以降低磁碟延遲。  
-- **平行合併**：對於極大量的批次，可考慮為每個 CPU 核心建立獨立的 Merger 實例，最後再將結果拼接。  
-- **資源釋放**：務必關閉 `Merger` 物件（或使用 try‑with‑resources）以釋放本機資源。
+- **精簡 I/O：** 使用緩衝串流讀寫檔案，以降低磁碟延遲。  
+- **平行合併：** 處理極大量批次時，可考慮為每個 CPU 核心產生獨立的 Merger 實例，最後再將結果拼接。  
+- **資源清理：** 必須始終關閉 `Merger` 物件（或使用 try‑with‑resources）以釋放本機資源。
 
-## 常見問題
+## 常見問答
 
-**Q: 可以合併超過兩份文件嗎？**  
+**Q: 可以合併超過兩個文件嗎？**  
 A: 當然可以。對每個額外的檔案重複呼叫 `merger.join()`，並使用相同的 `joinOptions`。
 
 **Q: 支援哪些 Word 格式？**  
-A: `.doc` 與 `.docx` 兩種格式皆受到 GroupDocs.Merger 完全支援。
+A: 支援傳統的 `.doc` 與現代的 `.docx` 檔案，皆由 GroupDocs.Merger 完全支援。
 
 **Q: 生產環境必須購買授權嗎？**  
-A: 必須。免費試用僅供評估，付費授權會解除所有限制。
+A: 必須。免費試用僅供評估使用，付費授權可解除所有限制。
 
-**Q: 合併過程發生錯誤該怎麼處理？**  
+**Q: 合併過程發生錯誤該如何處理？**  
 A: 將合併呼叫包在 `try‑catch` 區塊，並記錄 `IOException` 或 `GroupDocsException` 的詳細資訊以便除錯。
 
-**Q: 能否整合到雲端原生的微服務中？**  
-A: 此函式庫可在任何 Java 執行環境運行，包括 Docker 容器與無伺服器函式。
+**Q: 可以將此功能整合到雲端原生的微服務嗎？**  
+A: 此函式庫可在任何 Java 執行環境使用，包括 Docker 容器與無伺服器函式。
 
 ## 資源
-- **文件說明**： [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)  
-- **API 參考**： [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)  
-- **下載**： [Latest Release](https://releases.groupdocs.com/merger/java/)  
-- **購買**： [Buy a License](https://purchase.groupdocs.com/buy)  
-- **免費試用**： [Try Free Trial](https://releases.groupdocs.com/merger/java/)  
-- **臨時授權**： [Get Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-- **支援論壇**： [GroupDocs Forum](https://forum.groupdocs.com/c/merger/)  
+- **文件說明：** [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)  
+- **API 參考：** [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)  
+- **下載：** [Latest Release](https://releases.groupdocs.com/merger/java/)  
+- **購買授權：** [Buy a License](https://purchase.groupdocs.com/buy)  
+- **免費試用：** [Try Free Trial](https://releases.groupdocs.com/merger/java/)  
+- **臨時授權：** [Get Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **支援論壇：** [GroupDocs Forum](https://forum.groupdocs.com/c/merger/)  
 
 ---
 
-**最後更新：** 2026-01-16  
+**最後更新：** 2026-03-17  
 **測試環境：** GroupDocs.Merger 23.12（撰寫時的最新版本）  
 **作者：** GroupDocs
