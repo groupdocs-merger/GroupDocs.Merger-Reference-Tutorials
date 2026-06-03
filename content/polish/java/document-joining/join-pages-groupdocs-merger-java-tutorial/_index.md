@@ -1,46 +1,46 @@
 ---
-date: '2025-12-24'
-description: Dowiedz się, jak łączyć strony z plików PDF i DOCX przy użyciu GroupDocs.Merger
-  dla Javy. Ten przewodnik obejmuje konfigurację, łączenie stron oraz wskazówki dotyczące
-  wydajności.
+date: '2026-03-20'
+description: Dowiedz się, jak scalać określone strony w Javie przy użyciu GroupDocs.Merger
+  for Java. Ten przewodnik pokazuje konfigurację, łączenie plików PDF/DOCX oraz wskazówki
+  dotyczące wydajności.
 keywords:
 - GroupDocs Merger for Java
 - join specific pages from documents
 - merge documents using Java
-title: 'Jak łączyć strony - łączenie określonych stron z wielu dokumentów przy użyciu
-  GroupDocs.Merger dla Javy'
+title: Scalanie określonych stron w Javie – Łączenie dokumentów z GroupDocs.Merger
 type: docs
 url: /pl/java/document-joining/join-pages-groupdocs-merger-java-tutorial/
 weight: 1
 ---
 
-# Jak scalać strony: Łączenie wybranych stron z wielu dokumentów przy użyciu GroupDocs.Merger for Java
+# scalanie wybranych stron w Java: Łączenie konkretnych stron z wielu dokumentów przy użyciu GroupDocs.Merger for Java
 
-Scalanie konkretnych stron z różnych formatów dokumentów — takich jak PDF, DOCX czy arkusze kalkulacyjne — może być prawdziwą udręką. Niezależnie od tego, czy konsolidujesz kluczowe sekcje raportu, czy łączysz rozdziały z kilku książek, **jak scalać strony** efektywnie jest pytaniem, które zadaje wielu programistów. Z **GroupDocs.Merger for Java** możesz połączyć wybrane strony z dowolnego obsługiwanego formatu, używając zaledwie kilku linii kodu.
-
-W tym samouczku dowiesz się, jak skonfigurować bibliotekę, połączyć wybrane strony z różnych dokumentów oraz zastosować wskazówki najlepszych praktyk, aby Twoja aplikacja była szybka i niezawodna.
+W Javie możesz **scalić wybrane strony** z plików PDF, DOCX, arkuszy kalkulacyjnych i wielu innych formatów przy użyciu zaledwie kilku linii kodu. Niezależnie od tego, czy musisz połączyć rozdziały z kilku książek, zebrać kluczowe sekcje raportu, czy stworzyć własną broszurę, GroupDocs.Merger for Java zapewnia szybki, niezawodny i w pełni programowy proces.
 
 ## Szybkie odpowiedzi
-- **Jaki jest główny przypadek użycia?** Połącz wybrane strony z PDF‑ów, DOCX, XLSX itp. w jeden plik wyjściowy.  
+- **Jaki jest podstawowy przypadek użycia?** Połącz wybrane strony z plików PDF, DOCX, XLSX itp. w jeden plik wyjściowy.  
 - **Która biblioteka to obsługuje?** GroupDocs.Merger for Java.  
-- **Czy potrzebna jest licencja?** Darmowa wersja próbna wystarczy do oceny; licencja płatna jest wymagana w środowisku produkcyjnym.  
-- **Jakiej wersji Javy wymaga?** Java 8 lub wyższa.  
-- **Czy mogę scalać więcej niż dwa pliki?** Tak — wywołuj `join` wielokrotnie dla każdego dokumentu źródłowego.
+- **Czy potrzebna jest licencja?** Darmowa wersja próbna wystarcza do oceny; licencja płatna jest wymagana w środowisku produkcyjnym.  
+- **Jaka wersja Javy jest wymagana?** Java 8 lub wyższa.  
+- **Czy mogę scalić więcej niż dwa pliki?** Tak — wywołuj `join` wielokrotnie dla każdego dokumentu źródłowego.
 
-## Co to jest „jak scalać strony” w GroupDocs.Merger?
+## Jak scalić wybrane strony w Java
+Poniżej znajduje się zwięzły przewodnik krok po kroku, który demonstruje **scalanie wybranych stron w Java**, wybierając jedynie potrzebne strony z każdego dokumentu źródłowego. Ten sam schemat działa dla PDF, DOCX, PPTX, XLSX i wielu innych obsługiwanych formatów.
+
+## Co to jest „jak scalić strony” z GroupDocs.Merger?
 GroupDocs.Merger udostępnia prosty interfejs API, który pozwala wybrać pojedyncze strony (lub zakresy) z plików źródłowych i połączyć je w nowy dokument. Eliminuje to potrzebę ręcznych narzędzi do edycji PDF i obsługuje dziesiątki formatów od razu.
 
 ## Dlaczego warto używać GroupDocs.Merger for Java?
 - **Elastyczność formatów:** Działa z PDF, DOCX, PPTX, XLSX i wieloma innymi.  
 - **Skoncentrowany na wydajności:** Przetwarza tylko potrzebne strony, zmniejszając zużycie pamięci.  
-- **Łatwa integracja:** Gotowy do użycia z Maven/Gradle, z przejrzystą dokumentacją i przykładami.  
+- **Łatwa integracja:** Gotowy do użycia w Maven/Gradle, z przejrzystą dokumentacją i przykładami.  
 
-## Wymagania wstępne
+## Prerequisites
 - Podstawowa znajomość programowania w Javie.  
 - Maven lub Gradle do zarządzania zależnościami.  
 - IDE, takie jak IntelliJ IDEA lub Eclipse.  
 
-## Konfiguracja GroupDocs.Merger dla Javy
+## Setting Up GroupDocs.Merger for Java
 
 Dodaj bibliotekę do swojego projektu, używając jednej z poniższych metod.
 
@@ -63,11 +63,9 @@ Alternatywnie, pobierz najnowszą wersję bezpośrednio z [GroupDocs.Merger for 
 ### Uzyskanie licencji
 Aby odblokować wszystkie funkcje, potrzebna jest licencja. Możesz rozpocząć od darmowej wersji próbnej lub zakupić pełną licencję na [stronie zakupu](https://purchase.groupdocs.com/buy). Licencja tymczasowa jest również dostępna do krótkoterminowej oceny.
 
-## Jak scalać strony z wielu dokumentów
+## Step‑by‑Step Guide to Merging Specific Pages
 
-Poniżej znajduje się krok‑po‑kroku przewodnik, który demonstruje **łączenie plików pdf i docx** przy wyborze tylko potrzebnych stron.
-
-### Krok 1: Inicjalizacja Mergera z dokumentem podstawowym
+### Krok 1: Zainicjalizuj Merger z dokumentem głównym
 ```java
 import com.groupdocs.merger.Merger;
 import com.groupdocs.merger.domain.options.PageJoinOptions;
@@ -100,7 +98,7 @@ try {
 }
 ```
 
-### Krok 5 (Opcjonalnie): Centralizacja ścieżek plików przy użyciu stałych
+### Krok 5 (Opcjonalnie): Centralizuj ścieżki plików przy użyciu stałych
 ```java
 import java.nio.file.Paths;
 import java.io.File;
@@ -123,47 +121,47 @@ public class PathConstants {
 Używanie stałych sprawia, że kod jest czytelniejszy i upraszcza przyszłe zmiany ścieżek.
 
 ## Praktyczne zastosowania
-Oto kilka rzeczywistych scenariuszy, w których **java merge multiple docs** błyszczy:
+Oto kilka rzeczywistych scenariuszy, w których **scalanie wybranych stron w Java** wyróżnia się:
 
-1. **Konsolidacja dokumentów:** Pobierz wybrane rozdziały z kilku podręczników i umieść je w jednym PDF‑ie do szybkiego przeglądu.  
-2. **Generowanie raportów:** Połącz kluczowe sekcje z finansowych PDF‑ów oraz PDF‑ów wygenerowanych z Excela w jedno podsumowanie wykonawcze.  
+1. **Konsolidacja dokumentów:** Pobierz wybrane rozdziały z kilku podręczników i połącz je w jeden plik PDF do szybkiego przeglądu.  
+2. **Generowanie raportu:** Połącz kluczowe sekcje z finansowych plików PDF oraz PDF‑ów wygenerowanych z Excela w jedno streszczenie dla zarządu.  
 3. **Kompilacja badań:** Scal fragmenty z wielu prac akademickich (PDF, DOCX) w jeden dokument referencyjny.
 
-## Rozważania dotyczące wydajności
-- **Zamknij Mergera** po zakończeniu, aby zwolnić zasoby natywne.  
-- **Wybieraj tylko potrzebne strony** zamiast scalać całe pliki; to znacząco skraca czas przetwarzania.  
+## Performance Considerations
+- **Zamknij Merger** po zakończeniu, aby zwolnić zasoby natywne.  
+- **Wybieraj tylko potrzebne strony** zamiast scalania całych plików; znacznie skraca to czas przetwarzania.  
 - **Obsługuj wyjątki** w sposób elegancki, aby uniknąć awarii, gdy plik źródłowy jest brakujący lub uszkodzony.
 
 ## Częste problemy i rozwiązania
-| Issue | Solution |
+| Problem | Rozwiązanie |
 |-------|----------|
-| **`OutOfMemoryError` on large files** | Przetwarzaj strony w mniejszych partiach i zamykaj Mergera po każdej partii. |
-| **Unsupported file format** | Sprawdź, czy format jest wymieniony w obsługiwanych formatach GroupDocs.Merger (PDF, DOCX, XLSX, PPTX itp.). |
-| **License not applied** | Upewnij się, że plik licencji znajduje się w katalogu głównym aplikacji lub jest ustawiony za pomocą `License license = new License(); license.setLicense("path/to/license.lic");`. |
+| **`OutOfMemoryError` przy dużych plikach** | Przetwarzaj strony w mniejszych partiach i zamykaj Merger po każdej partii. |
+| **Nieobsługiwany format pliku** | Sprawdź, czy format znajduje się na liście obsługiwanych formatów GroupDocs.Merger (PDF, DOCX, XLSX, PPTX itp.). |
+| **Licencja nie została zastosowana** | Upewnij się, że plik licencji znajduje się w katalogu głównym aplikacji lub ustaw go za pomocą `License license = new License(); license.setLicense("path/to/license.lic");`. |
 
 ## Najczęściej zadawane pytania
 
-**Q: Czy mogę scalać więcej niż dwa dokumenty?**  
-A: Tak, po prostu wywołuj `merger.join()` wielokrotnie dla każdego dodatkowego pliku źródłowego.
+**P: Czy mogę scalić więcej niż dwa dokumenty?**  
+O: Tak, po prostu wywołuj `merger.join()` wielokrotnie dla każdego dodatkowego pliku źródłowego.
 
-**Q: Jakie typy plików obsługuje GroupDocs.Merger?**  
-A: Obsługuje PDF, DOCX, DOC, PPTX, PPT, XLSX, XLS oraz wiele innych popularnych formatów biurowych.
+**P: Jakie typy plików obsługuje GroupDocs.Merger?**  
+O: Obsługuje PDF, DOCX, DOC, PPTX, PPT, XLSX, XLS oraz wiele innych popularnych formatów biurowych.
 
-**Q: Jak wyodrębnić strony z dokumentu bez scalania?**  
-A: Użyj metody `extract` z `PageExtractOptions`, aby zapisać wybrane strony jako nowy plik. To jest opisane w scenariuszu **extract pages java**.
+**P: Jak wyodrębnić strony z dokumentu bez scalania?**  
+O: Użyj metody `extract` z `PageExtractOptions`, aby zapisać wybrane strony jako nowy plik. To jest opisane w scenariuszu **extract pages java**.
 
-**Q: Czy istnieje limit liczby stron, które mogę połączyć?**  
-A: Praktyczny limit zależy od pamięci i CPU twojego systemu; sama biblioteka nie narzuca sztywnego limitu.
+**P: Czy istnieje limit liczby stron, które mogę połączyć?**  
+O: Praktyczny limit zależy od pamięci i CPU twojego systemu; sama biblioteka nie narzuca sztywnego limitu.
 
-**Q: Czy mogę generować dynamiczne nazwy plików wyjściowych?**  
-A: Oczywiście — łącz znaczniki czasu lub UUID z nazwą pliku przy użyciu `PathConstants.getOutputFilePath()` lub własnej logiki.
+**P: Czy mogę generować dynamiczne nazwy plików wyjściowych?**  
+O: Oczywiście — łącz znaczniki czasu lub UUID z nazwą pliku przy użyciu `PathConstants.getOutputFilePath()` lub własnej logiki.
 
 ## Zasoby
 - [Dokumentacja](https://docs.groupdocs.com/merger/java/)
 - [Referencja API](https://reference.groupdocs.com/merger/java/)
 - [Pobierz GroupDocs.Merger for Java](https://releases.groupdocs.com/merger/java/)
 - [Kup licencję](https://purchase.groupdocs.com/buy)
-- [Bezpłatna wersja próbna](https://releases.groupdocs.com/merger/java/)
+- [Darmowa wersja próbna](https://releases.groupdocs.com/merger/java/)
 - [Licencja tymczasowa](https://purchase.groupdocs.com/temporary-license/)
 - [Forum wsparcia](https://forum.groupdocs.com/c/merger/)
 
@@ -171,6 +169,6 @@ Przeglądaj te linki, aby pogłębić swoją wiedzę i rozwiązać ewentualne pr
 
 ---
 
-**Ostatnia aktualizacja:** 2025-12-24  
+**Ostatnia aktualizacja:** 2026-03-20  
 **Testowano z:** GroupDocs.Merger for Java latest-version  
 **Autor:** GroupDocs

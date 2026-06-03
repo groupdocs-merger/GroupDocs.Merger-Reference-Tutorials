@@ -1,49 +1,49 @@
 ---
-date: '2026-01-13'
-description: تعلم كيفية دمج ملفات PDF باستخدام Java وGroupDocs.Merger، وكذلك دمج جداول
-  Excel باستخدام Java. إعداد خطوة بخطوة، عينات الكود، وأفضل الممارسات.
+date: '2026-03-20'
+description: تعلم كيفية دمج ملفات PDF باستخدام Java وGroupDocs.Merger، وكذلك دمج أوراق
+  Excel باستخدام Java. إعداد خطوة بخطوة، عينات كود، وأفضل الممارسات.
 keywords:
 - join documents with GroupDocs.Merger for Java
 - GroupDocs.Merger document merging in Java
 - how to use GroupDocs.Merger for Java
-title: 'كيفية دمج ملفات PDF باستخدام Java وGroupDocs.Merger - دليل شامل'
+title: كيفية دمج ملفات PDF باستخدام Java وGroupDocs.Merger - دليل كامل
 type: docs
 url: /ar/java/document-joining/join-documents-groupdocs-merger-java/
 weight: 1
 ---
 
-# كيفية دمج ملفات PDF باستخدام Java ومكتبة GroupDocs.Merger: دليل شامل
+# كيفية دمج PDF باستخدام Java وGroupDocs.Merger: دليل كامل
 
-في بيئة الرقمية السريعة اليوم، **merge PDF with Java** هو طلب شائع لأتمتة التقارير والفواتير وحزم العروض التقديمية. سواء كنت بحاجة إلى دمج ملفات PDF أو ملفات Word أو جداول Excel أو عروض PowerPoint، فإن GroupDocs.Merger for Java يوفّر لك طريقة موثوقة وعالية الأداء للقيام بذلك كله من تطبيق Java واحد.
+في بيئة الرقمية السريعة اليوم، **merge PDF with Java** هو طلب شائع لأتمتة التقارير والفواتير وحزم العروض التقديمية. سواء كنت بحاجة إلى دمج ملفات PDF أو ملفات Word أو جداول Excel أو عروض PowerPoint، فإن GroupDocs.Merger for Java يوفّر لك طريقة موثوقة وعالية الأداء للقيام بذلك من تطبيق Java واحد. يقدّم هذا الدليل لك كل ما تحتاجه — من المتطلبات الأولية إلى تنفيذ كامل الميزات — حتى تتمكن من بدء دمج المستندات اليوم.
 
 ## إجابات سريعة
-- **ماذا يعني “merge PDF with Java”؟** يشير إلى دمج ملف (أو أكثر) PDF (أو صيغ أخرى مدعومة) برمجيًا في ملف PDF واحد باستخدام كود Java.  
-- **أي مكتبة تتولى ذلك؟** GroupDocs.Merger for Java تُقدّم API بسيطًا لدمج ملفات PDF، DOCX، XLSX، PPTX، وأكثر.  
-- **هل أحتاج إلى ترخيص؟** يتوفر تجربة مجانية أو ترخيص مؤقت؛ الترخيص المدفوع مطلوب للاستخدام في الإنتاج.  
-- **هل يمكنني أيضًا دمج جداول Excel باستخدام Java؟** نعم – طريقة `join` نفسها تعمل مع ملفات XLSX، مما يتيح لك **combine excel sheets java** بسلاسة.  
-- **هل العملية موفرة للذاكرة؟** المكتبة تُفرّغ الموارد بعد الحفظ، ويمكنك استخدام استدعاءات غير متزامنة للدفعات الكبيرة.
+- **What does “merge PDF with Java” mean?** يشير إلى دمج ملف (أو ملفات) PDF (أو صيغ أخرى مدعومة) برمجيًا في ملف PDF واحد باستخدام كود Java.  
+- **Which library handles this?** يوفر GroupDocs.Merger for Java واجهة برمجة تطبيقات بسيطة لدمج ملفات PDF وDOCX وXLSX وPPTX وغيرها.  
+- **Do I need a license?** تتوفر نسخة تجريبية مجانية أو ترخيص مؤقت؛ ويتطلب الاستخدام في الإنتاج ترخيصًا مدفوعًا.  
+- **Can I also combine Excel sheets with Java?** نعم – طريقة `join` نفسها تعمل مع ملفات XLSX، مما يتيح لك **combine excel sheets java** بسلاسة.  
+- **Is the process memory‑efficient?** تقوم المكتبة بتحرير الموارد بعد الحفظ، ويمكنك استخدام المكالمات غير المتزامنة للدفعات الكبيرة.  
 
 ## ما هو “merge PDF with Java”؟
-دمج ملفات PDF باستخدام Java يعني استخدام كود Java لأخذ مستندين أو أكثر PDF (أو صيغ أخرى مدعومة) وإنتاج ملف PDF موحّد واحد. هذا مفيد لإنشاء تقارير موحدة، تجميع العقود، أو إعداد حزم عروض تقديمية دون الحاجة إلى نسخ‑لصق يدوي.
+دمج ملفات PDF باستخدام Java يعني استخدام كود Java لأخذ مستندين أو أكثر من PDF (أو صيغ أخرى مدعومة) وإنتاج ملف PDF موحد واحد. هذا مفيد لإنشاء تقارير موحدة، تجميع العقود، أو إعداد حزم عروض تقديمية دون الحاجة إلى النسخ واللصق اليدوي.
 
-## لماذا تستخدم GroupDocs.Merger for Java؟
-- **دعم صيغ متعددة** – PDF، DOCX، XLSX، PPTX والعديد غيرها.  
-- **API بسيط** – بضع أسطر فقط من الكود لدمج الملفات.  
-- **أداء محسّن** – يتعامل مع الملفات الكبيرة بأثر ذاكرة منخفض.  
-- **آمن للمتعدد الخيوط** – يمكن استخدامه بأمان في بيئات متزامنة.
+## لماذا نستخدم GroupDocs.Merger for Java؟
+- **Multi‑format support** – PDF, DOCX, XLSX, PPTX والعديد غيرها.  
+- **Simple API** – بضع أسطر من الكود فقط لدمج الملفات.  
+- **Performance‑optimized** – يتعامل مع الملفات الكبيرة بأقل استهلاك للذاكرة.  
+- **Thread‑safe** – آمن للاستخدام في بيئات متعددة الخيوط.  
 
 ## المتطلبات المسبقة
-قبل البدء، تأكد من وجود:
+قبل البدء، تأكد من وجود ما يلي:
 
 - معرفة أساسية ببرمجة Java.  
-- بيئة تطوير متكاملة مثل IntelliJ IDEA أو Eclipse.  
-- Maven أو Gradle لإدارة الاعتمادات.  
-- الوصول إلى مكتبة GroupDocs.Merger for Java (تجربة مجانية أو مرخصة).
+- بيئة تطوير متكاملة (IDE) مثل IntelliJ IDEA أو Eclipse.  
+- Maven أو Gradle لإدارة التبعيات.  
+- الوصول إلى مكتبة GroupDocs.Merger for Java (نسخة تجريبية مجانية أو مرخصة).
 
-### المكتبات والاعتمادات المطلوبة
-اختر صيغة الاعتماد التي تتطابق مع أداة البناء الخاصة بك:
+### المكتبات والتبعيات المطلوبة
+اختر صيغة التبعية التي تتطابق مع أداة البناء الخاصة بك:
 
-**Maven**  
+**Maven**
 ```xml
 <dependency>
     <groupId>com.groupdocs</groupId>
@@ -52,19 +52,19 @@ weight: 1
 </dependency>
 ```
 
-**Gradle**  
+**Gradle**
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-للتنزيلات المباشرة، زر [إصدارات GroupDocs.Merger for Java](https://releases.groupdocs.com/merger/java/) للحصول على أحدث نسخة.
+للتنزيلات المباشرة، قم بزيارة [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) للحصول على أحدث نسخة.
 
 ### الحصول على الترخيص
-ابدأ بتجربة مجانية أو اطلب ترخيصًا مؤقتًا لتقييم كامل إمكانيات GroupDocs.Merger قبل الشراء.
+ابدأ بنسخة تجريبية مجانية أو اطلب ترخيصًا مؤقتًا لتقييم جميع إمكانيات GroupDocs.Merger قبل الشراء.
 
 ## إعداد GroupDocs.Merger for Java
-1. **تثبيت المكتبة** – أضف اعتماد Maven أو Gradle المعروض أعلاه.  
-2. **التهيئة الأساسية** – استورد فئة `Merger` وأنشئ كائنًا باستخدام المستند الأول.
+1. **Install the Library** – أضف تبعية Maven أو Gradle الموضحة أعلاه.  
+2. **Basic Initialization** – استورد الفئة `Merger` وأنشئ مثلاً باستخدام المستند الأول الخاص بك.
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -75,130 +75,142 @@ Merger mergerPdf = new Merger(pdfFilePath);
 
 أنت الآن جاهز لبدء الدمج.
 
-## دليل التنفيذ
+## كيفية دمج PDF باستخدام Java – خطوات مفصلة
 
-### تهيئة Merger بملف PDF
-**نظرة عامة:** جهّز ملف PDF كملف أساسي لعملية الدمج.
+### تهيئة Merger باستخدام مستند PDF
+**Overview:** جهّز ملف PDF الخاص بك كملف أساسي لعملية الدمج.
 
-- **الخطوة 1: تحديد مسار المصدر**
+- **Step 1: Define the Source Path**
 
 ```java
 String pdfFilePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF"; // Replace with your actual PDF file path
 ```
 
-- **الخطوة 2: تهيئة Merger**
+- **Step 2: Initialize Merger**
 
 ```java
 Merger mergerPdf = new Merger(pdfFilePath);
 ```
 
 ### دمج مستند DOCX
-**نظرة عامة:** أضف مستند Word إلى ملف PDF الذي قمت بتهيئته للتو.
+**Overview:** أضف مستند Word إلى ملف PDF الذي قمت بتهيئته للتو.
 
-- **الخطوة 1: تحديد مسار المصدر**
+- **Step 1: Define the Source Path**
 
 ```java
 String docxFilePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX"; // Replace with your actual DOCX file path
 ```
 
-- **الخطوة 2: دمج المستند**
+- **Step 2: Join the Document**
 
 ```java
 mergerPdf.join(docxFilePath);
 ```
 
 ### دمج مستند XLSX
-**نظرة عامة:** وسّع الملف المدمج بإضافة جدول Excel – مثالي لسيناريوهات **combine excel sheets java**.
+**Overview:** وسّع الملف المدمج بإضافة جدول Excel – مثالي لسيناريوهات **combine excel sheets java**.
 
-- **الخطوة 1: تحديد مسار المصدر**
+- **Step 1: Define the Source Path**
 
 ```java
 String xlsxFilePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_XLSX"; // Replace with your actual XLSX file path
 ```
 
-- **الخطوة 2: دمج المستند**
+- **Step 2: Join the Document**
 
 ```java
 mergerPdf.join(xlsxFilePath);
 ```
 
 ### دمج مستند PPTX
-**نظرة عامة:** أدرج عرض PowerPoint لإنشاء حزمة شاملة.
+**Overview:** أدرج عرض PowerPoint لإنشاء حزمة شاملة.
 
-- **الخطوة 1: تحديد مسار المصدر**
+- **Step 1: Define the Source Path**
 
 ```java
 String pptxFilePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_PPTX"; // Replace with your actual PPTX file path
 ```
 
-- **الخطوة 2: دمج المستند**
+- **Step 2: Join the Document**
 
 ```java
 mergerPdf.join(pptxFilePath);
 ```
 
 ### حفظ المستند المدمج
-**نظرة عامة:** بعد إكمال جميع عمليات الدمج، اكتب الملف النهائي إلى القرص.
+**Overview:** بعد إكمال جميع عمليات الدمج، احفظ الملف النهائي على القرص.
 
-- **الخطوة 1: تحديد مسار الإخراج**
+- **Step 1: Define Output Path**
 
 ```java
 String outputPath = "YOUR_OUTPUT_DIRECTORY/CrossJoinMultipleDocuments-" + Paths.get(pdfFilePath).getFileName().toString();
 File outputFile = new File(outputPath);
 ```
 
-- **الخطوة 2: حفظ المستند**
+- **Step 2: Save the Document**
 
 ```java
 mergerPdf.save(outputFile.getPath());
 ```
 
 ## تطبيقات عملية
-تتألق GroupDocs.Merger for Java في المشاريع الواقعية:
+يبرز GroupDocs.Merger for Java في المشاريع الواقعية:
 
-1. **إنشاء التقارير** – دمج ملفات PDF، تقارير Word، وجداول بيانات Excel في ملف PDF جاهز للعميل.  
-2. **تجميع العروض التقديمية** – دمج عدة عروض PPTX وملفات PDF المساندة لتوزيعات المؤتمرات.  
-3. **توحيد البيانات** – **combine excel sheets java** لإنتاج جدول رئيسي يُدمج بعد ذلك في ملخص PDF.
+1. **Report Generation** – دمج ملفات PDF وتقارير Word وجداول بيانات Excel في ملف PDF واحد جاهز للعميل.  
+2. **Presentation Compilation** – دمج عدة عروض PPTX وملفات PDF المساندة لتوزيعات المؤتمرات.  
+3. **Data Consolidation** – **Combine excel sheets java** لإنشاء جدول بيانات رئيسي يتم دمجه بعد ذلك في ملخص PDF.
 
 ## اعتبارات الأداء
-- **إدارة الموارد:** استدعِ `save` واترك كائن `Merger` يخرج من النطاق لتحرير الذاكرة.  
-- **التنفيذ غير المتزامن:** للدفعات الكبيرة، نفّذ عمليات الدمج في خيوط منفصلة أو استخدم `CompletableFuture` في Java.  
-- **المراقبة:** راقب استهلاك الـ heap باستخدام أدوات مثل VisualVM عند معالجة ملفات ضخمة جدًا.
+- **Resource Management:** استدعِ `save` ودع كائن `Merger` يخرج من النطاق لتحرير الذاكرة.  
+- **Asynchronous Execution:** للدفعات الكبيرة، نفّذ عمليات الدمج في خيوط منفصلة أو استخدم `CompletableFuture` في Java.  
+- **Monitoring:** راقب استهلاك الذاكرة باستخدام أدوات مثل VisualVM عند معالجة ملفات ضخمة جدًا.
+
+## الأخطاء الشائعة واستكشاف الأخطاء وإصلاحها
+- **Missing File Paths:** تأكد من أن كل استدعاء `join` يحصل على مسار مطلق أو نسبي صالح؛ وإلا ستواجه `FileNotFoundException`.  
+- **Unsupported Formats:** المكتبة تدمج فقط الصيغ التي تتعرف عليها. محاولة دمج ملف غير مدعوم (مثل ملفات الصور) ستؤدي إلى رمي `MergerException`.  
+- **Memory Leaks in Loops:** عند دمج العديد من المستندات داخل حلقة، أنشئ كائن `Merger` جديد لكل تكرار أو استدعِ صراحةً `mergerPdf.close()` بعد `save` لتحرير الموارد الأصلية.  
 
 ## الأسئلة المتكررة
 
-**س: هل يمكنني دمج أكثر من مستندين في آنٍ واحد؟**  
-ج: نعم. استدعِ `join` بشكل متكرر على نفس كائن `Merger` لإضافة عدد غير محدود من الملفات.
+**Q: Can I merge more than two documents at a time?**  
+A: نعم. استدعِ `join` بشكل متكرر على نفس كائن `Merger` لإضافة أي عدد من الملفات حسب الحاجة.
 
-**س: ما الصيغ التي يدعمها GroupDocs.Merger للدمج؟**  
-ج: PDF، DOCX، XLSX، PPTX، والعديد من صيغ المستندات الشائعة الأخرى.
+**Q: What formats does GroupDocs.Merger support for merging?**  
+A: PDF, DOCX, XLSX, PPTX والعديد من أنواع المستندات الشائعة الأخرى.
 
-**س: كيف يجب أن أتعامل مع الاستثناءات أثناء عملية الدمج؟**  
-ج: غلف استدعاءات الدمج داخل كتلة `try‑catch` وسجّل `MergerException` لتتبع الأخطاء.
+**Q: How should I handle exceptions during the merge process?**  
+A: احط عمليات الدمج بكتلة `try‑catch` وسجّل `MergerException` لتسهيل استكشاف الأخطاء.
 
-**س: هل GroupDocs.Merger for Java آمن للمتعدد الخيوط؟**  
-ج: كل كائن `Merger` آمن للمتعدد الخيوط، لكن يُفضَّل إنشاء كائن منفصل لكل خيط للحصول على أفضل النتائج.
+**Q: Is GroupDocs.Merger for Java thread‑safe?**  
+A: كل كائن `Merger` آمن للخلط بين الخيوط، لكن يُفضَّل استخدام كائن منفصل لكل خيط للحصول على أفضل أداء.
 
-**س: هل يمكنني تخصيص اسم ملف الإخراج وموقعه ديناميكيًا؟**  
-ج: بالتأكيد. يمكنك بناء سلسلة `outputPath` في وقت التشغيل باستخدام الطوابع الزمنية، معرفات المستخدم، أو أي متغيرات أخرى.
+**Q: Can I customize the output file name and location dynamically?**  
+A: بالتأكيد. يمكنك بناء سلسلة `outputPath` في وقت التشغيل باستخدام الطوابع الزمنية، معرفات المستخدم، أو متغيرات أخرى.
+
+**Q: How do I merge multiple PDFs in a single call?**  
+A: يمكنك تمرير `List<String>` من مسارات PDF إلى `join` أو ربط عدة استدعاءات `join`؛ كلا الطريقتين تحقق **merge multiple pdfs java**.
+
+**Q: Does the library preserve original document metadata?**  
+A: نعم، تُحافظ معظم البيانات الوصفية (المؤلف، تاريخ الإنشاء، إلخ) ما لم تقم بتعديلها صراحةً عبر الـ API.
 
 ## الخلاصة
-لقد أصبحت الآن متمكنًا من **merge PDF with Java** باستخدام GroupDocs.Merger، ورأيت أيضًا كيف يمكنك **combine excel sheets java** ضمن نفس سير العمل. جرّب ترتيب الملفات بطرق مختلفة، استكشف الخيارات المتقدمة مثل تحديد نطاق الصفحات، ودمج هذه المنطق في خطوط أنابيب معالجة المستندات الأكبر.
+لقد أتقنت الآن كيفية **merge PDF with Java** باستخدام GroupDocs.Merger، ورأيت أيضًا كيفية **combine excel sheets java** ضمن نفس سير العمل. جرّب ترتيبات ملفات مختلفة، استكشف الخيارات المتقدمة مثل اختيار نطاق الصفحات، ودمج هذه المنطق في خطوط معالجة مستندات أكبر.
 
-**الخطوات التالية:** جرّب دمج المستندات في خدمة ويب، أو استكشف ميزات إضافية في [توثيق GroupDocs الرسمي](https://docs.groupdocs.com/merger/java/).
+**Next Steps:** جرّب دمج المستندات في خدمة ويب، أو استكشف ميزات إضافية في [GroupDocs documentation](https://docs.groupdocs.com/merger/java/).
 
 ## الموارد
-استكشف المزيد من خلال هذه الموارد:
 - [التوثيق](https://docs.groupdocs.com/merger/java/)
 - [مرجع API](https://reference.groupdocs.com/merger/java/)
-- [تحميل آخر نسخة](https://releases.groupdocs.com/merger/java/)
+- [تحميل أحدث نسخة](https://releases.groupdocs.com/merger/java/)
 - [شراء ترخيص](https://purchase.groupdocs.com/buy)
-- [تجربة مجانية](https://releases.groupdocs.com/merger/java/)
+- [نسخة تجريبية مجانية](https://releases.groupdocs.com/merger/java/)
 - [طلب ترخيص مؤقت](https://purchase.groupdocs.com/temporary-license/)
 - [منتدى الدعم](https://forum.groupdocs.com/c/merger/)
 
 ---
 
-**آخر تحديث:** 2026-01-13  
-**تم الاختبار مع:** أحدث نسخة من GroupDocs.Merger (حتى 2026)  
+**آخر تحديث:** 2026-03-20  
+**تم الاختبار مع:** أحدث نسخة من GroupDocs.Merger (اعتبارًا من 2026)  
 **المؤلف:** GroupDocs  
+
+---

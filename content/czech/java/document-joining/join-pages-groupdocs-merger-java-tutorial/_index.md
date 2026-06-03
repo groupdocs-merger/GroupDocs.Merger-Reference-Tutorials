@@ -1,40 +1,40 @@
 ---
-date: '2025-12-24'
-description: Naučte se, jak sloučit stránky z PDF a DOCX souborů pomocí GroupDocs.Merger
-  pro Javu. Tento průvodce pokrývá nastavení, spojování stránek a tipy na výkon.
+date: '2026-03-20'
+description: Naučte se, jak sloučit konkrétní stránky v Javě pomocí GroupDocs.Merger
+  pro Javu. Tento průvodce ukazuje nastavení, spojování PDF/DOCX a tipy pro výkon.
 keywords:
 - GroupDocs Merger for Java
 - join specific pages from documents
 - merge documents using Java
-title: 'Jak sloučit stránky - Spojte konkrétní stránky z více dokumentů pomocí GroupDocs.Merger
-  pro Javu'
+title: Sloučit konkrétní stránky v Javě – Spojit dokumenty pomocí GroupDocs.Merger
 type: docs
 url: /cs/java/document-joining/join-pages-groupdocs-merger-java-tutorial/
 weight: 1
 ---
 
-# Jak sloučit stránky: Připojit konkrétní stránky z více dokumentů pomocí GroupDocs.Merger pro Java
+# sloučit konkrétní stránky java: Připojit konkrétní stránky z více dokumentů pomocí GroupDocs.Merger pro Java
 
-Sloučení konkrétních stránek z různých formátů dokumentů—jako PDF, DOCX nebo tabulky—může být skutečnou bolestí hlavy. Ať už konsolidujete důležité sekce zprávy nebo spojujete kapitoly z několika knih, **jak sloučit stránky** efektivně je otázka, kterou si klade mnoho vývojářů. S **GroupDocs.Merger for Java** můžete připojit vybrané stránky z libovolného podporovaného formátu pomocí několika řádků kódu.
-
-V tomto tutoriálu se naučíte, jak nastavit knihovnu, připojit konkrétní stránky z různých dokumentů a použít osvědčené tipy, aby vaše aplikace byla rychlá a spolehlivá.
+V Javě můžete **merge specific pages java** z PDF, DOCX souborů, tabulek a mnoha dalších formátů pomocí jen několika řádků kódu. Ať už potřebujete spojit kapitoly z několika knih, seskupit klíčové části zprávy nebo vytvořit vlastní brožuru, GroupDocs.Merger pro Java dělá proces rychlý, spolehlivý a plně programovatelný.
 
 ## Rychlé odpovědi
-- **Jaký je hlavní případ použití?** Kombinovat vybrané stránky z PDF, DOCX, XLSX atd. do jediného výstupního souboru.  
+- **Jaký je hlavní případ použití?** Combine selected pages from PDFs, DOCX, XLSX, etc., into a single output file.  
 - **Která knihovna to řeší?** GroupDocs.Merger for Java.  
-- **Potřebuji licenci?** Bezplatná zkušební verze funguje pro hodnocení; placená licence je vyžadována pro produkci.  
-- **Jaká verze Javy je požadována?** Java 8 nebo vyšší.  
-- **Mohu sloučit více než dva soubory?** Ano—voláním `join` opakovaně pro každý zdrojový dokument.
+- **Potřebuji licenci?** A free trial works for evaluation; a paid license is required for production.  
+- **Jaká verze Javy je požadována?** Java 8 or higher.  
+- **Mohu sloučit více než dva soubory?** Yes—call `join` repeatedly for each source document.
+
+## Jak sloučit konkrétní stránky java
+Níže je stručný, krok‑za‑krokem průvodce, který ukazuje **merge specific pages java** při výběru pouze potřebných stránek z každého zdrojového dokumentu. Stejný vzor funguje pro PDF, DOCX, PPTX, XLSX a mnoho dalších podporovaných formátů.
 
 ## Co je „jak sloučit stránky“ s GroupDocs.Merger?
 GroupDocs.Merger poskytuje jednoduché API, které vám umožní vybrat jednotlivé stránky (nebo rozsahy) ze zdrojových souborů a spojit je do nového dokumentu. Tím se eliminuje potřeba ručních nástrojů pro úpravu PDF a podporuje desítky formátů ihned po vybalení.
 
 ## Proč používat GroupDocs.Merger pro Java?
-- **Flexibilita formátu:** Pracuje s PDF, DOCX, PPTX, XLSX a mnoha dalšími.  
-- **Zaměření na výkon:** Zpracovává pouze stránky, které potřebujete, snižuje využití paměti.  
-- **Jednoduchá integrace:** Připraveno pro Maven/Gradle, s přehlednou dokumentací a příklady.  
+- **Flexibilita formátu:** Works with PDF, DOCX, PPTX, XLSX, and many more.  
+- **Zaměřeno na výkon:** Processes only the pages you need, reducing memory usage.  
+- **Snadná integrace:** Maven/Gradle ready, with clear documentation and examples.
 
-## Požadavky
+## Předpoklady
 - Základní znalost programování v Javě.  
 - Maven nebo Gradle pro správu závislostí.  
 - IDE jako IntelliJ IDEA nebo Eclipse.  
@@ -57,16 +57,14 @@ Přidejte knihovnu do svého projektu pomocí jedné z následujících metod.
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-Alternativně stáhněte nejnovější verzi přímo z [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
+Alternativně si stáhněte nejnovější verzi přímo z [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
 ### Získání licence
-Pro odemčení všech funkcí budete potřebovat licenci. Můžete začít s bezplatnou zkušební verzí nebo zakoupit plnou licenci na [stránka nákupu](https://purchase.groupdocs.com/buy). Dočasná licence je také k dispozici pro krátkodobé hodnocení.
+Pro odemčení všech funkcí budete potřebovat licenci. Můžete začít s bezplatnou zkušební verzí nebo zakoupit plnou licenci na [purchase page](https://purchase.groupdocs.com/buy). Dočasná licence je také k dispozici pro krátkodobé hodnocení.
 
-## Jak sloučit stránky z více dokumentů
+## Průvodce krok za krokem pro sloučení konkrétních stránek
 
-Níže je podrobný průvodce, který ukazuje **sloučení pdf a docx** souborů při výběru pouze potřebných stránek.
-
-### Krok 1: Inicializujte Merger s primárním dokumentem
+### Krok 1: Inicializace Mergeru s primárním dokumentem
 ```java
 import com.groupdocs.merger.Merger;
 import com.groupdocs.merger.domain.options.PageJoinOptions;
@@ -75,19 +73,19 @@ String filePath = YOUR_DOCUMENT_DIRECTORY + "/sample.pdf"; // Source PDF documen
 Merger merger = new Merger(filePath);
 ```
 
-### Krok 2: Definujte stránky, které chcete připojit
+### Krok 2: Definujte stránky, které chcete spojit
 ```java
 // Specify the page numbers you wish to join (e.g., pages 1 and 2)
 PageJoinOptions joinOptions = new PageJoinOptions(1, 2);
 ```
 
-### Krok 3: Připojte vybrané stránky z druhého dokumentu
+### Krok 3: Spojte vybrané stránky ze druhého dokumentu
 ```java
 // Path to your DOCX file\ String docxFilePath = YOUR_DOCUMENT_DIRECTORY + "/sample.docx";
 merger.join(docxFilePath, joinOptions);
 ```
 
-### Krok 4: Uložte výsledek a uvolněte prostředky
+### Krok 4: Uložte výsledek a uvolněte zdroje
 ```java
 String outputFilePath = YOUR_OUTPUT_DIRECTORY + "/CrossJoinPagesFromVariousDocuments-output.pdf";
 merger.save(outputFilePath);
@@ -99,7 +97,7 @@ try {
 }
 ```
 
-### Krok 5 (volitelně): Centralizujte cesty k souborům pomocí konstant
+### Krok 5 (volitelně): Centralizovat cesty k souborům pomocí konstant
 ```java
 import java.nio.file.Paths;
 import java.io.File;
@@ -119,47 +117,48 @@ public class PathConstants {
 }
 ```
 
-Použití konstant činí váš kód čistším a usnadňuje budoucí změny cest.
+Použití konstant činí kód přehlednějším a zjednodušuje budoucí změny cest.
 
 ## Praktické aplikace
-Zde je několik reálných scénářů, kde **java merge multiple docs** vyniká:
+Zde je několik reálných scénářů, kde **merge specific pages java** vyniká:
 
-1. **Konsolidace dokumentů:** Vybrat kapitoly z několika učebnic a sloučit je do jednoho PDF pro rychlou recenzi.  
-2. **Generování zpráv:** Kombinovat klíčové sekce z finančních PDF a PDF odvozených z Excelu do jedné výkonné souhrnné zprávy.  
-3. **Kompozice výzkumu:** Sloučit úryvky z několika akademických prací (PDF, DOCX) do jednoho referenčního dokumentu.
+1. **Konsolidace dokumentů:** Pull selected chapters from several textbooks into a single PDF for quick review.  
+2. **Generování zprávy:** Combine key sections from financial PDFs and Excel‑derived PDFs into one executive summary.  
+3. **Kompozice výzkumu:** Merge excerpts from multiple academic papers (PDF, DOCX) into a single reference document.
 
 ## Úvahy o výkonu
-- **Uzavřete Merger** po dokončení, aby se uvolnily nativní zdroje.  
-- **Vyberte pouze potřebné stránky** místo sloučení celých souborů; tím se dramaticky zkrátí čas zpracování.  
-- **Zpracovávejte výjimky** elegantně, aby nedocházelo k pádům, když chybí nebo je poškozen zdrojový soubor.
+- **Uzavřete Merger** after you’re done to free native resources.  
+- **Vyberte pouze potřebné stránky** instead of merging whole files; this cuts processing time dramatically.  
+- **Zpracovávejte výjimky** gracefully to avoid crashes when a source file is missing or corrupted.
 
 ## Časté problémy a řešení
+
 | Problém | Řešení |
 |-------|----------|
-| **`OutOfMemoryError` při velkých souborech** | Zpracovávejte stránky v menších dávkách a po každé dávce uzavřete Merger. |
-| **Nepodporovaný formát souboru** | Ověřte, že formát je uveden v seznamu podporovaných formátů GroupDocs.Merger (PDF, DOCX, XLSX, PPTX atd.). |
-| **Licence nebyla použita** | Ujistěte se, že soubor licence je umístěn v kořenovém adresáři aplikace nebo nastaven pomocí `License license = new License(); license.setLicense("path/to/license.lic");`. |
+| **`OutOfMemoryError` on large files** | Process pages in smaller batches and close the Merger after each batch. |
+| **Unsupported file format** | Verify the format is listed in the GroupDocs.Merger supported formats (PDF, DOCX, XLSX, PPTX, etc.). |
+| **License not applied** | Ensure the license file is placed in the application’s root directory or set via `License license = new License(); license.setLicense("path/to/license.lic");`. |
 
 ## Často kladené otázky
 
-**Q: Můžu sloučit více než dva dokumenty?**  
-A: Ano, jednoduše voláním `merger.join()` opakovaně pro každý další zdrojový soubor.
+**Q: Mohu sloučit více než dva dokumenty?**  
+A: Yes, simply call `merger.join()` repeatedly for each additional source file.
 
 **Q: Jaké typy souborů GroupDocs.Merger podporuje?**  
-A: Podporuje PDF, DOCX, DOC, PPTX, PPT, XLSX, XLS a mnoho dalších běžných kancelářských formátů.
+A: It supports PDF, DOCX, DOC, PPTX, PPT, XLSX, XLS, and many other common office formats.
 
-**Q: Jak extrahovat stránky z dokumentu bez sloučení?**  
-A: Použijte metodu `extract` s `PageExtractOptions` k uložení vybraných stránek jako nový soubor. Toto je pokryto v případě použití **extract pages java**.
+**Q: Jak mohu extrahovat stránky z dokumentu bez sloučení?**  
+A: Use the `extract` method with `PageExtractOptions` to save selected pages as a new file. This is covered under the **extract pages java** use case.
 
-**Q: Existuje limit na počet stránek, které mohu připojit?**  
-A: Praktický limit je dán pamětí a CPU vašeho systému; knihovna sama neklade žádný limit.
+**Q: Existuje limit na počet stránek, které mohu spojit?**  
+A: The practical limit is dictated by your system’s memory and CPU; the library itself imposes no hard cap.
 
-**Q: Můžu generovat dynamické názvy výstupních souborů?**  
-A: Rozhodně—připojte časové razítko nebo UUID k názvu souboru pomocí `PathConstants.getOutputFilePath()` nebo vlastní logiky.
+**Q: Mohu generovat dynamické názvy výstupních souborů?**  
+A: Absolutely—concatenate timestamps or UUIDs to the filename using `PathConstants.getOutputFilePath()` or custom logic.
 
 ## Zdroje
 - [Dokumentace](https://docs.groupdocs.com/merger/java/)
-- [Reference API](https://reference.groupdocs.com/merger/java/)
+- [API Reference](https://reference.groupdocs.com/merger/java/)
 - [Stáhnout GroupDocs.Merger pro Java](https://releases.groupdocs.com/merger/java/)
 - [Koupit licenci](https://purchase.groupdocs.com/buy)
 - [Bezplatná zkušební verze](https://releases.groupdocs.com/merger/java/)
@@ -170,6 +169,6 @@ Prozkoumejte tyto odkazy, abyste prohloubili své znalosti a vyřešili případ
 
 ---
 
-**Poslední aktualizace:** 2025-12-24  
+**Poslední aktualizace:** 2026-03-20  
 **Testováno s:** GroupDocs.Merger for Java latest-version  
 **Autor:** GroupDocs
