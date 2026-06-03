@@ -1,65 +1,66 @@
 ---
-date: '2025-12-26'
-description: Naučte se, jak použít GroupDocs Merger Maven k sloučení šablon Word ve
-  formátu DOTX v Javě, včetně nastavení, ukázek kódu a osvědčených postupů.
+date: '2026-02-26'
+description: Naučte se, jak sloučit soubory .dotx v Javě pomocí GroupDocs Merger Maven
+  – rychlý způsob, jak v Javě sloučit šablony Word s podrobným nastavením krok za
+  krokem, ukázkami kódu a osvědčenými postupy.
 keywords:
 - merge DOTX files Java
 - GroupDocs.Merger setup
 - Java document merging
-title: groupdocs merger maven – Sloučit soubory DOTX pomocí Javy
+title: merge dotx java – Sloučit soubory DOTX pomocí GroupDocs Merger
 type: docs
 url: /cs/java/document-joining/merge-dotx-files-groupdocs-merger-java/
 weight: 1
 ---
 
-# groupdocs merger maven – Sloučení souborů DOTX pomocí Java
+# merge dotx java – Merge DOTX Files with GroupDocs Merger
 
-Sloučení šablon Microsoft Office DOTX nebylo nikdy jednodušší díky **groupdocs merger maven**. V tomto krok‑za‑krokem průvodci uvidíte, jak nastavit knihovnu, načíst více souborů DOTX a vytvořit jeden sloučený dokument – vše z Java aplikace. Ať už vytváříte automatizované generátory zpráv nebo nástroje pro sestavování smluv, níže uvedený přístup ukazuje, proč je *java merge word templates* hračkou s GroupDocs Merger.
+V tomto průvodci se naučíte, jak **merge dotx java** pomocí GroupDocs Merger Maven, což usnadňuje *java merge word templates* v jakékoli Java aplikaci. Ať už potřebujete spojit šablony zpráv, smluvní klauzule nebo jiné soubory Office Open XML, níže uvedené kroky vám ukážou čistý, připravený přístup pro produkci.
 
-## Rychlé odpovědi
-- **Jakou knihovnu potřebuji?** groupdocs merger maven (GroupDocs.Merger for Java)  
-- **Která verze Javy je vyžadována?** JDK 8 nebo novější  
-- **Potřebuji licenci pro vývoj?** Free trial funguje pro testování; placená licence je vyžadována pro produkci  
-- **Mohu sloučit i jiné formáty?** Ano – DOCX, PDF, PPTX, and more  
-- **Kolik souborů mohu sloučit najednou?** Omezeno pouze zdroji vašeho systému  
+## Quick Answers
+- **What library do I need?** groupdocs merger maven (GroupDocs.Merger for Java)  
+- **Which Java version is required?** JDK 8 or newer  
+- **Do I need a license for development?** A free trial works for testing; a paid license is required for production  
+- **Can I merge other formats?** Yes – DOCX, PDF, PPTX, and more  
+- **How many files can I merge at once?** Limited only by your system resources  
 
-## Co je groupdocs merger maven?
-**groupdocs merger maven** je Maven‑kompatibilní distribuce GroupDocs.Merger pro Java. Poskytuje jednoduché API pro kombinování, rozdělování a manipulaci s širokou škálou typů dokumentů, aniž byste opustili ekosystém Java.
+## What is groupdocs merger maven?
+**groupdocs merger maven** je distribuce kompatibilní s Mavenem pro GroupDocs.Merger for Java. Poskytuje jednoduché API pro kombinování, rozdělování a manipulaci s širokou škálou typů dokumentů, aniž byste opustili ekosystém Javy.
 
-## Proč použít groupdocs merger maven k java merge word templates?
-- **Rychlost** – Optimalizovaný nativní kód zpracuje velké dávky během sekund.  
-- **Spolehlivost** – Plná podpora standardů Office Open XML zajišťuje, že formátování zůstane nedotčeno.  
-- **Flexibilita** – Funguje s Maven, Gradle nebo přímým zahrnutím JAR, což usnadňuje integraci do jakéhokoli build pipeline.  
+## Why use groupdocs merger maven to java merge word templates?
+- **Speed** – Optimalizovaný nativní kód zpracuje velké dávky během několika sekund.  
+- **Reliability** – Plná podpora standardů Office Open XML zajišťuje, že formátování zůstane zachováno.  
+- **Flexibility** – Funguje s Mavenem, Gradlem nebo přímým zahrnutím JARu, což usnadňuje integraci do jakéhokoli build pipeline.  
 
-## Úvod
-Efektivní správa dokumentů je nezbytná pro vývojáře pracující s šablonami Microsoft Office, jako jsou soubory DOTX. Tento průvodce ukazuje, jak sloučit více šablon DOTX do jednoho plynulého dokumentu pomocí GroupDocs.Merger pro Java, výjimečné knihovny určené pro práci s různými formáty dokumentů.
+## Introduction
+Efektivní správa dokumentů je nezbytná pro vývojáře pracující s Microsoft Office šablonami, jako jsou soubory DOTX. Tento tutoriál ukazuje, jak **merge dotx java** načtením několika DOTX šablon do jednoho plynulého dokumentu pomocí GroupDocs.Merger for Java.
 
-V tomto tutoriálu se naučíte jednoduchost a sílu GroupDocs.Merger pro Java prostřednictvím praktických kroků:
-- Nastavení vašeho prostředí
-- Načítání, sloučení a ukládání souborů DOTX
+V tomto tutoriálu se naučíte jednoduchost a sílu GroupDocs.Merger for Java prostřednictvím praktických kroků:
+- Nastavení prostředí
+- Načítání, slučování a ukládání DOTX souborů
 - Reálné aplikace a tipy na výkon
 - Řešení běžných problémů
 
-Začněme s předpoklady!
+Pojďme začít s předpoklady!
 
-## Předpoklady
+## Prerequisites
 Před zahájením se ujistěte, že máte následující:
 
-### Požadované knihovny, verze a závislosti
+### Required Libraries, Versions, and Dependencies
 - **GroupDocs.Merger for Java**: Ujistěte se, že používáte nejnovější verzi pro optimální výkon.
 
-### Požadavky na nastavení prostředí
+### Environment Setup Requirements
 - Vývojové prostředí Java (JDK 8 nebo novější)  
 - Integrované vývojové prostředí (IDE) jako IntelliJ IDEA, Eclipse nebo NetBeans  
 - Maven nebo Gradle pro správu závislostí  
 
-### Předpoklady znalostí
+### Knowledge Prerequisites
 Základní znalost programování v Javě a zkušenost s používáním knihoven ve vašich projektech bude užitečná.
 
-## Nastavení GroupDocs.Merger pro Java
-Pro zahájení sloučení souborů DOTX nastavte knihovnu GroupDocs.Merger ve svém projektu.
+## Setting Up GroupDocs.Merger for Java
+Pro zahájení slučování DOTX souborů nastavte knihovnu GroupDocs.Merger ve svém projektu.
 
-### Nastavení Maven
+### Maven Setup
 Přidejte tuto závislost do souboru `pom.xml`:
 ```xml
 <dependency>
@@ -69,22 +70,22 @@ Přidejte tuto závislost do souboru `pom.xml`:
 </dependency>
 ```
 
-### Nastavení Gradle
+### Gradle Setup
 Zahrňte toto do souboru `build.gradle`:
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-### Přímé stažení
-Download the latest version from [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
+### Direct Download
+Stáhněte nejnovější verzi z [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
-### Kroky získání licence
+### License Acquisition Steps
 GroupDocs nabízí bezplatnou zkušební verzi pro testování jejich knihovny. Pro plné funkce zvažte zakoupení licence nebo získání dočasné licence.
 - **Free Trial**: Stáhněte a vyzkoušejte knihovnu.  
 - **Temporary License**: Požádejte o rozšířená evaluační práva.  
-- **Purchase**: Získejte trvalou licenci pro další používání.
+- **Purchase**: Získejte trvalou licenci pro dlouhodobé používání.
 
-### Základní inicializace
+### Basic Initialization
 Inicializujte GroupDocs.Merger ve svém projektu následovně:
 ```java
 import com.groupdocs.merger.Merger;
@@ -96,13 +97,13 @@ public class DocumentMerger {
     }
 }
 ```
-Po dokončení nastavení můžeme pokračovat s funkcionalitou sloučení.
+Po dokončení nastavení můžeme přistoupit k funkcionalitě slučování.
 
-## Průvodce implementací
-Postupujte podle těchto kroků pro sloučení souborů DOTX:
+## How to merge dotx java with GroupDocs Merger
+Postupujte podle následujících kroků pro slučování DOTX souborů:
 
-### Načtení zdrojového souboru DOTX
-**Přehled**: Začněte načtením vašeho zdrojového souboru DOTX pomocí GroupDocs.Merger.
+### Load a Source DOTX File
+**Overview**: Začněte načtením vašeho zdrojového DOTX souboru pomocí GroupDocs.Merger.
 ```java
 import com.groupdocs.merger.Merger;
 import java.io.File;
@@ -110,61 +111,61 @@ import java.io.File;
 String documentDirectory = "YOUR_DOCUMENT_DIRECTORY";
 Merger merger = new Merger(new File(documentDirectory, "source.dotx").getPath());
 ```
-**Vysvětlení**: Objekt `Merger` je inicializován s cestou k vašemu zdrojovému souboru DOTX, připravujícím jej pro další manipulaci.
+**Explanation**: Objekt `Merger` je inicializován s cestou k vašemu zdrojovému DOTX souboru, čímž se připraví na další manipulaci.
 
-### Přidání dalšího souboru DOTX ke sloučení
-**Přehled**: Vylepšete svůj dokument přidáním dalšího souboru DOTX ke sloučení.
+### Add Another DOTX File to Merge
+**Overview**: Rozšiřte dokument přidáním dalšího DOTX souboru ke sloučení.
 ```java
 // Assume merger is already initialized as shown above.
 String documentDirectory = "YOUR_DOCUMENT_DIRECTORY";
 merger.join(new File(documentDirectory, "additional.dotx").getPath());
 ```
-**Vysvětlení**: Metoda `join` připojí zadaný soubor DOTX k vašemu existujícímu nastavení, což umožňuje plynulé kombinování více šablon.
+**Explanation**: Metoda `join` připojí specifikovaný DOTX soubor k vašemu existujícímu nastavení, což umožňuje plynulé kombinování více šablon.
 
-### Sloučení souborů DOTX a uložení výsledku
-**Přehled**: Dokončete proces sloučení uložením kombinovaného dokumentu do výstupního adresáře.
+### Merge DOTX Files and Save Result
+**Overview**: Dokončete proces slučování uložením kombinovaného dokumentu do výstupního adresáře.
 ```java
 String outputDirectory = "YOUR_OUTPUT_DIRECTORY";
 String outputFile = new File(outputDirectory, "merged.dotx").getPath();
 merger.save(outputFile);
 ```
-**Vysvětlení**: Metoda `save` konsoliduje všechny přidané dokumenty a zapíše sloučený výsledek na zadanou cestu.
+**Explanation**: Metoda `save` konsoliduje všechny přidané dokumenty a zapíše sloučený výsledek na zadanou cestu.
 
-## Praktické aplikace
-GroupDocs.Merger pro Java má různé aplikace:
-1. **Automated Report Generation** – Kombinujte datové šablony do komplexních zpráv.  
-2. **Contract Management Systems** – Sloučte různé klauzule a podmínky do jednoho soudržného dokumentu.  
-3. **Collaborative Document Creation** – Integrovat příspěvky od více zúčastněných stran do jednotné šablony.
+## Practical Applications
+GroupDocs.Merger for Java má široké využití:
+1. **Automated Report Generation** – Kombinujte datově řízené šablony do komplexních zpráv.  
+2. **Contract Management Systems** – Sloučte různé klauzule a podmínky do jednoho koherentního dokumentu.  
+3. **Collaborative Document Creation** – Integrovat příspěvky od více zainteresovaných stran do jednotné šablony.
 
-Možnosti integrace zahrnují kombinaci GroupDocs.Merger s dalšími systémy správy dokumentů nebo aplikacemi založenými na Javě pro automatizaci pracovních toků.
+Možnosti integrace zahrnují kombinaci GroupDocs.Merger s dalšími systémy správy dokumentů nebo Java‑based aplikacemi pro automatizaci pracovních toků.
 
-## Úvahy o výkonu
+## Performance Considerations
 Při práci s velkým objemem dokumentů:
-- **Optimalizace využití zdrojů** – Zajistěte efektivní správu paměti uzavíráním nepotřebných souborových deskriptorů a streamů.  
-- **Využití více vláken** – Paralelizujte sloučení při zpracování desítek nebo stovek souborů, abyste snížili celkový čas provádění.
+- **Optimize Resource Usage** – Zajistěte efektivní správu paměti uzavíráním nepotřebných souborových handle a streamů.  
+- **Leverage Multi‑Threading** – Paralelizujte slučování při zpracování desítek nebo stovek souborů, abyste snížili celkový čas provádění.
 
-## Běžné problémy a řešení
-- **Nesprávné cesty k souborům** – Zkontrolujte, že řetězce adresářů končí správným oddělovačem (`/` nebo `\\`).  
-- **Výjimky nepodporovaného formátu** – Ověřte, že všechny vstupní soubory jsou skutečné soubory DOTX; přejmenujte přípony pouze pokud obsah odpovídá formátu.  
-- **Chyby licence** – Ujistěte se, že soubor zkušební nebo zakoupené licence je správně odkazován v konfiguraci vaší aplikace.
+## Common Issues and Solutions
+- **Incorrect File Paths** – Dvakrát zkontrolujte, že řetězce adresářů končí správným oddělovačem (`/` nebo `\\`).  
+- **Unsupported Format Exceptions** – Ověřte, že všechny vstupní soubory jsou skutečné DOTX soubory; přejmenovávejte přípony pouze, pokud obsah odpovídá formátu.  
+- **License Errors** – Ujistěte se, že soubor licence (zkušební nebo zakoupený) je správně odkazován v konfiguraci vaší aplikace.
 
-## Často kladené otázky
-1. **Jaké jsou systémové požadavky pro používání GroupDocs.Merger pro Java?**  
+## Frequently Asked Questions
+1. **What are the system requirements for using GroupDocs.Merger for Java?**  
    Ujistěte se, že máte JDK 8+ a IDE, které podporuje Maven nebo Gradle pro správu závislostí.  
 
-2. **Mohu sloučit soubory jiné než DOTX pomocí GroupDocs.Merger pro Java?**  
+2. **Can I merge files other than DOTX with GroupDocs.Merger for Java?**  
    Ano, podporuje DOCX, PDF, PPTX a mnoho dalších formátů.  
 
-3. **Jak zacházet s výjimkami během procesu sloučení?**  
-   Zabalte volání sloučení do bloků `try‑catch`, zaznamenejte podrobnosti výjimky a případně opakujte při přechodných I/O chybách.  
+3. **How do I handle exceptions during the merging process?**  
+   Obalte volání sloučení do `try‑catch` bloků, zaznamenejte podrobnosti výjimky a případně opakujte při přechodných I/O chybách.  
 
-4. **Existuje limit na počet souborů, které mohu sloučit najednou?**  
-   Limit je určen dostupnou pamětí a CPU; knihovna je navržena tak, aby efektivně zpracovávala velké dávky.  
+4. **Is there a limit on the number of files I can merge at once?**  
+   Limit je dán dostupnou pamětí a CPU; knihovna je navržena tak, aby efektivně zvládala velké dávky.  
 
-5. **Jaké jsou běžné úskalí při sloučení souborů DOTX?**  
-   Nesprávné cesty k souborům, používání zastaralých verzí knihovny a opomenutí uzavřít instanci `Merger` mohou způsobit selhání.  
+5. **What are some common pitfalls when merging DOTX files?**  
+   Nesprávné cesty k souborům, používání zastaralých verzí knihovny a opomenutí uzavřít instanci `Merger` mohou způsobit selhání.
 
-## Zdroje
+## Resources
 - **Documentation**: [GroupDocs Merger Documentation](https://docs.groupdocs.com/merger/java/)  
 - **API Reference**: [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)  
 - **Download**: [Latest Releases](https://releases.groupdocs.com/merger/java/)  
@@ -175,6 +176,6 @@ Při práci s velkým objemem dokumentů:
 
 ---
 
-**Poslední aktualizace:** 2025-12-26  
-**Testováno s:** GroupDocs.Merger for Java latest version  
-**Autor:** GroupDocs
+**Last Updated:** 2026-02-26  
+**Tested With:** GroupDocs.Merger for Java latest version  
+**Author:** GroupDocs
