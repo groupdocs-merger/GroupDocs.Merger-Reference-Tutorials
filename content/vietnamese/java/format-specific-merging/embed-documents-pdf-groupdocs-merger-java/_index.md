@@ -1,25 +1,33 @@
 ---
-title: "Add PDF Attachment Using GroupDocs.Merger for Java – Complete Guide"
-description: "Learn how to add PDF attachment and embed PPTX files using GroupDocs.Merger for Java. This guide covers setup, convert pptx pdf attachment, and best practices."
-date: "2026-02-13"
-weight: 1
-url: "/java/format-specific-merging/embed-documents-pdf-groupdocs-merger-java/"
+date: '2026-02-13'
+description: Tìm hiểu cách thêm tệp đính kèm PDF và nhúng tệp PPTX bằng GroupDocs.Merger
+  cho Java. Hướng dẫn này bao gồm cài đặt, chuyển đổi PPTX thành tệp đính kèm PDF
+  và các thực tiễn tốt nhất.
 keywords:
 - embed documents in PDF with Java
 - GroupDocs.Merger for Java setup
 - embedding PPTX into PDF
+title: Thêm tệp đính kèm PDF bằng GroupDocs.Merger cho Java – Hướng dẫn đầy đủ
 type: docs
+url: /vi/java/format-specific-merging/embed-documents-pdf-groupdocs-merger-java/
+weight: 1
 ---
 
-# Add PDF Attachment Using GroupDocs.Merger for Java
+Docs"
 
-Embedding external files—such as a PowerPoint presentation—directly into a PDF is a powerful way to keep related content together. In this tutorial you’ll **add PDF attachment** to an existing PDF using GroupDocs.Merger for Java, learn how to **convert pptx pdf attachment**, and discover best practices for saving and managing the resulting document.
+Proceed.
+
+Make sure to keep markdown formatting.
+
+Now produce final content.# Thêm PDF Attachment Using GroupDocs.Merger for Java
+
+Embedding external files—such as a PowerPoint presentation—directly into a PDF is a powerful way to keep related content together. In this tutorial you’ll **add pdf attachment** to an existing PDF using GroupDocs.Merger for Java, learn how to **convert pptx pdf attachment**, and discover best practices for saving and managing the resulting document.
 
 ## Quick Answers
-- **What does “add pdf attachment” mean?** It embeds another file (e.g., PPTX) inside a PDF as an attachment.
-- **Which library supports this?** GroupDocs.Merger for Java provides a simple API for PDF attachments.
-- **Do I need a license?** A free trial works for evaluation; a permanent license is required for production.
-- **Can I embed other formats?** Yes, most common document types are supported.
+- **What does “add pdf attachment” mean?** It embeds another file (e.g., PPTX) inside a PDF as an attachment.  
+- **Which library supports this?** GroupDocs.Merger for Java provides a simple API for PDF attachments.  
+- **Do I need a license?** A free trial works for evaluation; a permanent license is required for production.  
+- **Can I embed other formats?** Yes, most common document types are supported.  
 - **Is it thread‑safe?** Operations are safe when each thread uses its own `Merger` instance.
 
 ## What is “add pdf attachment”?
@@ -60,7 +68,7 @@ You can download the latest binaries from [GroupDocs.Merger for Java releases](h
 ### License Acquisition
 - **Free Trial** – Full feature set without time limits.  
 - **Temporary License** – Request a short‑term key for testing.  
-- **Purchase** – Obtain a permanent license at [GroupDocs Purchase](https://purchase.groupdocs.com/buy).
+- **Purchase** – Obtain a permanent license at [Mua GroupDocs](https://purchase.groupdocs.com/buy).
 
 ### Basic Initialization
 Create a `Merger` instance with the path to the source PDF. This prepares the library for the **add pdf attachment** operation.
@@ -157,18 +165,16 @@ A: Currently GroupDocs.Merger focuses on adding attachments; removal requires a 
 A: Absolutely—just include the Maven/Gradle dependency and ensure the runtime has access to the required files.
 
 ## Resources
-- **Documentation**: [GroupDocs.Merger Documentation](https://docs.groupdocs.com/merger/java/)  
-- **API Reference**: [GroupDocs.Merger API Reference](https://reference.groupdocs.com/merger/java/)  
-- **Download**: [GroupDocs.Merger Downloads](https://releases.groupdocs.com/merger/java/)  
-- **Purchase and Licensing**: [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy)  
-- **Free Trial**: [GroupDocs Free Trial](https://releases.groupdocs.com/merger/java/)  
-- **Temporary License**: [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-- **Support**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger)
+- **Documentation**: [Tài liệu GroupDocs.Merger](https://docs.groupdocs.com/merger/java/)  
+- **API Reference**: [Tham chiếu API GroupDocs.Merger](https://reference.groupdocs.com/merger/java/)  
+- **Download**: [Tải xuống GroupDocs.Merger](https://releases.groupdocs.com/merger/java/)  
+- **Purchase and Licensing**: [Trang Mua và Cấp phép GroupDocs](https://purchase.groupdocs.com/buy)  
+- **Free Trial**: [Dùng thử miễn phí GroupDocs](https://releases.groupdocs.com/merger/java/)  
+- **Temporary License**: [Yêu cầu giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/)  
+- **Support**: [Diễn đàn Hỗ trợ GroupDocs](https://forum.groupdocs.com/c/merger)
 
 ---
 
-**Last Updated:** 2026-02-13  
-**Tested With:** GroupDocs.Merger 21.x.x for Java  
-**Author:** GroupDocs  
-
----
+**Cập nhật lần cuối:** 2026-02-13  
+**Kiểm tra với:** GroupDocs.Merger 21.x.x for Java  
+**Tác giả:** GroupDocs

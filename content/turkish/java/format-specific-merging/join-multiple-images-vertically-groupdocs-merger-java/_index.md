@@ -1,19 +1,21 @@
 ---
-title: "How to Merge Images Vertically using GroupDocs.Merger Java"
-description: "Learn how to merge images vertically with GroupDocs.Merger for Java. This tutorial shows how to join images vertically, create a vertical photo collage, and add images to file efficiently."
-date: "2026-02-13"
-weight: 1
-url: "/java/format-specific-merging/join-multiple-images-vertically-groupdocs-merger-java/"
+date: '2026-02-13'
+description: GroupDocs.Merger for Java ile görüntüleri dikey olarak birleştirmeyi
+  öğrenin. Bu öğreticide, görüntüleri dikey olarak birleştirme, dikey bir fotoğraf
+  kolajı oluşturma ve görüntüleri dosyaya verimli bir şekilde ekleme gösterilmektedir.
 keywords:
 - join multiple images vertically
 - GroupDocs.Merger for Java
 - image merging tutorial
+title: GroupDocs.Merger Java ile Görüntüleri Dikey Olarak Birleştirme
 type: docs
+url: /tr/java/format-specific-merging/join-multiple-images-vertically-groupdocs-merger-java/
+weight: 1
 ---
 
 # How to Merge Images Vertically using GroupDocs.Merger for Java
 
-Merging multiple images into a single file is a common need when you want to **how to merge images** for photo collages, reports, or marketing materials. In this guide we’ll walk through the process of joining images vertically with GroupDocs.Merger for Java, explain why this approach is valuable, and give you practical tips to avoid common pitfalls.
+Birden fazla resmi tek bir dosyada birleştirmek, foto kolajları, raporlar veya pazarlama materyalleri için **görselleri nasıl birleştireceğinizi** öğrenmek istediğinizde yaygın bir ihtiyaçtır. Bu rehberde, GroupDocs.Merger for Java ile görselleri dikey olarak birleştirme sürecini adım adım inceleyecek, bu yaklaşımın neden değerli olduğunu açıklayacak ve yaygın hatalardan kaçınmanız için pratik ipuçları sunacağız.
 
 ## Quick Answers
 - **What library can I use?** GroupDocs.Merger for Java.
@@ -170,6 +172,4 @@ A: Purchase a license through the GroupDocs portal; a temporary license is avail
 - [Purchase](https://purchase.groupdocs.com/buy)  
 - [Free trial](https://releases.groupdocs.com/merger/java/)  
 - [Temporary license](https://purchase.groupdocs.com/temporary-license/)  
-- [Support](https://forum.groupdocs.com/c/merger/)  
-
----
+- [Support](https://forum.groupdocs.com/c/merger/)
