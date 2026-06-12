@@ -1,97 +1,105 @@
 ---
-date: 2025-12-17
-description: เรียนรู้วิธีนำเข้า PDF ไปยัง PowerPoint ด้วย Java และ GroupDocs.Merger
-  รวมถึงการแปลงเอกสารด้วย Java และการรวมสเปรดชีตด้วย Java อย่างมีประสิทธิภาพ
-title: นำเข้า PDF ไปยัง PowerPoint ด้วย Java – GroupDocs.Merger
+date: 2026-02-16
+description: เรียนรู้วิธีแปลง PDF เป็น PPTX ด้วย Java และ GroupDocs.Merger รวมถึงการรวม
+  PDF ไปยัง PowerPoint, การแปลงเอกสารด้วย Java, และการรวมสเปรดชีตด้วย Java อย่างมีประสิทธิภาพ
+title: แปลง PDF เป็น PPTX ด้วย Java – GroupDocs.Merger
 type: docs
 url: /th/java/document-import/
 weight: 10
 ---
 
-# นำเข้า PDF ไปยัง PowerPoint ด้วย Java – GroupDocs.Merger
+# แปลง PDF เป็น PPTX ด้วย Java – GroupDocs.Merger
 
-หากคุณต้องการ **import PDF into PowerPoint** อย่างเป็นโปรแกรม คุณมาถูกที่แล้ว ในคู่มือนี้เราจะอธิบายว่า GroupDocs.Merger for Java ช่วยให้คุณย้ายเนื้อหาจาก PDF ไปยังสไลด์ PowerPoint ได้โดยตรง พร้อมคงรูปแบบและการจัดวางไว้ ในระหว่างนั้นเราจะพูดถึงสถานการณ์ที่เกี่ยวข้องเช่นการแปลงเอกสารใน Java และการรวมสเปรดชีตแบบ Java‑style เพื่อให้คุณเห็นภาพรวมของความสามารถของไลบรารี
+หากคุณต้องการ **แปลง PDF เป็น PPTX** อย่างอัตโนมัติ คุณมาถูกที่แล้ว ในคู่มือนี้เราจะอธิบายว่า GroupDocs.Merger สำหรับ Java ช่วยให้คุณย้ายเนื้อหาจาก PDF ไปยังสไลด์ PowerPoint ได้โดยตรง พร้อมรักษาเลย์เอาต์และการจัดรูปแบบไว้ด้วย ทางเราจะกล่าวถึงสถานการณ์ที่เกี่ยวข้องเช่น การรวม PDF เข้าไปใน PowerPoint การแปลงเอกสารแบบ Java‑style และการรวมสเปรดชีตแบบ Java‑style เพื่อให้คุณเห็นภาพรวมของความสามารถของไลบรารี
 
 ## คำตอบอย่างรวดเร็ว
-- **ฉันสามารถ import อะไรได้บ้าง?** PDFs, Word docs, Excel files, and images can be imported into PowerPoint, Excel, or Word.
-- **ไลบรารีใดจัดการเรื่องนี้?** GroupDocs.Merger for Java provides a simple API for all import operations.
-- **ฉันต้องการไลเซนส์หรือไม่?** A temporary license works for testing; a full license is required for production.
-- **ต้องการซอฟต์แวร์เพิ่มเติมหรือไม่?** Only Java 8+ and the GroupDocs.Merger JAR files.
-- **การ import พื้นฐานใช้เวลานานเท่าไหร่?** Typically under a second for a standard‑size PDF.
+- **อะไรที่ฉันสามารถนำเข้าได้?** PDFs, Word docs, Excel files, และ images สามารถนำเข้าไปยัง PowerPoint, Excel หรือ Word ได้  
+- **ไลบรารีใดจัดการเรื่องนี้?** GroupDocs.Merger for Java ให้ API ที่เรียบง่ายสำหรับการดำเนินการนำเข้าทั้งหมด  
+- **ฉันต้องการไลเซนส์หรือไม่?** ไลเซนส์ชั่วคราวทำงานได้สำหรับการทดสอบ; จำเป็นต้องมีไลเซนส์เต็มสำหรับการใช้งานจริง  
+- **ต้องการซอฟต์แวร์เพิ่มเติมหรือไม่?** เพียง Java 8+ และไฟล์ JAR ของ GroupDocs.Merger  
+- **การนำเข้าพื้นฐานใช้เวลานานเท่าไหร่?** โดยทั่วไปใช้เวลาน้อยกว่าสักวินาทีสำหรับ PDF ขนาดมาตรฐาน  
 
-## “import pdf powerpoint java” คืออะไร?
-วลีนี้หมายถึงกระบวนการนำไฟล์ PDF มาและแทรกหน้าหรือองค์ประกอบของมันเข้าสู่การนำเสนอ PowerPoint อย่างเป็นโปรแกรมโดยใช้โค้ด Java. GroupDocs.Merger ทำให้การจัดการไฟล์ระดับต่ำเป็นนามธรรม ช่วยให้คุณมุ่งเน้นที่ตรรกะธุรกิจแทนรายละเอียดรูปแบบไฟล์.
+## “convert pdf to pptx” คืออะไร?
+วลีนี้อธิบายกระบวนการนำไฟล์ PDF มาทำให้เป็นงานนำเสนอ PowerPoint (PPTX) โดยใช้โค้ด Java อย่างอัตโนมัติ GroupDocs.Merger แยกการจัดการไฟล์ระดับล่างออก ทำให้คุณมุ่งเน้นที่ตรรกะธุรกิจแทนความซับซ้อนของรูปแบบไฟล์
 
-## ทำไมต้องใช้ GroupDocs.Merger for Java?
-- **Unified API** – One consistent set of methods works across PDFs, PPTX, DOCX, XLSX, and more.
-- **Preserves Formatting** – Images, tables, and vector graphics retain their original appearance.
-- **Scalable** – Handles large files and batch operations without excessive memory consumption.
-- **Cross‑Platform** – Works on any OS that supports Java, making it ideal for server‑side automation.
+## ทำไมต้องใช้ GroupDocs.Merger สำหรับ Java?
+- **Unified API** – ชุดเมธอดที่สอดคล้องกันทำงานได้กับ PDFs, PPTX, DOCX, XLSX และอื่น ๆ  
+- **Preserves Formatting** – Images, tables, และ vector graphics จะคงลักษณะเดิมของพวกมัน  
+- **Scalable** – จัดการไฟล์ขนาดใหญ่และการทำงานเป็นชุดได้โดยไม่ใช้หน่วยความจำมากเกินไป  
+- **Cross‑Platform** – ทำงานบน OS ใดก็ได้ที่รองรับ Java ทำให้เหมาะสำหรับการทำงานอัตโนมัติบนเซิร์ฟเวอร์  
+- **Merge PDF into PowerPoint** – คุณสามารถรวม PDF หลายไฟล์เป็น PPTX เดียวในขั้นตอนเดียว  
 
 ## ข้อกำหนดเบื้องต้น
-- Java 8 or newer installed.
-- GroupDocs.Merger for Java JAR added to your project (via Maven or direct download).
-- A temporary or full license key (see the resources below).
+- Java 8 หรือใหม่กว่า ติดตั้งแล้ว  
+- GroupDocs.Merger for Java JAR เพิ่มเข้าไปในโปรเจคของคุณ (ผ่าน Maven หรือดาวน์โหลดโดยตรง)  
+- คีย์ไลเซนส์ชั่วคราวหรือเต็ม (ดูทรัพยากรด้านล่าง)  
 
-## คู่มือแบบขั้นตอน
+## คู่มือขั้นตอนโดยละเอียด
 
-### ขั้นตอนที่ 1: ตั้งค่า Merger Instance
-สร้างอ็อบเจ็กต์ `Merger` และโหลด PDF ต้นทางที่คุณต้องการ import.
+### ขั้นตอนที่ 1: ตั้งค่าอินสแตนซ์ Merger
+สร้างอ็อบเจ็กต์ `Merger` และโหลด PDF แหล่งที่คุณต้องการนำเข้า  
 
 ### ขั้นตอนที่ 2: เลือกไฟล์ PowerPoint ปลายทาง
-สร้างเอกสาร PowerPoint ใหม่หรือเปิดไฟล์ที่มีอยู่แล้วที่หน้าของ PDF จะถูกเพิ่มเป็นสไลด์.
+สร้างเอกสาร PowerPoint ใหม่หรือเปิดไฟล์ที่มีอยู่แล้วซึ่งหน้าของ PDF จะถูกเพิ่มเป็นสไลด์  
 
-### ขั้นตอนที่ 3: ดำเนินการ Import
-เรียกใช้เมธอด `import` ที่เหมาะสม โดยระบุหน้าต้นทางและตำแหน่งสไลด์เป้าหมาย. GroupDocs.Merger จะดูแลการแปลงแต่ละหน้าของ PDF ให้เป็นภาพที่เข้ากันได้กับสไลด์.
+### ขั้นตอนที่ 3: ดำเนินการนำเข้า
+เรียกเมธอด `import` ที่เหมาะสม โดยระบุหน้าต้นฉบับและตำแหน่งสไลด์เป้าหมาย GroupDocs.Merger จะดูแลการแปลงแต่ละหน้าของ PDF ให้เป็นภาพที่เข้ากันได้กับสไลด์  
 
 ### ขั้นตอนที่ 4: บันทึกผลลัพธ์
-เขียนไฟล์ PowerPoint ที่อัปเดตกลับไปยังดิสก์หรือสตรีมโดยตรงไปยังแอปพลิเคชันไคลเอนต์.
+เขียนไฟล์ PowerPoint ที่อัปเดตกลับไปยังดิสก์หรือสตรีมโดยตรงไปยังแอปพลิเคชันไคลเอนต์  
 
-> **เคล็ดลับ:** Use the `importOptions` object to control image resolution and scaling for the best visual quality.
+> **เคล็ดลับ:** ใช้วัตถุ `importOptions` เพื่อควบคุมความละเอียดและการสเกลของภาพเพื่อคุณภาพภาพที่ดีที่สุด  
 
-## ปัญหาที่พบบ่อยและวิธีแก้
-- **ภาพหายหลังจาก import** – Ensure the PDF does not contain encrypted objects; provide the password if needed.
-- **การบิดเบือนเลย์เอาต์** – Adjust the `importOptions` DPI setting to match the target slide size.
-- **คอขวดประสิทธิภาพกับ PDF ขนาดใหญ่** – Process pages in batches and release resources after each batch.
+## ปัญหาและวิธีแก้ไขทั่วไป
+- **Missing images after import** – ตรวจสอบให้แน่ใจว่า PDF ไม่มีวัตถุที่เข้ารหัส; ให้รหัสผ่านหากจำเป็น  
+- **Layout distortion** – ปรับค่าการตั้งค่า DPI ของ `importOptions` ให้ตรงกับขนาดสไลด์เป้าหมาย  
+- **Performance bottlenecks on large PDFs** – ประมวลผลหน้าเป็นชุดและปล่อยทรัพยากรหลังจากแต่ละชุด  
+- **Add PDF pages as slides** – ใช้ฟีเจอร์ช่วงหน้าเพื่อเลือกหน้าที่ต้องการแปลงเป็นสไลด์อย่างแม่นยำ  
 
-## คอร์สสอนที่พร้อมใช้งาน
+## คำแนะนำที่พร้อมใช้งาน
 
-### [ฝัง OLE Objects ใน PowerPoint ด้วย Java และ GroupDocs.Merger](./embed-ole-object-ppt-java-groupdocs-merger/)
-เรียนรู้วิธีการฝัง PDF และเอกสารอื่น ๆ ลงในสไลด์ PowerPoint อย่างราบรื่นด้วย Java และ GroupDocs.Merger. ปรับปรุงการนำเสนอของคุณได้อย่างง่ายดาย.
+### [ฝังวัตถุ OLE ใน PowerPoint ด้วย Java และ GroupDocs.Merger](./embed-ole-object-ppt-java-groupdocs-merger/)
+เรียนรู้วิธีการฝัง PDFs และเอกสารอื่น ๆ ลงในสไลด์ PowerPoint อย่างราบรื่นด้วย Java และ GroupDocs.Merger เพิ่มประสิทธิภาพการนำเสนอของคุณได้อย่างง่ายดาย  
 
-### [ฝัง OLE Objects ในเอกสาร Word ด้วย GroupDocs.Merger for Java&#58; คู่มือเชิงลึก](./embed-ole-objects-word-documents-groupdocs-java/)
-เรียนรู้วิธีการฝัง OLE objects เช่น PDF ลงในเอกสาร Microsoft Word อย่างราบรื่นด้วย GroupDocs.Merger for Java. เพิ่มความโต้ตอบของเอกสารและทำให้กระบวนการทำงานเป็นระบบด้วยคอร์สสอนแบบขั้นตอนของเรา.
+### [ฝังวัตถุ OLE ในเอกสาร Word ด้วย GroupDocs.Merger สำหรับ Java&#58; คู่มือฉบับสมบูรณ์](./embed-ole-objects-word-documents-groupdocs-java/)
+เรียนรู้วิธีการฝังวัตถุ OLE เช่น PDFs ลงในเอกสาร Microsoft Word อย่างราบรื่นด้วย GroupDocs.Merger สำหรับ Java เพิ่มความโต้ตอบของเอกสารและทำให้กระบวนการทำงานเป็นระบบด้วยบทแนะนำแบบขั้นตอน  
 
-### [วิธีการ Import OLE Object ไปยัง Excel ด้วย GroupDocs.Merger for Java&#58; คู่มือขั้นตอน](./import-ole-object-excel-groupdocs-merger-java/)
-เรียนรู้วิธีการ Import PDF เป็น OLE object ไปยังสเปรดชีต Excel อย่างราบรื่นด้วย GroupDocs.Merger for Java. ทำตามคู่มือเชิงลึกนี้พร้อมตัวอย่างโค้ด.
+### [วิธีการนำเข้าวัตถุ OLE ไปยัง Excel ด้วย GroupDocs.Merger สำหรับ Java&#58; คู่มือแบบขั้นตอน](./import-ole-object-excel-groupdocs-merger-java/)
+เรียนรู้วิธีการนำเข้า PDF เป็นวัตถุ OLE ไปยังสเปรดชีต Excel อย่างราบรื่นด้วย GroupDocs.Merger สำหรับ Java ทำตามคู่มือฉบับสมบูรณ์นี้พร้อมตัวอย่างโค้ด  
 
 ## แหล่งข้อมูลเพิ่มเติม
-- [เอกสาร GroupDocs.Merger for Java](https://docs.groupdocs.com/merger/java/)
-- [อ้างอิง API GroupDocs.Merger for Java](https://reference.groupdocs.com/merger/java/)
-- [ดาวน์โหลด GroupDocs.Merger for Java](https://releases.groupdocs.com/merger/java/)
+- [เอกสาร GroupDocs.Merger สำหรับ Java](https://docs.groupdocs.com/merger/java/)
+- [อ้างอิง API ของ GroupDocs.Merger สำหรับ Java](https://reference.groupdocs.com/merger/java/)
+- [ดาวน์โหลด GroupDocs.Merger สำหรับ Java](https://releases.groupdocs.com/merger/java/)
 - [ฟอรั่ม GroupDocs.Merger](https://forum.groupdocs.com/c/merger)
-- [สนับสนุนฟรี](https://forum.groupdocs.com/)
+- [การสนับสนุนฟรี](https://forum.groupdocs.com/)
 - [ไลเซนส์ชั่วคราว](https://purchase.groupdocs.com/temporary-license/)
 
 ## คำถามที่พบบ่อย
 
-**Q: ฉันสามารถ import เฉพาะหน้าที่เลือกจาก PDF ได้หรือไม่?**  
-A: ใช่, คุณสามารถระบุช่วงหน้า หรืออาร์เรย์ของดัชนีหน้าเมื่อเรียกเมธอด import.
+**Q: ฉันสามารถนำเข้าเฉพาะหน้าที่เลือกจาก PDF ได้หรือไม่?**  
+A: ได้ คุณสามารถระบุช่วงหน้า หรืออาร์เรย์ของดัชนีหน้าเมื่อเรียกเมธอด import  
 
-**Q: ไลบรารีสนับสนุน PDF ที่มีการป้องกันด้วยรหัสผ่านหรือไม่?**  
-A: แน่นอน. ให้รหัสผ่านเมื่อโหลดเอกสารต้นทาง, แล้วการ import จะดำเนินต่อได้ตามปกติ.
+**Q: ไลบรารีรองรับ PDF ที่มีการป้องกันด้วยรหัสผ่านหรือไม่?**  
+A: แน่นอน ให้รหัสผ่านเมื่อโหลดเอกสารต้นฉบับ แล้วการนำเข้าจะดำเนินต่อได้ตามปกติ  
 
 **Q: สามารถรวม PDF หลายไฟล์เป็นไฟล์ PowerPoint เดียวในขั้นตอนเดียวได้หรือไม่?**  
-A: คุณสามารถวนลูปแต่ละ PDF, import หน้าเหล่านั้น, และเพิ่มลงในอินสแตนซ์ PowerPoint เดียวโดยไม่ต้องเปิดไฟล์ใหม่.
+A: คุณสามารถวนลูปแต่ละ PDF นำเข้าหน้าของมัน และเพิ่มลงในอินสแตนซ์ PowerPoint เดียวโดยไม่ต้องเปิดไฟล์ใหม่  
 
-**Q: หลังจาก import ฉันสามารถส่งออกเป็นรูปแบบไฟล์อะไรได้บ้าง?**  
-A: นอกจาก PowerPoint (PPTX) แล้ว คุณสามารถส่งออกเป็น PDF, DOCX, XLSX, และรูปแบบอื่น ๆ อีกหลายแบบที่ GroupDocs.Merger รองรับ.
+**Q: ฉันสามารถส่งออกเป็นรูปแบบไฟล์อะไรได้บ้างหลังการนำเข้า?**  
+A: นอกจาก PowerPoint (PPTX) แล้ว คุณสามารถส่งออกเป็น PDF, DOCX, XLSX และรูปแบบอื่น ๆ อีกหลายแบบที่ GroupDocs.Merger รองรับ  
 
 **Q: ฉันจะจัดการกับ PDF ขนาดใหญ่มากโดยไม่ทำให้หน่วยความจำหมดได้อย่างไร?**  
-A: ใช้ Streaming API และประมวลผลหน้าเป็นชิ้นส่วน, ปล่อยแต่ละชิ้นส่วนก่อนย้ายไปยังชิ้นต่อไป.
+A: ใช้ streaming API และประมวลผลหน้าเป็นชิ้นส่วน ปล่อยแต่ละชิ้นส่วนก่อนย้ายไปยังชิ้นต่อไป  
+
+**Q: ฉันสามารถรวม PDF เข้าไปใน PowerPoint พร้อมคงการเคลื่อนไหว (animations) ได้หรือไม่?**  
+A: การเคลื่อนไหวไม่ได้เป็นส่วนของรูปแบบ PDF ดังนั้นจึงไม่สามารถถ่ายโอนได้ การนำเข้ามุ่งเน้นที่ความเหมือนภาพ  
+
+**Q: GroupDocs.Merger รองรับการแปลงเอกสารแบบ Java‑wide เช่น DOCX เป็น PPTX หรือไม่?**  
+A: ใช่ API แบบ unified เดียวกันทำให้คุณสามารถแปลงหลายประเภทเอกสาร รวมถึง DOCX, XLSX และรูปภาพ ไปเป็น PPTX  
 
 ---
 
-**อัปเดตล่าสุด:** 2025-12-17  
+**อัปเดตล่าสุด:** 2026-02-16  
 **ทดสอบด้วย:** GroupDocs.Merger for Java 23.12  
 **ผู้เขียน:** GroupDocs

@@ -1,50 +1,69 @@
 ---
-date: '2025-12-17'
-description: Tanulja meg, hogyan lehet kiválasztott oldalakat, beleértve a páros oldalakat
-  is, kinyerni dokumentumokból a GroupDocs.Merger for Java segítségével. Sajátítsa
-  el az oldaltartomány kinyerését Word, PDF és egyéb formátumok esetén.
+date: '2026-02-16'
+description: Tanulja meg, hogyan lehet konkrét oldalakat, beleértve a páros oldalakat
+  is, kinyerni Word, PDF és egyéb dokumentumokból a GroupDocs.Merger for Java használatával.
 keywords:
 - extract pages java
 - groupdocs merger for java
 - page extraction by range
-title: Specifikus oldalak kinyerése tartomány alapján a GroupDocs.Merger for Java-val
+title: Specifikus oldalak kinyerése tartomány szerint a GroupDocs.Merger for Java
+  segítségével
 type: docs
 url: /hu/java/document-extraction/extract-pages-groupdocs-merger-java-guide/
 weight: 1
 ---
 
-# Hogyan lehet meghatározott oldalak tartományát kinyerni a GroupDocs.Merger for Java segítségével
+extract specific pages** from any supported document using GroupDocs.Merger for Java. Happy coding!
 
-Szeretne hatékonyan **meghatározott oldalakat** kinyerni egy dokumentumból oldalszám‑tartományok alapján? Akár egy olyan projekten dolgozik, amely szelektív adatmanipulációt igényel, akár csak egyszerűsíteni szeretné a dokumentumfeldolgozási munkafolyamatát, ez az útmutató segít. Megvizsgáljuk, hogyan egyszerűsíti a GroupDocs.Merger for Java a páros oldalak kinyerését egy adott tartományban olyan dokumentumokban, mint a Word‑fájlok.
+Translate.
 
-**Mit fog megtanulni:**
-- Hogyan használja a GroupDocs.Merger for Java‑t meghatározott oldalak kinyerésére egy dokumentumból.  
-- A környezet beállítása és konfigurálása a legjobb teljesítmény érdekében.  
-- A kulcsfontosságú paraméterek és beállítások megértése a kinyerési folyamatban.
+---
 
-Lépjünk be a gyakorlati megvalósítási útmutatóba, de először nézzük meg a szükséges előfeltételeket.
+**Last Updated:** 2026-02-16  
+**Tested With:** GroupDocs.Merger latest version (Java)  
+**Author:** GroupDocs  
 
-## Gyors válaszok
-- **Mit jelent a „meghatározott oldalak kinyerése”?** Csak a nagyobb dokumentumból szükséges oldalak kiválasztása.  
-- **Mely formátumok támogatottak?** Word, PDF, PowerPoint, Excel és még sok más.  
-- **Kizárólag páros oldalakat tudok kinyerni?** Igen — használja a `RangeMode.EvenPages` értéket.  
-- **Szükség van licencre?** Egy ingyenes próba verzió tesztelésre elegendő; a termeléshez licenc szükséges.  
-- **Hány sor kódra van szükség?** Kevesebb, mint 20 sor a tartomány kinyeréséhez.
+Translate maybe keep dates.
 
-## Előfeltételek
+Now produce final markdown with Hungarian translation.
 
-Mielőtt elkezdené, győződjön meg róla, hogy a következőkkel rendelkezik:
-1. **Szükséges könyvtárak**: A GroupDocs.Merger‑t függőségként kell felvennie a Java‑projektjébe.  
-2. **Környezet beállítása**: Telepítve legyen a JDK, és konfigurálva legyen a gépén.  
-3. **Ismeretek**: Ajánlott a Java programozás és az alapvető fájlkezelési koncepciók ismerete.
+Be careful to preserve code block placeholders exactly as they are, not wrap them in triple backticks. They are placeholders, not actual code blocks. The original had them as separate lines. Keep them.
 
-## A GroupDocs.Merger for Java beállítása
+Also preserve bold formatting (**). Keep them.
 
-A kezdéshez állítsa be a szükséges könyvtárakat a projekt környezetében Maven vagy Gradle használatával.
+Now produce final answer.# Hogyan vonjunk ki meghatározott oldalakat tartomány szerint a GroupDocs.Merger for Java használatával
 
-### Maven beállítás
+Ha **meghatározott oldalakat** kell kivonni egy nagy dokumentumból—legyen szó Word szerződésről, PDF jelentésről vagy PowerPoint prezentációról—ez az útmutató bemutat egy tiszta, programozott módot a GroupDocs.Merger for Java használatával. Megtudja, miért fontos a tartomány szerinti oldalkivonás, hogyan célozhatja meg a páros oldalakat, és hogyan integrálhatja a megoldást a meglévő Java projektjébe.
 
-Adja hozzá a következő függőséget a `pom.xml` fájlhoz:
+**What You’ll Learn**
+- A lépésről‑lépésre folyamat a meghatározott oldalak kivonásához bármely támogatott dokumentumtípusról.  
+- Hogyan konfigurálja a tartománybeállításokat, például páros oldalak, páratlan oldalak vagy egyéni oldallisták.  
+- Tippek nagy fájlok kezelése és a gyakori hibák elkerülése érdekében.
+
+## Quick Answers
+- **What does “extract specific pages” mean?** Selecting only the pages you need from a larger document.  
+- **Which formats are supported?** Word, PDF, PowerPoint, Excel, and many more.  
+- **Can I extract even pages only?** Yes—use `RangeMode.EvenPages`.  
+- **Do I need a license?** A free trial works for testing; a license is required for production.  
+- **How many lines of code?** Less than 20 lines to extract a range.
+
+## What Is “Extract Specific Pages”?
+Az oldalak meghatározott kivonása azt jelenti, hogy egy forrásdokumentumból egy részhalmazt veszünk ki, és azt új, önálló fájlként mentjük. Ez akkor hasznos, ha csak bizonyos szakaszokra van szükség—például egy szerződéses záradékra, egy fejezetre vagy számlák egy csoportjára—anélkül, hogy az egész dokumentumot elküldené.
+
+## Why Extract Specific Pages by Range?
+A célzott oldalkivonás csökkenti a fájlméretet, védi az érzékeny információkat, és felgyorsítja a további feldolgozást (például e‑aláírást vagy automatizált jelentéskészítést). Tartomány‑alapú kivonással programozottan választhatja ki az 1‑5. oldalakat, minden páros oldalt vagy bármilyen egyéni listát manuális szerkesztés nélkül.
+
+## Prerequisites
+Mielőtt elkezdené, győződjön meg róla, hogy rendelkezik:
+
+1. **Required Libraries** – GroupDocs.Merger for Java hozzáadva Maven vagy Gradle függőségként.  
+2. **JDK** – Java Development Kit 8‑nál újabb verzió telepítve és konfigurálva.  
+3. **Basic Java Knowledge** – Fájl‑I/O és kivételkezelés ismerete.
+
+## Setting Up GroupDocs.Merger for Java
+
+### Maven Setup
+Add the dependency to your `pom.xml`:
 
 ```xml
 <dependency>
@@ -54,27 +73,23 @@ Adja hozzá a következő függőséget a `pom.xml` fájlhoz:
 </dependency>
 ```
 
-### Gradle beállítás
-
-Gradle projektek esetén adja hozzá ezt a sort a `build.gradle` fájlhoz:
+### Gradle Setup
+Add the line to your `build.gradle` file:
 
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-### Közvetlen letöltés
+### Direct Download
+You can also grab the latest binaries from [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
-Alternatív megoldásként letöltheti a legújabb verziót közvetlenül a [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) oldalról.
+#### License Acquisition Steps
+1. **Free Trial** – Download a trial to explore the API.  
+2. **Temporary License** – Request a temporary key for extended testing.  
+3. **Purchase** – Buy a full license for production use.
 
-#### Licenc beszerzésének lépései
-
-1. **Ingyenes próba**: Töltse le az ingyenes próbaverziót a funkciók kipróbálásához.  
-2. **Ideiglenes licenc**: Szerezzen be egy ideiglenes licencet a hosszabb teszteléshez, ha szükséges.  
-3. **Vásárlás**: Fontolja meg a vásárlást, ha a GroupDocs.Merger megfelel az igényeinek.
-
-### Alapvető inicializálás és beállítás
-
-Így inicializálja és állítja be a GroupDocs.Merger‑t:
+### Basic Initialization and Setup
+Below is the minimal code required to create a `Merger` instance:
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -83,26 +98,18 @@ String filePath = "YOUR_DOCUMENT_DIRECTORY/YourDocument.docx";
 Merger merger = new Merger(filePath);
 ```
 
-## Megvalósítási útmutató
+## How to Extract Specific Pages by Range
+Now let’s walk through the exact steps to extract even‑numbered pages within a custom range.
 
-Most a tartomány alapján történő oldalkinyerésre fókuszálunk a GroupDocs.Merger által biztosított speciális funkcióval.
-
-### Oldalak kinyerése tartomány alapján
-
-Ez a funkció lehetővé teszi, hogy meghatározott oldalakat nyerjen ki egy dokumentumból oldalszámok és tartományok szerint. Különösen hasznos nagy dokumentumok esetén, ahol csak bizonyos szakaszokra van szükség.
-
-#### 1. lépés: Fájlútvonalak meghatározása
-
-Állítsa be a bemeneti és kimeneti fájlútvonalakat:
+### Step 1: Define Input and Output Paths
 
 ```java
 String filePath = "YOUR_DOCUMENT_DIRECTORY/YourDocument.docx";
 String filePathOut = "YOUR_OUTPUT_DIRECTORY/ExtractedPages.docx";
 ```
 
-#### 2. lépés: Kinyerési beállítások konfigurálása
-
-Használja az `ExtractOptions`‑t a tartomány és a mód megadásához. Itt a páros oldalakat nyerjük ki egy adott tartományon belül:
+### Step 2: Configure Extraction Options
+`ExtractOptions` lets you specify the start page, end page, and the `RangeMode` (e.g., even, odd, or custom). The example below extracts only even pages between 1 and 3, which means page 2 will be saved.
 
 ```java
 import com.groupdocs.merger.domain.options.ExtractOptions;
@@ -112,9 +119,7 @@ import com.groupdocs.merger.domain.options.RangeMode;
 ExtractOptions extractOptions = new ExtractOptions(1, 3, RangeMode.EvenPages);
 ```
 
-**Magyarázat**: A `RangeMode.EvenPages` paraméter biztosítja, hogy csak a tartományon belüli páros számozású oldalak legyenek kiválasztva. Ebben az esetben csak a 2. oldal kerül kinyerésre.
-
-#### 3. lépés: Merger inicializálása és oldalak kinyerése
+### Step 3: Perform Extraction and Save the Result
 
 ```java
 // Initialize Merger with input document path
@@ -127,62 +132,60 @@ merger.extractPages(extractOptions);
 merger.save(filePathOut);
 ```
 
-**Hibaelhárítási tippek**: Győződjön meg róla, hogy a megadott tartomány és a dokumentum formátuma támogatott a GroupDocs.Merger‑rel. Ellenőrizze a fájl‑hozzáférési jogosultságokkal vagy helytelen útvonalakkal kapcsolatos esetleges kivételeket.
+**Pro tip:** Wrap the extraction logic in a `try‑catch` block to handle `IOException` or format‑specific exceptions gracefully.
 
-## Gyakorlati alkalmazások
+## Practical Applications
 
-Ez a funkció számos valós helyzetben alkalmazható:
+| Scenario | How Extraction Helps |
+|----------|----------------------|
+| **Legal Review** | Pull out only the clauses you need for quick analysis. |
+| **Academic Research** | Isolate chapters or sections from textbooks for citation. |
+| **Financial Reporting** | Extract tables or statements from multi‑page reports. |
 
-1. **Jogi dokumentumok felülvizsgálata** – Szerződések meghatározott szakaszainak kinyerése a célzott elemzéshez.  
-2. **Akademiai kutatás** – Kulcsfontosságú fejezetek kinyerése tankönyvekből vagy tanulmányokból.  
-3. **Pénzügyi jelentések** – Releváns táblázatok vagy kimutatások elkülönítése hosszú jelentésekből.  
+## Performance Considerations
+- **Memory Management** – Large PDFs can consume significant heap space. Increase the JVM heap (`-Xmx2g`) if you encounter `OutOfMemoryError`.  
+- **File I/O** – Use buffered streams when reading/writing large files to reduce disk latency.  
+- **Batch Processing** – If you need to extract ranges from many documents, process them sequentially or use a thread pool with controlled concurrency.
 
-## Teljesítménybeli szempontok
+## Common Issues and Solutions
 
-A GroupDocs.Merger optimális használatához:
+| Issue | Solution |
+|-------|----------|
+| **Invalid file path** | Verify the full path and ensure the application has read/write permissions. |
+| **Unsupported format** | Confirm that the document type (e.g., DOCX, PDF) is listed in the supported formats. |
+| **Out‑of‑memory errors** | Process large files in smaller chunks or increase the JVM heap size (`-Xmx`). |
+| **RangeMode not behaving as expected** | Double‑check the start/end values and ensure they fall within the document’s page count. |
 
-- Figyelje és kezelje a memóriahasználatot, különösen nagy dokumentumok esetén.  
-- Alkalmazzon hatékony fájlkezelési gyakorlatokat az erőforrás-fogyasztás minimalizálása érdekében.  
-- Kövesse a Java legjobb gyakorlatait a szemétgyűjtés és memória kezelés terén.
+## Frequently Asked Questions
 
-## Gyakori problémák és megoldások
+**Q: How do I extract odd‑numbered pages?**  
+A: Use `RangeMode.OddPages` when creating `ExtractOptions`.
 
-| Probléma | Megoldás |
-|----------|----------|
-| **Érvénytelen fájlútvonal** | Ellenőrizze a teljes útvonalat, és biztosítsa, hogy az alkalmazásnak olvasási/írási jogosultsága legyen. |
-| **Nem támogatott formátum** | Győződjön meg róla, hogy a dokumentumtípus (pl. DOCX, PDF) szerepel a támogatott formátumok listáján. |
-| **Memória‑hiány hibák** | Nagy fájlokat dolgozzon fel kisebb darabokban, vagy növelje a JVM halomméretét (`-Xmx`). |
-| **A RangeMode nem a várt módon viselkedik** | Ellenőrizze a kezdő/​záró értékeket, és győződjön meg róla, hogy a dokumentum oldalszámaiban vannak. |
+**Q: Can I use this with PDFs?**  
+A: Yes, GroupDocs.Merger supports PDF, DOCX, PPTX, XLSX, and many other formats.
 
-## GyIK
+**Q: What if my document path is incorrect?**  
+A: The API will throw an `IOException`. Verify the path and check file permissions.
 
-1. **Hogyan nyerhetek ki páratlan oldalakat?**  
-   Használja a `RangeMode.OddPages` értéket az `ExtractOptions`‑ban.  
-2. **Használhatom PDF‑ekkel is?**  
-   Igen, a GroupDocs.Merger számos formátumot támogat, köztük a PDF‑eket is.  
-3. **Mi van, ha a dokumentum útvonala helytelen?**  
-   Ellenőrizze újra a fájlútvonalakat, és biztosítsa a megfelelő hozzáférési jogosultságokat.  
-4. **Hogyan kezeljem a kivételeket a kinyerés során?**  
-   Implementáljon try‑catch blokkokat az esetleges IO‑ vagy formátum‑kapcsolódó kivételek kezelésére.  
-5. **Van korlátozás a kinyerhető oldalak számában?**  
-   Nincs beépített oldalkorlát, de nagy dokumentumok esetén ügyeljen a memóriahasználatra.  
+**Q: How should I handle exceptions during extraction?**  
+A: Enclose the extraction code in a `try‑catch` block and log the exception details for troubleshooting.
 
-## Források
+**Q: Is there a limit on the number of pages I can extract?**  
+A: There’s no hard limit, but very large extractions may require more heap memory.
 
-- [Documentation](https://docs.groupdocs.com/merger/java/)  
-- [API Reference](https://reference.groupdocs.com/merger/java/)  
-- [Download GroupDocs.Merger for Java](https://releases.groupdocs.com/merger/java/)  
-- [Purchase GroupDocs Products](https://purchase.groupdocs.com/buy)  
-- [Free Trial](https://releases.groupdocs.com/merger/java/)  
-- [Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-- [Support Forum](https://forum.groupdocs.com/c/merger/)  
+## Resources
+- [Documentation](https://docs.groupdocs.com/merger/java/)
+- [API Reference](https://reference.groupdocs.com/merger/java/)
+- [Download GroupDocs.Merger for Java](https://releases.groupdocs.com/merger/java/)
+- [Purchase GroupDocs Products](https://purchase.groupdocs.com/buy)
+- [Free Trial](https://releases.groupdocs.com/merger/java/)
+- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- [Support Forum](https://forum.groupdocs.com/c/merger/)
 
-Ezzel az útmutatóval felkészülten tudja megvalósítani a tartomány alapú oldalkinyerést Java‑projektjeiben a GroupDocs.Merger segítségével. Boldog kódolást!
-
----
-
-**Utoljára frissítve:** 2025-12-17  
-**Tesztelve:** a GroupDocs.Merger legújabb verziójával (Java)  
-**Szerző:** GroupDocs  
+By following this guide, you now have a reliable method to **extract specific pages** from any supported document using GroupDocs.Merger for Java. Happy coding!
 
 ---
+
+**Last Updated:** 2026-02-16  
+**Tested With:** GroupDocs.Merger latest version (Java)  
+**Author:** GroupDocs

@@ -1,8 +1,7 @@
 ---
-date: '2025-12-17'
-description: Scopri come estrarre pagine specifiche, incluse le pagine pari, dai documenti
-  utilizzando GroupDocs.Merger per Java. Padroneggia l'estrazione di intervalli di
-  pagine per Word, PDF e altro.
+date: '2026-02-16'
+description: Scopri come estrarre pagine specifiche, comprese le pagine pari, da documenti
+  Word, PDF e altri utilizzando GroupDocs.Merger per Java.
 keywords:
 - extract pages java
 - groupdocs merger for java
@@ -15,36 +14,39 @@ weight: 1
 
 # Come estrarre pagine specifiche per intervallo usando GroupDocs.Merger per Java
 
-Stai cercando di estrarre in modo efficiente **pagine specifiche** da un documento usando intervalli di numeri di pagina? Che tu stia lavorando a un progetto che richiede una manipolazione selettiva dei dati o semplicemente desideri semplificare il flusso di lavoro di elaborazione dei documenti, questa guida è qui per aiutarti. Esploreremo come GroupDocs.Merger per Java può semplificare l'estrazione di pagine pari all'interno di un intervallo specificato in documenti come file Word.
+Se hai bisogno di **estrarre pagine specifiche** da un documento di grandi dimensioni—che si tratti di un contratto Word, di un report PDF o di una presentazione PowerPoint—questa guida ti mostra un modo pulito e programmatico per farlo con GroupDocs.Merger per Java. Vedrai perché l'estrazione di pagine per intervallo è importante, come mirare alle pagine pari e come integrare la soluzione nel tuo progetto Java esistente.
 
-**Cosa imparerai:**
-- Come utilizzare GroupDocs.Merger per Java per estrarre pagine specifiche da un documento.  
-- Configurare e impostare l'ambiente per prestazioni ottimali.  
-- Comprendere i parametri chiave e le opzioni nel processo di estrazione.
+**Cosa imparerai**
+- Il processo passo‑passo per estrarre pagine specifiche da qualsiasi tipo di documento supportato.  
+- Come configurare le opzioni di intervallo come pagine pari, pagine dispari o elenchi di pagine personalizzati.  
+- Suggerimenti per gestire file di grandi dimensioni ed evitare problemi comuni.
 
-Immergiamoci in questa guida pratica di implementazione, ma prima, copriamo alcuni prerequisiti.
-
-## Risposte rapide
-- **Cosa significa “estrarre pagine specifiche”?** Selezionare solo le pagine necessarie da un documento più grande.  
+## Quick Answers
+- **Cosa significa “estrarre pagine specifiche”?** Selezionare solo le pagine di cui hai bisogno da un documento più grande.  
 - **Quali formati sono supportati?** Word, PDF, PowerPoint, Excel e molti altri.  
 - **Posso estrarre solo le pagine pari?** Sì—usa `RangeMode.EvenPages`.  
-- **È necessaria una licenza?** Una prova gratuita funziona per i test; è richiesta una licenza per la produzione.  
+- **Ho bisogno di una licenza?** Una prova gratuita è sufficiente per i test; è necessaria una licenza per la produzione.  
 - **Quante righe di codice?** Meno di 20 righe per estrarre un intervallo.
 
-## Prerequisiti
+## Cos'è “estrarre pagine specifiche”?
+Estrarre pagine specifiche significa estrarre un sottoinsieme di pagine da un documento sorgente e salvarle come un nuovo file indipendente. Questo è utile quando ti servono solo alcune sezioni—come una clausola di contratto, un capitolo o un insieme di fatture—senza inviare l'intero documento.
 
-Prima di iniziare, assicurati di avere quanto segue:
-1. **Librerie richieste**: Dovrai includere GroupDocs.Merger come dipendenza nel tuo progetto Java.  
-2. **Configurazione dell'ambiente**: Assicurati di avere il JDK installato e configurato sulla tua macchina.  
-3. **Prerequisiti di conoscenza**: È consigliata familiarità con la programmazione Java e i concetti di base della gestione dei file.
+## Perché estrarre pagine specifiche per intervallo?
+L'estrazione mirata di pagine riduce le dimensioni del file, protegge le informazioni sensibili e accelera l'elaborazione a valle (ad es., firma elettronica o reportistica automatica). Utilizzando l'estrazione basata su intervalli puoi selezionare programmaticamente le pagine da 1 a 5, tutte le pagine pari o qualsiasi elenco personalizzato senza modifiche manuali.
 
-## Configurazione di GroupDocs.Merger per Java
+## Prerequisites
 
-Per iniziare, configuriamo le librerie necessarie nell'ambiente del tuo progetto usando Maven o Gradle.
+Prima di iniziare, assicurati di avere:
 
-### Configurazione Maven
+1. **Librerie richieste** – GroupDocs.Merger per Java aggiunto come dipendenza Maven o Gradle.  
+2. **JDK** – Java Development Kit 8 o superiore installato e configurato.  
+3. **Conoscenza di base di Java** – Familiarità con I/O di file e gestione delle eccezioni.
 
-Include the following dependency in your `pom.xml`:
+## Setting Up GroupDocs.Merger for Java
+
+### Maven Setup
+
+Add the dependency to your `pom.xml`:
 
 ```xml
 <dependency>
@@ -54,26 +56,27 @@ Include the following dependency in your `pom.xml`:
 </dependency>
 ```
 
-### Configurazione Gradle
+### Gradle Setup
 
-For Gradle projects, add this line to your `build.gradle` file:
+Add the line to your `build.gradle` file:
 
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-### Download diretto
+### Direct Download
 
-In alternativa, puoi scaricare l'ultima versione direttamente da [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
+Puoi anche scaricare gli ultimi binari da [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
-#### Passaggi per l'acquisizione della licenza
-1. **Prova gratuita**: Inizia scaricando una prova gratuita per esplorare le funzionalità.  
-2. **Licenza temporanea**: Ottieni una licenza temporanea per test più estesi, se necessario.  
-3. **Acquisto**: Considera l'acquisto se GroupDocs.Merger soddisfa le tue esigenze.
+#### License Acquisition Steps
 
-### Inizializzazione e configurazione di base
+1. **Prova gratuita** – Scarica una prova per esplorare l'API.  
+2. **Licenza temporanea** – Richiedi una chiave temporanea per test più estesi.  
+3. **Acquisto** – Acquista una licenza completa per l'uso in produzione.
 
-Here’s how you initialize and set up GroupDocs.Merger:
+### Basic Initialization and Setup
+
+Below is the minimal code required to create a `Merger` instance:
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -82,26 +85,20 @@ String filePath = "YOUR_DOCUMENT_DIRECTORY/YourDocument.docx";
 Merger merger = new Merger(filePath);
 ```
 
-## Guida all'implementazione
+## How to Extract Specific Pages by Range
 
-Ora, concentriamoci sull'estrazione di pagine per intervallo usando la funzionalità specifica fornita da GroupDocs.Merger.
+Ora vediamo i passaggi esatti per estrarre le pagine pari all'interno di un intervallo personalizzato.
 
-### Estrarre pagine per intervallo
-
-Questa funzionalità consente di estrarre pagine specifiche da un documento basandosi su numeri di pagina e intervalli. È particolarmente utile quando si gestiscono documenti di grandi dimensioni dove sono necessarie solo alcune sezioni.
-
-#### Passo 1: Definire i percorsi dei file
-
-Set up your input and output file paths:
+### Step 1: Define Input and Output Paths
 
 ```java
 String filePath = "YOUR_DOCUMENT_DIRECTORY/YourDocument.docx";
 String filePathOut = "YOUR_OUTPUT_DIRECTORY/ExtractedPages.docx";
 ```
 
-#### Passo 2: Configurare le opzioni di estrazione
+### Step 2: Configure Extraction Options
 
-Use `ExtractOptions` to specify the range and mode for extraction. Here, we extract even pages within a specific range:
+`ExtractOptions` ti consente di specificare la pagina iniziale, la pagina finale e il `RangeMode` (ad es., pari, dispari o personalizzato). L'esempio seguente estrae solo le pagine pari tra 1 e 3, il che significa che la pagina 2 verrà salvata.
 
 ```java
 import com.groupdocs.merger.domain.options.ExtractOptions;
@@ -111,9 +108,7 @@ import com.groupdocs.merger.domain.options.RangeMode;
 ExtractOptions extractOptions = new ExtractOptions(1, 3, RangeMode.EvenPages);
 ```
 
-**Spiegazione**: Il parametro `RangeMode.EvenPages` garantisce che vengano selezionate solo le pagine pari all'interno dell'intervallo. In questo caso, viene estratta solo la pagina 2.
-
-#### Passo 3: Inizializzare Merger ed estrarre le pagine
+### Step 3: Perform Extraction and Save the Result
 
 ```java
 // Initialize Merger with input document path
@@ -126,62 +121,64 @@ merger.extractPages(extractOptions);
 merger.save(filePathOut);
 ```
 
-**Suggerimenti per la risoluzione dei problemi**: Assicurati che l'intervallo specificato e il formato del documento siano supportati da GroupDocs.Merger. Verifica eventuali eccezioni relative ai permessi di accesso ai file o a percorsi errati.
+**Consiglio professionale:** Avvolgi la logica di estrazione in un blocco `try‑catch` per gestire `IOException` o eccezioni specifiche del formato in modo corretto.
 
-## Applicazioni pratiche
+## Practical Applications
 
-Questa funzionalità può essere applicata in vari scenari reali:
+| Scenario | Come l'estrazione aiuta |
+|----------|--------------------------|
+| **Revisione legale** | Estrai solo le clausole di cui hai bisogno per un'analisi rapida. |
+| **Ricerca accademica** | Isola capitoli o sezioni da libri di testo per la citazione. |
+| **Reportistica finanziaria** | Estrai tabelle o dichiarazioni da report multi‑pagina. |
 
-1. **Revisione di documenti legali** – Estrarre sezioni specifiche di contratti per un'analisi mirata.  
-2. **Ricerca accademica** – Estrarre capitoli chiave da libri di testo o articoli.  
-3. **Report finanziari** – Isolare tabelle o dichiarazioni rilevanti da lunghi report.  
+## Performance Considerations
 
-## Considerazioni sulle prestazioni
+- **Gestione della memoria** – I PDF di grandi dimensioni possono consumare molta memoria heap. Aumenta l'heap JVM (`-Xmx2g`) se incontri `OutOfMemoryError`.  
+- **File I/O** – Usa stream bufferizzati quando leggi/scrivi file di grandi dimensioni per ridurre la latenza del disco.  
+- **Elaborazione batch** – Se devi estrarre intervalli da molti documenti, elabora in sequenza o utilizza un pool di thread con concorrenza controllata.
 
-Per prestazioni ottimali quando si utilizza GroupDocs.Merger:
-
-- Monitorare e gestire l'uso della memoria, specialmente con documenti di grandi dimensioni.  
-- Utilizzare pratiche efficienti di gestione dei file per ridurre il consumo di risorse.  
-- Seguire le best practice Java per la garbage collection e la gestione della memoria.
-
-## Problemi comuni e soluzioni
+## Common Issues and Solutions
 
 | Problema | Soluzione |
 |----------|-----------|
 | **Percorso file non valido** | Verifica il percorso completo e assicurati che l'applicazione abbia i permessi di lettura/scrittura. |
-| **Formato non supportato** | Conferma che il tipo di documento (ad esempio, DOCX, PDF) sia elencato nei formati supportati. |
+| **Formato non supportato** | Conferma che il tipo di documento (ad es., DOCX, PDF) sia elencato nei formati supportati. |
 | **Errori di out‑of‑memory** | Elabora file di grandi dimensioni in blocchi più piccoli o aumenta la dimensione dell'heap JVM (`-Xmx`). |
 | **RangeMode non si comporta come previsto** | Ricontrolla i valori di inizio/fine e assicurati che rientrino nel conteggio delle pagine del documento. |
 
-## Sezione FAQ
+## Frequently Asked Questions
 
-1. **Come estraggo le pagine dispari?**  
-   Usa `RangeMode.OddPages` nelle `ExtractOptions`.  
-2. **Posso usarlo con i PDF?**  
-   Sì, GroupDocs.Merger supporta vari formati, inclusi i PDF.  
-3. **Cosa succede se il percorso del documento è errato?**  
-   Ricontrolla i percorsi dei file e assicurati che i permessi corretti siano impostati per l'accesso.  
-4. **Come gestisco le eccezioni durante l'estrazione?**  
-   Implementa blocchi try‑catch per gestire potenziali eccezioni di I/O o relative al formato.  
-5. **Esiste un limite al numero di pagine che posso estrarre?**  
-   Non c'è un limite intrinseco di pagine, ma fai attenzione all'uso della memoria con documenti molto grandi.
+**Q: Come estraggo le pagine dispari?**  
+A: Usa `RangeMode.OddPages` quando crei `ExtractOptions`.
 
-## Risorse
+**Q: Posso usarlo con i PDF?**  
+A: Sì, GroupDocs.Merger supporta PDF, DOCX, PPTX, XLSX e molti altri formati.
+
+**Q: Cosa succede se il percorso del mio documento è errato?**  
+A: L'API lancerà un `IOException`. Verifica il percorso e controlla i permessi del file.
+
+**Q: Come dovrei gestire le eccezioni durante l'estrazione?**  
+A: Racchiudi il codice di estrazione in un blocco `try‑catch` e registra i dettagli dell'eccezione per il troubleshooting.
+
+**Q: Esiste un limite al numero di pagine che posso estrarre?**  
+A: Non c'è un limite rigido, ma estrazioni molto grandi potrebbero richiedere più memoria heap.
+
+## Resources
 
 - [Documentazione](https://docs.groupdocs.com/merger/java/)
 - [Riferimento API](https://reference.groupdocs.com/merger/java/)
-- [Download GroupDocs.Merger per Java](https://releases.groupdocs.com/merger/java/)
+- [Scarica GroupDocs.Merger per Java](https://releases.groupdocs.com/merger/java/)
 - [Acquista prodotti GroupDocs](https://purchase.groupdocs.com/buy)
 - [Prova gratuita](https://releases.groupdocs.com/merger/java/)
 - [Licenza temporanea](https://purchase.groupdocs.com/temporary-license/)
 - [Forum di supporto](https://forum.groupdocs.com/c/merger/)
 
-Seguendo questa guida, dovresti essere ben attrezzato per implementare l'estrazione di pagine per intervallo nei tuoi progetti Java usando GroupDocs.Merger. Buon coding!
+Seguendo questa guida, ora disponi di un metodo affidabile per **estrarre pagine specifiche** da qualsiasi documento supportato usando GroupDocs.Merger per Java. Buon coding!
 
 ---
 
-**Ultimo aggiornamento:** 2025-12-17  
-**Testato con:** ultima versione di GroupDocs.Merger (Java)  
+**Ultimo aggiornamento:** 2026-02-16  
+**Testato con:** GroupDocs.Merger ultima versione (Java)  
 **Autore:** GroupDocs  
 
 ---

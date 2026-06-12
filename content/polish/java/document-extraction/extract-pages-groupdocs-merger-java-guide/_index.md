@@ -1,13 +1,13 @@
 ---
-date: '2025-12-17'
+date: '2026-02-16'
 description: Dowiedz się, jak wyodrębniać określone strony, w tym strony parzyste,
-  z dokumentów przy użyciu GroupDocs.Merger dla Javy. Opanuj wyodrębnianie zakresów
-  stron dla Worda, PDF i innych.
+  z dokumentów Word, PDF i innych, przy użyciu GroupDocs.Merger dla Javy.
 keywords:
 - extract pages java
 - groupdocs merger for java
 - page extraction by range
-title: Wyodrębnij określone strony według zakresu za pomocą GroupDocs.Merger dla Javy
+title: Wyodrębnij określone strony według zakresu przy użyciu GroupDocs.Merger dla
+  Javy
 type: docs
 url: /pl/java/document-extraction/extract-pages-groupdocs-merger-java-guide/
 weight: 1
@@ -15,36 +15,39 @@ weight: 1
 
 # Jak wyodrębnić określone strony według zakresu przy użyciu GroupDocs.Merger dla Javy
 
-Szukasz efektywnego **wyodrębniania określonych stron** z dokumentu przy użyciu zakresów numerów stron? Niezależnie od tego, czy pracujesz nad projektem wymagającym selektywnej manipulacji danymi, czy po prostu chcesz usprawnić przepływ przetwarzania dokumentów, ten przewodnik jest tutaj, aby pomóc. Zbadamy, jak GroupDocs.Merger dla Javy może uprościć wyodrębnianie stron parzystych w określonym zakresie w dokumentach, takich jak pliki Word.
+Jeśli potrzebujesz **wyodrębnić określone strony** z dużego dokumentu — niezależnie czy jest to umowa w formacie Word, raport PDF czy prezentacja PowerPoint — ten przewodnik pokaże Ci czysty, programistyczny sposób realizacji tego zadania przy użyciu GroupDocs.Merger dla Javy. Dowiesz się, dlaczego wyodrębnianie stron według zakresu ma znaczenie, jak wybrać strony parzyste oraz jak zintegrować rozwiązanie z istniejącym projektem Java.
 
-**Czego się nauczysz:**
-- Jak używać GroupDocs.Merger dla Javy do wyodrębniania określonych stron z dokumentu.  
-- Konfigurowanie i ustawianie środowiska pod kątem optymalnej wydajności.  
-- Zrozumienie kluczowych parametrów i opcji w procesie wyodrębniania.
-
-Przejdźmy do praktycznego przewodnika, ale najpierw omówmy niezbędne wymagania wstępne.
+**Czego się nauczysz**
+- Krok po kroku procesu wyodrębniania określonych stron z dowolnego obsługiwanego typu dokumentu.  
+- Jak skonfigurować opcje zakresu, takie jak strony parzyste, nieparzyste lub własne listy stron.  
+- Wskazówki dotyczące obsługi dużych plików i unikania typowych pułapek.
 
 ## Szybkie odpowiedzi
-- **Co oznacza „wyodrębnić określone strony”?** Wybranie tylko tych stron, które są potrzebne, z większego dokumentu.  
+- **Co oznacza „wyodrębnić określone strony”?** Wybór tylko tych stron, które są potrzebne, z większego dokumentu.  
 - **Jakie formaty są obsługiwane?** Word, PDF, PowerPoint, Excel i wiele innych.  
 - **Czy mogę wyodrębnić tylko strony parzyste?** Tak — użyj `RangeMode.EvenPages`.  
-- **Czy potrzebna jest licencja?** Darmowa wersja próbna działa do testów; licencja jest wymagana w środowisku produkcyjnym.  
+- **Czy potrzebna jest licencja?** Bezpłatna wersja próbna działa do testów; licencja jest wymagana w środowisku produkcyjnym.  
 - **Ile linii kodu?** Mniej niż 20 linii do wyodrębnienia zakresu.
+
+## Co to jest „wyodrębnić określone strony”?
+Wyodrębnianie określonych stron oznacza pobranie podzbioru stron z dokumentu źródłowego i zapisanie ich jako nowy, niezależny plik. Jest to przydatne, gdy potrzebujesz jedynie wybranych sekcji — np. klauzuli umowy, rozdziału lub zestawu faktur — bez konieczności udostępniania całego dokumentu.
+
+## Dlaczego wyodrębniać określone strony według zakresu?
+Ukierunkowane wyodrębnianie stron zmniejsza rozmiar pliku, chroni wrażliwe informacje i przyspiesza dalsze przetwarzanie (np. e‑podpisywanie lub automatyczne raportowanie). Dzięki wyodrębnianiu opartemu na zakresie możesz programowo wybrać strony 1‑5, wszystkie strony parzyste lub dowolną własną listę bez ręcznej edycji.
 
 ## Wymagania wstępne
 
-Zanim rozpoczniesz, upewnij się, że masz następujące elementy:
-1. **Wymagane biblioteki**: Musisz dodać GroupDocs.Merger jako zależność w swoim projekcie Java.  
-2. **Ustawienia środowiska**: Upewnij się, że masz zainstalowane i skonfigurowane JDK na swoim komputerze.  
-3. **Wymagania wiedzy**: Znajomość programowania w Javie oraz podstawowych koncepcji obsługi plików jest zalecana.
+Zanim rozpoczniesz, upewnij się, że masz:
+
+1. **Wymagane biblioteki** – GroupDocs.Merger dla Javy dodany jako zależność Maven lub Gradle.  
+2. **JDK** – Zainstalowany i skonfigurowany Java Development Kit w wersji 8 lub nowszej.  
+3. **Podstawową wiedzę o Javie** – Znajomość operacji I/O oraz obsługi wyjątków.
 
 ## Konfiguracja GroupDocs.Merger dla Javy
 
-Aby rozpocząć, skonfiguruj niezbędne biblioteki w środowisku projektu przy użyciu Maven lub Gradle.
-
 ### Konfiguracja Maven
 
-Dodaj następującą zależność do swojego `pom.xml`:
+Dodaj zależność do swojego pliku `pom.xml`:
 
 ```xml
 <dependency>
@@ -56,7 +59,7 @@ Dodaj następującą zależność do swojego `pom.xml`:
 
 ### Konfiguracja Gradle
 
-W projektach Gradle dodaj tę linię do pliku `build.gradle`:
+Dodaj wiersz do pliku `build.gradle`:
 
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
@@ -64,17 +67,17 @@ implementation 'com.groupdocs:groupdocs-merger:latest-version'
 
 ### Bezpośrednie pobranie
 
-Alternatywnie możesz pobrać najnowszą wersję bezpośrednio z [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
+Możesz także pobrać najnowsze binaria z [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
 #### Kroki uzyskania licencji
 
-1. **Darmowa wersja próbna**: Rozpocznij od pobrania darmowej wersji próbnej, aby poznać funkcje.  
-2. **Licencja tymczasowa**: Uzyskaj tymczasową licencję do rozszerzonego testowania, jeśli to konieczne.  
-3. **Zakup**: Rozważ zakup, jeśli GroupDocs.Merger spełnia Twoje potrzeby.
+1. **Bezpłatna wersja próbna** – Pobierz wersję próbną, aby zapoznać się z API.  
+2. **Licencja tymczasowa** – Zamów tymczasowy klucz do wydłużonych testów.  
+3. **Zakup** – Kup pełną licencję do użytku produkcyjnego.
 
 ### Podstawowa inicjalizacja i konfiguracja
 
-Oto jak zainicjować i skonfigurować GroupDocs.Merger:
+Poniżej znajduje się minimalny kod potrzebny do utworzenia instancji `Merger`:
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -83,26 +86,20 @@ String filePath = "YOUR_DOCUMENT_DIRECTORY/YourDocument.docx";
 Merger merger = new Merger(filePath);
 ```
 
-## Przewodnik implementacji
+## Jak wyodrębnić określone strony według zakresu
 
-Teraz skupmy się na wyodrębnianiu stron według zakresu przy użyciu konkretnej funkcji udostępnionej przez GroupDocs.Merger.
+Teraz przejdźmy przez dokładne kroki wyodrębniania stron parzystych w ramach własnego zakresu.
 
-### Wyodrębnianie stron według zakresu
-
-Ta funkcja pozwala wyodrębnić określone strony z dokumentu na podstawie numerów i zakresów stron. Jest szczególnie przydatna przy pracy z dużymi dokumentami, gdy potrzebne są tylko wybrane sekcje.
-
-#### Krok 1: Definiowanie ścieżek plików
-
-Ustaw ścieżki wejściowego i wyjściowego pliku:
+### Krok 1: Zdefiniuj ścieżki wejścia i wyjścia
 
 ```java
 String filePath = "YOUR_DOCUMENT_DIRECTORY/YourDocument.docx";
 String filePathOut = "YOUR_OUTPUT_DIRECTORY/ExtractedPages.docx";
 ```
 
-#### Krok 2: Konfiguracja opcji wyodrębniania
+### Krok 2: Skonfiguruj opcje wyodrębniania
 
-Użyj `ExtractOptions`, aby określić zakres i tryb wyodrębniania. Tutaj wyodrębniamy strony parzyste w określonym zakresie:
+`ExtractOptions` pozwala określić stronę początkową, końcową oraz `RangeMode` (np. parzyste, nieparzyste lub własny). Poniższy przykład wyodrębnia tylko strony parzyste między 1 a 3, co oznacza, że zostanie zapisana strona 2.
 
 ```java
 import com.groupdocs.merger.domain.options.ExtractOptions;
@@ -112,9 +109,7 @@ import com.groupdocs.merger.domain.options.RangeMode;
 ExtractOptions extractOptions = new ExtractOptions(1, 3, RangeMode.EvenPages);
 ```
 
-**Wyjaśnienie**: Parametr `RangeMode.EvenPages` zapewnia, że wybrane zostaną tylko strony o numerach parzystych w podanym zakresie. W tym przypadku wyodrębniona zostanie tylko strona 2.
-
-#### Krok 3: Inicjalizacja Merger i wyodrębnianie stron
+### Krok 3: Wykonaj wyodrębnianie i zapisz wynik
 
 ```java
 // Initialize Merger with input document path
@@ -127,45 +122,47 @@ merger.extractPages(extractOptions);
 merger.save(filePathOut);
 ```
 
-**Wskazówki rozwiązywania problemów**: Upewnij się, że podany zakres i format dokumentu są obsługiwane przez GroupDocs.Merger. Sprawdź, czy nie występują wyjątki związane z uprawnieniami dostępu do plików lub nieprawidłowymi ścieżkami.
+**Wskazówka:** Umieść logikę wyodrębniania w bloku `try‑catch`, aby elegancko obsłużyć `IOException` lub wyjątki specyficzne dla formatu.
 
 ## Praktyczne zastosowania
 
-Ta funkcja może być zastosowana w różnych scenariuszach rzeczywistych:
+| Scenariusz | Jak wyodrębnianie pomaga |
+|------------|--------------------------|
+| **Przegląd prawny** | Wyciągnij tylko potrzebne klauzule do szybkiej analizy. |
+| **Badania akademickie** | Izoluj rozdziały lub sekcje z podręczników do cytowania. |
+| **Raportowanie finansowe** | Wyodrębnij tabele lub zestawienia z wielostronicowych raportów. |
 
-1. **Przegląd dokumentów prawnych** – Wyodrębnianie konkretnych sekcji umów do szczegółowej analizy.  
-2. **Badania akademickie** – Pobieranie kluczowych rozdziałów z podręczników lub artykułów.  
-3. **Raporty finansowe** – Izolowanie istotnych tabel lub zestawień z obszernych raportów.  
+## Rozważania dotyczące wydajności
 
-## Wskazówki dotyczące wydajności
-
-Aby uzyskać optymalną wydajność przy użyciu GroupDocs.Merger:
-
-- Monitoruj i zarządzaj zużyciem pamięci, szczególnie przy dużych dokumentach.  
-- Stosuj efektywne praktyki obsługi plików, aby zminimalizować zużycie zasobów.  
-- Przestrzegaj najlepszych praktyk Javy dotyczących garbage collection i zarządzania pamięcią.
+- **Zarządzanie pamięcią** – Duże pliki PDF mogą zużywać znaczną część sterty. Zwiększ pamięć JVM (`-Xmx2g`), jeśli napotkasz `OutOfMemoryError`.  
+- **Operacje I/O** – Używaj buforowanych strumieni przy odczycie/zapisie dużych plików, aby zmniejszyć opóźnienia dysku.  
+- **Przetwarzanie wsadowe** – Jeśli musisz wyodrębniać zakresy z wielu dokumentów, przetwarzaj je kolejno lub użyj puli wątków z kontrolowaną równoległością.
 
 ## Typowe problemy i rozwiązania
 
 | Problem | Rozwiązanie |
-|-------|----------|
-| **Nieprawidłowa ścieżka pliku** | Zweryfikuj pełną ścieżkę i upewnij się, że aplikacja ma uprawnienia do odczytu/zapisu. |
-| **Nieobsługiwany format** | Potwierdź, że typ dokumentu (np. DOCX, PDF) znajduje się na liście obsługiwanych formatów. |
-| **Błędy out‑of‑memory** | Przetwarzaj duże pliki w mniejszych fragmentach lub zwiększ rozmiar sterty JVM (`-Xmx`). |
-| **RangeMode nie działa zgodnie z oczekiwaniami** | Sprawdź ponownie wartości początkowe/końcowe i upewnij się, że mieszczą się w liczbie stron dokumentu. |
+|---------|-------------|
+| **Nieprawidłowa ścieżka pliku** | Sprawdź pełną ścieżkę i upewnij się, że aplikacja ma uprawnienia odczytu/zapisu. |
+| **Nieobsługiwany format** | Zweryfikuj, czy typ dokumentu (np. DOCX, PDF) znajduje się na liście obsługiwanych formatów. |
+| **Błędy pamięci** | Przetwarzaj duże pliki w mniejszych fragmentach lub zwiększ rozmiar sterty JVM (`-Xmx`). |
+| **RangeMode nie zachowuje się zgodnie z oczekiwaniami** | Podwójnie sprawdź wartości start/koniec i upewnij się, że mieszczą się w liczbie stron dokumentu. |
 
-## Sekcja FAQ
+## Najczęściej zadawane pytania
 
-1. **Jak wyodrębnić strony nieparzyste?**  
-   Użyj `RangeMode.OddPages` w `ExtractOptions`.  
-2. **Czy mogę używać tego z plikami PDF?**  
-   Tak, GroupDocs.Merger obsługuje różne formaty, w tym PDF.  
-3. **Co zrobić, gdy ścieżka do dokumentu jest nieprawidłowa?**  
-   Sprawdź ponownie ścieżki plików i upewnij się, że ustawiono właściwe uprawnienia dostępu.  
-4. **Jak obsłużyć wyjątki podczas wyodrębniania?**  
-   Zaimplementuj bloki try‑catch, aby zarządzać potencjalnymi wyjątkami IO lub związanymi z formatem.  
-5. **Czy istnieje limit liczby stron, które mogę wyodrębnić?**  
-   Nie ma wbudowanego limitu stron, ale należy zwracać uwagę na zużycie pamięci przy bardzo dużych dokumentach.
+**Q: Jak wyodrębnić strony nieparzyste?**  
+A: Użyj `RangeMode.OddPages` przy tworzeniu `ExtractOptions`.
+
+**Q: Czy mogę używać tego z plikami PDF?**  
+A: Tak, GroupDocs.Merger obsługuje PDF, DOCX, PPTX, XLSX i wiele innych formatów.
+
+**Q: Co zrobić, gdy ścieżka do mojego dokumentu jest niepoprawna?**  
+A: API zgłosi `IOException`. Zweryfikuj ścieżkę i sprawdź uprawnienia do pliku.
+
+**Q: Jak obsługiwać wyjątki podczas wyodrębniania?**  
+A: Umieść kod wyodrębniania w bloku `try‑catch` i zaloguj szczegóły wyjątku w celu diagnostyki.
+
+**Q: Czy istnieje limit liczby stron, które mogę wyodrębnić?**  
+A: Nie ma sztywnego limitu, ale bardzo duże wyodrębnienia mogą wymagać większej pamięci sterty.
 
 ## Zasoby
 
@@ -177,12 +174,12 @@ Aby uzyskać optymalną wydajność przy użyciu GroupDocs.Merger:
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)
 - [Support Forum](https://forum.groupdocs.com/c/merger/)
 
-Postępując zgodnie z tym przewodnikiem, będziesz dobrze przygotowany do implementacji wyodrębniania stron według zakresu w swoich projektach Java przy użyciu GroupDocs.Merger. Szczęśliwego kodowania!
+Postępując zgodnie z tym przewodnikiem, masz teraz niezawodną metodę **wyodrębniania określonych stron** z dowolnego obsługiwanego dokumentu przy użyciu GroupDocs.Merger dla Javy. Powodzenia w kodowaniu!
 
 ---
 
-**Ostatnia aktualizacja:** 2025-12-17  
-**Testowano z:** najnowsza wersja GroupDocs.Merger (Java)  
+**Ostatnia aktualizacja:** 2026-02-16  
+**Testowane z:** najnowsza wersja GroupDocs.Merger (Java)  
 **Autor:** GroupDocs  
 
 ---
