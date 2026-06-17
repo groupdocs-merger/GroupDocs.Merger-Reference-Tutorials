@@ -1,46 +1,102 @@
 ---
-date: '2026-01-29'
-description: GroupDocs.Merger for Java kullanarak Java belgelerine şifre nasıl eklenir
-  ve belgeler nasıl güvenli bir şekilde korunur öğrenin.
+date: '2026-05-22'
+description: GroupDocs.Merger kullanarak PDF Java'yı şifreyle korumayı öğrenin, Java
+  belgelerini AES‑256 encryption ile güvence altına almanın en hızlı yolu.
 keywords:
-- document security
-- password protection java
+- password protect pdf java
+- secure documents java
 - groupdocs merger java
-title: GroupDocs.Merger ile Java’da Belge Şifresi Ayarlama – Tam Rehber
+schemas:
+- author: GroupDocs
+  dateModified: '2026-05-22'
+  description: Learn how to password protect PDF Java using GroupDocs.Merger, the
+    fastest way to secure documents Java with AES‑256 encryption.
+  headline: Password protect PDF Java with GroupDocs.Merger Guide
+  type: TechArticle
+- description: Learn how to password protect PDF Java using GroupDocs.Merger, the
+    fastest way to secure documents Java with AES‑256 encryption.
+  name: Password protect PDF Java with GroupDocs.Merger Guide
+  steps:
+  - name: '**Create a `Merger` instance** pointing to your file.'
+    text: '**Create a `Merger` instance** pointing to your file.'
+  - name: '**Call `isPasswordSet()`** to retrieve a boolean flag.'
+    text: '**Call `isPasswordSet()`** to retrieve a boolean flag.'
+  - name: '**Instantiate `Merger`** with the source document.'
+    text: '**Instantiate `Merger`** with the source document.'
+  - name: '**Create an `AddPasswordOptions`** object containing the desired password.'
+    text: '**Create an `AddPasswordOptions`** object containing the desired password.'
+  - name: '**Invoke `addPassword()`** to apply the protection.'
+    text: '**Invoke `addPassword()`** to apply the protection.'
+  - name: '**Save the protected file** to a new location.'
+    text: '**Save the protected file** to a new location.'
+  - name: '**Corporate Contracts:** Lock confidential agreements before sharing with
+      partners.'
+    text: '**Corporate Contracts:** Lock confidential agreements before sharing with
+      partners.'
+  - name: '**Academic Exams:** Protect exam PDFs to prevent early leaks.'
+    text: '**Academic Exams:** Protect exam PDFs to prevent early leaks.'
+  - name: '**Personal Records:** Safeguard medical reports, tax statements, or personal
+      IDs.'
+    text: '**Personal Records:** Safeguard medical reports, tax statements, or personal
+      IDs.'
+  - name: '**Legal Briefs:** Ensure privileged attorney‑client communications stay
+      private.'
+    text: '**Legal Briefs:** Ensure privileged attorney‑client communications stay
+      private.'
+  type: HowTo
+- questions:
+  - answer: It's a powerful Java library for merging, splitting, and protecting a
+      wide range of document formats.
+    question: What is GroupDocs.Merger?
+  - answer: The library uses industry‑standard AES‑256 encryption, providing robust
+      protection.
+    question: How strong is the encryption when I set document password java?
+  - answer: Yes—if you know the existing password, you can call `removePassword()`
+      and save the unprotected file. `removePassword()` removes password protection
+      from the document when the correct current password is provided.
+    question: Can I remove a password from a document using GroupDocs.Merger?
+  - answer: Absolutely. Loop through a directory, apply the steps shown above, and
+      save each file with its own password.
+    question: Is it possible to automate password protection for many files at once?
+  - answer: Verify that the output directory exists, you have write permissions, and
+      there is sufficient disk space.
+    question: My document isn’t saving after adding a password—what should I check?
+  type: FAQPage
+title: GroupDocs.Merger Rehberi ile PDF Java Şifreyle Koruma
 type: docs
 url: /tr/java/document-security/master-document-security-groupdocs-merger-java/
 weight: 1
 ---
 
-# GroupDocs.Merger ile Java'da Belge Şifresi Ayarlama
+# GroupDocs.Merger ile PDF Java Şifreleme Kılavuzu
 
-Gizli dosyaları korumak, gizli verilerle çalışan her Java geliştiricisi için en önemli önceliktir. Bu öğreticide **how to set document password java** öğrenecek, PDF'lerinizin, elektronik tablolarınızın ve diğer formatların yetkisiz erişime karşı güvenli kalmasını sağlayacaksınız. Mevcut korumayı kontrol etmeyi, yeni bir şifre uygulamayı ve **secure documents java** için en iyi uygulamaları adım adım göstereceğiz.
+Hassas dosyaları korumak, her Java geliştiricisi için en önemli önceliktir ve **password protect PDF Java** öğrenmek, gizli verileri korumak için gereklidir. Bu öğreticide GroupDocs.Merger kullanarak set document password java nasıl yapılacağını keşfedecek, PDF'lerinizi, elektronik tablolarınızı ve diğer formatları yetkisiz erişime karşı güvenli tutacaksınız. Mevcut korumayı kontrol etmeyi, yeni bir şifre uygulamayı ve **secure documents java** için en iyi uygulamaları adım adım göstereceğiz.
 
-## Hızlı Cevaplar
-- **What does “set document password java” achieve?**  
-  Bu, bir dosyayı şifreler, böylece sadece şifreyi bilen kullanıcılar dosyayı açabilir veya düzenleyebilir.  
-- **Which library supports this feature?**  
+## Hızlı Yanıtlar
+- **set document password java** ne işe yarar?  
+  Bir dosyayı şifreler, böylece sadece şifreyi bilen kullanıcılar dosyayı açabilir veya düzenleyebilir.  
+- **Bu özelliği hangi kütüphane destekliyor?**  
   GroupDocs.Merger for Java, şifre yönetimi için yerleşik yöntemler sağlar.  
-- **Do I need a license?**  
-  Ücretsiz deneme testi için çalışır; üretim kullanımı için ücretli bir lisans gereklidir.  
-- **Can I change an existing password?**  
-  Evet – eski şifreyi kaldırabilir ve tek bir adımda yeni bir şifre uygulayabilirsiniz.  
-- **Is the process suitable for large files?**  
+- **Bir lisansa ihtiyacım var mı?**  
+  Ücretsiz deneme testi için çalışır; üretim kullanımı için ücretli lisans gereklidir.  
+- **Mevcut bir şifreyi değiştirebilir miyim?**  
+  Evet – eski şifreyi kaldırıp tek bir adımda yeni bir şifre uygulayabilirsiniz.  
+- **Bu işlem büyük dosyalar için uygun mu?**  
   Kesinlikle; API verileri akış olarak işler, bellek tüketimini en aza indirir.
 
 ## “set document password java” nedir?
-Java'da bir belge şifresi ayarlamak, bir API kullanarak dosyaya şifreleme meta verileri eklemek anlamına gelir. Dosya açıldığında, kütüphane sağlanan şifreyi doğrular ve içeriği ortaya çıkarmadan önce kontrol eder.
+Java'da bir belgeye şifre ayarlamak, dosyayı şifreler, böylece sadece şifreyi bilen kullanıcılar dosyayı açabilir veya değiştirebilir. GroupDocs.Merger, AES‑256 şifreleme meta verilerini doğrudan PDF'e ekler, yetkisiz erişimi önlerken düzen, görüntüler ve metin bütünlüğünü korur. Bu yaklaşım, PDF'ler, Word belgeleri, Excel sayfaları ve kütüphane tarafından desteklenen birçok diğer format için çalışır.
 
-## Secure documents java için neden GroupDocs.Merger kullanmalı?
-GroupDocs.Merger, 100'den fazla dosya formatında çalışan basit ve akıcı bir arayüz sunar. Düşük seviyeli şifreleme kodu yazmanıza gerek kalmadan şifre korumasını yönetir, böylece iş mantığınıza odaklanırken belgelerin güvenliğini sağlar.
+## Neden GroupDocs.Merger güvenli belgeler java için kullanılmalı?
+GroupDocs.Merger, **100'den fazla dosya formatını** destekleyen akıcı bir API sunar ve tek bir çağrıda endüstri standardı AES‑256 şifreleme uygular, özel kriptografi ihtiyacını ortadan kaldırır. Bellek kullanımını düşük tutmak için verileri akış olarak işler, **500 MB**'a kadar büyük PDF'leri verimli bir şekilde yönetir ve ek yerel kütüphaneler olmadan herhangi bir Java 8+ ortamında çalışır. Kütüphane ayrıca iş parçacığı‑güvenli işlemler sunar, bu da yüksek verimli toplu işleme için idealdir.
 
 ## Önkoşullar
-- **Java Development Kit (JDK) 8 or higher**  
-- **GroupDocs.Merger library** – en son sürüm önerilir  
+- **Java Development Kit (JDK) 8 veya üzeri**  
+- **GroupDocs.Merger library** – önerilen en son sürüm  
 - **IDE** – IntelliJ IDEA veya Eclipse gibi  
-- Java sınıfları ve yöntemleri hakkında temel bilgi  
+- Java sınıfları ve metodları hakkında temel bilgi  
 
-## GroupDocs.Merger'ı Java için Kurma
+## Java için GroupDocs.Merger Kurulumu
 
 ### Maven
 ```xml
@@ -58,8 +114,8 @@ implementation 'com.groupdocs:groupdocs-merger:latest-version'
 
 Alternatif olarak, en son sürümü doğrudan [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) adresinden indirebilirsiniz.
 
-### Lisans Alımı
-GroupDocs.Merger'ı denemek için ücretsiz bir deneme ile başlayabilir veya geçici bir lisans talep edebilirsiniz. Uzun vadeli kullanım için bir lisans satın almayı düşünün. Daha fazla detay için [Purchase GroupDocs.Merger](https://purchase.groupdocs.com/buy) adresini ziyaret edin.
+### Lisans Edinme
+GroupDocs.Merger'ı denemek için ücretsiz deneme ile başlayabilir veya geçici bir lisans talep edebilirsiniz. Uzun vadeli kullanım için bir lisans satın almayı düşünün. Daha fazla detay için [Purchase GroupDocs.Merger](https://purchase.groupdocs.com/buy) adresini ziyaret edin.
 
 Kütüphane projenize eklendikten sonra, aşağıda gösterildiği gibi başlatın:
 
@@ -70,9 +126,12 @@ import com.groupdocs.merger.Merger;
 Merger merger = new Merger("YOUR_DOCUMENT_DIRECTORY/sample.xlsx");
 ```
 
-## GroupDocs.Merger ile set document password java nasıl ayarlanır
+## GroupDocs.Merger ile set document password java nasıl yapılır
+Java'da GroupDocs.Merger ile bir PDF'yi şifrelemek için, kaynak dosya için bir Merger örneği oluşturun, istediğiniz şifreyi içeren bir AddPasswordOptions nesnesi yapılandırın, `addPassword(options)` metodunu çağırın ve sonucu yeni bir yola kaydedin. Bu kısa iş akışı, belgeyi sadece birkaç satır kodla güvence altına alır ve birkaç kilobayttan birkaç yüz megabayta kadar dosyalar için çalışır.
 
-Aşağıda mevcut korumayı kontrol etmeyi ve yeni bir şifre uygulamayı ele alacağız.
+Merger, bir belgeyi temsil eden ve şifre yönetimi gibi manipülasyon yöntemleri sağlayan temel sınıftır.  
+AddPasswordOptions, koruma uygulanırken kullanılan şifre dizesini ve ilgili ayarları kapsar.  
+`addPassword(options)` sağlanan şifreyle belgeyi şifreler.
 
 ### Belge Şifre Korumasını Kontrol Etme
 
@@ -80,8 +139,12 @@ Aşağıda mevcut korumayı kontrol etmeyi ve yeni bir şifre uygulamayı ele al
 Yeni bir şifre ayarlamadan önce, dosyanın zaten korunup korunmadığını doğrulamak isteyebilirsiniz. Bu adım gereksiz üzerine yazmaları önlemeye yardımcı olur.
 
 #### Uygulama Adımları
-1. **Create a `Merger` instance** dosyanıza işaret ederek oluşturun.  
-2. **Call `isPasswordSet()`** bir boolean işareti almak için.  
+1. **`Merger` örneği oluşturun** dosyanıza işaret ederek.  
+2. **`isPasswordSet()` metodunu çağırın** bir boolean bayrağı almak için.  
+
+`isPasswordSet()` belge zaten bir şifre gerektiriyorsa true döndürür.  
+
+`Merger`, GroupDocs.Merger içinde bir belgeyi temsil eden ve şifre kontrolleri dahil manipulasyon yöntemleri sağlayan temel sınıftır.  
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -105,18 +168,22 @@ public class CheckDocumentPasswordProtection {
 
 **Açıklama:**  
 - `Merger(filePath)`: Hedef dosyayı yükler.  
-- `isPasswordSet()`: Belge zaten bir şifre gerektiriyorsa `true` döndürür.
+- `isPasswordSet()`: Belge zaten bir şifre gerektiriyorsa `true` döndürür.  
 
 ### Belge Şifre Koruması Ayarlama
 
 #### Genel Bakış
-Şimdi, korumasız ya da yeni bir şifreye ihtiyaç duyan bir dosyada **set document password java** uygulayacağız.
+Şimdi, **set document password java** işlemini korumasız ya da yeni bir şifreye ihtiyaç duyan bir dosyada gerçekleştireceğiz.
 
 #### Uygulama Adımları
-1. **Instantiate `Merger`** kaynak belge ile.  
-2. **Create an `AddPasswordOptions`** istenen şifreyi içeren bir nesne oluşturun.  
-3. **Invoke `addPassword()`** korumayı uygulamak için.  
-4. **Save the protected file** yeni bir konuma kaydedin.  
+1. **`Merger` örneği oluşturun** kaynak belgeyle.  
+2. **`AddPasswordOptions` nesnesi oluşturun** istenen şifreyi içerecek şekilde.  
+3. **`addPassword()` metodunu çağırın** korumayı uygulamak için.  
+4. **Korunan dosyayı** yeni bir konuma kaydedin.  
+
+`AddPasswordOptions` yeni şifre dizesini kapsar.  
+`addPassword()` sağlanan şifreyle belgeyi şifreler.  
+`save(outputPath)` korunan belgeyi belirtilen dosya yoluna yazar.  
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -145,49 +212,57 @@ public class SetDocumentPasswordProtection {
 
 **Açıklama:**  
 - `AddPasswordOptions`: Yeni şifre dizesini tutar.  
-- `addPassword()`: Belgeyi sağlanan şifreyle şifreler.  
-- `save(outputPath)`: Korunan dosyayı diske yazar.
+- `addPassword()`: Sağlanan şifreyle belgeyi şifreler.  
+- `save(outputPath)`: Korunan dosyayı diske yazar.  
 
 ## Sorun Giderme İpuçları
 - **FileNotFoundException:** Giriş ve çıkış dosyaları için mutlak yolları iki kez kontrol edin.  
-- **Permission Issues:** Java işleminin belirttiğiniz dizinlerde okuma/yazma izinlerine sahip olduğundan emin olun.  
-- **Incorrect Password:** Korunan bir dosyayı açarken “invalid password” hatası alırsanız, şifre dizesinin tam olarak (büyük/küçük harf dahil) eşleştiğini doğrulayın.
+- **Permission Issues:** Java sürecinin belirttiğiniz dizinlerde okuma/yazma izinlerine sahip olduğundan emin olun.  
+- **Incorrect Password:** Korunan bir dosyayı açarken “invalid password” hatası alıyorsanız, şifre dizesinin tam olarak (büyük/küçük harf duyarlı) eşleştiğini doğrulayın.
 
-## Secure Documents Java için Pratik Uygulamalar
-1. **Corporate Contracts:** Ortaklarla paylaşmadan önce gizli anlaşmaları kilitleyin.  
-2. **Academic Exams:** Erken sızıntıları önlemek için sınav PDF'lerini koruyun.  
-3. **Personal Records:** Medikal raporları, vergi beyanlarını veya kişisel kimlikleri koruyun.  
-4. **Legal Briefs:** Avukat‑müşteri arasındaki ayrıcalıklı iletişimin gizli kalmasını sağlayın.
+## Güvenli Belgeler Java için Pratik Uygulamalar
+1. **Corporate Contracts:** Ortaklarla paylaşmadan önce gizli sözleşmeleri kilitleyin.  
+2. **Academic Exams:** Sınav PDF'lerini erken sızıntıları önlemek için koruyun.  
+3. **Personal Records:** Medikal raporları, vergi beyanlarını veya kişisel kimlikleri güvence altına alın.  
+4. **Legal Briefs:** Avukat‑müşteri arasındaki ayrıcalıklı iletişimin gizli kalmasını sağlayın.  
 
-Şifre korumasını otomatik iş akışlarına (ör. fatura PDF'lerinin toplu işlenmesi) entegre etmek, uyumluluğu korurken manuel çabayı büyük ölçüde azaltabilir.
+Şifre korumasını otomatik iş akışlarına (ör. fatura PDF'lerinin toplu işlenmesi) entegre etmek, manuel çabayı büyük ölçüde azaltabilir ve uyumluluğu korur.
 
 ## Performans Düşünceleri
 - **Memory Management:** Çok büyük elektronik tablolar veya PDF'ler için, tüm belgeyi belleğe yüklemek yerine dosyaları akış olarak işlemeyi düşünün.  
-- **Thread Safety:** Her `Merger` örneği bağımsızdır; çakışma olmadan birden fazla dosya üzerinde işlemleri paralelleştirebilirsiniz.
+- **Thread Safety:** Her `Merger` örneği bağımsızdır; birden fazla dosya üzerinde çakışma olmadan işlemleri paralelleştirebilirsiniz.  
 
 ## Sıkça Sorulan Sorular
 
-**Q: GroupDocs.Merger nedir?**  
-A: Çok çeşitli belge formatlarını birleştirme, bölme ve koruma için güçlü bir Java kütüphanesidir.
+**S: GroupDocs.Merger nedir?**  
+C: Geniş bir belge formatı yelpazesini birleştirme, bölme ve koruma için güçlü bir Java kütüphanesidir.
 
-**Q: set document password java ayarladığımda şifreleme ne kadar güçlü?**  
-A: Kütüphane, endüstri standardı AES‑256 şifrelemesini kullanır ve sağlam bir koruma sağlar.
+**S: set document password java uyguladığımda şifreleme ne kadar güçlü?**  
+C: Kütüphane, endüstri standardı AES‑256 şifreleme kullanır ve sağlam bir koruma sağlar.
 
-**Q: GroupDocs.Merger kullanarak bir belgeden şifre kaldırabilir miyim?**  
-A: Evet—mevcut şifreyi biliyorsanız, `removePassword()` metodunu çağırıp korunmasız dosyayı kaydedebilirsiniz.
+**S: GroupDocs.Merger kullanarak bir belgeden şifre kaldırabilir miyim?**  
+C: Evet—mevcut şifreyi biliyorsanız `removePassword()` metodunu çağırıp korumasız dosyayı kaydedebilirsiniz. `removePassword()` doğru mevcut şifre sağlandığında belge üzerindeki şifre korumasını kaldırır.
 
-**Q: Birçok dosya için şifre korumasını otomatikleştirmek mümkün mü?**  
-A: Kesinlikle. Bir dizini döngüyle işleyin, yukarıdaki adımları uygulayın ve her dosyayı kendi şifresiyle kaydedin.
+**S: Birçok dosya için şifre korumasını otomatikleştirmek mümkün mü?**  
+C: Kesinlikle. Bir dizini döngüye alıp yukarıdaki adımları uygulayarak her dosyayı kendi şifresiyle kaydedebilirsiniz.
 
-**Q: Belgem şifre ekledikten sonra kaydedilmiyor—ne kontrol etmeliyim?**  
-A: Çıktı dizininin var olduğunu, yazma izinlerinizin bulunduğunu ve yeterli disk alanının olduğunu doğrulayın.
+**S: Belgem şifre eklendikten sonra kaydedilmiyor—ne kontrol etmeliyim?**  
+C: Çıktı dizininin var olduğunu, yazma izinlerinizin olduğunu ve yeterli disk alanının bulunduğunu doğrulayın.
 
 ## Kaynaklar
-- **Dokümantasyon:** [GroupDocs.Merger Java Documentation](https://docs.groupdocs.com/merger/java/)  
-- **API Referansı:** [GroupDocs.Merger API Documentation](https://apireference.groupdocs.com/merger/java/)
+- **Documentation:** [GroupDocs.Merger Java Documentation](https://docs.groupdocs.com/merger/java/)  
+- **API Reference:** [GroupDocs.Merger API Documentation](https://apireference.groupdocs.com/merger/java/)
 
 ---
 
-**Last Updated:** 2026-01-29  
-**Tested With:** GroupDocs.Merger latest version  
-**Author:** GroupDocs
+**Son Güncelleme:** 2026-05-22  
+**Test Edilen Versiyon:** GroupDocs.Merger en son sürüm  
+**Yazar:** GroupDocs  
+
+---
+
+## İlgili Öğreticiler
+
+- [PowerPoint'i GroupDocs.Merger for Java ile Şifreleme](/merger/java/document-security/groupdocs-merger-java-add-password-powerpoint-pptx/)
+- [GroupDocs.Merger for Java ile Belge Şifrelerini Güncelleme: Kapsamlı Kılavuz](/merger/java/document-security/update-passwords-groupdocs-merger-java/)
+- [Toplu Belge İşleme - GroupDocs.Merger for Java ile Şifre Koruması Olan Dosyaları Yükleme](/merger/java/document-loading/load-password-protected-docs-groupdocs-java/)
