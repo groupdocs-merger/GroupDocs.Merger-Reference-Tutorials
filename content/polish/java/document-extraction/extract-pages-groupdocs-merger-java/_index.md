@@ -1,8 +1,8 @@
 ---
-date: '2025-12-19'
-description: Dowiedz się, jak wsadowo wyodrębniać strony PDF i wyodrębniać strony
-  według numeru przy użyciu GroupDocs.Merger dla Javy. Ten przewodnik obejmuje konfigurację,
-  implementację oraz praktyczne przypadki użycia.
+date: '2026-02-19'
+description: Dowiedz się, jak wsadowo wyodrębniać strony PDF oraz wyodrębniać strony
+  po numerze przy użyciu GroupDocs.Merger dla Javy. Ten przewodnik obejmuje konfigurację,
+  implementację i praktyczne przypadki użycia.
 keywords:
 - extract specific pages from documents
 - GroupDocs.Merger for Java setup
@@ -13,38 +13,37 @@ url: /pl/java/document-extraction/extract-pages-groupdocs-merger-java/
 weight: 1
 ---
 
-# Pobieranie wsadowe stron PDF przy użyciu GroupDocs.Merger dla Javy
+# Wsadowkie wyodrębnianie stron PDF przy użyciu GroupDocs.Merger dla Javy
 
-Wyodrębnianie konkretnych stron z dokumentu to rutynowe wyzwanie dla programistów, którzy muszą **pobierać wsadowo strony PDF** lub udostępniać tylko istotne fragmenty większego pliku. Dzięki **GroupDocs.Merger dla Javy** możesz wykonać to zadanie szybko, niezawodnie i przy użyciu zaledwie kilku linii kodu.
-
-W tym samouczku dowiesz się, jak skonfigurować GroupDocs.Merger, wyodrębnić strony po numerze oraz zapisać wynik jako nowy dokument — wszystko w prosty sposób, który można zintegrować z dowolną aplikacją Java.
+Wyodrębnianie konkretnych stron z dokumentu to rutynowe wyzwanie dla programistów, którzy muszą **batch extract PDF pages** lub udostępniać tylko istotne fragmenty większego pliku. Dzięki **GroupDocs.Merger for Java** możesz wykonać to zadanie szybko, niezawodnie i przy użyciu kilku linijek kodu. W tym samouczku dowiesz się także, jak **create PDF from pages**, zrozumiesz **how to extract PDF** efektywnie oraz poznasz wskazówki dotyczące obsługi scenariuszy **extract PDF large file**.
 
 ## Szybkie odpowiedzi
-- **Co oznacza „pobieranie wsadowe stron PDF”?** Odnosi się do wyodrębniania wielu, konkretnych stron z jednego lub kilku plików PDF w jednej operacji.  
-- **Która metoda wyodrębnia strony po numerze?** Użyj `ExtractOptions` z tablicą indeksów stron.  
-- **Czy potrzebna jest licencja?** Darmowa wersja próbna działa w środowisku deweloperskim; licencja płatna jest wymagana w produkcji.  
-- **Czy mogę wyodrębnić niekolejne strony?** Tak — podaj dowolne numery stron, które są potrzebne.  
-- **Czy to rozwiązanie sprawdza się przy dużych plikach?** Przy odpowiednich ustawieniach pamięci GroupDocs.Merger efektywnie obsługuje duże dokumenty.
+- **What does “batch extract PDF pages” mean?** Odnosi się do wyodrębniania wielu, konkretnych stron z jednego lub kilku plików PDF w jednej operacji.  
+- **Which method extracts pages by number?** Użyj `ExtractOptions` z tablicą indeksów stron.  
+- **Do I need a license?** Darmowa wersja próbna działa w środowisku deweloperskim; płatna licencja jest wymagana w produkcji.  
+- **Can I extract non‑sequential pages?** Tak — podaj dowolne numery stron, które są potrzebne.  
+- **Is this suitable for large files?** Przy odpowiednich ustawieniach pamięci GroupDocs.Merger efektywnie obsługuje duże dokumenty.
 
-## Co to jest pobieranie wsadowe stron PDF?
-Pobieranie wsadowe stron PDF oznacza wybranie zestawu poszczególnych stron — niezależnie od tego, czy są kolejno, czy nie — i utworzenie nowego pliku PDF zawierającego wyłącznie te strony. Jest to szczególnie przydatne przy generowaniu raportów, fragmentów dokumentów prawnych lub własnych materiałów edukacyjnych bez konieczności przesyłania całego pliku.
+## Co to jest wsadowkie wyodrębnianie stron PDF?
+Wsadowkie wyodrębnianie stron PDF oznacza wybranie zestawu poszczególnych stron — niezależnie od tego, czy są kolejno następujące, czy nie — i utworzenie nowego pliku PDF, który zawiera wyłącznie te strony. Jest to szczególnie przydatne przy generowaniu raportów, fragmentów dokumentów prawnych lub własnych przewodników edukacyjnych bez konieczności wysyłania całego pliku.
 
 ## Dlaczego warto używać GroupDocs.Merger dla Javy?
-- **Wysoka wydajność** przy dużych dokumentach.  
-- **Obsługa wielu formatów** (PDF, DOCX, PPTX itp.).  
-- **Proste API**, które pozwala skupić się na logice biznesowej, a nie na niskopoziomowej obsłudze plików.  
-- **Kompatybilność wieloplatformowa** dla aplikacji desktopowych, serwerowych i chmurowych.
+- **High performance** przy dużych dokumentach.  
+- **Supports many formats** (PDF, DOCX, PPTX, itp.).  
+- **Simple API** pozwalające skupić się na logice biznesowej, a nie na niskopoziomowej obsłudze plików.  
+- **Cross‑platform** kompatybilność dla komputerów stacjonarnych, serwerów i wdrożeń w chmurze.  
+- To wiodące rozwiązanie **pdf extraction library java**, oferujące niezawodne operacje na poziomie stron.
 
 ## Wymagania wstępne
 - Podstawowa znajomość programowania w Javie.  
-- IDE, takie jak IntelliJ IDEA lub Eclipse.  
+- IDE, np. IntelliJ IDEA lub Eclipse.  
 - Maven lub Gradle do zarządzania zależnościami.  
-- Ważna licencja GroupDocs.Merger (darmowa wersja próbna lub tymczasowa licencja wystarczy do testów).
+- Ważna licencja GroupDocs.Merger (darmowa wersja próbna lub tymczasowa licencja działa w testach).
 
 ## Konfiguracja GroupDocs.Merger dla Javy
 
 ### Instrukcje instalacji
-Dodaj bibliotekę do swojego projektu przy użyciu wybranego narzędzia budującego.
+Dodaj bibliotekę do swojego projektu używając wybranego narzędzia do budowania.
 
 **Maven**  
 ```xml
@@ -60,14 +59,13 @@ Dodaj bibliotekę do swojego projektu przy użyciu wybranego narzędzia budując
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-**Bezpośrednie pobranie**  
+**Direct Download**  
 W przypadku ręcznego podejścia pobierz najnowsze wydanie z [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
-### Uzyskanie licencji
-Rozpocznij od darmowej wersji próbnej, aby wypróbować funkcje. Jeśli biblioteka spełnia Twoje oczekiwania, zakup licencję lub poproś o tymczasową licencję na rozszerzoną ocenę.
+### Uzyskiwanie licencji
+Rozpocznij od darmowej wersji próbnej, aby zapoznać się z funkcjami. Jeśli biblioteka spełnia Twoje potrzeby, zakup licencję lub poproś o tymczasową w celu przedłużonej oceny.
 
-Po dodaniu zależności i uzyskaniu licencji utwórz instancję `Merger`, wskazując na dokument źródłowy:
-
+Po dodaniu zależności i uzyskaniu licencji, utwórz instancję `Merger` wskazującą na dokument źródłowy:  
 ```java
 String filePath = "YOUR_DOCUMENT_DIRECTORY/sample.docx";
 Merger merger = new Merger(filePath);
@@ -75,89 +73,86 @@ Merger merger = new Merger(filePath);
 
 ## Przewodnik implementacji
 
-### Funkcja wyodrębniania stron po numerze
-Możliwość **wyodrębniania stron po numerze** pozwala precyzyjnie określić, które strony mają zostać pobrane z pliku źródłowego.
+### Funkcja wyodrębniania stron według numeru
+Funkcja **extract pages by number** pozwala dokładnie określić, które strony mają zostać wyciągnięte z pliku źródłowego.
 
 #### Inicjalizacja Merger
-Najpierw utwórz obiekt `Merger`, podając ścieżkę do dokumentu, z którym chcesz pracować:
-
+Najpierw utwórz instancję `Merger` z ścieżką do dokumentu, z którym chcesz pracować:  
 ```java
 String filePath = "YOUR_DOCUMENT_DIRECTORY/sample.docx";
 Merger merger = new Merger(filePath);
 ```
 
 #### Definiowanie numerów stron do wyodrębnienia
-Utwórz obiekt `ExtractOptions` i przekaż tablicę numerów stron, które chcesz wyodrębnić. W tym przykładzie pobieramy strony 1 i 4:
-
+Utwórz obiekt `ExtractOptions` i przekaż tablicę numerów stron, które chcesz wyodrębnić. W tym przykładzie pobieramy strony 1 i 4:  
 ```java
 ExtractOptions extractOptions = new ExtractOptions(new int[] { 1, 4 });
 ```
 
-#### Wykonanie wyodrębniania
-Wywołaj metodę `extractPages`, przekazując wcześniej zdefiniowane opcje:
-
+#### Wykonywanie wyodrębniania
+Wywołaj metodę `extractPages`, przekazując opcje, które właśnie zdefiniowałeś:  
 ```java
 merger.extractPages(extractOptions);
 ```
 
-#### Zapis wyodrębnionych stron
-Na koniec zapisz nowo utworzony dokument na dysku:
-
+#### Zapisywanie wyodrębnionych stron
+Na koniec zapisz nowo utworzony dokument na dysk:  
 ```java
 String filePathOut = "YOUR_OUTPUT_DIRECTORY/ExtractPagesByNumbers-output.pdf";
 merger.save(filePathOut);
 ```
 
-### Porady dotyczące rozwiązywania problemów
-- Sprawdź, czy ścieżki wejściowe i wyjściowe są poprawne i dostępne.  
-- Upewnij się, że podane numery stron rzeczywiście istnieją w pliku źródłowym.  
-- W przypadku bardzo dużych dokumentów zwiększ rozmiar sterty JVM (`-Xmx`), aby uniknąć `OutOfMemoryError`.
+### Dlaczego to ma znaczenie
+- **Create PDF from pages**: Zamiast łączyć całe dokumenty, możesz stworzyć nowy PDF zawierający wyłącznie wybrane strony.  
+- **How to extract PDF** efficiently: Użycie `ExtractOptions` eliminuje konieczność wielokrotnego ładowania całego pliku do pamięci.  
+- **Extract PDF large file**: Przy pracy z PDF‑ami o rozmiarze w gigabajtach zwiększ przydział pamięci JVM (`-Xmx`) i przetwarzaj pliki w partiach, aby kontrolować zużycie pamięci.
+
+### Typowe pułapki i rozwiązywanie problemów
+- **Incorrect file paths** – Sprawdź, czy katalogi wejściowy i wyjściowy istnieją i mają prawa zapisu.  
+- **Invalid page numbers** – Indeksy stron zaczynają się od 1; żądanie nieistniejącej strony powoduje wyjątek.  
+- **Out‑of‑Memory errors** – W przypadku ogromnych PDF‑ów przydziel więcej pamięci (`-Xmx2g` lub więcej) lub podziel pracę na mniejsze partie.  
 
 ## Praktyczne zastosowania
-1. **Systemy zarządzania dokumentami** – Generowanie niestandardowych raportów poprzez pobranie tylko potrzebnych sekcji z masywnych plików PDF.  
-2. **Usługi prawne i finansowe** – Udostępnianie konkretnych klauzul umów lub sprawozdań finansowych bez ujawniania całego dokumentu.  
-3. **Platformy edukacyjne** – Dostarczanie studentom wyłącznie rozdziałów istotnych dla danego zadania.
+1. **Document Management Systems** – Generuj niestandardowe raporty, wyciągając tylko potrzebne sekcje z masywnych PDF‑ów.  
+2. **Legal & Financial Services** – Udostępniaj konkretne klauzule umów lub sprawozdania finansowe bez ujawniania całego dokumentu.  
+3. **Education Platforms** – Dostarczaj studentom tylko rozdziały istotne dla zadania, zmniejszając rozmiar pobierania i bałagan.
 
-## Wskazówki dotyczące wydajności
-- **Zarządzanie pamięcią:** Monitoruj zużycie sterty; dostosuj `-Xmx` w zależności od rozmiaru plików.  
-- **Przetwarzanie wsadowe:** Przy wyodrębnianiu stron z wielu dokumentów przetwarzaj je w partiach, aby kontrolować zużycie zasobów.  
-- **Efektywne I/O:** Korzystaj z buforowanych strumieni lub asynchronicznego I/O, aby przyspieszyć operacje odczytu/zapisu.
+## Rozważania dotyczące wydajności
+- **Memory Management:** Monitoruj użycie sterty; dostosuj `-Xmx` w razie potrzeby dla dużych plików.  
+- **Batch Processing:** Przy wyodrębnianiu stron z wielu dokumentów przetwarzaj je w partiach, aby utrzymać zużycie zasobów pod kontrolą.  
+- **Efficient I/O:** Używaj buforowanych strumieni lub asynchronicznego I/O, aby przyspieszyć operacje odczytu/zapisu.
 
-## Podsumowanie
-Masz teraz kompletną, gotową do produkcji metodę **pobierania wsadowego stron PDF** oraz **wyodrębniania stron po numerze** przy użyciu GroupDocs.Merger dla Javy. Ta funkcjonalność może znacząco usprawnić przepływy pracy związane z selektywnym udostępnianiem dokumentów lub tworzeniem niestandardowych raportów.
-
-Poznaj dodatkowe możliwości, takie jak scalanie dokumentów, obracanie stron czy nakładanie znaków wodnych, aby jeszcze bardziej rozbudować zdolności obsługi dokumentów w Twojej aplikacji.
+## Zakończenie
+Masz teraz kompletną, gotową do produkcji metodę **batch extracting PDF pages** i **extracting pages by number** przy użyciu GroupDocs.Merger dla Javy. Ta funkcjonalność może znacznie usprawnić przepływy pracy związane z selektywnym udostępnianiem dokumentów lub generowaniem niestandardowych raportów. Poznaj dodatkowe funkcje, takie jak łączenie dokumentów, obracanie stron czy nakładanie znaków wodnych, aby jeszcze bardziej rozbudować możliwości obsługi dokumentów w swojej aplikacji.
 
 ## Sekcja FAQ
 
-1. **Jakie formaty obsługuje GroupDocs.Merger?**  
+1. **What formats does GroupDocs.Merger support?**  
    Obsługuje PDF, Word, Excel, PowerPoint i wiele innych popularnych formatów.
 
-2. **Czy mogę wyodrębnić niekolejne strony?**  
-   Tak — po prostu podaj dowolne numery stron w tablicy `ExtractOptions`.
+2. **Can I extract non‑sequential pages?**  
+   Tak — po prostu podaj dowolne numery stron, które są potrzebne w tablicy `ExtractOptions`.
 
-3. **Czy istnieje limit liczby stron, które mogę wyodrębnić?**  
+3. **Is there a limit to the number of pages I can extract?**  
    Nie ma sztywnego limitu, choć bardzo duże wyodrębnienia mogą wymagać więcej pamięci.
 
-4. **Jak obsługiwać wyjątki podczas wyodrębniania?**  
-   Umieść logikę wyodrębniania w bloku try‑catch i zaloguj komunikat wyjątku w celu diagnostyki.
+4. **How should I handle exceptions during extraction?**  
+   Otocz logikę wyodrębniania blokiem try‑catch i zaloguj komunikat wyjątku w celu rozwiązywania problemów.
 
-5. **Czy GroupDocs.Merger może być używany w aplikacjach Java typu cloud‑native?**  
-   Absolutnie — jego lekkie API działa równie dobrze na serwerach on‑premises, jak i w środowiskach chmurowych.
+5. **Can GroupDocs.Merger be used in cloud‑native Java applications?**  
+   Oczywiście — jego lekki interfejs API działa równie dobrze na serwerach on‑premises i platformach chmurowych.
 
 ## Zasoby
-- [Documentation](https://docs.groupdocs.com/merger/java/)
-- [API Reference](https://reference.groupdocs.com/merger/java/)
-- [Download](https://releases.groupdocs.com/merger/java/)
-- [Purchase](https://purchase.groupdocs.com/buy)
-- [Free Trial](https://releases.groupdocs.com/merger/java/)
-- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- [Support Forum](https://forum.groupdocs.com/c/merger/)
+- [Dokumentacja](https://docs.groupdocs.com/merger/java/)
+- [Referencja API](https://reference.groupdocs.com/merger/java/)
+- [Pobierz](https://releases.groupdocs.com/merger/java/)
+- [Zakup](https://purchase.groupdocs.com/buy)
+- [Darmowa wersja próbna](https://releases.groupdocs.com/merger/java/)
+- [Tymczasowa licencja](https://purchase.groupdocs.com/temporary-license/)
+- [Forum wsparcia](https://forum.groupdocs.com/c/merger/)
 
 ---
 
-**Ostatnia aktualizacja:** 2025-12-19  
-**Testowano z:** GroupDocs.Merger 23.11 (najnowsza w momencie pisania)  
-**Autor:** GroupDocs  
-
----
+**Ostatnia aktualizacja:** 2026-02-19  
+**Testowano z:** GroupDocs.Merger 23.11 (latest at time of writing)  
+**Autor:** GroupDocs

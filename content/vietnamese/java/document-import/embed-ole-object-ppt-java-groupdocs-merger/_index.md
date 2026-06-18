@@ -1,54 +1,64 @@
 ---
-date: '2025-12-19'
+date: '2026-02-19'
 description: Tìm hiểu cách nhúng các đối tượng OLE vào các slide PowerPoint bằng Java
-  và GroupDocs.Merger. Hướng dẫn chi tiết này chỉ cho bạn cách nhúng PDF, bảng tính
+  và GroupDocs.Merger. Hướng dẫn từng bước này cho bạn biết cách nhúng PDF, bảng tính
   và nhiều hơn nữa.
 keywords:
 - embed OLE objects in PowerPoint
 - Java GroupDocs.Merger library
 - OLE embedding in Java
-title: Cách nhúng các đối tượng OLE vào PowerPoint bằng Java
+title: Cách nhúng đối tượng OLE vào PowerPoint bằng Java
 type: docs
 url: /vi/java/document-import/embed-ole-object-ppt-java-groupdocs-merger/
 weight: 1
 ---
 
-# Cách Nhúng Đối Tượng OLE vào PowerPoint bằng Java
+# Cách nhúng đối tượng OLE vào PowerPoint bằng Java
 
-Nâng cao các bài thuyết trình PowerPoint của bạn bằng cách nhúng các tài liệu bên ngoài như PDF, bảng tính hoặc hình ảnh trực tiếp vào các slide. **Trong hướng dẫn này bạn sẽ học cách nhúng các đối tượng ole** bằng cách sử dụng GroupDocs.Merger cho Java, và bạn sẽ thấy tại sao kỹ thuật này có thể làm cho bản trình bày của bạn trở nên tương tác và chuyên nghiệp hơn.
+Nâng cao các bản trình bày PowerPoint của bạn bằng cách nhúng các tài liệu bên ngoài như PDF, bảng tính hoặc hình ảnh trực tiếp vào các slide. **Trong hướng dẫn này bạn sẽ học cách nhúng ole objects** bằng cách sử dụng GroupDocs.Merger cho Java, và bạn sẽ thấy tại sao kỹ thuật này có thể làm cho các bản thuyết trình của bạn trở nên tương tác và chuyên nghiệp hơn. Khi kết thúc tutorial, bạn sẽ hiểu chính xác **cách nhúng ole** đối tượng, nơi chúng tỏa sáng, và cách tránh các lỗi phổ biến khiến nhiều nhà phát triển gặp rắc rối.
 
-## Câu trả lời nhanh
+## Quick Answers
 - **What is OLE?** Object Linking and Embedding cho phép bạn chèn một loại tệp khác vào trong một slide PowerPoint.  
 - **Which library helps?** GroupDocs.Merger cho Java cung cấp một API đơn giản để thêm các đối tượng OLE.  
 - **Do I need a license?** Giấy phép tạm thời hoạt động cho việc đánh giá; giấy phép đầy đủ cần thiết cho môi trường sản xuất.  
 - **Supported file types?** PDF, sổ làm việc Excel, tài liệu Word, và nhiều định dạng khác.  
-- **How long does it take?** Với thiết lập Maven/Gradle, mã chính có thể được viết trong vòng dưới 10 phút.
+- **How long does it take?** Với thiết lập Maven/Gradle, mã cốt lõi có thể được viết trong vòng chưa tới 10 phút.
 
-## OLE embedding trong PowerPoint là gì?
+## What is OLE embedding in PowerPoint?
 
-Object Linking and Embedding (OLE) cho phép một slide PowerPoint chứa một biểu diễn trực tiếp của một tài liệu khác. Khi bạn nhấp đúp vào đối tượng đã nhúng trong khi trình chiếu, tệp gốc sẽ mở trong ứng dụng gốc của nó, cung cấp cho người xem quyền truy cập ngay lập tức vào dữ liệu chi tiết mà không cần rời khỏi bộ slide.
+Object Linking and Embedding (OLE) cho phép một slide PowerPoint chứa một biểu diễn trực tiếp của tài liệu khác. Khi bạn nhấp đúp vào đối tượng được nhúng trong quá trình trình chiếu, tệp gốc sẽ mở trong ứng dụng gốc của nó, cung cấp cho người xem truy cập ngay lập tức vào dữ liệu chi tiết mà không cần rời khỏi bộ slide.
 
-## Tại sao nên nhúng các đối tượng OLE vào PowerPoint?
+## Why embed OLE objects in PowerPoint?
 
-- **Keep all resources in one file** – không cần gửi các PDF hoặc bảng tính riêng biệt.  
-- **Maintain data fidelity** – tệp đã nhúng giữ nguyên định dạng và chức năng gốc.  
-- **Improve audience engagement** – người xem có thể khám phá biểu đồ, bảng hoặc hợp đồng ngay trong lúc trình chiếu.  
-- **Streamline version control** – một tệp PPTX duy nhất chứa tất cả tài liệu hỗ trợ, giảm nguy cơ các tệp không khớp.
+- **Giữ tất cả tài nguyên trong một tệp** – không cần gửi các PDF hoặc bảng tính riêng biệt.  
+- **Duy trì độ chính xác dữ liệu** – tệp được nhúng giữ nguyên định dạng và chức năng gốc.  
+- **Cải thiện sự tương tác của khán giả** – người xem có thể khám phá biểu đồ, bảng hoặc hợp đồng ngay trong lúc trình chiếu.  
+- **Đơn giản hoá quản lý phiên bản** – một tệp PPTX duy nhất chứa tất cả tài liệu hỗ trợ, giảm rủi ro các tệp không khớp.
 
-## Yêu cầu trước
+## When should you use OLE embedding?
+
+Việc nhúng các đối tượng OLE đặc biệt hữu ích cho:
+
+1. **Báo cáo kinh doanh** – đính kèm một PDF toàn bộ để các nhà điều hành có thể mở trực tiếp từ slide.  
+2. **Tài liệu giáo dục** – cung cấp các bảng tính hoặc bảng dữ liệu mà sinh viên có thể khám phá trong buổi giảng.  
+3. **Cập nhật dự án** – đặt tệp Excel biểu đồ Gantt trên slide cập nhật trạng thái để tham khảo nhanh.  
+
+Hiểu **cách nhúng ole** trong các kịch bản này giúp bạn giữ các bản trình bày tự chứa và chuyên nghiệp.
+
+## Prerequisites
 
 - **Java Development Kit (JDK) 8+** – đảm bảo `java -version` trả về 1.8 hoặc cao hơn.  
 - **IDE** – IntelliJ IDEA, Eclipse, hoặc bất kỳ trình chỉnh sửa nào bạn thích.  
 - **Maven hoặc Gradle** – để quản lý phụ thuộc.  
-- **Basic Java knowledge** – bạn nên quen thuộc với `try‑with‑resources` và mã hướng đối tượng.
+- **Kiến thức Java cơ bản** – bạn nên quen thuộc với `try‑with‑resources` và mã hướng đối tượng.
 
-## Cài đặt GroupDocs.Merger cho Java
+## Setting Up GroupDocs.Merger for Java
 
-### Thông tin cài đặt
+### Installation Information
 
-Thêm thư viện GroupDocs.Merger vào dự án của bạn:
+Add the GroupDocs.Merger library to your project:
 
-**Maven:**
+**Maven:**  
 ```xml
 <dependency>
     <groupId>com.groupdocs</groupId>
@@ -57,17 +67,17 @@ Thêm thư viện GroupDocs.Merger vào dự án của bạn:
 </dependency>
 ```
 
-**Gradle:**
+**Gradle:**  
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
 **Direct Download:**  
-Tải xuống phiên bản mới nhất từ [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
+Download the latest version from [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
-### Nhận giấy phép
+### License Acquisition
 
-Nhận giấy phép tạm thời để đánh giá không giới hạn tại [temporary license page](https://purchase.groupdocs.com/temporary-license/). Đối với môi trường sản xuất, mua giấy phép từ [GroupDocs website](https://purchase.groupdocs.com/buy).
+Obtain a temporary license for unrestricted evaluation at the [temporary license page](https://purchase.groupdocs.com/temporary-license/). For production, purchase a license from the [GroupDocs website](https://purchase.groupdocs.com/buy).
 
 ### Basic Initialization
 
@@ -86,16 +96,16 @@ public class PresentationMerger {
 }
 ```
 
-## Cách nhúng các đối tượng OLE vào PowerPoint bằng Java
+## How to embed OLE objects in PowerPoint using Java
 
-### Bước 1: Xác định Đường dẫn Tệp
+### Step 1: Define File Paths
 
 ```java
 String filePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_PPTX"; // Path to source presentation file
 String embeddedFilePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF"; // Path to PDF to be embedded
 ```
 
-### Bước 2: Cấu hình `OlePresentationOptions`
+### Step 2: Configure `OlePresentationOptions`
 
 ```java
 import com.groupdocs.merger.domain.options.OlePresentationOptions;
@@ -113,7 +123,7 @@ oleOptions.setWidth(width);
 oleOptions.setHeight(height);
 ```
 
-### Bước 3: Nhúng Đối tượng OLE
+### Step 3: Embed the OLE Object
 
 ```java
 import com.groupdocs.merger.domain.options.OlePresentationOptions;
@@ -131,52 +141,50 @@ try (Merger merger = new Merger(filePath)) {
 }
 ```
 
-### Mẹo khắc phục sự cố
+## Common Issues and Solutions
 
-- **File‑path accuracy:** Kiểm tra lại rằng mọi đường dẫn đều trỏ tới một tệp tồn tại và có thể đọc được.  
-- **Supported formats:** PowerPoint chỉ hỗ trợ một số loại OLE; PDF, Excel và Word là các lựa chọn an toàn.  
-- **Memory usage:** Sử dụng `try‑with‑resources` (như đã minh họa) để đảm bảo đối tượng `Merger` được đóng kịp thời.
+- **Độ chính xác của đường dẫn tệp:** Kiểm tra lại rằng mọi đường dẫn đều trỏ tới một tệp tồn tại và có thể đọc được.  
+- **Định dạng được hỗ trợ:** PowerPoint chỉ hỗ trợ một số loại OLE nhất định; PDF, Excel và Word là các lựa chọn an toàn.  
+- **Sử dụng bộ nhớ:** Sử dụng `try‑with‑resources` (như đã minh họa) để đảm bảo đối tượng `Merger` được đóng kịp thời.  
+- **Tệp nhúng lớn:** Nếu PPTX trở nên chậm, hãy nén PDF nguồn hoặc chia nó thành các trang nhỏ hơn trước khi nhúng.  
 
-## Ứng dụng thực tiễn
+## Performance Considerations
 
-1. **Business Reports** – nhúng báo cáo PDF đầy đủ để các nhà điều hành có thể mở trực tiếp từ slide.  
-2. **Educational Material** – đính kèm các bảng tính hoặc bảng dữ liệu mà sinh viên có thể khám phá trong buổi giảng.  
-3. **Project Management** – đặt tệp Excel biểu đồ Gantt trên slide cập nhật trạng thái để tham khảo nhanh.
+- **Tối ưu kích thước tệp:** PDF lớn có thể làm chậm việc tải slide; hãy cân nhắc nén chúng trước.  
+- **Quản lý bộ nhớ Java:** Mẫu `try‑with‑resources` được hiển thị ở trên tự động giải phóng tài nguyên gốc.  
+- **Xử lý hàng loạt:** Khi nhúng đối tượng vào nhiều bản trình bày, lặp qua danh sách tệp và tái sử dụng một đối tượng `Merger` duy nhất khi có thể để giảm tải.
 
-## Các yếu tố ảnh hưởng tới hiệu năng
+## Frequently Asked Questions
 
-- **Optimize file sizes:** PDF lớn có thể làm chậm việc tải slide; hãy xem xét nén chúng trước.  
-- **Java memory management:** Mẫu `try‑with‑resources` được hiển thị ở trên tự động giải phóng tài nguyên gốc.  
-- **Batch processing:** Khi nhúng đối tượng vào nhiều bản trình bày, lặp qua danh sách tệp và tái sử dụng một đối tượng `Merger` duy nhất khi có thể để giảm tải.
+**Q: Những định dạng tệp nào có thể được nhúng bằng OLE trong PowerPoint?**  
+A: PDF, sổ làm việc Excel, tài liệu Word, tệp PowerPoint và nhiều định dạng Office khác được hỗ trợ.
 
-## Câu hỏi thường gặp
-
-**Q: Các định dạng tệp nào có thể được nhúng bằng OLE trong PowerPoint?**  
-A: PDF, Excel workbooks, Word documents, PowerPoint files, và nhiều định dạng Office khác được hỗ trợ.
-
-**Q: Làm thế nào để đối tượng đã nhúng xuất hiện trên mọi slide?**  
+**Q: Làm sao để đối tượng nhúng xuất hiện trên mọi slide?**  
 A: Chèn đối tượng OLE vào Slide Master; tất cả các slide kế thừa từ master đó sẽ hiển thị nó.
 
 **Q: Tôi có thể thay thế một đối tượng OLE hiện có mà không cần tạo lại toàn bộ slide không?**  
-A: Có. Gọi `addOleObject` lại với cùng tọa độ; tệp mới sẽ ghi đè lên tệp cũ.
+A: Có. Gọi lại `addOleObject` với cùng tọa độ; tệp mới sẽ ghi đè lên tệp cũ.
 
-**Q: GroupDocs.Merger có miễn phí để sử dụng không?**  
-A: Phiên bản dùng thử có sẵn để đánh giá; giấy phép thương mại cần thiết cho triển khai trong môi trường sản xuất.
+**Q: GroupDocs.Merger có miễn phí không?**  
+A: Phiên bản dùng thử có sẵn để đánh giá; giấy phép thương mại cần thiết cho triển khai sản xuất.
 
 **Q: Những khó khăn phổ biến khi nhúng đối tượng OLE là gì?**  
 A: Đường dẫn tệp không đúng, loại tài liệu không được hỗ trợ, và các tệp nhúng quá lớn gây giảm hiệu năng.
 
-## Tài nguyên
-- [GroupDocs.Merger Documentation](https://docs.groupdocs.com/merger/java/)
-- [API Reference](https://reference.groupdocs.com/merger/java/)
-- [Download GroupDocs.Merger](https://releases.groupdocs.com/merger/java/)
-- [Purchase License](https://purchase.groupdocs.com/buy)
-- [Free Trial](https://releases.groupdocs.com/merger/java/)
-- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- [Support Forum](https://forum.groupdocs.com/c/merger/)
+## Additional Resources
+
+- [Tài liệu GroupDocs.Merger Documentation](https://docs.groupdocs.com/merger/java/)
+- [Tham chiếu API](https://reference.groupdocs.com/merger/java/)
+- [Tải xuống GroupDocs.Merger](https://releases.groupdocs.com/merger/java/)
+- [Mua giấy phép](https://purchase.groupdocs.com/buy)
+- [Dùng thử miễn phí](https://releases.groupdocs.com/merger/java/)
+- [Giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/)
+- [Diễn đàn hỗ trợ](https://forum.groupdocs.com/c/merger/)
 
 ---
 
-**Cập nhật lần cuối:** 2025-12-19  
-**Đã kiểm tra với:** GroupDocs.Merger phiên bản mới nhất (Java)  
-**Tác giả:** GroupDocs
+**Cập nhật lần cuối:** 2026-02-19  
+**Đã kiểm tra với:** GroupDocs.Merger latest version (Java)  
+**Tác giả:** GroupDocs  
+
+---

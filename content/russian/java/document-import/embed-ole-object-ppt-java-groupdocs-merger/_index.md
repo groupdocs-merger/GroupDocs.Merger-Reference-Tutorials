@@ -1,5 +1,5 @@
 ---
-date: '2025-12-19'
+date: '2026-02-19'
 description: Узнайте, как встраивать OLE‑объекты в слайды PowerPoint с помощью Java
   и GroupDocs.Merger. Это пошаговое руководство покажет, как встраивать PDF‑файлы,
   электронные таблицы и многое другое.
@@ -7,48 +7,58 @@ keywords:
 - embed OLE objects in PowerPoint
 - Java GroupDocs.Merger library
 - OLE embedding in Java
-title: Как встраивать OLE‑объекты в PowerPoint с помощью Java
+title: Как внедрить OLE‑объекты в PowerPoint с помощью Java
 type: docs
 url: /ru/java/document-import/embed-ole-object-ppt-java-groupdocs-merger/
 weight: 1
 ---
 
-# Как встраивать OLE‑объекты в PowerPoint с помощью Java
+# Как внедрять OLE‑объекты в PowerPoint с помощью Java
 
-Улучшите свои презентации PowerPoint, встраивая внешние документы, такие как PDF, таблицы или изображения, непосредственно в слайды. **В этом руководстве вы узнаете, как встраивать OLE‑объекты** с помощью GroupDocs.Merger для Java, и увидите, почему эта техника делает ваши презентации более интерактивными и профессиональными.
+Улучшите свои презентации PowerPoint, внедрив внешние документы, такие как PDF, таблицы или изображения, непосредственно на слайды. **В этом руководстве вы узнаете, как внедрять ole‑объекты** с помощью GroupDocs.Merger for Java, и увидите, почему эта техника делает ваши презентации более интерактивными и профессиональными. К концу урока вы точно поймёте **как внедрять ole**‑объекты, где они особенно полезны и как избежать распространённых подводных камней, с которыми сталкиваются многие разработчики.
 
 ## Быстрые ответы
-- **Что такое OLE?** Object Linking and Embedding позволяет вставлять другой тип файла в слайд PowerPoint.  
-- **Какая библиотека помогает?** GroupDocs.Merger для Java предоставляет простой API для добавления OLE‑объектов.  
-- **Нужна ли лицензия?** Временная лицензия подходит для оценки; полная лицензия требуется для продакшн.  
-- **Поддерживаемые типы файлов?** PDF, книги Excel, документы Word и многие другие форматы.  
-- **Сколько времени занимает?** При настройке Maven/Gradle основной код можно написать менее чем за 10 минут.
+- **What is OLE?** Object Linking and Embedding позволяет вставлять другой тип файла внутрь слайда PowerPoint.  
+- **Which library helps?** GroupDocs.Merger for Java предоставляет простой API для добавления OLE‑объектов.  
+- **Do I need a license?** Временная лицензия подходит для оценки; полная лицензия требуется для продакшна.  
+- **Supported file types?** PDF, Excel‑книги, Word‑документы и многие другие форматы.  
+- **How long does it take?** При настройке Maven/Gradle основной код можно написать менее чем за 10 минут.
 
-## Что такое встраивание OLE в PowerPoint?
+## Что такое внедрение OLE в PowerPoint?
 
-Object Linking and Embedding (OLE) позволяет слайду PowerPoint содержать живое представление другого документа. При двойном щелчке по встроенному объекту во время презентации оригинальный файл открывается в своем родном приложении, предоставляя зрителям мгновенный доступ к детальным данным без выхода из набора слайдов.
+Object Linking and Embedding (OLE) позволяет слайду PowerPoint содержать живое представление другого документа. При двойном щелчке по внедрённому объекту во время презентации оригинальный файл открывается в своём родном приложении, предоставляя зрителям мгновенный доступ к детализированным данным без выхода из набора слайдов.
 
-## Почему встраивать OLE‑объекты в PowerPoint?
+## Почему внедрять OLE‑объекты в PowerPoint?
 
-- **Хранить все ресурсы в одном файле** – нет необходимости отправлять отдельные PDF или таблицы.  
-- **Сохранять точность данных** – встроенный файл сохраняет исходное форматирование и функциональность.  
-- **Повышать вовлечённость аудитории** – зрители могут исследовать диаграммы, таблицы или контракты «на лету».  
-- **Упрощать контроль версий** – один файл PPTX содержит все сопутствующие материалы, уменьшая риск несоответствия файлов.
+- **Keep all resources in one file** – не нужно отправлять отдельные PDF или таблицы.  
+- **Maintain data fidelity** – внедрённый файл сохраняет своё оригинальное форматирование и функциональность.  
+- **Improve audience engagement** – зрители могут исследовать диаграммы, таблицы или контракты «на лету».  
+- **Streamline version control** – один PPTX содержит все вспомогательные материалы, снижая риск несоответствия файлов.
+
+## Когда следует использовать внедрение OLE?
+
+Внедрение OLE‑объектов особенно полезно для:
+
+1. **Business reports** – прикрепите полноразмерный PDF, чтобы руководители могли открыть его прямо со слайда.  
+2. **Educational material** – предоставьте рабочие листы или таблицы данных, которые студенты могут изучать во время лекции.  
+3. **Project updates** – разместите Excel‑файл с диаграммой Ганта на слайде статуса для быстрого доступа.  
+
+Понимание **how to embed ole** в этих сценариях помогает создавать самодостаточные и профессиональные презентации.
 
 ## Предварительные требования
 
 - **Java Development Kit (JDK) 8+** – убедитесь, что `java -version` выводит 1.8 или выше.  
 - **IDE** – IntelliJ IDEA, Eclipse или любой другой редактор по вашему выбору.  
-- **Maven или Gradle** – для управления зависимостями.  
-- **Базовые знания Java** – вы должны быть уверены в работе с `try‑with‑resources` и объектно‑ориентированным кодом.
+- **Maven or Gradle** – для управления зависимостями.  
+- **Basic Java knowledge** – вы должны быть уверены в работе с `try‑with‑resources` и объектно‑ориентированным кодом.
 
 ## Настройка GroupDocs.Merger для Java
 
 ### Информация об установке
 
-Добавьте библиотеку GroupDocs.Merger в ваш проект:
+Add the GroupDocs.Merger library to your project:
 
-**Maven:**  
+**Maven:**
 ```xml
 <dependency>
     <groupId>com.groupdocs</groupId>
@@ -57,19 +67,19 @@ Object Linking and Embedding (OLE) позволяет слайду PowerPoint с
 </dependency>
 ```
 
-**Gradle:**  
+**Gradle:**
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
 **Direct Download:**  
-Скачать последнюю версию с [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
+Download the latest version from [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
 ### Получение лицензии
 
-Получите временную лицензию для неограниченной оценки на [странице временной лицензии](https://purchase.groupdocs.com/temporary-license/). Для продакшн‑использования приобретите лицензию на [веб‑сайте GroupDocs](https://purchase.groupdocs.com/buy).
+Obtain a temporary license for unrestricted evaluation at the [temporary license page](https://purchase.groupdocs.com/temporary-license/). For production, purchase a license from the [GroupDocs website](https://purchase.groupdocs.com/buy).
 
-### Basic Initialization
+### Базовая инициализация
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -86,7 +96,7 @@ public class PresentationMerger {
 }
 ```
 
-## Как встраивать OLE‑объекты в PowerPoint с помощью Java
+## Как внедрить OLE‑объекты в PowerPoint с помощью Java
 
 ### Шаг 1: Определите пути к файлам
 
@@ -113,7 +123,7 @@ oleOptions.setWidth(width);
 oleOptions.setHeight(height);
 ```
 
-### Шаг 3: Вставьте OLE‑объект
+### Шаг 3: Внедрите OLE‑объект
 
 ```java
 import com.groupdocs.merger.domain.options.OlePresentationOptions;
@@ -131,52 +141,50 @@ try (Merger merger = new Merger(filePath)) {
 }
 ```
 
-### Советы по устранению неполадок
+## Распространённые проблемы и решения
 
-- **Точность пути к файлу:** Убедитесь, что каждый путь указывает на существующий, доступный для чтения файл.  
-- **Поддерживаемые форматы:** PowerPoint поддерживает только определённые типы OLE; PDF, Excel и Word являются безопасными вариантами.  
-- **Использование памяти:** Используйте `try‑with‑resources` (как показано), чтобы гарантировать своевременное закрытие экземпляра `Merger`.
-
-## Практические применения
-
-1. **Бизнес‑отчёты** – встраивайте полноразмерный PDF‑отчёт, чтобы руководители могли открыть его непосредственно со слайда.  
-2. **Учебные материалы** – прикрепляйте рабочие листы или таблицы данных, которые студенты могут исследовать во время лекции.  
-3. **Управление проектами** – разместите файл Excel с диаграммой Ганта на слайде обновления статуса для быстрого доступа.
+- **File‑path accuracy:** Double‑check that every path points to an existing, readable file.  
+- **Supported formats:** PowerPoint only supports certain OLE types; PDFs, Excel, and Word are safe choices.  
+- **Memory usage:** Use `try‑with‑resources` (as shown) to ensure the `Merger` instance is closed promptly.  
+- **Large embedded files:** If the PPTX becomes sluggish, compress the source PDF or split it into smaller pages before embedding.  
 
 ## Соображения по производительности
 
-- **Оптимизировать размер файлов:** Большие PDF могут замедлять загрузку слайдов; рассмотрите их предварительное сжатие.  
-- **Управление памятью в Java:** Паттерн `try‑with‑resources`, показанный выше, автоматически освобождает нативные ресурсы.  
-- **Пакетная обработка:** При встраивании объектов в множество презентаций перебирайте список файлов и при возможности переиспользуйте один экземпляр `Merger`, чтобы снизить накладные расходы.
+- **Optimize file sizes:** Large PDFs can slow down slide loading; consider compressing them first.  
+- **Java memory management:** The `try‑with‑resources` pattern shown above automatically frees native resources.  
+- **Batch processing:** When embedding objects into many presentations, loop over a list of files and reuse a single `Merger` instance where possible to reduce overhead.
 
 ## Часто задаваемые вопросы
 
-**Q: Какие форматы файлов можно встраивать с помощью OLE в PowerPoint?**  
-A: Поддерживаются PDF, книги Excel, документы Word, файлы PowerPoint и многие другие форматы Office.
+**Q: Какие форматы файлов можно внедрять с помощью OLE в PowerPoint?**  
+A: PDFs, Excel workbooks, Word documents, PowerPoint files, and many other Office formats are supported.
 
-**Q: Как сделать так, чтобы встроенный объект отображался на каждом слайде?**  
-A: Вставьте OLE‑объект в мастер‑слайд; все слайды, наследующие этот мастер, будут его показывать.
+**Q: Как сделать так, чтобы внедрённый объект отображался на каждом слайде?**  
+A: Insert the OLE object on the Slide Master; all slides that inherit from that master will display it.
 
 **Q: Можно ли заменить существующий OLE‑объект без пересоздания всего слайда?**  
-A: Да. Вызовите `addOleObject` снова с теми же координатами; новый файл перезапишет предыдущий.
+A: Yes. Call `addOleObject` again with the same coordinates; the new file overwrites the previous one.
 
 **Q: Бесплатно ли использовать GroupDocs.Merger?**  
-A: Доступна пробная версия для оценки; коммерческая лицензия требуется для продакшн‑развертываний.
+A: A trial version is available for evaluation; a commercial license is required for production deployments.
 
-**Q: Какие типичные подводные камни при встраивании OLE‑объектов?**  
-A: Неправильные пути к файлам, неподдерживаемые типы документов и чрезмерно большие встроенные файлы, ухудшающие производительность.
+**Q: Какие распространённые подводные камни при внедрении OLE‑объектов?**  
+A: Incorrect file paths, unsupported document types, and excessively large embedded files that degrade performance.
 
-## Ресурсы
-- [Документация GroupDocs.Merger](https://docs.groupdocs.com/merger/java/)
-- [Справочник API](https://reference.groupdocs.com/merger/java/)
-- [Скачать GroupDocs.Merger](https://releases.groupdocs.com/merger/java/)
-- [Приобрести лицензию](https://purchase.groupdocs.com/buy)
-- [Бесплатная пробная версия](https://releases.groupdocs.com/merger/java/)
-- [Временная лицензия](https://purchase.groupdocs.com/temporary-license/)
-- [Форум поддержки](https://forum.groupdocs.com/c/merger/)
+## Дополнительные ресурсы
+
+- [GroupDocs.Merger Documentation](https://docs.groupdocs.com/merger/java/)
+- [API Reference](https://reference.groupdocs.com/merger/java/)
+- [Download GroupDocs.Merger](https://releases.groupdocs.com/merger/java/)
+- [Purchase License](https://purchase.groupdocs.com/buy)
+- [Free Trial](https://releases.groupdocs.com/merger/java/)
+- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- [Support Forum](https://forum.groupdocs.com/c/merger/)
 
 ---
 
-**Последнее обновление:** 2025-12-19  
-**Тестировано с:** последняя версия GroupDocs.Merger (Java)  
-**Автор:** GroupDocs
+**Last Updated:** 2026-02-19  
+**Tested With:** GroupDocs.Merger latest version (Java)  
+**Author:** GroupDocs  
+
+---
