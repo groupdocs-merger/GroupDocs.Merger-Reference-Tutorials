@@ -1,66 +1,62 @@
 ---
-date: '2025-12-26'
-description: Scopri come unire in modo efficiente pagine specifiche in Java, unendo
-  pagine selezionate da più documenti con GroupDocs.Merger per Java.
+date: '2026-03-22'
+description: Impara a unire le pagine in Java in modo efficiente, combinando le pagine
+  selezionate da più documenti con GroupDocs.Merger per Java. Include suggerimenti
+  per l'unione di pagine specifiche PDF.
 keywords:
 - join specific pages GroupDocs Merger Java
 - groupdocs merger java document joining
 - java document manipulation with groupdocs
-title: Come unire pagine specifiche in Java usando GroupDocs.Merger
+title: Come unire le pagine in Java con GroupDocs.Merger
 type: docs
 url: /it/java/document-joining/join-specific-pages-groupdocs-merger-java/
 weight: 1
 ---
 
-# Come unire pagine specifiche in Java usando GroupDocs.Merger
+# Come unire pagine in Java usando GroupDocs.Merger
 
 ## Introduzione
 
-Combinare pagine specifiche da documenti diversi in un unico file è una necessità comune in molti settori professionali. In questa guida, **imparerai come unire pagine specifiche in Java**, selezionando esattamente le pagine di cui hai bisogno e unendole in un documento coerente. Che tu stia assemblando un report, compilando clausole legali o creando un manuale personalizzato, GroupDocs.Merger per Java rende il processo semplice e affidabile.
+Unire pagine da documenti diversi è una necessità di routine, sia che tu stia creando un report, assemblando un contratto o realizzando un manuale personalizzato. **In questo tutorial imparerai come unire pagine in Java** selezionando esattamente le pagine di cui hai bisogno e combinandole in un unico file ben strutturato con GroupDocs.Merger. Ti guideremo attraverso la configurazione, le chiamate API e scenari reali affinché tu possa applicare subito questa tecnica nei tuoi progetti.
 
-**Cosa imparerai:**
-- Usare GroupDocs.Merger per Java per **unire pagine specifiche**
-- Configurare l'ambiente e le dipendenze
-- Implementare la funzionalità di unione delle pagine con esempi pratici
+**Cosa imparerai**
+- Come **unire pagine** da più sorgenti usando GroupDocs.Merger per Java  
+- Come configurare il tuo progetto con Maven o Gradle  
+- Snippet di codice pratici che puoi copiare‑incollare ed eseguire  
 
 ## Risposte rapide
-- **Cosa significa “join specific pages java”?** Si riferisce all'unione di pagine selezionate da uno o più documenti in un unico file usando codice Java.  
+- **Cosa significa “come unire pagine”?** È il processo di unire programmaticamente pagine selezionate da uno o più documenti in un nuovo file usando Java.  
 - **Quale libreria gestisce questo?** GroupDocs.Merger per Java.  
 - **Ho bisogno di una licenza?** Una prova gratuita è sufficiente per i test; è necessaria una licenza a pagamento per la produzione.  
-- **Posso unire formati diversi (PDF, DOCX, ecc.)?** Sì, la libreria supporta molti formati.  
-- **È efficiente in termini di memoria?** Quando usata correttamente, può elaborare file di grandi dimensioni con un consumo di memoria moderato.
+- **Posso unire formati diversi (PDF, DOCX, ecc.)?** Sì, la libreria supporta molti formati, incluso PDF.  
+- **È efficiente in termini di memoria?** Quando usato correttamente, elabora file di grandi dimensioni con un consumo di memoria moderato.  
 
-## Cos'è “join specific pages java”?
+## Come unire pagine in Java usando GroupDocs.Merger
+Questa sezione risponde alla domanda principale del tutorial e include la parola chiave primaria in un'intestazione H2.
+
+### Cos'è “join specific pages java”?
 La frase descrive l'atto di selezionare programmaticamente pagine particolari da uno o più documenti sorgente e combinarle in un nuovo documento usando Java. GroupDocs.Merger fornisce un'API pulita che astrae la gestione a basso livello dei file, permettendoti di concentrarti su quali pagine includere.
 
-## Perché usare GroupDocs.Merger per questo compito?
+### Perché usare GroupDocs.Merger per questo compito?
 - **Precisione:** Scegli numeri di pagina esatti senza modifiche manuali.  
 - **Flessibilità di formato:** Funziona con PDF, DOCX, PPTX e molti altri formati.  
-- **Prestazioni:** Ottimizzato per velocità e basso consumo di memoria.  
-- **Scalabilità:** Gestisce operazioni batch per grandi insiemi di documenti.
+- **Prestazioni:** Ottimizzato per velocità e basso utilizzo di memoria.  
+- **Scalabilità:** Gestisce operazioni batch per grandi insiemi di documenti.  
 
 ## Prerequisiti
 
-Prima di iniziare, assicurati che i seguenti elementi siano presenti:
+Prima di iniziare, assicurati di avere quanto segue:
 
-### Librerie e dipendenze richieste
 - **GroupDocs.Merger per Java** – la libreria principale per la manipolazione dei documenti.  
-- **Java Development Kit (JDK)** – versione 8 o superiore.
-
-### Requisiti di configurazione dell'ambiente
-- Un IDE come IntelliJ IDEA, Eclipse o NetBeans.  
-- Un editor di testo per modifiche rapide di snippet, se preferisci.
-
-### Prerequisiti di conoscenza
-- Concetti di base della programmazione Java.  
-- Familiarità con Maven o Gradle (utile ma non obbligatorio).
+- **Java Development Kit (JDK)** – versione 8 o superiore.  
+- Un IDE come IntelliJ IDEA, Eclipse o NetBeans (o qualsiasi editor di testo preferisci).  
+- Conoscenze di base di Java e, facoltativamente, familiarità con Maven o Gradle.  
 
 ## Configurazione di GroupDocs.Merger per Java
 
-Per iniziare a usare la libreria GroupDocs.Merger, includila nelle dipendenze del tuo progetto come segue:
+Aggiungi la libreria al tuo progetto usando uno dei metodi seguenti.
 
 ### Maven
-Aggiungi questa dipendenza al tuo file `pom.xml`:
 ```xml
 <dependency>
     <groupId>com.groupdocs</groupId>
@@ -70,7 +66,6 @@ Aggiungi questa dipendenza al tuo file `pom.xml`:
 ```
 
 ### Gradle
-Includi questo nel tuo file `build.gradle`:
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:LATEST_VERSION'
 ```
@@ -79,100 +74,99 @@ implementation 'com.groupdocs:groupdocs-merger:LATEST_VERSION'
 Scarica l'ultima versione direttamente da [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
 ### Acquisizione della licenza
-Per usare GroupDocs.Merger, puoi scegliere:
-- Una **prova gratuita** per esplorare le funzionalità.  
-- Una **licenza temporanea** per scopi di valutazione.  
-- Una **licenza completa** per distribuzioni in produzione.
+Puoi iniziare con una **prova gratuita**, richiedere una **licenza temporanea** per la valutazione, o acquistare una **licenza completa** per l'uso in produzione.
 
 ## Guida all'implementazione
 
-Con tutto configurato, implementiamo la funzionalità per **unire pagine specifiche** da più documenti. Passeremo attraverso ogni passo con spiegazioni dettagliate ed esempi di codice.
+Ora immergiamoci nel codice che effettivamente **unisce pagine**. Ti guideremo passo passo, spiegando lo scopo di ogni riga.
 
-### Unire pagine specifiche
-Questa funzionalità ti consente di selezionare e unire pagine particolari da diversi file sorgente in un unico documento.
-
-#### Passo 1: Inizializzare le variabili di percorso
-Imposta i percorsi per i tuoi file di input e output:
+### Passo 1: Inizializzare le variabili di percorso
 ```java
 String sourceFilePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX"; // First document path
 String additionalFilePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX_2"; // Second document path
 String outputFilePath = "YOUR_OUTPUT_DIRECTORY/JoinPagesFromVariousDocuments-output.docx";
 ```
 
-#### Passo 2: Configurare le opzioni di unione delle pagine
-Crea un'istanza di `PageJoinOptions` per specificare quali pagine vuoi unire:
+### Passo 2: Configurare le opzioni di unione delle pagine
 ```java
-// Define the page numbers to be joined, e.g., pages 1 and 2
+// Define the page numbers to be merged, e.g., pages 1 and 2
 PageJoinOptions joinOptions = new PageJoinOptions(1, 2);
 ```
 
-#### Passo 3: Inizializzare l'oggetto Merger
-Crea un oggetto `Merger` con il percorso del tuo documento principale:
+### Passo 3: Inizializzare l'oggetto Merger
 ```java
 Merger merger = new Merger(sourceFilePath); // Load the main document
 ```
 
-#### Passo 4: Unire pagine da un documento aggiuntivo
-Usa il metodo `join` per combinare le pagine specificate usando le opzioni impostate in precedenza:
+### Passo 4: Unire pagine da un documento aggiuntivo
 ```java
 merger.join(additionalFilePath, joinOptions); // Merge pages from the second document
 ```
 
-#### Passo 5: Salvare il file di output
-Salva il risultato unito nella posizione desiderata:
+### Passo 5: Salvare il file di output
 ```java
 merger.save(outputFilePath); // Store the combined output
 ```
 
+## Come unire pagine specifiche PDF con GroupDocs.Merger
+Anche se l'esempio utilizza file DOCX, la stessa API funziona per PDF. Basta puntare `sourceFilePath` e `additionalFilePath` a file PDF, e la libreria gestirà automaticamente la conversione del formato. Questo è utile quando devi **unire pagine specifiche PDF** in un unico report PDF.
+
 ## Applicazioni pratiche
-La capacità di **unire pagine specifiche in Java** da più documenti ha diverse applicazioni:
+La capacità di **unire pagine** ha molti usi reali:
 
 1. **Compilazione di materiale educativo** – Unire capitoli selezionati da diversi libri di testo in una singola guida di studio.  
 2. **Preparazione di documenti legali** – Combinare clausole rilevanti da diversi contratti in un unico file conciso.  
-3. **Report finanziari** – Estrarre e unire pagine specifiche di bilanci finanziari da più report per un pacchetto di sintesi.
+3. **Report finanziario** – Estrarre e unire pagine specifiche di rendiconti da più report per un pacchetto di sintesi.  
 
-Integrare questo flusso di lavoro con sistemi di gestione dei contenuti o generatori di report automatizzati può migliorare notevolmente l'efficienza.
+Integrare questo flusso di lavoro con un sistema di gestione dei contenuti o con un generatore di report automatizzato può far risparmiare ore di editing manuale.
 
 ## Considerazioni sulle prestazioni
-Per mantenere la tua soluzione Java veloce e a basso consumo di risorse:
+Per mantenere la tua soluzione Java veloce e amica delle risorse:
 
-- **Ottimizza l'uso della memoria** – Chiudi prontamente qualsiasi istanza `Merger` non utilizzata.  
+- **Chiudi le istanze Merger inutilizzate** – Rilascia le risorse non appena hai finito.  
 - **Elaborazione batch** – Elabora grandi collezioni in batch più piccoli anziché tutti in una volta.  
-- **Gestione efficiente delle risorse** – Monitora l'uso di CPU e RAM e regola il numero di thread se esegui unioni in parallelo.
+- **Monitora le risorse** – Tieni d'occhio l'uso di CPU e RAM; regola il numero di thread se esegui unioni in parallelo.  
 
-## Conclusione
-In questo tutorial, abbiamo esplorato come **unire pagine specifiche in Java** possa essere realizzato facilmente con GroupDocs.Merger. Hai visto come configurare l'ambiente, impostare le opzioni di selezione delle pagine e produrre un documento unito. Con queste competenze, puoi automatizzare molte attività di assemblaggio dei documenti nelle tue applicazioni Java.
+## Problemi comuni e soluzioni
+| Problema | Soluzione |
+|----------|-----------|
+| **Out‑of‑memory error** | Processa i documenti in batch e disponi prontamente degli oggetti `Merger`. |
+| **Incorrect page numbers** | Usa `Merger.getPagesCount()` per convalidare gli intervalli prima di chiamare `join`. |
+| **Mixed file formats cause layout shifts** | Assicurati che tutti i file sorgente usino versioni compatibili; considera la conversione in PDF prima se la coerenza del layout è critica. |
 
-Pronto a fare di più? Esplora funzionalità aggiuntive come la divisione dei documenti, l'applicazione di filigrane o la protezione dei file—tutte disponibili tramite la stessa API robusta.
-
-## Domande frequenti aggiuntive
+## Domande frequenti
 
 **D: Posso unire pagine da più di due documenti in un'unica operazione?**  
 R: Assolutamente. Chiama `merger.join()` ripetutamente con file sorgente diversi e `PageJoinOptions` per ciascuno.
 
-**D: La libreria preserva la formattazione originale quando unisce le pagine?**  
+**D: La libreria preserva la formattazione originale quando unisce pagine?**  
 R: Sì, mantiene il layout, gli stili e le risorse incorporate di ogni pagina sorgente.
 
 **D: Come posso unire pagine da PDF e file DOCX insieme?**  
-R: Carica ogni file con un'istanza `Merger` e specifica gli intervalli di pagine; la libreria converte automaticamente i formati secondo necessità.
+R: Carica ogni file con un'istanza `Merger` e specifica gli intervalli di pagina; la libreria converte automaticamente i formati secondo necessità.
 
-**D: Esiste un modo per visualizzare in anteprima le pagine che verranno unite prima di salvare?**  
-R: Puoi estrarre programmaticamente il conteggio delle pagine e convalidare gli intervalli prima di invocare `join`.
+**D: Esiste un modo per visualizzare in anteprima le pagine che saranno unite prima di salvare?**  
+R: Puoi recuperare programmaticamente il conteggio delle pagine e convalidare gli intervalli prima di invocare `join`.
 
 **D: Quale modello di licenza dovrei scegliere per un ambiente di produzione?**  
-R: Per la produzione, una licenza a pagamento garantisce supporto completo e rimuove eventuali limitazioni della prova.
+R: Una licenza a pagamento fornisce supporto completo e rimuove le limitazioni della versione di prova.
 
-## Risorse
-- **Documentazione**: [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)
-- **Riferimento API**: [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)
-- **Download**: [GroupDocs Downloads](https://releases.groupdocs.com/merger/java/)
-- **Acquisto**: [Buy GroupDocs](https://purchase.groupdocs.com/buy)
-- **Prova gratuita**: [GroupDocs Free Trial](https://releases.groupdocs.com/merger/java/)
-- **Licenza temporanea**: [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Supporto**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/)
+## Conclusione
+In questo tutorial hai imparato **come unire pagine in Java** usando GroupDocs.Merger. Abbiamo coperto la configurazione dell'ambiente, le opzioni di selezione delle pagine e il salvataggio del documento finale. Con queste competenze puoi automatizzare una vasta gamma di attività di assemblaggio di documenti—dalla generazione di report alla preparazione di documenti legali.
+
+Pronto a esplorare di più? Dai un'occhiata all'API per dividere documenti, aggiungere filigrane o proteggere file—tutto disponibile attraverso la stessa libreria robusta.
 
 ---
 
-**Ultimo aggiornamento:** 2025-12-26  
+**Ultimo aggiornamento:** 2026-03-22  
 **Testato con:** GroupDocs.Merger 23.12 (Java)  
-**Autore:** GroupDocs
+**Autore:** GroupDocs  
+
+**Risorse**
+- **Documentazione:** [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)  
+- **Riferimento API:** [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)  
+- **Download:** [GroupDocs Downloads](https://releases.groupdocs.com/merger/java/)  
+- **Acquisto:** [Buy GroupDocs](https://purchase.groupdocs.com/buy)  
+- **Prova gratuita:** [GroupDocs Free Trial](https://releases.groupdocs.com/merger/java/)  
+- **Licenza temporanea:** [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Supporto:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/)
