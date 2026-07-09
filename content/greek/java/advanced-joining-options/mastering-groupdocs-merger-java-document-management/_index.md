@@ -1,34 +1,34 @@
 ---
-date: '2026-01-16'
-description: Μάθετε πώς να αποθηκεύετε ένα συγχωνευμένο έγγραφο Java χρησιμοποιώντας
-  το GroupDocs.Merger και ανακαλύψτε πώς να συγχωνεύετε διαφορετικές μορφές αρχείων
-  αποδοτικά.
+date: '2026-03-20'
+description: Μάθετε πώς να συγχωνεύετε αρχεία PDF και DOCX σε Java χρησιμοποιώντας
+  το GroupDocs.Merger, συμπεριλαμβανομένης της φόρτωσης από ροές και της διαχείρισης
+  μεγάλων εγγράφων.
 keywords:
 - document management Java
 - GroupDocs.Merger for Java
 - Java document handling
-title: 'Αποθήκευση Συγχωνευμένου Εγγράφου Java - Διαχείριση Κύριου Εγγράφου με το GroupDocs.Merger'
+title: Συγχώνευση PDF και DOCX σε Java – Αποθήκευση Συγχωνευμένου Εγγράφου
 type: docs
 url: /el/java/advanced-joining-options/mastering-groupdocs-merger-java-document-management/
 weight: 1
 ---
 
-# Αποθήκευση Συγχωνευμένου Εγγράφου Java: Διαχείριση Κύριου Εγγράφου με το GroupDocs.Merger
+# Συγχώνευση PDF και DOCX σε Java – Αποθήκευση Συγχωνευμένου Εγγράφου
 
-Η αποδοτική **save merged document java** έργα μπορεί να φαίνεται δύσκολη, ειδικά όταν πρέπει να διαχειριστείτε πολλαπλούς τύπους αρχείων και μεγάλα φορτία. Σε αυτόν τον οδηγό θα περάσουμε από τη φόρτωση εγγράφων από streams, τη συγχώνευσή τους, και τελικά τη **saving the merged document Java**‑style χρησιμοποιώντας το GroupDocs.Merger. Στο τέλος θα κατανοήσετε όχι μόνο πώς να εκτελείτε τις βασικές λειτουργίες, αλλά και πώς να **merge different file formats**, να φορτώνετε έγγραφα από streams, και να **handle large documents Java** εφαρμογές με χάρη.
+Η συγχώνευση αρχείων PDF και DOCX σε Java μπορεί να φαίνεται δύσκολη, ειδικά όταν εργάζεστε με ροές, μεικτές μορφές ή τεράστια φορτία. Σε αυτόν τον οδηγό θα σας δείξουμε **πώς να συγχωνεύσετε PDF και DOCX** χρησιμοποιώντας το GroupDocs.Merger, θα σας δείξουμε πώς να **φορτώσετε έγγραφο από ροή**, και θα δώσουμε πρακτικές συμβουλές για **διαχείριση μεγάλων εγγράφων σε Java**‑στυλ. Στο τέλος θα έχετε μια λύση έτοιμη για παραγωγή που μπορείτε να ενσωματώσετε σε οποιαδήποτε υπηρεσία web ή εργασία batch.
 
 ## Γρήγορες Απαντήσεις
-- **Ποιος είναι ο κύριος τρόπος για την αποθήκευση ενός συγχωνευμένου εγγράφου σε Java;** Use `Merger.save(OutputStream)` after loading the source files.  
-- **Μπορεί το GroupDocs.Merger να συγχωνεύει διαφορετικές μορφές αρχείων;** Yes – it supports DOCX, PDF, PPTX, XLSX, and many more.  
-- **Πώς φορτώνω ένα έγγραφο από InputStream;** Instantiate `Merger` with the stream: `new Merger(stream)`.  
-- **Τι πρέπει να κάνω με μεγάλα έγγραφα;** Use buffered streams and close them promptly to free memory.  
-- **Απαιτείται άδεια για παραγωγική χρήση;** Yes – a valid GroupDocs license is needed for commercial deployments.
+- **Ποιος είναι ο κύριος τρόπος για να αποθηκεύσετε ένα συγχωνευμένο έγγραφο σε Java;** Χρησιμοποιήστε `Merger.save(OutputStream)` μετά τη φόρτωση των αρχικών αρχείων.  
+- **Μπορεί το GroupDocs.Merger να συγχωνεύσει διαφορετικές μορφές αρχείων;** Ναι – υποστηρίζει DOCX, PDF, PPTX, XLSX και πολλά άλλα.  
+- **Πώς φορτώνω ένα έγγραφο από InputStream;** Δημιουργήστε ένα αντικείμενο `Merger` με τη ροή: `new Merger(stream)`.  
+- **Τι πρέπει να κάνω με μεγάλα έγγραφα;** Χρησιμοποιήστε buffered streams και κλείστε τα άμεσα για να ελευθερώσετε μνήμη.  
+- **Απαιτείται άδεια για χρήση σε παραγωγή;** Ναι – απαιτείται έγκυρη άδεια GroupDocs για εμπορικές αναπτύξεις.
 
-## Τι είναι το “save merged document java”;
-Η αποθήκευση ενός συγχωνευμένου εγγράφου σε Java σημαίνει τη λήψη ενός ή περισσοτέρων αρχείων προέλευσης, τη συνένωση τους με το GroupDocs.Merger, και τη γραφή του αποτελέσματος σε προορισμό (σύστημα αρχείων, αποθήκευση στο cloud ή απόκριση HTTP). Η διαδικασία είναι πλήρως stream‑based, κάτι που το καθιστά ιδανικό για web services και εργασίες παρασκηνίου.
+## Τι είναι η συγχώνευση PDF και DOCX;
+**Merge PDF and DOCX** σημαίνει τη λήψη ενός ή περισσότερων αρχείων PDF και DOCX, τη συνένωσή τους σε ένα ενιαίο αποτέλεσμα, και την εγγραφή αυτού του αποτελέσματος σε δίσκο, αποθήκευση στο cloud ή σε HTTP response. Το GroupDocs.Merger αναλαμβάνει το δύσκολο κομμάτι, ώστε να μην χρειάζεται να ανησυχείτε για ιδιαιτερότητες συγκεκριμένων μορφών.
 
-## Γιατί να χρησιμοποιήσετε το GroupDocs.Merger για **merge different file formats**;
-Το GroupDocs.Merger αφαιρεί την πολυπλοκότητα της διαχείρισης της εσωτερικής δομής κάθε μορφής. Σας επιτρέπει να εστιάσετε στη λογική της επιχείρησης — όπως η δημιουργία τιμολογίων ή η ενοποίηση αναφορών — ενώ φροντίζει για τις ιδιαιτερότητες κάθε μορφής, την αρίθμηση σελίδων και τη διατήρηση των μεταδεδομένων.
+## Γιατί να χρησιμοποιήσετε το GroupDocs.Merger για **συγχώνευση διαφορετικών μορφών αρχείων**;
+Το GroupDocs.Merger αφαιρεί την πολυπλοκότητα κάθε τύπου εγγράφου. Είτε συνδυάζετε ένα PDF τιμολόγιο με ένα DOCX συμβόλαιο είτε ενσωματώνετε διαφάνειες PPTX με μια αναφορά XLSX, η βιβλιοθήκη διατηρεί τη σειρά των σελίδων, τα μεταδεδομένα και το στυλ, ενώ εσείς εστιάζετε στη λογική της επιχείρησης.
 
 ## Προαπαιτούμενα
 
@@ -36,13 +36,13 @@ weight: 1
 - Java 8+ (JDK 8 ή νεότερο)
 - Maven ή Gradle για διαχείριση εξαρτήσεων
 - Ένα IDE όπως IntelliJ IDEA ή Eclipse
-- Ένα έγκυρο GroupDocs license για παραγωγική χρήση (διαθέσιμο δωρεάν trial)
+- Μία έγκυρη άδεια GroupDocs για χρήση σε παραγωγή (διαθέσιμο δωρεάν trial)
 
-## Ρύθμιση του GroupDocs.Merger για Java
+## Ρύθμιση GroupDocs.Merger για Java
 
 ### Maven
 
-Προσθέστε την ακόλουθη εξάρτηση στο αρχείο `pom.xml` σας:
+Add the following dependency to your `pom.xml` file:
 
 ```xml
 <dependency>
@@ -54,24 +54,24 @@ weight: 1
 
 ### Gradle
 
-Στο `build.gradle` σας, συμπεριλάβετε:
+In your `build.gradle`, include:
 
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-### Άμεση Λήψη
+#### Άμεση Λήψη
 
-Εναλλακτικά, κατεβάστε την τελευταία έκδοση από [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) και προσθέστε τη χειροκίνητα στη διαδρομή βιβλιοθηκών του έργου σας.
+Alternatively, download the latest version from [εκδόσεις GroupDocs.Merger για Java](https://releases.groupdocs.com/merger/java/) and manually add it to your project's library path.
 
 #### Βήματα Απόκτησης Άδειας
-1. **Free Trial** – explore basic features without commitment.  
-2. **Temporary License** – ζητήστε ένα βραχυπρόθεσμο κλειδί [εδώ](https://purchase.groupdocs.com/temporary-license/).  
-3. **Purchase** – obtain a full license for unlimited production use.
+1. **Δωρεάν Δοκιμή** – εξερευνήστε τις βασικές λειτουργίες χωρίς δέσμευση.  
+2. **Προσωρινή Άδεια** – ζητήστε ένα βραχυπρόθεσμο κλειδί [εδώ](https://purchase.groupdocs.com/temporary-license/).  
+3. **Αγορά** – αποκτήστε πλήρη άδεια για απεριόριστη χρήση σε παραγωγή.
 
 #### Βασική Αρχικοποίηση
 
-Αφού προσθέσετε τη βιβλιοθήκη, δημιουργήστε μια παρουσία `Merger`:
+After adding the library, create a `Merger` instance:
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -80,9 +80,9 @@ import com.groupdocs.merger.Merger;
 erMerger = new Merger("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX");
 ```
 
-## Πώς να **load document stream** (πώς να φορτώσετε ροή εγγράφου)
+## Πώς να **φορτώσετε έγγραφο από ροή** (load document from stream)
 
-Η φόρτωση ενός εγγράφου από `InputStream` είναι απαραίτητη όταν τα αρχεία ανεβαίνουν από χρήστες ή λαμβάνονται από αποθήκευση στο cloud.
+Loading a document from an `InputStream` is essential when files are uploaded by users or fetched from cloud storage.
 
 ### Βήμα 1 – Δημιουργία InputStream
 
@@ -101,11 +101,11 @@ InputStream stream = new FileInputStream("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX");
 Merger merger = new Merger(stream);
 ```
 
-*Γιατί;* Η μεταβίβαση της ροής σας επιτρέπει να εργάζεστε με δεδομένα στη μνήμη, κάτι που είναι ταχύτερο για σενάρια web‑based.
+*Γιατί;* Η μεταβίβαση της ροής σας επιτρέπει να εργάζεστε με δεδομένα στη μνήμη, κάτι που είναι ταχύτερο για σενάρια web.
 
-## Πώς να **save merged document java** (αποθήκευση συγχωνευμένου εγγράφου java)
+## Πώς να **αποθηκεύσετε συγχωνευμένο έγγραφο java** (save merged document java)
 
-Μόλις εκτελέσετε οποιαδήποτε συγχώνευση, διαίρεση ή επεξεργασία σελίδων, πρέπει να αποθηκεύσετε το αποτέλεσμα.
+Αφού έχετε εκτελέσει οποιαδήποτε συγχώνευση, διαχωρισμό ή επεξεργασία σελίδων, πρέπει να αποθηκεύσετε το αποτέλεσμα.
 
 ### Βήμα 1 – Ορισμός OutputStream
 
@@ -132,69 +132,67 @@ merger.save(outputStream);
 outputStream.close();
 ```
 
-*Γιατί;* Το κλείσιμο απελευθερώνει πόρους συστήματος και εγγυάται ότι όλα τα δεδομένα στην ενδιάμεση μνήμη έχουν αποσυρθεί στο δίσκο.
+*Γιατί;* Το κλείσιμο απελευθερώνει πόρους συστήματος και εγγυάται ότι όλα τα buffer δεδομένα έχουν γραφτεί στο δίσκο.
 
-## Πώς να **handle large documents java** (διαχείριση μεγάλων εγγράφων java)
+## Πώς να **χειριστείτε μεγάλα έγγραφα java** (handle large documents java)
 
-Η εργασία με μεγάλα PDF ή αρχεία Word πολλαπλών gigabyte μπορεί να επιβαρύνει τη μνήμη. Ακολουθήστε αυτές τις βέλτιστες πρακτικές:
+Η εργασία με μεγάλα PDF ή Word αρχεία πολλαπλών gigabyte μπορεί να επιβαρύνει τη μνήμη. Ακολουθήστε τις καλύτερες πρακτικές:
 
-- **Use Buffered Streams** – τυλίξτε `FileInputStream`/`FileOutputStream` με `BufferedInputStream`/`BufferedOutputStream`.  
-- **Process in Batches** – συγχωνεύστε λίγα αρχεία τη φορά αντί να φορτώνετε όλα ταυτόχρονα.  
-- **Dispose Objects Promptly** – καλέστε `close()` στις ροές μόλις τελειώσετε.  
-- **Monitor JVM Heap** – αυξήστε το `-Xmx` αν χρειάζεται, αλλά στοχεύστε στη χαμηλή χρήση μνήμης.
+- **Χρησιμοποιήστε Buffered Streams** – τυλίξτε `FileInputStream`/`FileOutputStream` με `BufferedInputStream`/`BufferedOutputStream`.  
+- **Επεξεργασία σε παρτίδες** – συγχωνεύστε λίγα αρχεία τη φορά αντί να φορτώνετε όλα ταυτόχρονα.  
+- **Αποδέσμευση αντικειμένων άμεσα** – καλέστε `close()` στις ροές μόλις τελειώσετε.  
+- **Παρακολούθηση του JVM Heap** – αυξήστε το `-Xmx` αν χρειάζεται, αλλά προσπαθήστε να διατηρήσετε τη χρήση μνήμης χαμηλή.
 
 ## Πρακτικές Εφαρμογές
 
-Το GroupDocs.Merger ξεχωρίζει σε πραγματικές περιπτώσεις:
+Το GroupDocs.Merger διαπρέπει σε πραγματικά σενάρια:
 
-1. **Batch Processing** – αυτόματη συνένωση ημερήσιων αναφορών σε ένα ενιαίο PDF.  
-2. **Dynamic Document Generation** – δημιουργία τιμολογίων εν κινήσει από αρχεία προτύπων.  
-3. **Cross‑Platform Integration** – έκθεση ενός REST endpoint που δέχεται ανεβασμένα αρχεία, τα συγχωνεύει και επιστρέφει το αποτέλεσμα.
+1. **Batch Processing** – αυτόματη συνένωση καθημερινών αναφορών σε ένα ενιαίο PDF.  
+2. **Δυναμική Δημιουργία Εγγράφων** – δημιουργία τιμολογίων σε πραγματικό χρόνο από αρχεία προτύπων.  
+3. **Διαπλατφορμική Ενσωμάτωση** – εκθέστε ένα REST endpoint που δέχεται ανεβασμένα αρχεία, τα συγχωνεύει και επιστρέφει το αποτέλεσμα.
 
 ## Σκέψεις Απόδοσης
 
-- **Memory Management** – πάντα κλείστε τις ροές (`InputStream`, `OutputStream`).  
-- **Batch Operations** – ομαδοποιήστε αρχεία για μείωση του κόστους I/O.  
-- **Efficient I/O** – προτιμήστε buffered I/O για αρχεία μεγαλύτερα από 10 MB.
+- **Διαχείριση Μνήμης** – πάντα κλείστε τις ροές (`InputStream`, `OutputStream`).  
+- **Λειτουργίες Παρτίδας** – ομαδοποιήστε αρχεία για μείωση του φόρτου I/O.  
+- **Αποδοτικό I/O** – προτιμήστε buffered I/O για αρχεία μεγαλύτερα από 10 MB.
 
 ## Συχνά Προβλήματα και Λύσεις
 
 | Πρόβλημα | Αιτία | Διόρθωση |
 |----------|-------|----------|
 | `FileNotFoundException` | Λανθασμένη διαδρομή αρχείου ή έλλειψη δικαιωμάτων | Επαληθεύστε τις απόλυτες/σχετικές διαδρομές και βεβαιωθείτε ότι η εφαρμογή έχει δικαιώματα ανάγνωσης/εγγραφής |
-| `IOException` during save | Ροή δεν κλείνει ή δίσκος γεμάτος | Κλείστε όλες τις ροές, ελέγξτε τον ελεύθερο χώρο στο δίσκο, και χρησιμοποιήστε try‑with‑resources |
-| Memory spikes with large PDFs | Φόρτωση ολόκληρου αρχείου στη μνήμη | Χρησιμοποιήστε buffered streams και επεξεργαστείτε σε μικρότερες παρτίδες |
+| `IOException` during save | Η ροή δεν κλείνει ή ο δίσκος είναι γεμάτος | Κλείστε όλες τις ροές, ελέγξτε τον ελεύθερο χώρο στο δίσκο και χρησιμοποιήστε try‑with‑resources |
+| Memory spikes with large PDFs | Φόρτωση ολόκληρου του αρχείου στη μνήμη | Χρησιμοποιήστε buffered streams και επεξεργαστείτε σε μικρότερες παρτίδες |
 
 ## Συχνές Ερωτήσεις
 
 **Q:** Μπορώ να συγχωνεύσω διαφορετικές μορφές αρχείων χρησιμοποιώντας το GroupDocs.Merger;  
 **A:** Ναι, η βιβλιοθήκη υποστηρίζει DOCX, PDF, PPTX, XLSX και πολλές άλλες μορφές.
 
-**Q:** Πώς να διαχειριστώ μεγάλα έγγραφα αποδοτικά;  
+**Q:** Πώς μπορώ να χειριστώ μεγάλα έγγραφα αποδοτικά;  
 **A:** Χρησιμοποιήστε buffered streams, επεξεργαστείτε τα αρχεία σε παρτίδες και πάντα κλείστε τις ροές άμεσα.
 
 **Q:** Υπάρχει υποστήριξη για αρχεία με κωδικό πρόσβασης;  
-**A:** Απόλυτα – παρέχετε τον κωδικό πρόσβασης κατά την αρχικοποίηση της παρουσίας `Merger`.
+**A:** Απόλυτα – παρέχετε τον κωδικό όταν αρχικοποιείτε το αντικείμενο `Merger`.
 
 **Q:** Μπορώ να χρησιμοποιήσω αυτή τη βιβλιοθήκη σε εμπορικό προϊόν;  
-**A:** Ναι, απλώς αποκτήστε την κατάλληλη άδεια από [GroupDocs](https://purchase.groupdocs.com/buy).
+**A:** Ναι, απλώς αποκτήστε τη σωστή άδεια από [GroupDocs](https://purchase.groupdocs.com/buy).
 
 **Q:** Τι πρέπει να κάνω αν αντιμετωπίσω ένα `IOException`;  
 **A:** Ελέγξτε ξανά τις διαδρομές αρχείων, βεβαιωθείτε ότι έχετε επαρκή δικαιώματα και τυλίξτε τις κλήσεις I/O σε μπλοκ try‑catch.
 
 ## Πόροι
 
-- **Documentation**: [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)  
-- **API Reference**: [API Reference Guide](https://reference.groupdocs.com/merger/java/)  
-- **Download Library**: [GroupDocs Downloads](https://releases.groupdocs.com/merger/java/)  
-- **Purchase License**: [Buy GroupDocs License](https://purchase.groupdocs.com/buy)  
-- **Free Trial & Temporary License**: [Try Out GroupDocs](https://releases.groupdocs.com/merger/java/) and [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-- **Support**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/)
+- **Τεκμηρίωση GroupDocs**: [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)  
+- **Οδηγός Αναφοράς API**: [API Reference Guide](https://reference.groupdocs.com/merger/java/)  
+- **Λήψεις GroupDocs**: [GroupDocs Downloads](https://releases.groupdocs.com/merger/java/)  
+- **Αγορά Άδειας GroupDocs**: [Buy GroupDocs License](https://purchase.groupdocs.com/buy)  
+- **Δοκιμή GroupDocs** & **Αίτηση Προσωρινής Άδειας**: [Try Out GroupDocs](https://releases.groupdocs.com/merger/java/) και [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Φόρουμ Υποστήριξης GroupDocs**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/)
 
 ---
 
-**Last Updated:** 2026-01-16  
-**Tested With:** GroupDocs.Merger latest version (as of 2026)  
-**Author:** GroupDocs  
-
----
+**Τελευταία Ενημέρωση:** 2026-03-20  
+**Δοκιμάστηκε Με:** GroupDocs.Merger τελευταία έκδοση (ως το 2026)  
+**Συγγραφέας:** GroupDocs
