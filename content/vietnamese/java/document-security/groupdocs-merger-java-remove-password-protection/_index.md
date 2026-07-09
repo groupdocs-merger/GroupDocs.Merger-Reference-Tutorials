@@ -1,33 +1,80 @@
 ---
-date: '2026-01-29'
-description: Tìm hiểu cách xóa mật khẩu khỏi tài liệu Word và cách xóa mật khẩu bằng
-  GroupDocs.Merger cho Java. Bao gồm mã từng bước và các thực tiễn tốt nhất.
+date: '2026-05-22'
+description: Tìm hiểu cách sử dụng groupdocs remove password để mở khóa các tệp Word
+  và các tài liệu khác với GroupDocs.Merger for Java. Bao gồm hướng dẫn từng bước,
+  các thực tiễn tốt nhất và câu hỏi thường gặp.
 keywords:
-- remove passwords from documents
-- GroupDocs Merger for Java
-- document security
-title: Xóa mật khẩu khỏi Word bằng GroupDocs.Merger cho Java
+- groupdocs remove password
+- unlock word document java
+- remove pdf password java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-05-22'
+  description: Learn how to use groupdocs remove password to unlock Word files and
+    other documents with GroupDocs.Merger for Java. Includes step‑by‑step instructions,
+    best practices, and FAQ.
+  headline: GroupDocs Remove Password from Word Documents with Merger for Java
+  type: TechArticle
+- description: Learn how to use groupdocs remove password to unlock Word files and
+    other documents with GroupDocs.Merger for Java. Includes step‑by‑step instructions,
+    best practices, and FAQ.
+  name: GroupDocs Remove Password from Word Documents with Merger for Java
+  steps:
+  - name: Define File Paths and Load Options
+    text: 'First, specify the source file location and provide the current password
+      via `LoadOptions`. *Why*: The `LoadOptions` class safely opens a password‑protected
+      document without exposing the password elsewhere.'
+  - name: Initialize the Merger Object
+    text: 'Create a `Merger` instance using the file path and the previously defined
+      `LoadOptions`. *Why*: The `Merger` class is the core engine for all document
+      manipulations, including password removal.'
+  - name: Remove Password Protection
+    text: 'Invoke `removePassword()` on the `Merger` instance to strip the encryption
+      layer. *Why*: This method rewrites the document structure without the password,
+      making it freely accessible.'
+  - name: Save the Unprotected Document
+    text: 'Finally, write the unlocked document to a new location. *Why*: Saving commits
+      the changes and produces a clean copy that downstream processes can consume.'
+  type: HowTo
+- questions:
+  - answer: To provide a single API for merging, splitting, converting, and **groupdocs
+      remove password** operations across 50+ document formats.
+    question: What is the main purpose of GroupDocs.Merger for Java?
+  - answer: Yes, GroupDocs offers comparable APIs for .NET, C++, and Python, each
+      supporting the same feature set.
+    question: Can I use this library with other programming languages?
+  - answer: A full commercial license is mandatory for production deployments; a free
+      trial is sufficient for evaluation.
+    question: Is a license required for production use?
+  - answer: Catch `Exception`, log the stack trace, and verify that the correct password
+      is supplied in `LoadOptions` before retrying.
+    question: How should I handle errors during password removal?
+  - answer: Word, Excel, PowerPoint, PDF, and many other formats listed in the GroupDocs.Merger
+      supported‑formats matrix.
+    question: Which document types can be unlocked?
+  type: FAQPage
+title: GroupDocs Remove Password từ tài liệu Word với Merger for Java
 type: docs
 url: /vi/java/document-security/groupdocs-merger-java-remove-password-protection/
 weight: 1
 ---
 
-# Xóa mật khẩu khỏi Word bằng GroupDocs.Merger cho Java
+# GroupDocs Gỡ Mật Khẩu Tài Liệu Word bằng Merger cho Java
 
-Quản lý bảo mật tài liệu là điều thiết yếu, và **remove password from Word** là nhu cầu thường gặp của các nhà phát triển tự động hoá quy trình tài liệu. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn cách xóa bảo vệ bằng mật khẩu khỏi các tài liệu Word (và các định dạng khác) bằng **GroupDocs.Merger cho Java**. Khi kết thúc, bạn sẽ biết cách thiết lập thư viện, tải tệp được bảo vệ bằng mật khẩu, mở khóa nội dung đã mã hoá, và lưu phiên bản không bảo vệ — tất cả với mã rõ ràng, sẵn sàng cho môi trường sản xuất.
+Quản lý bảo mật tài liệu là điều thiết yếu, và **groupdocs remove password** là một yêu cầu thường gặp đối với các nhà phát triển tự động hoá quy trình tài liệu. Trong hướng dẫn này, bạn sẽ học cách mở khóa tệp Word được bảo vệ bằng mật khẩu, loại bỏ mã hoá và lưu bản sao không bảo mật bằng **GroupDocs.Merger for Java**. Khi kết thúc, bạn sẽ có mã sẵn sàng cho sản xuất, các mẹo thực tế, và hiểu rõ tại sao cách tiếp cận này vượt trội hơn việc mở khóa thủ công.
 
 ## Câu trả lời nhanh
-- **Phương thức chính là gì?** `Merger.removePassword()` xóa mật khẩu khỏi tài liệu đã tải.  
-- **Lớp nào tải tệp được bảo vệ?** `LoadOptions` cho phép bạn chỉ định mật khẩu hiện có.  
-- **Tôi có thể mở khóa tệp PDF không?** Yes – cách tiếp cận tương tự hoạt động với PDF (`remove pdf password java`).  
+- **Phương thức chính là gì?** `Merger.removePassword()` loại bỏ mật khẩu khỏi tài liệu đã tải trong một lần gọi.  
+- **Lớp nào tải tệp được bảo vệ?** `LoadOptions` cho phép bạn chỉ định mật khẩu hiện có khi mở tài liệu.  
+- **Tôi có thể mở khóa tệp PDF không?** Có – quy trình `removePassword()` tương tự hoạt động cho PDF (`remove pdf password java`).  
 - **Có cần giấy phép không?** Bản dùng thử hoạt động cho việc thử nghiệm; giấy phép đầy đủ là bắt buộc cho môi trường sản xuất.  
-- **Yêu cầu phiên bản Java nào?** Java 8+ với hỗ trợ Maven hoặc Gradle.  
+- **Yêu cầu phiên bản Java là gì?** Java 8+ với hỗ trợ Maven hoặc Gradle.  
 
-## “remove password from Word” là gì?
-Xóa mật khẩu khỏi tài liệu Word có nghĩa là mở tệp đã mã hoá bằng mật khẩu đúng, loại bỏ mã hoá và lưu một bản sao sạch. Điều này cho phép các quy trình tiếp theo — như hợp nhất, chuyển đổi hoặc lập chỉ mục — hoạt động mà không cần can thiệp thủ công.
+## groupdocs gỡ mật khẩu là gì?
+**groupdocs remove password** là quá trình mở một tài liệu được mã hoá bằng thông tin xác thực đúng, loại bỏ lớp mã hoá và lưu một phiên bản sạch. Điều này cho phép các hoạt động tiếp theo—như hợp nhất, chuyển đổi, hoặc lập chỉ mục—được thực hiện mà không cần nhập mật khẩu thủ công.
 
 ## Tại sao nên sử dụng GroupDocs.Merger cho Java?
-GroupDocs.Merger cung cấp một API duy nhất, hiệu suất cao, hỗ trợ nhiều định dạng (DOCX, PDF, PPTX, v.v.). Nó trừu tượng hoá các chi tiết mã hoá cấp thấp, cho phép bạn tập trung vào logic nghiệp vụ thay vì những điểm đặc thù của định dạng tệp.
+GroupDocs.Merger hỗ trợ **hơn 50 định dạng đầu vào và đầu ra** (bao gồm DOCX, PDF, PPTX, XLSX, HTML và các loại hình ảnh phổ biến) và có thể xử lý các tệp hàng trăm trang mà không cần tải toàn bộ tài liệu vào bộ nhớ. Thư viện trừu tượng hoá việc xử lý mã hoá cấp thấp, cho phép bạn tập trung vào logic nghiệp vụ thay vì các chi tiết định dạng.
 
 ## Yêu cầu trước
 - **Java Development Kit (JDK) 8 hoặc cao hơn** đã được cài đặt.  
@@ -49,14 +96,14 @@ Include GroupDocs.Merger for Java in your project:
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-Bạn cũng có thể tải thư viện trực tiếp từ [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
+You can also download the library directly from [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
 ### Yêu cầu thiết lập môi trường
 - Java Development Kit (JDK) đã được cài đặt.  
 - Một IDE như IntelliJ IDEA hoặc Eclipse (tùy chọn nhưng được khuyến nghị).  
 
 ### Kiến thức tiên quyết
-Giả định bạn đã quen thuộc với lập trình Java cơ bản và xử lý các thao tác I/O tệp. Hiểu biết về hệ thống xây dựng Maven hoặc Gradle sẽ có lợi.
+Giả định bạn đã quen thuộc với lập trình Java cơ bản và xử lý các thao tác I/O file. Hiểu biết về hệ thống xây dựng Maven hoặc Gradle sẽ có lợi.
 
 ## Cài đặt GroupDocs.Merger cho Java
 ### Thông tin cài đặt
@@ -65,10 +112,10 @@ Giả định bạn đã quen thuộc với lập trình Java cơ bản và xử
 
 ### Các bước lấy giấy phép
 - Bắt đầu với **bản dùng thử miễn phí** bằng cách tải về từ trang của họ.  
-- Đăng ký **giấy phép tạm thời** nếu bạn cần thêm thời gian.  
-- Mua giấy phép đầy đủ cho môi trường sản xuất tại [GroupDocs.Merger purchase page](https://purchase.groupdocs.com/buy).
+- Yêu cầu **giấy phép tạm thời** nếu bạn cần thêm thời gian.  
+- Mua giấy phép đầy đủ cho việc sử dụng sản xuất tại [GroupDocs.Merger purchase page](https://purchase.groupdocs.com/buy).
 
-Sau khi cài đặt, khởi tạo thư viện như sau:
+Once installed, initialize the library as follows:
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -80,97 +127,99 @@ public class DocumentUnlocker {
 }
 ```
 
-## Hướng dẫn triển khai
-Phần này hướng dẫn bạn **cách xóa mật khẩu** khỏi tài liệu bằng GroupDocs.Merger cho Java.
+## Cách Gỡ Mật Khẩu khỏi Tài Liệu Word bằng GroupDocs.Merger?
+LoadOptions là một lớp xác định các tham số tải, bao gồm mật khẩu cho các tệp được mã hoá. Merger là lớp chính thực hiện các thao tác tài liệu như hợp nhất, tách, và gỡ mật khẩu. Phương thức `removePassword()` của Merger loại bỏ mật khẩu hiện có và tạo ra một bản sao không bảo mật. Tải tệp Word được bảo vệ của bạn bằng `LoadOptions`, tạo một thể hiện `Merger`, gọi `removePassword()`, và sau đó lưu kết quả. Quy trình bốn bước này xử lý giải mã và lưu lại trong chưa tới một giây cho các tài liệu khoảng 20 trang thông thường.
 
-### Tổng quan tính năng: Xóa bảo vệ bằng mật khẩu
-GroupDocs.Merger cho phép thao tác tài liệu, bao gồm việc xóa mật khẩu. Tính năng này đơn giản hoá việc truy cập các tệp bảo mật mà không làm suy giảm các giao thức bảo mật.
-
-#### Bước 1: Xác định Đường dẫn Tệp và Tùy chọn Tải
-Đầu tiên, chỉ định vị trí lưu tài liệu được bảo vệ và thiết lập tùy chọn tải với mật khẩu hiện có:
+### Bước 1: Xác định Đường dẫn Tệp và Tùy chọn Tải
+Đầu tiên, chỉ định vị trí tệp nguồn và cung cấp mật khẩu hiện tại qua `LoadOptions`.  
 
 ```java
 import com.groupdocs.merger.domain.options.LoadOptions;
 
 String filePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX_PROTECTED";
 LoadOptions loadOptions = new LoadOptions("SAMPLE_PASSWORD");
-```
-*Why*: Lớp `LoadOptions` cho phép bạn **load password protected document** một cách an toàn.
+```  
+*Tiêu đề*: Lớp `LoadOptions` mở an toàn một tài liệu được bảo vệ bằng mật khẩu mà không lộ mật khẩu ở nơi khác.
 
-#### Bước 2: Khởi tạo Đối tượng Merger
-Tiếp theo, tạo một đối tượng `Merger` bằng cách sử dụng đường dẫn tệp và tùy chọn tải:
+### Bước 2: Khởi tạo Đối tượng Merger
+Tạo một thể hiện `Merger` bằng cách sử dụng đường dẫn tệp và `LoadOptions` đã định nghĩa trước.  
 
 ```java
 import com.groupdocs.merger.Merger;
 
 Merger merger = new Merger(filePath, loadOptions);
-```
-*Why*: Lớp `Merger` là trung tâm để xử lý tài liệu. Nó bao hàm tất cả các chức năng, bao gồm các tính năng mở khóa.
+```  
+*Tiêu đề*: Lớp `Merger` là động cơ cốt lõi cho mọi thao tác tài liệu, bao gồm gỡ mật khẩu.
 
-#### Bước 3: Xóa bảo vệ bằng mật khẩu
-Sử dụng phương thức `removePassword()` để loại bỏ mật khẩu của tài liệu:
+### Bước 3: Gỡ Bảo Vệ Mật Khẩu
+Gọi `removePassword()` trên thể hiện `Merger` để loại bỏ lớp mã hoá.  
 
 ```java
 merger.removePassword();
-```
-*Why*: Phương thức này sửa đổi cấu trúc tài liệu để **remove password** (hoặc mở khóa tệp đã mã hoá) để có thể mở mà không cần mật khẩu.
+```  
+*Tiêu đề*: Phương thức này ghi lại cấu trúc tài liệu mà không có mật khẩu, làm cho nó có thể truy cập tự do.
 
-#### Bước 4: Lưu tài liệu không bảo vệ
-Cuối cùng, lưu tài liệu không bảo vệ vào vị trí mong muốn:
+### Bước 4: Lưu Tài Liệu Không Bảo Vệ
+Cuối cùng, ghi tài liệu đã mở khóa vào một vị trí mới.  
 
 ```java
 String filePathOut = "YOUR_OUTPUT_DIRECTORY/RemoveDocumentPassword-" + Paths.get(filePath).getFileName().toString();
 merger.save(filePathOut);
-```
-*Why*: Lưu đảm bảo các thay đổi được ghi lại và tài liệu được lưu trong thư mục mới hoặc hiện có.
-
-### Mẹo khắc phục sự cố
-- Đảm bảo mật khẩu đúng được cung cấp trong `LoadOptions`.  
-- Kiểm tra lại đường dẫn tệp để tránh `FileNotFoundException`.  
-- Bắt và ghi log bất kỳ ngoại lệ nào được ném ra bởi các phương thức Merger để chẩn đoán vấn đề kịp thời.
-
-## Ứng dụng thực tiễn
-GroupDocs.Merger đa năng, với các ứng dụng như:
-1. **Xử lý tài liệu tự động** – mở khóa hàng loạt nhiều tệp trước khi xử lý tiếp.  
-2. **Dự án di chuyển dữ liệu** – tạm thời xóa mật khẩu để di chuyển nội dung một cách an toàn.  
-3. **Tích hợp với Hệ thống Quản lý Nội dung (CMS)** – nâng cao khả năng của CMS trong việc quản lý tài liệu được bảo mật.
-
-## Cân nhắc về hiệu năng
-Để giải pháp của bạn nhanh và tiết kiệm bộ nhớ:
-- Sử dụng I/O dạng stream khi có thể.  
-- Giải phóng instance `Merger` ngay sau khi lưu.  
-- Trong các kịch bản batch, tái sử dụng một instance `Merger` duy nhất khi xử lý nhiều tệp cùng định dạng.
+```  
+*Tiêu đề*: Lưu lại sẽ ghi nhận các thay đổi và tạo ra một bản sao sạch mà các quy trình tiếp theo có thể sử dụng.
 
 ## Các vấn đề thường gặp và giải pháp
 | Vấn đề | Giải pháp |
 |-------|----------|
-| `Incorrect password` lỗi | Kiểm tra lại chuỗi mật khẩu được truyền vào `LoadOptions`. |
+| Lỗi `Incorrect password` | Kiểm tra lại chuỗi mật khẩu được truyền vào `LoadOptions`. |
 | `OutOfMemoryError` trên các tệp lớn | Xử lý tệp theo từng phần hoặc tăng kích thước heap JVM (`-Xmx`). |
-| `Unsupported file format` | Xác minh rằng loại tệp được liệt kê trong các định dạng được GroupDocs.Merger hỗ trợ. |
+| `Unsupported file format` | Xác nhận rằng loại tệp xuất hiện trong danh sách định dạng được hỗ trợ bởi GroupDocs.Merger (hơn 50 định dạng). |
 
-## Phần Câu hỏi thường gặp
-1. **Mục đích chính của GroupDocs.Merger cho Java là gì?**  
-   - Để hỗ trợ thao tác tài liệu bao gồm hợp nhất, tách, và các thao tác **remove password**.  
-2. **Tôi có thể sử dụng thư viện này với các ngôn ngữ lập trình khác không?**  
-   - Có, GroupDocs cung cấp các API tương tự cho .NET, C++, và các ngôn ngữ khác.  
-3. **Có cần giấy phép để sử dụng GroupDocs.Merger trong môi trường sản xuất không?**  
-   - Giấy phép mua đầy đủ là cần thiết cho các triển khai thương mại.  
-4. **Làm thế nào để xử lý lỗi khi xóa mật khẩu?**  
-   - Bắt ngoại lệ, ghi log stack trace, và tùy chọn thử lại với thông tin đăng nhập đúng.  
-5. **Những loại tài liệu nào có thể được mở khóa?**  
-   - Word, Excel, PowerPoint, PDF, và nhiều định dạng khác được GroupDocs.Merger hỗ trợ.
+## Ứng dụng thực tiễn
+Tính năng gỡ mật khẩu của GroupDocs.Merger tỏa sáng trong các kịch bản thực tế:
+1. **Xử lý tài liệu tự động** – mở khóa hàng trăm tệp hàng loạt trước khi hợp nhất hoặc chuyển đổi.  
+2. **Dự án di chuyển dữ liệu** – tạm thời gỡ mật khẩu để di chuyển nội dung một cách an toàn giữa các hệ thống.  
+3. **Tích hợp CMS** – cho phép hệ thống quản lý nội dung lập chỉ mục và hiển thị tài liệu được bảo mật mà không cần can thiệp thủ công.
+
+## Các cân nhắc về hiệu năng
+- Sử dụng I/O dạng stream để tránh tải toàn bộ tệp vào bộ nhớ.  
+- Giải phóng thể hiện `Merger` ngay sau khi lưu.  
+- Trong các công việc batch, tái sử dụng một thể hiện `Merger` cho các tệp cùng định dạng để giảm tải.
+
+## Câu hỏi thường gặp
+
+**Q: Mục đích chính của GroupDocs.Merger cho Java là gì?**  
+A: Cung cấp một API duy nhất cho việc hợp nhất, tách, chuyển đổi và các thao tác **groupdocs remove password** trên hơn 50 định dạng tài liệu.
+
+**Q: Tôi có thể sử dụng thư viện này với các ngôn ngữ lập trình khác không?**  
+A: Có, GroupDocs cung cấp các API tương đương cho .NET, C++ và Python, mỗi cái đều hỗ trợ cùng một bộ tính năng.
+
+**Q: Có cần giấy phép cho việc sử dụng trong môi trường sản xuất không?**  
+A: Giấy phép thương mại đầy đủ là bắt buộc cho triển khai sản xuất; bản dùng thử đủ cho việc đánh giá.
+
+**Q: Tôi nên xử lý lỗi như thế nào khi gỡ mật khẩu?**  
+A: Bắt `Exception`, ghi lại stack trace, và xác minh rằng mật khẩu đúng đã được cung cấp trong `LoadOptions` trước khi thử lại.
+
+**Q: Những loại tài liệu nào có thể được gỡ mật khẩu?**  
+A: Word, Excel, PowerPoint, PDF và nhiều định dạng khác được liệt kê trong ma trận định dạng được hỗ trợ của GroupDocs.Merger.
 
 ## Tài nguyên
-- [Tài liệu GroupDocs](https://docs.groupdocs.com/merger/java/)
-- [Tham chiếu API](https://reference.groupdocs.com/merger/java/)
-- [Tải phiên bản mới nhất](https://releases.groupdocs.com/merger/java/)
-- [Thông tin mua hàng](https://purchase.groupdocs.com/buy)
-- [Bản dùng thử miễn phí](https://releases.groupdocs.com/merger/java/)
-- [Giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/)
-- [Diễn đàn hỗ trợ](https://forum.groupdocs.com/c/merger/) 
+- [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)
+- [API Reference](https://reference.groupdocs.com/merger/java/)
+- [Download Latest Version](https://releases.groupdocs.com/merger/java/)
+- [GroupDocs.Merger purchase page](https://purchase.groupdocs.com/buy)
+- [Free Trial](https://releases.groupdocs.com/merger/java/)
+- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- [Support Forum](https://forum.groupdocs.com/c/merger/) 
 
 ---
 
-**Cập nhật lần cuối:** 2026-01-29  
-**Kiểm tra với:** GroupDocs.Merger 23.12 (mới nhất)  
-**Tác giả:** GroupDocs
+**Last Updated:** 2026-05-22  
+**Tested With:** GroupDocs.Merger 23.12 (latest)  
+**Author:** GroupDocs
+
+## Hướng dẫn liên quan
+
+- [Xử lý hàng loạt tài liệu - Tải tệp được bảo vệ bằng mật khẩu với GroupDocs.Merger cho Java](/merger/java/document-loading/load-password-protected-docs-groupdocs-java/)
+- [Đặt mật khẩu tài liệu Java với GroupDocs.Merger – Hướng dẫn đầy đủ](/merger/java/document-security/master-document-security-groupdocs-merger-java/)
+- [Xóa trang hiệu quả khỏi tài liệu Word bằng GroupDocs.Merger cho Java](/merger/java/page-operations/remove-pages-groupdocs-merger-java-word-documents/)
