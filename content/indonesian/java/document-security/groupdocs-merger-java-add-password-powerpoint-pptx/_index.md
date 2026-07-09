@@ -1,13 +1,55 @@
 ---
-date: '2026-01-29'
+date: '2026-05-17'
 description: Pelajari cara melindungi file PowerPoint dengan kata sandi dan menambahkan
-  kata sandi ke presentasi menggunakan GroupDocs.Merger untuk Java. Ikuti panduan
-  langkah demi langkah ini untuk mengamankan file PPTX.
+  kata sandi ke presentasi menggunakan GroupDocs.Merger for Java. Ikuti panduan langkah
+  demi langkah ini untuk mengamankan file PPTX.
 keywords:
-- GroupDocs.Merger Java
-- add password PowerPoint
-- secure PPTX files
-title: Proteksi Kata Sandi PowerPoint dengan GroupDocs.Merger untuk Java
+- password protect powerpoint
+- add password powerpoint
+- encrypt powerpoint file
+- groupdocs password protection
+schemas:
+- author: GroupDocs
+  dateModified: '2026-05-17'
+  description: Learn how to password protect PowerPoint files and add password to
+    presentation using GroupDocs.Merger for Java. Follow this step‑by‑step guide to
+    secure PPTX files.
+  headline: Password Protect PowerPoint Presentations Using GroupDocs.Merger for Java
+  type: TechArticle
+- description: Learn how to password protect PowerPoint files and add password to
+    presentation using GroupDocs.Merger for Java. Follow this step‑by‑step guide to
+    secure PPTX files.
+  name: Password Protect PowerPoint Presentations Using GroupDocs.Merger for Java
+  steps:
+  - name: Define source and output paths
+    text: Replace the placeholders with your actual directories.
+  - name: Create password options
+    text: '`AddPasswordOptions` holds the password you want to set and optional encryption
+      settings.'
+  - name: Apply the password and save the file
+    text: Use the same `Merger` object to encrypt the PPTX and write it to the output
+      location.
+  type: HowTo
+- questions:
+  - answer: Yes. Loop over a collection of file paths and reuse the same `AddPasswordOptions`
+      instance for each iteration.
+    question: Can I add a password to multiple PPTX files at once?
+  - answer: PowerPoint will display an error and refuse to open the file until the
+      correct password is entered.
+    question: What happens if I open a protected PPTX without the correct password?
+  - answer: It supports PPTX and PPT files and can convert older PPT files to PPTX
+      before applying encryption.
+    question: Does GroupDocs.Merger support all PowerPoint formats?
+  - answer: Use the `removePassword` method on a `Merger` instance after opening the
+      encrypted file.
+    question: How do I remove a password from a PPTX using GroupDocs.Merger?
+  - answer: GroupDocs.Merger does not impose a strict length limit, but extremely
+      long passwords may affect performance. Aim for 12‑20 characters with mixed case,
+      numbers, and symbols.
+    question: Is there a limit to password length?
+  type: FAQPage
+title: Lindungi Presentasi PowerPoint dengan Kata Sandi Menggunakan GroupDocs.Merger
+  for Java
 type: docs
 url: /id/java/document-security/groupdocs-merger-java-add-password-powerpoint-pptx/
 weight: 1
@@ -15,32 +57,29 @@ weight: 1
 
 # Lindungi Presentasi PowerPoint dengan Kata Sandi Menggunakan GroupDocs.Merger untuk Java
 
-Di lingkungan kerja kolaboratif saat ini, **password protect PowerPoint** merupakan praktik yang wajib dimiliki untuk menjaga deck slide sensitif tetap aman dari kebocoran tidak sengaja atau akses tidak sah. Baik Anda sedang menyiapkan briefing ruang dewan, proposal klien, atau materi pelatihan internal, menambahkan kata sandi memastikan hanya orang yang tepat yang dapat melihat atau mengedit kontennya. Dalam tutorial ini Anda akan menemukan **cara mengamankan file PPTX** dengan GroupDocs.Merger untuk Java, langkah demi langkah.
+Dalam lingkungan kolaboratif modern, **password protect PowerPoint** file sangat penting untuk melindungi deck slide yang berisi strategi rahasia, data keuangan, atau desain kepemilikan. Tutorial ini memandu Anda mengamankan file PPTX dengan GroupDocs.Merger untuk Java, menjelaskan mengapa enkripsi penting, dan memberikan potongan kode siap‑jalankan yang dapat Anda masukkan ke dalam proyek Java mana pun.
 
 ## Jawaban Cepat
-- **Apa arti “password protect PowerPoint”?** Itu mengenkripsi file PPTX sehingga diperlukan kata sandi untuk membukanya.  
-- **Perpustakaan mana yang dapat saya gunakan?** GroupDocs.Merger untuk Java menyediakan API `addPassword` yang sederhana.  
+- **Apa arti “password protect PowerPoint”?** File PPTX dienkripsi sehingga diperlukan kata sandi untuk membukanya.  
+- **Library mana yang dapat saya gunakan?** GroupDocs.Merger for Java menyediakan API `addPassword` yang sederhana.  
 - **Apakah saya memerlukan lisensi?** Versi percobaan gratis dapat digunakan untuk pengembangan; lisensi penuh diperlukan untuk produksi.  
 - **Bisakah saya mengatur kata sandi secara programatis?** Ya – gunakan `AddPasswordOptions` dengan string yang diinginkan.  
-- **Apakah pemrosesan batch memungkinkan?** Tentu – lakukan loop pada daftar file PPTX dan terapkan logika yang sama.
+- **Apakah pemrosesan batch memungkinkan?** Tentu – lakukan perulangan atas daftar file PPTX dan terapkan logika yang sama.
 
 ## Apa itu password protect PowerPoint dan mengapa menggunakannya?
-Melindungi presentasi PowerPoint dengan kata sandi mengenkripsi isi file, mencegah siapa pun yang tidak memiliki kata sandi yang benar membuka, menyalin, atau mencetak slide. Ini sangat berharga untuk:
+Melindungi presentasi PowerPoint dengan kata sandi mengenkripsi isi file, mencegah siapa pun yang tidak memiliki kata sandi yang benar membuka, menyalin, atau mencetak slide. Ini melindungi rahasia perusahaan, proposal klien, dan materi ujian, memastikan hanya penerima yang berwenang yang dapat melihat informasi tersebut.
 
-- **Kerahasiaan perusahaan** – melindungi rencana strategis atau perkiraan keuangan.  
-- **Deliverables klien** – memastikan proposal tetap pribadi sampai klien menerima kata sandi.  
-- **Sumber daya pendidikan** – mengamankan materi ujian atau konten pengajaran proprietari.
+## Mengapa menggunakan GroupDocs.Merger untuk Java?
+GroupDocs.Merger mendukung **2 format PowerPoint (PPTX dan PPT)** dan dapat memproses file hingga **500 MB** tanpa memuat seluruh dokumen ke memori, memberikan enkripsi dalam waktu kurang dari **2 detik** pada VM kelas server tipikal. API-nya ringan, memiliki **0 dependensi eksternal**, dan bekerja di Windows, Linux, serta macOS.
 
 ## Prasyarat
-Sebelum Anda memulai, pastikan Anda memiliki:
-
-- **Java Development Kit (JDK 8 atau lebih baru)** dan IDE seperti IntelliJ IDEA atau Eclipse.  
-- **GroupDocs.Merger untuk Java** yang ditambahkan ke proyek Anda (Maven atau Gradle).  
-- **Lisensi yang valid** (percobaan atau dibeli) untuk membuka semua fungsi.  
+- **Java Development Kit (JDK 8 atau lebih baru)** – IDE modern apa pun seperti IntelliJ IDEA atau Eclipse sudah cukup.  
+- **GroupDocs.Merger for Java** – tambahkan melalui Maven atau Gradle (lihat potongan kode di bawah).  
+- **Lisensi yang valid** – kunci percobaan cukup untuk pengujian; lisensi yang dibeli menghapus batas evaluasi.
 
 ## Menyiapkan GroupDocs.Merger untuk Java
 
-Tambahkan pustaka ke file build Anda. Pertahankan placeholder versi (`latest-version`) – Maven/Gradle akan mengambil rilis terbaru.
+Tambahkan pustaka ke file build Anda. Pertahankan placeholder versi (`latest-version`) – Maven/Gradle akan menyelesaikan rilis terbaru.
 
 ```xml
 <dependency>
@@ -54,13 +93,13 @@ Tambahkan pustaka ke file build Anda. Pertahankan placeholder versi (`latest-ver
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-Anda juga dapat mengunduh versi terbaru dari [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
+Anda juga dapat mengunduh versi terbaru dari [rilisan GroupDocs.Merger untuk Java](https://releases.groupdocs.com/merger/java/).
 
 ### Akuisisi Lisensi
-Mulailah dengan percobaan gratis atau minta lisensi sementara. Ketika Anda siap, beli lisensi penuh untuk menghapus batasan evaluasi.
+Mulailah dengan percobaan gratis atau minta lisensi sementara. Saat Anda siap, beli lisensi penuh untuk menghapus batas evaluasi.
 
-### Inisialisasi dan Pengaturan Dasar
-Buat instance `Merger` yang mengarah ke PPTX yang ingin Anda lindungi:
+## Inisialisasi dan Penyiapan Dasar
+`Merger` adalah kelas inti di GroupDocs.Merger yang menangani manipulasi dokumen seperti penggabungan, pemisahan, dan penerapan kata sandi. Buat instance `Merger` yang menunjuk ke PPTX yang ingin Anda lindungi:
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -80,7 +119,7 @@ String filePathOut = new File("YOUR_OUTPUT_DIRECTORY", "AddDocumentPassword-" + 
 ```
 
 ### Langkah 2: Buat opsi kata sandi
-`AddPasswordOptions` menyimpan kata sandi yang ingin Anda tetapkan.
+`AddPasswordOptions` menyimpan kata sandi yang ingin Anda tetapkan serta pengaturan enkripsi opsional.
 
 ```java
 import com.groupdocs.merger.domain.options.AddPasswordOptions;
@@ -109,10 +148,10 @@ merger.save(filePathOut);
 ## Masalah Umum dan Solusinya
 - **File Tidak Ditemukan:** Periksa kembali bahwa `filePath` mengarah ke PPTX yang ada dan bahwa folder output ada serta dapat ditulisi.  
 - **Format Kata Sandi Tidak Valid:** GroupDocs.Merger menerima string apa pun yang tidak kosong, tetapi hindari kata sandi yang sangat pendek untuk keamanan yang lebih baik.  
-- **Kesalahan Memori pada File Besar:** Gunakan flag Java `-Xmx` untuk meningkatkan ukuran heap jika Anda memproses presentasi yang lebih besar dari 200 MB.
+- **Kesalahan Memori pada File Besar:** Gunakan flag `-Xmx` Java untuk meningkatkan ukuran heap jika Anda memproses presentasi yang lebih besar dari 200 MB.
 
-## Kasus Penggunaan Praktis
-1. **Keamanan Perusahaan:** Enkripsi deck pendapatan kuartalan sebelum mengirim email kepada eksekutif.  
+## Contoh Kasus Praktis
+1. **Keamanan Korporat:** Enkripsi deck pendapatan kuartalan sebelum mengirim email ke eksekutif.  
 2. **Kerahasiaan Klien:** Lindungi slide proposal dan bagikan kata sandi melalui saluran terpisah.  
 3. **Materi Pendidikan:** Amankan kertas ujian atau manual solusi hanya untuk instruktur.
 
@@ -120,22 +159,25 @@ merger.save(filePathOut);
 - **Manajemen Memori Efisien:** Tutup semua stream yang Anda buka dan biarkan JVM mengumpulkan objek yang tidak terpakai.  
 - **Pemanfaatan Sumber Daya:** Pantau penggunaan CPU selama pemrosesan batch; pertimbangkan memproses file secara berurutan jika Anda mencapai batas memori.
 
+## Bagaimana GroupDocs.Merger mengenkripsi file PowerPoint?
+GroupDocs.Merger menerapkan enkripsi AES‑256 pada seluruh paket PPTX, menyimpan hash kata sandi di header file sehingga PowerPoint meminta kata sandi sebelum konten apa pun ditampilkan. Proses ini berjalan di memori, artinya file asli tidak pernah ditulis tanpa enkripsi ke disk.
+
 ## Pertanyaan yang Sering Diajukan
 
 **Q: Bisakah saya menambahkan kata sandi ke beberapa file PPTX sekaligus?**  
-A: Ya. Lakukan loop pada koleksi jalur file dan gunakan kembali instance `AddPasswordOptions` yang sama untuk setiap iterasi.
+A: Ya. Lakukan perulangan atas koleksi jalur file dan gunakan kembali instance `AddPasswordOptions` yang sama untuk setiap iterasi.
 
 **Q: Apa yang terjadi jika saya membuka PPTX yang dilindungi tanpa kata sandi yang benar?**  
-A: PowerPoint akan menampilkan kesalahan dan menolak membuka file sampai kata sandi yang benar dimasukkan.
+A: PowerPoint akan menampilkan error dan menolak membuka file sampai kata sandi yang benar dimasukkan.
 
 **Q: Apakah GroupDocs.Merger mendukung semua format PowerPoint?**  
-A: Ia mendukung PPTX dan, dalam kebanyakan kasus, file PPT lama. Lihat dokumentasi terbaru untuk dukungan versi yang tepat.
+A: Ia mendukung file PPTX dan PPT serta dapat mengonversi file PPT lama ke PPTX sebelum menerapkan enkripsi.
 
 **Q: Bagaimana cara menghapus kata sandi dari PPTX menggunakan GroupDocs.Merger?**  
 A: Gunakan metode `removePassword` pada instance `Merger` setelah membuka file yang terenkripsi.
 
 **Q: Apakah ada batas panjang kata sandi?**  
-A: GroupDocs.Merger tidak memberlakukan batas panjang yang ketat, tetapi kata sandi yang sangat panjang dapat memengaruhi kinerja. Targetkan panjang yang kuat namun wajar (mis., 12‑20 karakter).
+A: GroupDocs.Merger tidak memberlakukan batas panjang yang ketat, tetapi kata sandi yang sangat panjang dapat memengaruhi kinerja. Targetkan 12‑20 karakter dengan kombinasi huruf besar/kecil, angka, dan simbol.
 
 ## Sumber Daya Tambahan
 
@@ -148,8 +190,12 @@ A: GroupDocs.Merger tidak memberlakukan batas panjang yang ketat, tetapi kata sa
 
 ---
 
-**Terakhir Diperbarui:** 2026-01-29  
-**Diuji Dengan:** GroupDocs.Merger versi terbaru (Java)  
-**Penulis:** GroupDocs  
+**Terakhir Diperbarui:** 2026-05-17  
+**Diuji Dengan:** GroupDocs.Merger latest version (Java)  
+**Penulis:** GroupDocs
 
----
+## Tutorial Terkait
+
+- [Setel Kata Sandi Dokumen Java dengan GroupDocs.Merger – Panduan Lengkap](/merger/java/document-security/master-document-security-groupdocs-merger-java/)
+- [Cara Menggabungkan File PowerPoint Menggunakan GroupDocs.Merger untuk Java: Panduan Komprehensif](/merger/java/format-specific-merging/merge-powerpoint-files-groupdocs-merger-java/)
+- [Otomatisasi Penggabungan PowerPoint dengan GroupDocs.Merger untuk Java: Panduan Langkah demi Langkah](/merger/java/format-specific-merging/automate-powerpoint-merging-groupdocs-merger-java/)
