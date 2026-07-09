@@ -1,137 +1,162 @@
 ---
 additionalTitle: GroupDocs API References
-date: 2026-01-16
+date: 2026-03-17
 description: GroupDocs.Merger belge birleştirme API'sini hızlı, çok platformlu belge
   birleştirme, bölme ve PDF'ler, Office dosyaları, görüntüler ve daha fazlasının işlenmesi
   için keşfedin.
 is_root: true
 linktitle: GroupDocs.Merger Tutorials
-title: GroupDocs.Merger Belge Birleştirme API'sı – Birleştirme ve Bölme İçin Tam Kılavuz
+title: GroupDocs.Merger Belge Birleştirme API'si – Birleştirme ve Bölme İçin Tam Kılavuz
 type: docs
 url: /tr/
 weight: 11
 ---
 
-# GroupDocs.Merger Belge Birleştirme API – Birleştirme ve Bölme Tam Kılavuzu
+, but the URL must stay. Usually we translate link text. We'll translate link text.
 
-**GroupDocs.Merger belge birleştirme API** size .NET veya Java uygulamalarınızdan doğrudan çeşitli belge türlerini birleştirmek, bölmek ve manipüle etmek için hızlı, çapraz platform bir yol sunar. Birkaç PDF'yi tek bir raporda birleştirmeniz, büyük bir sözleşmeyi tek tek sayfalara bölmeniz veya bir sunumdaki slaytların sırasını değiştirmeniz gerekse, bu API sadece birkaç kod satırıyla bunu halleder.
+Check headings: # GroupDocs.Merger Document Merging API – Complete Guide to Merging & Splitting => translate.
 
-## Quick Answers
-- **API ne yapar?** 50+ formatta belgeleri birleştirir, böler, yeniden sıralar ve güvenli hale getirir.  
+Proceed.
+
+Be careful with bullet points: translate content.
+
+Also keep URLs unchanged.
+
+Let's produce final content.
+
+# GroupDocs.Merger Belge Birleştirme API’si – Birleştirme ve Bölme İçin Tam Kılavuz
+
+**GroupDocs.Merger belge birleştirme API’si**, .NET veya Java uygulamalarınızdan doğrudan geniş bir belge yelpazesini birleştirmenize, bölmenize ve manipüle etmenize olanak tanıyan hızlı, çapraz‑platform bir çözümdür. İster birkaç PDF’i tek bir raporda birleştirin, büyük bir sözleşmeyi tek tek sayfalara bölün, ister bir sunumdaki slaytların sırasını değiştirin, bu API sadece birkaç satır kodla bunu halleder.
+
+## Hızlı Yanıtlar
+- **API ne yapar?** 50+ formatta belgeleri birleştirir, böler, yeniden sıralar ve güvenliğini sağlar.  
 - **Hangi platformlar destekleniyor?** .NET (Standard, Framework, Core, Mono) ve Java (J2SE 7‑10).  
-- **Harici bir yazılıma ihtiyacım var mı?** Hayır—Microsoft Office veya Adobe bağımlılıkları yok.  
+- **Harici bir yazılıma ihtiyacım var mı?** Hayır—Microsoft Office veya Adobe bağımlılığı yok.  
 - **Belgeleri koruyabilir miyim?** Evet, şifreleri ve izinleri ekleyebilir, kaldırabilir veya güncelleyebilirsiniz.  
-- **Dosya boyutu için bir limit var mı?** API büyük dosyalar ve toplu işlemler için optimize edilmiştir.
+- **Dosya boyutu sınırlaması var mı?** API büyük dosyalar ve toplu işlemler için optimize edilmiştir.  
 
-## What is GroupDocs.Merger document merging API?
-GroupDocs.Merger belge birleştirme API, geliştiricilere yönelik bir kütüphane olup birden çok belge formatını yönetmenin karmaşıklığını soyutlar. Dosyaları programatik olarak birleştirmenize, sayfa veya aralık bazında bölmenize ve gelişmiş sayfa işlemlerini uygulamanıza olanak tanır—tüm bunlar orijinal düzeni ve meta verileri korurken gerçekleşir.
+## GroupDocs.Merger belge birleştirme API’si nedir?
+GroupDocs.Merger belge birleştirme API’si, birden çok belge formatını yönetmenin karmaşıklığını soyutlayan geliştirici‑odaklı bir kütüphanedir. Dosyaları programlı olarak birleştirmenize, sayfalara veya aralıklara göre bölmenize ve gelişmiş sayfa işlemlerini uygulamanıza olanak tanır—tüm bunları orijinal düzeni ve meta verileri koruyarak yapar.
 
-## Why Choose GroupDocs.Merger document merging API?
-- **Çapraz platform tutarlılığı:** Bir kez yazın, Windows, Linux veya macOS'ta çalıştırın.  
+## Neden GroupDocs.Merger belge birleştirme API’si?
+- **Çapraz‑platform tutarlılık:** Bir kez yazın, Windows, Linux veya macOS’ta çalıştırın.  
 - **Geniş format desteği:** PDF, Word, Excel, PowerPoint, görseller, diyagramlar, arşivler ve daha fazlası ile çalışın.  
-- **Harici bağımlılık yok:** Office veya Adobe kurulumuna gerek yok, bu da dağıtımı basitleştirir.  
-- **Yüksek performans:** Büyük belgeler ve toplu işleme için tasarlanmıştır, bellek kullanımını azaltır.  
-- **Güvenlik yerleşik:** Şifre ekleyip kaldırmak ve izinleri ayarlamak kolaydır.
+- **Harici bağımlılık yok:** Office veya Adobe kurulumuna ihtiyaç duymaz, dağıtımı basitleştirir.  
+- **Yüksek performans:** Büyük belgeler ve toplu işlem için tasarlanmış, bellek ayak izini azaltır.  
+- **Güvenlik yerleşik:** Şifre ekleme/kaldırma ve izin ayarlamaları kolaydır.
 
-## Transform How You Manage Documents Across Multiple Platforms
-GroupDocs.Merger, dosyalarla çalışan geliştiricilerin iş akışını basitleştiren güçlü, çapraz platform bir belge manipülasyon çözümü sunar. Kapsamlı API’miz, birden çok belgeyi tek bir dosyada birleştirmenize, belgeleri daha küçük parçalara bölmenize, sayfaları yeniden sıralamanıza, güvenlik seçenekleri uygulamanıza ve çok daha fazlasına olanak tanır—tüm bunlar minimum kod ve maksimum verimlilikle gerçekleşir.
+## Çoklu Platformlarda Belgeleri Yönetme Şeklinizi Dönüştürün
+GroupDocs.Merger, belge manipülasyonu için güçlü, çapraz‑platform bir çözüm sunar ve geliştiricilerin dosyalarla çalışma şeklini sadeleştirir. Kapsamlı API’miz, birden çok belgeyi tek bir dosyada birleştirmenize, belgeleri daha küçük parçalara bölmenize, sayfaları yeniden sıralamanıza, güvenlik seçenekleri uygulamanıza ve çok daha fazlasına olanak tanır—az kodla ve maksimum verimlilikle.
 
-.NET veya Java ortamlarında geliştirme yapıyor olun, GroupDocs.Merger 50+ popüler dosya formatı (PDF, Office belgeleri, görseller vb.) ile sorunsuz çalışan tutarlı, yüksek‑performanslı belge işleme yetenekleri sunar.
+.NET veya Java ortamlarında geliştirme yapıyor olun, GroupDocs.Merger 50+ popüler dosya formatı (PDF, Office belgeleri, görseller vb.) ile sorunsuz çalışan tutarlı ve yüksek‑performanslı belge işleme yetenekleri sunar.
 
-## Key Features & Capabilities
-- **Kapsamlı Belge Birleştirme** – Birden çok kaynaktan tüm belgeleri veya belirli sayfaları tek tutarlı bir dosyada birleştirin  
-- **Çapraz Format Desteği** – Farklı dosya formatlarını tek bir belgeye birleştirin (ör. DOC, XLSX ve görselleri tek PDF'e)  
-- **Akıllı Belge Bölme** – Belgeleri sayfa numaralarına, aralıklara göre bölün veya belirli sayfaları ayrı dosyalar olarak çıkarın  
-- **Gelişmiş Sayfa İşlemleri** – Sayfaları taşıyın, kaldırın, döndürün, değiştirin ve kesin kontrolle çıkarın  
-- **Güvenlik Yönetimi** – Belge şifrelerini ve izinlerini ekleyin, kaldırın veya güncelleyin  
-- **OLE Nesne Desteği** – Belgeleri Word, Excel, PowerPoint ve Visio dosyalarına OLE nesneleri olarak ekleyin  
-- **Harici Bağımlılık Yok** – Belgeleri Microsoft Office veya Adobe yazılımı gerektirmeden işleyin  
-- **Yüksek Performans** – Büyük belgeleri ve toplu işlemleri verimli şekilde işlemek için optimize edilmiştir  
+## Temel Özellikler ve Yetkinlikler
+- **Kapsamlı Belge Birleştirme** – Birden çok kaynaktan tüm belgeleri veya belirli sayfaları tek tutarlı dosyada birleştirin.  
+- **Çapraz‑Format Desteği** – Farklı dosya formatlarını tek bir belgeye birleştirin (ör. DOC, XLSX ve görselleri tek PDF’de birleştirin).  
+- **Akıllı Belge Bölme** – Belgeleri sayfa numaralarına, aralıklara göre bölün veya belirli sayfaları ayrı dosyalar olarak çıkarın.  
+- **Gelişmiş Sayfa İşlemleri** – Sayfaları taşıyın, kaldırın, döndürün, takaslayın ve kesin kontrolle çıkarın.  
+- **Güvenlik Yönetimi** – Belge şifrelerini ve izinlerini ekleyin, kaldırın veya güncelleyin.  
+- **OLE Nesne Desteği** – Word, Excel, PowerPoint ve Visio dosyalarına OLE nesneleri olarak belge ekleyin.  
+- **Harici Bağımlılık Yok** – Microsoft Office veya Adobe yazılımı gerektirmeden belge işleyin.  
+- **Yüksek Performans** – Büyük belgeler ve toplu işlemler için verimli şekilde optimize edilmiştir.
 
-## Supported File Formats
-GroupDocs.Merger, birden çok kategori içinde 50+ dosya formatıyla çalışır:
+## Desteklenen Dosya Formatları
+GroupDocs.Merger, birden çok kategori altında 50’den fazla dosya formatıyla çalışır:
 
 - **Belgeler**: PDF, DOC, DOCX, RTF, ODT, XPS, EPUB, HTML  
-- **Elektronik Tablo**: XLS, XLSX, XLSM, XLSB, ODS, CSV, TSV  
+- **Elektronik Tablolar**: XLS, XLSX, XLSM, XLSB, ODS, CSV, TSV  
 - **Sunumlar**: PPT, PPTX, PPS, PPSX, ODP  
 - **Görseller**: JPG, PNG, BMP, GIF, TIFF, SVG  
 - **Diyagramlar**: VSDX, VSDM, VSSX, VSTX, VDX, VSX, VTX  
 - **Arşivler**: ZIP, TAR, 7Z  
-- **Ve daha fazlası**  
+- **Ve daha fazlası**
 
-## [GroupDocs.Merger for .NET Tutorials](./net)
+## [GroupDocs.Merger for .NET Eğitimleri](./net)
 
-Güçlü belge işleme yeteneklerini .NET uygulamalarınıza nasıl entegre edeceğinizi keşfedin. Kapsamlı .NET eğitimlerimiz, GroupDocs.Merger API’nın temel işlemlerinden gelişmiş uygulama senaryolarına kadar her yönünü adım adım anlatır.
+Güçlü belge işleme yeteneklerini .NET uygulamalarınıza nasıl entegre edeceğinizi keşfedin. Kapsamlı .NET eğitimlerimiz, GroupDocs.Merger API’sinin temel işlemlerinden gelişmiş senaryolara kadar her adımı size rehberlik eder.
 
 GroupDocs.Merger for .NET ile .NET Standard 2.0, .NET Framework 2.0+, .NET Core 2.0+ ve Mono Framework 1.2+ dahil olmak üzere çeşitli .NET çerçevelerinde çalışan sağlam belge yönetim çözümleri oluşturabilirsiniz.
 
-### Essential .NET Tutorials
-- [Merge Compress Files](./net/merge-compress-files/) - Arşiv formatlarını (7z, TAR, ZIP) verimli bir şekilde birleştirmeyi ve sıkıştırmayı öğrenin  
-- [Image Merging](./net/image-merging/) - Çeşitli görüntü formatlarını (BMP, GIF, PNG, SVG, TIFF) birleştirme tekniklerini öğrenin  
-- [Document Merging](./net/document-merging/) - DOC, DOCX, PDF ve diğer belge formatlarını sorunsuz birleştirin  
-- [Spreadsheet Merging](./net/spreadsheet-merging/) - Excel dosyalarını veri, formül ve biçimlendirmeyi koruyarak birleştirin  
-- [Visio Merging](./net/visio-merging/) - Visio diyagramlarını ve çizimlerini hassas kontrolle birleştirin  
-- [Presentation Merging](./net/presentation-merging/) - PowerPoint sunumlarını slayt ve animasyonları koruyarak birleştirin  
+### Temel .NET Eğitimleri
 
-### Advanced .NET Operations
-- [Document Loading](./net/document-loading/) - Belgeleri farklı kaynaklardan yükleme tekniklerini keşfedin  
-- [Document Information](./net/document-information/) - Belge meta verilerini ve özelliklerini çıkarın ve analiz edin  
-- [Document Joining](./net/document-joining/) - Gelişmiş belge birleştirme seçeneklerini ve özelleştirmeleri öğrenin  
-- [Format‑Specific Merging](./net/format-specific-merging/) - Belirli dosya formatları için optimize edilmiş birleştirme tekniklerini keşfedin  
-- [Advanced Joining Options](./net/advanced-joining-options/) - Karmaşık belge birleştirme senaryolarında uzmanlaşın  
-- [Document Security](./net/document-security/) - Şifre yönetimiyle güçlü belge koruması uygulayın  
-- [Page Operations](./net/page-operations/) - Belge sayfalarını hassas kontrollerle manipüle edin  
-- [Document Extraction](./net/document-extraction/) - Daha büyük belgelerden belirli içerikleri çıkarın  
-- [Document Import](./net/document-import/) - Belgeler içine harici içerik aktarın  
-- [Image Operations](./net/image-operations/) - Görüntü dosyalarını etkili bir şekilde işleyin ve manipüle edin  
-- [Document Splitting](./net/document-splitting/) - Belgeleri çeşitli bölme stratejileriyle bölün (document splitting)  
-- [Text Operations](./net/text-operations/) - Metin tabanlı belgelerle verimli çalışın  
-- [Licensing](./net/licensing/) - Projelerinizde GroupDocs.Merger'ı doğru şekilde yapılandırın  
+- [Merge Compress Files](./net/merge-compress-files/) – Arşiv formatlarını (7z, TAR, ZIP) verimli bir şekilde birleştirip sıkıştırmayı öğrenin  
+- [Image Merging](./net/image-merging/) – Çeşitli görsel formatlarını (BMP, GIF, PNG, SVG, TIFF) birleştirme tekniklerini ustalaşın  
+- [Document Merging](./net/document-merging/) – DOC, DOCX, PDF ve diğer belge formatlarını sorunsuz birleştirin  
+- [Spreadsheet Merging](./net/spreadsheet-merging/) – Excel dosyalarını veri, formül ve biçimlendirmeyi koruyarak birleştirin  
+- [Visio Merging](./net/visio-merging/) – Visio diyagram ve çizimlerini hassas kontrolle birleştirin  
+- [Presentation Merging](./net/presentation-merging/) – PowerPoint sunumlarını slayt ve animasyonları koruyarak birleştirin  
 
-## [GroupDocs.Merger for Java Tutorials](./java)
+### Gelişmiş .NET İşlemleri
 
-Java uygulamalarınızı güçlü belge işleme yetenekleriyle dönüştürün. Java eğitimlerimiz, GroupDocs.Merger'ı Java ortamlarında uygulamak için ayrıntılı rehberlik sağlar ve Windows, Linux ve macOS dahil olmak üzere büyük platformlarda çalışan tam örnekler sunar.
+- [Document Loading](./net/document-loading/) – Belgeleri farklı kaynaklardan yükleme tekniklerini keşfedin  
+- [Document Information](./net/document-information/) – Belge meta verilerini ve özelliklerini çıkarıp analiz edin  
+- [Document Joining](./net/document-joining/) – Gelişmiş belge birleştirme seçenekleri ve özelleştirmeleri öğrenin  
+- [Format‑Specific Merging](./net/format-specific-merging/) – Belirli dosya formatları için optimize edilmiş birleştirme tekniklerini keşfedin  
+- [Advanced Joining Options](./net/advanced-joining-options/) – Karmaşık belge birleştirme senaryolarını ustalıkla yönetin  
+- [Document Security](./net/document-security/) – Şifre yönetimiyle güçlü belge koruması uygulayın  
+- [Page Operations](./net/page-operations/) – Sayfa işlemlerini hassas kontrollerle yönetin  
+- [Document Extraction](./net/document-extraction/) – Büyük belgelerden belirli içerikleri çıkarın  
+- [Document Import](./net/document-import/) – Dış içerikleri belgelere aktarın  
+- [Image Operations](./net/image-operations/) – Görsel dosyalarını etkili bir şekilde işleyin ve manipüle edin  
+- [Document Splitting](./net/document-splitting/) – Çeşitli bölme stratejileriyle belgeleri parçalara ayırın (document splitting)  
+- [Text Operations](./net/text-operations/) – Metin‑tabanlı belgelerle verimli çalışın  
+- [Licensing](./net/licensing/) – GroupDocs.Merger’ı projelerinizde doğru şekilde yapılandırın  
 
-GroupDocs.Merger for Java, J2SE 7.0 (1.7), J2SE 8.0 (1.8) ve Java 10'u destekler; bu sayede neredeyse tüm Java‑tabanlı geliştirme projeleriyle uyumludur.
+## [GroupDocs.Merger for Java Eğitimleri](./java)
 
-### Essential Java Tutorials
-- [Document Loading](./java/document-loading/) - Dosyalar, akışlar ve URL'lerden belge yükleme tekniklerini öğrenin  
-- [Document Information](./java/document-information/) - Değerli belge meta verilerini ve özelliklerini çıkarın  
-- [Document Joining](./java/document-joining/) - Birden çok dosyayı tek bir belgede hassas kontrolle birleştirin  
-- [Format‑Specific Merging](./java/format-specific-merging/) - Farklı dosya formatları için optimize edilmiş yaklaşımları öğrenin  
-- [Advanced Joining Options](./java/advanced-joining-options/) - Karmaşık birleştirme senaryolarını ve özelleştirmeleri keşfedin  
-- [Document Security](./java/document-security/) - Güçlü belge koruması ve izin kontrolleri uygulayın  
-- [Page Operations](./java/page-operations/) - Belgeler içinde tek tek sayfaları manipüle edin  
-- [Document Extraction](./java/document-extraction/) - Belgelerden belirli içerikleri çıkarın  
-- [Document Import](./java/document-import/) - Belgeler içine harici içerik aktarın  
-- [Image Operations](./java/image-operations/) - Görüntü dosyaları ve dönüşümleriyle çalışın  
-- [Document Splitting](./java/document-splitting/) - Belgeleri çeşitli bölme stratejileriyle bölün (document splitting)  
-- [Text Operations](./java/text-operations/) - Metin tabanlı belgeleri etkili bir şekilde işleyin  
-- [Licensing](./java/licensing/) - Java ortamlarında GroupDocs.Merger'ı yapılandırın  
+Java uygulamalarınızı güçlü belge işleme yetenekleriyle dönüştürün. Java eğitimlerimiz, GroupDocs.Merger’ı Java ortamlarında uygulamak için ayrıntılı rehberlik sunar ve Windows, Linux, macOS gibi büyük platformlarda çalışan tam örnekler içerir.
 
-## Common Use Cases & Benefits
-- **Otomatik Rapor Oluşturma:** Veri odaklı PDF'leri ve Excel sayfalarını tek bir raporda birleştirerek dağıtın.  
-- **Hukuki Belge Yönetimi:** Büyük sözleşmeleri daha kolay inceleme ve imzalama için bireysel bölümlere ayırın.  
-- **İçerik Göçü:** Çoklu formatlardan eski belgeleri dönüştürüp birleştirerek standart bir PDF arşivi oluşturun.  
-- **Güvenli Belge Teslimatı:** Gizli dosyaları müşterilere göndermeden önce şifre ve izinler ekleyin.  
+GroupDocs.Merger for Java, J2SE 7.0 (1.7), J2SE 8.0 (1.8) ve Java 10’u destekler; bu sayede neredeyse her Java‑tabanlı geliştirme projesiyle uyumludur.
 
-## Frequently Asked Questions
+### Temel Java Eğitimleri
 
-**Q: Can I use the API in a commercial product?**  
-A: Yes, with a valid GroupDocs license. A free trial is available for evaluation.
+- [Document Loading](./java/document-loading/) – Dosyalar, akışlar ve URL’lerden belge yükleme tekniklerini ustalaşın  
+- [Document Information](./java/document-information/) – Değerli belge meta verilerini ve özelliklerini çıkarın  
+- [Document Joining](./java/document-joining/) – Çoklu dosyaları tek belgelerde hassas kontrolle birleştirin  
+- [Format‑Specific Merging](./java/format-specific-merging/) – Farklı dosya formatları için optimize edilmiş yaklaşımları öğrenin  
+- [Advanced Joining Options](./java/advanced-joining-options/) – Karmaşık birleştirme senaryoları ve özelleştirmeleri keşfedin  
+- [Document Security](./java/document-security/) – Güçlü belge koruması ve izin kontrolleri uygulayın  
+- [Page Operations](./java/page-operations/) – Belgelerdeki tek tek sayfaları manipüle edin  
+- [Document Extraction](./java/document-extraction/) – Belgelerden belirli içerikleri çıkarın  
+- [Document Import](./java/document-import/) – Dış içerikleri belgelere aktarın  
+- [Image Operations](./java/image-operations/) – Görsel dosyalarını ve dönüşümlerini yönetin  
+- [Document Splitting](./java/document-splitting/) – Çeşitli bölme stratejileriyle belgeleri parçalara ayırın (document splitting)  
+- [Text Operations](./java/text-operations/) – Metin‑tabanlı belgelerle etkili bir şekilde çalışın  
+- [Licensing](./java/licensing/) – Java ortamlarında GroupDocs.Merger’ı yapılandırın  
 
-**Q: Does the API support password‑protected PDFs?**  
-A: Absolutely. You can open, modify, and re‑secure encrypted PDFs using the same API calls.
+## Yaygın Kullanım Senaryoları ve Faydalar
+- **Otomatik Rapor Oluşturma:** Veri‑odaklı PDF ve Excel dosyalarını tek bir raporda birleştirerek dağıtın.  
+- **Hukuki Belge Yönetimi:** Büyük sözleşmeleri daha kolay inceleme ve imzalama için ayrı bölümlere ayırın.  
+- **İçerik Göçü:** Birden çok formatta eski belgeleri standart bir PDF arşivine dönüştürüp birleştirin.  
+- **Güvenli Belge Teslimatı:** Gizli dosyaları müşterilere göndermeden önce şifre ve izin ekleyin.  
 
-**Q: Which .NET and Java versions are compatible?**  
-A: .NET Standard 2.0, .NET Framework 2.0+, .NET Core 2.0+, Mono 1.2+; Java 7, 8, and 10+ are fully supported.
+## Sıkça Sorulan Sorular
 
-**Q: How does the API handle very large files?**  
-A: It streams data and uses memory‑efficient algorithms, allowing you to process multi‑gigabyte documents without exhausting system resources.
+**S: API’yi ticari bir üründe kullanabilir miyim?**  
+C: Evet, geçerli bir GroupDocs lisansı ile. Değerlendirme için ücretsiz deneme sürümü mevcuttur.
 
-**Q: Is there built‑in support for OCR or text extraction?**  
-A: While the core merging API focuses on structural operations, you can combine it with GroupDocs.Parser for advanced text extraction and OCR needs.
+**S: API şifre korumalı PDF’leri destekliyor mu?**  
+C: Kesinlikle. Şifreli PDF’leri aynı API çağrılarıyla açabilir, değiştirebilir ve yeniden güvence altına alabilirsiniz.
 
-**Last Updated:** 2026-01-16  
-**Tested With:** GroupDocs.Merger 23.12 (latest stable)  
-**Author:** GroupDocs
+**S: Hangi .NET ve Java sürümleri uyumludur?**  
+C: .NET Standard 2.0, .NET Framework 2.0+, .NET Core 2.0+, Mono 1.2+; Java 7, 8 ve 10+ tam desteklenir.
+
+**S: API çok büyük dosyalarla nasıl başa çıkıyor?**  
+C: Veriyi akış olarak işler ve bellek‑verimli algoritmalar kullanır; böylece çok‑gigabaytlık belgeleri sistem kaynaklarını tüketmeden işleyebilirsiniz.
+
+**S: OCR veya metin çıkarma için yerleşik destek var mı?**  
+C: Çekirdek birleştirme API’si yapısal işlemlere odaklanır; gelişmiş metin çıkarma ve OCR ihtiyaçları için GroupDocs.Parser ile birleştirilebilir.
+
+**S: Hızlı bir başlangıç nasıl yapılır?**  
+C: .NET için NuGet paketi (`GroupDocs.Merger`) ya da Java için Maven bağımlılığını ekleyin, ardından “Document Loading” eğitimini izleyerek ilk dosyanızı yükleyin.
+
+**S: Farklı dosya tiplerini tek bir PDF’e birleştirebilir miyim?**  
+C: Evet – API PDF, Word, Excel, görseller ve daha birçok formatı tek bir PDF çıktısına birleştirebilir.
+
+---
+
+**Son Güncelleme:** 2026-03-17  
+**Test Edilen Sürümler:** GroupDocs.Merger 23.12 (en son kararlı)  
+**Yazar:** GroupDocs  
+
+---
