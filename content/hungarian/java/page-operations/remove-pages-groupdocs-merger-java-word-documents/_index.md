@@ -1,19 +1,19 @@
 ---
 date: '2026-07-15'
-description: Learn how to remove pages from Word documents quickly with GroupDocs.Merger
-  for Java, covering setup, page removal, and performance tips.
-images:
-- /java/page-operations/remove-pages-groupdocs-merger-java-word-documents/og-image.png
+description: Ismerje meg, hogyan távolíthat el gyorsan oldalakat a Word dokumentumokból
+  a GroupDocs.Merger for Java használatával, bemutatva a beállítást, az oldalak eltávolítását
+  és a teljesítményjavító tippeket.
 keywords:
 - remove pages from word
 - delete unwanted pages word
 - how to remove pages
 - java edit word documents
 lastmod: '2026-07-15'
-og_description: Remove pages from Word documents efficiently with GroupDocs.Merger
-  for Java. Follow this step‑by‑step guide to delete unwanted pages and boost performance.
+og_description: Távolítson el oldalakat a Word dokumentumokból hatékonyan a GroupDocs.Merger
+  for Java segítségével. Kövesse ezt a lépésről‑lépésre útmutatót a nem kívánt oldalak
+  törléséhez és a teljesítmény növeléséhez.
 og_image_alt: 'Guide: remove pages from Word using GroupDocs.Merger Java'
-og_title: Remove Pages from Word Using GroupDocs.Merger for Java
+og_title: Oldalak eltávolítása a Wordből a GroupDocs.Merger for Java segítségével
 schemas:
 - author: GroupDocs
   dateModified: '2026-07-15'
@@ -67,39 +67,39 @@ tags:
 - remove pages
 - GroupDocs.Merger
 - Java document processing
-title: Remove Pages from Word Using GroupDocs.Merger for Java
+title: Oldalak eltávolítása a Wordből a GroupDocs.Merger for Java segítségével
 type: docs
-url: /java/page-operations/remove-pages-groupdocs-merger-java-word-documents/
+url: /hu/java/page-operations/remove-pages-groupdocs-merger-java-word-documents/
 weight: 1
 ---
 
-# Remove Pages from Word Using GroupDocs.Merger for Java
+# Word oldalak eltávolítása a GroupDocs.Merger for Java segítségével
 
-When you need to **remove pages from Word** documents in an automated Java workflow, GroupDocs.Merger provides a fast, reliable API that handles the heavy lifting for you. In this tutorial you’ll learn how to set up the library, specify the pages you want to delete, and save the cleaned‑up file—all while keeping memory usage low and performance high.
+Amikor **oldalak eltávolítására Word** dokumentumokból automatizált Java munkafolyamatban van szükség, a GroupDocs.Merger gyors, megbízható API-t biztosít, amely elvégzi a nehéz munkát helyetted. Ebben az útmutatóban megtanulod, hogyan állítsd be a könyvtárat, határozd meg a törlendő oldalakat, és mentsd el a megtisztított fájlt – mindezt alacsony memóriahasználattal és magas teljesítménnyel.
 
-## Quick Answers
-- **What does GroupDocs.Merger do?** It programmatically edits, splits, merges, and removes pages from Office documents without requiring Microsoft Office.  
-- **How many pages can I delete at once?** You can pass an array of any length; the API processes them in a single operation.  
-- **Do I need a license for development?** A free trial works for testing; a commercial license is required for production.  
-- **Which Java versions are supported?** JDK 1.8 or higher.  
-- **Is it thread‑safe?** Yes, when each thread uses its own `Merger` instance.
+## Gyors válaszok
+- **Mi a GroupDocs.Merger funkciója?** Programozott módon szerkeszti, felosztja, egyesíti és eltávolítja az oldalakat Office dokumentumokból anélkül, hogy a Microsoft Office szükséges lenne.  
+- **Hány oldalt tudok egyszerre törölni?** Bármilyen hosszúságú tömböt átadhatsz; az API egyetlen műveletben dolgozza fel őket.  
+- **Szükségem van licencre fejlesztéshez?** Ingyenes próba a teszteléshez; a termeléshez kereskedelmi licenc szükséges.  
+- **Mely Java verziók támogatottak?** JDK 1.8 vagy újabb.  
+- **Szálbiztos?** Igen, ha minden szál saját `Merger` példányt használ.
 
-## What is “remove pages from word”?
-**“Remove pages from word”** refers to programmatically deleting one or more pages from a Microsoft Word (.docx) file. This operation is common when you need to strip out confidential sections, trim drafts, or generate customized reports on the fly. Typical use‑cases include removing draft chapters before publishing, extracting clean versions for client review, or automating compliance by discarding sensitive pages.
+## Mi az a „remove pages from word”?
+**„Remove pages from word”** arra a programozott módon egy vagy több oldal törlésére utal egy Microsoft Word (.docx) fájlból. Ez a művelet gyakori, ha bizalmas részeket kell eltávolítani, vázlatokat rövidíteni, vagy helyben testreszabott jelentéseket generálni. Tipikus felhasználási esetek közé tartozik a vázlati fejezetek eltávolítása a publikálás előtt, tiszta verziók készítése ügyfélnek, vagy a megfelelőség automatizálása érzékeny oldalak eldobásával.
 
-## Why use GroupDocs.Merger for Java?
-GroupDocs.Merger supports **50+ input and output formats** and can process documents with **up to 1,000 pages** without loading the entire file into memory, reducing RAM consumption by up to **70 %** compared with naïve file‑stream approaches. The API also guarantees layout fidelity, preserving tables, images, and styles after page removal.
+## Miért használjuk a GroupDocs.Merger for Java-t?
+A GroupDocs.Merger **50+ bemeneti és kimeneti formátumot** támogat, és képes **akár 1 000 oldalas** dokumentumok feldolgozására anélkül, hogy a teljes fájlt a memóriába töltené, így a RAM fogyasztás akár **70 %**-kal csökken a naív fájl‑stream megközelítésekhez képest. Az API garantálja a layout hűségét, megőrizve a táblázatokat, képeket és stílusokat az oldal eltávolítása után.
 
-## Prerequisites
-- **Java Development Kit (JDK) 1.8+** installed.
-- An IDE such as **IntelliJ IDEA** or **Eclipse**.
-- Maven or Gradle for dependency management.
-- Basic Java file‑handling knowledge.
+## Előfeltételek
+- **Java Development Kit (JDK) 1.8+** telepítve.
+- IDE, például **IntelliJ IDEA** vagy **Eclipse**.
+- Maven vagy Gradle a függőségkezeléshez.
+- Alapvető Java fájlkezelési ismeretek.
 
-## Setting Up GroupDocs.Merger for Java
-To start using GroupDocs.Merger, add the library to your project’s dependencies.
+## A GroupDocs.Merger for Java beállítása
+A GroupDocs.Merger használatának megkezdéséhez add hozzá a könyvtárat a projekt függőségeihez.
 
-### Maven Setup
+### Maven beállítás
 Add the following snippet to your `pom.xml` file:
 ```xml
 <dependency>
@@ -109,37 +109,37 @@ Add the following snippet to your `pom.xml` file:
 </dependency>
 ```
 
-### Gradle Setup
+### Gradle beállítás
 Include this in your `build.gradle` file:
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-### Direct Download
+### Közvetlen letöltés
 Alternatively, download the latest version from [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
-#### License Acquisition Steps
+#### Licenc beszerzési lépések
 1. **Free Trial** – start exploring the API without cost.  
 2. **Temporary License** – obtain a time‑limited key for extended testing.  
 3. **Purchase** – buy a full license for production deployments.
 
-## Basic Initialization and Setup
-The `Merger` class is the entry point for all document‑manipulation operations. It encapsulates file loading, page editing, and saving logic.
+## Alap inicializálás és beállítás
+A `Merger` osztály a belépési pont minden dokumentummanipulációs művelethez. Összevonja a fájl betöltését, oldal szerkesztését és a mentési logikát.
 
-The `Merger` class is GroupDocs.Merger's top‑level object that represents a single document or a collection of documents in memory. To initialize GroupDocs.Merger, create an instance of the `Merger` class:
+A `Merger` osztály a GroupDocs.Merger legfelső szintű objektuma, amely egyetlen dokumentumot vagy dokumentumgyűjteményt képvisel a memóriában. A GroupDocs.Merger inicializálásához hozz létre egy `Merger` példányt:
 ```java
 Merger merger = new Merger("path/to/your/document.docx");
 ```
 
-## Implementation Guide
-Let’s walk through the exact steps required to **remove pages from Word** documents.
+## Implementációs útmutató
+Lépjünk végig a **Word oldalak eltávolítása** dokumentumokból szükséges pontos lépéseken.
 
-### How can I remove specific pages from a Word document with GroupDocs.Merger for Java?
-Load the source file with `new Merger(sourcePath)`. `RemoveOptions` is a configuration object that specifies which page numbers or ranges should be eliminated from the document. Configure a `RemoveOptions` object that lists the page numbers you want to delete, call `merger.remove(options)`, and finally save the result with `merger.save(outputPath)`. This end‑to‑end flow removes the pages in a single pass and writes a new file without the unwanted content.
+### Hogyan távolíthatok el konkrét oldalakat egy Word dokumentumból a GroupDocs.Merger for Java-val?
+Töltsd be a forrásfájlt a `new Merger(sourcePath)` segítségével. A `RemoveOptions` egy konfigurációs objektum, amely meghatározza, mely oldalszámok vagy tartományok kerüljenek eltávolításra a dokumentumból. Állíts be egy `RemoveOptions` objektumot, amely felsorolja a törlendő oldalakat, hívd meg a `merger.remove(options)` metódust, majd végül mentsd el az eredményt a `merger.save(outputPath)` segítségével. Ez az end‑to‑end folyamat egyetlen lépésben eltávolítja az oldalakat, és egy új fájlt ír a nem kívánt tartalom nélkül.
 
-Now we’ll break the process into clear, numbered steps.
+Most bontsuk le a folyamatot világos, számozott lépésekre.
 
-#### Step 1: Define File Paths
+#### 1. lépés: Fájl útvonalak meghatározása
 Set up flexible input and output paths so the code can be reused across environments:
 ```java
 String filePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX_10_PAGES";
@@ -147,7 +147,7 @@ String outputPath = new File("YOUR_OUTPUT_DIRECTORY",
     "RemoveDocumentPage-" + Paths.get(filePath).getFileName().toString()).getPath();
 ```
 
-#### Step 2: Specify Pages to Remove
+#### 2. lépés: Az eltávolítandó oldalak megadása
 `RemoveOptions` tells the API which pages to delete. The class is a container for page‑range definitions and removal settings.
 
 The `RemoveOptions` class defines the page numbers (or ranges) that will be eliminated from the document. Use it to pass an array of page indices:
@@ -156,7 +156,7 @@ RemoveOptions removeOptions = new RemoveOptions(new int[] { 3, 5 });
 ```
 *This snippet specifies that you want to remove the third and fifth pages.*
 
-#### Step 3: Initialize Merger with Source Document Path
+#### 3. lépés: Merger inicializálása a forrásdokumentum útvonalával
 Create a `Merger` instance that points to your original Word file.
 
 The `Merger` class is the primary engine for loading and manipulating the document. Instantiating it with the source path prepares the file for subsequent operations:
@@ -164,7 +164,7 @@ The `Merger` class is the primary engine for loading and manipulating the docume
 Merger merger = new Merger(filePath);
 ```
 
-#### Step 4: Remove Specified Pages
+#### 4. lépés: Megadott oldalak eltávolítása
 Execute the removal based on the options you defined.
 
 Calling `merger.remove(removeOptions)` processes the document in memory, deletes the indicated pages, and keeps the remaining content intact:
@@ -172,7 +172,7 @@ Calling `merger.remove(removeOptions)` processes the document in memory, deletes
 merger.removePages(removeOptions);
 ```
 
-#### Step 5: Save the Modified Document
+#### 5. lépés: A módosított dokumentum mentése
 Write the edited document to the desired output location.
 
 The `save` method writes the updated file to disk, optionally allowing you to choose a different format (e.g., PDF) if needed:
@@ -180,10 +180,10 @@ The `save` method writes the updated file to disk, optionally allowing you to ch
 merger.save(outputPath);
 ```
 
-### File Path Management
+### Fájl útvonalak kezelése
 Consistent path handling avoids “file not found” errors and simplifies deployment across servers.
 
-#### Generate Output Path Function
+#### Kimeneti útvonal generáló függvény
 Encapsulate path creation in a reusable method:
 ```java
 String generateOutputPath(String originalFileName) {
@@ -193,30 +193,30 @@ String generateOutputPath(String originalFileName) {
 }
 ```
 
-## Practical Applications
+## Gyakorlati alkalmazások
 - **Automating Document Cleanup** – regularly strip out draft pages before archiving.  
 - **Generating Reports** – exclude appendix sections that aren’t needed for a particular audience.  
 - **Customizing Templates** – remove placeholder pages to produce lean, client‑specific documents.
 
-## Performance Considerations
-### Tips for Optimizing Performance
+## Teljesítmény szempontok
+### Tippek a teljesítmény optimalizálásához
 - Process large files in **chunks** to keep memory usage low.  
 - Reuse a single `Merger` instance per thread to reduce object‑creation overhead.  
 
-### Resource Usage Guidelines
+### Erőforrás használati irányelvek
 Monitor CPU and RAM, especially when handling batch jobs of **hundreds of documents**; the API scales linearly with page count.
 
-### Best Practices for Java Memory Management
+### Legjobb gyakorlatok a Java memória kezeléshez
 Leverage try‑with‑resources to ensure streams are closed, and invoke `System.gc()` only when necessary after large batch operations.
 
-## Conclusion
+## Következtetés
 You now have a complete, production‑ready solution for **removing pages from Word** documents using GroupDocs.Merger for Java. This approach saves time, reduces manual editing errors, and scales to handle massive document libraries.
 
-### Next Steps
+### Következő lépések
 - Explore other features such as **splitting**, **merging**, and **format conversion** offered by GroupDocs.Merger.  
 - Integrate the code into your existing document‑processing pipeline or microservice.
 
-## Frequently Asked Questions
+## Gyakran Ismételt Kérdések
 
 **Q: Can I remove multiple pages at once using GroupDocs.Merger?**  
 A: Yes, pass an array of page numbers to `RemoveOptions` and the API will delete them in a single operation.
@@ -233,7 +233,7 @@ A: There is no hard limit, but processing time grows with document size; for fil
 **Q: Can I use GroupDocs.Merger for other document formats?**  
 A: Absolutely – the API supports PDF, Excel, PowerPoint, and many image formats in addition to Word.
 
-## Resources
+## Források
 - **Documentation**: [GroupDocs Merger Documentation](https://docs.groupdocs.com/merger/java/)  
 - **API Reference**: [API Reference Guide](https://reference.groupdocs.com/merger/java/)  
 - **Download**: [Latest Releases](https://releases.groupdocs.com/merger/java/)  
@@ -248,7 +248,7 @@ A: Absolutely – the API supports PDF, Excel, PowerPoint, and many image format
 **Tested With:** GroupDocs.Merger for Java 23.10  
 **Author:** GroupDocs
 
-## Related Tutorials
+## Kapcsolódó oktatóanyagok
 
 - [Document Page Operations Tutorials for GroupDocs.Merger Java](/merger/java/page-operations/)
 - [Efficiently Move Pages in Documents Using GroupDocs.Merger for Java](/merger/java/page-operations/efficiently-move-pages-groupdocs-merger-java/)
