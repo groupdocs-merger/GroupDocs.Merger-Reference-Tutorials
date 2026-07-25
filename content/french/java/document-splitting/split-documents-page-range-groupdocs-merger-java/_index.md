@@ -1,45 +1,96 @@
 ---
-date: '2026-02-06'
-description: Apprenez à extraire des pages spécifiques et à diviser des documents
-  par plage de pages en utilisant GroupDocs.Merger pour Java, y compris les filtres
-  de pages impaires/paires.
+date: '2026-07-25'
+description: Apprenez à diviser les pages d'un document Word à l'aide de GroupDocs.Merger
+  for Java, avec des exemples pas à pas pour PDF, DOCX et PPTX, plus des filtres odd/even
+  page.
 keywords:
-- GroupDocs.Merger for Java
-- split documents by page range
-- document management
-title: Extraire des pages spécifiques avec GroupDocs.Merger pour Java
+- split word document pages
+- how to split pdf
+- split pdf by range
+- GroupDocs.Merger Java
+- document page extraction
+lastmod: '2026-07-25'
+og_description: Apprenez à diviser les pages d'un document Word à l'aide de GroupDocs.Merger
+  for Java, avec des exemples pas à pas pour PDF, DOCX et PPTX, plus des filtres odd/even
+  page.
+og_image_alt: Guide to split word document pages using GroupDocs.Merger for Java
+og_title: Diviser les pages d'un document Word avec GroupDocs.Merger for Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-25'
+  description: Learn how to split word document pages using GroupDocs.Merger for Java,
+    with step‑by‑step examples for PDF, DOCX, and PPTX, plus odd/even page filters.
+  headline: Split Word Document Pages with GroupDocs.Merger for Java
+  type: TechArticle
+- description: Learn how to split word document pages using GroupDocs.Merger for Java,
+    with step‑by‑step examples for PDF, DOCX, and PPTX, plus odd/even page filters.
+  name: Split Word Document Pages with GroupDocs.Merger for Java
+  steps:
+  - name: Define Input and Output Paths
+    text: 'Set the source file and the destination pattern for the split files:'
+  - name: Configure Split Options (Range & Filter)
+    text: 'The `SplitOptions` class tells the library which pages to extract and which
+      filter to apply. `RangeMode` is an enumeration that specifies which pages to
+      include, such as odd, even, or all pages. The `filePathOut` property defines
+      the naming pattern, while `startPage` and `endPage` set the inclusive '
+  - name: Perform the Split Operation
+    text: 'Execute the split using the configured options:'
+  type: HowTo
+- questions:
+  - answer: GroupDocs.Merger for Java is a robust library that enables merging, splitting,
+      and reordering pages across many document formats, including PDF, DOCX, and
+      PPTX.
+    question: What is GroupDocs.Merger for Java?
+  - answer: Yes, similar capabilities exist for .NET and C++.
+    question: Can I use GroupDocs.Merger with other programming languages?
+  - answer: '`MergerException` is the exception type thrown by GroupDocs.Merger when
+      a processing error occurs. Wrap calls in `try‑catch` blocks and inspect `MergerException`
+      for detailed error information.'
+    question: How do I handle exceptions during document processing?
+  - answer: Absolutely—set `RangeMode.AllPages` or omit the filter parameter to split
+      by exact page numbers.
+    question: Is it possible to split documents without filtering by odd/even pages?
+  - answer: Java 8 or higher and a compatible IDE; no additional native dependencies
+      are required.
+    question: What are the system requirements for using GroupDocs.Merger?
+  type: FAQPage
+tags:
+- split word document pages
+- GroupDocs.Merger
+- Java document processing
+- PDF splitting
+- page range extraction
+title: Diviser les pages d'un document Word avec GroupDocs.Merger for Java
 type: docs
 url: /fr/java/document-splitting/split-documents-page-range-groupdocs-merger-java/
 weight: 1
 ---
 
-# Extraire des pages spécifiques avec GroupDocs.Merger pour Java
+# Diviser les pages d'un document Word avec GroupDocs.Merger pour Java
 
-Extrayez efficacement **des pages spécifiques** de gros fichiers PDF, Word ou de présentations sans copier‑coller manuellement. Dans ce tutoriel, vous verrez comment diviser un document par plage de pages, appliquer des filtres tels que les pages impaires/paires, et générer des fichiers d’une seule page — le tout avec **GroupDocs.Merger for Java**.
+Dans ce tutoriel, vous apprendrez comment **diviser les pages d'un document Word**—et d'autres formats comme PDF et PPTX—en utilisant GroupDocs.Merger pour Java. Que vous ayez besoin d'extraire une clause de contrat unique, de générer des supports à partir d'une présentation, ou de découper un rapport volumineux en morceaux gérables, l'API vous permet de spécifier des plages de pages précises, des filtres impairs/pairs, ou des sorties d'une seule page avec seulement quelques lignes de code.
 
 ## Réponses rapides
-- **Que signifie « extraire des pages spécifiques » ?** Cela signifie créer de nouveaux documents qui ne contiennent que les pages que vous sélectionnez dans le fichier source.  
+- **Que signifie « extrait des pages spécifiques » ?** Cela signifie créer de nouveaux documents qui ne contiennent que les pages que vous sélectionnez dans le fichier source.  
 - **Quels formats sont pris en charge ?** PDF, DOCX, PPTX, et de nombreux autres formats populaires.  
-- **Puis‑je filtrer par pages impaires ou paires ?** Oui, en utilisant l’option `RangeMode` (par ex., `OddPages`).  
-- **Ai‑je besoin d’une licence ?** Un essai gratuit suffit pour l’évaluation ; une licence permanente est requise pour la production.  
-- **Est‑il adapté aux documents volumineux ?** Oui — divisez les sections de gros documents pour limiter l’utilisation de la mémoire.
+- **Puis-je filtrer par pages impaires ou paires ?** Oui, en utilisant l'option `RangeMode` (par ex., `OddPages`).  
+- **Ai-je besoin d'une licence ?** Un essai gratuit suffit pour l'évaluation ; une licence permanente est requise pour la production.  
+- **Est‑il adapté aux gros documents ?** Oui—divisez les sections de gros documents pour maintenir une faible utilisation de la mémoire.
 
-## Qu’est‑ce que l’extraction de pages spécifiques ?
-L’extraction de pages spécifiques consiste à prendre un sous‑ensemble de pages d’un document source et à les enregistrer dans un nouveau fichier indépendant. Cela est utile pour créer des rapports ciblés, partager des clauses de contrat ou préparer des supports de présentation.
+## Qu'est-ce que l'extraction de pages spécifiques ?
+L'extraction de pages spécifiques consiste à prendre un sous‑ensemble sélectionné de pages d'un document original et à créer un nouveau fichier indépendant qui ne contient que ces pages. Cette technique est utile pour générer des rapports ciblés, partager des clauses de contrat individuelles, ou distribuer des diapositives de présentation spécifiques sans exposer l'intégralité du document source.
 
-## Pourquoi utiliser GroupDocs.Merger for Java pour diviser les PDF et les documents Word ?
-- **API unifiée** – Fonctionne avec PDF, Word, PowerPoint et plus encore, vous n’avez donc pas besoin d’outils séparés.  
-- **Contrôle granulaire** – Choisissez des plages de pages précises, des filtres impaires/paires, ou des découpes page par page.  
-- **Performance optimisée** – Gère efficacement les gros fichiers en diffusant les pages plutôt qu’en chargeant le document complet en mémoire.  
+## Pourquoi utiliser GroupDocs.Merger pour Java pour diviser les PDF et les documents Word ?
+Chargez uniquement les pages dont vous avez besoin et laissez GroupDocs.Merger gérer le travail lourd. La bibliothèque prend en charge **plus de 50 formats d'entrée et de sortie**, peut traiter des fichiers jusqu'à **2 Go** sans charger le document complet en mémoire, et fournit une API cohérente pour PDF, DOCX, PPTX, et plus encore—vous évitant ainsi de jongler avec plusieurs outils.
 
 ## Prérequis
 - **GroupDocs.Merger for Java** (dernière version)  
-- **JDK 8+**  
-- Un IDE tel qu’IntelliJ IDEA ou Eclipse  
+- **JDK 8+**  
+- Un IDE tel qu'IntelliJ IDEA ou Eclipse  
 - Maven ou Gradle pour la gestion des dépendances  
 
-## Configuration de GroupDocs.Merger for Java
-Ajoutez la bibliothèque à votre projet en utilisant l’outil de construction de votre choix.
+## Configuration de GroupDocs.Merger pour Java
+Ajoutez la bibliothèque à votre projet en utilisant l'outil de construction de votre choix.
 
 **Maven**  
 ```xml
@@ -58,13 +109,13 @@ implementation 'com.groupdocs:groupdocs-merger:latest-version'
 **Téléchargement direct** : Vous pouvez également télécharger la bibliothèque directement depuis [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
 ### Acquisition de licence
-Vous pouvez obtenir une licence via :
-- **Essai gratuit** – Testez toutes les fonctionnalités sans limitations.  
-- **Licence temporaire** – Période d’évaluation prolongée.  
-- **Achat** – Licence permanente pour la production.
+Vous pouvez acquérir une licence via :
+- **Essai gratuit** – Testez toutes les fonctionnalités sans limitations.  
+- **Licence temporaire** – Période d'évaluation prolongée.  
+- **Achat** – Licence de production permanente.
 
 **Initialisation et configuration de base**  
-Pour initialiser GroupDocs.Merger, créez une instance de `Merger` avec le chemin de votre document :  
+La classe `Merger` est le point d'entrée pour toutes les opérations de division. Elle représente un document en mémoire et fournit des méthodes pour manipuler les pages. Pour initialiser GroupDocs.Merger, créez une instance de `Merger` avec le chemin de votre document :  
 ```java
 import com.groupdocs.merger.Merger;
 
@@ -72,10 +123,13 @@ String filePath = "YOUR_DOCUMENT_DIRECTORY/Sample_Docx_10_Pages.docx";
 Merger merger = new Merger(filePath);
 ```
 
-## Comment extraire des pages spécifiques avec GroupDocs.Merger for Java
-Cette section vous guide à travers la division d’un document par plage de pages tout en appliquant un filtre de pages impaires.
+## Comment extraire des pages spécifiques avec GroupDocs.Merger pour Java
+Pour extraire des pages spécifiques, chargez le document source avec une instance `Merger`, configurez un objet `SplitOptions` avec les pages de début et de fin souhaitées et, éventuellement, définissez `RangeMode` (par ex., `OddPages` ou `EvenPages`). Ensuite, appelez `merger.split(options)` qui crée de nouveaux fichiers ne contenant que les pages sélectionnées.
 
-### Étape 1 : Définir les chemins d’entrée et de sortie
+### Réponse directe
+Créez une instance `Merger`, configurez un objet `SplitOptions` avec `RangeMode.OddPages` et les pages de début/fin souhaitées, puis appelez `merger.split(options)`. Ce flux en une seule étape extrait uniquement les pages impaires de la plage spécifiée et les écrit selon le modèle de sortie que vous fournissez.
+
+### Étape 1 : Définir les chemins d'entrée et de sortie
 Définissez le fichier source et le modèle de destination pour les fichiers découpés :  
 ```java
 String filePath = "YOUR_DOCUMENT_DIRECTORY/Sample_Docx_10_Pages.docx";
@@ -83,18 +137,15 @@ String filePathOut = "YOUR_OUTPUT_DIRECTORY/SplitToSinglePagesByRangeWithFilter-
 ```
 
 ### Étape 2 : Configurer les options de division (Plage & Filtre)
-Créez un objet `SplitOptions` qui indique à la bibliothèque quelles pages extraire et quel filtre appliquer :  
+La classe `SplitOptions` indique à la bibliothèque quelles pages extraire et quel filtre appliquer. `RangeMode` est une énumération qui spécifie les pages à inclure, comme impaires, paires ou toutes les pages. La propriété `filePathOut` définit le modèle de nommage, tandis que `startPage` et `endPage` définissent la plage inclusive. `RangeMode.OddPages` ne conserve que les pages impaires de cette plage, extrayant ainsi **des pages spécifiques**.  
 ```java
 import com.groupdocs.merger.domain.options.SplitOptions;
 import com.groupdocs.merger.domain.options.RangeMode;
 
 SplitOptions splitOptions = new SplitOptions(filePathOut, 3, 7, RangeMode.OddPages);
 ```
-- **filePathOut** – Modèle de nom de fichier de destination.  
-- **3 et 7** – Numéros de page de début et de fin (inclusifs).  
-- **RangeMode.OddPages** – Conserve uniquement les pages impaires dans la plage, extrayant ainsi **des pages spécifiques**.
 
-### Étape 3 : Effectuer l’opération de division
+### Étape 3 : Effectuer l'opération de division
 Exécutez la division en utilisant les options configurées :  
 ```java
 Merger merger = new Merger(filePath);
@@ -103,51 +154,51 @@ merger.split(splitOptions);
 
 #### Conseils de dépannage
 - Vérifiez que les chemins de fichiers sont corrects et accessibles.  
-- Assurez‑vous que les numéros de pages sont compris dans le nombre total de pages du document ; sinon une exception sera levée.  
+- Assurez‑vous que les numéros de page sont compris dans le nombre total de pages du document ; sinon une exception sera levée.  
 
 ## Comment diviser un PDF en pages individuelles (split pdf single pages)
-Si vous avez besoin que chaque page soit un PDF individuel, définissez simplement le `RangeMode` sur `AllPages` et spécifiez une plage couvrant l’ensemble du document. La même classe `SplitOptions` gère ce scénario.
+Pour diviser un PDF en pages individuelles, ouvrez le fichier avec une instance `Merger` et définissez `RangeMode.AllPages` dans un objet `SplitOptions`. Spécifiez un modèle de nommage de sortie, puis invoquez `merger.split(options)`. La bibliothèque générera un fichier PDF distinct pour chaque page, en préservant le contenu et la mise en forme d'origine.
 
 ## Comment diviser efficacement un gros document (split large document)
-Lorsque vous traitez des fichiers très volumineux, envisagez de les diviser en plages plus petites (par ex., 1‑100, 101‑200) afin de réduire la pression sur la mémoire. Fermez l’instance `Merger` après chaque opération pour libérer les ressources.
+Lors du traitement de très gros documents, divisez-les en petites plages de pages (par ex., 1‑100, 101‑200) pour réduire la consommation de mémoire. Créez des `SplitOptions` séparés pour chaque plage, exécutez `merger.split(options)` séquentiellement, et fermez l'instance `Merger` après chaque lot. Cette approche maintient une utilisation gérable du CPU et des entrées/sorties.
 
-## Comment diviser les pages impaires d’un PDF (split pdf odd pages)
-L’exemple ci‑dessus montre déjà le filtre `OddPages`. Remplacez `RangeMode.OddPages` par `RangeMode.EvenPages` pour extraire les pages paires à la place.
+## Comment diviser les pages impaires d'un PDF (split pdf odd pages)
+Pour extraire uniquement les pages impaires d'un PDF, configurez un objet `SplitOptions` avec `RangeMode.OddPages`. Définissez le modèle de sortie souhaité et, éventuellement, spécifiez une plage de pages si vous n'avez pas besoin de l'ensemble du document. Appelez `merger.split(options)` et la bibliothèque produira des fichiers ne contenant que les pages impaires.
 
 ## Applications pratiques
-1. **Segmentation de documents** – Divisez les contrats en PDFs au niveau des clauses pour faciliter la révision.  
-2. **Gestion de rapports** – Extrayez un chapitre ou une annexe spécifique d’un rapport annuel volumineux.  
+1. **Segmentation de documents** – Découpez les contrats en PDF au niveau des clauses pour une révision plus facile.  
+2. **Gestion de rapports** – Extrayez un chapitre ou une annexe spécifique d'un rapport annuel volumineux.  
 3. **Préparation de présentations** – Isolez des diapositives individuelles pour des réunions ciblées.  
 
-Vous pouvez également intégrer cette logique avec des bases de données ou des systèmes de gestion de contenu pour automatiser les pipelines de travail.
+Vous pouvez également intégrer cette logique avec des bases de données ou des systèmes de gestion de contenu pour automatiser les pipelines de flux de travail.
 
 ## Considérations de performance
-- **Gestion de la mémoire** – Appelez `merger.close()` (ou utilisez try‑with‑resources) après le traitement pour libérer les descripteurs de fichiers.  
-- **Plages sélectives** – Ne demandez que les pages dont vous avez réellement besoin ; cela minimise les entrées/sorties et l’utilisation du CPU.  
+- **Gestion de la mémoire** – Appelez `merger.close()` (ou comptez sur try‑with‑resources) après le traitement pour libérer les descripteurs de fichiers.  
+- **Plages sélectives** – Demandez uniquement les pages dont vous avez réellement besoin ; cela minimise l'utilisation du CPU et des I/O.
 
 ## Conclusion
-Vous disposez désormais d’une méthode claire, étape par étape, pour **extraire des pages spécifiques** de tout type de document pris en charge en utilisant GroupDocs.Merger for Java. Cette fonctionnalité rationalise vos flux de travail documentaires et vous permet de fournir exactement le contenu dont vos utilisateurs ont besoin.
+Vous disposez maintenant d'une méthode claire, étape par étape, pour **diviser les pages d'un document Word** (et d'autres formats pris en charge) en utilisant GroupDocs.Merger pour Java. Cette capacité simplifie vos flux de travail documentaires et vous permet de fournir exactement le contenu dont vos utilisateurs ont besoin.
 
 ### Prochaines étapes
 - Expérimentez avec différentes valeurs de `RangeMode` (par ex., `EvenPages`, `AllPages`).  
-- Combinez la division avec la fonctionnalité **merge** pour réorganiser ou concaténer les pages extraites.  
-- Explorez l’API complète pour les documents protégés par mot de passe, les filigranes, et plus encore.
+- Combinez la division avec la fonctionnalité de **fusion** pour réorganiser ou concaténer les pages extraites.  
+- Explorez l'API complète pour les documents protégés par mot de passe, les filigranes, et plus encore.  
 
 ## Questions fréquentes
-**Q : Qu’est‑ce que GroupDocs.Merger for Java ?**  
-R : Une bibliothèque robuste qui permet de fusionner, diviser et réorganiser les pages à travers de nombreux formats de documents.
+**Q : Qu'est‑ce que GroupDocs.Merger pour Java ?**  
+R : GroupDocs.Merger pour Java est une bibliothèque robuste qui permet de fusionner, diviser et réorganiser les pages de nombreux formats de documents, y compris PDF, DOCX et PPTX.
 
-**Q : Puis‑je utiliser GroupDocs.Merger avec d’autres langages de programmation ?**  
+**Q : Puis‑je utiliser GroupDocs.Merger avec d'autres langages de programmation ?**  
 R : Oui, des capacités similaires existent pour .NET et C++.
 
 **Q : Comment gérer les exceptions lors du traitement de documents ?**  
-R : Enveloppez les appels dans des blocs `try‑catch` et examinez `MergerException` pour obtenir des informations détaillées sur l’erreur.
+R : `MergerException` est le type d'exception lancé par GroupDocs.Merger lorsqu'une erreur de traitement se produit. Enveloppez les appels dans des blocs `try‑catch` et examinez `MergerException` pour obtenir des informations détaillées sur l'erreur.
 
 **Q : Est‑il possible de diviser des documents sans filtrer par pages impaires/paires ?**  
-R : Absolument — définissez `RangeMode.AllPages` ou omettez le paramètre de filtre pour diviser selon des numéros de pages précis.
+R : Absolument—définissez `RangeMode.AllPages` ou omettez le paramètre de filtre pour diviser selon des numéros de pages exacts.
 
 **Q : Quelles sont les exigences système pour utiliser GroupDocs.Merger ?**  
-R : Java 8 ou supérieur et un IDE compatible ; aucune dépendance native supplémentaire.
+R : Java 8 ou supérieur et un IDE compatible ; aucune dépendance native supplémentaire n'est requise.
 
 ## Ressources
 - [Documentation GroupDocs.Merger](https://docs.groupdocs.com/merger/java/)
@@ -155,10 +206,16 @@ R : Java 8 ou supérieur et un IDE compatible ; aucune dépendance native 
 - [Télécharger la bibliothèque](https://releases.groupdocs.com/merger/java/)
 - [Acheter une licence](https://purchase.groupdocs.com/buy)
 - [Essai gratuit et licence temporaire](https://releases.groupdocs.com/merger/java/)
-- [Forum d’assistance](https://forum.groupdocs.com/c/merger/)
+- [Forum d'assistance](https://forum.groupdocs.com/c/merger/)
 
 ---
 
-**Last Updated:** 2026-02-06  
-**Tested With:** GroupDocs.Merger latest version (Java)  
-**Auteur:** GroupDocs
+**Dernière mise à jour** : 2026-07-25  
+**Testé avec** : dernière version de GroupDocs.Merger (Java)  
+**Auteur** : GroupDocs
+
+## Tutoriels associés
+
+- [Supprimer efficacement des pages de documents Word avec GroupDocs.Merger pour Java](/merger/java/page-operations/remove-pages-groupdocs-merger-java-word-documents/)
+- [Gestion maîtresse de documents – Fusionner des documents Word avec GroupDocs.Merger pour Java](/merger/java/document-joining/groupdocs-merger-java-word-document-management/)
+- [Comment diviser des documents en fichiers multi‑pages avec GroupDocs.Merger pour Java](/merger/java/document-splitting/split-documents-multi-page-files-java-groupdocs-merger/)
