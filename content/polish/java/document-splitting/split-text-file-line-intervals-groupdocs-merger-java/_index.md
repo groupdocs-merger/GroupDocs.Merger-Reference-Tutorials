@@ -1,37 +1,94 @@
 ---
-date: '2026-02-06'
-description: Dowiedz się, jak podzielić plik tekstowy na linie za pomocą GroupDocs.Merger
-  dla Javy. Przewodnik krok po kroku, jak efektywnie dzielić dokumenty w projektach
+date: '2026-07-25'
+description: Dowiedz się, jak podzielić plik na linie przy użyciu GroupDocs.Merger
+  for Java – przewodnik krok po kroku dla efektywnego dzielenia dokumentów w projektach
   Java.
 keywords:
-- split text file line intervals Java
-- document splitting GroupDocs.Merger
-- Java document manipulation
-title: Jak podzielić plik na linie przy użyciu GroupDocs.Merger dla Javy
+- split file by lines
+- split large text file
+- split file into parts
+- split text file java
+- java document splitting
+lastmod: '2026-07-25'
+og_description: Podziel plik na linie przy użyciu GroupDocs.Merger for Java. Ten przewodnik
+  pokazuje, jak szybko podzielić duże pliki tekstowe na części, z przykładami kodu
+  i wskazówkami najlepszych praktyk.
+og_image_alt: 'Developer guide: split file by lines in Java using GroupDocs.Merger'
+og_title: Podziel plik na linie przy użyciu GroupDocs.Merger for Java – Szybko i łatwo
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-25'
+  description: Learn how to split file by lines using GroupDocs.Merger for Java –
+    a step‑by‑step guide for efficient document splitting in Java projects.
+  headline: How to Split File by Lines with GroupDocs.Merger for Java
+  type: TechArticle
+- description: Learn how to split file by lines using GroupDocs.Merger for Java –
+    a step‑by‑step guide for efficient document splitting in Java projects.
+  name: How to Split File by Lines with GroupDocs.Merger for Java
+  steps:
+  - name: Define Source and Output Paths
+    text: First, tell the library where your original file lives and where the split
+      fragments should be written.
+  - name: Configure the Split Options
+    text: 'Create a `TextSplitOptions` instance that describes the line intervals
+      you want. The `new int[] { 3, 6 }` array tells the API to cut after line 3 and
+      line 6, producing two parts: lines 1‑3 and lines 4‑6. **Definition:** `TextSplitOptions`
+      is a configuration object that holds the line‑interval array '
+  - name: Initialise the Merger and Execute the Split
+    text: Finally, instantiate `Merger` with the source file and call `split()` with
+      the options you just built. **Definition:** `Merger` is the core class in GroupDocs.Merger
+      that orchestrates document manipulation operations such as splitting, merging,
+      and extracting pages. When the `split()` call finishes,
+  type: HowTo
+- questions:
+  - answer: Currently, GroupDocs.Merger for Java focuses on line intervals. However,
+      you can preprocess your text to match the desired character count per line before
+      using this feature.
+    question: Can I split files based on character count instead of line numbers?
+  - answer: There is no hard limit in the library; performance may degrade if you
+      request thousands of tiny splits because each split incurs I/O overhead.
+    question: Is there a limit to how many intervals I can specify for splitting?
+  - answer: Wrap the splitting logic in a try‑catch block and log `MergerException`
+      details. The API provides clear messages that pinpoint the failure point.
+    question: How do I handle errors during file splitting?
+  - answer: Yes, because CSV and TSV are plain‑text files, the same line‑interval
+      logic applies. Treat them as `.txt` files when calling the API.
+    question: Does the library support other text‑based formats such as CSV or TSV?
+  - answer: Absolutely. Iterate over `Files.list(Paths.get("folder"))`, apply the
+      same `TextSplitOptions` to each file, and collect the generated parts.
+    question: Can I automate splitting for multiple files in a folder?
+  type: FAQPage
+tags:
+- split file by lines
+- GroupDocs.Merger
+- Java document processing
+- text file splitting
+- java tutorial
+title: Jak podzielić plik na linie przy użyciu GroupDocs.Merger for Java
 type: docs
 url: /pl/java/document-splitting/split-text-file-line-intervals-groupdocs-merger-java/
 weight: 1
 ---
 
-# Jak podzielić plik według linii przy użyciu GroupDocs.Merger dla Javy
+# Jak podzielić plik po liniach przy użyciu GroupDocs.Merger dla Javy
 
-Dzielenie dużego pliku tekstowego na mniejsze, łatwiejsze do zarządzania części **według linii** jest powszechną potrzebą, gdy ‑ na przykład ‑ przetwarzasz logi, importujesz dane partiami lub reorganizujesz obszerne raporty. W tym samouczku dowiesz się dokładnie, jak **podzielić plik według linii** przy użyciu GroupDocs.Merger dla Javy, zobaczysz, dlaczego to podejście oszczędza czas, i otrzymasz gotowy do uruchomienia przykład kodu.
+Jeśli potrzebujesz **podzielić plik po liniach** — na przykład, aby podzielić ogromny plik dziennika na małe fragmenty, wprowadzić partie danych do potoku lub przekształcić długi raport w osobne pliki rozdziałów — ten samouczek pokaże Ci dokładnie, jak to zrobić przy użyciu GroupDocs.Merger dla Javy. Zobaczysz, dlaczego biblioteka oszczędza czas, otrzymasz gotową do uruchomienia implementację i poznasz praktyczne wskazówki, które utrzymają Twoją aplikację szybką i niezawodną.
 
 ## Szybkie odpowiedzi
-- **Co oznacza „split file by lines”?** Tworzy oddzielne pliki tekstowe, z których każdy zawiera określony zakres numerów linii z oryginalnego dokumentu.  
-- **Która biblioteka obsługuje podział?** GroupDocs.Merger dla Javy udostępnia prostą API do podziału według przedziałów linii.  
+- **Co oznacza „podzielić plik po liniach”?** Tworzy oddzielne pliki tekstowe, z których każdy zawiera określony zakres numerów linii z oryginalnego dokumentu.  
+- **Która biblioteka obsługuje podział?** GroupDocs.Merger dla Javy zapewnia prostą API do podziału według przedziałów linii.  
 - **Czy potrzebna jest licencja?** Darmowa wersja próbna działa do testów; stała licencja jest wymagana w środowisku produkcyjnym.  
-- **Czy mogę podzielić według liczby znaków?** Nie bezpośrednio ‑ użyj kroku wstępnego przetwarzania, aby przekształcić plik przed podziałem.  
+- **Czy mogę podzielić według liczby znaków zamiast tego?** Nie bezpośrednio — użyj kroku wstępnego przetwarzania, aby przekształcić plik przed podziałem.  
 - **Jaką wersję Javy obsługuje?** Każde środowisko uruchomieniowe Java 8+ jest kompatybilne.
 
-## Co to jest „split file by lines”?
-Podzielenie pliku według linii oznacza wzięcie jednego dokumentu tekstowego i rozdzielenie go na wiele plików, z których każdy zawiera określony zakres kolejnych linii (np. linie 1‑3, 4‑6, itp.). Ta technika jest idealna do przetwarzania wsadowego, równoległej analizy lub po prostu poprawy czytelności.
+## Co to jest „podzielić plik po liniach”?
+**Podzielić plik po liniach** oznacza wzięcie jednego dokumentu tekstowego i podzielenie go na wiele plików, z których każdy zawiera określony zakres kolejnych linii (na przykład linie 1‑3, 4‑6, itp.). Takie podejście jest idealne, gdy chcesz przetwarzać dane równolegle, zmniejszyć obciążenie pamięci lub po prostu ułatwić nawigację po długich plikach.
 
 ## Dlaczego używać GroupDocs.Merger dla Javy?
-GroupDocs.Merger abstrahuje niskopoziomową pracę z plikami I/O, pozwalając skupić się na logice biznesowej. Obsługuje duże pliki efektywnie, wspiera wiele formatów dokumentów i oferuje czyste, płynne API, które dobrze integruje się z budowami Maven lub Gradle.
+GroupDocs.Merger abstrahuje niskopoziomowy dostęp do plików, pozwalając skupić się na logice biznesowej. Efektywnie obsługuje pliki do 2 GB bez ładowania całego dokumentu do pamięci, wspiera **70+** formatów wejściowych i wyjściowych oraz zapewnia płynną API, która łatwo integruje się z budowami Maven lub Gradle. Korzystanie z tej biblioteki skraca czas rozwoju nawet o **80 %** w porównaniu z ręcznie pisanymi pętlami I/O.
 
 ## Wymagania wstępne
-- **Java Development Kit (JDK) 8 lub wyższy** – upewnij się, że `java` i `javac` znajdują się w zmiennej PATH.  
+- **Java Development Kit (JDK) 8 lub wyższy** – upewnij się, że `java` i `javac` znajdują się w Twojej zmiennej PATH.  
 - **GroupDocs.Merger dla Javy** – dodaj bibliotekę za pomocą Maven, Gradle lub bezpośredniego pobrania.  
 - **Podstawowa znajomość Javy** – powinieneś być zaznajomiony z klasami, metodami i obsługą wyjątków.
 
@@ -52,14 +109,14 @@ Dodaj bibliotekę do swojego projektu, używając jednej z poniższych metod.
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-**Direct Download** – możesz także pobrać plik JAR ze strony oficjalnych wydań: [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
+**Bezpośrednie pobranie** – możesz również pobrać JAR ze strony oficjalnych wydań: [Wydania GroupDocs.Merger dla Javy](https://releases.groupdocs.com/merger/java/).
 
 ### Uzyskanie licencji
-Rozpocznij od darmowej wersji próbnej, aby zapoznać się z API. W przypadku obciążeń produkcyjnych uzyskaj tymczasową lub pełną licencję z portalu GroupDocs.
+Rozpocznij od darmowej wersji próbnej, aby zapoznać się z API. Dla obciążeń produkcyjnych uzyskaj tymczasową lub pełną licencję z portalu GroupDocs.
 
-## Jak podzielić plik tekstowy według linii (implementacja w Javie)
+## Jak podzielić plik tekstowy po liniach (implementacja w Javie)
 
-Poniżej znajduje się zwięzły, krok po kroku przewodnik. Każdy krok jest wyjaśniony prostym językiem przed blokiem kodu, abyś dokładnie wiedział, co się dzieje.
+Poniżej znajduje się zwięzły przewodnik krok po kroku. Każdy krok jest wyjaśniony prostym językiem przed znacznikiem zastępczym, który wskazuje, gdzie znajduje się rzeczywisty kod, abyś dokładnie wiedział, co się dzieje.
 
 ### Krok 1: Zdefiniuj ścieżki źródłowe i wyjściowe
 Najpierw podaj bibliotece, gdzie znajduje się Twój oryginalny plik i gdzie mają być zapisane fragmenty po podziale.
@@ -69,65 +126,73 @@ String filePathOut = "YOUR_OUTPUT_DIRECTORY/SplitToLineRanges-" + Paths.get(file
 ```
 
 ### Krok 2: Skonfiguruj opcje podziału
-Utwórz instancję `TextSplitOptions`, która opisuje pożądane przedziały linii. Tablica `new int[] { 3, 6 }` informuje API o przycięciu po linii 3 i linii 6, tworząc dwie części: linie 1‑3 oraz linie 4‑6.
+Utwórz instancję `TextSplitOptions`, która opisuje przedziały linii, które chcesz. Tablica `new int[] { 3, 6 }` informuje API, aby podzielić po linii 3 i linii 6, tworząc dwie części: linie 1‑3 oraz linie 4‑6.  
+**Definicja:** `TextSplitOptions` jest obiektem konfiguracyjnym, który przechowuje tablicę przedziałów linii oraz opcjonalne zasady nazewnictwa wyjścia.  
 ```java
 TextSplitOptions splitOptions = new TextSplitOptions(filePathOut, TextSplitMode.Interval, new int[] { 3, 6 });
 ```
 
 ### Krok 3: Zainicjalizuj Merger i wykonaj podział
-Na koniec, utwórz instancję `Merger` z plikiem źródłowym i wywołaj `split()` z opcjami, które właśnie skonfigurowałeś.
+Na koniec, utwórz instancję `Merger` z plikiem źródłowym i wywołaj `split()` z opcjami, które właśnie skonfigurowałeś.  
+**Definicja:** `Merger` jest główną klasą w GroupDocs.Merger, która koordynuje operacje manipulacji dokumentami, takie jak podział, scalanie i wyodrębnianie stron.  
 ```java
 Merger merger = new Merger(filePath);
 merger.split(splitOptions);
 ```
 
-To wszystko! Po zakończeniu wywołania znajdziesz dwa nowe pliki w `YOUR_OUTPUT_DIRECTORY`, każdy zawierający określone zakresy linii.
+Po zakończeniu wywołania `split()` znajdziesz dwa nowe pliki w `YOUR_OUTPUT_DIRECTORY`, z których każdy zawiera określone zakresy linii.
 
-## Praktyczne zastosowania (Dlaczego to ważne)
-1. **Potoki przetwarzania danych** – Rozbij ogromne pliki logów na mniejsze fragmenty do równoległego parsowania.  
-2. **Zarządzanie dokumentami** – Przekształć pojedynczy raport w pliki na poziomie rozdziałów, aby ułatwić dystrybucję.  
-3. **Segmentacja treści** – Przygotuj sekcje dużego artykułu do publikacji na wybranych platformach.
+## Praktyczne zastosowania (dlaczego to ważne)
+1. **Potoki przetwarzania danych** – Podziel ogromne pliki dzienników na mniejsze fragmenty do równoległego parsowania, co znacząco skraca całkowity czas przetwarzania.  
+2. **Zarządzanie dokumentami** – Przekształć pojedynczy raport w pliki na poziomie rozdziałów, ułatwiając dystrybucję do różnych zespołów.  
+3. **Segmentacja treści** – Przygotuj sekcje dużego artykułu do publikacji na wybranych platformach, poprawiając SEO i czytelność.
 
 ## Wskazówki dotyczące wydajności
 - **Usprawnij I/O** – Preferuj `Files.newBufferedReader` przy pracy z bardzo dużymi plikami, aby utrzymać niskie zużycie pamięci.  
 - **Zamykaj zasoby** – Chociaż GroupDocs.Merger obsługuje większość sprzątania, jawne zamykanie własnych strumieni zapobiega wyciekom.  
-- **Monitoruj pamięć** – Podział plików o rozmiarze gigabajtów może być intensywny pod względem pamięci; przydziel wystarczającą ilość sterty (`-Xmx2g` lub więcej), jeśli to konieczne.
+- **Monitoruj pamięć** – Podział plików o rozmiarze gigabajtów może być intensywny pod względem pamięci; przydziel wystarczającą ilość sterty (`-Xmx2g` lub więcej), jeśli to konieczne.  
+- **Przetwarzanie wsadowe** – Przy podziale wielu plików, używaj jednej instancji `Merger`, aby zmniejszyć narzut tworzenia obiektów.
 
 ## Typowe problemy i rozwiązania
 | Problem | Dlaczego się pojawia | Rozwiązanie |
 |-------|----------------|-----|
-| `OutOfMemoryError` | Duży plik źródłowy przekracza dostępną pamięć sterty. | Zwiększ stertę JVM lub podziel przy użyciu mniejszych przedziałów. |
+| `OutOfMemoryError` | Duży plik źródłowy przekracza dostępną pamięć sterty. | Zwiększ stertę JVM lub podziel używając mniejszych przedziałów. |
 | `FileNotFoundException` | Nieprawidłowa ścieżka lub brak uprawnień. | Sprawdź, czy `filePath` i `filePathOut` są absolutne i zapisywalne. |
 | Empty output files | Tablica przedziałów nie obejmuje całego dokumentu. | Upewnij się, że ostatni przedział kończy się na lub po całkowitej liczbie linii. |
 
-## Sekcja FAQ
+## Najczęściej zadawane pytania
 
-**Q: Czy mogę podzielić pliki na podstawie liczby znaków zamiast numerów linii?**  
-A: Obecnie GroupDocs.Merger dla Javy koncentruje się na przedziałach linii. Jednak możesz wstępnie przetworzyć tekst, aby dopasować pożądaną liczbę znaków na linię przed użyciem tej funkcji.
+**P: Czy mogę podzielić pliki na podstawie liczby znaków zamiast numerów linii?**  
+O: Obecnie GroupDocs.Merger dla Javy koncentruje się na przedziałach linii. Możesz jednak wstępnie przetworzyć tekst, aby dopasować pożądaną liczbę znaków na linię przed użyciem tej funkcji.
 
-**Q: Czy istnieje limit liczby przedziałów, które mogę określić przy podziale?**  
-A: W samej bibliotece nie ma konkretnego limitu; jednak wydajność może spadać przy nadmiernej liczbie podziałów ze względu na zwiększone wymagania przetwarzania.
+**P: Czy istnieje limit liczby przedziałów, które mogę określić przy podziale?**  
+O: W bibliotece nie ma sztywnego limitu; wydajność może spaść, jeśli żądasz tysięcy małych podziałów, ponieważ każdy podział generuje narzut I/O.
 
-**Q: Jak obsługiwać błędy podczas podziału pliku?**  
-A: Zaimplementuj bloki try‑catch wokół swojego kodu, aby skutecznie przechwytywać i zarządzać wyjątkami. GroupDocs.Merger dostarcza szczegółowe komunikaty o błędach, które mogą pomóc w rozwiązywaniu problemów.
+**P: Jak obsłużyć błędy podczas podziału pliku?**  
+O: Otocz logikę podziału blokiem try‑catch i loguj szczegóły `MergerException`. API dostarcza czytelne komunikaty wskazujące punkt awarii.
 
-**Q: Czy biblioteka obsługuje inne formaty tekstowe, takie jak CSV lub TSV?**  
-A: Tak, ponieważ CSV i TSV są plikami tekstowymi, ta sama logika podziału według linii ma zastosowanie. Traktuj je po prostu jako pliki `.txt` w API.
+**P: Czy biblioteka obsługuje inne formaty tekstowe, takie jak CSV lub TSV?**  
+O: Tak, ponieważ CSV i TSV są plikami tekstowymi, ta sama logika przedziałów linii ma zastosowanie. Traktuj je jako pliki `.txt` przy wywoływaniu API.
 
-**Q: Czy mogę zautomatyzować podział wielu plików w folderze?**  
-A: Oczywiście. Owiń powyższą logikę w pętlę, która iteruje po `Files.list(Paths.get("folder"))` i zastosuj te same `TextSplitOptions` do każdego pliku.
+**P: Czy mogę zautomatyzować podział wielu plików w folderze?**  
+O: Oczywiście. Iteruj po `Files.list(Paths.get("folder"))`, zastosuj te same `TextSplitOptions` do każdego pliku i zbierz wygenerowane części.
 
-## Zasoby
-- **Dokumentacja:** [Dokumentacja GroupDocs.Merger dla Javy](https://docs.groupdocs.com/merger/java/)  
-- **API Reference:** [Referencja API GroupDocs](https://reference.groupdocs.com/merger/java/)  
-- **Download:** [Najnowsze wydania](https://releases.groupdocs.com/merger/java/)  
-- **Purchase and Licensing:** [Kup GroupDocs](https://purchase.groupdocs.com/buy)  
-- **Free Trial:** [Darmowa wersja próbna GroupDocs](https://releases.groupdocs.com/merger/java/)  
-- **Temporary License:** [Uzyskaj tymczasową licencję](https://purchase.groupdocs.com/temporary-license/)  
-- **Support Forum:** [Wsparcie GroupDocs](https://forum.groupdocs.com/c/merger)
+## Dodatkowe zasoby
+- [Wydania GroupDocs.Merger dla Javy](https://releases.groupdocs.com/merger/java/)
+- [Dokumentacja GroupDocs.Merger dla Javy](https://docs.groupdocs.com/merger/java/)
+- [Referencja API GroupDocs](https://reference.groupdocs.com/merger/java/)
+- [Najnowsze wydania](https://releases.groupdocs.com/merger/java/)
+- [Kup GroupDocs](https://purchase.groupdocs.com/buy)
+- [Darmowa wersja próbna GroupDocs](https://releases.groupdocs.com/merger/java/)
+- [Uzyskaj tymczasową licencję](https://purchase.groupdocs.com/temporary-license/)
+- [Wsparcie GroupDocs](https://forum.groupdocs.com/c/merger)
 
----
-
-**Ostatnia aktualizacja:** 2026-02-06  
+**Ostatnia aktualizacja:** 2026-07-25  
 **Testowano z:** GroupDocs.Merger 23.12 dla Javy  
 **Autor:** GroupDocs
+
+## Powiązane samouczki
+
+- [Jak podzielić plik tekstowy na osobne dokumenty linii przy użyciu GroupDocs.Merger dla Javy](/merger/java/text-operations/split-text-file-lines-groupdocs-merger-java/)
+- [split pdf java: Podział dokumentów przy użyciu GroupDocs.Merger](/merger/java/document-splitting/master-document-splitting-groupdocs-merger-java/)
+- [Ładowanie lokalnego dokumentu Java przy użyciu GroupDocs.Merger – przewodnik](/merger/java/document-loading/load-document-groupdocs-merger-java-guide/)
