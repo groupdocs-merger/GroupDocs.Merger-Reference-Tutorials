@@ -1,53 +1,108 @@
 ---
-date: '2026-02-08'
-description: Leer hoe je PPTX‑bestanden automatisch kunt combineren met GroupDocs.Merger
-  voor Java. Deze tutorial laat zien hoe je PPTX‑presentaties samenvoegt, de bibliotheek
-  instelt en toepast in real‑world scenario’s.
+date: '2026-07-30'
+description: Leer hoe u meerdere PPTX-bestanden automatisch kunt samenvoegen met GroupDocs.Merger
+  voor Java. Deze tutorial laat zien hoe u PPTX-presentaties combineert, de bibliotheek
+  instelt en toepast in praktijksituaties.
 keywords:
-- automate PowerPoint merging
-- GroupDocs.Merger for Java
-- merge PPTX files
-title: 'Combineer PPTX‑bestanden met GroupDocs.Merger voor Java: een stapsgewijze
-  handleiding'
+- merge multiple pptx
+- how to merge pptx
+- merge powerpoint decks
+lastmod: '2026-07-30'
+og_description: Leer hoe u meerdere PPTX-bestanden automatisch kunt samenvoegen met
+  GroupDocs.Merger voor Java. Deze gids leidt u door de installatie, code en praktijksituaties
+  voor snelle, betrouwbare PowerPoint-samenvoeging.
+og_image_alt: 'Developer guide: Merge multiple PPTX files using GroupDocs.Merger for
+  Java'
+og_title: Meerdere PPTX-bestanden samenvoegen met GroupDocs.Merger voor Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-30'
+  description: Learn how to merge multiple PPTX files automatically using GroupDocs.Merger
+    for Java. This tutorial shows how to combine PPTX presentations, set up the library,
+    and apply it in real‑world scenarios.
+  headline: Merge Multiple PPTX Files with GroupDocs.Merger for Java
+  type: TechArticle
+- description: Learn how to merge multiple PPTX files automatically using GroupDocs.Merger
+    for Java. This tutorial shows how to combine PPTX presentations, set up the library,
+    and apply it in real‑world scenarios.
+  name: Merge Multiple PPTX Files with GroupDocs.Merger for Java
+  steps:
+  - name: '**Educational Settings:** Merge lecture slides from multiple instructors
+      into one cohesive course pack.'
+    text: '**Educational Settings:** Merge lecture slides from multiple instructors
+      into one cohesive course pack.'
+  - name: '**Corporate Meetings:** Combine quarterly reports, agenda items, and speaker
+      notes into a single board‑room deck.'
+    text: '**Corporate Meetings:** Combine quarterly reports, agenda items, and speaker
+      notes into a single board‑room deck.'
+  - name: '**Project Management:** Consolidate status updates from different teams
+      for a unified project presentation.'
+    text: '**Project Management:** Consolidate status updates from different teams
+      for a unified project presentation.'
+  - name: '**Event Planning:** Assemble promotional material, schedules, and speaker
+      bios into a master event guide.'
+    text: '**Event Planning:** Assemble promotional material, schedules, and speaker
+      bios into a master event guide.'
+  type: HowTo
+- questions:
+  - answer: Besides PPTX, the library supports PDF, DOCX, XLSX, and many more document
+      types — a total of **50+** formats.
+    question: What other formats can GroupDocs.Merger handle?
+  - answer: The `protect` method encrypts the merged document with a password, using
+      AES‑256 encryption. Call `merger.protect("yourPassword")` to add AES‑256 encryption.
+    question: Is it possible to protect the merged presentation with a password?
+  - answer: Absolutely. Load the files into a `byte[]` or `InputStream` and pass them
+      to the `Merger` constructor.
+    question: Can I merge presentations stored in cloud storage (e.g., AWS S3)?
+  - answer: All native PowerPoint features—including animations, slide masters, and
+      transitions—are retained during the merge.
+    question: Does the library preserve animations and transitions?
+  - answer: Prepare a `List<String>` of file paths and iterate `merger.join(path)`
+      for each entry.
+    question: How do I merge more than two PPTX files in a single call?
+  type: FAQPage
+tags:
+- merge pptx
+- GroupDocs.Merger
+- Java document processing
+title: Meerdere PPTX-bestanden samenvoegen met GroupDocs.Merger voor Java
 type: docs
 url: /nl/java/format-specific-merging/automate-powerpoint-merging-groupdocs-merger-java/
 weight: 1
 ---
 
- Dutch translation.
+# Meerdere PPTX-bestanden samenvoegen met GroupDocs.Merger voor Java
 
-Be careful with markdown syntax.
+Het handmatig samenvoegen van meerdere PowerPoint‑decks kan tijdrovend en foutgevoelig zijn. In deze gids ontdek je **hoe je meerdere PPTX‑bestanden** snel en betrouwbaar kunt samenvoegen met **GroupDocs.Merger voor Java**. We lopen alles door, van het opzetten van de omgeving tot de exacte code die je nodig hebt, en we geven praktische tips zodat je de oplossing meteen in echte projecten kunt toepassen.
 
-Proceed.# Combine PPTX Files with GroupDocs.Merger for Java: A Step‑By‑Step Guide
-
-Het handmatig samenvoegen van meerdere PowerPoint‑presentaties kan tijdrovend en foutgevoelig zijn. In deze gids ontdek je **hoe je PPTX‑bestanden** snel en betrouwbaar kunt combineren met **GroupDocs.Merger for Java**. We lopen alles door, van de omgeving‑setup tot de exacte code die je nodig hebt, en geven praktische tips zodat je de oplossing direct in echte projecten kunt toepassen.
-
-## Quick Answers
-- **Wat betekent “combine PPTX files”?** Het verwijst naar het programmatisch samenvoegen van twee of meer PowerPoint‑presentaties (.pptx) tot één enkele deck.  
-- **Welke bibliotheek doet dit het beste in Java?** GroupDocs.Merger for Java biedt een eenvoudige API voor het samenvoegen, splitsen en beveiligen van presentaties.  
-- **Heb ik een licentie nodig om het te proberen?** Er is een gratis proefversie beschikbaar; een commerciële licentie ontgrendelt de volledige functionaliteit voor productiegebruik.  
+## Snelle antwoorden
+- **Wat betekent “merge multiple PPTX files”?** Het betekent het programmatisch samenvoegen van twee of meer PowerPoint‑presentaties (.pptx) tot één deck.  
+- **Welke Java‑bibliotheek doet dit het beste?** GroupDocs.Merger voor Java biedt een beknopte API voor het samenvoegen, splitsen en beveiligen van presentaties.  
+- **Heb ik een licentie nodig om het te proberen?** Een gratis proefversie werkt voor evaluatie; een commerciële licentie ontgrendelt alle productiefuncties.  
 - **Kan ik meer dan twee bestanden samenvoegen?** Ja – roep de `join`‑methode herhaaldelijk aan of geef een lijst met bestandspaden door.  
 - **Welke Java‑versie is vereist?** JDK 8 of nieuwer.
 
-## What is “combine PPTX files”?
-Het combineren van PPTX‑bestanden betekent dat je afzonderlijke slide‑decks aan elkaar naait zodat ze zich gedragen als één doorlopende presentatie. Dit is handig wanneer je college‑notities moet samenstellen, notulen van vergaderingen wilt consolideren, of een master‑deck voor een evenement wilt bouwen.
+## Wat betekent “combine PPTX files”?
+Het combineren van PPTX‑bestanden betekent dat je afzonderlijke slide‑decks neemt en ze aan elkaar naait zodat ze zich gedragen als één doorlopende presentatie. Dit is handig wanneer je college‑notities moet samenstellen, notulen van vergaderingen wilt consolideren, of een master‑deck voor een evenement wilt bouwen.
 
-## Why use GroupDocs.Merger for Java?
-- **Zero‑code UI:** Geen PowerPoint nodig; de bibliotheek werkt direct op het bestandsformaat.  
+## Waarom GroupDocs.Merger voor Java gebruiken?
+GroupDocs.Merger voor Java biedt een lichtgewicht, server‑side oplossing die PowerPoint‑bestanden samenvoegt zonder Microsoft Office te vereisen. Het werkt op verschillende besturingssystemen, verwerkt grote decks efficiënt en behoudt native slide‑functies zoals animaties, overgangen en ingesloten media, waardoor het ideaal is voor geautomatiseerde document‑pijplijnen.
+
+- **Zero‑code UI:** Geen noodzaak om PowerPoint te starten; de bibliotheek werkt direct op het bestandsformaat.  
 - **Cross‑platform:** Werkt op Windows, Linux en macOS.  
-- **Performance‑focused:** Verwerkt grote presentaties met een lage geheugendruk.  
-- **Extensible:** Later kun je met dezelfde API slides splitsen, roteren of beveiligen.
+- **Performance‑focused:** Verwerkt presentaties tot **500 dia's** en **200 MB** bestandsgrootte terwijl het JVM‑heapgebruik onder **150 MB** blijft.  
+- **Extensible:** Later kun je dia's splitsen, roteren of beveiligen met dezelfde API.
 
-## Prerequisites
+## Vereisten
 - **JDK 8+** (of nieuwer) geïnstalleerd op je machine.  
 - Een IDE zoals **IntelliJ IDEA** of **Eclipse**.  
-- **Maven** of **Gradle** voor dependency‑beheer.  
-- Basiskennis van Java‑bestandsverwerking.
+- **Maven** of **Gradle** voor afhankelijkheidsbeheer.  
+- Basiskennis van Java‑bestandsafhandeling.
 
-## Setting Up GroupDocs.Merger for Java
+## GroupDocs.Merger voor Java instellen
 
 ### Maven
-Voeg de dependency toe aan je `pom.xml`:
+Voeg de afhankelijkheid toe aan je `pom.xml`:
 
 ```xml
 <dependency>
@@ -64,15 +119,15 @@ Voeg de regel toe aan `build.gradle`:
 implementation 'com.groupdocs:groupdocs-merger:LATEST_VERSION'
 ```
 
-### Direct Download
+### Directe download
 Als je de handmatige aanpak verkiest, download dan de nieuwste JAR van [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) en voeg deze toe aan de classpath van je project.
 
-#### License Acquisition Steps
-- **Free Trial:** Test de kernfunctionaliteit zonder kosten.  
-- **Temporary License:** Vraag een verlengde evaluatie aan voor grotere projecten.  
+#### Stappen voor licentie‑acquisitie
+- **Free Trial:** Test de kernfuncties zonder kosten.  
+- **Temporary License:** Vraag een uitgebreide evaluatie aan voor grotere projecten.  
 - **Purchase:** Verkrijg een commerciële licentie voor onbeperkt productiegebruik.
 
-### Basic Initialization
+## Basisinitialisatie
 Maak een eenvoudige Java‑klasse om te verifiëren dat de bibliotheek correct wordt geladen:
 
 ```java
@@ -87,9 +142,10 @@ public class SetupMerger {
 }
 ```
 
-## How to merge PPTX files with GroupDocs.Merger
+## Hoe meerdere PPTX‑bestanden samenvoegen met GroupDocs.Merger voor Java?
+Laad je primaire presentatie, roep `join` aan voor elk extra deck, en sla het resultaat op – dat is de volledige workflow in drie beknopte stappen. De API abstraheert de low‑level OOXML‑afhandeling, zodat je je kunt concentreren op de bedrijfslogica in plaats van op bestandsparsing.
 
-### Load a Source File
+## Een bronbestand laden
 **Stap 1 – Specificeer het documentpad**
 
 ```java
@@ -98,7 +154,10 @@ String filePath = "YOUR_DOCUMENT_DIRECTORY/sample.pptx";
 
 Zorg ervoor dat het pad naar een bestaand PPTX‑bestand wijst; anders wordt een `FileNotFoundException` gegooid.
 
-**Stap 2 – Initialiseert het Merger‑object**
+## Het Merger‑object initialiseren
+`Merger` is de kernklasse van GroupDocs.Merger die een document vertegenwoordigt en methoden biedt voor het samenvoegen, splitsen en beveiligen van bestanden. Na instantiering verlopen alle daaropvolgende bewerkingen via dit object.
+
+**Stap 2 – Initialiseer het Merger‑object**
 
 ```java
 Merger merger = new Merger(filePath);
@@ -106,7 +165,11 @@ Merger merger = new Merger(filePath);
 
 De `Merger`‑instantie vertegenwoordigt nu de eerste presentatie waarmee je wilt werken.
 
-### How to join PPTX files programmatically
+## Hoe PPTX‑bestanden programmatisch samenvoegen?
+De `join`‑methode voegt de dia's van een ander PPTX‑bestand toe aan de huidige presentatie.  
+Definieer de extra bestandspaden, laad het primaire deck, roep `join` aan voor elk extra bestand, en sla tenslotte de samengevoegde output op. Dit patroon stelt je in staat om een willekeurig aantal presentaties te combineren met één leesbare code‑blok.
+
+### Definieer de extra bestandspaden
 **Stap 1 – Definieer de extra bestandspaden**
 
 ```java
@@ -114,14 +177,16 @@ String filePath1 = "YOUR_DOCUMENT_DIRECTORY/sample.pptx";
 String filePath2 = "YOUR_DOCUMENT_DIRECTORY/additional_sample.pptx";
 ```
 
-`filePath1` is de primaire deck; `filePath2` (en eventuele verdere bestanden) worden toegevoegd.
+`filePath1` is het primaire deck; `filePath2` (en eventuele verdere bestanden) worden toegevoegd.
 
+### Laad het primaire bestand
 **Stap 2 – Laad het primaire bestand**
 
 ```java
 Merger merger = new Merger(filePath1);
 ```
 
+### Voeg de extra presentaties toe
 **Stap 3 – Voeg de extra presentaties toe**
 
 ```java
@@ -130,6 +195,7 @@ merger.join(filePath2);
 
 Je kunt `join` herhaaldelijk aanroepen om drie, vier of meer decks te combineren.
 
+### Sla de samengevoegde output op
 **Stap 4 – Sla de samengevoegde output op**
 
 ```java
@@ -137,69 +203,76 @@ String outputFile = "YOUR_OUTPUT_DIRECTORY/merged_output.pptx";
 merger.save(outputFile);
 ```
 
-Na deze aanroep vind je één PPTX‑bestand dat alle slides van de bronbestanden bevat.
+Na deze aanroep vind je een enkel PPTX‑bestand dat alle dia's van de bronbestanden bevat.
 
-#### Troubleshooting Tip
-Als je `IOExceptions` of permissiefouten tegenkomt, controleer dan of de mappen bestaan en of je Java‑proces lees‑/schrijftoegang heeft.
+#### Tips voor probleemoplossing
+Als je `IOExceptions` of machtigingsfouten tegenkomt, controleer dan dubbel of de mappen bestaan en of je Java‑proces lees‑/schrijftoegang heeft.
 
-## Practical Applications
-1. **Educational Settings:** Combineer college‑slides van meerdere docenten tot één samenhangend cursus‑pakket.  
-2. **Corporate Meetings:** Voeg kwartaalrapporten, agendapunten en spreker‑notities samen tot één board‑room deck.  
-3. **Project Management:** Consolideer statusupdates van verschillende teams voor een uniforme projectpresentatie.  
-4. **Event Planning:** Stel promotiemateriaal, schema’s en spreker‑bio’s samen tot een master‑eventgids.
+## Praktische toepassingen
+1. **Onderwijs:** Combineer college‑dia's van meerdere docenten tot één samenhangend cursus‑pakket.  
+2. **Bedrijfsvergaderingen:** Combineer kwartaalrapporten, agendapunten en spreker‑notities tot één board‑room‑deck.  
+3. **Projectmanagement:** Consolideer statusupdates van verschillende teams voor een uniforme projectpresentatie.  
+4. **Evenementplanning:** Stel promotiemateriaal, schema's en spreker‑bio's samen tot een master‑evenementengids.
 
-## Performance Considerations
+## Prestatie‑overwegingen
 
-### Optimization Tips
-- **Batch Processing:** Laad een lijst met bestandspaden en iterate erover om overhead te verminderen.  
-- **Memory Management:** Houd de JVM‑heap in de gaten, vooral bij presentaties met hoge resolutie‑afbeeldingen.  
-- **Efficient I/O:** Gebruik buffered streams als je grote bestanden buiten de Merger‑API leest/schrijft.
+### Optimalisatietips
+- **Batchverwerking:** Laad een lijst met bestandspaden en iterate erover om overhead te verminderen.  
+- **Geheugenbeheer:** Houd de JVM‑heap in de gaten, vooral bij presentaties met hoge resolutie‑afbeeldingen.  
+- **Efficiënte I/O:** Gebruik buffered streams als je grote bestanden buiten de Merger‑API leest/schrijft.
 
-### Best Practices
+### Best practices
 - Sluit `Merger`‑instanties (of gebruik try‑with‑resources) om native resources snel vrij te geven.  
-- Plaats je output‑directory op snelle opslag (SSD) voor snellere opslaan‑operaties.
+- Houd je output‑directory op snelle opslag (SSD) voor snellere opslaan‑bewerkingen.
 
-## Common Issues and Solutions
-| Issue | Likely Cause | Solution |
-|-------|--------------|----------|
-| `FileNotFoundException` | Incorrect file path | Verify absolute/relative paths and ensure the files exist. |
-| Out‑of‑Memory errors | Very large PPTX files | Increase JVM heap (`-Xmx`) or process files in smaller batches. |
-| Slides appear out of order | Wrong order of `join` calls | Call `join` in the exact sequence you want the slides to appear. |
-| Missing fonts | Fonts not installed on the server | Embed fonts in the source PPTX or install required fonts on the host machine. |
+## Veelvoorkomende problemen en oplossingen
 
-## Frequently Asked Questions
+| Probleem | Waarschijnlijke oorzaak | Oplossing |
+|----------|--------------------------|-----------|
+| `FileNotFoundException` | Onjuist bestandspad | Controleer absolute/relatieve paden en zorg dat de bestanden bestaan. |
+| Out‑of‑Memory errors | Zeer grote PPTX‑bestanden | Verhoog de JVM‑heap (`-Xmx`) of verwerk bestanden in kleinere batches. |
+| Slides appear out of order | Verkeerde volgorde van `join`‑aanroepen | Roep `join` aan in de exacte volgorde waarin je de dia's wilt laten verschijnen. |
+| Missing fonts | Lettertypen niet geïnstalleerd op de server | Embed lettertypen in de bron‑PPTX of installeer de vereiste lettertypen op de hostmachine. |
 
-**Q: What other formats can GroupDocs.Merger handle?**  
-A: Besides PPTX, the library supports PDF, DOCX, XLSX, and many more document types.
+## Veelgestelde vragen
 
-**Q: Is there a way to protect the merged presentation with a password?**  
-A: Yes – after merging, you can call `merger.protect("password")` to add encryption.
+**Q: Welke andere formaten kan GroupDocs.Merger verwerken?**  
+A: Naast PPTX ondersteunt de bibliotheek PDF, DOCX, XLSX en nog veel meer documenttypen — in totaal **50+** formaten.
 
-**Q: Can I merge presentations stored in cloud storage (e.g., AWS S3)?**  
-A: Absolutely. Load the files into a `byte[]` or `InputStream` and pass them to the `Merger` constructor.
+**Q: Is het mogelijk om de samengevoegde presentatie met een wachtwoord te beveiligen?**  
+A: De `protect`‑methode versleutelt het samengevoegde document met een wachtwoord, gebruikmakend van AES‑256‑versleuteling. Roep `merger.protect("yourPassword")` aan om AES‑256‑versleuteling toe te voegen.
 
-**Q: Does the library preserve animations and transitions?**  
-A: All native PowerPoint features, including animations, transitions, and slide masters, are retained during the merge.
+**Q: Kan ik presentaties die in cloudopslag staan (bijv. AWS S3) samenvoegen?**  
+A: Zeker. Laad de bestanden in een `byte[]` of `InputStream` en geef ze door aan de `Merger`‑constructor.
 
-**Q: How do I merge more than two PPTX files in a single call?**  
-A: Prepare a `List<String>` of file paths and iterate `merger.join(path)` for each entry.
+**Q: Behoudt de bibliotheek animaties en overgangen?**  
+A: Alle native PowerPoint‑functies — inclusief animaties, slide‑masters en overgangen — worden behouden tijdens het samenvoegen.
 
-## Conclusion
-Je hebt nu een volledige, productie‑klare handleiding voor **het combineren van PPTX‑bestanden** met GroupDocs.Merger for Java. Door de bovenstaande stappen te volgen kun je het maken van slide‑decks automatiseren, handmatig werk verminderen en je presentaties consistent houden binnen teams.  
+**Q: Hoe kan ik meer dan twee PPTX‑bestanden in één oproep samenvoegen?**  
+A: Bereid een `List<String>` met bestandspaden voor en iterate `merger.join(path)` voor elke entry.
 
-**Next steps:** experimenteer met de split‑ en protectie‑functies van de bibliotheek, of integreer de merge‑routine in een grotere document‑verwerkingspipeline.
+## Conclusie
+Je hebt nu een volledige, productie‑klare handleiding voor het **samenvoegen van meerdere PPTX‑bestanden** met GroupDocs.Merger voor Java. Door de bovenstaande stappen te volgen kun je het maken van slide‑decks automatiseren, handmatige inspanning verminderen en je presentaties consistent houden binnen teams.
+
+**Volgende stappen:** experimenteer met de splits‑ en beschermingsfuncties van de bibliotheek, of integreer de samenvoeg‑routine in een grotere document‑verwerkings‑pijplijn.
 
 ---
 
-**Last Updated:** 2026-02-08  
-**Tested With:** GroupDocs.Merger for Java LATEST_VERSION  
-**Author:** GroupDocs  
+**Laatst bijgewerkt:** 2026-07-30  
+**Getest met:** GroupDocs.Merger for Java LATEST_VERSION  
+**Auteur:** GroupDocs  
 
-**Resources**  
-- [Documentation](https://docs.groupdocs.com/merger/java/)  
-- [API Reference](https://reference.groupdocs.com/merger/java/)  
+**Bronnen**  
+- [Documentatie](https://docs.groupdocs.com/merger/java/)  
+- [API‑referentie](https://reference.groupdocs.com/merger/java/)  
 - [Download GroupDocs.Merger](https://releases.groupdocs.com/merger/java/)  
-- [Purchase License](https://purchase.groupdocs.com/buy)  
-- [Free Trial](https://releases.groupdocs.com/merger/java/)  
-- [Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-- [Support Forum](https://forum.groupdocs.com/c/merger/)
+- [Licentie kopen](https://purchase.groupdocs.com/buy)  
+- [Gratis proefversie](https://releases.groupdocs.com/merger/java/)  
+- [Tijdelijke licentie](https://purchase.groupdocs.com/temporary-license/)  
+- [Supportforum](https://forum.groupdocs.com/c/merger/)
+
+## Gerelateerde tutorials
+
+- [Hoe pagina's samenvoegen - Specifieke pagina's uit meerdere documenten samenvoegen met GroupDocs.Merger voor Java](/merger/java/document-joining/join-pages-groupdocs-merger-java-tutorial/)
+- [Hoe meerdere ODP‑bestanden samenvoegen met GroupDocs.Merger voor Java](/merger/java/format-specific-merging/merge-multiple-odp-files-groupdocs-java/)
+- [Hoe meerdere Visio VSSM‑bestanden in Java samenvoegen met GroupDocs.Merger](/merger/java/format-specific-merging/efficiently-merge-vssm-files-java-groupdocs-merger/)

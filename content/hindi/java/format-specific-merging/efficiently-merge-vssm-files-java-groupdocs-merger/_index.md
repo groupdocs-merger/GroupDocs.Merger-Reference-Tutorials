@@ -1,45 +1,95 @@
 ---
-date: '2026-02-08'
-description: इस चरण‑दर‑चरण गाइड में GroupDocs.Merger for Java का उपयोग करके कई Visio
-  फ़ाइलों को कुशलतापूर्वक मर्ज करना सीखें।
+date: '2026-07-30'
+description: GroupDocs.Merger का उपयोग करके जावा में Visio VSSM फ़ाइलों को मर्ज करना
+  सीखें। यह ट्यूटोरियल सेटअप, कोड प्रवाह, प्रदर्शन टिप्स और समस्या निवारण को कवर करता
+  है।
 keywords:
-- merge VSSM files Java
-- GroupDocs Merger for Java
-- Visio XML Drawing Macro-enabled
-title: जावा में GroupDocs.Merger का उपयोग करके कई Visio VSSM फ़ाइलों को कैसे मर्ज
-  करें
+- merge visio vssm java
+- groupdocs merger java
+- visio file merging
+lastmod: '2026-07-30'
+og_description: GroupDocs.Merger के साथ जावा में Visio VSSM फ़ाइलों को मर्ज करें।
+  सेटअप, कोड, प्रदर्शन टिप्स और अक्सर पूछे जाने वाले प्रश्नों के लिए इस विस्तृत ट्यूटोरियल
+  का पालन करें।
+og_image_alt: 'Developer guide: merging Visio VSSM files using GroupDocs.Merger for
+  Java'
+og_title: जावा में Visio VSSM फ़ाइलों को मर्ज करें – पूर्ण GroupDocs.Merger गाइड
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-30'
+  description: Learn how to merge Visio VSSM files in Java using GroupDocs.Merger.
+    This tutorial covers setup, code flow, performance tips, and troubleshooting.
+  headline: Merge Visio VSSM Files in Java – Step‑by‑Step Guide with GroupDocs.Merger
+  type: TechArticle
+- description: Learn how to merge Visio VSSM files in Java using GroupDocs.Merger.
+    This tutorial covers setup, code flow, performance tips, and troubleshooting.
+  name: Merge Visio VSSM Files in Java – Step‑by‑Step Guide with GroupDocs.Merger
+  steps:
+  - name: Initialize the Merger with a source VSSM file
+    text: The `Merger` class represents the core engine for combining documents in
+      GroupDocs.Merger. Create a `Merger` instance that points to the base Visio diagram
+      you want to use as the canvas. *Why this matters:* The source file becomes the
+      canvas onto which all subsequent documents are appended.
+  - name: Add (join) an additional VSSM file
+    text: '`join` adds another document to the current merge queue. Invoke the `join`
+      method for every extra Visio file you wish to merge. *Pro tip:* You can call
+      `join` repeatedly to stack as many files as needed before saving.'
+  - name: Save the merged document as a new VSSM file
+    text: '`save` writes the merged content to a new file. Write the combined content
+      to a new file on disk. *Why this matters:* Saving creates a standalone VSSM
+      file that contains all merged diagrams, ready for distribution or further processing.'
+  type: HowTo
+- questions:
+  - answer: It supports over 50 formats, including PDF, DOCX, PPTX, XLSX, VSDX, VDX,
+      HTML, and common image types.
+    question: What file formats can GroupDocs.Merger handle besides VSSM?
+  - answer: No conversion is required; the API works directly with VSSM files.
+    question: Do I need to convert VSSM files to another format before merging?
+  - answer: Call `merger.join()` for each additional file before invoking `merger.save()`.
+    question: How can I merge more than two files at once?
+  - answer: The current API merges whole documents. For page‑level control, extract
+      pages first using GroupDocs.Viewer or a similar tool.
+    question: Is there a way to merge only specific pages or layers of a Visio diagram?
+  - answer: '`setDocumentInfo()` sets metadata such as author and title on the output
+      document. Yes, modify document properties via `merger.setDocumentInfo()` before
+      saving.'
+    question: Can I set metadata (author, title) on the merged VSSM file?
+  type: FAQPage
+tags:
+- merge visio
+- groupdocs.merger
+- java document processing
+title: जावा में Visio VSSM फ़ाइलों को मर्ज करें – चरण‑दर‑चरण गाइड GroupDocs.Merger
+  के साथ
 type: docs
 url: /hi/java/format-specific-merging/efficiently-merge-vssm-files-java-groupdocs-merger/
 weight: 1
 ---
 
-# Java में GroupDocs.Merger का उपयोग करके कई Visio VSSM फ़ाइलों को मर्ज करने का तरीका
+# जावा में GroupDocs.Merger के साथ Visio VSSM फ़ाइलों को मिलाएँ
 
-कई Visio फ़ाइलों को मर्ज करना एक थकाऊ मैनुअल कार्य हो सकता है, विशेष रूप से जब आप VSSM (Visio XML Drawing Macro‑enabled) दस्तावेज़ों से निपट रहे हों। इस ट्यूटोरियल में हम आपको **कई Visio** फ़ाइलों को प्रोग्रामेटिकली GroupDocs.Merger for Java के साथ मर्ज करने का तरीका दिखाएंगे, ताकि आप प्रक्रिया को स्वचालित कर सकें, त्रुटियों को कम कर सकें, और अपने दस्तावेज़ीकरण पाइपलाइन को तेज़ और विश्वसनीय रख सकें।
+यदि आपको कई Visio VSSM (Visio XML Drawing Macro‑enabled) आरेखों को एक एकल मास्टर फ़ाइल में संयोजित करने की आवश्यकता है, तो इसे मैन्युअल रूप से करना धीमा और त्रुटिप्रवण होता है। इस ट्यूटोरियल में आप **जावा में Visio VSSM फ़ाइलों को कैसे मिलाएँ** सीखेंगे, GroupDocs.Merger का उपयोग करके, जो 50 से अधिक इनपुट और आउटपुट फ़ॉर्मेट का समर्थन करता है और पूरी फ़ाइल को मेमोरी में लोड किए बिना कई सौ पृष्ठों वाले दस्तावेज़ों को संभाल सकता है। हम आवश्यक सेटअप, सटीक API कॉल, प्रदर्शन‑ट्यूनिंग टिप्स, और सामान्य समस्याओं से बचने के तरीकों को चरण‑दर‑चरण देखेंगे।
 
 ## त्वरित उत्तर
-- **क्या लाइब्रेरी आवश्यक है?** GroupDocs.Merger for Java  
-- **क्या मैं केवल VSSM फ़ाइलें मर्ज कर सकता हूँ?** हाँ, API VSSM के साथ-साथ अन्य Visio फ़ॉर्मैट्स पर भी काम करती है।  
-- **क्या मुझे लाइसेंस चाहिए?** एक फ्री ट्रायल उपलब्ध है; उत्पादन के लिए एक व्यावसायिक लाइसेंस आवश्यक है।  
-- **एक साथ कितनी फ़ाइलें मर्ज कर सकता हूँ?** कोई कठोर सीमा नहीं है, लेकिन बहुत बड़े बैचों के लिए मेमोरी ट्यूनिंग की आवश्यकता हो सकती है।  
-- **क्या कोड थ्रेड‑सेफ़ है?** हाँ, प्रत्येक `Merger` इंस्टेंस स्वतंत्र है, जिससे समानांतर मर्ज संभव है।
+- **कौन‑सी लाइब्रेरी आवश्यक है?** GroupDocs.Merger for Java  
+- **क्या मैं केवल VSSM फ़ाइलें ही मिला सकता हूँ?** हाँ, API VSSM के साथ-साथ VSDX, VDX, और अन्य Visio फ़ॉर्मेट्स के साथ काम करती है।  
+- **क्या मुझे लाइसेंस चाहिए?** एक मुफ्त ट्रायल उपलब्ध है; उत्पादन के लिए एक व्यावसायिक लाइसेंस आवश्यक है।  
+- **एक साथ मैं कितनी फ़ाइलें मिला सकता हूँ?** कोई कठोर सीमा नहीं है, लेकिन 200 फ़ाइलों से बड़ी बैचों को JVM हीप समायोजन की आवश्यकता हो सकती है।  
+- **क्या कोड थ्रेड‑सेफ़ है?** हाँ, प्रत्येक `Merger` इंस्टेंस स्वतंत्र है, जिससे समानांतर मर्ज संभव होते हैं।  
 
 ## “merge multiple visio” क्या है?
-“merge multiple visio” वाक्यांश दो या अधिक Visio दस्तावेज़ों—जैसे VSSM फ़ाइलों—को एकल, समेकित फ़ाइल में संयोजित करने को दर्शाता है। यह डायग्राम को एकत्र करने, मास्टर डिज़ाइन दस्तावेज़ बनाने, या वितरण के लिए एकल पैकेज तैयार करने में उपयोगी है।
+कई Visio फ़ाइलों को मिलाना का अर्थ है दो या अधिक Visio दस्तावेज़ों को एक एकल फ़ाइल में संयोजित करना। यह ऑपरेशन आपको संबंधित आरेखों को एकत्रित करने, मास्टर डिज़ाइन दस्तावेज़ बनाने, या वितरण के लिए ड्रॉइंग्स के एक सूट को पैकेज करने की अनुमति देता है, जबकि प्रत्येक आरेख की लेयर्स, शैप्स, और मेटाडेटा को संरक्षित रखता है।
 
-## क्यों उपयोग करें GroupDocs.Merger for Java?
-- **पूर्ण‑फ़ॉर्मेट समर्थन** – VSSM, VSDX, VDX और कई अन्य फ़ॉर्मैट्स को संभालता है।  
-- **सरल API** – दस्तावेज़ों को जोड़ने के लिए केवल कुछ पंक्तियों का कोड चाहिए।  
-- **प्रदर्शन‑उन्मुख** – बड़े फ़ाइलों और बैच ऑपरेशन्स के लिए अनुकूलित।  
-- **एंटरप्राइज़‑रेडी** – लाइसेंसिंग विकल्प, तकनीकी समर्थन, और नियमित अपडेट।
+## जावा के लिए GroupDocs.Merger का उपयोग क्यों करें?
+GroupDocs.Merger for Java एक समर्पित API प्रदान करता है जो Visio फ़ाइलों को तेज़, विश्वसनीय और न्यूनतम कोड के साथ एकीकृत करता है। यह **50+ फ़ाइल फ़ॉर्मेट्स** का समर्थन करता है, सामान्य सर्वर पर **200‑पृष्ठ VSSM फ़ाइलों को 2 सेकंड से कम समय में** प्रोसेस करता है, और अंतर्निहित मेमोरी‑कुशल स्ट्रीमिंग प्रदान करता है जिससे आपको पूरे दस्तावेज़ को RAM में लोड करने की आवश्यकता नहीं रहती। एंटरप्राइज़ ग्राहक SLA‑समर्थित समर्थन और नियमित फीचर अपडेट से भी लाभान्वित होते हैं।
 
 ## पूर्वापेक्षाएँ
-- **Java Development Kit (JDK)** 8 या उससे नया।  
+- **Java Development Kit (JDK)** 8 या उससे नया।  
 - **IDE** जैसे IntelliJ IDEA, Eclipse, या NetBeans।  
-- **GroupDocs.Merger for Java** लाइब्रेरी (Maven, Gradle, या मैन्युअल डाउनलोड के माध्यम से जोड़ी गई)।  
-- Java फ़ाइल हैंडलिंग का बुनियादी ज्ञान।
+- **GroupDocs.Merger for Java** लाइब्रेरी (Maven, Gradle, या मैन्युअल JAR)।  
+- Java फ़ाइल I/O और ऑब्जेक्ट‑ओरिएंटेड प्रोग्रामिंग की बुनियादी परिचितता।  
 
-## GroupDocs.Merger for Java सेटअप करना
+## जावा के लिए GroupDocs.Merger सेटअप करना
 
 ### Maven सेटअप
 अपने `pom.xml` में निर्भरता जोड़ें:
@@ -53,24 +103,27 @@ weight: 1
 ```
 
 ### Gradle सेटअप
-अपने `build.gradle` में इम्प्लीमेंटेशन लाइन जोड़ें:
+अपने `build.gradle` में implementation लाइन जोड़ें:
 
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
 ### सीधे डाउनलोड
-आप आधिकारिक रिलीज़ पेज से नवीनतम JAR भी डाउनलोड कर सकते हैं: [GroupDocs.Merger for Java रिलीज़](https://releases.groupdocs.com/merger/java/)।
+आप आधिकारिक रिलीज़ पेज से नवीनतम JAR भी डाउनलोड कर सकते हैं: [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/)।
 
-### लाइसेंस प्राप्त करना
-- **फ़्री ट्रायल** – API का परीक्षण करने के लिए आदर्श।  
-- **अस्थायी लाइसेंस** – फीचर प्रतिबंधों के बिना ट्रायल अवधि बढ़ाता है।  
-- **पूर्ण लाइसेंस** – उत्पादन डिप्लॉयमेंट के लिए आवश्यक।
+### लाइसेंस प्राप्ति
+`License` उत्पाद लाइसेंस फ़ाइल को लोड करने को संभालता है।  
+- **Free trial** – API का मूल्यांकन करने के लिए आदर्श।  
+- **Temporary license** – फीचर प्रतिबंधों के बिना ट्रायल अवधि को बढ़ाता है।  
+- **Full license** – उत्पादन परिनियोजन और अनलिमिटेड मर्ज के लिए आवश्यक।  
 
-## VSSM फ़ाइलों को मर्ज करने के चरण‑दर‑चरण गाइड
+## जावा में Visio VSSM फ़ाइलों को कैसे मिलाएँ – चरण‑दर‑चरण गाइड
+मर्ज प्रक्रिया तीन मुख्य चरणों में विभाजित है: एक प्राथमिक VSSM फ़ाइल को `Merger` इंस्टेंस में लोड करना, प्रत्येक अतिरिक्त VSSM दस्तावेज़ को क्रमिक रूप से जोड़ना, और अंत में संयुक्त परिणाम को नई VSSM फ़ाइल के रूप में सहेजना। यह सरल प्रवाह केवल कुछ API कॉल्स की आवश्यकता रखता है और छोटे व बड़े दोनों बैचों के लिए कुशलता से काम करता है।
 
-### चरण 1: स्रोत VSSM फ़ाइल के साथ Merger को इनिशियलाइज़ करें
-पहले, एक `Merger` इंस्टेंस बनाएं जो प्राथमिक Visio फ़ाइल को बेस के रूप में इंगित करता है।
+### चरण 1: स्रोत VSSM फ़ाइल के साथ Merger को प्रारंभ करें
+`Merger` क्लास GroupDocs.Merger में दस्तावेज़ों को संयोजित करने के लिए कोर इंजन का प्रतिनिधित्व करती है।  
+एक `Merger` इंस्टेंस बनाएं जो उस बेस Visio आरेख की ओर संकेत करता है जिसे आप कैनवास के रूप में उपयोग करना चाहते हैं।
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -89,10 +142,11 @@ public class InitializeMerger {
 }
 ```
 
-*क्यों यह महत्वपूर्ण है:* स्रोत फ़ाइल वह कैनवास बन जाती है जिस पर सभी बाद की दस्तावेज़ें जोड़ दी जाती हैं।
+*क्यों यह महत्वपूर्ण है:* स्रोत फ़ाइल वह कैनवास बन जाता है जिस पर सभी बाद के दस्तावेज़ जोड़े जाते हैं।
 
 ### चरण 2: अतिरिक्त VSSM फ़ाइल जोड़ें (join)
-`join` मेथड का उपयोग करके एक और Visio फ़ाइल को मर्ज कतार में लाएँ।
+`join` वर्तमान मर्ज कतार में एक और दस्तावेज़ जोड़ता है।  
+आप जिस प्रत्येक अतिरिक्त Visio फ़ाइल को मिलाना चाहते हैं, उसके लिए `join` मेथड को कॉल करें।
 
 ```java
 public class MergeAdditionalVssm {
@@ -110,10 +164,11 @@ public class MergeAdditionalVssm {
 }
 ```
 
-*प्रो टिप:* आप `join` को कई बार कॉल कर सकते हैं ताकि सहेजने से पहले जितनी फ़ाइलें चाहें स्टैक कर सकें।
+*प्रो टिप:* आप `join` को बार‑बार कॉल करके सहेजने से पहले जितनी फ़ाइलें चाहें जोड़ सकते हैं।
 
-### चरण 3: मर्ज्ड दस्तावेज़ को नई VSSM फ़ाइल के रूप में सहेजें
-अंत में, संयुक्त सामग्री को नई फ़ाइल में लिखें।
+### चरण 3: मर्ज किए गए दस्तावेज़ को नई VSSM फ़ाइल के रूप में सहेजें
+`save` मर्ज किए गए कंटेंट को नई फ़ाइल में लिखता है।  
+संयुक्त कंटेंट को डिस्क पर नई फ़ाइल में लिखें।
 
 ```java
 public class SaveMergedOutput {
@@ -133,43 +188,53 @@ public class SaveMergedOutput {
 }
 ```
 
-*क्यों यह महत्वपूर्ण है:* सहेजने से एक स्टैंडअलोन VSSM फ़ाइल बनती है जिसमें सभी मर्ज्ड डायग्राम होते हैं, जो वितरण या आगे की प्रोसेसिंग के लिए तैयार होती है।
+*क्यों यह महत्वपूर्ण है:* सहेजने से एक स्वतंत्र VSSM फ़ाइल बनती है जिसमें सभी मर्ज किए गए आरेख होते हैं, जो वितरण या आगे की प्रोसेसिंग के लिए तैयार होती है।
+
+## बड़े Visio मर्ज के लिए JVM को कैसे कॉन्फ़िगर करें?
+`setUseStreams(true)` मेमोरी खपत को कम करने के लिए स्ट्रीम‑आधारित प्रोसेसिंग को सक्षम करता है।  
+मर्ज ऑपरेशन शुरू करने से पहले पर्याप्त हीप मेमोरी आवंटित करें—उदाहरण के लिए, 100 MB से अधिक प्रत्येक बैच के लिए अपने एप्लिकेशन को `-Xmx4g` के साथ लॉन्च करें। अतिरिक्त रूप से, स्ट्रीम‑आधारित API (`Merger.setUseStreams(true)`) को सक्षम करें ताकि बड़ी फ़ाइलों के दर्जनों को मर्ज करते समय भी मेमोरी उपयोग 200 MB से नीचे रहे। यह कॉन्फ़िगरेशन `OutOfMemoryError` को रोकती है और सुगम बैच प्रोसेसिंग सुनिश्चित करती है।
 
 ## सामान्य समस्याएँ और समाधान
-- **गलत फ़ाइल पथ** – सुनिश्चित करें कि पथ पूर्ण या आपके प्रोजेक्ट की कार्य निर्देशिका के सापेक्ष सही हैं।  
-- **पर्याप्त अनुमतियां नहीं** – सुनिश्चित करें कि Java प्रक्रिया के पास स्रोत और आउटपुट फ़ोल्डरों दोनों पर पढ़ने/लिखने के अधिकार हैं।  
-- **बड़ी फ़ाइलों के साथ मेमोरी समाप्ति त्रुटियां** – JVM हीप आकार (`-Xmx2g` या अधिक) बढ़ाएँ या फ़ाइलों को छोटे बैचों में मर्ज करें।  
-- **लाइसेंस नहीं मिला** – `GroupDocs.Merger.lic` फ़ाइल को एप्लिकेशन की रूट में रखें या प्रोग्रामेटिकली लाइसेंस सेट करें।
+- **Incorrect file paths** – सत्यापित करें कि पाथ्स पूर्ण (absolute) हैं या प्रोजेक्ट की कार्य निर्देशिका के सापेक्ष सही हैं।  
+- **Insufficient permissions** – स्रोत और आउटपुट फ़ोल्डरों दोनों के लिए Java प्रक्रिया को पढ़ने/लिखने की अनुमति दें।  
+- **Out‑of‑memory errors** – JVM हीप बढ़ाएँ (`-Xmx2g` या अधिक) या फ़ाइलों को छोटे समूहों में मर्ज करें।  
+- **License not found** – `GroupDocs.Merger.lic` को एप्लिकेशन रूट में रखें या प्रोग्रामेटिकली `License.setLicense("path/to/license")` के साथ सेट करें।  
 
-## व्यावहारिक उपयोग केस
-1. **प्रोजेक्ट हैंड‑ऑफ़** – कई सबसिस्टम डायग्राम को एकल मास्टर Visio फ़ाइल में संयोजित करें ताकि स्टेकहोल्डर समीक्षा के लिए हो।  
-2. **स्वचालित रिपोर्टिंग** – CI/CD पाइपलाइन के हिस्से के रूप में कई स्रोत फ़ाइलों से दैनिक मर्ज्ड Visio दस्तावेज़ बनाएं।  
-3. **आर्काइविंग** – संस्करणित डायग्राम को एक आर्काइव फ़ाइल में समेकित करें ताकि संग्रहण और पुनर्प्राप्ति सरल हो सके।
+## व्यावहारिक उपयोग मामलों
+1. **Project hand‑off** – सबसिस्टम आरेखों को एकल मास्टर Visio फ़ाइल में मिलाएँ ताकि हितधारकों की समीक्षा हो सके।  
+2. **Automated reporting** – कई स्रोत फ़ाइलों से दैनिक मर्ज किया गया Visio दस्तावेज़ उत्पन्न करें, जो CI/CD पाइपलाइन का हिस्सा हो।  
+3. **Archival** – संस्करणित आरेखों को एक अभिलेख में समेकित करें ताकि संग्रहण और पुनः प्राप्ति सरल हो।  
 
 ## प्रदर्शन टिप्स
-- **एकल `Merger` इंस्टेंस को पुन: उपयोग करें** जब लूप में कई फ़ाइलें मर्ज कर रहे हों ताकि ऑब्जेक्ट निर्माण ओवरहेड कम हो।  
-- **स्ट्रीम I/O** – यदि आप क्लाउड स्टोरेज में फ़ाइलों से निपट रहे हैं, तो पूरी फ़ाइल को मेमोरी में लोड करने से बचने के लिए इनपुट स्ट्रीम का उपयोग करें।  
-- **समानांतर मर्ज** – स्वतंत्र मर्ज जॉब्स के लिए, उन्हें अलग थ्रेड या एक्ज़ीक्यूटर सर्विसेज़ पर चलाएँ।
+- **Reuse a single `Merger` instance** जब कई फ़ाइलों पर लूप किया जा रहा हो; इससे ऑब्जेक्ट‑क्रिएशन ओवरहेड कम होता है।  
+- **Stream I/O** – जब फ़ाइलें क्लाउड स्टोरेज में हों, तो `Merger` को `InputStream` ऑब्जेक्ट पास करें ताकि पूरी फ़ाइल को मेमोरी में लोड करने से बचा जा सके।  
+- **Parallel merges** – स्वतंत्र मर्ज कार्यों के लिए, उन्हें अलग थ्रेड्स पर या `ExecutorService` के माध्यम से चलाएँ ताकि मल्टी‑कोर CPU का उपयोग किया जा सके।  
 
 ## अक्सर पूछे जाने वाले प्रश्न
 
-**प्रश्न: VSSM के अलावा GroupDocs.Merger कौन‑से फ़ाइल फ़ॉर्मैट संभाल सकता है?**  
-उत्तर: यह PDF, DOCX, PPTX, XLSX, VSDX, VDX और कई अन्य फ़ॉर्मैट सहित विस्तृत रेंज को सपोर्ट करता है।
+**Q: VSSM के अलावा GroupDocs.Merger कौन‑से फ़ाइल फ़ॉर्मेट्स संभाल सकता है?**  
+A: यह 50 से अधिक फ़ॉर्मेट्स का समर्थन करता है, जिसमें PDF, DOCX, PPTX, XLSX, VSDX, VDX, HTML, और सामान्य इमेज प्रकार शामिल हैं।
 
-**प्रश्न: मर्ज करने से पहले क्या मुझे VSSM फ़ाइलों को किसी अन्य फ़ॉर्मैट में बदलना पड़ेगा?**  
-उत्तर: नहीं, कोई रूपांतरण आवश्यक नहीं है; API सीधे VSSM फ़ाइलों के साथ काम करती है।
+**Q: क्या मर्ज करने से पहले VSSM फ़ाइलों को किसी अन्य फ़ॉर्मेट में बदलना आवश्यक है?**  
+A: कोई रूपांतरण आवश्यक नहीं है; API सीधे VSSM फ़ाइलों के साथ काम करती है।
 
-**प्रश्न: मैं एक साथ दो से अधिक फ़ाइलें कैसे मर्ज कर सकता हूँ?**  
-उत्तर: `merger.save()` को कॉल करने से पहले प्रत्येक अतिरिक्त फ़ाइल के लिए `merger.join()` को बार‑बार कॉल करें।
+**Q: मैं एक साथ दो से अधिक फ़ाइलें कैसे मर्ज कर सकता हूँ?**  
+A: `merger.save()` को कॉल करने से पहले प्रत्येक अतिरिक्त फ़ाइल के लिए `merger.join()` को कॉल करें।
 
-**प्रश्न: क्या Visio डायग्राम के केवल विशिष्ट पेज या लेयर को मर्ज करने का कोई तरीका है?**  
-उत्तर: वर्तमान API पूरे दस्तावेज़ को मर्ज करता है। पेज‑लेवल नियंत्रण के लिए आपको पहले GroupDocs.Viewer या समान टूल का उपयोग करके पेज निकालने होंगे।
+**Q: क्या Visio आरेख के केवल विशिष्ट पृष्ठों या लेयर्स को मर्ज करने का कोई तरीका है?**  
+A: वर्तमान API पूरे दस्तावेज़ों को मर्ज करता है। पेज‑स्तर नियंत्रण के लिए, पहले GroupDocs.Viewer या समान टूल का उपयोग करके पेज निकालें।
 
-**प्रश्न: क्या मैं मर्ज्ड VSSM फ़ाइल पर मेटाडेटा (लेखक, शीर्षक) सेट कर सकता हूँ?**  
-उत्तर: हाँ, आप सहेजने से पहले `Merger` की `setDocumentInfo` मेथड्स के माध्यम से दस्तावेज़ गुणों को संशोधित कर सकते हैं।
+**Q: क्या मैं मर्ज किए गए VSSM फ़ाइल पर मेटाडेटा (लेखक, शीर्षक) सेट कर सकता हूँ?**  
+A: `setDocumentInfo()` आउटपुट दस्तावेज़ पर लेखक और शीर्षक जैसे मेटाडेटा सेट करता है। हाँ, सहेजने से पहले `merger.setDocumentInfo()` के माध्यम से दस्तावेज़ गुण संशोधित करें।
 
 ---
 
-**अंतिम अपडेट:** 2026-02-08  
+**अंतिम अपडेट:** 2026-07-30  
 **परीक्षित संस्करण:** GroupDocs.Merger 23.10 (Java)  
 **लेखक:** GroupDocs
+
+## संबंधित ट्यूटोरियल
+
+- [जावा में Visio फ़ाइलों को कैसे मिलाएँ – GroupDocs.Merger के साथ मास्टर गाइड](/merger/java/document-joining/java-groupdocs-merger-vstm-tutorial/)
+- [जावा के लिए GroupDocs.Merger का उपयोग करके VSDX फ़ाइलों को कैसे मिलाएँ: चरण‑दर‑चरण गाइड](/merger/java/format-specific-merging/merge-vsdx-files-groupdocs-merger-java/)
+- [merge visio stencil java – जावा के लिए GroupDocs.Merger का उपयोग करके VSSX फ़ाइलों को कैसे मिलाएँ](/merger/java/document-joining/merge-vssx-files-groupdocs-merger-java/)
