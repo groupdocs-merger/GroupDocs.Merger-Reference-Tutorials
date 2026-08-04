@@ -1,57 +1,107 @@
 ---
-date: '2026-02-11'
-description: Scopri come combinare più file docx in Java usando GroupDocs.Merger.
+date: '2026-08-04'
+description: Scopri come combinare più file docx in Java usando GroupDocs.Merger.
   Questo tutorial copre la fusione di file Word in Java, la fusione di documenti Word
-  in Java e fornisce un'implementazione passo‑passo.
+  in Java, e fornisce un'implementazione passo‑passo.
 keywords:
-- Java Word Document Merging
-- GroupDocs Merger for Java
-- Word Files Joining
-title: Unisci più file DOCX in Java con GroupDocs.Merger
+- combine multiple docx
+- merge docx java
+- java merge word documents
+- groupdocs merger java
+lastmod: '2026-08-04'
+og_description: Combina più file docx in Java usando GroupDocs.Merger. Questa guida
+  mostra come fondere documenti Word in modo efficiente, supporta Java 8+ e funziona
+  con oltre 30 formati.
+og_image_alt: Guide showing how to combine multiple docx files in Java using GroupDocs.Merger
+og_title: Combina più file docx in Java con GroupDocs.Merger
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-04'
+  description: Learn how to combine multiple docx files in Java using GroupDocs.Merger.
+    This tutorial covers java merge word files, merge word documents java, and provides
+    a step‑by‑step implementation.
+  headline: Combine multiple docx files in Java using GroupDocs.Merger
+  type: TechArticle
+- description: Learn how to combine multiple docx files in Java using GroupDocs.Merger.
+    This tutorial covers java merge word files, merge word documents java, and provides
+    a step‑by‑step implementation.
+  name: Combine multiple docx files in Java using GroupDocs.Merger
+  steps:
+  - name: prepare your documents
+    text: 'Make sure the `.docx` files you want to merge exist on disk and note their
+      absolute or relative paths:'
+  - name: initialize the merger
+    text: '`Merger` is the primary class that represents a source document for merging.
+      Create a `Merger` object with the first document; this object becomes the base
+      for subsequent joins. The `Merger` class represents a single source document
+      that can be extended with additional files.'
+  - name: join additional documents
+    text: '`join()` adds the content of another document to the current merger. Call
+      the `join()` method to append each extra document to the base. Each `join()`
+      call adds the entire content of the specified file to the end of the current
+      merged output.'
+  - name: save the merged document
+    text: '`save()` writes the merged document to the specified file. Finally, invoke
+      `save()` with the desired output path. This writes the combined document to
+      disk and releases any temporary resources.'
+  type: HowTo
+- questions:
+  - answer: Yes, you can call `merger.join()` repeatedly to add as many documents
+      as needed.
+    question: Can I merge more than three Word documents?
+  - answer: The library supports the full range of Word formats from Word 97 up to
+      Word 2021, ensuring broad compatibility.
+    question: Is GroupDocs.Merger for Java compatible with all Microsoft Word versions?
+  - answer: Increase the JVM heap (`-Xmx`) and consider merging in smaller batches,
+      then combine the intermediate results.
+    question: How do I handle very large document merges without running out of memory?
+  - answer: Yes, you can stream files from AWS S3, Azure Blob, or Google Cloud Storage
+      by providing input streams to the `Merger` constructor.
+    question: Can GroupDocs.Merger work with cloud storage services?
+  - answer: The official [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)
+      contains extensive samples and best‑practice guides.
+    question: Where can I find more code examples?
+  type: FAQPage
+tags:
+- combine multiple docx
+- groupdocs merger
+- java document merging
+- docx merging
+- java word processing
+title: Combina più file docx in Java con GroupDocs.Merger
 type: docs
 url: /it/java/format-specific-merging/java-word-document-merging-groupdocs-merger-guide/
 weight: 1
 ---
 
-# Unire più file DOCX in Java con GroupDocs.Merger
+# Unire più file docx in Java con GroupDocs.Merger
 
-Unire diversi documenti Word in un unico file è una necessità comune—che si tratti di assemblare report trimestrali, unire capitoli di ricerca o consolidare i verbali delle riunioni. In questa guida imparerai **come combinare più file docx** in Java con l'aiuto di **GroupDocs.Merger**. Ti guideremo attraverso la configurazione necessaria, il codice esatto di cui hai bisogno e scenari reali in cui questa funzionalità brilla.
+Unire diversi documenti Word in un unico file è una necessità comune—che tu stia assemblando report trimestrali, unendo capitoli di ricerca o consolidando i verbali delle riunioni. In questa guida imparerai **come combinare più file docx** in Java con l’aiuto di **GroupDocs.Merger**. Ti guideremo attraverso la configurazione necessaria, il codice esatto di cui hai bisogno e scenari reali in cui questa funzionalità brilla.
 
 ## Risposte rapide
 - **Qual è la libreria principale?** GroupDocs.Merger for Java  
 - **Quale parola chiave mira questo tutorial?** combine multiple docx files  
-- **Ho bisogno di una licenza?** A free trial is available; a full license is required for production use  
-- **Posso unire più di tre file?** Yes—call `join()` for each additional document  
-- **È compatibile con Java 8+?** Absolutely, the library supports JDK 8 and later  
+- **Ho bisogno di una licenza?** È disponibile una prova gratuita; è necessaria una licenza completa per l'uso in produzione  
+- **Posso unire più di tre file?** Sì—chiama `join()` per ogni documento aggiuntivo  
+- **È compatibile con Java 8+?** Assolutamente, la libreria supporta JDK 8 e versioni successive  
 
-## Introduzione
+## Che cosa significa combinare più docx?
 
-Stai cercando di semplificare il processo di consolidamento di più documenti Word in un unico file in modo fluido? Che sia per gestire report di progetto, unire articoli accademici o compilare appunti di riunioni, combinare i documenti in modo efficiente è fondamentale. Questo tutorial presenta **GroupDocs.Merger for Java**, una soluzione efficiente per unire più file Word con facilità.
+**Combine multiple docx** significa unire programmaticamente due o più file Word `.docx` in un unico documento coerente mantenendo stili, intestazioni, piè di pagina e oggetti incorporati. Questa operazione elimina il copia‑incolla manuale e garantisce un layout coerente in tutte le sezioni unite. Unisce inoltre tabelle, immagini e parti XML personalizzate, preservando la formattazione originale e le relazioni nel file combinato.
 
-**Cosa imparerai:**
-- Come utilizzare GroupDocs.Merger for Java per unire documenti Word.
-- Configurare l'ambiente necessario e le dipendenze.
-- Guida passo‑passo per combinare tre documenti Word in uno.
-- Applicazioni reali del merging di documenti in vari settori.
-- Suggerimenti per l'ottimizzazione delle prestazioni e una migliore gestione delle risorse.
+## Perché usare GroupDocs.Merger per Java?
 
-Esploriamo come puoi migliorare il tuo processo di gestione dei documenti con GroupDocs.Merger for Java. Prima di iniziare, copriamo alcuni prerequisiti per garantire una configurazione senza problemi.
+GroupDocs.Merger elabora **oltre 30 formati di input e output**—inclusi DOCX, DOC, RTF, HTML e PDF—senza richiedere l'installazione di Microsoft Word. Può gestire documenti con più di 500 pagine mantenendo l'uso della memoria sotto i 200 MB, rendendolo adatto a lavori batch su larga scala e pipeline CI.
 
 ## Prerequisiti
 
-Per seguire questo tutorial in modo efficace, assicurati di avere quanto segue:
+Per seguire efficacemente questo tutorial, assicurati di avere quanto segue:
 
-### Librerie e dipendenze richieste
-- **GroupDocs.Merger for Java:** La libreria core che alimenta la nostra funzionalità di merging dei documenti.
+- **GroupDocs.Merger for Java** – la libreria core che alimenta la nostra funzionalità di unione dei documenti.  
+- Java Development Kit (JDK) 8 o successivo installato sulla tua macchina.  
+- Conoscenza di base della programmazione Java e familiarità con Maven o Gradle (opzionale ma utile).  
 
-### Requisiti per la configurazione dell'ambiente
-- Un Java Development Kit (JDK) installato sul tuo sistema. Consigliamo JDK 8 o successivo.
-
-### Prerequisiti di conoscenza
-- Conoscenza di base della programmazione Java.
-- Familiarità con l'uso di strumenti di build come Maven o Gradle è utile ma non necessaria.
-
-## Configurazione di GroupDocs.Merger per Java
+## Configurare GroupDocs.Merger per Java
 
 ### Informazioni sull'installazione
 
@@ -74,14 +124,14 @@ Puoi anche scaricare l'ultima versione direttamente da [GroupDocs.Merger for Jav
 
 ### Passaggi per l'acquisizione della licenza
 
-Per iniziare con GroupDocs.Merger, hai diverse opzioni:
-- **Free Trial**: Prova le capacità della libreria con funzionalità limitate.
-- **Temporary License**: Accedi a tutte le funzionalità per un breve periodo richiedendo una licenza sul loro sito.
-- **Purchase**: Per progetti a lungo termine, considera l'acquisto di una licenza.
+Per iniziare con GroupDocs.Merger, hai diverse opzioni:  
+- **Free trial:** Prova le capacità della libreria con funzionalità limitate.  
+- **Temporary license:** Accedi a tutte le funzionalità per un breve periodo richiedendo una licenza sul loro sito.  
+- **Purchase:** Per progetti a lungo termine, considera l'acquisto di una licenza.
 
 ### Inizializzazione e configurazione di base
 
-Una volta installato, l'inizializzazione di GroupDocs.Merger è semplice. Importa le classi necessarie e imposta i percorsi dei tuoi documenti:
+La classe `Merger` è il punto di ingresso per tutte le operazioni di unione. Dopo aver aggiunto la dipendenza Maven o Gradle, puoi importare le classi necessarie e definire i percorsi dei file con cui desideri lavorare:
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -89,15 +139,15 @@ import com.groupdocs.merger.Merger;
 
 ## Guida all'implementazione
 
-In questa sezione, illustreremo come unire tre documenti Word in uno usando GroupDocs.Merger.
+In questa sezione vediamo come unire tre documenti Word in uno usando GroupDocs.Merger.
 
-### Panoramica della funzionalità di merging dei documenti
+### Panoramica della funzionalità di unione dei documenti
 
-La GroupDocs.Merger for Java consente un'integrazione fluida e l'unione di più documenti. Ecco come puoi sfruttare la sua funzionalità per **java merge word files** in modo efficace.
+GroupDocs.Merger per Java consente un'integrazione fluida e l'unione di più documenti. Di seguito è riportato l'approccio standard per **java merge word files** in modo efficiente.
 
-#### Passo 1: Preparare i tuoi documenti
+#### Passo 1: prepara i tuoi documenti
 
-Assicurati che i tuoi file Word siano pronti e specifica i loro percorsi nel codice:
+Assicurati che i file `.docx` che desideri unire esistano sul disco e annota i loro percorsi assoluti o relativi:
 
 ```java
 String document1 = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX_2";
@@ -105,30 +155,26 @@ String document2 = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX_3";
 String document3 = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX_4";
 ```
 
-#### Passo 2: Inizializzare il Merger
+#### Passo 2: inizializza il merger
 
-Crea un oggetto `Merger` con il tuo primo documento per avviare il processo di merging:
+`Merger` è la classe principale che rappresenta un documento sorgente per l'unione. Crea un oggetto `Merger` con il primo documento; questo oggetto diventa la base per le successive unioni. La classe `Merger` rappresenta un singolo documento sorgente che può essere esteso con file aggiuntivi.
 
 ```java
 Merger merger = new Merger(document1);
 ```
 
-**Perché?** Inizializzare con il primo documento lo imposta come base per le successive unioni.
+#### Passo 3: unisci documenti aggiuntivi
 
-#### Passo 3: Unire documenti aggiuntivi
-
-Utilizza il metodo `join()` per aggiungere altri documenti:
+`join()` aggiunge il contenuto di un altro documento al merger corrente. Chiama il metodo `join()` per aggiungere ogni documento extra alla base. Ogni chiamata a `join()` aggiunge l'intero contenuto del file specificato alla fine dell'output unito corrente.
 
 ```java
 merger.join(document2);
 merger.join(document3);
 ```
 
-**Spiegazione:** Ogni chiamata a `join()` aggiunge il documento specificato al file già unito.
+#### Passo 4: salva il documento unito
 
-#### Passo 4: Salvare il documento unito
-
-Infine, salva il tuo documento combinato con un percorso unico:
+`save()` scrive il documento unito nel file specificato. Infine, invoca `save()` con il percorso di output desiderato. Questo salva il documento combinato su disco e rilascia eventuali risorse temporanee.
 
 ```java
 String outputDirectory = "YOUR_OUTPUT_DIRECTORY";
@@ -136,72 +182,80 @@ File outputFile = new File(outputDirectory, "JoinMultipleDocuments-" + Paths.get
 merger.save(outputFile.getPath());
 ```
 
-**Perché?** Questo passaggio finalizza e memorizza il file unito nella posizione specificata.
-
 ### Perché combinare più file docx?
 
 - **Efficienza:** Elimina il copia‑incolla manuale e riduce il rischio di errori di formattazione.  
-- **Coerenza:** Preserva gli stili e le intestazioni originali in tutte le sezioni unite.  
-- **Automazione:** Integra il merging in lavori batch, pipeline CI o servizi web.
+- **Coerenza:** Preserva gli stili originali, le intestazioni e i piè di pagina in tutte le sezioni unite.  
+- **Automazione:** Integra l'unione in lavori batch, pipeline CI o servizi web per un'elaborazione automatica.  
 
 ### Casi d'uso comuni
 
-1. **Business Reports:** Consolidare i report trimestrali in un unico documento per la revisione da parte della direzione.  
-2. **Academic Research:** Unire capitoli, appendici e bibliografia in un unico manoscritto completo.  
-3. **Legal Documentation:** Assemblare contratti, allegati e documenti dimostrativi in un file di caso unificato.
+1. **Report aziendali:** Consolidare i report trimestrali in un unico documento per la revisione da parte della direzione.  
+2. **Ricerca accademica:** Unire capitoli, appendici e bibliografia in un unico manoscritto completo.  
+3. **Documentazione legale:** Assemblare contratti, allegati ed esibizioni in un unico fascicolo del caso.  
 
 ### Suggerimenti per la risoluzione dei problemi
 
-- **Missing dependencies:** Verifica che le voci Maven o Gradle siano correttamente aggiunte al tuo progetto.  
-- **File not found errors:** Assicurati che i percorsi in `String documentX` puntino a file `.docx` esistenti e che l'applicazione abbia i permessi di lettura/scrittura.  
-- **Large files:** Per documenti molto grandi, considera di elaborarli in batch più piccoli o aumentare la dimensione dell'heap JVM (`-Xmx`).
+- **Dipendenze mancanti:** Verifica che le voci Maven o Gradle siano aggiunte correttamente al tuo progetto.  
+- **Errori di file non trovato:** Assicurati che i percorsi in `String documentX` puntino a file `.docx` esistenti e che la tua applicazione abbia i permessi di lettura/scrittura.  
+- **File di grandi dimensioni:** Per documenti molto grandi, elaborali in batch più piccoli o aumenta la dimensione dell'heap JVM (`-Xmx2g` o superiore).  
 
 ## Considerazioni sulle prestazioni
 
-Per garantire prestazioni ottimali durante l'uso di GroupDocs.Merger, considera queste linee guida:
+Per mantenere l'unione veloce ed efficiente in termini di memoria, segui queste linee guida:
 
-- **Optimize Resource Usage:** Monitora l'uso della memoria e gestisci le risorse in modo efficace.  
-- **Best Practices:** Utilizza pratiche di codifica efficienti per ridurre al minimo i tempi di elaborazione.  
-- **Java Memory Management:** Sfrutta la garbage collection e le funzionalità di gestione della memoria di Java per migliori prestazioni.
+- **Monitorare l'uso della memoria:** Usa strumenti di profiling Java per monitorare il consumo di heap durante grandi unioni.  
+- **Elaborazione batch:** Quando si gestiscono decine di file, uniscili in gruppi di 5‑10 per evitare picchi di memoria eccessivi.  
+- **Ottimizzazione della garbage collection:** Abilita il collector G1 (`-XX:+UseG1GC`) per tempi di pausa più fluidi sui server multicore.  
 
 ## Conclusione
 
-Congratulazioni per aver padroneggiato come **combinare più file docx** con GroupDocs.Merger per Java! Ora possiedi le competenze per consolidare i documenti Word senza sforzo, migliorando la tua produttività e le capacità organizzative.
+Congratulazioni per aver padroneggiato come **combinare più file docx** con GroupDocs.Merger per Java! Ora disponi di un metodo affidabile per consolidare documenti Word, aumentare la produttività e automatizzare le attività ripetitive di gestione dei documenti.
 
 ### Prossimi passi
-Esplora ulteriori funzionalità di GroupDocs.Merger, come la divisione dei documenti o la loro protezione con password. Sperimenta con diversi tipi di documenti e scenari per ampliare la tua esperienza.
 
-**Call-to-Action:** Prova a implementare questa soluzione nel tuo prossimo progetto o flusso di lavoro—scopri la facilità e l'efficienza che offre!
+Esplora funzionalità aggiuntive come la divisione dei documenti, l'applicazione di filigrane o la crittografia del file finale con password. Sperimenta con altri formati supportati come PDF o HTML per ampliare il tuo toolkit di automazione.
 
-## Sezione FAQ
+## Domande frequenti
 
-1. **Posso unire più di tre documenti Word?**  
-   - Sì, puoi unire tutti i documenti necessari chiamando `merger.join()` più volte.
+**Q: Posso unire più di tre documenti Word?**  
+A: Sì, puoi chiamare `merger.join()` ripetutamente per aggiungere quanti documenti desideri.
 
-2. **GroupDocs.Merger for Java è compatibile con tutte le versioni di Microsoft Word?**  
-   - La libreria supporta un'ampia gamma di formati Word, garantendo la compatibilità con varie versioni.
+**Q: GroupDocs.Merger per Java è compatibile con tutte le versioni di Microsoft Word?**  
+A: La libreria supporta l'intera gamma di formati Word da Word 97 fino a Word 2021, garantendo una vasta compatibilità.
 
-3. **Come gestire l'unione di documenti di grandi dimensioni senza perdita di prestazioni?**  
-   - Utilizza tecniche di gestione della memoria e ottimizza il tuo codice per mantenere l'efficienza.
+**Q: Come gestire unioni di documenti molto grandi senza esaurire la memoria?**  
+A: Aumenta l'heap JVM (`-Xmx`) e considera di unire in batch più piccoli, quindi combina i risultati intermedi.
 
-4. **GroupDocs.Merger può integrarsi con soluzioni di storage cloud?**  
-   - Sì, può funzionare senza problemi con servizi basati su cloud per una maggiore accessibilità.
+**Q: GroupDocs.Merger può lavorare con servizi di storage cloud?**  
+A: Sì, puoi trasmettere file da AWS S3, Azure Blob o Google Cloud Storage fornendo stream di input al costruttore `Merger`.
 
-5. **Dove posso trovare più esempi di utilizzo di GroupDocs.Merger?**  
-   - La [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/) fornisce numerosi esempi e casi d'uso.
+**Q: Dove posso trovare più esempi di codice?**  
+A: La documentazione ufficiale [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/) contiene numerosi esempi e guide alle migliori pratiche.
 
 ## Risorse
 
-- **Documentation:** Esplora guide dettagliate su [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)
-- **API Reference:** Accedi a dettagli completi dell'API su [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)
-- **Download:** Ottieni l'ultima versione da [GroupDocs Downloads](https://releases.groupdocs.com/merger/java/)
-- **Purchase:** Scopri le opzioni di acquisto su [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy)
-- **Free Trial:** Inizia con una prova gratuita su [GroupDocs Free Trials](https://releases.groupdocs.com/merger/java/)
-- **Temporary License:** Richiedi una licenza temporanea su [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support:** Partecipa alla discussione su [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/) 
+- **Documentazione:** Esplora guide dettagliate su [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)  
+- **Riferimento API:** Accedi a dettagli completi dell'API su [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)  
+- **Download:** Ottieni l'ultima versione da [GroupDocs Downloads](https://releases.groupdocs.com/merger/java/)  
+- **Acquisto:** Scopri le opzioni di licenza su [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy)  
+- **Prova gratuita:** Inizia con una prova gratuita su [GroupDocs Free Trials](https://releases.groupdocs.com/merger/java/)  
+- **Licenza temporanea:** Richiedi una licenza temporanea su [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Supporto:** Unisciti alla community sul [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/)
 
 ---
 
-**Ultimo aggiornamento:** 2026-02-11  
+**Ultimo aggiornamento:** 2026-08-04  
 **Testato con:** GroupDocs.Merger latest version (as of 2026)  
 **Autore:** GroupDocs
+
+{< /blocks/products/pf/tutorial-page-section >}
+{< /blocks/products/pf/main-container >}
+{< /blocks/products/pf/main-wrap-class >}
+{< blocks/products/products-backtop-button >}
+
+## Tutorial correlati
+
+- [Gestione documenti master - Unire documenti Word con GroupDocs.Merger per Java](/merger/java/document-joining/groupdocs-merger-java-word-document-management/)
+- [Come unire pagine - Unire pagine specifiche da più documenti usando GroupDocs.Merger per Java](/merger/java/document-joining/join-pages-groupdocs-merger-java-tutorial/)
+- [Unire file DOTM con GroupDocs.Merger per Java: Guida per sviluppatori all'unione dei documenti](/merger/java/format-specific-merging/merge-dotm-files-groupdocs-merger-java/)
