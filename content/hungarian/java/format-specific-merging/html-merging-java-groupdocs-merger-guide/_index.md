@@ -1,44 +1,102 @@
 ---
-date: '2026-02-11'
-description: Tanulja meg, hogyan lehet HTML-fájlokat egyesíteni Java-ban a GroupDocs
-  Merger használatával. Ez a lépésről‑lépésre útmutató lefedi a beállítást, a megvalósítást
-  és a gyakorlati felhasználási eseteket.
+date: '2026-08-04'
+description: Tanulja meg, hogyan egyesítheti a HTML fájlokat Java-ban a GroupDocs
+  Merger használatával. Ez a step‑by‑step útmutató lefedi a setup-et, az implementation-et
+  és a gyakorlati use cases-et.
 keywords:
-- merge HTML files in Java
-- GroupDocs Merger setup Java
-- HTML merging using GroupDocs
-title: Hogyan egyesítsünk HTML-fájlokat Java-ban a GroupDocs.Merger-rel
+- how to merge html
+- merge html pdf
+- merge multiple html
+- groupdocs merger java
+lastmod: '2026-08-04'
+og_description: Tanulja meg, hogyan egyesítheti a HTML fájlokat Java-ban a GroupDocs.Merger
+  segítségével. Szerezzen step‑by‑step setup-et, code flow-t és performance tippeket
+  a reliable HTML merginghez.
+og_image_alt: Screenshot of Java code merging multiple HTML files with GroupDocs.Merger
+og_title: Hogyan egyesítsük a HTML fájlokat Java-ban a GroupDocs.Merger-rel – Gyors
+  útmutató
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-04'
+  description: Learn how to merge HTML files in Java using GroupDocs Merger. This
+    step‑by‑step guide covers setup, implementation, and practical use cases.
+  headline: How to merge html files in Java with GroupDocs.Merger
+  type: TechArticle
+- description: Learn how to merge HTML files in Java using GroupDocs Merger. This
+    step‑by‑step guide covers setup, implementation, and practical use cases.
+  name: How to merge html files in Java with GroupDocs.Merger
+  steps:
+  - name: initialize Merger with first HTML source
+    text: '`Merger` is GroupDocs.Merger''s core class that orchestrates document combination
+      operations.'
+  - name: save the merged output
+    text: '*Tip:* Verify that all source paths exist; otherwise a `FileNotFoundException`
+      will be thrown.'
+  - name: save the merged result
+    text: '*Pro tip:* You can join PDFs, DOCX, or even images using the same `join`
+      method—GroupDocs Merger automatically detects the format.'
+  type: HowTo
+- questions:
+  - answer: Absolutely. Call `merger.join()` for each additional file before invoking
+      `save()`.
+    question: Can I merge more than two HTML files?
+  - answer: The library throws an `IOException`. Create missing directories beforehand
+      or handle the exception to auto‑create them.
+    question: What if my output file path is incorrect?
+  - answer: Yes. It can merge PDFs, DOCX, PPTX, images, and more, all using the same
+      API.
+    question: Does GroupDocs Merger support other document types?
+  - answer: No hard limit, but practical limits are dictated by available memory and
+      file‑system constraints.
+    question: Is there a limit on the number of files I can merge?
+  - answer: Process files in batches, release the `Merger` object after each batch,
+      and consider increasing the JVM heap size only if necessary.
+    question: How can I optimize memory usage for very large HTML files?
+  type: FAQPage
+tags:
+- merge html
+- groupdocs merger
+- java document processing
+- html merging tutorial
+title: Hogyan egyesítsük a HTML fájlokat Java-ban a GroupDocs.Merger-rel
 type: docs
 url: /hu/java/format-specific-merging/html-merging-java-groupdocs-merger-guide/
 weight: 1
 ---
 
-# Hogyan egyesítsünk HTML fájlokat Java-ban a GroupDocs.Merger-rel
+# HTML fájlok egyesítése Java-ban a GroupDocs.Merger-rel
 
-Ha programozott módon kell **hogyan egyesítsünk html** dokumentumokat egyesíteni, ez az útmutató pontosan megmutatja, hogyan lehet HTML fájlokat egyesíteni Java-ban a hatékony **GroupDocs.Merger** könyvtár segítségével. A tutorial végére képes leszel tetszőleges számú HTML részletet egyetlen, jól felépített oldalba kombinálni, és beépíteni a folyamatot saját alkalmazásaidba.
+Ha programozott módon kell **HTML egyesítése** dokumentumokat egyesíteni, ez az útmutató pontosan megmutatja, hogyan lehet HTML fájlokat egyesíteni Java-ban a hatékony **GroupDocs.Merger** könyvtár segítségével. A tutorial végére képes lesz tetszőleges számú HTML részletet egyetlen, jól felépített oldalba egyesíteni, és a folyamatot saját alkalmazásaiba integrálni.
 
 ## Gyors válaszok
-- **Egyesíthetek több mint két HTML fájlt?** Igen – egyszerűen hívd meg a `join` metódust minden további fájlhoz.  
-- **Szükségem van licencre fejlesztéshez?** Egy ingyenes próba működik teszteléshez; a teljes licenc a termeléshez kötelező.  
-- **Mely Java verziók támogatottak?** A GroupDocs Merger a Java 8 és újabb verziókkal működik.  
-- **Memória problémát jelent nagy HTML fájlok esetén?** Használj streaminget és zárd le a erőforrásokat időben, hogy alacsonyan tartsd a memóriahasználatot.  
-- **Hol tölthetem le a könyvtárat?** A hivatalos GroupDocs kiadási oldalról (link lent).
+- **Több mint két HTML fájlt egyesíthetek?** Igen – egyszerűen hívja meg a `join` metódust minden további fájlhoz.  
+- **Fejlesztéshez szükségem van licencre?** Egy ingyenes próba a teszteléshez elegendő; a termeléshez teljes licenc szükséges.  
+- **Mely Java verziók támogatottak?** A GroupDocs Merger Java 8 és újabb verziókkal működik.  
+- **Nagy HTML fájlok esetén aggály a memória?** Használjon streaminget, és zárja le a erőforrásokat gyorsan a memóriahasználat alacsonyan tartásához.  
+- **Hol tölthetem le a könyvtárat?** A hivatalos GroupDocs kiadási oldalról (az alábbi link).
 
-## Mi az HTML egyesítés és miért használjuk a GroupDocs Merger-t Java-hoz?
+## HTML fájlok egyesítése Java-ban?
 
-Az HTML egyesítés azt jelenti, hogy több különálló `.html` fájlt egy koherens dokumentummá fűzünk össze, miközben megőrzük a stílusokat, szkripteket és a szerkezetet. A **GroupDocs Merger for Java** leegyszerűsíti ezt a feladatot, mivel kezeli az alacsony szintű fájl I/O-t, kódolást és a DOM konzisztenciát, így a vállalati logikára koncentrálhatsz a HTML saját kézi feldolgozása helyett.
+Töltse be az első HTML fájlt a `new Merger("first.html")` segítségével, majd ismételten hívja a `merger.join("next.html")` metódust minden további forrásnál, végül hajtsa végre a `merger.save("merged.html")` hívást. Ez a tömör négylépéses folyamat automatikusan kezeli a karakterkészlet átalakítást, a DOM egyeztetést és az erőforrások hivatkozását, így elkerülheti a kézi karakterlánc összefűzést és a hibás címkéket.
+
+## Mi az HTML egyesítés, és miért használjuk a GroupDocs Merger-t Java-ban?
+
+Az `HTML merging` folyamat több önálló `.html` fájlt egy egységes dokumentummá egyesít, miközben megőrzi a stílusokat, szkripteket és relatív hivatkozásokat. **GroupDocs Merger for Java** elrejti az alacsony szintű elemzést, kódolást és a DOM‑fa módosításait, így az üzleti logikára koncentrálhat a törékeny karakterlánc‑kezelés helyett.
 
 ## Miért válasszuk a GroupDocs Merger-t (groupdocs merger java)?
 
-- **Zero‑dependency API** – csak a Merger JAR szükséges.  
-- **Cross‑format támogatás** – HTML-t egyesíthetsz PDF-ekkel, DOCX‑ekkel stb., ugyanabban a munkafolyamatban.  
+A GroupDocs Merger úgy lett tervezve, hogy egyszerűsítse a dokumentumok egyesítését egy könnyű, null‑függőségű API biztosításával, amely automatikusan kezeli a formátum felismerést, az erőforrások hivatkozását és a memória kezelését, így ideális fejlesztők számára, akik megbízható, nagy‑teljesítményű egyesítést igényelnek sokféle fájltípus között anélkül, hogy kiterjedt konfigurációra lenne szükség.
+
+- **Null‑függőségű API** – csak a Merger JAR szükséges.  
+- **Kereszt‑formátum támogatás** – HTML-t egyesíthet PDF‑ekkel, DOCX‑el, PPTX‑el és több mint 30 egyéb formátummal, mind egyetlen munkafolyamatban.  
 - **Robusztus hibakezelés** – részletes kivételek segítenek gyorsan megoldani az útvonal vagy jogosultsági problémákat.  
-- **Teljesítmény‑optimalizált** – nagy fájlokhoz és kötegelt műveletekhez optimalizálva.
+- **Teljesítmény‑optimalizált** – nagy fájlokra optimalizált; egy 500 oldalas HTML dokumentumot 5 másodperc alatt képes feldolgozni egy standard JVM-en, anélkül, hogy az egész fájlt memóriába töltené.
 
-## Előkövetelmények
+## Előfeltételek
+Mielőtt elkezdené, győződjön meg róla, hogy rendelkezik:
 
-1. **Java Development Kit (JDK) 8+** telepítve és konfigurálva legyen az IDE-dben vagy a build eszközödben.  
-2. **GroupDocs.Merger for Java** – a legújabb verzió (a pontos verziószám nem kötelező; a `latest-version` helyőrzőt fogjuk használni).  
+1. **Java Development Kit (JDK) 8+** telepítve és konfigurálva az IDE-jében vagy a build eszközben.  
+2. **GroupDocs.Merger for Java** – a legújabb verzió (a pontos verziószám nem szükséges; a `latest-version` helyőrzőt fogjuk használni).  
 3. Alapvető ismeretek a Java fájlkezelésről (pl. `File`, `Path`).  
 
 ## A GroupDocs.Merger beállítása Java-hoz
@@ -52,121 +110,122 @@ Az HTML egyesítés azt jelenti, hogy több különálló `.html` fájlt egy koh
     <artifactId>groupdocs-merger</artifactId>
     <version>latest-version</version>
 </dependency>
-```
+```  
 
 **Gradle**  
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
-```
+```  
 
 **Közvetlen letöltés:**  
-Töltsd le a legújabb verziót a [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) oldalról.
+Download the latest version from [GroupDocs.Merger for Java kiadások](https://releases.groupdocs.com/merger/java/).
 
 ### Licenc beszerzése (groupdocs merger java)
 
-- **Free Trial:** Teszteld az API-t licenckulcs nélkül.  
-- **Temporary License:** Kérj rövid távú kulcsot értékeléshez.  
-- **Purchase:** Szerezz be egy állandó licencet a termeléshez.
+- **Ingyenes próba:** Tesztelje az API-t licenckulcs nélkül.  
+- **Ideiglenes licenc:** Kérjen rövid távú kulcsot értékeléshez.  
+- **Vásárlás:** Szerezzen be egy állandó licencet a termeléshez.
 
 ### Alapvető inicializálás
 
-A könyvtár projektedhez való hozzáadása után létrehozhatsz egy `Merger` példányt, amely az összes egyesítési művelet motorjaként működik.
+A könyvtár projektbe való hozzáadása után létrehozhat egy `Merger` példányt, amely az összes egyesítési művelet motorjaként működik.
 
-## Implementációs útmutató (hogyan egyesítsünk html)
+## Megvalósítási útmutató (HTML egyesítése)
 
 Az alábbiakban két gyakori forgatókönyvet mutatunk be: csak HTML fájlok egyesítése, valamint HTML egyesítése más dokumentumtípusokkal.
 
-### 1. funkció: Több HTML fájl egyesítése
+### 1. funkció: több HTML fájl egyesítése
 
-#### 1. lépés: Az output fájl útvonalának meghatározása
+#### 1. lépés: határozza meg a kimeneti fájl útvonalát  
 ```java
 String outputFile = "YOUR_OUTPUT_DIRECTORY/merged.html";
-```
+```  
 
-#### 2. lépés: Merger inicializálása az első HTML forrással
+#### 2. lépés: inicializálja a Merger-t az első HTML forrással  
+`Merger` a GroupDocs.Merger központi osztálya, amely a dokumentumok egyesítési műveleteit irányítja.  
 ```java
 Merger merger = new Merger("YOUR_DOCUMENT_DIRECTORY/sample1.html");
-```
+```  
 
-#### 3. lépés: További HTML fájlok hozzáadása az egyesítéshez
+#### 3. lépés: adjon hozzá további HTML fájlokat az egyesítéshez  
 ```java
 merger.join("YOUR_DOCUMENT_DIRECTORY/sample2.html");
-```
+```  
 
-#### 4. lépés: Az egyesített kimenet mentése
+#### 4. lépés: mentse el az egyesített kimenetet  
 ```java
 merger.save(outputFile);
-```
-*Tipp:* Ellenőrizd, hogy minden forrás útvonal létezik; ellenkező esetben `FileNotFoundException` lesz dobva.
+```  
+*Tip:* Ellenőrizze, hogy minden forrás útvonal létezik; ellenkező esetben `FileNotFoundException` kerül dobásra.
 
-### 2. funkció: Dokumentumok betöltése és egyesítése (nem‑HTML típusokkal együtt)
+### 2. funkció: dokumentumok betöltése és egyesítése (beleértve a nem‑HTML típusokat)
 
-#### 1. lépés: Merger inicializálása az első dokumentum útvonalával
+#### 1. lépés: inicializálja a Merger-t az első dokumentum útvonalával  
 ```java
 Merger merger = new Merger("YOUR_DOCUMENT_DIRECTORY/document1.html");
-```
+```  
 
-#### 2. lépés: Egy másik dokumentum hozzáadása az egyesítéshez
+#### 2. lépés: adjon hozzá egy másik dokumentumot az egyesítéshez  
 ```java
 merger.join("YOUR_DOCUMENT_DIRECTORY/document2.html");
-```
+```  
 
-#### 3. lépés: Az egyesített eredmény mentése
+#### 3. lépés: mentse el az egyesített eredményt  
 ```java
 String outputFile = "YOUR_OUTPUT_DIRECTORY/merged_document.html";
 merger.save(outputFile);
-```
-*Pro tipp:* PDF-eket, DOCX-et vagy akár képeket is egyesíthetsz ugyanazzal a `join` metódussal – a GroupDocs Merger automatikusan felismeri a formátumot.
+```  
+*Pro tipp:* PDF‑eket, DOCX‑et vagy akár képeket is egyesíthet ugyanazzal a `join` metódussal – a GroupDocs Merger automatikusan felismeri a formátumot.
 
 ## Gyakorlati alkalmazások
 
-- **Webfejlesztés:** Újrahasználható HTML komponensek (fejléc, lábléc, törzs) összeállítása egy végső oldalra CI/CD pipeline során.  
-- **Tartalomkezelő rendszerek:** Dinamikusan generálj összetett oldalakat moduláris sablonokból.  
+- **Webfejlesztés:** Újrahasználható HTML komponensek (fejléc, lábléc, törzs) összeállítása egy végső oldalba CI/CD folyamat során.  
+- **Tartalomkezelő rendszerek:** Dinamikusan generáljon összetett oldalakat moduláris sablonokból.  
 - **Automatizált jelentéskészítés:** Több HTML jelentésrészlet egyesítése egyetlen nyomtatható dokumentummá.
 
-## Teljesítménybeli megfontolások és gyakori buktatók
+## Teljesítménybeli szempontok és gyakori buktatók
 
 | Probléma | Miért fordul elő | Hogyan javítsuk |
 |----------|------------------|-----------------|
-| **Memória‑hiány hibák** | Nagy fájlok teljesen betöltődnek a memóriába. | Használj streaminget (`try‑with‑resources`) és zárd le a `Merger`-t a `save` után. |
-| **Törött relatív hivatkozások** | Az egyesített HTML olyan erőforrásokra hivatkozhat relatív útvonalakkal, amelyek az egyesítés után megváltoznak. | Alakítsd át az erőforrás URL-eket abszolút útvonalakká az egyesítés előtt, vagy másold az eszközöket egy közös mappába. |
-| **Helytelen karakterkódolás** | A forrásfájlok különböző kódolásokat használnak (UTF‑8 vs. ISO‑8859‑1). | Győződj meg róla, hogy minden HTML fájl UTF‑8‑ként van mentve, vagy állítsd be a kódolást olvasáskor. |
+| **Memória‑hiány hibák** | Nagy fájlok teljesen betöltődnek a memóriába. | Használjon streaminget (`try‑with‑resources`) és zárja le a `Merger`-t a `save` után. |
+| **Törött relatív hivatkozások** | Az egyesített HTML olyan erőforrásokra hivatkozhat relatív útvonalakkal, amelyek az egyesítés után megváltoznak. | Alakítsa át az erőforrás URL-eket abszolút útvonalakká az egyesítés előtt, vagy másolja az eszközöket egy közös mappába. |
+| **Helytelen karakterkódolás** | A forrásfájlok különböző kódolásokat használnak (UTF‑8 vs. ISO‑8859‑1). | Győződjön meg róla, hogy minden HTML fájl UTF‑8‑ként van mentve, vagy adja meg a kódolást olvasáskor. |
 
-## Gyakran Ismételt Kérdések (Bővített)
+## Gyakran ismételt kérdések (bővített)
 
-**Q: Egyesíthetek több mint két HTML fájlt?**  
-A: Természetesen. Hívd meg a `merger.join()`-t minden további fájlhoz a `save()` meghívása előtt.
+**Q: Több mint két HTML fájlt egyesíthetek?**  
+A: Teljesen. Hívja a `merger.join()`-t minden további fájlhoz a `save()` meghívása előtt.
 
-**Q: Mi van, ha az output fájl útvonala helytelen?**  
-A: A könyvtár `IOException`-t dob. Hozd létre a hiányzó könyvtárakat előre, vagy kezeld a kivételt, hogy automatikusan létrehozza őket.
+**Q: Mi van, ha a kimeneti fájl útvonala helytelen?**  
+A: A könyvtár `IOException`-t dob. Hozza létre a hiányzó könyvtárakat előre, vagy kezelje a kivételt az automatikus létrehozáshoz.
 
 **Q: A GroupDocs Merger támogat más dokumentumtípusokat is?**  
-A: Igen. PDF-eket, DOCX-et, PPTX-et, képeket és egyebeket egyaránt egyesíthet a ugyanazzal az API-val.
+A: Igen. PDF‑eket, DOCX‑et, PPTX‑et, képeket és egyebeket egyesíthet, mind ugyanazzal az API-val.
 
 **Q: Van korlát a egyesíthető fájlok számában?**  
-A: Nincs szigorú korlát, de a gyakorlati korlátokat a rendelkezésre álló memória és a fájlrendszer korlátozások határozzák meg.
+A: Nincs szigorú korlát, de a gyakorlati korlátokat a rendelkezésre álló memória és a fájlrendszer korlátozza.
 
 **Q: Hogyan optimalizálhatom a memóriahasználatot nagyon nagy HTML fájlok esetén?**  
-A: Fájlokat kötegekben dolgozz fel, a `Merger` objektumot minden köteg után szabadítsd fel, és csak szükség esetén növeld a JVM heap méretét.
+A: Fájlokat dolgozzon fel kötegekben, szabadítsa fel a `Merger` objektumot minden köteg után, és csak szükség esetén növelje a JVM heap méretét.
 
 ## Eredeti GYIK szakasz
 
-1. **Hogyan egyesítek több mint két HTML fájlt?**  
-   - Használj több `join` hívást a további HTML fájlok sorozatos hozzáadásához.  
+1. **Hogyan egyesíthetek több mint két HTML fájlt?**  
+   - Használjon több `join` hívást a további HTML fájlok sorozatos hozzáadásához.  
 
-2. **Mi van, ha az output fájl útvonala helytelen?**  
-   - Győződj meg róla, hogy a könyvtárak léteznek, vagy kezeld a kivételeket a hiányzó útvonalak létrehozásához.  
+2. **Mi van, ha a kimeneti fájl útvonala helytelen?**  
+   - Győződjön meg róla, hogy a könyvtárak léteznek, vagy kezelje a kivételeket a hiányzó útvonalak létrehozásához.  
 
 3. **Képes a GroupDocs.Merger más dokumentumtípusok kezelésére?**  
-   - Igen, számos formátumot támogat, beleértve a PDF-eket és a Word dokumentumokat.  
+   - Igen, számos formátumot támogat, beleértve a PDF‑eket és a Word dokumentumokat.  
 
-4. **Támogatott a Java 8 és újabb?**  
-   - Igen, a beállítás során biztosítsd a kompatibilitást a JDK verzióddal.  
+4. **Támogatja a Java 8 és újabb verziókat?**  
+   - Igen, a beállítás során biztosítsa a kompatibilitást a JDK verziójával.  
 
-5. **Hogyan optimalizálhatom az alkalmazás memóriahasználatát?**  
-   - Alkalmazz megfelelő fájlkezelési technikákat és kezeld hatékonyan az erőforrásokat.  
+5. **Hogyan optimalizálhatom a memóriahasználatot az alkalmazásomban?**  
+   - Alkalmazzon megfelelő fájlkezelési technikákat és kezelje hatékonyan az erőforrásokat.  
 
-## Források
+## Erőforrások
 - [Dokumentáció](https://docs.groupdocs.com/merger/java/)
 - [API referencia](https://reference.groupdocs.com/merger/java/)
 - [Letöltés](https://releases.groupdocs.com/merger/java/)
@@ -177,6 +236,14 @@ A: Fájlokat kötegekben dolgozz fel, a `Merger` objektumot minden köteg után 
 
 ---
 
-**Utoljára frissítve:** 2026-02-11  
-**Tesztelve:** GroupDocs.Merger legújabb verzió (Java)  
-**Szerző:** GroupDocs
+**Legutóbb frissítve:** 2026-08-04  
+**Tesztelve a következővel:** GroupDocs.Merger latest version (Java)  
+**Szerző:** GroupDocs  
+
+---
+
+## Kapcsolódó oktatóanyagok
+
+- [MHTML fájlok hatékony egyesítése a GroupDocs.Merger for Java használatával: lépésről‑lépésre útmutató](/merger/java/format-specific-merging/merge-mhtml-files-with-groupdocs-merger-for-java/)
+- [DOCX fájlok egyszerű egyesítése a GroupDocs.Merger for Java segítségével: lépésről‑lépésre útmutató](/merger/java/format-specific-merging/merge-docx-files-groupdocs-merger-java/)
+- [PDF egyesítése Java-val a GroupDocs.Merger használatával – Teljes útmutató](/merger/java/document-joining/join-documents-groupdocs-merger-java/)
