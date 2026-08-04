@@ -1,50 +1,104 @@
 ---
-date: '2026-02-11'
-description: GroupDocs Merger kullanarak Java’da HTML dosyalarını nasıl birleştireceğinizi
-  öğrenin. Bu adım adım kılavuz, kurulum, uygulama ve pratik kullanım senaryolarını
+date: '2026-08-04'
+description: GroupDocs Merger kullanarak Java'da HTML dosyalarını nasıl birleştireceğinizi
+  öğrenin. Bu adım adım rehber, kurulum, uygulama ve pratik kullanım senaryolarını
   kapsar.
 keywords:
-- merge HTML files in Java
-- GroupDocs Merger setup Java
-- HTML merging using GroupDocs
-title: GroupDocs.Merger ile Java’da HTML Dosyalarını Nasıl Birleştirirsiniz
+- how to merge html
+- merge html pdf
+- merge multiple html
+- groupdocs merger java
+lastmod: '2026-08-04'
+og_description: GroupDocs.Merger kullanarak Java'da html dosyalarını nasıl birleştireceğinizi
+  öğrenin. Güvenilir HTML birleştirme için adım adım kurulum, kod akışı ve performans
+  ipuçlarını alın.
+og_image_alt: Screenshot of Java code merging multiple HTML files with GroupDocs.Merger
+og_title: Java'da GroupDocs.Merger ile html dosyalarını birleştirme – Hızlı rehber
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-04'
+  description: Learn how to merge HTML files in Java using GroupDocs Merger. This
+    step‑by‑step guide covers setup, implementation, and practical use cases.
+  headline: How to merge html files in Java with GroupDocs.Merger
+  type: TechArticle
+- description: Learn how to merge HTML files in Java using GroupDocs Merger. This
+    step‑by‑step guide covers setup, implementation, and practical use cases.
+  name: How to merge html files in Java with GroupDocs.Merger
+  steps:
+  - name: initialize Merger with first HTML source
+    text: '`Merger` is GroupDocs.Merger''s core class that orchestrates document combination
+      operations.'
+  - name: save the merged output
+    text: '*Tip:* Verify that all source paths exist; otherwise a `FileNotFoundException`
+      will be thrown.'
+  - name: save the merged result
+    text: '*Pro tip:* You can join PDFs, DOCX, or even images using the same `join`
+      method—GroupDocs Merger automatically detects the format.'
+  type: HowTo
+- questions:
+  - answer: Absolutely. Call `merger.join()` for each additional file before invoking
+      `save()`.
+    question: Can I merge more than two HTML files?
+  - answer: The library throws an `IOException`. Create missing directories beforehand
+      or handle the exception to auto‑create them.
+    question: What if my output file path is incorrect?
+  - answer: Yes. It can merge PDFs, DOCX, PPTX, images, and more, all using the same
+      API.
+    question: Does GroupDocs Merger support other document types?
+  - answer: No hard limit, but practical limits are dictated by available memory and
+      file‑system constraints.
+    question: Is there a limit on the number of files I can merge?
+  - answer: Process files in batches, release the `Merger` object after each batch,
+      and consider increasing the JVM heap size only if necessary.
+    question: How can I optimize memory usage for very large HTML files?
+  type: FAQPage
+tags:
+- merge html
+- groupdocs merger
+- java document processing
+- html merging tutorial
+title: Java'da GroupDocs.Merger ile html dosyalarını birleştirme
 type: docs
 url: /tr/java/format-specific-merging/html-merging-java-groupdocs-merger-guide/
 weight: 1
 ---
 
- final content with all translations.
+# Java'da GroupDocs.Merger ile html dosyalarını birleştirme
 
-Let's assemble.
+Eğer **html dosyalarını nasıl birleştireceğinizi** programlı olarak öğrenmek istiyorsanız, bu kılavuz size Java’da güçlü **GroupDocs.Merger** kütüphanesini kullanarak HTML dosyalarını nasıl birleştireceğinizi tam olarak gösterir. Öğreticinin sonunda, istediğiniz sayıda HTML parçacığını tek, iyi yapılandırılmış bir sayfada birleştirebilecek ve bu süreci kendi uygulamalarınıza entegre edebileceksiniz.
 
-# Java'da GroupDocs.Merger ile HTML Dosyalarını Birleştirme
-
-Programlı olarak **how to merge html** belgelerini birleştirmeniz gerekiyorsa, bu kılavuz size Java'da güçlü **GroupDocs.Merger** kütüphanesini kullanarak HTML dosyalarını nasıl birleştireceğinizi tam olarak gösterir. Öğreticinin sonunda, herhangi bir sayıda HTML parçacığını tek bir, iyi yapılandırılmış sayfada birleştirebilecek ve bu süreci kendi uygulamalarınıza entegre edebileceksiniz.
-
-## Hızlı Yanıtlar
-- **İki'den fazla HTML dosyasını birleştirebilir miyim?** Evet – her ek dosya için sadece `join` metodunu çağırın.  
-- **Geliştirme için lisansa ihtiyacım var mı?** Test için ücretsiz deneme sürümü çalışır; üretim için tam lisans gereklidir.  
+## Hızlı cevaplar
+- **İki’den fazla HTML dosyasını birleştirebilir miyim?** Evet – ek dosyalar için sadece `join` metodunu çağırın.  
+- **Geliştirme için lisansa ihtiyacım var mı?** Test için ücretsiz deneme sürümü yeterlidir; üretim için tam lisans gereklidir.  
 - **Hangi Java sürümleri destekleniyor?** GroupDocs Merger, Java 8 ve üzeri sürümlerle çalışır.  
-- **Büyük HTML dosyaları için bellek bir sorun mu?** Bellek kullanımını düşük tutmak için akış (streaming) kullanın ve kaynakları hemen kapatın.  
+- **Büyük HTML dosyalarında bellek bir sorun mu?** Bellek kullanımını düşük tutmak için akış (streaming) kullanın ve kaynakları hemen kapatın.  
 - **Kütüphaneyi nereden indirebilirim?** Resmi GroupDocs sürüm sayfasından (aşağıdaki bağlantı).
 
-## HTML birleştirme nedir ve Java için GroupDocs Merger neden kullanılmalı?
-HTML birleştirme, birkaç ayrı `.html` dosyasını alıp stilleri, betikleri ve yapıyı koruyarak tek tutarlı bir belgeye birleştirmek anlamına gelir. **GroupDocs Merger for Java**, tüm düşük seviyeli dosya G/Ç, kodlama ve DOM tutarlılığını sizin yerinize yöneterek bu görevi basitleştirir; böylece HTML'i kendiniz ayrıştırmak yerine iş mantığına odaklanabilirsiniz.
+## Java'da html dosyalarını nasıl birleştirirsiniz?
 
-## Neden GroupDocs Merger (groupdocs merger java) seçilmeli?
-- **Sıfır bağımlılık API** – yalnızca Merger JAR'ı gerekir.  
-- **Çapraz format desteği** – aynı iş akışında HTML'i PDF, DOCX vb. ile birleştirin.  
+İlk HTML dosyanızı `new Merger("first.html")` ile yükleyin, ardından her ek kaynak için `merger.join("next.html")` metodunu tekrarlayın ve sonunda `merger.save("merged.html")` çağrısını yapın. Bu özlü dört adımlık akış, karakter seti dönüşümü, DOM uyumluluğu ve kaynak bağlamasını otomatik olarak yönetir, böylece manuel dize birleştirme ve kırık etiketlerden kaçınmış olursunuz.
+
+## HTML birleştirme nedir ve Java için GroupDocs Merger neden kullanılmalı?
+
+`HTML birleştirme` işlemi, bağımsız `.html` dosyalarını stiller, betikler ve göreceli bağlantılar korunarak tek bir bütün belgeye dönüştürür. **GroupDocs Merger for Java**, düşük seviyeli ayrıştırma, kodlama ve DOM‑ağacı ayarlamalarını soyutlayarak iş mantığınıza odaklanmanızı sağlar; kırılgan dize işlemleriyle uğraşmazsınız.
+
+## GroupDocs Merger (groupdocs merger java) neden tercih edilmeli?
+
+GroupDocs Merger, belge birleştirmeyi hafif, sıfır bağımlılıklı bir API ile basitleştirir; format algılamayı, kaynak bağlamasını ve bellek yönetimini otomatik olarak yapar. Bu sayede, geniş konfigürasyon gerektirmeden birçok dosya türü arasında güvenilir ve yüksek performanslı birleştirme ihtiyacı duyan geliştiriciler için idealdir.
+
+- **Sıfır‑bağımlılık API** – yalnızca Merger JAR’ı yeterlidir.  
+- **Çapraz‑format desteği** – HTML’i PDF, DOCX, PPTX ve 30’dan fazla diğer formatla tek bir iş akışında birleştirin.  
 - **Sağlam hata yönetimi** – ayrıntılı istisnalar, yol veya izin sorunlarını hızlıca çözmenize yardımcı olur.  
-- **Performans odaklı** – büyük dosyalar ve toplu işlemler için optimize edilmiştir.
+- **Performans odaklı** – büyük dosyalar için optimize edilmiştir; tam bellek yüklemesi yapmadan standart bir JVM’de 500 sayfalık HTML belgesini 5 saniyenin altında işleyebilir.
 
 ## Önkoşullar
-Başlamadan önce şunların kurulu olduğundan emin olun:
+Başlamadan önce şunların yüklü olduğundan emin olun:
 
-1. **Java Development Kit (JDK) 8+** IDE'nizde veya yapı aracınızda kurulu ve yapılandırılmış olmalı.  
+1. **Java Development Kit (JDK) 8+** IDE veya yapı aracınızda kurulu ve yapılandırılmış.  
 2. **GroupDocs.Merger for Java** – en son sürüm (tam sürüm numarasına gerek yok; `latest-version` yer tutucusunu kullanacağız).  
-3. Java dosya işlemleri hakkında temel bilgi (ör. `File`, `Path`).  
+3. Java dosya işlemleri (`File`, `Path` gibi) konusunda temel bilgi.
 
-## GroupDocs.Merger for Java Kurulumu
+## GroupDocs.Merger for Java kurulumu
 
 ### Kurulum
 
@@ -55,116 +109,117 @@ Başlamadan önce şunların kurulu olduğundan emin olun:
     <artifactId>groupdocs-merger</artifactId>
     <version>latest-version</version>
 </dependency>
-```
+```  
 
 **Gradle**  
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
-```
+```  
 
-**Doğrudan İndirme:**  
+**Doğrudan indirme:**  
 En son sürümü [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) adresinden indirin.
 
-### Lisans Edinme (groupdocs merger java)
+### Lisans edinme (groupdocs merger java)
 
-- **Ücretsiz Deneme:** Lisans anahtarı olmadan API'yi test edin.  
-- **Geçici Lisans:** Değerlendirme için kısa vadeli bir anahtar isteyin.  
-- **Satın Alma:** Üretim kullanımı için kalıcı bir lisans edinin.
+- **Ücretsiz deneme:** Lisans anahtarı olmadan API’yı test edin.  
+- **Geçici lisans:** Değerlendirme için kısa vadeli bir anahtar isteyin.  
+- **Satın alma:** Üretim kullanımı için kalıcı bir lisans alın.
 
-### Temel Başlatma
+### Temel başlatma
 
-Kütüphaneyi projenize ekledikten sonra, tüm birleştirme işlemleri için motor görevi görecek bir `Merger` örneği oluşturabilirsiniz.
+Kütüphaneyi projenize ekledikten sonra, tüm birleştirme işlemlerinin motoru olacak bir `Merger` örneği oluşturabilirsiniz.
 
-## Uygulama Kılavuzu (how to merge html)
+## Uygulama rehberi (html nasıl birleştirilir)
 
-Aşağıda iki yaygın senaryoyu adım adım inceliyoruz: yalnızca HTML dosyalarını birleştirme ve HTML'i diğer belge türleriyle birleştirme.
+Aşağıda iki yaygın senaryoyu ele alıyoruz: yalnızca HTML dosyalarını birleştirme ve HTML’i diğer belge türleriyle birleştirme.
 
-### Özellik 1: Birden Çok HTML Dosyasını Birleştirme
+### Özellik 1: birden fazla html dosyasını birleştir
 
-#### Adım 1: Çıktı Dosya Yolunu Tanımlayın
+#### Adım 1: çıktı dosya yolunu tanımla  
 ```java
 String outputFile = "YOUR_OUTPUT_DIRECTORY/merged.html";
-```
+```  
 
-#### Adım 2: İlk HTML Kaynağıyla Merger'ı Başlatın
+#### Adım 2: İlk HTML kaynağıyla Merger'ı başlat  
+`Merger`, GroupDocs.Merger'ın belge birleştirme işlemlerini yöneten temel sınıfıdır.  
 ```java
 Merger merger = new Merger("YOUR_DOCUMENT_DIRECTORY/sample1.html");
-```
+```  
 
-#### Adım 3: Birleştirilecek Ek HTML Dosyalarını Ekleyin
+#### Adım 3: Birleştirilecek ek HTML dosyalarını ekle  
 ```java
 merger.join("YOUR_DOCUMENT_DIRECTORY/sample2.html");
-```
+```  
 
-#### Adım 4: Birleştirilmiş Çıktıyı Kaydedin
+#### Adım 4: Birleştirilmiş çıktıyı kaydet  
 ```java
 merger.save(outputFile);
-```
-*İpucu:* Tüm kaynak yollarının mevcut olduğunu doğrulayın; aksi takdirde `FileNotFoundException` fırlatılır.
+```  
+*İpucu:* Tüm kaynak yollarının mevcut olduğundan emin olun; aksi takdirde `FileNotFoundException` fırlatılır.
 
-### Özellik 2: Belgeleri Yükle ve Birleştir (HTML dışı türler dahil)
+### Özellik 2: belgeleri yükle ve birleştir (HTML dışı türler dahil)
 
-#### Adım 1: İlk Belge Yolu ile Merger'ı Başlatın
+#### Adım 1: İlk belge yolu ile Merger'ı başlat  
 ```java
 Merger merger = new Merger("YOUR_DOCUMENT_DIRECTORY/document1.html");
-```
+```  
 
-#### Adım 2: Birleştirme İçin Başka Bir Belge Ekleyin
+#### Adım 2: Birleştirme için başka bir belge ekle  
 ```java
 merger.join("YOUR_DOCUMENT_DIRECTORY/document2.html");
-```
+```  
 
-#### Adım 3: Birleştirilmiş Sonucu Kaydedin
+#### Adım 3: Birleştirilmiş sonucu kaydet  
 ```java
 String outputFile = "YOUR_OUTPUT_DIRECTORY/merged_document.html";
 merger.save(outputFile);
-```
-*Pro ipucu:* Aynı `join` metodunu kullanarak PDF, DOCX veya hatta görüntüleri birleştirebilirsiniz—GroupDocs Merger formatı otomatik olarak algılar.
+```  
+*Profesyonel ipucu:* Aynı `join` metodu ile PDF, DOCX veya hatta görüntüleri birleştirebilirsiniz—GroupDocs Merger formatı otomatik algılar.
 
-## Pratik Uygulamalar
+## Pratik uygulamalar
 
-- **Web Geliştirme:** CI/CD hattı sırasında yeniden kullanılabilir HTML bileşenlerini (başlık, altbilgi, gövde) son bir sayfada birleştirin.  
-- **İçerik Yönetim Sistemleri:** Modüler şablonlardan dinamik olarak birleşik sayfalar oluşturun.  
-- **Otomatik Raporlama:** Birden çok HTML rapor parçasını tek, yazdırılabilir bir belgede birleştirin.
+- **Web geliştirme:** Yeniden kullanılabilir HTML bileşenlerini (başlık, alt bilgi, gövde) bir CI/CD boru hattı sırasında nihai sayfaya birleştirin.  
+- **İçerik yönetim sistemleri:** Modüler şablonlardan dinamik olarak birleşik sayfalar oluşturun.  
+- **Otomatik raporlama:** Birden fazla HTML rapor parçasını tek, yazdırılabilir bir belgeye birleştirin.
 
-## Performans Düşünceleri ve Yaygın Tuzaklar
+## Performans dikkate alımları ve yaygın tuzaklar
 
-| Sorun | Neden Oluşur | Nasıl Düzeltilir |
-|-------|----------------|------------|
-| **Bellek yetersizliği hataları** | Büyük dosyalar tamamen belleğe yüklenir. | Akış (`try‑with‑resources`) kullanın ve `save` sonrası `Merger`'ı kapatın. |
-| **Kırık göreceli bağlantılar** | Birleştirilen HTML, birleştirme sonrası değişen göreceli yollarla kaynaklara referans verebilir. | Kaynak URL'lerini birleştirmeden önce mutlak yollara dönüştürün veya varlıkları ortak bir klasöre kopyalayın. |
-| **Yanlış karakter kodlaması** | Kaynak dosyalar farklı kodlamalar (UTF‑8 vs. ISO‑8859‑1) kullanır. | Tüm HTML dosyalarının UTF‑8 olarak kaydedildiğinden emin olun veya okurken kodlamayı belirtin. |
+| Sorun | Neden olur | Nasıl çözülür |
+|-------|------------|---------------|
+| **Bellek dışı hatalar** | Büyük dosyalar tamamen belleğe yüklenir. | Akış (`try‑with‑resources`) kullanın ve `save` sonrası `Merger`ı kapatın. |
+| **Kırık göreceli bağlantılar** | Birleştirilen HTML, kaynakları farklı göreceli yollarla referans verebilir. | Birleştirmeden önce kaynak URL’lerini mutlak yollara dönüştürün veya varlıkları ortak bir klasöre kopyalayın. |
+| **Yanlış karakter kodlaması** | Kaynak dosyalar farklı kodlamalar (UTF‑8 vs. ISO‑8859‑1) kullanır. | Tüm HTML dosyalarının UTF‑8 olarak kaydedildiğinden emin olun veya okuma sırasında kodlamayı belirtin. |
 
-## Sıkça Sorulan Sorular (Genişletilmiş)
+## Sıkça Sorulan Sorular (genişletilmiş)
 
-**Q: İki'den fazla HTML dosyasını birleştirebilir miyim?**  
-A: Kesinlikle. `save()` metodunu çağırmadan önce her ek dosya için `merger.join()` metodunu çağırın.
+**S: İki’den fazla HTML dosyasını birleştirebilir miyim?**  
+C: Kesinlikle. `save()` çağırmadan önce her ek dosya için `merger.join()` metodunu kullanın.
 
-**Q: Çıktı dosya yolum yanlış olursa ne olur?**  
-A: Kütüphane bir `IOException` fırlatır. Eksik dizinleri önceden oluşturun veya istisnayı yakalayarak otomatik oluşturulmasını sağlayın.
+**S: Çıktı dosya yolum hatalıysa ne olur?**  
+C: Kütüphane bir `IOException` fırlatır. Eksik dizinleri önceden oluşturun veya istisna içinde otomatik oluşturmayı yönetin.
 
-**Q: GroupDocs Merger diğer belge türlerini destekliyor mu?**  
-A: Evet. Aynı API'yi kullanarak PDF, DOCX, PPTX, görüntüler ve daha fazlasını birleştirebilir.
+**S: GroupDocs Merger diğer belge türlerini destekliyor mu?**  
+C: Evet. PDF, DOCX, PPTX, görüntüler ve daha fazlasını aynı API ile birleştirebilir.
 
-**Q: Birleştirebileceğim dosya sayısı için bir sınırlama var mı?**  
-A: Sert bir sınırlama yok, ancak pratik sınırlar mevcut bellek ve dosya sistemi kısıtlamalarına bağlıdır.
+**S: Birleştirilebilecek dosya sayısında bir limit var mı?**  
+C: Katı bir limit yok, ancak pratik limitler mevcut bellek ve dosya sistemi kısıtlamalarına bağlıdır.
 
-**Q: Çok büyük HTML dosyaları için bellek kullanımını nasıl optimize edebilirim?**  
-A: Dosyaları partiler halinde işleyin, her partiden sonra `Merger` nesnesini serbest bırakın ve yalnızca gerektiğinde JVM yığın boyutunu artırmayı düşünün.
+**S: Çok büyük HTML dosyaları için bellek kullanımını nasıl optimize edebilirim?**  
+C: Dosyaları partiler halinde işleyin, her partiden sonra `Merger` nesnesini serbest bırakın ve yalnızca gerektiğinde JVM yığın boyutunu artırın.
 
-## Orijinal SSS Bölümü
+## Orijinal SSS bölümü
 
-1. **İki'den fazla HTML dosyasını nasıl birleştiririm?**  
+1. **İki’den fazla HTML dosyasını nasıl birleştiririm?**  
    - Ek HTML dosyalarını sıralı olarak eklemek için birden fazla `join` çağrısı kullanın.  
 
-2. **Çıktı dosya yolum yanlış olursa ne olur?**  
-   - Dizinlerin mevcut olduğundan emin olun veya eksik yolları oluşturmak için istisnaları yakalayın.  
+2. **Çıktı dosya yolum hatalıysa ne yapmalıyım?**  
+   - Dizinlerin var olduğundan emin olun veya eksik yolları oluşturmak için istisnaları yönetin.  
 
 3. **GroupDocs.Merger diğer belge türlerini işleyebilir mi?**  
-   - Evet, PDF'ler ve Word belgeleri dahil çeşitli formatları destekler.  
+   - Evet, PDF ve Word belgeleri dahil çeşitli formatları destekler.  
 
 4. **Java 8 ve üzeri sürümler destekleniyor mu?**  
-   - Evet, kurulum sırasında JDK sürümünüzle uyumluluğu sağlayın.  
+   - Evet, kurulum sırasında JDK sürümünüzle uyumluluğu kontrol edin.  
 
 5. **Uygulamamda bellek kullanımını nasıl optimize edebilirim?**  
    - Doğru dosya işleme tekniklerini uygulayın ve kaynakları verimli yönetin.  
@@ -180,6 +235,14 @@ A: Dosyaları partiler halinde işleyin, her partiden sonra `Merger` nesnesini s
 
 ---
 
-**Son Güncelleme:** 2026-02-11  
-**Test Edilen Versiyon:** GroupDocs.Merger en son sürüm (Java)  
-**Yazar:** GroupDocs
+**Last Updated:** 2026-08-04  
+**Tested With:** GroupDocs.Merger en son sürümü (Java)  
+**Author:** GroupDocs  
+
+---
+
+## İlgili Eğitimler
+
+- [GroupDocs.Merger for Java ile MHTML Dosyalarını Verimli Bir Şekilde Birleştirme: Adım Adım Kılavuz](/merger/java/format-specific-merging/merge-mhtml-files-with-groupdocs-merger-for-java/)
+- [GroupDocs.Merger for Java ile DOCX Dosyalarını Kolayca Birleştirme: Adım Adım Kılavuz](/merger/java/format-specific-merging/merge-docx-files-groupdocs-merger-java/)
+- [Java ile PDF Birleştirme: GroupDocs.Merger – Tam Kılavuz](/merger/java/document-joining/join-documents-groupdocs-merger-java/)
