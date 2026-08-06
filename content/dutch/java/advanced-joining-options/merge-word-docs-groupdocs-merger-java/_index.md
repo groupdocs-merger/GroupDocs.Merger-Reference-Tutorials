@@ -1,53 +1,59 @@
 ---
-date: '2026-01-16'
-description: Leer hoe je paginabreaks kunt verwijderen bij het samenvoegen van Word‑documenten
-  met GroupDocs.Merger voor Java, waardoor een naadloze doorlopende stroom ontstaat
-  zonder extra pagina’s.
+date: '2026-03-17'
+description: Leer hoe je docx‑bestanden kunt samenvoegen en pagina‑einden in Word
+  kunt verwijderen met GroupDocs.Merger voor Java, waardoor een naadloze doorlopende
+  stroom ontstaat zonder extra pagina’s.
 keywords:
 - merge Word documents Java
 - seamlessly merge documents
 - GroupDocs.Merger for Java
-title: Pagina-einden verwijderen bij het samenvoegen van Word met GroupDocs.Merger
+title: Hoe docx-bestanden samenvoegen en paginabreaks verwijderen met GroupDocs.Merger
   voor Java
 type: docs
 url: /nl/java/advanced-joining-options/merge-word-docs-groupdocs-merger-java/
 weight: 1
 ---
 
-# remove pagebreaks merging word met GroupDocs.Merger voor Java
+ het moment van schrijven)"
 
-Het samenvoegen van meerdere Microsoft Word‑bestanden terwijl **remove pagebreaks merging word** is een veelvoorkomende eis voor rapporten, voorstellen en batch‑gegenereerde documenten. In deze tutorial zie je hoe je Word‑bestanden combineert met GroupDocs.Merger voor Java zodat de inhoud continu doorloopt—geen extra lege pagina's tussen secties.
+"**Author:** GroupDocs" -> "**Auteur:** GroupDocs"
+
+Make sure to keep markdown formatting.
+
+Now produce final content.# Hoe docx samenvoegen en paginabreaks verwijderen met GroupDocs.Merger voor Java
+
+Het samenvoegen van meerdere Microsoft Word‑bestanden terwijl **remove pagebreaks merging word** een veelvoorkomende eis is voor rapporten, voorstellen en batch‑gegenereerde documenten. In deze tutorial leer je **how to merge docx** bestanden zodat de inhoud continu doorloopt—geen extra lege pagina's tussen secties. Of je nu een jaarverslag opstelt of facturen aan elkaar knoopt, een nette samenvoeging bespaart tijd en verbetert de leesbaarheid.
 
 **Wat je zult leren**
 
-- Hoe GroupDocs.Merger voor Java te installeren en configureren  
-- Stapsgewijze code om **remove pagebreaks merging word** documenten te verwerken  
-- Praktijkvoorbeelden waarin een naadloze samenvoeging tijd bespaart en de leesbaarheid verbetert  
-- Tips voor prestaties en geheugengebruik  
+- Hoe je GroupDocs.Merger voor Java installeert en configureert  
+- Stap‑voor‑stap code om **remove pagebreaks merging word** documenten te verwijderen  
+- Praktijkvoorbeelden waarbij een naadloze samenvoeging tijd bespaart en de leesbaarheid verbetert  
+- Tips voor prestaties en geheugenbeheer  
 
 Laten we ervoor zorgen dat je alles hebt wat je nodig hebt voordat we beginnen.
 
 ## Snelle antwoorden
-- **Kan GroupDocs.Merger paginawissels verwijderen?** Ja, stel `WordJoinMode.Continuous` in.  
+- **Kan GroupDocs.Merger paginabreaks verwijderen?** Ja, stel `WordJoinMode.Continuous` in.  
 - **Heb ik een licentie nodig?** Een gratis proefversie werkt voor testen; een betaalde licentie is vereist voor productie.  
 - **Welke Java‑build‑tools worden ondersteund?** Maven, Gradle, of directe JAR‑download.  
 - **Werkt dit met grote documenten?** Ja, maar houd het JVM‑geheugen in de gaten en overweeg streaming.  
-- **Is de output een .doc of .docx bestand?** De API behoudt het oorspronkelijke formaat; je kunt ook een nieuwe extensie opgeven.
+- **Is de output een .doc of .docx bestand?** De API behoudt het oorspronkelijke formaat; je kunt ook een nieuwe extensie opgeven.  
 
 ## Wat is “remove pagebreaks merging word”?
-Wanneer je meerdere Word‑bestanden samenvoegt, voegt het standaardgedrag vaak een paginawissel in tussen elk bronbestand. De **remove pagebreaks merging word**‑techniek vertelt de merger om de documenten te behandelen als één doorlopende stroom, waarbij koppen, tabellen en stijlen behouden blijven zonder onnodige lege pagina's.
+Wanneer je meerdere Word‑bestanden samenvoegt, voegt het standaardgedrag vaak een paginabreak tussen elk bronbestand in. De **remove pagebreaks merging word** techniek instrueert de merger om de documenten als één doorlopende stroom te behandelen, waarbij koppen, tabellen en stijlen behouden blijven zonder onnodige lege pagina's.
 
 ## Waarom GroupDocs.Merger voor Java gebruiken?
 GroupDocs.Merger biedt een high‑level API die de complexiteit van het Office Open XML‑formaat abstraheert. Het ondersteunt een breed scala aan formaten, biedt fijnmazige samenvoegopties, en werkt zowel on‑premises als in cloud‑native omgevingen.
 
 ## Voorvereisten
 - **Java Development Kit (JDK)** – versie 8 of nieuwer geïnstalleerd.  
-- **GroupDocs.Merger voor Java** – de bibliotheek (nieuwste versie).  
+- **GroupDocs.Merger for Java** – de bibliotheek (nieuwste versie).  
 - Basiskennis van Java‑projectopzet (Maven of Gradle).  
 
 ## GroupDocs.Merger voor Java instellen
 
-Voeg de bibliotheek toe aan je project met een van de onderstaande fragmenten.
+Voeg de bibliotheek toe aan je project met een van de onderstaande codefragmenten.
 
 **Maven**  
 ```xml
@@ -63,15 +69,15 @@ Voeg de bibliotheek toe aan je project met een van de onderstaande fragmenten.
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-**Directe download:** Je kunt de JAR ook downloaden van de officiële release‑pagina: [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/)
+Directe download: Je kunt de JAR ook downloaden van de officiële release‑pagina: [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
 ### Licentie‑acquisitie
-Begin met een gratis proefversie om de API te evalueren. Voor productie‑workloads moet je een licentie aanschaffen of een tijdelijke sleutel aanvragen via de links die later in deze gids worden gegeven.
+Begin met een gratis proefversie om de API te evalueren. Voor productie‑workloads koop je een licentie of vraag je een tijdelijke sleutel aan via de links die later in deze gids worden gegeven.
 
-## Hoe **remove pagebreaks merging word** documenten te verwijderen met GroupDocs.Merger voor Java
+## Hoe paginabreaks verwijderen bij het samenvoegen van Word‑documenten met GroupDocs.Merger voor Java
 
 ### Het Merger‑object initialiseren
-Maak eerst een `Merger`‑instantie aan die naar het primaire document wijst. Dit object coördineert het volledige samenvoegproces.
+Maak eerst een `Merger`‑instantie die naar het primaire document wijst. Dit object coördineert het volledige samenvoegproces.
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -83,7 +89,7 @@ Merger merger = new Merger(sourceDocumentPath1);
 ```
 
 ### Word‑samenvoegopties configureren
-De klasse `WordJoinOptions` stelt je in staat te bepalen hoe volgende bestanden worden toegevoegd. Stel de modus in op **Continuous** zodat er geen extra paginawissel wordt toegevoegd.
+De `WordJoinOptions`‑klasse stelt je in staat te bepalen hoe volgende bestanden worden toegevoegd. Stel de modus in op **Continuous** zodat er geen extra paginabreak wordt toegevoegd.
 
 ```java
 // Configure join options
@@ -109,17 +115,28 @@ merger.save(outputFile);
 ```
 
 ### Tips voor probleemoplossing
-- **Bestandspad‑problemen:** Controleer of de paden absoluut zijn of correct relatief ten opzichte van je werkmap.  
+- **Bestandspad‑problemen:** Controleer of de paden absoluut of correct relatief ten opzichte van je werkmap zijn.  
 - **Geheugendruk:** Verhoog bij het samenvoegen van grote bestanden de JVM‑heap (`-Xmx2g` of hoger) of verwerk documenten in batches.  
 - **Niet‑ondersteunde formaten:** Zorg ervoor dat de bronbestanden echte Word‑documenten zijn (`.doc` of `.docx`).  
 
-## Hoe Word‑documenten Java te combineren met GroupDocs.Merger
-De bovenstaande stappen tonen al de kernworkflow van **merge word documents java**. Het belangrijkste is om dezelfde `Merger`‑instantie opnieuw te gebruiken en `WordJoinOptions` toe te passen voor elk extra bestand. Dit patroon schaalt naar tientallen documenten zonder de code‑structuur te wijzigen.
+## Hoe docx samenvoegen zonder extra pagina's in te voegen
+Als je doel simpelweg **how to merge docx** bestanden zonder de standaard paginabreaks is, is de sleutel de `WordJoinMode.Continuous`‑instelling die hierboven is getoond. Door dezelfde `Merger`‑instantie te hergebruiken en dezelfde `WordJoinOptions` toe te passen bij elke aanroep van `join()`, garandeer je een soepele, ononderbroken documentstroom.
+
+## Waarom meerdere Word‑bestanden samenvoegen zonder paginabreaks?
+Het samenvoegen van meerdere Word‑bestanden leidt vaak tot een onsamenhangende uitstraling omdat elke bron op een nieuwe pagina begint. Het verwijderen van die paginabreaks:
+- Houdt koppen en secties visueel verbonden.  
+- Vermindert de totale bestandsgrootte door onnodige lege pagina's te verwijderen.  
+- Verbeterde de leeservaring voor de eindgebruiker, vooral bij lange rapporten of samengestelde contracten.  
+
+## Veelvoorkomende valkuilen bij het verwijderen van paginabreaks in Word
+1. **Vergeten `WordJoinMode.Continuous` in te stellen** – De standaardmodus voegt een break in.  
+2. **Mixen van `.doc` en `.docx` zonder conversie** – Hoewel ondersteund, kunnen er inconsistenties in stijlen optreden.  
+3. **De `Merger` niet sluiten** – Het niet vrijgeven van native resources kan geheugenlekken veroorzaken in langdurige services.  
 
 ## Praktische toepassingen
 1. **Jaarverslag samenstellen** – Combineer kwartaalsecties tot één doorlopend verslag.  
 2. **Batch‑factuurgeneratie** – Voeg individuele factuurbestanden samen tot één archief voor verzending.  
-3. **Document Management Systemen** – Programmeerbaar gerelateerde beleidsdocumenten of contracten aggregeren zonder handmatig knippen en plakken.  
+3. **Document Management Systemen** – Programmeerbaar gerelateerde beleidsdocumenten of contracten aggregeren zonder handmatig kopiëren‑en‑plakken.  
 
 ## Prestatie‑overwegingen
 - **Gestroomlijnde I/O:** Lees en schrijf bestanden met buffered streams om de schijflatentie te verminderen.  
@@ -128,32 +145,32 @@ De bovenstaande stappen tonen al de kernworkflow van **merge word documents java
 
 ## Veelgestelde vragen
 
-**Q: Kan ik meer dan twee documenten samenvoegen?**  
-A: Zeker. Roep `merger.join()` herhaaldelijk aan voor elk extra bestand, waarbij je dezelfde `joinOptions` hergebruikt.
+**V: Kan ik meer dan twee documenten samenvoegen?**  
+A: Absoluut. Roep `merger.join()` herhaaldelijk aan voor elk extra bestand, met dezelfde `joinOptions`.
 
-**Q: Welke Word‑formaten worden ondersteund?**  
-A: Zowel het legacy‑formaat `.doc` als het moderne `.docx` worden volledig ondersteund door GroupDocs.Merger.
+**V: Welke Word‑formaten worden ondersteund?**  
+A: Zowel legacy `.doc` als moderne `.docx` bestanden worden volledig ondersteund door GroupDocs.Merger.
 
-**Q: Is een licentie verplicht voor productiegebruik?**  
+**V: Is een licentie verplicht voor productiegebruik?**  
 A: Ja. De gratis proefversie is beperkt tot evaluatie; een betaalde licentie verwijdert alle beperkingen.
 
-**Q: Hoe ga ik om met fouten tijdens het samenvoegen?**  
-A: Plaats de samenvoeg‑aanroepen in een `try‑catch`‑blok en log de details van `IOException` of `GroupDocsException` voor probleemoplossing.
+**V: Hoe ga ik om met fouten tijdens het samenvoegen?**  
+A: Plaats de samenvoegaanroepen in een `try‑catch`‑blok en log `IOException` of `GroupDocsException` details voor probleemoplossing.
 
-**Q: Kan dit geïntegreerd worden in een cloud‑native microservice?**  
+**V: Kan dit geïntegreerd worden in een cloud‑native microservice?**  
 A: De bibliotheek werkt in elke Java‑runtime, inclusief Docker‑containers en serverless‑functies.
 
 ## Bronnen
-- **Documentation:** [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)  
-- **API Reference:** [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)  
+- **Documentatie:** [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)  
+- **API‑referentie:** [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)  
 - **Download:** [Latest Release](https://releases.groupdocs.com/merger/java/)  
-- **Purchase:** [Buy a License](https://purchase.groupdocs.com/buy)  
-- **Free Trial:** [Try Free Trial](https://releases.groupdocs.com/merger/java/)  
-- **Temporary License:** [Get Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-- **Support:** [GroupDocs Forum](https://forum.groupdocs.com/c/merger/)  
+- **Aankoop:** [Buy a License](https://purchase.groupdocs.com/buy)  
+- **Gratis proefversie:** [Try Free Trial](https://releases.groupdocs.com/merger/java/)  
+- **Tijdelijke licentie:** [Get Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Ondersteuning:** [GroupDocs Forum](https://forum.groupdocs.com/c/merger/)  
 
 ---
 
-**Laatst bijgewerkt:** 2026-01-16  
+**Laatst bijgewerkt:** 2026-03-17  
 **Getest met:** GroupDocs.Merger 23.12 (latest op het moment van schrijven)  
 **Auteur:** GroupDocs

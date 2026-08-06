@@ -1,7 +1,7 @@
 ---
 title: "How to embed PDF in Excel using GroupDocs.Merger for Java - Import an OLE Object – A Step‑by‑Step Guide"
 description: "Learn how to embed PDF in Excel and import document into Excel with GroupDocs.Merger for Java. Follow this detailed guide with code examples and troubleshooting tips."
-date: "2025-12-19"
+date: "2026-03-17"
 weight: 1
 url: "/java/document-import/import-ole-object-excel-groupdocs-merger-java/"
 keywords:
@@ -25,12 +25,13 @@ Embedding a PDF in Excel can turn a static spreadsheet into a rich, interactive 
 ## What is embedding a PDF in Excel?
 Embedding a PDF in Excel stores the PDF inside the workbook as an OLE object. Users can double‑click the object to open the original PDF without leaving the spreadsheet, which is ideal for audit trails, detailed reports, or reference documents.
 
-## Why import a document into Excel with GroupDocs.Merger?
-- **Seamless integration:** No need to manually copy‑paste files; the API handles placement and sizing.  
+## Why embed PDF in Excel with GroupDocs.Merger?
+- **Seamless integration:** No manual copy‑paste; the API handles placement and sizing.  
 - **Automation‑ready:** Perfect for batch‑processing monthly reports or generating dashboards programmatically.  
-- **Cross‑format support:** Works with PDFs, Word docs, images, and more, all via a single library.
+- **Cross‑format support:** Works with PDFs, Word docs, images, and more, all via a single library.  
+- **Performance‑focused:** Designed to work efficiently with large workbooks and multiple OLE objects.
 
-## Prerequisites
+## How to embed PDF in Excel – Prerequisites
 - **Java Development Kit (JDK) 8 or higher** – installed and configured in your IDE.  
 - **GroupDocs.Merger for Java** – add it to your project via Maven or Gradle (see below).  
 - **An IDE** such as IntelliJ IDEA or Eclipse for editing and running the code.  
@@ -63,7 +64,7 @@ You can also download the latest version directly from [GroupDocs.Merger for Jav
 2. **Temporary License:** Request a temporary license for extended testing.  
 3. **Purchase:** Obtain a full license for commercial deployments.
 
-## Implementation Guide
+## Step‑by‑Step Implementation
 
 ### Step 1: Define File Paths and Initialize Objects
 First, set up the paths for your Excel workbook, the PDF you want to embed, and the output file. Then create the `OleSpreadsheetOptions` that describe where the OLE object will appear.
@@ -109,7 +110,7 @@ merger.save(filePathOut);
 **Why we use `importDocument`:** This method tells GroupDocs.Merger to treat the PDF as an OLE object, preserving its original content while making it accessible from within Excel.
 
 ### Step 3: Save the Spreadsheet
-Finally, persist the changes to a new file so you keep the original workbook untouched.
+Persist the changes to a new file so you keep the original workbook untouched.
 
 ```java
 merger.save(filePathOut);
@@ -117,16 +118,17 @@ merger.save(filePathOut);
 
 **Key configuration options:** You can further tweak `OleSpreadsheetOptions`—for example, adjusting the object's size, visibility, or whether it should be linked rather than embedded.
 
-#### Troubleshooting Tips
+## Common Pitfalls & Troubleshooting Tips
 - **FileNotFoundException:** Double‑check that the paths you supplied point to existing files.  
 - **Version mismatch:** Ensure the GroupDocs.Merger version you use matches your JDK version.  
-- **Corrupt PDF:** Verify the PDF opens independently before embedding it.
+- **Corrupt PDF:** Verify the PDF opens independently before embedding it.  
+- **Memory pressure:** When processing many workbooks, close each `Merger` instance promptly or use try‑with‑resources to free resources.
 
 ## Practical Applications
 Embedding OLE objects in Excel is useful in many scenarios:
 1. **Data Consolidation:** Merge quarterly PDFs into a single dashboard workbook.  
 2. **Interactive Presentations:** Provide detailed spec sheets that open on demand during a meeting.  
-3. **Automated Reporting:** Generate monthly financial statements that automatically include supporting documentation.
+3. **Automated Reporting:** Generate monthly financial statements that automatically include supporting documentation.  
 
 ## Performance Considerations
 - **Memory Management:** Close any `Merger` instances you no longer need to free resources.  
@@ -169,6 +171,6 @@ A5: Yes, `OleSpreadsheetOptions` lets you set row/column indices, size, and visi
 
 ---
 
-**Last Updated:** 2025-12-19  
+**Last Updated:** 2026-03-17  
 **Tested With:** GroupDocs.Merger for Java latest-version  
 **Author:** GroupDocs
