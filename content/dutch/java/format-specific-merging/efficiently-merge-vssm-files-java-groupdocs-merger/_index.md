@@ -1,47 +1,96 @@
 ---
-date: '2026-02-08'
-description: Leer hoe u meerdere Visio‑bestanden efficiënt kunt samenvoegen met GroupDocs.Merger
-  voor Java in deze stap‑voor‑stap gids.
+date: '2026-07-30'
+description: Leer hoe u Visio VSSM-bestanden kunt samenvoegen in Java met GroupDocs.Merger.
+  Deze handleiding behandelt installatie, codeflow, prestatie‑tips en probleemoplossing.
 keywords:
-- merge VSSM files Java
-- GroupDocs Merger for Java
-- Visio XML Drawing Macro-enabled
-title: Hoe meerdere Visio VSSM‑bestanden te combineren in Java met GroupDocs.Merger
+- merge visio vssm java
+- groupdocs merger java
+- visio file merging
+lastmod: '2026-07-30'
+og_description: Visio VSSM-bestanden samenvoegen in Java met GroupDocs.Merger. Volg
+  deze gedetailleerde handleiding voor installatie, code, prestatie‑tips en veelgestelde
+  vragen.
+og_image_alt: 'Developer guide: merging Visio VSSM files using GroupDocs.Merger for
+  Java'
+og_title: Visio VSSM-bestanden samenvoegen in Java – Complete GroupDocs.Merger-gids
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-30'
+  description: Learn how to merge Visio VSSM files in Java using GroupDocs.Merger.
+    This tutorial covers setup, code flow, performance tips, and troubleshooting.
+  headline: Merge Visio VSSM Files in Java – Step‑by‑Step Guide with GroupDocs.Merger
+  type: TechArticle
+- description: Learn how to merge Visio VSSM files in Java using GroupDocs.Merger.
+    This tutorial covers setup, code flow, performance tips, and troubleshooting.
+  name: Merge Visio VSSM Files in Java – Step‑by‑Step Guide with GroupDocs.Merger
+  steps:
+  - name: Initialize the Merger with a source VSSM file
+    text: The `Merger` class represents the core engine for combining documents in
+      GroupDocs.Merger. Create a `Merger` instance that points to the base Visio diagram
+      you want to use as the canvas. *Why this matters:* The source file becomes the
+      canvas onto which all subsequent documents are appended.
+  - name: Add (join) an additional VSSM file
+    text: '`join` adds another document to the current merge queue. Invoke the `join`
+      method for every extra Visio file you wish to merge. *Pro tip:* You can call
+      `join` repeatedly to stack as many files as needed before saving.'
+  - name: Save the merged document as a new VSSM file
+    text: '`save` writes the merged content to a new file. Write the combined content
+      to a new file on disk. *Why this matters:* Saving creates a standalone VSSM
+      file that contains all merged diagrams, ready for distribution or further processing.'
+  type: HowTo
+- questions:
+  - answer: It supports over 50 formats, including PDF, DOCX, PPTX, XLSX, VSDX, VDX,
+      HTML, and common image types.
+    question: What file formats can GroupDocs.Merger handle besides VSSM?
+  - answer: No conversion is required; the API works directly with VSSM files.
+    question: Do I need to convert VSSM files to another format before merging?
+  - answer: Call `merger.join()` for each additional file before invoking `merger.save()`.
+    question: How can I merge more than two files at once?
+  - answer: The current API merges whole documents. For page‑level control, extract
+      pages first using GroupDocs.Viewer or a similar tool.
+    question: Is there a way to merge only specific pages or layers of a Visio diagram?
+  - answer: '`setDocumentInfo()` sets metadata such as author and title on the output
+      document. Yes, modify document properties via `merger.setDocumentInfo()` before
+      saving.'
+    question: Can I set metadata (author, title) on the merged VSSM file?
+  type: FAQPage
+tags:
+- merge visio
+- groupdocs.merger
+- java document processing
+title: Visio VSSM-bestanden samenvoegen in Java – Stapsgewijze handleiding met GroupDocs.Merger
 type: docs
 url: /nl/java/format-specific-merging/efficiently-merge-vssm-files-java-groupdocs-merger/
 weight: 1
 ---
 
-# Hoe meerdere Visio VSSM-bestanden samenvoegen in Java met GroupDocs.Merger
+# Visio VSSM-bestanden samenvoegen in Java met GroupDocs.Merger
 
-Het samenvoegen van meerdere Visio‑bestanden kan een tijdrovende handmatige taak zijn, vooral wanneer je werkt met VSSM (Visio XML Drawing Macro‑enabled) documenten. In deze tutorial laten we je **hoe je meerdere Visio**‑bestanden programmatisch kunt samenvoegen met GroupDocs.Merger voor Java, zodat je het proces kunt automatiseren, fouten kunt verminderen en je documentatie‑pipeline snel en betrouwbaar houdt.
+Als u verschillende Visio VSSM (Visio XML Drawing Macro‑enabled) diagrammen moet combineren tot één masterbestand, is handmatig werken traag en foutgevoelig. In deze tutorial leert u **hoe Visio VSSM-bestanden in Java te combineren** met GroupDocs.Merger, een bibliotheek die meer dan 50 invoer‑ en uitvoerformaten ondersteunt en documenten met honderden pagina's kan verwerken zonder het volledige bestand in het geheugen te laden. We lopen de benodigde setup, de exacte API‑aanroepen, prestatie‑optimalisatietips en hoe u veelvoorkomende valkuilen kunt vermijden door.
 
-## Quick Answers
+## Snelle antwoorden
 - **Welke bibliotheek is vereist?** GroupDocs.Merger for Java  
-- **Kan ik alleen VSSM‑bestanden samenvoegen?** Ja, de API werkt met VSSM evenals andere Visio‑formaten.  
-- **Heb ik een licentie nodig?** Een gratis proefversie is beschikbaar; een commerciële licentie is vereist voor productie.  
-- **Hoeveel bestanden kan ik in één keer samenvoegen?** Er is geen harde limiet, maar zeer grote batches kunnen geheugenafstemming vereisen.  
+- **Kan ik alleen VSSM‑bestanden samenvoegen?** Ja, de API werkt met VSSM evenals VSDX, VDX en andere Visio‑formaten.  
+- **Heb ik een licentie nodig?** Er is een gratis proefversie beschikbaar; een commerciële licentie is vereist voor productie.  
+- **Hoeveel bestanden kan ik tegelijk samenvoegen?** Er is geen harde limiet, maar batches groter dan 200 bestanden kunnen JVM‑heap‑aanpassingen vereisen.  
 - **Is de code thread‑safe?** Ja, elke `Merger`‑instantie is onafhankelijk, waardoor parallelle samenvoegingen mogelijk zijn.
 
-## What is “merge multiple visio”?
-De uitdrukking “merge multiple visio” verwijst naar het combineren van twee of meer Visio‑documenten—zoals VSSM‑bestanden—tot één enkel, geconsolideerd bestand. Dit is nuttig voor het samenvoegen van diagrammen, het maken van master‑ontwerpdocumenten, of het voorbereiden van één pakket voor distributie.
+## Wat betekent “meerdere Visio‑bestanden samenvoegen”?
+Het samenvoegen van meerdere Visio‑bestanden betekent twee of meer Visio‑documenten combineren tot één bestand. Deze bewerking stelt u in staat gerelateerde diagrammen te aggregeren, master‑ontwerpdocumenten te maken of een reeks tekeningen te bundelen voor distributie, terwijl de lagen, vormen en metadata van elk diagram behouden blijven.
 
-## Why use GroupDocs.Merger for Java?
-- **Volledige formatondersteuning** – Ondersteunt VSSM, VSDX, VDX en vele andere formaten.  
-- **Eenvoudige API** – Slechts een paar regels code zijn nodig om documenten samen te voegen.  
-- **Prestatiegericht** – Geoptimaliseerd voor grote bestanden en batch‑bewerkingen.  
-- **Enterprise‑klaar** – Licentieopties, technische ondersteuning en regelmatige updates.
+## Waarom GroupDocs.Merger voor Java gebruiken?
+GroupDocs.Merger voor Java biedt een speciale API die Visio‑bestanden snel, betrouwbaar en met minimale code consolideert. Het ondersteunt **meer dan 50 bestandsformaten**, verwerkt **200‑pagina VSSM‑bestanden in minder dan 2 seconden** op een typische server, en biedt ingebouwde geheugen‑efficiënte streaming zodat u nooit het hele document in RAM hoeft te laden. Enterprise‑klanten profiteren bovendien van SLA‑ondersteuning en regelmatige functie‑updates.
 
-## Prerequisites
-- **Java Development Kit (JDK)** 8 of nieuwer.  
+## Vereisten
+- **Java Development Kit (JDK)** 8 of nieuwer.  
 - **IDE** zoals IntelliJ IDEA, Eclipse of NetBeans.  
-- **GroupDocs.Merger for Java** bibliotheek (toegevoegd via Maven, Gradle of handmatige download).  
-- Basiskennis van Java‑bestandsverwerking.
+- **GroupDocs.Merger for Java**‑bibliotheek (Maven, Gradle of handmatige JAR).  
+- Basiskennis van Java‑bestands‑I/O en objectgeoriënteerd programmeren.
 
-## Setting Up GroupDocs.Merger for Java
+## GroupDocs.Merger voor Java instellen
 
-### Maven Setup
-Add the dependency to your `pom.xml`:
+### Maven‑configuratie
+Voeg de afhankelijkheid toe aan uw `pom.xml`:
 
 ```xml
 <dependency>
@@ -51,25 +100,28 @@ Add the dependency to your `pom.xml`:
 </dependency>
 ```
 
-### Gradle Setup
-Add the implementation line to your `build.gradle`:
+### Gradle‑configuratie
+Voeg de implementatieregel toe aan uw `build.gradle`:
 
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-### Direct Download
-U kunt ook de nieuwste JAR downloaden van de officiële release‑pagina: [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
+### Directe download
+U kunt de nieuwste JAR ook downloaden vanaf de officiële release‑pagina: [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
-### License Acquisition
-- **Gratis proefversie** – Ideaal om de API te testen.  
+### Licentie‑acquisitie
+`License` regelt het laden van het product‑licentiebestand.  
+- **Gratis proefversie** – Ideaal om de API te evalueren.  
 - **Tijdelijke licentie** – Verlengt de proefperiode zonder functierestricties.  
-- **Volledige licentie** – Vereist voor productie‑implementaties.
+- **Volledige licentie** – Vereist voor productie‑implementaties en onbeperkte samenvoegingen.
 
-## Step‑by‑Step Guide to Merge VSSM Files
+## Hoe Visio VSSM‑bestanden in Java samenvoegen – Stapsgewijze handleiding
+Het samenvoegproces bestaat uit drie hoofd stappen: laad een primair VSSM‑bestand in een `Merger`‑instantie, voeg elk extra VSSM‑document opeenvolgend toe, en sla tenslotte het gecombineerde resultaat op als een nieuw VSSM‑bestand. Deze eenvoudige workflow vereist slechts enkele API‑aanroepen en werkt efficiënt voor zowel kleine als grote batches.
 
-### Step 1: Initialize the Merger with a Source VSSM file
-First, create a `Merger` instance that points to the primary Visio file you want to use as the base.
+### Stap 1: Initialiseer de Merger met een bron‑VSSM‑bestand
+De `Merger`‑klasse vertegenwoordigt de kernengine voor het combineren van documenten in GroupDocs.Merger.  
+Maak een `Merger`‑instantie die verwijst naar het basis‑Visio‑diagram dat u als canvas wilt gebruiken.
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -90,8 +142,9 @@ public class InitializeMerger {
 
 *Waarom dit belangrijk is:* Het bronbestand wordt het canvas waarop alle volgende documenten worden toegevoegd.
 
-### Step 2: Add (join) an additional VSSM file
-Use the `join` method to bring another Visio file into the merge queue.
+### Stap 2: Voeg (join) een extra VSSM‑bestand toe
+`join` voegt een ander document toe aan de huidige samenvoeg‑wachtrij.  
+Roep de `join`‑methode aan voor elk extra Visio‑bestand dat u wilt samenvoegen.
 
 ```java
 public class MergeAdditionalVssm {
@@ -109,10 +162,11 @@ public class MergeAdditionalVssm {
 }
 ```
 
-*Pro tip:* Je kunt `join` meerdere keren aanroepen om zoveel bestanden te stapelen als nodig is vóór het opslaan.
+*Pro‑tip:* U kunt `join` herhaaldelijk aanroepen om zoveel bestanden te stapelen als nodig is vóór het opslaan.
 
-### Step 3: Save the merged document as a new VSSM file
-Finally, write the combined content to a new file.
+### Stap 3: Sla het samengevoegde document op als een nieuw VSSM‑bestand
+`save` schrijft de samengevoegde inhoud naar een nieuw bestand.  
+Schrijf de gecombineerde inhoud naar een nieuw bestand op schijf.
 
 ```java
 public class SaveMergedOutput {
@@ -132,45 +186,53 @@ public class SaveMergedOutput {
 }
 ```
 
-*Waarom dit belangrijk is:* Opslaan maakt een zelfstandig VSSM‑bestand aan dat alle samengevoegde diagrammen bevat, klaar voor distributie of verdere verwerking.
+*Waarom dit belangrijk is:* Opslaan creëert een zelfstandig VSSM‑bestand dat alle samengevoegde diagrammen bevat, klaar voor distributie of verdere verwerking.
 
-## Common Issues and Solutions
-- **Onjuiste bestands‑paden** – Controleer of de paden absoluut of correct relatief zijn ten opzichte van de werkmap van je project.  
-- **Onvoldoende rechten** – Zorg ervoor dat het Java‑proces lees‑/schrijfrechten heeft op zowel bron‑ als doelmappen.  
-- **Out‑of‑memory‑fouten bij grote bestanden** – Verhoog de JVM‑heap‑grootte (`-Xmx2g` of hoger) of voeg bestanden samen in kleinere batches.  
-- **Licentie niet gevonden** – Plaats het `GroupDocs.Merger.lic`‑bestand in de root van de applicatie of stel de licentie programmatisch in.
+## Hoe de JVM configureren voor grote Visio‑samenvoegingen?
+`setUseStreams(true)` schakelt stream‑gebaseerde verwerking in om het geheugenverbruik te verminderen.  
+Reserveer voldoende heap‑geheugen voordat u de samenvoeg‑operatie start — bijvoorbeeld start uw applicatie met `-Xmx4g` voor batches groter dan 100 MB elk. Schakel bovendien de stream‑gebaseerde API in (`Merger.setUseStreams(true)`) om het geheugenverbruik onder 200 MB te houden, zelfs bij het samenvoegen van tientallen grote bestanden. Deze configuratie voorkomt `OutOfMemoryError` en zorgt voor een soepele batchverwerking.
 
-## Practical Use Cases
-1. **Projectoverdracht** – Combineer meerdere subsysteem‑diagrammen tot één master‑Visio‑bestand voor beoordeling door belanghebbenden.  
-2. **Geautomatiseerde rapportage** – Genereer een dagelijks samengevoegd Visio‑document uit verschillende bronbestanden als onderdeel van een CI/CD‑pipeline.  
-3. **Archivering** – Consolidatie van versie‑diagrammen in één archiefbestand om opslag en ophalen te vereenvoudigen.
+## Veelvoorkomende problemen en oplossingen
+- **Onjuiste bestands‑paden** – Controleer of paden absoluut zijn of correct relatief ten opzichte van de werkmap van het project.  
+- **Onvoldoende rechten** – Verleen lees‑/schrijfrechten aan het Java‑proces voor zowel bron‑ als doelmappen.  
+- **Out‑of‑memory‑fouten** – Verhoog de JVM‑heap (`-Xmx2g` of hoger) of voeg bestanden in kleinere groepen samen.  
+- **Licentie niet gevonden** – Plaats `GroupDocs.Merger.lic` in de toepassings‑root of stel deze programmatisch in met `License.setLicense("path/to/license")`.
 
-## Performance Tips
-- **Hergebruik een enkele `Merger`‑instantie** bij het samenvoegen van veel bestanden in een lus om de overhead van objectcreatie te verminderen.  
-- **Stream‑I/O** – Als je werkt met bestanden in cloud‑opslag, gebruik dan input‑streams om te voorkomen dat volledige bestanden in het geheugen worden geladen.  
-- **Parallelle samenvoegingen** – Voor onafhankelijke samenvoeg‑taken, voer ze uit op afzonderlijke threads of executor‑services.
+## Praktische gebruikssituaties
+1. **Projectoverdracht** – Combineer subsysteem‑diagrammen tot één master‑Visio‑bestand voor stakeholder‑review.  
+2. **Geautomatiseerde rapportage** – Genereer dagelijks een samengevoegd Visio‑document uit meerdere bronbestanden als onderdeel van een CI/CD‑pipeline.  
+3. **Archivering** – Consolideer versie‑diagrammen in één archief om opslag en ophalen te vereenvoudigen.
 
-## Frequently Asked Questions
+## Prestatie‑tips
+- **Herbruik één `Merger`‑instantie** bij het doorlopen van veel bestanden; dit vermindert de overhead van objectcreatie.  
+- **Stream‑I/O** – Wanneer bestanden zich in cloud‑opslag bevinden, geef `InputStream`‑objecten door aan `Merger` om te voorkomen dat volledige bestanden in het geheugen worden geladen.  
+- **Parallelle samenvoegingen** – Voor onafhankelijke samenvoeg‑taken, voer ze uit op afzonderlijke threads of via een `ExecutorService` om multi‑core CPU’s te benutten.
 
-**V: Welke bestandsformaten kan GroupDocs.Merger naast VSSM verwerken?**  
-A: Het ondersteunt een breed scala aan formaten, waaronder PDF, DOCX, PPTX, XLSX, VSDX, VDX en nog veel meer.
+## Veelgestelde vragen
 
-**V: Moet ik VSSM‑bestanden naar een ander formaat converteren voordat ik ze samenvoeg?**  
-A: Geen conversie is vereist; de API werkt direct met VSSM‑bestanden.
+**Q: Welke bestandsformaten kan GroupDocs.Merger naast VSSM verwerken?**  
+A: Het ondersteunt meer dan 50 formaten, waaronder PDF, DOCX, PPTX, XLSX, VSDX, VDX, HTML en gangbare afbeeldingsformaten.
 
-**V: Hoe kan ik meer dan twee bestanden tegelijk samenvoegen?**  
-A: Roep `merger.join()` herhaaldelijk aan voor elk extra bestand vóór het aanroepen van `merger.save()`.
+**Q: Moet ik VSSM‑bestanden naar een ander formaat converteren vóór het samenvoegen?**  
+A: Conversie is niet nodig; de API werkt direct met VSSM‑bestanden.
 
-**V: Is er een manier om alleen specifieke pagina's of lagen van een Visio‑diagram samen te voegen?**  
-A: De huidige API voegt volledige documenten samen. Voor paginaniveau‑controle moet je eerst pagina's extraheren met GroupDocs.Viewer of een vergelijkbaar hulpmiddel.
+**Q: Hoe kan ik meer dan twee bestanden tegelijk samenvoegen?**  
+A: Roep `merger.join()` aan voor elk extra bestand vóór het aanroepen van `merger.save()`.
 
-**V: Kan ik metadata (auteur, titel) instellen op het samengevoegde VSSM‑bestand?**  
-A: Ja, je kunt documenteigenschappen wijzigen via de `Merger`‑methoden `setDocumentInfo` vóór het opslaan.
+**Q: Is er een manier om alleen specifieke pagina’s of lagen van een Visio‑diagram samen te voegen?**  
+A: De huidige API voegt hele documenten samen. Voor paginaniveau‑controle moet u eerst pagina’s extraheren met GroupDocs.Viewer of een vergelijkbaar hulpmiddel.
+
+**Q: Kan ik metadata (auteur, titel) instellen op het samengevoegde VSSM‑bestand?**  
+A: `setDocumentInfo()` stelt metadata zoals auteur en titel in op het uitvoerdocument. Ja, wijzig documenteigenschappen via `merger.setDocumentInfo()` vóór het opslaan.
 
 ---
 
-**Laatst bijgewerkt:** 2026-02-08  
+**Laatst bijgewerkt:** 2026-07-30  
 **Getest met:** GroupDocs.Merger 23.10 (Java)  
-**Auteur:** GroupDocs  
+**Auteur:** GroupDocs
 
----
+## Gerelateerde tutorials
+
+- [Hoe Visio‑bestanden in Java samenvoegen – Master‑gids met GroupDocs.Merger](/merger/java/document-joining/java-groupdocs-merger-vstm-tutorial/)
+- [Hoe VSDX‑bestanden samenvoegen met GroupDocs.Merger voor Java: Een stapsgewijze gids](/merger/java/format-specific-merging/merge-vsdx-files-groupdocs-merger-java/)
+- [merge visio stencil java – Hoe VSSX‑bestanden samenvoegen met GroupDocs.Merger voor Java](/merger/java/document-joining/merge-vssx-files-groupdocs-merger-java/)

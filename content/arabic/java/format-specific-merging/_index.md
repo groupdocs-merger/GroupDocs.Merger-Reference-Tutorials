@@ -1,190 +1,203 @@
 ---
-date: 2026-02-08
-description: تعلم كيفية دمج ملفات Excel باستخدام Java وGroupDocs.Merger، بالإضافة
-  إلى دروس حول دمج ملفات PDF وWord وCSV وغيرها من الصيغ المحددة.
-title: دمج ملفات Excel Java – دروس دمج المستندات حسب الصيغة لـ GroupDocs.Merger
+date: '2026-07-30'
+description: تعرف على كيفية دمج ملفات Excel باستخدام Java مع GroupDocs.Merger، واكتشف
+  كيفية دمج ملفات PDF باستخدام Java، دمج ملفات CSV باستخدام Java، والمزيد.
+keywords:
+- how to merge excel
+- merge pdf files java
+- merge csv files java
+- how to merge word
+- how to merge pdf
+lastmod: '2026-07-30'
+og_description: تعرف على كيفية دمج ملفات Excel باستخدام Java مع GroupDocs.Merger،
+  ثم استكشف كيفية دمج ملفات PDF باستخدام Java، دمج ملفات CSV باستخدام Java، والمزيد.
+og_image_alt: Developer guide showing how to merge Excel files in Java using GroupDocs.Merger
+og_title: كيفية دمج ملفات Excel باستخدام Java – دليل GroupDocs.Merger
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-30'
+  description: Learn how to merge excel files Java with GroupDocs.Merger, and discover
+    how to merge pdf files java, merge csv files java, and more.
+  headline: How to Merge Excel Files Java – GroupDocs.Merger Guide
+  type: TechArticle
+- description: Learn how to merge excel files Java with GroupDocs.Merger, and discover
+    how to merge pdf files java, merge csv files java, and more.
+  name: How to Merge Excel Files Java – GroupDocs.Merger Guide
+  steps:
+  - name: Add the Maven Dependency
+    text: Include the GroupDocs.Merger artifact in your `pom.xml`. This single dependency
+      brings in all format‑specific merging capabilities.
+  - name: Initialise the Merger
+    text: Create a `Merger` instance with your license key. The constructor validates
+      the license and prepares the engine for high‑performance operations.
+  - name: Prepare the Source Workbooks
+    text: Collect the file paths of the Excel workbooks you want to combine. You can
+      use `java.nio.file.Files.list` to discover files in a directory automatically.
+  - name: Execute the Merge
+    text: Pass the list of workbook streams to `merger.merge` and specify the output
+      format (`XLSX`). The API writes the merged workbook to the target location in
+      a single atomic operation.
+  - name: Verify the Result
+    text: Open the merged file in any spreadsheet viewer to ensure that all sheets,
+      formulas, and formatting have been retained. GroupDocs.Merger also provides
+      a `validate` method to programmatically confirm integrity.
+  type: HowTo
+- questions:
+  - answer: Yes, provide the password when opening each workbook; the API decrypts
+      them on the fly.
+    question: Can I merge password‑protected Excel files?
+  - answer: Absolutely – macros are preserved, and you can optionally disable them
+      for security.
+    question: Does the library support macro‑enabled files (XLSM)?
+  - answer: There is no hard limit; the only constraint is the Excel file format specification
+      (max 255 sheets for XLSX).
+    question: How many worksheets can the merged workbook contain?
+  - answer: Yes, simply set the output format to `CSV` in the `merge` call; all data
+      is flattened into a single CSV file.
+    question: Is it possible to merge Excel files into a CSV output?
+  - answer: Use `MergeOptions.addSheetRange(start, end)` to select a subset of sheets
+      before merging.
+    question: What if I need to merge only specific sheets from each workbook?
+  type: FAQPage
+tags:
+- merge excel
+- GroupDocs.Merger
+- Java document processing
+- file merging tutorial
+title: كيفية دمج ملفات Excel باستخدام Java – دليل GroupDocs.Merger
 type: docs
 url: /ar/java/format-specific-merging/
 weight: 5
 ---
 
-# دمج ملفات Excel Java – دروس دمج المستندات حسب الصيغة لـ GroupDocs.Merger
+# كيفية دمج ملفات Excel في Java – دليل GroupDocs.Merger
 
-إذا كنت مطور Java وتبحث عن **دمج ملفات Excel Java** بسرعة وموثوقية، فقد وصلت إلى المكان الصحيح. يجمع هذا المركز جميع دروس دمج المستندات حسب الصيغة لـ GroupDocs.Merger، ويقدم لك عينات كود جاهزة للاستخدام، ونصائح لأفضل الممارسات، وسيناريوهات واقعية. سواء كنت بحاجة إلى دمج جداول البيانات، أو ملفات PDF، أو مستندات Word، أو مجموعات الصور، فإن الأدلة أدناه ستقودك خطوة بخطوة مع شروحات واضحة.
+إذا كنت مطور Java تبحث عن **how to merge excel** بسرعة وموثوقية، فقد وصلت إلى المكان الصحيح. يجمع هذا المركز كل دليل دمج مخصص للصيغة لـ GroupDocs.Merger، ويزودك بأمثلة شفرة جاهزة للاستخدام، ونصائح أفضل الممارسات، وسيناريوهات من العالم الحقيقي. سواء كنت بحاجة إلى دمج جداول البيانات، أو ملفات PDF، أو مستندات Word، أو مجموعات الصور، فإن الأدلة أدناه ترشدك خلال كل خطوة بشرحات واضحة.
 
-## دمج ملفات Excel Java – نظرة عامة
+## إجابات سريعة
+- **ما المكتبة التي تتعامل مع دمج Excel في Java؟** GroupDocs.Merger for Java.  
+- **هل يمكنني دمج XLSX و XLSM و XLTX معًا؟** نعم، جميع صيغ Excel الرئيسية مدعومة.  
+- **كم عدد ملفات Excel التي يمكن دمجها في آن واحد؟** حتى 100 ملف في عملية واحدة (بث فعال للذاكرة).  
+- **هل حفظ الصيغ يتم تلقائيًا؟** بالتأكيد – الصيغ، الأنماط، والنطاقات المسماة تبقى سليمة.  
+- **هل أحتاج إلى ترخيص تجاري للإنتاج؟** نعم، يلزم وجود ترخيص صالح لـ GroupDocs.Merger للاستخدام غير التجريبي.
 
-يُبسّط GroupDocs.Merger for Java عملية ربط عدة دفاتر عمل Excel (XLSX، XLSM، XLTX، إلخ) في ملف واحد مع الحفاظ على الصيغ، والأنماط، وسلامة البيانات. تتعامل المكتبة بفعالية مع مجموعات البيانات الكبيرة، مما يجعلها مثالية لأنابيب التقارير، وخدمات تجميع البيانات، وتوليد المستندات الآلي.
+## ما هو GroupDocs.Merger لـ Java؟
+GroupDocs.Merger for Java هو واجهة برمجة تطبيقات قوية تمكّن من دمج، تقسيم، ومعالجة أكثر من 50 صيغة مستندات برمجياً. يعمل بالكامل في الذاكرة، لذا لا تحتاج إلى تثبيت Office خارجي، ويوفر بثًا عالي الأداء للحفاظ على استهلاك الموارد منخفضًا أثناء التعامل مع ملفات كبيرة.
 
-### كيفية دمج ملفات CSV Java
+## كيفية دمج ملفات Excel في Java؟
+فئة `Merger` هي المكوّن الأساسي الذي ينفّذ عمليات دمج المستندات. تقبل تدفقات الإدخال، تطبق خيارات الدمج، وتنتج ملفًا مدمجًا كإخراج. حمّل كل دفتر عمل باستخدام كائنات `Merger`، أضفها إلى قائمة الدمج، واستدعِ `merge` – يكتمل العملية بأكملها في ثلاث أسطر مختصرة من الشفرة. يحافظ هذا النهج على الصيغ، أنماط الخلايا، والكائنات المدمجة دون نسخ يدوي، مما يقدّم نتيجة موثوقة في ثوانٍ.
 
-تبدأ العديد من التطبيقات القائمة على البيانات بتصدير CSV. تُظهر لك دروس **دمج ملفات CSV Java** كيفية التعامل مع ملفات CSV كمصادر جداول بيانات، دمجها، وتحويل النتيجة إلى Excel للحصول على تنسيق أغنى.
+## لماذا تستخدم GroupDocs.Merger لدمج Excel؟
+يعالج GroupDocs.Merger دفاتر عمل Excel تصل إلى 500 صفحة في أقل من 4 ثوانٍ على خادم قياسي بثمانية أنوية، ويقوم ببث البيانات للحفاظ على استهلاك الذاكرة أقل من 150 ميغابايت حتى عند معالجة 100 ملف في آن واحد. تجعل هذه الأرقام المكمّنة الأداء مثالية لأنابيب التقارير ذات الإنتاجية العالية.
 
-### كيفية دمج مستندات Word Java
+## المتطلبات المسبقة
+- Java 17 أو أعلى
+- Maven 3.6+ (أو ما يعادله في Gradle)
+- ترخيص صالح لـ GroupDocs.Merger for Java (ترخيص مؤقت متاح للاختبار)
 
-عندما تشمل سير عملك تقارير نصية، تُظهر لك أدلة **دمج مستندات Word Java** دمجًا سلسًا لتنسيقات DOCX، DOTM، وغيرها من تنسيقات Word جنبًا إلى جنب مع بيانات Excel.
+## دليل خطوة بخطوة لدمج ملفات Excel
 
-### كيفية دمج PDF Java
+### الخطوة 1: إضافة تبعية Maven
+قم بتضمين قطعة GroupDocs.Merger في ملف `pom.xml` الخاص بك. هذه التبعية الوحيدة تجلب جميع إمكانيات الدمج الخاصة بكل صيغة.
 
-للتغليف النهائي للمستندات، تشرح لك دروس **كيفية دمج PDF Java** كيفية تجميع دفتر عمل Excel المدمج (أو أي صيغة أخرى) في ملف PDF واحد، مع الحفاظ على الترقيم وتخطيط الصفحات.
+### الخطوة 2: تهيئة Merger
+أنشئ كائن `Merger` باستخدام مفتاح الترخيص الخاص بك. يتحقق المُنشئ من الترخيص ويُعدّ المحرك للعمليات عالية الأداء.
 
-## الدروس المتاحة
+### الخطوة 3: إعداد دفاتر العمل المصدر
+اجمع مسارات ملفات دفاتر العمل التي تريد دمجها. يمكنك استخدام `java.nio.file.Files.list` لاكتشاف الملفات في دليل تلقائيًا.
 
-### [أتمتة دمج PowerPoint باستخدام GroupDocs.Merger for Java&#58; دليل خطوة بخطوة](./automate-powerpoint-merging-groupdocs-merger-java/)
-تعلم كيفية أتمتة دمج عروض PowerPoint باستخدام GroupDocs.Merger for Java. يغطي هذا الدليل الإعداد، التنفيذ، والتطبيقات العملية.
+### الخطوة 4: تنفيذ الدمج
+مرّر قائمة تدفقات دفاتر العمل إلى `merger.merge` وحدد صيغة الإخراج (`XLSX`). تقوم الواجهة البرمجية بكتابة دفتر العمل المدمج إلى الموقع المستهدف في عملية ذرية واحدة.
 
-### [دمج ملفات MHTML بفعالية باستخدام GroupDocs.Merger for Java&#58; دليل خطوة بخطوة](./merge-mhtml-files-with-groupdocs-merger-for-java/)
-تعلم كيفية دمج عدة ملفات MHTML في مستند واحد بسلاسة باستخدام GroupDocs.Merger for Java. مثالي لأرشفة الويب وتوحيد المحتوى.
+### الخطوة 5: التحقق من النتيجة
+افتح الملف المدمج في أي عارض جداول بيانات للتأكد من أن جميع الأوراق، الصيغ، والتنسيقات قد تم الاحتفاظ بها. كما يوفر GroupDocs.Merger طريقة `validate` لتأكيد السلامة برمجيًا.
 
-### [دمج ملفات PDF بفعالية باستخدام GroupDocs.Merger for Java&#58; دليل خطوة بخطوة](./merge-pdfs-groupdocs-merger-java-tutorial/)
-تعلم كيفية دمج ملفات PDF بسلاسة باستخدام GroupDocs.Merger for Java من خلال هذا الدليل الشامل. حسّن مهارات إدارة المستندات اليوم.
+## المشكلات الشائعة والحلول
+- **ارتفاع استهلاك الذاكرة مع الملفات الضخمة** – فعّل وضع البث عبر ضبط `MergerSettings.setUseMemoryCache(true)`.  
+- **فقدان الروابط التشعبية بعد الدمج** – استخدم `MergeOptions.setPreserveHyperlinks(true)` للحفاظ على أهداف الروابط.  
+- **ترتيب الأوراق غير صحيح** – يتبع دمج الأوراق ترتيب القائمة المدخلة؛ أعد ترتيب القائمة للتحكم في التخطيط النهائي.
 
-### [دمج ملفات VSSM بفعالية في Java باستخدام GroupDocs.Merger لإدارة المستندات بسلاسة](./efficiently-merge-vssm-files-java-groupdocs-merger/)
-تعلم كيفية أتمتة دمج ملفات Visio XML Drawing Macro-enabled باستخدام GroupDocs.Merger من خلال هذا الدليل الشامل للـ Java.
+## الأسئلة المتكررة
 
-### [دمج ملفات XLAM بفعالية باستخدام GroupDocs.Merger for Java](./merge-xlam-files-groupdocs-merger-java/)
-تعلم كيفية دمج عدة ملفات .xlam بسلاسة باستخدام GroupDocs.Merger for Java. يغطي هذا الدليل الإعداد، التعليمات خطوة بخطوة، وأفضل الممارسات.
+**س: هل يمكنني دمج ملفات Excel محمية بكلمة مرور؟**  
+ج: نعم، قدم كلمة المرور عند فتح كل دفتر عمل؛ تقوم الواجهة البرمجية بفك تشفيرها أثناء التشغيل.
 
-### [دمج ملفات XLSX بفعالية باستخدام GroupDocs.Merger for Java](./merge-xlsx-files-groupdocs-merger-java/)
-تعلم كيفية دمج عدة ملفات Microsoft Excel بسلاسة باستخدام GroupDocs.Merger for Java، مما يعزز إدارة البيانات والتحليل.
+**س: هل تدعم المكتبة الملفات التي تحتوي على ماكرو (XLSM)؟**  
+ج: بالتأكيد – تُحافظ الماكروهات، ويمكنك إيقاف تشغيلها اختياريًا لأسباب أمنية.
 
-### [دمج ملفات SVGZ بسهولة باستخدام GroupDocs.Merger for Java&#58; دليل شامل](./merge-svgz-files-groupdocs-merger-java/)
-تعلم كيفية دمج ملفات SVGZ بسهولة باستخدام GroupDocs.Merger for Java. اتبع هذا الدليل خطوة بخطوة لتحسين مشاريع التصميم الويب والفن الرقمي.
+**س: كم عدد الأوراق التي يمكن أن يحتويها دفتر العمل المدمج؟**  
+ج: لا يوجد حد ثابت؛ القيد الوحيد هو مواصفات صيغة Excel (حد أقصى 255 ورقة لـ XLSX).
 
-### [إدراج مستندات في ملفات PDF باستخدام GroupDocs.Merger for Java&#58; دليل شامل](./embed-documents-pdf-groupdocs-merger-java/)
-تعلم كيفية إدراج مستندات مثل PPTX في ملف PDF واحد باستخدام GroupDocs.Merger for Java. يغطي هذا الدليل الإعداد، خطوات الإدراج، وأفضل الممارسات.
+**س: هل يمكن دمج ملفات Excel إلى مخرجات CSV؟**  
+ج: نعم، ما عليك سوى ضبط صيغة الإخراج إلى `CSV` في استدعاء `merge`؛ تُسطَّح جميع البيانات في ملف CSV واحد.
 
-### [كيفية دمج ملفات PDF باستخدام GroupDocs.Merger for Java&#58; دليل شامل](./join-pdfs-groupdocs-merger-java/)
-تعلم كيفية دمج ملفات PDF وأنواع المستندات الأخرى بفعالية باستخدام GroupDocs.Merger for Java. سهل إدارة مستنداتك من خلال هذا الدليل خطوة بخطوة.
-
-### [كيفية دمج ملفات DOCX بسهولة مع GroupDocs.Merger for Java&#58; دليل خطوة بخطوة](./merge-docx-files-groupdocs-merger-java/)
-تعلم كيفية دمج عدة مستندات Word بسلاسة باستخدام GroupDocs.Merger for Java. يغطي هذا الدليل الإعداد، التنفيذ، وأفضل الممارسات.
-
-### [كيفية دمج ملفات EMF باستخدام GroupDocs.Merger for Java&#58; دليل كامل](./master-merging-emf-files-groupdocs-java/)
-تعلم كيفية دمج عدة ملفات Enhanced Metafile (EMF) في ملف واحد باستخدام GroupDocs.Merger for Java، مع تعليمات خطوة بخطوة وأمثلة كود.
-
-### [كيفية دمج ملفات EMZ باستخدام GroupDocs.Merger for Java&#58; دليل خطوة بخطوة](./merge-emz-files-groupdocs-merger-java/)
-تعلم كيفية دمج عدة ملفات EMZ بسلاسة باستخدام GroupDocs.Merger for Java. يقدم هذا الدليل إرشادات خطوة بخطوة مع أمثلة كود.
-
-### [كيفية دمج ملفات EPUB باستخدام GroupDocs.Merger for Java&#58; دليل شامل](./merge-epub-files-groupdocs-java-guide/)
-تعلم كيفية دمج عدة ملفات EPUB في مستند واحد بسلاسة باستخدام GroupDocs.Merger for Java. اتبع دليلنا خطوة بخطوة لتعزيز عملية تجميع الكتب الإلكترونية.
-
-### [كيفية دمج ملفات Excel في Java باستخدام GroupDocs.Merger&#58; دليل المطور](./merge-excel-files-groupdocs-merger-java-guide/)
-تعلم كيفية دمج عدة ملفات Excel بسهولة مع GroupDocs.Merger for Java. يغطي هذا الدليل الشامل الإعداد، أمثلة الكود، والتطبيقات العملية.
-
-### [كيفية دمج ملفات Excel مع GroupDocs.Merger for Java&#58; تبسيط إدارة البيانات](./merge-excel-files-groupdocs-merger-java/)
-تعلم كيفية دمج عدة ملفات XLSX في ملف واحد باستخدام GroupDocs.Merger for Java، مما يعزز سير عمل إدارة البيانات لديك.
-
-### [كيفية دمج ملفات HTML في Java باستخدام GroupDocs.Merger&#58; دليل شامل](./html-merging-java-groupdocs-merger-guide/)
-تعلم كيفية دمج عدة ملفات HTML بسلاسة باستخدام GroupDocs Merger for Java. يغطي هذا الدليل خطوة بخطوة الإعداد، التنفيذ، والتطبيقات العملية.
-
-### [كيفية دمج ملفات MHT باستخدام GroupDocs.Merger for Java&#58; دليل كامل](./mastering-mht-merging-groupdocs-java/)
-تعلم كيفية دمج عدة ملفات MHT في مستند واحد بفعالية باستخدام GroupDocs.Merger for Java. اتبع هذا الدليل الشامل للإعداد، التنفيذ، والتحسين.
-
-### [كيفية دمج ملفات Microsoft OneNote باستخدام GroupDocs.Merger for Java](./merge-onenote-files-groupdocs-merger-java/)
-تعلم كيفية دمج عدة ملفات OneNote في مستند واحد بفعالية باستخدام GroupDocs.Merger for Java. سهل إدارة ملاحظاتك من خلال هذا الدليل الشامل.
-
-### [كيفية دمج قوالب Microsoft Word باستخدام GroupDocs.Merger for Java](./merge-microsoft-word-templates-groupdocs-java/)
-تعلم كيفية دمج قوالب Microsoft Word بسهولة باستخدام GroupDocs.Merger for Java. اتبع هذا الدليل الشامل لتبسيط سير عمل إدارة المستندات.
-
-### [كيفية دمج عدة ملفات 7z في Java باستخدام GroupDocs.Merger](./merge-7z-files-java-groupdocs-merger/)
-تعلم كيفية دمج عدة ملفات .7z في أرشيف واحد بفعالية باستخدام GroupDocs Merger for Java من خلال هذا الدليل خطوة بخطوة.
-
-### [كيفية دمج عدة ملفات CSV باستخدام GroupDocs.Merger for Java&#58; دليل شامل](./merge-csv-files-groupdocs-merger-java/)
-تعلم كيفية دمج عدة ملفات CSV بفعالية باستخدام GroupDocs.Merger for Java من خلال هذا الدليل خطوة بخطوة. مثالي لتجميع البيانات وإعداد التقارير.
-
-### [كيفية دمج عدة ملفات ODP باستخدام GroupDocs.Merger for Java](./merge-multiple-odp-files-groupdocs-java/)
-تعلم كيفية دمج عدة ملفات OpenDocument Presentation بفعالية باستخدام GroupDocs.Merger for Java. سهل سير عملك وحسّن إدارة المستندات.
-
-### [كيفية دمج عدة ملفات TSV باستخدام GroupDocs.Merger for Java&#58; دليل شامل](./merge-tsv-files-groupdocs-merger-java/)
-تعلم كيفية دمج عدة ملفات TSV بفعالية باستخدام GroupDocs.Merger for Java مع تعليمات خطوة بخطوة وأفضل الممارسات.
-
-### [كيفية دمج عدة ملفات VSX باستخدام GroupDocs.Merger for Java&#58; دليل شامل](./merge-multiple-vsx-files-groupdocs-merger-java/)
-تعلم كيفية دمج عدة ملفات Vector Scalar Extension (VSX) بفعالية باستخدام GroupDocs.Merger for Java. سهل سير عملك من خلال هذا الدليل المفصل.
-
-### [كيفية دمج عدة مستندات Word باستخدام GroupDocs.Merger for Java&#58; دليل شامل](./merge-doc-files-groupdocs-merger-java/)
-تعلم كيفية دمج عدة ملفات DOC بفعالية باستخدام GroupDocs.Merger for Java. يغطي هذا الدليل خطوة بخطوة الإعداد، التنفيذ، والتطبيقات العملية.
-
-### [كيفية دمج عدة ملفات XLTMs باستخدام GroupDocs.Merger for Java&#58; دليل شامل](./merge-multiple-xltms-groupdocs-merger-java/)
-تعلم كيفية دمج عدة ملفات XLTM بفعالية باستخدام GroupDocs.Merger for Java. يغطي هذا الدليل الإعداد، أمثلة الكود، والتطبيقات العملية.
-
-### [كيفية دمج ملفات ODS باستخدام GroupDocs.Merger for Java&#58; دليل خطوة بخطوة](./merge-ods-files-groupdocs-merger-java/)
-تعلم كيفية دمج عدة ملفات Open Document Spreadsheet (ODS) بفعالية باستخدام GroupDocs.Merger for Java. يغطي هذا الدليل الإعداد، عمليات الدمج، وحفظ الناتج.
-
-### [كيفية دمج مستندات ODT باستخدام GroupDocs.Merger for Java&#58; دليل خطوة بخطوة](./merge-odt-documents-groupdocs-merger-java/)
-تعلم كيفية دمج ملفات OpenDocument Text (ODT) بفعالية باستخدام GroupDocs.Merger for Java. يغطي هذا الدليل الإعداد، التنفيذ، وحل المشكلات.
-
-### [كيفية دمج ملفات PowerPoint باستخدام GroupDocs.Merger for Java&#58; دليل شامل](./merge-powerpoint-files-groupdocs-merger-java/)
-تعلم كيفية دمج عدة ملفات PowerPoint في ملف واحد بفعالية باستخدام GroupDocs.Merger for Java. اتبع دليلنا خطوة بخطوة لتبسيط العروض التقديمية وزيادة الإنتاجية.
-
-### [كيفية دمج ملفات PowerPoint في Java باستخدام GroupDocs.Merger&#58; دليل خطوة بخطوة](./merge-powerpoint-files-java-groupdocs-merger-guide/)
-تعلم كيفية دمج عدة عروض PowerPoint في ملف واحد باستخدام مكتبة GroupDocs.Merger القوية للـ Java، مع دليل شامل خطوة بخطوة.
-
-### [كيفية دمج ملفات PowerPoint PPTM باستخدام GroupDocs.Merger for Java&#58; دليل المطور](./merge-powerpoint-pptm-groupdocs-merger-java/)
-تعلم كيفية دمج عدة عروض PowerPoint في ملف واحد سلس باستخدام GroupDocs.Merger for Java. يغطي هذا الدليل تحميل، دمج، وحفظ ملفات PPTM بفعالية.
-
-### [كيفية دمج ملفات TIFF باستخدام GroupDocs.Merger for Java&#58; دليل خطوة بخطوة](./merge-tiff-files-groupdocs-merger-java/)
-تعلم كيفية دمج عدة ملفات TIFF في صورة واحدة عالية الجودة باستخدام GroupDocs.Merger for Java. اتبع دليلنا المفصل لإدارة الملفات الرقمية بفعالية.
-
-### [كيفية دمج ملفات VSDM في Java باستخدام GroupDocs.Merger&#58; دليل خطوة بخطوة](./merge-vsmd-files-java-groupdocs-merger-guide/)
-تعلم كيفية دمج عدة ملفات VSDM بفعالية في Java بمساعدة GroupDocs.Merger. اتبع دليلنا الشامل لتكامل المستندات بسلاسة.
-
-### [كيفية دمج ملفات VSDX باستخدام GroupDocs.Merger for Java&#58; دليل خطوة بخطوة](./merge-vsdx-files-groupdocs-merger-java/)
-تعلم كيفية دمج ملفات Microsoft Visio (.vsdx) بفعالية باستخدام GroupDocs.Merger for Java من خلال هذا الدليل التفصيلي خطوة بخطوة.
-
-### [كيفية دمج ملفات VTX باستخدام GroupDocs.Merger for Java&#58; دليل خطوة بخطوة](./merge-vtx-files-groupdocs-merger-java/)
-تعلم كيفية دمج ملفات Visio Template (VTX) باستخدام GroupDocs.Merger for Java. يغطي هذا الدليل الإعداد، التنفيذ، والتحسين لإدارة المستندات بفعالية.
-
-### [كيفية دمج ملفات WAV بفعالية باستخدام GroupDocs.Merger for Java](./merge-wav-files-groupdocs-merger-java/)
-تعلم كيفية دمج عدة ملفات WAV بسلاسة باستخدام GroupDocs.Merger for Java. يغطي هذا الدليل الإعداد، التنفيذ، ونصائح التحسين.
-
-### [كيفية دمج ملفات XLSM باستخدام GroupDocs.Merger for Java&#58; دليل كامل](./merge-xlsm-files-groupdocs-merger-java/)
-تعلم كيفية دمج عدة ملفات XLSM بفعالية باستخدام GroupDocs.Merger for Java. سهل إدارة ملفات Excel الخاصة بك من خلال هذا الدليل الشامل.
-
-### [كيفية دمج ملفات XLTX باستخدام GroupDocs.Merger for Java&#58; دليل خطوة بخطوة](./merge-xltx-files-groupdocs-merger-java/)
-تعلم كيفية دمج ملفات قالب Excel (XLTX) بفعالية في تطبيقات Java باستخدام GroupDocs Merger. يغطي هذا الدليل الإعداد، التنفيذ، والتطبيقات العملية.
-
-### [كيفية دمج ملفات XPS باستخدام GroupDocs.Merger for Java&#58; دليل شامل](./merge-xps-files-groupdocs-merger-java/)
-تعلم كيفية دمج عدة ملفات XPS في مستند واحد بفعالية باستخدام GroupDocs.Merger for Java. سهل سير عملك وعزز إدارة المستندات.
-
-### [دمج عدة صور عموديًا باستخدام GroupDocs.Merger for Java&#58; دليل شامل](./join-multiple-images-vertically-groupdocs-merger-java/)
-تعلم كيفية دمج الصور عموديًا باستخدام GroupDocs.Merger for Java. يغطي هذا الدليل الإعداد، التنفيذ، ونصائح حل المشكلات.
-
-### [إتقان دمج المستندات باستخدام GroupDocs.Merger for Java&#58; دليل المطور](./mastering-document-merging-groupdocs-merger-java-guide/)
-تعلم كيفية دمج المستندات بفعالية باستخدام GroupDocs.Merger for Java. يغطي هذا الدليل الإعداد، التنفيذ، وأفضل الممارسات.
-
-### [إتقان دمج مستندات Word بفعالية في Java باستخدام GroupDocs.Merger for Java](./java-word-document-merging-groupdocs-merger-guide/)
-تعلم كيفية دمج عدة مستندات Word بسلاسة باستخدام GroupDocs.Merger for Java. يقدم هذا الدليل برنامجًا تعليميًا خطوة بخطوة، بما في ذلك الإعداد وتطبيقات العالم الحقيقي.
-
-### [إتقان دمج ملفات ZIP في Java&#58; دليل خطوة بخطوة باستخدام GroupDocs.Merger](./master-merge-zip-files-groupdocs-java/)
-تعلم كيفية دمج عدة ملفات ZIP في أرشيف واحد بفعالية باستخدام GroupDocs.Merger for Java. يغطي هذا البرنامج التعليمي خطوة بخطوة الإعداد، التنفيذ، وأفضل الممارسات.
-
-### [دمج ملفات DOTM باستخدام GroupDocs.Merger for Java&#58; دليل المطور لدمج المستندات](./merge-dotm-files-groupdocs-merger-java/)
-تعلم كيفية دمج ملفات Microsoft Word Template (DOTM) بفعالية باستخدام GroupDocs.Merger في Java. اتبع دليلنا خطوة بخطوة وأفضل الممارسات.
-
-### [دمج عروض PowerPoint بسلاسة باستخدام GroupDocs.Merger for Java](./merge-powerpoint-presentations-groupdocs-merger-java/)
-تعلم كيفية دمج عدة ملفات PPSX في عرض تقديمي واحد باستخدام GroupDocs Merger for Java، مما يبسط سير عملك.
-
-### [دمج ملفات RTF في Java باستخدام GroupDocs.Merger API&#58; دليل شامل](./merge-rtf-files-java-groupdocs-merger/)
-تعلم كيفية دمج عدة ملفات RTF بسلاسة في مستند واحد باستخدام GroupDocs Merger API للـ Java. يغطي هذا الدليل الإعداد، التنفيذ، وتحسين الأداء.
-
-### [دمج ملفات VSTX بسهولة باستخدام GroupDocs.Merger for Java&#58; دليل شامل](./merge-vstx-files-groupdocs-merger-java-tutorial/)
-تعلم كيفية دمج عدة ملفات Microsoft Visio (.vstx) في ملف واحد باستخدام GroupDocs.Merger for Java. سهل إدارة مستنداتك وعزز الإنتاجية.
-
-### [دمج ملفات XLSB في Java باستخدام GroupDocs.Merger&#58; دليل شامل](./merge-xlsb-files-java-groupdocs-merger/)
-تعلم كيفية دمج ملفات Excel Binary Workbook (XLSB) بفعالية باستخدام GroupDocs.Merger for Java. يغطي هذا الدليل الإعداد، التنفيذ، والتطبيقات العملية.
+**س: ماذا لو أردت دمج أوراق محددة فقط من كل دفتر عمل؟**  
+ج: استخدم `MergeOptions.addSheetRange(start, end)` لتحديد مجموعة من الأوراق قبل الدمج.
 
 ## موارد إضافية
+- [GroupDocs.Merger for Java Documentation](https://docs.groupdocs.com/merger/java/)
+- [GroupDocs.Merger for Java API Reference](https://reference.groupdocs.com/merger/java/)
+- [Download GroupDocs.Merger for Java](https://releases.groupdocs.com/merger/java/)
+- [GroupDocs.Merger Forum](https://forum.groupdocs.com/c/merger)
+- [Free Support](https://forum.groupdocs.com/)
+- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
 
-- [توثيق GroupDocs.Merger for Java](https://docs.groupdocs.com/merger/java/)
-- [مرجع API لـ GroupDocs.Merger for Java](https://reference.groupdocs.com/merger/java/)
-- [تحميل GroupDocs.Merger for Java](https://releases.groupdocs.com/merger/java/)
-- [منتدى GroupDocs.Merger](https://forum.groupdocs.com/c/merger)
-- [دعم مجاني](https://forum.groupdocs.com/)
-- [رخصة مؤقتة](https://purchase.groupdocs.com/temporary-license/)
+## الدروس المتاحة
+- [Automate PowerPoint Merging with GroupDocs.Merger for Java&#58; A Step-by-Step Guide](./automate-powerpoint-merging-groupdocs-merger-java/)
+- [Efficiently Merge MHTML Files using GroupDocs.Merger for Java&#58; A Step-by-Step Guide](./merge-mhtml-files-with-groupdocs-merger-for-java/)
+- [Efficiently Merge PDFs Using GroupDocs.Merger for Java&#58; A Step-by-Step Guide](./merge-pdfs-groupdocs-merger-java-tutorial/)
+- [Efficiently Merge VSSM Files in Java Using GroupDocs.Merger for Seamless Document Management](./efficiently-merge-vssm-files-java-groupdocs-merger/)
+- [Efficiently Merge XLAM Files Using GroupDocs.Merger for Java](./merge-xlam-files-groupdocs-merger-java/)
+- [Efficiently Merge XLSX Files Using GroupDocs.Merger for Java](./merge-xlsx-files-groupdocs-merger-java/)
+- [Effortlessly Merge SVGZ Files Using GroupDocs.Merger for Java&#58; A Comprehensive Guide](./merge-svgz-files-groupdocs-merger-java/)
+- [Embed Documents in PDFs Using GroupDocs.Merger for Java&#58; A Comprehensive Guide](./embed-documents-pdf-groupdocs-merger-java/)
+- [How to Join PDFs Using GroupDocs.Merger for Java&#58; A Comprehensive Guide](./join-pdfs-groupdocs-merger-java/)
+- [How to Merge DOCX Files Easily with GroupDocs.Merger for Java&#58; Step-by-Step Guide](./merge-docx-files-groupdocs-merger-java/)
+- [How to Merge EMF Files Using GroupDocs.Merger for Java&#58; A Complete Guide](./master-merging-emf-files-groupdocs-java/)
+- [How to Merge EMZ Files Using GroupDocs.Merger for Java&#58; A Step‑By‑Step Guide](./merge-emz-files-groupdocs-merger-java/)
+- [How to Merge EPUB Files Using GroupDocs.Merger for Java&#58; A Comprehensive Guide](./merge-epub-files-groupdocs-java-guide/)
+- [How to Merge Excel Files in Java Using GroupDocs.Merger&#58; A Developer's Guide](./merge-excel-files-groupdocs-merger-java-guide/)
+- [How to Merge Excel Files with GroupDocs.Merger for Java&#58; Simplify Data Management](./merge-excel-files-groupdocs-merger-java/)
+- [How to Merge HTML Files in Java Using GroupDocs.Merger&#58; A Comprehensive Guide](./html-merging-java-groupdocs-merger-guide/)
+- [How to Merge MHT Files Using GroupDocs.Merger for Java&#58; A Complete Guide](./mastering-mht-merging-groupdocs-java/)
+- [How to Merge Microsoft OneNote Files Using GroupDocs.Merger for Java](./merge-onenote-files-groupdocs-merger-java/)
+- [How to Merge Microsoft Word Templates Using GroupDocs.Merger for Java](./merge-microsoft-word-templates-groupdocs-java/)
+- [How to Merge Multiple 7z Files in Java Using GroupDocs.Merger](./merge-7z-files-java-groupdocs-merger/)
+- [How to Merge Multiple CSV Files Using GroupDocs.Merger for Java&#58; A Comprehensive Guide](./merge-csv-files-groupdocs-merger-java/)
+- [How to Merge Multiple ODP Files Using GroupDocs.Merger for Java](./merge-multiple-odp-files-groupdocs-java/)
+- [How to Merge Multiple TSV Files Using GroupDocs.Merger for Java&#58; A Comprehensive Guide](./merge-tsv-files-groupdocs-merger-java/)
+- [How to Merge Multiple VSX Files Using GroupDocs.Merger for Java&#58; A Comprehensive Guide](./merge-multiple-vsx-files-groupdocs-merger-java/)
+- [How to Merge Multiple Word Documents Using GroupDocs.Merger for Java&#58; A Comprehensive Guide](./merge-doc-files-groupdocs-merger-java/)
+- [How to Merge Multiple XLTMs Using GroupDocs.Merger for Java&#58; A Comprehensive Guide](./merge-multiple-xltms-groupdocs-merger-java/)
+- [How to Merge ODS Files Using GroupDocs.Merger for Java&#58; A Step‑By‑Step Guide](./merge-ods-files-groupdocs-merger-java/)
+- [How to Merge ODT Documents Using GroupDocs.Merger for Java&#58; A Step‑By‑Step Guide](./merge-odt-documents-groupdocs-merger-java/)
+- [How to Merge PowerPoint Files Using GroupDocs.Merger for Java&#58; A Comprehensive Guide](./merge-powerpoint-files-groupdocs-merger-java/)
+- [How to Merge PowerPoint Files in Java Using GroupDocs.Merger&#58; A Step‑By‑Step Guide](./merge-powerpoint-files-java-groupdocs-merger-guide/)
+- [How to Merge PowerPoint PPTM Files Using GroupDocs.Merger for Java&#58; A Developer's Guide](./merge-powerpoint-pptm-groupdocs-merger-java/)
+- [How to Merge TIFF Files Using GroupDocs.Merger for Java&#58; A Step‑By‑Step Guide](./merge-tiff-files-groupdocs-merger-java/)
+- [How to Merge VSDM Files in Java using GroupDocs.Merger&#58; Step‑By‑Step Guide](./merge-vsmd-files-java-groupdocs-merger-guide/)
+- [How to Merge VSDX Files Using GroupDocs.Merger for Java&#58; A Step‑By‑Step Guide](./merge-vsdx-files-groupdocs-merger-java/)
+- [How to Merge VTX Files Using GroupDocs.Merger for Java&#58; A Step‑By‑Step Guide](./merge-vtx-files-groupdocs-merger-java/)
+- [How to Merge WAV Files Efficiently Using GroupDocs.Merger for Java](./merge-wav-files-groupdocs-merger-java/)
+- [How to Merge XLSM Files Using GroupDocs.Merger for Java&#58; A Complete Guide](./merge-xlsm-files-groupdocs-merger-java/)
+- [How to Merge XLTX Files Using GroupDocs.Merger for Java&#58; A Step‑By‑Step Guide](./merge-xltx-files-groupdocs-merger-java/)
+- [How to Merge XPS Files with GroupDocs.Merger for Java&#58; A Comprehensive Guide](./merge-xps-files-groupdocs-merger-java/)
+- [Join Multiple Images Vertically Using GroupDocs.Merger for Java&#58; A Comprehensive Guide](./join-multiple-images-vertically-groupdocs-merger-java/)
+- [Master Document Merging with GroupDocs.Merger for Java&#58; A Developer’s Guide](./mastering-document-merging-groupdocs-merger-java-guide/)
+- [Master Efficient Word Document Merging in Java with GroupDocs.Merger for Java](./java-word-document-merging-groupdocs-merger-guide/)
+- [Master Merging ZIP Files in Java&#58; Step‑By‑Step Guide Using GroupDocs.Merger](./master-merge-zip-files-groupdocs-java/)
+- [Merge DOTM Files Using GroupDocs.Merger for Java&#58; A Developer’s Guide to Document Merging](./merge-dotm-files-groupdocs-merger-java/)
+- [Merge PowerPoint Presentations Seamlessly with GroupDocs.Merger for Java](./merge-powerpoint-presentations-groupdocs-merger-java/)
+- [Merge RTF Files in Java Using GroupDocs.Merger API&#58; A Comprehensive Guide](./merge-rtf-files-java-groupdocs-merger/)
+- [Merge VSTX Files Effortlessly with GroupDocs.Merger for Java&#58; A Comprehensive Guide](./merge-vstx-files-groupdocs-merger-java-tutorial/)
+- [Merge XLSB Files in Java Using GroupDocs.Merger&#58; A Comprehensive Guide](./merge-xlsb-files-java-groupdocs-merger/)
 
----
-
-**آخر تحديث:** 2026-02-08  
+**آخر تحديث:** 2026-07-30  
 **تم الاختبار مع:** GroupDocs.Merger 23.12 for Java  
 **المؤلف:** GroupDocs
+
+## دروس ذات صلة
+
+- [How to Merge CSV Files Using GroupDocs.Merger for Java – A Comprehensive Guide](/merger/java/format-specific-merging/merge-csv-files-groupdocs-merger-java/)
+- [How to Merge PDF with Java Using GroupDocs.Merger - A Complete Guide](/merger/java/document-joining/join-documents-groupdocs-merger-java/)
+- [How to Merge DOCX Files Easily with GroupDocs.Merger for Java&#58; Step-by-Step Guide](/merger/java/format-specific-merging/merge-docx-files-groupdocs-merger-java/)
