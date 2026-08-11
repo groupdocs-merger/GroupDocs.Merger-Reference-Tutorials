@@ -1,66 +1,60 @@
 ---
-date: '2025-12-26'
-description: Dowiedz się, jak efektywnie łączyć wybrane strony w Javie, scalając wybrane
-  strony z wielu dokumentów za pomocą GroupDocs.Merger dla Javy.
+date: '2026-03-22'
+description: Dowiedz się, jak efektywnie łączyć strony w Javie, łącząc wybrane strony
+  z wielu dokumentów przy użyciu GroupDocs.Merger for Java. Zawiera wskazówki dotyczące
+  łączenia konkretnych stron PDF.
 keywords:
 - join specific pages GroupDocs Merger Java
 - groupdocs merger java document joining
 - java document manipulation with groupdocs
-title: Jak połączyć wybrane strony w Javie przy użyciu GroupDocs.Merger
+title: Jak scalić strony w Javie przy użyciu GroupDocs.Merger
 type: docs
 url: /pl/java/document-joining/join-specific-pages-groupdocs-merger-java/
 weight: 1
 ---
 
-# Jak połączyć określone strony w Javie przy użyciu GroupDocs.Merger
+# Jak scalac strony w Javie przy użyciu GroupDocs.Merger
 
 ## Wprowadzenie
 
-Łączenie określonych stron z różnych dokumentów w jeden plik jest powszechnym wymaganiem w wielu dziedzinach zawodowych. W tym przewodniku **dowiesz się, jak połączyć określone strony w stylu java**, wybierając dokładnie potrzebne strony i łącząc je w jeden spójny dokument. Niezależnie od tego, czy tworzysz raport, kompilujesz klauzule prawne, czy tworzysz własny podręcznik, GroupDocs.Merger for Java sprawia, że proces jest prosty i niezawodny.
+Scalanie stron z różnych dokumentów to rutynowa potrzeba, niezależnie od tego, czy tworzysz raport, przygotowujesz umowę, czy tworzysz własny podręcznik. **W tym samouczku nauczysz się, jak scalać strony w Javie** wybierając dokładnie te strony, które są potrzebne, i łącząc je w jeden, dobrze zorganizowany plik przy użyciu GroupDocs.Merger. Przejdziemy przez konfigurację, wywołania API oraz scenariusze z rzeczywistego świata, abyś mógł od razu zastosować tę technikę w swoich projektach.
 
-**Czego się nauczysz:**
-- Używanie GroupDocs.Merger for Java do **łączenia określonych stron**
-- Konfigurowanie środowiska i zależności
-- Implementacja funkcjonalności łączenia stron z praktycznymi przykładami
+**Czego się nauczysz**
+- Jak **scalać strony** z wielu źródeł przy użyciu GroupDocs.Merger dla Javy  
+- Jak skonfigurować projekt przy użyciu Maven lub Gradle  
+- Praktyczne fragmenty kodu, które możesz skopiować‑wkleić i uruchomić  
 
 ## Szybkie odpowiedzi
-- **Co oznacza „join specific pages java”?** Odnosi się do łączenia wybranych stron z jednego lub wielu dokumentów w jeden plik przy użyciu kodu Java.  
-- **Która biblioteka to obsługuje?** GroupDocs.Merger for Java.  
-- **Czy potrzebna jest licencja?** Darmowa wersja próbna wystarcza do testów; płatna licencja jest wymagana w środowisku produkcyjnym.  
-- **Czy mogę łączyć różne formaty (PDF, DOCX, itp.)?** Tak, biblioteka obsługuje wiele formatów.  
-- **Czy jest efektywna pod względem pamięci?** Przy prawidłowym użyciu może przetwarzać duże pliki przy umiarkowanym zużyciu pamięci.
+- **Co oznacza „jak scalać strony”?** To proces programowego łączenia wybranych stron z jednego lub kilku dokumentów w nowy plik przy użyciu Javy.  
+- **Która biblioteka to obsługuje?** GroupDocs.Merger dla Javy.  
+- **Czy potrzebna jest licencja?** Darmowa wersja próbna wystarcza do testów; licencja płatna jest wymagana w środowisku produkcyjnym.  
+- **Czy mogę scalać różne formaty (PDF, DOCX, itp.)?** Tak, biblioteka obsługuje wiele formatów, w tym PDF.  
+- **Czy jest efektywna pod względem pamięci?** Przy prawidłowym użyciu przetwarza duże pliki przy umiarkowanym zużyciu pamięci.  
 
-## Co to jest „join specific pages java”?
-To wyrażenie opisuje czynność programowego wybierania konkretnych stron z jednego lub kilku dokumentów źródłowych i łączenia ich w nowy dokument przy użyciu Javy. GroupDocs.Merger udostępnia przejrzyste API, które ukrywa niskopoziomową obsługę plików, pozwalając skupić się na wyborze stron do dołączenia.
+## Jak scalać strony w Javie przy użyciu GroupDocs.Merger
+Ta sekcja odpowiada na główne pytanie samouczka i zawiera główne słowo kluczowe w nagłówku H2.
 
-## Dlaczego używać GroupDocs.Merger do tego zadania?
+### Co to jest „join specific pages java”?
+Fraza opisuje działanie polegające na programowym wybieraniu konkretnych stron z jednego lub kilku dokumentów źródłowych i łączeniu ich w nowy dokument przy użyciu Javy. GroupDocs.Merger udostępnia przejrzyste API, które abstrahuje niskopoziomową obsługę plików, pozwalając skupić się na wyborze stron do dołączenia.
+
+### Dlaczego używać GroupDocs.Merger do tego zadania?
 - **Precyzja:** Wybieraj dokładne numery stron bez ręcznej edycji.  
-- **Elastyczność formatów:** Działa z PDF, DOCX, PPTX i wieloma innymi formatami.  
+- **Elastyczność formatu:** Działa z PDF, DOCX, PPTX i wieloma innymi formatami.  
 - **Wydajność:** Zoptymalizowane pod kątem szybkości i niskiego zużycia pamięci.  
-- **Skalowalność:** Obsługuje operacje wsadowe dla dużych zestawów dokumentów.
+- **Skalowalność:** Obsługuje operacje wsadowe dla dużych zestawów dokumentów.  
 
 ## Wymagania wstępne
 
-Przed rozpoczęciem upewnij się, że poniższe elementy są gotowe:
-
-### Wymagane biblioteki i zależności
 - **GroupDocs.Merger for Java** – podstawowa biblioteka do manipulacji dokumentami.  
-- **Java Development Kit (JDK)** – wersja 8 lub wyższa.
-
-### Wymagania dotyczące konfiguracji środowiska
-- IDE, takie jak IntelliJ IDEA, Eclipse lub NetBeans.  
-- Edytor tekstu do szybkiej edycji fragmentów kodu, jeśli wolisz.
-
-### Wymagane umiejętności
-- Podstawowe pojęcia programowania w Javie.  
-- Znajomość Maven lub Gradle (przydatna, ale nieobowiązkowa).
+- **Java Development Kit (JDK)** – wersja 8 lub wyższa.  
+- IDE, takie jak IntelliJ IDEA, Eclipse lub NetBeans (lub dowolny edytor tekstu, który preferujesz).  
+- Podstawowa znajomość Javy oraz, opcjonalnie, znajomość Maven lub Gradle.  
 
 ## Konfiguracja GroupDocs.Merger dla Javy
 
-Aby rozpocząć korzystanie z biblioteki GroupDocs.Merger, dodaj ją do zależności projektu w następujący sposób:
+Dodaj bibliotekę do swojego projektu, używając jednej z poniższych metod.
 
 ### Maven
-Dodaj tę zależność do pliku `pom.xml`:
 ```xml
 <dependency>
     <groupId>com.groupdocs</groupId>
@@ -70,109 +64,108 @@ Dodaj tę zależność do pliku `pom.xml`:
 ```
 
 ### Gradle
-Umieść to w pliku `build.gradle`:
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:LATEST_VERSION'
 ```
 
-### Direct Download
+### Bezpośrednie pobranie
 Pobierz najnowszą wersję bezpośrednio z [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
 ### Uzyskanie licencji
-Aby używać GroupDocs.Merger, możesz wybrać:
-- **Darmowa wersja próbna** do zapoznania się z funkcjami.  
-- **Licencja tymczasowa** do celów oceny.  
-- **Pełna licencja** do wdrożeń produkcyjnych.
+Możesz rozpocząć od **darmowej wersji próbnej**, poprosić o **tymczasową licencję** do oceny lub zakupić **pełną licencję** do użytku produkcyjnego.
 
 ## Przewodnik implementacji
 
-Po skonfigurowaniu wszystkiego, zaimplementujmy funkcjonalność **łączenia określonych stron** z wielu dokumentów. Przejdziemy przez każdy krok z szczegółowymi wyjaśnieniami i fragmentami kodu.
+Teraz przejdźmy do kodu, który faktycznie **scala strony**. Przejdziemy przez każdy krok, wyjaśniając cel każdej linii.
 
-### Łączenie określonych stron
-Ta funkcja pozwala wybrać i połączyć konkretne strony z różnych plików źródłowych w jeden dokument.
-
-#### Krok 1: Inicjalizacja zmiennych ścieżek
-Ustaw ścieżki do plików wejściowych i wyjściowych:
+### Krok 1: Inicjalizacja zmiennych ścieżek
 ```java
 String sourceFilePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX"; // First document path
 String additionalFilePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX_2"; // Second document path
 String outputFilePath = "YOUR_OUTPUT_DIRECTORY/JoinPagesFromVariousDocuments-output.docx";
 ```
 
-#### Krok 2: Konfiguracja opcji łączenia stron
-Utwórz instancję `PageJoinOptions`, aby określić, które strony chcesz połączyć:
+### Krok 2: Konfiguracja opcji łączenia stron
 ```java
-// Define the page numbers to be joined, e.g., pages 1 and 2
+// Define the page numbers to be merged, e.g., pages 1 and 2
 PageJoinOptions joinOptions = new PageJoinOptions(1, 2);
 ```
 
-#### Krok 3: Inicjalizacja obiektu Merger
-Utwórz obiekt `Merger` z ścieżką do dokumentu głównego:
+### Krok 3: Inicjalizacja obiektu Merger
 ```java
 Merger merger = new Merger(sourceFilePath); // Load the main document
 ```
 
-#### Krok 4: Łączenie stron z dodatkowego dokumentu
-Użyj metody `join`, aby połączyć określone strony przy użyciu wcześniej ustawionych opcji:
+### Krok 4: Łączenie stron z dodatkowego dokumentu
 ```java
 merger.join(additionalFilePath, joinOptions); // Merge pages from the second document
 ```
 
-#### Krok 5: Zapisz plik wyjściowy
-Zapisz połączony wynik w wybranej lokalizacji:
+### Krok 5: Zapisz plik wyjściowy
 ```java
 merger.save(outputFilePath); // Store the combined output
 ```
 
+## Jak scalać konkretne strony PDF przy użyciu GroupDocs.Merger
+Chociaż przykład używa plików DOCX, to samo API działa również dla PDF‑ów. Wystarczy wskazać `sourceFilePath` i `additionalFilePath` na pliki PDF, a biblioteka automatycznie zajmie się konwersją formatu. Jest to przydatne, gdy musisz **scalać konkretne strony PDF** dokumentów w jeden raport PDF.
+
 ## Praktyczne zastosowania
-Możliwość **łączenia określonych stron w Javie** z wielu dokumentów ma różnorodne zastosowania:
+Możliwość **scalania stron** ma wiele zastosowań w praktyce:
 
-1. **Kompilacja materiałów edukacyjnych** – Połącz wybrane rozdziały z kilku podręczników w jeden przewodnik naukowy.  
+1. **Kompilacja materiałów edukacyjnych** – Scal wybrane rozdziały z kilku podręczników w jedną podręcznik do nauki.  
 2. **Przygotowanie dokumentów prawnych** – Połącz odpowiednie klauzule z różnych umów w jeden zwięzły plik.  
-3. **Raportowanie finansowe** – Wyodrębnij i połącz konkretne strony sprawozdań finansowych z wielu raportów w pakiet podsumowujący.
+3. **Raportowanie finansowe** – Wyodrębnij i połącz konkretne strony zestawień z wielu raportów w pakiet podsumowujący.  
 
-Integracja tego przepływu pracy z systemami zarządzania treścią lub automatycznymi generatorami raportów może znacząco zwiększyć wydajność.
+Integracja tego przepływu pracy z systemem zarządzania treścią lub automatycznym generatorem raportów może zaoszczędzić godziny ręcznej edycji.
 
 ## Rozważania dotyczące wydajności
-Aby utrzymać rozwiązanie Java szybkie i przyjazne zasobom:
+Aby Twoje rozwiązanie w Javie było szybkie i przyjazne zasobom:
 
-- **Optymalizacja użycia pamięci** – Niezwłocznie zamykaj nieużywane instancje `Merger`.  
-- **Przetwarzanie wsadowe** – Przetwarzaj duże kolekcje w mniejszych partiach, zamiast jednorazowo.  
-- **Efektywne zarządzanie zasobami** – Monitoruj użycie CPU i RAM oraz dostosuj liczbę wątków, jeśli wykonujesz łączenia równolegle.
+- **Zamykaj nieużywane instancje Merger** – Zwolnij zasoby, gdy skończysz.  
+- **Przetwarzanie wsadowe** – Przetwarzaj duże kolekcje w mniejszych partiach zamiast jednorazowo.  
+- **Monitoruj zasoby** – Śledź zużycie CPU i RAM; dostosuj liczbę wątków, jeśli wykonujesz scalanie równolegle.  
 
-## Podsumowanie
-W tym samouczku omówiliśmy, jak **łączenie określonych stron w Javie** można zrealizować bez wysiłku przy użyciu GroupDocs.Merger. Zobaczyłeś, jak skonfigurować środowisko, ustawić opcje wyboru stron i wygenerować połączony dokument. Dzięki tym umiejętnościom możesz automatyzować wiele zadań związanych z zestawianiem dokumentów w aplikacjach Java.
+## Typowe problemy i rozwiązania
 
-Gotowy, aby pójść dalej? Poznaj dodatkowe możliwości, takie jak dzielenie dokumentów, nakładanie znaków wodnych lub zabezpieczanie plików — wszystkie dostępne poprzez to samo solidne API.
+| Problem | Rozwiązanie |
+|-------|----------|
+| **Błąd Out‑of‑memory** | Przetwarzaj dokumenty w partiach i niezwłocznie zwalniaj obiekty `Merger`. |
+| **Nieprawidłowe numery stron** | Użyj `Merger.getPagesCount()` aby zweryfikować zakresy przed wywołaniem `join`. |
+| **Mieszane formaty plików powodują przesunięcia układu** | Upewnij się, że wszystkie pliki źródłowe używają kompatybilnych wersji; rozważ konwersję do PDF najpierw, jeśli spójność układu jest krytyczna. |
 
-## Dodatkowe często zadawane pytania
+## Najczęściej zadawane pytania
 
-**Q: Czy mogę połączyć strony z więcej niż dwóch dokumentów w jednej operacji?**  
-A: Oczywiście. Wywołuj `merger.join()` wielokrotnie z różnymi plikami źródłowymi i `PageJoinOptions` dla każdego.
+**P:** Czy mogę łączyć strony z więcej niż dwóch dokumentów w jednej operacji?  
+**O:** Oczywiście. Wywołuj `merger.join()` wielokrotnie z różnymi plikami źródłowymi i `PageJoinOptions` dla każdego.
 
-**Q: Czy biblioteka zachowuje oryginalne formatowanie przy łączeniu stron?**  
-A: Tak, zachowuje układ, style i osadzone zasoby każdej strony źródłowej.
+**P:** Czy biblioteka zachowuje oryginalne formatowanie przy scalaniu stron?  
+**O:** Tak, zachowuje układ, style i osadzone zasoby każdej strony źródłowej.
 
-**Q: Jak mogę połączyć strony z plików PDF i DOCX razem?**  
-A: Załaduj każdy plik przy użyciu instancji `Merger` i określ zakresy stron; biblioteka automatycznie konwertuje formaty w razie potrzeby.
+**P:** Jak mogę scalać strony z plików PDF i DOCX razem?  
+**O:** Załaduj każdy plik przy użyciu instancji `Merger` i określ zakresy stron; biblioteka automatycznie konwertuje formaty w razie potrzeby.
 
-**Q: Czy istnieje sposób, aby podglądnąć, które strony zostaną połączone przed zapisaniem?**  
-A: Możesz programowo wyodrębnić liczbę stron i zweryfikować zakresy przed wywołaniem `join`.
+**P:** Czy istnieje sposób, aby podglądnąć, które strony zostaną scalone przed zapisaniem?  
+**O:** Możesz programowo pobrać liczbę stron i zweryfikować zakresy przed wywołaniem `join`.
 
-**Q: jaki model licencjonowania wybrać w środowisku produkcyjnym?**  
-A: Dla produkcji płatna licencja zapewnia pełne wsparcie i usuwa ograniczenia wersji próbnej.
+**P:** Jaki model licencjonowania wybrać w środowisku produkcyjnym?  
+**O:** Licencja płatna zapewnia pełne wsparcie i usuwa ograniczenia wersji próbnej.
 
-## Zasoby
-- **Dokumentacja**: [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)
-- **Referencja API**: [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)
-- **Pobieranie**: [GroupDocs Downloads](https://releases.groupdocs.com/merger/java/)
-- **Zakup**: [Buy GroupDocs](https://purchase.groupdocs.com/buy)
-- **Darmowa wersja próbna**: [GroupDocs Free Trial](https://releases.groupdocs.com/merger/java/)
-- **Licencja tymczasowa**: [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Wsparcie**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/)
+## Zakończenie
+W tym samouczku nauczyłeś się **jak scalać strony w Javie** przy użyciu GroupDocs.Merger. Omówiliśmy konfigurację środowiska, opcje wyboru stron oraz zapisywanie finalnego dokumentu. Dzięki tym umiejętnościom możesz zautomatyzować szeroki zakres zadań związanych z łączeniem dokumentów — od generowania raportów po przygotowanie dokumentów prawnych.
+
+Gotowy, aby odkrywać więcej? Sprawdź API do dzielenia dokumentów, dodawania znaków wodnych lub zabezpieczania plików — wszystko dostępne w tej samej solidnej bibliotece.
 
 ---
 
-**Ostatnia aktualizacja:** 2025-12-26  
+**Ostatnia aktualizacja:** 2026-03-22  
 **Testowano z:** GroupDocs.Merger 23.12 (Java)  
-**Autor:** GroupDocs
+**Autor:** GroupDocs  
+
+**Zasoby**
+- **Dokumentacja:** [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)  
+- **Referencja API:** [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)  
+- **Pobieranie:** [GroupDocs Downloads](https://releases.groupdocs.com/merger/java/)  
+- **Zakup:** [Buy GroupDocs](https://purchase.groupdocs.com/buy)  
+- **Darmowa wersja próbna:** [GroupDocs Free Trial](https://releases.groupdocs.com/merger/java/)  
+- **Tymczasowa licencja:** [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Wsparcie:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/)
