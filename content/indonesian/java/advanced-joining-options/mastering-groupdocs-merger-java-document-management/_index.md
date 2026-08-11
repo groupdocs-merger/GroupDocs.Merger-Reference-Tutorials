@@ -1,33 +1,33 @@
 ---
-date: '2026-01-16'
-description: Pelajari cara menyimpan dokumen yang digabungkan di Java menggunakan
-  GroupDocs.Merger, dan temukan cara menggabungkan berbagai format file secara efisien.
+date: '2026-03-20'
+description: Pelajari cara menggabungkan file PDF dan DOCX dalam Java menggunakan
+  GroupDocs.Merger, termasuk memuat dari aliran dan menangani dokumen besar.
 keywords:
 - document management Java
 - GroupDocs.Merger for Java
 - Java document handling
-title: 'Simpan Dokumen Gabungan Java - Pengelolaan Dokumen Master dengan GroupDocs.Merger'
+title: Gabungkan PDF dan DOCX di Java – Simpan Dokumen yang Digabung
 type: docs
 url: /id/java/advanced-joining-options/mastering-groupdocs-merger-java-document-management/
 weight: 1
 ---
 
-# Simpan Dokumen Gabungan Java: Manajemen Dokumen Master dengan GroupDocs.Merger
+# Gabungkan PDF dan DOCX di Java – Simpan Dokumen yang Digabungkan
 
-Proyek **menyimpan dokumen gabungan Java** secara efisien dapat terasa menantang, terutama ketika Anda harus menangani banyak jenis file dan payload besar. Dalam tutorial ini kami akan menjelaskan cara memuat dokumen dari stream, menggabungkannya, dan akhirnya **menyimpan dokumen gabungan Java**‑style menggunakan GroupDocs.Merger. Pada akhir Anda akan memahami tidak hanya cara melakukan operasi dasar tetapi juga cara **menggabungkan format file yang berbeda**, memuat dokumen dari stream, dan **menangani dokumen besar Java** aplikasi dengan lancar.
+Menggabungkan file PDF dan DOCX di Java dapat terasa menakutkan, terutama ketika Anda berurusan dengan aliran, format campuran, atau payload yang sangat besar. Dalam panduan ini kami akan menjelaskan **cara menggabungkan PDF dan DOCX** menggunakan GroupDocs.Merger, menunjukkan cara **memuat dokumen dari aliran**, dan memberikan tip praktis untuk **menangani dokumen besar gaya Java**. Pada akhir Anda akan memiliki solusi siap produksi yang dapat Anda gunakan dalam layanan web atau pekerjaan batch apa pun.
 
 ## Jawaban Cepat
-- **Apa cara utama untuk menyimpan dokumen gabungan di Java?** Gunakan `Merger.save(OutputStream)` setelah memuat file sumber.  
+- **Apa cara utama untuk menyimpan dokumen yang digabungkan di Java?** Gunakan `Merger.save(OutputStream)` setelah memuat file sumber.  
 - **Apakah GroupDocs.Merger dapat menggabungkan format file yang berbeda?** Ya – mendukung DOCX, PDF, PPTX, XLSX, dan banyak lagi.  
-- **Bagaimana cara memuat dokumen dari InputStream?** Buat instance `Merger` dengan stream: `new Merger(stream)`.  
-- **Apa yang harus saya lakukan dengan dokumen besar?** Gunakan buffered streams dan tutup segera untuk membebaskan memori.  
-- **Apakah lisensi diperlukan untuk penggunaan produksi?** Ya – lisensi GroupDocs yang valid diperlukan untuk deployment komersial.
+- **Bagaimana cara memuat dokumen dari InputStream?** Buat instance `Merger` dengan aliran: `new Merger(stream)`.  
+- **Apa yang harus saya lakukan dengan dokumen besar?** Gunakan aliran berbuffer dan tutup segera untuk membebaskan memori.  
+- **Apakah lisensi diperlukan untuk penggunaan produksi?** Ya – lisensi GroupDocs yang valid diperlukan untuk penyebaran komersial.
 
-## Apa itu “menyimpan dokumen gabungan Java”?
-Menyimpan dokumen gabungan di Java berarti mengambil satu atau lebih file sumber, menggabungkannya dengan GroupDocs.Merger, dan menulis hasilnya ke tujuan (sistem file, penyimpanan cloud, atau respons HTTP). Proses ini sepenuhnya berbasis stream, yang membuatnya ideal untuk layanan web dan pekerjaan latar belakang.
+## Apa itu menggabungkan PDF dan DOCX?
+**Menggabungkan PDF dan DOCX** berarti mengambil satu atau lebih file PDF dan DOCX, menggabungkannya menjadi satu output tunggal, dan menulis output tersebut ke disk, penyimpanan cloud, atau respons HTTP. GroupDocs.Merger menangani pekerjaan berat, sehingga Anda tidak perlu khawatir tentang keanehan khusus format.
 
 ## Mengapa menggunakan GroupDocs.Merger untuk **menggabungkan format file yang berbeda**?
-GroupDocs.Merger menyederhanakan kompleksitas penanganan struktur internal setiap format. Ini memungkinkan Anda fokus pada logika bisnis—seperti menghasilkan faktur atau mengkonsolidasikan laporan—sementara ia menangani keanehan spesifik format, penomoran halaman, dan pelestarian metadata.
+GroupDocs.Merger menyederhanakan kompleksitas setiap tipe dokumen. Baik Anda menyatukan faktur PDF dengan kontrak DOCX atau menggabungkan slide PPTX dengan laporan XLSX, perpustakaan ini menjaga urutan halaman, metadata, dan gaya tetap utuh sementara Anda fokus pada logika bisnis.
 
 ## Prasyarat
 
@@ -35,7 +35,7 @@ GroupDocs.Merger menyederhanakan kompleksitas penanganan struktur internal setia
 - Java 8+ (JDK 8 atau lebih tinggi)
 - Maven atau Gradle untuk manajemen dependensi
 - IDE seperti IntelliJ IDEA atau Eclipse
-- Lisensi GroupDocs yang valid untuk penggunaan produksi (tersedia trial gratis)
+- Lisensi GroupDocs yang valid untuk penggunaan produksi (versi percobaan gratis tersedia)
 
 ## Menyiapkan GroupDocs.Merger untuk Java
 
@@ -61,9 +61,9 @@ implementation 'com.groupdocs:groupdocs-merger:latest-version'
 
 ### Unduhan Langsung
 
-Sebagai alternatif, unduh versi terbaru dari [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) dan tambahkan secara manual ke path pustaka proyek Anda.
+Atau, unduh versi terbaru dari [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) dan tambahkan secara manual ke jalur pustaka proyek Anda.
 
-#### Langkah Pengadaan Lisensi
+#### Langkah-langkah Akuisisi Lisensi
 1. **Free Trial** – jelajahi fitur dasar tanpa komitmen.  
 2. **Temporary License** – minta kunci jangka pendek [di sini](https://purchase.groupdocs.com/temporary-license/).  
 3. **Purchase** – dapatkan lisensi penuh untuk penggunaan produksi tak terbatas.
@@ -79,9 +79,9 @@ import com.groupdocs.merger.Merger;
 erMerger = new Merger("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX");
 ```
 
-## Cara **memuat stream dokumen** (how to load document stream)
+## Cara **memuat dokumen dari aliran** (load document from stream)
 
-Memuat dokumen dari `InputStream` penting ketika file diunggah oleh pengguna atau diambil dari penyimpanan cloud.
+Memuat dokumen dari `InputStream` sangat penting ketika file diunggah oleh pengguna atau diambil dari penyimpanan cloud.
 
 ### Langkah 1 – Buat InputStream
 
@@ -92,21 +92,21 @@ import java.io.InputStream;
 InputStream stream = new FileInputStream("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX");
 ```
 
-*Mengapa?* Ini mengubah file fisik menjadi byte stream yang dapat dikonsumsi oleh `Merger` tanpa memerlukan file permanen di disk.
+*Mengapa?* Ini mengubah file fisik menjadi aliran byte yang dapat dikonsumsi oleh `Merger` tanpa memerlukan file permanen di disk.
 
-### Langkah 2 – Inisialisasi Merger dengan Stream
+### Langkah 2 – Inisialisasi Merger dengan Aliran
 
 ```java
 Merger merger = new Merger(stream);
 ```
 
-*Mengapa?* Mengoper stream memungkinkan Anda bekerja dengan data dalam memori, yang lebih cepat untuk skenario berbasis web.
+*Mengapa?* Menyerahkan aliran memungkinkan Anda bekerja dengan data dalam memori, yang lebih cepat untuk skenario berbasis web.
 
-## Cara **menyimpan dokumen gabungan Java** (save merged document java)
+## Cara **menyimpan dokumen yang digabungkan java** (save merged document java)
 
 Setelah Anda melakukan penggabungan, pemisahan, atau manipulasi halaman apa pun, Anda perlu menyimpan hasilnya.
 
-### Langkah 1 – Definisikan OutputStream
+### Langkah 1 – Tentukan OutputStream
 
 ```java
 import java.io.FileOutputStream;
@@ -123,36 +123,36 @@ OutputStream outputStream = new FileOutputStream("YOUR_OUTPUT_DIRECTORY/merged_o
 merger.save(outputStream);
 ```
 
-*Mengapa?* `save()` menyelesaikan semua perubahan dan menulis konten gabungan ke stream yang diberikan.
+*Mengapa?* `save()` menyelesaikan semua perubahan dan menulis konten yang digabungkan ke aliran yang diberikan.
 
-### Langkah 3 – Tutup Stream
+### Langkah 3 – Tutup Aliran
 
 ```java
 outputStream.close();
 ```
 
-*Mengapa?* Menutup melepaskan sumber daya sistem dan menjamin semua data yang di-buffer ter-flush ke disk.
+*Mengapa?* Menutup melepaskan sumber daya sistem dan menjamin semua data berbuffer ter‑flush ke disk.
 
-## Cara **menangani dokumen besar Java** (handle large documents java)
+## Cara **menangani dokumen besar java** (handle large documents java)
 
 Bekerja dengan PDF besar atau file Word multi‑gigabyte dapat membebani memori. Ikuti praktik terbaik berikut:
 
 - **Gunakan Buffered Streams** – bungkus `FileInputStream`/`FileOutputStream` dengan `BufferedInputStream`/`BufferedOutputStream`.  
-- **Proses dalam Batch** – gabungkan beberapa file sekaligus alih-alih memuat semuanya sekaligus.  
-- **Buang Objek Segera** – panggil `close()` pada stream segera setelah selesai.  
+- **Proses dalam Batch** – gabungkan beberapa file sekaligus alih‑alih memuat semuanya sekaligus.  
+- **Buang Objek dengan Cepat** – panggil `close()` pada aliran segera setelah selesai.  
 - **Pantau Heap JVM** – tingkatkan `-Xmx` jika diperlukan, tetapi usahakan penggunaan memori tetap rendah.
 
 ## Aplikasi Praktis
 
 GroupDocs.Merger bersinar dalam skenario dunia nyata:
 
-1. **Batch Processing** – secara otomatis menggabungkan laporan harian menjadi satu PDF.  
-2. **Dynamic Document Generation** – membuat faktur secara langsung dari file templat.  
-3. **Cross‑Platform Integration** – menyediakan endpoint REST yang menerima file yang diunggah, menggabungkannya, dan mengembalikan hasilnya.
+1. **Pemrosesan Batch** – secara otomatis menggabungkan laporan harian menjadi satu PDF.  
+2. **Generasi Dokumen Dinamis** – buat faktur secara langsung dari file templat.  
+3. **Integrasi Lintas Platform** – ekspos endpoint REST yang menerima file yang diunggah, menggabungkannya, dan mengembalikan hasilnya.
 
 ## Pertimbangan Kinerja
 
-- **Manajemen Memori** – selalu tutup stream (`InputStream`, `OutputStream`).  
+- **Manajemen Memori** – selalu tutup aliran (`InputStream`, `OutputStream`).  
 - **Operasi Batch** – kelompokkan file untuk mengurangi overhead I/O.  
 - **I/O Efisien** – pilih I/O berbuffer untuk file lebih besar dari 10 MB.
 
@@ -161,37 +161,37 @@ GroupDocs.Merger bersinar dalam skenario dunia nyata:
 | Masalah | Alasan | Solusi |
 |-------|--------|-----|
 | `FileNotFoundException` | Path file tidak benar atau izin tidak mencukupi | Verifikasi path absolut/relatif dan pastikan aplikasi memiliki hak baca/tulis |
-| `IOException` saat menyimpan | Stream tidak ditutup atau disk penuh | Tutup semua stream, periksa ruang disk, dan gunakan try‑with‑resources |
-| Lonjakan memori dengan PDF besar | Memuat seluruh file ke memori | Gunakan buffered streams dan proses dalam batch yang lebih kecil |
+| `IOException` during save | Aliran tidak ditutup atau disk penuh | Tutup semua aliran, periksa ruang disk, dan gunakan try‑with‑resources |
+| Memory spikes with large PDFs | Memuat seluruh file ke memori | Gunakan aliran berbuffer dan proses dalam batch yang lebih kecil |
 
 ## Pertanyaan yang Sering Diajukan
 
-**Q:** Apakah saya dapat menggabungkan format file yang berbeda menggunakan GroupDocs.Merger?  
-**A:** Ya, pustaka mendukung DOCX, PDF, PPTX, XLSX, dan banyak format lainnya.
+**Q:** Bisakah saya menggabungkan format file yang berbeda menggunakan GroupDocs.Merger?  
+**A:** Ya, perpustakaan ini mendukung DOCX, PDF, PPTX, XLSX, dan banyak format lainnya.
 
 **Q:** Bagaimana cara menangani dokumen besar secara efisien?  
-**A:** Manfaatkan buffered streams, proses file dalam batch, dan selalu tutup stream dengan cepat.
+**A:** Manfaatkan aliran berbuffer, proses file dalam batch, dan selalu tutup aliran dengan cepat.
 
-**Q:** Apakah ada dukungan untuk file yang dilindungi password?  
-**A:** Tentu – berikan password saat menginisialisasi instance `Merger`.
+**Q:** Apakah ada dukungan untuk file yang dilindungi kata sandi?  
+**A:** Tentu – berikan kata sandi saat menginisialisasi instance `Merger`.
 
-**Q:** Dapatkah saya menggunakan pustaka ini dalam produk komersial?  
+**Q:** Bisakah saya menggunakan pustaka ini dalam produk komersial?  
 **A:** Ya, cukup dapatkan lisensi yang tepat dari [GroupDocs](https://purchase.groupdocs.com/buy).
 
-**Q:** Apa yang harus saya lakukan jika menemukan `IOException`?  
+**Q:** Apa yang harus saya lakukan jika menemui `IOException`?  
 **A:** Periksa kembali path file, pastikan izin cukup, dan bungkus panggilan I/O dalam blok try‑catch.
 
 ## Sumber Daya
 
-- **Documentation**: [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)  
-- **API Reference**: [API Reference Guide](https://reference.groupdocs.com/merger/java/)  
-- **Download Library**: [GroupDocs Downloads](https://releases.groupdocs.com/merger/java/)  
-- **Purchase License**: [Buy GroupDocs License](https://purchase.groupdocs.com/buy)  
-- **Free Trial & Temporary License**: [Try Out GroupDocs](https://releases.groupdocs.com/merger/java/) and [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-- **Support**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/)
+- **Dokumentasi**: [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)  
+- **Referensi API**: [API Reference Guide](https://reference.groupdocs.com/merger/java/)  
+- **Unduh Pustaka**: [GroupDocs Downloads](https://releases.groupdocs.com/merger/java/)  
+- **Beli Lisensi**: [Buy GroupDocs License](https://purchase.groupdocs.com/buy)  
+- **Uji Coba Gratis & Lisensi Sementara**: [Try Out GroupDocs](https://releases.groupdocs.com/merger/java/) dan [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Dukungan**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/)
 
 ---
 
-**Last Updated:** 2026-01-16  
-**Tested With:** GroupDocs.Merger versi terbaru (per 2026)  
+**Last Updated:** 2026-03-20  
+**Tested With:** GroupDocs.Merger latest version (as of 2026)  
 **Author:** GroupDocs
