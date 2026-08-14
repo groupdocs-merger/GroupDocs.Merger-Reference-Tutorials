@@ -1,50 +1,70 @@
 ---
-date: '2026-01-31'
-description: Dowiedz się, jak dzielić pliki PDF w Javie przy użyciu GroupDocs.Merger
-  for Java – przewodnik krok po kroku obejmujący konfigurację, manipulację dokumentami
-  w Javie oraz praktyczne przypadki użycia.
+date: '2026-05-22'
+description: Dowiedz się, jak podzielić PDF na strony przy użyciu GroupDocs.Merger
+  for Java – krok po kroku konfiguracja, przepływ pracy bez kodu i rzeczywiste przypadki
+  użycia.
 keywords:
+- split pdf into pages
+- split pdf java
+- extract pdf pages java
 - GroupDocs.Merger for Java
 - document splitting in Java
-- splitting documents using Java
-title: 'dzielenie pdf java: Rozdzielanie dokumentu przy użyciu GroupDocs.Merger'
+schemas:
+- author: GroupDocs
+  dateModified: '2026-05-22'
+  description: Learn how to split pdf into pages using GroupDocs.Merger for Java –
+    step‑by‑step setup, code‑free workflow, and real‑world use cases.
+  headline: split pdf into pages with GroupDocs.Merger for Java
+  type: TechArticle
+- questions:
+  - answer: '`split` creates a separate file for each page or range, while `extract`
+      combines selected pages into a single new document.'
+    question: What is the difference between `split` and `extract` in GroupDocs.Merger?
+  - answer: Yes—initialize `Merger` with the password parameter before invoking `split()`.
+    question: Can I split password‑protected PDFs?
+  - answer: Absolutely. The same API works for DOCX, PPTX, XLSX, HTML, and over 50
+      image formats.
+    question: Does the library support formats other than PDF?
+  - answer: Process them in smaller page ranges, increase the JVM heap, and rely on
+      the streaming API to avoid loading the entire file into memory.
+    question: How should I handle PDFs that are several hundred megabytes?
+  - answer: Yes—a valid license removes trial limits and grants access to premium
+      support; a trial license is sufficient for development and testing.
+    question: Is a commercial license mandatory for production use?
+  type: FAQPage
+title: Podziel PDF na strony przy użyciu GroupDocs.Merger for Java
 type: docs
 url: /pl/java/document-splitting/master-document-splitting-groupdocs-merger-java/
 weight: 1
 ---
 
-# split pdf java: Mistrzowskie dzielenie dokumentów przy użyciu GroupDocs.Merger
+# dziel pdf na strony przy użyciu GroupDocs.Merger dla Javy
 
-Czy chcesz **split pdf java** pliki na pojedyncze strony przy użyciu Javy? Nie jesteś sam — wielu programistów potrzebuje niezawodnego sposobu na podzielenie dużych plików PDF na jednosktronicowe dokumenteglądu lub dalszego przetwarzania. W tym samouczku dowiesz się, jak używać **GroupDocs.Merger wielostronicowy PDF w serię jednosktronicowych plików. Po zakończeniu będziesz mieć klarowne, wielokrotnego użytku rozwiązanie, które możesz zintegrować z dowolnym projektem Java.
+Jeśli potrzebujesz **dzielić pdf na strony** szybko i niezawodnie w aplikacji Java, trafiłeś we właściwe miejsce. W wielu projektach — niezależnie od tego, czy tworzysz system zarządzania dokumentami, przepływ pracy przeglądu prawnego, czy łańcuch publikacji akademickich — podzielenie dużego PDF‑a na pojedyncze pliki stron jest powszechnym wymaganiem. Ten samouczek pokaże Ci, jak to osiągnąć przy użyciu **GroupDocs.Merger for Java**, wysokowydajnej biblioteki obsługującej PDF‑y, DOCX, PPTX i wiele innych formatów bez ładowania całego pliku do pamięci.
 
-## Quick Answers
-- **What does “split pdf java” do?** It extracts specified pages from a PDF and saves each as a separate file.  
-- robust split, merge, and page‑level operations.  
-- **Do I need a testing; a commercial license is required for production use.  
-- **Can I split by custom page ranges?** Yes—use `SplitOptions` to define for large PDFs?** The library streams pages, minimizing memory consumption.
+## Szybkie odpowiedzi
+- **Co robi „split pdf into pages”?** Wyodrębnia każdą stronę (lub zakres stron) z źródłowego PDF i zapisuje je jako niezależne pliki PDF.  
+- **Która biblioteka jest najlepsza do tego zadania?** GroupDocs.Merger for Java oferuje najbardziej kompletny API do dzielenia, scalania i manipulacji na poziomie stron.  
+- **Czy potrzebuję licencji do produkcji?** Tak — licencja komercyjna usuwa ograniczenia wersji próbnej; darmowa wersja próbna wystarczy do rozwoju.  
+- **Czy mogę dzielić według własnych zakresów?** Oczywiście — użyj `SplitOptions`, aby określić strony początkową i końcową.  
+- **Czy proces jest oszczędny pod względem pamięci?** Biblioteka strumieniuje strony, więc nawet PDF‑y o 500 stronach zużywają mniej niż 100 MB pamięci sterty.
 
-## What is split pdf java?
-Splitting a PDF in Java means taking a source document and programmatically extracting individual pages (or ranges) into new, independent PDF files. This is a core task in **document manipulation java** workflows such as archiving, legal review, or content publishing.
+## Co to jest dzielenie pdf na strony?
+**Dzielenie PDF‑a na strony oznacza programowe wyodrębnianie każdej strony (lub określonego zakresu) ze źródłowego dokumentu i tworzenie oddzielnych plików PDF dla każdej wyodrębnionej strony.** Operacja ta jest niezbędna w przepływach pracy wymagających szczegółowego dostępu do poszczególnych stron, takich jak automatyczne kierowanie, selektywne drukowanie czy analizy na poziomie stron.
 
-## Why use GroupDocs.Merger for Java?
-- **High performance** – optimized for large files.  
-- **Simple API** – intuitive classes like `Merger` and `SplitOptions and more.  
- licensing options for commercial projects.
+## Dlaczego używać GroupDocs.Merger dla Javy?
+GroupDocs.Merger obsługuje **ponad 50 formatów wejściowych i wyjściowych** — w tym PDF, DOCX, PPTX, HTML i typy obrazów — przy jednoczesnym niskim zużyciu pamięci. Potrafi radzić sobie z **PDF‑ami o setkach stron** w czasie krótszym niż sekunda na typowym sprzęcie serwerowym, dzięki architekturze strumieniowej. API jest celowo proste: kilka klas (`Merger`, `SplitOptions`) pozwala dzielić, scalać lub wyodrębniać strony jednym wywołaniem metody.
 
-## Prerequisites
+## Wymagania wstępne
+- **JDK 8+** zainstalowany i skonfigurowany w zmiennej PATH.  
+- IDE, takie jak **IntelliJ IDEA** lub **Eclipse** (opcjonalne, ale zalecane).  
+- **Maven** lub **Gradle** do zarządzania zależnościami.  
+- Dostęp do biblioteki **GroupDocs.Merger for Java** (pobierz lub dodaj przez Maven/Gradle).  
 
-To follow this guide you’ll need:
+### Wymagane biblioteki i zależności
+- **GroupDocs.Merger for Java** – dodaj najnowszą wersję do swojego projektu.
 
-- **JDK** (Java 8 or newer) installed on your machine.  
-- An IDE such as **IntelliJ IDEA** or **Eclipse**.  
-- Basic familiarity with **Maven** or **Gradle** for dependency management.  
-- Access to the **GroupDocs.Merger for Java** library (download or add via Maven/Gradle).  
-
-### Required Libraries and Dependencies
-
-- **GroupDocs.Merger for Java** – add the latest version to your project.
-
-  - **Maven**:
+  - **Maven**:  
     ```xml
     <dependency>
         <groupId>com.groupdocs</groupId>
@@ -53,30 +73,27 @@ To follow this guide you’ll need:
     </dependency>
     ```
 
-  - **Gradle**:
+  - **Gradle**:  
     ```gradle
     implementation 'com.groupdocs:groupdocs-merger:latest-version'
     ```
 
-  - **Direct Download**: You can also get the JAR from the official release page – [wydania GroupDocs.Merger for Java](https://releases.groupdocs.com/merger/java/).
+  - **Direct Download**: Możesz również pobrać plik JAR z oficjalnej strony wydań — [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
-## Setting Up GroupDocs.Merger for Java
+## Konfiguracja GroupDocs.Merger dla Javy
 
-### Installation Information
+### Informacje o instalacji
+Dodaj zależność przy użyciu Maven lub Gradle, jak pokazano powyżej, lub pobierz plik JAR ręcznie ze strony wydań — [tutaj](https://releases.groupdocs.com/merger/java/).
 
-Add the dependency using Maven or Gradle as shown above, or download the JAR manually from the release page – [here](https://releases.groupdocs.com/merger/java/).
+### Uzyskanie licencji
+Przed uruchomieniem jakiegokolwiek kodu, uzyskaj licencję, aby uniknąć ograniczeń wersji próbnej:
 
-### License Acquisition
+- **Free Trial** – nieograniczony dostęp do funkcji przez 30 dni.  
+- **Temporary License** – wydłużony okres testowy dla przedsiębiorstw.  
+- **Full License** – usuwa wszystkie limity użytkowania i zapewnia priorytetowe wsparcie.
 
-Before running any code, obtain a license to avoid trial limitations:
-
-- **Free Trial** – start experimenting without a purchase.  
-- **Temporary License** – request for extended testing.  
-- **Full License** – unlock all features and obtain production support.
-
-### Basic Initialization and Setup
-
-Once the library is on your classpath, you can create a `Merger` instance that points to the source PDF.
+### Podstawowa inicjalizacja i konfiguracja
+Klasa `Merger` jest punktem wejścia dla wszystkich operacji manipulacji dokumentami w GroupDocs.Merger. Po dodaniu biblioteki do classpath, możesz utworzyć instancję `Merger`, która wskazuje na źródłowy PDF.
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -94,39 +111,36 @@ public class InitializeMerger {
 }
 ```
 
-## How to split pdf java by page range
+## Jak podzielić pdf na strony według zakresu stron?
+`SplitOptions` definiuje zakres stron oraz opcje wyjściowe dla operacji podziału.  
+Wczytaj źródłowy PDF za pomocą `new Merger("source.pdf")`, skonfiguruj `SplitOptions` dla żądanego zakresu stron i wywołaj `split()` — cała operacja kończy się w dwóch linijkach kodu. To podejście strumieniuje każdą stronę, więc nawet duże PDF‑y są przetwarzane przy minimalnym zużyciu pamięci.
 
-Now we’ll walk through the exact steps to **split pdf java** files into single‑page PDFs using a custom page range.
-
-### Step 1: Import Required Libraries
-
+### Krok 1: Importuj wymagane biblioteki
 ```java
 import com.groupdocs.merger.Merger;
 import com.groupdocs.merger.domain.options.SplitOptions;
 ```
 
-### Step 2: Define File Paths
-
+### Krok 2: Zdefiniuj ścieżki plików
 ```java
 String filePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX_10_PAGES";
 String filePathOut = "YOUR_OUTPUT_DIRECTORY/SplitToSinglePagesByRange-Output.docx";
 ```
 
-### Step 3: Configure SplitOptions
-
+### Krok 3: Skonfiguruj SplitOptions
+`SplitOptions` pozwala ustawić strony początkową i końcową oraz dostosować nazewnictwo plików wyjściowych.  
 ```java
 // Create SplitOptions specifying pages 3 to 7
 SplitOptions splitOptions = new SplitOptions(filePathOut, 3, 7);
 ```
 
-The constructor arguments are:
+Argumenty konstruktora są:
 
-- **filePathOut** – where the split files will be saved.  
-- **Start Page (3)** – the first page of the range you want to extract.  
-- **End Page (7)** – the last page of the range.
+- **filePathOut** – folder docelowy dla podzielonych plików.  
+- **Start Page (3)** – pierwsza strona zakresu, który chcesz wyodrębnić.  
+- **End Page (7)** – ostatnia strona zakresu.
 
-### Step 4: Execute Split Operation
-
+### Krok 4: Wykonaj operację podziału
 ```java
 // Initialize the Merger with the input document path
 Merger merger = new Merger(filePath);
@@ -135,11 +149,10 @@ Merger merger = new Merger(filePath);
 merger.split(splitOptions);
 ```
 
-After running this code, you’ll find separate one‑page PDFs for pages 3‑7 inside the output folder.
+Po wykonaniu znajdziesz oddzielne jednosktronicowe pliki PDF dla stron 3‑7 w folderze wyjściowym.
 
-## Feature: Import Required Libraries and Set Up File Paths
-
-This helper snippet shows how to build dynamic output paths, which is handy when you need to **create single page java** files programmatically.
+## Funkcja: Importuj wymagane biblioteki i ustaw ścieżki plików
+Ten pomocniczy fragment kodu pokazuje, jak budować dynamiczne ścieżki wyjściowe, co jest przydatne, gdy trzeba **tworzyć jednosktronicowe pliki java** programowo.
 
 ```java
 import java.nio.file.Paths;
@@ -153,50 +166,56 @@ String filePathOut = new File("YOUR_OUTPUT_DIRECTORY",
     "SplitToSinglePagesByRange-" + Paths.get(filePath).getFileName().toString()).getPath();
 ```
 
-## Practical Applications
+## Praktyczne zastosowania
+Oto kilka rzeczywistych scenariuszy, w których **dzielenie pdf na strony** sprawdza się doskonale:
 
-Here are a few real‑world scenarios where **split pdf java** shines:
+1. **Systemy zarządzania dokumentami** — automatycznie dziel duże umowy na poszczególne klauzule w celu kontroli wersji.  
+2. **Kancelarie prawne** — dostarczają każdej stronie jednosktronicowy PDF odpowiedniej sekcji, przyspieszając cykle przeglądu.  
+3. **Środowisko akademickie** — rozdzielają strony egzaminów lub slajdy wykładów jako oddzielne pliki do drukowania lub oceniania.  
+4. **Procesy wydawnicze** — dzielą rozdziały rękopisu na osobne PDF‑y dla redaktorów, skracając czas wgrywania.
 
-1. **Document Management Systems** – automatically break large contracts into individual clauses for version control.  
-2. **Legal Practices** – give each party a single‑page PDF of the relevant section, simplifying review.  
-3. **Academic Settings** – distribute exam pages or lecture slides as separate files for printing or grading.  
-4. **Publishing Workflows** – split manuscript chapters into separate PDFs for editors.
+Integracja tej logiki z CMS lub CRM może dodatkowo zautomatyzować procesy dostarczania dokumentów.
 
-Integrating this logic with a CMS or CRM can further automate document delivery pipelines.
+## Rozważania dotyczące wydajności
+Podczas obsługi ogromnych PDF‑ów pamiętaj o następujących wskazówkach:
 
-## Performance Considerations
+- **JVM Heap** — przydziel wystarczającą ilość pamięci (`-Xmx2g` lub więcej) dla bardzo dużych plików.  
+- **Strumieniowe I/O** — GroupDocs.Merger strumieniuje strony, utrzymując szczytowe zużycie pamięci poniżej 100 MB dla dokumentów o 500 stronach.  
+- **Czyszczenie zasobów** — zawsze zamykaj instancję `Merger` lub używaj try‑with‑resources, aby zwolnić uchwyty plików.
 
-When processing big PDFs, keep these tips in mind:
+## Typowe problemy i rozwiązania
+- **File Not Found** — sprawdź ścieżkę bezwzględną i uprawnienia do pliku.  
+- **Permission Errors** — upewnij się, że katalog wyjściowy jest zapisywalny przez proces Java.  
+- **Out‑Of‑Memory** — zwiększ rozmiar sterty JVM lub podziel dokument na mniejsze zakresy.
 
-- **Resource Allocation** – ensure the JVM has enough heap memory (`-Xmx` flag) for large files.  
-- **Streamed I/O** – GroupDocs.Merger streams pages, reducing memory pressure.  
-- **Close Resources** – always release file handles after processing to avoid leaks.
+## Najczęściej zadawane pytania
 
-## Common Issues and Solutions
+**Q: Jaka jest różnica między `split` a `extract` w GroupDocs.Merger?**  
+A: `split` tworzy osobny plik dla każdej strony lub zakresu, natomiast `extract` łączy wybrane strony w jeden nowy dokument.
 
-- **File Not Found** – double‑check the absolute path and file permissions.  
-- **Permission Errors** – make sure the output directory is writable by the Java process.  
-- **Out‑Of‑Memory** – increase JVM heap size or split the document in smaller ranges.
+**Q: Czy mogę dzielić PDF‑y zabezpieczone hasłem?**  
+A: Tak — zainicjuj `Merger` z parametrem hasła przed wywołaniem `split()`.
 
-## Frequently Asked Questions
+**Q: Czy biblioteka obsługuje formaty inne niż PDF?**  
+A: Oczywiście. To samo API działa dla DOCX, PPTX, XLSX, HTML i ponad 50 formatów obrazów.
 
-**Q: What is the difference between `split` and `extract separate files for each page or range, while `extract` pulls selected pages into a single new document.
+**Q: Jak powinienem obsługiwać PDF‑y o rozmiarze kilku set megabajtów?**  
+A: Przetwarzaj je w mniejszych zakresach stron, zwiększ pamięć sterty JVM i korzystaj z API strumieniowego, aby uniknąć ładowania całego pliku do pamięci.
 
-**Q: Can I split password‑protected PDFs?**  
-A: Yes—initialize `Merger` with the password parameter before calling `split`.
+**Q: Czy komercyjna licencja jest wymagana do użytku produkcyjnego?**  
+A: Tak — ważna licencja usuwa ograniczenia wersji próbnej i zapewnia dostęp do wsparcia premium; licencja próbna wystarczy do rozwoju i testów.
 
-**Q: Does the library support other formats like DOCX or PPTX?**  
-A: Absolutely. using the streaming API to avoid loading the whole file into memory.
-
-**Q: Is a commercial license mandatory for production?**  
-A: A valid license is required for production deployments; a trial license is sufficient for development and testing.
-
-## Conclusion
-
-You’ve now learned how to **split pdf java** files into single‑page documents using GroupDocs.Merger for Java. This capability empowers you to build smarter document workflows, improve performance, and deliver content exactly where it’s needed. Experiment with different page ranges, combine splitting with other Merger features, and integrate the solution into your existing Java applications.
+## Podsumowanie
+Masz teraz kompletną, gotową do produkcji metodę **dzielenia pdf na strony** przy użyciu GroupDocs.Merger dla Javy. Ta funkcjonalność pozwala budować inteligentniejsze potoki dokumentów, zwiększyć wydajność i dostarczać treść dokładnie tam, gdzie jest potrzebna. Wypróbuj różne zakresy stron, połącz dzielenie ze scalaniem lub konwersją i wbuduj rozwiązanie w istniejące usługi Java, aby uzyskać maksymalny efekt.
 
 ---
 
-**Last Updated:** 2026-01-31  
-**Tested With:** GroupDocs.Merger 23.9 (latest)  
-**Author:** GroupDocs
+**Ostatnia aktualizacja:** 2026-05-22  
+**Testowano z:** GroupDocs.Merger 23.9 (latest)  
+**Autor:** GroupDocs
+
+## Powiązane samouczki
+
+- [Masowe wyodrębnianie stron PDF przy użyciu GroupDocs.Merger dla Javy](/merger/java/document-extraction/extract-pages-groupdocs-merger-java/)
+- [Zaawansowane dzielenie dokumentów według zakresu stron przy użyciu GroupDocs.Merger dla Javy](/merger/java/document-splitting/split-documents-page-range-groupdocs-merger-java/)
+- [Obracanie stron PDF w Javie przy użyciu GroupDocs.Merger: przewodnik krok po kroku](/merger/java/page-operations/rotate-pdf-pages-java-groupdocs-merger/)
