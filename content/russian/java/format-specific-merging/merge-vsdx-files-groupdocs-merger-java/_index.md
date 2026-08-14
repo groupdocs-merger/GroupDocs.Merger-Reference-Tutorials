@@ -1,26 +1,22 @@
 ---
-title: "How to Merge VSDX Files Using GroupDocs.Merger for Java: A Step-by-Step Guide"
-description: "Learn how to merge VSDX files and discover how to merge vsdx efficiently with GroupDocs.Merger for Java in this comprehensive tutorial."
-date: "2026-06-01"
-weight: 1
-url: "/java/format-specific-merging/merge-vsdx-files-groupdocs-merger-java/"
+date: '2026-06-01'
+description: Узнайте, как объединять файлы VSDX, и откройте для себя эффективные способы
+  слияния VSDX с помощью GroupDocs.Merger for Java в этом подробном руководстве.
 keywords:
-  - how to merge vsdx
-  - GroupDocs.Merger Java tutorial
-  - merge Visio files Java
-type: docs
+- how to merge vsdx
+- GroupDocs.Merger Java tutorial
+- merge Visio files Java
 schemas:
-- type: TechArticle
+- author: GroupDocs
+  dateModified: '2026-06-01'
+  description: Learn how to merge VSDX files and discover how to merge vsdx efficiently
+    with GroupDocs.Merger for Java in this comprehensive tutorial.
   headline: 'How to Merge VSDX Files Using GroupDocs.Merger for Java: A Step-by-Step
     Guide'
-  description: Learn how to merge VSDX files and discover how to merge vsdx efficiently
+  type: TechArticle
+- description: Learn how to merge VSDX files and discover how to merge vsdx efficiently
     with GroupDocs.Merger for Java in this comprehensive tutorial.
-  dateModified: '2026-06-01'
-  author: GroupDocs
-- type: HowTo
   name: 'How to Merge VSDX Files Using GroupDocs.Merger for Java: A Step-by-Step Guide'
-  description: Learn how to merge VSDX files and discover how to merge vsdx efficiently
-    with GroupDocs.Merger for Java in this comprehensive tutorial.
   steps:
   - name: Load a Source VSDX File
     text: '**Definition anchor:** The `Merger` class is the core entry point for all
@@ -37,50 +33,56 @@ schemas:
       document to a physical file on the file system. Set the output location: Invoke
       `save()` to persist the result: The merged document will be saved at the location
       you specified.'
-- type: FAQPage
-  questions:
-  - question: Can I merge more than two VSDX files at once?
-    answer: Yes. Call `join()` repeatedly or pass a list of file paths to merge any
+  type: HowTo
+- questions:
+  - answer: Yes. Call `join()` repeatedly or pass a list of file paths to merge any
       number of documents sequentially.
-  - question: Does GroupDocs.Merger support password‑protected VSDX files?
-    answer: The library can open encrypted Visio files when you provide the password
+    question: Can I merge more than two VSDX files at once?
+  - answer: The library can open encrypted Visio files when you provide the password
       via the `LoadOptions` object.
-  - question: What is the maximum file size I can merge?
-    answer: Tested merges handle files up to **500 MB** without exhausting memory,
+    question: Does GroupDocs.Merger support password‑protected VSDX files?
+  - answer: Tested merges handle files up to **500 MB** without exhausting memory,
       thanks to the streaming architecture.
-  - question: Is a commercial license required for production use?
-    answer: Yes. A free trial is ideal for evaluation, but a valid license is mandatory
+    question: What is the maximum file size I can merge?
+  - answer: Yes. A free trial is ideal for evaluation, but a valid license is mandatory
       for any production deployment.
-  - question: Can I integrate this merge process into a web service?
-    answer: Absolutely. The API is thread‑safe and can be called from REST endpoints
+    question: Is a commercial license required for production use?
+  - answer: Absolutely. The API is thread‑safe and can be called from REST endpoints
       or background jobs.
+    question: Can I integrate this merge process into a web service?
+  type: FAQPage
+title: 'Как объединить файлы VSDX с помощью GroupDocs.Merger for Java: пошаговое руководство'
+type: docs
+url: /ru/java/format-specific-merging/merge-vsdx-files-groupdocs-merger-java/
+weight: 1
 ---
-# How to Merge VSDX Files Using GroupDocs.Merger for Java: A Step-by-Step Guide
 
-In today's fast‑paced digital environment, **how to merge vsdx** files is a question many developers ask. Whether you're consolidating architectural diagrams, combining process flows, or assembling a portfolio of Visio drawings, merging Microsoft Visio (.vsdx) files efficiently saves time and reduces errors. This tutorial walks you through using GroupDocs.Merger for Java to merge VSDX files quickly, reliably, and with full control over the output.
+# Как объединить файлы VSDX с помощью GroupDocs.Merger для Java: пошаговое руководство
 
-## Quick Answers
+В современном быстро меняющемся цифровом мире **how to merge vsdx** файлы — вопрос, который задают многие разработчики. Независимо от того, консолидируете ли вы архитектурные диаграммы, объединяете потоки процессов или собираете портфолио чертежей Visio, эффективное объединение файлов Microsoft Visio (.vsdx) экономит время и снижает количество ошибок. В этом руководстве мы покажем, как использовать GroupDocs.Merger для Java, чтобы быстро, надёжно и с полным контролем над результатом объединять файлы VSDX.
+
+## Быстрые ответы
 - **What library handles VSDX merging in Java?** GroupDocs.Merger for Java.  
 - **Minimum Java version?** JDK 8 or higher.  
 - **Do I need a license for testing?** A free trial works for evaluation; a license is required for production.  
 - **Can I merge more than two files?** Yes – call `join()` repeatedly or pass a list.  
 - **Is memory usage a concern?** The API streams data, allowing merges of files up to 500 MB without loading the entire document into memory.
 
-## What is GroupDocs.Merger for Java?
-GroupDocs.Merger for Java is a server‑side library that enables programmatic merging, splitting, and manipulation of over 50 document formats, including VSDX. It operates without Microsoft Office installed, offers a simple, fluent API, and is optimized for high‑performance processing in web, desktop, and cloud applications.
+## Что такое GroupDocs.Merger для Java?
+GroupDocs.Merger для Java — это серверная библиотека, позволяющая программно объединять, разбивать и манипулировать более чем 50 форматами документов, включая VSDX. Она работает без установки Microsoft Office, предлагает простой, «fluent» API и оптимизирована для высокопроизводительной обработки в веб‑, десктоп‑ и облачных приложениях.
 
-## Why Use GroupDocs.Merger to Merge VSDX Files?
-GroupDocs.Merger supports **50+ input and output formats** and can process **VSDX files up to 500 MB** while keeping memory consumption under 100 MB thanks to its streaming architecture. The library guarantees layout fidelity, preserving shapes, connectors, and page settings across merged diagrams, which eliminates the need for manual re‑creation.
+## Почему стоит использовать GroupDocs.Merger для объединения файлов VSDX?
+GroupDocs.Merger поддерживает **50+ входных и выходных форматов** и может обрабатывать **файлы VSDX до 500 MB**, удерживая потребление памяти ниже 100 MB благодаря потоковой архитектуре. Библиотека гарантирует сохранение макета, форм, соединителей и настроек страниц в объединённых диаграммах, что исключает необходимость ручного воссоздания.
 
-## Prerequisites
+## Требования
 
 - **Required Libraries** – Include GroupDocs.Merger for Java in your project (Maven, Gradle, or direct JAR).  
 - **Development Environment** – IntelliJ IDEA, Eclipse, or any Java‑compatible IDE with JDK 8+.  
 - **Basic Knowledge** – Familiarity with Java, Maven/Gradle dependency management, and file I/O.
 
-## Setting Up GroupDocs.Merger for Java
+## Настройка GroupDocs.Merger для Java
 
-### Using Maven
+### Использование Maven
 Add the following dependency in your `pom.xml` file:
 ```xml
 <dependency>
@@ -90,30 +92,30 @@ Add the following dependency in your `pom.xml` file:
 </dependency>
 ```
 
-### Using Gradle
+### Использование Gradle
 Include this line in your `build.gradle` file:
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-### Direct Download
+### Прямое скачивание
 Alternatively, download the latest version from [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
-#### License Acquisition Steps
+#### Шаги получения лицензии
 You can start with a free trial to evaluate GroupDocs.Merger. For extended usage, consider purchasing a license or obtaining a temporary one:
 - **Free Trial** – Access basic features for evaluation.  
 - **Temporary License** – Short‑term, full‑feature access without limitations.  
 - **Purchase** – Permanent license for production environments.
 
-### Basic Initialization and Setup
+### Базовая инициализация и настройка
 To initialize GroupDocs.Merger, simply import the library into your Java project and create an instance of `Merger`.
 
-## How to Merge VSDX Files Using GroupDocs.Merger for Java?
+## Как объединить файлы VSDX с помощью GroupDocs.Merger для Java?
 
 Load your primary Visio file, add additional VSDX documents with `join()`, and finally call `save()` to write the combined result. The complete workflow requires only three method calls and can be wrapped in a try‑with‑resources block to ensure resources are released automatically.
 
-### Step 1: Load a Source VSDX File
-**Definition anchor:** The `Merger` class is the core entry point for all merging operations in GroupDocs.Merger for Java.  
+### Шаг 1: Загрузка исходного файла VSDX
+**Определение:** The `Merger` class is the core entry point for all merging operations in GroupDocs.Merger for Java.  
 
 First, import the required classes and instantiate `Merger` with the path to your base VSDX file:
 ```java
@@ -127,8 +129,8 @@ Merger merger = new Merger(documentPath);
 ```
 Make sure `documentPath` points to a valid `.vsdx` file on disk.
 
-### Step 2: Add Another VSDX File for Merging
-**Definition anchor:** The `join()` method appends the content of a second document to the end of the currently loaded document.  
+### Шаг 2: Добавление другого файла VSDX для объединения
+**Определение:** The `join()` method appends the content of a second document to the end of the currently loaded document.  
 
 Define the additional document path:
 ```java
@@ -142,8 +144,8 @@ merger.join(additionalDocumentPath);
 ```
 `join()` can be invoked repeatedly to merge multiple files in the desired order.
 
-### Step 3: Save the Merged VSDX File
-**Definition anchor:** The `save()` method writes the in‑memory merged document to a physical file on the file system.  
+### Шаг 3: Сохранение объединённого файла VSDX
+**Определение:** The `save()` method writes the in‑memory merged document to a physical file on the file system.  
 
 Set the output location:
 ```java
@@ -159,7 +161,7 @@ merger.save(outputFile);
 ```
 The merged document will be saved at the location you specified.
 
-## Practical Applications
+## Практические применения
 
 GroupDocs.Merger for Java isn't just about merging Visio files; it's a versatile tool that fits many real‑world scenarios:
 
@@ -167,7 +169,7 @@ GroupDocs.Merger for Java isn't just about merging Visio files; it's a versatile
 2. **Report Consolidation** – Merge multiple process‑flow charts into one comprehensive report for executive review.  
 3. **Educational Materials** – Assemble a series of teaching slides created in Visio into a single learning package.
 
-## Performance Considerations
+## Соображения по производительности
 
 To keep your application responsive when handling large VSDX files, follow these best practices:
 
@@ -175,15 +177,15 @@ To keep your application responsive when handling large VSDX files, follow these
 - **Stream Large Files** – The API processes files in a streaming fashion, so you can merge files larger than available heap memory.  
 - **Avoid Unnecessary Copies** – Work with file paths instead of loading entire files into byte arrays.
 
-## Common Issues and Solutions
+## Распространённые проблемы и решения
 
-| Issue | Cause | Solution |
-|-------|-------|----------|
+| Проблема | Причина | Решение |
+|----------|---------|----------|
 | **OutOfMemoryError** | Holding references to large `Merger` objects | Close each `Merger` as soon as you finish merging; use try‑with‑resources. |
 | **Missing Shapes after Merge** | Incompatible Visio versions | Ensure all source files are saved in the same Visio version (e.g., Visio 2016). |
 | **License Not Found** | License file path incorrect | Place `GroupDocs.Merger.Java.lic` in the application root or set the license programmatically. |
 
-## Frequently Asked Questions
+## Часто задаваемые вопросы
 
 **Q: Can I merge more than two VSDX files at once?**  
 A: Yes. Call `join()` repeatedly or pass a list of file paths to merge any number of documents sequentially.
@@ -200,7 +202,7 @@ A: Yes. A free trial is ideal for evaluation, but a valid license is mandatory f
 **Q: Can I integrate this merge process into a web service?**  
 A: Absolutely. The API is thread‑safe and can be called from REST endpoints or background jobs.
 
-## Additional Resources
+## Дополнительные ресурсы
 
 - [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)
 - [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)
@@ -212,11 +214,11 @@ A: Absolutely. The API is thread‑safe and can be called from REST endpoints or
 
 ---
 
-**Last Updated:** 2026-06-01  
-**Tested With:** GroupDocs.Merger for Java 23.11  
-**Author:** GroupDocs
+**Последнее обновление:** 2026-06-01  
+**Тестировано с:** GroupDocs.Merger for Java 23.11  
+**Автор:** GroupDocs
 
-## Related Tutorials
+## Связанные руководства
 
 - [How to Merge Visio Files in Java – Master Guide with GroupDocs.Merger](/merger/java/document-joining/java-groupdocs-merger-vstm-tutorial/)
 - [How to Merge Multiple VSX Files Using GroupDocs.Merger for Java&#58; A Comprehensive Guide](/merger/java/format-specific-merging/merge-multiple-vsx-files-groupdocs-merger-java/)
