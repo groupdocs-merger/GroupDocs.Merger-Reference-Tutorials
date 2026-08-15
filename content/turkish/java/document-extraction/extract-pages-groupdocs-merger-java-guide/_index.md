@@ -1,53 +1,95 @@
 ---
-date: '2026-02-16'
-description: GroupDocs.Merger for Java kullanarak Word, PDF ve diğer belgelerden belirli
-  sayfaları, çift sayfalar da dahil olmak üzere, nasıl çıkaracağınızı öğrenin.
+date: '2026-08-15'
+description: GroupDocs.Merger for Java kullanarak java'da belirli sayfaları nasıl
+  çıkaracağınızı öğrenin; çift sayfalar ve özel aralıklar dahil. Ayrıca Java'da PDF
+  sayfalarını nasıl bölüneceğini de görün.
 keywords:
+- extract specific pages java
+- java split pdf pages
+- groupdocs merger java
+lastmod: '2026-08-15'
+og_description: GroupDocs.Merger for Java kullanarak java'da belirli sayfaları çıkarın.
+  Bu kılavuz, çift sayfaları, özel aralıkları nasıl alacağınızı ve PDF sayfalarını
+  verimli bir şekilde nasıl böleceğinizi gösterir.
+og_image_alt: Guide showing extract specific pages java using GroupDocs.Merger
+og_title: GroupDocs.Merger for Java ile java'da belirli sayfaları çıkarın
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-15'
+  description: Learn how to extract specific pages java using GroupDocs.Merger for
+    Java, including even pages and custom ranges. Also see how to split PDF pages
+    in Java.
+  headline: Extract specific pages java with GroupDocs.Merger for Java
+  type: TechArticle
+- description: Learn how to extract specific pages java using GroupDocs.Merger for
+    Java, including even pages and custom ranges. Also see how to split PDF pages
+    in Java.
+  name: Extract specific pages java with GroupDocs.Merger for Java
+  steps:
+  - name: define input and output paths
+    text: Specify the full file system paths for the source document and the destination
+      file.
+  - name: configure extraction options
+    text: '`ExtractOptions` lets you set the start page, end page, and the `RangeMode`
+      (even, odd, or custom). The example below extracts only even pages between 1
+      and 3, which means page 2 will be saved.'
+  - name: perform extraction and save the result
+    text: Invoke the `extract` method on the `Merger` instance and write the new document
+      to disk. **Pro tip:** Wrap the extraction logic in a `try‑catch` block to handle
+      `IOException` or format‑specific exceptions gracefully.
+  type: HowTo
+- questions:
+  - answer: Use `RangeMode.OddPages` when creating `ExtractOptions`.
+    question: How do I extract odd‑numbered pages?
+  - answer: Yes—GroupDocs.Merger supports PDF, DOCX, PPTX, XLSX, and many other formats.
+    question: Can I use this with PDFs?
+  - answer: The API throws an `IOException`. Verify the path and check file permissions.
+    question: What if my document path is incorrect?
+  - answer: Enclose the extraction code in a `try‑catch` block and log the exception
+      details for troubleshooting.
+    question: How should I handle exceptions during extraction?
+  - answer: There’s no hard limit, but extracting very large ranges may require additional
+      heap memory.
+    question: Is there a limit on the number of pages I can extract?
+  type: FAQPage
+tags:
 - extract pages java
-- groupdocs merger for java
-- page extraction by range
-title: GroupDocs.Merger for Java ile Aralık Kullanarak Belirli Sayfaları Çıkar
+- GroupDocs.Merger
+- Java document processing
+- page extraction
+- PDF split java
+title: GroupDocs.Merger for Java ile java'da belirli sayfaları çıkarın
 type: docs
 url: /tr/java/document-extraction/extract-pages-groupdocs-merger-java-guide/
 weight: 1
 ---
 
-# How to Extract Specific Pages by Range Using GroupDocs.Merger for Java
+# GroupDocs.Merger for Java ile belirli sayfaları java olarak çıkarma
 
-Eğer büyük bir belgeden **belirli sayfaları çıkarmak** istiyorsanız—ister bir Word sözleşmesi, bir PDF raporu ya da bir PowerPoint sunumu olsun—bu rehber, GroupDocs.Merger for Java ile bunu temiz ve programatik bir şekilde nasıl yapacağınızı gösterir. Sayfaları aralıkla çıkarmanın neden önemli olduğunu, çift numaralı sayfaları nasıl hedefleyeceğinizi ve çözümü mevcut Java projenize nasıl entegre edeceğinizi öğreneceksiniz.
+Bu öğreticide, GroupDocs.Merger for Java kullanarak desteklenen herhangi bir belge türünden—Word, PDF, PowerPoint, Excel ve daha fazlasından—**extract specific pages java** nasıl çıkarılacağını öğreneceksiniz. Aralık‑tabanlı çıkarmanın neden önemli olduğunu, çift numaralı sayfaları nasıl hedefleyeceğinizi ve çözümü standart bir Java projesine nasıl entegre edeceğinizi göreceksiniz.
 
-**What You’ll Learn**
-- Desteklenen herhangi bir belge türünden belirli sayfaları çıkarmak için adım‑adım süreç.  
-- Çift sayfalar, tek sayfalar veya özel sayfa listeleri gibi aralık seçeneklerini nasıl yapılandıracağınız.  
-- Büyük dosyalarla çalışırken dikkat edilmesi gereken ipuçları ve yaygın tuzaklardan kaçınma yöntemleri.
+## Hızlı cevaplar
+- **“extract specific pages” ne anlama geliyor?** Daha büyük bir belgeden yalnızca ihtiyacınız olan sayfaları seçmek ve yeni bir dosya olarak kaydetmek anlamına gelir.  
+- **Hangi formatlar destekleniyor?** Word, PDF, PowerPoint, Excel, HTML, görüntüler ve 30+ diğer format.  
+- **Sadece çift sayfaları çıkarabilir miyim?** Evet—çıkarma seçeneklerinde `RangeMode.EvenPages` ayarlayın.  
+- **Lisans gerekiyor mu?** Test için ücretsiz deneme çalışır; üretim kullanımı için tam lisans gereklidir.  
+- **Kaç satır kod gerekiyor?** Özel bir aralık çıkarmak için 20 satırdan az kod yeterlidir.
 
-## Quick Answers
-- **What does “extract specific pages” mean?** Daha büyük bir belgeden yalnızca ihtiyacınız olan sayfaları seçmek.  
-- **Which formats are supported?** Word, PDF, PowerPoint, Excel ve daha birçok format.  
-- **Can I extract even pages only?** Evet—`RangeMode.EvenPages` kullanın.  
-- **Do I need a license?** Test için ücretsiz deneme sürümü yeterlidir; üretim için lisans gereklidir.  
-- **How many lines of code?** Bir aralığı çıkarmak için 20 satırdan az kod.
+## extract specific pages java nedir?
+Extract specific pages java, bir kaynak belgeden sayfaların bir alt kümesini programatik olarak alıp yeni, bağımsız bir dosya oluşturma işlemini ifade eder. Bu teknik, yalnızca bir sözleşme maddesine, tek bir bölüme veya bir grup faturaya ihtiyacınız olduğunda, tüm belgeyi göndermenin getirdiği yükten kaçınmak için gereklidir.
 
-## What Is “Extract Specific Pages”?
-Belirli sayfaları çıkarmak, bir kaynak belgeden bir alt küme sayfayı alıp yeni, bağımsız bir dosya olarak kaydetmek anlamına gelir. Bu, bir sözleşme maddesi, bir bölüm ya da bir dizi fatura gibi yalnızca belirli bölümlere ihtiyacınız olduğunda, tüm belgeyi göndermeden faydalıdır.
+## Neden aralıkla belirli sayfaları çıkaralım?
+Aralıkla belirli sayfaları çıkarmak dosya boyutunu azaltır, hassas bölümleri korur ve e‑imza, otomatik raporlama veya toplu indeksleme gibi sonraki süreçleri hızlandırır. GroupDocs.Merger ile tek bir API çağrısında 1‑5 sayfaları, her çift sayfayı veya herhangi bir rastgele listeyi talep edebilir, manuel düzenlemeyi ortadan kaldırıp değerli geliştirme süresini tasarruf edersiniz.
 
-## Why Extract Specific Pages by Range?
-Hedef odaklı sayfa çıkarma, dosya boyutunu küçültür, hassas bilgileri korur ve sonraki işlemleri (ör. e‑imza veya otomatik raporlama) hızlandırır. Aralığa dayalı çıkarma sayesinde programatik olarak 1‑5. sayfaları, tüm çift sayfaları ya da herhangi bir özel listeyi manuel düzenleme yapmadan seçebilirsiniz.
+## Önkoşullar
+- **GroupDocs.Merger for Java** Maven veya Gradle bağımlılığı olarak eklenmiş.  
+- **JDK 8** veya daha yeni bir sürüm, geliştirme makinenizde kurulu ve yapılandırılmış.  
+- Java dosya I/O ve istisna yönetimi konusunda temel bilgi.
 
-## Prerequisites
+## GroupDocs.Merger for Java Kurulumu
 
-Başlamadan önce şunların olduğundan emin olun:
-
-1. **Required Libraries** – Maven ya da Gradle bağımlılığı olarak eklenmiş GroupDocs.Merger for Java.  
-2. **JDK** – Java Development Kit 8 veya daha yeni bir sürüm yüklü ve yapılandırılmış.  
-3. **Basic Java Knowledge** – Dosya I/O ve istisna yönetimi konularına aşina olmak.
-
-## Setting Up GroupDocs.Merger for Java
-
-### Maven Setup
-
-`pom.xml` dosyanıza aşağıdaki bağımlılığı ekleyin:
-
+### Maven kurulumu
+Bağımlılığı `pom.xml` dosyanıza ekleyin:
 ```xml
 <dependency>
     <groupId>com.groupdocs</groupId>
@@ -56,28 +98,23 @@ Başlamadan önce şunların olduğundan emin olun:
 </dependency>
 ```
 
-### Gradle Setup
-
-`build.gradle` dosyanıza aşağıdaki satırı ekleyin:
-
+### Gradle kurulumu
+Bağımlılığı `build.gradle` dosyanıza ekleyin:
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-### Direct Download
+### Doğrudan indirme
+En son ikili dosyaları [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) adresinden de edinebilirsiniz.
 
-En yeni ikili dosyaları ayrıca [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) adresinden indirebilirsiniz.
+#### Lisans edinme adımları
+1. **Ücretsiz deneme** – API'yi keşfetmek için bir deneme sürümü indirin.  
+2. **Geçici lisans** – genişletilmiş test için geçici bir anahtar talep edin.  
+3. **Satın al** – üretim kullanımı için tam lisans satın alın.
 
-#### License Acquisition Steps
-
-1. **Free Trial** – API’yı keşfetmek için bir deneme sürümü indirin.  
-2. **Temporary License** – Uzun vadeli test için geçici bir anahtar talep edin.  
-3. **Purchase** – Üretim kullanımı için tam lisans satın alın.
-
-### Basic Initialization and Setup
-
-`Merger` örneği oluşturmak için gereken minimum kod aşağıdadır:
-
+### Temel başlatma ve kurulum
+Aşağıda bir `Merger` örneği oluşturmak için gereken en az kod verilmiştir:
+`Merger` sınıfı, bir belgeyi yükleyen ve çıkarma işlemlerini sağlayan temel API nesnesidir.
 ```java
 import com.groupdocs.merger.Merger;
 
@@ -85,21 +122,18 @@ String filePath = "YOUR_DOCUMENT_DIRECTORY/YourDocument.docx";
 Merger merger = new Merger(filePath);
 ```
 
-## How to Extract Specific Pages by Range
+## Aralıkla belirli sayfaları nasıl çıkarılır
+Kaynak belgenizi yükleyin, çıkarma seçeneklerini yapılandırın ve sonucu kaydedin—tüm bunlar üç basit adımda.
 
-Şimdi, özel bir aralık içinde çift numaralı sayfaları nasıl çıkaracağınızı adım adım inceleyelim.
-
-### Step 1: Define Input and Output Paths
-
+### Adım 1: giriş ve çıkış yollarını tanımlayın
+Kaynak belge ve hedef dosya için tam dosya sistemi yollarını belirtin.
 ```java
 String filePath = "YOUR_DOCUMENT_DIRECTORY/YourDocument.docx";
 String filePathOut = "YOUR_OUTPUT_DIRECTORY/ExtractedPages.docx";
 ```
 
-### Step 2: Configure Extraction Options
-
-`ExtractOptions` başlangıç sayfasını, bitiş sayfasını ve `RangeMode` (ör. even, odd, or custom) belirlemenizi sağlar. Aşağıdaki örnek, 1 ile 3 arasındaki yalnızca çift sayfaları (sayfa 2) çıkarır ve kaydeder.
-
+### Adım 2: çıkarma seçeneklerini yapılandırın
+`ExtractOptions` başlangıç sayfasını, bitiş sayfasını ve `RangeMode` (çift, tek veya özel) ayarlamanıza olanak tanır. Aşağıdaki örnek 1 ile 3 arasındaki sadece çift sayfaları çıkarır, yani sayfa 2 kaydedilir.
 ```java
 import com.groupdocs.merger.domain.options.ExtractOptions;
 import com.groupdocs.merger.domain.options.RangeMode;
@@ -108,8 +142,8 @@ import com.groupdocs.merger.domain.options.RangeMode;
 ExtractOptions extractOptions = new ExtractOptions(1, 3, RangeMode.EvenPages);
 ```
 
-### Step 3: Perform Extraction and Save the Result
-
+### Adım 3: çıkarma işlemini gerçekleştir ve sonucu kaydet
+`Merger` örneği üzerinde `extract` metodunu çağırın ve yeni belgeyi diske yazın.
 ```java
 // Initialize Merger with input document path
 Merger merger = new Merger(filePath);
@@ -121,62 +155,65 @@ merger.extractPages(extractOptions);
 merger.save(filePathOut);
 ```
 
-**Pro tip:** Çıkarma mantığını bir `try‑catch` bloğu içinde tutarak `IOException` ya da format‑spesifik istisnaları sorunsuz bir şekilde ele alın.
+**Pro ipucu:** Çıkarma mantığını `try‑catch` bloğu içinde sararak `IOException` veya format‑özel istisnaları nazikçe ele alın.
 
-## Practical Applications
+## Pratik uygulamalar
 
-| Scenario | How Extraction Helps |
-|----------|----------------------|
-| **Legal Review** | Hızlı analiz için yalnızca ihtiyacınız olan maddeleri çıkarın. |
-| **Academic Research** | Ders kitaplarından bölümleri ya da bölümleri alıntı için izole edin. |
-| **Financial Reporting** | Çok sayfalı raporlardan tablo ya da beyanları çıkarın. |
+| Senaryo | Çıkarma nasıl yardımcı olur |
+|----------|-----------------------------|
+| **Hukuki inceleme** | Hızlı analiz için yalnızca ihtiyacınız olan maddeleri çekin, gizli bölümleri gizli tutun. |
+| **Akademik araştırma** | Alıntı veya çevrim dışı okuma için ders kitaplarından bölümleri ya da kısımları izole edin. |
+| **Finansal raporlama** | Çok sayfalı raporlardan tabloları veya beyanları çıkarın, e‑posta dağıtımı için dosya boyutunu azaltın. |
 
-## Performance Considerations
+## Performans dikkate alınması gerekenler
+- **Bellek yönetimi** – Büyük PDF'ler önemli miktarda yığın alanı tüketebilir. `OutOfMemoryError` ile karşılaşırsanız JVM yığınını (`-Xmx2g`) artırın.  
+- **Dosya I/O** – Büyük dosyaları okurken/yazarken tamponlu akışlar kullanarak disk gecikmesini azaltın.  
+- **Toplu işleme** – Birçok belgeden aralıklar çıkarırken, belgeleri sıralı işleyin veya sistem kaynaklarını tüketmemek için kontrol edilen eşzamanlılıkla bir iş parçacığı havuzu kullanın.
 
-- **Memory Management** – Büyük PDF’ler önemli miktarda heap alanı tüketebilir. `OutOfMemoryError` alırsanız JVM heap’ini (`-Xmx2g`) artırın.  
-- **File I/O** – Büyük dosyaları okurken/yazarken disk gecikmesini azaltmak için tamponlu akışlar (buffered streams) kullanın.  
-- **Batch Processing** – Birçok belgeden aralık çıkarmanız gerekiyorsa, bunları sıralı işleyin ya da kontrollü eşzamanlılık sağlayan bir iş parçacığı havuzu (thread pool) kullanın.
+## Yaygın sorunlar ve çözümler
 
-## Common Issues and Solutions
+| Sorun | Çözüm |
+|-------|-------|
+| **Geçersiz dosya yolu** | Tam yolu doğrulayın ve uygulamanın okuma/yazma izinlerine sahip olduğundan emin olun. |
+| **Desteklenmeyen format** | Belge tipinin (örn. DOCX, PDF) desteklenen formatlar listesinde olduğundan emin olun. |
+| **Bellek yetersizliği hataları** | Büyük dosyaları daha küçük parçalar halinde işleyin veya JVM yığın boyutunu (`-Xmx`) artırın. |
+| **RangeMode beklendiği gibi çalışmıyor** | Başlangıç/bitiş değerlerini iki kez kontrol edin ve belgenin sayfa sayısı içinde olduklarından emin olun. |
 
-| Issue | Solution |
-|-------|----------|
-| **Invalid file path** | Tam yolu doğrulayın ve uygulamanın okuma/yazma izinlerine sahip olduğundan emin olun. |
-| **Unsupported format** | Belge tipinin (ör. DOCX, PDF) desteklenen formatlar listesinde yer aldığını kontrol edin. |
-| **Out‑of‑memory errors** | Büyük dosyaları daha küçük parçalar halinde işleyin ya da JVM heap boyutunu (`-Xmx`) artırın. |
-| **RangeMode not behaving as expected** | Başlangıç/bitiş değerlerini tekrar kontrol edin ve belgenin sayfa sayısı içinde olduklarından emin olun. |
+## Sıkça sorulan sorular
 
-## Frequently Asked Questions
-
-**Q: How do I extract odd‑numbered pages?**  
+**Q: Tek sayılı sayfaları nasıl çıkarırım?**  
 A: `ExtractOptions` oluştururken `RangeMode.OddPages` kullanın.
 
-**Q: Can I use this with PDFs?**  
-A: Evet, GroupDocs.Merger PDF, DOCX, PPTX, XLSX ve birçok diğer formatı destekler.
+**Q: Bunu PDF'lerle kullanabilir miyim?**  
+A: Evet—GroupDocs.Merger PDF, DOCX, PPTX, XLSX ve birçok diğer formatı destekler.
 
-**Q: What if my document path is incorrect?**  
+**Q: Belge yolum yanlış olursa ne olur?**  
 A: API bir `IOException` fırlatır. Yolu doğrulayın ve dosya izinlerini kontrol edin.
 
-**Q: How should I handle exceptions during extraction?**  
+**Q: Çıkarma sırasında istisnaları nasıl ele almalı?**  
 A: Çıkarma kodunu bir `try‑catch` bloğu içinde tutun ve sorun giderme için istisna detaylarını kaydedin.
 
-**Q: Is there a limit on the number of pages I can extract?**  
-A: Katı bir limit yoktur, ancak çok büyük çıkarımlar daha fazla heap belleği gerektirebilir.
+**Q: Çıkarabileceğim sayfa sayısında bir limit var mı?**  
+A: Katı bir limit yok, ancak çok büyük aralıklar çıkarmak ek yığın belleği gerektirebilir.
 
-## Resources
+## Kaynaklar
+- [Dokümantasyon](https://docs.groupdocs.com/merger/java/)
+- [API Referansı](https://reference.groupdocs.com/merger/java/)
+- [GroupDocs.Merger for Java'ı İndir](https://releases.groupdocs.com/merger/java/)
+- [GroupDocs Ürünlerini Satın Al](https://purchase.groupdocs.com/buy)
+- [Ücretsiz Deneme](https://releases.groupdocs.com/merger/java/)
+- [Geçici Lisans](https://purchase.groupdocs.com/temporary-license/)
+- [Destek Forumu](https://forum.groupdocs.com/c/merger/)
 
-- [Documentation](https://docs.groupdocs.com/merger/java/)
-- [API Reference](https://reference.groupdocs.com/merger/java/)
-- [Download GroupDocs.Merger for Java](https://releases.groupdocs.com/merger/java/)
-- [Purchase GroupDocs Products](https://purchase.groupdocs.com/buy)
-- [Free Trial](https://releases.groupdocs.com/merger/java/)
-- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- [Support Forum](https://forum.groupdocs.com/c/merger/)
-
-Bu rehberi izleyerek, GroupDocs.Merger for Java kullanarak desteklenen herhangi bir belgede **belirli sayfaları çıkarmak** için güvenilir bir yönteme sahip oldunuz. İyi kodlamalar!
+Bu rehberi izleyerek, GroupDocs.Merger for Java kullanarak herhangi bir desteklenen belgeden **extract specific pages java** işlemini güvenilir bir şekilde yapabilirsiniz. Kodlamanın tadını çıkarın!
 
 ---
 
-**Last Updated:** 2026-02-16  
-**Tested With:** GroupDocs.Merger latest version (Java)  
-**Author:** GroupDocs
+**Son Güncelleme:** 2026-08-15  
+**Test Edilen:** GroupDocs.Merger en son sürüm (Java)  
+**Yazar:** GroupDocs
+
+## İlgili Öğreticiler
+- [GroupDocs.Merger for Java ile PDF'yi sayfalara böl](/merger/java/document-splitting/master-document-splitting-groupdocs-merger-java/)
+- [Belirli sayfaları java birleştir – GroupDocs.Merger ile Belgeleri Birleştir](/merger/java/document-joining/join-pages-groupdocs-merger-java-tutorial/)
+- [PDF URL'yi Java ile Nasıl Yüklenir – GroupDocs.Merger için Belge Yükleme Öğreticileri](/merger/java/document-loading/)
