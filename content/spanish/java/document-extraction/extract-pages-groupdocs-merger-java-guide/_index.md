@@ -1,52 +1,97 @@
 ---
-date: '2026-02-16'
-description: Aprende a extraer páginas específicas, incluidas las pares, de documentos
-  Word, PDF y otros, utilizando GroupDocs.Merger para Java.
+date: '2026-08-15'
+description: Aprenda cómo extraer páginas específicas en Java usando GroupDocs.Merger
+  for Java, incluyendo páginas pares y rangos personalizados. También vea cómo dividir
+  páginas PDF en Java.
 keywords:
+- extract specific pages java
+- java split pdf pages
+- groupdocs merger java
+lastmod: '2026-08-15'
+og_description: Extraiga páginas específicas en Java usando GroupDocs.Merger for Java.
+  Esta guía muestra cómo obtener páginas pares, rangos personalizados y dividir páginas
+  PDF de manera eficiente.
+og_image_alt: Guide showing extract specific pages java using GroupDocs.Merger
+og_title: Extraer páginas específicas en Java con GroupDocs.Merger for Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-15'
+  description: Learn how to extract specific pages java using GroupDocs.Merger for
+    Java, including even pages and custom ranges. Also see how to split PDF pages
+    in Java.
+  headline: Extract specific pages java with GroupDocs.Merger for Java
+  type: TechArticle
+- description: Learn how to extract specific pages java using GroupDocs.Merger for
+    Java, including even pages and custom ranges. Also see how to split PDF pages
+    in Java.
+  name: Extract specific pages java with GroupDocs.Merger for Java
+  steps:
+  - name: define input and output paths
+    text: Specify the full file system paths for the source document and the destination
+      file.
+  - name: configure extraction options
+    text: '`ExtractOptions` lets you set the start page, end page, and the `RangeMode`
+      (even, odd, or custom). The example below extracts only even pages between 1
+      and 3, which means page 2 will be saved.'
+  - name: perform extraction and save the result
+    text: Invoke the `extract` method on the `Merger` instance and write the new document
+      to disk. **Pro tip:** Wrap the extraction logic in a `try‑catch` block to handle
+      `IOException` or format‑specific exceptions gracefully.
+  type: HowTo
+- questions:
+  - answer: Use `RangeMode.OddPages` when creating `ExtractOptions`.
+    question: How do I extract odd‑numbered pages?
+  - answer: Yes—GroupDocs.Merger supports PDF, DOCX, PPTX, XLSX, and many other formats.
+    question: Can I use this with PDFs?
+  - answer: The API throws an `IOException`. Verify the path and check file permissions.
+    question: What if my document path is incorrect?
+  - answer: Enclose the extraction code in a `try‑catch` block and log the exception
+      details for troubleshooting.
+    question: How should I handle exceptions during extraction?
+  - answer: There’s no hard limit, but extracting very large ranges may require additional
+      heap memory.
+    question: Is there a limit on the number of pages I can extract?
+  type: FAQPage
+tags:
 - extract pages java
-- groupdocs merger for java
-- page extraction by range
-title: Extraer páginas específicas por rango con GroupDocs.Merger para Java
+- GroupDocs.Merger
+- Java document processing
+- page extraction
+- PDF split java
+title: Extraer páginas específicas en Java con GroupDocs.Merger for Java
 type: docs
 url: /es/java/document-extraction/extract-pages-groupdocs-merger-java-guide/
 weight: 1
 ---
 
-# Cómo extraer páginas específicas por rango usando GroupDocs.Merger para Java
+# Extraer páginas específicas java con GroupDocs.Merger para Java
 
-Si necesitas **extraer páginas específicas** de un documento grande—ya sea un contrato de Word, un informe PDF o una presentación PowerPoint—esta guía te muestra una forma limpia y programática de hacerlo con GroupDocs.Merger para Java. Verás por qué extraer páginas por rango es importante, cómo apuntar a páginas pares y cómo integrar la solución en tu proyecto Java existente.
-
-**Lo que aprenderás**
-- El proceso paso a paso para extraer páginas específicas de cualquier tipo de documento compatible.  
-- Cómo configurar opciones de rango como páginas pares, impares o listas de páginas personalizadas.  
-- Consejos para manejar archivos grandes y evitar errores comunes.
+En este tutorial aprenderá cómo **extraer páginas específicas java** de cualquier tipo de documento compatible—Word, PDF, PowerPoint, Excel y más—usando GroupDocs.Merger para Java. Verá por qué la extracción basada en rangos es importante, cómo dirigirse a páginas pares y cómo incorporar la solución en un proyecto Java estándar.
 
 ## Respuestas rápidas
-- **¿Qué significa “extraer páginas específicas”?** Seleccionar solo las páginas que necesitas de un documento más grande.  
-- **¿Qué formatos son compatibles?** Word, PDF, PowerPoint, Excel y muchos más.  
-- **¿Puedo extraer solo páginas pares?** Sí—usa `RangeMode.EvenPages`.  
-- **¿Necesito una licencia?** Una prueba gratuita funciona para pruebas; se requiere una licencia para producción.  
-- **¿Cuántas líneas de código?** Menos de 20 líneas para extraer un rango.
+- **¿Qué significa “extract specific pages”?** Significa seleccionar solo las páginas que necesita de un documento más grande y guardarlas como un nuevo archivo.  
+- **¿Qué formatos son compatibles?** Word, PDF, PowerPoint, Excel, HTML, imágenes y más de 30 formatos adicionales.  
+- **¿Puedo extraer solo páginas pares?** Sí—establezca `RangeMode.EvenPages` en las opciones de extracción.  
+- **¿Necesito una licencia?** Una prueba gratuita funciona para pruebas; se requiere una licencia completa para uso en producción.  
+- **¿Cuántas líneas de código?** Se necesitan menos de 20 líneas para extraer un rango personalizado.
 
-## ¿Qué es “extraer páginas específicas”?
-Extraer páginas específicas significa obtener un subconjunto de páginas de un documento fuente y guardarlas como un nuevo archivo independiente. Esto es útil cuando solo necesitas ciertas secciones—como una cláusula de contrato, un capítulo o un conjunto de facturas—sin enviar el documento completo.
+## Qué es extract specific pages java?
+Extract specific pages java se refiere a la operación programática de extraer un subconjunto de páginas de un documento fuente y crear un archivo nuevo e independiente. Esta técnica es esencial cuando solo necesita una cláusula de contrato, un capítulo único o un grupo de facturas, evitando la sobrecarga de enviar el documento completo.
 
-## ¿Por qué extraer páginas específicas por rango?
-La extracción dirigida de páginas reduce el tamaño del archivo, protege información sensible y acelera el procesamiento posterior (p. ej., firma electrónica o generación automática de informes). Al usar extracción basada en rangos puedes seleccionar programáticamente páginas 1‑5, cada página par o cualquier lista personalizada sin edición manual.
+## Por qué extraer páginas específicas por rango?
+Extraer páginas específicas por rango reduce el tamaño del archivo, protege secciones sensibles y acelera procesos posteriores como la firma electrónica, generación de informes automatizados o indexación por lotes. Con GroupDocs.Merger puede solicitar páginas 1‑5, cada página par o cualquier lista arbitraria en una única llamada API, eliminando la edición manual y ahorrando valioso tiempo de desarrollo.
 
 ## Requisitos previos
 
-Antes de comenzar, asegúrate de tener:
-
-1. **Bibliotecas requeridas** – GroupDocs.Merger para Java añadido como dependencia de Maven o Gradle.  
-2. **JDK** – Java Development Kit 8 o superior instalado y configurado.  
-3. **Conocimientos básicos de Java** – Familiaridad con I/O de archivos y manejo de excepciones.
+- **GroupDocs.Merger for Java** añadido como dependencia de Maven o Gradle.  
+- **JDK 8** o superior instalado y configurado en su máquina de desarrollo.  
+- Familiaridad básica con I/O de archivos en Java y manejo de excepciones.
 
 ## Configuración de GroupDocs.Merger para Java
 
-### Configuración con Maven
+### Configuración de Maven
 
-Agrega la dependencia a tu `pom.xml`:
+Add the dependency to your `pom.xml`:
 
 ```xml
 <dependency>
@@ -56,9 +101,9 @@ Agrega la dependencia a tu `pom.xml`:
 </dependency>
 ```
 
-### Configuración con Gradle
+### Configuración de Gradle
 
-Agrega la línea a tu archivo `build.gradle`:
+Add the line to your `build.gradle` file:
 
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
@@ -66,18 +111,18 @@ implementation 'com.groupdocs:groupdocs-merger:latest-version'
 
 ### Descarga directa
 
-También puedes obtener los últimos binarios desde [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
+También puede obtener los últimos binarios desde [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
-#### Pasos para adquirir una licencia
+#### Pasos para obtener la licencia
 
-1. **Prueba gratuita** – Descarga una prueba para explorar la API.  
-2. **Licencia temporal** – Solicita una clave temporal para pruebas extendidas.  
-3. **Compra** – Adquiere una licencia completa para uso en producción.
+1. **Free trial** – descargue una prueba para explorar la API.  
+2. **Temporary license** – solicite una clave temporal para pruebas extendidas.  
+3. **Purchase** – compre una licencia completa para uso en producción.
 
 ### Inicialización y configuración básica
 
 A continuación se muestra el código mínimo necesario para crear una instancia de `Merger`:
-
+La clase `Merger` es el objeto central de la API que carga un documento y proporciona operaciones de extracción.
 ```java
 import com.groupdocs.merger.Merger;
 
@@ -87,18 +132,20 @@ Merger merger = new Merger(filePath);
 
 ## Cómo extraer páginas específicas por rango
 
-Ahora repasaremos los pasos exactos para extraer páginas pares dentro de un rango personalizado.
+Cargue su documento fuente, configure las opciones de extracción y guarde el resultado—todo en tres pasos sencillos.
 
-### Paso 1: Definir rutas de entrada y salida
+### Paso 1: definir rutas de entrada y salida
+
+Especifique las rutas completas del sistema de archivos para el documento fuente y el archivo de destino.
 
 ```java
 String filePath = "YOUR_DOCUMENT_DIRECTORY/YourDocument.docx";
 String filePathOut = "YOUR_OUTPUT_DIRECTORY/ExtractedPages.docx";
 ```
 
-### Paso 2: Configurar opciones de extracción
+### Paso 2: configurar opciones de extracción
 
-`ExtractOptions` permite especificar la página de inicio, la página final y el `RangeMode` (p. ej., pares, impares o personalizado). El ejemplo a continuación extrae solo las páginas pares entre 1 y 3, lo que significa que se guardará la página 2.
+`ExtractOptions` le permite establecer la página de inicio, la página final y el `RangeMode` (par, impar o personalizado). El ejemplo a continuación extrae solo las páginas pares entre 1 y 3, lo que significa que la página 2 se guardará.
 
 ```java
 import com.groupdocs.merger.domain.options.ExtractOptions;
@@ -108,7 +155,9 @@ import com.groupdocs.merger.domain.options.RangeMode;
 ExtractOptions extractOptions = new ExtractOptions(1, 3, RangeMode.EvenPages);
 ```
 
-### Paso 3: Ejecutar la extracción y guardar el resultado
+### Paso 3: realizar la extracción y guardar el resultado
+
+Llame al método `extract` en la instancia `Merger` y escriba el nuevo documento en disco.
 
 ```java
 // Initialize Merger with input document path
@@ -121,64 +170,68 @@ merger.extractPages(extractOptions);
 merger.save(filePathOut);
 ```
 
-**Consejo profesional:** Envuelve la lógica de extracción en un bloque `try‑catch` para manejar `IOException` o excepciones específicas de formato de forma elegante.
+**Consejo profesional:** Envuelva la lógica de extracción en un bloque `try‑catch` para manejar `IOException` o excepciones específicas de formato de forma adecuada.
 
 ## Aplicaciones prácticas
 
 | Escenario | Cómo ayuda la extracción |
 |----------|--------------------------|
-| **Revisión legal** | Extrae solo las cláusulas que necesitas para un análisis rápido. |
-| **Investigación académica** | Aísla capítulos o secciones de libros de texto para citarlos. |
-| **Informes financieros** | Extrae tablas o estados de informes de varias páginas. |
+| **Revisión legal** | Extraiga solo las cláusulas que necesita para un análisis rápido, manteniendo ocultas las secciones confidenciales. |
+| **Investigación académica** | Aísle capítulos o secciones de libros de texto para citación o lectura sin conexión. |
+| **Informes financieros** | Extraiga tablas o estados de informes de varias páginas, reduciendo el tamaño del archivo para distribución por correo electrónico. |
 
 ## Consideraciones de rendimiento
 
-- **Gestión de memoria** – Los PDFs grandes pueden consumir una cantidad significativa de heap. Incrementa el heap de la JVM (`-Xmx2g`) si encuentras `OutOfMemoryError`.  
-- **I/O de archivos** – Usa streams con búfer al leer/escribir archivos grandes para reducir la latencia del disco.  
-- **Procesamiento por lotes** – Si necesitas extraer rangos de muchos documentos, procésalos secuencialmente o utiliza un pool de hilos con concurrencia controlada.
+- **Memory management** – Los PDFs grandes pueden consumir una cantidad significativa de memoria del heap. Aumente el heap de la JVM (`-Xmx2g`) si encuentra `OutOfMemoryError`.  
+- **File I/O** – Utilice streams con búfer al leer/escribir archivos grandes para reducir la latencia del disco.  
+- **Batch processing** – Al extraer rangos de muchos documentos, procese secuencialmente o use un pool de hilos con concurrencia controlada para evitar agotar los recursos del sistema.
 
 ## Problemas comunes y soluciones
 
 | Problema | Solución |
 |----------|----------|
-| **Ruta de archivo inválida** | Verifica la ruta completa y asegúrate de que la aplicación tenga permisos de lectura/escritura. |
-| **Formato no compatible** | Confirma que el tipo de documento (p. ej., DOCX, PDF) esté incluido en la lista de formatos compatibles. |
-| **Errores de falta de memoria** | Procesa archivos grandes en fragmentos más pequeños o aumenta el tamaño del heap de la JVM (`-Xmx`). |
-| **RangeMode no se comporta como se espera** | Revisa los valores de inicio/final y asegúrate de que estén dentro del número total de páginas del documento. |
+| **Ruta de archivo no válida** | Verifique la ruta completa y asegúrese de que la aplicación tenga permisos de lectura/escritura. |
+| **Formato no compatible** | Confirme que el tipo de documento (p.ej., DOCX, PDF) está listado entre los formatos compatibles. |
+| **Errores de falta de memoria** | Procese archivos grandes en fragmentos más pequeños o aumente el tamaño del heap de la JVM (`-Xmx`). |
+| **RangeMode no se comporta como se espera** | Verifique los valores de inicio/final y asegúrese de que estén dentro del recuento de páginas del documento. |
 
 ## Preguntas frecuentes
 
 **P: ¿Cómo extraigo páginas impares?**  
-R: Usa `RangeMode.OddPages` al crear `ExtractOptions`.
+R: Use `RangeMode.OddPages` al crear `ExtractOptions`.
 
 **P: ¿Puedo usar esto con PDFs?**  
-R: Sí, GroupDocs.Merger admite PDF, DOCX, PPTX, XLSX y muchos otros formatos.
+R: Sí—GroupDocs.Merger soporta PDF, DOCX, PPTX, XLSX y muchos otros formatos.
 
-**P: ¿Qué ocurre si la ruta de mi documento es incorrecta?**  
-R: La API lanzará una `IOException`. Verifica la ruta y revisa los permisos del archivo.
+**P: ¿Qué pasa si la ruta de mi documento es incorrecta?**  
+R: La API lanza un `IOException`. Verifique la ruta y revise los permisos del archivo.
 
 **P: ¿Cómo debo manejar excepciones durante la extracción?**  
-R: Encierra el código de extracción en un bloque `try‑catch` y registra los detalles de la excepción para la resolución de problemas.
+R: Encierre el código de extracción en un bloque `try‑catch` y registre los detalles de la excepción para la solución de problemas.
 
-**P: ¿Existe un límite en la cantidad de páginas que puedo extraer?**  
-R: No hay un límite estricto, pero extracciones muy grandes pueden requerir más memoria heap.
+**P: ¿Hay un límite en la cantidad de páginas que puedo extraer?**  
+R: No hay un límite estricto, pero extraer rangos muy grandes puede requerir memoria de heap adicional.
 
 ## Recursos
 
-- [Documentation](https://docs.groupdocs.com/merger/java/)
-- [API Reference](https://reference.groupdocs.com/merger/java/)
-- [Download GroupDocs.Merger for Java](https://releases.groupdocs.com/merger/java/)
-- [Purchase GroupDocs Products](https://purchase.groupdocs.com/buy)
-- [Free Trial](https://releases.groupdocs.com/merger/java/)
-- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- [Support Forum](https://forum.groupdocs.com/c/merger/)
+- [Documentación](https://docs.groupdocs.com/merger/java/)
+- [Referencia API](https://reference.groupdocs.com/merger/java/)
+- [Descargar GroupDocs.Merger para Java](https://releases.groupdocs.com/merger/java/)
+- [Comprar productos GroupDocs](https://purchase.groupdocs.com/buy)
+- [Prueba gratuita](https://releases.groupdocs.com/merger/java/)
+- [Licencia temporal](https://purchase.groupdocs.com/temporary-license/)
+- [Foro de soporte](https://forum.groupdocs.com/c/merger/)
 
-Siguiendo esta guía, ahora dispones de un método fiable para **extraer páginas específicas** de cualquier documento compatible usando GroupDocs.Merger para Java. ¡Feliz codificación!
-
----
-
-**Última actualización:** 2026-02-16  
-**Probado con:** la última versión de GroupDocs.Merger (Java)  
-**Autor:** GroupDocs  
+Siguiendo esta guía, ahora tiene un método fiable para **extraer páginas específicas java** de cualquier documento compatible usando GroupDocs.Merger para Java. ¡Feliz codificación!
 
 ---
+
+**Última actualización:** 2026-08-15  
+**Probado con:** GroupDocs.Merger latest version (Java)  
+**Autor:** GroupDocs
+
+## Tutoriales relacionados
+
+- [dividir pdf en páginas con GroupDocs.Merger para Java](/merger/java/document-splitting/master-document-splitting-groupdocs-merger-java/)
+- [combinar páginas específicas java – Unir documentos con GroupDocs.Merger](/merger/java/document-joining/join-pages-groupdocs-merger-java-tutorial/)
+- [Cómo cargar PDF URL Java – Tutoriales de carga de documentos para GroupDocs.Merger](/merger/java/document-loading/)

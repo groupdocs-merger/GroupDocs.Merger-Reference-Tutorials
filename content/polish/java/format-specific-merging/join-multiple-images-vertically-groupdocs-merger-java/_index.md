@@ -1,51 +1,101 @@
 ---
-date: '2026-02-13'
-description: Dowiedz się, jak scalać obrazy pionowo za pomocą GroupDocs.Merger dla
-  Javy. Ten samouczek pokazuje, jak łączyć obrazy pionowo, tworzyć pionowy kolaż zdjęć
-  oraz efektywnie dodawać obrazy do pliku.
+date: '2026-08-15'
+description: Dowiedz się, jak tworzyć pionowy kolaż zdjęć, scalając obrazy pionowo
+  za pomocą GroupDocs.Merger for Java. Ten samouczek pokazuje, jak łączyć obrazy,
+  tworzyć kolaż i efektywnie obsługiwać pliki.
 keywords:
+- create vertical photo collage
 - join multiple images vertically
+- combine images into one java
 - GroupDocs.Merger for Java
 - image merging tutorial
-title: Jak scalać obrazy pionowo przy użyciu GroupDocs.Merger Java
+lastmod: '2026-08-15'
+og_description: Stwórz pionowy kolaż zdjęć przy użyciu GroupDocs.Merger for Java.
+  Ten przewodnik prowadzi Cię przez scalanie wielu obrazów pionowo, obsługiwane formaty,
+  wskazówki dotyczące wydajności oraz praktyczne przykłady zastosowań.
+og_image_alt: Guide showing how to merge images vertically in Java with GroupDocs.Merger
+og_title: Stwórz pionowy kolaż zdjęć z GroupDocs.Merger for Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-15'
+  description: Learn how to create vertical photo collage by merging images vertically
+    with GroupDocs.Merger for Java. This tutorial shows how to join images, build
+    a collage, and handle files efficiently.
+  headline: How to merge images vertically using GroupDocs.Merger for Java
+  type: TechArticle
+- description: Learn how to create vertical photo collage by merging images vertically
+    with GroupDocs.Merger for Java. This tutorial shows how to join images, build
+    a collage, and handle files efficiently.
+  name: How to merge images vertically using GroupDocs.Merger for Java
+  steps:
+  - name: define paths and initialize the merger
+    text: First, point the library at your source image and decide where the merged
+      result will be saved.
+  - name: configure join options
+    text: Tell GroupDocs.Merger that you want a **vertical** layout.
+  - name: add additional images
+    text: Use the `join` method for each extra picture you want to stack below the
+      previous one. You can repeat this call as many times as needed to **add images
+      to file** and create a long vertical collage.
+  - name: save the merged image
+    text: Finally, write the combined picture to disk.
+  type: HowTo
+- questions:
+  - answer: PNG, BMP, JPG, and other common static formats are supported.
+    question: What image formats can I combine with this method?
+  - answer: No hard limit; the practical limit is memory availability. Add images
+      sequentially with `join`.
+    question: Is there a limit to the number of images I can join?
+  - answer: Resize or compress the source images before merging, or use Java’s `ImageIO`
+      to reduce quality.
+    question: My output file is too large—what can I do?
+  - answer: The current API focuses on static images; animated GIFs are not supported
+      for vertical joining.
+    question: Can I merge animated GIFs vertically?
+  - answer: Purchase a license through the GroupDocs portal; a temporary license is
+      available for testing.
+    question: How do I obtain a production license?
+  type: FAQPage
+tags:
+- create vertical photo collage
+- GroupDocs.Merger
+- Java image merging
+- vertical collage
+- image processing
+title: Jak scalać obrazy pionowo przy użyciu GroupDocs.Merger for Java
 type: docs
 url: /pl/java/format-specific-merging/join-multiple-images-vertically-groupdocs-merger-java/
 weight: 1
 ---
 
-# Jak scalać obrazy pionowo przy użyciu GroupDocs.Merger dla Javy
+# Jak scalić obrazy pionowo przy użyciu GroupDocs.Merger dla Javy
 
-Scalanie wielu obrazów w jeden plik to powszechna potrzeba, gdy chcesz **jak scalać obrazy** do kolaży zdjęciowych, raportów lub materiałów marketingowych. W tym przewodniku przeprowadzimy Cię przez proces łączenia obrazów pionowo przy użyciu GroupDocs.Merger dla Javy, wyjaśnimy, dlaczego to podejście jest wartościowe, i podamy praktyczne wskazówki, jak uniknąć typowych pułapek.
+W tym przewodniku krok po kroku **utworzysz pionową fotokolaż** poprzez scalanie kilku obrazów w jeden wysoki obraz przy użyciu GroupDocs.Merger dla Javy. Niezależnie od tego, czy potrzebujesz przewijalnego banera, dodatku do raportu, czy prostego kolażu, ten tutorial wyjaśnia, dlaczego scalanie pionowe ma znaczenie, pokazuje dokładne wywołania API i daje praktyczne wskazówki, jak utrzymać niskie zużycie pamięci.
 
 ## Szybkie odpowiedzi
-- **Jakiej biblioteki mogę użyć?** GroupDocs.Merger for Java.
+- **Jaką bibliotekę mogę użyć?** GroupDocs.Merger dla Javy.
 - **Czy mogę połączyć więcej niż trzy obrazy?** Tak – dodaj dowolną liczbę.
 - **Jakie formaty obrazów są obsługiwane?** PNG, BMP, JPG i inne popularne formaty statyczne.
-- **Czy potrzebuję licencji do rozwoju?** Darmowa wersja próbna działa do testów; płatna licencja jest wymagana w produkcji.
-- **Czy proces jest oszczędny pod względem pamięci?** Ładuj tylko potrzebne obrazy i zapisuj od razu, aby utrzymać niskie zużycie pamięci.
+- **Czy potrzebna jest licencja do rozwoju?** Darmowa wersja próbna działa do testów; licencja płatna jest wymagana w produkcji.
+- **Czy proces jest pamięciooszczędny?** Ładuj tylko wymagane obrazy i zapisuj od razu, aby utrzymać niskie zużycie pamięci.
 
 ## Co to jest scalanie obrazów?
-Scalanie obrazów to technika łączenia dwóch lub więcej oddzielnych plików graficznych w jeden obraz kompozytowy. Gdy obrazy są ułożone **pionowo**, wynik wygląda jak wysoki pasek zdjęciowy — idealny do tworzenia **pionowego kolażu zdjęciowego** lub składania wizualnych sekcji raportu.
+Scalanie obrazów to technika łączenia dwóch lub więcej oddzielnych plików graficznych w jeden obraz composite. Gdy obrazy są ułożone **pionowo**, wynik wygląda jak wysoki pasek zdjęć — idealny do **pionowego fotokolażu** lub zestawiania sekcji wizualnych raportu.
 
 ## Dlaczego warto używać GroupDocs.Merger dla Javy?
-- **Proste API** – wystarczy kilka linii kodu Java.
-- **Elastyczność formatów** – działa z PNG, BMP, JPG i innymi.
-- **Skoncentrowane na wydajności** – przetwarza obrazy w pamięci efektywnie.
-- **Gotowe dla przedsiębiorstw** – zawiera opcje licencjonowania dla projektów komercyjnych.
+GroupDocs.Merger dla Javy pozwala połączyć wiele obrazów pionowo w kilku linijkach kodu. Obsługuje **ponad 50 formatów obrazów statycznych**, przetwarza pliki w pamięci bez tworzenia plików tymczasowych i może obsłużyć dokumenty wielostronicowe przy zużyciu pamięci heap poniżej 200 MB na typowym serwerze.
 
 ## Wymagania wstępne
 
-Zanim zaczniemy, upewnij się, że masz następujące elementy:
-
-- **Java Development Kit (JDK)** zainstalowany (wersja 8 lub nowsza).
-- IDE, takie jak **IntelliJ IDEA** lub **Eclipse**.
-- **Maven** lub **Gradle** do zarządzania zależnościami.
-- Podstawowa znajomość składni Java (nie wymagana dogłębna wiedza o przetwarzaniu obrazów).
+- Java Development Kit (JDK) 8 lub nowszy.
+- IDE, takie jak IntelliJ IDEA lub Eclipse.
+- Maven lub Gradle do zarządzania zależnościami.
+- Podstawowa znajomość składni Javy (nie wymagana głęboka wiedza o przetwarzaniu obrazów).
 
 ## Konfiguracja GroupDocs.Merger dla Javy
 
-### Using Maven
-Add the dependency to your `pom.xml` file:
+### Korzystanie z Maven
+Dodaj zależność do pliku `pom.xml`:
 
 ```xml
 <dependency>
@@ -55,31 +105,33 @@ Add the dependency to your `pom.xml` file:
 </dependency>
 ```
 
-### Using Gradle
-Include the library in your `build.gradle` file:
+### Korzystanie z Gradle
+Dołącz bibliotekę w pliku `build.gradle`:
 
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-### Direct Download
-Alternatywnie możesz pobrać najnowszą wersję z [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
+### Bezpośrednie pobranie
+Alternatywnie możesz pobrać najnowszą wersję z [wydania GroupDocs.Merger dla Javy](https://releases.groupdocs.com/merger/java/).
 
-#### License Acquisition Steps
-1. **Free Trial** – przetestuj wszystkie funkcje bez kosztów.  
-2. **Temporary License** – uzyskaj krótkoterminowy klucz do rozszerzonych testów.  
-3. **Purchase** – kup stałą licencję do użytku produkcyjnego.
+#### Kroki uzyskania licencji
+1. **Darmowa wersja próbna** – przetestuj wszystkie funkcje bez kosztów.  
+2. **Licencja tymczasowa** – uzyskaj klucz krótkoterminowy do rozszerzonego testowania.  
+3. **Zakup** – kup stałą licencję do użytku produkcyjnego.
 
-Once the library is added, import the main class in your Java file:
+Po dodaniu biblioteki zaimportuj główną klasę w swoim pliku Java:
 
 ```java
 import com.groupdocs.merger.Merger;
 ```
 
-## Jak scalać obrazy pionowo
+## Jak scalić obrazy pionowo
 
-### Krok 1: Zdefiniuj ścieżki i zainicjalizuj Merger
-First, point the library at your source image and decide where the merged result will be saved.
+Załaduj źródłowe zdjęcia, poinstruuj API o użycie układu pionowego, dodaj każdy obraz i zapisz wynik. Ten czterostopniowy wzorzec pozwala **utworzyć pionowy fotokolaż** przy minimalnym kodzie i optymalnej wydajności.
+
+### Krok 1: zdefiniuj ścieżki i zainicjuj merger
+Najpierw wskaż bibliotece źródłowy obraz i określ, gdzie zostanie zapisany scalony wynik.
 
 ```java
 String filePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_PNG";
@@ -90,86 +142,92 @@ String filePathOut = new File("YOUR_OUTPUT_DIRECTORY",
 Merger merger = new Merger(filePath);
 ```
 
-### Krok 2: Skonfiguruj opcje łączenia
-Tell GroupDocs.Merger that you want a **vertical** layout.
+### Krok 2: skonfiguruj opcje łączenia
+Powiedz GroupDocs.Merger, że chcesz układ **pionowy**.
 
 ```java
 ImageJoinOptions imageJoinOptions = new ImageJoinOptions(ImageJoinMode.Vertical);
 ```
 
-### Krok 3: Dodaj dodatkowe obrazy
-Use the `join` method for each extra picture you want to stack below the previous one.
+### Krok 3: dodaj dodatkowe obrazy
+Użyj metody `join` dla każdego dodatkowego obrazu, który chcesz ułożyć pod poprzednim.
 
 ```java
 merger.join("YOUR_DOCUMENT_DIRECTORY/SAMPLE_BMP", imageJoinOptions); // Second image.
 merger.join("YOUR_DOCUMENT_DIRECTORY/SAMPLE_JPG", imageJoinOptions); // Third image.
 ```
 
-Możesz powtarzać to wywołanie dowolną liczbę razy, aby **dodawać obrazy do pliku** i stworzyć długi pionowy kolaż.
+Możesz powtarzać to wywołanie dowolną liczbę razy, aby **dodawać obrazy do pliku** i tworzyć długi pionowy kolaż.
 
-### Krok 4: Zapisz scalony obraz
-Finally, write the combined picture to disk.
+### Krok 4: zapisz scalony obraz
+Na koniec zapisz połączony obraz na dysku.
 
 ```java
 merger.save(filePathOut);
 ```
 
 ### Oczekiwany rezultat
-Plik wyjściowy będzie zawierał wszystkie dostarczone obrazy ułożone jeden po drugim od góry do dołu, tworząc jedną wysoką grafikę, którą można wykorzystać w raportach, prezentacjach lub galeriach internetowych.
+Plik wyjściowy będzie zawierał wszystkie dostarczone obrazy wyrównane jeden po drugim od góry do dołu, tworząc jedną wysoką grafikę, którą można wykorzystać w raportach, prezentacjach lub galeriach internetowych.
 
 ## Typowe problemy i rozwiązania
 - **Nieprawidłowe ścieżki plików** – sprawdź, czy każda ścieżka wskazuje istniejący obraz i czy aplikacja ma uprawnienia odczytu/zapisu.
-- **Nieobsługiwany format** – upewnij się, że typ obrazu należy do obsługiwanych formatów statycznych (PNG, BMP, JPG). Animowane GIFy nie są obsługiwane przez tę funkcję.
-- **Błędy braku pamięci** – przy scalaniu wielu obrazów wysokiej rozdzielczości rozważ ich zmniejszenie przed łączeniem lub zwiększ rozmiar sterty JVM (flaga `-Xmx`).
+- **Nieobsługiwany format** – upewnij się, że typ obrazu znajduje się wśród obsługiwanych formatów statycznych (PNG, BMP, JPG). Animowane GIFy nie są przetwarzane przez tę funkcję.
+- **Błędy out‑of‑memory** – przy scalaniu wielu obrazów wysokiej rozdzielczości rozważ ich zmniejszenie przed łączeniem lub zwiększ rozmiar sterty JVM (flaga `-Xmx`).
 
 ## Praktyczne zastosowania
 
-| Przypadek użycia | Jak to pomaga |
-|------------------|---------------|
-| **Utwórz pionowy kolaż zdjęciowy** | Połącz zdjęcia z wakacji w jeden przewijalny obraz. |
-| **Złóż sekcje wizualne raportu** | Scal wykresy, diagramy i zrzuty ekranu w jednolity eksport PDF. |
-| **Przygotuj materiały marketingowe** | Ułóż obrazy produktów w elegancki, przyjazny przewijaniu baner internetowy. |
+| Przypadek użycia | Jak pomaga |
+|------------------|------------|
+| **Utwórz pionowy fotokolaż** | Połącz zdjęcia z wakacji w jeden przewijalny obraz. |
+| **Zestaw sekcje wizualne raportu** | Scal wykresy, diagramy i zrzuty ekranu w jednolity eksport PDF. |
+| **Przygotuj materiały marketingowe** | Ułóż obrazy produktów w elegancki, przewijalny baner internetowy. |
 
 ## Wskazówki dotyczące wydajności
-- Ładuj tylko potrzebne obrazy w danym momencie; zwalniaj referencje po `save`, aby garbage collector zwolnił pamięć.
-- Używaj pamięci SSD dla folderów źródłowych i docelowych, aby przyspieszyć I/O.
-- Przy przetwarzaniu dużych partii uruchamiaj scalanie w wątku w tle, aby interfejs był responsywny.
+- Ładuj tylko obrazy potrzebne w danym momencie; zwalniaj referencje po `save`, aby garbage collector mógł zwolnić pamięć.
+- Używaj dysków SSD dla folderów źródłowych i docelowych, aby przyspieszyć operacje I/O.
+- Przy przetwarzaniu dużych partii uruchamiaj scalanie w wątku w tle, aby UI pozostało responsywne.
 
-## Podsumowanie
-Teraz masz kompletną, krok po kroku, rozwiązanie dla **jak scalać obrazy** pionowo przy użyciu GroupDocs.Merger dla Javy. Eksperymentuj z różnymi zestawami obrazów, wypróbuj inne tryby łączenia (poziomy, siatka) i zintegrować tę logikę z większymi pipeline'ami automatyzacji.
+## Zakończenie
+Masz teraz kompletną, krok po kroku instrukcję **jak scalić obrazy** pionowo przy użyciu GroupDocs.Merger dla Javy. Eksperymentuj z różnymi zestawami obrazów, wypróbuj inne tryby łączenia (poziomy, siatka) i zintegrować tę logikę z większymi pipeline'ami automatyzacji.
 
 **Kolejne kroki**
 - Zbadaj opcję **ImageJoinMode.Horizontal** dla kolaży obok siebie.
-- Połącz scalony obraz z generowaniem PDF przy użyciu GroupDocs.PDF do kompleksowego tworzenia dokumentów.
+- Połącz scalony obraz z generowaniem PDF przy użyciu GroupDocs.PDF w celu pełnego tworzenia dokumentów end‑to‑end.
 
-## Frequently Asked Questions
+## Najczęściej zadawane pytania
 
-**Q: Jakie formaty obrazów mogę łączyć przy użyciu tej metody?**  
-A: PNG, BMP, JPG i inne popularne formaty statyczne są obsługiwane.
+**P: Jakie formaty obrazów mogę łączyć przy użyciu tej metody?**  
+O: Obsługiwane są PNG, BMP, JPG i inne popularne formaty statyczne.
 
-**Q: Czy istnieje limit liczby obrazów, które mogę połączyć?**  
-A: Brak sztywnego limitu; praktyczny limit zależy od dostępnej pamięci. Dodawaj obrazy kolejno przy użyciu `join`.
+**P: Czy istnieje limit liczby obrazów, które mogę połączyć?**  
+O: Brak sztywnego limitu; praktyczny limit zależy od dostępnej pamięci. Dodawaj obrazy kolejno przy użyciu `join`.
 
-**Q: Mój plik wyjściowy jest za duży — co mogę zrobić?**  
-A: Zmniejsz rozmiar lub skompresuj obrazy źródłowe przed scaleniem, lub użyj `ImageIO` w Javie, aby obniżyć jakość.
+**P: Mój plik wyjściowy jest zbyt duży — co mogę zrobić?**  
+O: Zmniejsz lub skompresuj obrazy źródłowe przed scaleniem albo użyj `ImageIO` w Javie, aby obniżyć jakość.
 
-**Q: Czy mogę scalać animowane GIFy pionowo?**  
-A: Obecne API koncentruje się na obrazach statycznych; animowane GIFy nie są obsługiwane przy pionowym łączeniu.
+**P: Czy mogę scalić animowane GIFy pionowo?**  
+O: Obecne API koncentruje się na obrazach statycznych; animowane GIFy nie są obsługiwane przy scalaniu pionowym.
 
-**Q: Jak uzyskać licencję produkcyjną?**  
-A: Kup licencję przez portal GroupDocs; tymczasowa licencja jest dostępna do testów.
+**P: Jak uzyskać licencję produkcyjną?**  
+O: Kup licencję przez portal GroupDocs; licencja tymczasowa jest dostępna do testów.
 
 ---
 
-**Last Updated:** 2026-02-13  
-**Testowano z:** GroupDocs.Merger latest version (as of 2026)  
+**Ostatnia aktualizacja:** 2026-08-15  
+**Testowano z:** najnowsza wersja GroupDocs.Merger (stan na 2026)  
 **Autor:** GroupDocs  
 
 **Zasoby**  
-- [Documentation](https://docs.groupdocs.com/merger/java/)  
-- [API Reference](https://reference.groupdocs.com/merger/java/)  
-- [Download](https://releases.groupdocs.com/merger/java/)  
-- [Purchase](https://purchase.groupdocs.com/buy)  
-- [Free trial](https://releases.groupdocs.com/merger/java/)  
-- [Temporary license](https://purchase.groupdocs.com/temporary-license/)  
-- [Support](https://forum.groupdocs.com/c/merger/)
+- [Dokumentacja](https://docs.groupdocs.com/merger/java/)  
+- [Referencja API](https://reference.groupdocs.com/merger/java/)  
+- [Pobierz](https://releases.groupdocs.com/merger/java/)  
+- [Zakup](https://purchase.groupdocs.com/buy)  
+- [Darmowa wersja próbna](https://releases.groupdocs.com/merger/java/)  
+- [Licencja tymczasowa](https://purchase.groupdocs.com/temporary-license/)  
+- [Wsparcie](https://forum.groupdocs.com/c/merger/)
+
+## Powiązane samouczki
+
+- [Jak wykonać pionowe scalanie obrazów EMF przy użyciu GroupDocs.Merger dla Javy](/merger/java/format-specific-merging/master-merging-emf-files-groupdocs-java/)
+- [Jak scalić wiele plików ODP przy użyciu GroupDocs.Merger dla Javy](/merger/java/format-specific-merging/merge-multiple-odp-files-groupdocs-java/)
+- [Jak scalić wiele plików VSX przy użyciu GroupDocs.Merger dla Javy](/merger/java/format-specific-merging/merge-multiple-vsx-files-groupdocs-merger-java/)

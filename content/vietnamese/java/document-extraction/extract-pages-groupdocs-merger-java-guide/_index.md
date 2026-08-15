@@ -1,53 +1,95 @@
 ---
-date: '2026-02-16'
-description: Tìm hiểu cách trích xuất các trang cụ thể, bao gồm cả các trang chẵn,
-  từ tài liệu Word, PDF và các tài liệu khác bằng GroupDocs.Merger cho Java.
+date: '2026-08-15'
+description: Tìm hiểu cách trích xuất các trang cụ thể java bằng GroupDocs.Merger
+  for Java, bao gồm even pages và custom ranges. Ngoài ra, xem cách split PDF pages
+  trong Java.
 keywords:
+- extract specific pages java
+- java split pdf pages
+- groupdocs merger java
+lastmod: '2026-08-15'
+og_description: Trích xuất các trang cụ thể java bằng GroupDocs.Merger for Java. Hướng
+  dẫn này cho thấy cách pull even pages, custom ranges, và split PDF pages một cách
+  hiệu quả.
+og_image_alt: Guide showing extract specific pages java using GroupDocs.Merger
+og_title: Trích xuất các trang cụ thể java với GroupDocs.Merger for Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-15'
+  description: Learn how to extract specific pages java using GroupDocs.Merger for
+    Java, including even pages and custom ranges. Also see how to split PDF pages
+    in Java.
+  headline: Extract specific pages java with GroupDocs.Merger for Java
+  type: TechArticle
+- description: Learn how to extract specific pages java using GroupDocs.Merger for
+    Java, including even pages and custom ranges. Also see how to split PDF pages
+    in Java.
+  name: Extract specific pages java with GroupDocs.Merger for Java
+  steps:
+  - name: define input and output paths
+    text: Specify the full file system paths for the source document and the destination
+      file.
+  - name: configure extraction options
+    text: '`ExtractOptions` lets you set the start page, end page, and the `RangeMode`
+      (even, odd, or custom). The example below extracts only even pages between 1
+      and 3, which means page 2 will be saved.'
+  - name: perform extraction and save the result
+    text: Invoke the `extract` method on the `Merger` instance and write the new document
+      to disk. **Pro tip:** Wrap the extraction logic in a `try‑catch` block to handle
+      `IOException` or format‑specific exceptions gracefully.
+  type: HowTo
+- questions:
+  - answer: Use `RangeMode.OddPages` when creating `ExtractOptions`.
+    question: How do I extract odd‑numbered pages?
+  - answer: Yes—GroupDocs.Merger supports PDF, DOCX, PPTX, XLSX, and many other formats.
+    question: Can I use this with PDFs?
+  - answer: The API throws an `IOException`. Verify the path and check file permissions.
+    question: What if my document path is incorrect?
+  - answer: Enclose the extraction code in a `try‑catch` block and log the exception
+      details for troubleshooting.
+    question: How should I handle exceptions during extraction?
+  - answer: There’s no hard limit, but extracting very large ranges may require additional
+      heap memory.
+    question: Is there a limit on the number of pages I can extract?
+  type: FAQPage
+tags:
 - extract pages java
-- groupdocs merger for java
-- page extraction by range
-title: Trích xuất các trang cụ thể theo phạm vi với GroupDocs.Merger cho Java
+- GroupDocs.Merger
+- Java document processing
+- page extraction
+- PDF split java
+title: Trích xuất các trang cụ thể java với GroupDocs.Merger for Java
 type: docs
 url: /vi/java/document-extraction/extract-pages-groupdocs-merger-java-guide/
 weight: 1
 ---
 
-# Cách Trích Xuất Các Trang Cụ Thể Theo Dải Sử Dụng GroupDocs.Merger cho Java
+# Trích xuất các trang cụ thể java với GroupDocs.Merger cho Java
 
-Nếu bạn cần **trích xuất các trang cụ thể** từ một tài liệu lớn—cho dù đó là hợp đồng Word, báo cáo PDF, hay bản trình chiếu PowerPoint—hướng dẫn này sẽ cho bạn cách thực hiện sạch sẽ, lập trình với GroupDocs.Merger cho Java. Bạn sẽ thấy tại sao việc trích xuất các trang theo dải lại quan trọng, cách chọn các trang chẵn, và cách tích hợp giải pháp này vào dự án Java hiện có của bạn.
+Trong hướng dẫn này, bạn sẽ học cách **extract specific pages java** từ bất kỳ loại tài liệu nào được hỗ trợ — Word, PDF, PowerPoint, Excel và hơn thế nữa — bằng cách sử dụng GroupDocs.Merger cho Java. Bạn sẽ thấy tại sao việc trích xuất dựa trên phạm vi lại quan trọng, cách chọn các trang chẵn, và cách tích hợp giải pháp này vào một dự án Java tiêu chuẩn.
 
-**Bạn sẽ học được**
-- Quy trình từng bước để trích xuất các trang cụ thể từ bất kỳ loại tài liệu nào được hỗ trợ.  
-- Cách cấu hình các tùy chọn dải như trang chẵn, trang lẻ, hoặc danh sách trang tùy chỉnh.  
-- Mẹo xử lý các tệp lớn và tránh các lỗi thường gặp.
+## Câu trả lời nhanh
+- **What does “extract specific pages” mean?** Có nghĩa là chọn chỉ những trang bạn cần từ một tài liệu lớn và lưu chúng thành một tệp mới.  
+- **Which formats are supported?** Word, PDF, PowerPoint, Excel, HTML, hình ảnh, và hơn 30 định dạng khác.  
+- **Can I extract even pages only?** Có — đặt `RangeMode.EvenPages` trong tùy chọn trích xuất.  
+- **Do I need a license?** Bản dùng thử miễn phí hoạt động cho việc thử nghiệm; cần có giấy phép đầy đủ cho việc sử dụng trong môi trường sản xuất.  
+- **How many lines of code?** Ít hơn 20 dòng mã là đủ để trích xuất một phạm vi tùy chỉnh.
 
-## Trả Lời Nhanh
-- **“Trích xuất các trang cụ thể” có nghĩa là gì?** Chọn chỉ những trang bạn cần từ một tài liệu lớn hơn.  
-- **Các định dạng nào được hỗ trợ?** Word, PDF, PowerPoint, Excel và nhiều hơn nữa.  
-- **Có thể chỉ trích xuất các trang chẵn không?** Có—sử dụng `RangeMode.EvenPages`.  
-- **Có cần giấy phép không?** Bản dùng thử miễn phí đủ cho việc thử nghiệm; giấy phép cần thiết cho môi trường sản xuất.  
-- **Cần bao nhiêu dòng mã?** Ít hơn 20 dòng để trích xuất một dải.
+## extract specific pages java là gì?
+Extract specific pages java đề cập đến thao tác lập trình để lấy một tập con các trang từ tài liệu nguồn và tạo một tệp mới, độc lập. Kỹ thuật này rất cần thiết khi bạn chỉ cần một điều khoản hợp đồng, một chương duy nhất, hoặc một nhóm hoá đơn, tránh việc phải gửi toàn bộ tài liệu.
 
-## “Trích Xuất Các Trang Cụ Thể” là gì?
-Trích xuất các trang cụ thể có nghĩa là lấy ra một tập hợp con các trang từ tài liệu nguồn và lưu chúng thành một tệp mới, độc lập. Điều này hữu ích khi bạn chỉ cần một số phần—như một điều khoản hợp đồng, một chương, hoặc một bộ hoá đơn—mà không phải gửi toàn bộ tài liệu.
+## Tại sao lại trích xuất các trang cụ thể theo phạm vi?
+Trích xuất các trang cụ thể theo phạm vi giảm kích thước tệp, bảo vệ các phần nhạy cảm, và tăng tốc các quy trình hạ nguồn như ký điện tử, báo cáo tự động, hoặc lập chỉ mục hàng loạt. Với GroupDocs.Merger, bạn có thể yêu cầu các trang 1‑5, mọi trang chẵn, hoặc bất kỳ danh sách nào trong một lời gọi API duy nhất, loại bỏ việc chỉnh sửa thủ công và tiết kiệm thời gian phát triển quý báu.
 
-## Tại sao cần Trích Xuất Các Trang Cụ Thể Theo Dải?
-Việc trích xuất trang có mục tiêu giúp giảm kích thước tệp, bảo vệ thông tin nhạy cảm và tăng tốc quá trình xử lý tiếp theo (ví dụ: ký điện tử hoặc báo cáo tự động). Bằng cách sử dụng trích xuất dựa trên dải, bạn có thể lập trình chọn các trang 1‑5, mọi trang chẵn, hoặc bất kỳ danh sách tùy chỉnh nào mà không cần chỉnh sửa thủ công.
+## Yêu cầu trước
+- **GroupDocs.Merger for Java** được thêm làm phụ thuộc Maven hoặc Gradle.  
+- **JDK 8** hoặc mới hơn được cài đặt và cấu hình trên máy phát triển của bạn.  
+- Hiểu biết cơ bản về I/O tệp Java và xử lý ngoại lệ.
 
-## Các Điều Kiện Cần Thiết
+## Cài đặt GroupDocs.Merger cho Java
 
-Trước khi bắt đầu, hãy chắc chắn rằng bạn đã có:
-
-1. **Thư viện cần thiết** – GroupDocs.Merger cho Java đã được thêm vào phụ thuộc Maven hoặc Gradle.  
-2. **JDK** – Java Development Kit 8 hoặc mới hơn đã được cài đặt và cấu hình.  
-3. **Kiến thức Java cơ bản** – Quen với I/O tệp và xử lý ngoại lệ.
-
-## Cài Đặt GroupDocs.Merger cho Java
-
-### Cài Đặt Maven
-
+### Cấu hình Maven
 Thêm phụ thuộc vào `pom.xml` của bạn:
-
 ```xml
 <dependency>
     <groupId>com.groupdocs</groupId>
@@ -56,28 +98,23 @@ Thêm phụ thuộc vào `pom.xml` của bạn:
 </dependency>
 ```
 
-### Cài Đặt Gradle
-
-Thêm dòng sau vào tệp `build.gradle` của bạn:
-
+### Cấu hình Gradle
+Thêm dòng này vào tệp `build.gradle` của bạn:
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-### Tải Trực Tiếp
-
+### Tải trực tiếp
 Bạn cũng có thể tải các binary mới nhất từ [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
-#### Các Bước Nhận Giấy Phép
+#### Các bước lấy giấy phép
+1. **Free trial** – tải bản dùng thử để khám phá API.  
+2. **Temporary license** – yêu cầu khóa tạm thời để thử nghiệm kéo dài.  
+3. **Purchase** – mua giấy phép đầy đủ cho việc sử dụng trong môi trường sản xuất.
 
-1. **Dùng Thử Miễn Phí** – Tải bản dùng thử để khám phá API.  
-2. **Giấy Phép Tạm Thời** – Yêu cầu khóa tạm thời để kéo dài thời gian thử nghiệm.  
-3. **Mua Bản Quyền** – Mua giấy phép đầy đủ cho việc sử dụng trong môi trường sản xuất.
-
-### Khởi Tạo và Cấu Hình Cơ Bản
-
-Dưới đây là đoạn mã tối thiểu để tạo một thể hiện `Merger`:
-
+### Khởi tạo và cấu hình cơ bản
+Dưới đây là đoạn mã tối thiểu cần thiết để tạo một thể hiện `Merger`:
+Lớp `Merger` là đối tượng API cốt lõi, tải tài liệu và cung cấp các thao tác trích xuất.
 ```java
 import com.groupdocs.merger.Merger;
 
@@ -85,21 +122,19 @@ String filePath = "YOUR_DOCUMENT_DIRECTORY/YourDocument.docx";
 Merger merger = new Merger(filePath);
 ```
 
-## Cách Trích Xuất Các Trang Cụ Thể Theo Dải
+## Cách trích xuất các trang cụ thể theo phạm vi
 
-Bây giờ chúng ta sẽ đi qua các bước chính xác để trích xuất các trang chẵn trong một dải tùy chỉnh.
+Tải tài liệu nguồn, cấu hình các tùy chọn trích xuất, và lưu kết quả — tất cả trong ba bước đơn giản.
 
-### Bước 1: Định Nghĩa Đường Dẫn Đầu Vào và Đầu Ra
-
+### Bước 1: xác định đường dẫn đầu vào và đầu ra
+Xác định đường dẫn hệ thống tệp đầy đủ cho tài liệu nguồn và tệp đích.
 ```java
 String filePath = "YOUR_DOCUMENT_DIRECTORY/YourDocument.docx";
 String filePathOut = "YOUR_OUTPUT_DIRECTORY/ExtractedPages.docx";
 ```
 
-### Bước 2: Cấu Hình Tùy Chọn Trích Xuất
-
-`ExtractOptions` cho phép bạn chỉ định trang bắt đầu, trang kết thúc và `RangeMode` (ví dụ: even, odd, hoặc custom). Ví dụ dưới đây chỉ trích xuất các trang chẵn từ 1 đến 3, nghĩa là trang 2 sẽ được lưu.
-
+### Bước 2: cấu hình tùy chọn trích xuất
+`ExtractOptions` cho phép bạn đặt trang bắt đầu, trang kết thúc và `RangeMode` (chẵn, lẻ, hoặc tùy chỉnh). Ví dụ dưới đây chỉ trích xuất các trang chẵn từ 1 đến 3, có nghĩa là trang 2 sẽ được lưu.
 ```java
 import com.groupdocs.merger.domain.options.ExtractOptions;
 import com.groupdocs.merger.domain.options.RangeMode;
@@ -108,8 +143,8 @@ import com.groupdocs.merger.domain.options.RangeMode;
 ExtractOptions extractOptions = new ExtractOptions(1, 3, RangeMode.EvenPages);
 ```
 
-### Bước 3: Thực Hiện Trích Xuất và Lưu Kết Quả
-
+### Bước 3: thực hiện trích xuất và lưu kết quả
+Gọi phương thức `extract` trên thể hiện `Merger` và ghi tài liệu mới vào đĩa.
 ```java
 // Initialize Merger with input document path
 Merger merger = new Merger(filePath);
@@ -121,64 +156,67 @@ merger.extractPages(extractOptions);
 merger.save(filePathOut);
 ```
 
-**Mẹo chuyên nghiệp:** Đặt logic trích xuất trong khối `try‑catch` để xử lý `IOException` hoặc các ngoại lệ đặc thù của định dạng một cách nhẹ nhàng.
+**Pro tip:** Đặt logic trích xuất trong một khối `try‑catch` để xử lý `IOException` hoặc các ngoại lệ đặc thù định dạng một cách nhẹ nhàng.
 
-## Ứng Dụng Thực Tiễn
+## Ứng dụng thực tiễn
 
-| Kịch bản | Lợi ích của việc trích xuất |
-|----------|-----------------------------|
-| **Rà soát pháp lý** | Lấy ra chỉ các điều khoản cần thiết để phân tích nhanh. |
-| **Nghiên cứu học thuật** | Tách các chương hoặc phần từ sách giáo khoa để trích dẫn. |
-| **Báo cáo tài chính** | Trích xuất bảng hoặc báo cáo từ các tài liệu đa trang. |
+| Kịch bản | Cách trích xuất giúp |
+|----------|----------------------|
+| **Legal review** | Lấy chỉ các điều khoản bạn cần để phân tích nhanh, giữ các phần bí mật ẩn đi. |
+| **Academic research** | Tách các chương hoặc phần từ sách giáo trình để trích dẫn hoặc đọc offline. |
+| **Financial reporting** | Trích xuất bảng hoặc báo cáo từ các tài liệu đa trang, giảm kích thước tệp để gửi email. |
 
-## Các Yếu Tố Về Hiệu Suất
+## Các yếu tố hiệu năng
+- **Memory management** – Các tệp PDF lớn có thể tiêu tốn nhiều bộ nhớ heap. Tăng heap của JVM (`-Xmx2g`) nếu gặp `OutOfMemoryError`.  
+- **File I/O** – Sử dụng buffered streams khi đọc/ghi các tệp lớn để giảm độ trễ đĩa.  
+- **Batch processing** – Khi trích xuất phạm vi từ nhiều tài liệu, xử lý chúng tuần tự hoặc sử dụng thread pool với độ đồng thời được kiểm soát để tránh cạn kiệt tài nguyên hệ thống.
 
-- **Quản lý bộ nhớ** – Các PDF lớn có thể tiêu tốn nhiều heap. Tăng heap JVM (`-Xmx2g`) nếu gặp `OutOfMemoryError`.  
-- **I/O tệp** – Sử dụng buffered streams khi đọc/ghi tệp lớn để giảm độ trễ đĩa.  
-- **Xử lý batch** – Nếu cần trích xuất dải từ nhiều tài liệu, xử lý tuần tự hoặc dùng thread pool với mức đồng thời được kiểm soát.
-
-## Các Vấn Đề Thường Gặp và Giải Pháp
+## Các vấn đề thường gặp và giải pháp
 
 | Vấn đề | Giải pháp |
-|-------|-----------|
-| **Đường dẫn tệp không hợp lệ** | Kiểm tra đường dẫn đầy đủ và đảm bảo ứng dụng có quyền đọc/ghi. |
-| **Định dạng không được hỗ trợ** | Xác nhận rằng loại tài liệu (ví dụ: DOCX, PDF) nằm trong danh sách các định dạng được hỗ trợ. |
-| **Lỗi hết bộ nhớ** | Xử lý các tệp lớn thành các phần nhỏ hơn hoặc tăng kích thước heap JVM (`-Xmx`). |
-| **RangeMode không hoạt động như mong đợi** | Kiểm tra lại giá trị start/end và đảm bảo chúng nằm trong số trang của tài liệu. |
+|-------|----------|
+| **Invalid file path** | Xác minh đường dẫn đầy đủ và đảm bảo ứng dụng có quyền đọc/ghi. |
+| **Unsupported format** | Xác nhận rằng loại tài liệu (ví dụ: DOCX, PDF) có trong danh sách các định dạng được hỗ trợ. |
+| **Out‑of‑memory errors** | Xử lý các tệp lớn thành các phần nhỏ hơn hoặc tăng kích thước heap của JVM (`-Xmx`). |
+| **RangeMode not behaving as expected** | Kiểm tra lại các giá trị bắt đầu/kết thúc và đảm bảo chúng nằm trong số trang của tài liệu. |
 
-## Câu Hỏi Thường Gặp
+## Câu hỏi thường gặp
 
-**H: Làm sao để trích xuất các trang lẻ?**  
-Đ: Sử dụng `RangeMode.OddPages` khi tạo `ExtractOptions`.
+**Q: Làm thế nào để trích xuất các trang lẻ?**  
+A: Sử dụng `RangeMode.OddPages` khi tạo `ExtractOptions`.
 
-**H: Có thể dùng với PDF không?**  
-Đ: Có, GroupDocs.Merger hỗ trợ PDF, DOCX, PPTX, XLSX và nhiều định dạng khác.
+**Q: Tôi có thể sử dụng điều này với PDF không?**  
+A: Có — GroupDocs.Merger hỗ trợ PDF, DOCX, PPTX, XLSX và nhiều định dạng khác.
 
-**H: Nếu đường dẫn tài liệu sai thì sao?**  
-Đ: API sẽ ném ra `IOException`. Kiểm tra lại đường dẫn và quyền truy cập tệp.
+**Q: Nếu đường dẫn tài liệu của tôi không đúng thì sao?**  
+A: API sẽ ném ra một `IOException`. Xác minh đường dẫn và kiểm tra quyền truy cập tệp.
 
-**H: Nên xử lý ngoại lệ như thế nào khi trích xuất?**  
-Đ: Bao mã trích xuất trong khối `try‑catch` và ghi lại chi tiết ngoại lệ để tiện khắc phục.
+**Q: Tôi nên xử lý ngoại lệ như thế nào trong quá trình trích xuất?**  
+A: Đặt mã trích xuất trong một khối `try‑catch` và ghi lại chi tiết ngoại lệ để khắc phục.
 
-**H: Có giới hạn số trang có thể trích xuất không?**  
-Đ: Không có giới hạn cứng, nhưng việc trích xuất rất lớn có thể yêu cầu thêm bộ nhớ heap.
+**Q: Có giới hạn nào về số trang tôi có thể trích xuất không?**  
+A: Không có giới hạn cứng, nhưng việc trích xuất các phạm vi rất lớn có thể yêu cầu thêm bộ nhớ heap.
 
-## Tài Nguyên
+## Tài nguyên
 
-- [Documentation](https://docs.groupdocs.com/merger/java/)
-- [API Reference](https://reference.groupdocs.com/merger/java/)
-- [Download GroupDocs.Merger for Java](https://releases.groupdocs.com/merger/java/)
-- [Purchase GroupDocs Products](https://purchase.groupdocs.com/buy)
-- [Free Trial](https://releases.groupdocs.com/merger/java/)
-- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- [Support Forum](https://forum.groupdocs.com/c/merger/)
+- [Tài liệu](https://docs.groupdocs.com/merger/java/)
+- [Tham khảo API](https://reference.groupdocs.com/merger/java/)
+- [Tải xuống GroupDocs.Merger cho Java](https://releases.groupdocs.com/merger/java/)
+- [Mua sản phẩm GroupDocs](https://purchase.groupdocs.com/buy)
+- [Dùng thử miễn phí](https://releases.groupdocs.com/merger/java/)
+- [Giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/)
+- [Diễn đàn hỗ trợ](https://forum.groupdocs.com/c/merger/)
 
-Bằng cách làm theo hướng dẫn này, bạn đã có một phương pháp đáng tin cậy để **trích xuất các trang cụ thể** từ bất kỳ tài liệu nào được hỗ trợ bằng GroupDocs.Merger cho Java. Chúc bạn lập trình vui vẻ!
-
----
-
-**Cập nhật lần cuối:** 2026-02-16  
-**Đã kiểm tra với:** Phiên bản mới nhất của GroupDocs.Merger (Java)  
-**Tác giả:** GroupDocs  
+Bằng cách làm theo hướng dẫn này, bạn đã có một phương pháp đáng tin cậy để **extract specific pages java** từ bất kỳ tài liệu nào được hỗ trợ bằng GroupDocs.Merger cho Java. Chúc lập trình vui vẻ!
 
 ---
+
+**Cập nhật lần cuối:** 2026-08-15  
+**Kiểm thử với:** GroupDocs.Merger phiên bản mới nhất (Java)  
+**Tác giả:** GroupDocs
+
+## Hướng dẫn liên quan
+
+- [tách pdf thành các trang với GroupDocs.Merger cho Java](/merger/java/document-splitting/master-document-splitting-groupdocs-merger-java/)
+- [gộp các trang cụ thể java – Kết hợp tài liệu với GroupDocs.Merger](/merger/java/document-joining/join-pages-groupdocs-merger-java-tutorial/)
+- [Cách tải PDF từ URL Java – Hướng dẫn tải tài liệu cho GroupDocs.Merger](/merger/java/document-loading/)

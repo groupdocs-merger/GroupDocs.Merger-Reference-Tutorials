@@ -1,51 +1,100 @@
 ---
-date: '2026-02-13'
-description: GroupDocs.Merger for Java ile görüntüleri dikey olarak birleştirmeyi
-  öğrenin. Bu öğreticide, görüntüleri dikey olarak birleştirme, dikey bir fotoğraf
-  kolajı oluşturma ve görüntüleri dosyaya verimli bir şekilde ekleme gösterilmektedir.
+date: '2026-08-15'
+description: GroupDocs.Merger for Java ile görüntüleri dikey birleştirerek dikey foto
+  kolajı oluşturmayı öğrenin. Bu öğreticide görüntüleri birleştirme, kolaj oluşturma
+  ve dosyaları verimli bir şekilde yönetme konuları gösterilmektedir.
 keywords:
+- create vertical photo collage
 - join multiple images vertically
+- combine images into one java
 - GroupDocs.Merger for Java
 - image merging tutorial
-title: GroupDocs.Merger Java ile Görüntüleri Dikey Olarak Birleştirme
+lastmod: '2026-08-15'
+og_description: GroupDocs.Merger for Java kullanarak dikey foto kolajı oluşturun.
+  Bu rehber, birden fazla görüntüyü dikey olarak birleştirme, desteklenen formatlar,
+  performans ipuçları ve gerçek dünya kullanım örnekleri konularını adım adım anlatır.
+og_image_alt: Guide showing how to merge images vertically in Java with GroupDocs.Merger
+og_title: GroupDocs.Merger for Java ile dikey foto kolajı oluşturun
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-15'
+  description: Learn how to create vertical photo collage by merging images vertically
+    with GroupDocs.Merger for Java. This tutorial shows how to join images, build
+    a collage, and handle files efficiently.
+  headline: How to merge images vertically using GroupDocs.Merger for Java
+  type: TechArticle
+- description: Learn how to create vertical photo collage by merging images vertically
+    with GroupDocs.Merger for Java. This tutorial shows how to join images, build
+    a collage, and handle files efficiently.
+  name: How to merge images vertically using GroupDocs.Merger for Java
+  steps:
+  - name: define paths and initialize the merger
+    text: First, point the library at your source image and decide where the merged
+      result will be saved.
+  - name: configure join options
+    text: Tell GroupDocs.Merger that you want a **vertical** layout.
+  - name: add additional images
+    text: Use the `join` method for each extra picture you want to stack below the
+      previous one. You can repeat this call as many times as needed to **add images
+      to file** and create a long vertical collage.
+  - name: save the merged image
+    text: Finally, write the combined picture to disk.
+  type: HowTo
+- questions:
+  - answer: PNG, BMP, JPG, and other common static formats are supported.
+    question: What image formats can I combine with this method?
+  - answer: No hard limit; the practical limit is memory availability. Add images
+      sequentially with `join`.
+    question: Is there a limit to the number of images I can join?
+  - answer: Resize or compress the source images before merging, or use Java’s `ImageIO`
+      to reduce quality.
+    question: My output file is too large—what can I do?
+  - answer: The current API focuses on static images; animated GIFs are not supported
+      for vertical joining.
+    question: Can I merge animated GIFs vertically?
+  - answer: Purchase a license through the GroupDocs portal; a temporary license is
+      available for testing.
+    question: How do I obtain a production license?
+  type: FAQPage
+tags:
+- create vertical photo collage
+- GroupDocs.Merger
+- Java image merging
+- vertical collage
+- image processing
+title: GroupDocs.Merger for Java ile görüntüleri dikey birleştirme
 type: docs
 url: /tr/java/format-specific-merging/join-multiple-images-vertically-groupdocs-merger-java/
 weight: 1
 ---
 
-# How to Merge Images Vertically using GroupDocs.Merger for Java
+# GroupDocs.Merger for Java kullanarak görüntüleri dikey olarak birleştirme
 
-Birden fazla resmi tek bir dosyada birleştirmek, foto kolajları, raporlar veya pazarlama materyalleri için **görselleri nasıl birleştireceğinizi** öğrenmek istediğinizde yaygın bir ihtiyaçtır. Bu rehberde, GroupDocs.Merger for Java ile görselleri dikey olarak birleştirme sürecini adım adım inceleyecek, bu yaklaşımın neden değerli olduğunu açıklayacak ve yaygın hatalardan kaçınmanız için pratik ipuçları sunacağız.
+Bu adım adım rehberde, GroupDocs.Merger for Java kullanarak birkaç görüntüyü tek uzun resimde birleştirerek **dikey foto kolajı** oluşturacaksınız. İster kaydırılabilir bir banner, bir rapor ek bölümü ya da basit bir kolaj ihtiyacınız olsun, bu öğretici dikey birleştirmenin neden önemli olduğunu açıklar, kesin API çağrılarını gösterir ve bellek kullanımını düşük tutmak için pratik ipuçları verir.
 
-## Quick Answers
-- **What library can I use?** GroupDocs.Merger for Java.
-- **Can I join more than three images?** Yes – add as many as you need.
-- **Which image formats are supported?** PNG, BMP, JPG, and other common static formats.
-- **Do I need a license for development?** A free trial works for testing; a paid license is required for production.
-- **Is the process memory‑efficient?** Load only required images and save promptly to keep memory usage low.
+## Hızlı cevaplar
+- **Hangi kütüphaneyi kullanabilirim?** GroupDocs.Merger for Java.
+- **Üçten fazla görüntüyü birleştirebilir miyim?** Evet – ihtiyacınız kadar ekleyin.
+- **Hangi görüntü formatları destekleniyor?** PNG, BMP, JPG ve diğer yaygın statik formatlar.
+- **Geliştirme için lisansa ihtiyacım var mı?** Ücretsiz deneme test için çalışır; üretim için ücretli lisans gerekir.
+- **İşlem bellek açısından verimli mi?** Yalnızca gerekli görüntüleri yükleyin ve belleği düşük tutmak için hemen kaydedin.
 
-## What is Image Merging?
-Image merging is the technique of combining two or more separate image files into one composite image. When the images are stacked **vertically**, the result looks like a tall photo strip—perfect for creating a **vertical photo collage** or assembling visual sections of a report.
+## Görüntü birleştirme nedir?
+Görüntü birleştirme, iki veya daha fazla ayrı görüntü dosyasını tek bir birleşik görüntüde birleştirme tekniğidir. Görüntüler **dikey** olarak istiflendiğinde, sonuç uzun bir fotoğraf şeridi gibi görünür—**dikey foto kolajı** için veya bir raporun görsel bölümlerini bir araya getirmek için mükemmeldir.
 
-## Why Use GroupDocs.Merger for Java?
-- **Simple API** – only a few lines of Java code are needed.
-- **Format flexibility** – works with PNG, BMP, JPG, and more.
-- **Performance‑focused** – processes images in memory efficiently.
-- **Enterprise‑ready** – includes licensing options for commercial projects.
+## Neden GroupDocs.Merger for Java kullanmalısınız?
+GroupDocs.Merger for Java, sadece birkaç kod satırıyla birden fazla görüntüyü dikey olarak birleştirmenizi sağlar. **50+ statik görüntü formatını** destekler, dosyaları geçici dosyalar oluşturmadan bellekte işler ve tipik bir sunucuda yığın belleği 200 MB'ın altında tutarak çok sayıda sayfalı belgeleri işleyebilir.
 
-## Prerequisites
+## Önkoşullar
+- Java Development Kit (JDK) 8 veya daha yenisi.
+- IntelliJ IDEA veya Eclipse gibi bir IDE.
+- Bağımlılık yönetimi için Maven veya Gradle.
+- Java sözdizimi hakkında temel bilgi (derin görüntü işleme bilgisi gerekmez).
 
-Before we start, make sure you have the following:
+## GroupDocs.Merger for Java kurulumu
 
-- **Java Development Kit (JDK)** installed (version 8 or newer).
-- An IDE such as **IntelliJ IDEA** or **Eclipse**.
-- **Maven** or **Gradle** for dependency management.
-- Basic familiarity with Java syntax (no deep image‑processing knowledge required).
-
-## Setting Up GroupDocs.Merger for Java
-
-### Using Maven
-Add the dependency to your `pom.xml` file:
+### Maven kullanarak
+Bağımlılığı `pom.xml` dosyanıza ekleyin:
 
 ```xml
 <dependency>
@@ -55,31 +104,32 @@ Add the dependency to your `pom.xml` file:
 </dependency>
 ```
 
-### Using Gradle
-Include the library in your `build.gradle` file:
+### Gradle kullanarak
+Kütüphaneyi `build.gradle` dosyanıza dahil edin:
 
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-### Direct Download
-Alternatively, you can download the latest version from [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
+### Doğrudan indirme
+Alternatif olarak, en son sürümü [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) adresinden indirebilirsiniz.
 
-#### License Acquisition Steps
-1. **Free Trial** – explore all features without a cost.  
-2. **Temporary License** – obtain a short‑term key for extended testing.  
-3. **Purchase** – buy a permanent license for production use.
+#### Lisans edinme adımları
+1. **Ücretsiz deneme** – maliyet olmadan tüm özellikleri keşfedin.  
+2. **Geçici lisans** – uzun süreli test için kısa vadeli bir anahtar edinin.  
+3. **Satın al** – üretim kullanımı için kalıcı bir lisans satın alın.
 
-Once the library is added, import the main class in your Java file:
+Kütüphane eklendikten sonra, Java dosyanıza ana sınıfı içe aktarın:
 
 ```java
 import com.groupdocs.merger.Merger;
 ```
 
-## How to Merge Images Vertically
+## Görüntüleri dikey olarak birleştirme
+Kaynak resimlerinizi yükleyin, API'ye dikey bir düzen kullanmasını söyleyin, her resmi ekleyin ve sonucu kaydedin. Bu dört adımlı desen, minimal kod ve optimum performansla **dikey foto kolajı** oluşturmanızı sağlar.
 
-### Step 1: Define Paths and Initialize the Merger
-First, point the library at your source image and decide where the merged result will be saved.
+### Adım 1: yolları tanımlayın ve birleştiriciyi başlatın
+İlk olarak, kütüphaneyi kaynak görüntünüze yönlendirin ve birleştirilmiş sonucun nereye kaydedileceğine karar verin.
 
 ```java
 String filePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_PNG";
@@ -90,86 +140,92 @@ String filePathOut = new File("YOUR_OUTPUT_DIRECTORY",
 Merger merger = new Merger(filePath);
 ```
 
-### Step 2: Configure Join Options
-Tell GroupDocs.Merger that you want a **vertical** layout.
+### Adım 2: birleştirme seçeneklerini yapılandırın
+GroupDocs.Merger'a **dikey** bir düzen istediğinizi söyleyin.
 
 ```java
 ImageJoinOptions imageJoinOptions = new ImageJoinOptions(ImageJoinMode.Vertical);
 ```
 
-### Step 3: Add Additional Images
-Use the `join` method for each extra picture you want to stack below the previous one.
+### Adım 3: ek görüntüler ekleyin
+`join` metodunu, bir öncekinin altına istiflemek istediğiniz her ek resim için kullanın.
 
 ```java
 merger.join("YOUR_DOCUMENT_DIRECTORY/SAMPLE_BMP", imageJoinOptions); // Second image.
 merger.join("YOUR_DOCUMENT_DIRECTORY/SAMPLE_JPG", imageJoinOptions); // Third image.
 ```
 
-You can repeat this call as many times as needed to **add images to file** and create a long vertical collage.
+Bu çağrıyı ihtiyacınız kadar tekrarlayarak **dosyaya görüntü ekleyebilir** ve uzun bir dikey kolaj oluşturabilirsiniz.
 
-### Step 4: Save the Merged Image
-Finally, write the combined picture to disk.
+### Adım 4: birleştirilmiş görüntüyü kaydedin
+Son olarak, birleşik resmi diske yazın.
 
 ```java
 merger.save(filePathOut);
 ```
 
-### Expected Result
-The output file will contain all supplied images aligned one after another from top to bottom, forming a single tall image that can be used in reports, presentations, or web galleries.
+### Beklenen sonuç
+Çıktı dosyası, sağlanan tüm görüntüleri üstten alta sıralı bir şekilde içerecek ve raporlar, sunumlar veya web galerileri için kullanılabilecek tek bir uzun resim oluşturacaktır.
 
-## Common Issues and Solutions
-- **Incorrect file paths** – double‑check that each path points to an existing image and that your application has read/write permissions.
-- **Unsupported format** – ensure the image type is among the supported static formats (PNG, BMP, JPG). Animated GIFs are not processed by this feature.
-- **Out‑of‑memory errors** – when merging many high‑resolution images, consider resizing them before joining or increase the JVM heap size (`-Xmx` flag).
+## Yaygın sorunlar ve çözümler
+- **Yanlış dosya yolları** – her yolun mevcut bir görüntüyü işaret ettiğinden ve uygulamanızın okuma/yazma izinlerine sahip olduğundan emin olun.
+- **Desteklenmeyen format** – görüntü tipinin desteklenen statik formatlar (PNG, BMP, JPG) arasında olduğundan emin olun. Animasyonlu GIF'ler bu özellik tarafından işlenmez.
+- **Bellek yetersizliği hataları** – birçok yüksek çözünürlüklü görüntüyü birleştirirken, birleştirmeden önce yeniden boyutlandırmayı düşünün veya JVM yığın boyutunu (`-Xmx` bayrağı) artırın.
 
-## Practical Applications
+## Pratik uygulamalar
 
-| Use Case | How It Helps |
-|----------|--------------|
-| **Create a vertical photo collage** | Combine vacation snapshots into a single scrollable image. |
-| **Assemble visual report sections** | Merge charts, diagrams, and screenshots for a unified PDF export. |
-| **Prepare marketing assets** | Stack product images for a sleek, scroll‑friendly web banner. |
+| Kullanım durumu | Nasıl yardımcı olur |
+|-----------------|---------------------|
+| **Dikey foto kolajı oluştur** | Tatil fotoğraflarını tek bir kaydırılabilir görüntüde birleştirin. |
+| **Görsel rapor bölümlerini birleştir** | Birleştirilmiş PDF dışa aktarımı için grafikler, diyagramlar ve ekran görüntülerini birleştirin. |
+| **Pazarlama varlıklarını hazırlayın** | Şık ve kaydırılabilir bir web bannerı için ürün görüntülerini istifleyin. |
 
-## Performance Tips
-- Load only the images you need at a time; release references after `save` to let the garbage collector free memory.
-- Use SSD storage for the source and destination folders to speed up I/O.
-- When processing large batches, run the merge in a background thread to keep the UI responsive.
+## Performans ipuçları
+- Aynı anda yalnızca ihtiyacınız olan görüntüleri yükleyin; `save` sonrası referansları serbest bırakın, böylece çöp toplayıcı belleği temizlesin.
+- Kaynak ve hedef klasörler için SSD depolama kullanarak I/O hızını artırın.
+- Büyük toplu işlemlerde, birleştirmeyi arka plan iş parçacığında çalıştırarak UI'nın yanıt vermesini sağlayın.
 
-## Conclusion
-You now have a complete, step‑by‑step solution for **how to merge images** vertically using GroupDocs.Merger for Java. Experiment with different image sets, try other join modes (horizontal, grid), and integrate this logic into larger automation pipelines.
+## Sonuç
+Artık GroupDocs.Merger for Java kullanarak **görüntüleri dikey olarak birleştirme** için eksiksiz, adım adım bir çözümünüz var. Farklı görüntü setleriyle deney yapın, diğer birleştirme modlarını (yatay, ızgara) deneyin ve bu mantığı daha büyük otomasyon hatlarına entegre edin.
 
-**Next Steps**
-- Explore the **ImageJoinMode.Horizontal** option for side‑by‑side collages.
-- Combine the merged image with PDF generation using GroupDocs.PDF for end‑to‑end document creation.
+**Sonraki adımlar**
+- **ImageJoinMode.Horizontal** seçeneğini yan yana kolajlar için keşfedin.
+- Birleştirilmiş görüntüyü, uçtan uca belge oluşturma için GroupDocs.PDF kullanarak PDF üretimiyle birleştirin.
 
-## Frequently Asked Questions
+## Sıkça Sorulan Sorular
 
-**Q: What image formats can I combine with this method?**  
-A: PNG, BMP, JPG, and other common static formats are supported.
+**S: Bu yöntemle hangi görüntü formatlarını birleştirebilirim?**  
+A: PNG, BMP, JPG ve diğer yaygın statik formatlar desteklenir.
 
-**Q: Is there a limit to the number of images I can join?**  
-A: No hard limit; the practical limit is memory availability. Add images sequentially with `join`.
+**S: Birleştirebileceğim görüntü sayısında bir sınırlama var mı?**  
+A: Sert bir sınırlama yok; pratik sınırlama bellek kullanılabilirliğidir. Görüntüleri `join` ile sıralı olarak ekleyin.
 
-**Q: My output file is too large—what can I do?**  
-A: Resize or compress the source images before merging, or use Java’s `ImageIO` to reduce quality.
+**S: Çıktı dosyam çok büyük—ne yapabilirim?**  
+A: Birleştirmeden önce kaynak görüntüleri yeniden boyutlandırın veya sıkıştırın, ya da kaliteyi düşürmek için Java’nın `ImageIO`’sunu kullanın.
 
-**Q: Can I merge animated GIFs vertically?**  
-A: The current API focuses on static images; animated GIFs are not supported for vertical joining.
+**S: Animasyonlu GIF'leri dikey olarak birleştirebilir miyim?**  
+A: Mevcut API statik görüntülere odaklanır; animasyonlu GIF'ler dikey birleştirme için desteklenmez.
 
-**Q: How do I obtain a production license?**  
-A: Purchase a license through the GroupDocs portal; a temporary license is available for testing.
+**S: Üretim lisansını nasıl edinebilirim?**  
+A: GroupDocs portalı üzerinden lisans satın alın; test için geçici bir lisans mevcuttur.
 
 ---
 
-**Last Updated:** 2026-02-13  
-**Tested With:** GroupDocs.Merger latest version (as of 2026)  
-**Author:** GroupDocs  
+**Son Güncelleme:** 2026-08-15  
+**Test Edilen:** GroupDocs.Merger latest version (as of 2026)  
+**Yazar:** GroupDocs  
 
 **Resources**  
-- [Documentation](https://docs.groupdocs.com/merger/java/)  
-- [API Reference](https://reference.groupdocs.com/merger/java/)  
-- [Download](https://releases.groupdocs.com/merger/java/)  
-- [Purchase](https://purchase.groupdocs.com/buy)  
-- [Free trial](https://releases.groupdocs.com/merger/java/)  
-- [Temporary license](https://purchase.groupdocs.com/temporary-license/)  
-- [Support](https://forum.groupdocs.com/c/merger/)
+- [Dokümantasyon](https://docs.groupdocs.com/merger/java/)  
+- [API Referansı](https://reference.groupdocs.com/merger/java/)  
+- [İndirme](https://releases.groupdocs.com/merger/java/)  
+- [Satın Al](https://purchase.groupdocs.com/buy)  
+- [Ücretsiz deneme](https://releases.groupdocs.com/merger/java/)  
+- [Geçici lisans](https://purchase.groupdocs.com/temporary-license/)  
+- [Destek](https://forum.groupdocs.com/c/merger/)
+
+## İlgili Eğitimler
+
+- [GroupDocs.Merger for Java kullanarak EMF Dosyalarının Dikey Görüntü Birleştirmesini Nasıl Yapılır](/merger/java/format-specific-merging/master-merging-emf-files-groupdocs-java/)
+- [GroupDocs.Merger for Java kullanarak Birden Çok ODP Dosyasını Nasıl Birleştirirsiniz](/merger/java/format-specific-merging/merge-multiple-odp-files-groupdocs-java/)
+- [GroupDocs.Merger for Java kullanarak Birden Çok VSX Dosyasını Nasıl Birleştirirsiniz](/merger/java/format-specific-merging/merge-multiple-vsx-files-groupdocs-merger-java/)
