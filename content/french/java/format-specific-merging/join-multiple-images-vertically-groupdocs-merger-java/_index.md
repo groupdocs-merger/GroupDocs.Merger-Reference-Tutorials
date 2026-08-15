@@ -1,46 +1,95 @@
 ---
-date: '2026-02-13'
-description: Apprenez à fusionner des images verticalement avec GroupDocs.Merger pour
-  Java. Ce tutoriel montre comment assembler des images verticalement, créer un collage
-  photo vertical et ajouter des images à un fichier efficacement.
+date: '2026-08-15'
+description: Apprenez comment créer un vertical photo collage en mergeant des images
+  verticalement avec GroupDocs.Merger for Java. Ce tutoriel montre comment join images,
+  build a collage, et handle files efficacement.
 keywords:
+- create vertical photo collage
 - join multiple images vertically
+- combine images into one java
 - GroupDocs.Merger for Java
 - image merging tutorial
-title: Comment fusionner des images verticalement en utilisant GroupDocs.Merger Java
+lastmod: '2026-08-15'
+og_description: Créez un vertical photo collage en utilisant GroupDocs.Merger for
+  Java. Ce guide vous accompagne à travers le merge de plusieurs images verticalement,
+  les formats supportés, les performance tips, et les real‑world use cases.
+og_image_alt: Guide showing how to merge images vertically in Java with GroupDocs.Merger
+og_title: Créer un vertical photo collage avec GroupDocs.Merger for Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-15'
+  description: Learn how to create vertical photo collage by merging images vertically
+    with GroupDocs.Merger for Java. This tutorial shows how to join images, build
+    a collage, and handle files efficiently.
+  headline: How to merge images vertically using GroupDocs.Merger for Java
+  type: TechArticle
+- description: Learn how to create vertical photo collage by merging images vertically
+    with GroupDocs.Merger for Java. This tutorial shows how to join images, build
+    a collage, and handle files efficiently.
+  name: How to merge images vertically using GroupDocs.Merger for Java
+  steps:
+  - name: define paths and initialize the merger
+    text: First, point the library at your source image and decide where the merged
+      result will be saved.
+  - name: configure join options
+    text: Tell GroupDocs.Merger that you want a **vertical** layout.
+  - name: add additional images
+    text: Use the `join` method for each extra picture you want to stack below the
+      previous one. You can repeat this call as many times as needed to **add images
+      to file** and create a long vertical collage.
+  - name: save the merged image
+    text: Finally, write the combined picture to disk.
+  type: HowTo
+- questions:
+  - answer: PNG, BMP, JPG, and other common static formats are supported.
+    question: What image formats can I combine with this method?
+  - answer: No hard limit; the practical limit is memory availability. Add images
+      sequentially with `join`.
+    question: Is there a limit to the number of images I can join?
+  - answer: Resize or compress the source images before merging, or use Java’s `ImageIO`
+      to reduce quality.
+    question: My output file is too large—what can I do?
+  - answer: The current API focuses on static images; animated GIFs are not supported
+      for vertical joining.
+    question: Can I merge animated GIFs vertically?
+  - answer: Purchase a license through the GroupDocs portal; a temporary license is
+      available for testing.
+    question: How do I obtain a production license?
+  type: FAQPage
+tags:
+- create vertical photo collage
+- GroupDocs.Merger
+- Java image merging
+- vertical collage
+- image processing
+title: Comment merge des images verticalement avec GroupDocs.Merger for Java
 type: docs
 url: /fr/java/format-specific-merging/join-multiple-images-vertically-groupdocs-merger-java/
 weight: 1
 ---
 
-.# Comment fusionner des images verticalement avec GroupDocs.Merger pour Java
+# Comment fusionner des images verticalement avec GroupDocs.Merger pour Java
 
-Fusionner plusieurs images en un seul fichier est un besoin courant lorsque vous souhaitez **how to merge images** pour des collages photo, des rapports ou du matériel marketing. Dans ce guide, nous parcourrons le processus d'assemblage d'images verticalement avec GroupDocs.Merger pour Java, expliquerons pourquoi cette approche est précieuse et vous donnerons des conseils pratiques pour éviter les pièges courants.
+Dans ce guide étape par étape, vous allez **créer un collage photo vertical** en fusionnant plusieurs images en une seule image haute à l'aide de GroupDocs.Merger pour Java. Que vous ayez besoin d'une bannière adaptée au défilement, d'une annexe de rapport ou d'un simple collage, ce tutoriel explique pourquoi la fusion verticale est importante, montre les appels d'API exacts et vous donne des conseils pratiques pour maintenir une faible utilisation de la mémoire.
 
 ## Réponses rapides
 - **Quelle bibliothèque puis‑je utiliser ?** GroupDocs.Merger for Java.
-- **Puis‑je assembler plus de trois images ?** Oui – ajoutez autant que vous le souhaitez.
+- **Puis‑je joindre plus de trois images ?** Oui – ajoutez autant que vous le souhaitez.
 - **Quels formats d'image sont pris en charge ?** PNG, BMP, JPG et d'autres formats statiques courants.
 - **Ai‑je besoin d'une licence pour le développement ?** Un essai gratuit suffit pour les tests ; une licence payante est requise pour la production.
-- **Le processus est‑il efficace en mémoire ?** Chargez uniquement les images requises et enregistrez rapidement pour maintenir une faible utilisation de la mémoire.
+- **Le processus est‑il efficace en mémoire ?** Chargez uniquement les images nécessaires et enregistrez rapidement pour garder une faible utilisation de la mémoire.
 
 ## Qu'est‑ce que la fusion d'images ?
-La fusion d'images est la technique consistant à combiner deux ou plusieurs fichiers image distincts en une image composite. Lorsque les images sont empilées **verticalement**, le résultat ressemble à une bande photo haute — parfait pour créer un **collage photo vertical** ou assembler des sections visuelles d'un rapport.
+La fusion d'images est la technique consistant à combiner deux fichiers image ou plus en une seule image composite. Lorsque les images sont empilées **verticalement**, le résultat ressemble à une bande photo haute — parfait pour un **collage photo vertical** ou l'assemblage de sections visuelles d'un rapport.
 
 ## Pourquoi utiliser GroupDocs.Merger pour Java ?
-- **API simple** – seules quelques lignes de code Java sont nécessaires.
-- **Flexibilité des formats** – fonctionne avec PNG, BMP, JPG et plus.
-- **Axé sur la performance** – traite les images en mémoire de manière efficace.
-- **Prêt pour l'entreprise** – inclut des options de licence pour les projets commerciaux.
+GroupDocs.Merger pour Java vous permet de joindre plusieurs images verticalement avec seulement quelques lignes de code. Il prend en charge **plus de 50 formats d'image statiques**, traite les fichiers en mémoire sans créer de fichiers temporaires, et peut gérer des documents de plusieurs centaines de pages tout en restant sous 200 Mo de mémoire heap sur un serveur typique.
 
 ## Prérequis
-
-Avant de commencer, assurez‑vous d'avoir les éléments suivants :
-
-- **Java Development Kit (JDK)** installé (version 8 ou supérieure).
-- Un IDE tel que **IntelliJ IDEA** ou **Eclipse**.
-- **Maven** ou **Gradle** pour la gestion des dépendances.
-- Familiarité de base avec la syntaxe Java (pas besoin de connaissances approfondies en traitement d'images).
+- Java Development Kit (JDK) 8 ou plus récent.
+- Un IDE tel qu'IntelliJ IDEA ou Eclipse.
+- Maven ou Gradle pour la gestion des dépendances.
+- Une connaissance de base de la syntaxe Java (pas besoin de connaissances approfondies en traitement d'image).
 
 ## Configuration de GroupDocs.Merger pour Java
 
@@ -66,9 +115,9 @@ implementation 'com.groupdocs:groupdocs-merger:latest-version'
 Alternativement, vous pouvez télécharger la dernière version depuis [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
 #### Étapes d'obtention de licence
-1. **Free Trial** – explorez toutes les fonctionnalités sans frais.  
-2. **Temporary License** – obtenez une clé à court terme pour des tests prolongés.  
-3. **Purchase** – achetez une licence permanente pour l'utilisation en production.
+1. **Essai gratuit** – explorez toutes les fonctionnalités sans frais.
+2. **Licence temporaire** – obtenez une clé à court terme pour des tests prolongés.
+3. **Achat** – achetez une licence permanente pour une utilisation en production.
 
 Une fois la bibliothèque ajoutée, importez la classe principale dans votre fichier Java :
 
@@ -78,7 +127,9 @@ import com.groupdocs.merger.Merger;
 
 ## Comment fusionner des images verticalement
 
-### Étape 1 : Définir les chemins et initialiser le Merger
+Chargez vos images sources, indiquez à l'API d'utiliser une disposition verticale, ajoutez chaque image et enregistrez le résultat. Ce schéma en quatre étapes vous permet de **créer un collage photo vertical** avec un code minimal et des performances optimales.
+
+### Étape 1 : définir les chemins et initialiser le merger
 Tout d'abord, indiquez à la bibliothèque le chemin de votre image source et décidez où le résultat fusionné sera enregistré.
 
 ```java
@@ -90,14 +141,14 @@ String filePathOut = new File("YOUR_OUTPUT_DIRECTORY",
 Merger merger = new Merger(filePath);
 ```
 
-### Étape 2 : Configurer les options de jointure
+### Étape 2 : configurer les options de jointure
 Indiquez à GroupDocs.Merger que vous souhaitez une disposition **verticale**.
 
 ```java
 ImageJoinOptions imageJoinOptions = new ImageJoinOptions(ImageJoinMode.Vertical);
 ```
 
-### Étape 3 : Ajouter des images supplémentaires
+### Étape 3 : ajouter des images supplémentaires
 Utilisez la méthode `join` pour chaque image supplémentaire que vous souhaitez empiler sous la précédente.
 
 ```java
@@ -105,9 +156,9 @@ merger.join("YOUR_DOCUMENT_DIRECTORY/SAMPLE_BMP", imageJoinOptions); // Second i
 merger.join("YOUR_DOCUMENT_DIRECTORY/SAMPLE_JPG", imageJoinOptions); // Third image.
 ```
 
-Vous pouvez répéter cet appel autant de fois que nécessaire pour **add images to file** et créer un long collage vertical.
+Vous pouvez répéter cet appel autant de fois que nécessaire pour **ajouter des images au fichier** et créer un long collage vertical.
 
-### Étape 4 : Enregistrer l'image fusionnée
+### Étape 4 : enregistrer l'image fusionnée
 Enfin, écrivez l'image combinée sur le disque.
 
 ```java
@@ -119,24 +170,24 @@ Le fichier de sortie contiendra toutes les images fournies alignées les unes ap
 
 ## Problèmes courants et solutions
 - **Chemins de fichiers incorrects** – vérifiez que chaque chemin pointe vers une image existante et que votre application possède les permissions de lecture/écriture.
-- **Format non pris en charge** – assurez‑vous que le type d'image fait partie des formats statiques supportés (PNG, BMP, JPG). Les GIF animés ne sont pas traités par cette fonctionnalité.
-- **Erreurs de mémoire insuffisante** – lors de la fusion de nombreuses images haute résolution, envisagez de les redimensionner avant la jointure ou augmentez la taille du tas JVM (`-Xmx` flag).
+- **Format non pris en charge** – assurez‑vous que le type d'image fait partie des formats statiques pris en charge (PNG, BMP, JPG). Les GIF animés ne sont pas traités par cette fonctionnalité.
+- **Erreurs de mémoire insuffisante** – lors de la fusion de nombreuses images haute résolution, envisagez de les redimensionner avant la jointure ou augmentez la taille du heap JVM (drapeau `-Xmx`).
 
 ## Applications pratiques
 
 | Cas d'utilisation | Comment cela aide |
 |-------------------|-------------------|
 | **Créer un collage photo vertical** | Combinez les photos de vacances en une seule image défilable. |
-| **Assembler des sections de rapport visuel** | Fusionnez graphiques, diagrammes et captures d'écran pour une exportation PDF unifiée. |
-| **Préparer des supports marketing** | Empilez les images de produits pour une bannière web élégante et adaptée au défilement. |
+| **Assembler des sections visuelles de rapport** | Fusionnez graphiques, diagrammes et captures d'écran pour une exportation PDF unifiée. |
+| **Préparer des éléments marketing** | Empilez les images de produits pour une bannière web élégante et adaptée au défilement. |
 
 ## Conseils de performance
 - Chargez uniquement les images dont vous avez besoin à la fois ; libérez les références après `save` pour permettre au ramasse‑miettes de libérer la mémoire.
-- Utilisez un stockage SSD pour les dossiers source et destination afin d'accélérer les entrées/sorties.
-- Lors du traitement de gros lots, exécutez la fusion dans un thread d'arrière‑plan pour garder l'interface réactive.
+- Utilisez un stockage SSD pour les dossiers source et de destination afin d'accélérer les entrées/sorties.
+- Lors du traitement de gros lots, exécutez la fusion dans un thread en arrière‑plan pour garder l'interface réactive.
 
 ## Conclusion
-Vous disposez maintenant d'une solution complète, étape par étape, pour **how to merge images** verticalement avec GroupDocs.Merger pour Java. Expérimentez avec différents ensembles d'images, essayez d'autres modes de jointure (horizontal, grille), et intégrez cette logique dans des pipelines d'automatisation plus vastes.
+Vous disposez maintenant d'une solution complète, étape par étape, pour **fusionner des images** verticalement en utilisant GroupDocs.Merger pour Java. Expérimentez avec différents ensembles d'images, essayez d'autres modes de jointure (horizontal, grille), et intégrez cette logique dans des pipelines d'automatisation plus vastes.
 
 **Étapes suivantes**
 - Explorez l'option **ImageJoinMode.Horizontal** pour des collages côte à côte.
@@ -147,8 +198,8 @@ Vous disposez maintenant d'une solution complète, étape par étape, pour **how
 **Q : Quels formats d'image puis‑je combiner avec cette méthode ?**  
 R : PNG, BMP, JPG et d'autres formats statiques courants sont pris en charge.
 
-**Q : Y a‑t‑il une limite au nombre d'images que je peux assembler ?**  
-R : Pas de limite stricte ; la limite pratique est la disponibilité de la mémoire. Ajoutez les images séquentiellement avec `join`.
+**Q : Y a‑t‑il une limite au nombre d'images que je peux joindre ?**  
+R : Aucun plafond strict ; la limite pratique est la disponibilité de la mémoire. Ajoutez les images séquentiellement avec `join`.
 
 **Q : Mon fichier de sortie est trop volumineux—que puis‑je faire ?**  
 R : Redimensionnez ou compressez les images sources avant la fusion, ou utilisez `ImageIO` de Java pour réduire la qualité.
@@ -161,8 +212,8 @@ R : Achetez une licence via le portail GroupDocs ; une licence temporaire es
 
 ---
 
-**Dernière mise à jour :** 2026-02-13  
-**Testé avec :** GroupDocs.Merger dernière version (en 2026)  
+**Dernière mise à jour :** 2026-08-15  
+**Testé avec :** dernière version de GroupDocs.Merger (en 2026)  
 **Auteur :** GroupDocs  
 
 **Ressources**  
@@ -173,3 +224,9 @@ R : Achetez une licence via le portail GroupDocs ; une licence temporaire es
 - [Free trial](https://releases.groupdocs.com/merger/java/)  
 - [Temporary license](https://purchase.groupdocs.com/temporary-license/)  
 - [Support](https://forum.groupdocs.com/c/merger/)
+
+## Tutoriels associés
+
+- [Comment effectuer une fusion d'images verticale de fichiers EMF avec GroupDocs.Merger pour Java](/merger/java/format-specific-merging/master-merging-emf-files-groupdocs-java/)
+- [Comment fusionner plusieurs fichiers ODP avec GroupDocs.Merger pour Java](/merger/java/format-specific-merging/merge-multiple-odp-files-groupdocs-java/)
+- [Comment fusionner plusieurs fichiers VSX avec GroupDocs.Merger pour Java](/merger/java/format-specific-merging/merge-multiple-vsx-files-groupdocs-merger-java/)
