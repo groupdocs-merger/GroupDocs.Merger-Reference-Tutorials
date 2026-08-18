@@ -314,11 +314,6 @@ Máte nyní kompletní, připravený průvodce pro **merge pdf java** soubory, e
 **Testováno s:** GroupDocs.Merger for Java 23.9 (latest stable)  
 **Autor:** GroupDocs  
 
-{< blocks/products/products-backtop-button >}
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-
 ## Související tutoriály
 
 - [Jak sloučit PDF pomocí Java a GroupDocs.Merger - Kompletní průvodce](/merger/java/document-joining/join-documents-groupdocs-merger-java/)

@@ -312,11 +312,6 @@ Du har nu en komplett, produktionsklar guide för att **merge pdf java**‑filer
 **Testad med:** GroupDocs.Merger for Java 23.9 (latest stable)  
 **Författare:** GroupDocs  
 
-{< blocks/products/products-backtop-button >}
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-
 ## Relaterade handledningar
 
 - [Så här slår du samman PDF med Java med GroupDocs.Merger – En komplett guide](/merger/java/document-joining/join-documents-groupdocs-merger-java/)

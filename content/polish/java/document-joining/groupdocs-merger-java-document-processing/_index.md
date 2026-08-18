@@ -314,11 +314,6 @@ Masz teraz kompletny, gotowy do produkcji przewodnik po **merge pdf java**, wyod
 **Tested With:** GroupDocs.Merger for Java 23.9 (latest stable)  
 **Author:** GroupDocs  
 
-{< blocks/products/products-backtop-button >}
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-
 ## Powiązane samouczki
 
 - [Jak połączyć PDF w Javie przy użyciu GroupDocs.Merger – Kompletny przewodnik](/merger/java/document-joining/join-documents-groupdocs-merger-java/)

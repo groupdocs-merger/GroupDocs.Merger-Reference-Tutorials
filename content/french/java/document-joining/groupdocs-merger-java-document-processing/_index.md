@@ -314,11 +314,6 @@ Vous disposez maintenant d'un guide complet et prêt pour la production pour **m
 **Tested With:** GroupDocs.Merger for Java 23.9 (latest stable)  
 **Author:** GroupDocs  
 
-{< blocks/products/products-backtop-button >}
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-
 ## Tutoriels associés
 
 - [Comment fusionner des PDF avec Java en utilisant GroupDocs.Merger - Guide complet](/merger/java/document-joining/join-documents-groupdocs-merger-java/)

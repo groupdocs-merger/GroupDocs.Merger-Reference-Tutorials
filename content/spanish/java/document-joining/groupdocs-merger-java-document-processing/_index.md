@@ -313,11 +313,6 @@ Ahora tiene una guía completa y lista para producción sobre cómo **merge pdf 
 **Probado con:** GroupDocs.Merger for Java 23.9 (latest stable)  
 **Autor:** GroupDocs  
 
-{< blocks/products/products-backtop-button >}
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-
 ## Tutoriales relacionados
 
 - [Cómo fusionar PDF con Java usando GroupDocs.Merger - Guía completa](/merger/java/document-joining/join-documents-groupdocs-merger-java/)

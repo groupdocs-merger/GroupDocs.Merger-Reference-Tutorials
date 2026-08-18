@@ -314,11 +314,6 @@ A: Реализуйте `ProgressListener` и привяжите его к эк�
 **Тестировано с:** GroupDocs.Merger for Java 23.9 (latest stable)  
 **Автор:** GroupDocs  
 
-{< blocks/products/products-backtop-button >}
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-
 ## Связанные руководства
 
 - [Как объединить PDF с помощью Java, используя GroupDocs.Merger — Полное руководство](/merger/java/document-joining/join-documents-groupdocs-merger-java/)

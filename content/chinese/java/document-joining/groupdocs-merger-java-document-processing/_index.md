@@ -310,11 +310,6 @@ A: 实现 `ProgressListener` 并将其附加到 `Merger` 实例，以接收实�
 **已测试版本：** GroupDocs.Merger for Java 23.9（最新稳定版）  
 **作者：** GroupDocs  
 
-{< blocks/products/products-backtop-button >}
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-
 ## 相关教程
 
 - [使用 GroupDocs.Merger 的 Java 合并 PDF 完整指南](/merger/java/document-joining/join-documents-groupdocs-merger-java/)

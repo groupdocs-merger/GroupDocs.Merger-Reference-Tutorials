@@ -314,11 +314,6 @@ Bây giờ bạn đã có một hướng dẫn đầy đủ, sẵn sàng cho mô
 **Kiểm tra với:** GroupDocs.Merger for Java 23.9 (latest stable)  
 **Tác giả:** GroupDocs  
 
-{< blocks/products/products-backtop-button >}
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-
 ## Các hướng dẫn liên quan
 
 - [Cách hợp nhất PDF bằng Java sử dụng GroupDocs.Merger - Hướng dẫn đầy đủ](/merger/java/document-joining/join-documents-groupdocs-merger-java/)

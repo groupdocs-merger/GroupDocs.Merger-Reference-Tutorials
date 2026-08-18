@@ -311,11 +311,6 @@ A: ทำการ Implement `ProgressListener` และแนบเข้า�
 **Tested With:** GroupDocs.Merger for Java 23.9 (latest stable)  
 **Author:** GroupDocs  
 
-{< blocks/products/products-backtop-button >}
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-
 ## บทเรียนที่เกี่ยวข้อง
 
 - [วิธีรวม PDF ด้วย Java โดยใช้ GroupDocs.Merger - คู่มือครบถ้วน](/merger/java/document-joining/join-documents-groupdocs-merger-java/)

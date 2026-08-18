@@ -312,11 +312,6 @@ public class FeatureApplyPageBuilder {
 **تم الاختبار مع:** GroupDocs.Merger for Java 23.9 (latest stable)  
 **المؤلف:** GroupDocs  
 
-{< blocks/products/products-backtop-button >}
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-
 ## دروس ذات صلة
 
 - [كيفية دمج PDF باستخدام Java وGroupDocs.Merger - دليل كامل](/merger/java/document-joining/join-documents-groupdocs-merger-java/)

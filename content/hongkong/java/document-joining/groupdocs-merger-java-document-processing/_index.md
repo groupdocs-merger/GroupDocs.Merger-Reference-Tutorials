@@ -313,11 +313,6 @@ A: 實作 `ProgressListener` 並附加至 `Merger` 實例，即可取得即時�
 **Tested With:** GroupDocs.Merger for Java 23.9 (latest stable)  
 **Author:** GroupDocs  
 
-{< blocks/products/products-backtop-button >}
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-
 ## 相關教學
 
 - [如何使用 GroupDocs.Merger 於 Java 合併 PDF - 完整指南](/merger/java/document-joining/join-documents-groupdocs-merger-java/)

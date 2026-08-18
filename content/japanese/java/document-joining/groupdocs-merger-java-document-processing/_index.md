@@ -313,11 +313,6 @@ A: `ProgressListener` を実装し、`Merger` インスタンスにアタッチ�
 **テスト環境:** GroupDocs.Merger for Java 23.9 (latest stable)  
 **作者:** GroupDocs  
 
-{< blocks/products/products-backtop-button >}
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-
 ## 関連チュートリアル
 
 - [Java で GroupDocs.Merger を使用して PDF をマージする方法 - 完全ガイド](/merger/java/document-joining/join-documents-groupdocs-merger-java/)

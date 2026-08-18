@@ -314,11 +314,6 @@ Most már egy teljes, termelésre kész útmutatóval rendelkezel a **merge pdf 
 **Tesztelve a következővel:** GroupDocs.Merger for Java 23.9 (legújabb stabil)  
 **Szerző:** GroupDocs  
 
-{< blocks/products/products-backtop-button >}
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-
 ## Kapcsolódó oktatóanyagok
 
 - [Hogyan egyesítsünk PDF‑et Java‑val a GroupDocs.Merger segítségével – Teljes útmutató](/merger/java/document-joining/join-documents-groupdocs-merger-java/)
