@@ -1,19 +1,22 @@
 ---
-title: "java split pdf pages into Multi-Page Files with GroupDocs.Merger for Java"
-description: "Learn how to java split pdf pages and create multi page files using GroupDocs.Merger for Java. Includes step‑by‑step guide, split docx multiple files tips, and performance best practices."
-date: "2026-02-03"
-weight: 1
-url: "/java/document-splitting/split-documents-multi-page-files-java-groupdocs-merger/"
+date: '2026-02-03'
+description: Dowiedz się, jak w Javie podzielić strony PDF i tworzyć wielostronicowe
+  pliki przy użyciu GroupDocs.Merger for Java. Zawiera przewodnik krok po kroku, wskazówki
+  dotyczące dzielenia plików DOCX na wiele plików oraz najlepsze praktyki wydajności.
 keywords:
 - split documents java
 - GroupDocs Merger Java
 - Java document splitting
+title: java dzieli strony PDF na pliki wielostronicowe przy użyciu GroupDocs.Merger
+  dla Javy
 type: docs
+url: /pl/java/document-splitting/split-documents-multi-page-files-java-groupdocs-merger/
+weight: 1
 ---
 
 # java split pdf pages into Multi-Page Files with GroupDocs.Merger for Java
 
-Large documents—whether PDFs, DOCX, or PowerPoint decks—can become unwieldy to share or edit. In this tutorial you’ll discover how to **java split pdf pages** into smaller, manageable pieces and also learn how to **create multi page files** for any supported format. We’ll walk through the full setup, code walk‑through, and practical use‑cases so you can start splitting documents confidently.
+Duże dokumenty — niezależnie czy to PDF‑y, DOCX‑y czy prezentacje PowerPoint — mogą stać się nieporęczne w udostępnianiu lub edycji. W tym samouczku dowiesz się, jak **java split pdf pages** na mniejsze, łatwiejsze do zarządzania części oraz jak **create multi page files** dla dowolnego obsługiwanego formatu. Przejdziemy przez pełną konfigurację, omówienie kodu oraz praktyczne przypadki użycia, abyś mógł pewnie dzielić dokumenty.
 
 ## Quick Answers
 - **What does “java split pdf pages” mean?** It refers to using Java code (via GroupDocs.Merger) to divide a PDF into separate page‑range files.  
