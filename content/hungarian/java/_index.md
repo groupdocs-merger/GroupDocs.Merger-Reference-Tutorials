@@ -1,92 +1,94 @@
 ---
-date: 2026-01-18
-description: Tanulja meg, hogyan egyesítheti a PDF-eket a GroupDocs.Merger for Java
-  segítségével – lépésről lépésre útmutató, amely lefedi a PDF egyesítést Java-ban,
-  PDF felosztást Java-ban, PDF védelmét Java-ban és még sok mást.
+date: 2026-06-16
+description: Ismerje meg, hogyan lehet felosztani a PDF-et és egyesíteni a PDF-eket
+  a GroupDocs.Merger for Java segítségével – lépésről lépésre útmutató, amely lefedi
+  a split pdf java, merge pdf java, protect pdf java, és egyebeket.
 is_root: true
-linktitle: GroupDocs.Merger for Java Tutorials
-title: Hogyan egyesítsünk PDF-eket a GroupDocs.Merger for Java használatával
+keywords:
+- split pdf java
+- java combine pdf files
+- groupdocs merger for java
+- protect pdf java
+- merge multiple pdfs java
+linktitle: GroupDocs.Merger for Java oktatóanyagok
+schemas:
+- author: GroupDocs
+  dateModified: '2026-06-16'
+  description: Learn how to split PDF and merge PDFs with GroupDocs.Merger for Java
+    – step-by-step guide covering split pdf java, merge pdf java, protect pdf java,
+    and more.
+  headline: How to Split PDF and Merge PDFs with GroupDocs.Merger for Java
+  type: TechArticle
+- questions:
+  - answer: Instantiate a `Merger`, call `split(sourcePath, new SplitOptions().setPageRanges("1-3,5,7-10"))`,
+      and specify an output folder—each range becomes a separate PDF file.
+    question: How do I split PDFs using GroupDocs.Merger in Java?
+  - answer: Yes—GroupDocs.Merger supports cross‑format merging, allowing you to combine
+      PDFs with Excel files (`merge excel files java`) into a single PDF output.
+    question: Can I merge PDFs and Excel sheets together?
+  - answer: After calling `merge()`, invoke `protect(outputPath, new ProtectionOptions().setPassword("Secret123"))`
+      to encrypt the final document.
+    question: How do I add password protection after merging?
+  - answer: Enable streaming (`Merger.setStreaming(true)`) to process files in a buffered
+      fashion, which dramatically reduces memory consumption for large documents.
+    question: Is it possible to merge PDFs without loading the entire file into memory?
+  - answer: A commercial GroupDocs.Merger license is mandatory for production deployments;
+      a free 30‑day trial is available for development and testing.
+    question: What licensing is required for production use?
+  type: FAQPage
+title: PDF felosztása és PDF-ek egyesítése a GroupDocs.Merger for Java segítségével
 type: docs
 url: /hu/java/
 weight: 10
 ---
 
-# Hogyan egyesítsünk PDF-eket a GroupDocs.Merger for Java segítségével
+# Hogyan válasszuk szét a PDF-et és egyesítsük a PDF-eket a GroupDocs.Merger for Java-val
 
-A dokumentumok egyesítése gyakori igény a modern Java‑alkalmazásokban, és a **PDF‑ek hatékony egyesítése** nagy különbséget jelenthet a teljesítmény és a felhasználói élmény szempontjából. Ebben az útmutatóban áttekintjük a GroupDocs.Merger for Java fő képességeit, valós példákat mutatunk be, és a mélyebb oktatóanyagokra irányítunk minden dokumentum‑feldolgozási feladathoz, amire szüksége lehet.
+A modern Java alkalmazásokban a **split pdf java** gyakori igény—legyen szó egy hatalmas jelentés apró fejezetekre bontásáról vagy több számla egyetlen archívumba egyesítéséről. A GroupDocs.Merger for Java egyszerűvé teszi a PDF-ek (és több mint 50 egyéb formátum) szétválasztását és egyesítését, magas teljesítményű feldolgozást biztosítva csak néhány kódsorral. Ebben az útmutatóban megvizsgáljuk a fő API-t, valós példákon keresztül haladunk, és további oktatóanyagokra mutatunk, amelyek minden dokumentumfeldolgozási igényhez segítséget nyújtanak.
 
 ## Gyors válaszok
-- **Mi a GroupDocs.Merger elsődleges felhasználási területe?** Dokumentumok kombinálása, felosztása és manipulálása több mint 50 formátumban.  
-- **Egyesíthetek PDF‑eket Java‑ban?** Igen – az API egyszerű “merge pdf java” metódust biztosít.  
-- **Támogatott a PDF‑ek felosztása?** Természetesen; használd a “split pdf java” funkciót.  
-- **Hogyan védhetem jelszóval a PDF‑et az egyesítés után?** Alkalmazz jelszó‑titkosítást a “protect pdf java” funkcióval.  
-- **Szükség van licencre a termeléshez?** Érvényes GroupDocs.Merger licenc szükséges kereskedelmi felhasználáshoz.
+- **Mi a GroupDocs.Merger elsődleges felhasználási célja?** Kombinálja, szétválasztja és manipulálja a dokumentumokat több mint 50 formátumban, beleértve a PDF-eket, Word, Excel és képek.  
+- **Szét tudok-e választani PDF-eket Java-ban?** Igen – az API egy dedikált “split pdf java” metódust kínál, amely lehetővé teszi az oldaltartományok vagy méret alapú szétválasztások meghatározását.  
+- **Hogyan egyesíthetek több PDF-et Java-ban?** Használja a `Merger` osztályt a “merge pdf java” munkafolyamattal a fájlok azonnali összekapcsolásához.  
+- **Elérhető-e jelszóvédelem az egyesítés után?** Természetesen; a “protect pdf java” funkció titkosítja az eredményt a választott jelszóval.  
+- **Szükségem van licencre a termeléshez?** Kereskedelmi GroupDocs.Merger licenc szükséges minden termelési környezethez; egy ingyenes próba elérhető értékeléshez.
 
-## Mi az a „hogyan egyesítsünk PDF‑eket” a GroupDocs.Merger‑rel?
-A GroupDocs.Merger for Java lehetővé teszi, hogy programozottan több PDF‑fájlt (vagy bármely támogatott formátumot) egyetlen, jól strukturált dokumentummá egyesítsen. Kezeli az oldalsorrendet, a metaadatok megőrzését és az opcionális biztonsági beállításokat – mindezt csak néhány Java‑sorral.
+## Mi az a “how to merge PDFs” a GroupDocs.Merger-rel?
+`GroupDocs.Merger for Java` egy könyvtár, amely programozott módon egyesíti több PDF-fájlt (vagy bármely támogatott formátumot) egyetlen, jól strukturált dokumentummá. Automatikusan megőrzi az oldalsorrendet, a metaadatokat és az opcionális biztonsági beállításokat, lehetővé téve összetett dokumentumfolyamatok megvalósítását minimális kóddal.
 
-## Miért használjuk a GroupDocs.Merger for Java‑t?
-- **Széles körű formátumtámogatás** – a PDF‑eken túl Word, Excel, PowerPoint, képek és még sok más egyesíthető.  
-- **Finomhangolt vezérlés** – kiválaszthat konkrét oldalakat, újrarendezheti őket, vagy futás közben elforgathatja őket.  
-- **Beépített biztonság** – jelszavak hozzáadása vagy eltávolítása extra könyvtárak nélkül.  
-- **Skálázható teljesítmény** – optimalizált nagy fájlok és nagy áteresztőképességű környezetek számára.
+## Miért használjuk a GroupDocs.Merger for Java-t?
+Töltse be a forrás PDF-eket, adja meg a kívánt oldalakat, és hívja meg a `merge()`‑t — az API elvégzi a nehéz munkát. Több mint **50 bemeneti és kimeneti formátumot** támogat, **százszámra több oldalt másodpercenként** dolgoz fel, és helyi, valamint felhő környezetben egyaránt működik külső függőségek nélkül.
 
-## Dokumentummanipuláció mestersége a GroupDocs.Merger‑rel
+## Dokumentumműveletek mestersége a GroupDocs.Merger-rel
 
-A GroupDocs.Merger for Java egy erőteljes API, amely lehetővé teszi a Java‑fejlesztők számára, hogy dokumentumokat kombináljanak, felosszák és manipuláljanak több mint 50 népszerű fájlformátumban. Átfogó oktatási sorozatunk részletes, lépésről‑lépésre útmutatót nyújt a GroupDocs.Merger teljes képességeinek kiaknázásához, így egyszerűsítheti a dokumentumkezelési munkafolyamatait.
+A GroupDocs.Merger for Java egy erőteljes API, amely lehetővé teszi a Java fejlesztők számára dokumentumok egyesítését, szétválasztását és manipulálását több mint 50 népszerű fájlformátumban. Átfogó oktatósorozatunk részletes, lépésről‑lépésre útmutatást nyújt a GroupDocs.Merger teljes képességeinek kihasználásához, hogy egyszerűsítse a dokumentumkezelési folyamatait.
 
-Akár **több PDF‑et szeretne egyesíteni**, akár Word‑dokumentumokat, táblázatokat, prezentációkat vagy képeket – ezek az oktatóanyagok segítenek robusztus dokumentumfeldolgozó funkciók megvalósításában Java‑alkalmazásaiban minimális kóddal.
+Akár **több PDF-et kell egyesíteni**, Word-dokumentumokat kombinálni, táblázatokat összekapcsolni, prezentációkat konszolidálni vagy képekkel dolgozni – ezek az oktatóanyagok segítenek robusztus dokumentumfeldolgozó funkciókat beépíteni Java alkalmazásaiba minimális kóddal.
 
-## Mit érhet el a GroupDocs.Merger‑rel
-
-- **Több dokumentum egyesítése** egyetlen fájlba a formázás és a tartalom integritásának megőrzésével.  
+## Amit elérhet a GroupDocs.Merger-rel
+- **Több dokumentum egyesítése** egyetlen fájlba, miközben megőrzi a formázást és a tartalom integritását.  
 - **Speciális oldalak vagy tartományok összekapcsolása** különböző forrásdokumentumokból.  
-- **Nagy dokumentumok felosztása** kisebb, könnyebben kezelhető fájlokra.  
-- **Oldalsorrend manipulálása** mozgatással, eltávolítással, forgatással vagy cserével.  
-- **Dokumentumok védelme** jelszó‑titkosítással és jogosultságkezeléssel.  
-- **Tartalom kinyerése** meghatározott dokumentumrészletekből.  
-- **Dokumentumok feldolgozása** számos formátumban, beleértve a PDF‑et, Word‑et, Excelt, PowerPoint‑ot és még sok mást.
+- **Nagy dokumentumok szétválasztása** kisebb, könnyebben kezelhető fájlokra.  
+- **Az oldalsorrend manipulálása** áthelyezéssel, eltávolítással, forgatással vagy cserével.  
+- **Dokumentumok védelme** jelszóval titkosítva és jogosultságkezeléssel.  
+- **Tartalom kinyerése** adott dokumentumrészletekből.  
+- **Dokumentumok feldolgozása** számos formátumban, beleértve a PDF-et, Word-et, Excelt, PowerPoint-ot és egyebeket.
 
 ## GroupDocs.Merger for Java oktatási kategóriák
 
-### [Document Loading](./document-loading/)
-Mesteri szintre emeli a dokumentumfeldolgozás első, alapvető lépését. Tanulja meg a dokumentumok betöltésének különféle technikáit fájlokból, streamekből és URL‑ekből, megfelelő konfigurációval a különböző formátumokhoz.
-
-### [Document Information](./document-information/)
-Értékes metaadatok kinyerése a dokumentumokból. Ezek az oktatóanyagok megmutatják, hogyan férhet hozzá a dokumentum tulajdonságaihoz, oldalszámokhoz és formátum részletekhez a jobb dokumentumkezelés érdekében.
-
-### [Document Joining](./document-joining/)
-Dokumentumok zökkenőmentes egyesítése. Fedezze fel, hogyan egyesíthet teljes fájlokat vagy kiválaszthat konkrét oldalakat különböző forrásokból egy koherens dokumentummá.
-
-### [Format‑Specific Merging](./format-specific-merging/)
-Az egyesítési műveletek optimalizálása adott fájltípusokhoz. Tanulja meg a PDF‑ek, Word‑dokumentumok, Excel‑táblázatok, PowerPoint‑prezentációk és egyéb formátumok speciális egyesítési technikáit.
-
-### [Advanced Joining Options](./advanced-joining-options/)
-Emelje a dokumentumösszevonást a következő szintre. Fedezze fel a komplex egyesítési forgatókönyveket egyedi oldalkiválasztással, kereszt‑formátumú egyesítéssel és tartalommegőrzési beállításokkal.
-
-### [Document Security](./document-security/)
-Robusztus védelem megvalósítása a dokumentumok számára. Tanulja meg, hogyan adjon hozzá, távolítson el vagy frissítsen jelszavakat, kezelje a jogosultságokat, és biztosítsa a dokumentumok titkosságát.
-
-### [Page Operations](./page-operations/)
-Precíz vezérlés a dokumentumoldalak felett. Fedezze fel a technikákat az oldalak újrarendezésére, forgatására, eltávolítására és egyedi módosítására.
-
-### [Document Extraction](./document-extraction/)
-Speciális tartalom kinyerése nagyobb dokumentumokból. Tanulja meg, hogyan válasszon ki és mentse el bizonyos oldalakat vagy szakaszokat különálló fájlokként.
-
-### [Document Import](./document-import/)
-Dokumentumok bővítése külső tartalommal. Ezek az oktatóanyagok bemutatják, hogyan importálhat tartalmat különböző forrásokból, beleértve az OLE‑objektumokat és csatolmányokat.
-
-### [Image Operations](./image-operations/)
-Képfájlok hatékony feldolgozása. Fedezze fel a képekkel kapcsolatos módszereket, beleértve az egyesítést, konvertálást és beágyazást dokumentumokba.
-
-### [Document Splitting](./document-splitting/)
-Dokumentumok stratégiai felosztása. Tanulja meg a fájlok oldalszám, tartomány vagy egyedi kritériumok alapján történő felosztásának technikáit, hogy több kimeneti dokumentumot hozzon létre.
-
-### [Text Operations](./text-operations/)
-Szöveges dokumentumok hatékony manipulálása. Fedezze fel a szövegfájlok feldolgozásának megközelítéseit, beleértve az egyesítést, sorok szerinti felosztást és formátumkonverziót.
-
-### [Licensing](./licensing/)
-A GroupDocs.Merger helyes beállítása a projektekben. Ismerje meg a licencelési lehetőségeket, konfigurációs megközelítéseket és a telepítési szempontokat.
+### [Dokumentum betöltése](./document-loading/)
+### [Dokumentum információk](./document-information/)
+### [Dokumentum egyesítése](./document-joining/)
+### [Formátum‑specifikus egyesítés](./format-specific-merging/)
+### [Speciális egyesítési beállítások](./advanced-joining-options/)
+### [Dokumentum biztonság](./document-security/)
+### [Oldalműveletek](./page-operations/)
+### [Dokumentum kinyerés](./document-extraction/)
+### [Dokumentum importálás](./document-import/)
+### [Képműveletek](./image-operations/)
+### [Dokumentum szétválasztás](./document-splitting/)
+### [Szövegműveletek](./text-operations/)
+### [Licencelés](./licensing/)
 
 ## Támogatott fájlformátumok
 
@@ -97,43 +99,77 @@ A GroupDocs.Merger for Java számos dokumentumformátumot támogat, többek köz
 - **Prezentációk**: PPTX, PPT, PPSX, PPS, ODP, POT  
 - **Hordozható dokumentumok**: PDF, XPS  
 - **Visio diagramok**: VSDX, VSDM, VSTX, VSSX, VDX, VSX, VTX  
-- **eKönyvek**: EPUB  
+- **e-könyvek**: EPUB  
 - **Képek**: BMP, JPG, PNG, TIFF  
 - **Web**: HTML, MHT, MHTML  
 - **Szöveg**: TXT, CSV, TSV  
-- **És még sok más!**
+- **És még sok más!** (több mint 50 formátum összesen)
 
-## Első lépések
+## Kezdő lépések
 
-Az ebben a szekcióban található oktatóanyagok gyakorlati, kódközpontú megközelítést követnek, teljes példákkal, amelyeket közvetlenül beépíthet alkalmazásaiba. Minden oktatóanyag tartalmaz:
+Az ebben a szakaszban található oktatóanyagok gyakorlati, kódfókuszú megközelítést követnek, teljes példákkal, amelyeket közvetlenül alkalmazásában megvalósíthat. Minden oktatóanyag tartalmaz:
 
-- A funkció és felhasználási esetek világos magyarázatát  
-- Lépésről‑lépésre megvalósítási útmutatót  
-- Teljes kódpéldákat kommentárokkal (a kód a kapcsolódó al‑oktatóanyagokban érhető el)  
-- Konfigurációs lehetőségeket és alternatív megközelítéseket  
-- Teljesítmény‑szempontokat és bevált gyakorlatokat  
+- Világos magyarázat a funkcióról és annak felhasználási eseteiről  
+- Lépésről‑lépésre megvalósítási útmutató  
+- Teljes kódpéldák megjegyzésekkel (a kód a kapcsolódó al‑oktatatóanyagokban található)  
+- Konfigurációs lehetőségek és alternatív megközelítések  
+- Teljesítménybeli szempontok és legjobb gyakorlatok  
 
-Kezdje el felfedezni oktatóanyagainkat még ma, és nyissa ki a GroupDocs.Merger for Java teljes potenciálját dokumentumfeldolgozási munkafolyamataiban!
+Kezdje el ma felfedezni oktatóanyagainkat, hogy kiaknázza a GroupDocs.Merger for Java teljes potenciálját a dokumentumfeldolgozási folyamataiban!
 
-## Gyakran Ismételt Kérdések
+## Hogyan szétválasszuk a PDF-et Java-ban?
+Szétválasszon egy PDF-et egyedi oldalakra vagy egyéni tartományokra mindössze három Java sorban. Hívja meg a `split()` metódust egy `Merger` példányon, adja meg a forrásfájl útvonalát, és határozza meg a kívánt oldaltartományt vagy méretet. A könyvtár minden szegmenst külön fájlba ír, miközben megőrzi az eredeti minőséget és metaadatokat.
 
-**Q: Hogyan egyesíthetek PDF‑eket a GroupDocs.Merger segítségével Java‑ban?**  
-A: Használja a `Merger` osztályt, töltse be minden PDF‑et `Document`‑ként, majd hívja meg a `merge()`‑t – az API automatikusan kezeli az oldalsorrendet és a formátumkonzisztenciát.
+A méret alapján is szétválaszthat (pl. 5 MB darabok) vagy oldalszámok listája szerint, ami ideális fejezetenkénti PDF-ek létrehozásához egyetlen fő dokumentumból. A művelet lineáris időben fut az oldalak számához képest, így alkalmas nagyméretű kötegelt feldolgozásra.
 
-**Q: Fel tudok osztani egy PDF‑et különálló fájlokra?**  
-A: Igen, a “split pdf java” funkció lehetővé teszi oldaltartományok vagy méret szerinti felosztás definiálását, és egyedi PDF‑fájlok létrehozását.
+## Hogyan egyesítsünk több PDF-et Java-ban?
+Töltse be minden forrás PDF-et a `Merger` `addDocument()` metódusával, rendezze őket a kívánt sorrendbe, majd hívja meg a `merge()`‑t. Az API automatikusan egységesíti az oldalméreteket, frissíti a könyvjelzőket, és összevonja a dokumentum tulajdonságait. PDF-eket más formátumokkal is egyesíthet – például Word vagy Excel – azonnali konvertálással, egyetlen egységes PDF kimenetet eredményezve.
 
-**Q: Hogyan adhatok hozzá jelszóvédelmet az egyesítés után?**  
-A: Hívja meg a `protect()` metódust a keletkezett dokumentumon, és adja meg a kívánt titkosítási szintet és jelszót.
+Nagy áteresztőképességű esetekben engedélyezze a streaming módot, hogy elkerülje a teljes fájlok memóriába töltését. Ez akár 80 %-kal csökkenti a heap használatot, amikor több száz oldalas dokumentumokat dolgoz fel.
 
-**Q: Lehet PDF‑eket és Excel‑lapokat együtt egyesíteni?**  
-A: Természetesen – a GroupDocs.Merger támogatja a kereszt‑formátumú egyesítést, így PDF‑eket kombinálhat Excel‑lapokkal (`merge excel sheets java`) egyetlen PDF‑kimenetben.
+## A Merger osztály megértése
+A `Merger` osztály a GroupDocs.Merger for Java központi komponense, amely a dokumentumok egyesítését, szétválasztását és biztonsági műveleteit irányítja. Olyan folyékony metódusokat tesz elérhetővé, mint `addDocument()`, `split()`, `protect()` és `merge()`, hogy tömör feldolgozási csővezetékeket építsen.
+
+### Kulcsfontosságú metódusok áttekintése
+- `addDocument(String path)`: Sorba állít egy forrásfájlt a későbbi egyesítéshez.  
+- `split(String source, SplitOptions options)`: Feloszt egy dokumentumot oldaltartományok vagy méretkorlátok alapján.  
+- `protect(String output, ProtectionOptions options)`: Jelszóvédelem és jogosultságkorlátozások alkalmazása.  
+- `merge(String output)`: Végrehajtja a sorba állított műveleteket és kiírja a végső dokumentumot.  
+
+Ezek a metódusok szálbiztosak, és láncolhatók a kifejező, olvasható kód érdekében.
+
+## Gyakori problémák és megoldások
+
+| Probléma | Ok | Megoldás |
+|----------|----|----------|
+| **Memóriahiányos hibák nagy PDF-eknél** | A teljes fájl betöltése a memóriába | Engedélyezze a streaming módot (`Merger.setStreaming(true)`) vagy a fájlt kisebb darabokra osztja a egyesítés előtt. |
+| **Oldalorientáció eltérés** | A forrás PDF-ek vegyes álló/ fekvő oldalakat tartalmaznak | Használja a `rotatePage(int pageNumber, RotationAngle angle)` metódust az egyesítés előtt az orientáció egységesítéséhez. |
+| **Jelszóval védett forrás nem nyitható meg** | Hiányzó dekódoló jelszó | Adja meg a jelszót a `DocumentLoadOptions.setPassword("yourPwd")` segítségével a dokumentum hozzáadásakor. |
+| **Metaadatok elvesznek az egyesítés után** | Az alapértelmezett egyesítés eldobja az egyedi metaadatokat | Hívja meg a `setPreserveMetadata(true)` metódust a `Merger` példányon az eredeti tulajdonságok megtartásához. |
+
+## Gyakran ismételt kérdések
+
+**Q: Hogyan szétválasszak PDF-eket a GroupDocs.Merger-rel Java-ban?**  
+A: Hozzon létre egy `Merger` példányt, hívja meg a `split(sourcePath, new SplitOptions().setPageRanges("1-3,5,7-10"))` metódust, és adjon meg egy kimeneti mappát – minden tartomány külön PDF fájlt eredményez.
+
+**Q: Egyesíthetek PDF-eket és Excel táblázatokat együtt?**  
+A: Igen – a GroupDocs.Merger támogatja a formátumok közötti egyesítést, lehetővé téve PDF-ek és Excel fájlok (`merge excel files java`) egyetlen PDF kimenetbe való kombinálását.
+
+**Q: Hogyan adhatok jelszóvédelmet az egyesítés után?**  
+A: A `merge()` meghívása után hívja meg a `protect(outputPath, new ProtectionOptions().setPassword("Secret123"))` metódust a végső dokumentum titkosításához.
+
+**Q: Lehet PDF-eket egyesíteni anélkül, hogy a teljes fájlt a memóriába töltenénk?**  
+A: Engedélyezze a streaming módot (`Merger.setStreaming(true)`) a fájlok pufferelt feldolgozásához, ami drámaian csökkenti a memóriahasználatot nagy dokumentumok esetén.
 
 **Q: Milyen licenc szükséges a termeléshez?**  
-A: Kereskedelmi használathoz kereskedelmi GroupDocs.Merger licenc szükséges; ingyenes próba elérhető értékeléshez.
+A: Kereskedelmi GroupDocs.Merger licenc kötelező a termelési környezethez; egy ingyenes 30‑napos próba elérhető fejlesztéshez és teszteléshez.
 
----
-
-**Utolsó frissítés:** 2026-01-18  
-**Tesztelt verzió:** GroupDocs.Merger for Java 23.12 (a cikk írásakor legújabb)  
+**Utolsó frissítés:** 2026-06-16  
+**Tesztelve:** GroupDocs.Merger for Java 23.12 (legújabb a írás időpontjában)  
 **Szerző:** GroupDocs
+
+## Kapcsolódó oktatóanyagok
+
+- [Hatékony PDF egyesítés a GroupDocs.Merger for Java-val: Lépésről‑lépésre útmutató](/merger/java/format-specific-merging/merge-pdfs-groupdocs-merger-java-tutorial/)
+- [Hogyan egyesítsünk DOCX fájlokat egyszerűen a GroupDocs.Merger for Java-val: Lépésről‑lépésre útmutató](/merger/java/format-specific-merging/merge-docx-files-groupdocs-merger-java/)
+- [Hogyan egyesítsünk PowerPoint fájlokat Java-ban a GroupDocs.Merger-rel: Lépésről‑lépésre útmutató](/merger/java/format-specific-merging/merge-powerpoint-files-java-groupdocs-merger-guide/)

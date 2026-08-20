@@ -1,92 +1,119 @@
 ---
-date: 2026-01-18
-description: Dowiedz się, jak łączyć pliki PDF za pomocą GroupDocs.Merger dla Javy
-  – krok po kroku przewodnik obejmujący łączenie PDF w Javie, dzielenie PDF w Javie,
-  ochronę PDF w Javie i wiele więcej.
+date: 2026-06-16
+description: Dowiedz się, jak podzielić PDF i scalać pliki PDF za pomocą GroupDocs.Merger
+  for Java – przewodnik krok po kroku obejmujący split pdf java, merge pdf java, protect
+  pdf java i inne.
 is_root: true
-linktitle: GroupDocs.Merger for Java Tutorials
-title: Jak scalać pliki PDF przy użyciu GroupDocs.Merger dla Javy
+keywords:
+- split pdf java
+- java combine pdf files
+- groupdocs merger for java
+- protect pdf java
+- merge multiple pdfs java
+linktitle: Samouczki GroupDocs.Merger for Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-06-16'
+  description: Learn how to split PDF and merge PDFs with GroupDocs.Merger for Java
+    – step-by-step guide covering split pdf java, merge pdf java, protect pdf java,
+    and more.
+  headline: How to Split PDF and Merge PDFs with GroupDocs.Merger for Java
+  type: TechArticle
+- questions:
+  - answer: Instantiate a `Merger`, call `split(sourcePath, new SplitOptions().setPageRanges("1-3,5,7-10"))`,
+      and specify an output folder—each range becomes a separate PDF file.
+    question: How do I split PDFs using GroupDocs.Merger in Java?
+  - answer: Yes—GroupDocs.Merger supports cross‑format merging, allowing you to combine
+      PDFs with Excel files (`merge excel files java`) into a single PDF output.
+    question: Can I merge PDFs and Excel sheets together?
+  - answer: After calling `merge()`, invoke `protect(outputPath, new ProtectionOptions().setPassword("Secret123"))`
+      to encrypt the final document.
+    question: How do I add password protection after merging?
+  - answer: Enable streaming (`Merger.setStreaming(true)`) to process files in a buffered
+      fashion, which dramatically reduces memory consumption for large documents.
+    question: Is it possible to merge PDFs without loading the entire file into memory?
+  - answer: A commercial GroupDocs.Merger license is mandatory for production deployments;
+      a free 30‑day trial is available for development and testing.
+    question: What licensing is required for production use?
+  type: FAQPage
+title: Jak podzielić PDF i scalać pliki PDF za pomocą GroupDocs.Merger for Java
 type: docs
 url: /pl/java/
 weight: 10
 ---
 
-# Jak scalać pliki PDF przy użyciu GroupDocs.Merger dla Javy
+# Jak podzielić PDF i scalać PDF przy użyciu GroupDocs.Merger dla Javy
 
-Scalanie dokumentów jest powszechnym wymaganiem we współczesnych aplikacjach Java, a **jak scalać pliki PDF** efektywnie może mieć duży wpływ na wydajność i doświadczenie użytkownika. W tym przewodniku przeprowadzimy Cię przez podstawowe możliwości GroupDocs.Merger dla Javy, pokażemy rzeczywiste scenariusze i skierujemy Cię do bardziej szczegółowych tutoriali dla każdego potrzebnego przetwarzania dokumentów.
+W nowoczesnych aplikacjach Java, **split pdf java** jest częstym wymaganiem — niezależnie od tego, czy musisz podzielić ogromny raport na małe rozdziały, czy połączyć kilka faktur w jedną archiwum. GroupDocs.Merger for Java ułatwia zarówno dzielenie, jak i scalanie PDF (i ponad 50 innych formatów), zapewniając wysoką wydajność przetwarzania przy użyciu zaledwie kilku linii kodu. W tym samouczku przyjrzymy się głównemu API, przejdziemy przez scenariusze z życia wzięte i wskażemy dalsze samouczki dla każdego potrzeby przetwarzania dokumentów, którą możesz napotkać.
 
 ## Szybkie odpowiedzi
-- **Jakie jest podstawowe zastosowanie GroupDocs.Merger?** Combine, split, and manipulate documents across more than 50 formats.  
-- **Czy mogę scalać pliki PDF w Javie?** Yes – the API provides a simple “merge pdf java” method.  
-- **Czy obsługa dzielenia plików PDF jest dostępna?** Absolutely; use the “split pdf java” functionality.  
-- **Jak zabezpieczyć PDF po scaleniu?** Apply password encryption with the “protect pdf java” feature.  
-- **Czy potrzebuję licencji do produkcji?** A valid GroupDocs.Merger license is required for commercial use.
+- **Jaki jest podstawowy cel GroupDocs.Merger?** Combine, split, and manipulate documents across more than 50 formats, including PDFs, Word, Excel, and images.  
+- **Czy mogę podzielić PDF w Javie?** Yes – the API offers a dedicated “split pdf java” method that lets you define page ranges or size‑based splits.  
+- **Jak scalić wiele PDF w Javie?** Use the `Merger` class with the “merge pdf java” workflow to join files instantly.  
+- **Czy ochrona hasłem jest dostępna po scaleniu?** Absolutely; the “protect pdf java” feature encrypts the result with a password you choose.  
+- **Czy potrzebuję licencji do produkcji?** A commercial GroupDocs.Merger license is required for any production deployment; a free trial is available for evaluation.
 
-## Co to jest „jak scalać pliki PDF” w GroupDocs.Merger?
-GroupDocs.Merger for Java pozwala programowo połączyć wiele plików PDF (lub dowolny obsługiwany format) w jeden, dobrze ustrukturyzowany dokument. Obsługuje kolejność stron, zachowanie metadanych oraz opcjonalne ustawienia bezpieczeństwa — wszystko przy użyciu kilku linijek kodu Java.
+## Czym jest „how to merge PDFs” w GroupDocs.Merger?
+`GroupDocs.Merger for Java` jest biblioteką, która programowo łączy wiele plików PDF (lub dowolny obsługiwany format) w jeden, dobrze ustrukturyzowany dokument. Automatycznie zachowuje kolejność stron, metadane i opcjonalne ustawienia zabezpieczeń, umożliwiając realizację złożonych przepływów dokumentów przy minimalnej ilości kodu.
 
 ## Dlaczego warto używać GroupDocs.Merger dla Javy?
-- **Szerokie wsparcie formatów** – poza PDF‑ami możesz scalać dokumenty Word, Excel, PowerPoint, obrazy i wiele innych.  
-- **Precyzyjna kontrola** – wybieraj konkretne strony, zmieniaj ich kolejność lub obracaj je w locie.  
-- **Wbudowane zabezpieczenia** – dodawaj lub usuwaj hasła bez dodatkowych bibliotek.  
-- **Skalowalna wydajność** – zoptymalizowane pod kątem dużych plików i środowisk o wysokim przepustowości.
+Wczytaj swoje źródłowe PDF, określ potrzebne strony i wywołaj `merge()` — API zajmuje się ciężką pracą. Dostarcza **50+ formatów wejściowych i wyjściowych**, przetwarza **setki stron na sekundę** i działa zarówno w środowiskach on‑premises, jak i w chmurze, bez zewnętrznych zależności.
 
-## Mistrzowska manipulacja dokumentami z GroupDocs.Merger
+## Opanuj manipulację dokumentami z GroupDocs.Merger
 
-GroupDocs.Merger for Java to potężne API, które umożliwia programistom Java łączenie, dzielenie i manipulację dokumentami w ponad 50 popularnych formatach plików. Nasza kompleksowa seria tutoriali zapewnia szczegółowe, krok po kroku instrukcje wykorzystania pełnych możliwości GroupDocs.Merger, aby usprawnić Twoje przepływy pracy związane z zarządzaniem dokumentami.
+GroupDocs.Merger for Java to potężne API, które umożliwia programistom Java łączenie, dzielenie i manipulację dokumentami w ponad 50 popularnych formatach plików. Nasza obszerna seria samouczków zapewnia szczegółowe, krok po kroku wskazówki dotyczące wykorzystania pełnych możliwości GroupDocs.Merger w celu usprawnienia przepływów zarządzania dokumentami.
 
-Niezależnie od tego, czy potrzebujesz **scalać wiele plików PDF**, łączyć dokumenty Word, łączyć arkusze kalkulacyjne, konsolidować prezentacje czy pracować z obrazami – te tutoriale pomogą Ci wdrożyć solidne funkcje przetwarzania dokumentów w aplikacjach Java przy minimalnym kodzie.
+Niezależnie od tego, czy potrzebujesz **merge multiple PDFs**, połączyć dokumenty Word, scalić arkusze kalkulacyjne, skonsolidować prezentacje czy pracować z obrazami — te samouczki pomogą Ci wdrożyć solidne funkcje przetwarzania dokumentów w aplikacjach Java przy minimalnej ilości kodu.
 
 ## Co możesz osiągnąć z GroupDocs.Merger
-
 - **Scalanie wielu dokumentów** w jeden plik przy zachowaniu formatowania i integralności treści.  
-- **Łączenie konkretnych stron lub zakresów** z różnych dokumentów źródłowych.  
+- **Dołączanie konkretnych stron lub zakresów** z różnych dokumentów źródłowych.  
 - **Dzielenie dużych dokumentów** na mniejsze, łatwiejsze do zarządzania pliki.  
-- **Manipulacja kolejnością stron** poprzez przenoszenie, usuwanie, obracanie lub zamianę.  
-- **Zabezpieczanie dokumentów** przy użyciu szyfrowania hasłem i zarządzania uprawnieniami.  
-- **Ekstrahowanie treści** z określonych sekcji dokumentu.  
-- **Przetwarzanie dokumentów** w licznych formatach, w tym PDF, Word, Excel, PowerPoint i innych.
+- **Manipulowanie kolejnością stron** poprzez przenoszenie, usuwanie, obracanie lub zamianę.  
+- **Ochrona dokumentów** przy użyciu szyfrowania hasłem i zarządzania uprawnieniami.  
+- **Wyodrębnianie treści** z określonych sekcji dokumentu.  
+- **Przetwarzanie dokumentów** w licznych formatach, w tym PDF, Word, Excel, PowerPoint i inne.
 
-## Kategorie tutoriali GroupDocs.Merger dla Javy
+## Kategorie samouczków GroupDocs.Merger dla Javy
 
-### [Ładowanie dokumentu](./document-loading/)
-Opanuj niezbędny pierwszy krok w przetwarzaniu dokumentów. Poznaj różne techniki ładowania dokumentów z plików, strumieni i URL‑i z odpowiednią konfiguracją dla różnych formatów.
+### [Ładowanie dokumentów](./document-loading/)
+Opanuj kluczowy pierwszy krok w przetwarzaniu dokumentów. Poznaj różne techniki ładowania dokumentów z plików, strumieni i adresów URL z odpowiednią konfiguracją dla różnych formatów.
 
 ### [Informacje o dokumencie](./document-information/)
-Wyodrębnij cenne metadane ze swoich dokumentów. Te tutoriale pokażą, jak uzyskać dostęp do właściwości dokumentu, liczby stron i szczegółów formatu dla lepszego zarządzania dokumentami.
+Wyodrębnij cenne metadane ze swoich dokumentów. Te samouczki pokazują, jak uzyskać dostęp do właściwości dokumentu, liczby stron i szczegółów formatu, aby lepiej zarządzać dokumentami.
 
 ### [Łączenie dokumentów](./document-joining/)
 Połącz wiele dokumentów bezproblemowo. Odkryj, jak scalać całe pliki lub wybierać konkretne strony z różnych źródeł w jeden spójny dokument.
 
-### [Scalanie specyficzne dla formatu](./format-specific-merging/)
-Optymalizuj operacje scalania dla konkretnych typów plików. Naucz się specjalistycznych technik łączenia PDF‑ów, dokumentów Word, arkuszy Excel, prezentacji PowerPoint i innych.
+### [Łączenie specyficzne dla formatu](./format-specific-merging/)
+Optymalizuj operacje łączenia dla konkretnych typów plików. Poznaj specjalistyczne techniki łączenia PDF, dokumentów Word, arkuszy Excel, prezentacji PowerPoint i innych.
 
 ### [Zaawansowane opcje łączenia](./advanced-joining-options/)
-Weź scalanie dokumentów na wyższy poziom. Poznaj złożone scenariusze łączenia z niestandardowym wyborem stron, łączeniem międzyformatowym i opcjami zachowania treści.
+Podnieś łączenie dokumentów na wyższy poziom. Zbadaj złożone scenariusze łączenia z niestandardowym wyborem stron, łączeniem międzyformatowym i opcjami zachowania treści.
 
-### [Zabezpieczenia dokumentu](./document-security/)
+### [Bezpieczeństwo dokumentu](./document-security/)
 Wdroż solidną ochronę swoich dokumentów. Naucz się dodawać, usuwać lub aktualizować hasła, zarządzać uprawnieniami i zapewniać poufność dokumentów.
 
 ### [Operacje na stronach](./page-operations/)
-Zyskaj precyzyjną kontrolę nad stronami dokumentu. Odkryj techniki zmiany kolejności, obracania, usuwania i modyfikacji poszczególnych stron w dokumentach.
+Uzyskaj precyzyjną kontrolę nad stronami dokumentu. Odkryj techniki przestawiania, obracania, usuwania i modyfikacji poszczególnych stron w dokumentach.
 
 ### [Ekstrakcja dokumentu](./document-extraction/)
-Wyodrębnij określoną treść z większych dokumentów. Dowiedz się, jak wybrać i zapisać konkretne strony lub sekcje jako oddzielne pliki.
+Wyodrębnij określoną treść z większych dokumentów. Dowiedz się, jak wybrać i zapisać konkretne strony lub sekcje jako osobne pliki.
 
-### [Import dokumentu](./document-import/)
-Wzbogacaj dokumenty o treści zewnętrzne. Te tutoriale demonstrują, jak importować zawartość z różnych źródeł, w tym obiektów OLE i załączników.
+### [Importowanie dokumentu](./document-import/)
+Ulepsz dokumenty o treść zewnętrzną. Te samouczki pokazują, jak importować zawartość z różnych źródeł, w tym obiektów OLE i załączników.
 
 ### [Operacje na obrazach](./image-operations/)
-Efektywnie przetwarzaj pliki graficzne. Poznaj metody pracy z obrazami, w tym scalanie, konwersję i osadzanie w dokumentach.
+Efektywnie przetwarzaj pliki graficzne. Poznaj metody pracy z obrazami, w tym scalanie, konwertowanie i osadzanie w dokumentach.
 
 ### [Dzielenie dokumentu](./document-splitting/)
-Strategicznie podziel dokumenty. Naucz się technik dzielenia plików według numerów stron, zakresów lub określonych kryteriów, aby utworzyć wiele dokumentów wyjściowych.
+Strategicznie dziel dokumenty. Poznaj techniki dzielenia plików według numerów stron, zakresów lub konkretnych kryteriów, aby utworzyć wiele dokumentów wyjściowych.
 
-### [Operacje na tekście](./text-operations/)
-Sprawnie manipuluj dokumentami tekstowymi. Odkryj podejścia do przetwarzania plików tekstowych, w tym scalanie, dzielenie po liniach i konwersję formatów.
+### [Operacje tekstowe](./text-operations/)
+Efektywnie manipuluj dokumentami tekstowymi. Odkryj podejścia do przetwarzania plików tekstowych, w tym scalanie, dzielenie po liniach i konwersję formatów.
 
 ### [Licencjonowanie](./licensing/)
-Poprawnie skonfiguruj GroupDocs.Merger w swoich projektach. Dowiedz się o opcjach licencjonowania, metodach konfiguracji i aspektach wdrożeniowych.
+Poprawnie skonfiguruj GroupDocs.Merger w swoich projektach. Dowiedz się o opcjach licencjonowania, podejściach konfiguracyjnych i kwestiach wdrożeniowych.
 
 ## Obsługiwane formaty plików
 
@@ -101,39 +128,77 @@ GroupDocs.Merger for Java obsługuje szeroką gamę formatów dokumentów, w tym
 - **Obrazy**: BMP, JPG, PNG, TIFF  
 - **Web**: HTML, MHT, MHTML  
 - **Tekst**: TXT, CSV, TSV  
-- **I wiele więcej!**
+- **I wiele innych!** (ponad 50 formatów łącznie)
 
-## Rozpoczęcie pracy
+## Rozpoczęcie
 
-Tutoriale w tej sekcji opierają się na praktycznym podejściu „code‑first” z kompletnymi przykładami, które możesz wdrożyć bezpośrednio w swoich aplikacjach. Każdy tutorial zawiera:
-
-- Jasne wyjaśnienie funkcji i jej przypadków użycia  
+Samouczki w tej sekcji stosują praktyczne podejście code‑first z pełnymi przykładami, które możesz wdrożyć bezpośrednio w swoich aplikacjach. Każdy samouczek zawiera:
+- Jasne wyjaśnienie funkcji i jej zastosowań  
 - Instrukcje implementacji krok po kroku  
-- Pełne przykłady kodu z komentarzami (kod dostępny w powiązanych pod‑tutorialach)  
+- Pełne przykłady kodu z komentarzami (kod jest dostępny w powiązanych pod‑samouczkach)  
 - Opcje konfiguracji i alternatywne podejścia  
-- Rozważania dotyczące wydajności oraz najlepsze praktyki  
+- Rozważania dotyczące wydajności i najlepsze praktyki  
 
-Rozpocznij eksplorację naszych tutoriali już dziś, aby odblokować pełny potencjał GroupDocs.Merger dla Javy w Twoich przepływach pracy związanych z przetwarzaniem dokumentów!
+Rozpocznij eksplorację naszych samouczków już dziś, aby odblokować pełny potencjał GroupDocs.Merger dla Javy w swoich przepływach przetwarzania dokumentów!
+
+## Jak podzielić PDF w Javie?
+
+Podziel PDF na pojedyncze strony lub niestandardowe zakresy w zaledwie trzech linijkach Javy. Wywołaj metodę `split()` na instancji `Merger`, podaj ścieżkę pliku źródłowego i określ żądany zakres stron lub rozmiar. Biblioteka zapisuje każdy segment do osobnego pliku, zachowując oryginalną jakość i metadane.
+
+Możesz także podzielić według rozmiaru (np. fragmenty po 5 MB) lub według listy numerów stron, co jest idealne do generowania PDF‑ów rozdział po rozdziale z jednego dokumentu głównego. Operacja działa w czasie liniowym względem liczby stron, co czyni ją odpowiednią do przetwarzania wsadowego na dużą skalę.
+
+## Jak scalić wiele PDF w Javie?
+
+Wczytaj każdy źródłowy PDF za pomocą metody `addDocument()` klasy `Merger`, ustaw je w żądanej kolejności i wywołaj `merge()`. API automatycznie wyrównuje wymiary stron, aktualizuje zakładki i konsoliduje właściwości dokumentu. Możesz także scalać PDF‑y z innymi formatami — takimi jak Word czy Excel — konwertując je w locie, co daje jeden, jednolity plik PDF.
+
+W scenariuszach o wysokiej przepustowości włącz tryb strumieniowy, aby uniknąć ładowania całych plików do pamięci. Redukuje to zużycie sterty nawet o 80 % przy przetwarzaniu dokumentów ze setkami stron.
+
+## Zrozumienie klasy Merger
+
+Klasa `Merger` jest podstawowym komponentem GroupDocs.Merger dla Javy, który koordynuje łączenie dokumentów, ich dzielenie i operacje zabezpieczeń. Udostępnia płynne metody takie jak `addDocument()`, `split()`, `protect()` i `merge()`, umożliwiając budowanie zwięzłych potoków przetwarzania.
+
+### Przegląd kluczowych metod
+- `addDocument(String path)`: Kolejkuje plik źródłowy do późniejszego scalania.  
+- `split(String source, SplitOptions options)`: Dzieli dokument na podstawie zakresów stron lub limitów rozmiaru.  
+- `protect(String output, ProtectionOptions options)`: Nakłada ochronę hasłem i ograniczenia uprawnień.  
+- `merge(String output)`: Wykonuje zakolejkowane operacje i zapisuje finalny dokument.  
+
+Metody te są bezpieczne wątkowo i mogą być łańcuchowane, co pozwala na wyraźny, czytelny kod.
+
+## Typowe problemy i rozwiązania
+
+| Problem | Przyczyna | Rozwiązanie |
+|-------|-------|----------|
+| **Błędy out‑of‑memory przy dużych PDF** | Ładowanie całego pliku do pamięci | Włącz tryb strumieniowy (`Merger.setStreaming(true)`) lub podziel plik na mniejsze części przed scaleniem. |
+| **Niezgodność orientacji stron** | Źródłowe PDF mają mieszane strony pionowe i poziome | Użyj `rotatePage(int pageNumber, RotationAngle angle)` przed scaleniem, aby ujednolicić orientację. |
+| **Źródło zabezpieczone hasłem nie może zostać otwarte** | Brak hasła deszyfrującego | Podaj hasło za pomocą `DocumentLoadOptions.setPassword("yourPwd")` przy dodawaniu dokumentu. |
+| **Metadane utracone po scaleniu** | Domyślne scalanie usuwa niestandardowe metadane | Wywołaj `setPreserveMetadata(true)` na instancji `Merger`, aby zachować oryginalne właściwości. |
 
 ## Najczęściej zadawane pytania
 
-**Q: Jak scalać pliki PDF przy użyciu GroupDocs.Merger w Javie?**  
-A: Użyj klasy `Merger`, załaduj każdy PDF jako `Document` i wywołaj `merge()` – API automatycznie obsługuje kolejność stron i spójność formatu.
+**Q: Jak podzielić PDF przy użyciu GroupDocs.Merger w Javie?**  
+A: Utwórz instancję `Merger`, wywołaj `split(sourcePath, new SplitOptions().setPageRanges("1-3,5,7-10"))` i określ folder wyjściowy — każdy zakres staje się osobnym plikiem PDF.
 
-**Q: Czy mogę podzielić PDF na osobne pliki?**  
-A: Tak, funkcja „split pdf java” pozwala określić zakresy stron lub podzielić według rozmiaru, tworząc indywidualne pliki PDF.
+**Q: Czy mogę scalać PDF i arkusze Excel razem?**  
+A: Tak — GroupDocs.Merger obsługuje łączenie międzyformatowe, umożliwiając połączenie PDF‑ów z plikami Excel (`merge excel files java`) w jeden plik PDF.
 
 **Q: Jak dodać ochronę hasłem po scaleniu?**  
-A: Wywołaj metodę `protect()` na powstałym dokumencie i określ pożądany poziom szyfrowania oraz hasło.
+A: Po wywołaniu `merge()`, użyj `protect(outputPath, new ProtectionOptions().setPassword("Secret123"))`, aby zaszyfrować finalny dokument.
 
-**Q: Czy można scalać PDF‑y i arkusze Excel razem?**  
-A: Oczywiście – GroupDocs.Merger obsługuje łączenie międzyformatowe, umożliwiając połączenie PDF‑ów z arkuszami Excel (`merge excel sheets java`) w jeden plik PDF wyjściowy.
+**Q: Czy można scalać PDF‑y bez ładowania całego pliku do pamięci?**  
+A: Włącz tryb strumieniowy (`Merger.setStreaming(true)`), aby przetwarzać pliki w sposób buforowany, co znacząco zmniejsza zużycie pamięci przy dużych dokumentach.
 
 **Q: Jakie licencjonowanie jest wymagane do użytku produkcyjnego?**  
-A: Wymagana jest komercyjna licencja GroupDocs.Merger do wdrożenia; dostępna jest bezpłatna wersja próbna do oceny.
+A: Komercyjna licencja GroupDocs.Merger jest wymagana do wdrożeń produkcyjnych; dostępna jest darmowa 30‑dniowa wersja próbna do rozwoju i testów.
 
 ---
 
-**Last Updated:** 2026-01-18  
-**Tested With:** GroupDocs.Merger for Java 23.12 (latest at time of writing)  
-**Author:** GroupDocs
+**Ostatnia aktualizacja:** 2026-06-16  
+**Testowano z:** GroupDocs.Merger for Java 23.12 (najnowsza w momencie pisania)  
+**Autor:** GroupDocs
+
+## Powiązane samouczki
+
+- [Efektywne scalanie PDF przy użyciu GroupDocs.Merger dla Javy: przewodnik krok po kroku](/merger/java/format-specific-merging/merge-pdfs-groupdocs-merger-java-tutorial/)
+- [Jak łatwo scalać pliki DOCX przy użyciu GroupDocs.Merger dla Javy: przewodnik krok po kroku](/merger/java/format-specific-merging/merge-docx-files-groupdocs-merger-java/)
+- [Jak scalać pliki PowerPoint w Javie przy użyciu GroupDocs.Merger: przewodnik krok po kroku](/merger/java/format-specific-merging/merge-powerpoint-files-java-groupdocs-merger-guide/)
