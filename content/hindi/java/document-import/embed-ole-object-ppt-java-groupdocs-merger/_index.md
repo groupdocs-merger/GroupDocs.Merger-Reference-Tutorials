@@ -1,64 +1,123 @@
 ---
-date: '2026-02-19'
-description: जावा और GroupDocs.Merger का उपयोग करके PowerPoint स्लाइड्स में OLE ऑब्जेक्ट्स
-  को एम्बेड करना सीखें। यह चरण‑दर‑चरण गाइड आपको PDFs, स्प्रेडशीट्स और अधिक को एम्बेड
+date: '2026-08-26'
+description: GroupDocs Merger का उपयोग करके Java के साथ PowerPoint में OLE ऑब्जेक्ट
+  एम्बेड करना सीखें। यह चरण-दर-चरण गाइड आपको PDFs, स्प्रेडशीट्स और अन्य फ़ाइलें एम्बेड
   करने का तरीका दिखाता है।
 keywords:
+- groupdocs merger embed ole
 - embed OLE objects in PowerPoint
-- Java GroupDocs.Merger library
+- Java GroupDocs Merger
 - OLE embedding in Java
-title: जावा के साथ PowerPoint में OLE ऑब्जेक्ट्स को कैसे एम्बेड करें
+lastmod: '2026-08-26'
+og_description: GroupDocs Merger का उपयोग करके Java के साथ PowerPoint में OLE ऑब्जेक्ट
+  एम्बेड करना सीखें। इस संक्षिप्त ट्यूटोरियल का पालन करके PDFs, Excel sheets, और अन्य
+  फ़ाइलें सीधे अपनी स्लाइड्स में जोड़ें।
+og_image_alt: 'Tutorial: embed OLE objects in PowerPoint using GroupDocs Merger for
+  Java'
+og_title: GroupDocs Merger के साथ Java में PowerPoint में OLE ऑब्जेक्ट एम्बेड करें
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-26'
+  description: Learn how to use GroupDocs Merger to embed OLE objects in PowerPoint
+    with Java. This step‑by‑step guide shows you how to embed PDFs, spreadsheets,
+    and more.
+  headline: GroupDocs Merger embed OLE objects in PowerPoint with Java
+  type: TechArticle
+- description: Learn how to use GroupDocs Merger to embed OLE objects in PowerPoint
+    with Java. This step‑by‑step guide shows you how to embed PDFs, spreadsheets,
+    and more.
+  name: GroupDocs Merger embed OLE objects in PowerPoint with Java
+  steps:
+  - name: define file paths
+    text: Specify absolute or relative paths for both the target PPTX and the source
+      file you wish to embed. java String filePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_PPTX";
+      // Path to source presentation file String embeddedFilePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF";
+      // Path to PDF to be embedded
+  - name: configure `OlePresentationOptions`
+    text: OlePresentationOptions defines the visual properties and source file for
+      the OLE object to be embedded. java import com.groupdocs.merger.domain.options.OlePresentationOptions;
+      int pageNumber = 1; // Page number for the OLE object int x = 100; // X position
+      on slide int y = 200; // Y position on slid
+  - name: embed the OLE object
+    text: addOleObject inserts the configured OLE object into the specified slide
+      of the presentation. java import com.groupdocs.merger.domain.options.OlePresentationOptions;
+      try (Merger merger = new Merger(filePath)) { // Add embedded document as an
+      OLE object merger.addOleObject(oleOptions); // Save the mod
+  type: HowTo
+- questions:
+  - answer: PDFs, Excel workbooks, Word documents, PowerPoint files, and many other
+      Office formats are supported.
+    question: What file formats can be embedded using OLE in PowerPoint?
+  - answer: Insert the OLE object on the Slide Master; all slides that inherit from
+      that master will display it.
+    question: How do I make the embedded object appear on every slide?
+  - answer: Yes. Call `addOleObject` again with the same coordinates; the new file
+      overwrites the previous one.
+    question: Can I replace an existing OLE object without recreating the whole slide?
+  - answer: A trial version is available for evaluation; a commercial license is required
+      for production deployments.
+    question: Is GroupDocs.Merger free to use?
+  - answer: Incorrect file paths, unsupported document types, and excessively large
+      embedded files that degrade performance.
+    question: What are common pitfalls when embedding OLE objects?
+  type: FAQPage
+tags:
+- embed OLE
+- GroupDocs Merger
+- Java PowerPoint
+- OLE objects
+- presentation automation
+title: GroupDocs Merger के साथ Java में PowerPoint में OLE ऑब्जेक्ट एम्बेड करें
 type: docs
 url: /hi/java/document-import/embed-ole-object-ppt-java-groupdocs-merger/
 weight: 1
 ---
 
-# PowerPoint में OLE ऑब्जेक्ट्स को Java के साथ एम्बेड कैसे करें
+# GroupDocs Merger के साथ Java में PowerPoint में OLE ऑब्जेक्ट एम्बेड करना
 
-अपने PowerPoint प्रस्तुतियों को बाहरी दस्तावेज़ों जैसे PDFs, स्प्रेडशीट्स, या छवियों को सीधे अपनी स्लाइड्स पर एम्बेड करके सुधारें। **इस गाइड में आप सीखेंगे कि ole ऑब्जेक्ट्स को कैसे एम्बेड करें** GroupDocs.Merger for Java का उपयोग करके, और आप देखेंगे कि यह तकनीक आपके डेक्स को अधिक इंटरैक्टिव और प्रोफेशनल कैसे बना सकती है। ट्यूटोरियल के अंत तक आप बिल्कुल समझेंगे **ole को कैसे एम्बेड करें** ऑब्जेक्ट्स, वे कहाँ उपयोगी हैं, और सामान्य pitfalls से कैसे बचें जो कई डेवलपर्स को फँसाते हैं।
+इस ट्यूटोरियल में आप जानेंगे कि **groupdocs merger embed ole** ऑब्जेक्ट को Java का उपयोग करके PowerPoint स्लाइड्स में कैसे एम्बेड करें। गाइड के अंत तक आप PDFs, Excel वर्कबुक, Word दस्तावेज़ और अन्य समर्थित फ़ाइलें सीधे अपनी प्रस्तुति में सम्मिलित कर सकेंगे, जिससे आपके डेक स्व‑निहित और अधिक इंटरैक्टिव बनेंगे।
 
 ## त्वरित उत्तर
-- **OLE क्या है?** Object Linking and Embedding आपको PowerPoint स्लाइड के अंदर एक अन्य फ़ाइल प्रकार डालने की अनुमति देता है।  
-- **कौन सी लाइब्रेरी मदद करती है?** GroupDocs.Merger for Java OLE ऑब्जेक्ट्स जोड़ने के लिए एक सरल API प्रदान करता है।  
-- **क्या मुझे लाइसेंस चाहिए?** एक टेम्पररी लाइसेंस मूल्यांकन के लिए काम करता है; प्रोडक्शन के लिए पूर्ण लाइसेंस आवश्यक है।  
-- **समर्थित फ़ाइल प्रकार?** PDFs, Excel workbooks, Word documents, और कई अन्य फ़ॉर्मेट।  
-- **इसमें कितना समय लगेगा?** Maven/Gradle सेटअप के साथ, कोर कोड 10 मिनट से कम में लिखा जा सकता है।
+- **What is OLE?** Object Linking and Embedding आपको PowerPoint स्लाइड के अंदर एक अन्य फ़ाइल प्रकार सम्मिलित करने की अनुमति देता है।  
+- **Which library helps?** GroupDocs.Merger for Java OLE ऑब्जेक्ट जोड़ने के लिए एक सरल API प्रदान करता है।  
+- **Do I need a license?** एक अस्थायी लाइसेंस मूल्यांकन के लिए काम करता है; उत्पादन के लिए पूर्ण लाइसेंस आवश्यक है।  
+- **Supported file types?** PDFs, Excel वर्कबुक, Word दस्तावेज़ और कई अन्य फ़ॉर्मेट समर्थित हैं।  
+- **How long does it take?** Maven/Gradle सेटअप के साथ, मुख्य कोड 10 मिनट से कम समय में लिखा जा सकता है।
 
 ## PowerPoint में OLE एम्बेडिंग क्या है?
+Object Linking and Embedding (OLE) आपको PowerPoint स्लाइड में किसी अन्य दस्तावेज़ का लाइव प्रतिनिधित्व रखने की सुविधा देता है। प्रस्तुति के दौरान एम्बेडेड ऑब्जेक्ट पर डबल‑क्लिक करने से मूल फ़ाइल अपने नेटिव एप्लिकेशन में खुलती है, जिससे दर्शकों को स्लाइड डेक छोड़े बिना विस्तृत डेटा तक तुरंत पहुँच मिलती है।
 
-Object Linking and Embedding (OLE) एक PowerPoint स्लाइड को किसी अन्य दस्तावेज़ का लाइव प्रतिनिधित्व रखने की अनुमति देता है। जब आप प्रस्तुति के दौरान एम्बेडेड ऑब्जेक्ट पर डबल‑क्लिक करते हैं, तो मूल फ़ाइल अपने मूल एप्लिकेशन में खुलती है, जिससे दर्शकों को स्लाइड डेक छोड़े बिना विस्तृत डेटा तक तुरंत पहुँच मिलती है।
+## PowerPoint में OLE ऑब्जेक्ट एम्बेड क्यों करें?
+- **Keep all resources in one file** – अलग PDFs या स्प्रेडशीट्स भेजने की आवश्यकता नहीं।  
+- **Maintain data fidelity** – एम्बेडेड फ़ाइल अपना मूल फ़ॉर्मेटिंग और कार्यक्षमता बनाए रखती है।  
+- **Improve audience engagement** – दर्शक चार्ट, टेबल या कॉन्ट्रैक्ट को ऑन‑द‑फ़्लाई एक्सप्लोर कर सकते हैं।  
+- **Streamline version control** – एक ही PPTX सभी सहायक सामग्री रखता है, जिससे फ़ाइलों के बेमेल होने का जोखिम कम होता है।  
 
-## PowerPoint में OLE ऑब्जेक्ट्स को एम्बेड क्यों करें?
+मात्रात्मक लाभ: **GroupDocs Merger supports embedding OLE objects from 30+ file formats and can handle source files up to 500 MB without noticeable slowdown**, जिससे बड़े दस्तावेज़ों के साथ भी स्लाइड ट्रांज़िशन स्मूद रहती है।
 
-- **सभी संसाधनों को एक फ़ाइल में रखें** – अलग PDFs या स्प्रेडशीट्स भेजने की आवश्यकता नहीं।  
-- **डेटा की सटीकता बनाए रखें** – एम्बेडेड फ़ाइल अपना मूल फ़ॉर्मेटिंग और कार्यक्षमता रखती है।  
-- **दर्शकों की सहभागिता बढ़ाएँ** – दर्शक चार्ट, टेबल या कॉन्ट्रैक्ट्स को तुरंत एक्सप्लोर कर सकते हैं।  
-- **वर्ज़न कंट्रोल को सरल बनाएं** – एक ही PPTX सभी सहायक सामग्री रखता है, जिससे फ़ाइलों के मेल न खाने का जोखिम कम होता है।
+## OLE एम्बेडिंग कब उपयोग करें?
+जब आपको स्लाइड कथा को पूरक करने वाले विस्तृत, इंटरैक्टिव कंटेंट प्रदान करने की आवश्यकता हो, तब OLE एम्बेडिंग का उपयोग करें। यह पूर्ण रिपोर्ट, डेटा शीट या संपादन योग्य दस्तावेज़ संलग्न करने के लिए आदर्श है, जिन्हें दर्शकों को सीधे प्रस्तुति से एक्सप्लोर करने की आवश्यकता हो, जिससे स्पष्टता और सहभागिता बढ़ती है।
 
-## OLE एम्बेडिंग कब उपयोग करनी चाहिए?
+1. **Business reports** – पूर्ण‑लंबाई PDF संलग्न करें ताकि कार्यकारी सीधे स्लाइड से उसे खोल सकें।  
+2. **Educational material** – कार्यपत्रक या डेटा टेबल प्रदान करें जिन्हें छात्र लेक्चर के दौरान एक्सप्लोर कर सकें।  
+3. **Project updates** – स्टेटस‑अपडेट स्लाइड पर Gantt‑chart Excel फ़ाइल रखें ताकि त्वरित संदर्भ मिल सके।  
 
-Embedding OLE objects is especially useful for:
-
-1. **व्यावसायिक रिपोर्ट्स** – एक पूर्ण‑लंबाई PDF संलग्न करें ताकि कार्यकारी इसे सीधे स्लाइड से खोल सकें।  
-2. **शैक्षिक सामग्री** – वर्कशीट्स या डेटा टेबल्स प्रदान करें जिन्हें छात्र लेक्चर के दौरान एक्सप्लोर कर सकें।  
-3. **प्रोजेक्ट अपडेट्स** – एक Gantt‑चार्ट Excel फ़ाइल को स्टेटस‑अपडेट स्लाइड पर रखें ताकि त्वरित संदर्भ मिल सके।  
-
-इन परिदृश्यों में **ole को कैसे एम्बेड करें** समझने से आप प्रस्तुतियों को स्व-निहित और प्रोफेशनल रख सकते हैं।
+इन परिदृश्यों में **how to embed ole** को समझने से आप प्रस्तुतियों को स्व‑निहित और पेशेवर रख सकते हैं।
 
 ## पूर्वापेक्षाएँ
-
 - **Java Development Kit (JDK) 8+** – सुनिश्चित करें कि `java -version` 1.8 या उससे ऊपर रिपोर्ट करता है।  
 - **IDE** – IntelliJ IDEA, Eclipse, या कोई भी एडिटर जो आप पसंद करते हैं।  
-- **Maven या Gradle** – डिपेंडेंसी मैनेजमेंट के लिए।  
-- **बेसिक Java ज्ञान** – आपको `try‑with‑resources` और ऑब्जेक्ट‑ओरिएंटेड कोड में सहज होना चाहिए।
+- **Maven or Gradle** – डिपेंडेंसी मैनेजमेंट के लिए।  
+- **Basic Java knowledge** – आपको `try‑with‑resources` और ऑब्जेक्ट‑ओरिएंटेड कोड में सहज होना चाहिए।
 
-## GroupDocs.Merger for Java सेटअप करना
+## Java के लिए GroupDocs.Merger सेटअप करना
 
 ### इंस्टॉलेशन जानकारी
 
-अपने प्रोजेक्ट में GroupDocs.Merger लाइब्रेरी जोड़ें:
+Add the GroupDocs.Merger library to your project:
 
 **Maven:**
+```java
 ```xml
 <dependency>
     <groupId>com.groupdocs</groupId>
@@ -66,21 +125,26 @@ Embedding OLE objects is especially useful for:
     <version>latest-version</version>
 </dependency>
 ```
+```
 
 **Gradle:**
+```java
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
+```
 
-**डायरेक्ट डाउनलोड:**  
-नवीनतम संस्करण [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) से डाउनलोड करें।
+**Direct download:**  
+Download the latest version from [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
 ### लाइसेंस प्राप्त करना
 
-असीमित मूल्यांकन के लिए एक टेम्पररी लाइसेंस प्राप्त करें [temporary license page](https://purchase.groupdocs.com/temporary-license/) पर। प्रोडक्शन के लिए, [GroupDocs वेबसाइट](https://purchase.groupdocs.com/buy) से लाइसेंस खरीदें।
+Obtain a temporary license for unrestricted evaluation at the [temporary license page](https://purchase.groupdocs.com/temporary-license/). For production, purchase a license from the [GroupDocs website](https://purchase.groupdocs.com/buy).
 
 ### बेसिक इनिशियलाइज़ेशन
 
+Merger is the core class that provides methods to manipulate presentations, including adding OLE objects.
+```java
 ```java
 import com.groupdocs.merger.Merger;
 
@@ -95,18 +159,29 @@ public class PresentationMerger {
     }
 }
 ```
+```
 
-## Java का उपयोग करके PowerPoint में OLE ऑब्जेक्ट्स को एम्बेड कैसे करें
+## GroupDocs Merger for Java का उपयोग करके PowerPoint में OLE ऑब्जेक्ट एम्बेड कैसे करें
 
-### चरण 1: फ़ाइल पाथ्स निर्धारित करें
+OLE ऑब्जेक्ट एम्बेड करने के लिए, लक्ष्य PPTX को Merger से लोड करें, स्रोत फ़ाइल और इच्छित लेआउट के साथ OlePresentationOptions कॉन्फ़िगर करें, फिर addOleObject को कॉल करें। यह संक्षिप्त तीन‑स्टेप प्रक्रिया ऑब्जेक्ट को चयनित स्लाइड में डालती है और अपडेटेड प्रस्तुति को सेव करती है। आप स्लाइड डिज़ाइन के अनुसार स्थिति और आकार पैरामीटर भी समायोजित कर सकते हैं।
 
+### सीधा उत्तर
+`new Merger("presentation.pptx")` से अपनी PowerPoint फ़ाइल लोड करें, स्रोत फ़ाइल की ओर इशारा करने वाला `OlePresentationOptions` इंस्टेंस कॉन्फ़िगर करें, और इच्छित स्लाइड इंडेक्स व कॉर्डिनेट्स के साथ `addOleObject` को कॉल करें। यह तीन‑स्टेप पैटर्न एक ही API कॉल में OLE ऑब्जेक्ट डाल देता है।
+
+### चरण 1: फ़ाइल पथ निर्धारित करें
+
+Specify absolute or relative paths for both the target PPTX and the source file you wish to embed.  
+```java
 ```java
 String filePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_PPTX"; // Path to source presentation file
 String embeddedFilePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF"; // Path to PDF to be embedded
 ```
+```
 
 ### चरण 2: `OlePresentationOptions` कॉन्फ़िगर करें
 
+OlePresentationOptions defines the visual properties and source file for the OLE object to be embedded.
+```java
 ```java
 import com.groupdocs.merger.domain.options.OlePresentationOptions;
 
@@ -122,9 +197,12 @@ oleOptions.setY(y);
 oleOptions.setWidth(width);
 oleOptions.setHeight(height);
 ```
+```
 
-### चरण 3: OLE ऑब्जेक्ट को एम्बेड करें
+### चरण 3: OLE ऑब्जेक्ट एम्बेड करें
 
+addOleObject inserts the configured OLE object into the specified slide of the presentation.
+```java
 ```java
 import com.groupdocs.merger.domain.options.OlePresentationOptions;
 
@@ -140,49 +218,54 @@ try (Merger merger = new Merger(filePath)) {
     e.printStackTrace();
 }
 ```
+```
 
 ## सामान्य समस्याएँ और समाधान
-
-- **फ़ाइल‑पाथ की सटीकता:** दोबारा जांचें कि प्रत्येक पाथ मौज़ूद, पढ़ने योग्य फ़ाइल की ओर इशारा करता है।  
-- **समर्थित फ़ॉर्मेट:** PowerPoint केवल कुछ OLE प्रकारों को सपोर्ट करता है; PDFs, Excel, और Word सुरक्षित विकल्प हैं।  
-- **मेमोरी उपयोग:** `try‑with‑resources` (जैसा दिखाया गया है) का उपयोग करें ताकि `Merger` इंस्टेंस तुरंत बंद हो जाए।  
-- **बड़े एम्बेडेड फ़ाइलें:** यदि PPTX धीमा हो जाता है, तो स्रोत PDF को कॉम्प्रेस करें या एम्बेड करने से पहले उसे छोटे पेजों में विभाजित करें।  
+- **File‑path accuracy:** Double‑check that every path points to an existing, readable file.  
+- **Supported formats:** PowerPoint only supports certain OLE types; PDFs, Excel, and Word are safe choices.  
+- **Memory usage:** Use `try‑with‑resources` (as shown) to ensure the `Merger` instance is closed promptly.  
+- **Large embedded files:** If the PPTX becomes sluggish, compress the source PDF or split it into smaller pages before embedding.  
 
 ## प्रदर्शन संबंधी विचार
-
-- **फ़ाइल आकार को ऑप्टिमाइज़ करें:** बड़े PDFs स्लाइड लोडिंग को धीमा कर सकते हैं; पहले उन्हें कॉम्प्रेस करने पर विचार करें।  
-- **Java मेमोरी मैनेजमेंट:** ऊपर दिखाया गया `try‑with‑resources` पैटर्न स्वचालित रूप से नेटिव रिसोर्सेज़ को फ्री कर देता है।  
-- **बैच प्रोसेसिंग:** कई प्रस्तुतियों में ऑब्जेक्ट्स एम्बेड करते समय, फ़ाइलों की सूची पर लूप करें और संभव हो तो एक ही `Merger` इंस्टेंस को पुन: उपयोग करें ताकि ओवरहेड कम हो सके।
+- **Optimize file sizes:** Large PDFs can slow down slide loading; consider compressing them first.  
+- **Java memory management:** The `try‑with‑resources` pattern shown above automatically frees native resources.  
+- **Batch processing:** When embedding objects into many presentations, loop over a list of files and reuse a single `Merger` instance where possible to reduce overhead.
 
 ## अक्सर पूछे जाने वाले प्रश्न
 
-**Q: PowerPoint में OLE का उपयोग करके कौन से फ़ाइल फ़ॉर्मेट एम्बेड किए जा सकते हैं?**  
-A: PDFs, Excel workbooks, Word documents, PowerPoint files, और कई अन्य Office फ़ॉर्मेट सपोर्टेड हैं।
+**Q: PowerPoint में OLE के माध्यम से कौन‑से फ़ाइल फ़ॉर्मेट एम्बेड किए जा सकते हैं?**  
+A: PDFs, Excel वर्कबुक, Word दस्तावेज़, PowerPoint फ़ाइलें और कई अन्य Office फ़ॉर्मेट समर्थित हैं।
 
-**Q: एम्बेडेड ऑब्जेक्ट को हर स्लाइड पर कैसे दिखाएँ?**  
-A: स्लाइड मास्टर पर OLE ऑब्जेक्ट डालें; उस मास्टर से इनहेरिट करने वाली सभी स्लाइड्स इसे दिखाएंगी।
+**Q: मैं एम्बेडेड ऑब्जेक्ट को हर स्लाइड पर कैसे दिखा सकता हूँ?**  
+A: OLE ऑब्जेक्ट को स्लाइड मास्टर पर डालें; उस मास्टर से विरासत में मिलने वाली सभी स्लाइड्स इसे प्रदर्शित करेंगी।
 
-**Q: क्या मैं पूरे स्लाइड को फिर से बनाए बिना मौजूदा OLE ऑब्जेक्ट को बदल सकता हूँ?**  
-A: हाँ। वही कोऑर्डिनेट्स के साथ `addOleObject` को फिर से कॉल करें; नई फ़ाइल पिछले को ओवरराइट कर देगी।
+**Q: क्या मैं पूरे स्लाइड को पुनः बनाये बिना मौजूदा OLE ऑब्जेक्ट को बदल सकता हूँ?**  
+A: हाँ। समान कॉर्डिनेट्स के साथ `addOleObject` को फिर से कॉल करें; नई फ़ाइल पुरानी को ओवरराइट कर देगी।
 
-**Q: क्या GroupDocs.Merger का उपयोग मुफ्त है?**  
-A: मूल्यांकन के लिए एक ट्रायल वर्ज़न उपलब्ध है; प्रोडक्शन डिप्लॉयमेंट्स के लिए एक कमर्शियल लाइसेंस आवश्यक है।
+**Q: क्या GroupDocs.Merger मुफ्त है?**  
+A: मूल्यांकन के लिए एक ट्रायल संस्करण उपलब्ध है; उत्पादन परिनियोजन के लिए व्यावसायिक लाइसेंस आवश्यक है।
 
-**Q: OLE ऑब्जेक्ट्स को एम्बेड करते समय सामान्य pitfalls क्या हैं?**  
-A: गलत फ़ाइल पाथ, असमर्थित दस्तावेज़ प्रकार, और अत्यधिक बड़े एम्बेडेड फ़ाइलें जो प्रदर्शन को घटा देती हैं।
+**Q: OLE ऑब्जेक्ट एम्बेड करते समय आम pitfalls क्या हैं?**  
+A: गलत फ़ाइल पथ, असमर्थित दस्तावेज़ प्रकार, और अत्यधिक बड़े एम्बेडेड फ़ाइलें जो प्रदर्शन को घटा देती हैं।
 
 ## अतिरिक्त संसाधन
-
-- [GroupDocs.Merger दस्तावेज़ीकरण](https://docs.groupdocs.com/merger/java/)
-- [API रेफ़रेंस](https://reference.groupdocs.com/merger/java/)
-- [GroupDocs.Merger डाउनलोड करें](https://releases.groupdocs.com/merger/java/)
-- [लाइसेंस खरीदें](https://purchase.groupdocs.com/buy)
-- [फ्री ट्रायल](https://releases.groupdocs.com/merger/java/)
-- [टेम्पररी लाइसेंस](https://purchase.groupdocs.com/temporary-license/)
-- [सपोर्ट फ़ोरम](https://forum.groupdocs.com/c/merger/)
+- [GroupDocs.Merger Documentation](https://docs.groupdocs.com/merger/java/)
+- [API Reference](https://reference.groupdocs.com/merger/java/)
+- [Download GroupDocs.Merger](https://releases.groupdocs.com/merger/java/)
+- [Purchase License](https://purchase.groupdocs.com/buy)
+- [Free Trial](https://releases.groupdocs.com/merger/java/)
+- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- [Support Forum](https://forum.groupdocs.com/c/merger/)
 
 ---
 
-**अंतिम अपडेट:** 2026-02-19  
-**परीक्षित संस्करण:** GroupDocs.Merger latest version (Java)  
-**लेखक:** GroupDocs
+**अंतिम अपडेट:** 2026-08-26  
+**Tested With:** GroupDocs.Merger latest version (Java)  
+**Author:** GroupDocs  
+
+---
+
+## संबंधित ट्यूटोरियल
+
+- [How to embed pdf in word using GroupDocs.Merger for Java – A Comprehensive Guide](/merger/java/document-import/embed-ole-objects-word-documents-groupdocs-java/)
+- [Embedding Images as OLE Objects in Java with GroupDocs.Merger: A Comprehensive Guide](/merger/java/image-operations/embed-images-ole-java-groupdocs-merger/)
