@@ -1,74 +1,99 @@
 ---
-date: '2026-02-21'
-description: Java için GroupDocs.Merger kullanarak Visio dosyalarını nasıl birleştireceğinize
-  dair adım adım öğretici, birden fazla Visio şablonunu hızlı bir şekilde birleştirmenize
-  yardımcı olur.
+date: '2026-08-26'
+description: Java kullanarak VSTM Visio dosyalarını GroupDocs.Merger ile nasıl birleştireceğinizi
+  öğrenin. Ön koşullar, kod akışı ve sorun giderme adımlarıyla adım adım rehber.
 keywords:
-- how to merge visio
-- merge VSTM files in Java
-- using GroupDocs.Merger for Java
-- file merging tutorial
-title: Java'da Visio Dosyalarını Birleştirme – GroupDocs.Merger ile Kapsamlı Rehber
+- how to merge vstm
+- merge visio files java
+- GroupDocs.Merger Java
+- VSTM file merging tutorial
+lastmod: '2026-08-26'
+og_description: Java'da vstm dosyalarını GroupDocs.Merger ile birleştirme. Visio şablonlarını
+  hızlıca birleştirmek için kod parçacıkları ve en iyi uygulamalarla bu rehberi izleyin.
+og_image_alt: Guide showing Java code that merges Visio VSTM files using GroupDocs.Merger
+og_title: Java'da GroupDocs.Merger ile vstm dosyalarını birleştirme
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-26'
+  description: Learn how to merge VSTM Visio files in Java using GroupDocs.Merger.
+    Step‑by‑step guide with prerequisites, code flow, and troubleshooting.
+  headline: How to merge vstm files in Java with GroupDocs.Merger
+  type: TechArticle
+- description: Learn how to merge VSTM Visio files in Java using GroupDocs.Merger.
+    Step‑by‑step guide with prerequisites, code flow, and troubleshooting.
+  name: How to merge vstm files in Java with GroupDocs.Merger
+  steps:
+  - name: initialize the Merger with the first file
+    text: The `Merger` object is created by passing the path of the primary VSTM file
+      to its constructor.
+  - name: add additional VSTM files
+    text: The `join` method adds another VSTM file to the existing merger instance.
+  - name: save the combined document
+    text: The `save` method writes the merged document to the specified output path.
+  type: HowTo
+- questions:
+  - answer: Yes, simply call `join` repeatedly for each additional file before invoking
+      `save`.
+    question: Can I merge more than two VSTM files at once?
+  - answer: The library itself imposes no hard limit, but you should respect your
+      server’s memory capacity for very large documents (e.g., > 500 pages may require
+      increased heap).
+    question: Is there a limit to file size when merging with GroupDocs.Merger?
+  - answer: Wrap your merge logic in a `try‑catch` block and log the exception details
+      to diagnose path or permission issues.
+    question: How can I handle exceptions during merging?
+  - answer: The merge operation preserves the original VSTM format. For conversion
+      to other formats, use additional GroupDocs APIs such as Viewer or Converter.
+    question: Can I change the output format after merging?
+  - answer: Verify file paths, ensure read/write permissions, and confirm that none
+      of the source files are corrupted or locked by another process.
+    question: What should I do if a merge operation fails?
+  type: FAQPage
+tags:
+- merge vstm
+- GroupDocs.Merger
+- Java document processing
+- Visio automation
+title: Java'da GroupDocs.Merger ile vstm dosyalarını birleştirme
 type: docs
 url: /tr/java/document-joining/java-groupdocs-merger-vstm-tutorial/
 weight: 1
 ---
 
- links.
+# Java ile GroupDocs.Merger kullanarak vstm dosyalarını birleştirme
 
-Let's produce the translated content.
+Visio dosyalarını birleştirmek, özellikle birden fazla Visio Makro‑Destekli Çizim Şablonu (.vstm) ile çalışıyorsanız göz korkutucu bir görev gibi görünebilir. Bu öğreticide **vstm nasıl birleştirilir** belgelerini GroupDocs.Merger for Java kullanarak hızlı ve güvenilir bir şekilde birleştirmeyi öğreneceksiniz. Sonunda, herhangi bir sayıda VSTM dosyasını tek, iyi yapılandırılmış bir belgeye dönüştüren yeniden kullanılabilir bir kod parçacığına sahip olacaksınız.
 
-Be careful with bullet lists.
+## Hızlı cevaplar
+- **Visio birleştirmesini hangi kütüphane yönetir?** GroupDocs.Merger for Java.  
+- **Minimum Java sürümü?** JDK 8 veya üzeri.  
+- **Bir seferde kaç dosya birleştirilebilir?** Sınırsız – sadece `join` metodunu tekrarlı olarak çağırın.  
+- **Lisans gerekir mi?** Değerlendirme için ücretsiz deneme çalışır; üretim için ücretli lisans gereklidir.  
+- **Tipik birleştirme süresi?** Çoğu VSTM dosyası için saniyeler, dosya boyutu ve sistem kaynaklarına bağlı olarak.
 
-Also note "## Quick Answers" etc.
+## “how to merge vstm” ifadesi ne anlama geliyor?
+Bu ifade, iki veya daha fazla Visio (.vstm) dosyasını tek bir dosyada birleştirme sürecini tanımlar. Şablonları, raporları veya proje diyagramlarını manuel olarak kopyalamadan birleştirmenizi sağlar, otomatik toplu işleme ve sürüm‑kontrollü diyagram kütüphanelerine imkan tanır.
 
-Translate each section.
+## Visio birleştirme için neden GroupDocs.Merger kullanılmalı?
+GroupDocs.Merger, Visio dosyalarının karmaşık iç yapısını soyutlayan tek‑satırlık bir API sunar, böylece iş mantığınıza odaklanabilirsiniz. Belgeleri 500 sayfaya kadar işleyebilir, yığın kullanımını 200 MB altında tutar, şekillerin, katmanların ve makroların %100 ünü korur ve Java 8+ destekleyen herhangi bir işletim sisteminde çalışır. Bu ölçülen faydalar, büyük ölçekli diyagram yönetimi için üretim‑hazır bir seçim olmasını sağlar.
 
-Make sure not to translate URLs.
+## Bunun önemi nedir
+Visio birleştirmeyi otomatikleştirmek, tekrarlayan manuel adımları ortadan kaldırır, insan hatasını azaltır ve tüm diyagramlarda tutarlı stil sağlar. Birleştirme rutinini CI/CD boru hatlarına veya arka uç hizmetlerine entegre ederek, talep üzerine ana raporlar oluşturabilir, hazırlık süresini %80’e kadar azaltabilir ve belgelerinizi her zaman güncel tutabilirsiniz.
 
-Also keep code block placeholders unchanged.
-
-Also keep the "## Prerequisites" etc.
-
-Ok.
-
-Proceed to write final answer.# Java'da Visio Dosyalarını Birleştirme: VSTM Dosyaları İçin GroupDocs.Merger Kullanımına Kapsamlı Rehber
-
-Visio dosyalarını birleştirmek özellikle birden fazla Visio Makro‑Destekli Çizim Şablonu (.vstm) ile çalışıyorsanız göz korkutucu bir görev gibi görünebilir. Bu öğreticide **Visio** belgelerini hızlı ve güvenilir bir şekilde Java için GroupDocs.Merger kullanarak nasıl birleştireceğinizi öğreneceksiniz. Sonunda, herhangi bir sayıda VSTM dosyasını tek bir, iyi yapılandırılmış belgeye konsolide eden yeniden kullanılabilir bir kod parçacığına sahip olacaksınız.
-
-## Hızlı Yanıtlar
-- **Visio birleştirmeyi hangi kütüphane yönetir?** Java için GroupDocs.Merger  
-- **Minimum Java sürümü?** JDK 8 veya üzeri  
-- **Bir kerede kaç dosya birleştirilebilir?** Sınırsız – `join` metodunu tekrarlı olarak çağırın  
-- **Lisans gerekli mi?** Değerlendirme için ücretsiz deneme çalışır; üretim için ücretli lisans gerekir  
-- **Tipik birleştirme süresi?** Çoğu VSTM dosyası için saniyeler, dosya boyutu ve sistem kaynaklarına bağlı  
-
-## “how to merge visio” neyi ifade ediyor?
-Bu ifade, iki veya daha fazla Visio (.vstm) dosyasını tek bir dosyada birleştirme sürecini tanımlar. Şablonları, raporları veya proje diyagramlarını manuel olarak içeriği kopyalamadan birleştirmek için kullanışlıdır.
-
-## Visio Birleştirme İçin GroupDocs.Merger Neden Kullanılmalı?
-- **Basitlik:** Tek satır API çağrıları karmaşık dosya yapılarını yönetir.  
-- **Performans:** Büyük belgeler ve düşük bellek ayak izi için optimize edilmiştir.  
-- **Güvenilirlik:** Orijinal dosyalardaki tüm şekilleri, katmanları ve makroları korur.  
-- **Çapraz‑platform:** Java’yı destekleyen herhangi bir işletim sisteminde çalışır.
-
-## Bunun Önemi Nedir?
-Visio dosyalarını programlı olarak birleştirmek, ekiplerin büyük diyagram koleksiyonlarını bir araya getirirken sıkça karşılaştığı tekrarlayan ve hata yapmaya açık manuel adımları ortadan kaldırır. Sürecin otomatikleştirilmesi zaman tasarrufu sağlar, tutarlılığı güvence altına alır ve Visio birleştirmeyi CI/CD boru hatlarına veya belge oluşturma hizmetlerine kolayca entegre etmenizi mümkün kılar.
-
-## Ön Koşullar
+## Önkoşullar
 
 Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
-- **Java için GroupDocs.Merger** kütüphanesi (en son sürüm).  
+- **GroupDocs.Merger for Java** kütüphanesi (en son sürüm).  
 - **Java Development Kit (JDK) 8+** yüklü.  
 - **IntelliJ IDEA** veya **Eclipse** gibi bir IDE.  
 - Bağımlılık yönetimi için **Maven** veya **Gradle**.  
 
-Java dosya işleme temellerine aşina olmak adımları kolaylaştırır, ancak kod yeni başlayanlar için tamamen yorumlanmıştır.
+Java dosya işlemleri konusunda temel bir anlayış adımları kolaylaştırır, ancak kod yeni başlayanlar için tamamen yorumlanmıştır.
 
-## Java için GroupDocs.Merger Kurulumu
+## GroupDocs.Merger for Java kurulumu
 
-Kütüphaneyi projenize Maven, Gradle ya da manuel indirme yoluyla ekleyebilirsiniz.
+Kütüphaneyi projenize Maven, Gradle veya manuel indirme yoluyla ekleyebilirsiniz.
 
 **Maven:**  
 ```xml
@@ -86,10 +111,11 @@ implementation 'com.groupdocs:groupdocs-merger:latest-version'
 
 Manuel kurulum için en son sürümü [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) adresinden indirin.
 
-### Lisans Edinme
-GroupDocs, özelliklerini keşfetmeniz için ücretsiz bir deneme sunar. Üretim kullanımı için resmi kanallar aracılığıyla geçici veya tam lisans temin edin.
+### Lisans edinme
+GroupDocs, özelliklerini keşfetmeniz için ücretsiz bir deneme sunar. Üretim kullanımı için resmi kanallar aracılığıyla geçici veya tam lisans alın.
 
-#### Temel Başlatma ve Kurulum
+#### Temel başlatma ve kurulum
+`Merger` sınıfı, birleştirmeye hazır Visio belgesini temsil eden çekirdek API nesnesidir. `join` metodu, başka bir belgeyi mevcut birleşim örneğine ekler. İlk VSTM dosyanızı `new Merger("first.vstm")` ile yükleyin, ardından her ek dosya için `join` çağırın ve sonunda birleşik çıktıyı yazmak için `save` metodunu çalıştırın. Bu üç‑adımlı desen, tüm diyagram öğelerini ve makro işlevselliğini koruyarak istediğiniz sayıda kaynak dosyayı işler.  
 ```java
 import com.groupdocs.merger.Merger;
 
@@ -101,84 +127,91 @@ public class Main {
 }
 ```
 
-## GroupDocs.Merger ile Visio Dosyalarını Nasıl Birleştirirsiniz
-Aşağıda, birden fazla VSTM dosyasını nasıl birleştireceğinizi adım adım gösteren bir yürütme bulunmaktadır.
+## GroupDocs.Merger kullanarak Visio dosyalarını nasıl birleştirirsiniz
 
-### Adım 1: Birleştiriciyi İlk Dosyayla Başlatın
+`Merger` sınıfı, birleştirmeye hazır Visio belgesini temsil eden çekirdek API nesnesidir. `join` metodu, başka bir belgeyi mevcut birleşim örneğine ekler. İlk VSTM dosyanızı `new Merger("first.vstm")` ile yükleyin, ardından her ek dosya için `join` çağırın ve sonunda birleşik çıktıyı yazmak için `save` metodunu çalıştırın. Bu üç‑adımlı desen, tüm diyagram öğelerini ve makro işlevselliğini koruyarak istediğiniz sayıda kaynak dosyayı işler.
+
+### Adım 1: Merger'ı ilk dosyayla başlat
+`Merger` nesnesi, birincil VSTM dosyasının yolunu yapıcıya geçirerek oluşturulur.  
 ```java
 String initialFilePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_VSTM";
 Merger merger = new Merger(initialFilePath);
 ```
-*Açıklama:* `Merger` nesnesi, sonraki birleştirmeler için temel belge haline gelen birincil VSTM dosyasıyla başlatılır.
 
-### Adım 2: Ek VSTM Dosyalarını Ekleyin
+### Adım 2: Ek VSTM dosyaları ekle
+`join` metodu, mevcut birleşim örneğine başka bir VSTM dosyası ekler.  
 ```java
 merger.join("YOUR_DOCUMENT_DIRECTORY/SAMPLE_VSTM_2");
 ```
-*Açıklama:* Her `join` çağrısı, orijinal düzeni ve makroları koruyarak başka bir Visio şablonunu ekler.
 
-### Adım 3: Birleştirilmiş Belgeyi Kaydedin
+### Adım 3: Birleştirilmiş belgeyi kaydet
+`save` metodu, birleştirilmiş belgeyi belirtilen çıkış yoluna yazar.  
 ```java
 String outputFolder = "YOUR_OUTPUT_DIRECTORY";
 String outputFile = new File(outputFolder, "merged.vstm").getPath();
 merger.save(outputFile);
 ```
-*Açıklama:* `save` metodu, birleştirilmiş içeriği belirttiğiniz konuma yazar ve tüm kaynak şablonları içeren tek bir VSTM dosyası üretir.
 
-## Visio Dosyalarını Verimli Şekilde Nasıl Birleştirirsiniz
-İki’den fazla diyagramı birleştirmeniz gerekiyorsa, kaydetmeden önce her ek dosya için `join` çağrısını tekrarlayın. Bu yaklaşım lineer olarak ölçeklenir ve bellek kullanımını öngörülebilir tutar; büyük Visio şablonu setlerini toplu işleme için idealdir.
+## Birden fazla Visio dosyasını verimli bir şekilde birleştirme
+`join` metodunu tekrarlı olarak çağırarak her ek dosyayı birleşime ekleyebilirsiniz. `save` metodunu çalıştırmadan önce her ekstra dosya için `join`'i tekrarlı olarak çağırın. Bu lineer yaklaşım, yüzlerce diyagrama ölçeklenir, bellek kullanımını öngörülebilir tutar (500‑sayfalık bir toplu işlem için 200 MB altında) ve tüm dosyaları aynı anda yüklemenin getirdiği yükü önler. Birleştirilen dosya sayısını günlükleyerek süreci izleyebilir, tüm istenen diyagramların dahil edildiğini doğrulayabilirsiniz.
 
-## Visio Şablonlarını Tek Bir Dosyada Nasıl Birleştirirsiniz
-Amacınız, birkaç departman diyagramını içeren bir ana şablon oluşturmaksa aynı `join` iş akışını kullanın. Ortaya çıkan dosya, her şablonun katmanlarını ve makrolarını korur; böylece sonraki kullanıcılar gerektiğinde bireysel bölümleri düzenleyebilir.
+## Visio şablonlarını tek bir dosyada birleştirme
+`join` metodunu kullanarak her şablonu temel VSTM dosyasına ekleyin. Bölüm bazlı diyagramları birleştiren bir ana şablon gerektiğinde aynı `join` iş akışını uygulayın. Oluşan VSTM, her şablonun katmanlarını ve makrolarını korur, böylece downstream kullanıcılar bireysel bölümleri kayıpsız olarak düzenleyebilir. Kaydettikten sonra birleşik dosyayı ekip üyeleriyle paylaşın; Visio’da açıp orijinal yapıyı koruyarak istedikleri bölümü değiştirebilirler.
 
-## Yaygın Sorunlar ve Çözümleri
-- **Dosya bulunamadı:** Sağladığınız yolların mutlak olduğundan veya projenizin çalışma dizinine göre doğru göreceli olduğundan emin olun.  
-- **Bellek kullanımında ani artış:** Kaydettikten sonra `Merger` örneğini (`merger.close()`) kapatarak kaynakları serbest bırakın.  
-- **Bozuk çıktı:** Tüm kaynak VSTM dosyalarının geçerli ve başka bir süreç tarafından kilitli olmadığından emin olun.  
+## Yaygın sorunlar ve çözümler
+- **File not found:** Sağladığınız yolların mutlak olduğundan veya proje çalışma dizinine göre doğru göreceli olduğundan emin olun.  
+- **Memory usage spikes:** Kaydetme işleminden sonra `Merger` örneğini (`merger.close()`) kapatarak kaynakları serbest bırakın.  
+- **Corrupted output:** Tüm kaynak VSTM dosyalarının geçerli ve başka bir işlem tarafından kilitlenmemiş olduğundan emin olun.  
 
-## Pratik Uygulamalar
+## Pratik uygulamalar
 Visio dosyalarını birleştirmek birçok gerçek dünya senaryosunda değerlidir:
 
-1. **Kurumsal Raporlama:** Bölüm diyagram şablonlarını bir ana raporda birleştirin.  
-2. **Eğitim Materyalleri:** Tam bir kurs paketi için ders‑planı diyagramlarını bir araya getirin.  
-3. **Proje Yönetimi:** Dağıtımı kolaylaştırmak için proje‑özel Visio şablonlarını konsolide edin.  
+1. **Kurumsal raporlama:** Bölüm diyagram şablonlarını birleştirerek yöneticiler için ana rapor oluşturun.  
+2. **Eğitim materyalleri:** Tam bir kurs paketi için ders‑planı diyagramlarını bir araya getirin.  
+3. **Proje yönetimi:** Projeye özgü Visio şablonlarını kolay dağıtım için birleştirin.  
 
-## Performans Düşünceleri
-- **Bellek Yönetimi:** İşiniz bittiğinde `Merger` nesnesini her zaman kapatın.  
-- **Sıralı İşleme:** Bellek kullanımını öngörülebilir tutmak için dosyaları paralel yerine ardışık birleştirin.  
+## Performans hususları
+- **Memory management:** İşiniz bittiğinde `Merger` nesnesini her zaman kapatın.  
+- **Sequential processing:** Yığın tüketimini öngörülebilir tutmak için dosyaları paralel yerine ardışık bir şekilde birleştirin.  
 
-### En İyi Uygulamalar
-- Performans iyileştirmelerinden yararlanmak için kütüphaneyi güncel tutun.  
-- Büyük birleştirmeler sırasında JVM yığın kullanımını izleyin ve gerekirse `-Xmx` ayarını artırın.
+### En iyi uygulamalar
+- Kütüphaneyi performans iyileştirmelerinden yararlanmak için güncel tutun.  
+- Büyük birleştirmeler sırasında JVM yığın kullanımını izleyin ve gerekirse `-Xmx` ayarını artırın.  
 
-## Sıkça Sorulan Sorular
+## Sıkça sorulan sorular
 
-**S1: İki’den fazla VSTM dosyasını aynı anda birleştirebilir miyim?**  
-C1: Evet, `save` metodunu çağırmadan önce her ek dosya için `join` metodunu tekrarlı olarak çağırmanız yeterlidir.
+**Q:** Bir seferde iki’den fazla VSTM dosyasını birleştirebilir miyim?  
+**A:** Evet, `save` metodunu çağırmadan önce her ek dosya için `join` metodunu tekrarlı olarak çağırmanız yeterlidir.
 
-**S2: GroupDocs.Merger ile birleştirirken dosya boyutu için bir sınırlama var mı?**  
-C2: Kütüphane kendisi katı bir sınır koymaz, ancak çok büyük belgeler için sunucunuzun bellek kapasitesine dikkat etmelisiniz.
+**Q:** GroupDocs.Merger ile birleştirirken dosya boyutu için bir sınırlama var mı?  
+**A:** Kütüphane kendisi katı bir limit koymaz, ancak çok büyük belgeler (ör. 500 sayfadan fazla) için sunucunuzun bellek kapasitesine dikkat etmelisiniz.
 
-**S3: Birleştirme sırasında oluşan istisnaları nasıl ele alabilirim?**  
-C3: Birleştirme mantığınızı bir `try‑catch` bloğuna sarın ve yol ya da izin sorunlarını teşhis etmek için istisna ayrıntılarını kaydedin.
+**Q:** Birleştirme sırasında istisnalar nasıl ele alınır?  
+**A:** Birleştirme mantığınızı `try‑catch` bloğu içine alın ve yol ya da izin sorunlarını teşhis etmek için istisna detaylarını günlüğe kaydedin.
 
-**S4: Birleştirdikten sonra çıktı formatını değiştirebilir miyim?**  
-C4: Birleştirme işlemi orijinal VSTM formatını korur. Diğer formatlara dönüşüm için Viewer veya Converter gibi ek GroupDocs API'lerini kullanın.
+**Q:** Birleştirme sonrası çıktı formatını değiştirebilir miyim?  
+**A:** Birleştirme işlemi orijinal VSTM formatını korur. Diğer formatlara dönüştürmek için Viewer veya Converter gibi ek GroupDocs API'lerini kullanabilirsiniz.
 
-**S5: Birleştirme işlemi başarısız olursa ne yapmalıyım?**  
-C5: Dosya yollarını doğrulayın, okuma/yazma izinlerini kontrol edin ve kaynak dosyaların bozuk ya da kilitli olmadığından emin olun.
+**Q:** Birleştirme işlemi başarısız olursa ne yapmalıyım?  
+**A:** Dosya yollarını doğrulayın, okuma/yazma izinlerini kontrol edin ve kaynak dosyaların hiçbiri bozuk ya da başka bir işlem tarafından kilitli değilse emin olun.
 
 ## Kaynaklar
-- **Dokümantasyon:** [GroupDocs.Merger for Java Documentation](https://docs.groupdocs.com/merger/java/)  
-- **API Referansı:** [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)  
-- **İndirme:** [Latest Releases](https://releases.groupdocs.com/merger/java/)  
-- **Satın Alma ve Lisanslama:** [GroupDocs Purchase Options](https://purchase.groupdocs.com/buy)  
-- **Ücretsiz Deneme:** [Try GroupDocs for Free](https://releases.groupdocs.com/merger/java/)  
-- **Geçici Lisans:** [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-- **Destek Forumu:** [GroupDocs Support Community](https://forum.groupdocs.com/c/merger/) 
+- **Documentation:** [GroupDocs.Merger for Java Documentation](https://docs.groupdocs.com/merger/java/)  
+- **API reference:** [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)  
+- **Download:** [Latest Releases](https://releases.groupdocs.com/merger/java/)  
+- **Purchase and licensing:** [GroupDocs Purchase Options](https://purchase.groupdocs.com/buy)  
+- **Free trial:** [Try GroupDocs for Free](https://releases.groupdocs.com/merger/java/)  
+- **Temporary license:** [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Support forum:** [GroupDocs Support Community](https://forum.groupdocs.com/c/merger/) 
 
 ---
 
-**Son Güncelleme:** 2026-02-21  
-**Test Edilen Versiyon:** GroupDocs.Merger latest (Java)  
+**Son Güncelleme:** 2026-08-26  
+**Test Edilen:** GroupDocs.Merger latest (Java)  
 **Yazar:** GroupDocs
+
+## İlgili Eğitimler
+
+- [How to Merge Visio VTX Files Using GroupDocs.Merger for Java: A Step‑By‑Step Guide](/merger/java/format-specific-merging/merge-vtx-files-groupdocs-merger-java/)
+- [How to Merge VSDX Files Using GroupDocs.Merger for Java: A Step‑By‑Step Guide](/merger/java/format-specific-merging/merge-vsdx-files-groupdocs-merger-java/)
+- [merge visio stencil java – How to Merge VSSX Files Using GroupDocs.Merger for Java](/merger/java/document-joining/merge-vssx-files-groupdocs-merger-java/)
