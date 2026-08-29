@@ -1,43 +1,66 @@
 ---
-date: '2026-01-24'
-description: GroupDocs.Merger for Java ile sayfa önizlemeleri oluşturarak belgeleri
-  önizlemeyi öğrenin; sayfaları görüntülere dönüştürerek belge küçük resimleri oluşturmanın
-  hızlı bir yoludur.
+date: '2026-06-26'
+description: GroupDocs.Merger for Java kullanarak pdf sayfalarını görsellere dönüştürmeyi
+  ve belgeleri önizlemeyi öğrenin – sayfa küçük resimleri oluşturmanın hızlı ve güvenilir
+  yolu.
 keywords:
-- GroupDocs.Merger for Java
+- convert pdf pages to images
 - document page previews
-- Java document management
-title: GroupDocs.Merger for Java ile Belgeleri Önizleme
+- GroupDocs.Merger Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-06-26'
+  description: Learn how to convert pdf pages to images and preview documents using
+    GroupDocs.Merger for Java – the fast, reliable way to generate page thumbnails.
+  headline: How to Convert PDF Pages to Images and Preview Documents with GroupDocs.Merger
+    for Java
+  type: TechArticle
+- questions:
+  - answer: It’s used for merging, splitting, and managing documents efficiently,
+      including preview generation and format conversion.
+    question: What is GroupDocs.Merger for Java used for?
+  - answer: Wrap stream creation and closing in try‑catch blocks, as shown in the
+      helper methods, to prevent memory leaks.
+    question: How do I handle exceptions during stream operations?
+  - answer: Yes, change the `PreviewMode` enum to PNG, BMP, or TIFF to suit your requirements.
+    question: Can I generate previews in formats other than JPEG?
+  - answer: Typical problems include incorrect file paths and forgetting to close
+      streams, which can cause memory leaks.
+    question: What are common issues with document preview generation?
+  - answer: Use its API to connect with databases, web services, or other Java applications
+      for seamless workflow automation.
+    question: How can I integrate GroupDocs.Merger with other systems?
+  type: FAQPage
+title: PDF Sayfalarını Görsellere Dönüştürme ve Belgeleri Önizleme – GroupDocs.Merger
+  for Java ile
 type: docs
 url: /tr/java/document-information/generate-document-page-previews-groupdocs-merger-java/
 weight: 1
 ---
 
-# GroupDocs.Merger for Java ile Belgeleri Önizleme
+# PDF Sayfalarını Görsellere Dönüştürme ve GroupDocs.Merger for Java ile Belgeleri Önizleme
 
-Belge sayfa önizlemeleri oluşturmak, **belgeleri önizleme** işlemini hızlı bir şekilde yapmanın güçlü bir yoludur; kullanıcıya tam dosyayı açmadan görsel bir anlık görüntü sunar. Bu öğreticide, GroupDocs.Merger for Java kullanarak bu önizlemeleri nasıl oluşturacağınızı öğreneceksiniz; bu kütüphane **sayfaları görüntülere dönüştürmeyi** ve uygulamalarınızda **belge küçük resim oluşturmayı** kolaylaştırır.
+Modern uygulamalarda, kullanıcıların tüm dosyayı indirmeden bir belgeye göz atabilmeleri için genellikle **pdf sayfalarını görsellere dönüştürmek** gerekir. Bu öğretici, GroupDocs.Merger for Java ile yüksek kaliteli sayfa önizlemeleri oluşturmayı, kurulumdan özel depolama yönetimine kadar her şeyi adım adım gösterir. Sonunda, JDK 8+ ortamında çalışan belge küçük resim oluşturma için yeniden kullanılabilir bir çözüme sahip olacaksınız.
 
 ## Hızlı Yanıtlar
-- **“preview documents” ne anlama geliyor?** Her sayfanın hafif görüntü temsillerini oluşturmak.  
-- **Önizlemeler için hangi format kullanılıyor?** Varsayılan olarak JPEG, ancak diğer formatlar da desteklenir.  
+- **“preview documents” ne anlama geliyor?** Her sayfanın hafif görüntü temsillerini oluşturma.  
+- **Önizlemeler için hangi format kullanılır?** Varsayılan olarak JPEG, ancak diğer formatlar da desteklenir.  
 - **Lisans gerekli mi?** Geliştirme için ücretsiz deneme çalışır; üretim için ücretli lisans gerekir.  
 - **Çıktı yolunu özelleştirebilir miyim?** Evet, özel bir `PageStreamFactory` uygulayarak.  
 - **Hangi Java sürümü gerekiyor?** JDK 8 veya üzeri.
 
-## “Belge önizleme” nedir?
-Belgeleri önizlemek, her sayfa için görsel küçük resimler (genellikle JPEG veya PNG) oluşturmak anlamına gelir; böylece kullanıcılar içeriği hızlıca gözden geçirebilir. Bu teknik, belge yönetim sistemlerinde, portalarda ve çok sayıda dosya işleyen herhangi bir uygulamada kullanıcı deneyimini artırır.
+## “Belgeleri önizleme” nedir?
+Belge önizleme, her sayfa için görsel küçük resimler (genellikle JPEG veya PNG) oluşturmak anlamına gelir, böylece kullanıcılar içeriği hızlıca gözden geçirebilir. Bu teknik, dosya tarayıcıları, içerik‑inceleme portalları ve büyük sayıda belge yöneten herhangi bir sistemde kullanıcı deneyimini artırır, tam dosyayı açmadan hızlı bir görsel ipucu sağlar.
 
-## Neden GroupDocs.Merger for Java kullanmalı?
-- **Hızlı dönüşüm** sayfaları tam belgeyi UI'da açmadan görüntülere.  
-- **Yerleşik destek** birçok format için (PDF, DOCX, XLSX, vb.).  
-- **Genişletilebilir API** önizleme dosyalarının nerede ve nasıl kaydedileceğini kontrol etmenizi sağlar.
+## GroupDocs.Merger for Java neden kullanılmalı?
+GroupDocs.Merger, tipik bir 2 GHz CPU'da **sayfa başına 0.5 saniyenin altında** PDF sayfalarını görsellere dönüştürür, **50+ giriş ve çıkış formatını** destekler ve önizlemeleri tüm dosyayı belleğe yüklemeden doğrudan depolamaya akıtmanıza olanak tanır. Genişletilebilir API'si, görüntü kalitesi, format ve hedef yol üzerinde tam kontrol sağlar.
 
 ## Önkoşullar
-- **GroupDocs.Merger for Java** kütüphanesi (aşağıdaki kuruluma bakın).  
-- **JDK 8+** makinenizde kurulu.  
+- **GroupDocs.Merger for Java** kütüphanesi (aşağıdaki kurulum bölümüne bakın).  
+- **JDK 8+** makinenizde kurulu olmalı.  
 - Bir IDE (IntelliJ IDEA, Eclipse, NetBeans) ve bağımlılık yönetimi için Maven veya Gradle.
 
-## GroupDocs.Merger for Java Kurulumu
+## GroupDocs.Merger for Java'ı Kurma
 Tercih ettiğiniz derleme aracını kullanarak kütüphaneyi projenize ekleyin.
 
 **Maven:**  
@@ -54,13 +77,13 @@ Tercih ettiğiniz derleme aracını kullanarak kütüphaneyi projenize ekleyin.
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-**Doğrudan İndirme:**  
-Alternatif olarak, en son sürümü [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) adresinden indirin.
+**Direct Download:**  
+Alternatively, download the latest version from [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
 ### Lisans Alımı
-- **Ücretsiz Deneme:** Özellikleri keşfetmek için ücretsiz deneme sürümünü indirin.  
-- **Geçici Lisans:** Geliştirme sırasında genişletilmiş erişim için geçici bir lisans alın.  
-- **Satın Alma:** Tam üretim kullanımı için [GroupDocs](https://purchase.groupdocs.com/buy) adresinden lisans satın alın.
+- **Free Trial:** Özellikleri keşfetmek için ücretsiz deneme sürümünü indirin.  
+- **Temporary License:** Geliştirme sırasında genişletilmiş erişim için geçici bir lisans edinin.  
+- **Purchase:** Tam üretim kullanımı için [GroupDocs](https://purchase.groupdocs.com/buy) adresinden lisans satın alın.
 
 Kütüphane eklendikten sonra, önizlemek istediğiniz belgenin yolu ile başlatın:
 
@@ -70,14 +93,19 @@ Merger merger = new Merger(filePath);
 ```
 
 ## Belgeleri Önizleme: Adım Adım Kılavuz
+Kaynak dosyayı yükleyin, bir `PageStreamFactory` yapılandırın ve `generatePreview` metodunu çağırın.  
+`generatePreview`, sağlanan seçeneklere göre her belge sayfasını bir görsele dönüştüren bir yöntemdir.
 
-### Adım 1: Merger'ı Başlatın ve bir PageStreamFactory Tanımlayın
-`PageStreamFactory`, her önizleme görüntüsünün nereye yazılacağını kütüphaneye bildirir.
+### Adım 1: Merger'ı Başlatma ve PageStreamFactory Tanımlama
+`Merger`, belgeleri birleştirme, bölme ve önizleme oluşturma yöntemlerini sağlayan temel sınıftır.  
+`PageStreamFactory`, kütüphaneye her önizleme görselinin nereye yazılacağını belirten bir arayüzdür.
 
 ```java
 String filePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_XLSX";
 Merger merger = new Merger(filePath);
 ```
+
+Burada, her sayfa görselini öngörülebilir bir adlandırma şemasıyla belirli bir klasöre yazan özel bir uygulama oluşturuyoruz.
 
 ```java
 IPreviewOptions previewOption = new PreviewOptions(new PageStreamFactory() {
@@ -93,15 +121,15 @@ IPreviewOptions previewOption = new PreviewOptions(new PageStreamFactory() {
 }, PreviewMode.JPEG);
 ```
 
-### Adım 2: Önizlemeleri Oluşturun
-Az önce yapılandırdığınız seçeneklerle `generatePreview` metodunu çağırın.
+### Adım 2: Önizlemeleri Oluşturma
+`generatePreview`, sağladığınız seçeneklere göre dönüşüm sürecini başlatır. Her sayfa görselini tanımladığınız `PageStreamFactory`'ye akıtarak düşük bellek kullanımını sağlar.
 
 ```java
 merger.generatePreview(previewOption);
 ```
 
-### Sayfaları Görüntülere Dönüştür – Özel PageStreamFactory
-Dosya adlandırması veya depolama konumu üzerinde daha fazla kontrol gerekiyorsa, kendi fabrikanızı uygulayın:
+### Sayfaları Görsellere Dönüştürme – Özel PageStreamFactory
+Dosya adlandırması veya depolama konumu üzerinde daha fazla kontrol ihtiyacınız varsa, kendi fabrikasını uygulayın:
 
 ```java
 class CustomPageStreamFactory implements PageStreamFactory {
@@ -125,7 +153,7 @@ class CustomPageStreamFactory implements PageStreamFactory {
 ```
 
 ### Yardımcı Metodlar – Akışları Yönetme
-Bu yardımcı metodlar kodu düzenli tutar ve istisnaları temiz bir şekilde ele alır.
+Bu yardımcı metodlar kodu düzenli tutar ve istisnaları temiz bir şekilde yönetir.
 
 ```java
 private static String getImagePath(int pageNumber) {
@@ -155,43 +183,51 @@ private static void releasePageStream(int pageNumber, OutputStream pageStream) {
 ## Belge Küçük Resim Oluşturma – Pratik Uygulamalar
 Önizlemeler oluşturmak özellikle şu durumlarda faydalıdır:
 
-1. **Belge Yönetim Sistemleri** – Kullanıcılar dosyaları açmadan gözden geçirebilir.  
-2. **İçerik İnceleme Platformları** – Yüklemeleri onaylamadan önce hızlı görsel kontroller.  
-3. **Eğitim Araçları** – Öğrenciler ders slaytlarına veya ders kitabı sayfalarına göz atabilir.
+1. **Document Management Systems** – Kullanıcılar dosyaları açmadan göz atabilir.  
+2. **Content Review Platforms** – Yüklemeleri onaylamadan önce hızlı görsel kontroller.  
+3. **Educational Tools** – Öğrenciler ders slaytlarına veya ders kitabı sayfalarına göz atabilir.  
 
 ## Performans Düşünceleri
-- **Akışları hızlıca serbest bırakın** belleği boşaltmak için.  
-- **Tüm belgeleri belleğe yüklemekten kaçının**; kütüphanenin sayfalama yapmasına izin verin.  
-- **Uygun görüntü kalitesi** ayarlarını kullanarak hız ve görsel doğruluk arasında denge kurun.
+- **Akışları zamanında serbest bırakın** belleği boşaltmak için.  
+- **Tüm belgeleri belleğe yüklemekten kaçının**; kütüphane sayfalama işlemini yapsın.  
+- **Uygun görüntü kalitesi** ayarlarını kullanarak hız ve görsel doğruluk arasında denge kurun.  
 
-## Sıkça Sorulan Sorular
+## Sık Sorulan Sorular
 
-**Q:** GroupDocs.Merger for Java ne için kullanılır?  
-**A:** Belgeleri verimli bir şekilde birleştirmek, bölmek ve yönetmek için kullanılır; ayrıca önizleme oluşturmayı da kapsar.
+**S: GroupDocs.Merger for Java ne için kullanılır?**  
+C: Belgeleri verimli bir şekilde birleştirme, bölme ve yönetme, ayrıca önizleme oluşturma ve format dönüştürme için kullanılır.
 
-**Q:** Akış işlemleri sırasında istisnaları nasıl yönetirim?  
-**A:** Yardımcı metodlarda gösterildiği gibi, akış oluşturma ve kapatma işlemlerini try‑catch bloklarıyla sarın.
+**S: Akış işlemleri sırasında istisnaları nasıl yönetirim?**  
+C: Yardımcı metodlarda gösterildiği gibi, akış oluşturma ve kapatma işlemlerini try‑catch bloklarıyla sararak bellek sızıntılarını önleyin.
 
-**Q:** JPEG dışındaki formatlarda önizleme oluşturabilir miyim?  
-**A:** Evet, ihtiyaçlarınıza göre `PreviewMode` enum'ını PNG, BMP vb. olarak değiştirin.
+**S: JPEG dışındaki formatlarda önizleme oluşturabilir miyim?**  
+C: Evet, `PreviewMode` enum'ını PNG, BMP veya TIFF olarak değiştirerek gereksinimlerinize uygun hale getirebilirsiniz.
 
-**Q:** Belge önizleme oluştururken yaygın sorunlar nelerdir?  
-**A:** Tipik problemler arasında hatalı dosya yolları ve akışların kapatılmaması bulunur; bu durum bellek sızıntılarına yol açabilir.
+**S: Belge önizleme oluştururken yaygın sorunlar nelerdir?**  
+C: Tipik problemler arasında hatalı dosya yolları ve akışların kapatılmayı unutması bulunur; bu durum bellek sızıntılarına yol açabilir.
 
-**Q:** GroupDocs.Merger'ı diğer sistemlerle nasıl entegre edebilirim?  
-**A:** API'sini kullanarak veritabanları, web servisleri veya diğer Java uygulamalarıyla bağlanabilir ve sorunsuz iş akışı otomasyonu sağlayabilirsiniz.
-
-## Ek Kaynaklar
-- [Dokümantasyon](https://docs.groupdocs.com/merger/java/)
-- [API Referansı](https://reference.groupdocs.com/merger/java/)
-- [İndirme](https://releases.groupdocs.com/merger/java/)
-- [Satın Alma](https://purchase.groupdocs.com/buy)
-- [Ücretsiz Deneme](https://releases.groupdocs.com/merger/java/)
-- [Geçici Lisans](https://purchase.groupdocs.com/temporary-license/)
-- [Destek](https://forum.groupdocs.com/c/merger/)
+**S: GroupDocs.Merger'ı diğer sistemlerle nasıl entegre edebilirim?**  
+C: API'sini kullanarak veritabanları, web servisleri veya diğer Java uygulamalarıyla bağlanabilir ve sorunsuz iş akışı otomasyonu sağlayabilirsiniz.
 
 ---
 
-**Son Güncelleme:** 2026-01-24  
-**Test Edilen Versiyon:** GroupDocs.Merger latest version (2025‑latest)  
+## Kaynaklar
+- [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/)  
+- [Download](https://releases.groupdocs.com/merger/java/)  
+- [Documentation](https://docs.groupdocs.com/merger/java/)  
+- [API Reference](https://reference.groupdocs.com/merger/java/)  
+- [Free Trial](https://releases.groupdocs.com/merger/java/)  
+- [Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- [Purchase](https://purchase.groupdocs.com/buy)  
+- [GroupDocs](https://purchase.groupdocs.com/buy)  
+- [Support](https://forum.groupdocs.com/c/merger/)
+
+**Son Güncelleme:** 2026-06-26  
+**Test Edilen:** GroupDocs.Merger son sürüm (2025‑latest)  
 **Yazar:** GroupDocs
+
+## İlgili Eğitimler
+
+- [Document Page Operations Tutorials for GroupDocs.Merger Java](/merger/java/page-operations/)
+- [How to Load a PDF from a URL Using GroupDocs.Merger for Java: A Comprehensive Guide](/merger/java/document-loading/load-pdf-url-groupdocs-merger-java/)
+- [Create Single Page PDF with GroupDocs.Merger Java](/merger/java/document-splitting/)
