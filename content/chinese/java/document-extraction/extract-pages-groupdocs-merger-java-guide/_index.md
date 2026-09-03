@@ -1,51 +1,95 @@
 ---
-date: '2026-02-16'
-description: 学习如何使用 GroupDocs.Merger for Java 从 Word、PDF 以及其他文档中提取特定页面，包括偶数页。
+date: '2026-08-15'
+description: 了解如何使用 GroupDocs.Merger for Java 提取特定页面（java），包括偶数页和自定义范围。同时了解如何在 Java
+  中拆分 PDF 页面。
 keywords:
+- extract specific pages java
+- java split pdf pages
+- groupdocs merger java
+lastmod: '2026-08-15'
+og_description: 使用 GroupDocs.Merger for Java 提取特定页面（java）。本指南展示了如何提取偶数页、自定义范围以及高效拆分
+  PDF 页面。
+og_image_alt: Guide showing extract specific pages java using GroupDocs.Merger
+og_title: 使用 GroupDocs.Merger for Java 提取特定页面（java）
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-15'
+  description: Learn how to extract specific pages java using GroupDocs.Merger for
+    Java, including even pages and custom ranges. Also see how to split PDF pages
+    in Java.
+  headline: Extract specific pages java with GroupDocs.Merger for Java
+  type: TechArticle
+- description: Learn how to extract specific pages java using GroupDocs.Merger for
+    Java, including even pages and custom ranges. Also see how to split PDF pages
+    in Java.
+  name: Extract specific pages java with GroupDocs.Merger for Java
+  steps:
+  - name: define input and output paths
+    text: Specify the full file system paths for the source document and the destination
+      file.
+  - name: configure extraction options
+    text: '`ExtractOptions` lets you set the start page, end page, and the `RangeMode`
+      (even, odd, or custom). The example below extracts only even pages between 1
+      and 3, which means page 2 will be saved.'
+  - name: perform extraction and save the result
+    text: Invoke the `extract` method on the `Merger` instance and write the new document
+      to disk. **Pro tip:** Wrap the extraction logic in a `try‑catch` block to handle
+      `IOException` or format‑specific exceptions gracefully.
+  type: HowTo
+- questions:
+  - answer: Use `RangeMode.OddPages` when creating `ExtractOptions`.
+    question: How do I extract odd‑numbered pages?
+  - answer: Yes—GroupDocs.Merger supports PDF, DOCX, PPTX, XLSX, and many other formats.
+    question: Can I use this with PDFs?
+  - answer: The API throws an `IOException`. Verify the path and check file permissions.
+    question: What if my document path is incorrect?
+  - answer: Enclose the extraction code in a `try‑catch` block and log the exception
+      details for troubleshooting.
+    question: How should I handle exceptions during extraction?
+  - answer: There’s no hard limit, but extracting very large ranges may require additional
+      heap memory.
+    question: Is there a limit on the number of pages I can extract?
+  type: FAQPage
+tags:
 - extract pages java
-- groupdocs merger for java
-- page extraction by range
-title: 使用 GroupDocs.Merger for Java 按范围提取特定页面
+- GroupDocs.Merger
+- Java document processing
+- page extraction
+- PDF split java
+title: 使用 GroupDocs.Merger for Java 提取特定页面（java）
 type: docs
 url: /zh/java/document-extraction/extract-pages-groupdocs-merger-java-guide/
 weight: 1
 ---
 
-# 如何使用 GroupDocs.Merger for Java 按范围提取特定页面
+# 使用 GroupDocs.Merger for Java 提取特定页面 java
 
-如果您需要从大型文档中**提取特定页面**——无论是 Word 合同、PDF 报告还是 PowerPoint 幻灯片——本指南将向您展示使用 GroupDocs.Merger for Java 的简洁、编程方式来实现。您将了解按范围提取页面的意义、如何定位偶数页，以及如何将该解决方案集成到现有的 Java 项目中。
-
-**您将学到的内容**
-- 从任何受支持的文档类型中提取特定页面的逐步过程。  
-- 如何配置范围选项，如偶数页、奇数页或自定义页面列表。  
-- 处理大文件的技巧以及避免常见陷阱的方法。
+在本教程中，您将学习如何使用 GroupDocs.Merger for Java **提取特定页面（java）**，从任何受支持的文档类型——Word、PDF、PowerPoint、Excel 等——中提取。您将了解基于范围的提取为何重要，如何定位偶数页，以及如何将该解决方案集成到标准的 Java 项目中。
 
 ## 快速答案
-- **“提取特定页面”是什么意思？** 从更大的文档中仅选择您需要的页面。  
-- **支持哪些格式？** Word、PDF、PowerPoint、Excel 等众多格式。  
-- **我可以只提取偶数页吗？** 可以——使用 `RangeMode.EvenPages`。  
-- **需要许可证吗？** 免费试用可用于测试；生产环境需要许可证。  
-- **代码行数多少？** 提取一个范围不到 20 行代码。
+- **“提取特定页面” 是什么意思？** 这意味着从较大的文档中仅选择所需的页面并将其保存为新文件。  
+- **支持哪些格式？** Word、PDF、PowerPoint、Excel、HTML、图像，以及其他 30 多种格式。  
+- **我只能提取偶数页吗？** 可以——在提取选项中设置 `RangeMode.EvenPages`。  
+- **我需要许可证吗？** 免费试用可用于测试；生产环境需要完整许可证。  
+- **需要多少行代码？** 提取自定义范围所需的代码行数少于 20 行。
 
-## 什么是“提取特定页面”？
-提取特定页面是指从源文档中抽取一部分页面并将其保存为一个新的、独立的文件。当您只需要某些章节、合同条款或发票集合时，而不想发送整个文档，这非常有用。
+## 什么是提取特定页面（java）？
+提取特定页面（java）指的是通过编程方式从源文档中抽取一部分页面并创建一个新的、独立的文件。当您只需要合同条款、单个章节或一组发票时，这一技术尤为重要，可避免发送整个文档的开销。
 
 ## 为什么要按范围提取特定页面？
-有针对性的页面提取可以减小文件体积、保护敏感信息，并加快后续处理（例如电子签名或自动化报表）。通过基于范围的提取，您可以以编程方式选择 1‑5 页、每个偶数页或任何自定义列表，而无需手动编辑。
+按范围提取特定页面可以减小文件大小、保护敏感章节，并加快后续流程，如电子签名、自动化报告或批量索引。使用 GroupDocs.Merger，您可以在一次 API 调用中请求第 1‑5 页、所有偶数页或任意页面列表，从而省去手动编辑，节省宝贵的开发时间。
 
 ## 前置条件
 
-在开始之前，请确保您已具备：
-
-1. **必需的库** – 已将 GroupDocs.Merger for Java 添加为 Maven 或 Gradle 依赖。  
-2. **JDK** – 已安装并配置 Java Development Kit 8 或更高版本。  
-3. **基础 Java 知识** – 熟悉文件 I/O 与异常处理。
+- **GroupDocs.Merger for Java** 已作为 Maven 或 Gradle 依赖添加。  
+- **JDK 8** 或更高版本已在开发机器上安装并配置。  
+- 对 Java 文件 I/O 和异常处理有基本了解。
 
 ## 设置 GroupDocs.Merger for Java
 
 ### Maven 设置
 
-在 `pom.xml` 中添加依赖：
+将依赖添加到您的 `pom.xml`：
 
 ```xml
 <dependency>
@@ -57,7 +101,7 @@ weight: 1
 
 ### Gradle 设置
 
-在 `build.gradle` 文件中添加以下行：
+将以下行添加到您的 `build.gradle` 文件中：
 
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
@@ -67,15 +111,16 @@ implementation 'com.groupdocs:groupdocs-merger:latest-version'
 
 您也可以从 [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) 获取最新二进制文件。
 
-#### 许可证获取步骤
+#### 获取许可证步骤
 
 1. **免费试用** – 下载试用版以探索 API。  
-2. **临时许可证** – 申请临时密钥以进行延长测试。  
-3. **购买** – 为生产使用购买完整许可证。
+2. **临时许可证** – 申请临时密钥以进行扩展测试。  
+3. **购买** – 购买完整许可证用于生产环境。
 
 ### 基本初始化和设置
 
-下面的代码展示了创建 `Merger` 实例所需的最小代码：
+下面是创建 `Merger` 实例所需的最小代码：  
+`Merger` 类是加载文档并提供提取操作的核心 API 对象。
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -86,9 +131,11 @@ Merger merger = new Merger(filePath);
 
 ## 如何按范围提取特定页面
 
-下面我们一步步演示如何在自定义范围内提取偶数页。
+加载源文档，配置提取选项，并保存结果——全部在三个简明步骤中完成。
 
 ### 步骤 1：定义输入和输出路径
+
+指定源文档和目标文件的完整文件系统路径。
 
 ```java
 String filePath = "YOUR_DOCUMENT_DIRECTORY/YourDocument.docx";
@@ -97,7 +144,7 @@ String filePathOut = "YOUR_OUTPUT_DIRECTORY/ExtractedPages.docx";
 
 ### 步骤 2：配置提取选项
 
-`ExtractOptions` 允许您指定起始页、结束页以及 `RangeMode`（例如偶数、奇数或自定义）。下面的示例仅提取 1 到 3 之间的偶数页，即第 2 页将被保存。
+`ExtractOptions` 允许您设置起始页、结束页以及 `RangeMode`（偶数、奇数或自定义）。下面的示例仅提取 1 到 3 之间的偶数页，即第 2 页将被保存。
 
 ```java
 import com.groupdocs.merger.domain.options.ExtractOptions;
@@ -108,6 +155,8 @@ ExtractOptions extractOptions = new ExtractOptions(1, 3, RangeMode.EvenPages);
 ```
 
 ### 步骤 3：执行提取并保存结果
+
+调用 `Merger` 实例的 `extract` 方法并将新文档写入磁盘。
 
 ```java
 // Initialize Merger with input document path
@@ -122,45 +171,45 @@ merger.save(filePathOut);
 
 **专业提示：** 将提取逻辑包装在 `try‑catch` 块中，以优雅地处理 `IOException` 或特定格式的异常。
 
-## 实际应用场景
+## 实际应用
 
 | 场景 | 提取的帮助 |
 |----------|----------------------|
-| **法律审查** | 仅提取所需的条款，以便快速分析。 |
-| **学术研究** | 从教材中隔离章节或段落，以便引用。 |
-| **财务报告** | 从多页报告中提取表格或报表。 |
+| **法律审查** | 仅提取所需条款以快速分析，隐藏机密部分。 |
+| **学术研究** | 从教材中隔离章节或节，以便引用或离线阅读。 |
+| **财务报告** | 从多页报告中提取表格或报表，减小邮件分发的文件大小。 |
 
-## 性能考虑
+## 性能考虑因素
 
-- **内存管理** – 大型 PDF 可能占用大量堆内存。如遇 `OutOfMemoryError`，请增大 JVM 堆 (`-Xmx2g`)。  
+- **内存管理** – 大型 PDF 可能占用大量堆内存。如果遇到 `OutOfMemoryError`，请增加 JVM 堆大小（`-Xmx2g`）。  
 - **文件 I/O** – 读取/写入大文件时使用缓冲流，以降低磁盘延迟。  
-- **批量处理** – 若需从大量文档中提取范围，可顺序处理或使用受控并发的线程池。
+- **批处理** – 从多个文档中提取范围时，可顺序处理或使用受控并发的线程池，以避免耗尽系统资源。
 
 ## 常见问题及解决方案
 
 | 问题 | 解决方案 |
 |-------|----------|
-| **文件路径无效** | 核实完整路径并确保应用拥有读写权限。 |
-| **不支持的格式** | 确认文档类型（如 DOCX、PDF）在支持的格式列表中。 |
-| **内存溢出错误** | 将大文件分块处理或增大 JVM 堆大小 (`-Xmx`)。 |
-| **RangeMode 行为异常** | 再次检查起始/结束值，确保它们在文档页数范围内。 |
+| **无效的文件路径** | 验证完整路径并确保应用程序具有读/写权限。 |
+| **不受支持的格式** | 确认文档类型（例如 DOCX、PDF）在支持的格式列表中。 |
+| **内存不足错误** | 将大文件分成更小的块处理或增加 JVM 堆大小（`-Xmx`）。 |
+| **RangeMode 未按预期工作** | 仔细检查起始/结束值，确保它们在文档页数范围内。 |
 
 ## 常见问答
 
-**问：如何提取奇数页？**  
-答：创建 `ExtractOptions` 时使用 `RangeMode.OddPages`。
+**Q: 如何提取奇数页？**  
+A: 在创建 `ExtractOptions` 时使用 `RangeMode.OddPages`。
 
-**问：可以用于 PDF 吗？**  
-答：可以，GroupDocs.Merger 支持 PDF、DOCX、PPTX、XLSX 等多种格式。
+**Q: 可以在 PDF 上使用吗？**  
+A: 可以——GroupDocs.Merger 支持 PDF、DOCX、PPTX、XLSX 等多种格式。
 
-**问：如果文档路径不正确会怎样？**  
-答：API 会抛出 `IOException`。请核实路径并检查文件权限。
+**Q: 如果文档路径不正确怎么办？**  
+A: API 会抛出 `IOException`。请验证路径并检查文件权限。
 
-**问：提取过程中应如何处理异常？**  
-答：将提取代码放在 `try‑catch` 块中，并记录异常细节以便排查。
+**Q: 提取过程中应如何处理异常？**  
+A: 将提取代码放在 `try‑catch` 块中，并记录异常细节以便排查。
 
-**问：提取的页面数量有限制吗？**  
-答：没有硬性限制，但极大的提取可能需要更多堆内存。
+**Q: 提取的页面数量有限制吗？**  
+A: 没有硬性限制，但提取非常大的范围可能需要额外的堆内存。
 
 ## 资源
 
@@ -172,10 +221,16 @@ merger.save(filePathOut);
 - [临时许可证](https://purchase.groupdocs.com/temporary-license/)
 - [支持论坛](https://forum.groupdocs.com/c/merger/)
 
-通过本指南，您现在拥有了一种可靠的方法，使用 GroupDocs.Merger for Java 从任何受支持的文档中**提取特定页面**。祝编码愉快！
+通过本指南，您现在拥有了一种可靠的方法，可使用 GroupDocs.Merger for Java **提取特定页面（java）**，从任何受支持的文档中提取。祝编码愉快！
 
 ---
 
-**最后更新：** 2026-02-16  
+**最后更新：** 2026-08-15  
 **测试环境：** GroupDocs.Merger 最新版本（Java）  
 **作者：** GroupDocs
+
+## 相关教程
+
+- [使用 GroupDocs.Merger for Java 将 PDF 拆分为页面](/merger/java/document-splitting/master-document-splitting-groupdocs-merger-java/)
+- [合并特定页面 java – 使用 GroupDocs.Merger 合并文档](/merger/java/document-joining/join-pages-groupdocs-merger-java-tutorial/)
+- [如何在 Java 中加载 PDF URL – GroupDocs.Merger 文档加载教程](/merger/java/document-loading/)

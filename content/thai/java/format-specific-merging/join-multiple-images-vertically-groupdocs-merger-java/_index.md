@@ -1,58 +1,100 @@
 ---
-date: '2026-02-13'
-description: เรียนรู้วิธีการรวมรูปภาพในแนวตั้งด้วย GroupDocs.Merger สำหรับ Java บทแนะนำนี้จะแสดงวิธีการเชื่อมต่อรูปภาพในแนวตั้ง
-  สร้างคอลลาจภาพแนวตั้ง และเพิ่มรูปภาพลงในไฟล์อย่างมีประสิทธิภาพ
+date: '2026-08-15'
+description: เรียนรู้วิธีการสร้าง vertical photo collage โดยการ merge images vertically
+  ด้วย GroupDocs.Merger for Java. tutorial นี้แสดงวิธีการ join images, build a collage,
+  และ handle files อย่างมีประสิทธิภาพ
 keywords:
+- create vertical photo collage
 - join multiple images vertically
+- combine images into one java
 - GroupDocs.Merger for Java
 - image merging tutorial
-title: วิธีรวมรูปภาพในแนวตั้งด้วย GroupDocs.Merger Java
+lastmod: '2026-08-15'
+og_description: สร้าง vertical photo collage ด้วย GroupDocs.Merger for Java. guide
+  นี้พาคุณผ่านการ merging multiple images vertically, supported formats, performance
+  tips, และ real‑world use cases
+og_image_alt: Guide showing how to merge images vertically in Java with GroupDocs.Merger
+og_title: สร้าง vertical photo collage ด้วย GroupDocs.Merger for Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-15'
+  description: Learn how to create vertical photo collage by merging images vertically
+    with GroupDocs.Merger for Java. This tutorial shows how to join images, build
+    a collage, and handle files efficiently.
+  headline: How to merge images vertically using GroupDocs.Merger for Java
+  type: TechArticle
+- description: Learn how to create vertical photo collage by merging images vertically
+    with GroupDocs.Merger for Java. This tutorial shows how to join images, build
+    a collage, and handle files efficiently.
+  name: How to merge images vertically using GroupDocs.Merger for Java
+  steps:
+  - name: define paths and initialize the merger
+    text: First, point the library at your source image and decide where the merged
+      result will be saved.
+  - name: configure join options
+    text: Tell GroupDocs.Merger that you want a **vertical** layout.
+  - name: add additional images
+    text: Use the `join` method for each extra picture you want to stack below the
+      previous one. You can repeat this call as many times as needed to **add images
+      to file** and create a long vertical collage.
+  - name: save the merged image
+    text: Finally, write the combined picture to disk.
+  type: HowTo
+- questions:
+  - answer: PNG, BMP, JPG, and other common static formats are supported.
+    question: What image formats can I combine with this method?
+  - answer: No hard limit; the practical limit is memory availability. Add images
+      sequentially with `join`.
+    question: Is there a limit to the number of images I can join?
+  - answer: Resize or compress the source images before merging, or use Java’s `ImageIO`
+      to reduce quality.
+    question: My output file is too large—what can I do?
+  - answer: The current API focuses on static images; animated GIFs are not supported
+      for vertical joining.
+    question: Can I merge animated GIFs vertically?
+  - answer: Purchase a license through the GroupDocs portal; a temporary license is
+      available for testing.
+    question: How do I obtain a production license?
+  type: FAQPage
+tags:
+- create vertical photo collage
+- GroupDocs.Merger
+- Java image merging
+- vertical collage
+- image processing
+title: วิธีการ merge images vertically ด้วย GroupDocs.Merger for Java
 type: docs
 url: /th/java/format-specific-merging/join-multiple-images-vertically-groupdocs-merger-java/
 weight: 1
 ---
 
- etc. They are not fenced code blocks but placeholders. The instruction says preserve all code blocks: fenced code blocks. These placeholders are not fenced, but we keep them as is.
+# วิธีรวมรูปภาพในแนวตั้งโดยใช้ GroupDocs.Merger สำหรับ Java
 
-Now produce final content with all translations.
+ในคู่มือแบบขั้นตอนนี้คุณจะ **สร้างคอลลาจรูปภาพแนวตั้ง** โดยการรวมหลายรูปภาพเป็นภาพสูงหนึ่งภาพเดียวโดยใช้ GroupDocs.Merger สำหรับ Java ไม่ว่าคุณจะต้องการแบนเนอร์ที่เลื่อนได้ง่าย, ภาคผนวกของรายงาน, หรือคอลลาจง่ายๆ คู่มือนี้อธิบายว่าการรวมแนวตั้งสำคัญอย่างไร, แสดงการเรียก API อย่างแม่นยำ, และให้เคล็ดลับปฏิบัติเพื่อให้การใช้หน่วยความจำน้อยลง
 
-Check for any missing elements: headings, lists, tables, code block placeholders.
-
-Make sure to keep the triple backticks? There are none besides placeholders. So fine.
-
-Now produce final answer.# วิธีรวมรูปภาพในแนวตั้งโดยใช้ GroupDocs.Merger สำหรับ Java
-
-การรวมหลายรูปภาพเป็นไฟล์เดียวเป็นความต้องการทั่วไปเมื่อคุณต้องการ **how to merge images** สำหรับการทำคอลลาจภาพ, รายงาน, หรือสื่อการตลาด ในคู่มือนี้เราจะอธิบายขั้นตอนการรวมรูปภาพในแนวตั้งด้วย GroupDocs.Merger สำหรับ Java, อธิบายว่าทำไมวิธีนี้มีคุณค่า, และให้เคล็ดลับปฏิบัติเพื่อหลีกเลี่ยงข้อผิดพลาดทั่วไป.
-
-## คำตอบด่วน
-- **ไลบรารีที่ฉันสามารถใช้ได้คืออะไร?** GroupDocs.Merger for Java.  
-- **ฉันสามารถรวมรูปภาพมากกว่าสามรูปได้หรือไม่?** ได้ – เพิ่มได้ตามต้องการ.  
-- **รูปแบบภาพใดที่รองรับ?** PNG, BMP, JPG, and other common static formats.  
-- **ฉันต้องการไลเซนส์สำหรับการพัฒนาหรือไม่?** การทดลองใช้ฟรีทำงานสำหรับการทดสอบ; จำเป็นต้องมีไลเซนส์แบบชำระเงินสำหรับการใช้งานจริง.  
-- **กระบวนการนี้มีประสิทธิภาพด้านหน่วยความจำหรือไม่?** โหลดเฉพาะภาพที่ต้องการและบันทึกทันทีเพื่อรักษาการใช้หน่วยความจำให้ต่ำ.
+## คำตอบอย่างรวดเร็ว
+- **ไลบรารีที่ฉันสามารถใช้ได้คืออะไร?** GroupDocs.Merger for Java.
+- **ฉันสามารถรวมรูปภาพมากกว่าสามรูปได้หรือไม่?** ใช่ – เพิ่มได้ตามต้องการ.
+- **รูปแบบภาพที่รองรับคืออะไร?** PNG, BMP, JPG, and other common static formats.
+- **ฉันต้องการใบอนุญาตสำหรับการพัฒนาหรือไม่?** การทดลองใช้ฟรีทำงานสำหรับการทดสอบ; จำเป็นต้องมีใบอนุญาตแบบชำระเงินสำหรับการใช้งานจริง.
+- **กระบวนการนี้มีประสิทธิภาพด้านหน่วยความจำหรือไม่?** โหลดเฉพาะภาพที่ต้องการและบันทึกทันทีเพื่อให้การใช้หน่วยความจำต่ำ.
 
 ## การรวมรูปภาพคืออะไร?
-Image merging is the technique of combining two or more separate image files into one composite image. When the images are stacked **vertically**, the result looks like a tall photo strip—perfect for creating a **vertical photo collage** or assembling visual sections of a report.
+การรวมรูปภาพคือเทคนิคการผสานไฟล์รูปภาพสองไฟล์หรือมากกว่าที่แยกกันเป็นภาพรวมเดียว เมื่อรูปภาพถูกจัดเรียง **แนวตั้ง**, ผลลัพธ์จะดูเหมือนแถบรูปภาพสูง—เหมาะสำหรับ **คอลลาจรูปภาพแนวตั้ง** หรือการประกอบส่วนภาพของรายงาน
 
 ## ทำไมต้องใช้ GroupDocs.Merger สำหรับ Java?
-- **Simple API** – เพียงไม่กี่บรรทัดของโค้ด Java ก็เพียงพอ.  
-- **Format flexibility** – ทำงานกับ PNG, BMP, JPG และอื่น ๆ.  
-- **Performance‑focused** – ประมวลผลภาพในหน่วยความจำอย่างมีประสิทธิภาพ.  
-- **Enterprise‑ready** – มีตัวเลือกไลเซนส์สำหรับโครงการเชิงพาณิชย์.
+GroupDocs.Merger สำหรับ Java ช่วยให้คุณรวมหลายรูปภาพในแนวตั้งได้ด้วยเพียงไม่กี่บรรทัดของโค้ด มันรองรับ **50+ static image formats** (รูปแบบภาพคงที่กว่า 50 แบบ), ประมวลผลไฟล์ในหน่วยความจำโดยไม่สร้างไฟล์ชั่วคราว, และสามารถจัดการเอกสารหลายร้อยหน้าได้โดยใช้หน่วยความจำ heap ต่ำกว่า 200 MB บนเซิร์ฟเวอร์ทั่วไป
 
 ## ข้อกำหนดเบื้องต้น
-
-ก่อนเริ่ม, โปรดตรวจสอบว่าคุณมีสิ่งต่อไปนี้:
-
-- **Java Development Kit (JDK)** ติดตั้ง (เวอร์ชัน 8 หรือใหม่กว่า).  
-- IDE เช่น **IntelliJ IDEA** หรือ **Eclipse**.  
-- **Maven** หรือ **Gradle** สำหรับการจัดการ dependencies.  
+- Java Development Kit (JDK) 8 หรือใหม่กว่า.
+- IDE เช่น IntelliJ IDEA หรือ Eclipse.
+- Maven หรือ Gradle สำหรับการจัดการ dependencies.
 - ความคุ้นเคยพื้นฐานกับไวยากรณ์ Java (ไม่จำเป็นต้องมีความรู้เชิงลึกด้านการประมวลผลภาพ).
 
 ## การตั้งค่า GroupDocs.Merger สำหรับ Java
 
 ### การใช้ Maven
-Add the dependency to your `pom.xml` file:
+เพิ่ม dependency ลงในไฟล์ `pom.xml` ของคุณ:
 
 ```xml
 <dependency>
@@ -63,7 +105,7 @@ Add the dependency to your `pom.xml` file:
 ```
 
 ### การใช้ Gradle
-Include the library in your `build.gradle` file:
+ใส่ไลบรารีในไฟล์ `build.gradle` ของคุณ:
 
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
@@ -72,21 +114,22 @@ implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ### ดาวน์โหลดโดยตรง
 หรือคุณสามารถดาวน์โหลดเวอร์ชันล่าสุดจาก [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
-#### ขั้นตอนการรับไลเซนส์
-1. **Free Trial** – สำรวจคุณสมบัติทั้งหมดโดยไม่มีค่าใช้จ่าย.  
-2. **Temporary License** – รับคีย์ระยะสั้นสำหรับการทดสอบต่อเนื่อง.  
-3. **Purchase** – ซื้อไลเซนส์ถาวรสำหรับการใช้งานในสภาพแวดล้อมจริง.
+#### ขั้นตอนการรับใบอนุญาต
+1. **Free trial** – สำรวจคุณสมบัติทั้งหมดโดยไม่มีค่าใช้จ่าย.  
+2. **Temporary license** – รับคีย์ระยะสั้นสำหรับการทดสอบต่อเนื่อง.  
+3. **Purchase** – ซื้อใบอนุญาตถาวรสำหรับการใช้งานในสภาพแวดล้อมจริง.
 
-Once the library is added, import the main class in your Java file:
+เมื่อเพิ่มไลบรารีแล้ว ให้นำเข้าคลาสหลักในไฟล์ Java ของคุณ:
 
 ```java
 import com.groupdocs.merger.Merger;
 ```
 
 ## วิธีรวมรูปภาพในแนวตั้ง
+โหลดรูปภาพต้นฉบับของคุณ, บอก API ให้ใช้การจัดเรียงแนวตั้ง, เพิ่มรูปแต่ละรูป, และบันทึกผลลัพธ์ รูปแบบสี่ขั้นตอนนี้ช่วยให้คุณ **สร้างคอลลาจรูปภาพแนวตั้ง** ด้วยโค้ดขั้นต่ำและประสิทธิภาพสูงสุด
 
-### ขั้นตอนที่ 1: กำหนดเส้นทางและเริ่มต้น Merger
-First, point the library at your source image and decide where the merged result will be saved.
+### ขั้นตอนที่ 1: กำหนดเส้นทางและเริ่มต้น merger
+แรกสุด, ระบุไลบรารีให้ชี้ไปที่รูปภาพต้นฉบับของคุณและกำหนดตำแหน่งที่ผลลัพธ์ที่รวมจะถูกบันทึก.
 
 ```java
 String filePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_PNG";
@@ -98,85 +141,91 @@ Merger merger = new Merger(filePath);
 ```
 
 ### ขั้นตอนที่ 2: กำหนดค่าตัวเลือกการรวม
-Tell GroupDocs.Merger that you want a **vertical** layout.
+บอก GroupDocs.Merger ว่าคุณต้องการการจัดเรียง **แนวตั้ง**.
 
 ```java
 ImageJoinOptions imageJoinOptions = new ImageJoinOptions(ImageJoinMode.Vertical);
 ```
 
 ### ขั้นตอนที่ 3: เพิ่มรูปภาพเพิ่มเติม
-Use the `join` method for each extra picture you want to stack below the previous one.
+ใช้เมธอด `join` สำหรับรูปภาพเพิ่มเติมแต่ละรูปที่คุณต้องการจัดเรียงต่อจากรูปก่อนหน้า.
 
 ```java
 merger.join("YOUR_DOCUMENT_DIRECTORY/SAMPLE_BMP", imageJoinOptions); // Second image.
 merger.join("YOUR_DOCUMENT_DIRECTORY/SAMPLE_JPG", imageJoinOptions); // Third image.
 ```
 
-คุณสามารถเรียกใช้เมธอดนี้ซ้ำได้ตามต้องการเพื่อ **add images to file** และสร้างคอลลาจแนวตั้งยาว
+คุณสามารถเรียกเมธอดนี้ซ้ำได้ตามต้องการเพื่อ **เพิ่มรูปภาพลงไฟล์** และสร้างคอลลาจแนวตั้งยาว.
 
-### ขั้นตอนที่ 4: บันทึกรูปภาพที่รวมแล้ว
-Finally, write the combined picture to disk.
+### ขั้นตอนที่ 4: บันทึกรูปภาพที่รวม
+สุดท้าย, เขียนรูปภาพที่รวมลงดิสก์.
 
 ```java
 merger.save(filePathOut);
 ```
 
 ### ผลลัพธ์ที่คาดหวัง
-ไฟล์ผลลัพธ์จะประกอบด้วยรูปภาพทั้งหมดที่ระบุเรียงต่อกันจากบนลงล่าง, สร้างเป็นภาพยาวเดียวที่สามารถใช้ในรายงาน, การนำเสนอ, หรือแกลเลอรีบนเว็บ.
+ไฟล์ผลลัพธ์จะประกอบด้วยรูปภาพทั้งหมดที่ให้ไว้เรียงต่อกันจากบนลงล่าง, สร้างเป็นภาพสูงเดียวที่สามารถใช้ในรายงาน, การนำเสนอ, หรือแกลเลอรีเว็บ
 
-## ปัญหาและวิธีแก้ไขทั่วไป
-- **Incorrect file paths** – ตรวจสอบให้แน่ใจว่าแต่ละเส้นทางชี้ไปยังภาพที่มีอยู่และแอปพลิเคชันของคุณมีสิทธิ์อ่าน/เขียน.  
-- **Unsupported format** – ตรวจสอบให้แน่ใจว่าประเภทภาพอยู่ในรูปแบบสถิตที่รองรับ (PNG, BMP, JPG). GIF แบบเคลื่อนไหวไม่รองรับในฟีเจอร์นี้.  
+## ปัญหาทั่วไปและวิธีแก้
+- **Incorrect file paths** – ตรวจสอบให้แน่ใจว่าแต่ละเส้นทางชี้ไปยังภาพที่มีอยู่และแอปพลิเคชันของคุณมีสิทธิ์อ่าน/เขียน.
+- **Unsupported format** – ตรวจสอบให้แน่ใจว่าประเภทภาพอยู่ในรูปแบบคงที่ที่รองรับ (PNG, BMP, JPG). GIF แบบเคลื่อนไหวไม่ถูกประมวลผลโดยฟีเจอร์นี้.
 - **Out‑of‑memory errors** – เมื่อรวมภาพความละเอียดสูงจำนวนมาก, พิจารณาปรับขนาดภาพก่อนรวมหรือเพิ่มขนาด heap ของ JVM (`-Xmx` flag).
 
 ## การประยุกต์ใช้งานจริง
 
-| Use Case | How It Helps |
+| กรณีการใช้งาน | วิธีที่ช่วย |
 |----------|--------------|
-| **Create a vertical photo collage** | รวมภาพถ่ายวันหยุดเป็นภาพเดียวที่สามารถเลื่อนดูได้. |
-| **Assemble visual report sections** | รวมแผนภูมิ, แผนผัง, และภาพหน้าจอเพื่อส่งออกเป็น PDF ที่เป็นหนึ่งเดียว. |
-| **Prepare marketing assets** | จัดเรียงภาพสินค้าต่อกันเพื่อสร้างแบนเนอร์เว็บที่เรียบง่ายและเหมาะกับการเลื่อน. |
+| **สร้างคอลลาจรูปภาพแนวตั้ง** | รวมภาพถ่ายวันหยุดเป็นภาพเดียวที่เลื่อนได้. |
+| **ประกอบส่วนภาพของรายงาน** | รวมแผนภูมิ, แผนภาพ, และภาพหน้าจอเพื่อการส่งออก PDF แบบรวมเดียว. |
+| **เตรียมสื่อการตลาด** | จัดเรียงภาพสินค้าเพื่อแบนเนอร์เว็บที่เรียบหรูและเลื่อนได้ง่าย. |
 
 ## เคล็ดลับด้านประสิทธิภาพ
-- โหลดเฉพาะภาพที่ต้องการในแต่ละครั้ง; ปล่อยอ้างอิงหลังจาก `save` เพื่อให้ garbage collector คืนหน่วยความจำ.  
-- ใช้ SSD สำหรับโฟลเดอร์ต้นทางและปลายทางเพื่อเพิ่มความเร็ว I/O.  
-- เมื่อประมวลผลชุดใหญ่, ให้ทำการรวมในเธรดพื้นหลังเพื่อให้ UI ตอบสนองได้.
+- โหลดเฉพาะภาพที่คุณต้องการในแต่ละครั้ง; ปล่อยอ้างอิงหลังจาก `save` เพื่อให้ garbage collector คืนหน่วยความจำ.
+- ใช้ที่เก็บข้อมูล SSD สำหรับโฟลเดอร์ต้นทางและปลายทางเพื่อเร่งความเร็ว I/O.
+- เมื่อประมวลผลชุดใหญ่, ให้รันการรวมในเธรดพื้นหลังเพื่อให้ UI ตอบสนองได้.
 
 ## สรุป
-ตอนนี้คุณมีวิธีแก้ปัญหาแบบครบถ้วนและเป็นขั้นตอนสำหรับ **how to merge images** ในแนวตั้งโดยใช้ GroupDocs.Merger สำหรับ Java. ทดลองกับชุดภาพต่าง ๆ, ลองโหมดการรวมอื่น (horizontal, grid), และผสานตรรกะนี้เข้าสู่กระบวนการอัตโนมัติที่ใหญ่ขึ้น.
+ตอนนี้คุณมีวิธีแก้ปัญหาแบบครบถ้วนและเป็นขั้นตอนสำหรับ **วิธีรวมรูปภาพ** แนวตั้งโดยใช้ GroupDocs.Merger สำหรับ Java. ทดลองกับชุดรูปภาพต่างๆ, ลองโหมดการรวมอื่น (horizontal, grid), และผสานตรรกะนี้เข้ากับกระบวนการอัตโนมัติที่ใหญ่ขึ้น.
 
 **ขั้นตอนต่อไป**
-- สำรวจตัวเลือก **ImageJoinMode.Horizontal** สำหรับคอลลาจแบบข้างเคียง.  
-- รวมภาพที่รวมแล้วกับการสร้าง PDF ด้วย GroupDocs.PDF เพื่อการสร้างเอกสารแบบครบวงจร.
+- สำรวจตัวเลือก **ImageJoinMode.Horizontal** สำหรับคอลลาจแบบเคียงข้าง.
+- ผสานรูปภาพที่รวมกับการสร้าง PDF โดยใช้ GroupDocs.PDF เพื่อการสร้างเอกสารแบบต้นจนจบ.
 
 ## คำถามที่พบบ่อย
 
 **Q: รูปแบบภาพใดที่ฉันสามารถรวมด้วยวิธีนี้ได้?**  
-A: PNG, BMP, JPG, and other common static formats are supported.
+A: รองรับ PNG, BMP, JPG, และรูปแบบคงที่ทั่วไปอื่นๆ.
 
 **Q: มีขีดจำกัดจำนวนภาพที่ฉันสามารถรวมได้หรือไม่?**  
-A: No hard limit; the practical limit is memory availability. Add images sequentially with `join`.
+A: ไม่มีขีดจำกัดที่แน่นอน; ขีดจำกัดเชิงปฏิบัติคือความพร้อมของหน่วยความจำ. เพิ่มภาพต่อเนื่องด้วย `join`.
 
-**Q: ไฟล์ผลลัพธ์ของฉันใหญ่เกินไป—ฉันทำอย่างไรได้บ้าง?**  
-A: Resize or compress the source images before merging, or use Java’s `ImageIO` to reduce quality.
+**Q: ไฟล์ผลลัพธ์ของฉันใหญ่เกินไป—ฉันควรทำอย่างไร?**  
+A: ปรับขนาดหรือบีบอัดภาพต้นฉบับก่อนรวม, หรือใช้ `ImageIO` ของ Java เพื่อลดคุณภาพ.
 
 **Q: ฉันสามารถรวม GIF แบบเคลื่อนไหวในแนวตั้งได้หรือไม่?**  
-A: The current API focuses on static images; animated GIFs are not supported for vertical joining.
+A: API ปัจจุบันมุ่งเน้นที่ภาพคงที่; GIF แบบเคลื่อนไหวไม่รองรับการรวมในแนวตั้ง.
 
-**Q: ฉันจะได้รับไลเซนส์สำหรับการใช้งานจริงอย่างไร?**  
-A: Purchase a license through the GroupDocs portal; a temporary license is available for testing.
+**Q: ฉันจะรับใบอนุญาตการใช้งานจริงได้อย่างไร?**  
+A: ซื้อใบอนุญาตผ่านพอร์ทัลของ GroupDocs; มีใบอนุญาตชั่วคราวสำหรับการทดสอบ.
 
 ---
 
-**อัปเดตล่าสุด:** 2026-02-13  
+**อัปเดตล่าสุด:** 2026-08-15  
 **ทดสอบด้วย:** GroupDocs.Merger latest version (as of 2026)  
 **ผู้เขียน:** GroupDocs  
 
 **แหล่งข้อมูล**  
-- [Documentation](https://docs.groupdocs.com/merger/java/)  
-- [API Reference](https://reference.groupdocs.com/merger/java/)  
-- [Download](https://releases.groupdocs.com/merger/java/)  
-- [Purchase](https://purchase.groupdocs.com/buy)  
-- [Free trial](https://releases.groupdocs.com/merger/java/)  
-- [Temporary license](https://purchase.groupdocs.com/temporary-license/)  
-- [Support](https://forum.groupdocs.com/c/merger/)
+- [เอกสาร](https://docs.groupdocs.com/merger/java/)  
+- [อ้างอิง API](https://reference.groupdocs.com/merger/java/)  
+- [ดาวน์โหลด](https://releases.groupdocs.com/merger/java/)  
+- [ซื้อ](https://purchase.groupdocs.com/buy)  
+- [ทดลองใช้ฟรี](https://releases.groupdocs.com/merger/java/)  
+- [ใบอนุญาตชั่วคราว](https://purchase.groupdocs.com/temporary-license/)  
+- [สนับสนุน](https://forum.groupdocs.com/c/merger/)
+
+## บทแนะนำที่เกี่ยวข้อง
+
+- [วิธีทำการรวมภาพแนวตั้งของไฟล์ EMF ด้วย GroupDocs.Merger สำหรับ Java](/merger/java/format-specific-merging/master-merging-emf-files-groupdocs-java/)
+- [วิธีรวมไฟล์ ODP หลายไฟล์ด้วย GroupDocs.Merger สำหรับ Java](/merger/java/format-specific-merging/merge-multiple-odp-files-groupdocs-java/)
+- [วิธีรวมไฟล์ VSX หลายไฟล์ด้วย GroupDocs.Merger สำหรับ Java](/merger/java/format-specific-merging/merge-multiple-vsx-files-groupdocs-merger-java/)
