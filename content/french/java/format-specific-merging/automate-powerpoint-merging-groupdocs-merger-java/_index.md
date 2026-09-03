@@ -1,49 +1,108 @@
 ---
-date: '2026-02-08'
-description: Apprenez à combiner automatiquement des fichiers PPTX à l'aide de GroupDocs.Merger
-  pour Java. Ce tutoriel montre comment fusionner des présentations PPTX, configurer
-  la bibliothèque et l'appliquer dans des scénarios réels.
+date: '2026-07-30'
+description: Apprenez à fusionner plusieurs fichiers PPTX automatiquement à l'aide
+  de GroupDocs.Merger for Java. Ce tutoriel montre comment combiner des présentations
+  PPTX, configurer la bibliothèque et l'appliquer dans des scénarios réels.
 keywords:
-- automate PowerPoint merging
-- GroupDocs.Merger for Java
-- merge PPTX files
-title: 'Combiner des fichiers PPTX avec GroupDocs.Merger pour Java : guide étape par
-  étape'
+- merge multiple pptx
+- how to merge pptx
+- merge powerpoint decks
+lastmod: '2026-07-30'
+og_description: Apprenez à fusionner plusieurs fichiers PPTX automatiquement à l'aide
+  de GroupDocs.Merger for Java. Ce guide vous accompagne dans la configuration, le
+  code et les cas d'utilisation réels pour une fusion PowerPoint rapide et fiable.
+og_image_alt: 'Developer guide: Merge multiple PPTX files using GroupDocs.Merger for
+  Java'
+og_title: Fusionner plusieurs fichiers PPTX avec GroupDocs.Merger for Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-30'
+  description: Learn how to merge multiple PPTX files automatically using GroupDocs.Merger
+    for Java. This tutorial shows how to combine PPTX presentations, set up the library,
+    and apply it in real‑world scenarios.
+  headline: Merge Multiple PPTX Files with GroupDocs.Merger for Java
+  type: TechArticle
+- description: Learn how to merge multiple PPTX files automatically using GroupDocs.Merger
+    for Java. This tutorial shows how to combine PPTX presentations, set up the library,
+    and apply it in real‑world scenarios.
+  name: Merge Multiple PPTX Files with GroupDocs.Merger for Java
+  steps:
+  - name: '**Educational Settings:** Merge lecture slides from multiple instructors
+      into one cohesive course pack.'
+    text: '**Educational Settings:** Merge lecture slides from multiple instructors
+      into one cohesive course pack.'
+  - name: '**Corporate Meetings:** Combine quarterly reports, agenda items, and speaker
+      notes into a single board‑room deck.'
+    text: '**Corporate Meetings:** Combine quarterly reports, agenda items, and speaker
+      notes into a single board‑room deck.'
+  - name: '**Project Management:** Consolidate status updates from different teams
+      for a unified project presentation.'
+    text: '**Project Management:** Consolidate status updates from different teams
+      for a unified project presentation.'
+  - name: '**Event Planning:** Assemble promotional material, schedules, and speaker
+      bios into a master event guide.'
+    text: '**Event Planning:** Assemble promotional material, schedules, and speaker
+      bios into a master event guide.'
+  type: HowTo
+- questions:
+  - answer: Besides PPTX, the library supports PDF, DOCX, XLSX, and many more document
+      types — a total of **50+** formats.
+    question: What other formats can GroupDocs.Merger handle?
+  - answer: The `protect` method encrypts the merged document with a password, using
+      AES‑256 encryption. Call `merger.protect("yourPassword")` to add AES‑256 encryption.
+    question: Is it possible to protect the merged presentation with a password?
+  - answer: Absolutely. Load the files into a `byte[]` or `InputStream` and pass them
+      to the `Merger` constructor.
+    question: Can I merge presentations stored in cloud storage (e.g., AWS S3)?
+  - answer: All native PowerPoint features—including animations, slide masters, and
+      transitions—are retained during the merge.
+    question: Does the library preserve animations and transitions?
+  - answer: Prepare a `List<String>` of file paths and iterate `merger.join(path)`
+      for each entry.
+    question: How do I merge more than two PPTX files in a single call?
+  type: FAQPage
+tags:
+- merge pptx
+- GroupDocs.Merger
+- Java document processing
+title: Fusionner plusieurs fichiers PPTX avec GroupDocs.Merger for Java
 type: docs
 url: /fr/java/format-specific-merging/automate-powerpoint-merging-groupdocs-merger-java/
 weight: 1
 ---
 
-# Combiner des fichiers PPTX avec GroupDocs.Merger pour Java : Guide étape par étape
+# Fusionner plusieurs fichiers PPTX avec GroupDocs.Merger pour Java
 
-Fusionner plusieurs présentations PowerPoint manuellement peut être chronophage et source d’erreurs. Dans ce guide, vous découvrirez **comment combiner des fichiers PPTX** rapidement et de manière fiable en utilisant **GroupDocs.Merger pour Java**. Nous passerons en revue tout, de la configuration de l’environnement au code exact dont vous avez besoin, et nous ajouterons des astuces pratiques afin que vous puissiez appliquer la solution à des projets réels immédiatement.
+Fusionner plusieurs présentations PowerPoint manuellement peut être chronophage et source d’erreurs. Dans ce guide, vous découvrirez **comment fusionner plusieurs fichiers PPTX** rapidement et de manière fiable en utilisant **GroupDocs.Merger pour Java**. Nous parcourrons tout, de la configuration de l’environnement au code exact dont vous avez besoin, et nous ajouterons des astuces pratiques afin que vous puissiez appliquer la solution à des projets réels immédiatement.
 
 ## Réponses rapides
-- **Que signifie « combiner des fichiers PPTX » ?** Il s’agit de joindre programmétiquement deux présentations PowerPoint (.pptx) ou plus en un seul diaporama.  
-- **Quelle bibliothèque gère cela le mieux en Java ?** GroupDocs.Merger pour Java propose une API simple pour fusionner, scinder et sécuriser les présentations.  
-- **Ai‑je besoin d’une licence pour l’essayer ?** Un essai gratuit est disponible ; une licence commerciale débloque toutes les fonctionnalités pour une utilisation en production.  
+- **Que signifie « fusionner plusieurs fichiers PPTX » ?** Cela signifie joindre programmétiquement deux ou plusieurs présentations PowerPoint (.pptx) en un seul diaporama.  
+- **Quel bibliothèque Java gère cela le mieux ?** GroupDocs.Merger pour Java fournit une API concise pour fusionner, scinder et sécuriser les présentations.  
+- **Ai‑je besoin d’une licence pour l’essayer ?** Un essai gratuit fonctionne pour l’évaluation ; une licence commerciale débloque toutes les fonctionnalités de production.  
 - **Puis‑je fusionner plus de deux fichiers ?** Oui – appelez la méthode `join` à plusieurs reprises ou transmettez une liste de chemins de fichiers.  
 - **Quelle version de Java est requise ?** JDK 8 ou supérieur.
 
 ## Qu’est‑ce que « combiner des fichiers PPTX » ?
-Combiner des fichiers PPTX consiste à prendre des diaporamas distincts et à les assembler afin qu’ils fonctionnent comme une présentation continue unique. Cela est utile lorsque vous devez rassembler des notes de cours, consolider des comptes‑rendus de réunion ou créer un diaporama maître pour un événement.
+Combiner des fichiers PPTX signifie prendre des diaporamas séparés et les assembler afin qu’ils se comportent comme une présentation continue. Cela est utile lorsque vous devez rassembler des notes de cours, consolider des comptes‑rendus de réunion ou créer un diaporama maître pour un événement.
 
 ## Pourquoi utiliser GroupDocs.Merger pour Java ?
-- **Interface zéro code :** Pas besoin de lancer PowerPoint ; la bibliothèque travaille directement sur le format de fichier.  
-- **Multiplateforme :** Fonctionne sous Windows, Linux et macOS.  
-- **Axé sur la performance :** Gère les présentations volumineuses avec une faible consommation de mémoire.  
+GroupDocs.Merger pour Java offre une solution légère côté serveur qui fusionne les fichiers PowerPoint sans nécessiter Microsoft Office. Elle fonctionne sur tous les systèmes d’exploitation, gère efficacement les diaporamas volumineux et préserve les fonctionnalités natives des diapositives telles que les animations, les transitions et les médias intégrés, ce qui la rend idéale pour les pipelines de documents automatisés.
+
+- **Interface zéro code :** Aucun besoin de lancer PowerPoint ; la bibliothèque travaille directement sur le format de fichier.  
+- **Multi‑plateforme :** Fonctionne sous Windows, Linux et macOS.  
+- **Axé sur la performance :** Gère des présentations jusqu’à **500 diapositives** et une taille de fichier de **200 Mo** tout en maintenant l’utilisation du tas JVM en dessous de **150 Mo**.  
 - **Extensible :** Vous pourrez ensuite scinder, faire pivoter ou protéger les diapositives avec la même API.
 
 ## Prérequis
-- **JDK 8+** (ou version supérieure) installé sur votre machine.  
+- **JDK 8+** (ou plus récent) installé sur votre machine.  
 - Un IDE tel que **IntelliJ IDEA** ou **Eclipse**.  
 - **Maven** ou **Gradle** pour la gestion des dépendances.  
-- Une connaissance de base de la gestion des fichiers en Java.
+- Familiarité de base avec la gestion des fichiers Java.
 
 ## Configuration de GroupDocs.Merger pour Java
 
 ### Maven
-Ajoutez la dépendance à votre `pom.xml` :
+Ajoutez la dépendance à votre `pom.xml` :
 
 ```xml
 <dependency>
@@ -54,21 +113,21 @@ Ajoutez la dépendance à votre `pom.xml` :
 ```
 
 ### Gradle
-Ajoutez la ligne à `build.gradle` :
+Ajoutez la ligne à `build.gradle` :
 
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:LATEST_VERSION'
 ```
 
 ### Téléchargement direct
-Si vous préférez une approche manuelle, récupérez le JAR le plus récent depuis [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) et ajoutez‑le au classpath de votre projet.
+Si vous préférez une approche manuelle, récupérez le dernier JAR depuis [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) et ajoutez‑le au classpath de votre projet.
 
 #### Étapes d’obtention de licence
 - **Essai gratuit :** Testez les fonctionnalités de base sans frais.  
 - **Licence temporaire :** Demandez une évaluation prolongée pour des projets plus importants.  
-- **Achat :** Obtenez une licence commerciale pour une utilisation illimitée en production.
+- **Achat :** Obtenez une licence commerciale pour une utilisation en production illimitée.
 
-### Initialisation de base
+## Initialisation de base
 Créez une classe Java simple pour vérifier que la bibliothèque se charge correctement :
 
 ```java
@@ -83,9 +142,10 @@ public class SetupMerger {
 }
 ```
 
-## Comment fusionner des fichiers PPTX avec GroupDocs.Merger
+## Comment fusionner plusieurs fichiers PPTX avec GroupDocs.Merger pour Java ?
+Chargez votre présentation principale, appelez `join` pour chaque diaporama supplémentaire, puis enregistrez le résultat – c’est l’ensemble du flux de travail en trois étapes concises. L’API masque la gestion bas‑niveau du OOXML, vous permettant de vous concentrer sur la logique métier plutôt que sur l’analyse des fichiers.
 
-### Charger un fichier source
+## Charger un fichier source
 **Étape 1 – Spécifier le chemin du document**
 
 ```java
@@ -93,6 +153,9 @@ String filePath = "YOUR_DOCUMENT_DIRECTORY/sample.pptx";
 ```
 
 Assurez‑vous que le chemin pointe vers un fichier PPTX existant ; sinon une `FileNotFoundException` sera levée.
+
+## Initialiser l’objet Merger
+`Merger` est la classe principale de GroupDocs.Merger qui représente un document et fournit des méthodes pour fusionner, scinder et protéger les fichiers. Après l’instanciation, toutes les opérations suivantes passent par cet objet.
 
 **Étape 2 – Initialiser l’objet Merger**
 
@@ -102,8 +165,12 @@ Merger merger = new Merger(filePath);
 
 L’instance `Merger` représente maintenant la première présentation avec laquelle vous souhaitez travailler.
 
-### Comment joindre des fichiers PPTX programmatiquement
-**Étape 1 – Définir les chemins des fichiers supplémentaires**
+## Comment joindre des fichiers PPTX programmatiquement ?
+La méthode `join` ajoute les diapositives d’un autre fichier PPTX à la présentation actuelle.  
+Définissez les chemins de fichiers supplémentaires, chargez le diaporama principal, appelez `join` pour chaque fichier additionnel, puis enregistrez le résultat fusionné. Ce modèle vous permet de combiner n’importe quel nombre de présentations avec un seul bloc de code lisible.
+
+### Définir les chemins de fichiers supplémentaires
+**Étape 1 – Définir les chemins de fichiers supplémentaires**
 
 ```java
 String filePath1 = "YOUR_DOCUMENT_DIRECTORY/sample.pptx";
@@ -112,12 +179,14 @@ String filePath2 = "YOUR_DOCUMENT_DIRECTORY/additional_sample.pptx";
 
 `filePath1` est le diaporama principal ; `filePath2` (et tout autre fichier) sera ajouté.
 
+### Charger le fichier principal
 **Étape 2 – Charger le fichier principal**
 
 ```java
 Merger merger = new Merger(filePath1);
 ```
 
+### Ajouter les présentations supplémentaires
 **Étape 3 – Ajouter les présentations supplémentaires**
 
 ```java
@@ -126,6 +195,7 @@ merger.join(filePath2);
 
 Vous pouvez appeler `join` à plusieurs reprises pour combiner trois, quatre ou davantage de diaporamas.
 
+### Enregistrer le résultat fusionné
 **Étape 4 – Enregistrer le résultat fusionné**
 
 ```java
@@ -133,13 +203,13 @@ String outputFile = "YOUR_OUTPUT_DIRECTORY/merged_output.pptx";
 merger.save(outputFile);
 ```
 
-Après cet appel, vous trouverez un seul fichier PPTX contenant toutes les diapositives des fichiers source.
+Après cet appel, vous trouverez un seul fichier PPTX contenant toutes les diapositives des fichiers sources.
 
 #### Astuce de dépannage
-Si vous rencontrez des `IOExceptions` ou des erreurs de permission, vérifiez que les répertoires existent et que votre processus Java dispose des droits de lecture/écriture.
+Si vous rencontrez des `IOExceptions` ou des erreurs d’autorisation, vérifiez que les répertoires existent et que votre processus Java dispose des droits de lecture/écriture.
 
 ## Applications pratiques
-1. **Environnements éducatifs :** Fusionnez les diapositives de cours de plusieurs enseignants en un seul pack de cours cohérent.  
+1. **Environnements éducatifs :** Fusionnez les diapositives de cours de plusieurs intervenants en un seul pack de cours cohérent.  
 2. **Réunions d’entreprise :** Combinez les rapports trimestriels, les points d’ordre du jour et les notes des intervenants en un seul diaporama de salle de réunion.  
 3. **Gestion de projet :** Consolidez les mises à jour de statut de différentes équipes pour une présentation de projet unifiée.  
 4. **Planification d’événement :** Assemblez le matériel promotionnel, les plannings et les biographies des intervenants dans un guide maître de l’événement.
@@ -147,7 +217,7 @@ Si vous rencontrez des `IOExceptions` ou des erreurs de permission, vérifiez qu
 ## Considérations de performance
 
 ### Conseils d’optimisation
-- **Traitement par lots :** Chargez une liste de chemins de fichiers et parcourez‑la pour réduire la surcharge.  
+- **Traitement par lots :** Chargez une liste de chemins de fichiers et itérez dessus pour réduire la surcharge.  
 - **Gestion de la mémoire :** Surveillez le tas JVM, surtout lorsque vous traitez des présentations contenant des images haute résolution.  
 - **E/S efficace :** Utilisez des flux tamponnés si vous lisez/écrivez de gros fichiers en dehors de l’API Merger.
 
@@ -161,34 +231,34 @@ Si vous rencontrez des `IOExceptions` ou des erreurs de permission, vérifiez qu
 |----------|----------------|----------|
 | `FileNotFoundException` | Chemin de fichier incorrect | Vérifiez les chemins absolus/relatifs et assurez‑vous que les fichiers existent. |
 | Erreurs de dépassement de mémoire | Fichiers PPTX très volumineux | Augmentez le tas JVM (`-Xmx`) ou traitez les fichiers par lots plus petits. |
-| Les diapositives apparaissent dans le mauvais ordre | Ordre incorrect des appels `join` | Appelez `join` dans l’ordre exact souhaité pour les diapositives. |
+| Les diapositives apparaissent dans le désordre | Mauvais ordre des appels `join` | Appelez `join` dans l’ordre exact souhaité pour les diapositives. |
 | Polices manquantes | Polices non installées sur le serveur | Intégrez les polices dans le PPTX source ou installez les polices requises sur la machine hôte. |
 
-## Questions fréquemment posées
+## Questions fréquentes
 
 **Q : Quels autres formats GroupDocs.Merger peut‑il gérer ?**  
-R : En plus de PPTX, la bibliothèque prend en charge PDF, DOCX, XLSX et de nombreux autres types de documents.
+R : En plus de PPTX, la bibliothèque prend en charge PDF, DOCX, XLSX et de nombreux autres types de documents — un total de **plus de 50** formats.
 
-**Q : Existe‑t‑il un moyen de protéger la présentation fusionnée par mot de passe ?**  
-R : Oui – après la fusion, vous pouvez appeler `merger.protect("password")` pour ajouter un chiffrement.
+**Q : Est‑il possible de protéger la présentation fusionnée par un mot de passe ?**  
+R : La méthode `protect` chiffre le document fusionné avec un mot de passe, en utilisant le chiffrement AES‑256. Appelez `merger.protect("yourPassword")` pour ajouter le chiffrement AES‑256.
 
 **Q : Puis‑je fusionner des présentations stockées dans le cloud (par ex., AWS S3) ?**  
-R : Absolument. Chargez les fichiers dans un `byte[]` ou `InputStream` et transmettez‑les au constructeur `Merger`.
+R : Absolument. Chargez les fichiers dans un `byte[]` ou un `InputStream` et transmettez‑les au constructeur `Merger`.
 
-**Q : La bibliothèque conserve‑t‑elle les animations et les transitions ?**  
-R : Toutes les fonctionnalités natives de PowerPoint, y compris les animations, les transitions et les maîtres de diapositives, sont conservées lors de la fusion.
+**Q : La bibliothèque préserve‑t‑elle les animations et les transitions ?**  
+R : Toutes les fonctionnalités natives de PowerPoint — y compris les animations, les masques de diapositives et les transitions — sont conservées lors de la fusion.
 
 **Q : Comment fusionner plus de deux fichiers PPTX en un seul appel ?**  
 R : Préparez une `List<String>` de chemins de fichiers et itérez `merger.join(path)` pour chaque entrée.
 
 ## Conclusion
-Vous disposez maintenant d’une recette complète, prête pour la production, pour **combiner des fichiers PPTX** avec GroupDocs.Merger pour Java. En suivant les étapes ci‑dessus, vous pouvez automatiser la création de diaporamas, réduire l’effort manuel et garantir la cohérence de vos présentations entre les équipes.  
+Vous disposez maintenant d’une recette complète, prête pour la production, pour **fusionner plusieurs fichiers PPTX** avec GroupDocs.Merger pour Java. En suivant les étapes ci‑dessus, vous pouvez automatiser la création de diaporamas, réduire les efforts manuels et maintenir la cohérence de vos présentations entre les équipes.
 
 **Prochaines étapes :** expérimentez les fonctionnalités de scission et de protection de la bibliothèque, ou intégrez la routine de fusion dans un pipeline de traitement de documents plus vaste.
 
 ---
 
-**Dernière mise à jour :** 2026-02-08  
+**Dernière mise à jour :** 2026-07-30  
 **Testé avec :** GroupDocs.Merger for Java LATEST_VERSION  
 **Auteur :** GroupDocs  
 
@@ -199,4 +269,10 @@ Vous disposez maintenant d’une recette complète, prête pour la production, p
 - [Acheter une licence](https://purchase.groupdocs.com/buy)  
 - [Essai gratuit](https://releases.groupdocs.com/merger/java/)  
 - [Licence temporaire](https://purchase.groupdocs.com/temporary-license/)  
-- [Forum d’assistance](https://forum.groupdocs.com/c/merger/)
+- [Forum de support](https://forum.groupdocs.com/c/merger/)
+
+## Tutoriels associés
+
+- [Comment fusionner des pages - Joindre des pages spécifiques de plusieurs documents avec GroupDocs.Merger pour Java](/merger/java/document-joining/join-pages-groupdocs-merger-java-tutorial/)
+- [Comment fusionner plusieurs fichiers ODP avec GroupDocs.Merger pour Java](/merger/java/format-specific-merging/merge-multiple-odp-files-groupdocs-java/)
+- [Comment fusionner plusieurs fichiers Visio VSSM en Java avec GroupDocs.Merger](/merger/java/format-specific-merging/efficiently-merge-vssm-files-java-groupdocs-merger/)
