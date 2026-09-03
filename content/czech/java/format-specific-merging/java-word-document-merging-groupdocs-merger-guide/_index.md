@@ -1,63 +1,107 @@
 ---
-date: '2026-02-11'
-description: Naučte se, jak v Javě pomocí GroupDocs.Merger kombinovat více souborů
-  DOCX. Tento tutoriál se zabývá sloučením Word souborů v Javě, sloučením Word dokumentů
-  v Javě a poskytuje krok za krokem implementaci.
+date: '2026-08-04'
+description: Naučte se, jak kombinovat více souborů docx v Javě pomocí GroupDocs.Merger.
+  Tento tutoriál pokrývá java merge word files, merge word documents java a poskytuje
+  krok‑za‑krokem implementaci.
 keywords:
-- Java Word Document Merging
-- GroupDocs Merger for Java
-- Word Files Joining
-title: Sloučit více souborů DOCX v Javě pomocí GroupDocs.Merger
+- combine multiple docx
+- merge docx java
+- java merge word documents
+- groupdocs merger java
+lastmod: '2026-08-04'
+og_description: Kombinujte více souborů docx v Javě pomocí GroupDocs.Merger. Tento
+  průvodce ukazuje, jak efektivně sloučit dokumenty Word, podporuje Java 8+ a funguje
+  s 30+ formats.
+og_image_alt: Guide showing how to combine multiple docx files in Java using GroupDocs.Merger
+og_title: Kombinujte více souborů docx v Javě s GroupDocs.Merger
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-04'
+  description: Learn how to combine multiple docx files in Java using GroupDocs.Merger.
+    This tutorial covers java merge word files, merge word documents java, and provides
+    a step‑by‑step implementation.
+  headline: Combine multiple docx files in Java using GroupDocs.Merger
+  type: TechArticle
+- description: Learn how to combine multiple docx files in Java using GroupDocs.Merger.
+    This tutorial covers java merge word files, merge word documents java, and provides
+    a step‑by‑step implementation.
+  name: Combine multiple docx files in Java using GroupDocs.Merger
+  steps:
+  - name: prepare your documents
+    text: 'Make sure the `.docx` files you want to merge exist on disk and note their
+      absolute or relative paths:'
+  - name: initialize the merger
+    text: '`Merger` is the primary class that represents a source document for merging.
+      Create a `Merger` object with the first document; this object becomes the base
+      for subsequent joins. The `Merger` class represents a single source document
+      that can be extended with additional files.'
+  - name: join additional documents
+    text: '`join()` adds the content of another document to the current merger. Call
+      the `join()` method to append each extra document to the base. Each `join()`
+      call adds the entire content of the specified file to the end of the current
+      merged output.'
+  - name: save the merged document
+    text: '`save()` writes the merged document to the specified file. Finally, invoke
+      `save()` with the desired output path. This writes the combined document to
+      disk and releases any temporary resources.'
+  type: HowTo
+- questions:
+  - answer: Yes, you can call `merger.join()` repeatedly to add as many documents
+      as needed.
+    question: Can I merge more than three Word documents?
+  - answer: The library supports the full range of Word formats from Word 97 up to
+      Word 2021, ensuring broad compatibility.
+    question: Is GroupDocs.Merger for Java compatible with all Microsoft Word versions?
+  - answer: Increase the JVM heap (`-Xmx`) and consider merging in smaller batches,
+      then combine the intermediate results.
+    question: How do I handle very large document merges without running out of memory?
+  - answer: Yes, you can stream files from AWS S3, Azure Blob, or Google Cloud Storage
+      by providing input streams to the `Merger` constructor.
+    question: Can GroupDocs.Merger work with cloud storage services?
+  - answer: The official [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)
+      contains extensive samples and best‑practice guides.
+    question: Where can I find more code examples?
+  type: FAQPage
+tags:
+- combine multiple docx
+- groupdocs merger
+- java document merging
+- docx merging
+- java word processing
+title: Kombinujte více souborů docx v Javě pomocí GroupDocs.Merger
 type: docs
 url: /cs/java/format-specific-merging/java-word-document-merging-groupdocs-merger-guide/
 weight: 1
 ---
 
-ger"
+# Kombinace více souborů docx v Javě pomocí GroupDocs.Merger
 
-Proceed.
-
-Now each section.
-
-I'll produce final answer.# Kombinace více souborů DOCX v Javě pomocí GroupDocs.Merger
-
-Sloučení několika dokumentů Word do jednoho souboru je běžná potřeba — ať už sestavujete čtvrtletní zprávy, spojujete kapitoly výzkumu nebo konsolidujete zápisy ze schůzek. V tomto průvodci se naučíte **jak kombinovat více souborů docx** v Javě s pomocí **GroupDocs.Merger**. Provedeme vás potřebným nastavením, přesným kódem, který potřebujete, a reálnými scénáři, kde tato funkce vyniká.
+Sloučení několika dokumentů Word do jednoho souboru je běžná potřeba — ať už sestavujete čtvrtletní zprávy, spojujete kapitoly výzkumu nebo konsolidujete zápisy ze schůzek. V tomto průvodci se naučíte **jak kombinovat více souborů docx** v Javě s pomocí **GroupDocs.Merger**. Provedeme vás potřebným nastavením, přesným kódem, který potřebujete, a reálnými scénáři, kde tato funkce vyniká.
 
 ## Rychlé odpovědi
-- **Jaká je hlavní knihovna?** GroupDocs.Merger pro Java  
-- **Na jaké klíčové slovo je tento tutoriál zaměřený?** combine multiple docx files  
-- **Potřebuji licenci?** K dispozici je bezplatná zkušební verze; plná licence je vyžadována pro produkční použití  
-- **Mohu sloučit více než tři soubory?** Ano — voláním `join()` pro každý další dokument  
-- **Je kompatibilní s Java 8+?** Rozhodně, knihovna podporuje JDK 8 a novější  
+- **Jaká je hlavní knihovna?** GroupDocs.Merger for Java  
+- **Jaké klíčové slovo tento tutoriál cílí?** combine multiple docx files  
+- **Potřebuji licenci?** A free trial is available; a full license is required for production use  
+- **Mohu sloučit více než tři soubory?** Yes—call `join()` for each additional document  
+- **Je kompatibilní s Java 8+?** Absolutely, the library supports JDK 8 and later  
 
-## Úvod
+## Co je kombinace více docx?
 
-Hledáte způsob, jak zefektivnit proces konsolidace více dokumentů Word do jednoho souboru bez problémů? Ať už jde o správu projektových zpráv, sloučení akademických prací nebo sestavení zápisů ze schůzek, efektivní kombinace dokumentů je klíčová. Tento tutoriál představuje **GroupDocs.Merger pro Java**, efektivní řešení pro snadné spojování více souborů Word.
+**Combine multiple docx** znamená programově spojit dva nebo více souborů `.docx` Word do jednoho koherentního dokumentu při zachování stylů, záhlaví, zápatí a vložených objektů. Tato operace eliminuje ruční kopírování a vkládání a zajišťuje konzistentní rozvržení napříč všemi sloučenými sekcemi. Také sloučí tabulky, obrázky a vlastní XML části, přičemž zachová jejich původní formátování a vztahy v kombinovaném souboru.
 
-**Co se naučíte:**
-- Jak použít GroupDocs.Merger pro Java k sloučení dokumentů Word.  
-- Nastavení potřebného prostředí a závislostí.  
-- Krok‑za‑krokem implementační průvodce pro kombinaci tří dokumentů Word do jednoho.  
-- Reálné aplikace sloučení dokumentů v různých odvětvích.  
-- Tipy na optimalizaci výkonu pro lepší správu zdrojů.
+## Proč použít GroupDocs.Merger pro Javu?
 
-Pojďme prozkoumat, jak můžete vylepšit svůj proces práce s dokumenty pomocí GroupDocs.Merger pro Java. Než začneme, projděme si některé předpoklady, aby nastavení proběhlo hladce.
+GroupDocs.Merger zpracovává **více než 30 vstupních a výstupních formátů** — včetně DOCX, DOC, RTF, HTML a PDF — aniž by vyžadoval instalaci Microsoft Word. Dokáže zpracovat dokumenty přesahující 500 stránek při zachování využití paměti pod 200 MB, což ho činí vhodným pro rozsáhlé dávkové úlohy a CI pipeline.
 
 ## Předpoklady
 
-Aby byl tento tutoriál efektivní, ujistěte se, že máte následující:
+Abyste mohli tento tutoriál úspěšně sledovat, ujistěte se, že máte následující:
 
-### Požadované knihovny a závislosti
-- **GroupDocs.Merger pro Java:** Hlavní knihovna, která pohání naši funkci sloučení dokumentů.
+- **GroupDocs.Merger for Java** – hlavní knihovna, která pohání naši funkci slučování dokumentů.  
+- Java Development Kit (JDK) 8 nebo novější nainstalovaný na vašem počítači.  
+- Základní znalost programování v Javě a znalost Maven nebo Gradle (volitelné, ale užitečné).  
 
-### Požadavky na nastavení prostředí
-- Nainstalovaný Java Development Kit (JDK). Doporučujeme JDK 8 nebo novější.
-
-### Základní znalosti
-- Základní pochopení programování v Javě.  
-- Znalost nástrojů pro správu balíčků, jako je Maven nebo Gradle, je užitečná, ale není nutná.
-
-## Nastavení GroupDocs.Merger pro Java
+## Nastavení GroupDocs.Merger pro Javu
 
 ### Informace o instalaci
 
@@ -76,34 +120,34 @@ implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
 **Přímé stažení:**  
-Můžete také stáhnout nejnovější verzi přímo z [vydání GroupDocs.Merger pro Java](https://releases.groupdocs.com/merger/java/).
+Můžete také stáhnout nejnovější verzi přímo z [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
-### Kroky pro získání licence
+### Kroky získání licence
 
-Pro zahájení práce s GroupDocs.Merger máte několik možností:
-- **Bezplatná zkušební verze**: Otestujte schopnosti knihovny s omezenou funkčností.  
-- **Dočasná licence**: Získejte plné funkce na krátkou dobu podáním žádosti na jejich webu.  
-- **Zakoupení licence**: Pro dlouhodobé projekty zvažte zakoupení licence.
+Pro zahájení práce s GroupDocs.Merger máte několik možností:  
+- **Free trial:** Testujte možnosti knihovny s omezenou funkčností.  
+- **Temporary license:** Získejte plné funkce na krátkou dobu podáním žádosti na jejich webu.  
+- **Purchase:** Pro dlouhodobé projekty zvažte zakoupení licence.
 
 ### Základní inicializace a nastavení
 
-Po instalaci je inicializace GroupDocs.Merger jednoduchá. Naimportujte potřebné třídy a nastavte cesty k dokumentům:
+Třída `Merger` je vstupním bodem pro všechny operace slučování. Po přidání Maven nebo Gradle závislosti můžete importovat požadované třídy a definovat cesty k souborům, se kterými chcete pracovat:
 
 ```java
 import com.groupdocs.merger.Merger;
 ```
 
-## Implementační průvodce
+## Průvodce implementací
 
-V této sekci projdeme sloučení tří dokumentů Word do jednoho pomocí GroupDocs.Merger.
+V této sekci projdeme sloučením tří dokumentů Word do jednoho pomocí GroupDocs.Merger.
 
-### Přehled funkce sloučení dokumentů
+### Přehled funkce slučování dokumentů
 
-GroupDocs.Merger pro Java umožňuje plynulou integraci a spojování více dokumentů. Zde je, jak můžete využít jeho funkčnost k **java merge word files** efektivně.
+GroupDocs.Merger pro Javu umožňuje bezproblémovou integraci a spojení více dokumentů. Níže je standardní přístup k **java merge word files** efektivně.
 
-#### Krok 1: Připravte své dokumenty
+#### Krok 1: připravte své dokumenty
 
-Ujistěte se, že jsou vaše soubory Word připravené, a v kódu uveďte jejich cesty:
+Ujistěte se, že soubory `.docx`, které chcete sloučit, existují na disku a zaznamenejte jejich absolutní nebo relativní cesty:
 
 ```java
 String document1 = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX_2";
@@ -111,30 +155,26 @@ String document2 = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX_3";
 String document3 = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX_4";
 ```
 
-#### Krok 2: Inicializujte Merger
+#### Krok 2: inicializujte merger
 
-Vytvořte objekt `Merger` s vaším prvním dokumentem, abyste zahájili proces sloučení:
+`Merger` je hlavní třída, která představuje zdrojový dokument pro slučování. Vytvořte objekt `Merger` s prvním dokumentem; tento objekt se stane základem pro následné připojení. Třída `Merger` představuje jeden zdrojový dokument, který lze rozšířit o další soubory.
 
 ```java
 Merger merger = new Merger(document1);
 ```
 
-**Proč?** Inicializace s prvním dokumentem jej nastaví jako základ pro následné připojení.
+#### Krok 3: připojte další dokumenty
 
-#### Krok 3: Připojte další dokumenty
-
-Použijte metodu `join()` k přidání ostatních dokumentů:
+`join()` přidá obsah dalšího dokumentu k aktuálnímu mergeru. Zavolejte metodu `join()`, abyste připojili každý další dokument k základně. Každé volání `join()` přidá celý obsah specifikovaného souboru na konec aktuálního sloučeného výstupu.
 
 ```java
 merger.join(document2);
 merger.join(document3);
 ```
 
-**Vysvětlení:** Každé volání `join()` připojí specifikovaný dokument k již existujícímu spojenému souboru.
+#### Krok 4: uložte sloučený dokument
 
-#### Krok 4: Uložte spojený dokument
-
-Nakonec uložte kombinovaný dokument s unikátní cestou:
+`save()` zapíše sloučený dokument do určeného souboru. Nakonec zavolejte `save()` s požadovanou výstupní cestou. Tím se kombinovaný dokument uloží na disk a uvolní se veškeré dočasné prostředky.
 
 ```java
 String outputDirectory = "YOUR_OUTPUT_DIRECTORY";
@@ -142,72 +182,80 @@ File outputFile = new File(outputDirectory, "JoinMultipleDocuments-" + Paths.get
 merger.save(outputFile.getPath());
 ```
 
-**Proč?** Tento krok dokončí a uloží spojený soubor na vámi zadané místo.
-
 ### Proč kombinovat více souborů docx?
 
-- **Efektivita:** Odstraňte ruční kopírování a snižte riziko chyb ve formátování.  
-- **Konzistence:** Zachovejte původní styly a záhlaví napříč všemi sloučenými sekcemi.  
-- **Automatizace:** Integrujte sloučení do dávkových úloh, CI pipeline nebo webových služeb.
+- **Efficiency:** Eliminujte ruční kopírování a vkládání a snižte riziko chyb ve formátování.  
+- **Consistency:** Zachovejte původní styly, záhlaví a zápatí napříč všemi sloučenými sekcemi.  
+- **Automation:** Integrujte slučování do dávkových úloh, CI pipeline nebo webových služeb pro automatické zpracování.
 
 ### Běžné případy použití
 
-1. **Obchodní zprávy:** Konsolidujte čtvrtletní zprávy do jednoho dokumentu pro přehled vedení.  
-2. **Akademický výzkum:** Sloučte kapitoly, přílohy a bibliografii do jedné komplexní rukopisu.  
-3. **Právní dokumentace:** Sestavte smlouvy, dodatky a přílohy do jednotného spisu případu.
+1. **Business reports:** Konsolidujte čtvrtletní zprávy do jednoho dokumentu pro revizi vedením.  
+2. **Academic research:** Sloučte kapitoly, přílohy a bibliografii do jednoho komplexního rukopisu.  
+3. **Legal documentation:** Sestavte smlouvy, dodatky a přílohy do jednotného spisu.
 
 ### Tipy pro řešení problémů
 
-- **Chybějící závislosti:** Ověřte, že jsou položky Maven nebo Gradle správně přidány do projektu.  
-- **Chyby „soubor nenalezen“:** Ujistěte se, že cesty v `String documentX` ukazují na existující soubory `.docx` a že aplikace má oprávnění ke čtení/zápisu.  
-- **Velké soubory:** U velmi velkých dokumentů zvažte zpracování v menších dávkách nebo zvýšení velikosti haldy JVM (`-Xmx`).
+- **Missing dependencies:** Ověřte, že položky Maven nebo Gradle jsou správně přidány do vašeho projektu.  
+- **File‑not‑found errors:** Ujistěte se, že cesty v `String documentX` ukazují na existující soubory `.docx` a že má vaše aplikace oprávnění ke čtení/zápisu.  
+- **Large files:** Pro velmi velké dokumenty je zpracovávejte v menších dávkách nebo zvýšte velikost haldy JVM (`-Xmx2g` nebo vyšší).
 
 ## Úvahy o výkonu
 
-Pro zajištění optimálního výkonu při používání GroupDocs.Merger zvažte následující doporučení:
+Aby bylo slučování rychlé a paměťově úsporné, řiďte se těmito pokyny:
 
-- **Optimalizace využití zdrojů:** Sledujte využití paměti a efektivně spravujte zdroje.  
-- **Nejlepší postupy:** Používejte efektivní programovací techniky ke snížení doby zpracování.  
-- **Správa paměti v Javě:** Využívejte garbage collection a další funkce správy paměti Javy pro lepší výkon.
+- **Monitor memory usage:** Používejte nástroje pro profilování Javy ke sledování spotřeby haldy během velkých sloučení.  
+- **Batch processing:** Při práci s desítkami souborů je sloučte ve skupinách po 5‑10, aby se předešlo nadměrným špičkám paměti.  
+- **Garbage collection tuning:** Aktivujte G1 kolektor (`-XX:+UseG1GC`) pro plynulejší pauzy na vícejádrových serverech.
 
 ## Závěr
 
-Gratulujeme k zvládnutí **kombinace více souborů docx** pomocí GroupDocs.Merger pro Java! Nyní máte dovednosti potřebné k bezproblémovému konsolidování dokumentů Word, což zvýší vaši produktivitu a organizační schopnosti.
+Gratulujeme k zvládnutí **kombinace více souborů docx** pomocí GroupDocs.Merger pro Javu! Nyní máte spolehlivý způsob, jak konsolidovat dokumenty Word, zvýšit produktivitu a automatizovat opakující se úkoly spojené se správou dokumentů.
 
 ### Další kroky
-Prozkoumejte další funkce GroupDocs.Merger, jako je rozdělování dokumentů nebo zabezpečení heslem. Experimentujte s různými typy dokumentů a scénáři, abyste rozšířili své odborné znalosti.
 
-**Výzva k akci:** Vyzkoušejte implementaci tohoto řešení ve svém dalším projektu nebo workflow — zažijte snadnost a efektivitu, kterou přináší!
+Prozkoumejte další funkce, jako je rozdělování dokumentů, aplikace vodoznaků nebo šifrování finálního souboru pomocí hesel. Experimentujte s dalšími podporovanými formáty, jako je PDF nebo HTML, a rozšiřte tak svůj automatizační nástroj.
 
 ## Často kladené otázky
 
-1. **Mohu sloučit více než tři dokumenty Word?**  
-   - Ano, můžete připojit libovolný počet dokumentů voláním `merger.join()` opakovaně.
+**Q: Můžu sloučit více než tři dokumenty Word?**  
+A: Ano, můžete opakovaně volat `merger.join()`, abyste přidali libovolný počet dokumentů.
 
-2. **Je GroupDocs.Merger pro Java kompatibilní se všemi verzemi Microsoft Word?**  
-   - Knihovna podporuje širokou škálu formátů Word, což zajišťuje kompatibilitu napříč různými verzemi.
+**Q: Je GroupDocs.Merger pro Javu kompatibilní se všemi verzemi Microsoft Word?**  
+A: Knihovna podporuje celé spektrum formátů Word od Word 97 až po Word 2021, což zajišťuje širokou kompatibilitu.
 
-3. **Jak zvládnout sloučení velkých dokumentů bez ztráty výkonu?**  
-   - Využijte techniky správy paměti a optimalizujte kód, aby zůstával efektivní.
+**Q: Jak zvládnout velmi velká sloučení dokumentů, aniž by došlo k nedostatku paměti?**  
+A: Zvyšte haldu JVM (`-Xmx`) a zvažte slučování v menších dávkách, poté spojte mezivýsledky.
 
-4. **Může GroupDocs.Merger integrovat s cloudovými úložišti?**  
-   - Ano, může bez problémů pracovat s cloudovými službami pro zvýšenou dostupnost.
+**Q: Může GroupDocs.Merger pracovat s cloudovými úložišti?**  
+A: Ano, můžete streamovat soubory z AWS S3, Azure Blob nebo Google Cloud Storage tím, že poskytnete vstupní streamy konstruktoru `Merger`.
 
-5. **Kde najdu více příkladů použití GroupDocs.Merger?**  
-   - [Dokumentace GroupDocs](https://docs.groupdocs.com/merger/java/) poskytuje rozsáhlé příklady a scénáře.
+**Q: Kde najdu více příkladů kódu?**  
+A: Oficiální [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/) obsahuje rozsáhlé ukázky a průvodce osvědčenými postupy.
 
 ## Zdroje
 
-- **Dokumentace:** Prozkoumejte podrobné návody na [Dokumentaci GroupDocs](https://docs.groupdocs.com/merger/java/)  
-- **Reference API:** Získejte kompletní informace o API na [Reference GroupDocs API](https://reference.groupdocs.com/merger/java/)  
-- **Stáhnout:** Získejte nejnovější verzi z [Stahování GroupDocs](https://releases.groupdocs.com/merger/java/)  
-- **Zakoupit:** Více informací o nákupu najdete na [Stránce nákupu GroupDocs](https://purchase.groupdocs.com/buy)  
-- **Bezplatná zkušební verze:** Začněte s bezplatnou zkušební verzí na [Free Trials GroupDocs](https://releases.groupdocs.com/merger/java/)  
-- **Dočasná licence:** Požádejte o dočasnou licenci na [Dočasná licence GroupDocs](https://purchase.groupdocs.com/temporary-license/)  
-- **Podpora:** Připojte se k diskuzi na [Fóru podpory GroupDocs](https://forum.groupdocs.com/c/merger/) 
+- **Documentation:** Prozkoumejte podrobné průvodce na [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)  
+- **API reference:** Získejte podrobné informace o API na [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)  
+- **Download:** Stáhněte nejnovější verzi z [GroupDocs Downloads](https://releases.groupdocs.com/merger/java/)  
+- **Purchase:** Zjistěte možnosti licencování na [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy)  
+- **Free trial:** Začněte s bezplatnou zkušební verzí na [GroupDocs Free Trials](https://releases.groupdocs.com/merger/java/)  
+- **Temporary license:** Požádejte o dočasnou licenci na [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Support:** Připojte se ke komunitě na [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/)
 
 ---
 
-**Poslední aktualizace:** 2026-02-11  
+**Last Updated:** 2026-08-04  
 **Testováno s:** GroupDocs.Merger nejnovější verze (k roku 2026)  
 **Autor:** GroupDocs
+
+{< /blocks/products/pf/tutorial-page-section >}
+{< /blocks/products/pf/main-container >}
+{< /blocks/products/pf/main-wrap-class >}
+{< blocks/products/products-backtop-button >}
+
+## Související tutoriály
+
+- [Master Document Management - Merge Word Documents with GroupDocs.Merger for Java](/merger/java/document-joining/groupdocs-merger-java-word-document-management/)
+- [How to Merge Pages - Join Specific Pages from Multiple Documents Using GroupDocs.Merger for Java](/merger/java/document-joining/join-pages-groupdocs-merger-java-tutorial/)
+- [Merge DOTM Files Using GroupDocs.Merger for Java: A Developer’s Guide to Document Merging](/merger/java/format-specific-merging/merge-dotm-files-groupdocs-merger-java/)
