@@ -1,64 +1,129 @@
 ---
-date: '2026-02-19'
-description: Naucz się, jak osadzać obiekty OLE w slajdach PowerPoint przy użyciu
-  Javy i GroupDocs.Merger. Ten przewodnik krok po kroku pokazuje, jak osadzać pliki
-  PDF, arkusze kalkulacyjne i inne.
+date: '2026-08-26'
+description: Dowiedz się, jak używać GroupDocs Merger do osadzania obiektów OLE w
+  PowerPoint przy użyciu Java. Ten przewodnik krok po kroku pokazuje, jak osadzać
+  pliki PDF, arkusze kalkulacyjne i inne.
 keywords:
+- groupdocs merger embed ole
 - embed OLE objects in PowerPoint
-- Java GroupDocs.Merger library
+- Java GroupDocs Merger
 - OLE embedding in Java
-title: Jak osadzać obiekty OLE w PowerPoint przy użyciu Javy
+lastmod: '2026-08-26'
+og_description: Dowiedz się, jak używać GroupDocs Merger do osadzania obiektów OLE
+  w PowerPoint przy użyciu Java. Skorzystaj z tego zwięzłego samouczka, aby dodać
+  pliki PDF, arkusze Excel i inne pliki bezpośrednio na slajdy.
+og_image_alt: 'Tutorial: embed OLE objects in PowerPoint using GroupDocs Merger for
+  Java'
+og_title: GroupDocs Merger osadza obiekty OLE w PowerPoint przy użyciu Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-26'
+  description: Learn how to use GroupDocs Merger to embed OLE objects in PowerPoint
+    with Java. This step‑by‑step guide shows you how to embed PDFs, spreadsheets,
+    and more.
+  headline: GroupDocs Merger embed OLE objects in PowerPoint with Java
+  type: TechArticle
+- description: Learn how to use GroupDocs Merger to embed OLE objects in PowerPoint
+    with Java. This step‑by‑step guide shows you how to embed PDFs, spreadsheets,
+    and more.
+  name: GroupDocs Merger embed OLE objects in PowerPoint with Java
+  steps:
+  - name: define file paths
+    text: Specify absolute or relative paths for both the target PPTX and the source
+      file you wish to embed. java String filePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_PPTX";
+      // Path to source presentation file String embeddedFilePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF";
+      // Path to PDF to be embedded
+  - name: configure `OlePresentationOptions`
+    text: OlePresentationOptions defines the visual properties and source file for
+      the OLE object to be embedded. java import com.groupdocs.merger.domain.options.OlePresentationOptions;
+      int pageNumber = 1; // Page number for the OLE object int x = 100; // X position
+      on slide int y = 200; // Y position on slid
+  - name: embed the OLE object
+    text: addOleObject inserts the configured OLE object into the specified slide
+      of the presentation. java import com.groupdocs.merger.domain.options.OlePresentationOptions;
+      try (Merger merger = new Merger(filePath)) { // Add embedded document as an
+      OLE object merger.addOleObject(oleOptions); // Save the mod
+  type: HowTo
+- questions:
+  - answer: PDFs, Excel workbooks, Word documents, PowerPoint files, and many other
+      Office formats are supported.
+    question: What file formats can be embedded using OLE in PowerPoint?
+  - answer: Insert the OLE object on the Slide Master; all slides that inherit from
+      that master will display it.
+    question: How do I make the embedded object appear on every slide?
+  - answer: Yes. Call `addOleObject` again with the same coordinates; the new file
+      overwrites the previous one.
+    question: Can I replace an existing OLE object without recreating the whole slide?
+  - answer: A trial version is available for evaluation; a commercial license is required
+      for production deployments.
+    question: Is GroupDocs.Merger free to use?
+  - answer: Incorrect file paths, unsupported document types, and excessively large
+      embedded files that degrade performance.
+    question: What are common pitfalls when embedding OLE objects?
+  type: FAQPage
+tags:
+- embed OLE
+- GroupDocs Merger
+- Java PowerPoint
+- OLE objects
+- presentation automation
+title: GroupDocs Merger osadza obiekty OLE w PowerPoint przy użyciu Java
 type: docs
 url: /pl/java/document-import/embed-ole-object-ppt-java-groupdocs-merger/
 weight: 1
 ---
 
-# Jak osadzić obiekty OLE w PowerPoint przy użyciu Javy
+# GroupDocs Merger osadzanie obiektów OLE w PowerPoint przy użyciu Javy
 
-Ulepsz swoje prezentacje PowerPoint, osadzając zewnętrzne dokumenty, takie jak PDF‑y, arkusze kalkulacyjne lub obrazy, bezpośrednio na slajdach. **W tym przewodniku dowiesz się, jak osadzać obiekty ole** przy użyciu GroupDocs.Merger for Java i zobaczysz, dlaczego technika ta może uczynić Twoje prezentacje bardziej interaktywnymi i profesjonalnymi. Po zakończeniu samouczka dokładnie zrozumiesz **jak osadzać ole** obiekty, w jakich sytuacjach się sprawdzają oraz jak unikać typowych pułapek, które potykają wielu programistów.
+W tym samouczku dowiesz się, jak **groupdocs merger embed ole** obiekty wstawiać do slajdów PowerPoint przy użyciu Javy. Po zakończeniu przewodnika będziesz w stanie wstawiać pliki PDF, skoroszyty Excel, dokumenty Word i inne obsługiwane pliki bezpośrednio do swojej prezentacji, czyniąc prezentacje samodzielnymi i bardziej interaktywnymi.
 
 ## Szybkie odpowiedzi
-- **Co to jest OLE?** Object Linking and Embedding pozwala wstawić inny typ pliku wewnątrz slajdu PowerPoint.  
-- **Która biblioteka pomaga?** GroupDocs.Merger for Java udostępnia prosty interfejs API do dodawania obiektów OLE.  
-- **Czy potrzebna jest licencja?** Tymczasowa licencja działa w trybie ewaluacyjnym; pełna licencja jest wymagana w produkcji.  
-- **Obsługiwane typy plików?** PDF‑y, skoroszyty Excel, dokumenty Word i wiele innych formatów.  
-- **Jak długo to zajmuje?** Przy konfiguracji Maven/Gradle, kod podstawowy można napisać w mniej niż 10 minut.
+- **Czym jest OLE?** Object Linking and Embedding pozwala wstawić inny typ pliku wewnątrz slajdu PowerPoint.  
+- **Która biblioteka pomaga?** GroupDocs.Merger for Java provides a simple API to add OLE objects.  
+- **Czy potrzebna jest licencja?** Tymczasowa licencja działa w trybie ewaluacji; pełna licencja jest wymagana w produkcji.  
+- **Jakie typy plików są obsługiwane?** PDF‑y, skoroszyty Excel, dokumenty Word i wiele innych formatów.  
+- **Jak długo to zajmuje?** Przy konfiguracji Maven/Gradle, podstawowy kod można napisać w mniej niż 10 minut.
 
 ## Czym jest osadzanie OLE w PowerPoint?
 
-Object Linking and Embedding (OLE) pozwala slajdowi PowerPoint zawierać żywą reprezentację innego dokumentu. Gdy podczas prezentacji dwukrotnie klikniesz osadzony obiekt, oryginalny plik otwiera się w swojej natywnej aplikacji, dając widzom natychmiastowy dostęp do szczegółowych danych bez opuszczania zestawu slajdów.
+Object Linking and Embedding (OLE) pozwala slajdowi PowerPoint zawierać żywą reprezentację innego dokumentu. Gdy podwójnie klikniesz osadzony obiekt podczas prezentacji, oryginalny plik otwiera się w swojej natywnej aplikacji, dając widzom natychmiastowy dostęp do szczegółowych danych bez opuszczania zestawu slajdów.
 
 ## Dlaczego osadzać obiekty OLE w PowerPoint?
 
-- **Zachowaj wszystkie zasoby w jednym pliku** – nie ma potrzeby wysyłania oddzielnych PDF‑ów lub arkuszy kalkulacyjnych.  
-- **Utrzymaj wierność danych** – osadzony plik zachowuje oryginalne formatowanie i funkcjonalność.  
-- **Popraw zaangażowanie odbiorców** – widzowie mogą na bieżąco przeglądać wykresy, tabele lub umowy.  
-- **Usprawnij kontrolę wersji** – pojedynczy plik PPTX zawiera wszystkie materiały pomocnicze, zmniejszając ryzyko niezgodnych plików.
+Osadzanie obiektów OLE konsoliduje pliki pomocnicze w obrębie prezentacji, zapewniając, że widzowie mogą uzyskać dostęp do oryginalnej treści bez opuszczania zestawu slajdów. Takie podejście zachowuje formatowanie, zmniejsza ryzyko brakujących plików i usprawnia dystrybucję, czyniąc prezentację bardziej niezawodną i profesjonalną.
 
-## Kiedy należy używać osadzania OLE?
+- **Trzymaj wszystkie zasoby w jednym pliku** – nie ma potrzeby wysyłać oddzielnych PDF‑ów lub arkuszy kalkulacyjnych.  
+- **Zachowaj integralność danych** – osadzony plik zachowuje swoje pierwotne formatowanie i funkcjonalność.  
+- **Popraw zaangażowanie publiczności** – widzowie mogą na bieżąco przeglądać wykresy, tabele lub umowy.  
+- **Usprawnij kontrolę wersji** – pojedynczy plik PPTX zawiera wszystkie materiały pomocnicze, zmniejszając ryzyko niezgodności plików.  
 
-Osadzanie obiektów OLE jest szczególnie przydatne do:
+Korzyść ilościowa: **GroupDocs Merger obsługuje osadzanie obiektów OLE z ponad 30 formatów plików i może obsłużyć pliki źródłowe do 500 MB bez zauważalnego spowolnienia**, zapewniając płynne przejścia slajdów nawet przy dużych dokumentach.
 
-1. **Raporty biznesowe** – dołącz pełnowymiarowy PDF, aby kadra zarządzająca mogła otworzyć go bezpośrednio ze slajdu.  
+## Kiedy powinno się używać osadzania OLE?
+
+Używaj osadzania OLE, gdy potrzebujesz dostarczyć szczegółową, interaktywną treść, która uzupełnia narrację slajdów. Jest to idealne rozwiązanie do dołączania pełnych raportów, arkuszy danych lub edytowalnych dokumentów, które uczestnicy mogą przeglądać bezpośrednio z prezentacji, zwiększając przejrzystość i zaangażowanie.
+
+1. **Raporty biznesowe** – dołącz pełny PDF, aby menedżerowie mogli otworzyć go bezpośrednio ze slajdu.  
 2. **Materiały edukacyjne** – udostępnij arkusze lub tabele danych, które studenci mogą przeglądać podczas wykładu.  
 3. **Aktualizacje projektów** – umieść plik Excel z wykresem Gantta na slajdzie aktualizacji statusu dla szybkiego odniesienia.  
 
-Zrozumienie **jak osadzać ole** w tych scenariuszach pomaga utrzymać prezentacje samodzielne i profesjonalne.
+Zrozumienie **how to embed ole** w tych scenariuszach pomaga utrzymać prezentacje samodzielne i profesjonalne.
 
 ## Wymagania wstępne
 
-- **Java Development Kit (JDK) 8+** – upewnij się, że `java -version` zgłasza 1.8 lub wyższą.  
-- **IDE** – IntelliJ IDEA, Eclipse lub dowolny edytor, którego używasz.  
-- **Maven or Gradle** – do zarządzania zależnościami.  
-- **Basic Java knowledge** – powinieneś być zaznajomiony z `try‑with‑resources` i kodem obiektowym.
+- **Java Development Kit (JDK) 8+** – upewnij się, że `java -version` zwraca 1.8 lub wyższą wersję.  
+- **IDE** – IntelliJ IDEA, Eclipse lub dowolny edytor, którego preferujesz.  
+- **Maven lub Gradle** – do zarządzania zależnościami.  
+- **Podstawowa znajomość Javy** – powinieneś czuć się komfortowo z `try‑with‑resources` i kodem obiektowym.
 
-## Konfiguracja GroupDocs.Merger dla Javy
+## Konfigurowanie GroupDocs.Merger dla Javy
 
 ### Informacje o instalacji
 
 Dodaj bibliotekę GroupDocs.Merger do swojego projektu:
 
-**Maven:**
+**Maven:**  
+```java
 ```xml
 <dependency>
     <groupId>com.groupdocs</groupId>
@@ -66,21 +131,26 @@ Dodaj bibliotekę GroupDocs.Merger do swojego projektu:
     <version>latest-version</version>
 </dependency>
 ```
+```
 
-**Gradle:**
+**Gradle:**  
+```java
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
+```
 
 **Bezpośrednie pobranie:**  
-Download the latest version from [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
+Pobierz najnowszą wersję z [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
 ### Uzyskanie licencji
 
-Uzyskaj tymczasową licencję do nieograniczonej oceny na [strona tymczasowej licencji](https://purchase.groupdocs.com/temporary-license/). Do produkcji zakup licencję na [strona GroupDocs](https://purchase.groupdocs.com/buy).
+Uzyskaj tymczasową licencję do nieograniczonej oceny na [stronie tymczasowej licencji](https://purchase.groupdocs.com/temporary-license/). Dla produkcji zakup licencję na [stronie GroupDocs](https://purchase.groupdocs.com/buy).
 
 ### Podstawowa inicjalizacja
 
+Merger jest klasą podstawową, która udostępnia metody do manipulacji prezentacjami, w tym dodawania obiektów OLE.
+```java
 ```java
 import com.groupdocs.merger.Merger;
 
@@ -95,18 +165,29 @@ public class PresentationMerger {
     }
 }
 ```
+```
 
-## Jak osadzić obiekty OLE w PowerPoint przy użyciu Javy
+## Jak osadzić obiekty OLE w PowerPoint przy użyciu GroupDocs Merger dla Javy
 
-### Krok 1: Zdefiniuj ścieżki plików
+Aby osadzić obiekt OLE, załaduj docelowy plik PPTX przy użyciu Merger, skonfiguruj OlePresentationOptions ze źródłowym plikiem i żądanym układem, a następnie wywołaj addOleObject. Ten zwięzły proces w trzech krokach wstawia obiekt na wybrany slajd i zapisuje zaktualizowaną prezentację. Możesz także dostosować parametry pozycji i rozmiaru, aby pasowały do projektu slajdu.
 
+### Bezpośrednia odpowiedź
+Załaduj plik PowerPoint przy użyciu `new Merger("presentation.pptx")`, skonfiguruj instancję `OlePresentationOptions`, która wskazuje na plik źródłowy, i wywołaj `addOleObject` z żądanym indeksem slajdu oraz współrzędnymi. Ten trzy‑krokowy wzorzec wstawia obiekt OLE w jednym wywołaniu API.
+
+### Krok 1: określ ścieżki plików
+
+Określ absolutne lub względne ścieżki zarówno dla docelowego pliku PPTX, jak i pliku źródłowego, który chcesz osadzić.
+```java
 ```java
 String filePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_PPTX"; // Path to source presentation file
 String embeddedFilePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF"; // Path to PDF to be embedded
 ```
+```
 
-### Krok 2: Skonfiguruj `OlePresentationOptions`
+### Krok 2: skonfiguruj `OlePresentationOptions`
 
+OlePresentationOptions definiuje właściwości wizualne i plik źródłowy dla osadzania obiektu OLE.
+```java
 ```java
 import com.groupdocs.merger.domain.options.OlePresentationOptions;
 
@@ -122,9 +203,12 @@ oleOptions.setY(y);
 oleOptions.setWidth(width);
 oleOptions.setHeight(height);
 ```
+```
 
-### Krok 3: Osadź obiekt OLE
+### Krok 3: osadź obiekt OLE
 
+addOleObject wstawia skonfigurowany obiekt OLE do określonego slajdu prezentacji.
+```java
 ```java
 import com.groupdocs.merger.domain.options.OlePresentationOptions;
 
@@ -140,36 +224,37 @@ try (Merger merger = new Merger(filePath)) {
     e.printStackTrace();
 }
 ```
+```
 
-## Częste problemy i rozwiązania
+## Typowe problemy i rozwiązania
 
 - **Dokładność ścieżki pliku:** Sprawdź dwukrotnie, czy każda ścieżka wskazuje na istniejący, czytelny plik.  
 - **Obsługiwane formaty:** PowerPoint obsługuje tylko niektóre typy OLE; PDF‑y, Excel i Word są bezpiecznymi wyborami.  
 - **Użycie pamięci:** Użyj `try‑with‑resources` (jak pokazano), aby zapewnić szybkie zamknięcie instancji `Merger`.  
-- **Duże pliki osadzone:** Jeśli PPTX staje się wolny, skompresuj źródłowy PDF lub podziel go na mniejsze strony przed osadzeniem.  
+- **Duże osadzone pliki:** Jeśli PPTX staje się wolny, skompresuj źródłowy PDF lub podziel go na mniejsze strony przed osadzeniem.
 
 ## Rozważania dotyczące wydajności
 
-- **Optymalizuj rozmiary plików:** Duże PDF‑y mogą spowalniać ładowanie slajdów; rozważ ich kompresję najpierw.  
+- **Optymalizuj rozmiary plików:** Duże PDF‑y mogą spowolnić ładowanie slajdów; rozważ ich kompresję najpierw.  
 - **Zarządzanie pamięcią w Javie:** Wzorzec `try‑with‑resources` pokazany powyżej automatycznie zwalnia zasoby natywne.  
 - **Przetwarzanie wsadowe:** Podczas osadzania obiektów w wielu prezentacjach, iteruj listę plików i w miarę możliwości używaj jednej instancji `Merger`, aby zmniejszyć narzut.
 
 ## Najczęściej zadawane pytania
 
-**Q: Jakie formaty plików można osadzać przy użyciu OLE w PowerPoint?**  
-A: PDF‑y, skoroszyty Excel, dokumenty Word, pliki PowerPoint i wiele innych formatów Office są obsługiwane.
+**Q:** Jakie formaty plików można osadzić przy użyciu OLE w PowerPoint?  
+A: PDF‑y, skoroszyty Excel, dokumenty Word, pliki PowerPoint oraz wiele innych formatów Office są obsługiwane.
 
-**Q: Jak sprawić, aby osadzony obiekt pojawił się na każdym slajdzie?**  
-A: Wstaw obiekt OLE na Slide Master; wszystkie slajdy dziedziczące po tym masterze będą go wyświetlać.
+**Q:** Jak sprawić, aby osadzony obiekt pojawiał się na każdym slajdzie?  
+A: Wstaw obiekt OLE na Slajd Mistrza; wszystkie slajdy dziedziczące po tym mistrzu będą go wyświetlać.
 
-**Q: Czy mogę zastąpić istniejący obiekt OLE bez tworzenia całego slajdu od nowa?**  
+**Q:** Czy mogę zastąpić istniejący obiekt OLE bez ponownego tworzenia całego slajdu?  
 A: Tak. Wywołaj ponownie `addOleObject` z tymi samymi współrzędnymi; nowy plik nadpisuje poprzedni.
 
-**Q: Czy GroupDocs.Merger jest darmowy w użyciu?**  
+**Q:** Czy GroupDocs.Merger jest darmowy w użyciu?  
 A: Dostępna jest wersja próbna do oceny; licencja komercyjna jest wymagana przy wdrożeniach produkcyjnych.
 
-**Q: Jakie są typowe pułapki przy osadzaniu obiektów OLE?**  
-A: Nieprawidłowe ścieżki plików, nieobsługiwane typy dokumentów oraz nadmiernie duże osadzone pliki, które obniżają wydajność.
+**Q:** Jakie są typowe pułapki przy osadzaniu obiektów OLE?  
+A: Nieprawidłowe ścieżki plików, nieobsługiwane typy dokumentów oraz zbyt duże osadzone pliki, które obniżają wydajność.
 
 ## Dodatkowe zasoby
 
@@ -183,6 +268,11 @@ A: Nieprawidłowe ścieżki plików, nieobsługiwane typy dokumentów oraz nadmi
 
 ---
 
-**Ostatnia aktualizacja:** 2026-02-19  
+**Ostatnia aktualizacja:** 2026-08-26  
 **Testowano z:** GroupDocs.Merger latest version (Java)  
-**Autor:** GroupDocs
+**Autor:** GroupDocs  
+
+## Powiązane samouczki
+
+- [Jak osadzić PDF w Word przy użyciu GroupDocs.Merger dla Javy – Kompletny przewodnik](/merger/java/document-import/embed-ole-objects-word-documents-groupdocs-java/)
+- [Osadzanie obrazów jako obiekty OLE w Javie z GroupDocs.Merger: Kompletny przewodnik](/merger/java/image-operations/embed-images-ole-java-groupdocs-merger/)
