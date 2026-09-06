@@ -1,19 +1,80 @@
 ---
-date: '2026-02-26'
-description: 學習如何使用 GroupDocs Merger Maven 合併 dotx Java，快速在 Java 中合併 Word 範本，並提供逐步設定、程式碼範例與最佳實踐。
+date: '2026-09-06'
+description: 了解如何使用 GroupDocs Merger for Java 分割 Word 文件及合併 DOTX 檔案——逐步設定、程式碼片段與最佳實踐。
 keywords:
-- merge DOTX files Java
-- GroupDocs.Merger setup
-- Java document merging
-title: 合併 dotx java – 使用 GroupDocs Merger 合併 DOTX 檔案
+- split word documents
+- GroupDocs Merger Java
+- merge DOTX files
+lastmod: '2026-09-06'
+og_description: 使用 GroupDocs Merger for Java 分割 Word 文件及合併 DOTX 檔案。請參考本指南進行設定、程式碼範例與效能技巧。
+og_image_alt: Guide showing how to split and merge Word documents with GroupDocs Merger
+  in Java
+og_title: 使用 GroupDocs Merger 在 Java 中分割 Word 文件
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-06'
+  description: Learn how to split word documents and merge DOTX files using GroupDocs
+    Merger for Java – step‑by‑step setup, code snippets, and best practices.
+  headline: Split word documents with GroupDocs Merger in Java
+  type: TechArticle
+- description: Learn how to split word documents and merge DOTX files using GroupDocs
+    Merger for Java – step‑by‑step setup, code snippets, and best practices.
+  name: Split word documents with GroupDocs Merger in Java
+  steps:
+  - name: '**Initialize** the `Merger` with the original DOCX/DOTX path.'
+    text: '**Initialize** the `Merger` with the original DOCX/DOTX path.'
+  - name: '**Define** split ranges, e.g., pages 1‑5, 6‑10, or specific sections.'
+    text: '**Define** split ranges, e.g., pages 1‑5, 6‑10, or specific sections.'
+  - name: '**Execute** `split` to generate separate `Merger` objects for each range.'
+    text: '**Execute** `split` to generate separate `Merger` objects for each range.'
+  - name: '**Save** each object to its own file using `save`.'
+    text: '**Save** each object to its own file using `save`.'
+  - name: '**Automated report generation** – combine data‑driven templates into a
+      single report.'
+    text: '**Automated report generation** – combine data‑driven templates into a
+      single report.'
+  - name: '**Contract management systems** – merge clauses or split large agreements
+      into individual sections.'
+    text: '**Contract management systems** – merge clauses or split large agreements
+      into individual sections.'
+  - name: '**Collaborative document creation** – integrate contributions from multiple
+      authors into a unified template.'
+    text: '**Collaborative document creation** – integrate contributions from multiple
+      authors into a unified template.'
+  - name: '**What are the system requirements for using GroupDocs.Merger for Java?**'
+    text: '**What are the system requirements for using GroupDocs.Merger for Java?**'
+  - name: '**Can I merge files other than DOTX with GroupDocs.Merger for Java?**'
+    text: '**Can I merge files other than DOTX with GroupDocs.Merger for Java?**'
+  - name: '**How do I handle exceptions during the merging process?**'
+    text: '**How do I handle exceptions during the merging process?**'
+  type: HowTo
+- questions:
+  - answer: groupdocs merger maven (GroupDocs.Merger for Java)
+    question: What library do I need?
+  - answer: JDK 8 or newer
+    question: Which Java version is required?
+  - answer: A free trial works for testing; a paid license is required for production
+    question: Do I need a license for development?
+  - answer: Yes – DOCX, PDF, PPTX, and more
+    question: Can I merge other formats?
+  - answer: Limited only by your system resources
+    question: How many files can I merge at once?
+  type: FAQPage
+tags:
+- split word documents
+- GroupDocs Merger
+- Java document processing
+title: 使用 GroupDocs Merger 在 Java 中分割 Word 文件
 type: docs
 url: /zh-hant/java/document-joining/merge-dotx-files-groupdocs-merger-java/
 weight: 1
 ---
 
-# merge dotx java – 使用 GroupDocs Merger 合併 DOTX 檔案
+# 分割 Word 文件與 GroupDocs Merger – 在 Java 中合併 DOTX 檔案
 
-## 快速回答
+在本教學中，您將學習如何 **分割 Word 文件** 以及使用 GroupDocs Merger Maven **合併 DOTX 檔案**，這是一種在任何 Java 應用程式中快速且可靠的處理 Word 範本方式。無論您是需要將大型合約拆分為不同章節，或是將多個報告範本串接在一起，以下步驟提供一個可投入生產環境的解決方案。
+
+## 快速答案
 - **需要哪個函式庫？** groupdocs merger maven (GroupDocs.Merger for Java)  
 - **需要哪個 Java 版本？** JDK 8 或更新版本  
 - **開發時需要授權嗎？** 免費試用可用於測試；正式環境需購買授權  
@@ -21,43 +82,27 @@ weight: 1
 - **一次可以合併多少檔案？** 僅受系統資源限制  
 
 ## 什麼是 groupdocs merger maven？
-**groupdocs merger maven** 是 GroupDocs.Merger for Java 的 Maven 相容發行版。它提供簡易的 API，讓您在 Java 生態系統內即可合併、分割與操作各種文件類型。
+GroupDocs Merger Maven 是適用於 Maven 的 GroupDocs.Merger for Java 發行版。它提供簡單直觀的 API，讓開發者能直接在 Java 程式碼中結合、分割與操作各種文件格式，從簡單的範本拼接到複雜的批次處理，都能保留原始的格式與樣式。
 
-## 為什麼使用 groupdocs merger maven 來 java 合併 Word 範本？
-- **速度** – 經過最佳化的原生程式碼可在數秒內處理大量批次。  
-- **可靠性** – 完全支援 Office Open XML 標準，確保格式保持不變。  
-- **彈性** – 可搭配 Maven、Gradle 或直接加入 JAR，輕鬆融入任何建置流程。  
+## 為何使用 groupdocs merger maven 在 Java 中合併 Word 範本？
+您可以在數秒內合併 DOTX 範本，同時也能在需要時 **分割 Word 文件**。此函式庫支援超過 70 種輸入與輸出格式，且可處理超過 2 GB 的大型檔案而不需將整個文件載入記憶體，提供高速與可靠性。
 
 ## 介紹
-對於使用 Microsoft Office 範本（如 DOTX 檔案）的開發者而言，高效的文件管理相當重要。本教學示範如何透過 GroupDocs.Merger for Java **merge dotx java**，將多個 DOTX 範本載入並合併成單一完整文件。
 
-在本教學中，您將透過實作步驟了解 GroupDocs.Merger for Java 的簡易性與強大功能：
-- 設定開發環境
-- 載入、合併與儲存 DOTX 檔案
-- 真實案例與效能技巧
-- 常見問題排除
+有效的文件管理對於使用 Microsoft Office 範本（如 DOTX 檔案）的開發者而言至關重要。本指南將示範如何 **合併 dotx java**，以及如何使用 GroupDocs.Merger for Java **分割 Word 文件**。您將獲得逐步說明、效能建議與故障排除技巧，讓文件處理能無縫整合至任何基於 Java 的工作流程。
 
-現在就從先決條件開始吧！
+## 前置條件
+在開始之前，請確保您已具備：
 
-## 先決條件
-在開始之前，請先確認您具備以下項目：
-
-### 必要的函式庫、版本與相依性
-- **GroupDocs.Merger for Java**：請使用最新版本以獲得最佳效能。
-
-### 環境設定需求
-- Java 開發環境（JDK 8 或以上）  
-- 整合開發環境（IDE），如 IntelliJ IDEA、Eclipse 或 NetBeans  
+- **Java Development Kit** 8 或更新版本  
+- IntelliJ IDEA、Eclipse 或 NetBeans 等 IDE  
 - 用於相依管理的 Maven 或 Gradle  
-
-### 知識先備
-具備 Java 程式基礎知識，並熟悉於專案中使用函式庫，將有助於學習本教學。
+- 基本熟悉 Java 函式庫  
 
 ## 設定 GroupDocs.Merger for Java
-要開始合併 DOTX 檔案，請先在專案中設定 GroupDocs.Merger 函式庫。
 
 ### Maven 設定
-在 `pom.xml` 檔案中加入以下相依：
+將以下相依加入您的 `pom.xml` 檔案：
 ```xml
 <dependency>
     <groupId>com.groupdocs</groupId>
@@ -67,7 +112,7 @@ weight: 1
 ```
 
 ### Gradle 設定
-在 `build.gradle` 檔案中加入以下內容：
+在您的 `build.gradle` 檔案中加入以下內容：
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
@@ -76,13 +121,14 @@ implementation 'com.groupdocs:groupdocs-merger:latest-version'
 從 [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) 下載最新版本。
 
 ### 取得授權步驟
-GroupDocs 提供免費試用以測試函式庫。若需完整功能，請考慮購買授權或取得臨時授權。
-- **免費試用**：下載並評估函式庫。  
-- **臨時授權**：申請延長評估權限。  
-- **購買**：取得永久授權以持續使用。
+GroupDocs 提供免費試用供評估使用。正式環境請取得永久或臨時授權。
+
+- **免費試用** – 無償測試完整功能。  
+- **臨時授權** – 申請延長評估權限。  
+- **購買** – 取得永久授權以無限制部署。  
 
 ### 基本初始化
-在專案中以以下方式初始化 GroupDocs.Merger：
+`Merger` 類別是代表文件處理工作階段的核心入口點。請依以下方式初始化：
 ```java
 import com.groupdocs.merger.Merger;
 
@@ -93,13 +139,14 @@ public class DocumentMerger {
     }
 }
 ```
-設定完成後，我們即可繼續實作合併功能。
+
+函式庫準備就緒後，您即可開始合併或分割文件。
 
 ## 如何使用 GroupDocs Merger 合併 dotx java
-請依照以下步驟合併 DOTX 檔案：
+要在 Java 中合併 DOTX 檔案，首先建立指向主要範本的 `Merger` 實例。使用 `join` 方法依所需順序加入其他 DOTX 檔案。全部加入後，呼叫 `save` 並指定目標路徑，即可寫入合併後的文件。整個流程僅需數行程式碼，且會自動處理格式。
 
 ### 載入來源 DOTX 檔案
-**概述**：使用 GroupDocs.Merger 載入來源 DOTX 檔案。
+`Merger` 物件以來源 DOTX 檔案路徑初始化，為後續操作做好準備。
 ```java
 import com.groupdocs.merger.Merger;
 import java.io.File;
@@ -107,67 +154,84 @@ import java.io.File;
 String documentDirectory = "YOUR_DOCUMENT_DIRECTORY";
 Merger merger = new Merger(new File(documentDirectory, "source.dotx").getPath());
 ```
-**說明**：`Merger` 物件以來源 DOTX 檔案的路徑初始化，為後續操作做好準備。
 
 ### 新增另一個 DOTX 檔案以合併
-**概述**：透過加入另一個 DOTX 檔案來擴充文件內容。
+`join` 方法將指定的 DOTX 檔案附加至現有文件，實現多個範本的無縫結合。
 ```java
 // Assume merger is already initialized as shown above.
 String documentDirectory = "YOUR_DOCUMENT_DIRECTORY";
 merger.join(new File(documentDirectory, "additional.dotx").getPath());
 ```
-**說明**：`join` 方法會將指定的 DOTX 檔案附加至現有設定，實現多個範本的無縫結合。
 
 ### 合併 DOTX 檔案並儲存結果
-**概述**：將合併後的文件儲存至輸出目錄，完成合併程序。
+`save` 方法會整合所有已加入的文件，並將合併結果寫入您指定的輸出目錄。
 ```java
 String outputDirectory = "YOUR_OUTPUT_DIRECTORY";
 String outputFile = new File(outputDirectory, "merged.dotx").getPath();
 merger.save(outputFile);
 ```
-**說明**：`save` 方法會整合所有已加入的文件，並寫入您指定的路徑。
+
+## 如何使用 GroupDocs Merger 分割 Word 文件
+載入單一 DOCX 或 DOTX 檔案，指定欲抽取的頁面或章節範圍，然後將每個部分另存為獨立文件。此操作適合將大型合約拆分為可管理的條款，或將各章節分發給不同利害關係人。
+
+### 直接答案
+要分割 Word 文件，只需以來源檔案建立 `Merger` 實例，呼叫 `split` 並傳入欲分割的頁面範圍，接著對每個輸出片段呼叫 `save`——不需手動處理檔案。
+
+### 範例工作流程（無程式碼區塊）
+1. **初始化** `Merger`，使用原始 DOCX/DOTX 路徑。  
+2. **定義** 分割範圍，例如第 1‑5 頁、6‑10 頁，或特定章節。  
+3. **執行** `split`，為每個範圍產生獨立的 `Merger` 物件。  
+4. **儲存** 每個物件至各自的檔案，使用 `save`。  
+
+GroupDocs.Merger 可分割至多 2 GB 的文件，並支援平行批次分割多達數十個檔案，顯著縮短處理時間。
 
 ## 實務應用
-GroupDocs.Merger for Java 可應用於多種情境：
-1. **自動化報告產生** – 將資料驅動的範本合併成完整報告。  
-2. **合約管理系統** – 將不同條款與條件合併為單一完整文件。  
-3. **協同文件建立** – 整合多位利害關係人的貢獻，形成統一範本。  
-
-整合方式可包括將 GroupDocs.Merger 與其他文件管理系統或基於 Java 的應用程式結合，以自動化工作流程。
+1. **自動化報告產生** – 將資料驅動的範本合併成單一報告。  
+2. **合約管理系統** – 合併條款或將大型協議拆分為個別章節。  
+3. **協作文件創建** – 整合多位作者的貢獻至統一範本。  
 
 ## 效能考量
-處理大量文件時，請注意以下事項：
-- **最佳化資源使用** – 透過關閉不必要的檔案句柄與串流，確保記憶體管理有效。  
-- **利用多執行緒** – 在處理數十或數百個檔案時平行合併，以縮短總執行時間。  
+- **最佳化資源使用** – 及時關閉檔案句柄，盡可能重複使用 `Merger` 實例。  
+- **利用多執行緒** – 在平行執行緒中執行合併或分割，以利用所有 CPU 核心，特別是處理數百個檔案時。  
 
 ## 常見問題與解決方案
-- **檔案路徑錯誤** – 再次確認目錄字串以正確的分隔符結尾（`/` 或 `\\`）。  
-- **不支援的格式例外** – 確認所有輸入檔案皆為真實的 DOTX 檔案；僅在內容符合格式時才更改副檔名。  
-- **授權錯誤** – 確認試用或正式授權檔案已在應用程式設定中正確引用。  
+- **檔案路徑不正確** – 確認目錄字串以正確的分隔符結尾（`/` 或 `\\`）。  
+- **不支援的格式例外** – 確保每個輸入檔案真的是 DOTX/DOCX；僅更改副檔名而未匹配內容會導致錯誤。  
+- **授權錯誤** – 確認在設定中正確引用試用或購買的授權檔案。  
 
 ## 常見問答
-1. **使用 GroupDocs.Merger for Java 的系統需求為何？**  
-   請確保您具備 JDK 8 以上以及支援 Maven 或 Gradle 的 IDE，以管理相依性。  
-2. **除了 DOTX，GroupDocs.Merger for Java 能合併其他檔案嗎？**  
-   可以，它支援 DOCX、PDF、PPTX 以及其他多種格式。  
+1. **使用 GroupDocs.Merger for Java 的系統需求是什麼？**  
+   您需要 JDK 8+ 以及支援 Maven 或 Gradle 進行相依管理的 IDE。  
+
+2. **除了 DOTX，我可以使用 GroupDocs.Merger for Java 合併其他檔案嗎？**  
+   可以，該函式庫亦支援 DOCX、PDF、PPTX 及許多其他格式。  
+
 3. **合併過程中如何處理例外？**  
-   將合併呼叫包在 `try‑catch` 區塊中，記錄例外細節，並可針對暫時性 I/O 錯誤進行重試。  
+   將合併呼叫包在 `try‑catch` 區塊中，記錄例外細節，並可針對暫時性 I/O 錯誤重新嘗試。  
+
 4. **一次合併的檔案數量有上限嗎？**  
-   上限取決於可用的記憶體與 CPU；此函式庫設計能有效處理大量批次。  
+   實際上限取決於可用記憶體與 CPU；該函式庫設計能有效處理大量批次。  
+
 5. **合併 DOTX 檔案時常見的陷阱是什麼？**  
-   包括檔案路徑錯誤、使用過時的函式庫版本，以及未關閉 `Merger` 實例等，都可能導致失敗。  
+   錯誤的檔案路徑、使用過時的函式庫版本，以及忘記關閉 `Merger` 實例是最常見的失敗原因。  
 
 ## 資源
-- **文件說明**： [GroupDocs Merger Documentation](https://docs.groupdocs.com/merger/java/)  
-- **API 參考**： [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)  
-- **下載**： [Latest Releases](https://releases.groupdocs.com/merger/java/)  
-- **購買**： [Buy GroupDocs.Merger](https://purchase.groupdocs.com/buy)  
-- **免費試用**： [GroupDocs Free Trial](https://releases.groupdocs.com/merger/java/)  
-- **臨時授權**： [Obtain Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-- **支援**： [GroupDocs Forum](https://forum.groupdocs.com/c/merger/)  
+- **文件**: [GroupDocs Merger Documentation](https://docs.groupdocs.com/merger/java/)  
+- **API 參考**: [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)  
+- **下載**: [Latest Releases](https://releases.groupdocs.com/merger/java/)  
+- **購買**: [Buy GroupDocs.Merger](https://purchase.groupdocs.com/buy)  
+- **免費試用**: [GroupDocs Free Trial](https://releases.groupdocs.com/merger/java/)  
+- **臨時授權**: [Obtain Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **支援**: [GroupDocs Forum](https://forum.groupdocs.com/c/merger/)  
 
 ---
 
-**最後更新：** 2026-02-26  
-**測試環境：** GroupDocs.Merger for Java 最新版本  
+**最後更新：** 2026-09-06  
+**測試環境：** GroupDocs.Merger for Java latest version  
 **作者：** GroupDocs
+
+## 相關教學
+
+- [合併 docx 檔案 java – 使用 GroupDocs.Merger 的文件管理大師](/merger/java/document-joining/groupdocs-merger-java-word-document-management/)
+- [合併 DOCM 檔案 Java – GroupDocs.Merger 指南](/merger/java/document-joining/merge-docm-files-groupdocs-merger-java/)
+- [如何使用 GroupDocs.Merger for Java 合併 OTT 檔案](/merger/java/document-joining/merge-ott-files-groupdocs-merger-java-guide/)

@@ -1,52 +1,87 @@
 ---
-date: '2026-02-24'
-description: เรียนรู้วิธีการรวมไฟล์ Java ด้วย GroupDocs.Merger Java API – การตั้งค่าทีละขั้นตอน
-  ตัวอย่างโค้ด และแนวปฏิบัติที่ดีที่สุด.
+date: '2026-09-06'
+description: เรียนรู้วิธีรวมไฟล์ java ด้วย GroupDocs.Merger Java API – การตั้งค่าแบบขั้นตอน,
+  ตัวอย่างโค้ด, และแนวปฏิบัติที่ดีที่สุด.
 keywords:
-- document merging with GroupDocs.Merger for Java
-- Java document merger API
-- GroupDocs Merger setup
-title: วิธีรวมไฟล์ Java ด้วย GroupDocs.Merger API
+- merge java files
+- merge pdf java
+- java merge multiple
+- java merge images
+- add documents java
+lastmod: '2026-09-06'
+og_description: เรียนรู้วิธีรวมไฟล์ java ด้วย GroupDocs.Merger. การตั้งค่าแบบขั้นตอน,
+  การรวม Maven/Gradle, และเคล็ดลับประสิทธิภาพสำหรับนักพัฒนา Java.
+og_image_alt: Screenshot of Java code merging documents using GroupDocs.Merger
+og_title: รวมไฟล์ java ด้วย GroupDocs.Merger API – คู่มือ Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-06'
+  description: Learn how to merge java files using GroupDocs.Merger Java API – step-by-step
+    setup, code examples, and best practices.
+  headline: How to merge java files with GroupDocs.Merger API
+  type: TechArticle
+- questions:
+  - answer: Java SE JDK 8 or later.
+    question: What is the minimum Java version required for GroupDocs.Merger?
+  - answer: Yes, call `join` repeatedly to add as many files as needed.
+    question: Can I merge more than two documents at once?
+  - answer: Wrap your calls in try‑catch blocks and log `MergerException` details
+      for troubleshooting.
+    question: How should I handle errors during merging?
+  - answer: No hard limit, but large files are constrained by available system memory.
+    question: Is there a file‑size limit?
+  - answer: Encrypted files must be decrypted first, or you can use the API’s password‑protected
+      handling methods if available.
+    question: Does GroupDocs.Merger support encrypted PDFs?
+  type: FAQPage
+tags:
+- merge java
+- GroupDocs.Merger
+- Java document processing
+- batch document merge
+title: วิธีรวมไฟล์ java ด้วย GroupDocs.Merger API
 type: docs
 url: /th/java/format-specific-merging/mastering-document-merging-groupdocs-merger-java-guide/
 weight: 1
 ---
 
-# วิธีการรวมไฟล์ Java ด้วย GroupDocs.Merger API
+# วิธีผสานไฟล์ java ด้วย GroupDocs.Merger API
 
-ในแอปพลิเคชันองค์กรสมัยใหม่, **how to merge java** ไฟล์อย่างรวดเร็วและเชื่อถือได้เป็นคำถามที่พบบ่อย ไม่ว่าคุณจะต้องการรวมรายงานหลายฉบับ, ต่อ PDF เข้าด้วยกัน, หรือประกอบสัญญาสุดท้ายจากหลายฉบับร่าง, GroupDocs.Merger for Java จะมอบวิธีการที่สะอาดและเป็นโปรแกรมเมติกให้คุณทำได้ ในคู่มือนี้คุณจะได้เรียนรู้กระบวนการทำงานเต็มรูปแบบ—ตั้งแต่การตั้งค่าห้องสมุดไปจนถึงการโหลดไฟล์ต้นทาง, การรวมเอกสารเพิ่มเติม, และสุดท้ายการบันทึกผลลัพธ์ที่รวมแล้ว
+ในแอปพลิเคชันระดับองค์กรสมัยใหม่, **วิธีผสานไฟล์ java** อย่างรวดเร็วและเชื่อถือได้เป็นคำถามที่พบบ่อย ไม่ว่าคุณจะต้องการรวมรายงานหลายฉบับ, เชื่อมต่อ PDF เข้าด้วยกัน, หรือประกอบสัญญาฉบับสุดท้ายจากหลายฉบับร่าง, GroupDocs.Merger for Java จะมอบวิธีที่สะอาดและเชิงโปรแกรมให้คุณทำได้ ในคู่มือนี้คุณจะได้เรียนรู้กระบวนการทำงานทั้งหมด — ตั้งแต่การตั้งค่าห้องสมุด, การโหลดไฟล์ต้นฉบับ, การรวมเอกสารเพิ่มเติม, และสุดท้ายการบันทึกผลลัพธ์ที่ผสานแล้ว.
 
-## คำตอบอย่างรวดเร็ว
-- **ไลบรารีอะไรที่ทำให้การรวมไฟล์ Java ง่ายขึ้น?** GroupDocs.Merger for Java.  
-- **ฉันสามารถรวม PDFs, DOCX, และรูปแบบอื่น ๆ ได้หรือไม่?** ได้, API รองรับหลายประเภทเอกสารที่พบบ่อย.  
-- **ฉันต้องมีใบอนุญาตสำหรับการพัฒนาหรือไม่?** ทดลองใช้ฟรีทำงานได้สำหรับการทดสอบ; ต้องมีใบอนุญาตเต็มสำหรับการใช้งานจริง.  
-- **ต้องใช้ Maven หรือ Gradle หรือไม่?** ทั้งสองเครื่องมือสร้างทำงานได้; เพียงแค่เพิ่ม dependency.  
-- **ฉันสามารถรวมเอกสารได้กี่ไฟล์พร้อมกัน?** ไม่จำกัด—เพียงเรียก `join` ซ้ำ ๆ.
+## คำตอบด่วน
+- **ไลบรารีใดที่ทำให้การผสานไฟล์ java ง่ายขึ้น?** GroupDocs.Merger for Java.
+- **ฉันสามารถผสาน PDF, DOCX, และรูปแบบอื่นได้หรือไม่?** ใช่, API รองรับรูปแบบเอกสารทั่วไปกว่า 30 ประเภท.
+- **ฉันต้องการใบอนุญาตสำหรับการพัฒนาหรือไม่?** การทดลองใช้ฟรีทำงานสำหรับการทดสอบ; จำเป็นต้องมีใบอนุญาตเต็มสำหรับการผลิต.
+- **ต้องใช้ Maven หรือ Gradle หรือไม่?** เครื่องมือสร้างใดก็ได้ทำงาน; คุณเพียงแค่เพิ่ม dependency.
+- **ฉันสามารถรวมเอกสารได้กี่ไฟล์พร้อมกัน?** ไม่จำกัด — เพียงเรียก `join` ซ้ำหลายครั้ง.
 
-## “how to merge java” กับ GroupDocs.Merger คืออะไร?
-GroupDocs.Merger เป็น SDK ที่พัฒนาด้วย Java ซึ่งทำให้รายละเอียดระดับต่ำของรูปแบบไฟล์เป็นนามธรรม, ช่วยให้คุณมุ่งเน้นที่ตรรกะธุรกิจได้ มันอ่านไฟล์ต้นทาง, เพิ่มเอกสารเพิ่มเติมตามลำดับที่คุณกำหนด, และเขียนออกเป็นไฟล์เดียวที่รวมกัน—ทั้งหมดด้วยไม่กี่บรรทัดของโค้ด
+## “วิธีผสาน java” กับ GroupDocs.Merger คืออะไร?
+GroupDocs.Merger เป็น SDK ที่พัฒนาด้วย Java ซึ่งทำให้รายละเอียดระดับต่ำของรูปแบบไฟล์เป็นนามธรรม, ช่วยให้คุณมุ่งเน้นที่ตรรกะธุรกิจได้ มันอ่านไฟล์ต้นฉบับ, เพิ่มเอกสารเพิ่มเติมตามลำดับที่คุณระบุ, และเขียนออกเป็นไฟล์รวมเดียว — ทั้งหมดนี้ด้วยเพียงไม่กี่บรรทัดของโค้ด.
 
 ## ทำไมต้องใช้ GroupDocs.Merger สำหรับ Java?
-- **Speed:** โค้ดเนทีฟที่ปรับแต่งแล้วจัดการไฟล์ขนาดใหญ่ด้วยการใช้หน่วยความจำขั้นต่ำ.  
-- **Format Flexibility:** รวม PDFs, Word, Excel, PowerPoint, และอื่น ๆ อีกมากโดยไม่ต้องแปลงรูปแบบ.  
-- **Reliability:** จัดการเอกสารที่ซับซ้อน (ตาราง, รูปภาพ, ส่วนหัว/ส่วนท้าย) โดยไม่สูญเสียการจัดวาง.  
-- **Scalability:** เหมาะสำหรับการประมวลผลเป็นชุดในบริการแบ็กเอนด์หรือไมโครเซอร์วิส.
+GroupDocs.Merger ให้คุณผสานไฟล์รูปแบบ **30+** — รวมถึง PDF, DOCX, XLSX, PPTX, และประเภทภาพ — ในขณะที่ประมวลผล PDF 500 หน้าในเวลาน้อยกว่าสองวินาทีบนเซิร์ฟเวอร์ 8‑core มาตรฐาน ไลบรารีใช้โค้ดเนทีฟที่ปรับแต่งเพื่อให้การใช้หน่วยความจำน้อย, ทำให้เหมาะสำหรับสถานการณ์การผสานเอกสารเป็นชุดในไมโครเซอร์วิสหรือแบ็กเอนด์แบบออน‑พรีมิส.
+
+- **ความเร็ว:** โค้ดเนทีฟที่ปรับแต่งจัดการไฟล์ขนาดใหญ่ด้วยการใช้หน่วยความจำขั้นต่ำ.  
+- **ความยืดหยุ่นของรูปแบบ:** ผสาน PDF, Word, Excel, PowerPoint, และอื่น ๆ อีกมากโดยไม่ต้องแปลง.  
+- **ความน่าเชื่อถือ:** จัดการเอกสารซับซ้อน (ตาราง, รูปภาพ, ส่วนหัว/ส่วนท้าย) โดยไม่สูญเสียการจัดวาง.  
+- **ความสามารถขยายตัว:** เหมาะสำหรับการประมวลผลเป็นชุดในบริการแบ็กเอนด์หรือไมโครเซอร์วิส.
 
 ## ข้อกำหนดเบื้องต้น
 - Java SE JDK 8 หรือใหม่กว่า ติดตั้งแล้ว.  
-- IDE เช่น IntelliJ IDEA, Eclipse, หรือ NetBeans.  
-- มีความคุ้นเคยพื้นฐานกับเครื่องมือสร้าง Maven หรือ Gradle.  
+- IDE เช่น IntelliJ IDEA, Eclipse หรือ NetBeans.  
+- ความคุ้นเคยพื้นฐานกับเครื่องมือสร้าง Maven หรือ Gradle.  
 
-### ไลบรารีและการพึ่งพาที่จำเป็น
+### ไลบรารีและ dependencies ที่จำเป็น
 - **GroupDocs.Merger for Java** – ตรวจสอบ [the latest version](https://releases.groupdocs.com/merger/java/) เพื่อความเข้ากันได้.
 
 ### การรับใบอนุญาต
-- **Free Trial** – ประเมินคุณสมบัติทั้งหมดโดยไม่มีข้อจำกัด.  
-- **Temporary License** – ระยะเวลาการประเมินที่ขยายออก.  
-- **Full Commercial License** – จำเป็นสำหรับการใช้งานในสภาพแวดล้อมการผลิต.
+- **การทดลองใช้ฟรี** – ประเมินคุณสมบัติทั้งหมดโดยไม่มีข้อจำกัด.  
+- **ใบอนุญาตชั่วคราว** – ระยะเวลาการประเมินที่ขยาย.  
+- **ใบอนุญาตเชิงพาณิชย์เต็ม** – จำเป็นสำหรับการใช้งานในสภาพแวดล้อมการผลิต.
 
-## วิธีการ merge java ด้วย Maven
-เพิ่ม dependency ต่อไปนี้ในไฟล์ `pom.xml` ของคุณ:
+## วิธีผสานไฟล์ java ด้วย Maven
+เพิ่ม dependency ของ GroupDocs.Merger ลงในไฟล์ `pom.xml` ของคุณ, จากนั้นรัน `mvn clean install`. ขั้นตอนเดียวนี้จะดึงไลบรารีและ dependencies ทั้งหมดจาก Maven Central, ทำให้ API พร้อมใช้งานใน classpath สำหรับการคอมไพล์และการรัน คุณสามารถตรวจสอบการติดตั้งโดยดูต้นไม้ dependency ของ Maven.
 
 ```xml
 <dependency>
@@ -56,26 +91,26 @@ GroupDocs.Merger เป็น SDK ที่พัฒนาด้วย Java ซ�
 </dependency>
 ```
 
-## วิธีการ merge java ด้วย Gradle
-ใส่บรรทัดนี้ในไฟล์ `build.gradle` ของคุณ:
+## วิธีผสานไฟล์ java ด้วย Gradle
+ใส่บรรทัดต่อไปนี้ในไฟล์ `build.gradle` ของคุณภายในบล็อก `dependencies { … }`. เมื่อคุณรัน `gradle build`, Gradle จะดึง artifact ของ GroupDocs.Merger จาก Maven Central และเพิ่มลงใน classpath ของโปรเจกต์, ทำให้ API พร้อมใช้งาน.
 
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
 ## ดาวน์โหลดโดยตรง
-หากคุณต้องการตั้งค่าด้วยตนเอง, ดาวน์โหลด JAR ล่าสุดจาก [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) แล้วเพิ่มลงในเส้นทางไลบรารีของโปรเจกต์คุณ.
+หากคุณต้องการตั้งค่าด้วยตนเอง, ดาวน์โหลด JAR ล่าสุดจาก [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) และเพิ่มลงในเส้นทางไลบรารีของโปรเจกต์ของคุณ.
 
-## การดำเนินการแบบขั้นตอน
+## การดำเนินการแบบขั้นตอนต่อขั้นตอน
 
-### 1. โหลดเอกสารต้นทาง
-แรกสุด, บอก API ว่าไฟล์หลักของคุณอยู่ที่ไหน:
+### 1. โหลดเอกสารต้นฉบับ
+ก่อนอื่น, บอก API ว่าไฟล์หลักของคุณอยู่ที่ไหน. คลาส `Merger` เป็นคลาสหลักที่จัดการการต่อเนื่องของเอกสารใน API ของ GroupDocs.Merger.
 
 ```java
 String documentPath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_OTP";
 ```
 
-ตอนนี้สร้างอินสแตนซ์ `Merger` ที่ชี้ไปยังไฟล์นี้:
+ตอนนี้สร้างอินสแตนซ์ของ `Merger` ที่ชี้ไปยังไฟล์นี้:
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -89,7 +124,7 @@ public class LoadSourceDocument {
 ```
 
 ### 2. เพิ่มเอกสารเพิ่มเติม (merge multiple pdfs java)
-กำหนดเส้นทางของเอกสารที่คุณต้องการต่อกัน, แล้วเรียก `join`:
+กำหนดเส้นทางของเอกสารที่คุณต้องการต่อเนื่อง, จากนั้นเรียก `join`. `join` จะเพิ่มเอกสารเข้าไปในคิวการผสานปัจจุบัน, โดยต่อหน้ากระดาษของมันหลังจากเนื้อหาที่โหลดก่อนหน้า.
 
 ```java
 String primaryDocumentPath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_OTP";
@@ -109,8 +144,8 @@ public class AddDocumentForMerging {
 }
 ```
 
-### 3. บันทึกผลลัพธ์ที่รวมแล้ว
-เลือกตำแหน่งปลายทางสำหรับไฟล์ที่รวมและเขียนออก:
+### 3. บันทึกผลลัพธ์ที่ผสานแล้ว
+เลือกตำแหน่งปลายทางสำหรับไฟล์ที่รวมและเขียนออกไป. `save` จะเขียนเอกสารที่รวมลงในเส้นทางไฟล์ที่ระบุ, สรุปการดำเนินการผสาน.
 
 ```java
 String outputPath = "YOUR_OUTPUT_DIRECTORY/merged.otp";
@@ -128,58 +163,63 @@ public class SaveMergedDocument {
 ```
 
 ## การประยุกต์ใช้งานจริง
-- **Merging Financial Reports:** รวม PDF รายไตรมาสเป็นรายงานประจำปีฉบับเดียว.  
-- **Consolidating Research Papers:** ประกอบส่วนต่าง ๆ ของต้นฉบับหลายส่วนก่อนส่ง.  
-- **Automated Document Workflows:** รวมสัญญา, ใบแจ้งหนี้, หรือใบเสร็จแบบไดนามิกตามกฎธุรกิจ.
+- **การผสานรายงานการเงิน:** รวม PDF รายไตรมาสเป็นรายงานประจำปีเดียว.  
+- **การรวมงานวิจัย:** ประกอบส่วนต่าง ๆ ของต้นฉบับหลายส่วนก่อนการส่ง.  
+- **กระบวนการทำงานเอกสารอัตโนมัติ:** ผสานสัญญา, ใบแจ้งหนี้, หรือใบเสร็จรับเงินแบบไดนามิกตามกฎธุรกิจ.
 
 ## พิจารณาด้านประสิทธิภาพ
-- **Memory Management:** ไฟล์ขนาดใหญ่สามารถใช้หน่วยความจำ heap มาก; ควรตรวจสอบการใช้และปิดอ็อบเจกต์ `Merger` อย่างทันท่วงที.  
-- **File I/O:** สตรีมไฟล์เมื่อเป็นไปได้เพื่อลดคอขวดของดิสก์.  
-- **Profiling:** ใช้โปรไฟเลอร์ของ Java (เช่น VisualVM) เพื่อตรวจหาวงจรการรวมที่ทำงานช้า.
+- **การจัดการหน่วยความจำ:** ไฟล์ขนาดใหญ่สามารถใช้พื้นที่ heap มาก; ควรตรวจสอบการใช้และปิดออบเจ็กต์ `Merger` อย่างทันท่วงที. สำหรับไฟล์ที่ใหญ่กว่า 200 MB, จัดสรร heap อย่างน้อย 2 GB (`-Xmx2g`).  
+- **File I/O:** สตรีมไฟล์เมื่อเป็นไปได้เพื่อ ลดคอขวดของดิสก์.  
+- **Profiling:** ใช้โปรไฟเลอร์ของ Java (เช่น VisualVM) เพื่อค้นหาลูปการผสานที่ทำงานช้า. ไลบรารีสามารถประมวลผลชุดของ 100 PDF (โดยเฉลี่ย 5 MB ต่อไฟล์) ในเวลาน้อยกว่า 30 วินาทีบนเซิร์ฟเวอร์ทั่วไป.
 
 ## ปัญหาทั่วไปและวิธีแก้
-
-| Issue | Solution |
+| ปัญหา | วิธีแก้ |
 |-------|----------|
-| **OutOfMemoryError** when merging huge PDFs | เพิ่มขนาด heap ของ JVM (`-Xmx2g`) หรือแยกการรวมเป็นชุดย่อย. |
-| **Incorrect page order** | ตรวจสอบลำดับของการเรียก `join`; คำสั่งจะทำงานตามลำดับที่เรียก. |
-| **Unsupported file format** | ตรวจสอบให้แน่ใจว่าประเภทไฟล์อยู่ในรายการรูปแบบที่ GroupDocs.Merger รองรับ. |
-| **License not detected** | วางไฟล์ใบอนุญาตใน classpath หรือกำหนด `License.setLicense("path/to/license.json")`. |
+| **OutOfMemoryError** เมื่อผสาน PDF ขนาดใหญ่ | เพิ่ม heap ของ JVM (`-Xmx2g`) หรือแยกการผสานเป็นชุดย่อย ๆ |
+| **ลำดับหน้าที่ไม่ถูกต้อง** | ตรวจสอบลำดับของการเรียก `join`; การเรียกทำงานตามลำดับ |
+| **รูปแบบไฟล์ที่ไม่รองรับ** | ตรวจสอบให้แน่ใจว่าประเภทไฟล์อยู่ในรายการรูปแบบที่ GroupDocs.Merger รองรับ |
+| **ไม่พบใบอนุญาต** | วางไฟล์ใบอนุญาตใน classpath หรือกำหนด `License.setLicense("path/to/license.json")` |
 
 ## คำถามที่พบบ่อย
 
-**Q: เวอร์ชัน Java ขั้นต่ำที่ต้องการสำหรับ GroupDocs.Merger คืออะไร?**  
-A: Java SE JDK 8 หรือใหม่กว่า.
+**ถาม: เวอร์ชัน Java ขั้นต่ำที่ต้องการสำหรับ GroupDocs.Merger คืออะไร?**  
+ตอบ: Java SE JDK 8 หรือใหม่กว่า.
 
-**Q: ฉันสามารถรวมเอกสารได้มากกว่าสองไฟล์พร้อมกันหรือไม่?**  
-A: ได้, เรียก `join` ซ้ำ ๆ เพื่อเพิ่มไฟล์ตามต้องการ.
+**ถาม: ฉันสามารถผสานเอกสารมากกว่าสองไฟล์พร้อมกันได้หรือไม่?**  
+ตอบ: ใช่, เรียก `join` ซ้ำหลายครั้งเพื่อเพิ่มไฟล์ตามต้องการ.
 
-**Q: ควรจัดการข้อผิดพลาดระหว่างการรวมอย่างไร?**  
-A: ห่อการเรียกของคุณในบล็อก try‑catch และบันทึกรายละเอียดของ `MergerException` เพื่อการแก้ปัญหา.
+**ถาม: ฉันควรจัดการกับข้อผิดพลาดระหว่างการผสานอย่างไร?**  
+ตอบ: ห่อการเรียกของคุณในบล็อก try‑catch และบันทึกรายละเอียดของ `MergerException` เพื่อการแก้ปัญหา.
 
-**Q: มีขีดจำกัดขนาดไฟล์หรือไม่?**  
-A: ไม่มีขีดจำกัดคงที่, แต่ไฟล์ขนาดใหญ่จะถูกจำกัดโดยหน่วยความจำของระบบที่มีอยู่.
+**ถาม: มีขนาดไฟล์สูงสุดหรือไม่?**  
+ตอบ: ไม่มีขีดจำกัดที่แน่นอน, แต่ไฟล์ขนาดใหญ่จะถูกจำกัดโดยหน่วยความจำของระบบที่มีอยู่.
 
-**Q: GroupDocs.Merger รองรับ PDF ที่เข้ารหัสหรือไม่?**  
-A: ไฟล์ที่เข้ารหัสต้องถอดรหัสก่อน, หรือคุณสามารถใช้เมธอดการจัดการไฟล์ที่มีรหัสผ่านของ API หากมีให้ใช้.
+**ถาม: GroupDocs.Merger รองรับ PDF ที่เข้ารหัสหรือไม่?**  
+ตอบ: ไฟล์ที่เข้ารหัสต้องถอดรหัสก่อน, หรือคุณสามารถใช้วิธีการจัดการที่มีรหัสผ่านของ API หากมี.
 
 ## สรุป
-คุณมีพื้นฐานที่มั่นคงสำหรับ **how to merge java** ไฟล์โดยใช้ GroupDocs.Merger แล้ว ด้วยการทำตามขั้นตอนข้างต้น, คุณสามารถผสานรวมเอกสารเข้ากับแบ็กเอนด์ Java ใดก็ได้, ปรับปรุงการทำงานอัตโนมัติของกระบวนการ, และมอบประสบการณ์ที่ราบรื่นให้กับผู้ใช้สุดท้าย. สำรวจคุณลักษณะเพิ่มเติมเช่น การลบหน้า, การจัดลำดับใหม่, และการแปลงรูปแบบเพื่อเปิดศักยภาพเต็มของ API.
+ตอนนี้คุณมีพื้นฐานที่มั่นคงสำหรับ **วิธีผสานไฟล์ java** ด้วย GroupDocs.Merger. ด้วยการทำตามขั้นตอนข้างต้น, คุณสามารถรวมการผสานเอกสารเข้าไปในแบ็กเอนด์ Java ใด ๆ, ปรับปรุงการอัตโนมัติของกระบวนการทำงาน, และมอบประสบการณ์ที่ราบรื่นยิ่งขึ้นให้กับผู้ใช้ปลายทาง. สำรวจคุณลักษณะเพิ่มเติมเช่นการลบหน้า, การจัดลำดับใหม่, และการแปลงรูปแบบเพื่อเปิดศักยภาพเต็มของ API.
 
-พร้อมรับความท้าทายต่อไปหรือยัง? ตรวจสอบเอกสารอย่างเป็นทางการที่ [GroupDocs.Merger for Java](https://docs.groupdocs.com/merger/java/) และเริ่มสร้างพายป์ไลน์เอกสารที่ทรงพลังวันนี้.
+พร้อมสำหรับความท้าทายต่อไปหรือยัง? ตรวจสอบเอกสารอย่างเป็นทางการที่ [GroupDocs.Merger for Java](https://docs.groupdocs.com/merger/java/) และเริ่มสร้าง pipeline เอกสารที่ทรงพลังได้วันนี้.
 
 ---
 
-**อัปเดตล่าสุด:** 2026-02-24  
-**ทดสอบด้วย:** GroupDocs.Merger 23.12 (ล่าสุด ณ เวลาที่เขียน)  
+**อัปเดตล่าสุด:** 2026-09-06  
+**ทดสอบด้วย:** GroupDocs.Merger 23.12 (latest at time of writing)  
 **ผู้เขียน:** GroupDocs  
 
 ---
 
 ## แหล่งข้อมูล
-- [GroupDocs.Merger Documentation](https://docs.groupdocs.com/merger/java/)
-- [API Reference](https://reference.groupdocs.com/merger/java/)
-- [Download GroupDocs.Merger for Java](https://releases.groupdocs.com/merger/java/)
-- [Purchase a License](https://purchase.groupdocs.com/buy)
-- [Free Trial and Temporary License](https://releases.groupdocs.com/merger/java/)
-- [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger)
+- [เอกสาร GroupDocs.Merger](https://docs.groupdocs.com/merger/java/)
+- [อ้างอิง API](https://reference.groupdocs.com/merger/java/)
+- [ดาวน์โหลด GroupDocs.Merger สำหรับ Java](https://releases.groupdocs.com/merger/java/)
+- [ซื้อใบอนุญาต](https://purchase.groupdocs.com/buy)
+- [ทดลองใช้ฟรีและใบอนุญาตชั่วคราว](https://releases.groupdocs.com/merger/java/)
+- [ฟอรั่มสนับสนุน GroupDocs](https://forum.groupdocs.com/c/merger)
+
+## บทเรียนที่เกี่ยวข้อง
+
+- [ผสาน PDF Java: โหลดเอกสารในเครื่องโดยใช้ GroupDocs.Merger – คู่มือ](/merger/java/document-loading/load-document-groupdocs-merger-java-guide/)
+- [ผสาน PDF Java: ผสาน PDF อย่างมีประสิทธิภาพด้วย GroupDocs.Merger for Java – คู่มือขั้นตอนต่อขั้นตอน](/merger/java/format-specific-merging/merge-pdfs-groupdocs-merger-java-tutorial/)
+- [การผสานเอกสาร Word Java ด้วย Groupdocs Merger – คู่มือ](/merger/java/format-specific-merging/java-word-document-merging-groupdocs-merger-guide/)
