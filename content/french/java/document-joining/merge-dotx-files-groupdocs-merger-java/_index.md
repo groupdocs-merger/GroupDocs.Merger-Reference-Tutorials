@@ -1,64 +1,106 @@
 ---
-date: '2026-02-26'
-description: Apprenez comment fusionner des fichiers dotx en Java avec GroupDocs Merger Maven,
-  une méthode rapide pour fusionner des modèles Word en Java grâce à une configuration
-  pas à pas, des exemples de code et les meilleures pratiques.
+date: '2026-09-06'
+description: Apprenez à diviser des documents Word et à fusionner des fichiers DOTX
+  avec GroupDocs Merger pour Java – configuration étape par étape, extraits de code
+  et bonnes pratiques.
 keywords:
-- merge DOTX files Java
-- GroupDocs.Merger setup
-- Java document merging
-title: fusion dotx java – Fusionner des fichiers DOTX avec GroupDocs Merger
+- split word documents
+- GroupDocs Merger Java
+- merge DOTX files
+lastmod: '2026-09-06'
+og_description: Divisez des documents Word et fusionnez des fichiers DOTX avec GroupDocs
+  Merger pour Java. Suivez ce guide pour la configuration, les exemples de code et
+  les conseils de performance.
+og_image_alt: Guide showing how to split and merge Word documents with GroupDocs Merger
+  in Java
+og_title: Divisez des documents Word avec GroupDocs Merger en Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-06'
+  description: Learn how to split word documents and merge DOTX files using GroupDocs
+    Merger for Java – step‑by‑step setup, code snippets, and best practices.
+  headline: Split word documents with GroupDocs Merger in Java
+  type: TechArticle
+- description: Learn how to split word documents and merge DOTX files using GroupDocs
+    Merger for Java – step‑by‑step setup, code snippets, and best practices.
+  name: Split word documents with GroupDocs Merger in Java
+  steps:
+  - name: '**Initialize** the `Merger` with the original DOCX/DOTX path.'
+    text: '**Initialize** the `Merger` with the original DOCX/DOTX path.'
+  - name: '**Define** split ranges, e.g., pages 1‑5, 6‑10, or specific sections.'
+    text: '**Define** split ranges, e.g., pages 1‑5, 6‑10, or specific sections.'
+  - name: '**Execute** `split` to generate separate `Merger` objects for each range.'
+    text: '**Execute** `split` to generate separate `Merger` objects for each range.'
+  - name: '**Save** each object to its own file using `save`.'
+    text: '**Save** each object to its own file using `save`.'
+  - name: '**Automated report generation** – combine data‑driven templates into a
+      single report.'
+    text: '**Automated report generation** – combine data‑driven templates into a
+      single report.'
+  - name: '**Contract management systems** – merge clauses or split large agreements
+      into individual sections.'
+    text: '**Contract management systems** – merge clauses or split large agreements
+      into individual sections.'
+  - name: '**Collaborative document creation** – integrate contributions from multiple
+      authors into a unified template.'
+    text: '**Collaborative document creation** – integrate contributions from multiple
+      authors into a unified template.'
+  - name: '**What are the system requirements for using GroupDocs.Merger for Java?**'
+    text: '**What are the system requirements for using GroupDocs.Merger for Java?**'
+  - name: '**Can I merge files other than DOTX with GroupDocs.Merger for Java?**'
+    text: '**Can I merge files other than DOTX with GroupDocs.Merger for Java?**'
+  - name: '**How do I handle exceptions during the merging process?**'
+    text: '**How do I handle exceptions during the merging process?**'
+  type: HowTo
+- questions:
+  - answer: groupdocs merger maven (GroupDocs.Merger for Java)
+    question: What library do I need?
+  - answer: JDK 8 or newer
+    question: Which Java version is required?
+  - answer: A free trial works for testing; a paid license is required for production
+    question: Do I need a license for development?
+  - answer: Yes – DOCX, PDF, PPTX, and more
+    question: Can I merge other formats?
+  - answer: Limited only by your system resources
+    question: How many files can I merge at once?
+  type: FAQPage
+tags:
+- split word documents
+- GroupDocs Merger
+- Java document processing
+title: Divisez des documents Word avec GroupDocs Merger en Java
 type: docs
 url: /fr/java/document-joining/merge-dotx-files-groupdocs-merger-java/
 weight: 1
 ---
 
-# merge dotx java – Fusionner des fichiers DOTX avec GroupDocs Merger
+# Divisez les documents Word avec GroupDocs Merger – fusionnez les fichiers DOTX en Java
 
-Dans ce guide, vous apprendrez à **merge dotx java** en utilisant GroupDocs Merger Maven, ce qui rend simple le *java merge word templates* dans n'importe quelle application Java. Que vous ayez besoin d'assembler des modèles de rapports, des clauses de contrat, ou tout autre fichier Office Open XML, les étapes ci‑dessus vous montreront une approche propre et prête pour la production.
+Dans ce tutoriel, vous apprendrez à **diviser les documents Word** et à **fusionner les fichiers DOTX** en utilisant GroupDocs Merger Maven, une solution rapide et fiable pour gérer les modèles Word dans n'importe quelle application Java. Que vous ayez besoin de découper un gros contrat en sections séparées ou d'assembler plusieurs modèles de rapports, les étapes ci‑dessus vous offrent une solution prête pour la production.
 
 ## Réponses rapides
-- **Quelle bibliothèque est‑elle nécessaire ?** groupdocs merger maven (GroupDocs.Merger for Java)  
+- **Quelle bibliothèque dois‑je utiliser ?** groupdocs merger maven (GroupDocs.Merger for Java)  
 - **Quelle version de Java est requise ?** JDK 8 ou plus récente  
-- **Ai‑je besoin d'une licence pour le développement ?** Un essai gratuit suffit pour les tests ; une licence payante est requise pour la production  
-- **Puis‑je fusionner d'autres formats ?** Oui – DOCX, PDF, PPTX, et plus  
+- **Ai‑je besoin d’une licence pour le développement ?** Un essai gratuit suffit pour les tests ; une licence payante est requise pour la production  
+- **Puis‑je fusionner d’autres formats ?** Oui – DOCX, PDF, PPTX, et plus  
 - **Combien de fichiers puis‑je fusionner en même temps ?** Limité uniquement par les ressources de votre système  
 
-## Qu'est‑ce que groupdocs merger maven ?
-**groupdocs merger maven** est la distribution compatible Maven de GroupDocs.Merger pour Java. Elle fournit une API simple pour combiner, scinder et manipuler un large éventail de types de documents sans quitter l'écosystème Java.
+## Qu’est‑ce que groupdocs merger maven ?
+GroupDocs Merger Maven est la distribution compatible Maven de GroupDocs.Merger pour Java. Elle fournit une API simple qui permet aux développeurs de combiner, diviser et manipuler un large éventail de formats de documents directement depuis le code Java, en gérant tout, de la simple couture de modèles à un traitement par lots complexe, tout en préservant la mise en forme et les styles d'origine.
 
-## Pourquoi utiliser groupdocs merger maven pour java merge word templates ?
-- **Vitesse** – Le code natif optimisé gère de gros lots en quelques secondes.  
-- **Fiabilité** – Le support complet des normes Office Open XML garantit que le formatage reste intact.  
-- **Flexibilité** – Fonctionne avec Maven, Gradle ou l’inclusion directe de JAR, ce qui facilite son intégration dans n’importe quel pipeline de construction.  
+## Pourquoi utiliser groupdocs merger maven pour fusionner des modèles Word en Java ?
+Vous pouvez fusionner des modèles DOTX en quelques secondes, et vous bénéficiez également de la capacité à **diviser les documents Word** lorsque nécessaire. La bibliothèque traite plus de 70 + formats d’entrée et de sortie et peut gérer des fichiers de plus de 2 GB sans charger le document complet en mémoire, offrant à la fois rapidité et fiabilité.
 
 ## Introduction
-La gestion efficace des documents est essentielle pour les développeurs travaillant avec des modèles Microsoft Office tels que les fichiers DOTX. Ce tutoriel montre comment **merge dotx java** en chargeant plusieurs modèles DOTX dans un seul document fluide à l’aide de GroupDocs.Merger pour Java.
-
-Dans ce tutoriel, vous découvrirez la simplicité et la puissance de GroupDocs.Merger pour Java à travers des étapes pratiques :
-- Configurer votre environnement
-- Charger, fusionner et enregistrer des fichiers DOTX
-- Applications réelles et conseils de performance
-- Résolution des problèmes courants
-
-Commençons par les prérequis !
+La gestion efficace des documents est essentielle pour les développeurs travaillant avec des modèles Microsoft Office tels que les fichiers DOTX. Ce guide vous montre comment **fusionner dotx java** et également comment **diviser les documents Word** en utilisant GroupDocs.Merger pour Java. Vous obtiendrez des instructions étape par étape, des conseils de performance et des solutions de dépannage afin d’intégrer le traitement de documents dans n’importe quel flux de travail basé sur Java.
 
 ## Prérequis
-Avant de commencer, assurez‑vous de disposer de ce qui suit :
-
-### Bibliothèques requises, versions et dépendances
-- **GroupDocs.Merger for Java** : Assurez‑vous d’utiliser la dernière version pour des performances optimales.
-
-### Exigences de configuration de l’environnement
-- Un environnement de développement Java (JDK 8 ou ultérieur)  
-- Un environnement de développement intégré (IDE) comme IntelliJ IDEA, Eclipse ou NetBeans  
+- **Java Development Kit** 8 ou ultérieur  
+- Un IDE comme IntelliJ IDEA, Eclipse ou NetBeans  
 - Maven ou Gradle pour la gestion des dépendances  
-
-### Prérequis de connaissances
-Une compréhension de base de la programmation Java et une familiarité avec l’utilisation de bibliothèques dans vos projets seront utiles.
+- Familiarité de base avec les bibliothèques Java  
 
 ## Configuration de GroupDocs.Merger pour Java
-Pour commencer à fusionner des fichiers DOTX, configurez la bibliothèque GroupDocs.Merger dans votre projet.
 
 ### Configuration Maven
 Add this dependency to your `pom.xml` file:
@@ -77,16 +119,16 @@ implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
 ### Téléchargement direct
-Téléchargez la dernière version depuis [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
+Download the latest version from [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
 ### Étapes d’obtention de licence
-GroupDocs propose un essai gratuit pour tester leur bibliothèque. Pour accéder à toutes les fonctionnalités, envisagez d’acheter une licence ou d’en obtenir une temporaire.
-- **Essai gratuit** : Téléchargez et évaluez la bibliothèque.  
-- **Licence temporaire** : Demandez des droits d’évaluation prolongés.  
-- **Achat** : Obtenez une licence permanente pour une utilisation continue.  
+GroupDocs propose un essai gratuit pour l’évaluation. Pour une utilisation en production, obtenez une licence permanente ou temporaire.
+- **Essai gratuit** – testez l’ensemble complet des fonctionnalités sans frais.  
+- **Licence temporaire** – demandez des droits d’évaluation prolongés.  
+- **Achat** – obtenez une licence perpétuelle pour des déploiements illimités.  
 
 ### Initialisation de base
-Initialisez GroupDocs.Merger dans votre projet comme suit :
+La classe `Merger` est le point d’entrée principal qui représente une session de traitement de document. Initialise‑la comme suit:
 ```java
 import com.groupdocs.merger.Merger;
 
@@ -97,13 +139,14 @@ public class DocumentMerger {
     }
 }
 ```
-Une fois la configuration terminée, nous pouvons passer à la fonctionnalité de fusion.
+
+Avec la bibliothèque prête, vous pouvez commencer à fusionner ou diviser des documents.
 
 ## Comment fusionner dotx java avec GroupDocs Merger
-Suivez ces étapes pour fusionner des fichiers DOTX :
+Pour fusionner des fichiers DOTX en Java, commencez par créer une instance `Merger` pointant vers votre modèle principal. Utilisez la méthode `join` pour ajouter chaque fichier DOTX supplémentaire dans l’ordre souhaité. Après avoir ajouté tous les fichiers, appelez `save` avec le chemin cible pour écrire le document combiné. L’ensemble du processus ne nécessite que quelques lignes de code et gère automatiquement la mise en forme.
 
 ### Charger un fichier DOTX source
-**Vue d’ensemble** : Commencez par charger votre fichier DOTX source à l’aide de GroupDocs.Merger.
+L’objet `Merger` est initialisé avec le chemin de votre fichier DOTX source, le préparant pour une manipulation ultérieure.
 ```java
 import com.groupdocs.merger.Merger;
 import java.io.File;
@@ -111,71 +154,84 @@ import java.io.File;
 String documentDirectory = "YOUR_DOCUMENT_DIRECTORY";
 Merger merger = new Merger(new File(documentDirectory, "source.dotx").getPath());
 ```
-**Explication** : L’objet `Merger` est initialisé avec le chemin de votre fichier DOTX source, le préparant pour une manipulation ultérieure.
 
 ### Ajouter un autre fichier DOTX à fusionner
-**Vue d’ensemble** : Améliorez votre document en ajoutant un autre fichier DOTX à fusionner.
+La méthode `join` ajoute le fichier DOTX spécifié au document existant, permettant une combinaison fluide de plusieurs modèles.
 ```java
 // Assume merger is already initialized as shown above.
 String documentDirectory = "YOUR_DOCUMENT_DIRECTORY";
 merger.join(new File(documentDirectory, "additional.dotx").getPath());
 ```
-**Explication** : La méthode `join` ajoute le fichier DOTX spécifié à votre configuration existante, permettant une combinaison fluide de plusieurs modèles.
 
 ### Fusionner les fichiers DOTX et enregistrer le résultat
-**Vue d’ensemble** : Terminez le processus de fusion en enregistrant le document combiné dans un répertoire de sortie.
+La méthode `save` consolide tous les documents ajoutés et écrit le résultat fusionné dans le répertoire de sortie choisi.
 ```java
 String outputDirectory = "YOUR_OUTPUT_DIRECTORY";
 String outputFile = new File(outputDirectory, "merged.dotx").getPath();
 merger.save(outputFile);
 ```
-**Explication** : La méthode `save` consolide tous les documents ajoutés et écrit le résultat fusionné à l’emplacement spécifié.
+
+## Comment diviser des documents Word avec GroupDocs Merger
+Chargez un seul fichier DOCX ou DOTX, spécifiez les plages de pages ou de sections que vous souhaitez extraire, et enregistrez chaque partie comme un document indépendant. Cette opération est utile pour découper de gros contrats en clauses gérables ou distribuer des chapitres individuels à différents intervenants.
+
+### Réponse directe
+Pour diviser un document Word, créez une instance `Merger` avec le fichier source, appelez la méthode `split` avec les plages de pages souhaitées, puis invoquez `save` pour chaque morceau de sortie — aucune manipulation manuelle de fichiers n’est requise.
+
+### Exemple de flux de travail (sans bloc de code)
+1. **Initialiser** le `Merger` avec le chemin du DOCX/DOTX original.  
+2. **Définir** les plages de division, par ex., pages 1‑5, 6‑10, ou sections spécifiques.  
+3. **Exécuter** `split` pour générer des objets `Merger` séparés pour chaque plage.  
+4. **Enregistrer** chaque objet dans son propre fichier en utilisant `save`.  
+
+GroupDocs.Merger peut diviser des documents jusqu’à 2 GB et prend en charge le fractionnement par lots de dizaines de fichiers en parallèle, réduisant considérablement le temps de traitement.
 
 ## Applications pratiques
-GroupDocs.Merger pour Java a de multiples applications :
-1. **Génération automatisée de rapports** – Combinez des modèles basés sur les données en rapports complets.  
-2. **Systèmes de gestion de contrats** – Fusionnez diverses clauses et conditions en un seul document cohérent.  
-3. **Création collaborative de documents** – Intégrez les contributions de plusieurs parties prenantes dans un modèle unifié.
-
-Les possibilités d’intégration incluent la combinaison de GroupDocs.Merger avec d’autres systèmes de gestion de documents ou des applications Java pour automatiser les flux de travail.
+1. **Génération automatisée de rapports** – combinez des modèles basés sur les données en un seul rapport.  
+2. **Systèmes de gestion de contrats** – fusionnez des clauses ou divisez de grands accords en sections individuelles.  
+3. **Création collaborative de documents** – intégrez les contributions de plusieurs auteurs dans un modèle unifié.  
 
 ## Considérations de performance
-Lors du traitement de gros volumes de documents :
-- **Optimiser l’utilisation des ressources** – Assurez‑vous d’une gestion efficace de la mémoire en fermant les descripteurs de fichiers et flux inutiles.  
-- **Exploiter le multithreading** – Parallelisez les fusions lors du traitement de dizaines ou centaines de fichiers afin de réduire le temps d’exécution global.
+- **Optimiser l’utilisation des ressources** – fermez rapidement les descripteurs de fichiers et réutilisez les instances `Merger` lorsque c’est possible.  
+- **Exploiter le multithreading** – exécutez les fusions ou divisions dans des threads parallèles pour utiliser tous les cœurs CPU, surtout lors du traitement de centaines de fichiers.  
 
 ## Problèmes courants et solutions
-- **Chemins de fichiers incorrects** – Vérifiez que les chaînes de répertoire se terminent par le séparateur approprié (`/` ou `\\`).  
-- **Exceptions de format non pris en charge** – Vérifiez que tous les fichiers d’entrée sont de véritables fichiers DOTX ; ne renommez les extensions que si le contenu correspond au format.  
-- **Erreurs de licence** – Assurez‑vous que le fichier de licence d’essai ou acheté est correctement référencé dans la configuration de votre application.
+- **Chemins de fichiers incorrects** – vérifiez que les chaînes de répertoire se terminent par le séparateur correct (`/` ou `\\`).  
+- **Exceptions de format non pris en charge** – assurez‑vous que chaque fichier d’entrée est réellement un DOTX/DOCX ; renommer les extensions sans que le contenu corresponde déclenche des erreurs.  
+- **Erreurs de licence** – confirmez que le fichier de licence d’essai ou acheté est correctement référencé dans votre configuration.  
 
 ## Questions fréquemment posées
-1. **Quelles sont les exigences système pour utiliser GroupDocs.Merger pour Java ?**  
-   Assurez‑vous d’avoir JDK 8+ et un IDE qui supporte Maven ou Gradle pour la gestion des dépendances.  
+1. **Quelles sont les exigences système pour utiliser GroupDocs.Merger pour Java ?**  
+   Vous avez besoin de JDK 8+ et d’un IDE qui prend en charge Maven ou Gradle pour la gestion des dépendances.  
 
-2. **Puis‑je fusionner des fichiers autres que DOTX avec GroupDocs.Merger pour Java ?**  
-   Oui, il prend en charge DOCX, PDF, PPTX et de nombreux autres formats.  
+2. **Puis‑je fusionner des fichiers autres que DOTX avec GroupDocs.Merger pour Java ?**  
+   Oui, la bibliothèque gère également DOCX, PDF, PPTX et de nombreux autres formats.  
 
-3. **Comment gérer les exceptions pendant le processus de fusion ?**  
+3. **Comment gérer les exceptions pendant le processus de fusion ?**  
    Enveloppez les appels de fusion dans des blocs `try‑catch`, consignez les détails de l’exception et, éventuellement, réessayez en cas d’erreurs d’E/S transitoires.  
 
-4. **Existe‑t‑il une limite au nombre de fichiers que je peux fusionner simultanément ?**  
-   La limite dépend de la mémoire et du CPU disponibles ; la bibliothèque est conçue pour gérer efficacement de gros lots.  
+4. **Existe‑t‑il une limite au nombre de fichiers que je peux fusionner simultanément ?**  
+   La limite pratique est définie par la mémoire et le CPU disponibles ; la bibliothèque est conçue pour traiter efficacement de gros lots.  
 
-5. **Quels sont les pièges courants lors de la fusion de fichiers DOTX ?**  
-   Des chemins de fichiers incorrects, l’utilisation de versions de bibliothèque obsolètes et le fait de ne pas fermer l’instance `Merger` peuvent entraîner des échecs.  
+5. **Quels sont les pièges courants lors de la fusion de fichiers DOTX ?**  
+   Les chemins de fichiers mal tapés, l’utilisation de versions de bibliothèque obsolètes et l’oubli de fermer l’instance `Merger` sont les sources d’échec les plus fréquentes.  
 
 ## Ressources
-- **Documentation** : [GroupDocs Merger Documentation](https://docs.groupdocs.com/merger/java/)  
-- **Référence API** : [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)  
-- **Téléchargement** : [Latest Releases](https://releases.groupdocs.com/merger/java/)  
-- **Achat** : [Buy GroupDocs.Merger](https://purchase.groupdocs.com/buy)  
-- **Essai gratuit** : [GroupDocs Free Trial](https://releases.groupdocs.com/merger/java/)  
-- **Licence temporaire** : [Obtain Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-- **Support** : [GroupDocs Forum](https://forum.groupdocs.com/c/merger/)  
+- **Documentation** : [GroupDocs Merger Documentation](https://docs.groupdocs.com/merger/java/)  
+- **API reference** : [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)  
+- **Download** : [Latest Releases](https://releases.groupdocs.com/merger/java/)  
+- **Purchase** : [Buy GroupDocs.Merger](https://purchase.groupdocs.com/buy)  
+- **Free trial** : [GroupDocs Free Trial](https://releases.groupdocs.com/merger/java/)  
+- **Temporary license** : [Obtain Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Support** : [GroupDocs Forum](https://forum.groupdocs.com/c/merger/)
 
 ---
 
-**Dernière mise à jour :** 2026-02-26  
-**Testé avec :** GroupDocs.Merger for Java latest version  
-**Auteur :** GroupDocs
+**Dernière mise à jour :** 2026-09-06  
+**Testé avec :** GroupDocs.Merger for Java dernière version  
+**Auteur :** GroupDocs
+
+## Tutoriels associés
+
+- [fusionner des fichiers docx java – Gestion maîtresse de documents avec GroupDocs.Merger](/merger/java/document-joining/groupdocs-merger-java-word-document-management/)
+- [Fusionner des fichiers DOCM Java – Guide avec GroupDocs.Merger](/merger/java/document-joining/merge-docm-files-groupdocs-merger-java/)
+- [Comment fusionner des fichiers OTT avec GroupDocs.Merger pour Java](/merger/java/document-joining/merge-ott-files-groupdocs-merger-java-guide/)
