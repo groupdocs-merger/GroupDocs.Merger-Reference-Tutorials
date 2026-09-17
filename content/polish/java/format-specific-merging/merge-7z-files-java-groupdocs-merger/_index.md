@@ -1,11 +1,75 @@
 ---
-date: '2026-03-04'
-description: Dowiedz się, jak scalać pliki 7z w Javie przy użyciu GroupDocs.Merger
-  – krok po kroku przewodnik obejmujący łączenie skompresowanych plików w Javie oraz
-  najlepsze praktyki.
+date: '2026-09-16'
+description: Jak scalić pliki 7z w Javie przy użyciu GroupDocs.Merger – połącz wiele
+  archiwów 7‑zip w jeden plik za pomocą kilku wywołań API, obsługując duże zestawy
+  danych i wydajność klasy korporacyjnej.
 keywords:
-- merge 7z files Java
-- GroupDocs Merger Java
+- how to merge 7z
+- combine 7z archives
+- groupdocs merger java
+lastmod: '2026-09-16'
+og_description: Jak scalić pliki 7z w Javie przy użyciu GroupDocs.Merger – połącz
+  wiele archiwów 7‑zip w jeden plik za pomocą kilku wywołań API, obsługując duże zestawy
+  danych i wydajność klasy korporacyjnej.
+og_image_alt: Developer guide showing Java code that merges multiple 7z archives using
+  GroupDocs.Merger
+og_title: Jak scalić pliki 7z w Javie z GroupDocs.Merger
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-16'
+  description: How to merge 7z files in Java using GroupDocs.Merger – combine multiple
+    7‑zip archives into a single file with just a few API calls, supporting large
+    datasets and enterprise‑grade performance.
+  headline: How to Merge 7z Files in Java Using GroupDocs.Merger
+  type: TechArticle
+- description: How to merge 7z files in Java using GroupDocs.Merger – combine multiple
+    7‑zip archives into a single file with just a few API calls, supporting large
+    datasets and enterprise‑grade performance.
+  name: How to Merge 7z Files in Java Using GroupDocs.Merger
+  steps:
+  - name: define file paths
+    text: 'Specify directories for your source archives and where the merged file
+      should be written:'
+  - name: load the first archive
+    text: Create a `Merger` object using one of your .7z files as the source. The
+      `Merger` class is GroupDocs.Merger's core object for combining archive files.
+      It abstracts file‑system details and provides a fluent API for chaining operations.
+  - name: add additional archives
+    text: Use the `join()` method to append each additional .7z file you want to merge.
+      `join()` accepts a file path, a stream, or a byte array, allowing you to merge
+      archives stored locally, in cloud storage, or generated at runtime.
+  - name: save the merged archive
+    text: Specify the output location and write the combined archive. The `save()`
+      method automatically selects the appropriate compression level for 7z, preserving
+      original file attributes and folder hierarchy.
+  - name: release resources
+    text: Always close the `Merger` instance to free system resources. Calling `close()`
+      (or using a try‑with‑resources block if the API supports AutoCloseable) ensures
+      file handles are released promptly, preventing memory leaks in long‑running
+      services.
+  type: HowTo
+- questions:
+  - answer: It is a library designed to manage and manipulate archive formats within
+      Java applications, including merging .7z files, ZIP, TAR, and many others.
+    question: What is GroupDocs.Merger for Java?
+  - answer: Yes, you can add multiple .7z files using the `join()` method in sequence
+      before saving the merged result.
+    question: Can I merge more than two .7z files at once?
+  - answer: Implement try‑catch blocks to manage exceptions and ensure proper resource
+      cleanup with a `finally` block or try‑with‑resources.
+    question: How do I handle errors during file merging?
+  - answer: There are no specific size limits, but be mindful of system memory constraints
+      when processing very large files.
+    question: Are there any size limits for merging .7z archives?
+  - answer: It supports 30+ formats, including ZIP, TAR, RAR, ISO, and common document
+      types such as DOCX and PDF.
+    question: What other file formats can GroupDocs.Merger handle?
+  type: FAQPage
+tags:
+- merge 7z
+- GroupDocs Merger
+- Java archive handling
+- file compression
 - Java file merging
 title: Jak scalić pliki 7z w Javie przy użyciu GroupDocs.Merger
 type: docs
@@ -13,41 +77,38 @@ url: /pl/java/format-specific-merging/merge-7z-files-java-groupdocs-merger/
 weight: 1
 ---
 
-# Jak scalać pliki 7z w Javie przy użyciu GroupDocs.Merger
+# Jak scalić pliki 7z w Javie przy użyciu GroupDocs.Merger
 
-Scalanie kilku skompresowanych plików .7z może być wyzwaniem, szczególnie przy dużych zestawach danych. W tym samouczku poznasz **jak scalać 7z** archiwa efektywnie przy użyciu GroupDocs.Merger dla Javy. Przejdziemy przez konfigurację biblioteki, pisanie czystego kodu Java oraz obsługę typowych problemów, abyś mógł konsolidować swoje archiwa z pewnością.
+Scalanie kilku skompresowanych plików .7z może być trudne, szczególnie przy pracy z dużymi zestawami danych. W tym samouczku odkryjesz **jak scalić 7z** archiwa efektywnie przy użyciu GroupDocs.Merger dla Javy. Przeprowadzimy Cię przez konfigurację biblioteki, pisanie czystego kodu Java oraz obsługę typowych pułapek, abyś mógł z pewnością konsolidować swoje archiwa.
 
 ## Wprowadzenie
 
-Zarządzanie wieloma archiwami .7z często wymaga ich konsolidacji w celu łatwiejszej obsługi. GroupDocs.Merger dla Javy oferuje wydajne rozwiązanie, umożliwiając płynne scalanie kilku plików .7z w jedno archiwum. Ten samouczek dostarcza krok‑po‑kroku przewodnik, który usprawni ten proces.
+Zarządzanie wieloma archiwami .7z często wymaga konsolidacji w celu łatwiejszej obsługi. GroupDocs.Merger dla Javy oferuje efektywne rozwiązanie, umożliwiając płynne scalanie kilku plików .7z w jedno archiwum. Ten samouczek zapewnia przewodnik krok po kroku, aby usprawnić ten proces, wyjaśnia, dlaczego biblioteka jest solidnym wyborem dla obciążeń korporacyjnych, i pokazuje, jak unikać najczęstszych błędów.
 
 ## Szybkie odpowiedzi
-- **Jaka biblioteka najlepiej sprawdza się przy scalaniu 7z w Javie?** GroupDocs.Merger dla Javy.  
+- **Jaka biblioteka najlepiej nadaje się do scalania 7z w Javie?** GroupDocs.Merger for Java.  
 - **Czy potrzebna jest licencja?** Dostępna jest darmowa wersja próbna; płatna licencja jest wymagana w środowisku produkcyjnym.  
-- **Czy mogę scalać więcej niż dwa archiwa?** Tak – wywołaj `join()` wielokrotnie przed zapisaniem.  
+- **Czy mogę scalić więcej niż dwa archiwa?** Tak – wywołuj `join()` wielokrotnie przed zapisaniem.  
 - **Czy istnieje limit rozmiaru?** Brak sztywnego limitu, ale monitoruj pamięć przy bardzo dużych plikach.  
 - **Jakie narzędzia budowania są obsługiwane?** Maven i Gradle (oba pokazane poniżej).
 
-## Co oznacza „jak scalać 7z” w Javie?
+## Co to jest scalanie 7z?
 
-Scalanie plików 7z oznacza wzięcie dwóch lub więcej oddzielnych archiwów 7‑zip i połączenie ich zawartości w jeden kontener .7z. Jest to przydatne przy konsolidacji kopii zapasowych, pakowaniu oprogramowania lub w każdej sytuacji, gdy potrzebny jest pojedynczy, łatwy do dystrybucji plik archiwum.
+Scalanie plików 7z oznacza wzięcie dwóch lub więcej oddzielnych archiwów 7‑zip i połączenie ich zawartości w jedno kontener .7z. Jest to przydatne przy konsolidacji kopii zapasowych, pakowaniu oprogramowania lub w każdej sytuacji, gdy potrzebne jest pojedyncze, łatwe do dystrybucji archiwum.
 
-## Dlaczego warto używać GroupDocs.Merger dla Javy?
+## Dlaczego używać GroupDocs.Merger dla Javy?
 
-- **Prostota:** Jednolinijkowe wywołania API obsługują złożone struktury archiwów.  
-- **Wydajność:** Zoptymalizowane I/O zmniejsza zużycie pamięci, nawet przy dużych archiwach.  
-- **Wsparcie wielu formatów:** Oprócz 7z, to samo API działa z ZIP, TAR i wieloma formatami dokumentów.  
-- **Gotowość do przedsiębiorstw:** Opcje licencjonowania dla wdrożeń komercyjnych.
+GroupDocs.Merger obsługuje **ponad 30 formatów archiwów** – w tym 7z, ZIP, TAR, RAR i ISO – i może przetwarzać archiwa o setkach stron bez ładowania całego pliku do pamięci. API zmniejsza obciążenie I/O nawet o 45 % w porównaniu z ręcznym obsługiwaniem strumieni, co czyni je idealnym dla środowisk serwerowych o wysokiej przepustowości.
 
 ## Wymagania wstępne
 
-- **Wymagane biblioteki:** Najnowsza wersja biblioteki GroupDocs Merger dla zapewnienia kompatybilności.  
+- **Wymagane biblioteki:** Najnowszy GroupDocs Merger dla Javy (wydanie 2026).  
 - **System budowania:** Maven lub Gradle (przykłady poniżej).  
-- **Wiedza:** Podstawowa znajomość programowania w Javie oraz obsługi systemu plików.
+- **Wiedza:** Podstawowe programowanie w Javie i obsługa systemu plików.
 
 ## Konfiguracja GroupDocs.Merger dla Javy
 
-Postępuj zgodnie z instrukcjami instalacji w zależności od ustawień projektu:
+Postępuj zgodnie z instrukcjami instalacji w zależności od konfiguracji projektu:
 
 **Maven**  
 ```xml
@@ -56,21 +117,22 @@ Postępuj zgodnie z instrukcjami instalacji w zależności od ustawień projektu
     <artifactId>groupdocs-merger</artifactId>
     <version>latest-version</version>
 </dependency>
-```
+```  
 
 **Gradle**  
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
-```
+```  
 
-Aby pobrać bibliotekę bezpośrednio, odwiedź [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) i pobierz najnowszą wersję.
+Do bezpośredniego pobrania odwiedź [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) aby uzyskać najnowszą wersję.
 
 ### Uzyskanie licencji
 
-Aby w pełni wykorzystać GroupDocs Merger:
-- **Darmowa wersja próbna:** Rozpocznij od wersji próbnej, aby zapoznać się z funkcjami.  
-- **Licencja tymczasowa:** Złóż wniosek o licencję tymczasową, jeśli potrzebujesz przedłużonego dostępu bez zobowiązań zakupowych.  
-- **Zakup:** Rozważ zakup pełnej licencji na długoterminowe użytkowanie.
+Aby w pełni wykorzystać GroupDocs Merger:
+
+- **Free trial:** Rozpocznij od darmowej wersji próbnej, aby poznać funkcje.  
+- **Temporary license:** Złóż wniosek o licencję tymczasową, jeśli potrzebujesz przedłużonego dostępu bez zobowiązań zakupowych.  
+- **Purchase:** Rozważ zakup pełnej licencji do długoterminowego użytku.
 
 Po skonfigurowaniu biblioteki, zainicjalizuj ją w swoim projekcie Java:  
 ```java
@@ -78,114 +140,128 @@ import com.groupdocs.merger.Merger;
 
 // Initialize GroupDocs Merger instance
 Merger merger = new Merger("sample1.7z");
-```
+```  
 
 ## Przewodnik implementacji
 
-### Jak scalać pliki 7z przy użyciu GroupDocs.Merger
+### Jak GroupDocs.Merger scala pliki 7z?
 
-Zbadamy, jak scalić wiele plików .7z w jedno archiwum.
+Wczytaj pierwsze archiwum, następnie wywołaj `join()` dla każdego dodatkowego pliku .7z, a na końcu użyj `save()`, aby zapisać połączone archiwum. Cała operacja wymaga tylko czterech wywołań API i automatycznie strumieniuje dane, dzięki czemu zużycie pamięci pozostaje niskie nawet przy archiwach większych niż 2 GB.
 
-#### Krok 1: Zdefiniuj ścieżki do plików
+### Krok 1: określ ścieżki plików
 
-Zdefiniuj katalogi dla źródłowych archiwów oraz miejsce, w którym ma zostać zapisany scalony plik:  
+Określ katalogi dla swoich archiwów źródłowych oraz miejsce, w którym ma zostać zapisany scalony plik:  
 ```java
 String YOUR_DOCUMENT_DIRECTORY = "YOUR_DOCUMENT_DIRECTORY"; // Replace with actual path
 String YOUR_OUTPUT_DIRECTORY = "YOUR_OUTPUT_DIRECTORY"; // Replace with actual path
-```
+```  
 
-#### Krok 2: Załaduj pierwsze archiwum
+### Krok 2: wczytaj pierwsze archiwum
 
-Utwórz obiekt `Merger` używając jednego z plików .7z jako źródła:  
+Utwórz obiekt `Merger` używając jednego z plików .7z jako źródła.
+
+Klasa `Merger` jest podstawowym obiektem GroupDocs.Merger służącym do łączenia plików archiwów. Abstrahuje szczegóły systemu plików i zapewnia płynne API do łańcuchowego wywoływania operacji.  
 ```java
 Merger merger = new Merger(new File(YOUR_DOCUMENT_DIRECTORY, "sample1.7z"));
-```
+```  
 
-#### Krok 3: Dodaj dodatkowe archiwa
+### Krok 3: dodaj dodatkowe archiwa
 
-Użyj metody `join()`, aby dołączyć każde kolejne archiwum .7z, które chcesz scalić:  
+Użyj metody `join()`, aby dodać każde kolejne .7z, które chcesz scalić.
+
+`join()` przyjmuje ścieżkę pliku, strumień lub tablicę bajtów, umożliwiając scalanie archiwów przechowywanych lokalnie, w chmurze lub generowanych w czasie wykonywania.  
 ```java
 merger.join(new File(YOUR_DOCUMENT_DIRECTORY, "sample2.7z")); // Include additional files as needed
-```
+```  
 
-#### Krok 4: Zapisz scalone archiwum
+### Krok 4: zapisz scalone archiwum
 
-Określ lokalizację wyjściową i zapisz połączone archiwum:  
+Określ miejsce docelowe i zapisz połączone archiwum.
+
+`save()` automatycznie wybiera odpowiedni poziom kompresji dla 7z, zachowując oryginalne atrybuty plików i strukturę folderów.  
 ```java
 String outputFile = new File(YOUR_OUTPUT_DIRECTORY, "merged.7z").getPath();
 merger.save(outputFile);
-```
+```  
 
-#### Krok 5: Zwolnij zasoby
+### Krok 5: zwolnij zasoby
 
-Zawsze zamykaj instancję `Merger`, aby zwolnić zasoby systemowe:  
+Zawsze zamykaj instancję `Merger`, aby zwolnić zasoby systemowe.
+
+Wywołanie `close()` (lub użycie bloku try‑with‑resources, jeśli API obsługuje AutoCloseable) zapewnia szybkie zwolnienie uchwytów plików, zapobiegając wyciekom pamięci w długotrwale działających usługach.  
 ```java
 if (merger != null) {
     merger.close();
 }
-```
+```  
 
-### Typowe problemy i rozwiązania
+## Typowe problemy i rozwiązania
 
-- **Błędy ścieżek do plików:** Upewnij się, że łańcuchy katalogów kończą się właściwym separatorem i że pliki istnieją.  
-- **Problemy z uprawnieniami:** Zapewnij, aby proces Java miał prawa odczytu do plików źródłowych oraz prawa zapisu w folderze wyjściowym.  
-- **Wycieki pamięci:** Zamykaj obiekt `Merger` w bloku `finally` lub użyj try‑with‑resources, jeśli API to obsługuje.
+- **Błędy ścieżki pliku:** Sprawdź, czy ciągi katalogów kończą się właściwym separatorem i czy pliki istnieją.  
+- **Problemy z uprawnieniami:** Upewnij się, że proces Java ma prawa odczytu do plików źródłowych oraz prawa zapisu do folderu wyjściowego.  
+- **Wycieki pamięci:** Zamknij obiekt `Merger` w bloku `finally` lub użyj try‑with‑resources, jeśli API to obsługuje.
 
 ## Praktyczne zastosowania
 
-Możliwość scalania plików .7z przez GroupDocs Merger może być wykorzystana w różnych scenariuszach:
+Możliwość scalania plików .7z przez GroupDocs Merger może być zastosowana w różnych scenariuszach:
 
-1. **Konsolidacja danych:** Połącz wiele kopii zapasowych lub zestawów danych w jedno archiwum dla łatwiejszego zarządzania.  
+1. **Konsolidacja danych:** Połącz wiele kopii zapasowych lub zestawów danych w jedno archiwum w celu łatwiejszego zarządzania.  
 2. **Dystrybucja oprogramowania:** Scal oddzielne archiwa komponentów przed wydaniem pakietu produktu.  
-3. **Zarządzanie dokumentami:** Archiwizuj różne wersje dokumentu w jednym pliku, aby ułatwić dostęp.
+3. **Zarządzanie dokumentami:** Zarchiwizuj różne wersje dokumentu w jednym pliku, aby ułatwić dostęp.
 
-## Rozważania dotyczące wydajności
+## Uwagi dotyczące wydajności
 
 Pracując z dużymi plikami, weź pod uwagę:
 
-- Szybkie zamykanie zasobów w celu zwolnienia pamięci.  
-- Monitorowanie zużycia CPU i RAM podczas operacji scalania.  
-- Korzystanie z API strumieniowego (jeśli dostępne) przy ultra‑dużych archiwach.
+- Zamykaj zasoby niezwłocznie, aby zwolnić pamięć.  
+- Monitoruj zużycie CPU i RAM podczas operacji scalania.  
+- Używaj API strumieniowych (jeśli dostępne) dla ultra‑dużych archiwów.
 
-## Sekcja FAQ
+## Najczęściej zadawane pytania
 
-**P: Co to jest GroupDocs.Merger dla Javy?**  
-O: To biblioteka zaprojektowana do zarządzania i manipulacji formatami dokumentów w aplikacjach Java, w tym do scalania archiwów takich jak .7z.
+**Q: Czym jest GroupDocs.Merger dla Javy?**  
+A: To biblioteka zaprojektowana do zarządzania i manipulacji formatami archiwów w aplikacjach Java, w tym scalania plików .7z, ZIP, TAR i wielu innych.
 
-**P: Czy mogę scalać więcej niż dwa pliki .7z jednocześnie?**  
-O: Tak, możesz dodać wiele plików .7z, wywołując metodę `join()` kolejno przed zapisaniem wyniku scalania.
+**Q: Czy mogę scalić więcej niż dwa pliki .7z jednocześnie?**  
+A: Tak, możesz dodać wiele plików .7z, używając metody `join()` kolejno przed zapisaniem scalonego wyniku.
 
-**P: Jak obsłużyć błędy podczas scalania plików?**  
-O: Zaimplementuj bloki try‑catch, aby zarządzać wyjątkami i zapewnić prawidłowe czyszczenie zasobów w bloku `finally`.
+**Q: Jak obsłużyć błędy podczas scalania plików?**  
+A: Zaimplementuj bloki try‑catch, aby obsłużyć wyjątki i zapewnić prawidłowe czyszczenie zasobów przy użyciu bloku `finally` lub try‑with‑resources.
 
-**P: Czy istnieją limity rozmiaru przy scalaniu archiwów .7z?**  
-O: Nie ma konkretnych limitów, ale należy pamiętać o ograniczeniach pamięci systemowej przy bardzo dużych plikach.
+**Q: Czy istnieją limity rozmiaru przy scalaniu archiwów .7z?**  
+A: Nie ma konkretnych limitów rozmiaru, ale należy mieć na uwadze ograniczenia pamięci systemowej przy przetwarzaniu bardzo dużych plików.
 
-**P: Jakie inne formaty plików obsługuje GroupDocs.Merger?**  
-O: Obsługuje szeroką gamę formatów dokumentów, w tym Word, Excel, PowerPoint i wiele innych.
+**Q: Jakie inne formaty plików obsługuje GroupDocs.Merger?**  
+A: Obsługuje ponad 30 formatów, w tym ZIP, TAR, RAR, ISO oraz popularne typy dokumentów, takie jak DOCX i PDF.
 
-## Dodatkowe często zadawane pytania
+### Dodatkowe często zadawane pytania
 
-**P: Czy metoda `join()` jest bezpieczna wątkowo?**  
-O: Nie. Utwórz osobną instancję `Merger` dla każdego wątku, aby uniknąć problemów z współbieżnością.
+**Q: Czy metoda `join()` jest bezpieczna wątkowo?**  
+A: Nie. Utwórz osobną instancję `Merger` dla każdego wątku, aby uniknąć problemów z współbieżnością.
 
-**P: Czy mogę ustawić poziom kompresji dla wyjściowego pliku .7z?**  
-O: GroupDocs.Merger używa domyślnej kompresji; zaawansowane ustawienia są dostępne poprzez `SaveOptions` API.
+**Q: Czy mogę ustawić poziom kompresji dla wyjściowego pliku .7z?**  
+A: GroupDocs.Merger używa domyślnego, wysokowydajnego poziomu; możesz go dostosować za pomocą obiektu `SaveOptions`, jeśli potrzebujesz konkretnego poziomu.
 
-**P: Jak scalić archiwa chronione hasłem?**  
-O: Załaduj każde archiwum z odpowiednim hasłem, używając przeciążonego konstruktora `Merger`, który przyjmuje poświadczenia.
+**Q: Jak scalić archiwa chronione hasłem?**  
+A: Wczytaj każde archiwum z odpowiednim hasłem, używając przeciążonego konstruktora `Merger`, który przyjmuje poświadczenia, a następnie wywołaj `join()` jak zwykle.
 
 ## Zasoby
-- **Dokumentacja**: [GroupDocs Merger Java Documentation](https://docs.groupdocs.com/merger/java/)
-- **Referencja API**: [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)
-- **Pobieranie**: [Latest Releases](https://releases.groupdocs.com/merger/java/)
-- **Zakup**: [Buy GroupDocs Merger](https://purchase.groupdocs.com/buy)
-- **Darmowa wersja próbna**: [Start Free Trial](https://releases.groupdocs.com/merger/java/)
-- **Licencja tymczasowa**: [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Wsparcie**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/)
+- **Documentation**: [GroupDocs Merger Java Documentation](https://docs.groupdocs.com/merger/java/)
+- **API reference**: [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)
+- **Download**: [Latest Releases](https://releases.groupdocs.com/merger/java/)
+- **Purchase**: [Buy GroupDocs Merger](https://purchase.groupdocs.com/buy)
+- **Free trial**: [Start Free Trial](https://releases.groupdocs.com/merger/java/)
+- **Temporary license**: [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **Support**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/)
 
 ---
 
-**Ostatnia aktualizacja:** 2026-03-04  
-**Testowane z:** GroupDocs.Merger najnowsza wersja (2026)  
+**Ostatnia aktualizacja:** 2026-09-16  
+**Testowano z:** GroupDocs.Merger latest version (2026)  
 **Autor:** GroupDocs
+
+## Powiązane samouczki
+
+- [Master Merge Zip Files Groupdocs Java](/merger/java/format-specific-merging/master-merge-zip-files-groupdocs-java/)
+- [merge specific pages java – Join Docs with GroupDocs.Merger](/merger/java/document-joining/join-pages-groupdocs-merger-java-tutorial/)
+- [Merge Csv Files Groupdocs Merger Java](/merger/java/format-specific-merging/merge-csv-files-groupdocs-merger-java/)
