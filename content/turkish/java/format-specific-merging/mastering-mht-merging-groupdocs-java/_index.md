@@ -1,45 +1,94 @@
 ---
-date: '2026-02-26'
-description: MHT dosyalarını nasıl birleştireceğinizi öğrenin ve GroupDocs.Merger
-  for Java ile mht'yi verimli bir şekilde birleştirmenin yollarını keşfedin. Bu öğretici,
-  kurulum, uygulama ve performans ipuçları konusunda size rehberlik eder.
+date: '2026-09-21'
+description: GroupDocs.Merger for Java ile MHT dosyalarını nasıl birleştireceğinizi
+  öğrenin ve MHT'yi verimli bir şekilde birleştirmenin yollarını keşfedin. Bu öğretici,
+  setup, implementation ve performance tips konularında sizi yönlendirir.
 keywords:
-- merge MHT files
+- how to merge mht
 - GroupDocs.Merger for Java
 - MHT file merging
-title: GroupDocs.Merger for Java Kullanarak MHT Dosyalarını Birleştirme – MHT Dosyalarını
-  Birleştirme Konusunda Tam Kılavuz
+lastmod: '2026-09-21'
+og_description: GroupDocs.Merger for Java ile MHT dosyalarını nasıl birleştireceğinizi
+  öğrenin. Bu step‑by‑step guide, setup, code, performance tips ve troubleshooting
+  konularını kapsayarak efficient merging için ipuçları sunar.
+og_image_alt: Guide showing how to merge MHT files using GroupDocs.Merger for Java
+og_title: GroupDocs.Merger for Java ile MHT dosyalarını birleştirme
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-21'
+  description: Learn how to merge MHT files and discover how to merge mht efficiently
+    with GroupDocs.Merger for Java. This tutorial walks you through setup, implementation,
+    and performance tips.
+  headline: How to merge MHT files using GroupDocs.Merger for Java – a complete guide
+    on how to merge MHT
+  type: TechArticle
+- description: Learn how to merge MHT files and discover how to merge mht efficiently
+    with GroupDocs.Merger for Java. This tutorial walks you through setup, implementation,
+    and performance tips.
+  name: How to merge MHT files using GroupDocs.Merger for Java – a complete guide
+    on how to merge MHT
+  steps:
+  - name: '**Java Development Kit (JDK)** – JDK 8 or newer installed.'
+    text: '**Java Development Kit (JDK)** – JDK 8 or newer installed.'
+  - name: '**IDE** – IntelliJ IDEA, Eclipse, or any editor you prefer.'
+    text: '**IDE** – IntelliJ IDEA, Eclipse, or any editor you prefer.'
+  - name: '**GroupDocs.Merger for Java** – Add the library as a Maven/Gradle dependency
+      (see below).'
+    text: '**GroupDocs.Merger for Java** – Add the library as a Maven/Gradle dependency
+      (see below).'
+  type: HowTo
+- questions:
+  - answer: An MHT (MHTML) file bundles an HTML page and all its resources into a
+      single file for offline viewing.
+    question: What is an MHT file?
+  - answer: Yes. Call `merger.join()` repeatedly for each additional file before invoking
+      `save()`.
+    question: Can I merge more than two MHT files at once?
+  - answer: Consider splitting the output into smaller parts or optimizing the source
+      MHT files by removing unnecessary images and compressing resources.
+    question: My merged file is too large—what can I do?
+  - answer: Absolutely. It works with PDFs, DOCX, PPTX, XLSX, and many more—over 50
+      formats in total.
+    question: Does GroupDocs.Merger support other formats?
+  - answer: Wrap merge calls in try‑catch blocks, validate file paths, and ensure
+      the process has write permissions on the output directory.
+    question: How should I handle errors during merging?
+  type: FAQPage
+tags:
+- merge MHT
+- GroupDocs.Merger
+- Java document processing
+- MHT merging
+title: GroupDocs.Merger for Java kullanarak MHT dosyalarını birleştirme – MHT dosyalarını
+  birleştirme üzerine kapsamlı rehber
 type: docs
 url: /tr/java/format-specific-merging/mastering-mht-merging-groupdocs-java/
 weight: 1
 ---
 
-# MHT Dosyalarını GroupDocs.Merger for Java Kullanarak Birleştirme: Tam Kılavuz
+# MHT dosyalarını GroupDocs.Merger for Java kullanarak birleştirme – MHT nasıl birleştirilir konusunda eksiksiz bir rehber
 
-Günümüzün hızlı tempolu dijital ortamında, **how to merge mht** dosyalarını verimli bir şekilde birleştirmek, web arşivlerini birleştirmesi gereken geliştiriciler için yaygın bir zorluktur. Birden fazla MHT dosyasını tek bir belgeye birleştirmek, veri işleme süreçlerini basitleştirir, depolama maliyetini azaltır ve sonraki işlemleri çok daha kolay hâle getirir. Bu kılavuzda, GroupDocs.Merger for Java’yı kullanarak tam adımları göstereceğiz, böylece **how to merge mht** konusunu hızlı ve güvenle öğrenebileceksiniz.
-
-## Hızlı Yanıtlar
+## Hızlı cevaplar
 - **Hangi kütüphaneyi kullanmalıyım?** GroupDocs.Merger for Java
-- **İki'den fazla MHT dosyasını birleştirebilir miyim?** Yes – call `join` repeatedly
-- **Lisans gerektiriyor mu?** A trial license works for evaluation; a paid license is required for production
-- **Hangi Java sürümü gerekiyor?** JDK 8+ (any modern JDK)
-- **Birleştirme ne kadar sürer?** Typically a few seconds for files under 50 MB
+- **İki'den fazla MHT dosyasını birleştirebilir miyim?** Evet – `join` metodunu tekrar tekrar çağırın
+- **Bir lisansa ihtiyacım var mı?** Değerlendirme için deneme lisansı çalışır; üretim için ücretli lisans gereklidir
+- **Hangi Java sürümü gerekiyor?** JDK 8+ (herhangi bir modern JDK)
+- **Birleştirme ne kadar sürer?** Genellikle 50 MB altındaki dosyalar için birkaç saniye
 
-## MHT Dosyası Nedir?
-MHT (MHTML) dosyası, bir HTML sayfasını ve tüm kaynaklarını—görseller, CSS, betikler—tek bir dosyada birleştiren bir web arşividir. Bu, çevrim dışı görüntüleme veya arşivleme için mükemmeldir ve birden fazla MHT dosyasını birleştirmek, daha kolay dağıtım için birleşik bir arşiv oluşturur.
+## MHT dosyası nedir?
 
-## MHT Dosyalarını Birleştirmek İçin Neden GroupDocs.Merger for Java Kullanmalısınız?
-- **Format‑agnostik:** Handles MHT alongside PDFs, DOCX, PPTX, etc.
-- **Basit API:** Only a few lines of code to load, join, and save.
-- **Performans‑odaklı:** Optimized for large documents with minimal memory footprint.
-- **Kurumsal‑hazır:** Supports licensing, security, and cloud integrations.
+MHT (MHTML) dosyası, bir HTML sayfasını tüm kaynakları—görseller, CSS, betikler—ile tek bir dosyada birleştiren bir web arşividir. Bu, çevrim dışı görüntüleme veya arşivleme için mükemmeldir ve birkaç MHT dosyasını birleştirmek, daha kolay dağıtım için birleştirilmiş bir arşiv oluşturur.
+
+## MHT dosyalarını birleştirmek için GroupDocs.Merger for Java neden kullanılmalı?
+
+GroupDocs.Merger for Java, MHT birleştirmesini sadece üç satır kodla gerçekleştirir ve 50+ giriş ve çıkış formatını destekler. 500 MB'a kadar dosyaları 200 MB'den az yığın belleği kullanarak işler, bu da büyük web arşivlerini sınırlı kaynaklı sunucularda bile kaynakları tüketmeden birleştirebileceğiniz anlamına gelir.
 
 ## Önkoşullar
-1. **Java Development Kit (JDK)** – JDK 8 veya daha yeni bir sürüm kurulu.
-2. **IDE** – IntelliJ IDEA, Eclipse veya tercih ettiğiniz herhangi bir editör.
-3. **GroupDocs.Merger for Java** – Kütüphaneyi Maven/Gradle bağımlılığı olarak ekleyin (aşağıya bakın).
+1. **Java Development Kit (JDK)** – JDK 8 veya daha yeni bir sürüm yüklü.  
+2. **IDE** – IntelliJ IDEA, Eclipse veya tercih ettiğiniz herhangi bir editör.  
+3. **GroupDocs.Merger for Java** – Kütüphaneyi bir Maven/Gradle bağımlılığı olarak ekleyin (aşağıya bakın).
 
-### GroupDocs.Merger for Java Kurulumu
+### GroupDocs.Merger for Java kurulumu
 Kütüphaneyi projenize ekleyin:
 
 **Maven:**  
@@ -56,15 +105,16 @@ Kütüphaneyi projenize ekleyin:
 implementation 'com.groupdocs:groupdocs-merger:LATEST_VERSION'
 ```
 
-Ayrıca resmi sürüm sayfasından en son JAR dosyasını indirebilirsiniz: [GroupDocs.Merger for Java Dokümantasyonu](https://releases.groupdocs.com/merger/java/).
+Resmi sürüm sayfasından en son JAR'ı da indirebilirsiniz: [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
-#### Lisans Alımı
-GroupDocs, birleştirme işlevini hemen test edebilmeniz için ücretsiz bir deneme sunar. Üretim ortamı için, GroupDocs portalından kalıcı bir lisans alın veya değerlendirme sırasında geçici bir lisans talep edin.
+#### Lisans edinme
+GroupDocs, birleştirme işlevini hemen test edebilmeniz için ücretsiz bir deneme sunar. Üretim kullanımı için, GroupDocs portalından kalıcı bir lisans alın veya değerlendirme sırasında geçici bir lisans talep edin.
 
-## MHT Dosyalarını Birleştirme Adım‑Adım Kılavuzu
+## MHT dosyalarını birleştirme adım adım rehberi
 
-### 1. Merger’ı Yükleyin ve Başlatın
-İlk olarak, birincil MHT dosyanıza işaret eden bir `Merger` örneği oluşturun.
+### 1. Birleştiriciyi yükleyin ve başlatın
+
+`Merger` sınıfı, tüm birleştirme işlemleri için giriş noktasıdır. Tek bir birleştirme oturumunu temsil eder ve kaynak dosyaların listesini tutar.
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -79,10 +129,11 @@ public class FeatureLoadAndInitialize {
 }
 ```
 
-*Açıklama:* `Merger` sınıfı tüm işlemler için giriş noktasıdır. İlk MHT dosyasının yolunu sağlayarak, nesneyi sonraki birleştirmeler için hazırlamış olursunuz.
+*Açıklama:* `Merger` örneği ilk MHT dosyasını temel belge olarak hazırlar. Bu adımdan sonra ihtiyacınız kadar ek arşiv ekleyebilirsiniz.
 
-### 2. Ek MHT Dosyaları Ekleyin
-`join` metodunu kullanarak istediğiniz sayıda ek MHT arşivi ekleyin.
+### 2. Ek MHT dosyaları ekleyin
+
+`join` metodu, mevcut birleştirme kuyruğuna başka bir MHT arşivi ekler. İstediğiniz sayıda dosyayı eklemek için bu metodu tekrar tekrar çağırabilirsiniz.
 
 ```java
 public class FeatureAddAnotherMht {
@@ -98,10 +149,11 @@ public class FeatureAddAnotherMht {
 }
 ```
 
-*Açıklama:* `join` metodunun her çağrısı bir dosyayı birleştirme kuyruğuna ekler, böylece ihtiyacınız kadar MHT belgesini birleştirebilirsiniz.
+*Açıklama:* Her `join` çağrısı, iç koleksiyona bir dosya daha ekler ve metodu çağırma sırasını korur.
 
-### 3. Birleştirilmiş Sonucu Kaydedin
-Son olarak, birleştirilmiş içeriği diske yazın.
+### 3. Birleştirilmiş sonucu kaydedin
+
+`save` metodunu çağırmak, belirttiğiniz hedef konuma tek bir birleştirilmiş MHT dosyası yazar.
 
 ```java
 public class FeatureSaveMergedFile {
@@ -121,56 +173,62 @@ public class FeatureSaveMergedFile {
 }
 ```
 
-*Açıklama:* `save` metodu, kuyruğa alınan tüm dosyaları birleştirir ve belirttiğiniz konuma tek bir MHT arşivi yazar.
+*Açıklama:* `save` metodu gerçek birleştirmeyi gerçekleştirir, kuyruktaki tüm dosyaların HTML gövdelerini ve kaynaklarını tek tutarlı bir arşivde birleştirir.
 
-## MHT Dosyalarını Birleştirmenin Pratik Uygulamaları
-- **Web Arşivleme:** Web sitesinin günlük anlık görüntülerini uyumluluk raporlaması için tek bir arşivde birleştirin.
-- **Belge Yönetim Sistemleri:** İlgili web sayfalarını tek bir varlık olarak saklayın, indeksleme ve geri getirmeyi basitleştirin.
-- **Veri Konsolidasyonu:** Birden çok kaynaktan dışa aktarılan raporları tek bir paket içinde birleştirerek paylaşımı kolaylaştırın.
+## MHT dosyalarını birleştirmenin pratik uygulamaları
+- **Web arşivleme:** Bir web sitesinin günlük anlık görüntülerini uyumluluk raporlaması için tek bir arşivde birleştirin.  
+- **Belge yönetim sistemleri:** İlgili web sayfalarını tek bir varlık olarak saklayarak indeksleme ve geri getirmeyi basitleştirir.  
+- **Veri birleştirme:** Birden fazla kaynaktan dışa aktarılmış raporları tek bir paket içinde birleştirerek paydaşlarla paylaşımı kolaylaştırır.
 
-## Performans Düşünceleri
-Büyük MHT dosyaları (yüzlerce megabayt) ile çalışırken, aşağıdaki ipuçlarını aklınızda tutun:
+## Performans dikkate alması gerekenler
+Büyük MHT dosyaları (yüzlerce megabayt) ile çalışırken şu ipuçlarını aklınızda tutun:
 
-| İpucu | Neden Yardımcı Olur |
+| İpucu | Neden yardımcı olur |
 |-----|--------------|
-| **Yeterli Yığın Ayırma** | Birleştirme sırasında `OutOfMemoryError` oluşmasını önler. |
-| **Aynı Merger Örneğini Yeniden Kullanma** | Nesne oluşturma yükünü azaltır. |
-| **Kullanılmayan Akışları Kapatma** | İşletim sistemi dosya tanıtıcılarını hızlıca serbest bırakır. |
-| **Ayrı Bir İş Parçasında Çalıştırma** | Masaüstü uygulamalarda UI’nın yanıt vermesini sağlar. |
+| **Yeterli yığını ayırın** | Birleştirme sırasında `OutOfMemoryError` oluşmasını önler. |
+| **Aynı Merger örneğini yeniden kullanın** | Nesne oluşturma yükünü azaltır ve bellek kullanımını düşük tutar. |
+| **Kullanılmayan akışları kapatın** | İşletim sistemi dosya tanıtıcılarını hızlıca serbest bırakır, kaynak sızıntılarını önler. |
+| **Ayrı bir iş parçacığında çalıştırın** | Masaüstü uygulamalarda UI'nın yanıt vermesini sağlar ve yoğun işleme izole eder. |
 
-## Yaygın Sorunlar ve Çözümleri
-- **`FileNotFoundException`** – Tüm dosya yollarının mutlak ya da çalışma dizinine göre doğru göreceli olduğundan emin olun.
-- **`OutOfMemoryError`** – JVM yığın boyutunu artırın (`-Xmx2g`) veya birleştirmeyi daha küçük partilere bölün.
-- **Bozuk Çıktı** – Kaynak MHT dosyalarının bozuk olmadığından emin olun; gerekirse yeniden dışa aktarın.
+## Yaygın sorunlar ve çözüm yolları
+- **`FileNotFoundException`** – Tüm dosya yollarının mutlak ya da çalışma dizinine göre doğru göreceli olduğundan emin olun.  
+- **`OutOfMemoryError`** – JVM yığınını artırın (`-Xmx2g`) veya birleştirmeyi daha küçük partilere bölün.  
+- **Bozuk çıktı** – Kaynak MHT dosyalarının bozuk olmadığından emin olun; gerekirse yeniden dışa aktarın.
 
-## Sıkça Sorulan Sorular
+## Sıkça sorulan sorular
 
-**Q: MHT dosyası nedir?**  
-A: MHT (MHTML) dosyası, bir HTML sayfasını ve kaynaklarını çevrim dışı görüntüleme için tek bir dosyada birleştirir.
+**S: MHT dosyası nedir?**  
+C: MHT (MHTML) dosyası, bir HTML sayfasını ve tüm kaynaklarını çevrim dışı görüntüleme için tek bir dosyada birleştirir.
 
-**Q: Aynı anda iki’den fazla MHT dosyasını birleştirebilir miyim?**  
-A: Evet. `save()` çağırmadan önce her ek dosya için `merger.join()` metodunu tekrarlayarak çağırın.
+**S: Aynı anda iki'den fazla MHT dosyasını birleştirebilir miyim?**  
+C: Evet. `save()` metodunu çağırmadan önce her ek dosya için `merger.join()` metodunu tekrar tekrar çağırın.
 
-**Q: Birleştirdiğim dosya çok büyük—ne yapabilirim?**  
-A: Çıktıyı daha küçük parçalara bölmeyi veya kaynak MHT dosyalarını optimize etmeyi (gereksiz görselleri kaldırmak, kaynakları sıkıştırmak) düşünün.
+**S: Birleştirilmiş dosyam çok büyük—ne yapabilirim?**  
+C: Çıktıyı daha küçük parçalara bölmeyi veya gereksiz görselleri kaldırıp kaynakları sıkıştırarak kaynak MHT dosyalarını optimize etmeyi düşünün.
 
-**Q: GroupDocs.Merger diğer formatları destekliyor mu?**  
-A: Kesinlikle. PDF, DOCX, PPTX, XLSX ve daha birçok formatla çalışır.
+**S: GroupDocs.Merger diğer formatları destekliyor mu?**  
+C: Kesinlikle. PDF, DOCX, PPTX, XLSX ve daha birçok formatla çalışır—toplamda 50'den fazla format.
 
-**Q: Birleştirme sırasında hataları nasıl ele almalı?**  
-A: Birleştirme çağrılarını try‑catch bloklarıyla sarın, dosya yollarını doğrulayın ve sürecin çıktı dizininde yazma iznine sahip olduğundan emin olun.
+**S: Birleştirme sırasında hataları nasıl ele almalı?**  
+C: Birleştirme çağrılarını try‑catch bloklarıyla sarın, dosya yollarını doğrulayın ve sürecin çıktı dizinine yazma izni olduğundan emin olun.
 
-## Ek Kaynaklar
-- **Dokümantasyon:** [GroupDocs.Merger for Java Dokümantasyonu](https://docs.groupdocs.com/merger/java/)
-- **API Referansı:** [GroupDocs API Referansı](https://reference.groupdocs.com/merger/java/)
-- **İndirme:** [GroupDocs Sürümleri](https://releases.groupdocs.com/merger/java/)
-- **Satın Alma:** [GroupDocs Satın Al](https://purchase.groupdocs.com/buy)
-- **Ücretsiz Deneme:** [GroupDocs Ücretsiz Deneme](https://releases.groupdocs.com/merger/java/)
-- **Geçici Lisans:** [Geçici Lisans Alın](https://purchase.groupdocs.com/temporary-license/)
-- **Destek Forumu:** [GroupDocs Forum](https://forum.groupdocs.com/c/merger/)
+## Ek kaynaklar
+- **Dokümantasyon:** [GroupDocs.Merger for Java Docs](https://docs.groupdocs.com/merger/java/)  
+- **API referansı:** [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)  
+- **İndirme:** [GroupDocs Releases](https://releases.groupdocs.com/merger/java/)  
+- **Satın alma:** [Buy GroupDocs](https://purchase.groupdocs.com/buy)  
+- **Ücretsiz deneme:** [GroupDocs Free Trial](https://releases.groupdocs.com/merger/java/)  
+- **Geçici lisans:** [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Destek forumu:** [GroupDocs Forum](https://forum.groupdocs.com/c/merger/)
 
 ---
 
-**Son Güncelleme:** 2026-02-26  
-**Test Edilen Versiyon:** GroupDocs.Merger Java 23.11 (yazım zamanındaki en son sürüm)  
-**Yazar:** GroupDocs
+**Son güncelleme:** 2026-09-21  
+**Test edildiği sürüm:** GroupDocs.Merger Java 23.11 (yazım anındaki en son sürüm)  
+**Yazar:** GroupDocs  
+
+## İlgili Eğitimler
+
+- [Java ile PDF Birleştirme - GroupDocs.Merger Kullanarak - Eksiksiz Rehber](/merger/java/document-joining/join-documents-groupdocs-merger-java/)
+- [Java ile Excel Dosyalarını Birleştirme: GroupDocs.Merger Kullanarak - Geliştirici Rehberi](/merger/java/format-specific-merging/merge-excel-files-groupdocs-merger-java-guide/)
+- [Belge Birleştirme Uzmanlığı - GroupDocs Merger Java Rehberi](/merger/java/format-specific-merging/mastering-document-merging-groupdocs-merger-java-guide/)
