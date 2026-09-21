@@ -1,12 +1,75 @@
 ---
-date: '2026-03-04'
-description: GroupDocs.Merger for Java का उपयोग करके लैटेक्स फ़ाइलों को मर्ज करना
-  और कई tex फ़ाइलों को एक सहज दस्तावेज़ में संयोजित करना सीखें। इस चरण‑दर‑चरण गाइड
+date: '2026-09-21'
+description: GroupDocs.Merger for Java का उपयोग करके LaTeX फ़ाइलों को मर्ज करना और
+  कई tex फ़ाइलों को एक सहज दस्तावेज़ में संयोजित करना सीखें। इस चरण‑दर‑चरण मार्गदर्शिका
   का पालन करें।
 keywords:
-- GroupDocs.Merger for Java
-- merge LaTeX documents
-- LaTeX document merging
+- how to merge latex
+- how to join tex
+- merge multiple tex files
+- groupdocs merger java
+lastmod: '2026-09-21'
+og_description: GroupDocs.Merger for Java के साथ कुछ कोड लाइनों में LaTeX फ़ाइलों
+  को मर्ज करना जानें। कई tex फ़ाइलों को तेज़ और विश्वसनीय रूप से संयोजित करें।
+og_image_alt: Guide showing Java code merging LaTeX documents with GroupDocs.Merger
+og_title: GroupDocs.Merger for Java का उपयोग करके LaTeX फ़ाइलों को कुशलतापूर्वक मर्ज
+  कैसे करें
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-21'
+  description: Learn how to merge LaTeX files and combine multiple tex files into
+    one seamless document using GroupDocs.Merger for Java. Follow this step‑by‑step
+    guide.
+  headline: How to merge LaTeX files efficiently using GroupDocs.Merger for Java
+  type: TechArticle
+- description: Learn how to merge LaTeX files and combine multiple tex files into
+    one seamless document using GroupDocs.Merger for Java. Follow this step‑by‑step
+    guide.
+  name: How to merge LaTeX files efficiently using GroupDocs.Merger for Java
+  steps:
+  - name: '**Free trial:** Start with a free trial to explore features.'
+    text: '**Free trial:** Start with a free trial to explore features.'
+  - name: '**Temporary license:** Obtain a temporary license for extended testing.'
+    text: '**Temporary license:** Obtain a temporary license for extended testing.'
+  - name: '**Purchase:** Buy a full license from [GroupDocs](https://purchase.groupdocs.com/buy)
+      for production use.'
+    text: '**Purchase:** Buy a full license from [GroupDocs](https://purchase.groupdocs.com/buy)
+      for production use.'
+  - name: '**Import packages** – Ensure `com.groupdocs.merger.Merger` is imported.'
+    text: '**Import packages** – Ensure `com.groupdocs.merger.Merger` is imported.'
+  - name: '**Define path** – Set the path to your main TEX file.'
+    text: '**Define path** – Set the path to your main TEX file.'
+  - name: '**Create Merger instance** – Initialize the `Merger` object.'
+    text: '**Create Merger instance** – Initialize the `Merger` object.'
+  - name: '**Specify additional file path**'
+    text: '**Specify additional file path**'
+  - name: '**Join the document**'
+    text: '**Join the document**'
+  - name: '**Define output location**'
+    text: '**Define output location**'
+  - name: '**Save the result**'
+    text: '**Save the result**'
+  type: HowTo
+- questions:
+  - answer: In GroupDocs.Merger for Java, `join()` adds a whole document while `append()`
+      can add specific pages; for TEX files you typically use `join()`.
+    question: What is the difference between `join()` and `append()`?
+  - answer: TEX files are plain text and do not support encryption; however, you can
+      protect the resulting PDF after compilation.
+    question: Can I merge encrypted or password‑protected TEX files?
+  - answer: Yes – just provide the full path for each file when calling `join()`.
+    question: Is it possible to merge files from different directories?
+  - answer: Absolutely – it works with PDF, DOCX, PPTX, HTML, and more than 30 additional
+      formats.
+    question: Does GroupDocs.Merger support other formats besides TEX?
+  - answer: Visit the [official documentation](https://docs.groupdocs.com/merger/java/)
+      for deeper API usage.
+    question: Where can I find more advanced examples?
+  type: FAQPage
+tags:
+- merge latex
+- groupdocs merger
+- java document processing
 title: GroupDocs.Merger for Java का उपयोग करके LaTeX फ़ाइलों को कुशलतापूर्वक मर्ज
   कैसे करें
 type: docs
@@ -14,31 +77,27 @@ url: /hi/java/document-joining/merge-latex-documents-groupdocs-merger-java/
 weight: 1
 ---
 
-# GroupDocs.Merger for Java का उपयोग करके LaTeX फ़ाइलों को कुशलतापूर्वक मर्ज करने का तरीका
+# GroupDocs.Merger for Java का उपयोग करके LaTeX फ़ाइलों को कुशलतापूर्वक मर्ज कैसे करें
 
-LaTeX स्रोत फ़ाइलों को मर्ज करना एक सामान्य कार्य है जब आप थीसिस, तकनीकी मैनुअल, या कई‑अध्यायों वाली पुस्तक तैयार कर रहे होते हैं। इस ट्यूटोरियल में आप **how to merge latex files** को तेज़ और भरोसेमंद तरीके से GroupDocs.Merger for Java के साथ सीखेंगे, ताकि आप अपने प्रोजेक्ट की संरचना को साफ़ रख सकें और मैन्युअल कॉपी‑पेस्ट त्रुटियों से बच सकें।
+LaTeX स्रोत फ़ाइलों को मर्ज करना एक सामान्य कदम है जब आप थीसिस, तकनीकी मैनुअल, या कई‑अध्याय वाली पुस्तक को इकट्ठा करते हैं। इस ट्यूटोरियल में आप GroupDocs.Merger for Java के साथ **LaTeX को कैसे मर्ज करें** जल्दी और भरोसेमंद तरीके से सीखेंगे, ताकि आप अपने प्रोजेक्ट संरचना को साफ रख सकें, मैन्युअल कॉपी‑पेस्ट त्रुटियों से बच सकें, और अध्यायों के सही क्रम को बनाए रख सकें।
 
 ## त्वरित उत्तर
-- **कौन‑सी लाइब्रेरी TEX मर्जिंग को संभालती है?** GroupDocs.Merger for Java  
-- **क्या मैं कई tex फ़ाइलों को एक ही चरण में जोड़ सकता हूँ?** हाँ – `join()` मेथड का उपयोग करें  
-- **उत्पादन के लिए लाइसेंस की आवश्यकता है?** उत्पादन उपयोग के लिए वैध GroupDocs लाइसेंस आवश्यक है  
-- **कौन‑सा Java संस्करण समर्थित है?** JDK 8 या नया  
-- **लाइब्रेरी कहाँ डाउनलोड कर सकते हैं?** आधिकारिक GroupDocs रिलीज़ पेज से  
+- **TEX मर्जिंग को कौन सी लाइब्रेरी संभालती है?** GroupDocs.Merger for Java  
+- **क्या मैं कई tex फ़ाइलों को एक ही चरण में संयोजित कर सकता हूँ?** हाँ – `join()` मेथड उन्हें एक ही कॉल में मर्ज करता है।  
+- **क्या उत्पादन के लिए लाइसेंस चाहिए?** उत्पादन डिप्लॉयमेंट के लिए एक वैध GroupDocs लाइसेंस आवश्यक है।  
+- **कौन सा Java संस्करण समर्थित है?** JDK 8 या नया (Java 11, 17, और 21 सहित)।  
+- **लाइब्रेरी कहाँ डाउनलोड कर सकते हैं?** आधिकारिक GroupDocs रिलीज़ पेज से।  
 
 ## “how to join tex” क्या है?
-TEX फ़ाइलों को जोड़ना मतलब अलग‑अलग `.tex` स्रोत फ़ाइलों—आमतौर पर व्यक्तिगत अध्याय या सेक्शन—को एक ही `.tex` फ़ाइल में मर्ज करना, जिसे एक PDF या DVI आउटपुट में कंपाइल किया जा सकता है। यह तरीका संस्करण नियंत्रण, सहयोगी लेखन, और अंतिम दस्तावेज़ असेंबली को सरल बनाता है।
+TEX फ़ाइलों को जोड़ना मतलब अलग-अलग `.tex` स्रोत फ़ाइलों—अक्सर व्यक्तिगत अध्याय या सेक्शन—को एक ही `.tex` फ़ाइल में मिलाना है जिसे एक PDF या DVI आउटपुट में कंपाइल किया जा सकता है। यह तरीका संस्करण नियंत्रण, सहयोगी लेखन, और अंतिम दस्तावेज़ असेंबली को सरल बनाता है। फ़ाइलों को जोड़कर आप सभी प्री‑ऐम्बल, पैकेज इम्पोर्ट, और बिब्लियोग्राफी रेफ़रेंसेज़ को सही क्रम में रखते हैं, जिससे कंपाइलेशन त्रुटियों से बचा जा सके और संयुक्त दस्तावेज़ में स्वरूपण सुसंगत बना रहे।
 
-## GroupDocs.Merger के साथ कई tex फ़ाइलें क्यों जोड़ें?
-- **गति:** एक‑लाइन API कॉल मैन्युअल कॉपी‑पेस्ट को बदल देती है।  
-- **विश्वसनीयता:** LaTeX सिंटैक्स और क्रम को स्वचालित रूप से संरक्षित करता है।  
-- **स्केलेबिलिटी:** अतिरिक्त कोड के बिना दर्जनों फ़ाइलों को संभालता है।  
-- **इंटीग्रेशन:** मौजूदा Java बिल्ड टूल्स (Maven, Gradle) के साथ सहजता से काम करता है।  
+## GroupDocs.Merger के साथ कई tex फ़ाइलों को क्यों संयोजित करें?
+GroupDocs.Merger एक ही API कॉल में LaTeX फ़ाइलों को मर्ज करता है, जिससे त्रुटिप्रवण मैन्युअल कॉपी‑पेस्ट कार्यप्रवाह समाप्त हो जाता है। यह LaTeX सिंटैक्स को संरक्षित रखता है, फ़ाइल क्रम का सम्मान करता है, और अतिरिक्त कोड के बिना दर्जनों फ़ाइलों को संभाल सकता है। लाइब्रेरी 30 से अधिक दस्तावेज़ फ़ॉर्मेट का समर्थन करती है और 500 MB तक की फ़ाइलों को पूरी सामग्री को मेमोरी में लोड किए बिना प्रोसेस कर सकती है, जिससे आपको गति और स्केलेबिलिटी दोनों मिलती हैं।
 
 ## पूर्वापेक्षाएँ
-
-- **Java Development Kit (JDK) 8+** आपके मशीन पर स्थापित हो।  
+- **Java Development Kit (JDK) 8+** आपके मशीन पर स्थापित होना चाहिए।  
 - **GroupDocs.Merger for Java** लाइब्रेरी (नवीनतम संस्करण)।  
-- Java फ़ाइल हैंडलिंग का बुनियादी ज्ञान (वैकल्पिक लेकिन उपयोगी)।  
+- Java फ़ाइल हैंडलिंग की बुनियादी परिचितता (वैकल्पिक लेकिन उपयोगी)।  
 
 ## GroupDocs.Merger for Java सेटअप करना
 
@@ -58,16 +117,117 @@ Gradle उपयोगकर्ताओं के लिए, अपने `buil
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-### सीधे डाउनलोड
-यदि आप लाइब्रेरी को सीधे डाउनलोड करना पसंद करते हैं, तो [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) पर जाएँ और नवीनतम संस्करण चुनें।
+### सीधा डाउनलोड
+यदि आप लाइब्रेरी को सीधे डाउनलोड करना चाहते हैं, तो [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) पर जाएँ और नवीनतम संस्करण चुनें।
 
 #### लाइसेंस प्राप्त करने के चरण
-1. **फ़्री ट्रायल:** फीचर एक्सप्लोर करने के लिए फ़्री ट्रायल शुरू करें।  
-2. **टेम्पररी लाइसेंस:** विस्तारित परीक्षण के लिए टेम्पररी लाइसेंस प्राप्त करें।  
-3. **पर्चेज:** उत्पादन उपयोग के लिए [GroupDocs](https://purchase.groupdocs.com/buy) से पूर्ण लाइसेंस खरीदें।
+1. **Free trial:** फीचर्स का पता लगाने के लिए एक मुफ्त ट्रायल से शुरू करें।  
+2. **Temporary license:** विस्तारित परीक्षण के लिए एक अस्थायी लाइसेंस प्राप्त करें।  
+3. **Purchase:** उत्पादन उपयोग के लिए [GroupDocs](https://purchase.groupdocs.com/buy) से पूर्ण लाइसेंस खरीदें।  
 
 #### बेसिक इनिशियलाइज़ेशन और सेटअप
-GroupDocs.Merger को इनिशियलाइज़ करने के लिए, `Merger` का एक इंस्टेंस अपने स्रोत फ़ाइल पाथ के साथ बनाएँ:
+`Merger` एक कोर क्लास है जो दस्तावेज़ स्ट्रीम को दर्शाता है और फ़ाइलों को जोड़ने, विभाजित करने, और पुनर्व्यवस्थित करने के मेथड प्रदान करता है। GroupDocs.Merger को इनिशियलाइज़ करने के लिए, अपने स्रोत फ़ाइल पाथ के साथ `Merger` का एक इंस्टेंस बनाएं:
+
+## GroupDocs.Merger for Java के साथ LaTeX फ़ाइलों को कैसे मर्ज करें
+अपनी प्राथमिक `.tex` फ़ाइल लोड करें, प्रत्येक अतिरिक्त अध्याय के लिए `join()` कॉल करें, और संयुक्त आउटपुट सहेजें—सभी तीन संक्षिप्त चरणों में। यह पैटर्न किसी भी संख्या में स्रोत फ़ाइलों के लिए काम करता है और सामग्री के सही क्रम की गारंटी देता है। API आपको कस्टम सेपरेटर निर्दिष्ट करने या फ़ाइलों के बीच अतिरिक्त LaTeX कमांड शामिल करने की भी अनुमति देता है, जिससे आप अंतिम दस्तावेज़ संरचना पर पूर्ण नियंत्रण रख सकते हैं।
+
+### स्रोत दस्तावेज़ लोड करें
+पहला चरण प्राथमिक TEX फ़ाइल को लोड करना है जो मर्ज के लिए आधार के रूप में काम करेगी।
+
+1. **Import packages** – सुनिश्चित करें कि `com.groupdocs.merger.Merger` इम्पोर्ट किया गया है।  
+2. **Define path** – अपने मुख्य TEX फ़ाइल का पाथ सेट करें।  
+   `Merger` क्लास दस्तावेज़ को दर्शाती है और मर्ज ऑपरेशन्स के लिए API प्रदान करती है।  
+```java
+String sourceFilePath = "YOUR_DOCUMENT_DIRECTORY/sample.tex";
+```
+3. **Create Merger instance** – `Merger` ऑब्जेक्ट को इनिशियलाइज़ करें।  
+```java
+Merger merger = new Merger(sourceFilePath);
+```
+
+स्रोत दस्तावेज़ को लोड करने से API को बाद के जॉइन्स को मैनेज करने के लिए तैयार किया जाता है, जिससे सामग्री का सही क्रम सुनिश्चित होता है।
+
+### मर्जिंग के लिए दस्तावेज़ जोड़ें
+अब आप अतिरिक्त TEX फ़ाइलें जोड़ेंगे जिन्हें आप स्रोत के साथ संयोजित करना चाहते हैं।
+
+1. **Specify additional file path**  
+```java
+String additionalFilePath = "YOUR_DOCUMENT_DIRECTORY/sample2.tex";
+```
+2. **Join the document**  
+   `join()` निर्दिष्ट दस्तावेज़ को वर्तमान दस्तावेज़ स्ट्रीम के अंत में जोड़ता है, क्रम और फ़ॉर्मेटिंग को संरक्षित रखते हुए।  
+```java
+merger.join(additionalFilePath);
+```
+
+`join()` मेथड निर्दिष्ट फ़ाइल को वर्तमान दस्तावेज़ स्ट्रीम के अंत में जोड़ता है, जिससे आप कई tex फ़ाइलों को आसानी से संयोजित कर सकते हैं।
+
+### मर्ज्ड दस्तावेज़ सहेजें
+अंत में, मर्ज्ड सामग्री को नई TEX फ़ाइल में लिखें।
+
+1. **Define output location**  
+```java
+String outputFolder = "YOUR_OUTPUT_DIRECTORY";
+File outputFile = new File(outputFolder, "merged.tex").getPath();
+```
+2. **Save the result**  
+   `save()` मर्ज्ड दस्तावेज़ को दिए गए फ़ाइल पाथ पर लिखता है, जिससे ऑपरेशन समाप्त हो जाता है।  
+```java
+merger.save(outputFile);
+```
+
+अब आपके पास एक एकल `merged.tex` फ़ाइल है जिसमें सभी सेक्शन आपके निर्दिष्ट क्रम में हैं, LaTeX कंपाइलेशन के लिए तैयार।
+
+## व्यावहारिक अनुप्रयोग
+- **Academic papers:** जर्नल सबमिशन के लिए अलग-अलग अध्याय फ़ाइलों को एक पांडुलिपि में मर्ज करें।  
+- **Technical documentation:** कई लेखकों के योगदान को एकीकृत मैनुअल में संयोजित करें।  
+- **Publishing:** अंतिम टाइपसेटिंग से पहले व्यक्तिगत अध्याय `.tex` स्रोतों से पुस्तक को इकट्ठा करें।  
+
+## प्रदर्शन संबंधी विचार
+- लाइब्रेरी को अद्यतन रखें ताकि प्रदर्शन सुधार और बग फिक्स का लाभ मिल सके।  
+- समाप्त होने पर `Merger` ऑब्जेक्ट्स को रिलीज़ करें ताकि मेमोरी तुरंत मुक्त हो सके।  
+- बड़े बैचों के लिए, ओवरहेड कम करने और दोहराए गए I/O ऑपरेशन्स से बचने हेतु फ़ाइलों के समूह को एक ही कॉल में मर्ज करें।  
+
+## सामान्य समस्याएँ और समाधान
+
+| समस्या | समाधान |
+|-------|----------|
+| **OutOfMemoryError** कई बड़ी फ़ाइलों को मर्ज करते समय | फ़ाइलों को छोटे बैचों में प्रोसेस करें या JVM हीप साइज (`-Xmx2g`) बढ़ाएँ। |
+| **Incorrect file order** मर्ज के बाद | फ़ाइलों को ठीक उसी क्रम में जोड़ें जैसा आपको चाहिए; आप `join()` को कई बार कॉल कर सकते हैं। |
+| **LicenseException** उत्पादन में | सुनिश्चित करें कि वैध GroupDocs लाइसेंस फ़ाइल क्लासपाथ पर रखी गई है या प्रोग्रामेटिकली प्रदान की गई है। |
+
+## अक्सर पूछे जाने वाले प्रश्न
+
+**Q: `join()` और `append()` में क्या अंतर है?**  
+A: GroupDocs.Merger for Java में, `join()` पूरा दस्तावेज़ जोड़ता है जबकि `append()` विशिष्ट पेज़ जोड़ सकता है; TEX फ़ाइलों के लिए आप आमतौर पर `join()` का उपयोग करते हैं।
+
+**Q: क्या मैं एन्क्रिप्टेड या पासवर्ड‑सुरक्षित TEX फ़ाइलों को मर्ज कर सकता हूँ?**  
+A: TEX फ़ाइलें साधारण टेक्स्ट होती हैं और एन्क्रिप्शन को सपोर्ट नहीं करतीं; हालांकि, आप कंपाइलेशन के बाद उत्पन्न PDF को सुरक्षित कर सकते हैं।
+
+**Q: क्या विभिन्न डायरेक्टरीज़ की फ़ाइलों को मर्ज करना संभव है?**  
+A: हाँ – `join()` कॉल करते समय प्रत्येक फ़ाइल का पूर्ण पाथ दें।
+
+**Q: क्या GroupDocs.Merger TEX के अलावा अन्य फ़ॉर्मेट्स को सपोर्ट करता है?**  
+A: बिल्कुल – यह PDF, DOCX, PPTX, HTML, और 30 से अधिक अतिरिक्त फ़ॉर्मेट्स के साथ काम करता है।
+
+**Q: अधिक उन्नत उदाहरण कहाँ मिल सकते हैं?**  
+A: गहरी API उपयोग के लिए [official documentation](https://docs.groupdocs.com/merger/java/) देखें।
+
+## संसाधन
+- डॉक्यूमेंटेशन: https://docs.groupdocs.com/merger/java/
+- API रेफ़रेंस: https://reference.groupdocs.com/merger/java/
+- डाउनलोड: https://releases.groupdocs.com/merger/java/
+- खरीदें: https://purchase.groupdocs.com/buy
+- फ़्री ट्रायल: https://releases.groupdocs.com/merger/java/
+- अस्थायी लाइसेंस: https://purchase.groupdocs.com/temporary-license/
+- सपोर्ट फ़ोरम: https://forum.groupdocs.com/c/merger/
+
+---
+
+**अंतिम अपडेट:** 2026-09-21  
+**परीक्षित संस्करण:** GroupDocs.Merger for Java latest version  
+**लेखक:** GroupDocs
+
 ```java
 import com.groupdocs.merger.Merger;
 
@@ -75,113 +235,8 @@ import com.groupdocs.merger.Merger;
 Merger merger = new Merger("YOUR_DOCUMENT_DIRECTORY/sample.tex");
 ```
 
-## GroupDocs.Merger for Java के साथ latex फ़ाइलें कैसे मर्ज करें
-नीचे एक चरण‑दर‑चरण walkthrough दिया गया है जो दिखाता है कि बेस डॉक्युमेंट को कैसे लोड करें, अतिरिक्त TEX फ़ाइलें जोड़ें, और मर्ज्ड परिणाम को सेव करें।
+## संबंधित ट्यूटोरियल
 
-### स्रोत डॉक्युमेंट लोड करें
-
-#### अवलोकन
-पहला चरण मुख्य TEX फ़ाइल को लोड करना है, जो मर्ज का बेस बनेगी।
-
-#### चरण
-1. **पैकेज इम्पोर्ट** – सुनिश्चित करें कि `com.groupdocs.merger.Merger` इम्पोर्ट किया गया है।  
-2. **पाथ निर्धारित करें** – अपनी मुख्य TEX फ़ाइल का पाथ सेट करें।
-```java
-String sourceFilePath = "YOUR_DOCUMENT_DIRECTORY/sample.tex";
-```
-3. **Merger इंस्टेंस बनाएं** – `Merger` ऑब्जेक्ट को इनिशियलाइज़ करें।
-```java
-Merger merger = new Merger(sourceFilePath);
-```
-
-#### क्यों महत्वपूर्ण है
-स्रोत डॉक्युमेंट को लोड करने से API को बाद के जॉइन्स को मैनेज करने की तैयारी मिलती है, जिससे कंटेंट का सही क्रम सुनिश्चित होता है।
-
-### मर्जिंग के लिए डॉक्युमेंट जोड़ें
-
-#### अवलोकन
-अब आप अतिरिक्त TEX फ़ाइलें जोड़ेंगे जिन्हें आप स्रोत के साथ मिलाना चाहते हैं।
-
-#### चरण
-1. **अतिरिक्त फ़ाइल पाथ निर्दिष्ट करें**
-```java
-String additionalFilePath = "YOUR_DOCUMENT_DIRECTORY/sample2.tex";
-```
-2. **डॉक्युमेंट जॉइन करें**
-```java
-merger.join(additionalFilePath);
-```
-
-#### यह कैसे काम करता है
-`join()` मेथड निर्दिष्ट फ़ाइल को वर्तमान डॉक्युमेंट स्ट्रीम के अंत में जोड़ देता है, जिससे आप **multiple tex files** को आसानी से **combine** कर सकते हैं।
-
-### मर्ज्ड डॉक्युमेंट सेव करें
-
-#### अवलोकन
-अंत में, मर्ज्ड कंटेंट को नई TEX फ़ाइल में लिखें।
-
-#### चरण
-1. **आउटपुट लोकेशन निर्धारित करें**
-```java
-String outputFolder = "YOUR_OUTPUT_DIRECTORY";
-File outputFile = new File(outputFolder, "merged.tex").getPath();
-```
-2. **परिणाम सेव करें**
-```java
-merger.save(outputFile);
-```
-
-#### परिणाम
-अब आपके पास एक एकल `merged.tex` फ़ाइल है जिसमें सभी सेक्शन आपके निर्दिष्ट क्रम में हैं, और यह LaTeX कंपाइलेशन के लिए तैयार है।
-
-## व्यावहारिक उपयोग
-
-- **एकेडमिक पेपर्स:** अलग‑अलग अध्याय फ़ाइलों को एक ही पांडुलिपि में मर्ज करें।  
-- **टेक्निकल डॉक्युमेंटेशन:** कई लेखकों के योगदान को एकीकृत मैनुअल में संयोजित करें।  
-- **पब्लिशिंग:** व्यक्तिगत अध्याय `.tex` स्रोतों से पुस्तक तैयार करें।  
-
-## प्रदर्शन संबंधी विचार
-
-- लाइब्रेरी को अपडेटेड रखें ताकि प्रदर्शन सुधारों का लाभ मिल सके।  
-- समाप्त होने पर `Merger` ऑब्जेक्ट्स को रिलीज़ करें ताकि मेमोरी मुक्त हो।  
-- बड़े बैच के लिए, ओवरहेड कम करने हेतु फ़ाइलों के समूह को एक ही कॉल में मर्ज करें।
-
-## सामान्य समस्याएँ और समाधान
-
-| समस्या | समाधान |
-|-------|----------|
-| **OutOfMemoryError** कई बड़ी फ़ाइलों को मर्ज करते समय | फ़ाइलों को छोटे बैच में प्रोसेस करें या JVM हीप साइज बढ़ाएँ (`-Xmx2g`)। |
-| **Incorrect file order** मर्ज के बाद फ़ाइल क्रम गलत | फ़ाइलों को ठीक उसी क्रम में जोड़ें जिसकी आपको आवश्यकता है; आप कई बार `join()` कॉल कर सकते हैं। |
-| **LicenseException** उत्पादन में | सुनिश्चित करें कि वैध GroupDocs लाइसेंस फ़ाइल क्लासपाथ पर रखी गई है या प्रोग्रामेटिकली प्रदान की गई है। |
-
-## अक्सर पूछे जाने वाले प्रश्न
-
-**Q: `join()` और `append()` में क्या अंतर है?**  
-A: GroupDocs.Merger for Java में, `join()` पूरे डॉक्युमेंट को जोड़ता है जबकि `append()` विशिष्ट पेज जोड़ सकता है; TEX फ़ाइलों के लिए आमतौर पर `join()` उपयोग किया जाता है।
-
-**Q: क्या मैं एन्क्रिप्टेड या पासवर्ड‑प्रोटेक्टेड TEX फ़ाइलों को मर्ज कर सकता हूँ?**  
-A: TEX फ़ाइलें प्लेन टेक्स्ट होती हैं और एन्क्रिप्शन सपोर्ट नहीं करतीं; हालांकि, आप कंपाइलेशन के बाद उत्पन्न PDF को सुरक्षित कर सकते हैं।
-
-**Q: क्या विभिन्न डायरेक्टरीज़ से फ़ाइलें मर्ज करना संभव है?**  
-A: हाँ – `join()` कॉल करते समय प्रत्येक फ़ाइल का पूर्ण पाथ प्रदान करें।
-
-**Q: क्या GroupDocs.Merger अन्य फ़ॉर्मैट्स को भी सपोर्ट करता है?**  
-A: बिल्कुल – यह PDF, DOCX, PPTX और कई अन्य फ़ॉर्मैट्स के साथ काम करता है।
-
-**Q: अधिक उन्नत उदाहरण कहाँ मिलेंगे?**  
-A: गहरी API उपयोग के लिए [official documentation](https://docs.groupdocs.com/merger/java/) देखें।
-
-## संसाधन
-- **Documentation:** https://docs.groupdocs.com/merger/java/
-- **API Reference:** https://reference.groupdocs.com/merger/java/
-- **Download:** https://releases.groupdocs.com/merger/java/
-- **Purchase:** https://purchase.groupdocs.com/buy
-- **Free Trial:** https://releases.groupdocs.com/merger/java/
-- **Temporary License:** https://purchase.groupdocs.com/temporary-license/
-- **Support:** https://forum.groupdocs.com/c/merger/
-
----
-
-**Last Updated:** 2026-03-04  
-**Tested With:** GroupDocs.Merger for Java latest-version  
-**Author:** GroupDocs
+- [विशिष्ट पेज़ मर्ज Java – GroupDocs.Merger के लिए दस्तावेज़ जॉइनिंग ट्यूटोरियल](/merger/java/document-joining/)
+- [Merge PDF Java: GroupDocs.Merger for Java का उपयोग करके PDFs को कुशलतापूर्वक मर्ज करें – चरण-दर-चरण गाइड](/merger/java/format-specific-merging/merge-pdfs-groupdocs-merger-java-tutorial/)
+- [Merge PDF Java: GroupDocs.Merger का उपयोग करके स्थानीय दस्तावेज़ लोड करें – गाइड](/merger/java/document-loading/load-document-groupdocs-merger-java-guide/)
