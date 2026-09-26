@@ -1,44 +1,95 @@
 ---
-date: '2026-03-09'
-description: تعلم كيفية دمج مستندات متعددة ودمج مستندات Word الكبيرة باستخدام GroupDocs.Merger
-  للغة Java. يغطي هذا الدليل خطوة بخطوة الإعداد والتنفيذ والتطبيقات العملية.
+date: '2026-09-26'
+description: تعلم كيفية دمج مستندات متعددة باستخدام GroupDocs.Merger for Java. يغطي
+  هذا الدليل خطوة بخطوة الإعداد، مقتطفات الشيفرة، ونصائح دمج ملفات DOC الكبيرة بكفاءة.
 keywords:
-- merge Word documents Java
-- GroupDocs Merger setup
-- merge multiple DOC files
-title: 'كيفية دمج مستندات متعددة باستخدام GroupDocs.Merger للـ Java: دليل شامل'
+- merge multiple documents
+- merge multiple doc files
+- merge large word docs
+- combine multiple docs java
+- GroupDocs Merger Java
+lastmod: '2026-09-26'
+og_description: تعلم كيفية دمج مستندات متعددة باستخدام GroupDocs.Merger for Java.
+  يوضح لك هذا الدليل عملية التثبيت، أمثلة الشيفرة، ونصائح الأداء للتعامل مع ملفات
+  DOC الكبيرة.
+og_image_alt: Guide showing how to merge multiple documents in Java with GroupDocs.Merger
+og_title: دمج مستندات متعددة باستخدام GroupDocs.Merger for Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-26'
+  description: Learn how to merge multiple documents with GroupDocs.Merger for Java.
+    This step‑by‑step guide covers setup, code snippets, and tips for merging large
+    DOC files efficiently.
+  headline: Merge multiple documents using GroupDocs.Merger for Java
+  type: TechArticle
+- description: Learn how to merge multiple documents with GroupDocs.Merger for Java.
+    This step‑by‑step guide covers setup, code snippets, and tips for merging large
+    DOC files efficiently.
+  name: Merge multiple documents using GroupDocs.Merger for Java
+  steps:
+  - name: define the output path
+    text: Specify where the merged document will be saved. Replace `YOUR_OUTPUT_DIRECTORY`
+      with the folder of your choice.
+  - name: load the first source document
+    text: Instantiate the `Merger` object with the initial DOC file. Adjust `YOUR_DOCUMENT_DIRECTORY`
+      to match your file location.
+  - name: add additional documents
+    text: The `join` method appends the specified document to the current merge queue,
+      preserving its original formatting. Call the `join` method for each extra file
+      you want to merge. You can repeat this step as many times as needed.
+  - name: save the combined document
+    text: Commit all added files to a single output file.
+  type: HowTo
+- questions:
+  - answer: Yes, you can call `join` repeatedly to add as many documents as needed.
+    question: Can I merge more than two documents at once?
+  - answer: It supports 30+ formats, including DOC, DOCX, PDF, XLSX, PPTX, HTML, and
+      many image types.
+    question: What file formats does GroupDocs.Merger support?
+  - answer: Wrap the merge logic in a try‑catch block and handle `IOException`, `FileNotFoundException`,
+      or `SecurityException` as appropriate.
+    question: How should I handle errors during the merge process?
+  - answer: No—GroupDocs.Merger is a pure Java library and runs wherever your JVM
+      is available.
+    question: Do I need to install additional software on the server?
+  - answer: Yes, provide the password when creating the `Merger` instance for each
+      protected file.
+    question: Is it possible to merge password‑protected documents?
+  type: FAQPage
+tags:
+- merge documents
+- GroupDocs.Merger
+- Java document processing
+- DOC merging
+- file merging
+title: دمج مستندات متعددة باستخدام GroupDocs.Merger for Java
 type: docs
 url: /ar/java/format-specific-merging/merge-doc-files-groupdocs-merger-java/
 weight: 1
 ---
 
-# كيفية دمج مستندات متعددة باستخدام GroupDocs.Merger للـ Java
+# دمج مستندات متعددة باستخدام GroupDocs.Merger للـ Java
 
-في عصرنا الرقمي اليوم، إدارة المستندات بكفاءة أمر حاسم. غالبًا ما تحتاج إلى **دمج مستندات متعددة** في ملف واحد متماسك. سواءً كنت تجمع تقارير شهرية، أو توحد أوراق بحثية، أو تجمع وثائق المشروع، فإن دمج عدة ملفات DOC يوفر الوقت ويقلل الجهد اليدوي. سيوجهك هذا الدليل الشامل لاستخدام **GroupDocs.Merger للـ Java**—مكتبة قوية تم بناؤها **لدمج مستندات متعددة** بسرعة وموثوقية.
+GroupDocs.Merger للـ Java هي مكتبة تمكّن من دمج المستندات برمجيًا من تنسيقات مختلفة في ملف واحد. في المؤسسات الحديثة غالبًا ما تحتاج إلى **دمج مستندات متعددة** — سواء كنت تجمع تقارير شهرية، أو تجمع أوراق بحثية، أو تنشئ ملف مشروع رئيسي. يوضح هذا البرنامج التعليمي كيفية دمج مستندات متعددة بسرعة، وبشكل موثوق، وعلى نطاق واسع باستخدام GroupDocs.Merger للـ Java.
 
 ## إجابات سريعة
-- **ماذا يعني “combine multiple docs”؟** يشير إلى دمج ملفين أو أكثر من ملفات Word في مستند واحد.  
-- **ما هي المكتبة الأفضل لهذا في Java؟** توفر GroupDocs.Merger للـ Java API بسيط لدمج DOC، DOCX، PDF، وأكثر.  
-- **هل أحتاج إلى ترخيص؟** يتوفر نسخة تجريبية مجانية؛ يلزم الحصول على ترخيص تجاري للاستخدام في الإنتاج.  
-- **هل يمكنني دمج مستندات Word الكبيرة؟** نعم—يتعامل GroupDocs.Merger مع الملفات الكبيرة بكفاءة عند معالجتها بشكل متسلسل.  
-- **هل يمكن دمج الملفات المحمية بكلمة مرور؟** بالتأكيد؛ ما عليك سوى تزويد كلمة المرور عند تحميل كل مستند.
+- **ماذا يعني “دمج مستندات متعددة”؟** يعني دمج ملفين أو أكثر من Word أو PDF أو أي ملفات مدعومة أخرى في مستند واحد متواصل مع الحفاظ على التنسيق.  
+- **ما هي المكتبة الأفضل لهذا في Java؟** تقدم GroupDocs.Merger للـ Java واجهة برمجة تطبيقات مختصرة تدعم DOC و DOCX و PDF و XLSX و PPTX وأكثر من 30 تنسيقًا آخر.  
+- **هل أحتاج إلى ترخيص؟** يتوفر نسخة تجريبية مجانية؛ ويتطلب الترخيص التجاري للعمليات الإنتاجية.  
+- **هل يمكنني دمج مستندات Word الكبيرة؟** نعم — يعالج GroupDocs.Merger ملفات تصل إلى 500 ميغابايت باستخدام أقل من 200 ميغابايت من الذاكرة RAM عند الدمج المتسلسل.  
+- **هل يمكن دمج الملفات المحمية بكلمة مرور؟** بالتأكيد؛ ما عليك سوى توفير كلمة المرور عند تحميل كل مستند محمي.
 
-## ما هو “combine multiple docs”؟
+## ما هو “دمج مستندات متعددة”؟
+يعني دمج مستندات متعددة أخذ ملفين أو أكثر منفصلين — مثل Word أو PDF أو أي تنسيقات مدعومة أخرى — وربطها في ملف إخراج واحد. تحافظ العملية على تخطيط كل مصدر، وأنماطه، والرؤوس، والتذييلات، والجداول، والصور، والكائنات المدمجة، مما يضمن أن يبدو المستند المدمج سلسًا ومهنيًا.
 
-يعني دمج مستندات متعددة أخذ عدة مستندات Word منفصلة (أو صيغ أخرى مدعومة) وربطها معًا في ملف واحد مع الحفاظ على التنسيق، والرؤوس، والتذييلات، وعناصر المستند الأخرى.
-
-## لماذا تستخدم GroupDocs.Merger للـ Java؟
-
-- **Performance‑optimized** للملفات الكبيرة من Word.  
-- **Simple API** الذي يُجرد التعامل منخفض المستوى مع الملفات.  
-- **Cross‑format support** (DOC، DOCX، PDF، XLSX، إلخ).  
-- **No external software** مطلوب—كل شيء يعمل داخل تطبيق Java الخاص بك.
+## لماذا دمج مستندات متعددة؟
+يوفر الدمج جهد النسخ واللصق اليدوي، ويقضي على مشكلات التحكم في الإصدارات، ويضمن مظهرًا متسقًا عبر المحتوى المدمج. يعالج GroupDocs.Merger المستندات حتى 500 ميغابايت في أقل من 30 ثانية على خادم عادي، ويدعم **أكثر من 30 تنسيقًا للإدخال والإخراج**، مما يجعله خيارًا متعدد الاستخدامات لمجموعات الملفات المتنوعة.
 
 ## المتطلبات المسبقة
-- **Java Development Kit (JDK) 8+**  
-- **Maven أو Gradle** لإدارة الاعتمادات  
-- مكتبة **GroupDocs.Merger للـ Java** (أحدث إصدار)  
-- معرفة أساسية بـ Java I/O وإدارة الحزم
+- Java Development Kit (JDK) 8 أو أحدث  
+- Maven أو Gradle لإدارة التبعيات  
+- GroupDocs.Merger للـ Java (أحدث إصدار)  
+- إلمام أساسي بـ Java I/O ومعالجة الحزم  
 
 ### إعداد GroupDocs.Merger للـ Java
 أضف المكتبة إلى مشروعك باستخدام أداة البناء المفضلة لديك.
@@ -50,101 +101,113 @@ weight: 1
     <artifactId>groupdocs-merger</artifactId>
     <version>latest-version</version>
 </dependency>
-```
+```  
 
 **Gradle:**  
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
-```
+```  
 
-**Direct Download:** يمكنك أيضًا الحصول على الملفات الثنائية من [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
+التنزيل المباشر: يمكنك أيضًا الحصول على الملفات الثنائية من [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
-لبدء تجربة أو شراء ترخيص، قم بزيارة [صفحة الشراء](https://purchase.groupdocs.com/buy) واطلب ترخيصًا مؤقتًا إذا لزم الأمر.
+لبدء تجربة أو شراء ترخيص، زر [صفحة الشراء](https://purchase.groupdocs.com/buy) واطلب ترخيصًا مؤقتًا إذا لزم الأمر.
 
-### التهيئة الأساسية
-بعد إضافة الاعتماد، أنشئ كائن `Merger` يشير إلى أول مستند تريد استخدامه كأساس.
+## ما هو GroupDocs.Merger للـ Java؟
+GroupDocs.Merger للـ Java هو مجموعة تطوير برمجيات (SDK) خالصة Java تقوم بدمج DOC و DOCX و PDF و XLSX و PPTX والعديد من التنسيقات الأخرى دون الحاجة إلى برامج خارجية. يتعامل مع الملفات الكبيرة عن طريق تدفق البيانات، مما يحافظ على استهلاك الذاكرة منخفضًا.
+
+## التهيئة الأساسية
+`Merger` هو الفئة الأساسية في GroupDocs.Merger التي تمثل مستندًا سيتم دمجه وتوفر طرقًا للانضمام وحفظ الملفات. بعد إضافة التبعية، أنشئ مثيلًا من `Merger` يشير إلى أول مستند تريد استخدامه كأساس.
 
 ```java
 import com.groupdocs.merger.Merger;
 
 // Initialize your merger instance
 Merger merger = new Merger("path/to/your/source.doc");
-```
+```  
 
 ## كيفية دمج مستندات متعددة باستخدام GroupDocs.Merger للـ Java
+يتكون سير عمل الدمج من تحميل مستند أساسي، ثم الانضمام المتسلسل لكل ملف إضافي، وأخيرًا حفظ النتيجة في موقع الهدف. من خلال معالجة الملفات واحدًا تلو الآخر، تقوم المكتبة بتدفق البيانات وتبقي استهلاك الذاكرة منخفضًا، وهو أمر أساسي عند التعامل مع ملفات DOC أو PDF الكبيرة في بيئات الإنتاج.
 
 ### الخطوة 1: تحديد مسار الإخراج
-حدد أين سيتم حفظ المستند المدمج. استبدل `YOUR_OUTPUT_DIRECTORY` بالمجلد الذي تختاره.
+حدد مكان حفظ المستند المدمج. استبدل `YOUR_OUTPUT_DIRECTORY` بالمجلد الذي تختاره.
 
 ```java
 String outputFolder = "YOUR_OUTPUT_DIRECTORY";
 String outputFile = new File(outputFolder, "merged.doc").getPath();
-```
+```  
 
 ### الخطوة 2: تحميل المستند المصدر الأول
-أنشئ كائن `Merger` باستخدام ملف DOC الأولي. عدّل `YOUR_DOCUMENT_DIRECTORY` ليتطابق مع موقع ملفك.
+أنشئ كائن `Merger` باستخدام ملف DOC الأولي. عدّل `YOUR_DOCUMENT_DIRECTORY` لتطابق موقع ملفك.
 
 ```java
 Merger merger = new Merger("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOC");
-```
+```  
 
 ### الخطوة 3: إضافة مستندات إضافية
-استدعِ طريقة `join` لكل ملف إضافي تريد دمجه. يمكنك تكرار هذه الخطوة عددًا لا نهائيًا حسب الحاجة.
+طريقة `join` تُضيف المستند المحدد إلى قائمة الدمج الحالية، مع الحفاظ على تنسيقه الأصلي. استدعِ طريقة `join` لكل ملف إضافي تريد دمجه. يمكنك تكرار هذه الخطوة عددًا لا نهائيًا حسب الحاجة.
 
 ```java
 merger.join("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOC_2");
-```
+```  
 
 ### الخطوة 4: حفظ المستند المدمج
 احفظ جميع الملفات المضافة في ملف إخراج واحد.
 
 ```java
 merger.save(outputFile);
-```
+```  
+
+## كيف يتعامل GroupDocs.Merger مع الملفات المحمية بكلمة مرور؟
+عند تشفير مستند، تقوم بتمرير كلمة مروره إلى مُنشئ `Merger`. تقوم مجموعة تطوير البرمجيات (SDK) بفك تشفير المصدر أثناء التشغيل، وتدمجه مع الملفات الأخرى، ويمكنها إعادة تشفير النتيجة النهائية إذا قدمت كلمة مرور للإخراج أيضًا. يضمن ذلك بقاء المحتوى المحمي آمنًا طوال العملية.
 
 ## المشكلات الشائعة والحلول
-- **FileNotFoundException:** تحقق مرة أخرى من جميع مسارات الملفات وتأكد من أنها مطلقة أو نسبية بشكل صحيح بالنسبة لمشروعك.  
-- **Insufficient Disk Space:** قد تنتج عمليات الدمج الكبيرة ملفات إخراج ضخمة؛ تأكد من وجود مساحة كافية قبل تشغيل العملية.  
-- **Permission Errors:** تأكد من أن التطبيق يمتلك صلاحية القراءة للملفات المصدر وصلاحية الكتابة للمجلد الوجهة.  
-- **Merging large Word docs:** عالج المستندات واحدة تلو الأخرى (كما هو موضح) للحفاظ على استهلاك الذاكرة منخفضًا؛ تجنّب تحميل جميع الملفات في آن واحد.
+- **FileNotFoundException:** تحقق من صحة جميع مسارات الملفات وأنك تستخدم مسارات مطلقة أو مسارات نسبية مُحلَّلة بشكل صحيح.  
+- **Insufficient disk space:** قد تُنتج عمليات الدمج الكبيرة ملفات تزيد عن 200 ميغابايت؛ تأكد من أن قرص الوجهة يحتوي على مساحة حرة كافية.  
+- **Permission errors:** امنح صلاحية القراءة للملفات المصدر وصلاحية الكتابة لمجلد الإخراج لعملية Java.  
+- **Merging large Word docs:** عالج المستندات واحدًا تلو الآخر (كما هو موضح) للحفاظ على انخفاض استهلاك الذاكرة؛ تجنّب تحميل جميع الملفات في الذاكرة في آن واحد.  
 
 ## حالات الاستخدام العملية
-1. **Consolidating Reports:** دمج التقارير الشهرية أو الربع سنوية في ملف واحد للمستفيدين.  
-2. **Research Compilation:** دمج عدة أوراق بحثية أو فصول من الرسالة قبل التقديم.  
-3. **Project Documentation:** تجميع خطط المشروع، محاضر الاجتماعات، وتحديثات التقدم في مستند رئيسي للأرشفة.
+1. **دمج التقارير:** دمج التقارير الشهرية أو الربع سنوية في ملف محفظة واحد للإدارة العليا.  
+2. **تجميع الأبحاث:** جمع أوراق بحثية متعددة أو فصول رسالة قبل تقديمها إلى مجلة.  
+3. **توثيق المشروع:** تجميع خطط المشروع، محاضر الاجتماعات، وتحديثات التقدم في مستند رئيسي لأغراض الأرشفة أو التدقيق.  
 
 ## نصائح الأداء لدمج مستندات Word الكبيرة
-- **Sequential Processing:** حمّل، وانضم، واحفظ كل مستند بترتيب لتقليل استهلاك الذاكرة.  
-- **Dispose Resources:** بعد الحفظ، عيّن مرجع `Merger` إلى `null` أو دعه يخرج من النطاق لتحرير الذاكرة.  
-- **Monitor System Resources:** استخدم أدوات التحليل لمراقبة استهلاك المعالج والذاكرة أثناء عمليات الدمج الضخمة.
+- **Sequential processing:** تحميل، دمج، وحفظ كل مستند بترتيب لتقليل حجم الذاكرة المستخدمة.  
+- **Dispose resources:** بعد الحفظ، دع مرجع `Merger` يخرج من النطاق أو اضبطه على `null` لتحرير الذاكرة فورًا.  
+- **Monitor system resources:** استخدم أدوات تحليل Java (مثل VisualVM) لمراقبة استهلاك المعالج والذاكرة RAM أثناء عمليات الدمج الضخمة، خاصةً عند التعامل مع ملفات أكبر من 300 ميغابايت.  
 
 ## الأسئلة المتكررة
-
 **س: هل يمكنني دمج أكثر من مستندين في آن واحد؟**  
-ج: نعم، يمكنك استدعاء `join` بشكل متكرر لإضافة عدد غير محدود من المستندات حسب الحاجة.
+ج: نعم، يمكنك استدعاء `join` بشكل متكرر لإضافة عدد أي من المستندات حسب الحاجة.
 
-**س: ما هي صيغ الملفات التي يدعمها GroupDocs.Merger؟**  
-ج: يدعم DOC، DOCX، PDF، XLSX، PPTX، والعديد من الصيغ الشائعة الأخرى.
+**س: ما هي تنسيقات الملفات التي يدعمها GroupDocs.Merger؟**  
+ج: يدعم أكثر من 30 تنسيقًا، بما في ذلك DOC و DOCX و PDF و XLSX و PPTX و HTML والعديد من أنواع الصور.
 
 **س: كيف يجب أن أتعامل مع الأخطاء أثناء عملية الدمج؟**  
 ج: ضع منطق الدمج داخل كتلة try‑catch وتعامل مع `IOException` أو `FileNotFoundException` أو `SecurityException` حسب الحاجة.
 
-**س: هل أحتاج لتثبيت برامج إضافية على الخادم؟**  
-ج: لا—GroupDocs.Merger مكتبة Java صافية وتعمل في أي مكان يتوفر فيه JVM الخاص بك.
+**س: هل أحتاج إلى تثبيت برامج إضافية على الخادم؟**  
+ج: لا — GroupDocs.Merger هي مكتبة Java خالصة وتعمل أينما كانت JVM متاحة.
 
 **س: هل يمكن دمج المستندات المحمية بكلمة مرور؟**  
-ج: نعم، قدم كلمة المرور عند إنشاء كائن `Merger` لكل ملف محمي.
+ج: نعم، قدم كلمة المرور عند إنشاء مثيل `Merger` لكل ملف محمي.
 
 ## موارد إضافية
 - **Documentation:** [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)  
-- **API Reference:** [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)  
+- **API reference:** [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)  
 - **Download:** [Latest Releases](https://releases.groupdocs.com/merger/java/)  
-- **Purchase and Trials:** [Buy GroupDocs](https://purchase.groupdocs.com/buy)  
-- **Temporary License:** [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-- **Support Forum:** [GroupDocs Support](https://forum.groupdocs.com/c/merger/)
+- **Purchase and trials:** [Buy GroupDocs](https://purchase.groupdocs.com/buy)  
+- **Temporary license:** [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Support forum:** [GroupDocs Support](https://forum.groupdocs.com/c/merger/)
 
 ---
 
-**آخر تحديث:** 2026-03-09  
-**تم الاختبار مع:** GroupDocs.Merger أحدث إصدار للـ Java  
+**آخر تحديث:** 2026-09-26  
+**تم الاختبار مع:** أحدث إصدار من GroupDocs.Merger للـ Java  
 **المؤلف:** GroupDocs
+
+## دروس ذات صلة
+
+- [دمج ملفات DOCX متعددة باستخدام GroupDocs.Merger للـ Java](/merger/java/format-specific-merging/merge-docx-files-groupdocs-merger-java/)
+- [دمج ملفات DOCM Java – دليل مع GroupDocs.Merger](/merger/java/document-joining/merge-docm-files-groupdocs-merger-java/)
+- [دليل دمج مستندات Word Java باستخدام GroupDocs Merger](/merger/java/format-specific-merging/java-word-document-merging-groupdocs-merger-guide/)

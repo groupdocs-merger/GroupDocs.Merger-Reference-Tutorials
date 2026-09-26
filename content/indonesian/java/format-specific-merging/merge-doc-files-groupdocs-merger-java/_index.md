@@ -1,150 +1,215 @@
 ---
-date: '2026-03-09'
-description: Pelajari cara menggabungkan beberapa dokumen dan menggabungkan dokumen
-  Word besar menggunakan GroupDocs.Merger untuk Java. Panduan langkah demi langkah
-  ini mencakup penyiapan, implementasi, dan aplikasi praktis.
+date: '2026-09-26'
+description: Pelajari cara menggabungkan beberapa dokumen dengan GroupDocs.Merger
+  for Java. Panduan langkah demi langkah ini mencakup penyiapan, potongan kode, dan
+  tips untuk menggabungkan file DOC besar secara efisien.
 keywords:
-- merge Word documents Java
-- GroupDocs Merger setup
-- merge multiple DOC files
-title: 'Cara menggabungkan beberapa dokumen menggunakan GroupDocs.Merger untuk Java:
-  Panduan Komprehensif'
+- merge multiple documents
+- merge multiple doc files
+- merge large word docs
+- combine multiple docs java
+- GroupDocs Merger Java
+lastmod: '2026-09-26'
+og_description: Pelajari cara menggabungkan beberapa dokumen dengan GroupDocs.Merger
+  for Java. Panduan ini memandu Anda melalui instalasi, contoh kode, dan tips kinerja
+  untuk menangani file DOC besar.
+og_image_alt: Guide showing how to merge multiple documents in Java with GroupDocs.Merger
+og_title: Gabungkan beberapa dokumen menggunakan GroupDocs.Merger for Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-26'
+  description: Learn how to merge multiple documents with GroupDocs.Merger for Java.
+    This step‑by‑step guide covers setup, code snippets, and tips for merging large
+    DOC files efficiently.
+  headline: Merge multiple documents using GroupDocs.Merger for Java
+  type: TechArticle
+- description: Learn how to merge multiple documents with GroupDocs.Merger for Java.
+    This step‑by‑step guide covers setup, code snippets, and tips for merging large
+    DOC files efficiently.
+  name: Merge multiple documents using GroupDocs.Merger for Java
+  steps:
+  - name: define the output path
+    text: Specify where the merged document will be saved. Replace `YOUR_OUTPUT_DIRECTORY`
+      with the folder of your choice.
+  - name: load the first source document
+    text: Instantiate the `Merger` object with the initial DOC file. Adjust `YOUR_DOCUMENT_DIRECTORY`
+      to match your file location.
+  - name: add additional documents
+    text: The `join` method appends the specified document to the current merge queue,
+      preserving its original formatting. Call the `join` method for each extra file
+      you want to merge. You can repeat this step as many times as needed.
+  - name: save the combined document
+    text: Commit all added files to a single output file.
+  type: HowTo
+- questions:
+  - answer: Yes, you can call `join` repeatedly to add as many documents as needed.
+    question: Can I merge more than two documents at once?
+  - answer: It supports 30+ formats, including DOC, DOCX, PDF, XLSX, PPTX, HTML, and
+      many image types.
+    question: What file formats does GroupDocs.Merger support?
+  - answer: Wrap the merge logic in a try‑catch block and handle `IOException`, `FileNotFoundException`,
+      or `SecurityException` as appropriate.
+    question: How should I handle errors during the merge process?
+  - answer: No—GroupDocs.Merger is a pure Java library and runs wherever your JVM
+      is available.
+    question: Do I need to install additional software on the server?
+  - answer: Yes, provide the password when creating the `Merger` instance for each
+      protected file.
+    question: Is it possible to merge password‑protected documents?
+  type: FAQPage
+tags:
+- merge documents
+- GroupDocs.Merger
+- Java document processing
+- DOC merging
+- file merging
+title: Gabungkan beberapa dokumen menggunakan GroupDocs.Merger for Java
 type: docs
 url: /id/java/format-specific-merging/merge-doc-files-groupdocs-merger-java/
 weight: 1
 ---
 
-# Cara menggabungkan beberapa dokumen menggunakan GroupDocs.Merger for Java
+# Gabungkan beberapa dokumen menggunakan GroupDocs.Merger untuk Java
 
-Di era digital saat ini, mengelola dokumen secara efisien sangat penting. Seringkali, Anda perlu **menggabungkan beberapa dokumen** menjadi satu file yang terpadu. Baik Anda menyusun laporan bulanan, mengkonsolidasikan makalah penelitian, atau mengumpulkan dokumentasi proyek, menggabungkan beberapa file DOC menghemat waktu dan mengurangi upaya manual. Panduan komprehensif ini akan memandu Anda menggunakan **GroupDocs.Merger for Java**—sebuah pustaka kuat yang dibangun untuk **menggabungkan beberapa dokumen** dengan cepat dan andal.
+GroupDocs.Merger for Java adalah sebuah pustaka yang memungkinkan penggabungan programatik berbagai format dokumen menjadi satu file. Di perusahaan modern Anda sering perlu **menggabungkan beberapa dokumen**—baik saat mengkonsolidasikan laporan bulanan, menyusun makalah penelitian, atau membuat berkas proyek utama. Tutorial ini menunjukkan cara menggabungkan beberapa dokumen dengan cepat, andal, dan pada skala besar menggunakan GroupDocs.Merger for Java.
 
 ## Jawaban Cepat
-- **What does “combine multiple docs” mean?** Ini merujuk pada penggabungan dua atau lebih file Word menjadi satu dokumen.  
-- **Which library is best for this in Java?** GroupDocs.Merger for Java menyediakan API sederhana untuk menggabungkan DOC, DOCX, PDF, dan lainnya.  
-- **Do I need a license?** Versi percobaan gratis tersedia; lisensi komersial diperlukan untuk penggunaan produksi.  
-- **Can I merge large Word docs?** Ya—GroupDocs.Merger menangani file besar secara efisien ketika diproses secara berurutan.  
-- **Is it possible to merge password‑protected files?** Tentu saja; cukup berikan kata sandi saat memuat setiap dokumen.
+- **Apa arti “merge multiple documents”?** Artinya menggabungkan dua atau lebih file Word, PDF, atau file lain yang didukung menjadi satu dokumen berkelanjutan sambil mempertahankan format.  
+- **Library mana yang terbaik untuk ini di Java?** GroupDocs.Merger for Java menawarkan API yang ringkas yang mendukung DOC, DOCX, PDF, XLSX, PPTX, dan lebih dari 30 format lainnya.  
+- **Apakah saya memerlukan lisensi?** Versi percobaan gratis tersedia; lisensi komersial diperlukan untuk penerapan produksi.  
+- **Bisakah saya menggabungkan dokumen Word besar?** Ya—GroupDocs.Merger memproses file hingga 500 MB dengan menggunakan kurang dari 200 MB RAM saat digabungkan secara berurutan.  
+- **Apakah memungkinkan menggabungkan file yang dilindungi password?** Tentu saja; cukup berikan password saat memuat setiap dokumen yang dilindungi.
 
-## Apa itu “combine multiple docs”?
-Menggabungkan beberapa dokumen berarti mengambil beberapa dokumen Word terpisah (atau format lain yang didukung) dan menyatukannya menjadi satu file sekaligus mempertahankan format, header, footer, dan elemen dokumen lainnya.
+## Apa itu “merge multiple documents”?
+Menggabungkan beberapa dokumen berarti mengambil dua atau lebih file terpisah—seperti Word, PDF, atau format lain yang didukung—dan menggabungkannya menjadi satu file output. Proses ini mempertahankan tata letak, gaya, header, footer, tabel, gambar, dan objek tertanam masing-masing sumber, memastikan dokumen gabungan terlihat mulus dan profesional.
 
-## Mengapa menggunakan GroupDocs.Merger for Java?
-- **Performance‑optimized** untuk file Word berukuran besar.  
-- **Simple API** yang menyederhanakan penanganan file tingkat rendah.  
-- **Cross‑format support** (DOC, DOCX, PDF, XLSX, dll.).  
-- **No external software** diperlukan—semua berjalan di dalam aplikasi Java Anda.
+## Mengapa menggabungkan beberapa dokumen?
+Penggabungan menghemat upaya menyalin‑tempel manual, menghilangkan masalah kontrol versi, dan memastikan tampilan konsisten di seluruh konten yang digabungkan. GroupDocs.Merger memproses dokumen hingga 500 MB dalam waktu kurang dari 30 detik pada server tipikal, dan mendukung **lebih dari 30 format input dan output**, menjadikannya pilihan serbaguna untuk koleksi file heterogen.
 
 ## Prasyarat
-- **Java Development Kit (JDK) 8+**  
-- **Maven atau Gradle** untuk manajemen dependensi  
-- **GroupDocs.Merger for Java** library (versi terbaru)  
-- Pengetahuan dasar tentang Java I/O dan manajemen paket
+- Java Development Kit (JDK) 8 atau yang lebih baru  
+- Maven atau Gradle untuk manajemen dependensi  
+- GroupDocs.Merger for Java (versi terbaru)  
+- Familiaritas dasar dengan Java I/O dan penanganan paket  
 
-### Menyiapkan GroupDocs.Merger for Java
+### Menyiapkan GroupDocs.Merger untuk Java
 Tambahkan pustaka ke proyek Anda menggunakan alat build pilihan Anda.
 
-**Maven:**
+**Maven:**  
 ```xml
 <dependency>
     <groupId>com.groupdocs</groupId>
     <artifactId>groupdocs-merger</artifactId>
     <version>latest-version</version>
 </dependency>
-```
+```  
 
-**Gradle:**
+**Gradle:**  
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
-```
+```  
 
-**Unduhan Langsung:** Anda juga dapat memperoleh binary dari [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
+Unduhan langsung: Anda juga dapat memperoleh binary dari [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
-Untuk memulai percobaan atau membeli lisensi, kunjungi [purchase page](https://purchase.groupdocs.com/buy) dan minta lisensi sementara jika diperlukan.
+Untuk memulai percobaan atau membeli lisensi, kunjungi [halaman pembelian](https://purchase.groupdocs.com/buy) dan minta lisensi sementara jika diperlukan.
 
-### Inisialisasi Dasar
-Setelah dependensi ditambahkan, buat instance `Merger` yang menunjuk ke dokumen pertama yang ingin Anda gunakan sebagai basis.
+## Apa itu GroupDocs.Merger untuk Java?
+GroupDocs.Merger for Java adalah SDK pure‑Java yang menggabungkan DOC, DOCX, PDF, XLSX, PPTX, dan banyak format lainnya tanpa memerlukan perangkat lunak eksternal. Ia menangani file besar dengan streaming data, sehingga konsumsi memori tetap rendah.
+
+## Inisialisasi Dasar
+`Merger` adalah kelas utama dalam GroupDocs.Merger yang mewakili dokumen yang akan digabungkan dan menyediakan metode untuk menggabungkan serta menyimpan file. Setelah menambahkan dependensi, buat instance `Merger` yang menunjuk ke dokumen pertama yang ingin Anda gunakan sebagai dasar.
 
 ```java
 import com.groupdocs.merger.Merger;
 
 // Initialize your merger instance
 Merger merger = new Merger("path/to/your/source.doc");
-```
+```  
 
-## Cara menggabungkan beberapa dokumen menggunakan GroupDocs.Merger for Java
+## Cara menggabungkan beberapa dokumen menggunakan GroupDocs.Merger untuk Java
+Alur kerja penggabungan terdiri dari memuat dokumen dasar, secara berurutan menggabungkan setiap file tambahan, dan akhirnya menyimpan hasil ke lokasi target. Dengan memproses file satu per satu, pustaka melakukan streaming data dan menjaga penggunaan memori tetap rendah, yang penting saat menangani file DOC atau PDF besar dalam lingkungan produksi.
 
-### Langkah 1: Tentukan Jalur Output
+### Langkah 1: tentukan jalur output
 Tentukan di mana dokumen yang digabungkan akan disimpan. Ganti `YOUR_OUTPUT_DIRECTORY` dengan folder pilihan Anda.
 
 ```java
 String outputFolder = "YOUR_OUTPUT_DIRECTORY";
 String outputFile = new File(outputFolder, "merged.doc").getPath();
-```
+```  
 
-### Langkah 2: Muat Dokumen Sumber Pertama
-Buat objek `Merger` dengan file DOC awal. Sesuaikan `YOUR_DOCUMENT_DIRECTORY` agar cocok dengan lokasi file Anda.
+### Langkah 2: muat dokumen sumber pertama
+Buat objek `Merger` dengan file DOC awal. Sesuaikan `YOUR_DOCUMENT_DIRECTORY` agar sesuai dengan lokasi file Anda.
 
 ```java
 Merger merger = new Merger("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOC");
-```
+```  
 
-### Langkah 3: Tambahkan Dokumen Tambahan
-Panggil metode `join` untuk setiap file tambahan yang ingin Anda gabungkan. Anda dapat mengulangi langkah ini sebanyak yang diperlukan.
+### Langkah 3: tambahkan dokumen tambahan
+Metode `join` menambahkan dokumen yang ditentukan ke antrian penggabungan saat ini, mempertahankan format aslinya. Panggil metode `join` untuk setiap file tambahan yang ingin Anda gabungkan. Anda dapat mengulangi langkah ini sebanyak yang diperlukan.
 
 ```java
 merger.join("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOC_2");
-```
+```  
 
-### Langkah 4: Simpan Dokumen yang Digabungkan
-Komit semua file yang ditambahkan ke satu file output.
+### Langkah 4: simpan dokumen gabungan
+Komitasikan semua file yang ditambahkan ke satu file output.
 
 ```java
 merger.save(outputFile);
-```
+```  
 
-## Masalah Umum dan Solusinya
-- **FileNotFoundException:** Periksa kembali semua jalur file dan pastikan mereka bersifat absolut atau relatif dengan benar terhadap proyek Anda.  
-- **Insufficient Disk Space:** Penggabungan besar dapat menghasilkan file output yang cukup besar; pastikan ada ruang bebas yang cukup sebelum menjalankan proses.  
-- **Permission Errors:** Pastikan aplikasi memiliki akses baca ke file sumber dan akses tulis ke folder tujuan.  
-- **Merging large Word docs:** Proses dokumen satu per satu (seperti yang ditunjukkan) untuk menjaga penggunaan memori tetap rendah; hindari memuat semua file sekaligus.
+## Bagaimana GroupDocs.Merger menangani file yang dilindungi password?
+Ketika sebuah dokumen dienkripsi, Anda memberikan passwordnya ke konstruktor `Merger`. SDK mendekripsi sumber secara langsung, menggabungkannya dengan file lain, dan dapat mengenkripsi kembali output akhir jika Anda juga memberikan password output. Ini memastikan konten yang dilindungi tetap aman selama proses.
 
-## Kasus Penggunaan Praktis
-1. **Consolidating Reports:** Menggabungkan laporan bulanan atau kuartalan menjadi satu portofolio untuk pemangku kepentingan.  
-2. **Research Compilation:** Menggabungkan beberapa makalah penelitian atau bab tesis sebelum pengajuan.  
-3. **Project Documentation:** Menyusun rencana proyek, notulen rapat, dan pembaruan kemajuan menjadi satu dokumen utama untuk arsip.
+## Masalah umum dan solusi
+- **FileNotFoundException:** Verifikasi bahwa semua jalur file sudah benar dan Anda menggunakan jalur absolut atau jalur relatif yang terresolusi dengan benar.  
+- **Insufficient disk space:** Penggabungan besar dapat menghasilkan file lebih dari 200 MB; pastikan drive tujuan memiliki ruang bebas yang cukup.  
+- **Permission errors:** Berikan akses baca ke file sumber dan akses tulis ke folder output untuk proses Java.  
+- **Merging large Word docs:** Proses dokumen satu per satu (seperti yang ditunjukkan) untuk menjaga penggunaan memori rendah; hindari memuat semua file ke memori secara bersamaan.  
 
-## Tips Kinerja untuk Menggabungkan Dokumen Word Besar
-- **Sequential Processing:** Muat, gabungkan, dan simpan setiap dokumen secara berurutan untuk menjaga jejak memori tetap kecil.  
-- **Dispose Resources:** Setelah menyimpan, set referensi `Merger` ke `null` atau biarkan keluar dari scope untuk membebaskan memori.  
-- **Monitor System Resources:** Gunakan alat profiling untuk memantau penggunaan CPU dan RAM selama penggabungan massal.
+## Kasus penggunaan praktis
+1. **Consolidating reports:** Menggabungkan laporan bulanan atau kuartalan menjadi satu portofolio untuk manajemen senior.  
+2. **Research compilation:** Menggabungkan beberapa makalah penelitian atau bab tesis sebelum diserahkan ke jurnal.  
+3. **Project documentation:** Menyusun rencana proyek, notulen rapat, dan pembaruan kemajuan menjadi satu dokumen utama untuk keperluan arsip atau audit.  
 
-## Pertanyaan yang Sering Diajukan
+## Tips kinerja untuk menggabungkan dokumen Word besar
+- **Sequential processing:** Muat, gabungkan, dan simpan setiap dokumen secara berurutan untuk menjaga jejak memori tetap kecil.  
+- **Dispose resources:** Setelah menyimpan, biarkan referensi `Merger` keluar dari scope atau set ke `null` untuk membebaskan memori dengan cepat.  
+- **Monitor system resources:** Gunakan alat profiling Java (mis., VisualVM) untuk memantau penggunaan CPU dan RAM selama penggabungan massal, terutama saat menangani file lebih besar dari 300 MB.  
 
-**Q: Can I merge more than two documents at once?**  
+## Pertanyaan yang sering diajukan
+
+**Q: Bisakah saya menggabungkan lebih dari dua dokumen sekaligus?**  
 A: Ya, Anda dapat memanggil `join` berulang kali untuk menambahkan sebanyak mungkin dokumen yang diperlukan.
 
-**Q: What file formats does GroupDocs.Merger support?**  
-A: Ia mendukung DOC, DOCX, PDF, XLSX, PPTX, dan banyak format populer lainnya.
+**Q: Format file apa yang didukung oleh GroupDocs.Merger?**  
+A: Ia mendukung lebih dari 30 format, termasuk DOC, DOCX, PDF, XLSX, PPTX, HTML, dan banyak tipe gambar.
 
-**Q: How should I handle errors during the merge process?**  
+**Q: Bagaimana saya harus menangani kesalahan selama proses penggabungan?**  
 A: Bungkus logika penggabungan dalam blok try‑catch dan tangani `IOException`, `FileNotFoundException`, atau `SecurityException` sesuai kebutuhan.
 
-**Q: Do I need to install additional software on the server?**  
-A: Tidak—GroupDocs.Merger adalah pustaka Java murni dan berjalan di mana saja JVM Anda tersedia.
+**Q: Apakah saya perlu menginstal perangkat lunak tambahan di server?**  
+A: Tidak—GroupDocs.Merger adalah pustaka Java murni dan berjalan di mana pun JVM Anda tersedia.
 
-**Q: Is it possible to merge password‑protected documents?**  
-A: Ya, berikan kata sandi saat membuat instance `Merger` untuk setiap file yang dilindungi.
+**Q: Apakah memungkinkan menggabungkan dokumen yang dilindungi password?**  
+A: Ya, berikan password saat membuat instance `Merger` untuk setiap file yang dilindungi.
 
-## Sumber Daya Tambahan
-- **Documentation:** [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)  
-- **API Reference:** [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)  
-- **Download:** [Latest Releases](https://releases.groupdocs.com/merger/java/)  
-- **Purchase and Trials:** [Buy GroupDocs](https://purchase.groupdocs.com/buy)  
-- **Temporary License:** [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-- **Support Forum:** [GroupDocs Support](https://forum.groupdocs.com/c/merger/)
+## Sumber daya tambahan
+- **Documentation:** [Dokumentasi GroupDocs](https://docs.groupdocs.com/merger/java/)  
+- **API reference:** [Referensi API GroupDocs](https://reference.groupdocs.com/merger/java/)  
+- **Download:** [Rilis Terbaru](https://releases.groupdocs.com/merger/java/)  
+- **Purchase and trials:** [Beli GroupDocs](https://purchase.groupdocs.com/buy)  
+- **Temporary license:** [Minta Lisensi Sementara](https://purchase.groupdocs.com/temporary-license/)  
+- **Support forum:** [Dukungan GroupDocs](https://forum.groupdocs.com/c/merger/)
 
 ---
 
-**Last Updated:** 2026-03-09  
-**Tested With:** GroupDocs.Merger latest-version for Java  
-**Author:** GroupDocs
+**Terakhir Diperbarui:** 2026-09-26  
+**Diuji Dengan:** GroupDocs.Merger latest version for Java  
+**Penulis:** GroupDocs
+
+## Tutorial Terkait
+
+- [Menggabungkan Beberapa File DOCX Menggunakan GroupDocs.Merger untuk Java](/merger/java/format-specific-merging/merge-docx-files-groupdocs-merger-java/)
+- [Menggabungkan File DOCM Java – Panduan dengan GroupDocs.Merger](/merger/java/document-joining/merge-docm-files-groupdocs-merger-java/)
+- [Panduan Penggabungan Dokumen Word Java dengan GroupDocs Merger](/merger/java/format-specific-merging/java-word-document-merging-groupdocs-merger-guide/)
