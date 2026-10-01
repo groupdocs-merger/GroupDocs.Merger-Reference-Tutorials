@@ -1,21 +1,20 @@
 ---
 date: '2026-10-01'
-description: Learn how to embed pdf in word with GroupDocs.Merger for .NET. Follow
-  this guide to add PDF files as OLE objects, boost document interactivity, and keep
-  layouts intact.
-images:
-- /net/document-import/embed-pdf-word-groupdocs-merger-dotnet/og-image.png
+description: Узнайте, как встраивать PDF в Word с помощью GroupDocs.Merger for .NET.
+  Следуйте этому руководству, чтобы добавить PDF‑файлы как OLE‑объекты, повысить интерактивность
+  документа и сохранить макеты без изменений.
 keywords:
 - embed pdf in word
 - add pdf to word
 - ole object embedding
 - insert ole object word
 lastmod: '2026-10-01'
-og_description: embed pdf in word using GroupDocs.Merger for .NET. This tutorial walks
-  you through adding PDF files as OLE objects, covering setup, code, and best practices.
+og_description: Встраивание PDF в Word с помощью GroupDocs.Merger for .NET. Этот учебник
+  проведёт вас через процесс добавления PDF‑файлов как OLE‑объектов, охватывая настройку,
+  код и лучшие практики.
 og_image_alt: Guide showing how to embed a PDF into a Word document using GroupDocs.Merger
   for .NET
-og_title: Embed PDF in Word with GroupDocs.Merger for .NET
+og_title: Встраивание PDF в Word с GroupDocs.Merger for .NET
 schemas:
 - author: GroupDocs
   dateModified: '2026-10-01'
@@ -46,61 +45,61 @@ tags:
 - .NET document processing
 - OLE embedding
 - PDF to Word
-title: 'Embed PDF in Word Using GroupDocs.Merger for .NET: A Step-by-Step Guide'
+title: 'Встраивание PDF в Word с помощью GroupDocs.Merger for .NET: пошаговое руководство'
 type: docs
-url: /net/document-import/embed-pdf-word-groupdocs-merger-dotnet/
+url: /ru/net/document-import/embed-pdf-word-groupdocs-merger-dotnet/
 weight: 1
 ---
 
-# Embed PDF in Word using GroupDocs.Merger for .NET: a step‑by‑step guide
+# Встраивание PDF в Word с помощью GroupDocs.Merger для .NET: пошаговое руководство
 
-Embedding a PDF inside a Word file lets you keep the original formatting while giving readers instant access to the source document. In this tutorial you’ll learn how to **embed pdf in word** by inserting an OLE (Object Linking and Embedding) object with GroupDocs.Merger for .NET. We’ll cover everything from installing the library to the exact code you need, plus troubleshooting tips and real‑world use cases.
+Встраивание PDF в файл Word позволяет сохранить оригинальное форматирование и предоставить читателям мгновенный доступ к исходному документу. В этом руководстве вы узнаете, как **embed pdf in word** путем вставки OLE (Object Linking and Embedding) объекта с помощью GroupDocs.Merger для .NET. Мы охватим всё от установки библиотеки до точного кода, который вам нужен, а также советы по устранению неполадок и реальные примеры использования.
 
-## Quick answers
+## Быстрые ответы
 - **What is the simplest way to embed a PDF?** Use `Merger.ImportDocument` with `OleWordProcessingOptions`.
 - **Which library supports this?** GroupDocs.Merger for .NET.
 - **Do I need a license?** A temporary license works for evaluation; a full license is required for production.
 - **Can I add other file types?** Yes – the same method works for DOCX, XLSX, PPTX, and more.
 - **Is it .NET Core compatible?** Fully supported on .NET Core 3.1+ and .NET 5/6/7.
 
-## What is embed PDF in Word?
-Embedding a PDF in Word means inserting the PDF as an OLE object so the file appears as an icon or preview inside the document while the original PDF remains unchanged. This approach preserves the exact layout, fonts, and graphics of the source PDF, allowing readers to open the embedded file directly from the Word document for reference or further editing.
+## Что такое встраивание PDF в Word?
+Встраивание PDF в Word означает вставку PDF как OLE‑объекта, так что файл отображается в виде значка или превью внутри документа, при этом оригинальный PDF остаётся неизменным. Такой подход сохраняет точный макет, шрифты и графику исходного PDF, позволяя читателям открывать встроенный файл напрямую из документа Word для справки или дальнейшего редактирования.
 
-## Why use OLE object embedding with GroupDocs.Merger?
-GroupDocs.Merger supports **70+ input and output formats** and can process files up to **500 MB** without loading the entire document into memory, giving you fast, memory‑efficient operations for large enterprise workloads. Using OLE embedding lets you keep the original PDF intact, provides a clickable icon for quick access, and ensures the embedded content is portable across different devices and platforms.
+## Почему использовать встраивание OLE‑объектов с GroupDocs.Merger?
+GroupDocs.Merger поддерживает **70+ входных и выходных форматов** и может обрабатывать файлы размером до **500 МБ** без загрузки всего документа в память, обеспечивая быстрые и экономные по памяти операции для больших корпоративных нагрузок. Использование OLE‑встраивания позволяет сохранить оригинальный PDF нетронутым, предоставляет кликабельный значок для быстрого доступа и гарантирует переносимость встроенного контента между различными устройствами и платформами.
 
-## Introduction
+## Введение
 
-Struggling to enhance your Word documents by embedding rich content like PDF files? This tutorial guides you through inserting an OLE (Object Linking and Embedding) object, such as a PDF, into a specific page of a Microsoft Word document using GroupDocs.Merger for .NET. 
+Трудно улучшить ваши документы Word, встраивая богатый контент, такой как PDF‑файлы? Это руководство проведёт вас через процесс вставки OLE (Object Linking and Embedding) объекта, например PDF, на конкретную страницу документа Microsoft Word с помощью GroupDocs.Merger для .NET.
 
-Embedding objects can enrich your documents with dynamic or external content that maintains interactivity. Whether preparing reports requiring embedded datasets or presentations needing supplementary files, this feature simplifies the process.
+Встраивание объектов может обогатить ваши документы динамичным или внешним контентом, сохраняющим интерактивность. Будь то подготовка отчётов, требующих встроенных наборов данных, или презентаций, нуждающихся в дополнительных файлах, эта функция упрощает процесс.
 
-### What you'll learn
-- How to set up and use GroupDocs.Merger for .NET  
-- Step‑by‑step guide on embedding OLE objects into Word documents  
-- Key configuration options and troubleshooting tips  
+### Что вы узнаете
+- Как настроить и использовать GroupDocs.Merger для .NET  
+- Пошаговое руководство по встраиванию OLE‑объектов в документы Word  
+- Ключевые параметры конфигурации и советы по устранению неполадок  
 
-## Prerequisites
+## Требования
 
-Before implementing this feature, ensure your development environment is ready with necessary libraries and setup:
+Перед реализацией этой функции убедитесь, что ваша среда разработки готова с необходимыми библиотеками и настройками:
 
-### Required libraries
-- **GroupDocs.Merger for .NET** – a powerful library to manipulate document formats.  
-- **.NET Framework** or **.NET Core/5+** – any recent version is supported.
+### Требуемые библиотеки
+- **GroupDocs.Merger for .NET** – мощная библиотека для манипуляций с форматами документов.  
+- **.NET Framework** или **.NET Core/5+** – поддерживается любая современная версия.
 
-### Environment setup
-- Visual Studio (2017 or later) with C# support  
-- Basic understanding of file handling and object manipulation in .NET  
+### Настройка окружения
+- Visual Studio (2017 или новее) с поддержкой C#  
+- Базовое понимание работы с файлами и объектами в .NET  
 
-### Knowledge prerequisites
-- Familiarity with the C# programming language  
-- Understanding how to work with external libraries in .NET  
+### Требования к знаниям
+- Знание языка программирования C#  
+- Понимание того, как работать с внешними библиотеками в .NET  
 
-## Setting up GroupDocs.Merger for .NET
+## Настройка GroupDocs.Merger для .NET
 
-To get started, you need to install GroupDocs.Merger. Here are the steps:
+Чтобы начать, необходимо установить GroupDocs.Merger. Ниже приведены шаги:
 
-### Installation
+### Установка
 
 **Using .NET CLI:**  
 ```bash
@@ -115,33 +114,33 @@ Install-Package GroupDocs.Merger
 **NuGet Package Manager UI:**  
 Search for "GroupDocs.Merger" and install the latest version.
 
-### License acquisition
+### Приобретение лицензии
 
-To use GroupDocs.Merger, you can acquire a license through:
+Для использования GroupDocs.Merger вы можете получить лицензию через:
 - **Free trial** – start with a temporary license to evaluate features.  
 - **Temporary license** – obtain this from [here](https://purchase.groupdocs.com/temporary-license/).  
 - **Purchase** – buy a full license for production use at [GroupDocs Purchase](https://purchase.groupdocs.com/buy).
 
-### Basic initialization
+### Базовая инициализация
 
 After installation, import the library in your C# project:  
 ```csharp
 using GroupDocs.Merger;
 ```  
 
-## Implementation guide
+## Руководство по реализации
 
-Now that you have everything set up, let’s implement the feature to embed an OLE object.
+Теперь, когда всё настроено, давайте реализуем функцию встраивания OLE‑объекта.
 
-### How to embed a PDF in Word using GroupDocs.Merger for .NET?
+### Как встраивать PDF в Word с помощью GroupDocs.Merger для .NET?
 
 Load your source Word file with `new Merger("source.docx")`, configure `OleWordProcessingOptions` to specify the PDF path, dimensions, and page location, then call `ImportDocument` and `Save`. This three‑step flow embeds the PDF as an OLE object in a single line of code and writes the result to the output path.
 
-#### Importing an OLE object into a Word document
+#### Импорт OLE‑объекта в документ Word
 
 The `Merger` class is GroupDocs.Merger's core engine for manipulating documents. It provides methods for merging, splitting, and importing external files as OLE objects.
 
-##### Step 1: Prepare file paths and initialize options
+##### Шаг 1: Подготовьте пути к файлам и инициализируйте параметры
 
 OleWordProcessingOptions defines the settings for the OLE object such as file path, icon size, and insertion location. Define paths to the source Word document, the PDF you want to embed, and the output file. Then create an `OleWordProcessingOptions` instance to set the icon size and page number.
 
@@ -158,7 +157,7 @@ OleWordProcessingOptions oleOptions = new OleWordProcessingOptions(embeddedFileP
 };
 ```  
 
-##### Step 2: Merge and save document
+##### Шаг 2: Объедините и сохраните документ
 
 Create an instance of the `Merger` class with your source file. Use the `ImportDocument` method to add the OLE object and save the document.
 
@@ -170,34 +169,34 @@ using (Merger merger = new Merger(sourceFilePath))
 }
 ```  
 
-### Parameters and methods
+### Параметры и методы
 
 - **ImportDocument** – adds an external file as an OLE object.  
 - **Save** – writes changes to a specified path.  
 
-## Practical applications
+## Практические применения
 
 Embedding OLE objects can be incredibly useful in various scenarios:
 1. **Business reports** – embed financial datasets for easy reference.  
 2. **Technical documentation** – include detailed diagrams or schematics directly in the document.  
 3. **Educational materials** – insert supplementary reading, quizzes, or lab instructions without leaving the main handout.
 
-## Performance considerations
+## Соображения по производительности
 
 To keep your application responsive when using GroupDocs.Merger:
 - Minimize file sizes by embedding only necessary objects.  
 - Handle exceptions gracefully to avoid crashes during document manipulation.  
 - Efficiently manage memory and resources, especially in large‑scale applications.  
 
-## Conclusion
+## Заключение
 
 You’ve learned how to seamlessly embed OLE objects into Word documents using GroupDocs.Merger for .NET. This capability can significantly enhance your documents by integrating various types of content directly within them.
 
-### Next steps
+### Следующие шаги
 
 Explore further features offered by GroupDocs.Merger such as document splitting, merging, or rotating pages to fully leverage this robust library in your projects.
 
-## Frequently asked questions
+## Часто задаваемые вопросы
 
 **Q: Can I embed other file formats besides PDF?**  
 A: Yes, GroupDocs.Merger supports various file types. Check [documentation](https://docs.groupdocs.com/merger/net/) for the full list.
@@ -214,7 +213,7 @@ A: Ensure compatibility with .NET Core 3.1 or higher.
 **Q: Where can I find support if I encounter issues?**  
 A: Visit [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger) for assistance.
 
-## Resources
+## Ресурсы
 - **Documentation**: [GroupDocs.Merger Docs](https://docs.groupdocs.com/merger/net/)  
 - **API reference**: [GroupDocs API Ref](https://reference.groupdocs.com/merger/net/)  
 - **Download GroupDocs.Merger**: [Latest Release](https://releases.groupdocs.com/merger/net/)  
@@ -230,7 +229,7 @@ A: Visit [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger) for ass
 **Tested with:** GroupDocs.Merger 24.2 for .NET  
 **Author:** GroupDocs
 
-## Related Tutorials
+## Связанные руководства
 
 - [Embed Ole Objects Groupdocs Merger Net](/merger/net/document-import/embed-ole-objects-groupdocs-merger-net/)
 - [Embed Pdf Ole Powerpoint Groupdocs Merger Net](/merger/net/document-import/embed-pdf-ole-powerpoint-groupdocs-merger-net/)
