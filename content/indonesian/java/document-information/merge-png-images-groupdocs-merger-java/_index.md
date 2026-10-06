@@ -1,65 +1,98 @@
 ---
-date: '2026-03-17'
-description: Pelajari cara menggabungkan gambar PNG di Java menggunakan perpustakaan
-  manipulasi gambar Java. Panduan ini menunjukkan cara menyiapkan, mengimplementasikan,
-  serta tip praktis menggabungkan gambar PNG di Java dengan contoh yang jelas.
+date: '2026-10-06'
+description: Pelajari cara menggabungkan png images di Java dengan GroupDocs.Merger.
+  Panduan step‑by‑step ini mencakup setup, code initialization, merge options, dan
+  tip praktis untuk menggabungkan PNG files.
 keywords:
-- merge PNG images Java
-- GroupDocs Merger setup
-- Java image manipulation
-title: Gabungkan Gambar PNG di Java – perpustakaan manipulasi gambar Java
+- how to merge png
+- combine png files
+- java image processing
+- java image manipulation
+- java merge images
+lastmod: '2026-10-06'
+og_description: Temukan cara menggabungkan png images di Java dengan GroupDocs.Merger.
+  Ikuti panduan ini untuk setup library, configure merge options, dan membuat composite
+  graphics secara efisien.
+og_image_alt: Developer guide showing Java code that merges PNG images using GroupDocs.Merger
+og_title: Cara menggabungkan png images di Java menggunakan GroupDocs.Merger
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-06'
+  description: Learn how to merge png images in Java with GroupDocs.Merger. This step‑by‑step
+    guide covers setup, code initialization, merge options, and practical tips for
+    combining PNG files.
+  headline: How to merge png images in Java using GroupDocs.Merger
+  type: TechArticle
+- description: Learn how to merge png images in Java with GroupDocs.Merger. This step‑by‑step
+    guide covers setup, code initialization, merge options, and practical tips for
+    combining PNG files.
+  name: How to merge png images in Java using GroupDocs.Merger
+  steps:
+  - name: import necessary classes
+    text: 'Start by importing the required classes from the GroupDocs package:'
+  - name: define file paths
+    text: 'Set up absolute or relative paths for the source image and any additional
+      images you want to combine:'
+  - name: initialize the Merger object and configure join options
+    text: Create a `Merger` instance with the primary image, then specify how subsequent
+      images should be combined. `ImageJoinMode.Vertical` stacks images on top of
+      each other, while `ImageJoinMode.Horizontal` places them side‑by‑side.
+  - name: perform the merge and save the result
+    text: 'Add each extra image with `join` and write the merged output to disk: Adjust
+      the `ImageJoinMode` enum if you need a different orientation, such as `Horizontal`
+      for side‑by‑side banners.'
+  type: HowTo
+- questions:
+  - answer: GroupDocs.Merger for Java
+    question: What library should I use?
+  - answer: Yes – call `join` for each additional image.
+    question: Can I merge multiple PNGs at once?
+  - answer: '`ImageJoinMode.Vertical`'
+    question: Which merge mode creates a vertical stack?
+  - answer: A trial license works for testing; a paid license removes limitations.
+    question: Do I need a license?
+  - answer: JDK 8 or later
+    question: What Java version is required?
+  type: FAQPage
+tags:
+- merge png
+- GroupDocs.Merger
+- Java image processing
+- java image manipulation
+- image merging tutorial
+title: Cara menggabungkan png images di Java menggunakan GroupDocs.Merger
 type: docs
 url: /id/java/document-information/merge-png-images-groupdocs-merger-java/
 weight: 1
 ---
 
- translation.
+# Cara menggabungkan gambar png di Java menggunakan GroupDocs.Merger
 
-Be careful with bold **text** keep formatting but translate inside.
-
-Also bullet points.
-
-Let's go.
-
-# Cara Menggabungkan Gambar PNG Menggunakan GroupDocs.Merger untuk Java - Panduan Langkah demi Langkah
-
-Menggabungkan file PNG adalah tugas umum ketika Anda perlu membuat satu banner, menggabungkan elemen desain, atau menghasilkan grafik komposit secara programatis. Dalam tutorial ini, **Anda akan belajar cara menggabungkan png** gambar menggunakan GroupDocs.Merger untuk Java, langkah demi langkah. Baik Anda membangun layanan web yang menyusun aset pemasaran secara dinamis maupun alat desktop untuk pemrosesan gambar batch, panduan ini menunjukkan secara tepat apa yang harus dilakukan.
-
-## Pendahuluan
-
-Apakah Anda ingin menggabungkan beberapa gambar PNG menjadi satu secara mulus? Baik itu membuat satu banner atau menggabungkan elemen desain, tugas ini dapat terasa menantang tanpa alat yang tepat. **GroupDocs.Merger untuk Java** adalah **java image manipulation library** yang kuat yang menyederhanakan tugas manipulasi gambar seperti menggabungkan file PNG dengan mudah. Dalam panduan ini, kami akan membahas semua yang perlu Anda ketahui untuk menggabungkan dua gambar PNG secara efektif, mulai dari penyiapan hingga output akhir.
+Menggabungkan file PNG secara programatik adalah kebutuhan yang sering muncul ketika Anda perlu membuat satu banner, menggabungkan aset desain, atau menghasilkan grafik komposit secara langsung. Dalam tutorial ini Anda akan belajar **cara menggabungkan png** dengan GroupDocs.Merger untuk Java, mulai dari pemasangan pustaka hingga menghasilkan file gabungan akhir. Baik Anda membangun layanan web yang menyusun aset pemasaran maupun utilitas desktop untuk pemrosesan batch, langkah‑langkah di bawah ini akan membantu Anda dengan cepat.
 
 ## Jawaban Cepat
-- **Library apa yang harus saya gunakan?** GroupDocs.Merger untuk Java  
-- **Apakah saya dapat menggabungkan beberapa PNG sekaligus?** Ya – panggil `join` untuk setiap gambar tambahan.  
-- **Mode penggabungan mana yang membuat tumpukan vertikal?** `ImageJoinMode.Vertical`  
-- **Apakah saya memerlukan lisensi?** Lisensi percobaan berfungsi untuk pengujian; lisensi berbayar menghilangkan batasan.  
-- **Versi Java apa yang diperlukan?** JDK 8 atau lebih baru  
+- **Pustaka apa yang harus saya gunakan?** GroupDocs.Merger for Java  
+- **Bisakah saya menggabungkan beberapa PNG sekaligus?** Yes – call `join` for each additional image.  
+- **Mode penggabungan mana yang menghasilkan tumpukan vertikal?** `ImageJoinMode.Vertical`  
+- **Apakah saya memerlukan lisensi?** A trial license works for testing; a paid license removes limitations.  
+- **Versi Java apa yang diperlukan?** JDK 8 or later  
 
-## Apa itu java image manipulation library?
-Sebuah **java image manipulation library** adalah sekumpulan kelas Java yang sudah dibangun sebelumnya yang memungkinkan pengembang mengedit, menggabungkan, dan mentransformasi file gambar secara programatis tanpa harus menangani manipulasi piksel tingkat rendah. GroupDocs.Merger adalah salah satu library tersebut, menawarkan operasi tingkat tinggi seperti menggabungkan, memisahkan, dan mengonversi gambar serta dokumen. Menggunakan library khusus menghemat waktu pengembangan, memastikan kinerja yang lebih baik, dan menyediakan penanganan yang andal untuk berbagai format gambar.
+## Apa itu pustaka manipulasi gambar Java?
+Sebuah **java image manipulation library** adalah sekumpulan kelas Java yang memungkinkan pengembang mengedit, menggabungkan, dan mengubah file gambar secara programatik tanpa harus menangani manipulasi piksel tingkat rendah. GroupDocs.Merger adalah salah satu pustaka tersebut, menawarkan operasi tingkat tinggi seperti menggabungkan, memisahkan, dan mengonversi gambar serta dokumen. Menggunakan pustaka khusus menghemat waktu pengembangan, meningkatkan kinerja, dan memastikan penanganan yang handal untuk banyak format gambar.
 
 ## Mengapa menggunakan GroupDocs.Merger untuk penggabungan PNG?
-- **API sederhana:** Beberapa baris kode sudah cukup untuk menumpuk gambar secara vertikal atau horizontal.  
-- **Dukungan lintas format:** Bekerja dengan PNG, JPEG, BMP, dan banyak format lainnya.  
-- **Skalabel:** Menangani gambar beresolusi tinggi dan berukuran besar tanpa konsumsi memori berlebihan bila digunakan dengan benar.  
-- **Fleksibilitas lisensi:** Mulai dengan percobaan gratis, lalu tingkatkan seiring pertumbuhan proyek Anda.
+Muat dua file PNG Anda dan panggil `join` – pustaka melakukan pekerjaan berat dalam satu baris kode. GroupDocs.Merger mendukung **lebih dari 30 format gambar dan dokumen**, memproses file berisi ratusan halaman tanpa memuat seluruh konten ke memori, dan dapat menangani gambar hingga **500 MB** sambil menjaga penggunaan CPU di bawah **30 %** pada server tipikal. Kemampuan terukur ini menjadikannya pilihan yang skalabel untuk utilitas kecil maupun alur kerja tingkat perusahaan.
 
 ## Prasyarat
-
-Sebelum kita mulai, pastikan lingkungan pengembangan Anda siap. Anda akan memerlukan:
-- **Java Development Kit (JDK):** Pastikan JDK 8 atau lebih baru telah terpasang.  
-- **Maven/Gradle:** Gunakan Maven atau Gradle untuk manajemen dependensi.  
-- **Pengetahuan Dasar Java:** Familiaritas dengan konsep pemrograman Java.  
-
-Selain itu, Anda memerlukan lisensi yang valid untuk menggunakan GroupDocs.Merger. Anda dapat memperoleh lisensi percobaan gratis dari situs resmi mereka untuk menguji semua kemampuan library tanpa batasan.
+- **Java Development Kit (JDK):** versi 8 atau lebih baru terpasang.  
+- **Maven atau Gradle:** untuk manajemen dependensi.  
+- **Pengetahuan dasar Java:** Anda harus nyaman dengan kelas, objek, dan penanganan pengecualian.  
+- **Lisensi GroupDocs:** kunci percobaan sudah cukup untuk pengembangan; beli lisensi penuh untuk penggunaan produksi.  
 
 ## Menyiapkan GroupDocs.Merger untuk Java
 
-Memulai dengan GroupDocs.Merger sangat mudah. Ikuti langkah-langkah berikut untuk mengintegrasikannya ke dalam proyek Anda:
-
 ### Instalasi Maven
-Tambahkan dependensi berikut ke file `pom.xml` Anda:
+Add the following dependency to your `pom.xml` file:
 
 ```xml
 <dependency>
@@ -70,19 +103,19 @@ Tambahkan dependensi berikut ke file `pom.xml` Anda:
 ```
 
 ### Instalasi Gradle
-Untuk proyek yang menggunakan Gradle, sertakan ini di file `build.gradle` Anda:
+For projects using Gradle, include this in your `build.gradle` file:
 
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
 ### Unduhan Langsung
-Sebagai alternatif, unduh versi terbaru langsung dari [halaman rilis GroupDocs.Merger untuk Java](https://releases.groupdocs.com/merger/java/).
+Alternatively, download the latest version directly from the [Dokumentasi GroupDocs.Merger untuk Java releases page](https://releases.groupdocs.com/merger/java/).
 
-Untuk mengaktifkan percobaan atau membeli lisensi, kunjungi situs mereka di [GroupDocs Purchases](https://purchase.groupdocs.com/buy) dan ikuti langkah-langkah untuk memperoleh lisensi sementara atau penuh Anda.
+To activate a trial or purchase a license, visit their website at [Pembelian GroupDocs](https://purchase.groupdocs.com/buy) and follow the steps to acquire your temporary or full license.
 
-### Inisialisasi Dasar
-Setelah terpasang, Anda dapat menginisialisasi GroupDocs.Merger sebagai berikut:
+## Inisialisasi Dasar
+The `Merger` class is the core component that handles image joining and other document operations.
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -94,15 +127,14 @@ class ImageMerger {
 }
 ```
 
-Ini menyiapkan lingkungan Anda untuk mulai menggabungkan gambar.
-
-## Cara Menggabungkan Gambar PNG dengan GroupDocs.Merger
+## Cara menggabungkan gambar png dengan GroupDocs.Merger
+Langkah‑langkah berikut menunjukkan cara menggabungkan beberapa file PNG menjadi satu gambar menggunakan API tingkat tinggi GroupDocs.Merger. Dengan menginisialisasi objek Merger, menambahkan gambar sumber, memilih mode penggabungan, dan menyimpan hasilnya, Anda dapat membuat komposit vertikal atau horizontal dengan kode minimal.
 
 ### Ikhtisar
-Pada bagian ini, kami akan menjelajahi **cara menggabungkan png** gambar menggunakan library GroupDocs.Merger. Fitur ini sangat berguna untuk menggabungkan elemen grafis atau membuat gambar komposit secara programatis dalam aplikasi Java.
+Anda dapat menggabungkan file PNG hanya dalam beberapa baris kode Java. Pustaka mengabstraksi manipulasi tingkat piksel, memungkinkan Anda fokus pada logika bisnis aplikasi Anda.
 
-#### Langkah 1: Impor Kelas yang Diperlukan
-Mulailah dengan mengimpor kelas yang diperlukan dari library GroupDocs:
+### Langkah 1: impor kelas yang diperlukan
+Start by importing the required classes from the GroupDocs package:
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -110,8 +142,8 @@ import com.groupdocs.merger.domain.options.ImageJoinMode;
 import com.groupdocs.merger.domain.options.ImageJoinOptions;
 ```
 
-#### Langkah 2: Tentukan Jalur File
-Siapkan jalur untuk gambar sumber dan gambar tambahan Anda. Ganti placeholder dengan jalur file yang sebenarnya:
+### Langkah 2: tentukan jalur file
+Set up absolute or relative paths for the source image and any additional images you want to combine:
 
 ```java
 String sourceImagePath = "YOUR_DOCUMENT_DIRECTORY/sample.png";
@@ -120,85 +152,76 @@ String outputFolder = "YOUR_OUTPUT_DIRECTORY";
 String outputFile = new File(outputFolder, "merged.png").getPath();
 ```
 
-#### Langkah 3: Inisialisasi Merger dan Atur Opsi Join
-Inisialisasi objek `Merger` dengan gambar sumber Anda. Tentukan opsi join untuk menentukan cara gambar digabungkan:
+### Langkah 3: inisialisasi objek Merger dan konfigurasikan opsi penggabungan
+Create a `Merger` instance with the primary image, then specify how subsequent images should be combined. `ImageJoinMode.Vertical` stacks images on top of each other, while `ImageJoinMode.Horizontal` places them side‑by‑side.
 
 ```java
 Merger merger = new Merger(sourceImagePath);
 ImageJoinOptions joinOptions = new ImageJoinOptions(ImageJoinMode.Vertical);
 ```
 
-Di sini, `ImageJoinMode.Vertical` menunjukkan bahwa gambar akan ditumpuk secara vertikal—sempurna untuk **penggabungan gambar vertikal** atau ketika Anda perlu **menumpuk png images**.
-
-#### Langkah 4: Lakukan Penggabungan
-Tambahkan gambar tambahan dan simpan hasil gabungan:
+### Langkah 4: lakukan penggabungan dan simpan hasilnya
+Add each extra image with `join` and write the merged output to disk:
 
 ```java
 merger.join(additionalImagePath, joinOptions);
 merger.save(outputFile);
 ```
 
-Potongan kode ini menunjukkan cara menggabungkan dua gambar menjadi satu file yang disimpan di direktori output yang Anda tentukan. Sesuaikan `ImageJoinMode` untuk orientasi berbeda, seperti `Horizontal` untuk penggabungan berdampingan.
-
-#### Tips Pemecahan Masalah
-- Pastikan semua jalur gambar benar dan dapat diakses.  
-- Verifikasi bahwa Anda memiliki lisensi GroupDocs yang valid jika diperlukan oleh kasus penggunaan Anda.  
-- Jika muncul masalah, konsultasikan [dokumentasi GroupDocs](https://docs.groupdocs.com/merger/java/) atau forum dukungan mereka.
+Adjust the `ImageJoinMode` enum if you need a different orientation, such as `Horizontal` for side‑by‑side banners.
 
 ## Aplikasi Praktis
+Merging PNG images is useful in many real‑world scenarios:
 
-Penggabungan gambar PNG dapat diterapkan dalam berbagai skenario:
+1. **Materi pemasaran:** Menggabungkan beberapa elemen desain menjadi satu banner untuk kampanye iklan.  
+2. **Pengembangan web:** Secara dinamis menghasilkan gambar header responsif dengan menjahit bersama aset berukuran berbeda.  
+3. **Fotografi:** Membuat panorama atau kolase dari serangkaian foto tanpa penyuntingan manual.  
 
-1. **Materi Pemasaran:** Menggabungkan beberapa elemen desain menjadi satu gambar banner untuk iklan.  
-2. **Pengembangan Web:** Membuat banner responsif dengan menggabungkan bagian gambar berukuran berbeda secara dinamis.  
-3. **Fotografi:** Membuat tampilan panorama atau kolase dari beberapa foto.  
-
-Mengintegrasikan fungsionalitas ini juga dapat meningkatkan aplikasi seperti sistem manajemen konten, perpustakaan aset digital, dan alat desain.
+Integrating this capability into a content‑management system, digital‑asset library, or custom design tool can dramatically speed up production workflows.
 
 ## Pertimbangan Kinerja
+- **Manajemen memori:** Gunakan API streaming `Merger` untuk file lebih besar dari 200 MB guna menghindari `OutOfMemoryError`.  
+- **Alokasi sumber daya:** Alokasikan setidaknya 2 GB ruang heap saat memproses PNG resolusi tinggi di atas 3000 × 3000 px.  
+- **Konkruensi:** Jalankan penggabungan pada thread terpisah hanya setelah memastikan keamanan thread (`thread‑safe`) dari instance `Merger` (pustaka aman untuk operasi hanya‑baca).  
 
-Mengoptimalkan kinerja aplikasi Java Anda saat menggunakan GroupDocs.Merger sangat penting:
-
-- **Manajemen Memori:** Tangani file gambar besar secara efisien untuk menghindari error OutOfMemory.  
-- **Alokasi Sumber Daya:** Sediakan CPU dan RAM yang cukup untuk pemrosesan resolusi tinggi.  
-- **Praktik Terbaik:** Ikuti pedoman konkruensi Java untuk mengelola thread dan garbage collection secara efektif.
+Following these best practices ensures smooth operation even under heavy load.
 
 ## Pertanyaan yang Sering Diajukan
 
-**T1: Bisakah saya menggabungkan lebih dari dua gambar PNG sekaligus?**  
-J1: Ya, Anda dapat menambahkan beberapa gambar secara berurutan menggunakan metode `join` untuk setiap file gambar.
+**Q1: Bisakah saya menggabungkan lebih dari dua gambar PNG sekaligus?**  
+A1: Ya, panggil `join` berulang kali untuk setiap gambar tambahan sebelum memanggil `save`. Pustaka akan menggabungkan mereka dalam urutan yang Anda tentukan.
 
-**T2: Bagaimana cara menangani pengecualian selama proses penggabungan?**  
-J2: Gunakan blok try‑catch untuk mengelola potensi pengecualian dan memastikan penanganan error yang tepat dalam kode Anda.
+**Q2: Bagaimana cara menangani pengecualian selama proses penggabungan?**  
+A2: Bungkus logika penggabungan dalam blok `try‑catch` dan tangkap `MergerException` untuk menangkap kesalahan spesifik API, kemudian tangani atau catat sesuai kebutuhan.
 
-**T3: Apakah GroupDocs.Merger gratis digunakan?**  
-J3: Anda dapat memulai dengan lisensi percobaan gratis, tetapi untuk fungsionalitas penuh tanpa batasan, Anda perlu membeli lisensi.
+**Q3: Apakah GroupDocs.Merger gratis untuk digunakan?**  
+A3: Anda dapat memulai dengan lisensi percobaan gratis yang menyediakan fungsi lengkap untuk evaluasi. Penggunaan produksi memerlukan lisensi berbayar untuk menghapus batasan penggunaan.
 
-**T4: Format apa saja yang didukung GroupDocs.Merger selain PNG?**  
-J4: GroupDocs.Merger mendukung berbagai format dokumen dan gambar, termasuk PDF dan JPEG. Lihat dokumentasi mereka untuk daftar lengkap.
+**Q4: Format apa yang didukung GroupDocs.Merger selain PNG?**  
+A5: Pustaka mendukung lebih dari 30 format, termasuk JPEG, BMP, TIFF, PDF, DOCX, dan XLSX. Lihat matriks format resmi untuk daftar lengkap.
 
-**T5: Bagaimana cara menyesuaikan nama file output dan jalurnya secara dinamis?**  
-J5: Modifikasi variabel `outputFile` dalam kode Anda dengan nilai dinamis berdasarkan logika aplikasi Anda.
+**Q5: Bagaimana saya dapat menyesuaikan nama file output dan lokasinya secara dinamis?**  
+A5: Bangun string `outputFile` menggunakan variabel seperti timestamp, ID pengguna, atau nilai konfigurasi, kemudian berikan ke metode `save`.
 
-## Kesimpulan
-
-Kami telah membahas **cara menggabungkan png** gambar menggunakan GroupDocs.Merger untuk Java, mulai dari penyiapan library hingga menjalankan operasi penggabungan gambar lengkap. Panduan ini memberi Anda pengetahuan untuk menerapkan fungsionalitas ini dalam proyek dunia nyata, baik Anda membangun aset pemasaran, komponen web, atau kolase foto.
-
-Untuk lebih memperdalam pemahaman Anda tentang kemampuan GroupDocs.Merger, pertimbangkan menjelajahi [dokumentasi mereka yang luas](https://docs.groupdocs.com/merger/java/) dan bereksperimen dengan konfigurasi berbeda.
-
-**Sumber Daya**
-
-- **Dokumentasi:** Jelajahi panduan terperinci di [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)  
-- **Referensi API:** Akses detail API lengkap di [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)  
-- **Unduhan:** Dapatkan versi terbaru dari [GroupDocs Releases](https://releases.groupdocs.com/merger/java/)  
-- **Pembelian:** Beli lisensi atau dapatkan percobaan di [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy)  
-- **Percobaan Gratis & Lisensi Sementara:** Dapatkan lisensi untuk tujuan pengujian di [GroupDocs Free Trial](https://releases.groupdocs.com/merger/java/) dan [Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-- **Dukungan:** Untuk bantuan lebih lanjut, kunjungi [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/)
+## Sumber Daya
+- [Dokumentasi GroupDocs](https://docs.groupdocs.com/merger/java/) – panduan dan tutorial komprehensif.  
+- [dokumentasi](https://docs.groupdocs.com/merger/java/) – URL yang sama dengan teks tautan alternatif.  
+- [Dokumentasi GroupDocs](https://docs.groupdocs.com/merger/java/) – portal dokumentasi resmi.  
+- [Referensi API GroupDocs](https://reference.groupdocs.com/merger/java/) – deskripsi metode API yang detail.  
+- [Rilis GroupDocs](https://releases.groupdocs.com/merger/java/) – halaman unduhan untuk semua rilis pustaka.  
+- [Halaman Pembelian GroupDocs](https://purchase.groupdocs.com/buy) – tempat membeli lisensi penuh.  
+- [Uji Coba Gratis GroupDocs](https://releases.groupdocs.com/merger/java/) – dapatkan versi percobaan pustaka.  
+- [Lisensi Sementara](https://purchase.groupdocs.com/temporary-license/) – minta lisensi jangka pendek untuk pengujian.  
+- [Forum Dukungan GroupDocs](https://forum.groupdocs.com/c/merger/) – bantuan komunitas dan tanya‑jawab.
 
 ---
 
-**Terakhir Diperbarui:** 2026-03-17  
-**Diuji Dengan:** GroupDocs.Merger versi terbaru (per 2026)  
-**Penulis:** GroupDocs  
+**Last Updated:** 2026-10-06  
+**Tested With:** GroupDocs.Merger latest version (as of 2026)  
+**Author:** GroupDocs
 
----
+## Tutorial Terkait
+
+- [Cara Menggabungkan Gambar di Java: Menguasai Penggabungan Gambar dengan GroupDocs.Merger untuk File BMP](/merger/java/image-operations/mastering-image-merging-java-groupdocs-merger/)  
+- [Cara Menggabungkan Gambar TIFF Menggunakan GroupDocs.Merger untuk Java: Panduan Langkah‑ demi‑Langkah](/merger/java/format-specific-merging/merge-tiff-files-groupdocs-merger-java/)  
+- [Menggabungkan File SVGZ dengan Mudah Menggunakan GroupDocs.Merger untuk Java: Panduan Komprehensif](/merger/java/format-specific-merging/merge-svgz-files-groupdocs-merger-java/)

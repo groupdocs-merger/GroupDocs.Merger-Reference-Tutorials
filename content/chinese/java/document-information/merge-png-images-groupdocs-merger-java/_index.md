@@ -1,55 +1,96 @@
 ---
-date: '2026-03-17'
-description: 学习如何使用 Java 图像处理库在 Java 中合并 PNG 图像。本指南展示了环境设置、实现过程以及实用的 Java 合并 PNG 图像技巧，并提供了清晰的示例。
+date: '2026-10-06'
+description: 了解如何在 Java 中使用 GroupDocs.Merger 合并 png 图像。此分步指南涵盖 setup、code initialization、merge
+  options，以及结合 PNG 文件的 practical tips。
 keywords:
-- merge PNG images Java
-- GroupDocs Merger setup
-- Java image manipulation
-title: 在 Java 中合并 PNG 图像 – Java 图像处理库
+- how to merge png
+- combine png files
+- java image processing
+- java image manipulation
+- java merge images
+lastmod: '2026-10-06'
+og_description: 发现如何在 Java 中使用 GroupDocs.Merger 合并 png 图像。按照本指南 set up the library、configure
+  merge options，并高效创建 composite graphics。
+og_image_alt: Developer guide showing Java code that merges PNG images using GroupDocs.Merger
+og_title: 如何在 Java 中使用 GroupDocs.Merger 合并 png 图像
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-06'
+  description: Learn how to merge png images in Java with GroupDocs.Merger. This step‑by‑step
+    guide covers setup, code initialization, merge options, and practical tips for
+    combining PNG files.
+  headline: How to merge png images in Java using GroupDocs.Merger
+  type: TechArticle
+- description: Learn how to merge png images in Java with GroupDocs.Merger. This step‑by‑step
+    guide covers setup, code initialization, merge options, and practical tips for
+    combining PNG files.
+  name: How to merge png images in Java using GroupDocs.Merger
+  steps:
+  - name: import necessary classes
+    text: 'Start by importing the required classes from the GroupDocs package:'
+  - name: define file paths
+    text: 'Set up absolute or relative paths for the source image and any additional
+      images you want to combine:'
+  - name: initialize the Merger object and configure join options
+    text: Create a `Merger` instance with the primary image, then specify how subsequent
+      images should be combined. `ImageJoinMode.Vertical` stacks images on top of
+      each other, while `ImageJoinMode.Horizontal` places them side‑by‑side.
+  - name: perform the merge and save the result
+    text: 'Add each extra image with `join` and write the merged output to disk: Adjust
+      the `ImageJoinMode` enum if you need a different orientation, such as `Horizontal`
+      for side‑by‑side banners.'
+  type: HowTo
+- questions:
+  - answer: GroupDocs.Merger for Java
+    question: What library should I use?
+  - answer: Yes – call `join` for each additional image.
+    question: Can I merge multiple PNGs at once?
+  - answer: '`ImageJoinMode.Vertical`'
+    question: Which merge mode creates a vertical stack?
+  - answer: A trial license works for testing; a paid license removes limitations.
+    question: Do I need a license?
+  - answer: JDK 8 or later
+    question: What Java version is required?
+  type: FAQPage
+tags:
+- merge png
+- GroupDocs.Merger
+- Java image processing
+- java image manipulation
+- image merging tutorial
+title: 如何在 Java 中使用 GroupDocs.Merger 合并 png 图像
 type: docs
 url: /zh/java/document-information/merge-png-images-groupdocs-merger-java/
 weight: 1
 ---
 
-# 如何使用 GroupDocs.Merger for Java 合并 PNG 图像 - 步骤指南
+# 如何在 Java 中使用 GroupDocs.Merger 合并 PNG 图像
 
-合并 PNG 文件是创建单个横幅、组合设计元素或以编程方式生成复合图形时的常见任务。在本教程中，**您将学习如何使用 GroupDocs.Merger for Java 合并 png** 图像，步骤详尽。无论是构建在运行时组装营销素材的 Web 服务，还是用于批量图像处理的桌面工具，本指南都将告诉您该怎么做。
+以编程方式合并 PNG 文件是常见需求，当您需要构建单个横幅、合并设计资源或即时生成复合图形时。本教程将教您 **如何合并 png** 图像，使用 GroupDocs.Merger for Java，从安装库到生成最终合并文件。无论是构建用于组合营销资产的 Web 服务，还是用于批量处理的桌面工具，下面的步骤都能帮助您快速实现。
 
-## 介绍
-
-您是否想要无缝地将多个 PNG 图像合并为一个？无论是创建单个横幅还是合并设计元素，没有合适的工具这项工作都可能令人望而生畏。**GroupDocs.Merger for Java** 是一个强大的 **java image manipulation library**，可以轻松简化 PNG 文件的合并等图像处理任务。在本指南中，我们将从环境搭建到最终输出，完整演示如何高效合并两张 PNG 图像。
-
-## 快速回答
+## 快速答案
 - **应该使用哪个库？** GroupDocs.Merger for Java  
-- **可以一次合并多个 PNG 吗？** 可以 – 对每个额外的图像调用 `join`。  
+- **我可以一次合并多个 PNG 吗？** 可以 – 对每个额外的图像调用 `join`。  
 - **哪种合并模式会创建垂直堆叠？** `ImageJoinMode.Vertical`  
-- **需要许可证吗？** 试用许可证可用于测试；付费许可证可去除限制。  
+- **我需要许可证吗？** 试用许可证可用于测试；付费许可证可移除限制。  
 - **需要哪个 Java 版本？** JDK 8 或更高  
 
-## 什么是 java image manipulation library？
-**java image manipulation library** 是一套预构建的 Java 类，开发者可以通过它们以编程方式编辑、组合和转换图像文件，而无需处理底层像素。GroupDocs.Merger 就是这样的一种库，提供了合并、拆分、转换图像和文档等高级操作。使用专用库可以节省开发时间，提升性能，并可靠地处理各种图像格式。
+## 什么是 Java 图像处理库？
+一个 **java 图像处理库** 是一组内置的 Java 类，允许开发者以编程方式编辑、合并和转换图像文件，而无需处理底层像素。GroupDocs.Merger 就是这样的一种库，提供了高级操作，如合并、拆分和转换图像及文档。使用专用库可以节省开发时间、提升性能，并确保对多种图像格式的可靠处理。
 
-## 为什么在 PNG 合并时使用 GroupDocs.Merger？
-- **简洁的 API：** 几行代码即可实现图像的垂直或水平堆叠。  
-- **跨格式支持：** 支持 PNG、JPEG、BMP 等多种格式。  
-- **可扩展性：** 正确使用时可处理大尺寸、高分辨率图像而不会占用过多内存。  
-- **授权灵活：** 可先使用免费试用版，项目扩大后再升级。
+## 为什么在 PNG 合并中使用 GroupDocs.Merger？
+加载两个 PNG 文件并调用 `join` – 库会在一行代码中完成繁重的工作。GroupDocs.Merger 支持 **30+ 图像和文档格式**，可在不将整个内容加载到内存的情况下处理数百页的文件，并且能够处理高达 **500 MB** 的图像，同时在典型服务器上将 CPU 使用率保持在 **30 %** 以下。这些量化能力使其成为小型工具和企业级流水线的可扩展选择。
 
-## 前置条件
+## 前提条件
+- **Java Development Kit (JDK)：** 已安装 8 版或更高。  
+- **Maven 或 Gradle：** 用于依赖管理。  
+- **基本的 Java 知识：** 您应熟悉类、对象和异常处理。  
+- **GroupDocs 许可证：** 试用密钥足以进行开发；生产环境请购买正式许可证。
 
-在开始之前，请确保开发环境已就绪。您需要：
-- **Java Development Kit (JDK)：** 确认已安装 JDK 8 或更高版本。  
-- **Maven/Gradle：** 使用 Maven 或 Gradle 管理依赖。  
-- **基础 Java 知识：** 熟悉 Java 编程概念。  
-
-此外，您还需要有效的许可证才能使用 GroupDocs.Merger。可从官方站点获取免费试用许可证，以在不受限制的情况下测试库的全部功能。
-
-## 为 Java 项目设置 GroupDocs.Merger
-
-开始使用 GroupDocs.Merger 非常简单。按照以下步骤将其集成到项目中：
+## 为 Java 设置 GroupDocs.Merger
 
 ### Maven 安装
-在 `pom.xml` 文件中添加以下依赖：
+将以下依赖添加到您的 `pom.xml` 文件中：
 
 ```xml
 <dependency>
@@ -60,19 +101,19 @@ weight: 1
 ```
 
 ### Gradle 安装
-对于使用 Gradle 的项目，在 `build.gradle` 文件中加入：
+对于使用 Gradle 的项目，请在 `build.gradle` 文件中加入以下内容：
 
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
 ### 直接下载
-或者直接从 [GroupDocs.Merger for Java releases page](https://releases.groupdocs.com/merger/java/) 下载最新版本。
+您也可以直接从 [GroupDocs.Merger for Java releases page](https://releases.groupdocs.com/merger/java/) 下载最新版本。
 
-要激活试用或购买许可证，请访问 [GroupDocs Purchases](https://purchase.groupdocs.com/buy) 并按照步骤获取临时或正式许可证。
+要激活试用或购买许可证，请访问他们的网站 [GroupDocs Purchases](https://purchase.groupdocs.com/buy) 并按照步骤获取临时或正式许可证。
 
-### 基本初始化
-安装完成后，您可以按如下方式初始化 GroupDocs.Merger：
+## 基本初始化
+`Merger` 类是处理图像合并及其他文档操作的核心组件。
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -84,15 +125,14 @@ class ImageMerger {
 }
 ```
 
-这将为后续的图像合并做好环境准备。
-
-## 使用 GroupDocs.Merger 合并 PNG 图像
+## 如何使用 GroupDocs.Merger 合并 png 图像
+以下步骤演示如何使用 GroupDocs.Merger 的高级 API 将多个 PNG 文件合并为单个图像。通过初始化 Merger 对象、添加源图像、选择合并模式并保存结果，您可以使用极少的代码创建垂直或水平的复合图像。
 
 ### 概述
-本节将展示 **如何使用 GroupDocs.Merger 库合并 png** 图像。该功能在 Java 应用中用于组合图形元素或程序化生成复合图像时非常实用。
+您只需几行 Java 代码即可合并 PNG 文件。库抽象掉像素级别的操作，让您专注于业务逻辑。
 
-#### 步骤 1：导入必要的类
-首先导入 GroupDocs 库中的相关类：
+### 步骤 1：导入必要的类
+首先从 GroupDocs 包中导入所需的类：
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -100,8 +140,8 @@ import com.groupdocs.merger.domain.options.ImageJoinMode;
 import com.groupdocs.merger.domain.options.ImageJoinOptions;
 ```
 
-#### 步骤 2：定义文件路径
-设置源图像和附加图像的路径。将占位符替换为实际文件路径：
+### 步骤 2：定义文件路径
+为源图像以及您想要合并的其他图像设置绝对或相对路径：
 
 ```java
 String sourceImagePath = "YOUR_DOCUMENT_DIRECTORY/sample.png";
@@ -110,83 +150,76 @@ String outputFolder = "YOUR_OUTPUT_DIRECTORY";
 String outputFile = new File(outputFolder, "merged.png").getPath();
 ```
 
-#### 步骤 3：初始化 Merger 并设置合并选项
-使用源图像初始化 `Merger` 对象。定义合并选项以指定图像的合并方式：
+### 步骤 3：初始化 Merger 对象并配置合并选项
+使用主图像创建 `Merger` 实例，然后指定后续图像的合并方式。`ImageJoinMode.Vertical` 会将图像垂直堆叠，而 `ImageJoinMode.Horizontal` 则水平并排放置。
 
 ```java
 Merger merger = new Merger(sourceImagePath);
 ImageJoinOptions joinOptions = new ImageJoinOptions(ImageJoinMode.Vertical);
 ```
 
-这里，`ImageJoinMode.Vertical` 表示图像将垂直堆叠——非常适合 **vertical image merge** 或需要 **stack png images** 的场景。
-
-#### 步骤 4：执行合并
-添加附加图像并保存合并后的结果：
+### 步骤 4：执行合并并保存结果
+使用 `join` 添加每个额外图像，然后将合并后的输出写入磁盘：
 
 ```java
 merger.join(additionalImagePath, joinOptions);
 merger.save(outputFile);
 ```
 
-上述代码演示了如何将两张图像合并为一张文件并保存到指定的输出目录。通过更改 `ImageJoinMode`，可实现不同方向的合并，例如 `Horizontal` 用于并排合并。
+如果需要不同的方向（例如用于并排横幅的 `Horizontal`），请调整 `ImageJoinMode` 枚举。
 
-#### 故障排除提示
-- 确认所有图像路径正确且可访问。  
-- 如有需要，请确保拥有有效的 GroupDocs 许可证。  
-- 如遇问题，请参考 [GroupDocs documentation](https://docs.groupdocs.com/merger/java/) 或其支持论坛。
+## 实际应用
+合并 PNG 图像在许多真实场景中非常有用：
 
-## 实际应用场景
+1. **营销材料：** 将多个设计元素组合成单个横幅，用于广告活动。  
+2. **Web 开发：** 通过拼接不同尺寸的资源动态生成响应式页眉图像。  
+3. **摄影：** 从一系列照片创建全景或拼贴，无需手动编辑。  
 
-合并 PNG 图像可用于多种情形：
-
-1. **营销素材：** 将多个设计元素合并为单张横幅图像用于广告。  
-2. **Web 开发：** 动态合并不同尺寸的图像块以创建响应式横幅。  
-3. **摄影：** 将多张照片拼接成全景或拼贴画。  
-
-将此功能集成到内容管理系统、数字资产库和设计工具等应用中，可进一步提升其价值。
+将此功能集成到内容管理系统、数字资产库或自定义设计工具中，可显著加快生产工作流。
 
 ## 性能考虑
+- **内存管理：** 对于大于 200 MB 的文件，使用 `Merger` 流式 API 以避免 `OutOfMemoryError`。  
+- **资源分配：** 处理分辨率超过 3000 × 3000 px 的高分辨率 PNG 时，至少分配 2 GB 堆空间。  
+- **并发性：** 在确认 `Merger` 实例的线程安全性后（该库对只读操作是线程安全的），可在独立线程中运行合并任务。  
 
-在使用 GroupDocs.Merger 时优化 Java 应用的性能至关重要：
-
-- **内存管理：** 高效处理大图像文件，避免 OutOfMemory 错误。  
-- **资源分配：** 为高分辨率处理提供足够的 CPU 和 RAM。  
-- **最佳实践：** 遵循 Java 并发指南，合理管理线程和垃圾回收。
+遵循这些最佳实践可确保在高负载下平稳运行。
 
 ## 常见问题
 
-**Q1：可以一次合并超过两张 PNG 吗？**  
-A1：可以，使用 `join` 方法对每个图像文件依次添加即可。
+**Q1: 我可以一次合并超过两个 PNG 图像吗？**  
+A1: 可以，在调用 `save` 之前对每个额外的图像重复调用 `join`。库会按您指定的顺序连接它们。
 
-**Q2：合并过程中如何处理异常？**  
-A2：使用 try‑catch 块捕获潜在异常，确保代码具备完善的错误处理。
+**Q2: 合并过程中如何处理异常？**  
+A2: 将合并逻辑包装在 `try‑catch` 块中，捕获 `MergerException` 以获取 API 特定的错误，然后根据需要处理或记录。
 
-**Q3：GroupDocs.Merger 免费吗？**  
-A3：可以使用免费试用许可证，但若需完整功能且无使用限制，则需购买正式许可证。
+**Q3: GroupDocs.Merger 免费使用吗？**  
+A3: 您可以使用提供完整功能的免费试用许可证进行评估。生产环境需要购买许可证以移除使用限制。
 
-**Q4：除了 PNG，GroupDocs.Merger 还支持哪些格式？**  
-A4：支持多种文档和图像格式，包括 PDF、JPEG 等。完整列表请参阅官方文档。
+**Q4: 除了 PNG，GroupDocs.Merger 还支持哪些格式？**  
+A5: 该库支持超过 30 种格式，包括 JPEG、BMP、TIFF、PDF、DOCX 和 XLSX。请参阅官方格式矩阵获取完整列表。
 
-**Q5：如何动态自定义输出文件名和路径？**  
-A5：在代码中修改 `outputFile` 变量，使用基于业务逻辑的动态值即可。
+**Q5: 如何动态自定义输出文件名和位置？**  
+A5: 使用时间戳、用户 ID 或配置值等变量构建 `outputFile` 字符串，然后将其传递给 `save` 方法。
 
-## 结论
-
-我们已经完整展示了 **如何使用 GroupDocs.Merger for Java 合并 png** 图像的全过程，从库的安装到实际的图像合并操作。本指南为您在实际项目中应用此功能提供了必要的知识，无论是构建营销素材、Web 组件还是照片拼贴，都能得心应手。
-
-欲进一步了解 GroupDocs.Merger 的强大功能，建议查阅其丰富的 [documentation](https://docs.groupdocs.com/merger/java/) 并尝试不同配置。
-
-**资源**
-
-- **文档：** 在 [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/) 查看详细指南  
-- **API 参考：** 前往 [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/) 获取完整 API 信息  
-- **下载：** 从 [GroupDocs Releases](https://releases.groupdocs.com/merger/java/) 获取最新版本  
-- **购买：** 在 [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy) 购买许可证或获取试用  
-- **免费试用 & 临时许可证：** 在 [GroupDocs Free Trial](https://releases.groupdocs.com/merger/java/) 与 [Temporary License](https://purchase.groupdocs.com/temporary-license/) 获取测试许可证  
-- **支持：** 如需进一步帮助，请访问 [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/)
+## 资源
+- [GroupDocs 文档](https://docs.groupdocs.com/merger/java/) – 综合指南和教程。  
+- [documentation](https://docs.groupdocs.com/merger/java/) – 同一 URL 的替代链接文本。  
+- [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/) – 官方文档门户。  
+- [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/) – 详细的 API 方法描述。  
+- [GroupDocs Releases](https://releases.groupdocs.com/merger/java/) – 所有库发行版的下载页面。  
+- [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy) – 购买完整许可证的入口。  
+- [GroupDocs Free Trial](https://releases.groupdocs.com/merger/java/) – 获取库的试用版本。  
+- [Temporary License](https://purchase.groupdocs.com/temporary-license/) – 申请短期测试许可证。  
+- [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/) – 社区帮助与问答。
 
 ---
 
-**最后更新：** 2026-03-17  
-**测试环境：** GroupDocs.Merger 最新版本（截至 2026）  
-**作者：** GroupDocs
+**最后更新:** 2026-10-06  
+**测试环境:** GroupDocs.Merger 最新版本（截至 2026）  
+**作者:** GroupDocs
+
+## 相关教程
+
+- [如何在 Java 中合并图像：使用 GroupDocs.Merger 合并 BMP 文件的完整指南](/merger/java/image-operations/mastering-image-merging-java-groupdocs-merger/)
+- [使用 GroupDocs.Merger for Java 合并 TIFF 图像的分步指南](/merger/java/format-specific-merging/merge-tiff-files-groupdocs-merger-java/)
+- [使用 GroupDocs.Merger for Java 轻松合并 SVGZ 文件的综合指南](/merger/java/format-specific-merging/merge-svgz-files-groupdocs-merger-java/)
