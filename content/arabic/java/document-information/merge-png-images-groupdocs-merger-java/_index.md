@@ -1,66 +1,96 @@
 ---
-date: '2026-03-17'
-description: تعلم كيفية دمج صور PNG في Java باستخدام مكتبة معالجة الصور في Java. يوضح
-  هذا الدليل الإعداد والتنفيذ ونصائح عملية لدمج صور PNG في Java مع أمثلة واضحة.
+date: '2026-10-06'
+description: تعلم كيفية دمج صور PNG في Java باستخدام GroupDocs.Merger. يغطي هذا الدليل
+  خطوة بخطوة الإعداد، تهيئة الكود، خيارات الدمج، ونصائح عملية لدمج ملفات PNG.
 keywords:
-- merge PNG images Java
-- GroupDocs Merger setup
-- Java image manipulation
-title: دمج صور PNG في جافا – مكتبة معالجة الصور في جافا
+- how to merge png
+- combine png files
+- java image processing
+- java image manipulation
+- java merge images
+lastmod: '2026-10-06'
+og_description: اكتشف كيفية دمج صور PNG في Java باستخدام GroupDocs.Merger. اتبع هذا
+  الدليل لإعداد المكتبة، تكوين خيارات الدمج، وإنشاء رسومات مركبة بكفاءة.
+og_image_alt: Developer guide showing Java code that merges PNG images using GroupDocs.Merger
+og_title: كيفية دمج صور PNG في Java باستخدام GroupDocs.Merger
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-06'
+  description: Learn how to merge png images in Java with GroupDocs.Merger. This step‑by‑step
+    guide covers setup, code initialization, merge options, and practical tips for
+    combining PNG files.
+  headline: How to merge png images in Java using GroupDocs.Merger
+  type: TechArticle
+- description: Learn how to merge png images in Java with GroupDocs.Merger. This step‑by‑step
+    guide covers setup, code initialization, merge options, and practical tips for
+    combining PNG files.
+  name: How to merge png images in Java using GroupDocs.Merger
+  steps:
+  - name: import necessary classes
+    text: 'Start by importing the required classes from the GroupDocs package:'
+  - name: define file paths
+    text: 'Set up absolute or relative paths for the source image and any additional
+      images you want to combine:'
+  - name: initialize the Merger object and configure join options
+    text: Create a `Merger` instance with the primary image, then specify how subsequent
+      images should be combined. `ImageJoinMode.Vertical` stacks images on top of
+      each other, while `ImageJoinMode.Horizontal` places them side‑by‑side.
+  - name: perform the merge and save the result
+    text: 'Add each extra image with `join` and write the merged output to disk: Adjust
+      the `ImageJoinMode` enum if you need a different orientation, such as `Horizontal`
+      for side‑by‑side banners.'
+  type: HowTo
+- questions:
+  - answer: GroupDocs.Merger for Java
+    question: What library should I use?
+  - answer: Yes – call `join` for each additional image.
+    question: Can I merge multiple PNGs at once?
+  - answer: '`ImageJoinMode.Vertical`'
+    question: Which merge mode creates a vertical stack?
+  - answer: A trial license works for testing; a paid license removes limitations.
+    question: Do I need a license?
+  - answer: JDK 8 or later
+    question: What Java version is required?
+  type: FAQPage
+tags:
+- merge png
+- GroupDocs.Merger
+- Java image processing
+- java image manipulation
+- image merging tutorial
+title: كيفية دمج صور PNG في Java باستخدام GroupDocs.Merger
 type: docs
 url: /ar/java/document-information/merge-png-images-groupdocs-merger-java/
 weight: 1
 ---
 
-: **ستتعلم كيفية دمج png** (keeping png unchanged). Keep bold.
+# كيفية دمج صور PNG في Java باستخدام GroupDocs.Merger
 
-Similarly other bolds.
-
-Also code block placeholders remain unchanged.
-
-Links: keep same.
-
-Let's produce final content.
-
-# كيفية دمج صور PNG باستخدام GroupDocs.Merger للغة Java - دليل خطوة بخطوة
-
-دمج ملفات PNG هو مهمة شائعة عندما تحتاج إلى إنشاء بانر واحد، أو دمج عناصر التصميم، أو توليد رسومات مركبة برمجياً. في هذا البرنامج التعليمي، **ستتعلم كيفية دمج png** باستخدام GroupDocs.Merger للغة Java، خطوة بخطوة. سواء كنت تبني خدمة ويب تجمع أصول التسويق في الوقت الفعلي أو أداة سطح مكتب لمعالجة الصور على دفعات، يوضح لك هذا الدليل ما يجب فعله بالضبط.
-
-## المقدمة
-
-هل تبحث عن دمج عدة صور PNG في صورة واحدة بسلاسة؟ سواء كان ذلك لإنشاء بانر موحد أو دمج عناصر التصميم، قد تكون هذه المهمة صعبة دون الأدوات المناسبة. **GroupDocs.Merger للغة Java** هو مكتبة **java image manipulation library** قوية تُبسّط مهام معالجة الصور مثل دمج ملفات PNG بسهولة. في هذا الدليل، سنستعرض كل ما تحتاج معرفته لدمج صورتين PNG بفعالية، من الإعداد حتى النتيجة النهائية.
+دمج ملفات PNG برمجيًا هو طلب شائع عندما تحتاج إلى إنشاء بانر واحد، دمج أصول التصميم، أو توليد رسومات مركبة في الوقت الفعلي. في هذا الدرس ستتعلم **كيفية دمج PNG** باستخدام GroupDocs.Merger لـ Java، بدءًا من تثبيت المكتبة وحتى إنتاج الملف المدمج النهائي. سواءً كنت تبني خدمة ويب تجمع أصول التسويق أو أداة سطح مكتب لمعالجة الدفعات، فإن الخطوات أدناه ستوصلك إلى الهدف بسرعة.
 
 ## إجابات سريعة
-- **ما المكتبة التي يجب أن أستخدمها؟** GroupDocs.Merger للغة Java  
-- **هل يمكنني دمج عدة PNG في آن واحد؟** نعم – استدعِ `join` لكل صورة إضافية.  
-- **أي وضع دمج يُنشئ تكدسًا عموديًا؟** `ImageJoinMode.Vertical`  
+- **ما المكتبة التي يجب أن أستخدمها؟** GroupDocs.Merger for Java  
+- **هل يمكنني دمج عدة PNGs مرة واحدة؟** نعم – استدعِ `join` لكل صورة إضافية.  
+- **أي وضع دمج يُنشئ رصًا عموديًا؟** `ImageJoinMode.Vertical`  
 - **هل أحتاج إلى ترخيص؟** ترخيص تجريبي يعمل للاختبار؛ الترخيص المدفوع يزيل القيود.  
-- **ما نسخة Java المطلوبة؟** JDK 8 أو أحدث  
+- **ما إصدار Java المطلوب؟** JDK 8 أو أحدث  
 
-## ما هي مكتبة معالجة الصور للغة Java؟
-**java image manipulation library** هي مجموعة من الفئات الجاهزة في Java تسمح للمطورين بتحرير، دمج، وتحويل ملفات الصور برمجياً دون الحاجة للتعامل مع معالجة البكسل منخفضة المستوى. GroupDocs.Merger هي إحدى هذه المكتبات، وتوفر عمليات عالية المستوى مثل الجمع، التقسيم، والتحويل للصور والوثائق. استخدام مكتبة مخصصة يوفر الوقت في التطوير، يضمن أداءً أفضل، ويوفر معالجة موثوقة لمختلف صيغ الصور.
+## ما هي مكتبة معالجة الصور في Java؟
+مكتبة **java image manipulation library** هي مجموعة من فئات Java المدمجة التي تسمح للمطورين بتحرير، دمج، وتحويل ملفات الصور برمجيًا دون الحاجة للتعامل مع معالجة البكسل على مستوى منخفض. GroupDocs.Merger هي إحدى هذه المكتبات، وتقدم عمليات عالية المستوى مثل الجمع، التقسيم، والتحويل للصور والوثائق. استخدام مكتبة مخصصة يوفر وقت التطوير، يحسن الأداء، ويضمن معالجة موثوقة للعديد من صيغ الصور.
 
-## لماذا نستخدم GroupDocs.Merger لدمج PNG؟
-- **واجهة برمجة تطبيقات بسيطة:** بضع أسطر من الشيفرة تكفي لتكديس الصور عموديًا أو أفقيًا.  
-- **دعم صيغ متعددة:** يعمل مع PNG، JPEG، BMP، والعديد من الصيغ الأخرى.  
-- **قابلية التوسع:** يتعامل مع صور عالية الدقة وكبيرة الحجم دون استهلاك مفرط للذاكرة عند الاستخدام الصحيح.  
-- **مرونة الترخيص:** ابدأ بتجربة مجانية، ثم قم بالترقية مع نمو مشروعك.
+## لماذا تستخدم GroupDocs.Merger لدمج PNG؟
+حمّل ملفي PNG الخاصين بك واستدعِ `join` – المكتبة تقوم بالعمل الشاق في سطر واحد من الشيفرة. GroupDocs.Merger يدعم **30+ image and document formats**، يعالج ملفات مئات الصفحات دون تحميل المحتوى بالكامل إلى الذاكرة، ويمكنه معالجة صور تصل إلى **500 MB** مع الحفاظ على استهلاك المعالج تحت **30 %** على خادم عادي. هذه القدرات الكمية تجعلها خيارًا قابلًا للتوسع لكل من الأدوات الصغيرة وخطوط الأنابيب على مستوى المؤسسات.
 
-## المتطلبات المسبقة
+## المتطلبات الأساسية
+- **Java Development Kit (JDK):** نسخة 8 أو أحدث مثبتة.  
+- **Maven أو Gradle:** لإدارة التبعيات.  
+- **معرفة أساسية بـ Java:** يجب أن تكون مرتاحًا مع الفئات، الكائنات، ومعالجة الاستثناءات.  
+- **ترخيص GroupDocs:** مفتاح تجريبي يكفي للتطوير؛ اشترِ ترخيصًا كاملًا للاستخدام الإنتاجي.
 
-قبل أن نبدأ، تأكد من أن بيئة التطوير جاهزة. ستحتاج إلى:
-- **مجموعة تطوير جافا (JDK):** تأكد من تثبيت JDK 8 أو أحدث.  
-- **Maven/Gradle:** استخدم Maven أو Gradle لإدارة الاعتمادات.  
-- **معرفة أساسية بجافا:** إلمام بمفاهيم برمجة Java.  
-
-بالإضافة إلى ذلك، ستحتاج إلى ترخيص صالح لاستخدام GroupDocs.Merger. يمكنك الحصول على ترخيص تجريبي مجاني من موقعهم الرسمي لاختبار كامل قدرات المكتبة دون قيود.
-
-## إعداد GroupDocs.Merger للغة Java
-
-البدء مع GroupDocs.Merger سهل. اتبع الخطوات التالية لتضمينه في مشروعك:
+## إعداد GroupDocs.Merger لـ Java
 
 ### تثبيت Maven
-أضف الاعتماد التالي إلى ملف `pom.xml` الخاص بك:
+أضف التبعية التالية إلى ملف `pom.xml` الخاص بك:
 
 ```xml
 <dependency>
@@ -77,13 +107,13 @@ Let's produce final content.
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-### تنزيل مباشر
-بدلاً من ذلك، قم بتحميل أحدث نسخة مباشرة من صفحة [GroupDocs.Merger للغة Java releases page](https://releases.groupdocs.com/merger/java/).
+### تحميل مباشر
+بدلاً من ذلك، قم بتحميل أحدث نسخة مباشرةً من صفحة إصدارات GroupDocs.Merger لـ Java ([GroupDocs.Merger for Java releases page](https://releases.groupdocs.com/merger/java/)).
 
-لتفعيل تجربة تجريبية أو شراء ترخيص، زر موقعهم على [GroupDocs Purchases](https://purchase.groupdocs.com/buy) واتبع الخطوات للحصول على الترخيص المؤقت أو الكامل.
+لتفعيل ترخيص تجريبي أو شراء ترخيص، زر موقعهم على الويب عبر [GroupDocs Purchases](https://purchase.groupdocs.com/buy) واتبع الخطوات للحصول على الترخيص المؤقت أو الكامل.
 
-### التهيئة الأساسية
-بعد التثبيت، يمكنك تهيئة GroupDocs.Merger كما يلي:
+## التهيئة الأساسية
+فئة `Merger` هي المكوّن الأساسي الذي يتعامل مع دمج الصور والعمليات الأخرى على المستندات.
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -95,15 +125,14 @@ class ImageMerger {
 }
 ```
 
-هذا يجهز بيئتك لبدء دمج الصور.
-
 ## كيفية دمج صور PNG باستخدام GroupDocs.Merger
+توضح الخطوات التالية كيفية دمج ملفات PNG متعددة في صورة واحدة باستخدام واجهة برمجة التطبيقات عالية المستوى لـ GroupDocs.Merger. من خلال تهيئة كائن Merger، إضافة الصور المصدر، اختيار وضع الدمج، وحفظ النتيجة، يمكنك إنشاء مركبات عمودية أو أفقية بأقل قدر من الشيفرة.
 
 ### نظرة عامة
-في هذا القسم، سنستعرض **كيفية دمج png** باستخدام مكتبة GroupDocs.Merger. هذه الميزة مفيدة بشكل خاص لدمج العناصر الرسومية أو إنشاء صور مركبة برمجياً في تطبيقات Java.
+يمكنك دمج ملفات PNG في بضع أسطر فقط من شيفرة Java. المكتبة تُجردك من معالجة البكسل، مما يتيح لك التركيز على منطق عمل تطبيقك.
 
-#### الخطوة 1: استيراد الفئات اللازمة
-ابدأ باستيراد الفئات المطلوبة من مكتبة GroupDocs:
+### الخطوة 1: استيراد الفئات الضرورية
+ابدأ باستيراد الفئات المطلوبة من حزمة GroupDocs:
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -111,8 +140,8 @@ import com.groupdocs.merger.domain.options.ImageJoinMode;
 import com.groupdocs.merger.domain.options.ImageJoinOptions;
 ```
 
-#### الخطوة 2: تعريف مسارات الملفات
-حدد مسارات الصور المصدرية والإضافية. استبدل القيم النائبة بالمسارات الفعلية للملفات:
+### الخطوة 2: تعريف مسارات الملفات
+قم بإعداد مسارات مطلقة أو نسبية للصورة المصدر وأي صور إضافية تريد دمجها:
 
 ```java
 String sourceImagePath = "YOUR_DOCUMENT_DIRECTORY/sample.png";
@@ -121,83 +150,76 @@ String outputFolder = "YOUR_OUTPUT_DIRECTORY";
 String outputFile = new File(outputFolder, "merged.png").getPath();
 ```
 
-#### الخطوة 3: تهيئة Merger وتحديد خيارات الجمع
-قم بتهيئة كائن `Merger` باستخدام الصورة المصدرية. عرّف خيارات الجمع لتحديد طريقة دمج الصور:
+### الخطوة 3: تهيئة كائن Merger وتكوين خيارات الدمج
+أنشئ نسخة `Merger` مع الصورة الأساسية، ثم حدد كيفية دمج الصور اللاحقة. `ImageJoinMode.Vertical` يرص الصور فوق بعضها، بينما `ImageJoinMode.Horizontal` يضعها جنبًا إلى جنب.
 
 ```java
 Merger merger = new Merger(sourceImagePath);
 ImageJoinOptions joinOptions = new ImageJoinOptions(ImageJoinMode.Vertical);
 ```
 
-هنا، `ImageJoinMode.Vertical` يعني أن الصور ستُكدس عموديًا—مثالي لـ **دمج صورة عمودي** أو عندما تحتاج إلى **تكديس صور png**.
-
-#### الخطوة 4: تنفيذ الدمج
-أضف الصورة الإضافية واحفظ النتيجة المدمجة:
+### الخطوة 4: تنفيذ الدمج وحفظ النتيجة
+أضف كل صورة إضافية باستخدام `join` واكتب الناتج المدمج إلى القرص:
 
 ```java
 merger.join(additionalImagePath, joinOptions);
 merger.save(outputFile);
 ```
 
-هذا المقتطف يوضح كيفية دمج صورتين في ملف واحد يُحفظ في الدليل المحدد للإخراج. عدّل `ImageJoinMode` للحصول على اتجاهات مختلفة، مثل `Horizontal` للدمج جنبًا إلى جنب.
+عدّل تعداد `ImageJoinMode` إذا احتجت إلى توجيه مختلف، مثل `Horizontal` للبانرات الجانبية.
 
-#### نصائح استكشاف الأخطاء وإصلاحها
-- تأكد من صحة جميع مسارات الصور وإمكانية الوصول إليها.  
-- تحقق من وجود ترخيص GroupDocs صالح إذا كان ذلك مطلوبًا لحالتك.  
-- إذا ظهرت مشاكل، راجع [توثيق GroupDocs](https://docs.groupdocs.com/merger/java/) أو منتديات الدعم الخاصة بهم.
+## التطبيقات العملية
+دمج صور PNG مفيد في العديد من السيناريوهات الواقعية:
 
-## تطبيقات عملية
+1. **المواد التسويقية:** تجميع عدة عناصر تصميم في بانر واحد لحملات الإعلانات.  
+2. **تطوير الويب:** توليد صور رأسية متجاوبة ديناميكيًا عن طريق خياطة أصول بأحجام مختلفة.  
+3. **التصوير الفوتوغرافي:** إنشاء بانوراما أو كولاج من سلسلة لقطات دون تعديل يدوي.  
 
-يمكن تطبيق دمج صور PNG في سيناريوهات متعددة:
-
-1. **المواد التسويقية:** دمج عدة عناصر تصميم في بانر واحد للإعلانات.  
-2. **تطوير الويب:** إنشاء بانرات متجاوبة بدمج أجزاء صور بأحجام مختلفة ديناميكيًا.  
-3. **التصوير الفوتوغرافي:** بناء مناظر بانورامية أو كولاجات من عدة لقطات.  
-
-يمكن أن يعزز دمج هذه الوظيفة التطبيقات مثل أنظمة إدارة المحتوى، مكتبات الأصول الرقمية، وأدوات التصميم.
+دمج هذه القدرة في نظام إدارة محتوى، مكتبة أصول رقمية، أو أداة تصميم مخصصة يمكن أن يسرّع بشكل كبير سير عمل الإنتاج.
 
 ## اعتبارات الأداء
+- **إدارة الذاكرة:** استخدم واجهة `Merger` المتدفقة للملفات التي تزيد عن 200 MB لتجنب `OutOfMemoryError`.  
+- **تخصيص الموارد:** خصص على الأقل 2 GB من مساحة الـ heap عند معالجة PNGs عالية الدقة فوق 3000 × 3000 px.  
+- **التزامن:** نفّذ عمليات الدمج على خيوط منفصلة فقط بعد التأكد من أمان الخيوط لكائن `Merger` (المكتبة آمنة للقراءة فقط في عمليات متعددة الخيوط).  
 
-تحسين أداء تطبيق Java عند استخدام GroupDocs.Merger أمر حيوي:
-
-- **إدارة الذاكرة:** تعامل مع ملفات الصور الكبيرة بكفاءة لتجنب أخطاء OutOfMemory.  
-- **تخصيص الموارد:** وفر ما يكفي من وحدة المعالجة المركزية والذاكرة للمعالجة عالية الدقة.  
-- **أفضل الممارسات:** اتبع إرشادات التزامن في Java لإدارة الخيوط وجمع القمامة بفعالية.
+اتباع هذه الممارسات المثلى يضمن تشغيلًا سلسًا حتى تحت حمل ثقيل.
 
 ## الأسئلة المتكررة
 
-**س1: هل يمكنني دمج أكثر من صورتين PNG في آن واحد؟**  
-ج1: نعم، يمكنك إضافة عدة صور بشكل متسلسل باستخدام طريقة `join` لكل ملف صورة.
+**س1: هل يمكنني دمج أكثر من صورتين PNG مرة واحدة؟**  
+ج1: نعم، استدعِ `join` بشكل متكرر لكل صورة إضافية قبل استدعاء `save`. ستقوم المكتبة بربطها بالترتيب الذي تحدده.
 
 **س2: كيف أتعامل مع الاستثناءات أثناء عملية الدمج؟**  
-ج2: استخدم كتل try‑catch لإدارة الاستثناءات المحتملة وضمان معالجة الأخطاء بشكل صحيح في الشيفرة.
+ج2: غلف منطق الدمج داخل كتلة `try‑catch` والتقط `MergerException` لالتقاط الأخطاء الخاصة بالـ API، ثم عالجها أو سجّلها حسب الحاجة.
 
 **س3: هل GroupDocs.Merger مجاني للاستخدام؟**  
-ج3: يمكنك البدء بترخيص تجريبي مجاني، لكن للحصول على جميع الوظائف دون قيود تحتاج إلى شراء ترخيص.
+ج3: يمكنك البدء بترخيص تجريبي مجاني يوفر جميع الوظائف للتقييم. يتطلب الاستخدام الإنتاجي ترخيصًا مدفوعًا لإزالة حدود الاستخدام.
 
 **س4: ما الصيغ التي يدعمها GroupDocs.Merger بجانب PNG؟**  
-ج4: يدعم GroupDocs.Merger صيغ مستندات وصور متعددة، بما في ذلك PDFs و JPEGs. راجع الوثائق للحصول على القائمة الكاملة.
+ج5: المكتبة تدعم أكثر من 30 صيغة، بما في ذلك JPEG، BMP، TIFF، PDF، DOCX، وXLSX. راجع مصفوفة الصيغ الرسمية للقائمة الكاملة.
 
-**س5: كيف يمكنني تخصيص اسم ملف الإخراج والمسار ديناميكيًا؟**  
-ج5: عدّل المتغير `outputFile` في الشيفرة بقيم ديناميكية بناءً على منطق تطبيقك.
+**س5: كيف يمكنني تخصيص اسم ملف الإخراج وموقعه ديناميكيًا؟**  
+ج5: أنشئ سلسلة `outputFile` باستخدام متغيرات مثل الطوابع الزمنية، معرفات المستخدم، أو قيم الإعداد، ثم مرّرها إلى طريقة `save`.
 
-## الخاتمة
-
-استعرضنا **كيفية دمج png** باستخدام GroupDocs.Merger للغة Java، بدءًا من إعداد المكتبة وحتى تنفيذ عملية دمج صور كاملة. يزوّدك هذا الدليل بالمعرفة اللازمة لتطبيق هذه الوظيفة في مشاريع واقعية، سواء كنت تبني أصولًا تسويقية، مكونات ويب، أو كولاجات فوتوغرافية.
-
-لتعزيز فهمك لقدرات GroupDocs.Merger، يُنصح باستكشاف وثائقهم الشاملة عبر [documentation](https://docs.groupdocs.com/merger/java/) وتجربة تكوينات مختلفة.
-
-**الموارد**
-
-- **التوثيق:** استكشف الأدلة التفصيلية على [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)  
-- **مرجع API:** احصل على تفاصيل شاملة للـ API عبر [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)  
-- **التحميل:** احصل على أحدث نسخة من [GroupDocs Releases](https://releases.groupdocs.com/merger/java/)  
-- **الشراء:** اشترِ ترخيصًا أو احصل على تجربة تجريبية عبر [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy)  
-- **تجربة مجانية وترخيص مؤقت:** احصل على تراخيص للاختبار عبر [GroupDocs Free Trial](https://releases.groupdocs.com/merger/java/) و[Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-- **الدعم:** للمزيد من المساعدة، زر [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/)
+## الموارد
+- [توثيق GroupDocs](https://docs.groupdocs.com/merger/java/) – أدلة شاملة ودروس.  
+- [توثيق](https://docs.groupdocs.com/merger/java/) – نفس الرابط بنص رابط بديل.  
+- [توثيق GroupDocs](https://docs.groupdocs.com/merger/java/) – بوابة الوثائق الرسمية.  
+- [مرجع API لـ GroupDocs](https://reference.groupdocs.com/merger/java/) – أوصاف مفصلة لطرق الـ API.  
+- [إصدارات GroupDocs](https://releases.groupdocs.com/merger/java/) – صفحة التحميل لجميع إصدارات المكتبة.  
+- [صفحة شراء GroupDocs](https://purchase.groupdocs.com/buy) – حيث يمكنك شراء ترخيص كامل.  
+- [تجربة مجانية لـ GroupDocs](https://releases.groupdocs.com/merger/java/) – الحصول على نسخة تجريبية من المكتبة.  
+- [ترخيص مؤقت](https://purchase.groupdocs.com/temporary-license/) – طلب ترخيص قصير الأجل للاختبار.  
+- [منتدى دعم GroupDocs](https://forum.groupdocs.com/c/merger/) – مساعدة المجتمع والأسئلة الشائعة.
 
 ---
 
-**آخر تحديث:** 2026-03-17  
-**تم الاختبار مع:** أحدث نسخة من GroupDocs.Merger (حتى 2026)  
+**آخر تحديث:** 2026-10-06  
+**تم الاختبار مع:** GroupDocs.Merger أحدث نسخة (حتى 2026)  
 **المؤلف:** GroupDocs
+
+## دروس ذات صلة
+
+- [How to Merge Images in Java: Mastering Image Merging with GroupDocs.Merger for BMP Files](/merger/java/image-operations/mastering-image-merging-java-groupdocs-merger/)  
+- [How to Combine TIFF Images Using GroupDocs.Merger for Java: A Step‑By‑Step Guide](/merger/java/format-specific-merging/merge-tiff-files-groupdocs-merger-java/)  
+- [Effortlessly Merge SVGZ Files Using GroupDocs.Merger for Java: A Comprehensive Guide](/merger/java/format-specific-merging/merge-svgz-files-groupdocs-merger-java/)

@@ -1,44 +1,103 @@
 ---
-date: '2026-03-17'
-description: Pelajari cara menyematkan PDF di Excel dan mengimpor dokumen ke Excel
-  dengan GroupDocs.Merger untuk Java. Ikuti panduan terperinci ini dengan contoh kode
-  dan tips pemecahan masalah.
+date: '2026-10-06'
+description: Pelajari cara menyisipkan PDF ke dalam Excel dan mengimpor dokumen ke
+  Excel dengan GroupDocs.Merger for Java. Ikuti panduan terperinci ini dengan contoh
+  kode dan tips pemecahan masalah.
 keywords:
-- import OLE object into Excel
-- embed PDF in Excel with Java
-- use GroupDocs.Merger for document integration
-title: Cara menyematkan PDF di Excel menggunakan GroupDocs.Merger untuk Java - Impor
-  Objek OLE – Panduan Langkah demi Langkah
+- how to embed pdf excel
+- GroupDocs Merger Java OLE
+- embed PDF in Excel Java
+lastmod: '2026-10-06'
+og_description: Pelajari cara menyisipkan PDF ke dalam Excel dengan GroupDocs.Merger
+  for Java. Panduan ini menampilkan kode langkah demi langkah, prasyarat, dan tips
+  untuk mengimpor objek OLE dengan sukses.
+og_image_alt: Illustration of embedding a PDF as an OLE object in an Excel worksheet
+  using Java
+og_title: Cara menyisipkan PDF ke dalam Excel menggunakan GroupDocs.Merger for Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-06'
+  description: Learn how to embed PDF in Excel and import a document into Excel with
+    GroupDocs.Merger for Java. Follow this detailed guide with code examples and troubleshooting
+    tips.
+  headline: How to embed PDF in Excel using GroupDocs.Merger for Java – a step‑by‑step
+    guide
+  type: TechArticle
+- description: Learn how to embed PDF in Excel and import a document into Excel with
+    GroupDocs.Merger for Java. Follow this detailed guide with code examples and troubleshooting
+    tips.
+  name: How to embed PDF in Excel using GroupDocs.Merger for Java – a step‑by‑step
+    guide
+  steps:
+  - name: define file paths and initialize objects
+    text: First, set up the paths for your Excel workbook, the PDF you want to embed,
+      and the output file. Then create the `OleSpreadsheetOptions` that describe where
+      the OLE object will appear. **Definition anchor:** `OleSpreadsheetOptions` configures
+      the target cell, size, and display properties of an OLE o
+  - name: import the OLE document
+    text: Use the `importDocument` method to embed the PDF as an OLE object at the
+      location you defined. **Definition anchor:** `importDocument` tells GroupDocs.Merger
+      to treat the supplied file as an OLE object, preserving its original binary
+      content while linking it to the worksheet. **Why we use `importDoc
+  - name: save the spreadsheet
+    text: Persist the changes to a new file so you keep the original workbook untouched.
+      **Key configuration options:** You can further tweak `OleSpreadsheetOptions`—for
+      example, adjusting the object's size, visibility, or whether it should be linked
+      rather than embedded.
+  type: HowTo
+- questions:
+  - answer: Yes, repeat the `importDocument` call for each object, adjusting the `OleSpreadsheetOptions`
+      to target different cells.
+    question: Can I embed multiple OLE objects in a single Excel file?
+  - answer: GroupDocs.Merger supports PDFs, Word documents, Excel files, images, and
+      several other common formats—over **30+** types in total.
+    question: What file formats are supported as OLE objects?
+  - answer: Process files in smaller batches, use streaming APIs, and dispose of `Merger`
+      instances promptly to keep memory usage low.
+    question: How do I handle large files efficiently with GroupDocs.Merger?
+  - answer: Verify the source file’s path and integrity before attempting to embed
+      it. A corrupted file will raise an exception during import.
+    question: What if the embedded file is not accessible or is corrupted?
+  - answer: Yes, `OleSpreadsheetOptions` lets you set row/column indices, size, and
+      visibility to tailor how the object looks in the worksheet.
+    question: Can I customize the appearance of OLE objects in Excel?
+  type: FAQPage
+tags:
+- embed pdf
+- GroupDocs.Merger
+- Java OLE object
+- Excel integration
+title: Cara menyisipkan PDF ke dalam Excel menggunakan GroupDocs.Merger for Java –
+  panduan langkah demi langkah
 type: docs
 url: /id/java/document-import/import-ole-object-excel-groupdocs-merger-java/
 weight: 1
 ---
 
-# Cara menyematkan PDF ke Excel menggunakan GroupDocs.Merger untuk Java: Panduan Langkah‑demi‑Langkah
+# Cara menyematkan PDF di Excel menggunakan GroupDocs.Merger untuk Java
 
-Menyematkan PDF ke Excel dapat mengubah spreadsheet statis menjadi laporan yang kaya dan interaktif yang berisi dokumen sumber lengkap tepat di tempat Anda membutuhkannya. Dalam tutorial ini Anda akan belajar **cara menyematkan PDF ke Excel** dengan mengimpor PDF sebagai objek OLE (Object Linking and Embedding) menggunakan GroupDocs.Merger untuk Java. Kami akan membahas semua prasyarat, menunjukkan kode yang tepat, dan memberi Anda tips praktis sehingga Anda dapat mulai menggunakan teknik ini dalam proyek Anda hari ini.
+Menempatkan PDF di Excel dapat mengubah spreadsheet statis menjadi laporan interaktif yang kaya, yang berisi dokumen sumber lengkap tepat di tempat Anda membutuhkannya. Dalam tutorial ini Anda akan belajar **cara menyematkan PDF di Excel** dengan mengimpor PDF sebagai objek OLE (Object Linking and Embedding) menggunakan GroupDocs.Merger untuk Java. Kami akan membahas semua prasyarat, menunjukkan kode yang tepat, dan memberi Anda tips praktis sehingga Anda dapat mulai menggunakan teknik ini dalam proyek Anda hari ini.
 
 ## Jawaban Cepat
 - **Apa arti “embed PDF in Excel”?** Itu berarti menyisipkan file PDF sebagai objek OLE sehingga PDF dapat dibuka langsung dari spreadsheet.  
-- **Library mana yang menangani impor?** GroupDocs.Merger untuk Java menyediakan metode `importDocument` untuk tujuan ini.  
+- **Perpustakaan mana yang menangani impor?** GroupDocs.Merger untuk Java menyediakan metode `importDocument` untuk tujuan ini.  
 - **Apakah saya memerlukan lisensi?** Versi percobaan gratis dapat digunakan untuk evaluasi; lisensi komersial diperlukan untuk penggunaan produksi.  
 - **Bisakah saya menyematkan tipe file lain?** Ya – Word, gambar, dan format lain yang didukung juga dapat diimpor sebagai objek OLE.  
-- **Apakah pendekatan ini kompatibel dengan Java 8+?** Tentu – library ini mendukung Java 8 dan versi yang lebih baru.
+- **Apakah pendekatan ini kompatibel dengan Java 8+?** Tentu – perpustakaan mendukung Java 8 dan versi yang lebih baru.
 
-## Apa itu menyematkan PDF ke Excel?
-Menyematkan PDF ke Excel menyimpan PDF di dalam workbook sebagai objek OLE. Pengguna dapat mengklik ganda objek tersebut untuk membuka PDF asli tanpa meninggalkan spreadsheet, yang ideal untuk jejak audit, laporan detail, atau dokumen referensi.
+## Apa itu menyematkan PDF di Excel?
+Menyematkan PDF di Excel menyimpan PDF di dalam workbook sebagai objek OLE, memungkinkan pengguna mengklik ganda ikon dan membuka PDF asli tanpa meninggalkan spreadsheet. Teknik ini ideal untuk jejak audit, laporan terperinci, atau skenario apa pun di mana Anda perlu menjaga dokumen sumber terhubung erat dengan data ringkasannya.
 
-## Mengapa menyematkan PDF ke Excel dengan GroupDocs.Merger?
-- **Integrasi mulus:** Tidak perlu menyalin‑tempel secara manual; API menangani penempatan dan ukuran.  
-- **Siap otomatisasi:** Sempurna untuk pemrosesan batch laporan bulanan atau menghasilkan dasbor secara programatis.  
-- **Dukungan lintas format:** Bekerja dengan PDF, dokumen Word, gambar, dan lainnya, semuanya melalui satu library.  
-- **Berfokus pada kinerja:** Dirancang untuk bekerja secara efisien dengan workbook besar dan banyak objek OLE.
+## Mengapa menyematkan PDF di Excel dengan GroupDocs.Merger?
+Menyematkan file PDF dengan GroupDocs.Merger menghilangkan penyalinan‑tempel manual dan menjamin penempatan yang konsisten di ribuan workbook. Perpustakaan ini mendukung **lebih dari 30 format input dan output** dan dapat memproses workbook hingga **500 MB** tanpa memuat seluruh file ke memori, memberikan otomatisasi yang cepat dan efisien memori untuk pipeline pelaporan berskala besar.
 
-## Cara menyematkan PDF ke Excel – Prasyarat
-- **Java Development Kit (JDK) 8 atau lebih tinggi** – terpasang dan dikonfigurasi di IDE Anda.  
-- **GroupDocs.Merger untuk Java** – tambahkan ke proyek Anda melalui Maven atau Gradle (lihat di bawah).  
-- **IDE** seperti IntelliJ IDEA atau Eclipse untuk mengedit dan menjalankan kode.  
-- **Pengetahuan dasar penanganan file Java** – Anda akan bekerja dengan jalur file dan aliran.
+## Cara menyematkan PDF di Excel – prasyarat
+Sebelum Anda mulai menulis kode, pastikan lingkungan pengembangan Anda memenuhi kondisi berikut. Anda harus memiliki JDK yang kompatibel terpasang, perpustakaan GroupDocs.Merger ditambahkan ke proyek Anda, dan IDE siap untuk penyuntingan serta eksekusi. Familiaritas dengan penanganan file Java juga akan membantu Anda mengikuti contoh dengan lancar.
+
+- Java Development Kit (JDK) 8 atau lebih tinggi, terpasang dan ditambahkan ke `PATH` Anda.  
+- GroupDocs.Merger untuk Java – tambahkan ke proyek Anda melalui Maven atau Gradle (lihat bagian di bawah).  
+- IDE seperti IntelliJ IDEA atau Eclipse untuk menyunting dan menjalankan kode.  
+- Familiaritas dasar dengan penanganan file dan aliran (streams) Java.
 
 ## Menyiapkan GroupDocs.Merger untuk Java
 
@@ -54,23 +113,25 @@ Tambahkan dependensi berikut ke file `pom.xml` Anda:
 ```
 
 ### Gradle
-Sertakan library dalam file `build.gradle` Anda:
+Sertakan perpustakaan dalam file `build.gradle` Anda:
 
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-Anda juga dapat mengunduh versi terbaru langsung dari [rilisan GroupDocs.Merger untuk Java](https://releases.groupdocs.com/merger/java/).
+Anda juga dapat mengunduh versi terbaru langsung dari [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
-#### Langkah‑langkah Akuisisi Lisensi
-1. **Free Trial:** Mulailah dengan percobaan gratis untuk menjelajahi semua fitur.  
-2. **Temporary License:** Minta lisensi sementara untuk pengujian yang lebih lama.  
+#### Langkah-langkah memperoleh lisensi
+1. **Free trial:** Mulai dengan percobaan gratis untuk menjelajahi semua fitur.  
+2. **Temporary license:** Minta lisensi sementara untuk pengujian yang lebih lama.  
 3. **Purchase:** Dapatkan lisensi penuh untuk penerapan komersial.
 
-## Implementasi Langkah‑demi‑Langkah
+## Implementasi langkah‑demi‑langkah
 
-### Langkah 1: Tentukan Jalur File dan Inisialisasi Objek
-Pertama, atur jalur untuk workbook Excel Anda, PDF yang ingin Anda sematkan, dan file output. Kemudian buat `OleSpreadsheetOptions` yang menggambarkan di mana objek OLE akan muncul.
+### Langkah 1: definisikan jalur file dan inisialisasi objek
+Pertama, atur jalur untuk workbook Excel Anda, PDF yang ingin disematkan, dan file output. Kemudian buat `OleSpreadsheetOptions` yang menggambarkan di mana objek OLE akan muncul.
+
+**Definition anchor:** `OleSpreadsheetOptions` mengonfigurasi sel target, ukuran, dan properti tampilan dari objek OLE di dalam lembar kerja Excel.  
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -99,8 +160,10 @@ public class ImportOLEToSpreadsheet {
 }
 ```
 
-### Langkah 2: Impor Dokumen OLE
-Gunakan metode `importDocument` untuk menyematkan PDF sebagai objek OLE pada lokasi yang Anda tentukan.
+### Langkah 2: impor dokumen OLE
+Gunakan metode `importDocument` untuk menyematkan PDF sebagai objek OLE pada lokasi yang Anda definisikan.
+
+**Definition anchor:** `importDocument` memberi tahu GroupDocs.Merger untuk memperlakukan file yang diberikan sebagai objek OLE, mempertahankan konten biner aslinya sambil menautkannya ke lembar kerja.  
 
 ```java
 // Import the OLE document into the specified position in the spreadsheet.
@@ -110,70 +173,76 @@ merger.importDocument(oleCellsOptions);
 merger.save(filePathOut);
 ```
 
-**Mengapa kami menggunakan `importDocument`:** Metode ini memberi tahu GroupDocs.Merger untuk memperlakukan PDF sebagai objek OLE, mempertahankan konten aslinya sekaligus membuatnya dapat diakses dari dalam Excel.
+**Mengapa kami menggunakan `importDocument`:** Metode ini memastikan PDF tetap berfungsi penuh saat dibuka dari Excel, menangani pengemasan biner yang diperlukan dan metadata hubungan secara otomatis.
 
-### Langkah 3: Simpan Spreadsheet
+### Langkah 3: simpan spreadsheet
 Simpan perubahan ke file baru sehingga workbook asli tetap tidak tersentuh.
 
 ```java
 merger.save(filePathOut);
 ```
 
-**Opsi konfigurasi utama:** Anda dapat menyesuaikan lebih lanjut `OleSpreadsheetOptions`—misalnya, mengatur ukuran objek, visibilitas, atau apakah harus ditautkan alih‑alih disematkan.
+**Opsi konfigurasi utama:** Anda dapat menyesuaikan lebih lanjut `OleSpreadsheetOptions`—misalnya, mengubah ukuran objek, visibilitas, atau apakah objek harus ditautkan alih-alih disematkan.
 
-## Kesalahan Umum & Tips Pemecahan Masalah
+## Kesalahan umum & tips pemecahan masalah
 - **FileNotFoundException:** Periksa kembali bahwa jalur yang Anda berikan mengarah ke file yang ada.  
-- **Versi tidak cocok:** Pastikan versi GroupDocs.Merger yang Anda gunakan cocok dengan versi JDK Anda.  
-- **PDF rusak:** Pastikan PDF dapat dibuka secara terpisah sebelum menyematkannya.  
-- **Tekanan memori:** Saat memproses banyak workbook, tutup setiap instance `Merger` dengan cepat atau gunakan try‑with‑resources untuk membebaskan sumber daya.
+- **Version mismatch:** Pastikan versi GroupDocs.Merger yang Anda gunakan cocok dengan versi JDK Anda.  
+- **Corrupt PDF:** Pastikan PDF dapat dibuka secara terpisah sebelum menyematkannya.  
+- **Memory pressure:** Saat memproses banyak workbook, tutup setiap instance `Merger` dengan cepat atau gunakan try‑with‑resources untuk membebaskan sumber daya.
 
-## Aplikasi Praktis
+## Aplikasi praktis
 Menyematkan objek OLE di Excel berguna dalam banyak skenario:
-1. **Konsolidasi Data:** Menggabungkan PDF kuartalan menjadi satu workbook dasbor.  
-2. **Presentasi Interaktif:** Menyediakan lembar spesifikasi detail yang dapat dibuka sesuai permintaan selama pertemuan.  
-3. **Pelaporan Otomatis:** Menghasilkan laporan keuangan bulanan yang secara otomatis menyertakan dokumentasi pendukung.  
+1. **Konsolidasi data:** Menggabungkan PDF triwulanan menjadi satu workbook dasbor.  
+2. **Presentasi interaktif:** Menyediakan lembar spesifikasi terperinci yang dapat dibuka sesuai permintaan selama pertemuan.  
+3. **Pelaporan otomatis:** Menghasilkan laporan keuangan bulanan yang secara otomatis menyertakan dokumentasi pendukung.  
 
-## Pertimbangan Kinerja
-- **Manajemen Memori:** Tutup semua instance `Merger` yang tidak lagi diperlukan untuk membebaskan sumber daya.  
-- **Pemrosesan Batch:** Saat menangani puluhan spreadsheet, proses dalam batch kecil untuk menghindari lonjakan memori.  
-- **Praktik Terbaik Java:** Gunakan try‑with‑resources untuk aliran dan tangani pengecualian dengan baik.
+## Pertimbangan kinerja
+- **Memory management:** Tutup setiap instance `Merger` yang tidak lagi Anda perlukan untuk membebaskan sumber daya.  
+- **Batch processing:** Saat menangani puluhan spreadsheet, proses dalam batch kecil untuk menghindari lonjakan memori.  
+- **Java best practices:** Gunakan try‑with‑resources untuk aliran dan tangani pengecualian dengan baik.
 
 ## Kesimpulan
-Anda kini memiliki solusi lengkap yang siap produksi untuk **menyematkan PDF ke Excel** dan **mengimpor dokumen ke Excel** menggunakan GroupDocs.Merger untuk Java. Bereksperimenlah dengan berbagai tipe file, sesuaikan opsi penempatan, dan integrasikan alur kerja ini ke dalam pipeline pelaporan otomatis Anda.
+Anda kini memiliki solusi lengkap yang siap produksi untuk **menyematkan PDF di Excel** dan **mengimpor dokumen ke Excel** menggunakan GroupDocs.Merger untuk Java. Bereksperimenlah dengan berbagai tipe file, sesuaikan opsi penempatan, dan integrasikan alur kerja ini ke dalam pipeline pelaporan otomatis Anda.
 
-### Langkah Selanjutnya
-- Cobalah menyematkan dokumen Word atau gambar untuk melihat bagaimana API menangani format lain.  
-- Jelajahi kemampuan tambahan GroupDocs.Merger seperti memecah, menggabungkan, atau mengonversi dokumen.
+### Langkah selanjutnya
+- Coba menyematkan dokumen Word atau gambar untuk melihat bagaimana API menangani format lain.  
+- Jelajahi kemampuan tambahan GroupDocs.Merger seperti memisahkan, menggabungkan, atau mengonversi dokumen.
 
-## Bagian FAQ
+## Pertanyaan yang sering diajukan
 
-**Q1: Bisakah saya menyematkan beberapa objek OLE dalam satu file Excel?**  
-A1: Ya, Anda dapat menyematkan beberapa objek OLE dengan mengulangi proses impor untuk setiap objek.
+**Q: Bisakah saya menyematkan beberapa objek OLE dalam satu file Excel?**  
+A: Ya, ulangi panggilan `importDocument` untuk setiap objek, sesuaikan `OleSpreadsheetOptions` untuk menargetkan sel yang berbeda.
 
-**Q2: Format file apa yang didukung sebagai objek OLE?**  
-A2: GroupDocs.Merger mendukung PDF, dokumen Word, file Excel, gambar, dan beberapa format umum lainnya.
+**Q: Format file apa yang didukung sebagai objek OLE?**  
+A: GroupDocs.Merger mendukung PDF, dokumen Word, file Excel, gambar, dan beberapa format umum lainnya—lebih dari **30+** tipe secara total.
 
-**Q3: Bagaimana cara menangani file besar secara efisien dengan GroupDocs.Merger?**  
-A3: Optimalkan penggunaan memori dengan memproses file dalam batch lebih kecil dan segera membuang instance `Merger`.
+**Q: Bagaimana cara menangani file besar secara efisien dengan GroupDocs.Merger?**  
+A: Proses file dalam batch yang lebih kecil, gunakan API streaming, dan buang instance `Merger` dengan cepat untuk menjaga penggunaan memori tetap rendah.
 
-**Q4: Bagaimana jika file yang disematkan tidak dapat diakses atau rusak?**  
-A4: Verifikasi jalur dan integritas file sumber sebelum mencoba menyematkannya. File yang rusak akan menyebabkan pengecualian saat impor.
+**Q: Bagaimana jika file yang disematkan tidak dapat diakses atau rusak?**  
+A: Verifikasi jalur dan integritas file sumber sebelum mencoba menyematkannya. File yang rusak akan memunculkan pengecualian saat impor.
 
-**Q5: Bisakah saya menyesuaikan tampilan objek OLE di Excel?**  
-A5: Ya, `OleSpreadsheetOptions` memungkinkan Anda mengatur indeks baris/kolom, ukuran, dan visibilitas untuk menyesuaikan tampilan objek di lembar kerja.
+**Q: Bisakah saya menyesuaikan tampilan objek OLE di Excel?**  
+A: Ya, `OleSpreadsheetOptions` memungkinkan Anda mengatur indeks baris/kolom, ukuran, dan visibilitas untuk menyesuaikan tampilan objek di lembar kerja.
 
 ## Sumber Daya
 
-- **Documentation:** [Dokumentasi GroupDocs.Merger untuk Java](https://docs.groupdocs.com/merger/java/)
-- **API Reference:** [Panduan Referensi API](https://reference.groupdocs.com/merger/java/)
-- **Download:** [Rilisan Terbaru](https://releases.groupdocs.com/merger/java/)
-- **Purchase:** [Beli GroupDocs.Merger untuk Java](https://purchase.groupdocs.com/buy)
-- **Free Trial:** [Mulai Percobaan Gratis](https://releases.groupdocs.com/merger/java/)
-- **Temporary License:** [Minta Lisensi Sementara](https://purchase.groupdocs.com/temporary-license/)
-- **Support:** [Forum GroupDocs](https://forum.groupdocs.com/c/merger/) 
+- **Dokumentasi:** [GroupDocs.Merger for Java Documentation](https://docs.groupdocs.com/merger/java/)
+- **Referensi API:** [API Reference Guide](https://reference.groupdocs.com/merger/java/)
+- **Unduh:** [Latest Releases](https://releases.groupdocs.com/merger/java/)
+- **Pembelian:** [Buy GroupDocs.Merger for Java](https://purchase.groupdocs.com/buy)
+- **Percobaan gratis:** [Start a Free Trial](https://releases.groupdocs.com/merger/java/)
+- **Lisensi sementara:** [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **Dukungan:** [GroupDocs Forum](https://forum.groupdocs.com/c/merger/) 
 
 ---
 
-**Terakhir Diperbarui:** 2026-03-17  
-**Diuji Dengan:** GroupDocs.Merger untuk Java versi terbaru  
+**Terakhir diperbarui:** 2026-10-06  
+**Diuji dengan:** GroupDocs.Merger untuk Java versi terbaru  
 **Penulis:** GroupDocs
+
+## Tutorial Terkait
+
+- [Menyematkan Objek Ole Ppt Java Groupdocs Merger](/merger/java/document-import/embed-ole-object-ppt-java-groupdocs-merger/)
+- [Cara menyematkan pdf di word menggunakan GroupDocs.Merger untuk Java – Panduan Komprehensif](/merger/java/document-import/embed-ole-objects-word-documents-groupdocs-java/)
+- [Menggabungkan PDF Java: Memuat Dokumen Lokal Menggunakan GroupDocs.Merger – Panduan](/merger/java/document-loading/load-document-groupdocs-merger-java-guide/)

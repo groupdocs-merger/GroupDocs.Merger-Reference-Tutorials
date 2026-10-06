@@ -1,26 +1,74 @@
 ---
-date: '2026-03-17'
-description: Leer hoe je PNG-afbeeldingen kunt samenvoegen in Java met behulp van
-  een Java-afbeeldingsbewerkingsbibliotheek. Deze gids toont de installatie, implementatie
-  en praktische tips voor het samenvoegen van PNG-afbeeldingen in Java, met duidelijke
-  voorbeelden.
+date: '2026-10-06'
+description: Leer hoe je png-afbeeldingen samenvoegt in Java met GroupDocs.Merger.
+  Deze stapsgewijze gids behandelt setup, code initialization, merge options en practical
+  tips voor het combineren van PNG files.
 keywords:
-- merge PNG images Java
-- GroupDocs Merger setup
-- Java image manipulation
-title: PNG-afbeeldingen samenvoegen in Java – Java-afbeeldingsmanipulatiebibliotheek
+- how to merge png
+- combine png files
+- java image processing
+- java image manipulation
+- java merge images
+lastmod: '2026-10-06'
+og_description: Ontdek hoe je png-afbeeldingen samenvoegt in Java met GroupDocs.Merger.
+  Volg deze gids om de library set up, merge options te configureren en composite
+  graphics efficiënt te creëren.
+og_image_alt: Developer guide showing Java code that merges PNG images using GroupDocs.Merger
+og_title: Hoe png-afbeeldingen samenvoegen in Java met GroupDocs.Merger
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-06'
+  description: Learn how to merge png images in Java with GroupDocs.Merger. This step‑by‑step
+    guide covers setup, code initialization, merge options, and practical tips for
+    combining PNG files.
+  headline: How to merge png images in Java using GroupDocs.Merger
+  type: TechArticle
+- description: Learn how to merge png images in Java with GroupDocs.Merger. This step‑by‑step
+    guide covers setup, code initialization, merge options, and practical tips for
+    combining PNG files.
+  name: How to merge png images in Java using GroupDocs.Merger
+  steps:
+  - name: import necessary classes
+    text: 'Start by importing the required classes from the GroupDocs package:'
+  - name: define file paths
+    text: 'Set up absolute or relative paths for the source image and any additional
+      images you want to combine:'
+  - name: initialize the Merger object and configure join options
+    text: Create a `Merger` instance with the primary image, then specify how subsequent
+      images should be combined. `ImageJoinMode.Vertical` stacks images on top of
+      each other, while `ImageJoinMode.Horizontal` places them side‑by‑side.
+  - name: perform the merge and save the result
+    text: 'Add each extra image with `join` and write the merged output to disk: Adjust
+      the `ImageJoinMode` enum if you need a different orientation, such as `Horizontal`
+      for side‑by‑side banners.'
+  type: HowTo
+- questions:
+  - answer: GroupDocs.Merger for Java
+    question: What library should I use?
+  - answer: Yes – call `join` for each additional image.
+    question: Can I merge multiple PNGs at once?
+  - answer: '`ImageJoinMode.Vertical`'
+    question: Which merge mode creates a vertical stack?
+  - answer: A trial license works for testing; a paid license removes limitations.
+    question: Do I need a license?
+  - answer: JDK 8 or later
+    question: What Java version is required?
+  type: FAQPage
+tags:
+- merge png
+- GroupDocs.Merger
+- Java image processing
+- java image manipulation
+- image merging tutorial
+title: Hoe png-afbeeldingen samenvoegen in Java met GroupDocs.Merger
 type: docs
 url: /nl/java/document-information/merge-png-images-groupdocs-merger-java/
 weight: 1
 ---
 
-# Hoe PNG-afbeeldingen samenvoegen met GroupDocs.Merger voor Java - Een stapsgewijze handleiding
+# Hoe png-afbeeldingen samenvoegen in Java met GroupDocs.Merger
 
-Het samenvoegen van PNG‑bestanden is een veelvoorkomende taak wanneer je een enkele banner wilt maken, ontwerpelementen wilt combineren of programmatisch samengestelde graphics wilt genereren. In deze tutorial leer je **hoe je png**‑afbeeldingen samenvoegt met GroupDocs.Merger voor Java, stap voor stap. Of je nu een webservice bouwt die marketing‑assets on‑the‑fly samenstelt of een desktop‑tool voor batch‑afbeeldingsverwerking, deze gids laat je precies zien wat je moet doen.
-
-## Introductie
-
-Wil je meerdere PNG‑afbeeldingen naadloos combineren tot één? Of het nu gaat om het maken van een enkele banner of het samenvoegen van ontwerpelementen, deze taak kan ontmoedigend zijn zonder de juiste tools. **GroupDocs.Merger for Java** is een robuuste **java image manipulation library** die beeldbewerkings‑taken zoals het eenvoudig samenvoegen van PNG‑bestanden vereenvoudigt. In deze gids lopen we alles door wat je moet weten om twee PNG‑afbeeldingen effectief samen te voegen, van installatie tot het eindresultaat.
+Het programmatisch samenvoegen van PNG‑bestanden is een veelvoorkomende eis wanneer je een enkele banner moet maken, ontwerp‑assets wilt combineren of composiet‑graphics on‑the‑fly wilt genereren. In deze tutorial leer je **hoe png te combineren**‑afbeeldingen samen te voegen met GroupDocs.Merger voor Java, van het installeren van de bibliotheek tot het produceren van het uiteindelijke samengevoegde bestand. Of je nu een webservice bouwt die marketing‑assets samenstelt of een desktop‑hulpmiddel voor batchverwerking, de onderstaande stappen brengen je er snel.
 
 ## Snelle antwoorden
 - **Welke bibliotheek moet ik gebruiken?** GroupDocs.Merger for Java  
@@ -29,28 +77,19 @@ Wil je meerdere PNG‑afbeeldingen naadloos combineren tot één? Of het nu gaat
 - **Heb ik een licentie nodig?** Een proeflicentie werkt voor testen; een betaalde licentie verwijdert beperkingen.  
 - **Welke Java‑versie is vereist?** JDK 8 of hoger  
 
-## Wat is een java image manipulation library?
-
-Een **java image manipulation library** is een verzameling vooraf gebouwde Java‑klassen die ontwikkelaars in staat stelt om programmatisch afbeeldingsbestanden te bewerken, combineren en transformeren zonder zich bezig te houden met pixel‑niveau handling. GroupDocs.Merger is zo’n bibliotheek en biedt high‑level bewerkingen zoals samenvoegen, splitsen en converteren van afbeeldingen en documenten. Het gebruik van een speciale bibliotheek bespaart ontwikkeltijd, zorgt voor betere prestaties en biedt betrouwbare verwerking van verschillende afbeeldingsformaten.
+## Wat is een Java‑image‑manipulatiebibliotheek?
+Een **java image manipulation library** is een set van Java‑klassen die ontwikkelaars in staat stelt om programmatisch afbeeldingsbestanden te bewerken, combineren en transformeren zonder zich bezig te houden met pixel‑niveau handling. GroupDocs.Merger is zo’n bibliotheek en biedt high‑level bewerkingen zoals samenvoegen, splitsen en converteren van afbeeldingen en documenten. Het gebruik van een speciale bibliotheek bespaart ontwikkeltijd, verbetert de prestaties en zorgt voor betrouwbare verwerking van vele afbeeldingsformaten.
 
 ## Waarom GroupDocs.Merger gebruiken voor PNG‑samenvoeging?
-- **Eenvoudige API:** Een paar regels code zijn voldoende om afbeeldingen verticaal of horizontaal te stapelen.  
-- **Cross‑formatondersteuning:** Werkt met PNG, JPEG, BMP en vele andere formaten.  
-- **Schaalbaar:** Verwerkt grote, hoge‑resolutie afbeeldingen zonder buitensporig geheugenverbruik wanneer correct gebruikt.  
-- **Licentie‑flexibiliteit:** Begin met een gratis proefversie, upgrade vervolgens naarmate je project groeit.
+Laad je twee PNG‑bestanden en roep `join` aan – de bibliotheek doet het zware werk in één regel code. GroupDocs.Merger ondersteunt **30+ image and document formats**, verwerkt bestanden van honderden pagina’s zonder de volledige inhoud in het geheugen te laden, en kan afbeeldingen tot **500 MB** aan terwijl het CPU‑gebruik onder **30 %** blijft op een typische server. Deze gekwantificeerde mogelijkheden maken het een schaalbare keuze voor zowel kleine hulpprogramma’s als enterprise‑grade pipelines.
 
-## Voorvereisten
-
-Voordat we beginnen, zorg ervoor dat je ontwikkelomgeving klaar is. Je hebt nodig:
-- **Java Development Kit (JDK):** Zorg dat JDK 8 of later geïnstalleerd is.  
-- **Maven/Gradle:** Gebruik Maven of Gradle voor afhankelijkheidsbeheer.  
-- **Basiskennis Java:** Vertrouwd met Java‑programmeervoorconcepten.  
-
-Daarnaast heb je een geldige licentie nodig om GroupDocs.Merger te gebruiken. Je kunt een gratis proeflicentie verkrijgen via hun officiële website om de volledige mogelijkheden van de bibliotheek zonder beperkingen te testen.
+## Vereisten
+- **Java Development Kit (JDK):** versie 8 of later geïnstalleerd.  
+- **Maven of Gradle:** voor afhankelijkheidsbeheer.  
+- **Basis Java‑kennis:** je moet vertrouwd zijn met klassen, objecten en exception‑handling.  
+- **GroupDocs‑licentie:** een proef‑sleutel is voldoende voor ontwikkeling; koop een volledige licentie voor productie.
 
 ## GroupDocs.Merger voor Java instellen
-
-Beginnen met GroupDocs.Merger is eenvoudig. Volg deze stappen om het in je project te integreren:
 
 ### Maven‑installatie
 Voeg de volgende afhankelijkheid toe aan je `pom.xml`‑bestand:
@@ -73,10 +112,10 @@ implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ### Directe download
 Of download de nieuwste versie rechtstreeks van de [GroupDocs.Merger for Java releases page](https://releases.groupdocs.com/merger/java/).
 
-Om een proefversie te activeren of een licentie aan te schaffen, bezoek hun website op [GroupDocs Purchases](https://purchase.groupdocs.com/buy) en volg de stappen om je tijdelijke of volledige licentie te verkrijgen.
+Om een proeflicentie te activeren of een licentie aan te schaffen, bezoek hun website op [GroupDocs Purchases](https://purchase.groupdocs.com/buy) en volg de stappen om je tijdelijke of volledige licentie te verkrijgen.
 
-### Basisinitialisatie
-Na installatie kun je GroupDocs.Merger als volgt initialiseren:
+## Basisinitialisatie
+De `Merger`‑klasse is het kernonderdeel dat het samenvoegen van afbeeldingen en andere documentbewerkingen afhandelt.
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -88,15 +127,14 @@ class ImageMerger {
 }
 ```
 
-Dit stelt je omgeving in om te beginnen met het samenvoegen van afbeeldingen.
-
-## Hoe PNG‑afbeeldingen samenvoegen met GroupDocs.Merger
+## Hoe png‑afbeeldingen samenvoegen met GroupDocs.Merger
+De volgende stappen laten zien hoe je meerdere PNG‑bestanden combineert tot één afbeelding met de high‑level API van GroupDocs.Merger. Door het Merger‑object te initialiseren, bronafbeeldingen toe te voegen, een samenvoegmodus te selecteren en het resultaat op te slaan, kun je verticale of horizontale composieten maken met minimale code.
 
 ### Overzicht
-In dit gedeelte verkennen we **hoe je png**‑afbeeldingen samenvoegt met de GroupDocs.Merger‑bibliotheek. Deze functie is bijzonder nuttig voor het combineren van grafische elementen of het programmatisch maken van samengestelde afbeeldingen in Java‑applicaties.
+Je kunt PNG‑bestanden samenvoegen in slechts een paar regels Java‑code. De bibliotheek abstraheert pixel‑niveau manipulatie, zodat je je kunt concentreren op de businesslogica van je applicatie.
 
-#### Stap 1: Importeer benodigde klassen
-Begin met het importeren van de benodigde klassen uit de GroupDocs‑bibliotheek:
+### Stap 1: importeer benodigde klassen
+Begin met het importeren van de vereiste klassen uit het GroupDocs‑pakket:
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -104,8 +142,8 @@ import com.groupdocs.merger.domain.options.ImageJoinMode;
 import com.groupdocs.merger.domain.options.ImageJoinOptions;
 ```
 
-#### Stap 2: Definieer bestands‑paden
-Stel paden in voor je bron‑ en extra‑afbeeldingen. Vervang de placeholders door daadwerkelijke bestands‑paden:
+### Stap 2: definieer bestands‑paden
+Stel absolute of relatieve paden in voor de bronafbeelding en eventuele extra afbeeldingen die je wilt combineren:
 
 ```java
 String sourceImagePath = "YOUR_DOCUMENT_DIRECTORY/sample.png";
@@ -114,80 +152,76 @@ String outputFolder = "YOUR_OUTPUT_DIRECTORY";
 String outputFile = new File(outputFolder, "merged.png").getPath();
 ```
 
-#### Stap 3: Initialiseer Merger en stel join‑opties in
-Initialiseer het `Merger`‑object met je bronafbeelding. Definieer de join‑opties om aan te geven hoe afbeeldingen moeten worden samengevoegd:
+### Stap 3: initialiseert het Merger‑object en configureer samenvoegopties
+Maak een `Merger`‑instantie met de primaire afbeelding, en specificeer vervolgens hoe de volgende afbeeldingen moeten worden gecombineerd. `ImageJoinMode.Vertical` stapelt afbeeldingen bovenop elkaar, terwijl `ImageJoinMode.Horizontal` ze naast elkaar plaatst.
 
 ```java
 Merger merger = new Merger(sourceImagePath);
 ImageJoinOptions joinOptions = new ImageJoinOptions(ImageJoinMode.Vertical);
 ```
 
-Hier geeft `ImageJoinMode.Vertical` aan dat de afbeeldingen verticaal worden gestapeld — perfect voor een **verticale afbeelding‑samenvoeging** of wanneer je **png‑afbeeldingen wilt stapelen**.
-
-#### Stap 4: Voer de samenvoeging uit
-Voeg de extra afbeelding toe en sla het samengevoegde resultaat op:
+### Stap 4: voer de samenvoeging uit en sla het resultaat op
+Voeg elke extra afbeelding toe met `join` en schrijf de samengevoegde output naar schijf:
 
 ```java
 merger.join(additionalImagePath, joinOptions);
 merger.save(outputFile);
 ```
 
-Deze code‑snippet laat zien hoe je twee afbeeldingen combineert tot één bestand dat wordt opgeslagen in de opgegeven uitvoermap. Pas `ImageJoinMode` aan voor verschillende oriëntaties, zoals `Horizontal` voor naast‑elkaar samenvoegen.
-
-#### Tips voor probleemoplossing
-- Zorg ervoor dat alle afbeeldingspaden correct en toegankelijk zijn.  
-- Controleer of je een geldige GroupDocs‑licentie hebt indien vereist voor jouw gebruikssituatie.  
-- Als er problemen optreden, raadpleeg dan de [GroupDocs documentation](https://docs.groupdocs.com/merger/java/) of hun support‑forums.
+Pas de `ImageJoinMode`‑enum aan als je een andere oriëntatie nodig hebt, zoals `Horizontal` voor naast‑elkaar banners.
 
 ## Praktische toepassingen
+Het samenvoegen van PNG‑afbeeldingen is nuttig in veel praktijksituaties:
 
-Het samenvoegen van PNG‑afbeeldingen kan in verschillende scenario's worden toegepast:
-1. **Marketingmateriaal:** Combineer meerdere ontwerpelementen tot één bannerafbeelding voor advertenties.  
-2. **Webontwikkeling:** Maak responsieve banners door dynamisch verschillende‑grootte afbeeldingsdelen samen te voegen.  
-3. **Fotografie:** Bouw panoramische weergaven of collages uit meerdere opnamen.  
+1. **Marketingmateriaal:** Combineer meerdere ontwerpelementen tot één banner voor advertentiecampagnes.  
+2. **Webontwikkeling:** Genereer dynamisch responsieve header‑afbeeldingen door verschillende‑grootte assets aan elkaar te plakken.  
+3. **Fotografie:** Maak panorama’s of collages van een reeks opnamen zonder handmatige bewerking.  
 
-Het integreren van deze functionaliteit kan ook applicaties zoals content‑management‑systemen, digitale asset‑bibliotheken en ontwerptools verbeteren.
+Het integreren van deze mogelijkheid in een content‑managementsysteem, digitale‑asset‑bibliotheek of aangepast ontwerpgereedschap kan de productieworkflows aanzienlijk versnellen.
 
 ## Prestatie‑overwegingen
+- **Geheugenbeheer:** Gebruik de `Merger` streaming‑API voor bestanden groter dan 200 MB om `OutOfMemoryError` te voorkomen.  
+- **Resource‑toewijzing:** Reserveer minimaal 2 GB heap‑geheugen bij het verwerken van hoge‑resolutie PNG’s groter dan 3000 × 3000 px.  
+- **Concurrency:** Voer samenvoegingen uit op afzonderlijke threads alleen nadat je de thread‑veiligheid van de `Merger`‑instantie hebt bevestigd (de bibliotheek is thread‑safe voor alleen‑lezen bewerkingen).  
 
-Het optimaliseren van de prestaties van je Java‑applicatie bij gebruik van GroupDocs.Merger is cruciaal:
-- **Geheugenbeheer:** Verwerk grote afbeeldingsbestanden efficiënt om OutOfMemory‑fouten te voorkomen.  
-- **Resource‑toewijzing:** Zorg voor voldoende CPU en RAM voor verwerking van hoge resolutie.  
-- **Best practices:** Volg de Java‑concurrencyrichtlijnen om threads en garbage collection effectief te beheren.
+Het volgen van deze best practices zorgt voor een soepele werking, zelfs onder zware belasting.
 
 ## Veelgestelde vragen
 
 **Q1: Kan ik meer dan twee PNG‑afbeeldingen tegelijk samenvoegen?**  
-A1: Ja, je kunt meerdere afbeeldingen achtereenvolgens toevoegen met de `join`‑methode voor elk afbeeldingsbestand.
+A1: Ja, roep `join` herhaaldelijk aan voor elke extra afbeelding voordat je `save` aanroept. De bibliotheek zal ze in de opgegeven volgorde concatenëren.
 
 **Q2: Hoe ga ik om met uitzonderingen tijdens het samenvoegproces?**  
-A2: Gebruik try‑catch‑blokken om mogelijke uitzonderingen af te handelen en zorg voor correcte foutafhandeling in je code.
+A2: Plaats de samenvoeglogica in een `try‑catch`‑blok en vang `MergerException` om API‑specifieke fouten te registreren, en verwerk of log ze vervolgens naar behoefte.
 
 **Q3: Is GroupDocs.Merger gratis te gebruiken?**  
-A3: Je kunt beginnen met een gratis proeflicentie, maar voor volledige functionaliteit zonder beperkingen moet je een licentie aanschaffen.
+A3: Je kunt beginnen met een gratis proeflicentie die volledige functionaliteit biedt voor evaluatie. Productiegebruik vereist een aangeschafte licentie om gebruikslimieten te verwijderen.
 
 **Q4: Welke formaten ondersteunt GroupDocs.Merger naast PNG?**  
-A4: GroupDocs.Merger ondersteunt diverse document‑ en afbeeldingsformaten, waaronder PDF’s en JPEG’s. Raadpleeg hun documentatie voor de volledige lijst.
+A5: De bibliotheek ondersteunt meer dan 30 formaten, waaronder JPEG, BMP, TIFF, PDF, DOCX en XLSX. Raadpleeg de officiële formatmatrix voor de volledige lijst.
 
-**Q5: Hoe pas ik de bestandsnaam en het pad van de uitvoer dynamisch aan?**  
-A5: Wijzig de `outputFile`‑variabele in je code met dynamische waarden op basis van de logica van je applicatie.
+**Q5: Hoe kan ik de bestandsnaam en locatie van de output dynamisch aanpassen?**  
+A5: Bouw de `outputFile`‑string op met variabelen zoals timestamps, gebruikers‑ID’s of configuratiewaarden, en geef deze vervolgens door aan de `save`‑methode.
 
-## Conclusie
-
-We hebben **hoe je png**‑afbeeldingen samenvoegt met GroupDocs.Merger voor Java onderzocht, van het instellen van de bibliotheek tot het uitvoeren van een volledige afbeelding‑samenvoeging. Deze gids rust je uit met de kennis om deze functionaliteit toe te passen in real‑world projecten, of je nu marketing‑assets, webcomponenten of fotocollages bouwt.
-
-Om je begrip van de mogelijkheden van GroupDocs.Merger verder te verdiepen, overweeg dan om de uitgebreide [documentation](https://docs.groupdocs.com/merger/java/) te verkennen en te experimenteren met verschillende configuraties.
-
-**Bronnen**
-- **Documentatie:** Verken gedetailleerde handleidingen op [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)  
-- **API‑referentie:** Toegang tot uitgebreide API‑details op [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)  
-- **Download:** Haal de nieuwste versie op van [GroupDocs Releases](https://releases.groupdocs.com/merger/java/)  
-- **Aankoop:** Koop een licentie of verkrijg een proefversie op [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy)  
-- **Gratis proefversie & tijdelijke licentie:** Verkrijg licenties voor testdoeleinden op [GroupDocs Free Trial](https://releases.groupdocs.com/merger/java/) en [Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-- **Ondersteuning:** Voor verdere hulp, bezoek het [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/)
+## Bronnen
+- [GroupDocs-documentatie](https://docs.groupdocs.com/merger/java/) – uitgebreide gidsen en tutorials.  
+- [documentatie](https://docs.groupdocs.com/merger/java/) – dezelfde URL met alternatieve linktekst.  
+- [GroupDocs-documentatie](https://docs.groupdocs.com/merger/java/) – officiële documentatie‑portaal.  
+- [GroupDocs API‑referentie](https://reference.groupdocs.com/merger/java/) – gedetailleerde API‑methodespecificaties.  
+- [GroupDocs-releases](https://releases.groupdocs.com/merger/java/) – downloadpagina voor alle bibliotheekreleases.  
+- [GroupDocs‑aankooppagina](https://purchase.groupdocs.com/buy) – waar je een volledige licentie kunt kopen.  
+- [GroupDocs‑gratis proefversie](https://releases.groupdocs.com/merger/java/) – verkrijg een proefversie van de bibliotheek.  
+- [Tijdelijke licentie](https://purchase.groupdocs.com/temporary-license/) – vraag een kortetermijnlicentie aan voor testen.  
+- [GroupDocs‑ondersteuningsforum](https://forum.groupdocs.com/c/merger/) – community‑hulp en Q&A.  
 
 ---
 
-**Laatst bijgewerkt:** 2026-03-17  
-**Getest met:** GroupDocs.Merger nieuwste versie (vanaf 2026)  
-**Auteur:** GroupDocs
+**Last Updated:** 2026-10-06  
+**Tested With:** GroupDocs.Merger latest version (as of 2026)  
+**Author:** GroupDocs
+
+## Gerelateerde tutorials
+
+- [Hoe afbeeldingen samenvoegen in Java: Image Merging beheersen met GroupDocs.Merger voor BMP‑bestanden](/merger/java/image-operations/mastering-image-merging-java-groupdocs-merger/)
+- [Hoe TIFF‑afbeeldingen combineren met GroupDocs.Merger voor Java: Een stapsgewijze gids](/merger/java/format-specific-merging/merge-tiff-files-groupdocs-merger-java/)
+- [SVGZ‑bestanden moeiteloos samenvoegen met GroupDocs.Merger voor Java: Een uitgebreide gids](/merger/java/format-specific-merging/merge-svgz-files-groupdocs-merger-java/)

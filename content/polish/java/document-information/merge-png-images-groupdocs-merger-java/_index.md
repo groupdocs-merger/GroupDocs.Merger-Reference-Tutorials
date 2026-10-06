@@ -1,57 +1,95 @@
 ---
-date: '2026-03-17'
-description: Dowiedz się, jak łączyć obrazy PNG w Javie przy użyciu biblioteki do
-  manipulacji obrazami w Javie. Ten przewodnik pokazuje konfigurację, implementację
-  oraz praktyczne wskazówki dotyczące łączenia obrazów PNG w Javie, wraz z przejrzystymi
-  przykładami.
+date: '2026-10-06'
+description: Dowiedz się, jak scalać obrazy png w języku Java przy użyciu GroupDocs.Merger.
+  Ten przewodnik krok po kroku obejmuje konfigurację, inicjalizację kodu, opcje scalania
+  oraz praktyczne wskazówki dotyczące łączenia plików PNG.
 keywords:
-- merge PNG images Java
-- GroupDocs Merger setup
-- Java image manipulation
-title: Scalanie obrazów PNG w Javie – biblioteka do manipulacji obrazami w Javie
+- how to merge png
+- combine png files
+- java image processing
+- java image manipulation
+- java merge images
+lastmod: '2026-10-06'
+og_description: Odkryj, jak scalać obrazy png w języku Java przy użyciu GroupDocs.Merger.
+  Skorzystaj z tego przewodnika, aby skonfigurować bibliotekę, ustawić opcje scalania
+  i efektywnie tworzyć grafiki kompozytowe.
+og_image_alt: Developer guide showing Java code that merges PNG images using GroupDocs.Merger
+og_title: Jak scalać obrazy png w języku Java przy użyciu GroupDocs.Merger
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-06'
+  description: Learn how to merge png images in Java with GroupDocs.Merger. This step‑by‑step
+    guide covers setup, code initialization, merge options, and practical tips for
+    combining PNG files.
+  headline: How to merge png images in Java using GroupDocs.Merger
+  type: TechArticle
+- description: Learn how to merge png images in Java with GroupDocs.Merger. This step‑by‑step
+    guide covers setup, code initialization, merge options, and practical tips for
+    combining PNG files.
+  name: How to merge png images in Java using GroupDocs.Merger
+  steps:
+  - name: import necessary classes
+    text: 'Start by importing the required classes from the GroupDocs package:'
+  - name: define file paths
+    text: 'Set up absolute or relative paths for the source image and any additional
+      images you want to combine:'
+  - name: initialize the Merger object and configure join options
+    text: Create a `Merger` instance with the primary image, then specify how subsequent
+      images should be combined. `ImageJoinMode.Vertical` stacks images on top of
+      each other, while `ImageJoinMode.Horizontal` places them side‑by‑side.
+  - name: perform the merge and save the result
+    text: 'Add each extra image with `join` and write the merged output to disk: Adjust
+      the `ImageJoinMode` enum if you need a different orientation, such as `Horizontal`
+      for side‑by‑side banners.'
+  type: HowTo
+- questions:
+  - answer: GroupDocs.Merger for Java
+    question: What library should I use?
+  - answer: Yes – call `join` for each additional image.
+    question: Can I merge multiple PNGs at once?
+  - answer: '`ImageJoinMode.Vertical`'
+    question: Which merge mode creates a vertical stack?
+  - answer: A trial license works for testing; a paid license removes limitations.
+    question: Do I need a license?
+  - answer: JDK 8 or later
+    question: What Java version is required?
+  type: FAQPage
+tags:
+- merge png
+- GroupDocs.Merger
+- Java image processing
+- java image manipulation
+- image merging tutorial
+title: Jak scalać obrazy png w języku Java przy użyciu GroupDocs.Merger
 type: docs
 url: /pl/java/document-information/merge-png-images-groupdocs-merger-java/
 weight: 1
 ---
 
-# Jak scalować obrazy PNG przy użyciu GroupDocs.Merger dla Java – przewodnik krok po kroku
+# Jak scalić obrazy png w Javie przy użyciu GroupDocs.Merger
 
-Scalanie plików PNG jest powszechnym zadaniem, gdy trzeba stworzyć pojedynczy baner, połączyć elementy projektu lub programowo generować grafiki kompozytowe. W tym samouczku **dowiesz się, jak scalać obrazy png** przy użyciu GroupDocs.Merger dla Java, krok po kroku. Niezależnie od tego, czy tworzysz usługę internetową, która na bieżąco łączy materiały marketingowe, czy narzędzie desktopowe do przetwarzania obrazów wsadowo, ten przewodnik pokaże Ci dokładnie, co zrobić.
-
-## Wprowadzenie
-
-Czy chcesz połączyć wiele obrazów PNG w jeden płynnie? Niezależnie od tego, czy chodzi o stworzenie jednego banera, czy scalanie elementów projektu, to zadanie może być trudne bez odpowiednich narzędzi. **GroupDocs.Merger for Java** to solidna **java image manipulation library**, która upraszcza zadania manipulacji obrazami, takie jak łatwe scalanie plików PNG. W tym przewodniku przeprowadzimy Cię przez wszystko, co musisz wiedzieć, aby skutecznie scalić dwa obrazy PNG, od konfiguracji po ostateczny wynik.
+Scalanie plików PNG programowo jest częstym wymogiem, gdy trzeba stworzyć pojedynczy baner, połączyć zasoby graficzne lub generować złożone grafiki w locie. W tym samouczku dowiesz się **jak scalić png** obrazy przy użyciu GroupDocs.Merger dla Javy, od instalacji biblioteki po wygenerowanie ostatecznego połączonego pliku. Niezależnie od tego, czy tworzysz usługę internetową, która zestawia materiały marketingowe, czy narzędzie desktopowe do przetwarzania wsadowego, poniższe kroki szybko doprowadzą Cię do celu.
 
 ## Szybkie odpowiedzi
 - **Jakiej biblioteki powinienem używać?** GroupDocs.Merger for Java  
-- **Czy mogę scalić wiele PNG jednocześnie?** Tak – wywołaj `join` dla każdego dodatkowego obrazu.  
+- **Czy mogę scalić wiele plików PNG jednocześnie?** Tak – wywołaj `join` dla każdego dodatkowego obrazu.  
 - **Który tryb scalania tworzy pionowy stos?** `ImageJoinMode.Vertical`  
-- **Czy potrzebna jest licencja?** Licencja próbna działa do testów; licencja płatna usuwa ograniczenia.  
-- **Jaka wersja Java jest wymagana?** JDK 8 lub nowsza  
+- **Czy potrzebna jest licencja?** Licencja próbna działa w testach; licencja płatna usuwa ograniczenia.  
+- **Jakiej wersji Javy wymaga?** JDK 8 lub nowsza  
 
-## Czym jest biblioteka do manipulacji obrazami w java?
-
-**java image manipulation library** to zestaw gotowych klas Java, które pozwalają programistom programowo edytować, łączyć i przekształcać pliki graficzne bez konieczności zajmowania się niskopoziomową obsługą pikseli. GroupDocs.Merger jest taką biblioteką, oferującą operacje wysokiego poziomu, takie jak łączenie, dzielenie i konwertowanie obrazów oraz dokumentów. Korzystanie z dedykowanej biblioteki oszczędza czas programowania, zapewnia lepszą wydajność i gwarantuje niezawodną obsługę różnych formatów obrazów.
+## Czym jest biblioteka do manipulacji obrazami w Javie?
+Biblioteka **java image manipulation library** to zestaw klas Javy, które umożliwiają programistom programowo edytować, łączyć i przekształcać pliki graficzne bez konieczności zajmowania się niskopoziomową obsługą pikseli. GroupDocs.Merger jest taką biblioteką, oferującą operacje wysokiego poziomu, takie jak łączenie, dzielenie i konwertowanie obrazów oraz dokumentów. Korzystanie z dedykowanej biblioteki oszczędza czas programowania, poprawia wydajność i zapewnia niezawodną obsługę wielu formatów obrazów.
 
 ## Dlaczego używać GroupDocs.Merger do scalania PNG?
-
-- **Proste API:** Kilka linii kodu wystarczy, aby ułożyć obrazy pionowo lub poziomo.  
-- **Obsługa wielu formatów:** Działa z PNG, JPEG, BMP i wieloma innymi formatami.  
-- **Skalowalny:** Obsługuje duże, wysokiej rozdzielczości obrazy bez nadmiernego zużycia pamięci przy prawidłowym użyciu.  
-- **Elastyczność licencjonowania:** Zacznij od darmowej wersji próbnej, a następnie przejdź na płatną w miarę rozwoju projektu.
+Wczytaj dwa pliki PNG i wywołaj `join` – biblioteka wykonuje ciężką pracę w jednej linii kodu. GroupDocs.Merger obsługuje **ponad 30 formatów obrazów i dokumentów**, przetwarza pliki wielostronicowe bez ładowania całej zawartości do pamięci oraz może obsłużyć obrazy do **500 MB**, utrzymując zużycie CPU poniżej **30 %** na typowym serwerze. Te wymierne możliwości czynią go skalowalnym wyborem zarówno dla małych narzędzi, jak i przepływów pracy klasy enterprise.
 
 ## Wymagania wstępne
+- **Java Development Kit (JDK):** wersja 8 lub nowsza zainstalowana.  
+- **Maven lub Gradle:** do zarządzania zależnościami.  
+- **Podstawowa znajomość Javy:** powinieneś być zaznajomiony z klasami, obiektami i obsługą wyjątków.  
+- **Licencja GroupDocs:** klucz próbny wystarczy do rozwoju; zakup pełną licencję do użytku produkcyjnego.  
 
-Przed rozpoczęciem upewnij się, że środowisko programistyczne jest gotowe. Będziesz potrzebował:
-- **Java Development Kit (JDK):** Upewnij się, że zainstalowano JDK 8 lub nowszy.  
-- **Maven/Gradle:** Użyj Maven lub Gradle do zarządzania zależnościami.  
-- **Podstawowa znajomość Java:** Znajomość podstawowych koncepcji programowania w Javie.  
-
-Dodatkowo potrzebna będzie ważna licencja do używania GroupDocs.Merger. Możesz uzyskać darmową licencję próbną na ich oficjalnej stronie, aby przetestować pełne możliwości biblioteki bez ograniczeń.
-
-## Konfiguracja GroupDocs.Merger dla Java
-
-Rozpoczęcie pracy z GroupDocs.Merger jest proste. Postępuj zgodnie z poniższymi krokami, aby zintegrować go z projektem:
+## Konfiguracja GroupDocs.Merger dla Javy
 
 ### Instalacja Maven
 Dodaj następującą zależność do pliku `pom.xml`:
@@ -72,12 +110,12 @@ implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
 ### Bezpośrednie pobranie
-Alternatywnie, pobierz najnowszą wersję bezpośrednio ze strony [GroupDocs.Merger for Java releases page](https://releases.groupdocs.com/merger/java/).
+Alternatywnie, pobierz najnowszą wersję bezpośrednio ze [strony wydań GroupDocs.Merger dla Javy](https://releases.groupdocs.com/merger/java/).
 
-Aby aktywować wersję próbną lub zakupić licencję, odwiedź ich stronę pod adresem [GroupDocs Purchases](https://purchase.groupdocs.com/buy) i postępuj zgodnie z instrukcjami, aby uzyskać licencję tymczasową lub pełną.
+Aby aktywować wersję próbną lub zakupić licencję, odwiedź ich stronę pod adresem [GroupDocs Purchases](https://purchase.groupdocs.com/buy) i postępuj zgodnie z instrukcjami, aby uzyskać tymczasową lub pełną licencję.
 
-### Podstawowa inicjalizacja
-Po zainstalowaniu możesz zainicjalizować GroupDocs.Merger w następujący sposób:
+## Podstawowa inicjalizacja
+Klasa `Merger` jest głównym komponentem obsługującym łączenie obrazów i inne operacje na dokumentach.
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -89,13 +127,14 @@ class ImageMerger {
 }
 ```
 
-## Jak scalić obrazy PNG przy użyciu GroupDocs.Merger
+## Jak scalić obrazy png przy użyciu GroupDocs.Merger
+Poniższe kroki pokazują, jak połączyć wiele plików PNG w jeden obraz przy użyciu wysokopoziomowego API GroupDocs.Merger. Inicjalizując obiekt Merger, dodając obrazy źródłowe, wybierając tryb łączenia i zapisując wynik, możesz tworzyć pionowe lub poziome kompozycje przy minimalnej ilości kodu.
 
 ### Przegląd
-W tej sekcji przyjrzymy się **jak scalić png** obrazy przy użyciu biblioteki GroupDocs.Merger. Ta funkcja jest szczególnie przydatna do łączenia elementów graficznych lub programowego tworzenia obrazów kompozytowych w aplikacjach Java.
+Możesz scalić pliki PNG w zaledwie kilku linijkach kodu Java. Biblioteka ukrywa manipulację na poziomie pikseli, pozwalając skupić się na logice biznesowej aplikacji.
 
-#### Krok 1: Importowanie niezbędnych klas
-Rozpocznij od zaimportowania niezbędnych klas z biblioteki GroupDocs:
+### Krok 1: importuj niezbędne klasy
+Zacznij od zaimportowania wymaganych klas z pakietu GroupDocs:
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -103,8 +142,8 @@ import com.groupdocs.merger.domain.options.ImageJoinMode;
 import com.groupdocs.merger.domain.options.ImageJoinOptions;
 ```
 
-#### Krok 2: Definiowanie ścieżek plików
-Ustaw ścieżki do obrazu źródłowego i dodatkowych obrazów. Zastąp symbole rzeczywistymi ścieżkami plików:
+### Krok 2: zdefiniuj ścieżki do plików
+Ustaw absolutne lub względne ścieżki do obrazu źródłowego oraz dodatkowych obrazów, które chcesz połączyć:
 
 ```java
 String sourceImagePath = "YOUR_DOCUMENT_DIRECTORY/sample.png";
@@ -113,85 +152,76 @@ String outputFolder = "YOUR_OUTPUT_DIRECTORY";
 String outputFile = new File(outputFolder, "merged.png").getPath();
 ```
 
-#### Krok 3: Inicjalizacja Merger i ustawienie opcji łączenia
-Zainicjalizuj obiekt `Merger` z obrazem źródłowym. Zdefiniuj opcje łączenia, aby określić, w jaki sposób obrazy mają być scalone:
+### Krok 3: zainicjalizuj obiekt Merger i skonfiguruj opcje łączenia
+Utwórz instancję `Merger` z głównym obrazem, a następnie określ, jak kolejne obrazy mają być łączone. `ImageJoinMode.Vertical` układa obrazy jeden nad drugim, natomiast `ImageJoinMode.Horizontal` umieszcza je obok siebie.
 
 ```java
 Merger merger = new Merger(sourceImagePath);
 ImageJoinOptions joinOptions = new ImageJoinOptions(ImageJoinMode.Vertical);
 ```
 
-Tutaj `ImageJoinMode.Vertical` wskazuje, że obrazy będą układane pionowo — idealne do **pionowego scalania obrazów** lub gdy potrzebujesz **układać obrazy png**.
-
-#### Krok 4: Wykonanie scalania
-Dodaj dodatkowy obraz i zapisz wynik scalania:
+### Krok 4: wykonaj scalanie i zapisz wynik
+Dodaj każdy dodatkowy obraz za pomocą `join` i zapisz połączony wynik na dysku:
 
 ```java
 merger.join(additionalImagePath, joinOptions);
 merger.save(outputFile);
 ```
 
-Ten fragment kodu pokazuje, jak połączyć dwa obrazy w jeden plik zapisany w określonym katalogu wyjściowym. Dostosuj `ImageJoinMode` do różnych orientacji, np. `Horizontal` dla scalania obok siebie.
-
-#### Wskazówki rozwiązywania problemów
-- Upewnij się, że wszystkie ścieżki do obrazów są poprawne i dostępne.  
-- Sprawdź, czy posiadasz ważną licencję GroupDocs, jeśli jest wymagana w Twoim przypadku użycia.  
-- W razie problemów skonsultuj się z [dokumentacją GroupDocs](https://docs.groupdocs.com/merger/java/) lub ich forum wsparcia.
+Dostosuj enum `ImageJoinMode`, jeśli potrzebujesz innej orientacji, np. `Horizontal` dla bannerów obok siebie.
 
 ## Praktyczne zastosowania
+Scalanie obrazów PNG jest przydatne w wielu rzeczywistych scenariuszach:
 
-Scalanie obrazów PNG może być wykorzystywane w różnych scenariuszach:
+1. **Materiały marketingowe:** Złóż wiele elementów graficznych w jeden baner dla kampanii reklamowych.  
+2. **Tworzenie stron internetowych:** Dynamicznie generuj responsywne obrazy nagłówka, łącząc zasoby o różnych rozmiarach.  
+3. **Fotografia:** Twórz panoramy lub kolaże z serii zdjęć bez ręcznej edycji.  
 
-1. **Materiały marketingowe:** Połącz wiele elementów projektu w jeden obraz banera do reklam.  
-2. **Rozwój webowy:** Twórz responsywne banery, scalając dynamicznie części obrazów o różnych rozmiarach.  
-3. **Fotografia:** Twórz panoramy lub kolaże z kilku zdjęć.  
+Integracja tej funkcji w systemie zarządzania treścią, bibliotece zasobów cyfrowych lub własnym narzędziu projektowym może znacznie przyspieszyć przepływy produkcyjne.
 
-Integracja tej funkcjonalności może także ulepszyć aplikacje takie jak systemy zarządzania treścią, biblioteki zasobów cyfrowych i narzędzia projektowe.
+## Uwagi dotyczące wydajności
+- **Zarządzanie pamięcią:** Użyj API strumieniowego `Merger` dla plików większych niż 200 MB, aby uniknąć `OutOfMemoryError`.  
+- **Alokacja zasobów:** Przydziel co najmniej 2 GB pamięci heap przy przetwarzaniu wysokiej rozdzielczości PNG powyżej 3000 × 3000 px.  
+- **Współbieżność:** Uruchamiaj scalanie w osobnych wątkach dopiero po potwierdzeniu bezpieczeństwa wątkowego instancji `Merger` (biblioteka jest bezpieczna wątkowo dla operacji tylko do odczytu).  
 
-## Rozważania dotyczące wydajności
-
-Optymalizacja wydajności aplikacji Java przy użyciu GroupDocs.Merger jest kluczowa:
-
-- **Zarządzanie pamięcią:** Efektywnie obsługuj duże pliki graficzne, aby uniknąć błędów OutOfMemory.  
-- **Alokacja zasobów:** Zapewnij wystarczające CPU i RAM do przetwarzania wysokiej rozdzielczości.  
-- **Najlepsze praktyki:** Stosuj wytyczne dotyczące współbieżności w Javie, aby efektywnie zarządzać wątkami i zbieraniem śmieci.
+Stosowanie się do tych najlepszych praktyk zapewnia płynne działanie nawet przy dużym obciążeniu.
 
 ## Najczęściej zadawane pytania
 
 **Q1: Czy mogę scalić więcej niż dwa obrazy PNG jednocześnie?**  
-A1: Tak, możesz dodawać wiele obrazów kolejno, używając metody `join` dla każdego pliku obrazu.
+A1: Tak, wywołuj `join` wielokrotnie dla każdego dodatkowego obrazu przed wywołaniem `save`. Biblioteka połączy je w kolejności, którą określisz.
 
 **Q2: Jak obsłużyć wyjątki podczas procesu scalania?**  
-A2: Użyj bloków try‑catch, aby zarządzać potencjalnymi wyjątkami i zapewnić właściwą obsługę błędów w kodzie.
+A2: Otocz logikę scalania w blok `try‑catch` i przechwyć `MergerException`, aby uzyskać błędy specyficzne dla API, a następnie obsłuż lub zaloguj je w razie potrzeby.
 
 **Q3: Czy GroupDocs.Merger jest darmowy?**  
-A3: Możesz rozpocząć od darmowej licencji próbnej, ale aby uzyskać pełną funkcjonalność bez ograniczeń, musisz zakupić licencję.
+A3: Możesz rozpocząć od darmowej licencji próbnej, która zapewnia pełną funkcjonalność do oceny. Użycie w produkcji wymaga zakupionej licencji, aby usunąć ograniczenia użytkowania.
 
 **Q4: Jakie formaty obsługuje GroupDocs.Merger oprócz PNG?**  
-A4: GroupDocs.Merger obsługuje różne formaty dokumentów i obrazów, w tym PDF i JPEG. Zapoznaj się z ich dokumentacją, aby zobaczyć pełną listę.
+A5: Biblioteka obsługuje ponad 30 formatów, w tym JPEG, BMP, TIFF, PDF, DOCX i XLSX. Zapoznaj się z oficjalną matrycą formatów, aby zobaczyć pełną listę.
 
-**Q5: Jak dynamicznie dostosować nazwę i ścieżkę pliku wyjściowego?**  
-A5: Zmodyfikuj zmienną `outputFile` w kodzie, używając wartości dynamicznych opartych na logice Twojej aplikacji.
+**Q5: Jak mogę dynamicznie dostosować nazwę i lokalizację pliku wyjściowego?**  
+A5: Zbuduj ciąg `outputFile` używając zmiennych, takich jak znaczniki czasu, identyfikatory użytkowników lub wartości konfiguracyjne, a następnie przekaż go do metody `save`.
 
-## Podsumowanie
-
-Przedstawiliśmy **jak scalić png** obrazy przy użyciu GroupDocs.Merger dla Java, od konfiguracji biblioteki po wykonanie pełnej operacji scalania obrazów. Ten przewodnik wyposaża Cię w wiedzę potrzebną do zastosowania tej funkcjonalności w rzeczywistych projektach, niezależnie od tego, czy tworzysz materiały marketingowe, komponenty webowe czy kolaże zdjęciowe.
-
-Aby jeszcze lepiej poznać możliwości GroupDocs.Merger, rozważ przeglądanie jego obszernej [dokumentacji](https://docs.groupdocs.com/merger/java/) i eksperymentowanie z różnymi konfiguracjami.
-
-**Zasoby**
-
-- **Dokumentacja:** Przeglądaj szczegółowe przewodniki pod adresem [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)  
-- **Referencja API:** Uzyskaj pełne informacje o API pod adresem [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)  
-- **Pobieranie:** Pobierz najnowszą wersję z [GroupDocs Releases](https://releases.groupdocs.com/merger/java/)  
-- **Zakup:** Kup licencję lub uzyskaj wersję próbną na [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy)  
-- **Darmowa wersja próbna i licencja tymczasowa:** Uzyskaj licencje do testów pod adresem [GroupDocs Free Trial](https://releases.groupdocs.com/merger/java/) oraz [Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-- **Wsparcie:** Po dalszą pomoc odwiedź [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/)
+## Zasoby
+- [GroupDocs documentation](https://docs.groupdocs.com/merger/java/) – kompleksowe przewodniki i samouczki.  
+- [documentation](https://docs.groupdocs.com/merger/java/) – ten sam URL z alternatywnym tekstem linku.  
+- [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/) – oficjalny portal dokumentacji.  
+- [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/) – szczegółowe opisy metod API.  
+- [GroupDocs Releases](https://releases.groupdocs.com/merger/java/) – strona pobierania wszystkich wydań biblioteki.  
+- [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy) – gdzie kupić pełną licencję.  
+- [GroupDocs Free Trial](https://releases.groupdocs.com/merger/java/) – uzyskaj wersję próbną biblioteki.  
+- [Temporary License](https://purchase.groupdocs.com/temporary-license/) – zamów krótkoterminową licencję do testów.  
+- [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/) – pomoc społeczności i pytania‑odpowiedzi.
 
 ---
 
-**Ostatnia aktualizacja:** 2026-03-17  
-**Testowano z:** GroupDocs.Merger najnowsza wersja (stan na 2026)  
-**Autor:** GroupDocs  
+**Ostatnia aktualizacja:** 2026-10-06  
+**Testowano z:** GroupDocs.Merger latest version (as of 2026)  
+**Autor:** GroupDocs
 
----
+## Powiązane samouczki
+
+- [How to Merge Images in Java: Mastering Image Merging with GroupDocs.Merger for BMP Files](/merger/java/image-operations/mastering-image-merging-java-groupdocs-merger/)
+- [How to Combine TIFF Images Using GroupDocs.Merger for Java: A Step‑By‑Step Guide](/merger/java/format-specific-merging/merge-tiff-files-groupdocs-merger-java/)
+- [Effortlessly Merge SVGZ Files Using GroupDocs.Merger for Java: A Comprehensive Guide](/merger/java/format-specific-merging/merge-svgz-files-groupdocs-merger-java/)

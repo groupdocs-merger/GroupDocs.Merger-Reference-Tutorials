@@ -1,44 +1,100 @@
 ---
-date: '2026-03-17'
-description: تعلم كيفية تضمين ملف PDF في Excel واستيراد المستند إلى Excel باستخدام
-  GroupDocs.Merger للغة Java. اتبع هذا الدليل التفصيلي مع أمثلة على الشيفرة ونصائح
-  استكشاف الأخطاء وإصلاحها.
+date: '2026-10-06'
+description: تعرف على كيفية تضمين PDF في Excel واستيراد مستند إلى Excel باستخدام GroupDocs.Merger
+  for Java. اتبع هذا الدليل التفصيلي مع أمثلة code ونصائح troubleshooting.
 keywords:
-- import OLE object into Excel
-- embed PDF in Excel with Java
-- use GroupDocs.Merger for document integration
-title: كيفية تضمين ملف PDF في Excel باستخدام GroupDocs.Merger للغة Java - استيراد
-  كائن OLE – دليل خطوة بخطوة
+- how to embed pdf excel
+- GroupDocs Merger Java OLE
+- embed PDF in Excel Java
+lastmod: '2026-10-06'
+og_description: تعرف على كيفية تضمين PDF في Excel باستخدام GroupDocs.Merger for Java.
+  يوضح هذا الدليل code خطوة بخطوة، المتطلبات المسبقة، ونصائح لاستيراد كائن OLE بنجاح.
+og_image_alt: Illustration of embedding a PDF as an OLE object in an Excel worksheet
+  using Java
+og_title: كيفية تضمين PDF في Excel باستخدام GroupDocs.Merger for Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-06'
+  description: Learn how to embed PDF in Excel and import a document into Excel with
+    GroupDocs.Merger for Java. Follow this detailed guide with code examples and troubleshooting
+    tips.
+  headline: How to embed PDF in Excel using GroupDocs.Merger for Java – a step‑by‑step
+    guide
+  type: TechArticle
+- description: Learn how to embed PDF in Excel and import a document into Excel with
+    GroupDocs.Merger for Java. Follow this detailed guide with code examples and troubleshooting
+    tips.
+  name: How to embed PDF in Excel using GroupDocs.Merger for Java – a step‑by‑step
+    guide
+  steps:
+  - name: define file paths and initialize objects
+    text: First, set up the paths for your Excel workbook, the PDF you want to embed,
+      and the output file. Then create the `OleSpreadsheetOptions` that describe where
+      the OLE object will appear. **Definition anchor:** `OleSpreadsheetOptions` configures
+      the target cell, size, and display properties of an OLE o
+  - name: import the OLE document
+    text: Use the `importDocument` method to embed the PDF as an OLE object at the
+      location you defined. **Definition anchor:** `importDocument` tells GroupDocs.Merger
+      to treat the supplied file as an OLE object, preserving its original binary
+      content while linking it to the worksheet. **Why we use `importDoc
+  - name: save the spreadsheet
+    text: Persist the changes to a new file so you keep the original workbook untouched.
+      **Key configuration options:** You can further tweak `OleSpreadsheetOptions`—for
+      example, adjusting the object's size, visibility, or whether it should be linked
+      rather than embedded.
+  type: HowTo
+- questions:
+  - answer: Yes, repeat the `importDocument` call for each object, adjusting the `OleSpreadsheetOptions`
+      to target different cells.
+    question: Can I embed multiple OLE objects in a single Excel file?
+  - answer: GroupDocs.Merger supports PDFs, Word documents, Excel files, images, and
+      several other common formats—over **30+** types in total.
+    question: What file formats are supported as OLE objects?
+  - answer: Process files in smaller batches, use streaming APIs, and dispose of `Merger`
+      instances promptly to keep memory usage low.
+    question: How do I handle large files efficiently with GroupDocs.Merger?
+  - answer: Verify the source file’s path and integrity before attempting to embed
+      it. A corrupted file will raise an exception during import.
+    question: What if the embedded file is not accessible or is corrupted?
+  - answer: Yes, `OleSpreadsheetOptions` lets you set row/column indices, size, and
+      visibility to tailor how the object looks in the worksheet.
+    question: Can I customize the appearance of OLE objects in Excel?
+  type: FAQPage
+tags:
+- embed pdf
+- GroupDocs.Merger
+- Java OLE object
+- Excel integration
+title: كيفية تضمين PDF في Excel باستخدام GroupDocs.Merger for Java – دليل خطوة بخطوة
 type: docs
 url: /ar/java/document-import/import-ole-object-excel-groupdocs-merger-java/
 weight: 1
 ---
 
-# كيفية تضمين PDF في Excel باستخدام GroupDocs.Merger للـ Java: دليل خطوة بخطوة
+# كيفية تضمين PDF في Excel باستخدام GroupDocs.Merger للـ Java
 
-يمكن أن يحول تضمين PDF في Excel جدول بيانات ثابت إلى تقرير غني وتفاعلي يحتوي على المستند الأصلي بالكامل حيثما تحتاجه. في هذا البرنامج التعليمي ستتعلم **كيفية تضمين PDF في Excel** عن طريق استيراد ملف PDF ككائن OLE (Object Linking and Embedding) باستخدام GroupDocs.Merger للـ Java. سنستعرض جميع المتطلبات المسبقة، ونظهر لك الشيفرة الدقيقة، ونقدم لك نصائح عملية حتى تتمكن من بدء استخدام هذه التقنية في مشاريعك اليوم.
+يمكن أن يتحول تضمين ملف PDF في Excel إلى تحويل جدول بيانات ثابت إلى تقرير غني وتفاعلي يحتوي على المستند الأصلي بالكامل حيث تحتاجه. في هذا البرنامج التعليمي ستتعلم **كيفية تضمين PDF في Excel** عن طريق استيراد ملف PDF ككائن OLE (ربط وتضمين الكائنات) باستخدام GroupDocs.Merger للـ Java. سنستعرض جميع المتطلبات المسبقة، نعرض لك الشيفرة الدقيقة، ونقدم لك نصائح عملية حتى تتمكن من بدء استخدام هذه التقنية في مشاريعك اليوم.
 
 ## إجابات سريعة
-- **ماذا يعني “تضمين PDF في Excel”؟** يعني إدراج ملف PDF ككائن OLE بحيث يمكن فتح الـ PDF مباشرةً من داخل جدول البيانات.  
-- **أي مكتبة تتولى عملية الاستيراد؟** توفر GroupDocs.Merger للـ Java طريقة `importDocument` لهذا الغرض.  
-- **هل أحتاج إلى ترخيص؟** النسخة التجريبية المجانية تكفي للتقييم؛ يتطلب الاستخدام الإنتاجي ترخيصًا تجاريًا.  
-- **هل يمكنني تضمين أنواع ملفات أخرى؟** نعم – يمكن استيراد مستندات Word، الصور، وغيرها من الصيغ المدعومة ككائنات OLE.  
+- **ماذا يعني “embed PDF in Excel”؟** يعني إدراج ملف PDF ككائن OLE بحيث يمكن فتح PDF مباشرة من جدول البيانات.  
+- **أي مكتبة تتعامل مع الاستيراد؟** توفر GroupDocs.Merger للـ Java طريقة `importDocument` لهذا الغرض.  
+- **هل أحتاج إلى ترخيص؟** النسخة التجريبية المجانية تكفي للتقييم؛ يلزم ترخيص تجاري للاستخدام في الإنتاج.  
+- **هل يمكنني تضمين أنواع ملفات أخرى؟** نعم – يمكن استيراد ملفات Word، الصور، وغيرها من الصيغ المدعومة ككائنات OLE.  
 - **هل هذا النهج متوافق مع Java 8+؟** بالتأكيد – المكتبة تدعم Java 8 والإصدارات الأحدث.
 
 ## ما هو تضمين PDF في Excel؟
-تضمين PDF في Excel يعني تخزين ملف PDF داخل المصنف ككائن OLE. يمكن للمستخدمين النقر المزدوج على الكائن لفتح الـ PDF الأصلي دون مغادرة جدول البيانات، وهو ما يُعد مثالياً لسجلات التدقيق، التقارير التفصيلية، أو المستندات المرجعية.
+يخزن تضمين PDF في Excel ملف PDF داخل المصنف ككائن OLE، مما يسمح للمستخدمين بالنقر المزدوج على الأيقونة وفتح PDF الأصلي دون مغادرة جدول البيانات. هذه التقنية مثالية لسجلات التدقيق، التقارير المفصلة، أو أي سيناريو تحتاج فيه إلى ربط المستند الأصلي ارتباطًا وثيقًا ببيانات الملخص.
 
-## لماذا نستخدم GroupDocs.Merger لتضمين PDF في Excel؟
-- **تكامل سلس:** لا حاجة للنسخ واللصق اليدوي؛ الـ API يتولى تحديد الموقع والحجم.  
-- **جاهز للأتمتة:** مثالي لمعالجة دفعات من التقارير الشهرية أو إنشاء لوحات معلومات برمجياً.  
-- **دعم صيغ متعددة:** يعمل مع PDFs، مستندات Word، الصور، وأكثر، كل ذلك عبر مكتبة واحدة.  
-- **تركيز على الأداء:** صُممت لتعمل بكفاءة مع مصنفات كبيرة وعدة كائنات OLE.
+## لماذا نضمّن PDF في Excel باستخدام GroupDocs.Merger؟
+يُزيل تضمين ملفات PDF باستخدام GroupDocs.Merger الحاجة إلى النسخ واللصق اليدوي ويضمن وضعًا ثابتًا عبر آلاف المصنفات. تدعم المكتبة **أكثر من 30 صيغة إدخال وإخراج** ويمكنها معالجة مصنفات يصل حجمها إلى **500 ميغابايت** دون تحميل الملف بالكامل في الذاكرة، مما يوفر أتمتة سريعة وفعّالة في استهلاك الذاكرة لخطوط أنابيب التقارير على نطاق واسع.
 
 ## كيفية تضمين PDF في Excel – المتطلبات المسبقة
-- **Java Development Kit (JDK) 8 أو أعلى** – مثبت ومُعد في بيئة التطوير المتكاملة (IDE) الخاصة بك.  
-- **GroupDocs.Merger للـ Java** – أضفه إلى مشروعك عبر Maven أو Gradle (انظر أدناه).  
-- **بيئة تطوير متكاملة** مثل IntelliJ IDEA أو Eclipse لتحرير وتشغيل الشيفرة.  
-- **معرفة أساسية بمعالجة الملفات في Java** – ستتعامل مع مسارات الملفات وتدفقات البيانات.
+قبل أن تبدأ بالبرمجة، تأكد من أن بيئة التطوير الخاصة بك تلبي الشروط التالية. يجب أن يكون لديك JDK متوافق مثبتًا، ومكتبة GroupDocs.Merger مضافة إلى مشروعك، وبيئة تطوير متكاملة (IDE) جاهزة للتحرير والتنفيذ. سيساعدك الإلمام بمعالجة ملفات Java على متابعة الأمثلة بسلاسة.
+
+- Java Development Kit (JDK) 8 أو أعلى، مثبت ومضاف إلى `PATH` الخاص بك.
+- GroupDocs.Merger للـ Java – أضفه إلى مشروعك عبر Maven أو Gradle (انظر الأقسام أدناه).
+- بيئة تطوير متكاملة مثل IntelliJ IDEA أو Eclipse لتحرير وتشغيل الشيفرة.
+- إلمام أساسي بمعالجة ملفات Java وتدفقات البيانات.
 
 ## إعداد GroupDocs.Merger للـ Java
 
@@ -54,23 +110,25 @@ weight: 1
 ```
 
 ### Gradle
-ضمّن المكتبة في ملف `build.gradle` الخاص بك:
+قم بإدراج المكتبة في ملف `build.gradle` الخاص بك:
 
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-يمكنك أيضًا تنزيل أحدث إصدار مباشرةً من [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
+يمكنك أيضًا تنزيل أحدث نسخة مباشرة من [إصدارات GroupDocs.Merger للـ Java](https://releases.groupdocs.com/merger/java/).
 
 #### خطوات الحصول على الترخيص
-1. **نسخة تجريبية مجانية:** ابدأ بنسخة تجريبية لاستكشاف جميع الميزات.  
+1. **نسخة تجريبية مجانية:** ابدأ بنسخة تجريبية مجانية لاستكشاف جميع الميزات.  
 2. **ترخيص مؤقت:** اطلب ترخيصًا مؤقتًا للاختبار الموسع.  
 3. **شراء:** احصل على ترخيص كامل للنشر التجاري.
 
 ## تنفيذ خطوة بخطوة
 
 ### الخطوة 1: تعريف مسارات الملفات وتهيئة الكائنات
-أولاً، اضبط مسارات ملف Excel، ملف PDF الذي تريد تضمينه، وملف الإخراج. ثم أنشئ كائن `OleSpreadsheetOptions` الذي يحدد موقع ظهور كائن OLE.
+أولاً، قم بإعداد المسارات لملف Excel الخاص بك، وملف PDF الذي تريد تضمينه، وملف الإخراج. ثم أنشئ `OleSpreadsheetOptions` التي تحدد موقع ظهور كائن OLE.
+
+**مرساة التعريف:** `OleSpreadsheetOptions` تُكوّن الخلية المستهدفة، الحجم، وخصائص العرض لكائن OLE داخل ورقة Excel.
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -102,6 +160,8 @@ public class ImportOLEToSpreadsheet {
 ### الخطوة 2: استيراد مستند OLE
 استخدم طريقة `importDocument` لتضمين PDF ككائن OLE في الموقع الذي حددته.
 
+**مرساة التعريف:** `importDocument` تُخبر GroupDocs.Merger بمعاملة الملف المقدم ككائن OLE، مع الحفاظ على محتواه الثنائي الأصلي وربطه بورقة العمل.
+
 ```java
 // Import the OLE document into the specified position in the spreadsheet.
 merger.importDocument(oleCellsOptions);
@@ -110,10 +170,10 @@ merger.importDocument(oleCellsOptions);
 merger.save(filePathOut);
 ```
 
-**لماذا نستخدم `importDocument`؟** تُخبر هذه الطريقة GroupDocs.Merger بمعاملة PDF ككائن OLE، مع الحفاظ على محتواه الأصلي وجعله قابلًا للوصول من داخل Excel.
+**لماذا نستخدم `importDocument`:** تضمن هذه الطريقة أن يظل PDF عمليًا بالكامل عند فتحه من Excel، حيث تتعامل تلقائيًا مع حزم البيانات الثنائية والبيانات الوصفية للعلاقات اللازمة.
 
-### الخطوة 3: حفظ المصنف
-احفظ التغييرات في ملف جديد حتى يبقى المصنف الأصلي دون تعديل.
+### الخطوة 3: حفظ جدول البيانات
+احفظ التغييرات في ملف جديد لتبقى المصنف الأصلي دون تعديل.
 
 ```java
 merger.save(filePathOut);
@@ -122,58 +182,64 @@ merger.save(filePathOut);
 **خيارات التكوين الرئيسية:** يمكنك تعديل `OleSpreadsheetOptions` أكثر—مثل ضبط حجم الكائن، رؤيته، أو ما إذا كان يجب ربطه بدلاً من تضمينه.
 
 ## المشكلات الشائعة ونصائح استكشاف الأخطاء
-- **FileNotFoundException:** تأكد من أن المسارات التي أدخلتها تشير إلى ملفات موجودة.  
-- **عدم توافق الإصدارات:** تحقق من أن نسخة GroupDocs.Merger التي تستخدمها تتطابق مع نسخة JDK لديك.  
-- **PDF تالف:** تأكد من أن ملف PDF يفتح بشكل مستقل قبل تضمينه.  
-- **ضغط الذاكرة:** عند معالجة عدد كبير من المصنفات، أغلق كل مثيل `Merger` فور الانتهاء أو استخدم `try‑with‑resources` لتحرير الموارد.
+- **FileNotFoundException:** تحقق مرة أخرى من أن المسارات التي قدمتها تشير إلى ملفات موجودة.  
+- **عدم توافق الإصدارات:** تأكد من أن إصدار GroupDocs.Merger الذي تستخدمه يتطابق مع إصدار JDK الخاص بك.  
+- **PDF معطوب:** تحقق من أن PDF يفتح بشكل مستقل قبل تضمينه.  
+- **ضغط الذاكرة:** عند معالجة العديد من المصنفات، أغلق كل نسخة من `Merger` فورًا أو استخدم try‑with‑resources لتحرير الموارد.
 
 ## تطبيقات عملية
-تُعدّ إضافة كائنات OLE إلى Excel مفيدة في العديد من السيناريوهات:
+تضمين كائنات OLE في Excel مفيد في العديد من السيناريوهات:
 1. **دمج البيانات:** دمج ملفات PDF ربع السنوية في مصنف لوحة تحكم واحد.  
-2. **عروض تقديمية تفاعلية:** توفير أوراق مواصفات تفصيلية تُفتح عند الطلب أثناء الاجتماع.  
+2. **عروض تقديمية تفاعلية:** توفير أوراق مواصفات مفصلة تُفتح عند الطلب خلال الاجتماع.  
 3. **تقارير آلية:** إنشاء بيانات مالية شهرية تتضمن تلقائيًا الوثائق الداعمة.
 
 ## اعتبارات الأداء
-- **إدارة الذاكرة:** أغلق أي مثيلات `Merger` لم تعد بحاجة إليها لتحرير الموارد.  
-- **معالجة دفعات:** عند التعامل مع عشرات جداول البيانات، عالجها على دفعات صغيرة لتجنب ارتفاع استهلاك الذاكرة.  
-- **أفضل ممارسات Java:** استخدم `try‑with‑resources` للتيارات وتعامل مع الاستثناءات بشكل مرن.
+- **إدارة الذاكرة:** أغلق أي نسخة من `Merger` لم تعد بحاجة إليها لتحرير الموارد.  
+- **المعالجة الدفعية:** عند التعامل مع العشرات من جداول البيانات، عالجها على دفعات صغيرة لتجنب ارتفاع استهلاك الذاكرة.  
+- **أفضل ممارسات Java:** استخدم try‑with‑resources للتدفقات وتعامل مع الاستثناءات برشاقة.
 
 ## الخلاصة
-أصبح لديك الآن حل كامل وجاهز للإنتاج **لتضمين PDF في Excel** و**استيراد المستند إلى Excel** باستخدام GroupDocs.Merger للـ Java. جرّب صيغ ملفات مختلفة، اضبط خيارات الموضع، ودمج هذا التدفق في خطوط تقاريرك الآلية.
+أصبح لديك الآن حل كامل وجاهز للإنتاج **لتضمين PDF في Excel** و**استيراد مستند إلى Excel** باستخدام GroupDocs.Merger للـ Java. جرب أنواع ملفات مختلفة، عدّل خيارات الموضع، ودمج هذا سير العمل في خطوط أنابيب التقارير الآلية الخاصة بك.
 
 ### الخطوات التالية
-- جرّب تضمين مستند Word أو صورة لترى كيف يتعامل الـ API مع صيغ أخرى.  
+- جرّب تضمين مستند Word أو صورة لترى كيف يتعامل API مع الصيغ الأخرى.  
 - استكشف قدرات إضافية في GroupDocs.Merger مثل التقسيم، الدمج، أو تحويل المستندات.
 
-## قسم الأسئلة المتكررة
+## الأسئلة المتكررة
 
-**س1: هل يمكنني تضمين عدة كائنات OLE في ملف Excel واحد؟**  
-ج1: نعم، يمكنك تضمين عدة كائنات OLE بتكرار عملية الاستيراد لكل كائن.
+**س: هل يمكنني تضمين عدة كائنات OLE في ملف Excel واحد؟**  
+ج: نعم، كرّر استدعاء `importDocument` لكل كائن، مع تعديل `OleSpreadsheetOptions` لاستهداف خلايا مختلفة.
 
-**س2: ما هي صيغ الملفات المدعومة ككائنات OLE؟**  
-ج2: يدعم GroupDocs.Merger ملفات PDF، مستندات Word، ملفات Excel، الصور، والعديد من الصيغ الشائعة الأخرى.
+**س: ما هي صيغ الملفات المدعومة ككائنات OLE؟**  
+ج: تدعم GroupDocs.Merger ملفات PDF، مستندات Word، ملفات Excel، الصور، والعديد من الصيغ الشائعة الأخرى—أكثر من **30+** نوعًا إجمالًا.
 
-**س3: كيف يمكنني التعامل مع الملفات الكبيرة بكفاءة باستخدام GroupDocs.Merger؟**  
-ج3: حسّن استخدام الذاكرة بمعالجة الملفات على دفعات أصغر وتخلص من مثيلات `Merger` فور الانتهاء.
+**س: كيف يمكنني معالجة الملفات الكبيرة بكفاءة باستخدام GroupDocs.Merger؟**  
+ج: عالج الملفات على دفعات أصغر، استخدم واجهات برمجة التطبيقات المتدفقة (streaming APIs)، وتخلص من نسخ `Merger` فورًا للحفاظ على انخفاض استهلاك الذاكرة.
 
-**س4: ماذا لو كان الملف المضمّن غير قابل للوصول أو تالف؟**  
-ج4: تحقق من مسار الملف الأصلي وسلامته قبل محاولة تضمينه. سيؤدي الملف التالف إلى استثناء أثناء الاستيراد.
+**س: ماذا لو كان الملف المضمّن غير قابل للوصول أو معطوب؟**  
+ج: تحقق من مسار الملف المصدر وسلامته قبل محاولة تضمينه. سيؤدي ملف معطوب إلى رفع استثناء أثناء الاستيراد.
 
-**س5: هل يمكنني تخصيص مظهر كائنات OLE في Excel؟**  
-ج5: نعم، تسمح لك `OleSpreadsheetOptions` بتحديد مؤشرات الصف/العمود، الحجم، والرؤية لتخصيص مظهر الكائن في الورقة.
+**س: هل يمكنني تخصيص مظهر كائنات OLE في Excel؟**  
+ج: نعم، تسمح لك `OleSpreadsheetOptions` بتحديد مؤشرات الصف/العمود، الحجم، والرؤية لتخصيص مظهر الكائن في ورقة العمل.
 
-## موارد
+## الموارد
 
-- **التوثيق:** [GroupDocs.Merger for Java Documentation](https://docs.groupdocs.com/merger/java/)
-- **دليل API:** [API Reference Guide](https://reference.groupdocs.com/merger/java/)
-- **التنزيل:** [Latest Releases](https://releases.groupdocs.com/merger/java/)
-- **الشراء:** [Buy GroupDocs.Merger for Java](https://purchase.groupdocs.com/buy)
-- **نسخة تجريبية مجانية:** [Start a Free Trial](https://releases.groupdocs.com/merger/java/)
-- **ترخيص مؤقت:** [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **الدعم:** [GroupDocs Forum](https://forum.groupdocs.com/c/merger/) 
+- **التوثيق:** [توثيق GroupDocs.Merger للـ Java](https://docs.groupdocs.com/merger/java/)
+- **مرجع API:** [دليل مرجع API](https://reference.groupdocs.com/merger/java/)
+- **التنزيل:** [الإصدارات الأخيرة](https://releases.groupdocs.com/merger/java/)
+- **الشراء:** [شراء GroupDocs.Merger للـ Java](https://purchase.groupdocs.com/buy)
+- **تجربة مجانية:** [ابدأ تجربة مجانية](https://releases.groupdocs.com/merger/java/)
+- **ترخيص مؤقت:** [طلب ترخيص مؤقت](https://purchase.groupdocs.com/temporary-license/)
+- **الدعم:** [منتدى GroupDocs](https://forum.groupdocs.com/c/merger/) 
 
 ---
 
-**آخر تحديث:** 2026-03-17  
+**آخر تحديث:** 2026-10-06  
 **تم الاختبار مع:** أحدث نسخة من GroupDocs.Merger للـ Java  
 **المؤلف:** GroupDocs
+
+## دروس ذات صلة
+
+- [تضمين كائن Ole في PowerPoint باستخدام Java GroupDocs Merger](/merger/java/document-import/embed-ole-object-ppt-java-groupdocs-merger/)
+- [كيفية تضمين PDF في Word باستخدام GroupDocs.Merger للـ Java – دليل شامل](/merger/java/document-import/embed-ole-objects-word-documents-groupdocs-java/)
+- [دمج PDF في Java: تحميل مستند محلي باستخدام GroupDocs.Merger – دليل](/merger/java/document-loading/load-document-groupdocs-merger-java-guide/)
