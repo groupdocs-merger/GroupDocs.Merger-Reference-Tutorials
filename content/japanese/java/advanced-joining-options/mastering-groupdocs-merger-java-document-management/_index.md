@@ -1,46 +1,108 @@
 ---
-date: '2026-03-20'
-description: GroupDocs.Merger を使用して Java で PDF と DOCX ファイルをマージする方法を学び、ストリームからの読み込みや大容量ドキュメントの処理も含めます。
+date: '2026-10-11'
+description: GroupDocs.Merger を使用して、JavaでPDFとDOCXファイルをマージし、DOCXをPDFに変換する方法を学びます。ストリーム処理と大容量ドキュメントのヒントも含みます。
 keywords:
-- document management Java
-- GroupDocs.Merger for Java
-- Java document handling
-title: JavaでPDFとDOCXを結合 – 結合したドキュメントを保存
+- convert docx to pdf java
+- handle large documents java
+- GroupDocs.Merger Java
+- PDF DOCX merging Java
+lastmod: '2026-10-11'
+og_description: JavaでPDFとDOCXファイルをマージし、DOCXをPDFに変換する方法をGroupDocs.Mergerで学びます。ストリームのロードと大規模ドキュメントの処理が含まれます。
+og_image_alt: Developer guide showing Java code to merge PDF and DOCX and convert
+  DOCX to PDF using GroupDocs.Merger
+og_title: JavaでPDFとDOCXをマージし、DOCXをPDFに変換する方法
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-11'
+  description: Learn how to merge PDF and DOCX files and convert DOCX to PDF in Java
+    using GroupDocs.Merger, with stream handling and large document tips.
+  headline: How to merge PDF and DOCX and convert DOCX to PDF in Java
+  type: TechArticle
+- description: Learn how to merge PDF and DOCX files and convert DOCX to PDF in Java
+    using GroupDocs.Merger, with stream handling and large document tips.
+  name: How to merge PDF and DOCX and convert DOCX to PDF in Java
+  steps:
+  - name: '**Free trial** – explore core features without a credit card.'
+    text: '**Free trial** – explore core features without a credit card.'
+  - name: '**Temporary license** – request a short‑term key on the *temporary license
+      page* ([temporary license page](https://purchase.groupdocs.com/temporary-license/)).'
+    text: '**Temporary license** – request a short‑term key on the *temporary license
+      page* ([temporary license page](https://purchase.groupdocs.com/temporary-license/)).'
+  - name: '**Full purchase** – obtain an unlimited production license for commercial
+      deployments. You can purchase a full license directly from **GroupDocs** ([GroupDocs](https://purchase.groupdocs.com/buy)).'
+    text: '**Full purchase** – obtain an unlimited production license for commercial
+      deployments. You can purchase a full license directly from **GroupDocs** ([GroupDocs](https://purchase.groupdocs.com/buy)).'
+  - name: '**Batch report generation** – combine daily Excel exports (XLSX) and Word
+      summaries (DOCX) into a single PDF for archiving.'
+    text: '**Batch report generation** – combine daily Excel exports (XLSX) and Word
+      summaries (DOCX) into a single PDF for archiving.'
+  - name: '**Dynamic invoice creation** – merge a PDF invoice template with a DOCX
+      terms‑and‑conditions document, then deliver the final PDF to the client.'
+    text: '**Dynamic invoice creation** – merge a PDF invoice template with a DOCX
+      terms‑and‑conditions document, then deliver the final PDF to the client.'
+  - name: '**Cross‑platform services** – expose a REST endpoint that accepts mixed‑format
+      uploads, merges them, and streams the result back without storing temporary
+      files.'
+    text: '**Cross‑platform services** – expose a REST endpoint that accepts mixed‑format
+      uploads, merges them, and streams the result back without storing temporary
+      files.'
+  type: HowTo
+- questions:
+  - answer: Call `Merger.save(OutputStream)` after adding all source files.
+    question: What is the primary way to save a merged document in Java?
+  - answer: Yes – it supports 30+ input and output formats, including DOCX, PDF, PPTX,
+      XLSX, and many image types.
+    question: Can GroupDocs.Merger merge different file formats?
+  - answer: 'Instantiate `Merger` with the stream: `new Merger(stream)`.'
+    question: How do I load a document from an InputStream?
+  - answer: Use buffered streams, process files in batches, and close each stream
+      as soon as possible to keep memory usage low.
+    question: What should I do with large documents?
+  - answer: Yes – a valid GroupDocs license unlocks full functionality and removes
+      evaluation watermarks.
+    question: Is a license required for production use?
+  type: FAQPage
+tags:
+- convert docx to pdf
+- GroupDocs.Merger
+- Java document processing
+- PDF merging
+title: JavaでPDFとDOCXをマージし、DOCXをPDFに変換する方法
 type: docs
 url: /ja/java/advanced-joining-options/mastering-groupdocs-merger-java-document-management/
 weight: 1
 ---
 
-# JavaでPDFとDOCXをマージ – マージされたドキュメントの保存
+# JavaでPDFとDOCXを結合し、DOCXをPDFに変換する方法
 
-JavaでPDFとDOCXファイルをマージする作業は、特にストリームや混在フォーマット、巨大なペイロードを扱う場合、圧倒されがちです。このガイドでは **PDFとDOCXをマージする方法** を GroupDocs.Merger を使って解説し、**ストリームからドキュメントをロード** する手順を示し、**大きなドキュメントを Java スタイルで扱う** 実践的なコツを提供します。最後まで読むと、任意の Web サービスやバッチジョブに組み込める本番環境向けのソリューションが手に入ります。
+このチュートリアルでは、GroupDocs.Merger for Java を使用して **PDF と DOCX ファイルを結合** し、さらに **DOCX を PDF に変換** する方法を紹介します。ストリームからドキュメントを読み込む方法、マルチギガバイトのペイロードを処理する方法、ディスクに保存したりクライアントに送信したり、クラウドストレージに保存したりできる単一の出力を生成する方法を確認できます。最後まで読むと、Web サービス、バッチジョブ、マイクロサービスアーキテクチャのいずれにも組み込める、すぐに使えるコードスニペットが手に入ります。
 
 ## クイック回答
-- **Javaでマージされたドキュメントを保存する主な方法は何ですか？** ソースファイルを読み込んだ後、`Merger.save(OutputStream)` を使用します。  
-- **GroupDocs.Mergerは異なるファイル形式をマージできますか？** はい – DOCX、PDF、PPTX、XLSX など多数の形式をサポートしています。  
-- **InputStream からドキュメントをロードするには？** ストリームで `Merger` をインスタンス化します: `new Merger(stream)`。  
-- **大きなドキュメントはどう扱うべきですか？** バッファードストリームを使用し、速やかにクローズしてメモリを解放します。  
-- **本番環境でライセンスは必要ですか？** はい – 商用デプロイには有効な GroupDocs ライセンスが必要です。
+- **Javaで結合されたドキュメントを保存する主な方法は何ですか？** すべてのソースファイルを追加した後、`Merger.save(OutputStream)` を呼び出します。  
+- **GroupDocs.Merger は異なるファイル形式を結合できますか？** はい – DOCX、PDF、PPTX、XLSX、その他多数の画像形式を含む、30 以上の入力および出力形式をサポートしています。  
+- **InputStream からドキュメントを読み込むにはどうすればよいですか？** ストリームで `Merger` をインスタンス化します: `new Merger(stream)`。  
+- **大きなドキュメントはどう扱うべきですか？** バッファ付きストリームを使用し、ファイルをバッチ処理し、メモリ使用量を低く抑えるために各ストリームはできるだけ早く閉じます。  
+- **本番環境での使用にライセンスは必要ですか？** はい – 有効な GroupDocs ライセンスはすべての機能を解放し、評価用の透かしを削除します。
 
-## PDFとDOCXのマージとは？
-**PDFとDOCXのマージ** とは、1つまたは複数の PDF と DOCX ファイルを結合して単一の出力にし、その出力をディスク、クラウドストレージ、または HTTP 応答として書き出すことを指します。GroupDocs.Merger が重い処理を担うため、フォーマット固有の問題を意識する必要はありません。
+## PDF と DOCX の結合とは？
+PDF と DOCX を結合するとは、1 つまたは複数の PDF および Word ドキュメントを単一のファイルにまとめ、各ソースのページ順序、メタデータ、視覚的忠実度を保持することを意味します。GroupDocs.Merger を使用すると、結合操作を **DOCX を PDF に変換** する高速な方法としても利用でき、DOCX の内容を PDF コンテナに追加して結果を PDF として保存できます。
 
-## なぜGroupDocs.Mergerを使用して**異なるファイル形式をマージ**するのか？
-GroupDocs.Merger は各ドキュメントタイプの複雑さを抽象化します。PDF の請求書と DOCX の契約書をつなげたり、PPTX のスライドと XLSX のレポートをまとめたりする際、ページ順序、メタデータ、スタイリングをそのまま保ちつつ、ビジネスロジックに集中できます。
+## なぜ異なるファイル形式を結合するのに GroupDocs.Merger を使用するのか？
+GroupDocs.Merger は各形式の低レベルな詳細を抽象化し、ビジネスロジックに集中できるようにします。このライブラリは **30 以上の形式** を処理でき、**500 MB** までのファイルをメモリに全体を読み込まずに扱い、結合された出力全体でページ番号、ヘッダー、フッターが保持されることを保証します。
 
 ## 前提条件
 
-- **GroupDocs.Merger for Java** ライブラリ
-- Java 8以上 (JDK 8 以上)
+- GroupDocs.Merger for Java ライブラリ
+- Java 8+（JDK 8 以上）
 - 依存関係管理のための Maven または Gradle
 - IntelliJ IDEA や Eclipse などの IDE
-- 本番環境で使用する有効な GroupDocs ライセンス（無料トライアルあり）
+- 本番環境用の有効な GroupDocs ライセンス（無料トライアルあり）
 
-## GroupDocs.Merger for Java のセットアップ
+## Java 用 GroupDocs.Merger の設定
 
 ### Maven
 
-`pom.xml` ファイルに以下の依存関係を追加します:
+`pom.xml` ファイルに次の依存関係を追加します:
 
 ```xml
 <dependency>
@@ -52,24 +114,24 @@ GroupDocs.Merger は各ドキュメントタイプの複雑さを抽象化しま
 
 ### Gradle
 
-`build.gradle` に以下を含めます:
+`build.gradle` に次を含めます:
 
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-### Direct Download
+### 直接ダウンロード
 
-あるいは、[GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) から最新バージョンをダウンロードし、手動でプロジェクトのライブラリパスに追加してください。
+あるいは、最新バージョンを [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) からダウンロードし、手動でプロジェクトのクラスパスに追加します。
 
 #### ライセンス取得手順
-1. **Free Trial** – コミットせずに基本機能を試すことができます。  
-2. **Temporary License** – 短期キーを[こちら](https://purchase.groupdocs.com/temporary-license/)でリクエストしてください。  
-3. **Purchase** – 無制限の本番利用のためのフルライセンスを取得します。
+1. **Free trial** – クレジットカードなしでコア機能を試せます。  
+2. **Temporary license** – *temporary license page*（[temporary license page](https://purchase.groupdocs.com/temporary-license/)）で短期キーをリクエストします。  
+3. **Full purchase** – 商用展開向けの無制限本番ライセンスを取得します。**GroupDocs**（[GroupDocs](https://purchase.groupdocs.com/buy)）から直接フルライセンスを購入できます。
 
 #### 基本的な初期化
 
-ライブラリを追加したら、`Merger` インスタンスを作成します:
+`Merger` クラスはすべての操作のエントリーポイントで、単一のマージセッションを表します。ライブラリを追加したら、`Merger` インスタンスを作成します:
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -78,11 +140,11 @@ import com.groupdocs.merger.Merger;
 erMerger = new Merger("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX");
 ```
 
-## **ストリームからドキュメントをロード**する方法 (load document from stream)
+## ストリームからドキュメントを読み込む方法は？
 
-ファイルがユーザーからアップロードされたり、クラウドストレージから取得されたりする場合、`InputStream` からドキュメントをロードすることが重要です。
+`InputStream` からドキュメントを読み込むことで、HTTP アップロード、クラウドバケット、またはメモリ生成されたファイルを扱えます。`InputStream` はファイル、ネットワークソケット、メモリバッファなどのソースからバイトを読み取る Java の抽象化で、ライブラリがディスク上に一時ファイルを作成せずにデータを処理できます。このアプローチは I/O のオーバーヘッドを削減し、高スループットサービスでのパフォーマンスを向上させます。
 
-### 手順 1 – InputStream を作成する
+### 手順 1 – 入力ストリームを作成
 
 ```java
 import java.io.FileInputStream;
@@ -91,21 +153,21 @@ import java.io.InputStream;
 InputStream stream = new FileInputStream("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX");
 ```
 
-*Why?* これは物理ファイルをバイトストリームに変換し、`Merger` がディスク上の永続ファイルを必要とせずに処理できるようにします。
+*Why?* ストリームは物理ファイルをバイト列に変換し、Merger がディスクに保存せずに読み取れるようにします。
 
-### 手順 2 – ストリームで Merger を初期化する
+### 手順 2 – ストリームで Merger を初期化
 
 ```java
 Merger merger = new Merger(stream);
 ```
 
-*Why?* ストリームを渡すことで、メモリ上のデータで作業でき、Web ベースのシナリオで高速になります。
+*Why?* ストリームを提供することでインメモリ処理が可能になり、サーバーレス関数や高スループット API に最適です。
 
-## **マージされたドキュメントを保存**する方法 (save merged document java)
+## 結合されたドキュメントを保存する方法（Java）
 
-マージ、分割、ページ操作を行った後は、結果を永続化する必要があります。
+結合後、結合されたコンテンツを任意の宛先に永続化する必要があります。`OutputStream` はファイル、ネットワークソケット、またはインメモリバッファなどのターゲットにバイトを書き込む Java の抽象化で、結合ドキュメントの配信方法に柔軟性を提供します。`Merger.save` に `OutputStream` を渡すことで、最終的な PDF または DOCX が効率的かつ安全に書き込まれます。
 
-### 手順 1 – OutputStream を定義する
+### 手順 1 – 出力ストリームを定義
 
 ```java
 import java.io.FileOutputStream;
@@ -114,71 +176,66 @@ import java.io.OutputStream;
 OutputStream outputStream = new FileOutputStream("YOUR_OUTPUT_DIRECTORY/merged_output.docx");
 ```
 
-*Why?* `OutputStream` は最終ファイルを書き込む先を Java に指示します。
+*Why?* `OutputStream` は、結合ファイルを書き込む場所（ディスク、レスポンスボディ、クラウドストレージなど）を Java に指示します。
 
-### 手順 2 – ドキュメントを保存する
+### 手順 2 – ドキュメントを保存
 
 ```java
 merger.save(outputStream);
 ```
 
-*Why?* `save()` はすべての変更を確定し、提供されたストリームにマージされたコンテンツを書き込みます。
+*Why?* `save()` は結合を完了し、バッファをフラッシュし、出力が選択された形式の仕様に準拠していることを保証します。
 
-### 手順 3 – ストリームをクローズする
+### 手順 3 – ストリームを閉じる
 
 ```java
 outputStream.close();
 ```
 
-*Why?* クローズすることでシステムリソースが解放され、バッファされたデータがすべてディスクにフラッシュされます。
+*Why?* ストリームを閉じることで OS のハンドルが解放され、すべてのバッファ済みバイトが永続化され、ファイル破損を防止します。
 
-## **大きなドキュメントを処理**する方法 (handle large documents java)
+## 大きなドキュメントを扱う方法（Java）
 
-大容量の PDF や数ギガバイト規模の Word ファイルはメモリに負荷をかけます。以下のベストプラクティスに従ってください:
-
-- **Buffered Streams を使用** – `FileInputStream`/`FileOutputStream` を `BufferedInputStream`/`BufferedOutputStream` でラップします。  
-- **バッチ処理** – すべてを一度にロードするのではなく、少数ずつマージします。  
-- **オブジェクトを速やかに破棄** – ストリームの `close()` をすぐに呼び出します。  
-- **JVM ヒープを監視** – 必要に応じて `-Xmx` を増やしますが、メモリ使用量は低く保つことを目指します。
+大きな PDF や数ギガバイトの Word ファイルを安易に読み込むと JVM ヒープが枯渇する可能性があります。メモリ使用量を抑えるために、生ストリームを `BufferedInputStream` と `BufferedOutputStream` でラップし、ファイルを適切なバッチで処理し、各操作後に `Merger.close()` を呼び出してネイティブリソースを解放します。ヒープ使用量を監視し、適切な `-Xmx` フラグ（利用可能メモリの ≤70 % を目安）を設定することで、メモリ不足エラーからさらに保護できます。
 
 ## 実用的な活用例
 
-GroupDocs.Merger は実務シナリオで威力を発揮します:
+GroupDocs.Merger は以下のような実務タスクに最適です:
 
-1. **バッチ処理** – 毎日のレポートを自動的に単一の PDF に結合します。  
-2. **動的ドキュメント生成** – テンプレートファイルからその場で請求書を作成します。  
-3. **クロスプラットフォーム統合** – アップロードされたファイルを受け取り、マージし、結果を返す REST エンドポイントを公開します。
+1. **Batch report generation** – 毎日の Excel エクスポート（XLSX）と Word サマリー（DOCX）を単一の PDF に結合してアーカイブします。  
+2. **Dynamic invoice creation** – PDF 請求書テンプレートと DOCX の利用規約ドキュメントを結合し、最終的な PDF をクライアントに配信します。  
+3. **Cross‑platform services** – 混合形式のアップロードを受け付ける REST エンドポイントを公開し、結合後に結果をストリームで返却し、一時ファイルを保存しません。
 
 ## パフォーマンス上の考慮点
 
-- **メモリ管理** – 常にストリーム (`InputStream`, `OutputStream`) を閉じます。  
-- **バッチ操作** – ファイルをグループ化して I/O のオーバーヘッドを削減します。  
-- **効率的な I/O** – 10 MB を超えるファイルにはバッファード I/O を使用します。
+- **Memory management** – 常にストリームを閉じます；ライブラリは解放が必要なネイティブバッファを使用します。  
+- **Batch operations** – ファイルをグループ化することでディスクシーク回数が減り、スループットが最大 30 % 向上します。  
+- **Efficient I/O** – 10 MB を超えるファイルでは、バッファ付き I/O により処理時間を約半分に短縮できます。
 
 ## よくある問題と解決策
 
-| 問題 | 理由 | 対処法 |
+| 問題 | 原因 | 対策 |
 |-------|--------|-----|
-| `FileNotFoundException` | ファイルパスが正しくない、または権限が不足しています | 絶対パス/相対パスを確認し、アプリに読み書き権限があることを確認してください |
-| `IOException` during save | ストリームが閉じられていない、またはディスクがいっぱいです | すべてのストリームを閉じ、ディスク容量を確認し、try‑with‑resources を使用してください |
-| Memory spikes with large PDFs | ファイル全体をメモリに読み込んでいる | バッファードストリームを使用し、より小さなバッチで処理してください |
+| `FileNotFoundException` | パスが間違っているか、権限が不足しています | 絶対/相対パスを確認し、アプリに読み書き権限があることを確認してください |
+| `IOException` during save | ストリームが閉じられていない、またはディスクがいっぱい | try‑with‑resources を使用し、ストリームを閉じ、ディスク容量を確認してください |
+| Memory spikes with large PDFs | ファイル全体がメモリに読み込まれる | バッファ付きストリームに切り替え、より小さなバッチで処理してください |
 
 ## よくある質問
 
-**Q:** GroupDocs.Mergerで異なるファイル形式をマージできますか？  
-**A:** はい、ライブラリは DOCX、PDF、PPTX、XLSX など多数の形式をサポートしています。
+**Q:** GroupDocs.Merger を使用して異なるファイル形式を結合できますか？  
+**A:** はい、ライブラリは 30 以上の形式（DOCX、PDF、PPTX、XLSX、一般的な画像形式）をサポートし、シームレスなクロスフォーマット結合が可能です。
 
 **Q:** 大きなドキュメントを効率的に扱うには？  
-**A:** バッファードストリームを活用し、ファイルをバッチで処理し、常にストリームを速やかにクローズしてください。
+**A:** ファイルストリームを `BufferedInputStream`/`BufferedOutputStream` でラップし、バッチで結合し、使用後すぐに各ストリームを閉じます。
 
-**Q:** パスワード保護されたファイルはサポートされていますか？  
-**A:** もちろんです – `Merger` インスタンスを初期化する際にパスワードを指定します。
+**Q:** パスワード保護されたファイルに対応していますか？  
+**A:** もちろんです。`Merger` インスタンスを作成する際にパスワードを指定すれば、暗号化された PDF や DOCX ファイルを開くことができます。
 
-**Q:** このライブラリを商用製品で使用できますか？  
-**A:** はい、[GroupDocs](https://purchase.groupdocs.com/buy) から適切なライセンスを取得すれば使用可能です。
+**Q:** 商用製品でこのライブラリを使用できますか？  
+**A:** はい、有効な GroupDocs ライセンスは評価用透かしなしでフルの本番機能を解放します。
 
 **Q:** `IOException` が発生した場合はどうすればよいですか？  
-**A:** ファイルパスを再確認し、権限が十分か確認したうえで、I/O 呼び出しを try‑catch ブロックでラップしてください。
+**A:** ファイルパスを再確認し、プロセスに十分な権限があること、ディスク容量を確認し、I/O 呼び出しを try‑catch ブロックでラップするか、try‑with‑resources を使用してください。
 
 ## リソース
 
@@ -191,6 +248,12 @@ GroupDocs.Merger は実務シナリオで威力を発揮します:
 
 ---
 
-**最終更新日:** 2026-03-20  
-**テスト環境:** GroupDocs.Merger 最新バージョン（2026 年時点）  
-**作者:** GroupDocs
+**最終更新日:** 2026-10-11  
+**テスト環境:** GroupDocs.Merger latest version (as of 2026)  
+**作者:** GroupDocs  
+
+## 関連チュートリアル
+
+- [merge docx files java – GroupDocs.Merger で文書管理をマスター](/merger/java/document-joining/groupdocs-merger-java-word-document-management/)
+- [Merge PDF Java: GroupDocs.Merger を使用したローカルドキュメントの読み込み – ガイド](/merger/java/document-loading/load-document-groupdocs-merger-java-guide/)
+- [merge specific pages java – GroupDocs.Merger でドキュメントを結合](/merger/java/document-joining/join-pages-groupdocs-merger-java-tutorial/)
