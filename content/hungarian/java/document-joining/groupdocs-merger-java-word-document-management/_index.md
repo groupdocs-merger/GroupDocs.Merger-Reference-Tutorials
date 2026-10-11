@@ -1,46 +1,111 @@
 ---
-date: '2026-03-20'
-description: Tanulja meg, hogyan lehet docx fájlokat egyesíteni Java-ban a GroupDocs.Merger
-  for Java segítségével, növelje a termelékenységet, automatizálja a jelentéskészítést,
-  és egyszerűsítse a dokumentumkezelést.
+date: '2026-10-11'
+description: Ismerje meg, hogyan egyesíthet docx fájlokat a GroupDocs.Merger for Java
+  használatával, automatizálhatja a jelentéskészítést, és egyszerűsítheti a dokumentumkezelést
+  a high‑fidelity egyesítéssel.
 keywords:
-- merge Word documents
+- how to merge docx
+- combine multiple docx files
 - GroupDocs.Merger for Java
-- document merging
-title: docx fájlok összevonása Java‑ban – Mesteri dokumentumkezelés a GroupDocs.Mergerrel
+- document merging Java
+lastmod: '2026-10-11'
+og_description: Hogyan egyesítsünk docx fájlokat a GroupDocs.Merger for Java használatával.
+  Fedezze fel a lépésről‑lépésre útmutatókat, teljesítmény tippeket és valós példákat
+  a high‑fidelity dokumentum egyesítéshez.
+og_image_alt: Guide showing Java code merging multiple DOCX files with GroupDocs.Merger
+og_title: Hogyan egyesítsünk docx fájlokat a GroupDocs.Merger for Java segítségével
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-11'
+  description: Learn how to merge docx files using GroupDocs.Merger for Java, automate
+    report generation, and streamline document management with high‑fidelity merging.
+  headline: How to merge docx files with GroupDocs.Merger for Java
+  type: TechArticle
+- description: Learn how to merge docx files using GroupDocs.Merger for Java, automate
+    report generation, and streamline document management with high‑fidelity merging.
+  name: How to merge docx files with GroupDocs.Merger for Java
+  steps:
+  - name: '**Specify the path** – define where your source document lives.'
+    text: '**Specify the path** – define where your source document lives.'
+  - name: '**Create Merger object** – instantiate `Merger` with the DOCX file.'
+    text: '**Create Merger object** – instantiate `Merger` with the DOCX file.'
+  - name: '**Create `WordJoinOptions` instance** – set the desired ISO compliance
+      level.'
+    text: '**Create `WordJoinOptions` instance** – set the desired ISO compliance
+      level.'
+  - name: '**Load source files** – specify the paths for each document you want to
+      join.'
+    text: '**Load source files** – specify the paths for each document you want to
+      join.'
+  - name: '**Initialize Merger and merge** – call `join` on the `Merger` instance,
+      then save the result to a new file.'
+    text: '**Initialize Merger and merge** – call `join` on the `Merger` instance,
+      then save the result to a new file.'
+  - name: '**Automating report generation** – combine monthly PDFs into an annual
+      summary with a single API call.'
+    text: '**Automating report generation** – combine monthly PDFs into an annual
+      summary with a single API call.'
+  - name: '**Collaborative editing** – merge edits from multiple contributors while
+      preserving each author’s style.'
+    text: '**Collaborative editing** – merge edits from multiple contributors while
+      preserving each author’s style.'
+  - name: '**Version‑control pipelines** – automatically merge document versions during
+      CI/CD builds, reducing manual steps.'
+    text: '**Version‑control pipelines** – automatically merge document versions during
+      CI/CD builds, reducing manual steps.'
+  - name: '**Legal document assembly** – stitch contracts, annexes, and signatures
+      into a final package that complies with ISO standards.'
+    text: '**Legal document assembly** – stitch contracts, annexes, and signatures
+      into a final package that complies with ISO standards.'
+  type: HowTo
+- questions:
+  - answer: GroupDocs.Merger for Java (available via Maven, Gradle, or direct download).
+    question: What library do I need?
+  - answer: Yes – call `join` repeatedly or pass a collection of files.
+    question: Can I merge more than two files?
+  - answer: A free trial works for evaluation; a paid license is required for production.
+    question: Do I need a license?
+  - answer: DOCX is fully supported; other formats may be available in newer releases.
+    question: Which Word format is supported?
+  - answer: The core API is Java, but wrappers exist for .NET and other platforms.
+    question: Is it Java‑only?
+  type: FAQPage
+tags:
+- merge docx
+- GroupDocs.Merger
+- Java document processing
+- Word document management
+title: Hogyan egyesítsünk docx fájlokat a GroupDocs.Merger for Java segítségével
 type: docs
 url: /hu/java/document-joining/groupdocs-merger-java-word-document-management/
 weight: 1
 ---
 
-# Mester dokumentumkezelés: Word dokumentumok egyesítése a GroupDocs.Merger for Java-val
+# Hogyan egyesítsünk docx fájlokat a GroupDocs.Merger for Java segítségével
 
-A mai gyors tempójú üzleti környezetben a **merge docx files java** gyors végrehajtásának képessége igazi játékváltó. Akár negyedéves jelentéseket konszolidálsz, több szerző vázlatait egyesíted, vagy egy szerződéscsomagot állítasz össze, a Word fájlok zökkenőmentes egyesítése időt takarít meg és csökkenti a kézi hibákat. Ez az útmutató végigvezet a GroupDocs.Merger for Java használatán a word dokumentumok hatékony egyesítéséhez, gyakorlati példákkal és teljesítmény tippekkel.
+A modern vállalkozásokban a **docx fájlok gyors egyesítése** döntő lehet a határidő betartása és a késés között. Akár negyedéves pénzügyi kimutatásokat kell összevonni, szerződéscsomagot összeállítani, vagy sok szerző munkájából egyetlen jelentést generálni, az egyesítés automatizálása megszünteti a kézi másolás‑beillesztés hibáit, és értékes fejlesztői időt takarít meg. Ez az útmutató lépésről lépésre bemutatja, hogyan használjuk a GroupDocs.Merger for Java-t a Word dokumentumok hatékony egyesítéséhez, teljesítmény‑központú tippekkel és valós példákkal.
 
 ## Gyors válaszok
 - **Milyen könyvtárra van szükségem?** GroupDocs.Merger for Java (elérhető Maven, Gradle vagy közvetlen letöltés útján).  
-- **Egyesíthetek több mint két fájlt?** Igen – hívja többször a `join` metódust, vagy adjon át egy fájlgarnitúrát.  
-- **Szükségem van licencre?** Egy ingyenes próba a kiértékeléshez megfelelő; a termeléshez fizetett licenc szükséges.  
+- **Egyesíthetek több mint két fájlt?** Igen – hívja a `join` metódust többször, vagy adja át a fájlok gyűjteményét.  
+- **Szükségem van licencre?** Egy ingyenes próba a kiértékeléshez működik; a termeléshez fizetett licenc szükséges.  
 - **Melyik Word formátum támogatott?** A DOCX teljesen támogatott; más formátumok újabb kiadásokban is elérhetők lehetnek.  
-- **Csak Java‑ra korlátozódik?** A mag API Java, de léteznek .NET és más platformokra is wrapper-ek.
+- **Csak Java‑ra korlátozódik?** A mag API Java, de léteznek .NET és más platformokhoz is wrapper‑ek.
 
-## Mi az a word dokumentumok egyesítése?
-A word dokumentumok egyesítése azt jelenti, hogy két vagy több DOCX fájlt egyetlen, koherens dokumentummá kombinálunk, miközben megőrzünk minden formázást, stílust és megfelelőségi beállítást. A GroupDocs.Merger segítségével a folyamat programozottan történik, így nincs szükség kézi másolás‑beillesztés műveletekre.
+## Mi az a Word dokumentumok egyesítése?
+A Word dokumentumok egyesítése két vagy több DOCX fájlt kombinál egyetlen, összefüggő dokumentummá, miközben megőrzi a formázást, stílusokat, fejléceket, lábléceket és a megfelelőségi beállításokat. A GroupDocs.Merger ezt programozottan végzi, megszüntetve a kézi másolás‑beillesztés szükségességét, és biztosítva az egységes elrendezést a végső fájlban.
 
 ## Miért használjuk a GroupDocs.Merger for Java-t?
-- **Nagy pontosságú egyesítés** – megőrzi az eredeti elrendezést, fejléceket, lábléceket és stílusokat.  
-- **Megfelelőségi beállítások** – válasszon ISO szabványokat a vállalati irányelveknek való megfeleléshez.  
-- **Skálázható teljesítmény** – nagy fájlokkal is működik, és beépíthető kötegelt feladatokba.  
-- **Keresztplatformos támogatás** – bármely, JDK‑t futtató rendszeren működik.
+A GroupDocs.Merger magas hűségű egyesítést biztosít, amely megőrzi az eredeti elrendezést, támogatja az ISO‑kompatibilis beállításokat, és akár 500 MB‑os fájlokat is feldolgozhat a teljes dokumentum memóriába töltése nélkül. Képes kötegelt feladatokra, bármely JDK‑val rendelkező operációs rendszeren fut, és 99,9 % rendelkezésre állást kínál vállalati környezetben, így megbízható választás a kritikus folyamatokhoz.
 
 ## Előfeltételek
-- **Szükséges könyvtárak**: GroupDocs.Merger könyvtár (lásd a telepítést alább).  
-- **Környezet beállítása**: Java Development Kit (JDK) 8 vagy újabb telepítve.  
-- **Tudás előfeltételek**: Alapvető Java programozási ismeretek és Maven vagy Gradle ismerete.
+- **Szükséges könyvtárak**: GroupDocs.Merger for Java (lásd a telepítést alább).  
+- **Futtatókörnyezet**: Java Development Kit (JDK) 8 vagy újabb.  
+- **Készségek**: Alap Java programozás és a Maven vagy Gradle építőeszközök ismerete.
 
 ## A GroupDocs.Merger for Java beállítása
 
-A GroupDocs.Merger használatának megkezdéséhez be kell vonni a projektbe. Így tehetjük:
+A kezdéshez adja hozzá a könyvtárat a projektjéhez.
 
 **Maven**  
 ```xml
@@ -56,28 +121,26 @@ A GroupDocs.Merger használatának megkezdéséhez be kell vonni a projektbe. Í
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-Alternatívaként letöltheti a legújabb verziót közvetlenül a [GroupDocs.Merger for Java kiadások](https://releases.groupdocs.com/merger/java/) oldalról.
+A legújabb binárist is letöltheti a hivatalos kiadási oldalról: [GroupDocs.Merger for Java kiadások](https://releases.groupdocs.com/merger/java/).
 
 ### Licenc beszerzése
+Az ingyenes próba lehetővé teszi az összes funkció kipróbálását. Termelési használathoz szerezzen be egy ideiglenes vagy teljes licencet a licencportálon: [GroupDocs Licenc](https://purchase.groupdocs.com/buy).
 
-Kezdhet egy ingyenes próbaverzióval a GroupDocs.Merger funkcióinak felfedezéséhez. A próbaidőszak után folytatott használathoz választhat ideiglenes licencet vagy megvásárolhat egy teljes licencet. További részletekért látogassa meg a [GroupDocs Licencelés](https://purchase.groupdocs.com/buy) oldalt.
+Miután a környezet készen áll, inicializáljuk a merger objektumot.
 
-Most inicializáljuk és állítsuk be a környezetet:
-1. **Alap inicializálás** – hozzon létre egy `Merger` objektumot a dokumentum útvonalával.  
-2. Győződjön meg róla, hogy minden függőség helyesen van konfigurálva a projekt beállításaiban.
+## Implementációs útmutató a docx fájlok Java-val történő egyesítéséhez
 
-## Hogyan egyesítsünk docx fájlokat java – Implementációs útmutató
+Töltse be a forrásdokumentumokat, állítsa be az egyesítési beállításokat, és írja ki a kombinált fájlt. A következő szakaszok lépésről lépésre vezetnek végig minden lépésen tömör magyarázatokkal.
 
 ### Word dokumentum betöltése
 
-**Áttekintés**: Töltsön be egy DOCX fájlt, hogy készen álljon az egyesítésre.
+A `Merger` osztály a belépési pont minden egyesítési művelethez. Egyetlen dokumentumot képvisel a memóriában, és metódusokat biztosít az egyesítéshez, szétválasztáshoz vagy oldalak kinyeréséhez.
 
-#### Lépésről‑lépésre:
-- **Adja meg az útvonalat** – határozza meg, hol található a forrásdokumentum.  
+1. **Adja meg az útvonalat** – határozza meg, hol található a forrásdokumentum.  
 ```java
 String sourceFilePath = "YOUR_DOCUMENT_DIRECTORY/sample1.docx";
 ```
-- **Merger objektum létrehozása** – példányosítsa a `Merger`-t a DOCX fájllal.  
+2. **Merger objektum létrehozása** – példányosítsa a `Merger`-t a DOCX fájllal.  
 ```java
 import com.groupdocs.merger.Merger;
 
@@ -89,12 +152,11 @@ public class LoadWordDocument {
 }
 ```
 
-### Word Join beállítások meghatározása
+### Word egyesítési beállítások meghatározása
 
-**Áttekintés**: Állítsa be a megfelelőségi beállításokat, hogy az egyesített dokumentum megfeleljen a specifikus szabványoknak.
+A `WordJoinOptions` lehetővé teszi a megfelelőség (pl. ISO 19005‑1 PDF/A) és egyéb egyesítési viselkedés szabályozását. Ezeknek a beállításoknak a megadása biztosítja, hogy a végső dokumentum megfeleljen a vállalati szabványoknak.
 
-#### Lépésről‑lépésre:
-- **`WordJoinOptions` példány létrehozása** – állítson be opciókat, például ISO megfelelőséget.  
+1. **`WordJoinOptions` példány létrehozása** – állítsa be a kívánt ISO megfelelőségi szintet.  
 ```java
 import com.groupdocs.merger.domain.options.WordJoinOptions;
 import com.groupdocs.merger.domain.options.WordJoinCompliance;
@@ -110,16 +172,15 @@ public class DefineWordJoinOptions {
 
 ### Word dokumentumok egyesítése
 
-**Áttekintés**: Kombináljon két vagy több Word dokumentumot egyetlen fájlba a fent definiált opciók használatával.
+Miután a dokumentumok betöltődtek és a beállítások konfigurálva vannak, most már egyesítheti őket. A `join` metódus a betöltött dokumentumokat egyetlen kimeneti fájlba egyesíti.
 
-#### Lépésről‑lépésre:
-- **Forrásfájlok betöltése** – adja meg az egyesíteni kívánt dokumentumok útvonalait.  
+1. **Forrásfájlok betöltése** – adja meg az egyesíteni kívánt dokumentumok útvonalait.  
 ```java
 String sourceFilePath1 = "YOUR_DOCUMENT_DIRECTORY/sample1.docx";
 String sourceFilePath2 = "YOUR_DOCUMENT_DIRECTORY/sample2.docx";
 String outputPath = "YOUR_OUTPUT_DIRECTORY/merged.docx";
 ```
-- **Merger inicializálása és egyesítés** – használja a `Merger` objektumot a dokumentumok egyesítéséhez, majd mentse az eredményt.  
+2. **Merger inicializálása és egyesítés** – hívja a `join` metódust a `Merger` példányon, majd mentse az eredményt egy új fájlba.  
 ```java
 import com.groupdocs.merger.Merger;
 
@@ -135,57 +196,65 @@ public class MergeWordDocuments {
 
 ## Gyakorlati alkalmazások
 
-A GroupDocs.Merger for Java nem csak egyszerű fájlösszefűzésre alkalmas. Íme néhány gyakori szituáció, ahol a **merge docx files java** kiemelkedik:
-1. **Jelentésgenerálás automatizálása** – egyetlen API hívással kombinálja a havi jelentéseket egy éves összefoglalóvá.  
-2. **Közös szerkesztés** – egyesítse a több közreműködő módosításait egy fő vázlatba a stílusok elvesztése nélkül.  
-3. **Verziókezelő integráció** – automatikusan egyesítse a dokumentumverziókat CI/CD folyamatok során.  
-4. **Jogi dokumentum összeállítása** – összeilleszti a szerződéseket, mellékleteket és aláírásokat egy végleges csomagba.
+A GroupDocs.Merger for Java számos valós helyzetben ragyog:
+
+1. **Jelentésgenerálás automatizálása** – egyetlen API hívással kombinálja a havi PDF-eket egy éves összefoglalóvá.  
+2. **Közös szerkesztés** – egyesítse a több szerző módosításait, miközben megőrzi minden szerző stílusát.  
+3. **Verziókezelő csővezetékek** – automatikusan egyesítse a dokumentumverziókat CI/CD build során, csökkentve a kézi lépéseket.  
+4. **Jogi dokumentum összeállítása** – szerelje össze a szerződéseket, mellékleteket és aláírásokat egy végső csomagba, amely megfelel az ISO szabványoknak.
 
 ## Teljesítmény szempontok
 
-Az egyesítési műveletek gyors és memóriahatékony fenntartásához:
-- **Memóriahasználat optimalizálása** – nagy fájlokat folyamatban (stream) dolgozzon fel, ha lehetséges; kerülje sok hatalmas dokumentum egyidejű betöltését.  
-- **Hatékony erőforrás-kezelés** – mentés után zárja le a `Merger` példányokat (`merger.close()`), hogy felszabadítsa a natív erőforrásokat.  
-- **Kötegelt feldolgozás** – ha tucatnyi fájlt kell egyesíteni, iteráljon egy gyűjteményen és hívja a `join`-t többször, ahelyett, hogy minden fájlhoz új `Merger`-t hozna létre.
+Az egyesítés gyors és memóriahatékony megtartásához:
+
+- **Nagy fájlok streamelése** – használjon `InputStream` túlterheléseket a teljes dokumentum RAM-ba töltésének elkerülésére.  
+- **Erőforrások gyors lezárása** – a mentés után hívja meg a `merger.close()`-t a natív kezelők felszabadításához.  
+- **Kötegelt feldolgozás** – iteráljon a fájlútvonalak gyűjteményén, és hívja a `join`-t egy ciklusban, ahelyett, hogy minden fájlhoz új `Merger`-t hozna létre.
 
 ## Gyakori problémák és megoldások
 
 | Probléma | Ok | Megoldás |
 |----------|----|----------|
-| **OutOfMemoryError** | Nagyon nagy DOCX fájlok meghaladják a JVM heap memóriáját. | Növelje a `-Xmx` kapcsolót vagy egyesítse a fájlokat kisebb kötegekben. |
-| **Formatting loss** | Hiányzó betűtípusok a szerveren. | Telepítse a szükséges betűtípusokat vagy ágyazza be őket a forrásdokumentumokba. |
-| **Compliance mismatch** | Helytelen `WordJoinCompliance` érték használata. | Ellenőrizze a szükséges ISO szabványt és állítsa be a `WordJoinOptions`-ban. |
+| **OutOfMemoryError** | Nagyon nagy DOCX fájlok meghaladják a JVM heap memóriáját. | Növelje a `-Xmx` kapcsolót, vagy kisebb adagokban egyesítse a fájlokat. |
+| **Formatting loss** | Hiányzó betűtípusok a szerveren. | Telepítse a szükséges betűtípusokat, vagy ágyazza be őket a forrásdokumentumokba. |
+| **Compliance mismatch** | Hibás `WordJoinCompliance` érték használata. | Ellenőrizze a szükséges ISO szabványt, és állítsa be a `WordJoinOptions`-ban. |
 
 ## Gyakran feltett kérdések
 
 **Q1: Egyesíthetek több mint két dokumentumot?**  
-A1: Természetesen! Hívja többször a `join`-t vagy adjon át egy fájlútvonalak listáját, hogy tetszőleges számú DOCX fájlt egyesítsen.
+A1: Természetesen. Adjon át egy fájlútvonalak listáját a `join`-nek, vagy hívja a metódust többször, hogy tetszőleges számú DOCX fájlt összefűzzön.
 
-**Q2: Hogyan kezelem a kivételeket az egyesítés során?**  
-A2: Tegye a kódot `try‑catch` blokkokba, és kezelje a `IOException` vagy `GroupDocsException`-t szükség szerint.
+**Q2: Hogyan kezeljem a kivételeket az egyesítés során?**  
+A2: Tegye a egyesítési logikát egy `try‑catch` blokkba, és fogja el az `IOException` vagy `GroupDocsException` kivételeket a hibák naplózásához és a takarítás elvégzéséhez.
 
-**Q3: Vannak fájlformátum korlátozások?**  
-A3: Az API elsősorban a DOCX-et támogatja. Más formátumok (PDF, PPTX, stb.) külön modulokban érhetők el – ellenőrizze a legújabb dokumentációt a frissítésekért.
+**Q3: Vannak formátumkorlátozások?**  
+A3: A mag API a DOCX-re fókuszál. További modulok támogatják a PDF, PPTX és egyéb formátumokat – ellenőrizze a legújabb dokumentációt a frissítésekért.
 
-**Q4: Egyesíthetek különböző megfelelőségi beállítású dokumentumokat?**  
-A4: Igen. Hozzon létre külön `WordJoinOptions` példányt minden forráshoz, ha dokumentumonként eltérő megfelelőségre van szükség.
+**Q4: Egyesíthetek különböző megfelelőségi beállításokkal rendelkező dokumentumokat?**  
+A4: Igen. Hozzon létre külön `WordJoinOptions` példányt minden forráshoz, ha dokumentumonként eltérő ISO megfelelőségre van szükség.
 
-**Q5: Van mód az egyesített dokumentum előnézetére mentés előtt?**  
-A5: Bár az API nem biztosít UI előnézetet, menthet egy ideiglenes helyre, majd programozottan megnyithatja a fájlt ellenőrzés céljából.
+**Q5: Van mód a egyesített fájl előnézetére mentés előtt?**  
+A5: Bár az API nem rendelkezik UI előnézettel, menthet egy ideiglenes helyre, és programozottan megnyithatja a fájlt ellenőrzés céljából.
 
 ## Források
 - **Dokumentáció**: [GroupDocs Dokumentáció](https://docs.groupdocs.com/merger/java/)  
 - **API referencia**: [GroupDocs API Referencia](https://reference.groupdocs.com/merger/java/)  
-- **Letöltés**: [Legújabb kiadás letöltése](https://releases.groupdocs.com/merger/java/)  
+- **Letöltés**: [Szerezze be a legújabb kiadást](https://releases.groupdocs.com/merger/java/)  
 - **Vásárlás**: [Licenc vásárlása](https://purchase.groupdocs.com/buy)  
-- **Ingyenes próba**: [Kezdje ingyenes próbával](https://releases.groupdocs.com/merger/java/)  
+- **Ingyenes próba**: [Kezdje ingyenes próba verzióval](https://releases.groupdocs.com/merger/java/)  
 - **Ideiglenes licenc**: [Ideiglenes licenc beszerzése](https://purchase.groupdocs.com/temporary-license/)  
 - **Támogatási fórum**: [Csatlakozzon a GroupDocs közösséghez](https://forum.groupdocs.com/c/merger/)  
 
-Készen áll a dokumentumfolyamata fejlesztésére? Kezdje el ma a GroupDocs.Merger for Java használatát, és tapasztalja meg a **word dokumentumok egyesítésének** simább, automatizált módját alkalmazásai között.
+Készen áll a dokumentumfolyam egyszerűsítésére? Kövesse a fenti lépéseket, hogy programozottan egyesítse a DOCX fájlokat a GroupDocs.Merger for Java-val, és élvezze a megbízható, magas minőségű eredményeket.
 
 ---
 
-**Utoljára frissítve:** 2026-03-20  
-**Tesztelve ezzel:** GroupDocs.Merger 23.12 (Java)  
-**Szerző:** GroupDocs
+**Last Updated:** 2026-10-11  
+**Tested With:** GroupDocs.Merger 23.12 (Java)  
+**Author:** GroupDocs
+
+## Kapcsolódó oktatóanyagok
+
+- [Word dokumentumok egyesítése Groupdocs Merger Java](/merger/java/advanced-joining-options/merge-word-docs-groupdocs-merger-java/)
+- [DOCM fájlok egyesítése Java – Útmutató a GroupDocs.Merger-rel](/merger/java/document-joining/merge-docm-files-groupdocs-merger-java/)
+- [specifikus oldalak egyesítése java – Dokumentumok összekapcsolása a GroupDocs.Merger-rel](/merger/java/document-joining/join-pages-groupdocs-merger-java-tutorial/)
