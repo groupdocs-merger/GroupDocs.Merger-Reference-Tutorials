@@ -1,149 +1,186 @@
 ---
 additionalTitle: GroupDocs API References
-date: 2026-03-17
-description: Εξερευνήστε το API συγχώνευσης εγγράφων GroupDocs.Merger για γρήγορη,
-  διαπλατφορμική συγχώνευση, διαίρεση και επεξεργασία PDF, αρχείων Office, εικόνων
-  και περισσότερων.
+date: 2026-10-11
+description: Εξερευνήστε το GroupDocs.Merger API συγχώνευσης εγγράφων για γρήγορη,
+  διαπλατφορμική συγχώνευση, διαχωρισμό και επεξεργασία αρχείων PDF, Office, εικόνων
+  και άλλων.
 is_root: true
-linktitle: GroupDocs.Merger Tutorials
-title: GroupDocs.Merger API Συγχώνευσης Εγγράφων – Πλήρης Οδηγός για τη Συγχώνευση
-  & Διαίρεση
+keywords:
+- groupdocs.merger document merging api
+- document merging and splitting
+- cross-platform document processing
+lastmod: 2026-10-11
+linktitle: Οδηγοί GroupDocs.Merger
+og_description: Το GroupDocs.Merger API συγχώνευσης εγγράφων σας επιτρέπει να συγχωνεύετε,
+  διαχωρίζετε, αναδιατάσσετε και ασφαλίζετε έγγραφα σε πάνω από 50 μορφές. Μάθετε
+  γρήγορη, διαπλατφορμική ενσωμάτωση για .NET και Java.
+og_image_alt: Guide to using GroupDocs.Merger for merging and splitting documents
+og_title: GroupDocs.Merger API συγχώνευσης εγγράφων – πλήρης οδηγός
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-11'
+  description: Explore the GroupDocs.Merger document merging API for fast, cross‑platform
+    document merging, splitting, and processing of PDFs, Office files, images and
+    more.
+  headline: GroupDocs.Merger document merging API – complete guide to merging & splitting
+  type: TechArticle
+- questions:
+  - answer: Yes, with a valid GroupDocs license. A free trial is available for evaluation.
+    question: Can I use the API in a commercial product?
+  - answer: Absolutely. You can open, modify, and re‑secure encrypted PDFs using the
+      same API calls.
+    question: Does the API support password‑protected PDFs?
+  - answer: .NET Standard 2.0, .NET Framework 2.0+, .NET Core 2.0+, Mono 1.2+; Java
+      7, 8, and 10+ are fully supported.
+    question: Which .NET and Java versions are compatible?
+  - answer: It streams data and uses memory‑efficient algorithms, allowing you to
+      process multi‑gigabyte documents without exhausting system resources.
+    question: How does the API handle very large files?
+  - answer: While the core merging API focuses on structural operations, you can combine
+      it with GroupDocs.Parser for advanced text extraction and OCR needs.
+    question: Is there built‑in support for OCR or text extraction?
+  type: FAQPage
+tags:
+- document merging
+- groupdocs.merger
+- .net document processing
+- java document processing
+title: GroupDocs.Merger API συγχώνευσης εγγράφων – πλήρης οδηγός για συγχώνευση &
+  διαχωρισμό
 type: docs
 url: /el/
 weight: 11
 ---
 
-# GroupDocs.Merger Document Merging API – Πλήρης Οδηγός για Συγχώνευση & Διαίρεση
+# GroupDocs.Merger document merging API – πλήρης οδηγός για συγχώνευση & διαχωρισμό
 
-The **GroupDocs.Merger document merging API** gives you a fast, cross‑platform way to combine, split, and manipulate a wide range of document types directly from your .NET or Java applications. Whether you need to merge several PDFs into a single report, split a large contract into individual pages, or reorder slides in a presentation, this API handles it with just a few lines of code.
+## Γρήγορες Απαντήσεις
+- **Τι κάνει το API;** Συγχωνεύει, χωρίζει, αναδιατάσσει και ασφαλίζει έγγραφα σε πάνω από 50 μορφές.  
+- **Ποιες πλατφόρμες υποστηρίζονται;** .NET (Standard, Framework, Core, Mono) και Java (J2SE 7‑10).  
+- **Χρειάζομαι εξωτερικό λογισμικό;** Όχι—χωρίς εξαρτήσεις από Microsoft Office ή Adobe.  
+- **Μπορώ να προστατεύσω τα έγγραφα;** Ναι, μπορείτε να προσθέσετε, αφαιρέσετε ή ενημερώσετε κωδικούς πρόσβασης και δικαιώματα.  
+- **Υπάρχει όριο στο μέγεθος αρχείου;** Το API είναι βελτιστοποιημένο για μεγάλα αρχεία και λειτουργίες batch.  
 
-## Quick Answers
-- **Τι κάνει το API;** It merges, splits, reorders, and secures documents across 50+ formats.  
-- **Ποιες πλατφόρμες υποστηρίζονται;** .NET (Standard, Framework, Core, Mono) and Java (J2SE 7‑10).  
-- **Χρειάζομαι εξωτερικό λογισμικό;** No—no Microsoft Office or Adobe dependencies.  
-- **Μπορώ να προστατεύσω τα έγγραφα;** Yes, you can add, remove, or update passwords and permissions.  
-- **Υπάρχει όριο μεγέθους αρχείου;** The API is optimized for large files and batch operations.  
+## Τι είναι το GroupDocs.Merger API συγχώνευσης εγγράφων;
+Φορτώστε τα αρχεία σας και καλέστε τις κατάλληλες μεθόδους συγχώνευσης ή διαχωρισμού – αυτή είναι η βασική ροή εργασίας του GroupDocs.Merger API. Παρέχει ένα ενιαίο, συνεπές περιβάλλον για τη διαχείριση PDF, εγγράφων Office, εικόνων, αρχείων και άλλων, διατηρώντας τη διάταξη, τα μεταδεδομένα και τις ρυθμίσεις ασφαλείας.
 
-## What is GroupDocs.Merger document merging API?
-The GroupDocs.Merger document merging API is a developer‑focused library that abstracts the complexity of handling multiple document formats. It lets you programmatically merge files, split them by pages or ranges, and apply advanced page operations—all while preserving the original layout and metadata.
+Το GroupDocs.Merger API είναι μια βιβλιοθήκη προσανατολισμένη σε προγραμματιστές που αφαιρεί την πολυπλοκότητα της διαχείρισης πολλαπλών μορφών εγγράφων. Σας επιτρέπει να συγχωνεύετε αρχεία προγραμματιστικά, να τα χωρίζετε ανά σελίδες ή περιοχές και να εφαρμόζετε προχωρημένες λειτουργίες σελίδων—όλα διατηρώντας την αρχική διάταξη και τα μεταδεδομένα.
 
-## Why Choose GroupDocs.Merger document merging API?
-- **Συνεπής δια‑πλατφόρμα:** Write once, run on Windows, Linux, or macOS.  
-- **Ευρεία υποστήριξη μορφών:** Work with PDFs, Word, Excel, PowerPoint, images, diagrams, archives, and more.  
-- **Χωρίς εξωτερικές εξαρτήσεις:** No need for Office or Adobe installations, which simplifies deployment.  
-- **Υψηλή απόδοση:** Engineered for large documents and bulk processing, reducing memory footprint.  
-- **Ενσωματωμένη ασφάλεια:** Easily add or remove passwords and set permissions.
+## Γιατί να επιλέξετε το GroupDocs.Merger API συγχώνευσης εγγράφων;
+Παίρνετε συνέπεια μεταξύ πλατφορμών, ευρεία υποστήριξη μορφών, χωρίς εξωτερικές εξαρτήσεις, υψηλή απόδοση και ενσωματωμένη ασφάλεια—όλα σε ένα πακέτο. Το API μεταδίδει δεδομένα σε ροή, ώστε ακόμη και αρχεία πολλαπλών γιγαμπάιτ να επεξεργάζονται με χαμηλή κατανάλωση μνήμης, καθιστώντας το ιδανικό για εργασίες batch σε διακομιστές.
 
-## Transform How You Manage Documents Across Multiple Platforms
-GroupDocs.Merger provides a powerful, cross‑platform solution for document manipulation that streamlines how developers work with files in their applications. Our comprehensive API enables you to merge multiple documents into one, split documents into smaller components, reorder pages, apply security options, and much more—all with minimal code and maximum efficiency.
+## Μετασχηματίστε τον τρόπο διαχείρισης εγγράφων σε πολλαπλές πλατφόρμες
+Το GroupDocs.Merger παρέχει μια ισχυρή, διαπλατφορμική λύση για τη διαχείριση εγγράφων που απλοποιεί τον τρόπο με τον οποίο οι προγραμματιστές εργάζονται με αρχεία στις εφαρμογές τους. Το ολοκληρωμένο API μας σας επιτρέπει να συγχωνεύετε πολλά έγγραφα σε ένα, να τα χωρίζετε σε μικρότερα τμήματα, να αναδιατάσσετε σελίδες, να εφαρμόζετε επιλογές ασφαλείας και πολλά άλλα—όλα με ελάχιστο κώδικα και μέγιστη αποδοτικότητα.
 
-Whether you're developing in .NET or Java environments, GroupDocs.Merger delivers consistent, high‑performance document processing capabilities that work seamlessly with 50+ popular file formats including PDF, Office documents, images, and more.
+Είτε αναπτύσσετε σε .NET είτε σε Java, το GroupDocs.Merger προσφέρει συνεπείς, υψηλής απόδοσης δυνατότητες επεξεργασίας εγγράφων που λειτουργούν απρόσκοπτα με πάνω από 50 δημοφιλείς μορφές αρχείων, συμπεριλαμβανομένων PDF, εγγράφων Office, εικόνων και άλλων.
 
-## Key Features & Capabilities
-- **Πλήρης Συγχώνευση Εγγράφων** – Combine entire documents or specific pages from multiple sources into a single cohesive file.  
-- **Υποστήριξη Διαφόρων Μορφών** – Merge different file formats into a unified document (e.g., DOC, XLSX, and images into a single PDF).  
-- **Έξυπνη Διαίρεση Εγγράφων** – Divide documents by page numbers, ranges, or extract specific pages as separate files.  
-- **Προηγμένες Λειτουργίες Σελίδας** – Move, remove, rotate, swap, and extract pages with precise control.  
-- **Διαχείριση Ασφάλειας** – Add, remove, or update document passwords and permissions.  
-- **Υποστήριξη OLE Αντικειμένων** – Insert documents as OLE objects within Word, Excel, PowerPoint, and Visio files.  
-- **Χωρίς Εξωτερικές Εξαρτήσεις** – Process documents without requiring Microsoft Office or Adobe software.  
-- **Υψηλή Απόδοση** – Optimized for processing large documents and batch operations efficiently.
+## Κύρια χαρακτηριστικά & δυνατότητες
+- **Πλήρης συγχώνευση εγγράφων** – Συνδυάστε ολόκληρα έγγραφα ή συγκεκριμένες σελίδες από πολλαπλές πηγές σε ένα ενιαίο αρχείο.  
+- **Υποστήριξη διαφόρων μορφών** – Συγχωνεύστε διαφορετικές μορφές αρχείων σε ένα ενιαίο έγγραφο (π.χ., DOC, XLSX και εικόνες σε ένα PDF).  
+- **Έξυπνος διαχωρισμός εγγράφων** – Διαχωρίστε έγγραφα ανά αριθμούς σελίδων, περιοχές ή εξάγετε συγκεκριμένες σελίδες ως ξεχωριστά αρχεία.  
+- **Προηγμένες λειτουργίες σελίδων** – Μετακινήστε, αφαιρέστε, περιστρέψτε, ανταλλάξτε και εξάγετε σελίδες με ακριβή έλεγχο.  
+- **Διαχείριση ασφαλείας** – Προσθέστε, αφαιρέστε ή ενημερώστε κωδικούς πρόσβασης και δικαιώματα εγγράφων.  
+- **Υποστήριξη αντικειμένων OLE** – Εισάγετε έγγραφα ως αντικείμενα OLE σε αρχεία Word, Excel, PowerPoint και Visio.  
+- **Χωρίς εξωτερικές εξαρτήσεις** – Επεξεργαστείτε έγγραφα χωρίς να απαιτείται λογισμικό Microsoft Office ή Adobe.  
+- **Υψηλή απόδοση** – Βελτιστοποιημένο για επεξεργασία μεγάλων εγγράφων και λειτουργιών batch αποδοτικά.
 
-## Supported File Formats
-GroupDocs.Merger works with over 50 file formats across multiple categories:
+## Υποστηριζόμενες μορφές αρχείων
+GroupDocs.Merger λειτουργεί με πάνω από 50 μορφές αρχείων σε πολλαπλές κατηγορίες:
 
-- **Documents**: PDF, DOC, DOCX, RTF, ODT, XPS, EPUB, HTML  
-- **Spreadsheets**: XLS, XLSX, XLSM, XLSB, ODS, CSV, TSV  
-- **Presentations**: PPT, PPTX, PPS, PPSX, ODP  
-- **Images**: JPG, PNG, BMP, GIF, TIFF, SVG  
-- **Diagrams**: VSDX, VSDM, VSSX, VSTX, VDX, VSX, VTX  
-- **Archives**: ZIP, TAR, 7Z  
+- **Έγγραφα**: PDF, DOC, DOCX, RTF, ODT, XPS, EPUB, HTML  
+- **Φύλλα εργασίας**: XLS, XLSX, XLSM, XLSB, ODS, CSV, TSV  
+- **Παρουσιάσεις**: PPT, PPTX, PPS, PPSX, ODP  
+- **Εικόνες**: JPG, PNG, BMP, GIF, TIFF, SVG  
+- **Διαγράμματα**: VSDX, VSDM, VSSX, VSTX, VDX, VSX, VTX  
+- **Αρχεία**: ZIP, TAR, 7Z  
 - **Και πολλά άλλα**
 
-## [GroupDocs.Merger for .NET Tutorials](./net)
+## [GroupDocs.Merger για .NET Εκπαιδευτικά](./net)
 
-Discover how to integrate powerful document processing capabilities into your .NET applications. Our comprehensive .NET tutorials guide you through every aspect of the GroupDocs.Merger API, from basic operations to advanced implementation scenarios.
+Ανακαλύψτε πώς να ενσωματώσετε ισχυρές δυνατότητες επεξεργασίας εγγράφων στις .NET εφαρμογές σας. Τα ολοκληρωμένα .NET εκπαιδευτικά μας σας καθοδηγούν βήμα‑βήμα σε κάθε πτυχή του GroupDocs.Merger API, από βασικές λειτουργίες μέχρι προχωρημένα σενάρια υλοποίησης.
 
-With GroupDocs.Merger for .NET, you can create robust document management solutions that work across various .NET frameworks including .NET Standard 2.0, .NET Framework 2.0+, .NET Core 2.0+, and Mono Framework 1.2+.
+Με το GroupDocs.Merger για .NET, μπορείτε να δημιουργήσετε αξιόπιστες λύσεις διαχείρισης εγγράφων που λειτουργούν σε διάφορα .NET frameworks, συμπεριλαμβανομένων .NET Standard 2.0, .NET Framework 2.0+, .NET Core 2.0+ και Mono Framework 1.2+.
 
-### Essential .NET Tutorials
+### Βασικά .NET εκπαιδευτικά
 
-- [Merge Compress Files](./net/merge-compress-files/) - Learn to combine and compress archive formats (7z, TAR, ZIP) efficiently  
-- [Image Merging](./net/image-merging/) - Master techniques for merging various image formats (BMP, GIF, PNG, SVG, TIFF)  
-- [Document Merging](./net/document-merging/) - Combine DOC, DOCX, PDF and other document formats seamlessly  
-- [Spreadsheet Merging](./net/spreadsheet-merging/) - Merge Excel files while preserving data, formulas, and formatting  
-- [Visio Merging](./net/visio-merging/) - Combine Visio diagrams and drawings with precision control  
-- [Presentation Merging](./net/presentation-merging/) - Join PowerPoint presentations while maintaining slides and animations  
+- [Συγχώνευση Συμπίεσης Αρχείων](./net/merge-compress-files/) - Μάθετε να συνδυάζετε και να συμπιέζετε μορφές αρχείων (7z, TAR, ZIP) αποδοτικά  
+- [Συγχώνευση Εικόνων](./net/image-merging/) - Κατακτήστε τεχνικές συγχώνευσης διαφόρων μορφών εικόνας (BMP, GIF, PNG, SVG, TIFF)  
+- [Συγχώνευση Εγγράφων](./net/document-merging/) - Συνδυάστε DOC, DOCX, PDF και άλλες μορφές εγγράφων απρόσκοπτα  
+- [Συγχώνευση Φύλλων Εργασίας](./net/spreadsheet-merging/) - Συγχωνεύστε αρχεία Excel διατηρώντας δεδομένα, τύπους και μορφοποίηση  
+- [Συγχώνευση Visio](./net/visio-merging/) - Συνδυάστε διαγράμματα και σχέδια Visio με ακριβή έλεγχο  
+- [Συγχώνευση Παρουσιάσεων](./net/presentation-merging/) - Ενώστε παρουσιάσεις PowerPoint διατηρώντας διαφάνειες και εφέ  
 
-### Advanced .NET Operations
+### Προχωρημένες .NET λειτουργίες
 
-- [Document Loading](./net/document-loading/) - Explore various techniques for loading documents from different sources  
-- [Document Information](./net/document-information/) - Extract and analyze document metadata and properties  
-- [Document Joining](./net/document-joining/) - Learn advanced document joining options and customizations  
-- [Format‑Specific Merging](./net/format-specific-merging/) - Discover optimized merging techniques for specific file formats  
-- [Advanced Joining Options](./net/advanced-joining-options/) - Master complex document joining scenarios  
-- [Document Security](./net/document-security/) - Implement robust document protection with password management  
-- [Page Operations](./net/page-operations/) - Manipulate document pages with precision controls  
-- [Document Extraction](./net/document-extraction/) - Extract specific content from larger documents  
-- [Document Import](./net/document-import/) - Import external content into documents  
-- [Image Operations](./net/image-operations/) - Process and manipulate image files effectively  
-- [Document Splitting](./net/document-splitting/) - Divide documents using various splitting strategies (document splitting)  
-- [Text Operations](./net/text-operations/) - Work with text‑based documents efficiently  
-- [Licensing](./net/licensing/) - Configure GroupDocs.Merger properly in your projects  
+- [Φόρτωση Εγγράφου](./net/document-loading/) - Εξερευνήστε διάφορες τεχνικές φόρτωσης εγγράφων από διαφορετικές πηγές  
+- [Πληροφορίες Εγγράφου](./net/document-information/) - Εξάγετε και αναλύστε μεταδεδομένα και ιδιότητες εγγράφου  
+- [Συνένωση Εγγράφων](./net/document-joining/) - Μάθετε προχωρημένες επιλογές συνένωσης εγγράφων και προσαρμογές  
+- [Συγκεκριμένη Συγχώνευση Μορφής](./net/format-specific-merging/) - Ανακαλύψτε βελτιστοποιημένες τεχνικές συγχώνευσης για συγκεκριμένες μορφές αρχείων  
+- [Προχωρημένες Επιλογές Συνένωσης](./net/advanced-joining-options/) - Κατακτήστε σύνθετα σενάρια συνένωσης εγγράφων  
+- [Ασφάλεια Εγγράφου](./net/document-security/) - Εφαρμόστε ισχυρή προστασία εγγράφων με διαχείριση κωδικών πρόσβασης  
+- [Λειτουργίες Σελίδας](./net/page-operations/) - Διαχειριστείτε σελίδες εγγράφου με ακριβή έλεγχο  
+- [Εξαγωγή Εγγράφου](./net/document-extraction/) - Εξάγετε συγκεκριμένο περιεχόμενο από μεγαλύτερα έγγραφα  
+- [Εισαγωγή Εγγράφου](./net/document-import/) - Εισάγετε εξωτερικό περιεχόμενο σε έγγραφα  
+- [Λειτουργίες Εικόνας](./net/image-operations/) - Επεξεργαστείτε και διαχειριστείτε αρχεία εικόνας αποτελεσματικά  
+- [Διαχωρισμός Εγγράφου](./net/document-splitting/) - Διαχωρίστε έγγραφα χρησιμοποιώντας διάφορες στρατηγικές διαχωρισμού (διαχωρισμός εγγράφου)  
+- [Λειτουργίες Κειμένου](./net/text-operations/) - Εργαστείτε με έγγραφα κειμένου αποδοτικά  
+- [Άδεια Χρήσης](./net/licensing/) - Διαμορφώστε σωστά το GroupDocs.Merger στα έργα σας  
 
-## [GroupDocs.Merger for Java Tutorials](./java)
+## [GroupDocs.Merger για Java Εκπαιδευτικά](./java)
 
-Transform your Java applications with powerful document processing capabilities. Our Java tutorials provide detailed guidance for implementing GroupDocs.Merger in Java environments, with complete examples that work across major platforms including Windows, Linux, and macOS.
+Μετασχηματίστε τις Java εφαρμογές σας με ισχυρές δυνατότητες επεξεργασίας εγγράφων. Τα Java εκπαιδευτικά μας παρέχουν λεπτομερείς οδηγίες για την υλοποίηση του GroupDocs.Merger σε περιβάλλοντα Java, με πλήρη παραδείγματα που λειτουργούν σε κύριες πλατφόρμες όπως Windows, Linux και macOS.
 
-GroupDocs.Merger for Java supports J2SE 7.0 (1.7), J2SE 8.0 (1.8), and Java 10, making it compatible with virtually any Java‑based development project.
+Το GroupDocs.Merger για Java υποστηρίζει J2SE 7.0 (1.7), J2SE 8.0 (1.8) και Java 10, καθιστώντας το συμβατό με σχεδόν κάθε έργο ανάπτυξης βασισμένο σε Java.
 
-### Essential Java Tutorials
+### Βασικά Java εκπαιδευτικά
 
-- [Document Loading](./java/document-loading/) - Master techniques for loading documents from files, streams, and URLs  
-- [Document Information](./java/document-information/) - Extract valuable document metadata and properties  
-- [Document Joining](./java/document-joining/) - Combine multiple files into single documents with precision control  
-- [Format‑Specific Merging](./java/format-specific-merging/) - Learn optimized approaches for different file formats  
-- [Advanced Joining Options](./java/advanced-joining-options/) - Explore complex joining scenarios and customizations  
-- [Document Security](./java/document-security/) - Implement robust document protection and permission controls  
-- [Page Operations](./java/page-operations/) - Manipulate individual pages within documents  
-- [Document Extraction](./java/document-extraction/) - Extract specific content from documents  
-- [Document Import](./java/document-import/) - Import external content into documents  
-- [Image Operations](./java/image-operations/) - Work with image files and conversions  
-- [Document Splitting](./java/document-splitting/) - Divide documents using various splitting strategies (document splitting)  
-- [Text Operations](./java/text-operations/) - Process text‑based documents effectively  
-- [Licensing](./java/licensing/) - Configure GroupDocs.Merger in Java environments  
+- [Φόρτωση Εγγράφου](./java/document-loading/) - Κατακτήστε τεχνικές φόρτωσης εγγράφων από αρχεία, ροές και URLs  
+- [Πληροφορίες Εγγράφου](./java/document-information/) - Εξάγετε πολύτιμα μεταδεδομένα και ιδιότητες εγγράφου  
+- [Συνένωση Εγγράφων](./java/document-joining/) - Συνδυάστε πολλαπλά αρχεία σε ενιαία έγγραφα με ακριβή έλεγχο  
+- [Συγκεκριμένη Συγχώνευση Μορφής](./java/format-specific-merging/) - Μάθετε βελτιστοποιημένες προσεγγίσεις για διαφορετικές μορφές αρχείων  
+- [Προχωρημένες Επιλογές Συνένωσης](./java/advanced-joining-options/) - Εξερευνήστε σύνθετα σενάρια συνένωσης και προσαρμογές  
+- [Ασφάλεια Εγγράφου](./java/document-security/) - Εφαρμόστε ισχυρή προστασία εγγράφων και έλεγχο δικαιωμάτων  
+- [Λειτουργίες Σελίδας](./java/page-operations/) - Διαχειριστείτε μεμονωμένες σελίδες εντός εγγράφων  
+- [Εξαγωγή Εγγράφου](./java/document-extraction/) - Εξάγετε συγκεκριμένο περιεχόμενο από έγγραφα  
+- [Εισαγωγή Εγγράφου](./java/document-import/) - Εισάγετε εξωτερικό περιεχόμενο σε έγγραφα  
+- [Λειτουργίες Εικόνας](./java/image-operations/) - Εργαστείτε με αρχεία εικόνας και μετατροπές  
+- [Διαχωρισμός Εγγράφου](./java/document-splitting/) - Διαχωρίστε έγγραφα χρησιμοποιώντας διάφορες στρατηγικές διαχωρισμού (διαχωρισμός εγγράφου)  
+- [Λειτουργίες Κειμένου](./java/text-operations/) - Επεξεργαστείτε έγγραφα κειμένου αποτελεσματικά  
+- [Άδεια Χρήσης](./java/licensing/) - Διαμορφώστε το GroupDocs.Merger σε περιβάλλοντα Java  
 
-## Common Use Cases & Benefits
-- **Αυτοματοποιημένη Δημιουργία Αναφορών:** Merge data‑driven PDFs and Excel sheets into a single report for distribution.  
-- **Διαχείριση Νομικών Εγγράφων:** Split large contracts into individual sections for easier review and signing.  
-- **Μεταφορά Περιεχομένου:** Convert and merge legacy documents from multiple formats into a standardized PDF archive.  
-- **Ασφαλής Παράδοση Εγγράφων:** Apply passwords and permissions before sending confidential files to clients.  
+## Κοινές περιπτώσεις χρήσης & οφέλη
+- **Αυτοματοποιημένη δημιουργία αναφορών:** Συγχωνεύστε PDFs και φύλλα Excel βασισμένα σε δεδομένα σε μία ενιαία αναφορά για διανομή.  
+- **Διαχείριση νομικών εγγράφων:** Διαχωρίστε μεγάλα συμβόλαια σε ξεχωριστές ενότητες για ευκολότερη ανασκόπηση και υπογραφή.  
+- **Μεταφορά περιεχομένου:** Μετατρέψτε και συγχωνεύστε παλιά έγγραφα από πολλαπλές μορφές σε ένα τυποποιημένο αρχείο PDF.  
+- **Ασφαλής παράδοση εγγράφων:** Εφαρμόστε κωδικούς πρόσβασης και δικαιώματα πριν αποστείλετε εμπιστευτικά αρχεία σε πελάτες.  
 
-## Frequently Asked Questions
+## Συχνές ερωτήσεις
 
-**Q: Can I use the API in a commercial product?**  
-A: Yes, with a valid GroupDocs license. A free trial is available for evaluation.
+**Q: Μπορώ να χρησιμοποιήσω το API σε εμπορικό προϊόν;**  
+A: Ναι, με έγκυρη άδεια GroupDocs. Διατίθεται δωρεάν δοκιμαστική έκδοση για αξιολόγηση.
 
-**Q: Does the API support password‑protected PDFs?**  
-A: Absolutely. You can open, modify, and re‑secure encrypted PDFs using the same API calls.
+**Q: Υποστηρίζει το API PDFs με κωδικό πρόσβασης;**  
+A: Απόλυτα. Μπορείτε να ανοίξετε, να τροποποιήσετε και να επαναπροστατεύσετε κρυπτογραφημένα PDFs χρησιμοποιώντας τις ίδιες κλήσεις API.
 
-**Q: Which .NET and Java versions are compatible?**  
-A: .NET Standard 2.0, .NET Framework 2.0+, .NET Core 2.0+, Mono 1.2+; Java 7, 8, and 10+ are fully supported.
+**Q: Ποιες εκδόσεις .NET και Java είναι συμβατές;**  
+A: .NET Standard 2.0, .NET Framework 2.0+, .NET Core 2.0+, Mono 1.2+· Java 7, 8 και 10+ υποστηρίζονται πλήρως.
 
-**Q: How does the API handle very large files?**  
-A: It streams data and uses memory‑efficient algorithms, allowing you to process multi‑gigabyte documents without exhausting system resources.
+**Q: Πώς διαχειρίζεται το API πολύ μεγάλα αρχεία;**  
+A: Μεταδίδει τα δεδομένα σε ροή και χρησιμοποιεί αλγόριθμους αποδοτικούς στη μνήμη, επιτρέποντας την επεξεργασία εγγράφων πολλαπλών γιγαμπάιτ χωρίς εξάντληση πόρων συστήματος.
 
-**Q: Is there built‑in support for OCR or text extraction?**  
-A: While the core merging API focuses on structural operations, you can combine it with GroupDocs.Parser for advanced text extraction and OCR needs.
+**Q: Υπάρχει ενσωματωμένη υποστήριξη για OCR ή εξαγωγή κειμένου;**  
+A: Ενώ το βασικό API συγχώνευσης εστιάζει σε δομικές λειτουργίες, μπορείτε να το συνδυάσετε με το GroupDocs.Parser για προχωρημένη εξαγωγή κειμένου και OCR.
 
-**Q: How do I get started quickly?**  
-A: Install the NuGet package (`GroupDocs.Merger`) for .NET or add the Maven dependency for Java, then follow the “Document Loading” tutorial to load your first file.
+**Q: Πώς μπορώ να ξεκινήσω γρήγορα;**  
+A: Εγκαταστήστε το πακέτο NuGet (`GroupDocs.Merger`) για .NET ή προσθέστε την εξάρτηση Maven για Java, έπειτα ακολουθήστε το εκπαιδευτικό “Φόρτωση Εγγράφου” για να φορτώσετε το πρώτο σας αρχείο.
 
-**Q: Can I merge different file types into one PDF?**  
-A: Yes – the API can merge PDFs, Word, Excel, images, and many other formats into a single PDF output.
+**Q: Μπορώ να συγχωνεύσω διαφορετικούς τύπους αρχείων σε ένα PDF;**  
+A: Ναι – το API μπορεί να συγχωνεύσει PDFs, Word, Excel, εικόνες και πολλές άλλες μορφές σε ένα ενιαίο PDF αποτέλεσμα.
 
 ---
 
-**Last Updated:** 2026-03-17  
-**Tested With:** GroupDocs.Merger 23.12 (latest stable)  
-**Author:** GroupDocs
+**Τελευταία Ενημέρωση:** 2026-10-11  
+**Δοκιμάστηκε Με:** GroupDocs.Merger 23.12 (τελευταία σταθερή)  
+**Συγγραφέας:** GroupDocs  
+
+---
