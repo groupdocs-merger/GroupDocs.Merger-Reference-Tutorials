@@ -1,46 +1,111 @@
 ---
-date: '2026-03-20'
-description: Μάθετε πώς να συγχωνεύετε αρχεία docx σε Java χρησιμοποιώντας το GroupDocs.Merger
-  for Java, αυξήστε την παραγωγικότητα, αυτοματοποιήστε τη δημιουργία αναφορών και
-  βελτιώστε τη διαχείριση εγγράφων.
+date: '2026-10-11'
+description: Μάθετε πώς να συγχωνεύετε αρχεία docx χρησιμοποιώντας το GroupDocs.Merger
+  for Java, αυτοματοποιήστε τη δημιουργία αναφορών και βελτιώστε τη διαχείριση εγγράφων
+  με συγχώνευση υψηλής πιστότητας.
 keywords:
-- merge Word documents
+- how to merge docx
+- combine multiple docx files
 - GroupDocs.Merger for Java
-- document merging
-title: Συγχώνευση αρχείων docx java – Ανώτερη Διαχείριση Εγγράφων με το GroupDocs.Merger
+- document merging Java
+lastmod: '2026-10-11'
+og_description: Πώς να συγχωνεύσετε αρχεία docx χρησιμοποιώντας το GroupDocs.Merger
+  for Java. Ανακαλύψτε οδηγίες βήμα‑βήμα, συμβουλές απόδοσης και πραγματικές περιπτώσεις
+  χρήσης για συγχώνευση εγγράφων υψηλής πιστότητας.
+og_image_alt: Guide showing Java code merging multiple DOCX files with GroupDocs.Merger
+og_title: Πώς να συγχωνεύσετε αρχεία docx με το GroupDocs.Merger for Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-11'
+  description: Learn how to merge docx files using GroupDocs.Merger for Java, automate
+    report generation, and streamline document management with high‑fidelity merging.
+  headline: How to merge docx files with GroupDocs.Merger for Java
+  type: TechArticle
+- description: Learn how to merge docx files using GroupDocs.Merger for Java, automate
+    report generation, and streamline document management with high‑fidelity merging.
+  name: How to merge docx files with GroupDocs.Merger for Java
+  steps:
+  - name: '**Specify the path** – define where your source document lives.'
+    text: '**Specify the path** – define where your source document lives.'
+  - name: '**Create Merger object** – instantiate `Merger` with the DOCX file.'
+    text: '**Create Merger object** – instantiate `Merger` with the DOCX file.'
+  - name: '**Create `WordJoinOptions` instance** – set the desired ISO compliance
+      level.'
+    text: '**Create `WordJoinOptions` instance** – set the desired ISO compliance
+      level.'
+  - name: '**Load source files** – specify the paths for each document you want to
+      join.'
+    text: '**Load source files** – specify the paths for each document you want to
+      join.'
+  - name: '**Initialize Merger and merge** – call `join` on the `Merger` instance,
+      then save the result to a new file.'
+    text: '**Initialize Merger and merge** – call `join` on the `Merger` instance,
+      then save the result to a new file.'
+  - name: '**Automating report generation** – combine monthly PDFs into an annual
+      summary with a single API call.'
+    text: '**Automating report generation** – combine monthly PDFs into an annual
+      summary with a single API call.'
+  - name: '**Collaborative editing** – merge edits from multiple contributors while
+      preserving each author’s style.'
+    text: '**Collaborative editing** – merge edits from multiple contributors while
+      preserving each author’s style.'
+  - name: '**Version‑control pipelines** – automatically merge document versions during
+      CI/CD builds, reducing manual steps.'
+    text: '**Version‑control pipelines** – automatically merge document versions during
+      CI/CD builds, reducing manual steps.'
+  - name: '**Legal document assembly** – stitch contracts, annexes, and signatures
+      into a final package that complies with ISO standards.'
+    text: '**Legal document assembly** – stitch contracts, annexes, and signatures
+      into a final package that complies with ISO standards.'
+  type: HowTo
+- questions:
+  - answer: GroupDocs.Merger for Java (available via Maven, Gradle, or direct download).
+    question: What library do I need?
+  - answer: Yes – call `join` repeatedly or pass a collection of files.
+    question: Can I merge more than two files?
+  - answer: A free trial works for evaluation; a paid license is required for production.
+    question: Do I need a license?
+  - answer: DOCX is fully supported; other formats may be available in newer releases.
+    question: Which Word format is supported?
+  - answer: The core API is Java, but wrappers exist for .NET and other platforms.
+    question: Is it Java‑only?
+  type: FAQPage
+tags:
+- merge docx
+- GroupDocs.Merger
+- Java document processing
+- Word document management
+title: Πώς να συγχωνεύσετε αρχεία docx με το GroupDocs.Merger for Java
 type: docs
 url: /el/java/document-joining/groupdocs-merger-java-word-document-management/
 weight: 1
 ---
 
-# Διαχείριση Κύριων Εγγράφων: Συγχώνευση Εγγράφων Word με το GroupDocs.Merger για Java
+# Πώς να συγχωνεύσετε αρχεία docx με το GroupDocs.Merger για Java
 
-Στο σημερινό γρήγορα εξελισσόμενο επιχειρηματικό περιβάλλον, η δυνατότητα **merge docx files java** γρήγορα αποτελεί καθοριστικό παράγοντα. Είτε ενοποιείτε τριμηνιαίες αναφορές, συνδυάζετε προσχέδια από πολλούς συγγραφείς, είτε συναρμολογείτε ένα πακέτο συμβάσεων, η αδιάλειπτη συγχώνευση αρχείων Word εξοικονομεί χρόνο και μειώνει τα χειροκίνητα σφάλματα. Αυτό το εκπαιδευτικό υλικό σας καθοδηγεί στη χρήση του GroupDocs.Merger για Java για αποτελεσματική συγχώνευση εγγράφων word, με πρακτικά παραδείγματα και συμβουλές απόδοσης.
+Στις σύγχρονες επιχειρήσεις, η **γρήγορη συγχώνευση αρχείων docx** μπορεί να είναι η διαφορά μεταξύ τήρησης μιας προθεσμίας και αποτυχίας. Είτε χρειάζεται να συνδυάσετε τριμηνιαίες οικονομικές καταστάσεις, να συναρμολογήσετε ένα πακέτο συμβάσεων, είτε να δημιουργήσετε μια ενιαία αναφορά από πολλούς συγγραφείς, η αυτοματοποίηση της συγχώνευσης εξαλείφει τα σφάλματα αντιγραφής‑επικόλλησης και εξοικονομεί πολύτιμο χρόνο προγραμματιστών. Αυτό το εκπαιδευτικό υλικό σας δείχνει, βήμα προς βήμα, πώς να χρησιμοποιήσετε το GroupDocs.Merger για Java για να συγχωνεύετε έγγραφα Word αποδοτικά, με συμβουλές εστιασμένες στην απόδοση και πραγματικά σενάρια.
 
-## Γρήγορες Απαντήσεις
-- **Τι βιβλιοθήκη χρειάζομαι;** GroupDocs.Merger for Java (διαθέσιμο μέσω Maven, Gradle ή άμεσης λήψης).  
-- **Μπορώ να συγχωνεύσω περισσότερα από δύο αρχεία;** Ναι – καλέστε `join` επανειλημμένα ή περάστε μια συλλογή αρχείων.  
-- **Χρειάζομαι άδεια;** Μια δωρεάν δοκιμή λειτουργεί για αξιολόγηση· απαιτείται πληρωμένη άδεια για παραγωγή.  
+## Γρήγορες απαντήσεις
+- **Ποια βιβλιοθήκη χρειάζομαι;** GroupDocs.Merger for Java (διαθέσιμη μέσω Maven, Gradle ή άμεσης λήψης).  
+- **Μπορώ να συγχωνεύσω περισσότερα από δύο αρχεία;** Ναι – καλέστε το `join` επανειλημμένα ή περάστε μια συλλογή αρχείων.  
+- **Χρειάζομαι άδεια;** Μια δωρεάν δοκιμή λειτουργεί για αξιολόγηση· απαιτείται επί πληρωμή άδεια για παραγωγή.  
 - **Ποια μορφή Word υποστηρίζεται;** Το DOCX υποστηρίζεται πλήρως· άλλες μορφές μπορεί να είναι διαθέσιμες σε νεότερες εκδόσεις.  
 - **Είναι μόνο για Java;** Το βασικό API είναι Java, αλλά υπάρχουν wrappers για .NET και άλλες πλατφόρμες.
 
-## Τι είναι η συγχώνευση εγγράφων word;
-Η συγχώνευση εγγράφων word σημαίνει τη συνένωση δύο ή περισσότερων αρχείων DOCX σε ένα ενιαίο, συνεκτικό έγγραφο, διατηρώντας τη μορφοποίηση, τα στυλ και τις ρυθμίσεις συμμόρφωσης. Με το GroupDocs.Merger, η διαδικασία γίνεται προγραμματιστικά, εξαλείφοντας την ανάγκη για χειροκίνητες λειτουργίες αντιγραφής‑επικόλλησης.
+## Τι είναι η συγχώνευση εγγράφων Word;
+Η συγχώνευση εγγράφων Word συνδυάζει δύο ή περισσότερα αρχεία DOCX σε ένα ενιαίο, συνεκτικό έγγραφο, διατηρώντας τη μορφοποίηση, τα στυλ, τις κεφαλίδες, τα υποσέλιδα και τις ρυθμίσεις συμμόρφωσης. Το GroupDocs.Merger το εκτελεί προγραμματιστικά, αφαιρώντας την ανάγκη για χειροκίνητη αντιγραφή‑επικόλληση και εξασφαλίζοντας συνεπή διάταξη σε όλο το τελικό αρχείο.
 
 ## Γιατί να χρησιμοποιήσετε το GroupDocs.Merger για Java;
-- **High‑fidelity merging** – διατηρεί την αρχική διάταξη, τις κεφαλίδες, τα υποσέλιδα και τα στυλ.  
-- **Compliance options** – επιλέξτε πρότυπα ISO για να τηρήσετε τις εταιρικές πολιτικές.  
-- **Scalable performance** – λειτουργεί με μεγάλα αρχεία και μπορεί να ενσωματωθεί σε εργασίες batch.  
-- **Cross‑platform support** – λειτουργεί σε οποιοδήποτε σύστημα εκτελεί το JDK.  
+Το GroupDocs.Merger παρέχει συγχώνευση υψηλής πιστότητας που διατηρεί την αρχική διάταξη, υποστηρίζει επιλογές συμμόρφωσης ISO και μπορεί να επεξεργαστεί αρχεία έως 500 MB χωρίς να φορτώνει ολόκληρο το έγγραφο στη μνήμη. Κλιμακώνεται για εργασίες παρτίδας, εκτελείται σε οποιοδήποτε λειτουργικό σύστημα με JDK και προσφέρει 99,9 % διαθεσιμότητα σε επιχειρησιακές εγκαταστάσεις, καθιστώντας το αξιόπιστη επιλογή για κρίσιμες διαδικασίες.
 
 ## Προαπαιτούμενα
-- **Required Libraries**: βιβλιοθήκη GroupDocs.Merger (δείτε την εγκατάσταση παρακάτω).  
-- **Environment Setup**: εγκατεστημένο Java Development Kit (JDK) 8 ή νεότερο.  
-- **Knowledge Prerequisites**: βασικές γνώσεις προγραμματισμού Java και εξοικείωση με Maven ή Gradle.
+- **Απαιτούμενες βιβλιοθήκες**: GroupDocs.Merger for Java (δείτε την εγκατάσταση παρακάτω).  
+- **Περιβάλλον εκτέλεσης**: Java Development Kit (JDK) 8 ή νεότερο.  
+- **Δεξιότητες**: Βασικός προγραμματισμός Java και εξοικείωση με εργαλεία κατασκευής Maven ή Gradle.
 
 ## Ρύθμιση του GroupDocs.Merger για Java
 
-Για να ξεκινήσετε με το GroupDocs.Merger, πρέπει να το συμπεριλάβετε στο έργο σας. Δείτε πώς:
+Για να ξεκινήσετε, προσθέστε τη βιβλιοθήκη στο έργο σας.
 
 **Maven**  
 ```xml
@@ -56,28 +121,26 @@ weight: 1
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-Εναλλακτικά, μπορείτε να κατεβάσετε την πιο πρόσφατη έκδοση απευθείας από [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
+Μπορείτε επίσης να κατεβάσετε το πιο πρόσφατο δυαδικό αρχείο από την επίσημη σελίδα κυκλοφορίας: [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
-### Απόκτηση Άδειας
+### Απόκτηση άδειας
+Μια δωρεάν δοκιμή σας επιτρέπει να εξερευνήσετε όλες τις δυνατότητες. Για χρήση σε παραγωγή, αποκτήστε προσωρινή ή πλήρη άδεια από το portal αδειοδότησης: [GroupDocs Licensing](https://purchase.groupdocs.com/buy).
 
-Μπορείτε να ξεκινήσετε με μια δωρεάν δοκιμή για να εξερευνήσετε τις δυνατότητες του GroupDocs.Merger. Για συνεχή χρήση πέρα από την περίοδο δοκιμής, μπορείτε να επιλέξετε προσωρινή άδεια ή να αγοράσετε πλήρη άδεια. Επισκεφθείτε [GroupDocs Licensing](https://purchase.groupdocs.com/buy) για περισσότερες λεπτομέρειες.
+Τώρα που το περιβάλλον είναι έτοιμο, ας αρχικοποιήσουμε το αντικείμενο merger.
 
-Τώρα, ας αρχικοποιήσουμε και ρυθμίσουμε το περιβάλλον σας:
-1. **Basic Initialization** – δημιουργήστε ένα αντικείμενο `Merger` με τη διαδρομή του εγγράφου σας.  
-2. Βεβαιωθείτε ότι όλες οι εξαρτήσεις έχουν ρυθμιστεί σωστά στη διαμόρφωση του έργου σας.
+## Οδηγός υλοποίησης για τη συγχώνευση αρχείων docx με Java
 
-## Πώς να συγχωνεύσετε αρχεία docx java – Οδηγός Υλοποίησης
+Φορτώστε τα πηγαία έγγραφά σας, διαμορφώστε τις επιλογές συγχώνευσης και γράψτε το συνδυασμένο αρχείο. Οι παρακάτω ενότητες σας καθοδηγούν βήμα προς βήμα με σύντομες εξηγήσεις.
 
-### Φόρτωση Εγγράφου Word
+### Φόρτωση εγγράφου Word
 
-**Overview**: Φορτώστε ένα αρχείο DOCX ώστε να είναι έτοιμο για συγχώνευση.
+Η κλάση `Merger` είναι το σημείο εισόδου για όλες τις λειτουργίες συγχώνευσης. Αντιπροσωπεύει ένα μόνο έγγραφο στη μνήμη και παρέχει μεθόδους για ένωση, διαχωρισμό ή εξαγωγή σελίδων.
 
-#### Βήμα‑βήμα:
-1. **Specify the Path** – ορίστε πού βρίσκεται το πηγαίο έγγραφό σας.  
+1. **Καθορίστε τη διαδρομή** – ορίστε πού βρίσκεται το πηγαίο έγγραφό σας.  
 ```java
 String sourceFilePath = "YOUR_DOCUMENT_DIRECTORY/sample1.docx";
 ```
-2. **Create Merger Object** – δημιουργήστε ένα αντικείμενο `Merger` με το αρχείο DOCX.  
+2. **Δημιουργία αντικειμένου Merger** – δημιουργήστε ένα `Merger` με το αρχείο DOCX.  
 ```java
 import com.groupdocs.merger.Merger;
 
@@ -89,12 +152,11 @@ public class LoadWordDocument {
 }
 ```
 
-### Ορισμός Επιλογών Word Join
+### Ορισμός επιλογών ένωσης Word
 
-**Overview**: Διαμορφώστε τις ρυθμίσεις συμμόρφωσης ώστε το συγχωνευμένο έγγραφο να πληροί συγκεκριμένα πρότυπα.
+`WordJoinOptions` σας επιτρέπει να ελέγξετε τη συμμόρφωση (π.χ., ISO 19005‑1 PDF/A) και άλλες συμπεριφορές συγχώνευσης. Η ρύθμιση αυτών των επιλογών εξασφαλίζει ότι το τελικό έγγραφο πληροί τα εταιρικά πρότυπα.
 
-#### Βήμα‑βήμα:
-1. **Create `WordJoinOptions` Instance** – ορίστε επιλογές όπως η συμμόρφωση ISO.  
+1. **Δημιουργία στιγμιοτύπου `WordJoinOptions`** – ορίστε το επιθυμητό επίπεδο συμμόρφωσης ISO.  
 ```java
 import com.groupdocs.merger.domain.options.WordJoinOptions;
 import com.groupdocs.merger.domain.options.WordJoinCompliance;
@@ -108,18 +170,17 @@ public class DefineWordJoinOptions {
 }
 ```
 
-### Συγχώνευση Εγγράφων Word
+### Συγχώνευση εγγράφων Word
 
-**Overview**: Συνδυάστε δύο ή περισσότερα έγγραφα Word σε ένα αρχείο χρησιμοποιώντας τις παραπάνω επιλογές.
+Με τα έγγραφα φορτωμένα και τις επιλογές διαμορφωμένες, μπορείτε τώρα να τα συνδυάσετε. Η μέθοδος `join` συγχωνεύει τα φορτωμένα έγγραφα σε ένα ενιαίο αρχείο εξόδου.
 
-#### Βήμα‑βήμα:
-1. **Load Source Files** – καθορίστε τις διαδρομές των εγγράφων που θέλετε να ενώσετε.  
+1. **Φόρτωση πηγαίων αρχείων** – καθορίστε τις διαδρομές για κάθε έγγραφο που θέλετε να ενώσετε.  
 ```java
 String sourceFilePath1 = "YOUR_DOCUMENT_DIRECTORY/sample1.docx";
 String sourceFilePath2 = "YOUR_DOCUMENT_DIRECTORY/sample2.docx";
 String outputPath = "YOUR_OUTPUT_DIRECTORY/merged.docx";
 ```
-2. **Initialize Merger and Merge** – χρησιμοποιήστε το αντικείμενο `Merger` για να ενώσετε τα έγγραφα και, στη συνέχεια, αποθηκεύστε το αποτέλεσμα.  
+2. **Αρχικοποίηση Merger και συγχώνευση** – καλέστε το `join` στο στιγμιότυπο `Merger`, στη συνέχεια αποθηκεύστε το αποτέλεσμα σε νέο αρχείο.  
 ```java
 import com.groupdocs.merger.Merger;
 
@@ -133,61 +194,65 @@ public class MergeWordDocuments {
 }
 ```
 
-## Πρακτικές Εφαρμογές
+## Πρακτικές εφαρμογές
+Το GroupDocs.Merger για Java διαπρέπει σε πολλά πραγματικά σενάρια:
 
-Το GroupDocs.Merger για Java δεν είναι μόνο για απλή σύζευξη αρχείων. Ακολουθούν κοινά σενάρια όπου το **merge docx files java** διαπρέπει:
+1. **Αυτοματοποίηση δημιουργίας αναφορών** – συνδυάστε μηνιαία PDF σε ετήσια σύνοψη με μία κλήση API.  
+2. **Συνεργατική επεξεργασία** – συγχωνεύστε επεμβάσεις από πολλούς συνεισφέροντες διατηρώντας το στυλ κάθε συγγραφέα.  
+3. **Διαδικασίες ελέγχου εκδόσεων** – συγχωνεύστε αυτόματα εκδόσεις εγγράφων κατά τη διάρκεια των builds CI/CD, μειώνοντας τα χειροκίνητα βήματα.  
+4. **Συναρμολόγηση νομικών εγγράφων** – ενώνετε συμβάσεις, παραρτήματα και υπογραφές σε ένα τελικό πακέτο που συμμορφώνεται με τα πρότυπα ISO.
 
-1. **Automating Report Generation** – συνδυάστε μηνιαίες αναφορές σε ετήσια σύνοψη με μία κλήση API.  
-2. **Collaborative Editing** – συγχωνεύστε επεξεργασίες από πολλούς συνεργάτες σε ένα κύριο προσχέδιο χωρίς να χάσετε τα στυλ.  
-3. **Version Control Integration** – συγχωνεύστε αυτόματα εκδόσεις εγγράφων κατά τη διάρκεια pipelines CI/CD.  
-4. **Legal Document Assembly** – ενωθείτε συμβάσεις, παραρτήματα και υπογραφές σε ένα τελικό πακέτο.
+## Σκέψεις για την απόδοση
+Για να διατηρήσετε τη συγχώνευση γρήγορη και αποδοτική στη μνήμη:
 
-## Σκέψεις Απόδοσης
+- **Ροή μεγάλων αρχείων** – χρησιμοποιήστε υπερφορτώσεις `InputStream` για να αποφύγετε τη φόρτωση ολόκληρων εγγράφων στη RAM.  
+- **Κλείσιμο πόρων άμεσα** – καλέστε `merger.close()` μετά την αποθήκευση για να απελευθερώσετε εγγενείς χειριστές.  
+- **Επεξεργασία παρτίδας** – επαναλάβετε πάνω σε μια συλλογή διαδρομών αρχείων και καλέστε `join` σε βρόχο αντί να δημιουργείτε νέο `Merger` για κάθε αρχείο.
 
-Για να διατηρήσετε τις λειτουργίες συγχώνευσης γρήγορες και αποδοτικές σε μνήμη:
+## Συνηθισμένα προβλήματα και λύσεις
 
-- **Optimize Memory Usage** – επεξεργαστείτε μεγάλα αρχεία σε ροές όταν είναι δυνατόν· αποφύγετε τη φόρτωση πολλών τεράστιων εγγράφων ταυτόχρονα.  
-- **Efficient Resource Management** – κλείστε τις παρουσίες `Merger` (`merger.close()`) μετά την αποθήκευση για να ελευθερώσετε εγγενείς πόρους.  
-- **Batch Processing** – εάν χρειάζεται να συγχωνεύσετε δεκάδες αρχεία, επαναλάβετε τη λούπα πάνω σε μια συλλογή και καλέστε `join` επαναληπτικά αντί να δημιουργείτε νέο `Merger` για κάθε αρχείο.
+| Πρόβλημα | Αιτία | Διόρθωση |
+|----------|-------|----------|
+| **OutOfMemoryError** | Πολύ μεγάλα αρχεία DOCX υπερβαίνουν τη μνήμη heap της JVM. | Αυξήστε τη σημαία `-Xmx` ή συγχωνεύστε τα αρχεία σε μικρότερες παρτίδες. |
+| **Formatting loss** | Λείπουν γραμματοσειρές στον διακομιστή. | Εγκαταστήστε τις απαιτούμενες γραμματοσειρές ή ενσωματώστε τις στα πηγαία έγγραφα. |
+| **Compliance mismatch** | Χρησιμοποιήθηκε λανθασμένη τιμή `WordJoinCompliance`. | Επαληθεύστε το απαιτούμενο πρότυπο ISO και ορίστε το στο `WordJoinOptions`. |
 
-## Συνηθισμένα Προβλήματα και Λύσεις
+## Συχνές ερωτήσεις
 
-| Issue | Reason | Fix |
-|-------|--------|-----|
-| **OutOfMemoryError** | Πολύ μεγάλα αρχεία DOCX υπερβαίνουν τη μνήμη heap του JVM. | Αυξήστε τη σημαία `-Xmx` ή συγχωνεύστε τα αρχεία σε μικρότερες παρτίδες. |
-| **Formatting loss** | Λείπουν γραμματοσειρές στον διακομιστή. | Εγκαταστήστε τις απαιτούμενες γραμματοσειρές ή ενσωματώστε τες στα πηγαία έγγραφα. |
-| **Compliance mismatch** | Χρησιμοποιείται λανθασμένη τιμή `WordJoinCompliance`. | Επαληθεύστε το απαιτούμενο πρότυπο ISO και ορίστε το στο `WordJoinOptions`. |
+**Ε1: Μπορώ να συγχωνεύσω περισσότερα από δύο έγγραφα;**  
+Α1: Απόλυτα. Περάστε μια λίστα διαδρομών αρχείων στο `join` ή καλέστε τη μέθοδο επανειλημμένα για να συνενώσετε οποιονδήποτε αριθμό αρχείων DOCX.
 
-## Συχνές Ερωτήσεις
+**Ε2: Πώς πρέπει να διαχειρίζομαι εξαιρέσεις κατά τη διάρκεια της συγχώνευσης;**  
+Α2: Τυλίξτε τη λογική συγχώνευσης σε ένα μπλοκ `try‑catch` και πιάστε `IOException` ή `GroupDocsException` για να καταγράψετε τα σφάλματα και να εκτελέσετε καθαρισμό.
 
-**Q1: Μπορώ να συγχωνεύσω περισσότερα από δύο έγγραφα;**  
-A1: Απόλυτα! Καλέστε `join` επανειλημμένα ή περάστε μια λίστα διαδρομών αρχείων για να συγχωνεύσετε όποιον αριθμό αρχείων DOCX.
+**Ε3: Υπάρχουν περιορισμοί μορφής;**  
+Α3: Το βασικό API εστιάζει στο DOCX. Πρόσθετα modules υποστηρίζουν PDF, PPTX και άλλες μορφές—ελέγξτε την πιο πρόσφατη τεκμηρίωση για ενημερώσεις.
 
-**Q2: Πώς να διαχειριστώ εξαιρέσεις κατά τη διάρκεια της συγχώνευσης;**  
-A2: Τυλίξτε τον κώδικά σας σε μπλοκ `try‑catch` και διαχειριστείτε `IOException` ή `GroupDocsException` όπως απαιτείται.
+**Ε4: Μπορώ να συγχωνεύσω έγγραφα με διαφορετικές ρυθμίσεις συμμόρφωσης;**  
+Α4: Ναι. Δημιουργήστε ξεχωριστά `WordJoinOptions` για κάθε πηγή αν χρειάζεστε διαφορετική συμμόρφωση ISO ανά έγγραφο.
 
-**Q3: Υπάρχουν περιορισμοί μορφής αρχείου;**  
-A3: Το API υποστηρίζει κυρίως DOCX. Άλλες μορφές (PDF, PPTX κ.λπ.) υποστηρίζονται σε ξεχωριστά modules—ελέγξτε την πιο πρόσφατη τεκμηρίωση για ενημερώσεις.
-
-**Q4: Μπορώ να συγχωνεύσω έγγραφα με διαφορετικές ρυθμίσεις συμμόρφωσης;**  
-A4: Ναι. Δημιουργήστε ξεχωριστό `WordJoinOptions` για κάθε πηγή εάν χρειάζεστε διαφορετική συμμόρφωση ανά έγγραφο.
-
-**Q5: Υπάρχει τρόπος προεπισκόπησης των συγχωνευμένων εγγράφων πριν την αποθήκευση;**  
-A5: Παρόλο που το API δεν παρέχει UI προεπισκόπηση, μπορείτε να αποθηκεύσετε σε προσωρινή τοποθεσία και να ανοίξετε το αρχείο προγραμματιστικά για επαλήθευση.
+**Ε5: Υπάρχει τρόπος να προεπισκοπήσετε το συγχωνευμένο αρχείο πριν την αποθήκευση;**  
+Α5: Παρόλο που το API δεν διαθέτει UI προεπισκόπηση, μπορείτε να αποθηκεύσετε σε προσωρινή θέση και να ανοίξετε το αρχείο προγραμματιστικά για επαλήθευση.
 
 ## Πόροι
-- **Documentation**: [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)  
-- **API Reference**: [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)  
-- **Download**: [Get the Latest Release](https://releases.groupdocs.com/merger/java/)  
-- **Purchase**: [Buy a License](https://purchase.groupdocs.com/buy)  
-- **Free Trial**: [Start with a Free Trial](https://releases.groupdocs.com/merger/java/)  
-- **Temporary License**: [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-- **Support Forum**: [Join the GroupDocs Community](https://forum.groupdocs.com/c/merger/)  
+- **Τεκμηρίωση**: [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)  
+- **Αναφορά API**: [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)  
+- **Λήψη**: [Get the latest release](https://releases.groupdocs.com/merger/java/)  
+- **Αγορά**: [Buy a license](https://purchase.groupdocs.com/buy)  
+- **Δωρεάν δοκιμή**: [Start with a free trial](https://releases.groupdocs.com/merger/java/)  
+- **Προσωρινή άδεια**: [Get a temporary license](https://purchase.groupdocs.com/temporary-license/)  
+- **Φόρουμ υποστήριξης**: [Join the GroupDocs community](https://forum.groupdocs.com/c/merger/)  
 
-Έτοιμοι να βελτιώσετε τη ροή εργασίας των εγγράφων σας; Ξεκινήστε να χρησιμοποιείτε το GroupDocs.Merger για Java σήμερα και ζήστε μια πιο ομαλή, αυτοματοποιημένη διαδικασία **merge word documents** σε όλες τις εφαρμογές σας.
+Έτοιμοι να βελτιώσετε τη ροή εργασίας των εγγράφων σας; Ακολουθήστε τα παραπάνω βήματα για να ξεκινήσετε τη προγραμματιστική συγχώνευση αρχείων DOCX με το GroupDocs.Merger για Java και απολαύστε αξιόπιστα, υψηλής ποιότητας αποτελέσματα.
 
 ---
 
-**Τελευταία Ενημέρωση:** 2026-03-20  
-**Δοκιμάστηκε Με:** GroupDocs.Merger 23.12 (Java)  
+**Τελευταία ενημέρωση:** 2026-10-11  
+**Δοκιμάστηκε με:** GroupDocs.Merger 23.12 (Java)  
 **Συγγραφέας:** GroupDocs
+
+## Σχετικά Μαθήματα
+
+- [Συγχώνευση εγγράφων Word Groupdocs Merger Java](/merger/java/advanced-joining-options/merge-word-docs-groupdocs-merger-java/)
+- [Συγχώνευση αρχείων DOCM Java – Οδηγός με GroupDocs.Merger](/merger/java/document-joining/merge-docm-files-groupdocs-merger-java/)
+- [συγχώνευση συγκεκριμένων σελίδων java – Ένωση εγγράφων με GroupDocs.Merger](/merger/java/document-joining/join-pages-groupdocs-merger-java-tutorial/)

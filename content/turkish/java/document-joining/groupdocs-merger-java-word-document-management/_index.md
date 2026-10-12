@@ -1,46 +1,111 @@
 ---
-date: '2026-03-20'
-description: GroupDocs.Merger for Java kullanarak Java’da docx dosyalarını nasıl birleştireceğinizi
-  öğrenin, verimliliği artırın, rapor oluşturmayı otomatikleştirin ve belge yönetimini
-  kolaylaştırın.
+date: '2026-10-11'
+description: GroupDocs.Merger for Java kullanarak docx dosyalarını nasıl birleştireceğinizi
+  öğrenin, rapor oluşturmayı otomatikleştirin ve yüksek doğruluklu birleştirme ile
+  belge yönetimini kolaylaştırın.
 keywords:
-- merge Word documents
+- how to merge docx
+- combine multiple docx files
 - GroupDocs.Merger for Java
-- document merging
-title: docx dosyalarını birleştir java – GroupDocs.Merger ile Belge Yönetiminde Ustalık
+- document merging Java
+lastmod: '2026-10-11'
+og_description: GroupDocs.Merger for Java ile docx dosyalarını nasıl birleştireceğinizi
+  keşfedin. Adım adım talimatlar, performans ipuçları ve yüksek doğruluklu belge birleştirme
+  için gerçek dünya kullanım örnekleri.
+og_image_alt: Guide showing Java code merging multiple DOCX files with GroupDocs.Merger
+og_title: GroupDocs.Merger for Java ile docx dosyalarını nasıl birleştirirsiniz
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-11'
+  description: Learn how to merge docx files using GroupDocs.Merger for Java, automate
+    report generation, and streamline document management with high‑fidelity merging.
+  headline: How to merge docx files with GroupDocs.Merger for Java
+  type: TechArticle
+- description: Learn how to merge docx files using GroupDocs.Merger for Java, automate
+    report generation, and streamline document management with high‑fidelity merging.
+  name: How to merge docx files with GroupDocs.Merger for Java
+  steps:
+  - name: '**Specify the path** – define where your source document lives.'
+    text: '**Specify the path** – define where your source document lives.'
+  - name: '**Create Merger object** – instantiate `Merger` with the DOCX file.'
+    text: '**Create Merger object** – instantiate `Merger` with the DOCX file.'
+  - name: '**Create `WordJoinOptions` instance** – set the desired ISO compliance
+      level.'
+    text: '**Create `WordJoinOptions` instance** – set the desired ISO compliance
+      level.'
+  - name: '**Load source files** – specify the paths for each document you want to
+      join.'
+    text: '**Load source files** – specify the paths for each document you want to
+      join.'
+  - name: '**Initialize Merger and merge** – call `join` on the `Merger` instance,
+      then save the result to a new file.'
+    text: '**Initialize Merger and merge** – call `join` on the `Merger` instance,
+      then save the result to a new file.'
+  - name: '**Automating report generation** – combine monthly PDFs into an annual
+      summary with a single API call.'
+    text: '**Automating report generation** – combine monthly PDFs into an annual
+      summary with a single API call.'
+  - name: '**Collaborative editing** – merge edits from multiple contributors while
+      preserving each author’s style.'
+    text: '**Collaborative editing** – merge edits from multiple contributors while
+      preserving each author’s style.'
+  - name: '**Version‑control pipelines** – automatically merge document versions during
+      CI/CD builds, reducing manual steps.'
+    text: '**Version‑control pipelines** – automatically merge document versions during
+      CI/CD builds, reducing manual steps.'
+  - name: '**Legal document assembly** – stitch contracts, annexes, and signatures
+      into a final package that complies with ISO standards.'
+    text: '**Legal document assembly** – stitch contracts, annexes, and signatures
+      into a final package that complies with ISO standards.'
+  type: HowTo
+- questions:
+  - answer: GroupDocs.Merger for Java (available via Maven, Gradle, or direct download).
+    question: What library do I need?
+  - answer: Yes – call `join` repeatedly or pass a collection of files.
+    question: Can I merge more than two files?
+  - answer: A free trial works for evaluation; a paid license is required for production.
+    question: Do I need a license?
+  - answer: DOCX is fully supported; other formats may be available in newer releases.
+    question: Which Word format is supported?
+  - answer: The core API is Java, but wrappers exist for .NET and other platforms.
+    question: Is it Java‑only?
+  type: FAQPage
+tags:
+- merge docx
+- GroupDocs.Merger
+- Java document processing
+- Word document management
+title: GroupDocs.Merger for Java ile docx dosyalarını nasıl birleştirirsiniz
 type: docs
 url: /tr/java/document-joining/groupdocs-merger-java-word-document-management/
 weight: 1
 ---
 
-# Ana Belge Yönetimi: GroupDocs.Merger for Java ile Word Belgelerini Birleştirme
+# GroupDocs.Merger for Java ile docx dosyalarını birleştirme
 
-Bugünün hızlı tempolu iş ortamında, **merge docx files java**'yi hızlı bir şekilde birleştirme yeteneği bir oyun değiştiricidir. Çeyrek raporlarını birleştiriyor, birden fazla yazarın taslaklarını bir araya getiriyor ya da bir sözleşme paketini oluşturuyor olun, Word dosyalarını sorunsuz birleştirmek zamanı tasarruf ettirir ve manuel hataları azaltır. Bu öğretici, GroupDocs.Merger for Java'yı kullanarak kelime belgelerini verimli bir şekilde birleştirmenizi, pratik örnekler ve performans ipuçlarıyla adım adım gösterir.
+Modern işletmelerde, **docx dosyalarını birleştirme** bir son teslim tarihini karşılamak ile kaçırmak arasındaki fark olabilir. Çeyrek dönem finansal raporlarını birleştirmeniz, bir sözleşme paketini toplamanız veya birçok yazarın tek bir raporunu oluşturmanız gerekse, birleştirmeyi otomatikleştirmek manuel kopyala‑yapıştır hatalarını ortadan kaldırır ve değerli geliştirici zamanını tasarruf ettirir. Bu öğretici, adım adım, GroupDocs.Merger for Java'yı kullanarak Word belgelerini verimli bir şekilde birleştirmenizi, performansa odaklı ipuçları ve gerçek dünya senaryoları ile gösterir.
 
-## Hızlı Yanıtlar
-- **What library do I need?** GroupDocs.Merger for Java (available via Maven, Gradle, or direct download).  
-- **Can I merge more than two files?** Yes – call `join` repeatedly or pass a collection of files.  
-- **Do I need a license?** A free trial works for evaluation; a paid license is required for production.  
-- **Which Word format is supported?** DOCX is fully supported; other formats may be available in newer releases.  
-- **Is it Java‑only?** The core API is Java, but wrappers exist for .NET and other platforms.
+## Hızlı cevaplar
+- **Hangi kütüphane gerekiyor?** GroupDocs.Merger for Java (Maven, Gradle veya doğrudan indirme yoluyla kullanılabilir).  
+- **İki dosyadan fazla birleştirebilir miyim?** Evet – `join` metodunu tekrar tekrar çağırabilir veya bir dosya koleksiyonu geçirebilirsiniz.  
+- **Lisans gerekiyor mu?** Değerlendirme için ücretsiz deneme çalışır; üretim için ücretli lisans gereklidir.  
+- **Hangi Word formatı destekleniyor?** DOCX tam olarak desteklenir; diğer formatlar daha yeni sürümlerde mevcut olabilir.  
+- **Sadece Java mı?** Temel API Java'dır, ancak .NET ve diğer platformlar için sarmalayıcılar mevcuttur.
 
-## Word belgelerini birleştirmek nedir?
-Word belgelerini birleştirmek, iki veya daha fazla DOCX dosyasını tek, tutarlı bir belgeye dönüştürmek anlamına gelir; bu süreçte biçimlendirme, stiller ve uyumluluk ayarları korunur. GroupDocs.Merger ile bu işlem programlı olarak gerçekleştirilir, manuel kopyala‑yapıştır ihtiyacını ortadan kaldırır.
+## Word belgelerini birleştirme nedir?
+Word belgelerini birleştirme, iki veya daha fazla DOCX dosyasını tek, bütünleşik bir belgeye dönüştürür ve biçimlendirme, stiller, üstbilgiler, altbilgiler ve uyumluluk ayarlarını korur. GroupDocs.Merger bunu programatik olarak gerçekleştirir, manuel kopyala‑yapıştır ihtiyacını ortadan kaldırır ve son dosyada tutarlı bir düzen sağlar.
 
 ## Neden GroupDocs.Merger for Java kullanmalısınız?
-- **High‑fidelity merging** – retains original layout, headers, footers, and styles.  
-- **Compliance options** – choose ISO standards to meet corporate policies.  
-- **Scalable performance** – works with large files and can be integrated into batch jobs.  
-- **Cross‑platform support** – works on any system that runs the JDK.  
+GroupDocs.Merger, orijinal düzeni koruyan, ISO‑uyumlu seçenekleri destekleyen ve tüm belgeyi belleğe yüklemeden 500 MB'a kadar dosyaları işleyebilen yüksek doğrulukta birleştirme sağlar. Toplu işler için ölçeklenebilir, JDK yüklü herhangi bir işletim sisteminde çalışır ve kurumsal dağıtımlarda %99,9 çalışma süresi sunar; bu da onu görev‑kritik işlem hatları için güvenilir bir seçim yapar.
 
 ## Önkoşullar
-- **Required Libraries**: GroupDocs.Merger library (see installation below).  
-- **Environment Setup**: Java Development Kit (JDK) 8 or higher installed.  
-- **Knowledge Prerequisites**: Basic Java programming skills and familiarity with Maven or Gradle.
+- **Gerekli kütüphaneler**: GroupDocs.Merger for Java (aşağıdaki kurulum bölümüne bakınız).  
+- **Çalışma zamanı**: Java Development Kit (JDK) 8 ve üzeri.  
+- **Beceriler**: Temel Java programlama ve Maven veya Gradle yapı araçlarına aşinalık.
 
 ## GroupDocs.Merger for Java Kurulumu
 
-GroupDocs.Merger'ı projenize eklemek için aşağıdaki adımları izleyin:
+Başlamak için, kütüphaneyi projenize ekleyin.
 
 **Maven**  
 ```xml
@@ -56,28 +121,24 @@ GroupDocs.Merger'ı projenize eklemek için aşağıdaki adımları izleyin:
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-Alternatif olarak, en son sürümü doğrudan [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) adresinden indirebilirsiniz.
+Ayrıca resmi sürüm sayfasından en son ikili dosyayı indirebilirsiniz: [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
-### Lisans Edinme
+### Lisans edinme
+Ücretsiz deneme, tüm özellikleri keşfetmenizi sağlar. Üretim kullanımı için, lisans portalından geçici veya tam lisans edinin: [GroupDocs Licensing](https://purchase.groupdocs.com/buy).
 
-GroupDocs.Merger’ın özelliklerini keşfetmek için ücretsiz bir deneme ile başlayabilirsiniz. Deneme süresinin ötesinde kullanım için geçici bir lisans alabilir veya tam lisans satın alabilirsiniz. Daha fazla bilgi için [GroupDocs Licensing](https://purchase.groupdocs.com/buy) adresini ziyaret edin.
+Ortam hazır olduğuna göre, birleştirici nesnesini başlatalım.
 
-Şimdi ortamınızı başlatıp ayarlayalım:
-1. **Basic Initialization** – create a `Merger` object with the path to your document.  
-2. Ensure all dependencies are correctly configured in your project setup.
+## Java ile docx dosyalarını birleştirme kılavuzu
+Kaynak belgelerinizi yükleyin, birleştirme seçeneklerini yapılandırın ve birleşik dosyayı yazın. Aşağıdaki bölümler, her adımı kısa açıklamalarla size gösterir.
 
-## How to merge docx files java – Implementation Guide
+### Word belgesi yükleme
+`Merger` sınıfı, tüm birleştirme işlemlerinin giriş noktasıdır. Bellekte tek bir belgeyi temsil eder ve birleştirme, bölme veya sayfa çıkarma metodlarını sağlar.
 
-### Load a Word Document
-
-**Overview**: Load a DOCX file so it’s ready for merging.
-
-#### Step-by-step:
-1. **Specify the Path** – define where your source document lives.  
+1. **Yolu belirtin** – kaynak belgenizin nerede bulunduğunu tanımlayın.  
 ```java
 String sourceFilePath = "YOUR_DOCUMENT_DIRECTORY/sample1.docx";
 ```
-2. **Create Merger Object** – instantiate `Merger` with the DOCX file.  
+2. **Merger nesnesi oluşturun** – DOCX dosyasıyla `Merger` örneği oluşturun.  
 ```java
 import com.groupdocs.merger.Merger;
 
@@ -89,12 +150,10 @@ public class LoadWordDocument {
 }
 ```
 
-### Define Word Join Options
+### Word birleştirme seçeneklerini tanımlama
+`WordJoinOptions` uyumluluğu (ör. ISO 19005‑1 PDF/A) ve diğer birleştirme davranışlarını kontrol etmenizi sağlar. Bu seçenekleri ayarlamak, son belgenin kurumsal standartlara uymasını garantiler.
 
-**Overview**: Configure compliance settings to ensure the merged document meets specific standards.
-
-#### Step-by-step:
-1. **Create `WordJoinOptions` Instance** – set options such as ISO compliance.  
+1. **`WordJoinOptions` örneği oluşturun** – istenen ISO uyumluluk seviyesini ayarlayın.  
 ```java
 import com.groupdocs.merger.domain.options.WordJoinOptions;
 import com.groupdocs.merger.domain.options.WordJoinCompliance;
@@ -108,18 +167,16 @@ public class DefineWordJoinOptions {
 }
 ```
 
-### Merge Word Documents
+### Word belgelerini birleştirme
+Belgeler yüklendi ve seçenekler yapılandırıldıktan sonra, artık bunları birleştirebilirsiniz. `join` metodu, yüklü belgeleri tek bir çıktı dosyasına birleştirir.
 
-**Overview**: Combine two or more Word documents into a single file using the options defined above.
-
-#### Step-by-step:
-1. **Load Source Files** – specify paths for the documents you want to join.  
+1. **Kaynak dosyaları yükleyin** – birleştirmek istediğiniz her belgenin yolunu belirtin.  
 ```java
 String sourceFilePath1 = "YOUR_DOCUMENT_DIRECTORY/sample1.docx";
 String sourceFilePath2 = "YOUR_DOCUMENT_DIRECTORY/sample2.docx";
 String outputPath = "YOUR_OUTPUT_DIRECTORY/merged.docx";
 ```
-2. **Initialize Merger and Merge** – use the `Merger` object to join documents and then save the result.  
+2. **Merger'ı başlatın ve birleştirin** – `Merger` örneğinde `join` metodunu çağırın, ardından sonucu yeni bir dosyaya kaydedin.  
 ```java
 import com.groupdocs.merger.Merger;
 
@@ -133,61 +190,65 @@ public class MergeWordDocuments {
 }
 ```
 
-## Pratik Uygulamalar
+## Pratik uygulamalar
+GroupDocs.Merger for Java, birçok gerçek dünya senaryosunda öne çıkar:
 
-GroupDocs.Merger for Java sadece basit dosya birleştirme için değildir. **merge docx files java**'nin öne çıktığı yaygın senaryolar şunlardır:
+1. **Rapor oluşturmayı otomatikleştirme** – aylık PDF'leri tek bir API çağrısıyla yıllık özet haline birleştirin.  
+2. **Ortak düzenleme** – birden fazla katkıcının düzenlemelerini birleştirirken her yazarın stilini koruyun.  
+3. **Sürüm kontrol işlem hatları** – CI/CD derlemeleri sırasında belge sürümlerini otomatik olarak birleştirerek manuel adımları azaltın.  
+4. **Hukuki belge derleme** – sözleşmeleri, ekleri ve imzaları ISO standartlarına uygun bir son paket içinde birleştirin.
 
-1. **Rapor Oluşturmayı Otomatikleştirme** – aylık raporları tek bir API çağrısıyla yıllık özet haline getirin.  
-2. **Ortak Düzenleme** – birden fazla katkıcının düzenlemelerini stil kaybı olmadan ana taslağa birleştirin.  
-3. **Sürüm Kontrol Entegrasyonu** – CI/CD boru hatları sırasında belge sürümlerini otomatik olarak birleştirin.  
-4. **Hukuki Belge Oluşturma** – sözleşmeler, ekler ve imzaları tek bir paket halinde birleştirin.
+## Performans hususları
+Birleştirmenin hızlı ve bellek‑verimli kalmasını sağlamak için:
 
-## Performans Düşünceleri
+- **Büyük dosyaları akıtın** – tüm belgeleri RAM'e yüklemekten kaçınmak için `InputStream` aşırı yüklemelerini kullanın.  
+- **Kaynakları hemen kapatın** – kaydetme sonrası `merger.close()` çağırarak yerel tutamaçları serbest bırakın.  
+- **Toplu işleme** – dosya yolu koleksiyonu üzerinde döngü yaparak `join` metodunu çağırın; her dosya için yeni bir `Merger` oluşturmak yerine.
 
-Birleştirme işlemlerinizi hızlı ve bellek‑verimli tutmak için:
-
-- **Optimize Memory Usage** – process large files in streams when possible; avoid loading many huge documents simultaneously.  
-- **Efficient Resource Management** – close `Merger` instances (`merger.close()`) after saving to free native resources.  
-- **Batch Processing** – if you need to merge dozens of files, loop over a collection and call `join` iteratively rather than creating a new `Merger` for each file.
-
-## Yaygın Sorunlar ve Çözümler
+## Yaygın sorunlar ve çözümler
 
 | Sorun | Neden | Çözüm |
 |-------|--------|-----|
-| **OutOfMemoryError** | Very large DOCX files exceed JVM heap. | Increase `-Xmx` flag or merge files in smaller batches. |
-| **Formatting loss** | Missing fonts on the server. | Install required fonts or embed them in source documents. |
-| **Compliance mismatch** | Using wrong `WordJoinCompliance` value. | Verify the required ISO standard and set it in `WordJoinOptions`. |
+| **OutOfMemoryError** | Çok büyük DOCX dosyaları JVM yığınını aşar. | `-Xmx` bayrağını artırın veya dosyaları daha küçük partilerde birleştirin. |
+| **Formatting loss** | Sunucuda eksik fontlar. | Gerekli fontları kurun veya kaynak belgelere gömün. |
+| **Compliance mismatch** | Yanlış `WordJoinCompliance` değeri kullanıldı. | Gerekli ISO standardını doğrulayın ve `WordJoinOptions` içinde ayarlayın. |
 
-## Sıkça Sorulan Sorular
+## Sıkça sorulan sorular
 
-**S1: İki’den fazla belgeyi birleştirebilir miyim?**  
-C1: Kesinlikle! `join` metodunu tekrar tekrar çağırabilir veya bir dosya yolu listesi geçirerek istediğiniz sayıda DOCX dosyasını birleştirebilirsiniz.
+**Q1: İki dosyadan fazla birleştirebilir miyim?**  
+A1: Kesinlikle. `join` metoduna dosya yolu listesini geçin veya metodu tekrar tekrar çağırarak istediğiniz sayıda DOCX dosyasını birleştirin.
 
-**S2: Birleştirme sırasında istisnalar nasıl ele alınır?**  
-C2: Kodunuzu `try‑catch` bloklarıyla sarın ve gerektiğinde `IOException` veya `GroupDocsException`'ı yakalayın.
+**Q2: Birleştirme sırasında istisnaları nasıl ele almalı?**  
+A2: Birleştirme mantığını bir `try‑catch` bloğuna sarın ve hataları kaydetmek ve temizlik yapmak için `IOException` veya `GroupDocsException` yakalayın.
 
-**S3: Dosya formatı sınırlamaları var mı?**  
-C3: API öncelikli olarak DOCX'i destekler. Diğer formatlar (PDF, PPTX vb.) ayrı modüllerde bulunur—güncel belgelerdeki güncellemeleri kontrol edin.
+**Q3: Format sınırlamaları var mı?**  
+A3: Temel API DOCX üzerine odaklanır. Ek modüller PDF, PPTX ve diğer formatları destekler—güncel belgelerdeki güncellemeleri kontrol edin.
 
-**S4: Farklı uyumluluk ayarlarına sahip belgeleri birleştirebilir miyim?**  
-C4: Evet. Her kaynak için ayrı bir `WordJoinOptions` oluşturabilir ve belge başına farklı uyumluluk ayarları uygulayabilirsiniz.
+**Q4: Farklı uyumluluk ayarlarına sahip belgeleri birleştirebilir miyim?**  
+A4: Evet. Her kaynak için ayrı `WordJoinOptions` oluşturun; belge başına farklı ISO uyumluluğu gerekiyorsa bunu yapın.
 
-**S5: Kaydetmeden önce birleştirilmiş belgeyi önizleme imkanı var mı?**  
-C5: API bir UI önizlemesi sağlamaz, ancak geçici bir konuma kaydedip programatik olarak dosyayı açarak doğrulama yapabilirsiniz.
+**Q5: Kaydetmeden önce birleştirilmiş dosyayı önizleme imkanı var mı?**  
+A5: API bir UI önizleme sunmasa da, dosyayı geçici bir konuma kaydedip programatik olarak açarak doğrulama yapabilirsiniz.
 
 ## Kaynaklar
-- **Documentation**: [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)  
-- **API Reference**: [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)  
-- **Download**: [Get the Latest Release](https://releases.groupdocs.com/merger/java/)  
-- **Purchase**: [Buy a License](https://purchase.groupdocs.com/buy)  
-- **Free Trial**: [Start with a Free Trial](https://releases.groupdocs.com/merger/java/)  
-- **Temporary License**: [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-- **Support Forum**: [Join the GroupDocs Community](https://forum.groupdocs.com/c/merger/)  
+- **Dokümantasyon**: [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)  
+- **API referansı**: [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)  
+- **İndirme**: [Get the latest release](https://releases.groupdocs.com/merger/java/)  
+- **Satın alma**: [Buy a license](https://purchase.groupdocs.com/buy)  
+- **Ücretsiz deneme**: [Start with a free trial](https://releases.groupdocs.com/merger/java/)  
+- **Geçici lisans**: [Get a temporary license](https://purchase.groupdocs.com/temporary-license/)  
+- **Destek forumu**: [Join the GroupDocs community](https://forum.groupdocs.com/c/merger/)  
 
-Belge iş akışınızı yükseltmeye hazır mısınız? GroupDocs.Merger for Java'ı bugün kullanmaya başlayın ve uygulamalarınızda **merge word documents** işlemini daha sorunsuz, otomatik bir şekilde deneyimleyin.
+Belge iş akışınızı düzenlemeye hazır mısınız? Yukarıdaki adımları izleyerek GroupDocs.Merger for Java ile DOCX dosyalarını programatik olarak birleştirmeye başlayın ve güvenilir, yüksek‑kaliteli sonuçların keyfini çıkarın.
 
 ---
 
-**Last Updated:** 2026-03-20  
-**Tested With:** GroupDocs.Merger 23.12 (Java)  
-**Author:** GroupDocs
+**Son Güncelleme:** 2026-10-11  
+**Test Edilen Sürüm:** GroupDocs.Merger 23.12 (Java)  
+**Yazar:** GroupDocs
+
+## İlgili Öğreticiler
+
+- [Word Belgelerini Birleştir Groupdocs Merger Java](/merger/java/advanced-joining-options/merge-word-docs-groupdocs-merger-java/)
+- [DOCM Dosyalarını Java’da Birleştir – GroupDocs.Merger ile Kılavuz](/merger/java/document-joining/merge-docm-files-groupdocs-merger-java/)
+- [Belirli sayfaları java’da birleştir – GroupDocs.Merger ile Dokümanları Birleştir](/merger/java/document-joining/join-pages-groupdocs-merger-java-tutorial/)

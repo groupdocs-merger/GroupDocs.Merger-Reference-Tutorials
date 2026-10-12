@@ -1,154 +1,187 @@
 ---
 additionalTitle: GroupDocs API References
-date: 2026-03-17
-description: สำรวจ API การรวมเอกสารของ GroupDocs.Merger เพื่อการรวม แบ่ง และประมวลผลเอกสาร
-  PDF, ไฟล์ Office, รูปภาพ และอื่น ๆ อย่างรวดเร็วและข้ามแพลตฟอร์ม
+date: 2026-10-11
+description: สำรวจ GroupDocs.Merger document merging API สำหรับการ merging, splitting
+  ที่รวดเร็ว, cross‑platform และการประมวลผล PDFs, Office files, images และอื่น ๆ
 is_root: true
+keywords:
+- groupdocs.merger document merging api
+- document merging and splitting
+- cross-platform document processing
+lastmod: 2026-10-11
 linktitle: GroupDocs.Merger Tutorials
-title: GroupDocs.Merger API การรวมเอกสาร – คู่มือครบถ้วนสำหรับการรวมและแยกเอกสาร
+og_description: GroupDocs.Merger document merging API ช่วยให้คุณสามารถ merge, split,
+  reorder, และ secure เอกสารได้กว่า 50+ รูปแบบ. เรียนรู้การ integration ที่รวดเร็ว,
+  cross‑platform สำหรับ .NET และ Java.
+og_image_alt: Guide to using GroupDocs.Merger for merging and splitting documents
+og_title: GroupDocs.Merger document merging API – คู่มือฉบับสมบูรณ์
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-11'
+  description: Explore the GroupDocs.Merger document merging API for fast, cross‑platform
+    document merging, splitting, and processing of PDFs, Office files, images and
+    more.
+  headline: GroupDocs.Merger document merging API – complete guide to merging & splitting
+  type: TechArticle
+- questions:
+  - answer: Yes, with a valid GroupDocs license. A free trial is available for evaluation.
+    question: Can I use the API in a commercial product?
+  - answer: Absolutely. You can open, modify, and re‑secure encrypted PDFs using the
+      same API calls.
+    question: Does the API support password‑protected PDFs?
+  - answer: .NET Standard 2.0, .NET Framework 2.0+, .NET Core 2.0+, Mono 1.2+; Java
+      7, 8, and 10+ are fully supported.
+    question: Which .NET and Java versions are compatible?
+  - answer: It streams data and uses memory‑efficient algorithms, allowing you to
+      process multi‑gigabyte documents without exhausting system resources.
+    question: How does the API handle very large files?
+  - answer: While the core merging API focuses on structural operations, you can combine
+      it with GroupDocs.Parser for advanced text extraction and OCR needs.
+    question: Is there built‑in support for OCR or text extraction?
+  type: FAQPage
+tags:
+- document merging
+- groupdocs.merger
+- .net document processing
+- java document processing
+title: GroupDocs.Merger document merging API – คู่มือฉบับสมบูรณ์สำหรับการ merging
+  & splitting
 type: docs
 url: /th/
 weight: 11
 ---
 
-.
+# GroupDocs.Merger document merging API – คู่มือฉบับเต็มสำหรับการรวมและแยกไฟล์
 
-Now ensure no missing elements.
+The **GroupDocs.Merger document merging API** ให้วิธีที่เร็วและข้ามแพลตฟอร์มในการรวม, แยก, และจัดการกับประเภทเอกสารที่หลากหลายโดยตรงจากแอปพลิเคชัน .NET หรือ Java ของคุณ ไม่ว่าคุณจะต้องการรวม PDF หลายไฟล์เป็นรายงานเดียว, แยกสัญญาขนาดใหญ่เป็นหน้าแยก, หรือจัดลำดับสไลด์ในงานนำเสนอ, API นี้จัดการได้ด้วยเพียงไม่กี่บรรทัดของโค้ด.
 
-Check for any code blocks: none.
-
-Check for shortcodes: none.
-
-Check for images: none.
-
-All links preserved.
-
-Now produce final content.# GroupDocs.Merger Document Merging API – คู่มือฉบับสมบูรณ์สำหรับการรวมและแยกไฟล์
-
-**GroupDocs.Merger document merging API** ให้วิธีที่รวดเร็วและข้ามแพลตฟอร์มในการรวม, แยก, และจัดการกับประเภทเอกสารหลากหลายโดยตรงจากแอปพลิเคชัน .NET หรือ Java ของคุณ ไม่ว่าคุณจะต้องการรวม PDF หลายไฟล์เป็นรายงานเดียว, แยกสัญญาขนาดใหญ่เป็นหน้าแยก, หรือจัดลำดับสไลด์ในงานนำเสนอ API นี้ก็ทำได้ด้วยเพียงไม่กี่บรรทัดของโค้ด
-
-## คำตอบอย่างรวดเร็ว
-- **API ทำอะไร?** มันรวม, แยก, จัดลำดับใหม่, และรักษาความปลอดภัยของเอกสารในรูปแบบกว่า 50 แบบ.  
+## คำตอบด่วน
+- **API ทำอะไร?** มันรวม, แยก, จัดลำดับใหม่, และปกป้องเอกสารในรูปแบบกว่า 50 แบบ.  
 - **แพลตฟอร์มที่รองรับคืออะไร?** .NET (Standard, Framework, Core, Mono) และ Java (J2SE 7‑10).  
-- **ต้องการซอฟต์แวร์ภายนอกหรือไม่?** ไม่—ไม่มีการพึ่งพา Microsoft Office หรือ Adobe.  
-- **สามารถปกป้องเอกสารได้หรือไม่?** ได้, คุณสามารถเพิ่ม, ลบ, หรืออัปเดตรหัสผ่านและสิทธิ์ได้.  
-- **มีขีดจำกัดขนาดไฟล์หรือไม่?** API ถูกออกแบบให้ทำงานได้อย่างมีประสิทธิภาพกับไฟล์ขนาดใหญ่และการประมวลผลเป็นชุด.  
+- **ต้องใช้ซอฟต์แวร์ภายนอกหรือไม่?** ไม่—ไม่มีการพึ่งพา Microsoft Office หรือ Adobe.  
+- **ฉันสามารถปกป้องเอกสารได้หรือไม่?** ได้, คุณสามารถเพิ่ม, ลบ, หรืออัปเดตรหัสผ่านและสิทธิ์ได้.  
+- **มีขีดจำกัดขนาดไฟล์หรือไม่?** API นี้ได้รับการปรับให้เหมาะกับไฟล์ขนาดใหญ่และการดำเนินการแบบแบตช์.  
 
 ## GroupDocs.Merger document merging API คืออะไร?
-GroupDocs.Merger document merging API เป็นไลบรารีที่มุ่งเน้นนักพัฒนา ซึ่งทำให้การจัดการรูปแบบเอกสารหลายรูปแบบเป็นเรื่องง่าย มันทำให้คุณสามารถรวมไฟล์, แยกไฟล์ตามหน้า หรือช่วง, และดำเนินการขั้นสูงบนหน้าได้ทั้งหมดโดยยังคงรักษาเลย์เอาต์และเมตาดาต้าเดิมไว้.
+โหลดไฟล์ของคุณและเรียกใช้เมธอด merge หรือ split ที่เหมาะสม – นั่นคือกระบวนการทำงานหลักของ GroupDocs.Merger document merging API. มันให้อินเทอร์เฟซเดียวที่สอดคล้องสำหรับการจัดการ PDF, เอกสาร Office, รูปภาพ, ไฟล์อาร์ไคฟ์, และอื่น ๆ พร้อมคงรูปแบบ, เมตาดาต้า, และการตั้งค่าความปลอดภัย.
+
+GroupDocs.Merger document merging API เป็นไลบรารีที่มุ่งเน้นนักพัฒนา ซึ่งทำให้ซับซ้อนของการจัดการหลายรูปแบบเอกสารเป็นนามธรรม ช่วยให้คุณสามารถรวมไฟล์โดยโปรแกรม, แยกไฟล์ตามหน้า หรือช่วง, และใช้การดำเนินการหน้าขั้นสูง—all while preserving the original layout and metadata.
 
 ## ทำไมต้องเลือก GroupDocs.Merger document merging API?
-- **ความสอดคล้องข้ามแพลตฟอร์ม:** เขียนโค้ดครั้งเดียว, รันบน Windows, Linux หรือ macOS.  
-- **รองรับรูปแบบไฟล์หลากหลาย:** ทำงานกับ PDF, Word, Excel, PowerPoint, รูปภาพ, แผนภาพ, ไฟล์บีบอัด, และอื่น ๆ.  
-- **ไม่มีการพึ่งพาภายนอก:** ไม่ต้องติดตั้ง Office หรือ Adobe ซึ่งทำให้การปรับใช้ง่ายขึ้น.  
-- **ประสิทธิภาพสูง:** ออกแบบมาสำหรับเอกสารขนาดใหญ่และการประมวลผลเป็นกลุ่ม, ลดการใช้หน่วยความจำ.  
-- **ความปลอดภัยในตัว:** สามารถเพิ่มหรือเอารหัสผ่านออกและตั้งค่าสิทธิ์ได้อย่างง่ายดาย.  
+คุณจะได้ความสอดคล้องข้ามแพลตฟอร์ม, การสนับสนุนรูปแบบที่กว้าง, ไม่มีการพึ่งพาภายนอก, ประสิทธิภาพสูง, และความปลอดภัยในตัว—ทั้งหมดในแพคเกจเดียว. API สตรีมข้อมูล, ดังนั้นแม้ไฟล์หลายกิกะไบต์ก็จะถูกประมวลผลด้วยการใช้หน่วยความจำต่ำ, ทำให้เหมาะกับงานแบตช์ฝั่งเซิร์ฟเวอร์.
 
-## ปรับเปลี่ยนวิธีการจัดการเอกสารของคุณบนหลายแพลตฟอร์ม
-GroupDocs.Merger ให้โซลูชันข้ามแพลตฟอร์มที่ทรงพลังสำหรับการจัดการเอกสาร ซึ่งทำให้กระบวนการทำงานของนักพัฒนากับไฟล์ในแอปพลิเคชันของพวกเขาง่ายขึ้น API ครบวงจรของเราช่วยให้คุณสามารถรวมเอกสารหลายไฟล์เป็นหนึ่งไฟล์, แยกเอกสารเป็นส่วนย่อย, จัดลำดับหน้าใหม่, ใช้ตัวเลือกความปลอดภัย, และอื่น ๆ อีกมาก ด้วยโค้ดเพียงเล็กน้อยและประสิทธิภาพสูงสุด.
+## ปรับเปลี่ยนวิธีการจัดการเอกสารของคุณข้ามหลายแพลตฟอร์ม
+GroupDocs.Merger ให้โซลูชันข้ามแพลตฟอร์มที่ทรงพลังสำหรับการจัดการเอกสารที่ทำให้การทำงานของนักพัฒนากับไฟล์ในแอปพลิเคชันเป็นเรื่องง่าย API ของเราช่วยให้คุณรวมหลายเอกสารเป็นไฟล์เดียว, แยกเอกสารเป็นส่วนย่อย, จัดลำดับหน้า, ใช้ตัวเลือกความปลอดภัย, และอื่น ๆ อีกมาก—ทั้งหมดด้วยโค้ดน้อยที่สุดและประสิทธิภาพสูงสุด.
 
-ไม่ว่าคุณจะพัฒนาในสภาพแวดล้อม .NET หรือ Java, GroupDocs.Merger มอบความสามารถในการประมวลผลเอกสารที่สอดคล้องและมีประสิทธิภาพสูง ซึ่งทำงานได้อย่างราบรื่นกับไฟล์รูปแบบยอดนิยมกว่า 50 แบบ รวมถึง PDF, เอกสาร Office, รูปภาพ, และอื่น ๆ.
+ไม่ว่าคุณจะพัฒนาในสภาพแวดล้อม .NET หรือ Java, GroupDocs.Merger มอบความสามารถการประมวลผลเอกสารที่สอดคล้อง, มีประสิทธิภาพสูง, ทำงานร่วมกับรูปแบบไฟล์ยอดนิยมกว่า 50 แบบรวมถึง PDF, เอกสาร Office, รูปภาพ, และอื่น ๆ.
 
-## คุณสมบัติหลักและความสามารถ
-- **การรวมเอกสารอย่างครบวงจร** – รวมเอกสารทั้งหมดหรือหน้าเฉพาะจากหลายแหล่งเป็นไฟล์เดียวที่ต่อเนื่อง.  
-- **รองรับการข้ามรูปแบบ** – รวมไฟล์รูปแบบต่าง ๆ เป็นเอกสารเดียว (เช่น DOC, XLSX, และรูปภาพเป็น PDF ไฟล์เดียว).  
-- **การแยกเอกสารอัจฉริยะ** – แบ่งเอกสารตามหมายเลขหน้า, ช่วง, หรือดึงหน้าที่ต้องการเป็นไฟล์แยก.  
-- **การดำเนินการหน้าขั้นสูง** – ย้าย, ลบ, หมุน, สลับ, และดึงหน้าด้วยการควบคุมที่แม่นยำ.  
-- **การจัดการความปลอดภัย** – เพิ่ม, ลบ, หรืออัปเดตรหัสผ่านและสิทธิ์ของเอกสาร.  
-- **รองรับ OLE Object** – แทรกเอกสารเป็นวัตถุ OLE ภายในไฟล์ Word, Excel, PowerPoint, และ Visio.  
-- **ไม่มีการพึ่งพาภายนอก** – ประมวลผลเอกสารโดยไม่ต้องใช้ซอฟต์แวร์ Microsoft Office หรือ Adobe.  
-- **ประสิทธิภาพสูง** – ปรับให้เหมาะกับการประมวลผลเอกสารขนาดใหญ่และการทำงานเป็นชุดอย่างมีประสิทธิภาพ.  
+## คุณลักษณะหลักและความสามารถ
+- **การรวมเอกสารอย่างครอบคลุม** – Combine entire documents or specific pages from multiple sources into a single cohesive file.  
+- **การสนับสนุนข้ามรูปแบบ** – Merge different file formats into a unified document (e.g., DOC, XLSX, and images into a single PDF).  
+- **การแยกเอกสารอัจฉริยะ** – Divide documents by page numbers, ranges, or extract specific pages as separate files.  
+- **การดำเนินการหน้าขั้นสูง** – Move, remove, rotate, swap, and extract pages with precise control.  
+- **การจัดการความปลอดภัย** – Add, remove, or update document passwords and permissions.  
+- **การสนับสนุนวัตถุ OLE** – Insert documents as OLE objects within Word, Excel, PowerPoint, and Visio files.  
+- **ไม่มีการพึ่งพาภายนอก** – Process documents without requiring Microsoft Office or Adobe software.  
+- **ประสิทธิภาพสูง** – Optimized for processing large documents and batch operations efficiently.
 
 ## รูปแบบไฟล์ที่รองรับ
-GroupDocs.Merger ทำงานกับไฟล์รูปแบบกว่า 50 แบบในหลายหมวดหมู่:
-- **Documents**: PDF, DOC, DOCX, RTF, ODT, XPS, EPUB, HTML  
-- **Spreadsheets**: XLS, XLSX, XLSM, XLSB, ODS, CSV, TSV  
-- **Presentations**: PPT, PPTX, PPS, PPSX, ODP  
-- **Images**: JPG, PNG, BMP, GIF, TIFF, SVG  
-- **Diagrams**: VSDX, VSDM, VSSX, VSTX, VDX, VSX, VTX  
-- **Archives**: ZIP, TAR, 7Z  
-- **และอื่น ๆ อีกมาก**  
+GroupDocs.Merger works with over 50 file formats across multiple categories:
 
-## [GroupDocs.Merger สำหรับ .NET Tutorials](./net)
+- **เอกสาร**: PDF, DOC, DOCX, RTF, ODT, XPS, EPUB, HTML  
+- **สเปรดชีต**: XLS, XLSX, XLSM, XLSB, ODS, CSV, TSV  
+- **งานนำเสนอ**: PPT, PPTX, PPS, PPSX, ODP  
+- **รูปภาพ**: JPG, PNG, BMP, GIF, TIFF, SVG  
+- **แผนภาพ**: VSDX, VSDM, VSSX, VSTX, VDX, VSX, VTX  
+- **ไฟล์อาร์ไคฟ์**: ZIP, TAR, 7Z  
+- **และอื่น ๆ อีกมาก**
 
-ค้นพบวิธีการรวมความสามารถการประมวลผลเอกสารที่ทรงพลังเข้าสู่แอปพลิเคชัน .NET ของคุณ คำแนะนำ .NET อย่างครบถ้วนของเราจะพาคุณผ่านทุกแง่มุมของ GroupDocs.Merger API ตั้งแต่การดำเนินการพื้นฐานจนถึงสถานการณ์การใช้งานขั้นสูง.
+## [บทเรียน GroupDocs.Merger สำหรับ .NET](./net)
 
-ด้วย GroupDocs.Merger สำหรับ .NET, คุณสามารถสร้างโซลูชันการจัดการเอกสารที่แข็งแรงซึ่งทำงานได้กับเฟรมเวิร์ก .NET ต่าง ๆ รวมถึง .NET Standard 2.0, .NET Framework 2.0+, .NET Core 2.0+, และ Mono Framework 1.2+.
+Discover how to integrate powerful document processing capabilities into your .NET applications. Our comprehensive .NET tutorials guide you through every aspect of the GroupDocs.Merger API, from basic operations to advanced implementation scenarios.
 
-### คำแนะนำ .NET ที่จำเป็น
-- [รวมและบีบอัดไฟล์](./net/merge-compress-files/) - เรียนรู้การรวมและบีบอัดรูปแบบไฟล์บีบอัด (7z, TAR, ZIP) อย่างมีประสิทธิภาพ  
+With GroupDocs.Merger for .NET, you can create robust document management solutions that work across various .NET frameworks including .NET Standard 2.0, .NET Framework 2.0+, .NET Core 2.0+, and Mono Framework 1.2+.
+
+### บทเรียน .NET ที่จำเป็น
+
+- [รวมและบีบอัดไฟล์](./net/merge-compress-files/) - เรียนรู้การรวมและบีบอัดรูปแบบไฟล์อาร์ไคฟ์ (7z, TAR, ZIP) อย่างมีประสิทธิภาพ  
 - [การรวมรูปภาพ](./net/image-merging/) - เชี่ยวชาญเทคนิคการรวมรูปแบบภาพต่าง ๆ (BMP, GIF, PNG, SVG, TIFF)  
-- [การรวมเอกสาร](./net/document-merging/) - รวม DOC, DOCX, PDF และรูปแบบเอกสารอื่น ๆ อย่างไร้รอยต่อ  
-- [การรวมสเปรดชีต](./net/spreadsheet-merging/) - รวมไฟล์ Excel พร้อมรักษาข้อมูล, สูตร, และการจัดรูปแบบ  
+- [การรวมเอกสาร](./net/document-merging/) - รวม DOC, DOCX, PDF และรูปแบบเอกสารอื่น ๆ อย่างราบรื่น  
+- [การรวมสเปรดชีต](./net/spreadsheet-merging/) - รวมไฟล์ Excel พร้อมคงข้อมูล, สูตร, และการจัดรูปแบบ  
 - [การรวม Visio](./net/visio-merging/) - รวมแผนภาพและภาพวาด Visio ด้วยการควบคุมที่แม่นยำ  
-- [การรวมงานนำเสนอ](./net/presentation-merging/) - รวมงานนำเสนอ PowerPoint พร้อมรักษาสไลด์และแอนิเมชัน  
+- [การรวมงานนำเสนอ](./net/presentation-merging/) - รวมงานนำเสนอ PowerPoint พร้อมคงสไลด์และแอนิเมชัน  
 
 ### การดำเนินการ .NET ขั้นสูง
-- [การโหลดเอกสาร](./net/document-loading/) - สำรวจเทคนิคต่าง ๆ สำหรับการโหลดเอกสารจากแหล่งที่มาหลากหลาย  
+
+- [การโหลดเอกสาร](./net/document-loading/) - สำรวจเทคนิคต่าง ๆ สำหรับการโหลดเอกสารจากแหล่งต่าง ๆ  
 - [ข้อมูลเอกสาร](./net/document-information/) - ดึงและวิเคราะห์เมตาดาต้าและคุณสมบัติของเอกสาร  
 - [การรวมเอกสาร](./net/document-joining/) - เรียนรู้ตัวเลือกการรวมเอกสารขั้นสูงและการปรับแต่ง  
 - [การรวมตามรูปแบบเฉพาะ](./net/format-specific-merging/) - ค้นหาเทคนิคการรวมที่ปรับให้เหมาะกับรูปแบบไฟล์เฉพาะ  
 - [ตัวเลือกการรวมขั้นสูง](./net/advanced-joining-options/) - เชี่ยวชาญสถานการณ์การรวมเอกสารที่ซับซ้อน  
-- [ความปลอดภัยของเอกสาร](./net/document-security/) - นำการปกป้องเอกสารที่แข็งแรงด้วยการจัดการรหัสผ่าน  
-- [การดำเนินการหน้ากระดาษ](./net/page-operations/) - จัดการหน้าของเอกสารด้วยการควบคุมที่แม่นยำ  
+- [ความปลอดภัยของเอกสาร](./net/document-security/) - นำการปกป้องเอกสารที่แข็งแกร่งด้วยการจัดการรหัสผ่าน  
+- [การดำเนินการหน้า](./net/page-operations/) - จัดการหน้าของเอกสารด้วยการควบคุมที่แม่นยำ  
 - [การสกัดเอกสาร](./net/document-extraction/) - สกัดเนื้อหาเฉพาะจากเอกสารขนาดใหญ่  
 - [การนำเข้าเอกสาร](./net/document-import/) - นำเข้าข้อมูลภายนอกเข้าสู่เอกสาร  
 - [การดำเนินการรูปภาพ](./net/image-operations/) - ประมวลผลและจัดการไฟล์รูปภาพอย่างมีประสิทธิภาพ  
-- [การแยกเอกสาร](./net/document-splitting/) - แบ่งเอกสารโดยใช้กลยุทธ์การแยกต่าง ๆ (document splitting)  
+- [การแยกเอกสาร](./net/document-splitting/) - แบ่งเอกสารโดยใช้กลยุทธ์การแยกต่าง ๆ (การแยกเอกสาร)  
 - [การดำเนินการข้อความ](./net/text-operations/) - ทำงานกับเอกสารที่เป็นข้อความอย่างมีประสิทธิภาพ  
-- [การจัดการลิขสิทธิ์](./net/licensing/) - กำหนดค่า GroupDocs.Merger อย่างถูกต้องในโปรเจกต์ของคุณ  
+- [การให้สิทธิ์ใช้งาน](./net/licensing/) - กำหนดค่า GroupDocs.Merger อย่างเหมาะสมในโครงการของคุณ  
 
-## [GroupDocs.Merger สำหรับ Java Tutorials](./java)
+## [บทเรียน GroupDocs.Merger สำหรับ Java](./java)
 
-เปลี่ยนแปลงแอปพลิเคชัน Java ของคุณด้วยความสามารถการประมวลผลเอกสารที่ทรงพลัง คำแนะนำ Java ของเรามีรายละเอียดการนำ GroupDocs.Merger ไปใช้ในสภาพแวดล้อม Java พร้อมตัวอย่างครบถ้วนที่ทำงานบนแพลตฟอร์มหลักเช่น Windows, Linux, และ macOS.
+Transform your Java applications with powerful document processing capabilities. Our Java tutorials provide detailed guidance for implementing GroupDocs.Merger in Java environments, with complete examples that work across major platforms including Windows, Linux, and macOS.
 
-GroupDocs.Merger สำหรับ Java รองรับ J2SE 7.0 (1.7), J2SE 8.0 (1.8), และ Java 10 ทำให้เข้ากันได้กับโครงการพัฒนาที่ใช้ Java ใกล้เคียงทั้งหมด.
+GroupDocs.Merger for Java supports J2SE 7.0 (1.7), J2SE 8.0 (1.8), and Java 10, making it compatible with virtually any Java‑based development project.
 
-### คำแนะนำ Java ที่จำเป็น
+### บทเรียน Java ที่จำเป็น
+
 - [การโหลดเอกสาร](./java/document-loading/) - เชี่ยวชาญเทคนิคการโหลดเอกสารจากไฟล์, สตรีม, และ URL  
-- [ข้อมูลเอกสาร](./java/document-information/) - ดึงเมตาดาต้าและคุณสมบัติที่สำคัญของเอกสาร  
+- [ข้อมูลเอกสาร](./java/document-information/) - ดึงเมตาดาต้าและคุณสมบัติที่มีค่า  
 - [การรวมเอกสาร](./java/document-joining/) - รวมไฟล์หลายไฟล์เป็นเอกสารเดียวด้วยการควบคุมที่แม่นยำ  
-- [การรวมตามรูปแบบเฉพาะ](./java/format-specific-merging/) - เรียนรู้วิธีการรวมที่ปรับให้เหมาะกับรูปแบบไฟล์ต่าง ๆ  
+- [การรวมตามรูปแบบเฉพาะ](./java/format-specific-merging/) - เรียนรู้แนวทางที่ปรับให้เหมาะกับรูปแบบไฟล์ต่าง ๆ  
 - [ตัวเลือกการรวมขั้นสูง](./java/advanced-joining-options/) - สำรวจสถานการณ์การรวมที่ซับซ้อนและการปรับแต่ง  
-- [ความปลอดภัยของเอกสาร](./java/document-security/) - นำการปกป้องเอกสารที่แข็งแรงและการควบคุมสิทธิ์ไปใช้  
+- [ความปลอดภัยของเอกสาร](./java/document-security/) - นำการปกป้องเอกสารที่แข็งแกร่งและการควบคุมสิทธิ์  
 - [การดำเนินการหน้า](./java/page-operations/) - จัดการหน้าต่าง ๆ ภายในเอกสาร  
 - [การสกัดเอกสาร](./java/document-extraction/) - สกัดเนื้อหาเฉพาะจากเอกสาร  
 - [การนำเข้าเอกสาร](./java/document-import/) - นำเข้าข้อมูลภายนอกเข้าสู่เอกสาร  
-- [การดำเนินการรูปภาพ](./java/image-operations/) - ทำงานกับไฟล์รูปภาพและการแปลงรูปแบบ  
-- [การแยกเอกสาร](./java/document-splitting/) - แบ่งเอกสารโดยใช้กลยุทธ์การแยกต่าง ๆ (document splitting)  
+- [การดำเนินการรูปภาพ](./java/image-operations/) - ทำงานกับไฟล์รูปภาพและการแปลง  
+- [การแยกเอกสาร](./java/document-splitting/) - แบ่งเอกสารโดยใช้กลยุทธ์การแยกต่าง ๆ (การแยกเอกสาร)  
 - [การดำเนินการข้อความ](./java/text-operations/) - ประมวลผลเอกสารที่เป็นข้อความอย่างมีประสิทธิภาพ  
-- [การจัดการลิขสิทธิ์](./java/licensing/) - กำหนดค่า GroupDocs.Merger ในสภาพแวดล้อม Java  
+- [การให้สิทธิ์ใช้งาน](./java/licensing/) - กำหนดค่า GroupDocs.Merger ในสภาพแวดล้อม Java  
 
 ## กรณีการใช้งานทั่วไปและประโยชน์
-- **การสร้างรายงานอัตโนมัติ:** รวม PDF และแผ่น Excel ที่ขับเคลื่อนด้วยข้อมูลเป็นรายงานเดียวสำหรับการแจกจ่าย.  
+- **การสร้างรายงานอัตโนมัติ:** Merge data‑driven PDFs and Excel sheets into a single report for distribution.  
 - **การจัดการเอกสารทางกฎหมาย:** แยกสัญญาขนาดใหญ่เป็นส่วนย่อยเพื่อการตรวจสอบและลงนามที่ง่ายขึ้น.  
-- **การย้ายเนื้อหา:** แปลงและรวมเอกสารเก่าจากหลายรูปแบบเป็นคลัง PDF มาตรฐาน.  
-- **การส่งมอบเอกสารอย่างปลอดภัย:** ใส่รหัสผ่านและกำหนดสิทธิ์ก่อนส่งไฟล์ที่เป็นความลับให้กับลูกค้า.  
+- **การย้ายเนื้อหา:** แปลงและรวมเอกสารเก่าจากหลายรูปแบบเป็นไฟล์ PDF มาตรฐาน.  
+- **การส่งมอบเอกสารอย่างปลอดภัย:** ใส่รหัสผ่านและสิทธิ์ก่อนส่งไฟล์ที่เป็นความลับให้กับลูกค้า.  
 
 ## คำถามที่พบบ่อย
-**Q: ฉันสามารถใช้ API ในผลิตภัณฑ์เชิงพาณิชย์ได้หรือไม่?**  
-A: ได้, โดยมีใบอนุญาต GroupDocs ที่ถูกต้อง. มีรุ่นทดลองฟรีสำหรับการประเมิน.
 
-**Q: API รองรับ PDF ที่มีการป้องกันด้วยรหัสผ่านหรือไม่?**  
-A: แน่นอน. คุณสามารถเปิด, แก้ไข, และตั้งค่าความปลอดภัยใหม่ให้กับ PDF ที่เข้ารหัสโดยใช้คำสั่ง API เดียวกัน.
+**ถาม: ฉันสามารถใช้ API นี้ในผลิตภัณฑ์เชิงพาณิชย์ได้หรือไม่?**  
+ตอบ: ใช่, พร้อมใบอนุญาต GroupDocs ที่ถูกต้อง. มีรุ่นทดลองฟรีสำหรับการประเมิน.
 
-**Q: เวอร์ชันของ .NET และ Java ที่เข้ากันได้คืออะไร?**  
-A: .NET Standard 2.0, .NET Framework 2.0+, .NET Core 2.0+, Mono 1.2+; Java 7, 8, และ 10+ รองรับเต็มรูปแบบ.
+**ถาม: API รองรับ PDF ที่มีการป้องกันด้วยรหัสผ่านหรือไม่?**  
+ตอบ: แน่นอน. คุณสามารถเปิด, แก้ไข, และตั้งค่าการป้องกันใหม่ให้กับ PDF ที่เข้ารหัสโดยใช้เมธอดเดียวกัน.
 
-**Q: API จัดการกับไฟล์ขนาดใหญ่มากอย่างไร?**  
-A: มันสตรีมข้อมูลและใช้ขั้นตอนอัลกอริทึมที่ประหยัดหน่วยความจำ, ทำให้คุณสามารถประมวลผลเอกสารหลายกิกะไบต์โดยไม่ทำให้ทรัพยากรระบบหมด.
+**ถาม: เวอร์ชัน .NET และ Java ใดที่เข้ากันได้?**  
+ตอบ: .NET Standard 2.0, .NET Framework 2.0+, .NET Core 2.0+, Mono 1.2+; Java 7, 8, และ 10+ รองรับเต็มที่.
 
-**Q: มีการสนับสนุน OCR หรือการสกัดข้อความในตัวหรือไม่?**  
-A: แม้ API การรวมหลักจะเน้นการดำเนินการเชิงโครงสร้าง, คุณสามารถผสานกับ GroupDocs.Parser เพื่อการสกัดข้อความและ OCR ขั้นสูง.
+**ถาม: API จัดการไฟล์ขนาดใหญ่มากอย่างไร?**  
+ตอบ: มันสตรีมข้อมูลและใช้ขั้นตอนอัลกอริทึมที่ใช้หน่วยความจำน้อย, ทำให้คุณสามารถประมวลผลเอกสารหลายกิกะไบต์โดยไม่ทำให้ระบบทรัพยากรหมด.
 
-**Q: ฉันจะเริ่มต้นอย่างรวดเร็วได้อย่างไร?**  
-A: ติดตั้งแพคเกจ NuGet (`GroupDocs.Merger`) สำหรับ .NET หรือเพิ่ม dependency ของ Maven สำหรับ Java, จากนั้นทำตามบทแนะนำ “Document Loading” เพื่อโหลดไฟล์แรกของคุณ.
+**ถาม: มีการสนับสนุน OCR หรือการสกัดข้อความในตัวหรือไม่?**  
+ตอบ: แม้ว่า API การรวมหลักจะเน้นการดำเนินการโครงสร้าง, คุณสามารถผสานกับ GroupDocs.Parser เพื่อการสกัดข้อความและ OCR ขั้นสูง.
 
-**Q: ฉันสามารถรวมไฟล์ประเภทต่าง ๆ เป็น PDF ไฟล์เดียวได้หรือไม่?**  
-A: ได้ – API สามารถรวม PDF, Word, Excel, รูปภาพ, และรูปแบบอื่น ๆ มากมายเป็นไฟล์ PDF เดียว.
+**ถาม: ฉันจะเริ่มต้นอย่างรวดเร็วได้อย่างไร?**  
+ตอบ: ติดตั้งแพคเกจ NuGet (`GroupDocs.Merger`) สำหรับ .NET หรือเพิ่ม dependency ของ Maven สำหรับ Java, แล้วทำตามบทเรียน “Document Loading” เพื่อโหลดไฟล์แรกของคุณ.
+
+**ถาม: ฉันสามารถรวมไฟล์ประเภทต่าง ๆ เป็น PDF เดียวได้หรือไม่?**  
+ตอบ: ได้ – API สามารถรวม PDF, Word, Excel, รูปภาพ, และรูปแบบอื่น ๆ จำนวนมากเป็นไฟล์ PDF เดียว.
 
 ---
 
-**อัปเดตล่าสุด:** 2026-03-17  
+**อัปเดตล่าสุด:** 2026-10-11  
 **ทดสอบด้วย:** GroupDocs.Merger 23.12 (latest stable)  
-**ผู้เขียน:** GroupDocs
+**ผู้เขียน:** GroupDocs  
+
+---

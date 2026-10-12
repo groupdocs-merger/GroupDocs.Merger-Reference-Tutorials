@@ -1,60 +1,93 @@
 ---
 additionalTitle: GroupDocs API References
-date: 2026-03-17
-description: Fedezze fel a GroupDocs.Merger dokumentumösszevonó API-t a gyors, platformközi
-  dokumentumösszevonáshoz, szétválasztáshoz és PDF-ek, Office‑fájlok, képek és egyebek
+date: 2026-10-11
+description: Fedezze fel a GroupDocs.Merger dokumentum egyesítő API-t a gyors, platformfüggetlen
+  dokumentum egyesítéshez, szétválasztáshoz és PDF‑ek, Office fájlok, képek és egyebek
   feldolgozásához.
 is_root: true
-linktitle: GroupDocs.Merger Tutorials
-title: GroupDocs.Merger dokumentum-összevonó API – Teljes útmutató az egyesítéshez
-  és felosztáshoz
+keywords:
+- groupdocs.merger document merging api
+- document merging and splitting
+- cross-platform document processing
+lastmod: 2026-10-11
+linktitle: GroupDocs.Merger oktatóanyagok
+og_description: A GroupDocs.Merger dokumentum egyesítő API lehetővé teszi dokumentumok
+  egyesítését, szétválasztását, átrendezését és védelmét több mint 50 formátumban.
+  Ismerje meg a gyors, platformfüggetlen integrációt .NET és Java környezetben.
+og_image_alt: Guide to using GroupDocs.Merger for merging and splitting documents
+og_title: GroupDocs.Merger dokumentum egyesítő API – teljes útmutató
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-11'
+  description: Explore the GroupDocs.Merger document merging API for fast, cross‑platform
+    document merging, splitting, and processing of PDFs, Office files, images and
+    more.
+  headline: GroupDocs.Merger document merging API – complete guide to merging & splitting
+  type: TechArticle
+- questions:
+  - answer: Yes, with a valid GroupDocs license. A free trial is available for evaluation.
+    question: Can I use the API in a commercial product?
+  - answer: Absolutely. You can open, modify, and re‑secure encrypted PDFs using the
+      same API calls.
+    question: Does the API support password‑protected PDFs?
+  - answer: .NET Standard 2.0, .NET Framework 2.0+, .NET Core 2.0+, Mono 1.2+; Java
+      7, 8, and 10+ are fully supported.
+    question: Which .NET and Java versions are compatible?
+  - answer: It streams data and uses memory‑efficient algorithms, allowing you to
+      process multi‑gigabyte documents without exhausting system resources.
+    question: How does the API handle very large files?
+  - answer: While the core merging API focuses on structural operations, you can combine
+      it with GroupDocs.Parser for advanced text extraction and OCR needs.
+    question: Is there built‑in support for OCR or text extraction?
+  type: FAQPage
+tags:
+- document merging
+- groupdocs.merger
+- .net document processing
+- java document processing
+title: GroupDocs.Merger dokumentum egyesítő API – teljes útmutató az egyesítéshez
+  és szétválasztáshoz
 type: docs
 url: /hu/
 weight: 11
 ---
 
-Make sure to keep list bullet formatting.
+# GroupDocs.Merger dokumentum egyesítési API – teljes útmutató az egyesítéshez és szétválasztáshoz
 
-Also ensure that any code fences? none.
-
-Let's produce final.# GroupDocs.Merger Document Merging API – Teljes útmutató az egyesítéshez és szétválasztáshoz
-
-A **GroupDocs.Merger dokumentum egyesítési API** gyors, platformfüggetlen módot biztosít dokumentumtípusok széles skálájának egyesítésére, szétválasztására és manipulálására közvetlenül .NET vagy Java alkalmazásaiból. Akár több PDF‑et szeretne egyetlen jelentésbe egyesíteni, egy nagy szerződést külön oldalakra bontani, vagy a diák sorrendjét módosítani egy prezentációban, ez az API néhány kódsorral megoldja.
+A **GroupDocs.Merger dokumentum egyesítési API** gyors, platformfüggetlen módot biztosít dokumentumtípusok széles skálájának egyesítésére, szétválasztására és manipulálására közvetlenül .NET vagy Java alkalmazásaiból. Akár több PDF-et kell egyetlen jelentésbe egyesítenie, egy nagy szerződést egyes oldalakon szétválasztani, vagy egy prezentáció diáit átrendezni, ez az API csak néhány kódsorral megoldja.
 
 ## Gyors válaszok
-- **Mit csinál az API?** Dokumentumokat egyesít, szétválaszt, újrarendezi és védi több mint 50 formátumban.  
+- **Mi a API funkciója?** Dokumentumokat egyesít, szétválaszt, átrendez és védelemmel lát el több mint 50 formátumban.  
 - **Mely platformok támogatottak?** .NET (Standard, Framework, Core, Mono) és Java (J2SE 7‑10).  
-- **Szükség van külső szoftverre?** Nem – nincs Microsoft Office vagy Adobe függőség.  
+- **Szükség van külső szoftverre?** Nem — nincs Microsoft Office vagy Adobe függőség.  
 - **Védhetem a dokumentumokat?** Igen, hozzáadhat, eltávolíthat vagy frissíthet jelszavakat és jogosultságokat.  
-- **Van fájlméret‑korlát?** Az API nagy fájlokhoz és kötegelt műveletekhez van optimalizálva.  
+- **Van fájlméret korlát?** Az API nagy fájlok és kötegelt műveletek számára optimalizált.  
 
-## Mi az a GroupDocs.Merger dokumentum egyesítési API?
-A GroupDocs.Merger dokumentum egyesítési API egy fejlesztő‑központú könyvtár, amely elrejti a többféle dokumentumformátum kezelésének bonyolultságát. Lehetővé teszi, hogy programozottan egyesítsen fájlokat, oldalak vagy tartományok szerint szétválassza őket, és fejlett oldalműveleteket hajtson végre – mindezt az eredeti elrendezés és metaadatok megőrzésével.
+## Mi a GroupDocs.Merger dokumentum egyesítési API?
+Töltse be fájljait, és hívja meg a megfelelő egyesítési vagy szétválasztási metódusokat – ez a GroupDocs.Merger dokumentum egyesítési API alapvető munkafolyamata. Egyetlen, egységes felületet biztosít PDF-ek, Office dokumentumok, képek, archívumok és egyebek kezeléséhez, miközben megőrzi a elrendezést, metaadatokat és biztonsági beállításokat.
 
-## Miért válassza a GroupDocs.Merger dokumentum egyesítési API‑t?
-- **Platformközi konzisztencia:** Írjon egyszer, futtassa Windows, Linux vagy macOS rendszeren.  
-- **Széles formátumtámogatás:** PDF, Word, Excel, PowerPoint, képek, diagramok, archívumok és még sok más.  
-- **Nincs külső függőség:** Nincs szükség Office vagy Adobe telepítésre, ami egyszerűsíti a telepítést.  
-- **Magas teljesítmény:** Nagy dokumentumokhoz és kötegelt feldolgozáshoz tervezték, csökkentve a memóriahasználatot.  
-- **Beépített biztonság:** Könnyen hozzáadhat vagy eltávolíthat jelszavakat és beállíthat jogosultságokat.  
+A GroupDocs.Merger dokumentum egyesítési API fejlesztőközpontú könyvtár, amely elrejti a több dokumentumformátum kezelésének összetettségét. Lehetővé teszi a fájlok programozott egyesítését, oldalak vagy tartományok szerinti szétválasztását, valamint fejlett oldalműveletek alkalmazását – mindezt az eredeti elrendezés és metaadatok megőrzésével.
+
+## Miért válassza a GroupDocs.Merger dokumentum egyesítési API-t?
+Kapsz platformfüggetlen konzisztenciát, széles körű formátumtámogatást, nincsenek külső függőségek, magas teljesítményt és beépített biztonságot – mindezt egy csomagban. Az API adatfolyamot használ, így még több gigabájtos fájlok is alacsony memóriahasználattal feldolgozhatók, ami ideálissá teszi szerveroldali kötegelt feladatokhoz.
 
 ## Alakítsa át a dokumentumkezelést több platformon
-A GroupDocs.Merger egy erőteljes, platformfüggetlen megoldást nyújt a dokumentumműveletekhez, amely egyszerűsíti a fejlesztők munkáját a fájlokkal az alkalmazásaikban. Átfogó API‑nk lehetővé teszi, hogy több dokumentumot egyetlen fájlba egyesítsen, dokumentumokat kisebb komponensekre bontson, oldalakat újrarendezzen, biztonsági beállításokat alkalmazzon és még sok mást – mindezt minimális kóddal és maximális hatékonysággal.
+A GroupDocs.Merger egy erőteljes, platformfüggetlen megoldást kínál a dokumentumműveletekhez, amely egyszerűsíti a fejlesztők fájlokkal való munkáját alkalmazásaikban. Átfogó API-nk lehetővé teszi több dokumentum egyesítését egybe, dokumentumok kisebb részekre bontását, oldalak átrendezését, biztonsági beállítások alkalmazását és még sok mást – mindezt minimális kóddal és maximális hatékonysággal.
 
-Akár .NET, akár Java környezetben fejleszt, a GroupDocs.Merger következetes, nagy teljesítményű dokumentumfeldolgozási képességeket biztosít, amelyek zökkenőmentesen működnek több mint 50 népszerű fájlformátummal, köztük PDF, Office dokumentumok, képek és még sok más.
+Akár .NET, akár Java környezetben fejleszt, a GroupDocs.Merger következetes, nagy teljesítményű dokumentumfeldolgozó képességeket nyújt, amelyek zökkenőmentesen működnek több mint 50 népszerű fájlformátummal, köztük PDF, Office dokumentumok, képek és egyebek.
 
-## Kulcsfontosságú funkciók és képességek
-- **Átfogó dokumentum egyesítés** – Teljes dokumentumok vagy több forrásból származó specifikus oldalak egyetlen koherens fájlba kombinálása.  
-- **Kereszt‑formátum támogatás** – Különböző fájlformátumok egyesítése egy egységes dokumentumba (pl. DOC, XLSX és képek egyetlen PDF‑be).  
-- **Intelligens dokumentum szétválasztás** – Dokumentumok felosztása oldalszámok, tartományok alapján, vagy specifikus oldalak külön fájlként kinyerése.  
-- **Fejlett oldalműveletek** – Oldalak mozgatása, eltávolítása, forgatása, cseréje és kinyerése precíz vezérléssel.  
+## Főbb funkciók és képességek
+- **Átfogó dokumentum egyesítés** – Teljes dokumentumok vagy több forrásból származó konkrét oldalak egyetlen összefüggő fájlba kombinálása.  
+- **Keresztformátum támogatás** – Különböző fájlformátumok egyesítése egy egységes dokumentumba (pl. DOC, XLSX és képek egyetlen PDF-be).  
+- **Intelligens dokumentum szétválasztás** – Dokumentumok felosztása oldalszámok, tartományok alapján, vagy konkrét oldalak külön fájlokként történő kinyerése.  
+- **Fejlett oldalműveletek** – Oldalak mozgatása, eltávolítása, forgatása, cseréje és kinyerése pontos vezérléssel.  
 - **Biztonságkezelés** – Dokumentumjelszavak és jogosultságok hozzáadása, eltávolítása vagy frissítése.  
 - **OLE objektum támogatás** – Dokumentumok beszúrása OLE objektumként Word, Excel, PowerPoint és Visio fájlokba.  
-- **Nincs külső függőség** – Dokumentumok feldolgozása Microsoft Office vagy Adobe szoftver nélkül.  
+- **Nincsenek külső függőségek** – Dokumentumok feldolgozása Microsoft Office vagy Adobe szoftver nélkül.  
 - **Magas teljesítmény** – Nagy dokumentumok és kötegelt műveletek hatékony feldolgozására optimalizálva.  
 
 ## Támogatott fájlformátumok
-A GroupDocs.Merger több mint 50 fájlformátummal működik különböző kategóriákban:
+A GroupDocs.Merger több mint 50 fájlformátummal működik több kategóriában:
 
 - **Dokumentumok**: PDF, DOC, DOCX, RTF, ODT, XPS, EPUB, HTML  
 - **Táblázatok**: XLS, XLSX, XLSM, XLSB, ODS, CSV, TSV  
@@ -64,92 +97,86 @@ A GroupDocs.Merger több mint 50 fájlformátummal működik különböző kateg
 - **Archívumok**: ZIP, TAR, 7Z  
 - **És még sok más**  
 
-## [GroupDocs.Merger for .NET oktatóanyagok](./net)
+## [GroupDocs.Merger .NET tutorialok](./net)
 
-Ismerje meg, hogyan integrálhat erőteljes dokumentumfeldolgozási képességeket .NET alkalmazásaiba. Átfogó .NET oktatóanyagaink minden aspektusban végigvezetnek a GroupDocs.Merger API‑n, az alapműveletektől a fejlett megvalósítási forgatókönyvekig.
+Fedezze fel, hogyan integrálhatja a hatékony dokumentumfeldolgozó képességeket .NET alkalmazásaiba. Átfogó .NET tutorialjaink végigvezetnek a GroupDocs.Merger API minden aspektusán, az alapműveletektől a fejlett megvalósítási forgatókönyvekig.
 
-A GroupDocs.Merger for .NET segítségével robusztus dokumentumkezelő megoldásokat hozhat létre, amelyek különböző .NET keretrendszereken működnek, beleértve a .NET Standard 2.0, .NET Framework 2.0+, .NET Core 2.0+ és Mono Framework 1.2+ verziókat.
+A GroupDocs.Merger .NET segítségével robusztus dokumentumkezelő megoldásokat hozhat létre, amelyek különböző .NET keretrendszereken működnek, beleértve a .NET Standard 2.0, .NET Framework 2.0+, .NET Core 2.0+ és a Mono Framework 1.2+ verziókat.
 
-### Alapvető .NET oktatóanyagok
-
-- [Merge Compress Files](./net/merge-compress-files/) – Tanulja meg, hogyan egyesíthet és tömöríthet archívumformátumokat (7z, TAR, ZIP) hatékonyan  
-- [Image Merging](./net/image-merging/) – Ismerje meg a különböző képformátumok (BMP, GIF, PNG, SVG, TIFF) egyesítésének technikáit  
-- [Document Merging](./net/document-merging/) – Kombinálja a DOC, DOCX, PDF és egyéb dokumentumformátumokat zökkenőmentesen  
-- [Spreadsheet Merging](./net/spreadsheet-merging/) – Egyesítse az Excel fájlokat az adatok, képletek és formázás megőrzésével  
-- [Visio Merging](./net/visio-merging/) – Kombinálja a Visio diagramokat és rajzokat precíz vezérléssel  
-- [Presentation Merging](./net/presentation-merging/) – Csatlakoztassa a PowerPoint prezentációkat a diák és animációk megőrzésével  
+### Alapvető .NET tutorialok
+- [Fájlok egyesítése és tömörítése](./net/merge-compress-files/) - Tanulja meg hatékonyan kombinálni és tömöríteni archívumformátumokat (7z, TAR, ZIP)  
+- [Képek egyesítése](./net/image-merging/) - Ismerje meg a különböző képfájlformátumok (BMP, GIF, PNG, SVG, TIFF) egyesítésének technikáit  
+- [Dokumentumok egyesítése](./net/document-merging/) - Kombinálja a DOC, DOCX, PDF és egyéb dokumentumformátumokat zökkenőmentesen  
+- [Táblázatok egyesítése](./net/spreadsheet-merging/) - Egyesítse az Excel fájlokat, miközben megőrzi az adatokat, képleteket és formázást  
+- [Visio egyesítése](./net/visio-merging/) - Kombinálja a Visio diagramokat és rajzokat precíz vezérléssel  
+- [Prezentációk egyesítése](./net/presentation-merging/) - Csatlakoztassa a PowerPoint prezentációkat, miközben megőrzi a diákat és animációkat  
 
 ### Haladó .NET műveletek
+- [Dokumentum betöltése](./net/document-loading/) - Fedezze fel a különböző technikákat dokumentumok betöltésére különböző forrásokból  
+- [Dokumentum információk](./net/document-information/) - Kinyerje és elemezze a dokumentum metaadatait és tulajdonságait  
+- [Dokumentum összekapcsolása](./net/document-joining/) - Tanulja meg a fejlett dokumentum összekapcsolási lehetőségeket és testreszabásokat  
+- [Formátumspecifikus egyesítés](./net/format-specific-merging/) - Fedezze fel a specifikus fájlformátumokhoz optimalizált egyesítési technikákat  
+- [Fejlett összekapcsolási beállítások](./net/advanced-joining-options/) - Mesteri szintre emeli a komplex dokumentum összekapcsolási forgatókönyveket  
+- [Dokumentum biztonság](./net/document-security/) - Valósítsa meg a robusztus dokumentumvédelem jelszókezeléssel  
+- [Oldalműveletek](./net/page-operations/) - Manipulálja a dokumentum oldalait precíz vezérléssel  
+- [Dokumentum kinyerés](./net/document-extraction/) - Kinyerjen specifikus tartalmat nagyobb dokumentumokból  
+- [Dokumentum importálása](./net/document-import/) - Importáljon külső tartalmat dokumentumokba  
+- [Kép műveletek](./net/image-operations/) - Hatékonyan dolgozzon fel és manipuláljon képfájlokat  
+- [Dokumentum szétválasztás](./net/document-splitting/) - Osztja fel a dokumentumokat különböző szétválasztási stratégiákkal (document splitting)  
+- [Szöveg műveletek](./net/text-operations/) - Hatékonyan dolgozzon szövegalapú dokumentumokkal  
+- [Licencelés](./net/licensing/) - Állítsa be megfelelően a GroupDocs.Merger-t a projektjeiben  
 
-- [Document Loading](./net/document-loading/) – Fedezze fel a dokumentumok különböző forrásokból történő betöltésének technikáit  
-- [Document Information](./net/document-information/) – Kinyerje és elemezze a dokumentum metaadatait és tulajdonságait  
-- [Document Joining](./net/document-joining/) – Tanulja meg a fejlett dokumentum‑összekapcsolási lehetőségeket és testreszabásokat  
-- [Format‑Specific Merging](./net/format-specific-merging/) – Ismerje meg a specifikus fájlformátumokhoz optimalizált egyesítési technikákat  
-- [Advanced Joining Options](./net/advanced-joining-options/) – Mesteri szintű komplex dokumentum‑összekapcsolási forgatókönyvek  
-- [Document Security](./net/document-security/) – Valósítson meg robusztus dokumentumvédelmet jelszókezeléssel  
-- [Page Operations](./net/page-operations/) – Manipulálja a dokumentumoldalakat precíz vezérléssel  
-- [Document Extraction](./net/document-extraction/) – Kinyerjen specifikus tartalmakat nagyobb dokumentumokból  
-- [Document Import](./net/document-import/) – Importáljon külső tartalmakat dokumentumokba  
-- [Image Operations](./net/image-operations/) – Hatékonyan dolgozzon és manipuláljon képfájlokat  
-- [Document Splitting](./net/document-splitting/) – Ossza fel a dokumentumokat különféle szétválasztási stratégiák szerint (document splitting)  
-- [Text Operations](./net/text-operations/) – Dolgozzon szövegalapú dokumentumokkal hatékonyan  
-- [Licensing](./net/licensing/) – Állítsa be a GroupDocs.Merger megfelelő licencelését a projektjeiben  
+## [GroupDocs.Merger Java tutorialok](./java)
 
-## [GroupDocs.Merger for Java oktatóanyagok](./java)
+Alakítsa át Java alkalmazásait hatékony dokumentumfeldolgozó képességekkel. Java tutorialjaink részletes útmutatást nyújtanak a GroupDocs.Merger Java környezetben történő megvalósításához, teljes példákkal, amelyek a főbb platformokon, köztük Windows, Linux és macOS rendszereken működnek.
 
-Alakítsa át Java alkalmazásait erőteljes dokumentumfeldolgozási képességekkel. Java oktatóanyagaink részletes útmutatást nyújtanak a GroupDocs.Merger Java környezetben történő megvalósításához, teljes példákkal, amelyek a főbb platformokon (Windows, Linux, macOS) működnek.
+A GroupDocs.Merger for Java támogatja a J2SE 7.0 (1.7), J2SE 8.0 (1.8) és a Java 10 verziókat, így gyakorlatilag bármely Java‑alapú fejlesztési projekttel kompatibilis.
 
-A GroupDocs.Merger for Java támogatja a J2SE 7.0 (1.7), J2SE 8.0 (1.8) és Java 10 verziókat, így gyakorlatilag bármely Java‑alapú fejlesztési projekthez kompatibilis.
-
-### Alapvető Java oktatóanyagok
-
-- [Document Loading](./java/document-loading/) – Mesteri technikák a dokumentumok betöltéséhez fájlokból, stream‑ekből és URL‑ekből  
-- [Document Information](./java/document-information/) – Kinyerje a fontos dokumentum metaadatokat és tulajdonságokat  
-- [Document Joining](./java/document-joining/) – Kombinálja több fájlt egyetlen dokumentummá precíz vezérléssel  
-- [Format‑Specific Merging](./java/format-specific-merging/) – Tanulja meg a különböző fájlformátumokhoz optimalizált megközelítéseket  
-- [Advanced Joining Options](./java/advanced-joining-options/) – Fedezze fel a komplex összekapcsolási forgatókönyveket és testreszabásokat  
-- [Document Security](./java/document-security/) – Valósítson meg robusztus dokumentumvédelmet és jogosultságkezelést  
-- [Page Operations](./java/page-operations/) – Manipulálja a dokumentumok egyedi oldalait  
-- [Document Extraction](./java/document-extraction/) – Kinyerjen specifikus tartalmakat a dokumentumokból  
-- [Document Import](./java/document-import/) – Importáljon külső tartalmakat dokumentumokba  
-- [Image Operations](./java/image-operations/) – Dolgozzon képfájlokkal és konverziókkal  
-- [Document Splitting](./java/document-splitting/) – Ossza fel a dokumentumokat különféle szétválasztási stratégiák szerint (document splitting)  
-- [Text Operations](./java/text-operations/) – Hatékonyan kezelje a szövegalapú dokumentumokat  
-- [Licensing](./java/licensing/) – Állítsa be a GroupDocs.Merger licencelését Java környezetben  
+### Alapvető Java tutorialok
+- [Dokumentum betöltése](./java/document-loading/) - Mesteri technikák dokumentumok betöltéséhez fájlokból, adatfolyamokból és URL-ekből  
+- [Dokumentum információk](./java/document-information/) - Kinyerje a hasznos dokumentum metaadatokat és tulajdonságokat  
+- [Dokumentum összekapcsolása](./java/document-joining/) - Több fájlt egyetlen dokumentummá egyesít precíz vezérléssel  
+- [Formátumspecifikus egyesítés](./java/format-specific-merging/) - Tanulja meg a különböző fájlformátumokhoz optimalizált megközelítéseket  
+- [Fejlett összekapcsolási beállítások](./java/advanced-joining-options/) - Fedezze fel a komplex összekapcsolási forgatókönyveket és testreszabásokat  
+- [Dokumentum biztonság](./java/document-security/) - Valósítsa meg a robusztus dokumentumvédelmet és jogosultságkezelést  
+- [Oldalműveletek](./java/page-operations/) - Manipulálja a dokumentumok egyes oldalait  
+- [Dokumentum kinyerés](./java/document-extraction/) - Kinyerjen specifikus tartalmat a dokumentumokból  
+- [Dokumentum importálása](./java/document-import/) - Importáljon külső tartalmat dokumentumokba  
+- [Kép műveletek](./java/image-operations/) - Dolgozzon képfájlokkal és konverziókkal  
+- [Dokumentum szétválasztás](./java/document-splitting/) - Osztja fel a dokumentumokat különböző szétválasztási stratégiákkal (document splitting)  
+- [Szöveg műveletek](./java/text-operations/) - Hatékonyan dolgozzon szövegalapú dokumentumokkal  
+- [Licencelés](./java/licensing/) - Állítsa be a GroupDocs.Merger-t Java környezetben  
 
 ## Gyakori felhasználási esetek és előnyök
-- **Automatizált jelentéskészítés:** Adat‑vezérelt PDF‑eket és Excel‑lapokat egyetlen jelentésbe egyesít a terjesztéshez.  
-- **Jogi dokumentumkezelés:** Nagy szerződéseket különálló szakaszokra bont, megkönnyítve a felülvizsgálatot és aláírást.  
-- **Tartalom migráció:** Örökölt dokumentumok konvertálása és egyesítése több formátumból egy szabványos PDF archívumba.  
-- **Biztonságos dokumentumküldés:** Jelszavak és jogosultságok alkalmazása a bizalmas fájlok ügyfeleknek történő küldése előtt.  
+- **Automatizált jelentéskészítés:** Egyesítse az adat‑vezérelt PDF-eket és Excel táblázatokat egyetlen jelentésbe a terjesztéshez.  
+- **Jogi dokumentumkezelés:** Ossza szét a nagy szerződéseket egyes szakaszokra a könnyebb áttekintés és aláírás érdekében.  
+- **Tartalom migráció:** Konvertálja és egyesítse a régi dokumentumokat több formátumból egy szabványos PDF archívumba.  
+- **Biztonságos dokumentumküldés:** Alkalmazzon jelszavakat és jogosultságokat, mielőtt bizalmas fájlokat küldene az ügyfeleknek.  
 
 ## Gyakran ismételt kérdések
+**Q: Használhatom az API-t kereskedelmi termékben?**  
+**A:** Igen, érvényes GroupDocs licenccel. Ingyenes próba elérhető értékeléshez.
 
-**Q: Használhatom az API‑t kereskedelmi termékben?**  
-A: Igen, érvényes GroupDocs licenccel. Ingyenes próba elérhető értékeléshez.
-
-**Q: Támogatja az API a jelszóval védett PDF‑eket?**  
-A: Teljes mértékben. Megnyithatja, módosíthatja és újra‑biztonságossá teheti a titkosított PDF‑eket ugyanazokkal a hívásokkal.
+**Q: Támogatja az API a jelszóval védett PDF-eket?**  
+**A:** Teljesen. Megnyithatja, módosíthatja és újra‑biztonságossá teheti a titkosított PDF-eket ugyanazokkal az API hívásokkal.
 
 **Q: Mely .NET és Java verziók kompatibilisek?**  
-A: .NET Standard 2.0, .NET Framework 2.0+, .NET Core 2.0+, Mono 1.2+; Java 7, 8 és 10+ teljes körűen támogatott.
+**A:** .NET Standard 2.0, .NET Framework 2.0+, .NET Core 2.0+, Mono 1.2+; Java 7, 8 és 10+ teljes körűen támogatott.
 
 **Q: Hogyan kezeli az API a nagyon nagy fájlokat?**  
-A: Az adatokat stream‑eli, memória‑hatékony algoritmusokat használ, így több gigabájtos dokumentumokat is feldolgozhat anélkül, hogy kimerítené a rendszer erőforrásait.
+**A:** Az API adatfolyamot használ és memóriahatékony algoritmusokat alkalmaz, lehetővé téve több gigabájtos dokumentumok feldolgozását a rendszer erőforrásainak kimerülése nélkül.
 
-**Q: Van beépített OCR vagy szövegkinyerés támogatás?**  
-A: Bár a mag‑egybeesztő API a strukturális műveletekre fókuszál, kombinálható a GroupDocs.Parser‑rel fejlett szövegkinyerés és OCR igényekhez.
+**Q: Van beépített támogatás OCR-hez vagy szövegkinyeréshez?**  
+**A:** Bár a fő egyesítési API a strukturális műveletekre fókuszál, kombinálható a GroupDocs.Parser-rel fejlett szövegkinyerés és OCR igényekhez.
 
-**Q: Hogyan kezdjek el gyorsan?**  
-A: Telepítse a NuGet csomagot (`GroupDocs.Merger`) .NET‑hez vagy adja hozzá a Maven függőséget Java‑hoz, majd kövesse a “Document Loading” oktatóanyagot az első fájl betöltéséhez.
+**Q: Hogyan kezdjek gyorsan?**  
+**A:** Telepítse a NuGet csomagot (`GroupDocs.Merger`) .NET-hez vagy adja hozzá a Maven függőséget Java-hoz, majd kövesse a “Document Loading” tutorialt az első fájl betöltéséhez.
 
-**Q: Egyesíthetek különböző fájltípusokat egy PDF‑be?**  
-A: Igen – az API képes PDF‑eket, Word‑et, Excelt, képeket és sok más formátumot egyetlen PDF‑kimenetbe egyesíteni.
+**Q: Egyesíthetek különböző fájltípusokat egy PDF-be?**  
+**A:** Igen – az API PDF-eket, Word, Excel, képek és sok más formátumot egyetlen PDF kimenetbe egyesíthet.
 
 ---
 
-**Utoljára frissítve:** 2026-03-17  
+**Legutóbb frissítve:** 2026-10-11  
 **Tesztelve a következővel:** GroupDocs.Merger 23.12 (legújabb stabil)  
-**Szerző:** GroupDocs  
-
----
+**Szerző:** GroupDocs
