@@ -1,49 +1,102 @@
 ---
-date: '2026-03-20'
-description: تعلم كيفية دمج صفحات محددة في جافا باستخدام GroupDocs.Merger للـ Java.
-  يوضح هذا الدليل الإعداد، دمج ملفات PDF/DOCX، ونصائح الأداء.
+date: '2026-10-16'
+description: تعلم كيفية استخراج ودمج الصفحات في Java باستخدام GroupDocs.Merger. يغطي
+  هذا الدليل الإعداد، اختيار نطاقات الصفحات، دمج PDFs/DOCX، ونصائح الأداء.
 keywords:
-- GroupDocs Merger for Java
-- join specific pages from documents
-- merge documents using Java
-title: دمج صفحات محددة في جافا – دمج المستندات باستخدام GroupDocs.Merger
+- extract and merge pages
+- merge documents java
+- groupdocs merger java
+lastmod: '2026-10-16'
+og_description: تعلم كيفية استخراج ودمج الصفحات في Java باستخدام GroupDocs.Merger،
+  مكتبة قوية تدعم أكثر من 50 تنسيقًا وتتعامل مع المستندات الكبيرة بكفاءة.
+og_image_alt: Guide showing how to extract and merge pages in Java with GroupDocs.Merger
+og_title: كيفية استخراج ودمج الصفحات في Java باستخدام GroupDocs.Merger
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-16'
+  description: Learn how to extract and merge pages in Java using GroupDocs.Merger.
+    This guide covers setup, selecting page ranges, merging PDFs/DOCX, and performance
+    tips.
+  headline: How to extract and merge pages in Java with GroupDocs.Merger
+  type: TechArticle
+- description: Learn how to extract and merge pages in Java using GroupDocs.Merger.
+    This guide covers setup, selecting page ranges, merging PDFs/DOCX, and performance
+    tips.
+  name: How to extract and merge pages in Java with GroupDocs.Merger
+  steps:
+  - name: '**Document consolidation:** Pull selected chapters from several textbooks
+      into a single PDF for quick review.'
+    text: '**Document consolidation:** Pull selected chapters from several textbooks
+      into a single PDF for quick review.'
+  - name: '**Report generation:** Combine key sections from financial PDFs and Excel‑derived
+      PDFs into one executive summary.'
+    text: '**Report generation:** Combine key sections from financial PDFs and Excel‑derived
+      PDFs into one executive summary.'
+  - name: '**Research compilation:** Merge excerpts from multiple academic papers
+      (PDF, DOCX) into a single reference document.'
+    text: '**Research compilation:** Merge excerpts from multiple academic papers
+      (PDF, DOCX) into a single reference document.'
+  type: HowTo
+- questions:
+  - answer: Yes, simply call `merger.join()` repeatedly for each additional source
+      file.
+    question: Can I merge more than two documents?
+  - answer: It supports PDF, DOCX, DOC, PPTX, PPT, XLSX, XLS, and many other common
+      office formats—over 50 in total.
+    question: What file types does GroupDocs.Merger support?
+  - answer: Use the `extract` method with `PageExtractOptions` to save selected pages
+      as a new file. This is covered under the **extract pages java** use case.
+    question: How do I extract pages from a document without merging?
+  - answer: The library imposes no hard cap; practical limits depend on your system’s
+      memory and CPU.
+    question: Is there a limit to the number of pages I can join?
+  - answer: Absolutely—concatenate timestamps or UUIDs to the filename using `PathConstants.getOutputFilePath()`
+      or custom logic.
+    question: Can I generate dynamic output file names?
+  type: FAQPage
+tags:
+- merge pages
+- GroupDocs.Merger
+- Java document processing
+- PDF manipulation
+- DOCX merging
+title: كيفية استخراج ودمج الصفحات في Java باستخدام GroupDocs.Merger
 type: docs
 url: /ar/java/document-joining/join-pages-groupdocs-merger-java-tutorial/
 weight: 1
 ---
 
-# دمج صفحات محددة جافا: دمج صفحات محددة من مستندات متعددة باستخدام GroupDocs.Merger للـ Java
+# كيفية استخراج ودمج الصفحات في Java باستخدام GroupDocs.Merger
 
-في Java، يمكنك **دمج صفحات محددة** من ملفات PDF، DOCX، جداول البيانات، والعديد من الصيغ الأخرى ببضع أسطر من الشيفرة فقط. سواء كنت بحاجة إلى دمج فصول من عدة كتب، أو جمع أقسام رئيسية من تقرير، أو إنشاء كتيب مخصص، فإن GroupDocs.Merger للـ Java يجعل العملية سريعة، موثوقة، ومبرمجة بالكامل.
+في هذا الدرس الشامل ستكتشف كيفية **استخراج ودمج الصفحات** من ملفات PDF، DOCX، جداول البيانات، والعديد من أنواع المستندات الأخرى باستخدام GroupDocs.Merger للـ Java. سواء كنت بحاجة إلى تجميع كتيبات مخصصة، سحب فصول من عدة كتب، أو إنشاء تقرير مختصر من ملفات مصدر متفرقة، فإن هذا الدليل يمرّ بك عبر العملية بالكامل مع شروحات واضحة وأمثلة واقعية.
 
 ## إجابات سريعة
-- **ما هو الاستخدام الأساسي؟** دمج الصفحات المختارة من ملفات PDF، DOCX، XLSX، إلخ، في ملف إخراج واحد.  
-- **ما المكتبة التي تتعامل مع ذلك؟** GroupDocs.Merger للـ Java.  
-- **هل أحتاج إلى ترخيص؟** نسخة تجريبية مجانية تكفي للتقييم؛ يتطلب الترخيص المدفوع للإنتاج.  
+- **ما هو الاستخدام الأساسي؟** دمج الصفحات المحددة من ملفات PDF، DOCX، XLSX، PPTX، وغيرها من الصيغ المدعومة في ملف إخراج واحد.  
+- **أي مكتبة تتعامل مع ذلك؟** GroupDocs.Merger للـ Java.  
+- **هل أحتاج إلى ترخيص؟** نسخة تجريبية مجانية تكفي للتقييم؛ الترخيص المدفوع مطلوب للاستخدام في الإنتاج.  
 - **ما نسخة Java المطلوبة؟** Java 8 أو أعلى.  
-- **هل يمكنني دمج أكثر من ملفين؟** نعم—استدعِ `join` بشكل متكرر لكل مستند مصدر.
+- **هل يمكنني دمج أكثر من ملفين؟** نعم—استدعِ `join` بشكل متكرر لكل مستند مصدر إضافي.
 
-## كيفية دمج صفحات محددة جافا
-فيما يلي دليل مختصر خطوة بخطوة يوضح **دمج صفحات محددة** مع اختيار الصفحات التي تحتاجها فقط من كل مستند مصدر. نفس النمط يعمل مع ملفات PDF، DOCX، PPTX، XLSX، والعديد من الصيغ المدعومة الأخرى.
+## ما هو استخراج ودمج الصفحات؟
+`extract and merge pages` هو عملية اختيار أرقام صفحات أو نطاقات محددة من مستند أو أكثر ثم تجميعها في ملف جديد. هذا يلغي الحاجة إلى النسخ واللصق اليدوي ويضمن أن المستند الناتج يحتفظ بالتنسيق الأصلي، الخطوط، والصور.
 
-## ما هو “كيفية دمج الصفحات” باستخدام GroupDocs.Merger؟
-توفر GroupDocs.Merger واجهة برمجة تطبيقات بسيطة تتيح لك اختيار صفحات فردية (أو نطاقات) من ملفات المصدر وربطها معًا في مستند جديد. هذا يلغي الحاجة إلى أدوات تحرير PDF اليدوية ويدعم العشرات من الصيغ مباشرةً.
+## لماذا نستخدم GroupDocs.Merger للـ Java؟
+GroupDocs.Merger للـ Java مكتبة متعددة الاستخدامات تمكّن المطورين من معالجة المستندات برمجيًا، وتدعم أكثر من 50 صيغة، وتقدم معالجة سريعة واستهلاك منخفض للذاكرة، مما يجعلها مثالية لتدفقات عمل المستندات على الخادم والعمليات الدفعية واسعة النطاق في بيئات الشركات.
 
-## لماذا تستخدم GroupDocs.Merger للـ Java؟
-- **مرونة الصيغ:** يعمل مع PDF، DOCX، PPTX، XLSX، والعديد غيرها.  
-- **تركيز على الأداء:** يعالج فقط الصفحات التي تحتاجها، مما يقلل من استهلاك الذاكرة.  
-- **تكامل سهل:** جاهز لـ Maven/Gradle، مع وثائق واضحة وأمثلة.  
+- **مرونة الصيغ:** تدعم أكثر من 50 صيغة إدخال وإخراج—بما في ذلك PDF، DOCX، PPTX، XLSX، وملفات الصور—لتتمكن من العمل مع أي مستند مكتبي تقريبًا.  
+- **تركيز على الأداء:** تعالج فقط الصفحات التي تطلبها، مما يقلل استهلاك الذاكرة.  
+- **تكامل سهل:** متاحة عبر Maven أو Gradle، مع وثائق API واضحة ولا تعتمد على مكتبات خارجية.  
 
 ## المتطلبات المسبقة
 - معرفة أساسية ببرمجة Java.  
-- Maven أو Gradle لإدارة التبعيات.  
+- Maven أو Gradle لإدارة الاعتمادات.  
 - بيئة تطوير متكاملة مثل IntelliJ IDEA أو Eclipse.  
 
 ## إعداد GroupDocs.Merger للـ Java
 
 أضف المكتبة إلى مشروعك باستخدام إحدى الطرق التالية.
 
-**Maven:**
+**Maven:**  
 ```xml
 <dependency>
     <groupId>com.groupdocs</groupId>
@@ -52,19 +105,22 @@ weight: 1
 </dependency>
 ```
 
-**Gradle:**
+**Gradle:**  
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-بدلاً من ذلك، قم بتحميل أحدث نسخة مباشرةً من [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
+بدلاً من ذلك، قم بتحميل أحدث نسخة مباشرةً من [إصدارات GroupDocs.Merger للـ Java](https://releases.groupdocs.com/merger/java/).
 
 ### الحصول على الترخيص
-لفتح جميع الميزات ستحتاج إلى ترخيص. يمكنك البدء بنسخة تجريبية مجانية أو شراء ترخيص كامل عبر [صفحة الشراء](https://purchase.groupdocs.com/buy). كما يتوفر ترخيص مؤقت للتقييم قصير المدة.
+لفتح جميع الميزات ستحتاج إلى ترخيص. يمكنك البدء بنسخة تجريبية مجانية أو شراء ترخيص كامل عبر [صفحة الشراء](https://purchase.groupdocs.com/buy). ترخيص مؤقت متاح أيضًا للتقييم قصير المدى.
 
-## دليل خطوة بخطوة لدمج صفحات محددة
+## كيف يمكنني استخراج ودمج الصفحات في Java؟
+فئة `Merger` هي المكوّن الأساسي في الـ API الذي ينشئ ويدير عمليات دمج المستندات. حمّل كل مستند مصدر باستخدام مُنشئ `Merger`، حدد أرقام الصفحات المطلوبة، واستدعِ `join` لدمجها. أخيرًا، احفظ النتيجة المدمجة بالصّيغة المطلوبة. هذا التدفق من البداية إلى النهاية يتطلب أربع استدعاءات فقط للطرق ويعمل بشكل ثابت عبر جميع صيغ الملفات المدعومة.
 
-### الخطوة 1: تهيئة الـ Merger بمستند أساسي
+## دليل خطوة بخطوة لاستخراج ودمج صفحات محددة
+
+### الخطوة 1: تهيئة Merger بالمستند الأساسي
 ```java
 import com.groupdocs.merger.Merger;
 import com.groupdocs.merger.domain.options.PageJoinOptions;
@@ -117,47 +173,46 @@ public class PathConstants {
 }
 ```
 
-استخدام الثوابت يجعل الشيفرة أنظف ويسهل تعديل المسارات في المستقبل.
+استخدام الثوابت يجعل الكود أنظف ويسهّل تعديل المسارات مستقبلاً.
 
 ## تطبيقات عملية
-إليك بعض السيناريوهات الواقعية حيث يبرز **دمج صفحات محددة**:
+إليك بعض السيناريوهات الواقعية حيث يبرز **استخراج ودمج الصفحات**:
 
-1. **دمج المستندات:** سحب الفصول المختارة من عدة كتب دراسية إلى ملف PDF واحد للمراجعة السريعة.  
-2. **إنشاء تقارير:** دمج الأقسام الرئيسية من ملفات PDF المالية وملفات PDF المستخرجة من Excel في ملخص تنفيذي واحد.  
-3. **تجميع الأبحاث:** دمج مقتطفات من عدة أوراق أكاديمية (PDF، DOCX) في مستند مرجعي واحد.
+1. **تجميع المستندات:** سحب فصول مختارة من عدة كتب دراسية إلى ملف PDF واحد للمراجعة السريعة.  
+2. **إنشاء تقارير:** دمج أقسام رئيسية من ملفات PDF المالية وملفات PDF المستخرجة من Excel في ملخص تنفيذي واحد.  
+3. **تجميع أبحاث:** دمج مقتطفات من عدة أوراق أكاديمية (PDF، DOCX) في مستند مرجعي موحد.
 
 ## اعتبارات الأداء
-- **إغلاق الـ Merger** بعد الانتهاء لتحرير الموارد الأصلية.  
+- **أغلق Merger** بعد الانتهاء لتحرير الموارد الأصلية.  
 - **اختر الصفحات المطلوبة فقط** بدلاً من دمج الملفات بالكامل؛ هذا يقلل وقت المعالجة بشكل كبير.  
-- **معالجة الاستثناءات** بشكل سلس لتجنب الأعطال عندما يكون ملف المصدر مفقودًا أو معطوبًا.
+- **تعامل مع الاستثناءات** برفق لتجنب الأعطال عندما يكون ملف المصدر مفقودًا أو معطوبًا.  
 
 ## المشكلات الشائعة والحلول
-
 | المشكلة | الحل |
 |-------|----------|
-| **`OutOfMemoryError` على ملفات كبيرة** | معالجة الصفحات على دفعات أصغر وإغلاق الـ Merger بعد كل دفعة. |
-| **صيغة ملف غير مدعومة** | تحقق من أن الصيغة مدرجة في صيغ GroupDocs.Merger المدعومة (PDF، DOCX، XLSX، PPTX، إلخ). |
-| **الترخيص غير مفعّل** | تأكد من وضع ملف الترخيص في دليل جذر التطبيق أو ضبطه عبر `License license = new License(); license.setLicense("path/to/license.lic");`. |
+| **`OutOfMemoryError` عند التعامل مع ملفات كبيرة** | عالج الصفحات على دفعات أصغر وأغلق Merger بعد كل دفعة. |
+| **صيغة ملف غير مدعومة** | تأكد من أن الصيغة مدرجة في صيغ GroupDocs.Merger المدعومة (PDF، DOCX، XLSX، PPTX، إلخ). |
+| **الترخيص غير مُطبق** | تأكد من وضع ملف الترخيص في دليل جذر التطبيق أو تعيينه عبر `License license = new License(); license.setLicense("path/to/license.lic");`. |
 
 ## الأسئلة المتكررة
 
 **س: هل يمكنني دمج أكثر من مستندين؟**  
-**ج:** نعم، ما عليك سوى استدعاء `merger.join()` بشكل متكرر لكل ملف مصدر إضافي.
+ج: نعم، ما عليك سوى استدعاء `merger.join()` بشكل متكرر لكل ملف مصدر إضافي.
 
 **س: ما أنواع الملفات التي يدعمها GroupDocs.Merger؟**  
-**ج:** يدعم PDF، DOCX، DOC، PPTX، PPT، XLSX، XLS، والعديد من صيغ المكاتب الشائعة الأخرى.
+ج: يدعم PDF، DOCX، DOC، PPTX، PPT، XLSX، XLS، والعديد من صيغ المكتب الشائعة—أكثر من 50 صيغة إجمالًا.
 
 **س: كيف يمكنني استخراج صفحات من مستند دون دمجها؟**  
-**ج:** استخدم طريقة `extract` مع `PageExtractOptions` لحفظ الصفحات المختارة كملف جديد. يتم تغطية ذلك في حالة الاستخدام **extract pages java**.
+ج: استخدم طريقة `extract` مع `PageExtractOptions` لحفظ الصفحات المختارة كملف جديد. يتم شرح ذلك ضمن حالة الاستخدام **extract pages java**.
 
-**س: هل هناك حد لعدد الصفحات التي يمكنني دمجها؟**  
-**ج:** الحد العملي يحدده ذاكرة النظام ووحدة المعالجة المركزية؛ المكتبة نفسها لا تفرض حدًا ثابتًا.
+**س: هل هناك حد لعدد الصفحات التي يمكن دمجها؟**  
+ج: لا تفرض المكتبة حدًا ثابتًا؛ الحدود العملية تعتمد على ذاكرة النظام ووحدة المعالجة المركزية.
 
-**س: هل يمكنني إنشاء أسماء ملفات إخراج ديناميكية؟**  
-**ج:** بالتأكيد—قم بدمج الطوابع الزمنية أو UUIDs إلى اسم الملف باستخدام `PathConstants.getOutputFilePath()` أو منطق مخصص.
+**س: هل يمكنني توليد أسماء ملفات إخراج ديناميكية؟**  
+ج: بالتأكيد—يمكنك ربط طوابع زمنية أو UUIDs باسم الملف باستخدام `PathConstants.getOutputFilePath()` أو منطق مخصص.
 
-## الموارد
-- [التوثيق](https://docs.groupdocs.com/merger/java/)
+## موارد
+- [الوثائق](https://docs.groupdocs.com/merger/java/)
 - [مرجع API](https://reference.groupdocs.com/merger/java/)
 - [تحميل GroupDocs.Merger للـ Java](https://releases.groupdocs.com/merger/java/)
 - [شراء ترخيص](https://purchase.groupdocs.com/buy)
@@ -169,6 +224,12 @@ public class PathConstants {
 
 ---
 
-**آخر تحديث:** 2026-03-20  
-**تم الاختبار مع:** GroupDocs.Merger للـ Java أحدث نسخة  
+**آخر تحديث:** 2026-10-16  
+**تم الاختبار مع:** أحدث نسخة من GroupDocs.Merger للـ Java  
 **المؤلف:** GroupDocs
+
+## دروس ذات صلة
+
+- [دليل استخراج الصفحات Groupdocs Merger Java](/merger/java/document-extraction/extract-pages-groupdocs-merger-java-guide/)
+- [دمج PDF Java: دمج ملفات PDF بفعالية باستخدام GroupDocs.Merger للـ Java – دليل خطوة بخطوة](/merger/java/format-specific-merging/merge-pdfs-groupdocs-merger-java-tutorial/)
+- [نقل الصفحات Java – دروس عمليات صفحات المستند لـ GroupDocs.Merger](/merger/java/page-operations/)

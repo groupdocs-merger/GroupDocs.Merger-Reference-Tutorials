@@ -1,45 +1,100 @@
 ---
-date: '2026-03-20'
-description: GroupDocs.Merger for Java kullanarak belirli sayfaları nasıl birleştireceğinizi
-  öğrenin. Bu kılavuz, kurulum, PDF/DOCX birleştirme ve performans ipuçlarını gösterir.
+date: '2026-10-16'
+description: Java'da GroupDocs.Merger kullanarak sayfaları nasıl çıkarıp birleştireceğinizi
+  öğrenin. Bu kılavuz kurulum, sayfa aralıklarını seçme, PDF/DOCX birleştirme ve performans
+  ipuçlarını kapsar.
 keywords:
-- GroupDocs Merger for Java
-- join specific pages from documents
-- merge documents using Java
-title: Belirli Sayfaları Java ile Birleştir – GroupDocs.Merger ile Belgeleri Katın
+- extract and merge pages
+- merge documents java
+- groupdocs merger java
+lastmod: '2026-10-16'
+og_description: Java'da GroupDocs.Merger kullanarak sayfaları nasıl çıkarıp birleştireceğinizi
+  öğrenin; 50'den fazla formatı destekleyen ve büyük belgeleri verimli bir şekilde
+  işleyen güçlü bir kütüphane.
+og_image_alt: Guide showing how to extract and merge pages in Java with GroupDocs.Merger
+og_title: Java'da GroupDocs.Merger ile sayfaları çıkarma ve birleştirme
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-16'
+  description: Learn how to extract and merge pages in Java using GroupDocs.Merger.
+    This guide covers setup, selecting page ranges, merging PDFs/DOCX, and performance
+    tips.
+  headline: How to extract and merge pages in Java with GroupDocs.Merger
+  type: TechArticle
+- description: Learn how to extract and merge pages in Java using GroupDocs.Merger.
+    This guide covers setup, selecting page ranges, merging PDFs/DOCX, and performance
+    tips.
+  name: How to extract and merge pages in Java with GroupDocs.Merger
+  steps:
+  - name: '**Document consolidation:** Pull selected chapters from several textbooks
+      into a single PDF for quick review.'
+    text: '**Document consolidation:** Pull selected chapters from several textbooks
+      into a single PDF for quick review.'
+  - name: '**Report generation:** Combine key sections from financial PDFs and Excel‑derived
+      PDFs into one executive summary.'
+    text: '**Report generation:** Combine key sections from financial PDFs and Excel‑derived
+      PDFs into one executive summary.'
+  - name: '**Research compilation:** Merge excerpts from multiple academic papers
+      (PDF, DOCX) into a single reference document.'
+    text: '**Research compilation:** Merge excerpts from multiple academic papers
+      (PDF, DOCX) into a single reference document.'
+  type: HowTo
+- questions:
+  - answer: Yes, simply call `merger.join()` repeatedly for each additional source
+      file.
+    question: Can I merge more than two documents?
+  - answer: It supports PDF, DOCX, DOC, PPTX, PPT, XLSX, XLS, and many other common
+      office formats—over 50 in total.
+    question: What file types does GroupDocs.Merger support?
+  - answer: Use the `extract` method with `PageExtractOptions` to save selected pages
+      as a new file. This is covered under the **extract pages java** use case.
+    question: How do I extract pages from a document without merging?
+  - answer: The library imposes no hard cap; practical limits depend on your system’s
+      memory and CPU.
+    question: Is there a limit to the number of pages I can join?
+  - answer: Absolutely—concatenate timestamps or UUIDs to the filename using `PathConstants.getOutputFilePath()`
+      or custom logic.
+    question: Can I generate dynamic output file names?
+  type: FAQPage
+tags:
+- merge pages
+- GroupDocs.Merger
+- Java document processing
+- PDF manipulation
+- DOCX merging
+title: Java'da GroupDocs.Merger ile sayfaları çıkarma ve birleştirme
 type: docs
 url: /tr/java/document-joining/join-pages-groupdocs-merger-java-tutorial/
 weight: 1
 ---
 
-# Java ile belirli sayfaları birleştirme: Birden Çok Belgeden Belirli Sayfaları GroupDocs.Merger for Java ile Birleştirme
+# Java ile GroupDocs.Merger kullanarak sayfaları çıkarma ve birleştirme
 
-Java’da PDF, DOCX, elektronik tablo ve birçok başka formatta **belirli sayfaları birleştirme** işlemini sadece birkaç satır kodla yapabilirsiniz. İster birkaç kitaptan bölümleri birleştirin, ister bir raporun önemli kısımlarını bir araya getirin ya da özel bir broşür oluşturun, GroupDocs.Merger for Java süreci hızlı, güvenilir ve tamamen programatik hâle getirir.
+Bu kapsamlı öğreticide, GroupDocs.Merger for Java kullanarak PDF'ler, DOCX dosyaları, elektronik tablolar ve birçok diğer belge türünden **sayfaları çıkarma ve birleştirme** nasıl yapılacağını keşfedeceksiniz. Özel broşürler oluşturmanız, birden fazla kitaptan bölümler çekmeniz veya dağınık kaynak dosyalardan öz bir rapor üretmeniz gerekse, bu rehber size sürecin tamamını net açıklamalar ve gerçek dünya örnekleriyle adım adım gösterir.
 
-## Hızlı Yanıtlar
-- **Ana kullanım senaryosu nedir?** PDF, DOCX, XLSX vb. dosyalardan seçilen sayfaları tek bir çıktı dosyasında birleştirmek.  
-- **Hangi kütüphane bunu sağlar?** GroupDocs.Merger for Java.  
-- **Lisans gerekli mi?** Değerlendirme için ücretsiz deneme sürümü yeterlidir; üretim ortamı için ücretli lisans gerekir.  
-- **Hangi Java sürümü gerekiyor?** Java 8 ve üzeri.  
-- **İki dosyadan fazla birleştirilebilir mi?** Evet—her kaynak belge için `join` metodunu tekrar çağırabilirsiniz.
+## Hızlı cevaplar
+- **Ana kullanım senaryosu nedir?** PDF, DOCX, XLSX, PPTX ve diğer desteklenen formatlardan seçilen sayfaları tek bir çıktı dosyasında birleştirin.  
+- **Bu işlemi hangi kütüphane yönetir?** GroupDocs.Merger for Java.  
+- **Lisans gerekli mi?** Değerlendirme için ücretsiz deneme çalışır; üretim kullanımı için ücretli lisans gerekir.  
+- **Gerekli Java sürümü nedir?** Java 8 ve üzeri.  
+- **İki dosyadan fazla birleştirebilir miyim?** Evet—her ek kaynak belge için `join` metodunu tekrarlayarak çağırın.
 
-## Belirli sayfaları birleştirme (java)
-Aşağıda, her kaynak belgeden yalnızca ihtiyacınız olan sayfaları seçerek **belirli sayfaları birleştirme** işlemini gösteren kısa ve adım‑adım bir rehber bulunmaktadır. Aynı desen PDF, DOCX, PPTX, XLSX ve desteklenen diğer birçok format için geçerlidir.
+## Sayfaları çıkarma ve birleştirme nedir?
+`extract and merge pages`, bir veya daha fazla kaynak belgeden belirli sayfa numaralarını veya aralıklarını seçip yeni bir dosyada birleştirme işlemidir. Bu, manuel kopyala‑yapıştırı ortadan kaldırır ve ortaya çıkan belgenin özgün biçimlendirme, yazı tipleri ve görselleri korumasını sağlar.
 
-## “Sayfaları birleştirme” GroupDocs.Merger ile nasıl yapılır?
-GroupDocs.Merger, kaynak dosyalardan tek tek sayfaları (veya aralıkları) seçip yeni bir belgeye dikebileceğiniz basit bir API sunar. Bu sayede manuel PDF düzenleme araçlarına ihtiyaç kalmaz ve kutudan çıkar çıkmaz onlarca format desteklenir.
+## Neden GroupDocs.Merger for Java kullanmalısınız?
+GroupDocs.Merger for Java, geliştiricilerin belgeleri programlı olarak manipüle etmelerini sağlayan çok yönlü bir kütüphanedir; 50'den fazla format desteği, yüksek hızlı işleme ve düşük bellek tüketimi sunar; bu da onu sunucu tarafı belge iş akışları ve kurumsal ortamlarda büyük ölçekli toplu işlemler için ideal kılar.
 
-## Neden GroupDocs.Merger for Java kullanılmalı?
-- **Format esnekliği:** PDF, DOCX, PPTX, XLSX ve daha birçok formatla çalışır.  
-- **Performans odaklı:** Sadece ihtiyacınız olan sayfaları işler, bellek kullanımını azaltır.  
-- **Kolay entegrasyon:** Maven/Gradle uyumlu, net dokümantasyon ve örnekler içerir.  
+- **Format esnekliği:** PDF, DOCX, PPTX, XLSX ve görüntü dosyaları dahil 50'den fazla giriş ve çıkış formatını destekler; böylece neredeyse her ofis belgesiyle çalışabilirsiniz.  
+- **Performansa odaklı:** Yalnızca talep ettiğiniz sayfaları işler, bu da bellek tüketimini azaltır.  
+- **Kolay entegrasyon:** Maven veya Gradle üzerinden temin edilebilir, net API belgeleri vardır ve harici bağımlılıkları yoktur.
 
 ## Önkoşullar
-- Java programlamaya temel düzeyde hâkimiyet.  
+- Temel Java programlama bilgisi.  
 - Bağımlılık yönetimi için Maven veya Gradle.  
 - IntelliJ IDEA veya Eclipse gibi bir IDE.  
 
-## GroupDocs.Merger for Java Kurulumu
+## GroupDocs.Merger for Java kurulumu
 
 Kütüphaneyi projenize aşağıdaki yöntemlerden biriyle ekleyin.
 
@@ -57,14 +112,17 @@ Kütüphaneyi projenize aşağıdaki yöntemlerden biriyle ekleyin.
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-Alternatif olarak en yeni sürümü doğrudan [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) adresinden indirebilirsiniz.
+Alternatif olarak, en son sürümü doğrudan [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) adresinden indirebilirsiniz.
 
-### Lisans Edinimi
-Tüm özellikleri açmak için bir lisansa ihtiyacınız olacak. Ücretsiz deneme ile başlayabilir veya [satın alma sayfasından](https://purchase.groupdocs.com/buy) tam lisans satın alabilirsiniz. Kısa vadeli değerlendirme için geçici bir lisans da mevcuttur.
+### Lisans edinimi
+Tüm özelliklerin kilidini açmak için bir lisansa ihtiyacınız olacak. Ücretsiz deneme ile başlayabilir veya tam lisansı [satın alma sayfasından](https://purchase.groupdocs.com/buy) satın alabilirsiniz. Kısa vadeli değerlendirme için geçici bir lisans da mevcuttur.
 
-## Belirli Sayfaları Birleştirme Adım‑Adım Kılavuzu
+## Java’da sayfaları nasıl çıkarır ve birleştiririm?
+`Merger` sınıfı, belge birleştirme işlemlerini oluşturup yöneten temel API bileşenidir. Her kaynak belgeyi `Merger` yapıcısı ile yükleyin, ihtiyacınız olan kesin sayfa numaralarını belirtin ve `join` metodunu çağırarak birleştirin. Son olarak, birleştirilmiş sonucu istediğiniz formatta kaydedin. Bu uçtan uca akış sadece dört metod çağrısı gerektirir ve tüm desteklenen dosya türlerinde tutarlı çalışır.
 
-### Adım 1: Merger’ı Ana Belgeyle Başlatın
+## Belirli sayfaları çıkarma ve birleştirme adım adım rehberi
+
+### Adım 1: Merger'ı birincil belgeyle başlatın
 ```java
 import com.groupdocs.merger.Merger;
 import com.groupdocs.merger.domain.options.PageJoinOptions;
@@ -73,19 +131,19 @@ String filePath = YOUR_DOCUMENT_DIRECTORY + "/sample.pdf"; // Source PDF documen
 Merger merger = new Merger(filePath);
 ```
 
-### Adım 2: Birleştirmek İstediğiniz Sayfaları Tanımlayın
+### Adım 2: Birleştirmek istediğiniz sayfaları tanımlayın
 ```java
 // Specify the page numbers you wish to join (e.g., pages 1 and 2)
 PageJoinOptions joinOptions = new PageJoinOptions(1, 2);
 ```
 
-### Adım 3: İkinci Belgeden Seçilen Sayfaları Birleştirin
+### Adım 3: İkinci bir belgeden seçilen sayfaları birleştirin
 ```java
 // Path to your DOCX file\ String docxFilePath = YOUR_DOCUMENT_DIRECTORY + "/sample.docx";
 merger.join(docxFilePath, joinOptions);
 ```
 
-### Adım 4: Sonucu Kaydedin ve Kaynakları Serbest Bırakın
+### Adım 4: Sonucu kaydedin ve kaynakları serbest bırakın
 ```java
 String outputFilePath = YOUR_OUTPUT_DIRECTORY + "/CrossJoinPagesFromVariousDocuments-output.pdf";
 merger.save(outputFilePath);
@@ -97,7 +155,7 @@ try {
 }
 ```
 
-### Adım 5 (Opsiyonel): Dosya Yollarını Sabitlerle Merkezi Hale Getirin
+### Adım 5 (isteğe bağlı): Dosya yollarını sabitlerle merkezileştirin
 ```java
 import java.nio.file.Paths;
 import java.io.File;
@@ -117,57 +175,64 @@ public class PathConstants {
 }
 ```
 
-Sabitler kullanmak kodunuzu daha temiz hâle getirir ve ileride yol değişikliklerini basitleştirir.
+Sabitler kullanmak kodunuzu daha temiz hâle getirir ve gelecekteki yol değişikliklerini basitleştirir.
 
-## Pratik Kullanım Alanları
-**merge specific pages java** özelliğinin öne çıktığı birkaç gerçek dünya senaryosu:
+## Pratik uygulamalar
+**Sayfaları çıkarma ve birleştirme**'nin öne çıktığı birkaç gerçek dünya senaryosu:
 
-1. **Belge Konsolidasyonu:** Birkaç ders kitabından seçili bölümleri tek bir PDF’de toplayarak hızlı bir inceleme sağlayın.  
-2. **Rapor Oluşturma:** Finansal PDF’ler ve Excel’den türetilen PDF’lerin ana bölümlerini birleştirerek tek bir yönetici özeti oluşturun.  
-3. **Araştırma Derlemesi:** Birden çok akademik makaleden (PDF, DOCX) alıntıları tek bir referans belgesinde birleştirin.
+1. **Belge birleştirme:** Birkaç ders kitabından seçilen bölümleri hızlı inceleme için tek bir PDF'e çekin.  
+2. **Rapor oluşturma:** Finansal PDF'lerden ve Excel türetilen PDF'lerden ana bölümleri tek bir yönetici özetine birleştirin.  
+3. **Araştırma derlemesi:** Birden fazla akademik makaleden (PDF, DOCX) alıntıları tek bir referans belgesine birleştirin.
 
-## Performans İpuçları
-- **Merger’ı kapatın** işlem bittiğinde yerel kaynakları serbest bırakmak için.  
-- **Yalnızca ihtiyaç duyulan sayfaları seçin**; tüm dosyaları birleştirmek yerine bu, işleme süresini büyük ölçüde kısaltır.  
-- **İstisnaları düzgün yönetin**; bir kaynak dosya eksik ya da bozuk olduğunda çökme riskini önleyin.
+## Performans hususları
+- **Merger'ı kapatın** işiniz bittiğinde yerel kaynakları serbest bırakmak için.  
+- **Sadece gereken sayfaları seçin** tüm dosyaları birleştirmek yerine; bu işlem süresini büyük ölçüde azaltır.  
+- **İstisnaları düzgün yönetin** bir kaynak dosya eksik ya da bozuk olduğunda çöküşleri önlemek için.  
 
-## Yaygın Sorunlar ve Çözümleri
+## Yaygın sorunlar ve çözümler
+
 | Sorun | Çözüm |
 |-------|----------|
-| **`OutOfMemoryError` büyük dosyalarda** | Sayfaları daha küçük partiler halinde işleyin ve her partiden sonra Merger’ı kapatın. |
-| **Desteklenmeyen dosya formatı** | Formatın GroupDocs.Merger desteklenen formatlar listesinde (PDF, DOCX, XLSX, PPTX vb.) olduğundan emin olun. |
-| **Lisans uygulanmadı** | Lisans dosyasının uygulama kök dizinine yerleştirildiğini veya `License license = new License(); license.setLicense("path/to/license.lic");` kodu ile ayarlandığını kontrol edin. |
+| **Büyük dosyalarda `OutOfMemoryError`** | Sayfaları daha küçük partilerde işleyin ve her partiden sonra Merger'ı kapatın. |
+| **Desteklenmeyen dosya formatı** | Formatın GroupDocs.Merger desteklenen formatları (PDF, DOCX, XLSX, PPTX, vb.) arasında listelendiğini doğrulayın. |
+| **Lisans uygulanmadı** | Lisans dosyasının uygulamanın kök dizinine yerleştirildiğinden veya `License license = new License(); license.setLicense("path/to/license.lic");` ile ayarlandığından emin olun. |
 
-## Sık Sorulan Sorular
+## Sıkça sorulan sorular
 
-**S: İki dosyadan fazla birleştirilebilir mi?**  
-C: Evet, ek her kaynak dosya için `merger.join()` metodunu tekrar çağırmanız yeterlidir.
+**S: İki belgeden fazla birleştirebilir miyim?**  
+C: Evet, her ek kaynak dosya için `merger.join()` metodunu tekrarlayarak çağırmanız yeterlidir.
 
 **S: GroupDocs.Merger hangi dosya türlerini destekliyor?**  
-C: PDF, DOCX, DOC, PPTX, PPT, XLSX, XLS ve birçok yaygın ofis formatı desteklenir.
+C: PDF, DOCX, DOC, PPTX, PPT, XLSX, XLS ve birçok diğer yaygın ofis formatını destekler—toplamda 50'den fazlası.
 
-**S: Belgeyi birleştirmeden sayfaları nasıl çıkarabilirim?**  
-C: `extract` metodunu `PageExtractOptions` ile kullanarak seçilen sayfaları yeni bir dosya olarak kaydedebilirsiniz. Bu, **extract pages java** kullanım senaryosu kapsamında ele alınmıştır.
+**S: Belgeden sayfaları birleştirmeden nasıl çıkarırım?**  
+C: Seçilen sayfaları yeni bir dosya olarak kaydetmek için `extract` metodunu `PageExtractOptions` ile kullanın. Bu, **extract pages java** kullanım senaryosu altında ele alınmıştır.
 
-**S: Birleştirilebilecek sayfa sayısında bir limit var mı?**  
-C: Kütüphane kendisi sabit bir sınır koymaz; pratik limit sisteminizin bellek ve CPU kapasitesine bağlıdır.
+**S: Birleştirebileceğim sayfa sayısında bir limit var mı?**  
+C: Kütüphane kesin bir sınır koymaz; pratik limitler sisteminizin bellek ve CPU kapasitesine bağlıdır.
 
-**S: Çıktı dosya adlarını dinamik olarak oluşturabilir miyim?**  
-C: Kesinlikle—`PathConstants.getOutputFilePath()` veya kendi mantığınızla zaman damgası ya da UUID ekleyerek dosya adını oluşturabilirsiniz.
+**S: Dinamik çıktı dosya adları oluşturabilir miyim?**  
+C: Kesinlikle—dosya adına zaman damgaları veya UUID'leri `PathConstants.getOutputFilePath()` ya da özel mantıkla ekleyebilirsiniz.
 
 ## Kaynaklar
-- [Documentation](https://docs.groupdocs.com/merger/java/)
-- [API Reference](https://reference.groupdocs.com/merger/java/)
-- [Download GroupDocs.Merger for Java](https://releases.groupdocs.com/merger/java/)
-- [Purchase a License](https://purchase.groupdocs.com/buy)
-- [Free Trial](https://releases.groupdocs.com/merger/java/)
-- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- [Support Forum](https://forum.groupdocs.com/c/merger/)
+- [Dokümantasyon](https://docs.groupdocs.com/merger/java/)
+- [API Referansı](https://reference.groupdocs.com/merger/java/)
+- [GroupDocs.Merger for Java'ı İndir](https://releases.groupdocs.com/merger/java/)
+- [Lisans Satın Al](https://purchase.groupdocs.com/buy)
+- [Ücretsiz Deneme](https://releases.groupdocs.com/merger/java/)
+- [Geçici Lisans](https://purchase.groupdocs.com/temporary-license/)
+- [Destek Forumu](https://forum.groupdocs.com/c/merger/)
 
-Bu bağlantıları inceleyerek uzmanlığınızı derinleştirebilir ve karşılaşabileceğiniz sorunları çözebilirsiniz.
+Bu bağlantıları keşfederek uzmanlığınızı derinleştirebilir ve karşılaştığınız sorunları giderebilirsiniz.
 
 ---
 
-**Son Güncelleme:** 2026-03-20  
-**Test Edilen Versiyon:** GroupDocs.Merger for Java latest-version  
+**Son Güncelleme:** 2026-10-16  
+**Test Edilen:** GroupDocs.Merger for Java latest-version  
 **Yazar:** GroupDocs
+
+## İlgili Öğreticiler
+
+- [Sayfa Çıkarma Groupdocs Merger Java Kılavuzu](/merger/java/document-extraction/extract-pages-groupdocs-merger-java-guide/)
+- [PDF Birleştirme Java: GroupDocs.Merger for Java ile PDF'leri Verimli Bir Şekilde Birleştirme – Adım Adım Kılavuz](/merger/java/format-specific-merging/merge-pdfs-groupdocs-merger-java-tutorial/)
+- [Sayfaları Taşıma Java – GroupDocs.Merger için Belge Sayfa İşlemleri Öğreticileri](/merger/java/page-operations/)

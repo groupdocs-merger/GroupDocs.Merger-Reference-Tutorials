@@ -1,51 +1,104 @@
 ---
-date: '2026-03-20'
-description: Tanulja meg, hogyan lehet egyesíteni konkrét oldalakat Java-ban a GroupDocs.Merger
-  for Java használatával. Ez az útmutató bemutatja a beállítást, a PDF/DOCX fájlok
-  egyesítését és a teljesítményre vonatkozó tippeket.
+date: '2026-10-16'
+description: Ismerje meg, hogyan nyerhet ki és egyesíthet oldalakat Java-ban a GroupDocs.Merger
+  használatával. Ez az útmutató bemutatja a beállítást, az oldaltartományok kiválasztását,
+  a PDF/DOCX egyesítését, valamint a teljesítmény tippeket.
 keywords:
-- GroupDocs Merger for Java
-- join specific pages from documents
-- merge documents using Java
-title: specifikus oldalak egyesítése Java – Dokumentumok egyesítése a GroupDocs.Merger
-  segítségével
+- extract and merge pages
+- merge documents java
+- groupdocs merger java
+lastmod: '2026-10-16'
+og_description: Ismerje meg, hogyan nyerhet ki és egyesíthet oldalakat Java-ban a
+  GroupDocs.Merger segítségével, egy erőteljes könyvtár, amely több mint 50 formátumot
+  támogat és nagy dokumentumokat hatékonyan kezel.
+og_image_alt: Guide showing how to extract and merge pages in Java with GroupDocs.Merger
+og_title: Oldalak kinyerése és egyesítése Java-ban a GroupDocs.Merger segítségével
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-16'
+  description: Learn how to extract and merge pages in Java using GroupDocs.Merger.
+    This guide covers setup, selecting page ranges, merging PDFs/DOCX, and performance
+    tips.
+  headline: How to extract and merge pages in Java with GroupDocs.Merger
+  type: TechArticle
+- description: Learn how to extract and merge pages in Java using GroupDocs.Merger.
+    This guide covers setup, selecting page ranges, merging PDFs/DOCX, and performance
+    tips.
+  name: How to extract and merge pages in Java with GroupDocs.Merger
+  steps:
+  - name: '**Document consolidation:** Pull selected chapters from several textbooks
+      into a single PDF for quick review.'
+    text: '**Document consolidation:** Pull selected chapters from several textbooks
+      into a single PDF for quick review.'
+  - name: '**Report generation:** Combine key sections from financial PDFs and Excel‑derived
+      PDFs into one executive summary.'
+    text: '**Report generation:** Combine key sections from financial PDFs and Excel‑derived
+      PDFs into one executive summary.'
+  - name: '**Research compilation:** Merge excerpts from multiple academic papers
+      (PDF, DOCX) into a single reference document.'
+    text: '**Research compilation:** Merge excerpts from multiple academic papers
+      (PDF, DOCX) into a single reference document.'
+  type: HowTo
+- questions:
+  - answer: Yes, simply call `merger.join()` repeatedly for each additional source
+      file.
+    question: Can I merge more than two documents?
+  - answer: It supports PDF, DOCX, DOC, PPTX, PPT, XLSX, XLS, and many other common
+      office formats—over 50 in total.
+    question: What file types does GroupDocs.Merger support?
+  - answer: Use the `extract` method with `PageExtractOptions` to save selected pages
+      as a new file. This is covered under the **extract pages java** use case.
+    question: How do I extract pages from a document without merging?
+  - answer: The library imposes no hard cap; practical limits depend on your system’s
+      memory and CPU.
+    question: Is there a limit to the number of pages I can join?
+  - answer: Absolutely—concatenate timestamps or UUIDs to the filename using `PathConstants.getOutputFilePath()`
+      or custom logic.
+    question: Can I generate dynamic output file names?
+  type: FAQPage
+tags:
+- merge pages
+- GroupDocs.Merger
+- Java document processing
+- PDF manipulation
+- DOCX merging
+title: Oldalak kinyerése és egyesítése Java-ban a GroupDocs.Merger segítségével
 type: docs
 url: /hu/java/document-joining/join-pages-groupdocs-merger-java-tutorial/
 weight: 1
 ---
 
-# merge specific pages java: Több dokumentum specifikus oldalainak egyesítése a GroupDocs.Merger for Java segítségével
+# Hogyan vonjon ki és egyesítsen oldalakat Java-ban a GroupDocs.Merger-rel
 
-Java‑ban néhány kódsorral **merge specific pages java** PDF‑ekből, DOCX fájlokból, táblázatokból és sok más formátumból egyesítheted. Akár több könyv fejezeteit szeretnéd kombinálni, egy jelentés kulcsfontosságú részeit összehozni, vagy egy egyedi prospektust létrehozni, a GroupDocs.Merger for Java gyors, megbízható és teljesen programozható megoldást nyújt.
+Ebben az átfogó útmutatóban megtudja, hogyan **vonjon ki és egyesítsen oldalakat** PDF‑ekből, DOCX fájlokból, táblázatokból és sok más dokumentumtípusból a GroupDocs.Merger for Java segítségével. Akár egyedi prospektusokat szeretne összeállítani, fejezeteket több könyvből kivenni, vagy egy tömör jelentést generálni szórvány forrásfájlokból, ez az útmutató lépésről lépésre végigvezeti a teljes folyamaton, világos magyarázatokkal és valós példákkal.
 
-## Quick Answers
-- **Mi a fő felhasználási eset?** Kiválasztott oldalakat kombinál PDF‑ekből, DOCX‑ből, XLSX‑ből stb. egyetlen kimeneti fájlba.  
+## Gyors válaszok
+- **Mi a fő felhasználási eset?** Válasszon ki oldalakat PDF‑ekből, DOCX‑ből, XLSX‑ből, PPTX‑ből és más támogatott formátumokból, és egyetlen kimeneti fájlba egyesítse őket.  
 - **Melyik könyvtár kezeli ezt?** GroupDocs.Merger for Java.  
-- **Szükségem van licencre?** Egy ingyenes próba a kiértékeléshez elegendő; a termeléshez fizetett licenc szükséges.  
+- **Szükségem van licencre?** Egy ingyenes próbaalkalmazás elegendő értékeléshez; a termelésben való használathoz fizetett licenc szükséges.  
 - **Milyen Java verzió szükséges?** Java 8 vagy újabb.  
-- **Több mint két fájlt egyesíthetek?** Igen—hívja többször a `join` metódust minden forrásdokumentumra.
+- **Egyesíthetek több mint két fájlt?** Igen — hívja a `join` metódust többször minden további forrásdokumentumhoz.
 
-## How to merge specific pages java
-Az alábbiakban egy tömör, lépésről‑lépésre útmutatót találsz, amely bemutatja a **merge specific pages java** folyamatot, miközben csak a szükséges oldalakat választod ki minden forrásdokumentumból. Ugyanez a minta működik PDF‑ek, DOCX, PPTX, XLSX és számos más támogatott formátum esetén.
+## Mi az oldalak kinyerése és egyesítése?
+`extract and merge pages` a folyamat, amely során egy vagy több forrásdokumentumból kiválasztott oldal számokat vagy tartományokat egy új fájlba fűzi össze. Ez megszünteti a kézi másolás‑beillesztés szükségességét, és biztosítja, hogy a keletkezett dokumentum megőrizze az eredeti formázást, betűtípusokat és képeket.
 
-## What is “how to merge pages” with GroupDocs.Merger?
-A GroupDocs.Merger egyszerű API‑t biztosít, amely lehetővé teszi egyedi oldalak (vagy tartományok) kiválasztását a forrásfájlokból, és azok egy új dokumentumba illesztését. Ez megszünteti a manuális PDF‑szerkesztő eszközök szükségességét, és alapból több tucat formátumot támogat.
+## Miért használja a GroupDocs.Merger for Java‑t?
+A GroupDocs.Merger for Java egy sokoldalú könyvtár, amely lehetővé teszi a fejlesztők számára a dokumentumok programozott manipulálását, több mint 50 formátum támogatásával, nagy sebességű feldolgozással és alacsony memóriahasználattal, így ideális szerver‑oldali dokumentumfolyamatokhoz és nagy léptékű kötegelt műveletekhez vállalati környezetben.
 
-## Why use GroupDocs.Merger for Java?
-- **Formátum rugalmasság:** PDF, DOCX, PPTX, XLSX és még sok más formátummal működik.  
-- **Teljesítmény‑orientált:** Csak a szükséges oldalakat dolgozza fel, csökkentve a memóriahasználatot.  
-- **Könnyű integráció:** Maven/Gradle kész, világos dokumentációval és példákkal.  
+- **Formátum rugalmasság:** Támogat 50+ bemeneti és kimeneti formátumot — beleértve a PDF‑et, DOCX‑et, PPTX‑et, XLSX‑et és képfájlokat — így gyakorlatilag bármely irodai dokumentummal dolgozhat.  
+- **Teljesítmény‑központú:** Csak a kért oldalakat dolgozza fel, ami csökkenti a memóriahasználatot.  
+- **Könnyű integráció:** Maven vagy Gradle segítségével elérhető, világos API dokumentációval és külső függőségek nélkül.  
 
-## Prerequisites
+## Előfeltételek
 - Alapvető Java programozási ismeretek.  
 - Maven vagy Gradle a függőségkezeléshez.  
 - IDE, például IntelliJ IDEA vagy Eclipse.  
 
-## Setting Up GroupDocs.Merger for Java
+## A GroupDocs.Merger for Java beállítása
 
-Add the library to your project using one of the following methods.
+Adja hozzá a könyvtárat a projektjéhez az alábbi módszerek egyikével.
 
-**Maven:**
+**Maven:**  
 ```xml
 <dependency>
     <groupId>com.groupdocs</groupId>
@@ -54,19 +107,22 @@ Add the library to your project using one of the following methods.
 </dependency>
 ```
 
-**Gradle:**
+**Gradle:**  
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-Alternatively, download the latest version directly from [GroupDocs.Merger for Java kiadások](https://releases.groupdocs.com/merger/java/).
+Alternatív megoldásként töltse le a legújabb verziót közvetlenül a [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) oldalról.
 
-### License Acquisition
-To unlock all features you’ll need a license. You can start with a free trial or purchase a full license on the [vásárlási oldal](https://purchase.groupdocs.com/buy). A temporary license is also available for short‑term evaluation.
+### Licenc beszerzése
+A teljes funkcionalitás feloldásához licenc szükséges. Kezdheti egy ingyenes próbaidőszakkal, vagy vásárolhat teljes licencet a [vásárlási oldalon](https://purchase.groupdocs.com/buy). Ideiglenes licenc is elérhető rövid távú értékeléshez.
 
-## Step‑by‑Step Guide to Merging Specific Pages
+## Hogyan vonjak ki és egyesítem az oldalakat Java-ban?
+A `Merger` osztály az elsődleges API‑komponens, amely dokumentum egyesítési műveleteket hoz létre és kezel. Töltse be minden forrásdokumentumot a `Merger` konstruktorral, adja meg a szükséges oldal számokat, majd hívja a `join` metódust az egyesítéshez. Végül mentse el az egyesített eredményt a kívánt formátumba. Ez az vég‑végi folyamat csak négy metódushívást igényel, és minden támogatott fájltípus esetén konzisztensen működik.
 
-### Step 1: Initialise the Merger with a Primary Document
+## Lépésről‑lépésre útmutató a konkrét oldalak kinyeréséhez és egyesítéséhez
+
+### 1. lépés: a Merger inicializálása elsődleges dokumentummal
 ```java
 import com.groupdocs.merger.Merger;
 import com.groupdocs.merger.domain.options.PageJoinOptions;
@@ -75,19 +131,19 @@ String filePath = YOUR_DOCUMENT_DIRECTORY + "/sample.pdf"; // Source PDF documen
 Merger merger = new Merger(filePath);
 ```
 
-### Step 2: Define the Pages You Want to Join
+### 2. lépés: határozza meg a egyesíteni kívánt oldalakat
 ```java
 // Specify the page numbers you wish to join (e.g., pages 1 and 2)
 PageJoinOptions joinOptions = new PageJoinOptions(1, 2);
 ```
 
-### Step 3: Join Selected Pages from a Second Document
+### 3. lépés: a kiválasztott oldalak egyesítése egy második dokumentumból
 ```java
 // Path to your DOCX file\ String docxFilePath = YOUR_DOCUMENT_DIRECTORY + "/sample.docx";
 merger.join(docxFilePath, joinOptions);
 ```
 
-### Step 4: Save the Result and Release Resources
+### 4. lépés: mentse az eredményt és szabadítsa fel az erőforrásokat
 ```java
 String outputFilePath = YOUR_OUTPUT_DIRECTORY + "/CrossJoinPagesFromVariousDocuments-output.pdf";
 merger.save(outputFilePath);
@@ -99,7 +155,7 @@ try {
 }
 ```
 
-### Step 5 (Optional): Centralise File Paths with Constants
+### 5. lépés (opcionális): az állományútvonalak központosítása konstansokkal
 ```java
 import java.nio.file.Paths;
 import java.io.File;
@@ -119,45 +175,45 @@ public class PathConstants {
 }
 ```
 
-Using constants makes your code cleaner and simplifies future path changes.
+A konstansok használata tisztábbá teszi a kódot, és egyszerűsíti a jövőbeni útvonalváltoztatásokat.
 
-## Practical Applications
-Here are a few real‑world scenarios where **merge specific pages java** shines:
+## Gyakorlati alkalmazások
+Íme néhány valós példaszakasz, ahol a **oldalak kinyerése és egyesítése** kiemelkedik:
 
-1. **Document Consolidation:** Pull selected chapters from several textbooks into a single PDF for quick review.  
-2. **Report Generation:** Combine key sections from financial PDFs and Excel‑derived PDFs into one executive summary.  
-3. **Research Compilation:** Merge excerpts from multiple academic papers (PDF, DOCX) into a single reference document.
+1. **Dokumentumkonszolidáció:** Kiválasztott fejezetek kinyerése több tankönyvből egyetlen PDF‑be a gyors áttekintéshez.  
+2. **Jelentéskészítés:** Kulcsfontosságú szakaszok egyesítése pénzügyi PDF‑ekből és Excel‑ből származó PDF‑ekből egy executive summary‑ba.  
+3. **Kutatási összeállítás:** Több tudományos dolgozat (PDF, DOCX) kivonatainak egyesítése egyetlen hivatkozási dokumentumba.
 
-## Performance Considerations
-- **Close the Merger** after you’re done to free native resources.  
-- **Select only needed pages** instead of merging whole files; this cuts processing time dramatically.  
-- **Handle exceptions** gracefully to avoid crashes when a source file is missing or corrupted.
+## Teljesítmény szempontok
+- **Zárja be a Merger‑t** a munka befejezése után, hogy felszabadítsa a natív erőforrásokat.  
+- **Válassza ki csak a szükséges oldalakat** a teljes fájlok egyesítése helyett; ez drámaian csökkenti a feldolgozási időt.  
+- **Kezelje a kivételeket** elegánsan, hogy elkerülje az összeomlást, ha egy forrásfájl hiányzik vagy sérült.  
 
-## Common Issues & Solutions
-| Issue | Solution |
-|-------|----------|
-| **`OutOfMemoryError` on large files** | Process pages in smaller batches and close the Merger after each batch. |
-| **Unsupported file format** | Verify the format is listed in the GroupDocs.Merger supported formats (PDF, DOCX, XLSX, PPTX, etc.). |
-| **License not applied** | Ensure the license file is placed in the application’s root directory or set via `License license = new License(); license.setLicense("path/to/license.lic");`. |
+## Gyakori problémák és megoldások
+| Probléma | Megoldás |
+|----------|----------|
+| **`OutOfMemoryError` nagy fájlok esetén** | Az oldalakat kisebb adagokban dolgozza fel, és minden adag után zárja be a Merger‑t. |
+| **Nem támogatott fájlformátum** | Ellenőrizze, hogy a formátum szerepel-e a GroupDocs.Merger által támogatott formátumok listájában (PDF, DOCX, XLSX, PPTX stb.). |
+| **Licenc nincs alkalmazva** | Győződjön meg róla, hogy a licencfájl az alkalmazás gyökérkönyvtárában van, vagy állítsa be a `License license = new License(); license.setLicense("path/to/license.lic");` kóddal. |
 
-## Frequently Asked Questions
+## Gyakran ismételt kérdések
 
-**Q: Can I merge more than two documents?**  
-A: Yes, simply call `merger.join()` repeatedly for each additional source file.
+**Q: Egyesíthetek több mint két dokumentumot?**  
+A: Igen, egyszerűen hívja a `merger.join()` metódust többször minden további forrásfájlhoz.
 
-**Q: What file types does GroupDocs.Merger support?**  
-A: It supports PDF, DOCX, DOC, PPTX, PPT, XLSX, XLS, and many other common office formats.
+**Q: Milyen fájltípusokat támogat a GroupDocs.Merger?**  
+A: Támogatja a PDF, DOCX, DOC, PPTX, PPT, XLSX, XLS és sok más gyakori irodai formátumot — összesen több mint 50-et.
 
-**Q: How do I extract pages from a document without merging?**  
-A: Use the `extract` method with `PageExtractOptions` to save selected pages as a new file. This is covered under the **extract pages java** use case.
+**Q: Hogyan nyerhetek ki oldalakat egy dokumentumból anélkül, hogy egyesíteném?**  
+A: Használja az `extract` metódust a `PageExtractOptions`‑szel, hogy a kiválasztott oldalakat új fájlba mentse. Ez a **extract pages java** használati esetben van lefedve.
 
-**Q: Is there a limit to the number of pages I can join?**  
-A: The practical limit is dictated by your system’s memory and CPU; the library itself imposes no hard cap.
+**Q: Van korlát a egyesíthető oldalak számában?**  
+A: A könyvtár nem szab ki kemény korlátot; a gyakorlati határok a rendszer memóriájától és CPU‑jától függenek.
 
-**Q: Can I generate dynamic output file names?**  
-A: Absolutely—concatenate timestamps or UUIDs to the filename using `PathConstants.getOutputFilePath()` or custom logic.
+**Q: Generálhatok dinamikus kimeneti fájlneveket?**  
+A: Természetesen — összefűzheti az időbélyegeket vagy UUID‑ket a fájlnévhez a `PathConstants.getOutputFilePath()` vagy egyedi logika segítségével.
 
-## Resources
+## Források
 - [Dokumentáció](https://docs.groupdocs.com/merger/java/)
 - [API Referencia](https://reference.groupdocs.com/merger/java/)
 - [GroupDocs.Merger for Java letöltése](https://releases.groupdocs.com/merger/java/)
@@ -166,10 +222,16 @@ A: Absolutely—concatenate timestamps or UUIDs to the filename using `PathConst
 - [Ideiglenes licenc](https://purchase.groupdocs.com/temporary-license/)
 - [Támogatási fórum](https://forum.groupdocs.com/c/merger/)
 
-Explore these links to deepen your expertise and troubleshoot any challenges you encounter.
+Fedezze fel ezeket a linkeket, hogy mélyítse tudását és megoldja a felmerülő kihívásokat.
 
 ---
 
-**Last Updated:** 2026-03-20  
-**Tested With:** GroupDocs.Merger for Java latest-version  
-**Author:** GroupDocs
+**Legutóbb frissítve:** 2026-10-16  
+**Tesztelve a következővel:** GroupDocs.Merger for Java latest-version  
+**Szerző:** GroupDocs
+
+## Kapcsolódó oktatóanyagok
+
+- [Oldalak kinyerése Groupdocs Merger Java útmutató](/merger/java/document-extraction/extract-pages-groupdocs-merger-java-guide/)
+- [PDF egyesítése Java: Hatékony PDF egyesítés a GroupDocs.Merger for Java‑val – Lépésről‑lépésre útmutató](/merger/java/format-specific-merging/merge-pdfs-groupdocs-merger-java-tutorial/)
+- [Oldalak áthelyezése Java – Dokumentumoldal műveletek oktatóanyagai a GroupDocs.Merger számára](/merger/java/page-operations/)

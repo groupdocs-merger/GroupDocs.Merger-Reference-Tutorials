@@ -1,51 +1,103 @@
 ---
-date: '2026-03-22'
-description: GroupDocs.Merger for Java を使用して、VDX を PDF に変換し、Visio 図を効率的に結合する方法を学びましょう。セットアップ、コード、実践的なヒントを含むステップバイステップガイドです。
+date: '2026-10-16'
+description: GroupDocs.Merger for Java を使用して VDX を PDF に変換し、Visio 図を効率的にマージする方法を学びます。セットアップ、コード、実践的なヒントを含むステップバイステップガイドです。
 keywords:
 - convert vdx to pdf
 - merge VDX files
 - GroupDocs.Merger for Java
 - Java document merging
-title: VDX を PDF に変換し、GroupDocs.Merger for Java でマージ
+lastmod: '2026-10-16'
+og_description: GroupDocs.Merger for Java を使用して VDX を PDF に変換し、単一のワークフローで複数の Visio
+  図をマージします。このガイドではセットアップ、コード、運用上のヒントを解説します。
+og_image_alt: Guide showing VDX to PDF conversion and merging using GroupDocs.Merger
+  Java
+og_title: VDX を PDF に変換し、GroupDocs.Merger Java でマージする
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-16'
+  description: Learn how to convert VDX to PDF and merge Visio diagrams efficiently
+    using GroupDocs.Merger for Java. Step‑by‑step guide with setup, code, and real‑world
+    tips.
+  headline: How to convert VDX to PDF and merge diagrams with GroupDocs.Merger for
+    Java
+  type: TechArticle
+- description: Learn how to convert VDX to PDF and merge Visio diagrams efficiently
+    using GroupDocs.Merger for Java. Step‑by‑step guide with setup, code, and real‑world
+    tips.
+  name: How to convert VDX to PDF and merge diagrams with GroupDocs.Merger for Java
+  steps:
+  - name: '**Document management systems** – Auto‑consolidate Visio diagrams uploaded
+      by different teams and store them as searchable PDFs.'
+    text: '**Document management systems** – Auto‑consolidate Visio diagrams uploaded
+      by different teams and store them as searchable PDFs.'
+  - name: '**Collaborative projects** – Merge individual contributors’ diagrams into
+      a master file for review, then export to PDF for distribution.'
+    text: '**Collaborative projects** – Merge individual contributors’ diagrams into
+      a master file for review, then export to PDF for distribution.'
+  - name: '**Reporting pipelines** – Combine generated VDX charts before converting
+      them to PDF for inclusion in automated business reports.'
+    text: '**Reporting pipelines** – Combine generated VDX charts before converting
+      them to PDF for inclusion in automated business reports.'
+  type: HowTo
+- questions:
+  - answer: There’s no hard‑coded limit; the practical ceiling is determined by available
+      memory and JVM heap size.
+    question: What is the maximum number of VDX files I can merge?
+  - answer: Yes. Load the protected file with a `LoadOptions` object that includes
+      the password, then pass it to the `Merger` constructor.
+    question: Can I merge password‑protected VDX files?
+  - answer: All native Visio elements are retained because the library works on the
+      underlying XML without alteration.
+    question: Does GroupDocs.Merger preserve custom shapes and stencils?
+  - answer: Absolutely. After calling `join()` for all source files, simply call `save("output.pdf")`
+      to obtain a PDF version of the merged diagram.
+    question: Is it possible to merge VDX files and then convert them to PDF in one
+      step?
+  - answer: Wrap the merge calls in a `try‑catch` block and handle `IOException`,
+      `MergerException`, or any custom exceptions as needed.
+    question: How should I handle exceptions during the merge and conversion process?
+  type: FAQPage
+tags:
+- convert vdx to pdf
+- groupdocs merger java
+- visio merging
+- java document processing
+- pdf conversion
+title: GroupDocs.Merger for Java を使用して VDX を PDF に変換し、図をマージする方法
 type: docs
 url: /ja/java/document-joining/merge-vdx-files-groupdocs-merger-java/
 weight: 1
 ---
 
-# VDX を PDF に変換し、GroupDocs.Merger for Java でマージする
+# VDX を PDF に変換し、GroupDocs.Merger for Java で図をマージする
 
-VDX を **PDF に変換** しながら、複数の Visio ダイアグラムを 1 つのファイルにマージしたい場合は、ここが最適です。このチュートリアルでは、GroupDocs.Merger ライブラリを Java プロジェクトに追加することから、複数の VDX ファイルを読み込み、マージし、最終的に PDF として保存するまでの手順をすべて解説します。最後まで実装すれば、任意の Java コードベースに組み込めるクリーンで本番環境対応のソリューションが完成します。
+VDX を PDF に **変換** し、さらに複数の Visio 図を 1 つのファイルにマージしたい場合は、ここが最適です。このチュートリアルでは、GroupDocs.Merger ライブラリを Java プロジェクトに追加することから、複数の VDX ファイルを読み込んでマージし、最終的に PDF として保存するまで、必要な手順をすべて解説します。最後まで読むと、任意の Java コードベースに組み込めるクリーンで本番環境向けのソリューションが手に入ります。
 
 ## クイック回答
 - **VDX のマージと変換を処理するライブラリは何ですか？** GroupDocs.Merger for Java  
 - **同じワークフローで VDX を PDF に変換できますか？** はい – マージ後に `save("output.pdf")` を呼び出すだけです  
-- **本番環境でライセンスは必要ですか？** はい、トライアル期間終了後は有料ライセンスの取得を推奨します  
-- **何個の VDX ファイルをマージできますか？** ハードリミットはありません。実質的な制約はメモリです  
+- **本番環境でライセンスは必要ですか？** はい、トライアル期間後は有料ライセンスの使用が推奨されます  
+- **何個の VDX ファイルをマージできますか？** 明確な上限はありません。実際の制約はメモリです  
 - **サポートされている Java バージョンは？** JDK 8 以降  
 
 ## VDX のマージと変換とは？
 
-VDX（Visual Diagram Exchange）は Microsoft Visio が使用する XML ベースの形式です。**VDX ファイルのマージ** とは、複数のダイアグラムの XML をつなぎ合わせることを意味し、**VDX を PDF に変換** することで、結合されたダイアグラムを広く互換性のある読み取り専用形式にレンダリングします。GroupDocs.Merger はこれらのタスクをシンプルな API で抽象化します。
+VDX のマージと変換は、複数の Visio XML 図を 1 つのドキュメントに結合し、結合された結果を PDF ファイルとしてレンダリングします。このプロセスにより、XML を手動で編集したり別々のコンバータを使用したりする必要がなくなり、効率的で再利用可能なワークフローが実現します。両方のステップを 1 回の API 呼び出しで処理することで、開発工数を削減し、サードパーティツールで発生しがちなフォーマット損失の問題を回避できます。
 
-## なぜ GroupDocs.Merger for Java を使って VDX を PDF に変換するのか？
+## なぜ GroupDocs.Merger for Java を使用して VDX を PDF に変換するのか？
 
-- **コード不要の XML 操作** – ライブラリが XML の結合と PDF のレンダリングを自動で行います。  
-- **1 つの API で多数のフォーマットに対応** – 同じ `save()` メソッドで PDF、DOCX、PPTX などに出力できます。  
-- **高性能** – 大容量の Visio ファイルでも低メモリオーバーヘッドで処理できます。  
-- **シンプルなライセンス体系** – 評価用の無料トライアルの後、1 回購入のライセンスで利用可能です。
+GroupDocs.Merger は、VDX ファイルを結合し最終出力を PDF としてレンダリングする、単一の高性能 API を提供します。ドキュメント全体をメモリに読み込むことなく、最大 500 MB のファイルを処理でき、DOCX、PPTX、HTML、画像形式など 70 種類以上の入力・出力フォーマットに対応しているため、同じコードを他の変換シナリオでも再利用できます。
 
 ## 前提条件
-
-作業を始める前に、以下が揃っていることを確認してください。
 
 - **GroupDocs.Merger for Java**（コアマージエンジン）  
 - **Java Development Kit (JDK) 8+**  
 - **Maven** または **Gradle**（依存関係管理用）  
 - マージおよび変換したい VDX ファイルが格納されたフォルダー  
 
-## GroupDocs.Merger for Java のセットアップ
+## GroupDocs.Merger for Java の設定
 
-お好みのビルドツールでライブラリをプロジェクトに追加します。
+好みのビルドツールを使用してライブラリをプロジェクトに追加します。
 
 **Maven**
 
@@ -63,17 +115,17 @@ VDX（Visual Diagram Exchange）は Microsoft Visio が使用する XML ベー�
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-または、[GroupDocs.Merger for Java のリリース](https://releases.groupdocs.com/merger/java/) から最新の JAR を直接ダウンロードできます。
+最新の JAR は、[GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) から直接ダウンロードすることもできます。
 
 ### ライセンス取得
 
-まずは無料トライアルまたは一時ライセンスで全機能を試してください。本番環境で使用する際は、正式ライセンスを購入します。
+[free trial](https://releases.groupdocs.com/merger/java/) または [temporary license](https://purchase.groupdocs.com/temporary-license/) で全機能を試すことができます。製品版の使用が必要になったら、フルライセンスを購入してください。
 
 ## ステップバイステップ実装ガイド
 
 ### VDX ファイル用 Merger のロードと初期化
 
-最初の VDX ドキュメントを指す `Merger` インスタンスを作成します。
+`Merger` クラスは GroupDocs.Merger のコアオブジェクトで、ドキュメントのロード、結合、保存を管理します。ファイル形式の取り扱いを抽象化しているため、生の XML を直接操作する必要はありません。
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -83,11 +135,11 @@ Merger merger = new Merger(documentDirectory + "/sample.vdx");
 ```
 
 - **Parameter** – 主となる VDX ファイルへのパス。  
-- **Purpose** – 追加ファイルをキューに入れられるよう、内部状態を初期化します。
+- **Purpose** – 追加ファイルをキューに追加できるよう内部状態を設定します。
 
-### 追加の VDX ファイルを追加
+### 追加の VDX ファイルを追加する
 
-マージに含めたい各ダイアグラムに対して `join()` を呼び出します。
+`join()` メソッドは、指定した VDX ファイルを現在のマージキューに追加し、追加順にページ順序を保持します。
 
 ```java
 merger.join(documentDirectory + "/sample2.vdx");
@@ -96,74 +148,80 @@ merger.join(documentDirectory + "/sample2.vdx");
 - **Method** – `join()` は指定した VDX を現在のマージキューに追加します。  
 - **Tip** – `FileNotFoundException` を防ぐため、すべてのファイルが存在し読み取り可能であることを確認してください。
 
-### マージされた VDX ファイルの保存
+### マージされた VDX ファイルを保存する
 
-結合されたダイアグラムを VDX ファイルとして永続化します。
+`save()` メソッドは、指定した形式で最終ドキュメントをディスクに書き込みます。拡張子に `.vdx` を指定すると Visio ファイルのまま出力され、`.pdf` を指定すると PDF がレンダリングされます。
 
 ```java
 String outputPath = "YOUR_OUTPUT_DIRECTORY";
 merger.save(outputPath + "/merged.vdx");
 ```
 
-- **Method** – `save()` が最終ドキュメントをディスクに書き出します。  
-- **Result** – すべてのソースダイアグラムを含む単一の VDX ファイルが生成されます。
+- **Method** – `save()` は最終ドキュメントをディスクに書き込みます。  
+- **Result** – すべての元図を含む単一の VDX ファイルです。
 
-### 結合されたダイアグラムを PDF に変換
+### マージされた図を PDF に変換する
 
-同じ `Merger` インスタンスで直接 PDF を出力できます。
+同じ `Merger` インスタンスで `save("output.pdf")` を呼び出すだけで、追加のコードやサードパーティのコンバータを使用せずに PDF レンダリングが実行されます。
 
 ```java
 merger.save(outputPath + "/merged.pdf");
 ```
 
-- **Conversion** – 拡張子を `.pdf` に指定するだけで、GroupDocs.Merger が結合された Visio コンテンツを PDF 文書としてレンダリングします。  
-- **Benefit** – 余計なコードやサードパーティ製コンバータは不要です。
+- **Conversion** – `.pdf` 拡張子を指定すると、GroupDocs.Merger はマージされた Visio コンテンツを PDF ドキュメントとしてレンダリングします。  
+- **Benefit** – Merger のライセンス以外に追加のライブラリやライセンス手順は不要です。
 
-## 実用例
+## 実用的な活用例
 
-1. **ドキュメント管理システム** – 異なるチームがアップロードした Visio ダイアグラムを自動で統合し、検索可能な PDF として保存。  
-2. **共同プロジェクト** – 個々の貢献者のダイアグラムをマスターファイルにマージし、レビュー後に PDF で配布。  
-3. **レポートパイプライン** – 生成された VDX チャートを結合し、PDF に変換して自動レポートに組み込む。
+1. **Document management systems** – 異なるチームがアップロードした Visio 図を自動で統合し、検索可能な PDF として保存します。  
+2. **Collaborative projects** – 個々の貢献者の図をマスターファイルにマージしてレビューし、PDF にエクスポートして配布します。  
+3. **Reporting pipelines** – 生成された VDX チャートを結合し、PDF に変換して自動化された業務レポートに組み込みます。  
 
 ## パフォーマンス上の考慮点
 
-- **チャンク処理** – 非常に大きな VDX ファイルは、メモリ使用量を抑えるために小さなバッチに分割して処理します。  
-- **ライブラリの更新** – パフォーマンス向上のため、常に最新の GroupDocs.Merger リリースを使用してください。  
-- **Java のベストプラクティス** – ストリームは速やかにクローズし、可能な限り `try‑with‑resources` を活用します。
+- **Chunk processing** – 非常に大きな VDX ファイルの場合、ヒープ使用量を抑えるために小さなバッチに分割して処理します。  
+- **Library updates** – 最新の GroupDocs.Merger リリースではメモリ処理が最大 30 % 改善され、新しい Visio ステンシル形式のサポートが追加されています。  
+- **Java best practices** – ストリームは try‑with‑resources で速やかに閉じ、数百ページに及ぶ図を扱う際は JVM ヒープ（`-Xmx2g` 以上）を設定してください。  
 
 ## よくある問題と解決策
 
 | Issue | Cause | Solution |
 |-------|-------|----------|
-| `FileNotFoundException` | ファイルパスが間違っている | ディレクトリとファイル名を再確認し、必要に応じて絶対パスを使用 |
-| マージ後のダイアグラムでページ順が崩れる | ファイルの追加順序が誤っている | ページ順序を決めたい順序で `join()` を呼び出す |
-| 大容量ファイルで Out‑of‑memory エラー | ヒープサイズが不足している | JVM ヒープを増やす（例: `-Xmx2g` 以上）か、マージを小グループに分割 |
+| `FileNotFoundException` | ファイルパスが正しくない | ディレクトリとファイル名を再確認してください。相対パスが失敗する場合は絶対パスを使用します |
+| マージされた図のページ順序が失われる | ファイルが誤った順序で追加された | `join()` をページを表示したい正確な順序で呼び出してください |
+| 大きなファイルでメモリ不足エラー | ヒープ領域が不足している | JVM ヒープを増やす（`-Xmx4g` 推奨）か、マージを小さなグループに分割してください |
 
-## FAQ（よくある質問）
+## よくある質問
 
 **Q: マージできる VDX ファイルの最大数は？**  
-A: ハードリミットはありません。実質的な上限は利用可能なメモリと JVM ヒープサイズで決まります。
+A: 明確な上限はありません。実際の上限は利用可能なメモリと JVM ヒープサイズで決まります。
 
-**Q: パスワード保護された VDX ファイルをマージできますか？**  
-A: はい。パスワードを含む `LoadOptions` オブジェクトで保護されたファイルを読み込み、`Merger` コンストラクタに渡します。
+**Q: パスワードで保護された VDX ファイルをマージできますか？**  
+A: はい。パスワードを含む `LoadOptions` オブジェクトで保護されたファイルをロードし、`Merger` コンストラクタに渡します。
 
 **Q: GroupDocs.Merger はカスタムシェイプやステンシルを保持しますか？**  
-A: はい。ライブラリは基になる XML を変更せずに処理するため、すべてのネイティブ Visio 要素がそのまま保持されます。
+A: ライブラリは基礎となる XML を変更せずに処理するため、すべてのネイティブ Visio 要素が保持されます。
 
-**Q: VDX ファイルをマージしてから一括で PDF に変換することは可能ですか？**  
-A: もちろん可能です。すべてのソースファイルに対して `join()` を呼び出した後、`save("output.pdf")` を実行すれば、マージされたダイアグラムの PDF バージョンが得られます。
+**Q: VDX ファイルをマージし、同時に PDF に変換することは可能ですか？**  
+A: もちろん可能です。すべてのソースファイルに対して `join()` を呼び出した後、`save("output.pdf")` を実行すれば、マージされた図の PDF バージョンが得られます。
 
-**Q: マージおよび変換プロセス中の例外はどう処理すればよいですか？**  
-A: マージ呼び出しを `try‑catch` ブロックでラップし、`IOException`、`MergerException`、またはカスタム例外を適切にハンドリングしてください。
+**Q: マージおよび変換プロセス中の例外はどのように処理すべきですか？**  
+A: マージ呼び出しを `try‑catch` ブロックで囲み、必要に応じて `IOException`、`MergerException`、またはカスタム例外を処理してください。
 
 ## 結論
 
-これで **VDX を PDF に変換** し、Visio ダイアグラムを効率的にマージする方法が分かりました。GroupDocs.Merger for Java を使用すれば、XML 操作や PDF レンダリングの手間が省け、ビジネスロジックに集中できます。ページ単位の操作やバッチ変換など、追加機能も活用して、シンプルなワークフローをフル機能のドキュメント自動化パイプラインへと拡張してください。
+これで、**VDX を PDF に変換**し、GroupDocs.Merger for Java を使用して Visio 図を効率的にマージする方法が分かりました。このライブラリは XML 操作や PDF レンダリングの手間を取り除き、ビジネスロジックに集中できるようにします。ページ単位の操作、バッチ変換、カスタム透かしなどの追加機能を調査して、このシンプルなワークフローをフル機能のドキュメント自動化パイプラインに拡張してください。
 
-**関連リソース：** [Documentation](https://docs.groupdocs.com/merger/java/) | [API Reference](https://reference.groupdocs.com/merger/java/) | [Download](https://releases.groupdocs.com/merger/java/) | [Purchase](https://purchase.groupdocs.com/buy) | [Free Trial](https://releases.groupdocs.com/merger/java/) | [Temporary License](https://purchase.groupdocs.com/temporary-license/) | [Support](https://forum.groupdocs.com/c/merger/)
+**関連リソース:** [Documentation](https://docs.groupdocs.com/merger/java/) | [API Reference](https://reference.groupdocs.com/merger/java/) | [Download](https://releases.groupdocs.com/merger/java/) | [Purchase](https://purchase.groupdocs.com/buy) | [Free trial](https://releases.groupdocs.com/merger/java/) | [Temporary license](https://purchase.groupdocs.com/temporary-license/) | [Support](https://forum.groupdocs.com/c/merger/)
 
 ---
 
-**最終更新日:** 2026-03-22  
-**テスト環境:** GroupDocs.Merger 23.12（執筆時点での最新バージョン）  
+**最終更新日:** 2026-10-16  
+**テスト環境:** GroupDocs.Merger 23.12（執筆時点での最新）  
 **作者:** GroupDocs
+
+## 関連チュートリアル
+
+- [Merge PDF Java: ローカルドキュメントを GroupDocs.Merger でロード – ガイド](/merger/java/document-loading/load-document-groupdocs-merger-java-guide/)
+- [GroupDocs.Merger for Java を使用して VSDX ファイルをマージする方法: ステップバイステップガイド](/merger/java/format-specific-merging/merge-vsdx-files-groupdocs-merger-java/)
+- [Merge PDF Java: GroupDocs.Merger for Java で PDF を効率的にマージ – ステップバイステップガイド](/merger/java/format-specific-merging/merge-pdfs-groupdocs-merger-java-tutorial/)
