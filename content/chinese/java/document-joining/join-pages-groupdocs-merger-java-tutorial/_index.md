@@ -1,48 +1,102 @@
 ---
-date: '2026-03-20'
-description: 学习如何使用 GroupDocs.Merger for Java 合并特定页面。此指南展示了设置、合并 PDF/DOCX，以及性能技巧。
+date: '2026-10-16'
+description: 了解如何在 Java 中使用 GroupDocs.Merger 提取和合并页面。本指南涵盖设置、选择页面范围、合并 PDFs/DOCX 以及性能技巧。
 keywords:
-- GroupDocs Merger for Java
-- join specific pages from documents
-- merge documents using Java
-title: 合并特定页面（Java）– 使用 GroupDocs.Merger 合并文档
+- extract and merge pages
+- merge documents java
+- groupdocs merger java
+lastmod: '2026-10-16'
+og_description: 了解如何在 Java 中使用 GroupDocs.Merger 提取和合并页面，这是一款支持超过 50 种格式并高效处理大型文档的强大库。
+og_image_alt: Guide showing how to extract and merge pages in Java with GroupDocs.Merger
+og_title: 如何在 Java 中使用 GroupDocs.Merger 提取和合并页面
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-16'
+  description: Learn how to extract and merge pages in Java using GroupDocs.Merger.
+    This guide covers setup, selecting page ranges, merging PDFs/DOCX, and performance
+    tips.
+  headline: How to extract and merge pages in Java with GroupDocs.Merger
+  type: TechArticle
+- description: Learn how to extract and merge pages in Java using GroupDocs.Merger.
+    This guide covers setup, selecting page ranges, merging PDFs/DOCX, and performance
+    tips.
+  name: How to extract and merge pages in Java with GroupDocs.Merger
+  steps:
+  - name: '**Document consolidation:** Pull selected chapters from several textbooks
+      into a single PDF for quick review.'
+    text: '**Document consolidation:** Pull selected chapters from several textbooks
+      into a single PDF for quick review.'
+  - name: '**Report generation:** Combine key sections from financial PDFs and Excel‑derived
+      PDFs into one executive summary.'
+    text: '**Report generation:** Combine key sections from financial PDFs and Excel‑derived
+      PDFs into one executive summary.'
+  - name: '**Research compilation:** Merge excerpts from multiple academic papers
+      (PDF, DOCX) into a single reference document.'
+    text: '**Research compilation:** Merge excerpts from multiple academic papers
+      (PDF, DOCX) into a single reference document.'
+  type: HowTo
+- questions:
+  - answer: Yes, simply call `merger.join()` repeatedly for each additional source
+      file.
+    question: Can I merge more than two documents?
+  - answer: It supports PDF, DOCX, DOC, PPTX, PPT, XLSX, XLS, and many other common
+      office formats—over 50 in total.
+    question: What file types does GroupDocs.Merger support?
+  - answer: Use the `extract` method with `PageExtractOptions` to save selected pages
+      as a new file. This is covered under the **extract pages java** use case.
+    question: How do I extract pages from a document without merging?
+  - answer: The library imposes no hard cap; practical limits depend on your system’s
+      memory and CPU.
+    question: Is there a limit to the number of pages I can join?
+  - answer: Absolutely—concatenate timestamps or UUIDs to the filename using `PathConstants.getOutputFilePath()`
+      or custom logic.
+    question: Can I generate dynamic output file names?
+  type: FAQPage
+tags:
+- merge pages
+- GroupDocs.Merger
+- Java document processing
+- PDF manipulation
+- DOCX merging
+title: 如何在 Java 中使用 GroupDocs.Merger 提取和合并页面
 type: docs
 url: /zh/java/document-joining/join-pages-groupdocs-merger-java-tutorial/
 weight: 1
 ---
 
-# 合并特定页面 java：使用 GroupDocs.Merger for Java 合并多个文档的特定页面
+# 如何在 Java 中使用 GroupDocs.Merger 提取并合并页面
 
-在 Java 中，您可以通过几行代码 **merge specific pages java** 从 PDF、DOCX 文件、电子表格以及许多其他格式中合并特定页面。无论是需要合并多本书的章节、汇总报告的关键章节，还是创建自定义手册，GroupDocs.Merger for Java 都能让该过程快速、可靠且完全可编程。
+在本综合教程中，您将学习如何使用 GroupDocs.Merger for Java 从 PDF、DOCX 文件、电子表格以及许多其他文档类型中**提取并合并页面**。无论您是需要组装自定义手册、从多本书中提取章节，还是从分散的源文件生成简洁报告，本指南都将通过清晰的说明和实际案例，带您完整掌握整个过程。
 
 ## 快速答案
-- **What is the primary use case?** 将 PDF、DOCX、XLSX 等中的选定页面合并为单个输出文件。  
-- **Which library handles this?** GroupDocs.Merger for Java。  
-- **Do I need a license?** 免费试用可用于评估；生产环境需要付费许可证。  
-- **What Java version is required?** Java 8 或更高版本。  
-- **Can I merge more than two files?** 可以——对每个源文档重复调用 `join`。
+- **主要使用场景是什么？** 将 PDF、DOCX、XLSX、PPTX 等受支持格式的选定页面合并为单个输出文件。  
+- **哪个库负责此功能？** GroupDocs.Merger for Java。  
+- **我需要许可证吗？** 免费试用可用于评估；生产环境需要付费许可证。  
+- **需要哪个 Java 版本？** Java 8 或更高版本。  
+- **我可以合并超过两个文件吗？** 可以——对每个额外的源文档重复调用 `join`。
 
-## 如何合并特定页面 java
-下面是一个简明的分步演示，展示了 **merge specific pages java**，并仅从每个源文档中选择所需页面。相同的模式适用于 PDF、DOCX、PPTX、XLSX 以及许多其他受支持的格式。
+## 什么是提取并合并页面？
 
-## 什么是使用 GroupDocs.Merger 的“合并页面”？
-GroupDocs.Merger 提供了一个简洁的 API，允许您从源文件中选择单个页面（或范围），并将它们拼接成一个新文档。这消除了手动 PDF 编辑工具的需求，并且开箱即支持数十种格式。
+`extract and merge pages` 是指从一个或多个源文档中选择特定页码或页范围，并将它们拼接成新文件的过程。这消除了手动复制粘贴，并确保生成的文档保留原始的格式、字体和图像。
 
 ## 为什么使用 GroupDocs.Merger for Java？
-- **Format flexibility:** 支持 PDF、DOCX、PPTX、XLSX 等多种格式。  
-- **Performance‑focused:** 仅处理所需页面，降低内存使用。  
-- **Easy integration:** Maven/Gradle 即可使用，配有清晰的文档和示例。  
+
+GroupDocs.Merger for Java 是一个多功能库，使开发者能够以编程方式操作文档，支持超过 50 种格式，高速处理且低内存消耗，非常适合企业环境中的服务器端文档工作流和大规模批处理操作。
+
+- **格式灵活性：** 支持 50 多种输入和输出格式，包括 PDF、DOCX、PPTX、XLSX 以及图像文件，几乎可以处理任何办公文档。  
+- **性能导向：** 仅处理您请求的页面，从而降低内存消耗。  
+- **易于集成：** 通过 Maven 或 Gradle 提供，拥有清晰的 API 文档且无外部依赖。  
 
 ## 前置条件
-- 对 Java 编程有基本了解。  
-- 使用 Maven 或 Gradle 进行依赖管理。  
-- 使用 IntelliJ IDEA 或 Eclipse 等 IDE。  
+- 基本的 Java 编程知识。  
+- 用于依赖管理的 Maven 或 Gradle。  
+- 如 IntelliJ IDEA 或 Eclipse 等 IDE。  
 
 ## 设置 GroupDocs.Merger for Java
 
-使用以下任一方法将库添加到项目中。
+使用以下方法之一将库添加到项目中。
 
-**Maven:**
+**Maven:**  
 ```xml
 <dependency>
     <groupId>com.groupdocs</groupId>
@@ -51,17 +105,21 @@ GroupDocs.Merger 提供了一个简洁的 API，允许您从源文件中选择�
 </dependency>
 ```
 
-**Gradle:**
+**Gradle:**  
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-或者，直接从 [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) 下载最新版本。
+或者直接从 [GroupDocs.Merger for Java 发布版](https://releases.groupdocs.com/merger/java/) 下载最新版本。
 
 ### 获取许可证
-要解锁所有功能，您需要许可证。您可以先使用免费试用，在 [purchase page](https://purchase.groupdocs.com/buy) 购买完整许可证。还提供临时许可证用于短期评估。
+要解锁所有功能，您需要许可证。您可以先使用免费试用，或在[购买页面](https://purchase.groupdocs.com/buy)购买完整许可证。也可以获取临时许可证用于短期评估。
 
-## 合并特定页面的分步指南
+## 如何在 Java 中提取并合并页面？
+
+`Merger` 类是创建和管理文档合并操作的主要 API 组件。使用 `Merger` 构造函数加载每个源文档，指定所需的确切页码，然后调用 `join` 进行合并。最后，将合并结果保存为所需格式。整个端到端流程仅需四次方法调用，并在所有受支持的文件类型中保持一致。
+
+## 提取并合并特定页面的分步指南
 
 ### 步骤 1：使用主文档初始化 Merger
 ```java
@@ -78,7 +136,7 @@ Merger merger = new Merger(filePath);
 PageJoinOptions joinOptions = new PageJoinOptions(1, 2);
 ```
 
-### 步骤 3：从第二个文档加入选定页面
+### 步骤 3：从第二个文档合并选定页面
 ```java
 // Path to your DOCX file\ String docxFilePath = YOUR_DOCUMENT_DIRECTORY + "/sample.docx";
 merger.join(docxFilePath, joinOptions);
@@ -116,44 +174,45 @@ public class PathConstants {
 }
 ```
 
-使用常量可以让代码更简洁，并简化未来路径的更改。
+使用常量可以使代码更简洁，并简化以后路径的更改。
 
 ## 实际应用
-以下是 **merge specific pages java** 发挥作用的几个真实场景：
 
-1. **Document Consolidation:** 将多本教材的选定章节提取到单个 PDF 中，以便快速查看。  
-2. **Report Generation:** 将财务 PDF 和 Excel 生成的 PDF 中的关键章节合并为一份执行摘要。  
-3. **Research Compilation:** 将多篇学术论文（PDF、DOCX）的摘录合并为单个参考文档。  
+以下是 **提取并合并页面** 发挥优势的几个实际场景：
 
-## 性能考虑
-- **Close the Merger** 完成后关闭 Merger，以释放本地资源。  
-- **Select only needed pages** 而不是合并整个文件；这可显著缩短处理时间。  
-- **Handle exceptions** 优雅地处理异常，以避免在源文件缺失或损坏时崩溃。  
+1. **文档合并：** 将多本教材中的选定章节提取到单个 PDF 中，以便快速查看。  
+2. **报告生成：** 将财务 PDF 和由 Excel 生成的 PDF 中的关键章节合并为一份执行摘要。  
+3. **研究汇编：** 将多篇学术论文（PDF、DOCX）的摘录合并为单个参考文档。
+
+## 性能考虑因素
+- **关闭 Merger** 后释放本机资源。  
+- **仅选择所需页面** 而不是合并整个文件；这可显著缩短处理时间。  
+- **优雅地处理异常**，以避免在源文件缺失或损坏时导致崩溃。  
 
 ## 常见问题与解决方案
 
 | 问题 | 解决方案 |
 |-------|----------|
-| **`OutOfMemoryError` 在大文件上** | 将页面分成更小的批次处理，并在每个批次后关闭 Merger。 |
-| **不受支持的文件格式** | 确认该格式已列在 GroupDocs.Merger 支持的格式中（PDF、DOCX、XLSX、PPTX 等）。 |
-| **许可证未生效** | 确保许可证文件放置在应用程序根目录，或通过 `License license = new License(); license.setLicense("path/to/license.lic");` 设置。 |
+| **在大文件上出现 `OutOfMemoryError`** | 将页面分成更小的批次处理，并在每个批次后关闭 Merger。 |
+| **不受支持的文件格式** | 确认该格式已列在 GroupDocs.Merger 支持的格式列表中（PDF、DOCX、XLSX、PPTX 等）。 |
+| **许可证未生效** | 确保许可证文件放置在应用程序根目录，或通过 `License license = new License(); license.setLicense("path/to/license.lic");` 进行设置。 |
 
-## 常见问答
+## 常见问题
 
-**Q: 我可以合并超过两个文档吗？**  
-A: 可以，只需对每个额外的源文件重复调用 `merger.join()`。
+**问：我可以合并超过两个文档吗？**  
+答：可以，只需对每个额外的源文件重复调用 `merger.join()`。
 
-**Q: GroupDocs.Merger 支持哪些文件类型？**  
-A: 支持 PDF、DOCX、DOC、PPTX、PPT、XLSX、XLS 等多种常见办公格式。
+**问：GroupDocs.Merger 支持哪些文件类型？**  
+答：它支持 PDF、DOCX、DOC、PPTX、PPT、XLSX、XLS 等多种常见办公格式，总计超过 50 种。
 
-**Q: 如何在不合并的情况下提取文档页面？**  
-A: 使用 `extract` 方法配合 `PageExtractOptions` 将选定页面保存为新文件。此用例在 **extract pages java** 中有说明。
+**问：如何在不合并的情况下提取文档页面？**  
+答：使用带有 `PageExtractOptions` 的 `extract` 方法将选定页面保存为新文件。这在 **extract pages java** 用例中有说明。
 
-**Q: 合并的页面数量是否有限制？**  
-A: 实际限制取决于系统的内存和 CPU，库本身没有硬性上限。
+**问：合并页面的数量有没有限制？**  
+答：库本身没有硬性上限；实际限制取决于系统的内存和 CPU。
 
-**Q: 我可以生成动态的输出文件名吗？**  
-A: 完全可以——使用 `PathConstants.getOutputFilePath()` 或自定义逻辑将时间戳或 UUID 拼接到文件名中。
+**问：我可以生成动态的输出文件名吗？**  
+答：完全可以——使用 `PathConstants.getOutputFilePath()` 或自定义逻辑，将时间戳或 UUID 拼接到文件名中。
 
 ## 资源
 - [文档](https://docs.groupdocs.com/merger/java/)
@@ -164,10 +223,16 @@ A: 完全可以——使用 `PathConstants.getOutputFilePath()` 或自定义逻�
 - [临时许可证](https://purchase.groupdocs.com/temporary-license/)
 - [支持论坛](https://forum.groupdocs.com/c/merger/)
 
-浏览这些链接以加深您的专业知识并解决遇到的任何问题。
+浏览这些链接，以加深您的专业知识并解决遇到的任何问题。
 
 ---
 
-**最后更新：** 2026-03-20  
-**测试环境：** GroupDocs.Merger for Java 最新版本  
-**作者：** GroupDocs
+**Last Updated:** 2026-10-16  
+**Tested With:** GroupDocs.Merger for Java 最新版本  
+**Author:** GroupDocs
+
+## 相关教程
+
+- [提取页面 Groupdocs Merger Java 指南](/merger/java/document-extraction/extract-pages-groupdocs-merger-java-guide/)
+- [合并 PDF Java：使用 GroupDocs.Merger for Java 高效合并 PDF – 步骤指南](/merger/java/format-specific-merging/merge-pdfs-groupdocs-merger-java-tutorial/)
+- [移动页面 Java – GroupDocs.Merger 文档页面操作教程](/merger/java/page-operations/)
