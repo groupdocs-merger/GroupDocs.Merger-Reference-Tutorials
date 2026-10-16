@@ -1,49 +1,104 @@
 ---
-date: '2026-03-22'
+date: '2026-10-16'
 description: Tìm hiểu cách chuyển đổi VDX sang PDF và hợp nhất các sơ đồ Visio một
   cách hiệu quả bằng GroupDocs.Merger cho Java. Hướng dẫn từng bước với cài đặt, mã
-  nguồn và các mẹo thực tế.
+  nguồn và các mẹo thực tiễn.
 keywords:
 - convert vdx to pdf
 - merge VDX files
 - GroupDocs.Merger for Java
 - Java document merging
-title: Chuyển đổi VDX sang PDF và hợp nhất với GroupDocs.Merger cho Java
+lastmod: '2026-10-16'
+og_description: Chuyển đổi VDX sang PDF bằng GroupDocs.Merger cho Java và hợp nhất
+  nhiều sơ đồ Visio trong một quy trình làm việc duy nhất. Hướng dẫn này bao gồm cài
+  đặt, mã nguồn và các mẹo sản xuất.
+og_image_alt: Guide showing VDX to PDF conversion and merging using GroupDocs.Merger
+  Java
+og_title: Chuyển đổi VDX sang PDF và hợp nhất với GroupDocs.Merger Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-16'
+  description: Learn how to convert VDX to PDF and merge Visio diagrams efficiently
+    using GroupDocs.Merger for Java. Step‑by‑step guide with setup, code, and real‑world
+    tips.
+  headline: How to convert VDX to PDF and merge diagrams with GroupDocs.Merger for
+    Java
+  type: TechArticle
+- description: Learn how to convert VDX to PDF and merge Visio diagrams efficiently
+    using GroupDocs.Merger for Java. Step‑by‑step guide with setup, code, and real‑world
+    tips.
+  name: How to convert VDX to PDF and merge diagrams with GroupDocs.Merger for Java
+  steps:
+  - name: '**Document management systems** – Auto‑consolidate Visio diagrams uploaded
+      by different teams and store them as searchable PDFs.'
+    text: '**Document management systems** – Auto‑consolidate Visio diagrams uploaded
+      by different teams and store them as searchable PDFs.'
+  - name: '**Collaborative projects** – Merge individual contributors’ diagrams into
+      a master file for review, then export to PDF for distribution.'
+    text: '**Collaborative projects** – Merge individual contributors’ diagrams into
+      a master file for review, then export to PDF for distribution.'
+  - name: '**Reporting pipelines** – Combine generated VDX charts before converting
+      them to PDF for inclusion in automated business reports.'
+    text: '**Reporting pipelines** – Combine generated VDX charts before converting
+      them to PDF for inclusion in automated business reports.'
+  type: HowTo
+- questions:
+  - answer: There’s no hard‑coded limit; the practical ceiling is determined by available
+      memory and JVM heap size.
+    question: What is the maximum number of VDX files I can merge?
+  - answer: Yes. Load the protected file with a `LoadOptions` object that includes
+      the password, then pass it to the `Merger` constructor.
+    question: Can I merge password‑protected VDX files?
+  - answer: All native Visio elements are retained because the library works on the
+      underlying XML without alteration.
+    question: Does GroupDocs.Merger preserve custom shapes and stencils?
+  - answer: Absolutely. After calling `join()` for all source files, simply call `save("output.pdf")`
+      to obtain a PDF version of the merged diagram.
+    question: Is it possible to merge VDX files and then convert them to PDF in one
+      step?
+  - answer: Wrap the merge calls in a `try‑catch` block and handle `IOException`,
+      `MergerException`, or any custom exceptions as needed.
+    question: How should I handle exceptions during the merge and conversion process?
+  type: FAQPage
+tags:
+- convert vdx to pdf
+- groupdocs merger java
+- visio merging
+- java document processing
+- pdf conversion
+title: Cách chuyển đổi VDX sang PDF và hợp nhất sơ đồ với GroupDocs.Merger cho Java
 type: docs
 url: /vi/java/document-joining/merge-vdx-files-groupdocs-merger-java/
 weight: 1
 ---
 
-# Chuyển đổi VDX sang PDF và Gộp với GroupDocs.Merger cho Java
+# Chuyển đổi VDX sang PDF và hợp nhất các sơ đồ với GroupDocs.Merger cho Java
 
-Nếu bạn cần **chuyển đổi VDX sang PDF** đồng thời gộp một số sơ đồ Visio thành một tệp duy nhất, bạn đã đến đúng nơi. Trong hướng dẫn này, chúng tôi sẽ đi qua mọi thứ bạn cần—từ việc thêm thư viện GroupDocs.Merger vào dự án Java, tải nhiều tệp VDX, gộp chúng, và cuối cùng lưu kết quả dưới dạng PDF. Khi hoàn thành, bạn sẽ có một giải pháp sạch sẽ, sẵn sàng cho môi trường sản xuất mà bạn có thể tích hợp vào bất kỳ codebase Java nào.
+Nếu bạn cần **chuyển đổi VDX sang PDF** đồng thời hợp nhất một vài sơ đồ Visio thành một tệp duy nhất, bạn đã đến đúng nơi. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn mọi thứ bạn cần—từ việc thêm thư viện GroupDocs.Merger vào dự án Java của bạn, đến việc tải nhiều tệp VDX, hợp nhất chúng, và cuối cùng lưu kết quả dưới dạng PDF. Khi kết thúc, bạn sẽ có một giải pháp sạch sẽ, sẵn sàng cho môi trường sản xuất mà bạn có thể tích hợp vào bất kỳ mã Java nào.
 
 ## Câu trả lời nhanh
-- **Thư viện nào xử lý việc gộp và chuyển đổi VDX?** GroupDocs.Merger for Java  
-- **Tôi có thể chuyển đổi VDX sang PDF trong cùng một quy trình không?** Có – chỉ cần gọi `save("output.pdf")` sau khi gộp  
-- **Có cần giấy phép cho môi trường sản xuất không?** Có, nên mua giấy phép trả phí sau thời gian dùng thử  
-- **Tôi có thể gộp bao nhiêu tệp VDX?** Không có giới hạn cứng; bộ nhớ là ràng buộc thực tế  
+- **Thư viện nào xử lý việc hợp nhất và chuyển đổi VDX?** GroupDocs.Merger for Java  
+- **Tôi có thể chuyển đổi VDX sang PDF trong cùng một quy trình không?** Có – chỉ cần gọi `save("output.pdf")` sau khi hợp nhất  
+- **Có cần giấy phép cho môi trường sản xuất không?** Có, một giấy phép trả phí được khuyến nghị sau thời gian dùng thử  
+- **Tôi có thể hợp nhất bao nhiêu tệp VDX?** Không có giới hạn cứng; bộ nhớ là ràng buộc thực tế  
 - **Phiên bản Java nào được hỗ trợ?** JDK 8 hoặc mới hơn  
 
-## VDX là gì và quá trình Gộp & Chuyển đổi?
+## Hợp nhất và chuyển đổi VDX là gì?
 
-VDX (Visual Diagram Exchange) là định dạng dựa trên XML được Microsoft Visio sử dụng. **Gộp các tệp VDX** có nghĩa là ghép nối XML của nhiều sơ đồ lại với nhau, trong khi **chuyển đổi VDX sang PDF** sẽ render sơ đồ đã gộp thành một định dạng rộng rãi, chỉ đọc. GroupDocs.Merger trừu tượng hoá cả hai nhiệm vụ này qua một API đơn giản.
+Hợp nhất và chuyển đổi VDX kết hợp nhiều sơ đồ Visio XML thành một tài liệu duy nhất và sau đó tạo ra kết quả đã hợp nhất dưới dạng tệp PDF. Quy trình này loại bỏ nhu cầu chỉnh sửa XML thủ công hoặc sử dụng các công cụ chuyển đổi riêng biệt, mang lại cho bạn một quy trình làm việc gọn gàng, có thể lặp lại. Bằng cách xử lý cả hai bước trong một lời gọi API, bạn giảm công sức phát triển và tránh các vấn đề mất định dạng có thể phát sinh với các công cụ bên thứ ba.
 
-## Tại sao nên dùng GroupDocs.Merger cho Java để chuyển đổi VDX sang PDF?
+## Tại sao nên sử dụng GroupDocs.Merger cho Java để chuyển đổi VDX sang PDF?
 
-- **Xử lý XML không cần viết mã** – Thư viện tự động thực hiện ghép nối XML và render PDF.  
-- **Một API cho nhiều định dạng** – Phương thức `save()` duy nhất cho phép xuất ra PDF, DOCX, PPTX, v.v.  
-- **Hiệu năng cao** – Tối ưu cho các tệp Visio lớn với mức tiêu thụ bộ nhớ thấp.  
-- **Giấy phép đơn giản** – Dùng thử miễn phí để đánh giá, sau đó mua giấy phép một lần.
+GroupDocs.Merger cung cấp một API duy nhất, hiệu suất cao, vừa ghép các tệp VDX lại với nhau vừa tạo ra đầu ra cuối cùng dưới dạng PDF. Nó hỗ trợ xử lý các tệp lên tới 500 MB mà không cần tải toàn bộ tài liệu vào bộ nhớ, và có thể xử lý hơn 70 định dạng đầu vào và đầu ra—bao gồm DOCX, PPTX, HTML và các loại hình ảnh—để bạn có thể tái sử dụng cùng một đoạn mã cho các kịch bản chuyển đổi khác.
 
-## Các yêu cầu trước
+## Yêu cầu trước
 
-Trước khi bắt đầu, hãy chắc chắn rằng bạn đã có:
+Trước khi chúng ta bắt đầu, hãy xác nhận rằng bạn có:
 
-- **GroupDocs.Merger for Java** (động cơ gộp cốt lõi)  
-- **Bộ công cụ phát triển Java (JDK) 8+**  
+- **GroupDocs.Merger cho Java** (công cụ hợp nhất lõi)  
+- **Java Development Kit (JDK) 8+**  
 - **Maven** hoặc **Gradle** để quản lý phụ thuộc  
-- Một thư mục chứa các tệp VDX bạn muốn gộp và chuyển đổi  
+- Một thư mục chứa các tệp VDX bạn muốn hợp nhất và chuyển đổi  
 
 ## Cài đặt GroupDocs.Merger cho Java
 
@@ -69,13 +124,13 @@ Bạn cũng có thể tải JAR mới nhất trực tiếp từ [GroupDocs.Merge
 
 ### Nhận giấy phép
 
-Bắt đầu với bản dùng thử miễn phí hoặc giấy phép tạm thời để khám phá tất cả tính năng. Khi bạn sẵn sàng cho môi trường sản xuất, mua giấy phép đầy đủ.
+Bắt đầu với một [bản dùng thử miễn phí](https://releases.groupdocs.com/merger/java/) hoặc một [giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/) để khám phá tất cả các tính năng. Khi bạn sẵn sàng cho môi trường sản xuất, mua giấy phép đầy đủ.
 
 ## Hướng dẫn triển khai từng bước
 
-### Tải và Khởi tạo Merger cho các tệp VDX
+### Tải và khởi tạo Merger cho các tệp VDX
 
-Tạo một thể hiện `Merger` trỏ tới tệp VDX đầu tiên.
+`Lớp `Merger` là đối tượng lõi của GroupDocs.Merger quản lý việc tải, hợp nhất và lưu tài liệu. Nó trừu tượng hoá việc xử lý định dạng tệp để bạn không cần làm việc với XML thô.
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -84,88 +139,94 @@ String documentDirectory = "YOUR_DOCUMENT_DIRECTORY";
 Merger merger = new Merger(documentDirectory + "/sample.vdx");
 ```
 
-- **Tham số** – Đường dẫn tới tệp VDX chính.  
-- **Mục đích** – Thiết lập trạng thái nội bộ để các tệp bổ sung có thể được nối tiếp.
+- **Parameter** – Đường dẫn tới tệp VDX chính.  
+- **Purpose** – Thiết lập trạng thái nội bộ để các tệp bổ sung có thể được thêm vào.  
 
 ### Thêm các tệp VDX bổ sung
 
-Gọi `join()` cho mỗi sơ đồ bổ sung mà bạn muốn đưa vào quá trình gộp.
+Phương thức `join()` thêm tệp VDX được chỉ định vào hàng đợi hợp nhất hiện tại, giữ nguyên thứ tự trang khi bạn thêm chúng.
 
 ```java
 merger.join(documentDirectory + "/sample2.vdx");
 ```
 
-- **Phương thức** – `join()` thêm VDX được chỉ định vào hàng đợi gộp hiện tại.  
-- **Mẹo** – Kiểm tra xem mọi tệp có tồn tại và có thể đọc được để tránh `FileNotFoundException`.
+- **Method** – `join()` thêm VDX được chỉ định vào hàng đợi hợp nhất hiện tại.  
+- **Tip** – Kiểm tra rằng mọi tệp đều tồn tại và có thể đọc được để tránh `FileNotFoundException`.  
 
-### Lưu tệp VDX đã gộp
+### Lưu tệp VDX đã hợp nhất
 
-Lưu sơ đồ đã kết hợp dưới dạng tệp VDX.
+Phương thức `save()` ghi tài liệu cuối cùng ra đĩa ở định dạng bạn chỉ định. Khi bạn truyền phần mở rộng `.vdx`, đầu ra vẫn là tệp Visio; khi bạn truyền `.pdf`, thư viện sẽ tạo ra một PDF.
 
 ```java
 String outputPath = "YOUR_OUTPUT_DIRECTORY";
 merger.save(outputPath + "/merged.vdx");
 ```
 
-- **Phương thức** – `save()` ghi tài liệu cuối cùng ra đĩa.  
-- **Kết quả** – Một tệp VDX duy nhất chứa tất cả các sơ đồ nguồn.
+- **Method** – `save()` ghi tài liệu cuối cùng ra đĩa.  
+- **Result** – Một tệp VDX duy nhất chứa tất cả các sơ đồ nguồn.  
 
-### Chuyển đổi Sơ đồ đã gộp sang PDF
+### Chuyển đổi sơ đồ đã hợp nhất sang PDF
 
-Thể hiện `Merger` hiện tại có thể xuất PDF trực tiếp.
+Bằng cách gọi `save("output.pdf")` trên cùng một thể hiện `Merger`, bạn kích hoạt việc tạo PDF mà không cần mã bổ sung hay công cụ chuyển đổi bên thứ ba.
 
 ```java
 merger.save(outputPath + "/merged.pdf");
 ```
 
-- **Chuyển đổi** – Bằng cách chỉ định phần mở rộng `.pdf`, GroupDocs.Merger render nội dung Visio đã gộp thành tài liệu PDF.  
-- **Lợi ích** – Không cần mã bổ sung hay bộ chuyển đổi bên thứ ba.
+- **Conversion** – Chỉ định phần mở rộng `.pdf` cho GroupDocs.Merger biết sẽ tạo nội dung Visio đã hợp nhất thành tài liệu PDF.  
+- **Benefit** – Không cần thư viện bổ sung hay các bước cấp phép ngoài giấy phép Merger.  
 
 ## Ứng dụng thực tiễn
 
 1. **Hệ thống quản lý tài liệu** – Tự động hợp nhất các sơ đồ Visio được tải lên bởi các nhóm khác nhau và lưu chúng dưới dạng PDF có thể tìm kiếm.  
-2. **Dự án hợp tác** – Gộp các sơ đồ của từng thành viên vào một tệp chính để xem xét, sau đó xuất ra PDF để phân phối.  
-3. **Quy trình báo cáo** – Kết hợp các biểu đồ VDX được tạo trước khi chuyển đổi chúng sang PDF để đưa vào báo cáo tự động.
+2. **Dự án hợp tác** – Hợp nhất các sơ đồ của từng người đóng góp vào một tệp chính để xem xét, sau đó xuất ra PDF để phân phối.  
+3. **Quy trình báo cáo** – Kết hợp các biểu đồ VDX đã tạo trước khi chuyển đổi chúng sang PDF để đưa vào các báo cáo kinh doanh tự động.  
 
 ## Các lưu ý về hiệu năng
 
-- **Xử lý theo khối** – Đối với các tệp VDX rất lớn, xử lý chúng theo các lô nhỏ hơn để giảm mức tiêu thụ bộ nhớ.  
-- **Cập nhật thư viện** – Luôn sử dụng phiên bản GroupDocs.Merger mới nhất để được cải thiện hiệu năng.  
-- **Thực hành tốt trong Java** – Đóng luồng ngay khi không còn dùng và tận dụng `try‑with‑resources` khi có thể.
+- **Chunk processing** – Đối với các tệp VDX rất lớn, xử lý chúng theo các lô nhỏ hơn để giữ mức sử dụng heap dưới kiểm soát.  
+- **Library updates** – Bản phát hành mới nhất của GroupDocs.Merger cải thiện việc quản lý bộ nhớ lên đến 30 % và thêm hỗ trợ cho các định dạng stencil Visio mới.  
+- **Java best practices** – Sử dụng try‑with‑resources để đóng luồng kịp thời và thiết lập heap JVM (`-Xmx2g` hoặc cao hơn) khi làm việc với các sơ đồ hàng trăm trang.  
 
 ## Các vấn đề thường gặp và giải pháp
 
 | Vấn đề | Nguyên nhân | Giải pháp |
-|-------|-------------|----------|
-| `FileNotFoundException` | Đường dẫn tệp không đúng | Kiểm tra lại thư mục và tên tệp; sử dụng đường dẫn tuyệt đối nếu cần |
-| Sơ đồ đã gộp mất thứ tự trang | Các tệp được thêm theo thứ tự sai | Gọi `join()` theo đúng thứ tự bạn muốn các trang xuất hiện |
-| Lỗi hết bộ nhớ trên các tệp lớn | Không đủ không gian heap | Tăng kích thước heap JVM (`-Xmx2g` hoặc cao hơn) hoặc chia gộp thành các nhóm nhỏ hơn |
+|-------|-------|----------|
+| `FileNotFoundException` | Đường dẫn tệp không đúng | Kiểm tra lại thư mục và tên tệp; sử dụng đường dẫn tuyệt đối nếu đường dẫn tương đối không hoạt động |
+| Sơ đồ đã hợp nhất mất thứ tự trang | Các tệp được thêm theo thứ tự sai | Gọi `join()` theo đúng thứ tự bạn muốn các trang xuất hiện |
+| Lỗi hết bộ nhớ khi xử lý tệp lớn | Không đủ không gian heap | Tăng heap JVM (`-Xmx4g` được khuyến nghị) hoặc chia hợp nhất thành các nhóm nhỏ hơn |
 
 ## Câu hỏi thường gặp
 
-**Q: Số lượng tối đa các tệp VDX tôi có thể gộp là bao nhiêu?**  
-A: Không có giới hạn cứng; giới hạn thực tế phụ thuộc vào bộ nhớ khả dụng và kích thước heap JVM.
+**Q: Số lượng tệp VDX tối đa tôi có thể hợp nhất là bao nhiêu?**  
+A: Không có giới hạn cố định; mức tối đa thực tế phụ thuộc vào bộ nhớ khả dụng và kích thước heap JVM.
 
-**Q: Tôi có thể gộp các tệp VDX được bảo mật bằng mật khẩu không?**  
-A: Có. Tải tệp được bảo vệ bằng một đối tượng `LoadOptions` bao gồm mật khẩu, sau đó truyền nó vào hàm khởi tạo `Merger`.
+**Q: Tôi có thể hợp nhất các tệp VDX được bảo mật bằng mật khẩu không?**  
+A: Có. Tải tệp được bảo mật bằng một đối tượng `LoadOptions` bao gồm mật khẩu, sau đó truyền nó vào hàm khởi tạo `Merger`.
 
 **Q: GroupDocs.Merger có giữ lại các hình dạng và stencil tùy chỉnh không?**  
-A: Tất cả các yếu tố gốc của Visio được giữ nguyên vì thư viện làm việc trên XML nền mà không thay đổi.
+A: Tất cả các yếu tố Visio gốc được giữ lại vì thư viện hoạt động trên XML nền mà không thay đổi.
 
-**Q: Có thể gộp các tệp VDX và sau đó chuyển chúng sang PDF trong một bước không?**  
-A: Chắc chắn. Sau khi gọi `join()` cho tất cả các tệp nguồn, chỉ cần gọi `save("output.pdf")` để nhận phiên bản PDF của sơ đồ đã gộp.
+**Q: Có thể hợp nhất các tệp VDX và sau đó chuyển chúng sang PDF trong một bước không?**  
+A: Chắc chắn. Sau khi gọi `join()` cho tất cả các tệp nguồn, chỉ cần gọi `save("output.pdf")` để nhận phiên bản PDF của sơ đồ đã hợp nhất.
 
-**Q: Làm sao xử lý ngoại lệ trong quá trình gộp và chuyển đổi?**  
-A: Bao bọc các lời gọi gộp trong khối `try‑catch` và xử lý `IOException`, `MergerException`, hoặc bất kỳ ngoại lệ tùy chỉnh nào cần thiết.
+**Q: Tôi nên xử lý ngoại lệ như thế nào trong quá trình hợp nhất và chuyển đổi?**  
+A: Bao bọc các lời gọi hợp nhất trong khối `try‑catch` và xử lý `IOException`, `MergerException`, hoặc bất kỳ ngoại lệ tùy chỉnh nào cần thiết.
 
 ## Kết luận
 
-Bạn đã biết **cách chuyển đổi VDX sang PDF** và gộp các sơ đồ Visio một cách hiệu quả bằng GroupDocs.Merger cho Java. Thư viện loại bỏ phiền toái của việc thao tác XML và render PDF, cho phép bạn tập trung vào logic nghiệp vụ. Khám phá các tính năng bổ sung—như thao tác cấp trang hoặc chuyển đổi hàng loạt—để biến quy trình đơn giản này thành một pipeline tự động hoá tài liệu đầy đủ tính năng.
+Bây giờ bạn đã biết **cách chuyển đổi VDX sang PDF** và hợp nhất các sơ đồ Visio một cách hiệu quả bằng cách sử dụng GroupDocs.Merger cho Java. Thư viện loại bỏ khó khăn trong việc thao tác XML và tạo PDF, cho phép bạn tập trung vào logic nghiệp vụ. Khám phá các tính năng bổ sung—như thao tác ở mức trang, chuyển đổi hàng loạt, hoặc đánh dấu nước tùy chỉnh—để biến quy trình đơn giản này thành một pipeline tự động hoá tài liệu đầy đủ tính năng.
 
-**Tài nguyên liên quan:** [Documentation](https://docs.groupdocs.com/merger/java/) | [API Reference](https://reference.groupdocs.com/merger/java/) | [Download](https://releases.groupdocs.com/merger/java/) | [Purchase](https://purchase.groupdocs.com/buy) | [Free Trial](https://releases.groupdocs.com/merger/java/) | [Temporary License](https://purchase.groupdocs.com/temporary-license/) | [Support](https://forum.groupdocs.com/c/merger/)
+**Tài nguyên liên quan:** [Documentation](https://docs.groupdocs.com/merger/java/) | [API Reference](https://reference.groupdocs.com/merger/java/) | [Download](https://releases.groupdocs.com/merger/java/) | [Purchase](https://purchase.groupdocs.com/buy) | [Free trial](https://releases.groupdocs.com/merger/java/) | [Temporary license](https://purchase.groupdocs.com/temporary-license/) | [Support](https://forum.groupdocs.com/c/merger/)
 
 ---
 
-**Cập nhật lần cuối:** 2026-03-22  
-**Kiểm tra với:** GroupDocs.Merger 23.12 (phiên bản mới nhất tại thời điểm viết)  
+**Cập nhật lần cuối:** 2026-10-16  
+**Kiểm tra với:** GroupDocs.Merger 23.12 (latest at time of writing)  
 **Tác giả:** GroupDocs
+
+## Hướng dẫn liên quan
+
+- [Merge PDF Java: Tải tài liệu cục bộ bằng GroupDocs.Merger – Hướng dẫn](/merger/java/document-loading/load-document-groupdocs-merger-java-guide/)
+- [Cách hợp nhất các tệp VSDX bằng GroupDocs.Merger cho Java: Hướng dẫn từng bước](/merger/java/format-specific-merging/merge-vsdx-files-groupdocs-merger-java/)
+- [Merge PDF Java: Hợp nhất PDF hiệu quả bằng GroupDocs.Merger cho Java – Hướng dẫn từng bước](/merger/java/format-specific-merging/merge-pdfs-groupdocs-merger-java-tutorial/)

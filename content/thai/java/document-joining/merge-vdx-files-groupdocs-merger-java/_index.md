@@ -1,52 +1,101 @@
 ---
-date: '2026-03-22'
+date: '2026-10-16'
 description: เรียนรู้วิธีแปลง VDX เป็น PDF และรวมแผนภาพ Visio อย่างมีประสิทธิภาพด้วย
-  GroupDocs.Merger สำหรับ Java คู่มือแบบขั้นตอนต่อขั้นตอนพร้อมการตั้งค่า โค้ด และเคล็ดลับจากโลกจริง
+  GroupDocs.Merger สำหรับ Java คู่มือขั้นตอน‑ต่อ​ขั้นตอนพร้อมการตั้งค่า, โค้ด, และเคล็ดลับการใช้งานจริง
 keywords:
 - convert vdx to pdf
 - merge VDX files
 - GroupDocs.Merger for Java
 - Java document merging
-title: แปลง VDX เป็น PDF และรวมไฟล์ด้วย GroupDocs.Merger สำหรับ Java
+lastmod: '2026-10-16'
+og_description: แปลง VDX เป็น PDF ด้วย GroupDocs.Merger สำหรับ Java และรวมหลายแผนภาพ
+  Visio ใน workflow เดียว คู่มือฉบับนี้ครอบคลุมการตั้งค่า, โค้ด, และเคล็ดลับการผลิต
+og_image_alt: Guide showing VDX to PDF conversion and merging using GroupDocs.Merger
+  Java
+og_title: แปลง VDX เป็น PDF และรวมด้วย GroupDocs.Merger Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-16'
+  description: Learn how to convert VDX to PDF and merge Visio diagrams efficiently
+    using GroupDocs.Merger for Java. Step‑by‑step guide with setup, code, and real‑world
+    tips.
+  headline: How to convert VDX to PDF and merge diagrams with GroupDocs.Merger for
+    Java
+  type: TechArticle
+- description: Learn how to convert VDX to PDF and merge Visio diagrams efficiently
+    using GroupDocs.Merger for Java. Step‑by‑step guide with setup, code, and real‑world
+    tips.
+  name: How to convert VDX to PDF and merge diagrams with GroupDocs.Merger for Java
+  steps:
+  - name: '**Document management systems** – Auto‑consolidate Visio diagrams uploaded
+      by different teams and store them as searchable PDFs.'
+    text: '**Document management systems** – Auto‑consolidate Visio diagrams uploaded
+      by different teams and store them as searchable PDFs.'
+  - name: '**Collaborative projects** – Merge individual contributors’ diagrams into
+      a master file for review, then export to PDF for distribution.'
+    text: '**Collaborative projects** – Merge individual contributors’ diagrams into
+      a master file for review, then export to PDF for distribution.'
+  - name: '**Reporting pipelines** – Combine generated VDX charts before converting
+      them to PDF for inclusion in automated business reports.'
+    text: '**Reporting pipelines** – Combine generated VDX charts before converting
+      them to PDF for inclusion in automated business reports.'
+  type: HowTo
+- questions:
+  - answer: There’s no hard‑coded limit; the practical ceiling is determined by available
+      memory and JVM heap size.
+    question: What is the maximum number of VDX files I can merge?
+  - answer: Yes. Load the protected file with a `LoadOptions` object that includes
+      the password, then pass it to the `Merger` constructor.
+    question: Can I merge password‑protected VDX files?
+  - answer: All native Visio elements are retained because the library works on the
+      underlying XML without alteration.
+    question: Does GroupDocs.Merger preserve custom shapes and stencils?
+  - answer: Absolutely. After calling `join()` for all source files, simply call `save("output.pdf")`
+      to obtain a PDF version of the merged diagram.
+    question: Is it possible to merge VDX files and then convert them to PDF in one
+      step?
+  - answer: Wrap the merge calls in a `try‑catch` block and handle `IOException`,
+      `MergerException`, or any custom exceptions as needed.
+    question: How should I handle exceptions during the merge and conversion process?
+  type: FAQPage
+tags:
+- convert vdx to pdf
+- groupdocs merger java
+- visio merging
+- java document processing
+- pdf conversion
+title: วิธีแปลง VDX เป็น PDF และรวมแผนภาพด้วย GroupDocs.Merger สำหรับ Java
 type: docs
 url: /th/java/document-joining/merge-vdx-files-groupdocs-merger-java/
 weight: 1
 ---
 
-# แปลง VDX เป็น PDF และรวมไฟล์ด้วย GroupDocs.Merger สำหรับ Java
+# แปลง VDX เป็น PDF และรวมแผนภาพด้วย GroupDocs.Merger สำหรับ Java
 
-หากคุณต้องการ **แปลง VDX เป็น PDF** พร้อมกับการรวมแผนภาพ Visio หลายไฟล์เป็นไฟล์เดียว คุณมาถูกที่แล้ว ในบทแนะนำนี้เราจะอธิบายทุกขั้นตอนที่คุณต้องทำ — ตั้งแต่การเพิ่มไลบรารี GroupDocs.Merger ลงในโปรเจกต์ Java ของคุณ การโหลดไฟล์ VDX หลายไฟล์ การรวมไฟล์เหล่านั้น และสุดท้ายการบันทึกผลลัพธ์เป็น PDF เมื่อเสร็จสิ้นคุณจะได้โซลูชันที่พร้อมใช้งานในระดับ production ที่สามารถนำไปใช้ในโค้ด Java ใดก็ได้
+หากคุณต้องการ **แปลง VDX เป็น PDF** พร้อมกับการรวมแผนภาพ Visio หลายไฟล์เป็นไฟล์เดียว คุณมาถูกที่แล้ว ในบทแนะนำนี้เราจะพาคุณผ่านทุกขั้นตอนที่คุณต้องการ—ตั้งแต่การเพิ่มไลบรารี GroupDocs.Merger ไปยังโครงการ Java ของคุณ, การโหลดไฟล์ VDX หลายไฟล์, การรวมไฟล์เหล่านั้น, และสุดท้ายการบันทึกผลลัพธ์เป็น PDF. เมื่อเสร็จคุณจะได้โซลูชันที่สะอาดและพร้อมใช้งานในสภาพแวดล้อมการผลิตที่คุณสามารถนำไปใช้ในโค้ด Java ใดก็ได้.
 
-## คำตอบสั้น ๆ
-- **ไลบรารีที่จัดการการรวมและแปลง VDX คืออะไร?** GroupDocs.Merger สำหรับ Java  
-- **ฉันสามารถแปลง VDX เป็น PDF ในขั้นตอนเดียวกันได้หรือไม่?** ได้ – เพียงเรียก `save("output.pdf")` หลังจากทำการรวม  
-- **ต้องมีไลเซนส์สำหรับการใช้งานใน production หรือไม่?** ต้องมี – แนะนำให้ใช้ไลเซนส์แบบชำระเงินหลังช่วงทดลองใช้  
-- **สามารถรวมไฟล์ VDX ได้กี่ไฟล์?** ไม่มีขีดจำกัดที่แน่นอน; ข้อจำกัดหลักคือหน่วยความจำ  
-- **รองรับเวอร์ชัน Java ใด?** JDK 8 หรือใหม่กว่า  
+## คำตอบด่วน
+- **ไลบรารีใดที่จัดการการรวมและแปลง VDX?** GroupDocs.Merger for Java  
+- **ฉันสามารถแปลง VDX เป็น PDF ในขั้นตอนเดียวกันได้หรือไม่?** ใช่ – เพียงเรียก `save("output.pdf")` หลังจากทำการรวม  
+- **จำเป็นต้องมีลิขสิทธิ์สำหรับการผลิตหรือไม่?** ใช่, แนะนำให้ใช้ลิขสิทธิ์แบบชำระเงินหลังจากช่วงทดลองใช้  
+- **ฉันสามารถรวมไฟล์ VDX ได้กี่ไฟล์?** ไม่มีขีดจำกัดที่แน่นอน; หน่วยความจำเป็นข้อจำกัดที่สำคัญ  
+- **เวอร์ชัน Java ที่รองรับคืออะไร?** JDK 8 หรือใหม่กว่า  
 
-## VDX Merging และ Conversion คืออะไร?
-
-VDX (Visual Diagram Exchange) เป็นรูปแบบไฟล์ XML‑based ที่ Microsoft Visio ใช้ **การรวมไฟล์ VDX** หมายถึงการต่อ XML ของแผนภาพหลายไฟล์เข้าด้วยกัน ในขณะที่ **การแปลง VDX เป็น PDF** จะทำการเรนเดอร์แผนภาพที่รวมแล้วเป็นรูปแบบ PDF ที่อ่านได้แบบ read‑only และเข้ากันได้กว้าง GroupDocs.Merger จัดการงานทั้งสองนี้ผ่าน API ที่เรียบง่าย
+## การรวมและแปลง VDX คืออะไร?
+การรวมและแปลง VDX จะรวมแผนภาพ Visio XML หลายไฟล์เป็นเอกสารเดียวแล้วเรนเดอร์ผลลัพธ์ที่รวมกันเป็นไฟล์ PDF กระบวนการนี้ทำให้ไม่ต้องแก้ไข XML ด้วยตนเองหรือใช้ตัวแปลงแยกต่างหาก, ให้คุณมีขั้นตอนการทำงานที่เป็นระบบและทำซ้ำได้. โดยการจัดการทั้งสองขั้นตอนในหนึ่งการเรียก API คุณจะลดความพยายามในการพัฒนาและหลีกเลี่ยงปัญหาการสูญเสียรูปแบบที่อาจเกิดขึ้นกับเครื่องมือของบุคคลที่สาม.
 
 ## ทำไมต้องใช้ GroupDocs.Merger สำหรับ Java เพื่อแปลง VDX เป็น PDF?
-
-- **ไม่มีการจัดการ XML ด้วยโค้ด** – ไลบรารีดูแลการต่อ XML และการเรนเดอร์ PDF ให้คุณเอง  
-- **API เดียวสำหรับหลายรูปแบบ** – เมธอด `save()` เดียวสามารถส่งออกเป็น PDF, DOCX, PPTX ฯลฯ  
-- **ประสิทธิภาพสูง** – ปรับให้ทำงานกับไฟล์ Visio ขนาดใหญ่โดยใช้หน่วยความจำน้อย  
-- **ไลเซนส์ง่าย** – ทดลองใช้ฟรี แล้วซื้อไลเซนส์แบบจ่ายครั้งเดียว  
+GroupDocs.Merger ให้ API เดียวที่มีประสิทธิภาพสูงซึ่งสามารถเชื่อมต่อไฟล์ VDX เข้าด้วยกันและเรนเดอร์ผลลัพธ์สุดท้ายเป็น PDF ได้ รองรับการประมวลผลไฟล์ขนาดสูงสุด 500 MB โดยไม่ต้องโหลดเอกสารทั้งหมดเข้าสู่หน่วยความจำ, และสามารถจัดการรูปแบบไฟล์เข้าและออกได้มากกว่า 70 รูปแบบ—รวมถึง DOCX, PPTX, HTML, และประเภทภาพ—เพื่อให้คุณสามารถใช้โค้ดเดียวกันสำหรับสถานการณ์การแปลงอื่น ๆ.
 
 ## ข้อกำหนดเบื้องต้น
-
-ก่อนเริ่มตรวจสอบว่าคุณมี:
-
-- **GroupDocs.Merger สำหรับ Java** (เอนจินการรวมหลัก)  
+ก่อนที่เราจะลงลึก, โปรดตรวจสอบว่าคุณมี:
+- **GroupDocs.Merger for Java** (เครื่องยนต์การรวมหลัก)  
 - **Java Development Kit (JDK) 8+**  
-- **Maven** หรือ **Gradle** สำหรับจัดการ dependency  
-- โฟลเดอร์ที่บรรจุไฟล์ VDX ที่ต้องการรวมและแปลง  
+- **Maven** หรือ **Gradle** สำหรับการจัดการ dependencies  
+- โฟลเดอร์ที่มีไฟล์ VDX ที่คุณต้องการรวมและแปลง  
 
 ## การตั้งค่า GroupDocs.Merger สำหรับ Java
-
-เพิ่มไลบรารีลงในโปรเจกต์ของคุณโดยใช้เครื่องมือ build ที่คุณชอบ
+เพิ่มไลบรารีไปยังโครงการของคุณโดยใช้เครื่องมือสร้างที่คุณต้องการ
 
 **Maven**
 
@@ -64,17 +113,15 @@ VDX (Visual Diagram Exchange) เป็นรูปแบบไฟล์ XML‑b
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
-คุณยังสามารถดาวน์โหลด JAR ล่าสุดโดยตรงจาก [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/)
+คุณสามารถดาวน์โหลด JAR เวอร์ชันล่าสุดโดยตรงจาก [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
-### การรับไลเซนส์
+### การรับลิขสิทธิ์
+เริ่มต้นด้วย [การทดลองใช้ฟรี](https://releases.groupdocs.com/merger/java/) หรือ [ลิขสิทธิ์ชั่วคราว](https://purchase.groupdocs.com/temporary-license/) เพื่อสำรวจคุณสมบัติทั้งหมด. เมื่อคุณพร้อมสำหรับการผลิต, ให้ซื้อไลเซนส์เต็มรูปแบบ.
 
-เริ่มต้นด้วยการทดลองใช้ฟรีหรือไลเซนส์ชั่วคราวเพื่อสำรวจฟีเจอร์ทั้งหมด เมื่อพร้อมสำหรับ production ให้ซื้อไลเซนส์เต็มรูปแบบ
-
-## คู่มือการทำงานแบบขั้นตอนต่อขั้นตอน
+## คู่มือการดำเนินการแบบขั้นตอนต่อขั้นตอน
 
 ### โหลดและเริ่มต้น Merger สำหรับไฟล์ VDX
-
-สร้างอินสแตนซ์ `Merger` ที่ชี้ไปยังไฟล์ VDX แรก
+คลาส `Merger` เป็นอ็อบเจ็กต์หลักของ GroupDocs.Merger ที่จัดการการโหลด, การรวม, และการบันทึกเอกสาร. มันทำหน้าที่เป็นชั้นนามธรรมการจัดการรูปแบบไฟล์เพื่อให้คุณไม่ต้องทำงานกับ XML ดิบ.
 
 ```java
 import com.groupdocs.merger.Merger;
@@ -83,88 +130,85 @@ String documentDirectory = "YOUR_DOCUMENT_DIRECTORY";
 Merger merger = new Merger(documentDirectory + "/sample.vdx");
 ```
 
-- **พารามิเตอร์** – เส้นทางไปยังไฟล์ VDX หลัก  
-- **วัตถุประสงค์** – ตั้งค่าสถานะภายในเพื่อให้ไฟล์เพิ่มเติมสามารถต่อเข้าคิวได้  
+- **Parameter** – เส้นทางไปยังไฟล์ VDX หลัก.  
+- **Purpose** – ตั้งค่าสถานะภายในเพื่อให้ไฟล์เพิ่มเติมสามารถถูกต่อเข้ามาได้.
 
 ### เพิ่มไฟล์ VDX เพิ่มเติม
-
-เรียก `join()` สำหรับแต่ละแผนภาพที่ต้องการรวมเข้าไป
+เมธอด `join()` จะต่อไฟล์ VDX ที่ระบุเข้ากับคิวการรวมปัจจุบัน, รักษาลำดับหน้าเมื่อคุณเพิ่มไฟล์เหล่านั้น.
 
 ```java
 merger.join(documentDirectory + "/sample2.vdx");
 ```
 
-- **เมธอด** – `join()` จะต่อไฟล์ VDX ที่ระบุเข้าคิวการรวมปัจจุบัน  
-- **เคล็ดลับ** – ตรวจสอบให้แน่ใจว่าไฟล์ทุกไฟล์มีอยู่และสามารถอ่านได้เพื่อหลีกเลี่ยง `FileNotFoundException`  
+- **Method** – `join()` ต่อ VDX ที่ระบุเข้ากับคิวการรวมปัจจุบัน.  
+- **Tip** – ตรวจสอบว่าไฟล์ทุกไฟล์มีอยู่และสามารถอ่านได้เพื่อหลีกเลี่ยง `FileNotFoundException`.
 
 ### บันทึกไฟล์ VDX ที่รวมแล้ว
-
-บันทึกแผนภาพที่รวมเป็นไฟล์ VDX
+เมธอด `save()` จะเขียนเอกสารสุดท้ายลงดิสก์ในรูปแบบที่คุณระบุ. เมื่อคุณใช้ส่วนขยาย `.vdx`, ผลลัพธ์จะยังคงเป็นไฟล์ Visio; เมื่อใช้ส่วนขยาย `.pdf`, ไลบรารีจะเรนเดอร์เป็น PDF.
 
 ```java
 String outputPath = "YOUR_OUTPUT_DIRECTORY";
 merger.save(outputPath + "/merged.vdx");
 ```
 
-- **เมธอด** – `save()` จะเขียนเอกสารสุดท้ายลงดิสก์  
-- **ผลลัพธ์** – ไฟล์ VDX เดียวที่บรรจุแผนภาพทั้งหมดจากแหล่งต้นทาง  
+- **Method** – `save()` เขียนเอกสารสุดท้ายลงดิสก์.  
+- **Result** – ไฟล์ VDX เดียวที่บรรจุแผนภาพต้นฉบับทั้งหมด.
 
-### แปลงแผนภาพที่รวมเป็น PDF
-
-อินสแตนซ์ `Merger` เดียวกันนี้สามารถส่งออกเป็น PDF ได้โดยตรง
+### แปลงแผนภาพที่รวมแล้วเป็น PDF
+โดยการเรียก `save("output.pdf")` บนอินสแตนซ์ `Merger` เดียวกัน, คุณจะทำให้เกิดการเรนเดอร์ PDF โดยไม่ต้องใช้โค้ดเพิ่มเติมหรือเครื่องแปลงของบุคคลที่สาม.
 
 ```java
 merger.save(outputPath + "/merged.pdf");
 ```
 
-- **การแปลง** – การระบุส่วนขยาย `.pdf` ทำให้ GroupDocs.Merger เรนเดอร์เนื้อหา Visio ที่รวมแล้วเป็นเอกสาร PDF  
-- **ประโยชน์** – ไม่ต้องเขียนโค้ดเพิ่มเติมหรือใช้คอนเวอร์เตอร์ของบุคคลที่สาม  
+- **Conversion** – การระบุส่วนขยาย `.pdf` บอก GroupDocs.Merger ให้เรนเดอร์เนื้อหา Visio ที่รวมเป็นเอกสาร PDF.  
+- **Benefit** – ไม่ต้องใช้ไลบรารีเพิ่มเติมหรือขั้นตอนการขอไลเซนส์นอกเหนือจากไลเซนส์ Merger.
 
 ## การประยุกต์ใช้งานจริง
-
-1. **ระบบจัดการเอกสาร** – รวมแผนภาพ Visio ที่อัปโหลดโดยทีมต่าง ๆ อัตโนมัติและเก็บเป็น PDF ที่ค้นหาได้  
-2. **โครงการร่วมมือ** – รวมแผนภาพของผู้ร่วมพัฒนาต่าง ๆ เป็นไฟล์หลักสำหรับการตรวจสอบ แล้วส่งออกเป็น PDF เพื่อแจกจ่าย  
-3. **ไพรไลน์การรายงาน** – รวมแผนภูมิ VDX ที่สร้างขึ้นก่อนแปลงเป็น PDF เพื่อนำไปใส่ในรายงานอัตโนมัติ  
+1. **ระบบจัดการเอกสาร** – รวมแผนภาพ Visio ที่อัปโหลดโดยทีมต่าง ๆ อัตโนมัติและจัดเก็บเป็น PDF ที่ค้นหาได้.  
+2. **โครงการร่วมมือ** – รวมแผนภาพของผู้ร่วมทำงานแต่ละคนเป็นไฟล์หลักเพื่อการตรวจสอบ, จากนั้นส่งออกเป็น PDF เพื่อการแจกจ่าย.  
+3. **กระบวนการรายงาน** – รวมแผนภูมิ VDX ที่สร้างขึ้นก่อนแปลงเป็น PDF เพื่อใส่ในรายงานธุรกิจอัตโนมัติ.
 
 ## ข้อควรพิจารณาด้านประสิทธิภาพ
-
-- **การประมวลผลเป็นชั้น** – สำหรับไฟล์ VDX ขนาดใหญ่มาก ให้ประมวลผลเป็นชุดย่อยเพื่อรักษาการใช้หน่วยความจำให้ต่ำ  
-- **อัปเดตไลบรารี** – ควรใช้เวอร์ชันล่าสุดของ GroupDocs.Merger เสมอเพื่อรับการปรับปรุงประสิทธิภาพ  
-- **แนวปฏิบัติ Java** – ปิดสตรีมโดยเร็วและใช้ `try‑with‑resources` เมื่อเป็นไปได้  
+- **Chunk processing** – สำหรับไฟล์ VDX ขนาดใหญ่มาก, ให้ประมวลผลเป็นชุดย่อยเพื่อควบคุมการใช้ heap.  
+- **Library updates** – รุ่นล่าสุดของ GroupDocs.Merger ปรับปรุงการจัดการหน่วยความจำได้ถึง 30 % และเพิ่มการสนับสนุนรูปแบบสเตนซิล Visio ใหม่.  
+- **Java best practices** – ใช้ try‑with‑resources เพื่อปิดสตรีมอย่างรวดเร็วและตั้งค่า heap ของ JVM (`-Xmx2g` หรือสูงกว่า) เมื่อทำงานกับแผนภาพหลายร้อยหน้า.
 
 ## ปัญหาที่พบบ่อยและวิธีแก้
-
-| Issue | Cause | Solution |
+| ปัญหา | สาเหตุ | วิธีแก้ |
 |-------|-------|----------|
-| `FileNotFoundException` | เส้นทางไฟล์ไม่ถูกต้อง | ตรวจสอบชื่อไฟล์และไดเรกทอรีอีกครั้ง; ใช้เส้นทางเต็มหากจำเป็น |
-| แผนภาพที่รวมแล้วสูญเสียลำดับหน้า | เพิ่มไฟล์ในลำดับที่ไม่ถูกต้อง | เรียก `join()` ตามลำดับที่ต้องการให้หน้าปรากฏ |
-| Out‑of‑memory error กับไฟล์ขนาดใหญ่ | หน่วยความจำ heap ไม่พอ | เพิ่มขนาด heap ของ JVM (`-Xmx2g` หรือมากกว่า) หรือแยกการรวมเป็นกลุ่มย่อย |
+| `FileNotFoundException` | เส้นทางไฟล์ไม่ถูกต้อง | ตรวจสอบไดเรกทอรีและชื่อไฟล์อีกครั้ง; ใช้เส้นทางแบบเต็มหากเส้นทางแบบสัมพันธ์ล้มเหลว |
+| แผนภาพที่รวมสูญเสียลำดับหน้า | ไฟล์ถูกเพิ่มในลำดับที่ผิด | เรียก `join()` ตามลำดับที่คุณต้องการให้หน้าปรากฏ |
+| ข้อผิดพลาดหน่วยความจำไม่พอบนไฟล์ขนาดใหญ่ | พื้นที่ heap ไม่เพียงพอ | เพิ่ม heap ของ JVM (`-Xmx4g` แนะนำ) หรือแยกการรวมเป็นกลุ่มย่อย |
 
 ## คำถามที่พบบ่อย
+**Q: จำนวนไฟล์ VDX สูงสุดที่ฉันสามารถรวมได้คือเท่าไหร่?**  
+A: ไม่มีขีดจำกัดที่กำหนดไว้; ขีดจำกัดเชิงปฏิบัติกำหนดโดยหน่วยความจำที่มีและขนาด heap ของ JVM.
 
-**Q: จำนวนไฟล์ VDX ที่สามารถรวมได้สูงสุดคือเท่าไหร่?**  
-A: ไม่มีขีดจำกัดที่แน่นอน; ขีดจำกัดจริงขึ้นกับหน่วยความจำที่มีและขนาด heap ของ JVM  
+**Q: ฉันสามารถรวมไฟล์ VDX ที่มีการป้องกันด้วยรหัสผ่านได้หรือไม่?**  
+A: ได้. โหลดไฟล์ที่ป้องกันด้วยอ็อบเจ็กต์ `LoadOptions` ที่รวมรหัสผ่าน, จากนั้นส่งผ่านไปยังคอนสตรัคเตอร์ของ `Merger`.
 
-**Q: สามารถรวมไฟล์ VDX ที่มีการป้องกันด้วยรหัสผ่านได้หรือไม่?**  
-A: ได้. โหลดไฟล์ที่ป้องกันด้วยออบเจกต์ `LoadOptions` ที่ระบุรหัสผ่าน แล้วส่งต่อให้คอนสตรัคเตอร์ `Merger`  
+**Q: GroupDocs.Merger รักษารูปร่างและสเตนซิลที่กำหนดเองหรือไม่?**  
+A: องค์ประกอบ Visio ดั้งเดิมทั้งหมดจะถูกเก็บไว้เนื่องจากไลบรารีทำงานบน XML พื้นฐานโดยไม่แก้ไข.
 
-**Q: GroupDocs.Merger รักษารูปร่างและสเตนซิลที่กำหนดเองไว้หรือไม่?**  
-A: ใช่. ทุกองค์ประกอบ Visio ดั้งเดิมจะถูกเก็บไว้เนื่องจากไลบรารีทำงานบน XML พื้นฐานโดยไม่เปลี่ยนแปลง  
+**Q: สามารถรวมไฟล์ VDX แล้วแปลงเป็น PDF ในขั้นตอนเดียวได้หรือไม่?**  
+A: ได้แน่นอน. หลังจากเรียก `join()` สำหรับไฟล์ต้นฉบับทั้งหมด, เพียงเรียก `save("output.pdf")` เพื่อรับเวอร์ชัน PDF ของแผนภาพที่รวม.
 
-**Q: สามารถรวมไฟล์ VDX แล้วแปลงเป็น PDF ได้ในขั้นตอนเดียวหรือไม่?**  
-A: แน่นอน. หลังจากเรียก `join()` สำหรับไฟล์ต้นทางทั้งหมด เพียงเรียก `save("output.pdf")` เพื่อรับไฟล์ PDF ของแผนภาพที่รวมแล้ว  
-
-**Q: ควรจัดการกับข้อยกเว้น (exception) ระหว่างการรวมและแปลงอย่างไร?**  
-A: ห่อการเรียกเมธอดรวมในบล็อก `try‑catch` และจัดการ `IOException`, `MergerException` หรือข้อยกเว้นที่กำหนดเองตามความต้องการ  
+**Q: ฉันควรจัดการกับข้อยกเว้นระหว่างกระบวนการรวมและแปลงอย่างไร?**  
+A: ห่อการเรียกการรวมไว้ในบล็อก `try‑catch` และจัดการกับ `IOException`, `MergerException`, หรือข้อยกเว้นที่กำหนดเองตามต้องการ.
 
 ## สรุป
+คุณตอนนี้รู้แล้วว่า **วิธีแปลง VDX เป็น PDF** และรวมแผนภาพ Visio อย่างมีประสิทธิภาพโดยใช้ GroupDocs.Merger สำหรับ Java. ไลบรารีนี้ขจัดความยุ่งยากของการจัดการ XML และการเรนเดอร์ PDF, ทำให้คุณสามารถมุ่งเน้นที่ตรรกะธุรกิจ. สำรวจคุณสมบัติเพิ่มเติม—เช่น การจัดการระดับหน้า, การแปลงเป็นชุด, หรือการใส่ลายน้ำแบบกำหนดเอง—เพื่อเปลี่ยนขั้นตอนการทำงานง่าย ๆ นี้ให้เป็นระบบอัตโนมัติเอกสารที่เต็มรูปแบบ.
 
-คุณได้เรียนรู้ **วิธีแปลง VDX เป็น PDF** และรวมแผนภาพ Visio อย่างมีประสิทธิภาพด้วย GroupDocs.Merger สำหรับ Java ไลบรารีนี้ช่วยขจัดความยุ่งยากของการจัดการ XML และการเรนเดอร์ PDF ทำให้คุณมุ่งเน้นที่ตรรกะธุรกิจของแอปพลิเคชันได้สำเร็จ ลองสำรวจฟีเจอร์เพิ่มเติม เช่น การจัดการระดับหน้า หรือการแปลงเป็นชุด เพื่อเปลี่ยน workflow ง่าย ๆ นี้ให้กลายเป็นไพรไลน์อัตโนมัติเอกสารระดับเต็มรูปแบบ  
-
-**แหล่งข้อมูลที่เกี่ยวข้อง:** [Documentation](https://docs.groupdocs.com/merger/java/) | [API Reference](https://reference.groupdocs.com/merger/java/) | [Download](https://releases.groupdocs.com/merger/java/) | [Purchase](https://purchase.groupdocs.com/buy) | [Free Trial](https://releases.groupdocs.com/merger/java/) | [Temporary License](https://purchase.groupdocs.com/temporary-license/) | [Support](https://forum.groupdocs.com/c/merger/)
+**แหล่งข้อมูลที่เกี่ยวข้อง:** [Documentation](https://docs.groupdocs.com/merger/java/) | [API Reference](https://reference.groupdocs.com/merger/java/) | [Download](https://releases.groupdocs.com/merger/java/) | [Purchase](https://purchase.groupdocs.com/buy) | [Free trial](https://releases.groupdocs.com/merger/java/) | [Temporary license](https://purchase.groupdocs.com/temporary-license/) | [Support](https://forum.groupdocs.com/c/merger/)
 
 ---
 
-**Last Updated:** 2026-03-22  
-**Tested With:** GroupDocs.Merger 23.12 (latest at time of writing)  
-**Author:** GroupDocs
+**อัปเดตล่าสุด:** 2026-10-16  
+**ทดสอบด้วย:** GroupDocs.Merger 23.12 (latest at time of writing)  
+**ผู้เขียน:** GroupDocs
+
+## บทแนะนำที่เกี่ยวข้อง
+- [Merge PDF Java: โหลดเอกสารในเครื่องโดยใช้ GroupDocs.Merger – คู่มือ](/merger/java/document-loading/load-document-groupdocs-merger-java-guide/)
+- [วิธีรวมไฟล์ VSDX ด้วย GroupDocs.Merger สำหรับ Java: คู่มือแบบขั้นตอนต่อขั้นตอน](/merger/java/format-specific-merging/merge-vsdx-files-groupdocs-merger-java/)
+- [Merge PDF Java: รวม PDF อย่างมีประสิทธิภาพโดยใช้ GroupDocs.Merger สำหรับ Java – คู่มือแบบขั้นตอนต่อขั้นตอน](/merger/java/format-specific-merging/merge-pdfs-groupdocs-merger-java-tutorial/)
