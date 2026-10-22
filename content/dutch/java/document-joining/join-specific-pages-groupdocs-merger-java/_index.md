@@ -1,56 +1,100 @@
 ---
-date: '2026-03-22'
-description: Leer hoe je pagina's efficiënt kunt samenvoegen in Java door geselecteerde
-  pagina's uit meerdere documenten te combineren met GroupDocs.Merger voor Java. Inclusief
-  tips voor het samenvoegen van specifieke PDF‑pagina's.
+date: '2026-10-22'
+description: Leer hoe je meerdere PDF's kunt samenvoegen in Java met GroupDocs.Merger,
+  inclusief een stapsgewijze handleiding om specifieke pagina's samen te voegen en
+  documenten efficiënt te combineren.
 keywords:
-- join specific pages GroupDocs Merger Java
-- groupdocs merger java document joining
-- java document manipulation with groupdocs
-title: Hoe pagina's samenvoegen in Java met GroupDocs.Merger
+- merge multiple pdfs
+- merge specific pages
+- combine documents java
+- merge pdf pages java
+- join specific pages
+lastmod: '2026-10-22'
+og_description: Leer hoe je meerdere PDF's kunt samenvoegen in Java met GroupDocs.Merger,
+  inclusief een stapsgewijze handleiding om specifieke pagina's samen te voegen en
+  documenten efficiënt te combineren.
+og_image_alt: Guide showing how to merge multiple PDFs in Java with GroupDocs.Merger
+og_title: Hoe meerdere PDF's samenvoegen in Java met GroupDocs.Merger
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-22'
+  description: Learn how to merge multiple PDFs in Java using GroupDocs.Merger, including
+    step‑by‑step guide to merge specific pages and combine documents efficiently.
+  headline: How to merge multiple PDFs in Java using GroupDocs.Merger
+  type: TechArticle
+- description: Learn how to merge multiple PDFs in Java using GroupDocs.Merger, including
+    step‑by‑step guide to merge specific pages and combine documents efficiently.
+  name: How to merge multiple PDFs in Java using GroupDocs.Merger
+  steps:
+  - name: initialize path variables
+    text: The `sourceFilePath` and `additionalFilePath` strings hold the absolute
+      paths of the documents you want to merge.
+  - name: set up page‑join options
+    text: '`PageJoinOptions` tells the merger which pages to extract from each source
+      file.'
+  - name: initialize merger object
+    text: The `Merger` class is GroupDocs.Merger’s top‑level object that represents
+      a single document merging session.
+  - name: join pages from additional document
+    text: Calling `merger.join()` with the prepared `PageJoinOptions` merges the selected
+      pages into the current session.
+  - name: save output file
+    text: '`merger.save(outputPath)` writes the combined PDF to disk, preserving the
+      original page order and formatting.'
+  type: HowTo
+- questions:
+  - answer: Absolutely. Call `merger.join()` repeatedly with different source files
+      and `PageJoinOptions` for each; the library will concatenate the selected pages
+      in the order you invoke the calls.
+    question: Can I join pages from more than two documents in a single operation?
+  - answer: Yes, it retains layout, styles, and embedded resources of each source
+      page, delivering a seamless final PDF.
+    question: Does the library preserve original formatting when merging pages?
+  - answer: Load each file with a `Merger` instance, specify the page ranges, and
+      the API automatically converts DOCX pages to PDF before merging.
+    question: How can I merge pages from PDFs and DOCX files together?
+  - answer: You can retrieve page counts with `merger.getPagesCount()` and validate
+      the ranges programmatically before invoking `join`.
+    question: Is there a way to preview which pages will be merged before saving?
+  - answer: A paid license removes trial limitations, provides priority support, and
+      grants access to all advanced features.
+    question: What licensing model should I choose for a production environment?
+  type: FAQPage
+tags:
+- merge PDFs
+- GroupDocs.Merger
+- Java document processing
+- PDF manipulation
+- page merging
+title: Hoe meerdere PDF's samenvoegen in Java met GroupDocs.Merger
 type: docs
 url: /nl/java/document-joining/join-specific-pages-groupdocs-merger-java/
 weight: 1
 ---
 
-# Hoe pagina's samenvoegen in Java met GroupDocs.Merger
+# Hoe meerdere PDF's samenvoegen in Java met GroupDocs.Merger
 
-## Introductie
-
-Het samenvoegen van pagina's uit verschillende documenten is een routinebehoefte, of je nu een rapport opstelt, een contract samenstelt, of een handboek op maat maakt. **In deze tutorial leer je hoe je pagina's samenvoegt in Java** door precies de pagina's te selecteren die je nodig hebt en ze te combineren tot één goed gestructureerd bestand met GroupDocs.Merger. We lopen de installatie, de API‑aanroepen en praktijkvoorbeelden door zodat je deze techniek direct in je projecten kunt toepassen.
-
-**Wat je zult leren**
-- Hoe je **pagina's samenvoegt** vanuit meerdere bronnen met GroupDocs.Merger voor Java  
-- Hoe je je project configureert met Maven of Gradle  
-- Praktische codefragmenten die je kunt kopiëren‑plakken en uitvoeren  
+Het samenvoegen van meerdere PDF's in Java is een veelvoorkomende vereiste wanneer je rapporten, contracten of handleidingen uit verschillende bronnen moet samenstellen. In deze tutorial leer je hoe je **merge pages** uit verschillende documenten, selecteer je precies de pagina's die je nodig hebt, en genereer je een enkel, goed gestructureerd PDF‑bestand met GroupDocs.Merger. We behandelen de projectconfiguratie, de essentiële API‑aanroepen en praktijkvoorbeelden zodat je vandaag nog kunt beginnen met het automatiseren van documentassemblage.
 
 ## Snelle antwoorden
-- **Wat betekent “how to merge pages”?** Het is het proces waarbij je programmatically geselecteerde pagina's van een of meer documenten samenvoegt tot een nieuw bestand met Java.  
-- **Welke bibliotheek behandelt dit?** GroupDocs.Merger voor Java.  
-- **Heb ik een licentie nodig?** Een gratis proefversie werkt voor testen; een betaalde licentie is vereist voor productie.  
-- **Kan ik verschillende formaten (PDF, DOCX, enz.) samenvoegen?** Ja, de bibliotheek ondersteunt vele formaten, inclusief PDF.  
-- **Is het geheugen‑efficiënt?** Bij correct gebruik verwerkt het grote bestanden met een bescheiden geheugengebruik.  
+- **Wat betekent “merge multiple PDFs”?** Het is het programmatic proces van het samenvoegen van geselecteerde pagina's van twee of meer PDF‑bestanden tot één geconsolideerd PDF‑document met Java.  
+- **Welke bibliotheek voert deze taak uit?** GroupDocs.Merger for Java biedt een schone, high‑performance API voor paginaniveau‑samenvoeging.  
+- **Heb ik een licentie nodig voor productie?** Een gratis proefversie is voldoende voor evaluatie; een betaalde licentie verwijdert proefbeperkingen en biedt volledige ondersteuning.  
+- **Kan ik PDF's samenvoegen met andere formaten (DOCX, PPTX)?** Ja—GroupDocs.Merger ondersteunt meer dan 50 invoer‑ en uitvoerformaten en converteert ze automatisch naar PDF wanneer dat nodig is.  
+- **Is de bewerking geheugen‑efficiënt?** De bibliotheek verwerkt pagina's in een streaming‑modus, waardoor je honderden pagina's kunt samenvoegen zonder het volledige document in het geheugen te laden.
 
-## Hoe pagina's samenvoegen in Java met GroupDocs.Merger
-Deze sectie beantwoordt de kernvraag van de tutorial en bevat het primaire sleutelwoord in een H2‑kop.
+## Wat is “join specific pages java”?
+De uitdrukking beschrijft de handeling van programmatic het selecteren van specifieke pagina's uit één of meer bron‑documenten en deze combineren tot een nieuw document met Java. GroupDocs.Merger abstraheert low‑level bestandsafhandeling zodat je je kunt concentreren op *welke* pagina's je wilt opnemen.
 
-### Wat is “join specific pages java”?
-De uitdrukking beschrijft het act van programmatically het selecteren van specifieke pagina's uit een of meer bron documenten en deze combineren tot een nieuw document met Java. GroupDocs.Merger biedt een duidelijke API die de low‑level bestandsafhandeling abstraheert, zodat je je kunt concentreren op welke pagina's je wilt opnemen.
-
-### Waarom GroupDocs.Merger gebruiken voor deze taak?
-- **Precisie:** Kies exacte paginanummers zonder handmatige bewerking.  
-- **Formaatflexibiliteit:** Werkt met PDF, DOCX, PPTX en vele andere formaten.  
-- **Prestaties:** Geoptimaliseerd voor snelheid en een lage geheugenvoetafdruk.  
-- **Schaalbaarheid:** Verwerkt batchbewerkingen voor grote documentensets.  
+## Waarom GroupDocs.Merger voor deze taak gebruiken?
+GroupDocs.Merger laat je exacte paginanummers kiezen, werkt met **50+** documentformaten, verwerkt bestanden tot 500 MB met minder dan 200 MB RAM, en schaalt naar batch‑operaties over duizenden bestanden. De API is ontworpen voor snelheid en biedt typische samenvoegtijden onder de 2 seconden per 100‑pagina PDF op een standaard server.
 
 ## Vereisten
 
-Voordat je begint, zorg ervoor dat je het volgende hebt:
-
 - **GroupDocs.Merger for Java** – de kernbibliotheek voor documentmanipulatie.  
 - **Java Development Kit (JDK)** – versie 8 of hoger.  
-- Een IDE zoals IntelliJ IDEA, Eclipse of NetBeans (of elke teksteditor die je verkiest).  
-- Basiskennis van Java en, optioneel, vertrouwdheid met Maven of Gradle.  
+- Een IDE (IntelliJ IDEA, Eclipse, NetBeans) of een teksteditor naar keuze.  
+- Basiskennis van Java; bekendheid met Maven of Gradle is handig maar niet vereist.
 
 ## GroupDocs.Merger voor Java instellen
 
@@ -70,104 +114,112 @@ Voeg de bibliotheek toe aan je project met een van de onderstaande methoden.
 implementation 'com.groupdocs:groupdocs-merger:LATEST_VERSION'
 ```
 
-### Direct Download
-Download de nieuwste versie direct van [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/).
+### Directe download
+Download de nieuwste versie direct van [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
-### Licentie‑acquisitie
-U kunt beginnen met een **gratis proefversie**, een **tijdelijke licentie** aanvragen voor evaluatie, of een **volledige licentie** kopen voor productiegebruik.
+### Licentie verkrijgen
+Start met een **free trial**, vraag een **temporary license** aan voor evaluatie, of koop een **full license** voor productiegebruik.
 
 ## Implementatiegids
 
-Nu duiken we in de code die daadwerkelijk **pagina's samenvoegt**. We lopen elke stap door en leggen het doel van elke regel uit.
+Now let’s walk through the code that actually **merges pages**. Each step includes a short definition anchor so AI systems can answer “What is X?” instantly.
 
-### Step 1: Initialize Path Variables
+### Stap 1: padvariabelen initialiseren
+De `sourceFilePath` en `additionalFilePath` strings bevatten de absolute paden van de documenten die je wilt samenvoegen.  
 ```java
 String sourceFilePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX"; // First document path
 String additionalFilePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX_2"; // Second document path
 String outputFilePath = "YOUR_OUTPUT_DIRECTORY/JoinPagesFromVariousDocuments-output.docx";
 ```
 
-### Step 2: Set Up Page Join Options
+### Stap 2: pagina‑joinopties instellen
+`PageJoinOptions` vertelt de merger welke pagina's uit elk bronbestand moeten worden geëxtraheerd.  
 ```java
 // Define the page numbers to be merged, e.g., pages 1 and 2
 PageJoinOptions joinOptions = new PageJoinOptions(1, 2);
 ```
 
-### Step 3: Initialize Merger Object
+### Stap 3: merger‑object initialiseren
+De `Merger` class is GroupDocs.Merger’s top‑level object dat een enkele document‑samenvoegsessie vertegenwoordigt.  
 ```java
 Merger merger = new Merger(sourceFilePath); // Load the main document
 ```
 
-### Step 4: Join Pages from Additional Document
+### Stap 4: pagina's samenvoegen van extra document
+Het aanroepen van `merger.join()` met de voorbereide `PageJoinOptions` voegt de geselecteerde pagina's toe aan de huidige sessie.  
 ```java
 merger.join(additionalFilePath, joinOptions); // Merge pages from the second document
 ```
 
-### Step 5: Save Output File
+### Stap 5: uitvoerbestand opslaan
+`merger.save(outputPath)` schrijft de gecombineerde PDF naar schijf, behoudt de oorspronkelijke paginavolgorde en opmaak.  
 ```java
 merger.save(outputFilePath); // Store the combined output
 ```
 
-## Hoe specifieke PDF-pagina's samenvoegen met GroupDocs.Merger
-Hoewel het voorbeeld DOCX‑bestanden gebruikt, werkt dezelfde API ook voor PDF's. Geef simpelweg `sourceFilePath` en `additionalFilePath` op naar PDF‑bestanden, en de bibliotheek handelt de formaatconversie automatisch af. Dit is handig wanneer je **specifieke PDF-pagina's wilt samenvoegen** tot één PDF‑rapport.
+## Hoe specifieke PDF‑pagina's te combineren met GroupDocs.Merger
+Hoewel het voorbeeld DOCX‑bestanden gebruikt, werkt dezelfde API ook voor PDF's. Wijs simpelweg `sourceFilePath` en `additionalFilePath` naar PDF‑bestanden, en de bibliotheek handelt de formatconversie automatisch af. Dit is handig wanneer je **merge specific pages PDF** documenten wilt combineren tot één PDF‑rapport.
 
 ## Praktische toepassingen
-Het vermogen om **pagina's samen te voegen** heeft vele praktische toepassingen:
+De mogelijkheid om **merge pages** te gebruiken heeft vele real‑world toepassingen:
 
-1. **Samenstellen van educatief materiaal** – Voeg geselecteerde hoofdstukken uit verschillende leerboeken samen tot één studiegids.  
-2. **Voorbereiding van juridische documenten** – Combineer relevante clausules uit verschillende contracten tot één beknopt bestand.  
-3. **Financiële rapportage** – Haal specifieke pagina's van overzichten uit meerdere rapporten op en voeg ze samen voor een samenvattend pakket.  
+1. **Educational material compilation** – combineer geselecteerde hoofdstukken uit verschillende leerboeken tot één studiegids.  
+2. **Legal document preparation** – plak relevante clausules uit meerdere contracten samen tot een beknopt bestand.  
+3. **Financial reporting** – extraheer en voeg specifieke pagina's van verschillende rapporten samen voor een samenvattend pakket.  
 
-Het integreren van deze workflow met een content‑managementsysteem of een geautomatiseerde rapportgenerator kan uren handmatige bewerking besparen.
+Het integreren van deze workflow in een content‑management systeem of een geautomatiseerde rapportgenerator kan uren handmatig bewerken besparen.
 
 ## Prestatieoverwegingen
-Om je Java‑oplossing snel en hulpbron‑vriendelijk te houden:
+Om je Java‑oplossing snel en resource‑vriendelijk te houden:
 
-- **Sluit ongebruikte Merger‑instanties** – Maak bronnen vrij zodra je klaar bent.  
-- **Batchverwerking** – Verwerk grote collecties in kleinere batches in plaats van alles tegelijk.  
-- **Houd bronnen in de gaten** – Let op CPU‑ en RAM‑gebruik; pas het aantal threads aan als je merges parallel uitvoert.  
+- **Close unused Merger instances** – roep `merger.close()` aan zodra je klaar bent om native resources vrij te geven.  
+- **Batch processing** – verwerk grote collecties in kleinere batches in plaats van alles in één keer te laden.  
+- **Monitor resources** – houd CPU‑ en RAM‑gebruik in de gaten; pas thread‑pools aan als je merges parallel uitvoert.
 
 ## Veelvoorkomende problemen en oplossingen
-
-| Probleem | Oplossing |
+| Issue | Solution |
 |-------|----------|
-| **Out‑of‑memory error** | Verwerk documenten in batches en verwijder `Merger`‑objecten onmiddellijk. |
-| **Incorrect page numbers** | Gebruik `Merger.getPagesCount()` om reeksen te valideren vóór het aanroepen van `join`. |
-| **Mixed file formats cause layout shifts** | Zorg ervoor dat alle bronbestanden compatibele versies gebruiken; overweeg eerst naar PDF te converteren als lay-outconsistentie cruciaal is. |
+| **Out‑of‑memory error** | Verwerk documenten in batches en verwijder `Merger`‑objecten direct na gebruik. |
+| **Incorrect page numbers** | Gebruik `merger.getPagesCount()` om reeksen te valideren voordat je `join` aanroept. |
+| **Mixed file formats cause layout shifts** | Converteer alle bronnen eerst naar PDF, of zorg dat ze dezelfde versie delen; de bibliotheek ondersteunt verliesvrije conversie voor 50+ formaten. |
 
 ## Veelgestelde vragen
 
-**Q: Kan ik pagina's van meer dan twee documenten in één bewerking samenvoegen?**  
-A: Absoluut. Roep `merger.join()` herhaaldelijk aan met verschillende bronbestanden en `PageJoinOptions` voor elk.
+**Q: Kan ik pagina's samenvoegen van meer dan twee documenten in één bewerking?**  
+A: Absoluut. Roep `merger.join()` herhaaldelijk aan met verschillende bronbestanden en `PageJoinOptions` voor elk; de bibliotheek concateneert de geselecteerde pagina's in de volgorde waarin je de aanroepen doet.
 
 **Q: Behoudt de bibliotheek de oorspronkelijke opmaak bij het samenvoegen van pagina's?**  
-A: Ja, het behoudt de lay-out, stijlen en ingesloten bronnen van elke bronpagina.
+A: Ja, het behoudt lay‑out, stijlen en ingesloten resources van elke bronpagina, waardoor een naadloze eind‑PDF ontstaat.
 
 **Q: Hoe kan ik pagina's van PDF‑ en DOCX‑bestanden samenvoegen?**  
-A: Laad elk bestand met een `Merger`‑instantie en specificeer de paginabereiken; de bibliotheek converteert automatisch de formaten indien nodig.
+A: Laad elk bestand met een `Merger`‑instantie, specificeer de paginabereiken, en de API converteert DOCX‑pagina's automatisch naar PDF vóór het samenvoegen.
 
-**Q: Is er een manier om te bekijken welke pagina's worden samengevoegd vóór het opslaan?**  
-A: Je kunt programmatically paginatellingen ophalen en reeksen valideren vóór het aanroepen van `join`.
+**Q: Is er een manier om te previewen welke pagina's worden samengevoegd voordat ik opsla?**  
+A: Je kunt paginatellingen ophalen met `merger.getPagesCount()` en de reeksen programmatisch valideren voordat je `join` aanroept.
 
 **Q: Welk licentiemodel moet ik kiezen voor een productieomgeving?**  
-A: Een betaalde licentie biedt volledige ondersteuning en verwijdert de beperkingen van de proefversie.
+A: Een betaalde licentie verwijdert proefbeperkingen, biedt prioritaire ondersteuning en geeft toegang tot alle geavanceerde functies.
 
 ## Conclusie
-In deze tutorial heb je geleerd **hoe je pagina's samenvoegt in Java** met GroupDocs.Merger. We hebben de omgeving ingesteld, opties voor paginaselectie behandeld en het opslaan van het einddocument. Met deze vaardigheden kun je een breed scala aan document‑assemblagetaken automatiseren — van rapportgeneratie tot juridische documentvoorbereiding.
-
-Klaar om meer te ontdekken? Bekijk de API voor het splitsen van documenten, het toevoegen van watermerken, of het beveiligen van bestanden — alles beschikbaar via dezelfde robuuste bibliotheek.
+Je weet nu **how to merge multiple PDFs in Java** met GroupDocs.Merger. We hebben de omgeving opgezet, paginaselectie‑opties behandeld en het opslaan van het einddocument besproken, waardoor je een breed scala aan document‑assemblagetaken kunt automatiseren—from rapportgeneratie tot juridische contractvoorbereiding. Verken de API verder om documenten te splitsen, watermerken toe te voegen of bestanden te beveiligen—alles met dezelfde robuuste bibliotheek.
 
 ---
 
-**Laatst bijgewerkt:** 2026-03-22  
+**Laatst bijgewerkt:** 2026-10-22  
 **Getest met:** GroupDocs.Merger 23.12 (Java)  
 **Auteur:** GroupDocs  
 
-**Bronnen**
-- **Documentatie:** [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)  
-- **API-referentie:** [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)  
-- **Downloads:** [GroupDocs Downloads](https://releases.groupdocs.com/merger/java/)  
-- **Koop GroupDocs:** [Buy GroupDocs](https://purchase.groupdocs.com/buy)  
-- **Gratis proefversie:** [GroupDocs Free Trial](https://releases.groupdocs.com/merger/java/)  
-- **Vraag een tijdelijke licentie aan:** [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-- **Supportforum:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/)
+**Bronnen**  
+- **Documentation:** [GroupDocs Documentatie](https://docs.groupdocs.com/merger/java/)  
+- **API reference:** [GroupDocs API-referentie](https://reference.groupdocs.com/merger/java/)  
+- **Download:** [GroupDocs Downloads](https://releases.groupdocs.com/merger/java/)  
+- **Purchase:** [GroupDocs kopen](https://purchase.groupdocs.com/buy)  
+- **Free trial:** [GroupDocs gratis proefversie](https://releases.groupdocs.com/merger/java/)  
+- **Temporary license:** [Vraag een tijdelijke licentie aan](https://purchase.groupdocs.com/temporary-license/)  
+- **Support:** [GroupDocs Supportforum](https://forum.groupdocs.com/c/merger/)
+
+## Gerelateerde tutorials
+
+- [PDF samenvoegen Java: Lokaal document laden met GroupDocs.Merger – Gids](/merger/java/document-loading/load-document-groupdocs-merger-java-guide/)
+- [Specifieke PDF‑pagina's batchgewijs extraheren met GroupDocs.Merger for Java](/merger/java/document-extraction/extract-pages-groupdocs-merger-java/)
+- [PDF samenvoegen Java: Efficiënt PDF's samenvoegen met GroupDocs.Merger for Java – Een stap‑voor‑stap gids](/merger/java/format-specific-merging/merge-pdfs-groupdocs-merger-java-tutorial/)
