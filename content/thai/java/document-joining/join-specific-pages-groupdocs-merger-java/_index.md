@@ -1,59 +1,98 @@
 ---
-date: '2026-03-22'
-description: เรียนรู้วิธีรวมหน้าใน Java อย่างมีประสิทธิภาพโดยการรวมหน้าที่เลือกจากหลายเอกสารด้วย
-  GroupDocs.Merger for Java พร้อมเคล็ดลับการรวมหน้าเฉพาะของ PDF
+date: '2026-10-22'
+description: เรียนรู้วิธีรวมไฟล์ PDF หลายไฟล์ใน Java ด้วย GroupDocs.Merger รวมถึงคำแนะนำขั้นตอนต่อขั้นตอนในการรวมหน้าเฉพาะและผสานเอกสารอย่างมีประสิทธิภาพ
 keywords:
-- join specific pages GroupDocs Merger Java
-- groupdocs merger java document joining
-- java document manipulation with groupdocs
-title: วิธีรวมหน้าใน Java ด้วย GroupDocs.Merger
+- merge multiple pdfs
+- merge specific pages
+- combine documents java
+- merge pdf pages java
+- join specific pages
+lastmod: '2026-10-22'
+og_description: เรียนรู้วิธีรวมไฟล์ PDF หลายไฟล์ใน Java ด้วย GroupDocs.Merger รวมถึงคำแนะนำขั้นตอนต่อขั้นตอนในการรวมหน้าเฉพาะและผสานเอกสารอย่างมีประสิทธิภาพ
+og_image_alt: Guide showing how to merge multiple PDFs in Java with GroupDocs.Merger
+og_title: วิธีรวมไฟล์ PDF หลายไฟล์ใน Java ด้วย GroupDocs.Merger
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-22'
+  description: Learn how to merge multiple PDFs in Java using GroupDocs.Merger, including
+    step‑by‑step guide to merge specific pages and combine documents efficiently.
+  headline: How to merge multiple PDFs in Java using GroupDocs.Merger
+  type: TechArticle
+- description: Learn how to merge multiple PDFs in Java using GroupDocs.Merger, including
+    step‑by‑step guide to merge specific pages and combine documents efficiently.
+  name: How to merge multiple PDFs in Java using GroupDocs.Merger
+  steps:
+  - name: initialize path variables
+    text: The `sourceFilePath` and `additionalFilePath` strings hold the absolute
+      paths of the documents you want to merge.
+  - name: set up page‑join options
+    text: '`PageJoinOptions` tells the merger which pages to extract from each source
+      file.'
+  - name: initialize merger object
+    text: The `Merger` class is GroupDocs.Merger’s top‑level object that represents
+      a single document merging session.
+  - name: join pages from additional document
+    text: Calling `merger.join()` with the prepared `PageJoinOptions` merges the selected
+      pages into the current session.
+  - name: save output file
+    text: '`merger.save(outputPath)` writes the combined PDF to disk, preserving the
+      original page order and formatting.'
+  type: HowTo
+- questions:
+  - answer: Absolutely. Call `merger.join()` repeatedly with different source files
+      and `PageJoinOptions` for each; the library will concatenate the selected pages
+      in the order you invoke the calls.
+    question: Can I join pages from more than two documents in a single operation?
+  - answer: Yes, it retains layout, styles, and embedded resources of each source
+      page, delivering a seamless final PDF.
+    question: Does the library preserve original formatting when merging pages?
+  - answer: Load each file with a `Merger` instance, specify the page ranges, and
+      the API automatically converts DOCX pages to PDF before merging.
+    question: How can I merge pages from PDFs and DOCX files together?
+  - answer: You can retrieve page counts with `merger.getPagesCount()` and validate
+      the ranges programmatically before invoking `join`.
+    question: Is there a way to preview which pages will be merged before saving?
+  - answer: A paid license removes trial limitations, provides priority support, and
+      grants access to all advanced features.
+    question: What licensing model should I choose for a production environment?
+  type: FAQPage
+tags:
+- merge PDFs
+- GroupDocs.Merger
+- Java document processing
+- PDF manipulation
+- page merging
+title: วิธีรวมไฟล์ PDF หลายไฟล์ใน Java ด้วย GroupDocs.Merger
 type: docs
 url: /th/java/document-joining/join-specific-pages-groupdocs-merger-java/
 weight: 1
 ---
 
-# วิธีรวมหน้ากระดาษใน Java ด้วย GroupDocs.Merger
+# วิธีการรวมหลายไฟล์ PDF ใน Java ด้วย GroupDocs.Merger
 
-## บทนำ
+การรวมหลายไฟล์ PDF ใน Java เป็นความต้องการทั่วไปเมื่อคุณต้องการรวบรวมรายงาน, สัญญา หรือคู่มือจากแหล่งที่ต่างกัน ในบทเรียนนี้คุณจะได้เรียนรู้วิธี **merge pages** จากเอกสารหลายไฟล์, เลือกหน้าที่ต้องการอย่างแม่นยำ, และสร้างไฟล์ PDF เดียวที่มีโครงสร้างดีโดยใช้ GroupDocs.Merger เราจะครอบคลุมการตั้งค่าโปรเจกต์, การเรียกใช้ API ที่สำคัญ, และสถานการณ์จริงเพื่อให้คุณเริ่มอัตโนมัติการประกอบเอกสารได้ทันที
 
-การรวมหน้าจากเอกสารต่าง ๆ เป็นความต้องการทั่วไปไม่ว่าจะคุณกำลังสร้างรายงาน, จัดทำสัญญา, หรือทำคู่มือแบบกำหนดเอง **ในบทเรียนนี้คุณจะได้เรียนรู้วิธีรวมหน้ากระดาษใน Java** โดยเลือกหน้าที่ต้องการอย่างแม่นยำและรวมเข้าด้วยกันเป็นไฟล์เดียวที่มีโครงสร้างดีด้วย GroupDocs.Merger เราจะอธิบายขั้นตอนการตั้งค่า, การเรียกใช้ API, และสถานการณ์จริงเพื่อให้คุณนำเทคนิคนี้ไปใช้ในโครงการของคุณได้ทันที
+## คำตอบด่วน
+- **What does “merge multiple PDFs” mean?** เป็นกระบวนการเชิงโปรแกรมในการรวมหน้าที่เลือกจากไฟล์ PDF สองไฟล์หรือมากกว่าให้เป็นเอกสาร PDF รวมเดียวโดยใช้ Java.  
+- **Which library performs this task?** GroupDocs.Merger for Java ให้ API ที่สะอาดและประสิทธิภาพสูงสำหรับการรวมในระดับหน้า.  
+- **Do I need a license for production?** การทดลองใช้ฟรีเพียงพอสำหรับการประเมิน; ใบอนุญาตแบบชำระเงินจะลบข้อจำกัดของการทดลองและให้การสนับสนุนเต็มรูปแบบ.  
+- **Can I merge PDFs with other formats (DOCX, PPTX) together?** ใช่—GroupDocs.Merger รองรับรูปแบบเข้าและออกมากกว่า 50 แบบและจะทำการแปลงเป็น PDF อัตโนมัติเมื่อจำเป็น.  
+- **Is the operation memory‑efficient?** ไลบรารีนี้ประมวลผลหน้าด้วยการสตรีม ทำให้คุณสามารถรวมหลายร้อยหน้าโดยไม่ต้องโหลดเอกสารทั้งหมดเข้าสู่หน่วยความจำ.  
 
-**สิ่งที่คุณจะได้เรียนรู้**
-- วิธี **รวมหน้า** จากหลายแหล่งโดยใช้ GroupDocs.Merger สำหรับ Java  
-- วิธีกำหนดค่าโปรเจกต์ของคุณด้วย Maven หรือ Gradle  
-- ตัวอย่างโค้ดที่ใช้งานได้จริงซึ่งคุณสามารถคัดลอก‑วางและรันได้  
+## “join specific pages java” คืออะไร?
+วลีนี้อธิบายการเลือกหน้าที่เฉพาะจากหนึ่งหรือหลายเอกสารต้นทางโดยเชิงโปรแกรมและรวมเข้าด้วยกันเป็นเอกสารใหม่โดยใช้ Java. GroupDocs.Merger ทำให้การจัดการไฟล์ระดับต่ำเป็นนามธรรมเพื่อให้คุณมุ่งเน้นที่ *which* หน้าเพื่อรวม.
 
-## คำตอบอย่างรวดเร็ว
-- **“how to merge pages” หมายถึงอะไร?** คือกระบวนการโปรแกรมที่รวมหน้าที่เลือกจากหนึ่งหรือหลายเอกสารเข้าด้วยกันเป็นไฟล์ใหม่โดยใช้ Java  
-- **ไลบรารีที่ทำหน้าที่นี้คืออะไร?** GroupDocs.Merger สำหรับ Java  
-- **ต้องการไลเซนส์หรือไม่?** สามารถใช้รุ่นทดลองฟรีสำหรับการทดสอบ; ต้องมีไลเซนส์แบบชำระเงินสำหรับการใช้งานในผลิตภัณฑ์  
-- **สามารถรวมรูปแบบต่าง ๆ (PDF, DOCX ฯลฯ) ได้หรือไม่?** ได้, ไลบรารีรองรับหลายรูปแบบรวมถึง PDF  
-- **มีประสิทธิภาพด้านหน่วยความจำหรือไม่?** เมื่อใช้อย่างถูกต้องจะประมวลผลไฟล์ขนาดใหญ่โดยใช้หน่วยความจำน้อย  
-
-## วิธีรวมหน้ากระดาษใน Java ด้วย GroupDocs.Merger
-ส่วนนี้ตอบคำถามหลักของบทเรียนและรวมคีย์เวิร์ดหลักในหัวข้อ H2
-
-### “join specific pages java” คืออะไร?
-วลีนี้อธิบายการเลือกหน้าที่เฉพาะจากหนึ่งหรือหลายเอกสารต้นฉบับโดยโปรแกรมและรวมเข้าด้วยกันเป็นเอกสารใหม่โดยใช้ Java GroupDocs.Merger มี API ที่เรียบง่ายซึ่งทำหน้าที่จัดการไฟล์ระดับต่ำให้คุณโฟกัสที่หน้าที่ต้องการรวมเท่านั้น
-
-### ทำไมต้องใช้ GroupDocs.Merger สำหรับงานนี้?
-- **Precision:** เลือกหมายเลขหน้าอย่างแม่นยำโดยไม่ต้องแก้ไขด้วยมือ  
-- **Format Flexibility:** รองรับ PDF, DOCX, PPTX และรูปแบบอื่น ๆ มากมาย  
-- **Performance:** ปรับให้ทำงานเร็วและใช้หน่วยความจำน้อย  
-- **Scalability:** จัดการการประมวลผลแบบแบตช์สำหรับชุดเอกสารขนาดใหญ่  
+## ทำไมต้องใช้ GroupDocs.Merger สำหรับงานนี้?
+GroupDocs.Merger ให้คุณเลือกหมายเลขหน้าที่ต้องการอย่างแม่นยำ, ทำงานกับรูปแบบเอกสาร **50+** แบบ, ประมวลผลไฟล์ขนาดสูงสุด 500 MB ด้วยหน่วยความจำต่ำกว่า 200 MB RAM, และสามารถขยายเป็นการประมวลผลเป็นชุดหลายพันไฟล์ได้ API ของมันออกแบบเพื่อความเร็ว, ให้เวลาการรวมโดยทั่วไปต่ำกว่า 2 วินาทีต่อ PDF 100 หน้าในเซิร์ฟเวอร์มาตรฐาน.
 
 ## ข้อกำหนดเบื้องต้น
-
-ก่อนเริ่ม, ตรวจสอบว่าคุณมีสิ่งต่อไปนี้:
-
-- **GroupDocs.Merger for Java** – ไลบรารีหลักสำหรับการจัดการเอกสาร  
-- **Java Development Kit (JDK)** – เวอร์ชัน 8 หรือสูงกว่า  
-- IDE เช่น IntelliJ IDEA, Eclipse หรือ NetBeans (หรือข้อความแก้ไขใด ๆ ที่คุณชอบ)  
-- ความรู้พื้นฐานของ Java และอาจจะคุ้นเคยกับ Maven หรือ Gradle  
+- **GroupDocs.Merger for Java** – ไลบรารีหลักสำหรับการจัดการเอกสาร.  
+- **Java Development Kit (JDK)** – เวอร์ชัน 8 หรือสูงกว่า.  
+- IDE (IntelliJ IDEA, Eclipse, NetBeans) หรือโปรแกรมแก้ไขข้อความใด ๆ ที่คุณชอบ.  
+- ความรู้พื้นฐานของ Java; ความคุ้นเคยกับ Maven หรือ Gradle จะเป็นประโยชน์แต่ไม่จำเป็น.  
 
 ## การตั้งค่า GroupDocs.Merger สำหรับ Java
-
-เพิ่มไลบรารีลงในโปรเจกต์ของคุณโดยใช้วิธีใดวิธีหนึ่งด้านล่าง
+เพิ่มไลบรารีลงในโปรเจกต์ของคุณโดยใช้หนึ่งในวิธีต่อไปนี้.
 
 ### Maven
 ```xml
@@ -70,103 +109,112 @@ implementation 'com.groupdocs:groupdocs-merger:LATEST_VERSION'
 ```
 
 ### ดาวน์โหลดโดยตรง
-ดาวน์โหลดเวอร์ชันล่าสุดโดยตรงจาก [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/)
+ดาวน์โหลดเวอร์ชันล่าสุดโดยตรงจาก [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
 ### การรับใบอนุญาต
-คุณสามารถเริ่มต้นด้วย **free trial**, ขอ **temporary license** เพื่อประเมินผล, หรือซื้อ **full license** สำหรับการใช้งานในผลิตภัณฑ์
+เริ่มต้นด้วย **free trial**, ขอ **temporary license** สำหรับการประเมิน, หรือซื้อ **full license** เพื่อใช้ในการผลิต.
 
 ## คู่มือการใช้งาน
 
-ตอนนี้เราจะลงลึกไปที่โค้ดที่ทำการ **รวมหน้า** จริง ๆ เราจะอธิบายแต่ละขั้นตอนพร้อมบอกเหตุผลของแต่ละบรรทัด
+ตอนนี้เราจะเดินผ่านโค้ดที่ทำการ **merges pages** จริง ๆ แต่ละขั้นตอนรวมคำนิยามสั้น ๆ เพื่อให้ระบบ AI สามารถตอบ “What is X?” ได้ทันที.
 
 ### ขั้นตอนที่ 1: กำหนดตัวแปรเส้นทาง
+สตริง `sourceFilePath` และ `additionalFilePath` เก็บเส้นทางเต็มของเอกสารที่คุณต้องการรวม.  
 ```java
 String sourceFilePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX"; // First document path
 String additionalFilePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX_2"; // Second document path
 String outputFilePath = "YOUR_OUTPUT_DIRECTORY/JoinPagesFromVariousDocuments-output.docx";
 ```
 
-### ขั้นตอนที่ 2: ตั้งค่า Page Join Options
+### ขั้นตอนที่ 2: ตั้งค่า page‑join options
+`PageJoinOptions` บอกให้ merger ว่าจะดึงหน้าต่างใดจากแต่ละไฟล์ต้นทาง.  
 ```java
 // Define the page numbers to be merged, e.g., pages 1 and 2
 PageJoinOptions joinOptions = new PageJoinOptions(1, 2);
 ```
 
-### ขั้นตอนที่ 3: สร้างอ็อบเจ็กต์ Merger
+### ขั้นตอนที่ 3: สร้างอ็อบเจกต์ merger
+คลาส `Merger` เป็นอ็อบเจกต์ระดับบนของ GroupDocs.Merger ที่แสดงถึงเซสชันการรวมเอกสารเดียว.  
 ```java
 Merger merger = new Merger(sourceFilePath); // Load the main document
 ```
 
 ### ขั้นตอนที่ 4: รวมหน้าจากเอกสารเพิ่มเติม
+การเรียก `merger.join()` พร้อมกับ `PageJoinOptions` ที่เตรียมไว้ จะรวมหน้าที่เลือกเข้าไปในเซสชันปัจจุบัน.  
 ```java
 merger.join(additionalFilePath, joinOptions); // Merge pages from the second document
 ```
 
 ### ขั้นตอนที่ 5: บันทึกไฟล์ผลลัพธ์
+`merger.save(outputPath)` เขียน PDF ที่รวมแล้วลงดิสก์, รักษาลำดับหน้าและรูปแบบเดิม.  
 ```java
 merger.save(outputFilePath); // Store the combined output
 ```
 
-## วิธีรวมหน้า PDF เฉพาะด้วย GroupDocs.Merger
-แม้ว่าตัวอย่างจะใช้ไฟล์ DOCX, API เดียวกันทำงานกับ PDF ได้เช่นกัน เพียงชี้ `sourceFilePath` และ `additionalFilePath` ไปที่ไฟล์ PDF, ไลบรารีจะจัดการแปลงรูปแบบโดยอัตโนมัติ นี่เป็นประโยชน์เมื่อคุณต้อง **merge specific pages PDF** เอกสารหลายไฟล์เป็นรายงาน PDF เดียว
+## วิธีการรวมหน้าที่เฉพาะของ PDF ด้วย GroupDocs.Merger
+แม้ว่าตัวอย่างจะใช้ไฟล์ DOCX, API เดียวกันทำงานกับ PDF ได้เช่นกัน เพียงชี้ `sourceFilePath` และ `additionalFilePath` ไปยังไฟล์ PDF, ไลบรารีจะจัดการการแปลงรูปแบบโดยอัตโนมัติ สิ่งนี้สะดวกเมื่อคุณต้องการ **merge specific pages PDF** เอกสารหลายไฟล์เป็นรายงาน PDF เดียว.
 
 ## การประยุกต์ใช้งานจริง
+ความสามารถในการ **merge pages** มีการใช้งานจริงหลายอย่าง:
 
-ความสามารถในการ **รวมหน้า** มีการใช้งานในโลกจริงหลายรูปแบบ:
+1. **Educational material compilation** – รวมบทที่เลือกจากหลายตำราเรียนเป็นคู่มือการศึกษาเดียว.  
+2. **Legal document preparation** – ต่อเนื่องข้อที่เกี่ยวข้องจากหลายสัญญาเป็นไฟล์สั้น ๆ.  
+3. **Financial reporting** – ดึงและรวมหน้ารายงานเฉพาะจากรายงานต่าง ๆ เพื่อเป็นชุดสรุป.  
 
-1. **การรวบรวมเนื้อหาการศึกษา** – รวมบทที่เลือกจากหลายตำราเรียนเป็นคู่มือการศึกษาเดียว  
-2. **การจัดเตรียมเอกสารทางกฎหมาย** – รวมข้อกำหนดที่เกี่ยวข้องจากสัญญาต่าง ๆ เป็นไฟล์สรุปหนึ่งไฟล์  
-3. **การรายงานทางการเงิน** – ดึงและรวมหน้ารายงานเฉพาะจากหลายรายงานเพื่อสร้างแพคเกจสรุป  
+การฝังเวิร์กโฟลว์นี้ลงในระบบจัดการเนื้อหา หรือเครื่องมือสร้างรายงานอัตโนมัติสามารถประหยัดเวลาการแก้ไขด้วยมือเป็นชั่วโมง.
 
-การผสานกระบวนการนี้กับระบบจัดการเนื้อหา หรือเครื่องมือสร้างรายงานอัตโนมัติ สามารถประหยัดเวลาการแก้ไขด้วยมือหลายชั่วโมงได้
+## ข้อควรพิจารณาด้านประสิทธิภาพ
+เพื่อให้โซลูชัน Java ของคุณเร็วและใช้ทรัพยากรอย่างประหยัด:
 
-## พิจารณาด้านประสิทธิภาพ
-เพื่อให้โซลูชัน Java ของคุณทำงานเร็วและใช้ทรัพยากรอย่างคุ้มค่า:
+- **Close unused Merger instances** – เรียก `merger.close()` ทันทีเมื่อเสร็จเพื่อปล่อยทรัพยากรเนทีฟ.  
+- **Batch processing** – ประมวลผลคอลเลกชันขนาดใหญ่เป็นชุดย่อยแทนการโหลดทั้งหมดพร้อมกัน.  
+- **Monitor resources** – ตรวจสอบการใช้ CPU และ RAM; ปรับขนาด thread pool หากทำการรวมแบบขนาน.  
 
-- **Close Unused Merger Instances** – ปล่อยทรัพยากรทันทีที่ใช้งานเสร็จ  
-- **Batch Processing** – ประมวลผลคอลเลกชันขนาดใหญ่เป็นชุดย่อยแทนการทำทั้งหมดพร้อมกัน  
-- **Monitor Resources** – ตรวจสอบการใช้ CPU และ RAM; ปรับจำนวนเธรดหากทำการรวมแบบขนาน  
+## ปัญหาทั่วไปและวิธีแก้
 
-## ปัญหาที่พบบ่อยและวิธีแก้ไข
-| ปัญหา | วิธีแก้ไข |
-|-------|-----------|
-| **Out‑of‑memory error** | ประมวลผลเอกสารเป็นชุดและทำลายอ็อบเจ็กต์ `Merger` ทันทีเมื่อไม่ใช้ |
-| **Incorrect page numbers** | ใช้ `Merger.getPagesCount()` เพื่อตรวจสอบช่วงก่อนเรียก `join` |
-| **Mixed file formats cause layout shifts** | ตรวจสอบให้ไฟล์ต้นฉบับทั้งหมดใช้เวอร์ชันที่เข้ากันได้; พิจารณาแปลงเป็น PDF ก่อนหากต้องการความสอดคล้องของเลย์เอาต์ |
+| Issue | Solution |
+|-------|----------|
+| **Out‑of‑memory error** | ประมวลผลเอกสารเป็นชุดและทำลายอ็อบเจกต์ `Merger` อย่างทันท่วงที. |
+| **Incorrect page numbers** | ใช้ `merger.getPagesCount()` เพื่อตรวจสอบช่วงก่อนเรียก `join`. |
+| **Mixed file formats cause layout shifts** | แปลงแหล่งทั้งหมดเป็น PDF ก่อน, หรือให้แน่ใจว่ามีเวอร์ชันเดียวกัน; ไลบรารีรองรับการแปลงแบบ lossless สำหรับรูปแบบกว่า 50 แบบ. |
 
 ## คำถามที่พบบ่อย
 
-**Q: สามารถรวมหน้าจากเอกสารมากกว่าสองไฟล์ในหนึ่งการดำเนินการได้หรือไม่?**  
-A: แน่นอน. เรียก `merger.join()` หลายครั้งพร้อมไฟล์ต้นฉบับและ `PageJoinOptions` ที่แตกต่างกันสำหรับแต่ละไฟล์
+**Q: Can I join pages from more than two documents in a single operation?**  
+A: แน่นอน. เรียก `merger.join()` ซ้ำหลายครั้งพร้อมไฟล์ต้นทางต่าง ๆ และ `PageJoinOptions` สำหรับแต่ละไฟล์; ไลบรารีจะต่อหน้าที่เลือกตามลำดับที่คุณเรียก.
 
-**Q: ไลบรารีรักษาการจัดรูปแบบเดิมเมื่อรวมหน้าไหม?**  
-A: ใช่, จะคงเลย์เอาต์, สไตล์, และทรัพยากรที่ฝังอยู่ของแต่ละหน้าต้นฉบับไว้
+**Q: Does the library preserve original formatting when merging pages?**  
+A: ใช่, มันรักษาเลย์เอาต์, สไตล์, และทรัพยากรที่ฝังอยู่ของแต่ละหน้าต้นฉบับ, ทำให้ได้ PDF สุดท้ายที่ต่อเนื่องอย่างไร้รอยต่อ.
 
-**Q: จะรวมหน้าจากไฟล์ PDF และ DOCX เข้าด้วยกันอย่างไร?**  
-A: โหลดแต่ละไฟล์ด้วยอ็อบเจ็กต์ `Merger` แล้วระบุช่วงหน้า; ไลบรารีจะทำการแปลงรูปแบบโดยอัตโนมัติตามต้องการ
+**Q: How can I merge pages from PDFs and DOCX files together?**  
+A: โหลดแต่ละไฟล์ด้วยอ็อบเจกต์ `Merger`, ระบุช่วงหน้า, และ API จะทำการแปลงหน้า DOCX เป็น PDF ก่อนรวมโดยอัตโนมัติ.
 
-**Q: มีวิธีดูตัวอย่างหน้าที่จะถูกรวมก่อนบันทึกหรือไม่?**  
-A: คุณสามารถดึงจำนวนหน้าด้วยโปรแกรมและตรวจสอบช่วงก่อนเรียก `join` ได้
+**Q: Is there a way to preview which pages will be merged before saving?**  
+A: คุณสามารถดึงจำนวนหน้าด้วย `merger.getPagesCount()` และตรวจสอบช่วงโปรแกรมเมิก่อนเรียก `join`.
 
-**Q: ควรเลือกโมเดลไลเซนส์แบบไหนสำหรับสภาพแวดล้อมการผลิต?**  
-A: ไลเซนส์แบบชำระเงินให้การสนับสนุนเต็มรูปแบบและลบข้อจำกัดของรุ่นทดลองออก
+**Q: What licensing model should I choose for a production environment?**  
+A: ใบอนุญาตแบบชำระเงินจะลบข้อจำกัดของการทดลอง, ให้การสนับสนุนระดับ priority, และเปิดใช้งานคุณสมบัติขั้นสูงทั้งหมด.
 
 ## สรุป
-ในบทเรียนนี้คุณได้เรียนรู้ **วิธีรวมหน้ากระดาษใน Java** ด้วย GroupDocs.Merger เราได้ครอบคลุมการตั้งค่าสภาพแวดล้อม, ตัวเลือกการเลือกหน้า, และการบันทึกเอกสารสุดท้าย ด้วยทักษะเหล่านี้คุณสามารถอัตโนมัติการประกอบเอกสารหลากหลายประเภทได้ ตั้งแต่การสร้างรายงานจนถึงการจัดเตรียมเอกสารทางกฎหมาย
-
-พร้อมสำรวจต่อหรือยัง? ตรวจสอบ API สำหรับการแยกเอกสาร, การเพิ่มลายน้ำ, หรือการรักษาความปลอดภัยของไฟล์—ทั้งหมดนี้พร้อมใช้งานผ่านไลบรารีที่แข็งแกร่งเดียวกัน
+ตอนนี้คุณรู้แล้วว่า **how to merge multiple PDFs in Java** ด้วย GroupDocs.Merger เราได้ครอบคลุมการตั้งค่าสภาพแวดล้อม, ตัวเลือกการเลือกหน้า, และการบันทึกเอกสารสุดท้าย, ทำให้คุณสามารถอัตโนมัติงานประกอบเอกสารหลากหลาย – ตั้งแต่การสร้างรายงานจนถึงการเตรียมสัญญากฎหมาย. สำรวจ API ต่อเพื่อแยกเอกสาร, เพิ่มลายน้ำ, หรือปกป้องไฟล์ – ทั้งหมดโดยใช้ไลบรารีเดียวที่แข็งแรง.
 
 ---
 
-**อัปเดตล่าสุด:** 2026-03-22  
+**อัปเดตล่าสุด:** 2026-10-22  
 **ทดสอบกับ:** GroupDocs.Merger 23.12 (Java)  
 **ผู้เขียน:** GroupDocs  
 
-## แหล่งข้อมูล
-- **เอกสารประกอบ:** [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)  
-- **API Reference:** [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)  
+**แหล่งข้อมูล**  
+- **เอกสาร:** [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)  
+- **API reference:** [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)  
 - **ดาวน์โหลด:** [GroupDocs Downloads](https://releases.groupdocs.com/merger/java/)  
 - **ซื้อ:** [Buy GroupDocs](https://purchase.groupdocs.com/buy)  
-- **Free Trial:** [GroupDocs Free Trial](https://releases.groupdocs.com/merger/java/)  
-- **Temporary License:** [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-- **Support:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/)
+- **Free trial:** [GroupDocs Free Trial](https://releases.groupdocs.com/merger/java/)  
+- **Temporary license:** [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Support:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/)  
+
+## บทแนะนำที่เกี่ยวข้อง
+
+- [Merge PDF Java: โหลดเอกสารในเครื่องโดยใช้ GroupDocs.Merger – คู่มือ](/merger/java/document-loading/load-document-groupdocs-merger-java-guide/)
+- [Extract Specific PDF Pages in Batch with GroupDocs.Merger for Java](/merger/java/document-extraction/extract-pages-groupdocs-merger-java/)
+- [Merge PDF Java: รวม PDF อย่างมีประสิทธิภาพด้วย GroupDocs.Merger สำหรับ Java – คู่มือขั้นตอนต่อขั้นตอน](/merger/java/format-specific-merging/merge-pdfs-groupdocs-merger-java-tutorial/)

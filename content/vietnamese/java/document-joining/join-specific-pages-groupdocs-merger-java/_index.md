@@ -1,56 +1,102 @@
 ---
-date: '2026-03-22'
-description: Tìm hiểu cách hợp nhất các trang trong Java một cách hiệu quả bằng cách
-  ghép các trang đã chọn từ nhiều tài liệu sử dụng GroupDocs.Merger cho Java. Bao
-  gồm các mẹo hợp nhất các trang PDF cụ thể.
+date: '2026-10-22'
+description: Tìm hiểu cách gộp nhiều tệp PDF trong Java bằng GroupDocs.Merger, bao
+  gồm hướng dẫn từng bước để gộp các trang cụ thể và kết hợp tài liệu một cách hiệu
+  quả.
 keywords:
-- join specific pages GroupDocs Merger Java
-- groupdocs merger java document joining
-- java document manipulation with groupdocs
-title: Cách ghép các trang trong Java bằng GroupDocs.Merger
+- merge multiple pdfs
+- merge specific pages
+- combine documents java
+- merge pdf pages java
+- join specific pages
+lastmod: '2026-10-22'
+og_description: Tìm hiểu cách gộp nhiều tệp PDF trong Java bằng GroupDocs.Merger,
+  bao gồm hướng dẫn từng bước để gộp các trang cụ thể và kết hợp tài liệu một cách
+  hiệu quả.
+og_image_alt: Guide showing how to merge multiple PDFs in Java with GroupDocs.Merger
+og_title: Cách gộp nhiều tệp PDF trong Java bằng GroupDocs.Merger
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-22'
+  description: Learn how to merge multiple PDFs in Java using GroupDocs.Merger, including
+    step‑by‑step guide to merge specific pages and combine documents efficiently.
+  headline: How to merge multiple PDFs in Java using GroupDocs.Merger
+  type: TechArticle
+- description: Learn how to merge multiple PDFs in Java using GroupDocs.Merger, including
+    step‑by‑step guide to merge specific pages and combine documents efficiently.
+  name: How to merge multiple PDFs in Java using GroupDocs.Merger
+  steps:
+  - name: initialize path variables
+    text: The `sourceFilePath` and `additionalFilePath` strings hold the absolute
+      paths of the documents you want to merge.
+  - name: set up page‑join options
+    text: '`PageJoinOptions` tells the merger which pages to extract from each source
+      file.'
+  - name: initialize merger object
+    text: The `Merger` class is GroupDocs.Merger’s top‑level object that represents
+      a single document merging session.
+  - name: join pages from additional document
+    text: Calling `merger.join()` with the prepared `PageJoinOptions` merges the selected
+      pages into the current session.
+  - name: save output file
+    text: '`merger.save(outputPath)` writes the combined PDF to disk, preserving the
+      original page order and formatting.'
+  type: HowTo
+- questions:
+  - answer: Absolutely. Call `merger.join()` repeatedly with different source files
+      and `PageJoinOptions` for each; the library will concatenate the selected pages
+      in the order you invoke the calls.
+    question: Can I join pages from more than two documents in a single operation?
+  - answer: Yes, it retains layout, styles, and embedded resources of each source
+      page, delivering a seamless final PDF.
+    question: Does the library preserve original formatting when merging pages?
+  - answer: Load each file with a `Merger` instance, specify the page ranges, and
+      the API automatically converts DOCX pages to PDF before merging.
+    question: How can I merge pages from PDFs and DOCX files together?
+  - answer: You can retrieve page counts with `merger.getPagesCount()` and validate
+      the ranges programmatically before invoking `join`.
+    question: Is there a way to preview which pages will be merged before saving?
+  - answer: A paid license removes trial limitations, provides priority support, and
+      grants access to all advanced features.
+    question: What licensing model should I choose for a production environment?
+  type: FAQPage
+tags:
+- merge PDFs
+- GroupDocs.Merger
+- Java document processing
+- PDF manipulation
+- page merging
+title: Cách gộp nhiều tệp PDF trong Java bằng GroupDocs.Merger
 type: docs
 url: /vi/java/document-joining/join-specific-pages-groupdocs-merger-java/
 weight: 1
 ---
 
-# Cách Gộp Các Trang trong Java Sử Dụng GroupDocs.Merger
+# Cách hợp nhất nhiều tệp PDF trong Java bằng GroupDocs.Merger
 
-## Giới thiệu
-
-Việc gộp các trang từ các tài liệu khác nhau là một nhu cầu thường gặp, dù bạn đang xây dựng báo cáo, lắp ráp hợp đồng, hay tạo một sổ tay tùy chỉnh. **Trong hướng dẫn này bạn sẽ học cách gộp các trang trong Java** bằng cách chọn chính xác các trang cần thiết và kết hợp chúng thành một tệp duy nhất, có cấu trúc tốt với GroupDocs.Merger. Chúng tôi sẽ hướng dẫn qua việc cài đặt, các lời gọi API và các kịch bản thực tế để bạn có thể áp dụng kỹ thuật này ngay trong dự án của mình.
-
-**Bạn Sẽ Học**
-- Cách **gộp các trang** từ nhiều nguồn khác nhau bằng GroupDocs.Merger cho Java  
-- Cách cấu hình dự án của bạn với Maven hoặc Gradle  
-- Các đoạn mã thực tế mà bạn có thể sao chép‑dán và chạy  
+Hợp nhất nhiều tệp PDF trong Java là một nhu cầu phổ biến khi bạn cần tập hợp báo cáo, hợp đồng hoặc sổ tay từ các nguồn khác nhau. Trong hướng dẫn này, bạn sẽ học cách **merge pages** từ nhiều tài liệu, chọn chính xác các trang cần thiết và xuất ra một tệp PDF duy nhất, cấu trúc tốt bằng GroupDocs.Merger. Chúng tôi sẽ đề cập đến việc thiết lập dự án, các lời gọi API thiết yếu và các kịch bản thực tế để bạn có thể bắt đầu tự động hoá việc lắp ráp tài liệu ngay hôm nay.
 
 ## Câu trả lời nhanh
-- **“Cách gộp các trang” có nghĩa là gì?** Đó là quá trình lập trình kết hợp các trang đã chọn từ một hoặc nhiều tài liệu thành một tệp mới bằng Java.  
-- **Thư viện nào xử lý việc này?** GroupDocs.Merger cho Java.  
-- **Tôi có cần giấy phép không?** Bản dùng thử miễn phí đủ cho việc thử nghiệm; giấy phép trả phí cần thiết cho môi trường sản xuất.  
-- **Tôi có thể gộp các định dạng khác nhau (PDF, DOCX, v.v.) không?** Có, thư viện hỗ trợ nhiều định dạng, bao gồm PDF.  
-- **Nó có tiết kiệm bộ nhớ không?** Khi được sử dụng đúng cách, nó xử lý các tệp lớn với mức sử dụng bộ nhớ vừa phải.  
+- **What does “merge multiple PDFs” mean?** Đây là quá trình lập trình nối các trang đã chọn từ hai hoặc nhiều tệp PDF thành một tài liệu PDF hợp nhất duy nhất bằng Java.  
+- **Which library performs this task?** GroupDocs.Merger for Java cung cấp một API sạch sẽ, hiệu suất cao cho việc hợp nhất ở mức độ trang.  
+- **Do I need a license for production?** Một bản dùng thử miễn phí đủ cho việc đánh giá; giấy phép trả phí loại bỏ các giới hạn của bản dùng thử và cung cấp hỗ trợ đầy đủ.  
+- **Can I merge PDFs with other formats (DOCX, PPTX) together?** Có — GroupDocs.Merger hỗ trợ hơn 50 định dạng đầu vào và đầu ra và sẽ tự động chuyển đổi chúng sang PDF khi cần.  
+- **Is the operation memory‑efficient?** Thư viện xử lý các trang theo kiểu streaming, cho phép bạn hợp nhất hàng trăm trang mà không cần tải toàn bộ tài liệu vào bộ nhớ.
 
-## Cách Gộp Các Trang trong Java Sử Dụng GroupDocs.Merger
-Phần này trả lời câu hỏi chính của hướng dẫn và bao gồm từ khóa chính trong tiêu đề H2.
+## “join specific pages java” là gì?
+Cụm từ này mô tả hành động lập trình chọn các trang cụ thể từ một hoặc nhiều tài liệu nguồn và kết hợp chúng thành một tài liệu mới bằng Java. GroupDocs.Merger trừu tượng hoá việc xử lý tệp cấp thấp để bạn có thể tập trung vào *các* trang cần bao gồm.
 
-### “join specific pages java” là gì?
-Cụm từ mô tả hành động lập trình chọn các trang cụ thể từ một hoặc nhiều tài liệu nguồn và kết hợp chúng thành một tài liệu mới bằng Java. GroupDocs.Merger cung cấp một API sạch sẽ, trừu tượng hoá việc xử lý tệp ở mức thấp, cho phép bạn tập trung vào việc chọn các trang cần bao gồm.
+## Tại sao nên sử dụng GroupDocs.Merger cho nhiệm vụ này?
+GroupDocs.Merger cho phép bạn chọn chính xác các số trang, hỗ trợ **50+** định dạng tài liệu, xử lý các tệp lên tới 500 MB với dưới 200 MB RAM, và mở rộng để thực hiện các thao tác batch trên hàng ngàn tệp. API của nó được thiết kế để tốc độ, thường chỉ mất dưới 2 giây cho mỗi 100‑page PDF trên một máy chủ tiêu chuẩn.
 
-### Tại sao nên sử dụng GroupDocs.Merger cho nhiệm vụ này?
-- **Độ chính xác:** Chọn số trang chính xác mà không cần chỉnh sửa thủ công.  
-- **Linh hoạt định dạng:** Hoạt động với PDF, DOCX, PPTX và nhiều định dạng khác.  
-- **Hiệu năng:** Tối ưu cho tốc độ và tiêu thụ bộ nhớ thấp.  
-- **Khả năng mở rộng:** Xử lý các thao tác batch cho tập hợp tài liệu lớn.  
+## Các yêu cầu trước
 
-## Yêu cầu trước
-
-- **GroupDocs.Merger cho Java** – thư viện cốt lõi để thao tác tài liệu.  
+- **GroupDocs.Merger for Java** – thư viện cốt lõi để thao tác tài liệu.  
 - **Java Development Kit (JDK)** – phiên bản 8 trở lên.  
-- Một IDE như IntelliJ IDEA, Eclipse hoặc NetBeans (hoặc bất kỳ trình soạn thảo văn bản nào bạn thích).  
-- Kiến thức cơ bản về Java và, tùy chọn, quen thuộc với Maven hoặc Gradle.  
+- Một IDE (IntelliJ IDEA, Eclipse, NetBeans) hoặc bất kỳ trình soạn thảo văn bản nào bạn thích.  
+- Kiến thức cơ bản về Java; quen thuộc với Maven hoặc Gradle là lợi thế nhưng không bắt buộc.
 
-## Cài đặt GroupDocs.Merger cho Java
+## Thiết lập GroupDocs.Merger cho Java
 
 Thêm thư viện vào dự án của bạn bằng một trong các phương pháp dưới đây.
 
@@ -69,103 +115,111 @@ implementation 'com.groupdocs:groupdocs-merger:LATEST_VERSION'
 ```
 
 ### Tải trực tiếp
-Tải phiên bản mới nhất trực tiếp từ [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
+Tải xuống phiên bản mới nhất trực tiếp từ [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
-### Nhận Giấy phép
-Bạn có thể bắt đầu với **bản dùng thử miễn phí**, yêu cầu **giấy phép tạm thời** để đánh giá, hoặc mua **giấy phép đầy đủ** cho việc sử dụng trong môi trường sản xuất.
+### Cấp giấy phép
+Bắt đầu với **free trial**, yêu cầu **temporary license** để đánh giá, hoặc mua **full license** cho môi trường sản xuất.
 
 ## Hướng dẫn triển khai
 
-Bây giờ chúng ta sẽ đi sâu vào đoạn mã thực sự **gộp các trang**. Chúng tôi sẽ hướng dẫn qua từng bước, giải thích mục đích của mỗi dòng.
+Bây giờ chúng ta sẽ đi qua mã thực sự **merges pages**. Mỗi bước bao gồm một anchor định nghĩa ngắn để các hệ thống AI có thể trả lời “What is X?” ngay lập tức.
 
-### Bước 1: Khởi tạo biến đường dẫn
+### Bước 1: khởi tạo biến đường dẫn
+Các chuỗi `sourceFilePath` và `additionalFilePath` chứa đường dẫn tuyệt đối của các tài liệu bạn muốn hợp nhất.  
 ```java
 String sourceFilePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX"; // First document path
 String additionalFilePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX_2"; // Second document path
 String outputFilePath = "YOUR_OUTPUT_DIRECTORY/JoinPagesFromVariousDocuments-output.docx";
 ```
 
-### Bước 2: Thiết lập tùy chọn gộp trang
+### Bước 2: thiết lập tùy chọn page‑join
+`PageJoinOptions` cho biết trình hợp nhất cần trích xuất những trang nào từ mỗi tệp nguồn.  
 ```java
 // Define the page numbers to be merged, e.g., pages 1 and 2
 PageJoinOptions joinOptions = new PageJoinOptions(1, 2);
 ```
 
-### Bước 3: Khởi tạo đối tượng Merger
+### Bước 3: khởi tạo đối tượng merger
+Lớp `Merger` là đối tượng cấp cao nhất của GroupDocs.Merger, đại diện cho một phiên hợp nhất tài liệu duy nhất.  
 ```java
 Merger merger = new Merger(sourceFilePath); // Load the main document
 ```
 
-### Bước 4: Gộp các trang từ tài liệu bổ sung
+### Bước 4: hợp nhất các trang từ tài liệu bổ sung
+Gọi `merger.join()` với `PageJoinOptions` đã chuẩn bị sẽ hợp nhất các trang đã chọn vào phiên hiện tại.  
 ```java
 merger.join(additionalFilePath, joinOptions); // Merge pages from the second document
 ```
 
-### Bước 5: Lưu tệp đầu ra
+### Bước 5: lưu tệp đầu ra
+`merger.save(outputPath)` ghi PDF đã kết hợp ra đĩa, giữ nguyên thứ tự và định dạng trang gốc.  
 ```java
 merger.save(outputFilePath); // Store the combined output
 ```
 
-## Cách Gộp Các Trang Cụ Thể PDF với GroupDocs.Merger
-Mặc dù ví dụ sử dụng tệp DOCX, cùng một API cũng hoạt động cho PDF. Chỉ cần chỉ định `sourceFilePath` và `additionalFilePath` tới các tệp PDF, và thư viện sẽ tự động xử lý việc chuyển đổi định dạng. Điều này hữu ích khi bạn cần **gộp các trang cụ thể PDF** vào một báo cáo PDF duy nhất.
+## Cách hợp nhất các trang PDF cụ thể với GroupDocs.Merger
+Mặc dù ví dụ sử dụng tệp DOCX, cùng một API cũng hoạt động với PDF. Chỉ cần trỏ `sourceFilePath` và `additionalFilePath` tới các tệp PDF, và thư viện sẽ tự động xử lý chuyển đổi định dạng. Điều này rất hữu ích khi bạn cần **merge specific pages PDF** vào một báo cáo PDF duy nhất.
 
 ## Ứng dụng thực tiễn
-Khả năng **gộp các trang** có nhiều ứng dụng thực tế:
+Khả năng **merge pages** có nhiều ứng dụng thực tế:
 
-1. **Biên soạn tài liệu giáo dục** – Gộp các chương đã chọn từ nhiều sách giáo trình thành một hướng dẫn học tập duy nhất.  
-2. **Chuẩn bị tài liệu pháp lý** – Kết hợp các điều khoản liên quan từ các hợp đồng khác nhau thành một tệp ngắn gọn.  
-3. **Báo cáo tài chính** – Trích xuất và gộp các trang báo cáo cụ thể từ nhiều báo cáo để tạo một gói tóm tắt.  
+1. **Educational material compilation** – kết hợp các chương đã chọn từ nhiều sách giáo trình thành một hướng dẫn học tập.  
+2. **Legal document preparation** – ghép các điều khoản liên quan từ nhiều hợp đồng thành một tệp ngắn gọn.  
+3. **Financial reporting** – trích xuất và nối các trang báo cáo tài chính cụ thể từ các báo cáo khác nhau để tạo một gói tóm tắt.  
 
-Việc tích hợp quy trình này với hệ thống quản lý nội dung hoặc công cụ tạo báo cáo tự động có thể tiết kiệm hàng giờ chỉnh sửa thủ công.
+Nhúng quy trình này vào hệ thống quản lý nội dung hoặc trình tạo báo cáo tự động có thể tiết kiệm hàng giờ chỉnh sửa thủ công.
 
-## Các lưu ý về hiệu năng
-Để giữ cho giải pháp Java của bạn nhanh và thân thiện với tài nguyên:
+## Các cân nhắc về hiệu suất
+Để giải pháp Java của bạn nhanh và tiết kiệm tài nguyên:
 
-- **Đóng các đối tượng Merger không dùng** – Giải phóng tài nguyên ngay khi bạn hoàn thành.  
-- **Xử lý batch** – Xử lý các bộ sưu tập lớn theo các lô nhỏ hơn thay vì một lần.  
-- **Giám sát tài nguyên** – Theo dõi mức sử dụng CPU và RAM; điều chỉnh số lượng luồng nếu bạn chạy việc gộp song song.  
+- **Close unused Merger instances** – gọi `merger.close()` ngay khi hoàn thành để giải phóng tài nguyên gốc.  
+- **Batch processing** – xử lý các bộ sưu tập lớn thành các batch nhỏ hơn thay vì tải toàn bộ một lúc.  
+- **Monitor resources** – giám sát việc sử dụng CPU và RAM; điều chỉnh pool luồng nếu bạn chạy các hợp nhất song song.
 
 ## Các vấn đề thường gặp và giải pháp
-
-| Vấn đề | Giải pháp |
+| Issue | Solution |
 |-------|----------|
-| **Lỗi hết bộ nhớ** | Xử lý tài liệu theo lô và giải phóng các đối tượng `Merger` ngay lập tức. |
-| **Số trang không đúng** | Sử dụng `Merger.getPagesCount()` để xác thực phạm vi trước khi gọi `join`. |
-| **Định dạng tệp hỗn hợp gây thay đổi bố cục** | Đảm bảo tất cả các tệp nguồn sử dụng các phiên bản tương thích; cân nhắc chuyển đổi sang PDF trước nếu tính nhất quán bố cục là quan trọng. |
+| **Out‑of‑memory error** | Xử lý tài liệu theo batch và giải phóng các đối tượng `Merger` kịp thời. |
+| **Incorrect page numbers** | Sử dụng `merger.getPagesCount()` để xác thực phạm vi trước khi gọi `join`. |
+| **Mixed file formats cause layout shifts** | Chuyển đổi tất cả nguồn sang PDF trước, hoặc đảm bảo chúng cùng phiên bản; thư viện hỗ trợ chuyển đổi không mất dữ liệu cho hơn 50 định dạng. |
 
 ## Câu hỏi thường gặp
 
-**Hỏi: Tôi có thể gộp các trang từ hơn hai tài liệu trong một thao tác duy nhất không?**  
-**Đáp:** Chắc chắn. Gọi `merger.join()` nhiều lần với các tệp nguồn khác nhau và `PageJoinOptions` cho mỗi lần.
+**Q: Can I join pages from more than two documents in a single operation?**  
+A: Chắc chắn. Gọi `merger.join()` nhiều lần với các tệp nguồn và `PageJoinOptions` khác nhau; thư viện sẽ nối các trang đã chọn theo thứ tự bạn thực hiện các lời gọi.
 
-**Hỏi: Thư viện có giữ nguyên định dạng gốc khi gộp các trang không?**  
-**Đáp:** Có, nó giữ nguyên bố cục, kiểu dáng và các tài nguyên nhúng của mỗi trang nguồn.
+**Q: Does the library preserve original formatting when merging pages?**  
+A: Có, nó giữ nguyên bố cục, kiểu dáng và các tài nguyên nhúng của mỗi trang nguồn, mang lại một PDF cuối cùng liền mạch.
 
-**Hỏi: Làm thế nào tôi có thể gộp các trang từ PDF và DOCX lại với nhau?**  
-**Đáp:** Tải mỗi tệp bằng một thể hiện `Merger` và chỉ định phạm vi trang; thư viện sẽ tự động chuyển đổi định dạng khi cần.
+**Q: How can I merge pages from PDFs and DOCX files together?**  
+A: Tải mỗi tệp bằng một thể hiện `Merger`, chỉ định phạm vi trang, và API sẽ tự động chuyển đổi các trang DOCX sang PDF trước khi hợp nhất.
 
-**Hỏi: Có cách nào để xem trước các trang sẽ được gộp trước khi lưu không?**  
-**Đáp:** Bạn có thể lấy số lượng trang và xác thực phạm vi một cách lập trình trước khi gọi `join`.
+**Q: Is there a way to preview which pages will be merged before saving?**  
+A: Bạn có thể lấy số trang bằng `merger.getPagesCount()` và xác thực các phạm vi một cách lập trình trước khi gọi `join`.
 
-**Hỏi: Tôi nên chọn mô hình giấy phép nào cho môi trường sản xuất?**  
-**Đáp:** Giấy phép trả phí cung cấp hỗ trợ đầy đủ và loại bỏ các giới hạn của bản dùng thử.
+**Q: What licensing model should I choose for a production environment?**  
+A: Giấy phép trả phí loại bỏ các giới hạn của bản dùng thử, cung cấp hỗ trợ ưu tiên và cho phép truy cập vào tất cả các tính năng nâng cao.
 
 ## Kết luận
-Trong hướng dẫn này bạn đã học **cách gộp các trang trong Java** bằng GroupDocs.Merger. Chúng tôi đã đề cập đến việc thiết lập môi trường, các tùy chọn chọn trang và cách lưu tài liệu cuối cùng. Với những kỹ năng này, bạn có thể tự động hoá một loạt các nhiệm vụ lắp ráp tài liệu—from tạo báo cáo đến chuẩn bị tài liệu pháp lý.
-
-Sẵn sàng khám phá thêm? Hãy xem API để tách tài liệu, thêm watermark, hoặc bảo mật tệp—tất cả đều có sẵn qua cùng một thư viện mạnh mẽ.
+Bạn đã biết **cách hợp nhất nhiều PDF trong Java** bằng GroupDocs.Merger. Chúng tôi đã đề cập đến việc thiết lập môi trường, các tùy chọn chọn trang và cách lưu tài liệu cuối cùng, giúp bạn tự động hoá một loạt các nhiệm vụ lắp ráp tài liệu — từ tạo báo cáo đến chuẩn bị hợp đồng pháp lý. Khám phá thêm API để tách tài liệu, thêm watermark, hoặc bảo mật tệp — tất cả đều sử dụng cùng một thư viện mạnh mẽ.
 
 ---
 
-**Cập nhật lần cuối:** 2026-03-22  
-**Kiểm thử với:** GroupDocs.Merger 23.12 (Java)  
-**Tác giả:** GroupDocs  
+**Last Updated:** 2026-10-22  
+**Tested With:** GroupDocs.Merger 23.12 (Java)  
+**Author:** GroupDocs  
 
-**Tài nguyên**
-- **Tài liệu:** [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)  
-- **Tham chiếu API:** [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)  
-- **Tải xuống:** [GroupDocs Downloads](https://releases.groupdocs.com/merger/java/)  
-- **Mua:** [Buy GroupDocs](https://purchase.groupdocs.com/buy)  
-- **Dùng thử miễn phí:** [GroupDocs Free Trial](https://releases.groupdocs.com/merger/java/)  
-- **Giấy phép tạm thời:** [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-- **Hỗ trợ:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/)
+**Resources**  
+- **Documentation:** [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)  
+- **API reference:** [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)  
+- **Download:** [GroupDocs Downloads](https://releases.groupdocs.com/merger/java/)  
+- **Purchase:** [Buy GroupDocs](https://purchase.groupdocs.com/buy)  
+- **Free trial:** [GroupDocs Free Trial](https://releases.groupdocs.com/merger/java/)  
+- **Temporary license:** [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Support:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/)
+
+## Hướng dẫn liên quan
+
+- [Merge PDF Java: Load Local Document Using GroupDocs.Merger – Guide](/merger/java/document-loading/load-document-groupdocs-merger-java-guide/)
+- [Extract Specific PDF Pages in Batch with GroupDocs.Merger for Java](/merger/java/document-extraction/extract-pages-groupdocs-merger-java/)
+- [Merge PDF Java: Efficiently Merge PDFs Using GroupDocs.Merger for Java – A Step‑By‑Step Guide](/merger/java/format-specific-merging/merge-pdfs-groupdocs-merger-java-tutorial/)

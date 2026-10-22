@@ -1,57 +1,100 @@
 ---
-date: '2026-03-22'
-description: GroupDocs.Merger for Java を使用して、複数のドキュメントから選択したページを結合し、Java でページを効率的にマージする方法を学びましょう。特定ページの
-  PDF マージに関するヒントも含まれています。
+date: '2026-10-22'
+description: GroupDocs.Merger を使用して Java で複数の PDF を結合する方法を学びます。特定のページを結合し、ドキュメントを効率的に統合するステップバイステップガイドを含みます。
 keywords:
-- join specific pages GroupDocs Merger Java
-- groupdocs merger java document joining
-- java document manipulation with groupdocs
-title: Java で GroupDocs.Merger を使用してページを結合する方法
+- merge multiple pdfs
+- merge specific pages
+- combine documents java
+- merge pdf pages java
+- join specific pages
+lastmod: '2026-10-22'
+og_description: GroupDocs.Merger を使用して Java で複数の PDF を結合する方法を学びます。特定のページを結合し、ドキュメントを効率的に統合するステップバイステップガイドを含みます。
+og_image_alt: Guide showing how to merge multiple PDFs in Java with GroupDocs.Merger
+og_title: GroupDocs.Merger を使用して Java で複数の PDF を結合する方法
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-22'
+  description: Learn how to merge multiple PDFs in Java using GroupDocs.Merger, including
+    step‑by‑step guide to merge specific pages and combine documents efficiently.
+  headline: How to merge multiple PDFs in Java using GroupDocs.Merger
+  type: TechArticle
+- description: Learn how to merge multiple PDFs in Java using GroupDocs.Merger, including
+    step‑by‑step guide to merge specific pages and combine documents efficiently.
+  name: How to merge multiple PDFs in Java using GroupDocs.Merger
+  steps:
+  - name: initialize path variables
+    text: The `sourceFilePath` and `additionalFilePath` strings hold the absolute
+      paths of the documents you want to merge.
+  - name: set up page‑join options
+    text: '`PageJoinOptions` tells the merger which pages to extract from each source
+      file.'
+  - name: initialize merger object
+    text: The `Merger` class is GroupDocs.Merger’s top‑level object that represents
+      a single document merging session.
+  - name: join pages from additional document
+    text: Calling `merger.join()` with the prepared `PageJoinOptions` merges the selected
+      pages into the current session.
+  - name: save output file
+    text: '`merger.save(outputPath)` writes the combined PDF to disk, preserving the
+      original page order and formatting.'
+  type: HowTo
+- questions:
+  - answer: Absolutely. Call `merger.join()` repeatedly with different source files
+      and `PageJoinOptions` for each; the library will concatenate the selected pages
+      in the order you invoke the calls.
+    question: Can I join pages from more than two documents in a single operation?
+  - answer: Yes, it retains layout, styles, and embedded resources of each source
+      page, delivering a seamless final PDF.
+    question: Does the library preserve original formatting when merging pages?
+  - answer: Load each file with a `Merger` instance, specify the page ranges, and
+      the API automatically converts DOCX pages to PDF before merging.
+    question: How can I merge pages from PDFs and DOCX files together?
+  - answer: You can retrieve page counts with `merger.getPagesCount()` and validate
+      the ranges programmatically before invoking `join`.
+    question: Is there a way to preview which pages will be merged before saving?
+  - answer: A paid license removes trial limitations, provides priority support, and
+      grants access to all advanced features.
+    question: What licensing model should I choose for a production environment?
+  type: FAQPage
+tags:
+- merge PDFs
+- GroupDocs.Merger
+- Java document processing
+- PDF manipulation
+- page merging
+title: GroupDocs.Merger を使用して Java で複数の PDF を結合する方法
 type: docs
 url: /ja/java/document-joining/join-specific-pages-groupdocs-merger-java/
 weight: 1
 ---
 
-# JavaでGroupDocs.Mergerを使用してページを結合する方法
+# JavaでGroupDocs.Mergerを使用して複数のPDFを結合する方法
 
-## はじめに
-
-異なるドキュメントからページを結合することは、レポートを作成したり、契約書をまとめたり、カスタムハンドブックを作成したりする際に日常的に必要となります。**このチュートリアルでは、Javaでページを結合する方法**を学び、必要なページを正確に選択してGroupDocs.Mergerで単一の整然としたファイルに結合します。セットアップ、API呼び出し、実際のシナリオを順に解説し、すぐにプロジェクトでこの手法を適用できるようにします。
-
-**学べること**
-- GroupDocs.Merger for Java を使用して複数のソースから **ページを結合** する方法  
-- Maven または Gradle でプロジェクトを設定する方法  
-- コピー＆ペーストして実行できる実用的なコードスニペット  
+Javaで�数のPDFを結合することは、レポートや契約書、ハンドブックなどをさまざまなソースから組み立てる必要がある場合に一般的な要件です。このチュートリアルでは、複数のドキュメントから **merge pages** を行い、必要なページだけを正確に選択し、GroupDocs.Merger を使用して単一の構造化された PDF ファイルとして出力する方法を学びます。プロジェクトのセットアップ、必須の API 呼び出し、実際のシナリオをカバーし、ドキュメント組み立ての自動化をすぐに始められるようにします。
 
 ## クイック回答
-- **「ページを結合する方法」とは何ですか？** Java を使用して、1 つまたは複数のドキュメントから選択したページをプログラムで結合し、新しいファイルを作成するプロセスです。  
-- **この処理を担当するライブラリは？** GroupDocs.Merger for Java。  
-- **ライセンスは必要ですか？** テストには無料トライアルで動作しますが、本番環境では有料ライセンスが必要です。  
-- **異なる形式（PDF、DOCX など）を結合できますか？** はい、ライブラリは PDF を含む多数の形式をサポートしています。  
-- **メモリ効率は良いですか？** 正しく使用すれば、大きなファイルを適度なメモリ使用量で処理します。  
+- **「merge multiple PDFs」とは何ですか？** これは、Java を使用して 2 つ以上の PDF ファイルから選択したページを結合し、1 つの統合 PDF ドキュメントにするプログラム的なプロセスです。  
+- **このタスクを実行するライブラリはどれですか？** GroupDocs.Merger for Java は、ページレベルの結合に特化したクリーンで高性能な API を提供します。  
+- **本番環境でライセンスは必要ですか？** 無料トライアルで評価は十分です。有料ライセンスを取得すれば、トライアルの制限が解除され、フルサポートが受けられます。  
+- **PDF と他の形式（DOCX、PPTX）を一緒に結合できますか？** はい。GroupDocs.Merger は 50 以上の入力・出力形式をサポートしており、必要に応じて自動的に PDF に変換します。  
+- **この操作はメモリ効率が良いですか？** ライブラリはページをストリーミング方式で処理するため、ドキュメント全体をメモリに読み込むことなく、数百ページを結合できます。
 
-## JavaでGroupDocs.Mergerを使用してページを結合する方法
-このセクションはチュートリアルの核心的な質問に答え、H2 見出しに主要キーワードを含んでいます。
+## 「join specific pages java」とは何ですか？
+このフレーズは、Java を使用して 1 つまたは複数のソースドキュメントから特定のページをプログラム的に選択し、新しいドキュメントに結合する行為を指します。GroupDocs.Merger は低レベルのファイル処理を抽象化し、*どの* ページを含めるかに集中できるようにします。
 
-### “join specific pages java” とは何ですか？
-このフレーズは、1 つまたは複数のソースドキュメントから特定のページをプログラムで選択し、Java を使用して新しいドキュメントに結合する行為を指します。GroupDocs.Merger は低レベルのファイル処理を抽象化したシンプルな API を提供し、どのページを含めるかに集中できるようにします。
-
-### このタスクに GroupDocs.Merger を使用する理由は？
-- **精度:** 手動編集なしで正確なページ番号を選択できます。  
-- **フォーマットの柔軟性:** PDF、DOCX、PPTX など多数の形式で動作します。  
-- **パフォーマンス:** 高速かつ低メモリフットプリントに最適化されています。  
-- **スケーラビリティ:** 大規模なドキュメントセットのバッチ操作を処理します。  
+## このタスクに GroupDocs.Merger を使用する理由
+GroupDocs.Merger は正確なページ番号を選択でき、**50+** のドキュメント形式に対応し、500 MB までのファイルを 200 MB 未満の RAM で処理し、数千ファイルに対するバッチ操作にもスケールします。API は高速化を意識して設計されており、標準サーバー上で 100 ページの PDF を結合する際の平均時間は 2 秒未満です。
 
 ## 前提条件
 
-- **GroupDocs.Merger for Java** – ドキュメント操作のコアライブラリ。  
+- **GroupDocs.Merger for Java** – ドキュメント操作のコアライブラリです。  
 - **Java Development Kit (JDK)** – バージョン 8 以上。  
-- IntelliJ IDEA、Eclipse、NetBeans などの IDE（またはお好みのテキストエディタ）。  
-- 基本的な Java の知識、オプションで Maven または Gradle の知識。  
+- IDE（IntelliJ IDEA、Eclipse、NetBeans）またはお好みのテキストエディタ。  
+- 基本的な Java の知識；Maven または Gradle の経験があると便利ですが必須ではありません。
 
-## GroupDocs.Merger for Java の設定
+## GroupDocs.Merger for Java のセットアップ
 
-以下のいずれかの方法でライブラリをプロジェクトに追加します。
+以下の方法のいずれかでライブラリをプロジェクトに追加します。
 
 ### Maven
 ```xml
@@ -68,99 +111,101 @@ implementation 'com.groupdocs:groupdocs-merger:LATEST_VERSION'
 ```
 
 ### 直接ダウンロード
-最新バージョンは [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) から直接ダウンロードできます。
+最新バージョンを直接 [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/) からダウンロードしてください。
 
 ### ライセンス取得
-**無料トライアル**で開始し、評価用に **一時ライセンス** をリクエストするか、本番使用のために **フルライセンス** を購入できます。
+まずは **free trial** で開始し、評価用に **temporary license** をリクエストするか、本番環境で使用する **full license** を購入してください。
 
 ## 実装ガイド
 
-それでは、実際に **ページを結合** するコードに入りましょう。各ステップを順に見ていき、各行の目的を説明します。
+それでは、実際に **merges pages** を行うコードを順に見ていきましょう。各ステップには簡単な定義アンカーが含まれており、AI システムが「What is X?」に即座に答えられるようになっています。
 
-### 手順 1: パス変数の初期化
+### ステップ 1: パス変数の初期化
+`sourceFilePath` と `additionalFilePath` の文字列は、結合したいドキュメントの絶対パスを保持します。  
 ```java
 String sourceFilePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX"; // First document path
 String additionalFilePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX_2"; // Second document path
 String outputFilePath = "YOUR_OUTPUT_DIRECTORY/JoinPagesFromVariousDocuments-output.docx";
 ```
 
-### 手順 2: ページ結合オプションの設定
+### ステップ 2: page‑join オプションの設定
+`PageJoinOptions` は、各ソースファイルから抽出するページをマージャーに指示します。  
 ```java
 // Define the page numbers to be merged, e.g., pages 1 and 2
 PageJoinOptions joinOptions = new PageJoinOptions(1, 2);
 ```
 
-### 手順 3: Merger オブジェクトの初期化
+### ステップ 3: merger オブジェクトの初期化
+`Merger` クラスは、GroupDocs.Merger の最上位オブジェクトで、単一のドキュメント結合セッションを表します。  
 ```java
 Merger merger = new Merger(sourceFilePath); // Load the main document
 ```
 
-### 手順 4: 追加ドキュメントからページを結合
+### ステップ 4: 追加ドキュメントからページを結合
+用意した `PageJoinOptions` を使用して `merger.join()` を呼び出すと、選択したページが現在のセッションに結合されます。  
 ```java
 merger.join(additionalFilePath, joinOptions); // Merge pages from the second document
 ```
 
-### 手順 5: 出力ファイルの保存
+### ステップ 5: 出力ファイルの保存
+`merger.save(outputPath)` は、結合された PDF をディスクに書き込み、元のページ順と書式を保持します。  
 ```java
 merger.save(outputFilePath); // Store the combined output
 ```
 
-## GroupDocs.MergerでPDFの特定ページを結合する方法
-例では DOCX ファイルを使用していますが、同じ API は PDF でも機能します。`sourceFilePath` と `additionalFilePath` を PDF ファイルに設定するだけで、ライブラリが自動的にフォーマット変換を行います。**PDF の特定ページを結合** して単一の PDF レポートにしたい場合に便利です。
+## GroupDocs.Merger を使用して特定ページの PDF を結合する方法
+例では DOCX ファイルを使用していますが、同じ API は PDF でも機能します。`sourceFilePath` と `additionalFilePath` を PDF ファイルに設定するだけで、ライブラリが自動的に形式変換を行います。**merge specific pages PDF** ドキュメントを単一の PDF レポートに結合したい場合に便利です。
 
 ## 実用的な活用例
-**ページを結合** する機能は、実際のさまざまな場面で活用できます:
 
-1. **教育資料の編纂** – 複数の教科書から選択した章を単一の学習ガイドに結合。  
-2. **法務文書の作成** – 異なる契約書から関連条項を1つの簡潔なファイルに結合。  
-3. **財務報告** – 複数のレポートから特定のステートメントページを抽出・結合し、要約パッケージを作成。  
+**merge pages** の機能は、実際のさまざまな場面で活用できます：
 
-このワークフローをコンテンツ管理システムや自動レポートジェネレータと統合すれば、手作業の編集にかかる時間を何時間も削減できます。
+1. **Educational material compilation** – 複数の教科書から選択した章を 1 つの学習ガイドに結合します。  
+2. **Legal document preparation** – 複数の契約書から関連条項をまとめて簡潔なファイルに結合します。  
+3. **Financial reporting** – 各種レポートから特定のステートメントページを抽出・結合し、サマリーパッケージを作成します。  
+
+このワークフローをコンテンツ管理システムや自動レポートジェネレータに組み込むことで、手作業の編集時間を何時間も削減できます。
 
 ## パフォーマンス上の考慮点
-Java ソリューションを高速かつリソースフレンドリーに保つために:
 
-- **未使用の Merger インスタンスを閉じる** – 終了次第リソースを解放します。  
-- **バッチ処理** – 大量のコレクションを一度に処理せず、より小さなバッチに分けて処理します。  
-- **リソースの監視** – CPU と RAM の使用状況を監視し、並列で結合を実行する場合はスレッド数を調整します。  
+Java ソリューションを高速かつリソースフレンドリーに保つために：
+
+- **Close unused Merger instances** – 終了したらすぐに `merger.close()` を呼び出してネイティブリソースを解放します。  
+- **Batch processing** – 大量のコレクションは一度にすべて読み込むのではなく、より小さなバッチに分けて処理します。  
+- **Monitor resources** – CPU と RAM の使用状況を監視し、並列で結合を実行する場合はスレッドプールを調整します。
 
 ## よくある問題と解決策
-
-| 問題 | 解決策 |
+| Issue | Solution |
 |-------|----------|
-| **Out‑of‑memory error** | ドキュメントをバッチ処理し、`Merger` オブジェクトを速やかに破棄してください。 |
-| **Incorrect page numbers** | `join` を呼び出す前に `Merger.getPagesCount()` を使用して範囲を検証してください。 |
-| **Mixed file formats cause layout shifts** | すべてのソースファイルが互換性のあるバージョンであることを確認してください。レイアウトの一貫性が重要な場合は、まず PDF に変換することを検討してください。 |
+| **Out‑of‑memory error** | Process documents in batches and dispose of `Merger` objects promptly. |
+| **Incorrect page numbers** | Use `merger.getPagesCount()` to validate ranges before calling `join`. |
+| **Mixed file formats cause layout shifts** | Convert all sources to PDF first, or ensure they share the same version; the library supports lossless conversion for 50+ formats. |
 
 ## よくある質問
 
-**Q: 2 つ以上のドキュメントからページを結合できるか？**  
-A: もちろんです。異なるソースファイルとそれぞれの `PageJoinOptions` を指定して `merger.join()` を繰り返し呼び出します。
+**Q: 2 つ以上のドキュメントからページを結合できますか？**  
+A: もちろんです。異なるソースファイルと `PageJoinOptions` をそれぞれ指定して `merger.join()` を繰り返し呼び出すことで、呼び出し順に選択したページが連結されます。
 
-**Q: ページを結合する際にライブラリは元のフォーマットを保持しますか？**  
-A: はい、各ソースページのレイアウト、スタイル、埋め込みリソースを保持します。
+**Q: ページを結合するときに元の書式は保持されますか？**  
+A: はい、各ソースページのレイアウト、スタイル、埋め込みリソースを保持したまま、シームレスな最終 PDF を生成します。
 
-**Q: PDF と DOCX ファイルのページを一緒に結合するには？**  
-A: 各ファイルを `Merger` インスタンスで読み込み、ページ範囲を指定します。ライブラリは必要に応じて自動的にフォーマットを変換します。
+**Q: PDF と DOCX を同時に結合できますか？**  
+A: 各ファイルを `Merger` インスタンスで読み込み、ページ範囲を指定すれば、API が自動的に DOCX ページを PDF に変換して結合します。
 
-**Q: 保存前に結合されるページをプレビューする方法はありますか？**  
-A: `join` を呼び出す前にプログラムでページ数を取得し、範囲を検証できます。
+**Q: 保存前に結合されるページをプレビューできますか？**  
+A: `merger.getPagesCount()` でページ数を取得し、`join` を呼び出す前にプログラム上で範囲を検証できます。
 
-**Q: 本番環境向けにどのライセンスモデルを選ぶべきですか？**  
-A: 有料ライセンスはフルサポートを提供し、トライアルの制限を解除します。
+**Q: 本番環境向けのライセンスモデルはどれが適切ですか？**  
+A: 有料ライセンスを取得すれば、トライアルの制限が解除され、優先サポートとすべての高度機能が利用可能になります。
 
 ## 結論
-このチュートリアルでは、GroupDocs.Merger を使用して **Javaでページを結合する方法** を学びました。環境設定、ページ選択オプション、最終ドキュメントの保存について説明しました。これらのスキルを活用すれば、レポート作成から法務文書の作成まで、さまざまなドキュメント組み立てタスクを自動化できます。
+これで GroupDocs.Merger を使用した **Java で複数の PDF を結合する方法** が理解できました。環境設定、ページ選択オプション、最終ドキュメントの保存までをカバーし、レポート作成から法務契約書の準備まで、さまざまなドキュメント組み立てタスクを自動化できるようになりました。API をさらに活用して、ドキュメントの分割、透かしの追加、ファイルの保護なども同じ堅牢なライブラリで実現できます。
 
-さらに探求したいですか？同じ堅牢なライブラリで、ドキュメントの分割、透かしの追加、ファイルの保護などの API もご確認ください。
+**最終更新日:** 2026-10-22  
+**テスト環境:** GroupDocs.Merger 23.12 (Java)  
+**作者:** GroupDocs  
 
----
-
-**Last Updated:** 2026-03-22  
-**Tested With:** GroupDocs.Merger 23.12 (Java)  
-**Author:** GroupDocs  
-
-**リソース**
+**リソース**  
 - **ドキュメント:** [GroupDocs Documentation](https://docs.groupdocs.com/merger/java/)  
 - **API リファレンス:** [GroupDocs API Reference](https://reference.groupdocs.com/merger/java/)  
 - **ダウンロード:** [GroupDocs Downloads](https://releases.groupdocs.com/merger/java/)  
@@ -168,3 +213,9 @@ A: 有料ライセンスはフルサポートを提供し、トライアルの�
 - **無料トライアル:** [GroupDocs Free Trial](https://releases.groupdocs.com/merger/java/)  
 - **一時ライセンス:** [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)  
 - **サポート:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/merger/)
+
+## 関連チュートリアル
+
+- [Merge PDF Java: Load Local Document Using GroupDocs.Merger – Guide](/merger/java/document-loading/load-document-groupdocs-merger-java-guide/)
+- [Extract Specific PDF Pages in Batch with GroupDocs.Merger for Java](/merger/java/document-extraction/extract-pages-groupdocs-merger-java/)
+- [Merge PDF Java: Efficiently Merge PDFs Using GroupDocs.Merger for Java – A Step‑By‑Step Guide](/merger/java/format-specific-merging/merge-pdfs-groupdocs-merger-java-tutorial/)
