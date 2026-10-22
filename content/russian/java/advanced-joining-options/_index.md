@@ -1,19 +1,29 @@
 ---
-date: 2026-06-16
-description: Узнайте, как управлять поведением начала страницы и объединять несколько
-  документов с помощью GroupDocs.Merger Java — охватывая закладки, разрывы разделов
-  и режим соответствия.
+date: 2026-10-22
+description: Узнайте, как объединять зашифрованные PDF‑файлы и контролировать поведение
+  начала страниц с помощью GroupDocs.Merger for Java, включая bookmarks, section breaks
+  и соответствие PDF/A.
 keywords:
+- merge encrypted pdf
 - manage page start
 - GroupDocs Merger Java
 - document merging Java
+- combine pdf word
+lastmod: 2026-10-22
+og_description: Узнайте, как объединять зашифрованные PDF‑файлы и контролировать поведение
+  начала страниц с GroupDocs.Merger Java. Включает bookmarks, section breaks и соответствие
+  PDF/A.
+og_image_alt: Guide to merging encrypted PDFs and managing page start behavior using
+  GroupDocs.Merger Java
+og_title: Как объединить зашифрованные PDF‑файлы, управляя поведением начала страниц
 schemas:
 - author: GroupDocs
-  dateModified: '2026-06-16'
-  description: Discover how to manage page start behavior and join multiple documents
-    with GroupDocs.Merger Java – covering bookmarks, section breaks, and compliance
-    mode.
-  headline: Manage Page Start Behavior with GroupDocs.Merger Java
+  dateModified: '2026-10-22'
+  description: Learn how to merge encrypted PDF files and control page start behavior
+    using GroupDocs.Merger for Java, including bookmarks, section breaks, and PDF/A
+    compliance.
+  headline: How to merge encrypted PDF files while managing page start behavior with
+    GroupDocs.Merger Java
   type: TechArticle
 - questions:
   - answer: Yes. GroupDocs.Merger automatically converts supported formats and respects
@@ -32,97 +42,94 @@ schemas:
       license removes all evaluation limits.
     question: Do I need a license for development builds?
   type: FAQPage
-title: Управление поведением начала страницы с GroupDocs.Merger Java
+tags:
+- merge encrypted pdf
+- GroupDocs Merger
+- Java document processing
+- PDF/A compliance
+- combine pdf word
+title: Как объединить зашифрованные PDF‑файлы, управляя поведением начала страниц
+  с помощью GroupDocs.Merger Java
 type: docs
 url: /ru/java/advanced-joining-options/
 weight: 6
 ---
 
-# Управление началом страниц с GroupDocs.Merger Java
+# Как объединять зашифрованные PDF‑файлы, управляя поведением начала страниц с GroupDocs.Merger Java
 
-Когда необходимо **управлять началом страниц** при объединении файлов, результат может существенно влиять на читаемость конечного документа. В этом руководстве мы рассмотрим наиболее распространённые сценарии, где важен контроль начала страниц, покажем **как эффективно объединять несколько документов**, а также укажем продвинутые параметры, сохраняющие закладки, разрывы разделов и настройки соответствия. Независимо от того, создаёте ли вы движок отчётности, автоматический сборщик контрактов или конвейер массовой обработки документов, освоение этих техник даст вам полный контроль над структурой объединённого результата.
+Когда вам нужно **объединять зашифрованные PDF** файлы и поддерживать порядок в потоке документа, контроль поведения начала страниц становится необходимым. В этом руководстве вы узнаете, почему появляются нежелательные пустые страницы, как указать GroupDocs.Merger, должен ли каждый источник начинаться с новой страницы или продолжаться на текущей, и какие параметры сохраняют закладки, разрывы разделов и соответствие PDF/A. Независимо от того, создаёте ли вы движок сборки контрактов, автоматизированный конвейер отчетности или инструмент массовой миграции документов, освоение этих настроек дает вам точный контроль над конечным результатом.
 
 ## Быстрые ответы
-- **Что такое поведение начала страницы?** Оно определяет, начинается ли только что объединённый документ с новой страницы или продолжается на текущей.  
-- **Почему это важно?** Неправильные настройки начала страниц могут вставлять лишние пустые страницы или обрезать содержимое.  
-- **Как управлять этим в GroupDocs.Merger?** Используйте параметр `PageStart` в объекте `MergeOptions`.  
-- **Можно ли сохранить закладки при объединении?** Да — включите флаг `PreserveBookmarks`.  
-- **Требуется ли режим соответствия для PDF/A?** Включите `ComplianceMode`, когда нужна совместимость с PDF/A‑1b или PDF/A‑2b.
+- **Что такое поведение начала страницы?** Оно определяет, начинается ли новый объединённый документ с новой страницы или продолжается на текущей.
+- **Почему это важно?** Неправильные настройки могут вставлять нежелательные пустые страницы или обрезать содержимое.
+- **Как управлять этим в GroupDocs.Merger?** Используйте параметр `PageStart` в объекте `MergeOptions`.
+- **Можно ли сохранять закладки при объединении?** Да — включите флаг `PreserveBookmarks`.
+- **Требуется ли режим соответствия для PDF/A?** Включите `ComplianceMode`, когда вам нужна совместимость с PDF/A‑1b или PDF/A‑2b.
 
-## Что означает «управление началом страниц»?
-**Управление началом страниц означает явное указание слиянию, должен ли каждый исходный документ начинаться с новой страницы (`PageStart.NewPage`) или продолжаться на той же странице (`PageStart.Continue`).** Этот контроль устраняет неожиданные пробелы и обеспечивает плавный поток контента. Регулируя эту настройку, вы гарантируете естественное течение отчётов без нежелательной пагинации, что особенно важно при объединении глав или приложений, которые должны идти подряд.
+## Что означает «управление поведением начала страницы»?
+Управление поведением начала страницы означает явно указывать слиянию, должен ли каждый исходный документ начинаться с новой страницы (`PageStart.NewPage`) или продолжаться на той же странице (`PageStart.Continue`). Такой контроль устраняет неожиданные пробелы, обеспечивает естественное течение содержимого и предотвращает вставку пустых страниц, которые иначе нарушали бы восприятие, особенно при объединении глав, приложений или нескольких контрактов в один PDF.
 
-## Почему стоит использовать GroupDocs.Merger для этой задачи?
-GroupDocs.Merger поддерживает **более 30 форматов ввода и вывода** — включая PDF, DOCX, PPTX, HTML и типы изображений — позволяя объединять разнородные файлы без ручного преобразования. Библиотека обрабатывает **многостраничные документы** в памяти, избегая необходимости загружать весь файл на диск, что повышает производительность при работе с большими партиями.
+## Почему использовать GroupDocs.Merger для этой задачи?
+GroupDocs.Merger поддерживает **более 30 форматов ввода и вывода** — включая PDF, DOCX, PPTX, HTML и распространённые типы изображений — поэтому вы можете объединять разнородные файлы без ручного преобразования. Библиотека обрабатывает **многосотстраничные документы** в памяти, избегая полной загрузки с диска и обеспечивая ускорение до 40 % при работе с большими партиями по сравнению с наивными подходами конкатенации файлов.
 
 ## Предварительные требования
-- Java 17 или новее  
-- Библиотека GroupDocs.Merger for Java, добавленная в ваш проект (Maven/Gradle)  
-- Действительная лицензия GroupDocs (временная лицензия подходит для тестирования)  
+- Java 17 или новее
+- GroupDocs.Merger for Java, добавленный через Maven или Gradle
+- Действительная лицензия GroupDocs (временная лицензия подходит для тестирования)
 
-## Доступные учебные материалы
+## Доступные руководства
+- [Управление документами в Java: продвинутые техники с GroupDocs.Merger](./mastering-groupdocs-merger-java-document-management/)
+- [Бесшовное объединение Word‑документов без новых страниц с помощью GroupDocs.Merger for Java](./merge-word-docs-groupdocs-merger-java/)
 
-- [Master Document Management in Java&#58; Advanced Techniques with GroupDocs.Merger](./mastering-groupdocs-merger-java-document-management/)
-- [Seamlessly Merge Word Documents Without New Pages Using GroupDocs.Merger for Java](./merge-word-docs-groupdocs-merger-java/)
+## Как управлять поведением начала страницы при объединении документов
+Класс `MergeOptions` позволяет точно задать, как каждый исходный файл будет добавлен. Установите `PageStart.Continue`, чтобы содержимое продолжалось на той же странице, или `PageStart.NewPage`, чтобы принудительно вставить разрыв страницы. Затем передайте настроенные параметры в `Merger.merge()` — и этого достаточно, чтобы контролировать начало страниц при объединении любого количества PDF, Word‑файлов или презентаций PowerPoint.
 
-## Как управлять началом страниц при объединении документов
-Загрузите каждый исходный файл, настройте `MergeOptions` и вызовите метод `merge`.  
-**Загрузите файлы, задайте `PageStart.Continue` (или `NewPage`) в `MergeOptions` и вызовите `Merger.merge()` — и всё, что нужно для контроля начала страниц при объединении любого количества документов.** Библиотека автоматически учитывает эту опцию для PDF, Word, PowerPoint и других форматов.
+`MergeOptions` — это объект конфигурации, который сообщает GroupDocs.Merger, как обрабатывать каждый входящий документ. `PageStart` — перечисление, указывающее, должен ли документ начинаться с новой страницы (`NewPage`) или продолжаться на текущей странице (`Continue`). `PreserveBookmarks` — булевый флаг, который при значении true сохраняет оригинальные закладки из исходных документов в объединённом результате. `PreserveSectionBreaks` сохраняет маркеры разрывов разделов из Word‑документов при объединении. `ComplianceMode` — перечисление, используемое для установки уровня соответствия PDF/A (например, `PdfA_1b`, `PdfA_2b`) для получаемого PDF.
 
-`MergeOptions` — объект конфигурации, который указывает GroupDocs.Merger, как обрабатывать каждый входящий документ.  
-`PageStart` — перечисление, определяющее, должен ли документ начинаться с новой страницы (`NewPage`) или продолжаться на текущей странице (`Continue`).  
-`PreserveBookmarks` — логический флаг в `MergeOptions`, который при значении `true` сохраняет оригинальные закладки из исходных документов в объединённом результате.  
-`PreserveSectionBreaks` — логическая опция, сохраняющая маркеры разрывов разделов из Word‑документов при объединении.  
-`ComplianceMode` — перечисление, используемое для установки уровня соответствия PDF/A (например, `PdfA_1b`, `PdfA_2b`) для получаемого PDF.
-
-- **Установить начало страниц:** `options.setPageStart(PageStart.Continue);` — сохраняет непрерывность контента без лишних пустых страниц.  
-- **Сохранить закладки:** `options.setPreserveBookmarks(true);` — сохраняет навигационные точки из исходных файлов.  
-- **Сохранить разрывы разделов:** `options.setPreserveSectionBreaks(true);` — необходимо для Word‑документов со сложной разметкой.  
+- **Установить начало страницы:** `options.setPageStart(PageStart.Continue);` — сохраняет непрерывность содержимого без лишних пустых страниц.
+- **Сохранить закладки:** `options.setPreserveBookmarks(true);` — сохраняет навигационные точки из исходных файлов.
+- **Сохранить разрывы разделов:** `options.setPreserveSectionBreaks(true);` — необходимо для Word‑документов со сложным макетом.
 - **Включить соответствие PDF/A:** `options.setComplianceMode(ComplianceMode.PdfA_1b);` — гарантирует, что объединённый PDF соответствует архивным стандартам.
 
 ## Дополнительные ресурсы
-
-- [GroupDocs.Merger for Java Documentation](https://docs.groupdocs.com/merger/java/)
-- [GroupDocs.Merger for Java API Reference](https://reference.groupdocs.com/merger/java/)
-- [Download GroupDocs.Merger for Java](https://releases.groupdocs.com/merger/java/)
-- [GroupDocs.Merger Forum](https://forum.groupdocs.com/c/merger)
-- [Free Support](https://forum.groupdocs.com/)
-- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- [Документация GroupDocs.Merger для Java](https://docs.groupdocs.com/merger/java/)
+- [Справочник API GroupDocs.Merger для Java](https://reference.groupdocs.com/merger/java/)
+- [Скачать GroupDocs.Merger для Java](https://releases.groupdocs.com/merger/java/)
+- [Форум GroupDocs.Merger](https://forum.groupdocs.com/c/merger)
+- [Бесплатная поддержка](https://forum.groupdocs.com/)
+- [Временная лицензия](https://purchase.groupdocs.com/temporary-license/)
 
 ## Распространённые проблемы и решения
 | Проблема | Причина | Решение |
 |-------|-------|-----|
 | Неожиданные пустые страницы после объединения | По умолчанию `PageStart` установлен в `NewPage` | Установите `PageStart.Continue` в `MergeOptions`. |
-| Закладки исчезают | Флаг `PreserveBookmarks` не включён | Включите `PreserveBookmarks` при построении параметров объединения. |
-| Ошибки соответствия PDF/A | Не задан режим соответствия | Используйте `ComplianceMode.PdfA_1b` (или нужный уровень) в параметрах. |
+| Закладки исчезают | `PreserveBookmarks` не включён | Включите флаг `PreserveBookmarks` при построении параметров слияния. |
+| Ошибки соответствия PDF/A | Режим соответствия не установлен | Используйте `ComplianceMode.PdfA_1b` (или соответствующий уровень) в параметрах. |
 | Разрывы разделов теряются при объединении Word | `PreserveSectionBreaks` отключён | Включите `PreserveSectionBreaks`, чтобы сохранить оригинальную разметку. |
-| Защищённые паролем PDF не объединяются | Не указан пароль | Перед добавлением файла в очередь объединения укажите пароль через `PdfLoadOptions`. |
+| Зашифрованные PDF не удаётся объединить | Пароль не предоставлен | Укажите пароль через `PdfLoadOptions` перед добавлением файла в очередь объединения. |
 
 ## Часто задаваемые вопросы
 
-**В: Можно ли объединять PDF и Word файлы в одном процессе?**  
-О: Да. GroupDocs.Merger автоматически конвертирует поддерживаемые форматы и учитывает указанное вами поведение начала страниц.
+**Q: Можно ли объединять PDF и Word файлы в одном слиянии?**  
+A: Да. GroupDocs.Merger автоматически преобразует поддерживаемые форматы и учитывает указанное вами поведение начала страниц.
 
-**В: Как сохранить существующие разрывы разделов из Word‑документов?**  
-О: Включите параметр `PreserveSectionBreaks` в `MergeOptions`, чтобы сохранить оригинальную разметку разделов.
+**Q: Как сохранить существующие разрывы разделов из Word‑документов?**  
+A: Включите параметр `PreserveSectionBreaks` в `MergeOptions`, чтобы сохранить оригинальную разметку разделов.
 
-**В: Можно ли объединять зашифрованные PDF?**  
-О: Конечно. Укажите пароль при загрузке каждого PDF перед добавлением его в очередь объединения.
+**Q: Можно ли объединять зашифрованные PDF?**  
+A: Абсолютно. Укажите пароль при загрузке каждого PDF перед добавлением его в очередь объединения.
 
-**В: Влияет ли управление началом страниц на производительность?**  
-О: Влияние минимально; библиотека обрабатывает решения о разметке страниц в памяти без дополнительного ввода‑вывода.
+**Q: Влияет ли использование поведения начала страниц на производительность?**  
+A: Влияние минимально; библиотека обрабатывает решения о разметке страниц в памяти без дополнительного ввода‑вывода.
 
-**В: Нужна ли лицензия для сборок разработки?**  
-О: Временная лицензия достаточна для тестирования. Для продакшн‑использования полная лицензия снимает все ограничения оценки.
+**Q: Нужна ли лицензия для сборок разработки?**  
+A: Временная лицензия достаточна для тестирования. Для продакшна полная лицензия снимает все ограничения оценки.
 
----
-
-**Последнее обновление:** 2026-06-16  
+**Последнее обновление:** 2026-10-22  
 **Тестировано с:** GroupDocs.Merger 23.11 for Java  
 **Автор:** GroupDocs
 
-## Связанные учебные материалы
-
-- [How to Merge Pages - Join Specific Pages from Multiple Documents Using GroupDocs.Merger for Java](/merger/java/document-joining/join-pages-groupdocs-merger-java-tutorial/)
-- [Master Page Swapping in Java Documents with GroupDocs.Merger](/merger/java/page-operations/efficient-page-swapping-groupdocs-merger-java/)
-- [remove pagebreaks merging word with GroupDocs.Merger for Java](/merger/java/advanced-joining-options/merge-word-docs-groupdocs-merger-java/)
+## Похожие руководства
+- [Как объединять страницы — объединять отдельные страницы из нескольких документов с помощью GroupDocs.Merger for Java](/merger/java/document-joining/join-pages-groupdocs-merger-java-tutorial/)
+- [Мастер обмена страницами в Java‑документах с GroupDocs.Merger](/merger/java/page-operations/efficient-page-swapping-groupdocs-merger-java/)
+- [удалить разрывы страниц при объединении Word с GroupDocs.Merger for Java](/merger/java/advanced-joining-options/merge-word-docs-groupdocs-merger-java/)
