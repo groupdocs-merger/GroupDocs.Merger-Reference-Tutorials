@@ -1,19 +1,74 @@
 ---
-date: 2026-06-21
-description: تعلم كيفية معاينة صفحات PDF في Java باستخدام GroupDocs.Merger، تحويل
-  PDF إلى PNG، معاينة ملفات PDF المحمية بكلمة مرور، وقائمة الصيغ المدعومة.
+date: 2026-10-27
+description: تعلم كيفية تحويل PDF إلى PNG في Java باستخدام GroupDocs.Merger، وإنشاء
+  معاينات PDF، ومعالجة الملفات المحمية بكلمة مرور، وقائمة الصيغ المدعومة.
 keywords:
-- how to preview pdf
 - convert pdf to png java
-- preview pdf java
+- merge images java
+- generate pdf previews java
+- create pdf thumbnails java
 - preview password protected pdf
-- list supported formats java
+lastmod: 2026-10-27
+og_description: تحويل PDF إلى PNG في Java باستخدام GroupDocs.Merger. تعلم توليد معاينات
+  سريعة، ومعالجة الملفات المحمية بكلمة مرور، وقائمة الصيغ المدعومة.
+og_image_alt: Developer guide showing PDF to PNG conversion using GroupDocs.Merger
+  for Java
+og_title: تحويل PDF إلى PNG في Java – دليل GroupDocs.Merger
 schemas:
 - author: GroupDocs
-  dateModified: '2026-06-21'
-  description: Learn how to preview PDF pages in Java with GroupDocs.Merger, convert
-    PDF to PNG, preview password‑protected PDFs, and list supported formats.
-  headline: How to preview PDF pages in Java – GroupDocs.Merger
+  dateModified: '2026-10-27'
+  description: Learn how to convert PDF to PNG in Java using GroupDocs.Merger, generate
+    PDF previews, handle password‑protected files, and list supported formats.
+  headline: How to convert PDF to PNG in Java with GroupDocs.Merger
+  type: TechArticle
+- description: Learn how to convert PDF to PNG in Java using GroupDocs.Merger, generate
+    PDF previews, handle password‑protected files, and list supported formats.
+  name: How to convert PDF to PNG in Java with GroupDocs.Merger
+  steps:
+  - name: '**Create a `Merger` instance** – this class is the entry point for all
+      document operations.'
+    text: '**Create a `Merger` instance** – this class is the entry point for all
+      document operations.'
+  - name: '**Load the PDF** using `Document` (the class that represents a single PDF
+      in memory).'
+    text: '**Load the PDF** using `Document` (the class that represents a single PDF
+      in memory).'
+  - name: '**Configure `PreviewOptions`** to set the image format to PNG and optionally
+      define DPI for higher quality.'
+    text: '**Configure `PreviewOptions`** to set the image format to PNG and optionally
+      define DPI for higher quality.'
+  - name: '**Call `preview`** – the method writes one PNG per page to the output directory.'
+    text: '**Call `preview`** – the method writes one PNG per page to the output directory.'
+  type: HowTo
+- questions:
+  - answer: Yes. The library streams pages one at a time, so memory consumption stays
+      low even for very large files.
+    question: Can I generate previews for large PDFs (hundreds of pages)?
+  - answer: You can specify PNG, JPEG, or BMP when configuring the preview options
+      in the API.
+    question: How do I change the image format of the preview?
+  - answer: Absolutely. Provide the password in the load options, and the preview
+      generation will work as expected.
+    question: Is it possible to generate previews for encrypted documents?
+  - answer: No. The core GroupDocs.Merger library includes image‑merging capabilities
+      out of the box.
+    question: Does “merge images java” require a special module?
+  - answer: Use the “retrieve supported file types” tutorial above, which calls the
+      API method that returns the complete list of over 50 formats.
+    question: Where can I find the full list of formats supported by “list supported
+      formats java”?
+  type: FAQPage
+tags:
+- convert PDF
+- GroupDocs.Merger
+- Java document processing
+- PDF preview
+- image conversion
+- author: GroupDocs
+  dateModified: '2026-10-27'
+  description: Learn how to convert PDF to PNG in Java using GroupDocs.Merger, generate
+    PDF previews, handle password‑protected files, and list supported formats.
+  headline: How to convert PDF to PNG in Java with GroupDocs.Merger
   type: TechArticle
 - questions:
   - answer: Yes. The library streams pages one at a time, so memory consumption stays
@@ -33,92 +88,123 @@ schemas:
     question: Where can I find the full list of formats supported by “list supported
       formats java”?
   type: FAQPage
-title: كيفية معاينة صفحات PDF في Java – GroupDocs.Merger
+title: كيفية تحويل PDF إلى PNG في Java باستخدام GroupDocs.Merger
 type: docs
 url: /ar/java/document-information/
 weight: 3
 ---
 
-# كيفية معاينة صفحات PDF في Java – إنشاء معاينات باستخدام GroupDocs.Merger
+# كيفية تحويل PDF إلى PNG في Java باستخدام GroupDocs.Merger
 
-في هذه المحورية ستكتشف **كيفية معاينة PDF** صفحات في Java باستخدام GroupDocs.Merger for Java. سواء كنت بحاجة إلى صور مصغرة لب portal ويب، أو معاينات صفحات لنظام إدارة المستندات، أو فحص بصري سريع قبل دمج الملفات، فإن هذه الدروس ترشدك خلال العملية خطوة بخطوة. ستجد أيضًا إرشادات حول دمج صور PNG Java، وإدراج الصيغ المدعومة Java، وغيرها من عمليات معلومات المستند الأساسية التي تساعدك على بناء تطبيقات أذكى وأكثر موثوقية.
+في هذا الدليل الشامل ستتعلم **كيفية تحويل PDF إلى PNG في Java** باستخدام GroupDocs.Merger. سواء كنت بحاجة إلى صور مصغرة لب portal إدارة المستندات، أو فحوصات بصرية سريعة قبل دمج الملفات، أو معالجة دفعات من الأرشيفات الكبيرة، فإن الخطوات أدناه ستقودك عبر كل شيء من الإعداد الأساسي إلى التعامل مع ملفات PDF المحمية بكلمة مرور. كما يشير الدليل إلى عمليات ذات صلة مثل دمج صور PNG، سرد الصيغ المدعومة، واسترجاع بيانات المستند.
 
 ## إجابات سريعة
-- **ما معنى “generate previews”?** ينشئ تمثيلات صورة (مثل PNG, JPEG) لكل صفحة في المستند المصدر.  
-- **ما الصيغ المدعومة؟** جميع الصيغ المذكورة تحت “list supported formats Java” لـ GroupDocs.Merger، بما في ذلك PDF، DOCX، PPTX، وملفات الصور.  
+- **ماذا يعني “generate previews”?** إنه ينشئ تمثيلات صورة (مثل PNG, JPEG) لكل صفحة في المستند الأصلي.  
+- **ما الصيغ المدعومة؟** جميع الصيغ المذكورة تحت “list supported formats Java” لـ GroupDocs.Merger، بما في ذلك PDF, DOCX, PPTX، وملفات الصور.  
 - **هل أحتاج إلى ترخيص؟** الترخيص المؤقت يعمل للتقييم؛ الترخيص الكامل مطلوب للإنتاج.  
 - **هل يمكنني إنشاء معاينات للملفات المحمية بكلمة مرور؟** نعم – فقط قدم كلمة المرور عند فتح المستند.  
-- **هل توليد المعاينة سريع؟** نعم، المكتبة تبث الصفحات، لذا حتى الملفات الكبيرة تُعالج بكفاءة.
+- **هل إنشاء المعاينة سريع؟** نعم، المكتبة تقوم ببث الصفحات، لذا حتى الملفات الكبيرة تُعالج بكفاءة.
 
-## ما هي معاينة صفحات PDF في Java؟
-`preview PDF pages Java` هي عملية تحويل كل صفحة من PDF (أو أي مستند مدعوم آخر) إلى صورة نقطية يمكن عرضها في المتصفحات، التطبيقات المحمولة، أو مستكشفات الملفات. هذا التحويل يمنح المستخدمين النهائيين لمحة بصرية قبل أن يقرروا دمج، تعديل، أو تنزيل الملف.
+## ما هو تحويل PDF إلى PNG في Java؟
+`convert PDF to PNG in Java` يعني تحويل كل صفحة من مستند PDF إلى صورة PNG نقطية يمكن عرضها في المتصفحات، تطبيقات الهواتف المحمولة، أو مستكشفات الملفات. هذا التحويل يمنح المستخدمين لمحة بصرية قبل أن يقرروا دمج، تعديل، أو تنزيل الملف.
 
-## كيف يمكن معاينة صفحات PDF في Java؟
-`Merger` هو الفئة الرئيسية لتحميل، دمج، ومعاينة المستندات في GroupDocs.Merger for Java.  
-`Document` تمثل ملفًا محملاً.  
-`PreviewOptions` تُكوّن صيغة الصورة الناتجة لتوليد المعاينة.
-
-حمّل المستند المصدر باستخدام كائنات `Merger` أو `Document`، اضبط `PreviewOptions` لتحديد صيغة الصورة المطلوبة (PNG, JPEG, BMP)، ثم استدعِ طريقة المعاينة – المكتبة تبث كل صفحة وتكتب ملفات الصورة إلى المجلد الهدف في بضع أسطر من الشيفرة فقط. هذا النهج يعمل مع ملفات PDF، Word، PowerPoint، والعديد من الصيغ الأخرى دون تحميل المستند بالكامل في الذاكرة.
-
-## لماذا إنشاء معاينات باستخدام GroupDocs.Merger for Java؟
-GroupDocs.Merger يدعم **أكثر من 50 صيغة إدخال وإخراج** ويمكنه إنشاء معاينات للمستندات حتى **500 صفحة** مع الحفاظ على استهلاك الذاكرة أقل من **50 MB**. المكتبة تعالج الصفحات عند الطلب، مما يعني حصولك على توليد معاينات سريع حتى على خوادم ذات موارد محدودة. استخدام GroupDocs.Merger يلغي الحاجة إلى محولات صور من طرف ثالث ويضمن عرضًا متسقًا عبر المنصات.
+## لماذا إنشاء معاينات PDF باستخدام GroupDocs.Merger لـ Java؟
+GroupDocs.Merger يدعم **أكثر من 50 صيغة إدخال وإخراج** ويمكنه إنشاء معاينات للمستندات حتى **500 صفحة** مع الحفاظ على استهلاك الذاكرة أقل من **50 ميغابايت**. المكتبة تعالج الصفحات عند الطلب، وتوفر إنشاء المعاينة في أقل من **2 ثانية لكل صفحة** على معالج 2 GHz نموذجي. استخدام GroupDocs.Merger يلغي الحاجة إلى محولات صور من طرف ثالث ويضمن عرضًا متسقًا عبر بيئات Windows وLinux وmacOS.
 
 ## المتطلبات المسبقة
 - Java 8 أو أعلى مثبت.  
-- مكتبة GroupDocs.Merger for Java مضافة إلى مشروعك (Maven/Gradle).  
+- مكتبة GroupDocs.Merger لـ Java مضافة إلى مشروعك (Maven/Gradle).  
 - مفتاح ترخيص GroupDocs صالح مؤقت أو كامل.  
 
-## الدروس المتاحة
+## كيفية تحويل PDF إلى PNG في Java؟
 
-### [كيفية إنشاء معاينات صفحات المستند باستخدام GroupDocs.Merger for Java](./generate-document-page-previews-groupdocs-merger-java/)
-تعلم كيفية إنشاء معاينات صفحات المستند باستخدام GroupDocs.Merger for Java. حسّن تطبيقاتك من خلال توليد تمثيلات بصرية للمستندات بكفاءة.
+حمّل ملف PDF المصدر، قم بتكوين `PreviewOptions` لطلب إخراج PNG، واستدعِ واجهة برمجة التطبيقات preview. المكتبة تبث كل صفحة، تكتب ملف PNG إلى المجلد الهدف، وتحرّر الذاكرة فورًا بعد معالجة كل صفحة.
 
-### [كيفية دمج صور PNG باستخدام GroupDocs.Merger for Java: دليل خطوة بخطوة](./merge-png-images-groupdocs-merger-java/)
-تعلم كيفية دمج صور PNG بسلاسة باستخدام GroupDocs.Merger for Java. يغطي هذا الدليل الإعداد، التنفيذ، وتطبيقات عملية مع أمثلة واضحة.
+### تحويل خطوة بخطوة
 
-### [كيفية استرجاع أنواع الملفات المدعومة باستخدام GroupDocs.Merger for Java](./retrieve-supported-file-types-groupdocs-merger-java/)
-تعلم كيفية استخدام GroupDocs.Merger for Java لاسترجاع أنواع الملفات المدعومة. يقدم هذا الدليل تعليمات خطوة بخطوة وأفضل الممارسات.
+1. **إنشاء كائن `Merger`** – هذه الفئة هي نقطة الدخول لجميع عمليات المستند.  
+2. **تحميل PDF** باستخدام `Document` (الفئة التي تمثل ملف PDF واحد في الذاكرة).  
+3. **تكوين `PreviewOptions`** لتعيين تنسيق الصورة إلى PNG واختيارياً تحديد DPI لجودة أعلى.  
+4. **استدعاء `preview`** – الطريقة تكتب PNG واحد لكل صفحة إلى دليل الإخراج.  
 
-### [استرجاع معلومات المستند باستخدام GroupDocs.Merger for Java: دليل خطوة بخطوة](./groupdocs-merger-java-retrieve-document-info-guide/)
-تعلم كيفية استخدام GroupDocs.Merger for Java لاسترجاع بيانات تعريف المستند بفعالية، بما في ذلك عدد الصفحات وتفاصيل المؤلف. حسّن تطبيقات Java الخاصة بك اليوم!
+> **إجابة مباشرة:** لتحويل PDF إلى PNG في Java باستخدام GroupDocs.Merger، أنشئ كائن `Merger`، حمّل PDF عبر `Document`، اضبط `PreviewOptions` إلى PNG، واستدعِ `preview`. المكتبة تبث كل صفحة، وتُنشئ ملف PNG منفصل لكل صفحة دون تحميل المستند بالكامل إلى الذاكرة.
 
-## موارد إضافية
+### تعريف الروابط
 
-- [توثيق GroupDocs.Merger for Java](https://docs.groupdocs.com/merger/java/)
-- [مرجع API لـ GroupDocs.Merger for Java](https://reference.groupdocs.com/merger/java/)
-- [تحميل GroupDocs.Merger for Java](https://releases.groupdocs.com/merger/java/)
-- [منتدى GroupDocs.Merger](https://forum.groupdocs.com/c/merger)
-- [دعم مجاني](https://forum.groupdocs.com/)
-- [ترخيص مؤقت](https://purchase.groupdocs.com/temporary-license/)
+`Merger` هي الفئة الأساسية في GroupDocs.Merger للتحميل، الدمج، وإنشاء معاينات المستندات.  
+`Document` تمثل ملفًا محملاً وتوفر الوصول إلى صفحاته، البيانات الوصفية، ومعالجة التدفق.  
+`PreviewOptions` يضبط كيفية إنشاء صور المعاينة، بما في ذلك التنسيق، DPI، ونطاق الصفحات.
 
-## حالات الاستخدام الشائعة
-- **بوابات إدارة المستندات** – عرض صور مصغرة للعقود المرفوعة قبل الموافقة.  
-- **منصات التعلم الإلكتروني** – إنشاء صور معاينة لعروض الشرائح أو ملفات PDF حتى يتمكن المتعلمون من استعراض المحتوى بسرعة.  
-- **خطوط معالجة الدفعات** – التحقق بصريًا من محتوى الملف قبل الدمج الآلي، مما يقلل الأخطاء اللاحقة.  
+## كيفية معاينة ملفات PDF المحمية بكلمة مرور في Java؟
+
+`LoadOptions` هي فئة تكوين تسمح لك بتحديد معلمات تحميل المستند مثل كلمة المرور، وضع القراءة فقط، ومعالجة التدفق المخصصة. قدم كلمة المرور في `LoadOptions` عند إنشاء `Document`. محرك المعاينة سيقوم بفك تشفير الملف مباشرةً وينتج صور PNG تمامًا كما لو كان PDF غير محمي. هذا النهج يعمل مع أي PDF مشفر مدعوم من قبل GroupDocs.Merger ولا يتطلب أي كود إضافي.
+
+## كيف تدمج الصور في Java؟
+
+GroupDocs.Merger يتضمن قدرات دمج صور مدمجة، بحيث يمكنك دمج ملفات PNG متعددة في مستند واحد دون تبعيات إضافية. استخدم طريقة `merge` على كائن `Merger`، أضف كل PNG كـ `Document` منفصل، وحدد صيغة الإخراج المطلوبة مثل PDF أو صورة مركبة. هذه العملية تحافظ على جودة الصورة وتحتاج فقط إلى بضع أسطر من الكود.
+
+## إنشاء معاينات PDF في Java – أنماط شائعة
+
+- **معاينة صفحة واحدة:** اضبط `PreviewOptions.setPageNumber(1)` لإنشاء PNG للصفحة الأولى فقط.  
+- **معاينة دفعة:** كرّر عبر دليل يحتوي على ملفات PDF، مطبقًا نفس منطق المعاينة على كل ملف.  
+- **مصغرات عالية الدقة:** زد DPI في `PreviewOptions` إلى 300 للحصول على مصغرات واضحة مناسبة للطباعة.  
+
+## المشكلات الشائعة والحلول
+
+| المشكلة | السبب | الحل |
+|-------|-------|----------|
+| أخطاء نفاد الذاكرة في ملفات PDF الكبيرة | تحميل المستند بالكامل مرة واحدة | تأكد من أنك تستخدم واجهة برمجة التطبيقات للمعاينة المتدفقة (الافتراضية) وتجنب استدعاء `Document.getPages().size()` دون ضرورة. |
+| صور فارغة لملفات PDF المشفرة | كلمة مرور مفقودة في `LoadOptions` | قم دائمًا بتوفير كلمة المرور الصحيحة عند إنشاء `Document`. |
+| مصغرات منخفضة الجودة | DPI الافتراضي (72) منخفض جدًا لواجهة المستخدم الخاصة بك | اضبط `PreviewOptions.setDpi(150)` أو أعلى قبل استدعاء `preview`. |
 
 ## الأسئلة المتكررة
 
 **س: هل يمكنني إنشاء معاينات لملفات PDF الكبيرة (مئات الصفحات)؟**  
-ج: نعم. المكتبة تبث الصفحات واحدة تلو الأخرى، لذا يبقى استهلاك الذاكرة منخفضًا حتى للملفات الكبيرة جدًا.
+**ج:** نعم. المكتبة تبث الصفحات واحدة تلو الأخرى، لذا يبقى استهلاك الذاكرة منخفضًا حتى للملفات الكبيرة جدًا.
 
-**س: كيف يمكنني تغيير صيغة الصورة للمعاينة؟**  
-ج: يمكنك تحديد PNG أو JPEG أو BMP عند تكوين خيارات المعاينة في الـ API.
+**س: كيف يمكنني تغيير تنسيق صورة المعاينة؟**  
+**ج:** يمكنك تحديد PNG أو JPEG أو BMP عند تكوين خيارات المعاينة في API.
 
 **س: هل من الممكن إنشاء معاينات للوثائق المشفرة؟**  
-ج: بالتأكيد. قدم كلمة المرور في خيارات التحميل، وستعمل عملية توليد المعاينة كما هو متوقع.
+**ج:** بالتأكيد. قدم كلمة المرور في خيارات التحميل، وستعمل عملية إنشاء المعاينة كما هو متوقع.
 
 **س: هل يتطلب “merge images java” وحدة خاصة؟**  
-ج: لا. مكتبة GroupDocs.Merger الأساسية تشمل قدرات دمج الصور مباشرةً.
+**ج:** لا. مكتبة GroupDocs.Merger الأساسية تتضمن قدرات دمج الصور مدمجة مباشرة.
 
 **س: أين يمكنني العثور على القائمة الكاملة للصيغ المدعومة بواسطة “list supported formats java”؟**  
-ج: استخدم دليل “استرجاع أنواع الملفات المدعومة” أعلاه، والذي يستدعي طريقة الـ API التي تُرجع القائمة الكاملة لأكثر من 50 صيغة.
+**ج:** استخدم دليل “retrieve supported file types” أعلاه، الذي يستدعي طريقة API التي تُرجع القائمة الكاملة لأكثر من 50 صيغة.
 
-**آخر تحديث:** 2026-06-21  
-**تم الاختبار مع:** GroupDocs.Merger 23.12 for Java  
+## الدروس المتاحة
+
+### [كيفية إنشاء معاينات صفحات المستند باستخدام GroupDocs.Merger لـ Java](./generate-document-page-previews-groupdocs-merger-java/)
+تعلم كيفية إنشاء معاينات صفحات المستند باستخدام GroupDocs.Merger لـ Java. حسّن تطبيقاتك من خلال إنشاء تمثيلات بصرية للمستندات بكفاءة.
+
+### [كيفية دمج صور PNG باستخدام GroupDocs.Merger لـ Java&#58; دليل خطوة بخطوة](./merge-png-images-groupdocs-merger-java/)
+تعلم كيفية دمج صور PNG بسلاسة باستخدام GroupDocs.Merger لـ Java. يغطي هذا الدليل الإعداد، التنفيذ، والتطبيقات العملية مع أمثلة واضحة.
+
+### [كيفية استرجاع أنواع الملفات المدعومة باستخدام GroupDocs.Merger لـ Java](./retrieve-supported-file-types-groupdocs-merger-java/)
+تعلم كيفية استخدام GroupDocs.Merger لـ Java لاسترجاع أنواع الملفات المدعومة. يقدم هذا الدليل تعليمات خطوة بخطوة وأفضل الممارسات.
+
+### [استرجاع معلومات المستند باستخدام GroupDocs.Merger لـ Java&#58; دليل خطوة بخطوة](./groupdocs-merger-java-retrieve-document-info-guide/)
+تعلم كيفية استخدام GroupDocs.Merger لـ Java لاسترجاع بيانات المستند الوصفية بكفاءة، بما في ذلك عدد الصفحات وتفاصيل المؤلف. حسّن تطبيقات Java الخاصة بك اليوم!
+
+## موارد إضافية
+
+- [توثيق GroupDocs.Merger لـ Java](https://docs.groupdocs.com/merger/java/)
+- [مرجع API لـ GroupDocs.Merger لـ Java](https://reference.groupdocs.com/merger/java/)
+- [تحميل GroupDocs.Merger لـ Java](https://releases.groupdocs.com/merger/java/)
+- [منتدى GroupDocs.Merger](https://forum.groupdocs.com/c/merger)
+- [دعم مجاني](https://forum.groupdocs.com/)
+- [ترخيص مؤقت](https://purchase.groupdocs.com/temporary-license/)
+
+## دروس ذات صلة
+
+- [كيفية تحميل PDF من URL باستخدام GroupDocs.Merger لـ Java: دليل شامل](/merger/java/document-loading/load-pdf-url-groupdocs-merger-java/)
+- [معالجة دفعة المستندات - تحميل ملفات محمية بكلمة مرور باستخدام GroupDocs.Merger لـ Java](/merger/java/document-loading/load-password-protected-docs-groupdocs-java/)
+- [كيفية استرجاع أنواع الملفات المدعومة باستخدام GroupDocs.Merger لـ Java](/merger/java/document-information/retrieve-supported-file-types-groupdocs-merger-java/)
+
+---
+
+**آخر تحديث:** 2026-10-27  
+**تم الاختبار مع:** GroupDocs.Merger 23.12 لـ Java  
 **المؤلف:** GroupDocs
-
-## الدروس ذات الصلة
-
-- [كيفية تحميل PDF من URL باستخدام GroupDocs.Merger for Java: دليل شامل](/merger/java/document-loading/load-pdf-url-groupdocs-merger-java/)
-- [معالجة المستندات على دفعات - تحميل ملفات محمية بكلمة مرور باستخدام GroupDocs.Merger for Java](/merger/java/document-loading/load-password-protected-docs-groupdocs-java/)
-- [كيفية استرجاع أنواع الملفات المدعومة باستخدام GroupDocs.Merger for Java](/merger/java/document-information/retrieve-supported-file-types-groupdocs-merger-java/)
