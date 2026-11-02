@@ -1,24 +1,81 @@
 ---
-date: '2026-06-21'
-description: เรียนรู้วิธีดึงหน้าต่าง PDF เฉพาะและสร้าง PDF จากหน้าโดยใช้ GroupDocs.Merger
-  for Java. บทเรียนนี้ครอบคลุมการตั้งค่า, ตัวอย่างโค้ด, และกรณีการใช้งานจริง
+date: '2026-11-02'
+description: เรียนรู้วิธีดึงหน้า PDF แบบเป็นชุดและสร้าง PDF จากหน้าโดยใช้ GroupDocs
+  Merger for Java คู่มือขั้นตอนต่อขั้นตอนนี้ครอบคลุมการตั้งค่า ตัวอย่างโค้ด และกรณีการใช้งานจริง
 keywords:
-- extract specific pdf pages
+- batch extract pdf pages
 - create pdf from pages
-- extract pdf by number
-- java pdf extraction library
+- java pdf extraction
+- extract specific pdf pages
+- java split pdf pages
+lastmod: '2026-11-02'
+og_description: เรียนรู้วิธีดึงหน้า PDF แบบเป็นชุดและสร้าง PDF จากหน้าโดยใช้ GroupDocs
+  Merger for Java ติดตามโค้ดขั้นตอนต่อขั้นตอนและตัวอย่างการใช้งานจริง
+og_image_alt: 'Developer guide: batch extract PDF pages with GroupDocs Merger for
+  Java'
+og_title: ดึงหน้า PDF แบบเป็นชุดด้วย GroupDocs Merger for Java
 schemas:
 - author: GroupDocs
-  dateModified: '2026-06-21'
-  description: Learn how to extract specific PDF pages and create PDF from pages using
-    GroupDocs.Merger for Java. This tutorial covers setup, code snippets, and real‑world
-    use cases.
-  headline: Extract Specific PDF Pages in Batch with GroupDocs.Merger for Java
+  dateModified: '2026-11-02'
+  description: Learn how to batch extract PDF pages and create PDF from pages using
+    GroupDocs Merger for Java. This step‑by‑step guide covers setup, code snippets,
+    and real‑world use cases.
+  headline: Batch extract PDF pages with GroupDocs Merger for Java
   type: TechArticle
-- description: Learn how to extract specific PDF pages and create PDF from pages using
-    GroupDocs.Merger for Java. This tutorial covers setup, code snippets, and real‑world
+- description: Learn how to batch extract PDF pages and create PDF from pages using
+    GroupDocs Merger for Java. This step‑by‑step guide covers setup, code snippets,
+    and real‑world use cases.
+  name: Batch extract PDF pages with GroupDocs Merger for Java
+  steps:
+  - name: '**Document management systems** – Generate custom reports by pulling only
+      the needed sections from massive PDFs.'
+    text: '**Document management systems** – Generate custom reports by pulling only
+      the needed sections from massive PDFs.'
+  - name: '**Legal & financial services** – Share specific contract clauses or financial
+      statements without exposing the entire file.'
+    text: '**Legal & financial services** – Share specific contract clauses or financial
+      statements without exposing the entire file.'
+  - name: '**Education platforms** – Deliver chapter‑only PDFs to students, reducing
+      bandwidth and storage requirements.'
+    text: '**Education platforms** – Deliver chapter‑only PDFs to students, reducing
+      bandwidth and storage requirements.'
+  type: HowTo
+- questions:
+  - answer: It handles over 50 input and output formats—including PDF, DOCX, PPTX,
+      XLSX, HTML, and common image types—allowing seamless conversion and extraction
+      across document families.
+    question: What formats does GroupDocs.Merger support?
+  - answer: Yes—simply list any page numbers you need in the `ExtractOptions` array;
+      the library will retrieve them in the order you specify.
+    question: Can I extract non‑sequential pages?
+  - answer: No hard limit; however, extracting thousands of pages from a multi‑gigabyte
+      PDF may require additional heap memory and batch processing to stay within resource
+      constraints.
+    question: Is there a limit to the number of pages I can extract?
+  - answer: Wrap the extraction logic in a try‑catch block, log the exception message,
+      and optionally retry with a smaller batch size if an `OutOfMemoryError` occurs.
+    question: How should I handle exceptions during extraction?
+  - answer: Absolutely—its lightweight API works on on‑premises servers, Docker containers,
+      and cloud platforms such as AWS, Azure, and Google Cloud without any native
+      dependencies.
+    question: Can GroupDocs.Merger be used in cloud‑native Java applications?
+  type: FAQPage
+tags:
+- batch extract pdf
+- GroupDocs Merger
+- Java document processing
+- PDF manipulation
+- author: GroupDocs
+  dateModified: '2026-11-02'
+  description: Learn how to batch extract PDF pages and create PDF from pages using
+    GroupDocs Merger for Java. This tutorial covers setup, code snippets, and real‑world
     use cases.
-  name: Extract Specific PDF Pages in Batch with GroupDocs.Merger for Java
+  headline: Batch extract PDF pages with GroupDocs Merger for Java
+  type: TechArticle
+- description: Learn how to batch extract PDF pages and create PDF from pages using
+    GroupDocs Merger for Java. This tutorial covers setup, code snippets, and real‑world
+    use cases.
+  name: Batch extract PDF pages with GroupDocs Merger for Java
   steps:
   - name: '**Document Management Systems** – Generate custom reports by pulling only
       the needed sections from massive PDFs.'
@@ -53,38 +110,35 @@ schemas:
       dependencies.
     question: Can GroupDocs.Merger be used in cloud‑native Java applications?
   type: FAQPage
-title: ดึงหน้าต่าง PDF เฉพาะเป็นชุดด้วย GroupDocs.Merger for Java
+title: ดึงหน้า PDF แบบเป็นชุดด้วย GroupDocs Merger for Java
 type: docs
 url: /th/java/document-extraction/extract-pages-groupdocs-merger-java/
 weight: 1
 ---
 
-# ดึงหน้ PDF เฉพาะในชุดด้วย GroupDocs.Merger สำหรับ Java
+# ดึงหลายหน้า PDF พร้อมกันด้วย GroupDocs Merger สำหรับ Java
 
-หากคุณต้องการ **ดึงหน้ PDF เฉพาะ** จากเอกสารขนาดใหญ่หรือชุดของ PDF คุณมาถูกที่แล้ว. ในคู่มือนี้เราจะแสดงวิธีการดึงหน้าต่าง ๆ เป็นชุด, สร้าง PDF ใหม่จากหน้าที่เลือก, และจัดการสถานการณ์ไฟล์ขนาดใหญ่อย่างมีประสิทธิภาพ—ทั้งหมดด้วยเพียงไม่กี่บรรทัดของโค้ด Java ที่ใช้ **GroupDocs.Merger for Java**. คุณจะได้เห็นว่าทำไมไลบรารีนี้จึงเหนือกว่าตัวเลือกอื่น ๆ ในเรื่องความเร็ว, การสนับสนุนรูปแบบ, และการใช้หน่วยความจำ.
+หากคุณต้องการ **ดึงหลายหน้า PDF เป็นชุด** จากเอกสารขนาดใหญ่หรือคอลเลกชันของไฟล์ PDF คุณมาถูกที่แล้ว ในคู่มือนี้เราจะแสดงวิธีดึงหน้าที่ต้องการเป็นกลุ่ม สร้าง PDF ใหม่จากหน้าดังกล่าว และจัดการกับสถานการณ์ไฟล์ขนาดใหญ่อย่างมีประสิทธิภาพ—ทั้งหมดด้วยเพียงไม่กี่บรรทัดของโค้ด Java โดยใช้ **GroupDocs.Merger for Java** คุณจะได้เห็นว่าทำไมไลบรารีนี้จึงเหนือกว่าตัวเลือกอื่น ๆ ในเรื่องความเร็ว การสนับสนุนรูปแบบ และการใช้หน่วยความจำ
 
-## คำตอบสั้น
-- **หมายความว่าอย่างไรเมื่อพูดถึง “batch extract PDF pages”?** หมายถึงการดึงหลายหน้าที่เลือก—จาก PDF หนึ่งไฟล์หรือหลายไฟล์—in a single operation และเขียนลงไฟล์ใหม่.  
-- **เมธอดใดที่ดึงหน้าตามหมายเลข?** ใช้ `ExtractOptions` ร่วมกับ `Merger.extractPages`.  
-- **ฉันต้องการไลเซนส์หรือไม่?** การทดลองใช้ฟรีทำงานได้สำหรับการพัฒนา; จำเป็นต้องมีไลเซนส์แบบชำระเงินสำหรับการใช้งานจริง.  
-- **ฉันสามารถดึงหน้าที่ไม่ต่อเนื่องได้หรือไม่?** ได้—เพียงระบุหมายเลขหน้าที่ต้องการในอาเรย์ `ExtractOptions`.  
-- **วิธีนี้เหมาะกับไฟล์ขนาดใหญ่หรือไม่?** ด้วยการตั้งค่า JVM heap ที่เหมาะสม, GroupDocs.Merger จะประมวลผล PDF ขนาดกิกะไบต์โดยไม่ต้องโหลดเอกสารทั้งหมดเข้าสู่หน่วยความจำ.
-
-## การดึงหน้ PDF เป็นชุดคืออะไร?
-**การดึงหน้ PDF เป็นชุด** หมายถึงการเลือกชุดของหน้าต่าง ๆ—ไม่ว่าจะต่อเนื่องหรือไม่—และสร้าง PDF ใหม่ที่มีเฉพาะหน้าที่เลือกเท่านั้น. เทคนิคนี้เหมาะสำหรับสร้างรายงานแบบกำหนดเอง, ส่วนที่อ้างอิงทางกฎหมาย, หรือคู่มือการศึกษาโดยไม่ต้องแชร์เอกสารต้นฉบับทั้งหมด.
+## คำตอบอย่างรวดเร็ว
+- **“ดึงหลายหน้า PDF เป็นชุด” หมายความว่าอย่างไร?** หมายถึงการดึงหลายหน้าที่เลือกไว้—จาก PDF หนึ่งไฟล์หรือหลายไฟล์—in a single operation and writing them to a new file.  
+- **เมธอดใดที่ใช้ดึงหน้าตามหมายเลข?** ใช้ `ExtractOptions` ร่วมกับ `Merger.extractPages`.  
+- **ต้องมีลิขสิทธิ์หรือไม่?** เวอร์ชันทดลองฟรีใช้ได้สำหรับการพัฒนา; ต้องมีลิขสิทธิ์แบบชำระเงินสำหรับการใช้งานในโปรดักชัน.  
+- **สามารถดึงหน้าที่ไม่ต่อเนื่องกันได้หรือไม่?** ได้—เพียงระบุหมายเลขหน้าที่ต้องการในอาเรย์ `ExtractOptions`.  
+- **เหมาะกับไฟล์ขนาดใหญ่หรือไม่?** ด้วยการตั้งค่า JVM heap ที่เหมาะสม GroupDocs.Merger สามารถประมวลผล PDF ขนาดกิกะไบต์โดยไม่ต้องโหลดเอกสารทั้งหมดเข้าสู่หน่วยความจำ.
 
 ## ทำไมต้องใช้ GroupDocs.Merger สำหรับ Java?
-GroupDocs.Merger รองรับ **รูปแบบอินพุตและเอาต์พุตกว่า 50+** (รวมถึง PDF, DOCX, PPTX, XLSX, และรูปแบบภาพทั่วไป) และสามารถจัดการ PDF หลายร้อยหน้าโดยใช้หน่วยความจำ heap น้อยกว่า 200 MB สำหรับไฟล์ 500 หน้า. API ที่มีประสิทธิภาพสูงของมันช่วยให้คุณโฟกัสที่ตรรกะธุรกิจแทนการจัดการไฟล์ระดับต่ำ, และทำงานบนแพลตฟอร์มที่รองรับ Java ใด ๆ—เดสก์ท็อป, เซิร์ฟเวอร์, หรือคลาวด์.
+GroupDocs.Merger รองรับ **รูปแบบเข้าและออกกว่า 50 ประเภท** (รวมถึง PDF, DOCX, PPTX, XLSX, HTML, และรูปภาพทั่วไป) และสามารถจัดการ PDF หลายร้อยหน้าได้โดยใช้หน่วยความจำ heap น้อยกว่า 200 MB สำหรับไฟล์ 500 หน้า API ที่มีประสิทธิภาพสูงช่วยให้คุณโฟกัสที่ตรรกะธุรกิจแทนการจัดการไฟล์ระดับล่าง และทำงานได้บนแพลตฟอร์ม Java ใดก็ได้—เดสก์ท็อป, เซิร์ฟเวอร์ หรือคลาวด์
 
 ## ข้อกำหนดเบื้องต้น
-- ความรู้พื้นฐานของ Java และ IDE เช่น IntelliJ IDEA หรือ Eclipse.  
-- Maven หรือ Gradle สำหรับการจัดการ dependencies.  
-- ไลเซนส์ GroupDocs.Merger (การทดลองใช้ฟรีหรือไลเซนส์ชั่วคราวใช้ได้สำหรับการทดสอบ).  
+- ความรู้พื้นฐานเกี่ยวกับ Java และ IDE เช่น IntelliJ IDEA หรือ Eclipse.  
+- Maven หรือ Gradle สำหรับการจัดการ dependency.  
+- ลิขสิทธิ์ GroupDocs.Merger (เวอร์ชันทดลองหรือไลเซนส์ชั่วคราวใช้สำหรับการทดสอบ).  
 
 ## การตั้งค่า GroupDocs.Merger สำหรับ Java
 
 ### คำแนะนำการติดตั้ง
-เพิ่มไลบรารีลงในโปรเจกต์ของคุณโดยใช้เครื่องมือสร้างที่คุณต้องการ.
+เพิ่มไลบรารีลงในโปรเจกต์ของคุณโดยใช้เครื่องมือสร้างที่คุณชื่นชอบ
 
 **Maven**  
 ```xml
@@ -101,14 +155,13 @@ implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
 **ดาวน์โหลดโดยตรง**  
-สำหรับวิธีการแบบแมนนวล, ดาวน์โหลดเวอร์ชันล่าสุดจาก [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
+สำหรับวิธีการแบบแมนนวล ดาวน์โหลดเวอร์ชันล่าสุดจาก [เวอร์ชัน GroupDocs.Merger สำหรับ Java](https://releases.groupdocs.com/merger/java/)
 
-### การรับไลเซนส์
-เริ่มต้นด้วยการทดลองใช้ฟรีเพื่อสำรวจคุณลักษณะ. หากไลบรารีตอบสนองความต้องการของคุณ, ให้ซื้อไลเซนส์หรือขอไลเซนส์ชั่วคราวสำหรับการประเมินเพิ่มเติม.
+### การขอรับลิขสิทธิ์
+เริ่มต้นด้วยเวอร์ชันทดลองเพื่อสำรวจฟีเจอร์ หากไลบรารีตรงกับความต้องการของคุณ ให้ซื้อไลเซนส์หรือขอไลเซนส์ชั่วคราวสำหรับการประเมินระยะยาว
 
-`Merger` คือคลาสหลักที่ใช้ในการโหลดและจัดการเอกสาร.  
+คลาส `Merger` เป็นจุดเริ่มต้นสำหรับการดำเนินการระดับเอกสารทั้งหมดใน GroupDocs.Merger มันโหลดไฟล์ต้นทางเข้าสู่วัตถุที่มีน้ำหนักเบาและสตรีมหน้าตามความต้องการ เพื่อหลีกเลี่ยงการโหลดเต็มเอกสารเข้าสู่หน่วยความจำ
 
-หลังจากเพิ่ม dependency และรับไลเซนส์, สร้างอินสแตนซ์ `Merger` ที่ชี้ไปยังเอกสารต้นฉบับของคุณ:  
 ```java
 String filePath = "YOUR_DOCUMENT_DIRECTORY/sample.docx";
 Merger merger = new Merger(filePath);
@@ -117,92 +170,93 @@ Merger merger = new Merger(filePath);
 ## คู่มือการใช้งาน
 
 ### ฟีเจอร์ดึงหน้าตามหมายเลข
-ความสามารถ **extract pages by number** ให้คุณระบุหน้าที่ต้องการดึงออกจากไฟล์ต้นฉบับอย่างแม่นยำ.
+ความสามารถ **ดึงหน้าตามหมายเลข** ให้คุณระบุหน้าที่ต้องการดึงออกจากไฟล์ต้นทางได้อย่างแม่นยำ
 
-#### การเริ่มต้น Merger
-คลาส `Merger` เป็นจุดเริ่มต้นสำหรับการดำเนินการระดับเอกสารทั้งหมดใน GroupDocs.Merger. มันโหลดไฟล์ต้นฉบับเข้าสู่วัตถุขนาดเล็กที่สตรีมหน้าตามความต้องการ, ป้องกันการโหลดเต็มในหน่วยความจำ.  
+#### การเริ่มต้นใช้งาน Merger
+หลังจากเพิ่ม dependency และได้รับลิขสิทธิ์แล้ว ให้สร้างอินสแตนซ์ `Merger` ชี้ไปยังเอกสารต้นทางของคุณ:
+
 ```java
 String filePath = "YOUR_DOCUMENT_DIRECTORY/sample.docx";
 Merger merger = new Merger(filePath);
 ```
 
-#### การกำหนดหมายเลขหน้าสำหรับการดึง
-`ExtractOptions` เก็บการกำหนดค่าการดึง. ระบุ `int[]` ที่มีหมายเลขหน้าตั้งแต่ 1 ที่คุณต้องการ; API จะทำการแมปภายในเป็นสตรีมหน้าที่ถูกต้อง.  
+#### การกำหนดหมายเลขหน้าที่ต้องการดึง
+`ExtractOptions` เก็บการตั้งค่าการดึง ให้ใส่ `int[]` ที่มีหมายเลขหน้าตั้งแต่ 1 ขึ้นไปตามที่ต้องการ; API จะทำการแมปภายในเป็นสตรีมหน้าที่ถูกต้อง
+
 ```java
 ExtractOptions extractOptions = new ExtractOptions(new int[] { 1, 4 });
 ```
 
-#### การดำเนินการดึง
-การเรียก `extractPages` พร้อมตัวเลือกที่เตรียมไว้จะคืนค่าอ็อบเจ็กต์ `Document` ใหม่ที่มีเฉพาะหน้าที่ร้องขอเท่านั้น.  
-`Document` แสดงถึงเอกสาร PDF ที่ได้หลังการดึง.  
+#### การดำเนินการดึงหน้า
+`extractPages` เป็นเมธอดของคลาส `Merger` ที่ดึงหน้าที่ระบุและคืนค่าเอกสารใหม่  
+การเรียก `extractPages` พร้อมตัวเลือกที่เตรียมไว้จะคืนอ็อบเจกต์ `Document` ที่มีเฉพาะหน้าที่ร้องขอ `Document` แทนเอกสาร PDF ที่ได้จากการดึงหน้า
+
 ```java
 merger.extractPages(extractOptions);
 ```
 
-#### การบันทึกหน้าที่ดึง
-เอกสารที่ได้สามารถบันทึกเป็นรูปแบบที่รองรับใดก็ได้. ในกรณีส่วนใหญ่คุณจะบันทึกเป็น PDF, แต่หากต้องการก็สามารถส่งออกเป็น DOCX หรือ PNG ได้.  
+#### การบันทึกหน้าที่ดึงออกมา
+เอกสารผลลัพธ์สามารถบันทึกเป็นรูปแบบที่รองรับใดก็ได้ ส่วนใหญ่คุณจะบันทึกเป็น PDF แต่ก็สามารถส่งออกเป็น DOCX หรือ PNG หากต้องการ
+
 ```java
 String filePathOut = "YOUR_OUTPUT_DIRECTORY/ExtractPagesByNumbers-output.pdf";
 merger.save(filePathOut);
 ```
 
-## ทำไมเรื่องนี้ถึงสำคัญ
-การสร้าง PDF จากหน้าที่เลือกช่วยลดความจำเป็นในการส่งเอกสารทั้งหมด, ลดขนาดการดาวน์โหลดได้ถึง 90 % สำหรับกรณีการใช้งานทั่วไป. การใช้ `ExtractOptions` ช่วยหลีกเลี่ยงการโหลดไฟล์ต้นฉบับซ้ำ ๆ, ซึ่งลดการใช้ CPU ลงประมาณ 30 % เมื่อเทียบกับการประมวลผลหน้าทีละหน้าแบบแมนนวล. เมื่อจัดการกับสถานการณ์ **extract PDF large file** คุณสามารถเพิ่ม JVM heap (`-Xmx2g` หรือสูงกว่า) และยังคงใช้หน่วยความจำต่ำกว่า 300 MB สำหรับ PDF ขนาด 1 GB.
+## ทำไมเรื่องนี้สำคัญ
+การสร้าง PDF จากหน้าที่เลือกช่วยลดความจำเป็นในการส่งเอกสารทั้งหมด ลดขนาดการดาวน์โหลดได้ถึง 90 % สำหรับกรณีใช้งานทั่วไป การใช้ `ExtractOptions` ช่วยหลีกเลี่ยงการโหลดไฟล์ต้นทางซ้ำ ๆ ซึ่งลดการใช้ CPU ลงประมาณ 30 % เมื่อเทียบกับการประมวลผลหน้า‑ต่อ‑หน้าแบบแมนนวล เมื่อเผชิญกับสถานการณ์ **extract PDF large file** คุณสามารถเพิ่ม heap ของ JVM (`-Xmx2g` หรือมากกว่า) และยังคงรักษาการใช้หน่วยความจำให้อยู่ต่ำกว่า 300 MB สำหรับ PDF ขนาด 1 GB
 
 ## ข้อผิดพลาดทั่วไปและการแก้ไขปัญหา
-- **Incorrect file paths** – ตรวจสอบว่าไดเรกทอรีอินพุตและเอาต์พุตมีอยู่และมีสิทธิ์เขียน.  
-- **Invalid page numbers** – ดัชนีหน้านับจาก 1; การขอหน้าที่เกินความยาวของเอกสารจะทำให้เกิด `PageNotFoundException`.  
-- **Out‑of‑Memory errors** – สำหรับ PDF ที่ใหญ่กว่า 2 GB, เพิ่ม heap (`-Xmx4g`) หรือแบ่งการดึงออกเป็นชุดย่อย.  
+- **เส้นทางไฟล์ไม่ถูกต้อง** – ตรวจสอบให้แน่ใจว่าโฟลเดอร์อินพุตและเอาต์พุตมีอยู่และมีสิทธิ์เขียน.  
+- **หมายเลขหน้าไม่ถูกต้อง** – ดัชนีหน้าเริ่มจาก 1; การขอหน้าที่เกินความยาวของเอกสารจะทำให้เกิด `PageNotFoundException`.  
+- **ข้อผิดพลาด Out‑Of‑Memory** – สำหรับ PDF ขนาดใหญ่กว่า 2 GB ให้เพิ่ม heap (`-Xmx4g`) หรือแบ่งการดึงออกเป็นชุดย่อย ๆ.
 
 ## การประยุกต์ใช้งานจริง
-1. **Document Management Systems** – สร้างรายงานแบบกำหนดเองโดยดึงเฉพาะส่วนที่ต้องการจาก PDF ขนาดใหญ่.  
-2. **Legal & Financial Services** – แชร์ข้อกำหนดสัญญาหรือรายงานการเงินเฉพาะส่วนโดยไม่เปิดเผยไฟล์ทั้งหมด.  
-3. **Education Platforms** – ส่งมอบ PDF เฉพาะบทให้กับนักเรียน, ลดความต้องการแบนด์วิธและพื้นที่จัดเก็บ.  
+1. **ระบบจัดการเอกสาร** – สร้างรายงานแบบกำหนดเองโดยดึงเฉพาะส่วนที่ต้องการจาก PDF ขนาดมหาศาล.  
+2. **บริการด้านกฎหมายและการเงิน** – แชร์ข้อกำหนดสัญญาหรือรายงานการเงินเฉพาะส่วนโดยไม่ต้องเปิดเผยไฟล์ทั้งหมด.  
+3. **แพลตฟอร์มการศึกษา** – ส่งมอบ PDF เฉพาะบทให้กับนักเรียน ลดแบนด์วิธและความต้องการพื้นที่จัดเก็บ.
 
-## ข้อพิจารณาด้านประสิทธิภาพ
-- **Memory Management:** ตรวจสอบการใช้ heap ด้วยเครื่องมือเช่น VisualVM; ปรับ `-Xmx` ตามขนาดไฟล์.  
-- **Batch Processing:** เมื่อดึงหน้าจากเอกสารหลายสิบไฟล์, ประมวลผลเป็นกลุ่ม 10–20 เพื่อรักษาสมดุลของ CPU และ I/O.  
-- **Efficient I/O:** ใช้ Java NIO buffered streams เพื่อเร่งการอ่าน/เขียน, โดยเฉพาะบน SSD.  
+## พิจารณาด้านประสิทธิภาพ
+- **การจัดการหน่วยความจำ:** ตรวจสอบการใช้ heap ด้วยเครื่องมือเช่น VisualVM; ปรับ `-Xmx` ตามขนาดไฟล์.  
+- **การประมวลผลเป็นชุด:** เมื่อดึงหน้าจากหลายสิบเอกสาร ให้ประมวลผลเป็นกลุ่ม 10–20 ไฟล์เพื่อรักษาสมดุลของ CPU และ I/O.  
+- **I/O ที่มีประสิทธิภาพ:** ใช้ Java NIO buffered streams เพื่อเร่งการอ่าน/เขียน โดยเฉพาะบน SSD.
 
 ## สรุป
-ตอนนี้คุณมีวิธีการพร้อมใช้งานในระดับผลิตสำหรับ **extract specific PDF pages** และ **create PDF from pages** ด้วย GroupDocs.Merger สำหรับ Java. วิธีนี้ทำให้กระบวนการทำงานที่ต้องการการแชร์เอกสารแบบเลือกส่วน, การสร้างรายงานแบบกำหนดเอง, หรือการจัดการ PDF ขนาดใหญ่อย่างมีประสิทธิภาพเป็นไปอย่างราบรื่น. สำรวจความสามารถเพิ่มเติมเช่นการรวมเอกสาร, การหมุนหน้า, หรือการใส่น้ำหนักเพื่อขยายพลังการประมวลผลเอกสารของแอปพลิเคชันของคุณต่อไป.
+คุณมีวิธีการที่พร้อมใช้งานในระดับโปรดักชันสำหรับ **ดึงหลายหน้า PDF เป็นชุด** และ **สร้าง PDF จากหน้า** ด้วย GroupDocs.Merger สำหรับ Java วิธีนี้ช่วยปรับกระบวนการทำงานที่ต้องการการแชร์เอกสารแบบเลือกส่วน รายงานแบบกำหนดเอง หรือการจัดการ PDF ขนาดใหญ่อย่างมีประสิทธิภาพ สำรวจความสามารถเพิ่มเติมเช่น การรวมเอกสาร การหมุนหน้า หรือการใส่ลายน้ำ เพื่อขยายพลังการประมวลผลเอกสารของแอปพลิเคชันของคุณ
 
 ## คำถามที่พบบ่อย
 
 **Q: GroupDocs.Merger รองรับรูปแบบใดบ้าง?**  
-A: มันรองรับรูปแบบอินพุตและเอาต์พุตกว่า 50 รูปแบบ—รวมถึง PDF, DOCX, PPTX, XLSX, HTML, และรูปแบบภาพทั่วไป—ทำให้การแปลงและการดึงข้อมูลข้ามกลุ่มเอกสารเป็นไปอย่างราบรื่น.
+A: รองรับรูปแบบเข้าและออกกว่า 50 ประเภท—including PDF, DOCX, PPTX, XLSX, HTML, and common image types—ทำให้การแปลงและการดึงข้อมูลข้ามครอบครัวเอกสารเป็นเรื่องราบรื่น
 
-**Q: ฉันสามารถดึงหน้าที่ไม่ต่อเนื่องได้หรือไม่?**  
-A: ได้—เพียงระบุหมายเลขหน้าที่ต้องการในอาเรย์ `ExtractOptions`; ไลบรารีจะดึงหน้าตามลำดับที่คุณระบุ.
+**Q: สามารถดึงหน้าที่ไม่ต่อเนื่องกันได้หรือไม่?**  
+A: ได้—เพียงระบุหมายเลขหน้าที่ต้องการในอาเรย์ `ExtractOptions`; ไลบรารีจะดึงตามลำดับที่คุณกำหนด
 
-**Q: มีขีดจำกัดจำนวนหน้าที่ฉันสามารถดึงได้หรือไม่?**  
-A: ไม่มีขีดจำกัดที่แน่นอน; อย่างไรก็ตามการดึงหลายพันหน้าจาก PDF ขนาดหลายกิกะไบต์อาจต้องการหน่วยความจำ heap เพิ่มเติมและการประมวลผลเป็นชุดเพื่ออยู่ในขอบเขตของทรัพยากร.
+**Q: มีขีดจำกัดจำนวนหน้าที่สามารถดึงได้หรือไม่?**  
+A: ไม่มีขีดจำกัดที่แน่นอน; อย่างไรก็ตาม การดึงหลายพันหน้าจาก PDF ขนาดหลายกิกะไบต์อาจต้องการ heap เพิ่มเติมและการประมวลผลเป็นชุดเพื่อให้คงอยู่ในขอบเขตของทรัพยากร
 
-**Q: ฉันควรจัดการกับข้อยกเว้นระหว่างการดึงอย่างไร?**  
-A: ห่อหุ้มตรรกะการดึงในบล็อก try‑catch, บันทึกข้อความข้อยกเว้น, และอาจลองใหม่ด้วยขนาดชุดที่เล็กลงหากเกิด `OutOfMemoryError`.
+**Q: ควรจัดการกับข้อยกเว้นระหว่างการดึงอย่างไร?**  
+A: ห่อโลจิกการดึงด้วยบล็อก try‑catch, บันทึกข้อความข้อยกเว้น, และอาจลองใหม่ด้วยชุดย่อยที่เล็กลงหากเกิด `OutOfMemoryError`
 
-**Q: GroupDocs.Merger สามารถใช้ในแอปพลิเคชัน Java แบบคลาวด์‑เนทีฟได้หรือไม่?**  
-A: แน่นอน—API ที่มีน้ำหนักเบาของมันทำงานบนเซิร์ฟเวอร์ในสถานที่, คอนเทนเนอร์ Docker, และแพลตฟอร์มคลาวด์เช่น AWS, Azure, และ Google Cloud โดยไม่มีการพึ่งพา native ใด ๆ.
+**Q: GroupDocs.Merger สามารถใช้ในแอปพลิเคชัน Java แบบ cloud‑native ได้หรือไม่?**  
+A: แน่นอน—API ที่มีน้ำหนักเบาของมันทำงานบนเซิร์ฟเวอร์ on‑premises, คอนเทนเนอร์ Docker, และแพลตฟอร์มคลาวด์เช่น AWS, Azure, และ Google Cloud โดยไม่มีการพึ่งพา native dependencies
 
 ---
 
-**อัปเดตล่าสุด:** 2026-06-21  
-**ทดสอบด้วย:** GroupDocs.Merger 23.11 (ล่าสุด ณ เวลาที่เขียน)  
+**อัปเดตล่าสุด:** 2026-11-02  
+**ทดสอบกับ:** GroupDocs.Merger 23.11 (ล่าสุด ณ เวลาที่เขียน)  
 **ผู้เขียน:** GroupDocs  
 
----
-
-**แหล่งข้อมูล**
-- [เอกสาร](https://docs.groupdocs.com/merger/java/)
-- [อ้างอิง API](https://reference.groupdocs.com/merger/java/)
-- [ดาวน์โหลด](https://releases.groupdocs.com/merger/java/)
-- [ซื้อ](https://purchase.groupdocs.com/buy)
-- [ทดลองใช้ฟรี](https://releases.groupdocs.com/merger/java/)
-- [ไลเซนส์ชั่วคราว](https://purchase.groupdocs.com/temporary-license/)
-- [ฟอรั่มสนับสนุน](https://forum.groupdocs.com/c/merger/)
+**แหล่งข้อมูล**  
+- [เอกสารประกอบ](https://docs.groupdocs.com/merger/java/)  
+- [อ้างอิง API](https://reference.groupdocs.com/merger/java/)  
+- [ดาวน์โหลด](https://releases.groupdocs.com/merger/java/)  
+- [ซื้อไลเซนส์](https://purchase.groupdocs.com/buy)  
+- [ทดลองใช้ฟรี](https://releases.groupdocs.com/merger/java/)  
+- [ไลเซนส์ชั่วคราว](https://purchase.groupdocs.com/temporary-license/)  
+- [ฟอรั่มสนับสนุน](https://forum.groupdocs.com/c/merger/)  
 
 ## บทเรียนที่เกี่ยวข้อง
-
-- [วิธีรวมหน้า - รวมหน้าที่เฉพาะจากหลายเอกสารโดยใช้ GroupDocs.Merger สำหรับ Java](/merger/java/document-joining/join-pages-groupdocs-merger-java-tutorial/)
-- [สร้าง PDF หน้าหนึ่งด้วย GroupDocs.Merger Java](/merger/java/document-splitting/)
-- [preview pdf pages java – คู่มือการแสดงตัวอย่าง GroupDocs.Merger](/merger/java/document-information/)
+- [วิธีรวมหน้า - เชื่อมต่อหน้าที่เฉพาะจากหลายเอกสารด้วย GroupDocs.Merger for Java](/merger/java/document-joining/join-pages-groupdocs-merger-java-tutorial/)  
+- [สร้าง PDF หน้าหนึ่งหน้าเดียวด้วย GroupDocs.Merger Java](/merger/java/document-splitting/)  
+- [preview pdf pages java – คู่มือแสดงตัวอย่าง GroupDocs.Merger](/merger/java/document-information/)
