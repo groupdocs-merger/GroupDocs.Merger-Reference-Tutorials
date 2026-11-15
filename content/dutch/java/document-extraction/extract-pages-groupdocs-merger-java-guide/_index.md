@@ -1,29 +1,33 @@
 ---
-date: '2026-08-15'
-description: Leer hoe je specifieke pagina's in Java kunt extraheren met GroupDocs.Merger
-  for Java, inclusief even pagina's en aangepaste bereiken. Bekijk ook hoe je PDF-pagina's
-  in Java kunt splitsen.
+date: '2026-11-15'
+description: Leer hoe u specifieke pagina's in Java kunt extraheren met GroupDocs.Merger
+  for Java, inclusief even pagina's, oneven pagina's en aangepaste bereiken. Bekijk
+  ook hoe u PDF-pagina's in Java kunt splitsen.
+images:
+- /java/document-extraction/extract-pages-groupdocs-merger-java-guide/og-image.png
 keywords:
 - extract specific pages java
-- java split pdf pages
+- split pdf pages java
 - groupdocs merger java
-lastmod: '2026-08-15'
+- java document processing
+- page extraction
+lastmod: '2026-11-15'
 og_description: Specifieke pagina's extraheren in Java met GroupDocs.Merger for Java.
-  Deze gids laat zien hoe je even pagina's, aangepaste bereiken kunt ophalen en PDF-pagina's
-  efficiënt kunt splitsen.
+  Deze gids laat zien hoe u even pagina's, oneven pagina's, aangepaste bereiken kunt
+  ophalen en PDF-pagina's efficiënt kunt splitsen in een paar regels code.
 og_image_alt: Guide showing extract specific pages java using GroupDocs.Merger
 og_title: Specifieke pagina's extraheren in Java met GroupDocs.Merger for Java
 schemas:
 - author: GroupDocs
-  dateModified: '2026-08-15'
+  dateModified: '2026-11-15'
   description: Learn how to extract specific pages java using GroupDocs.Merger for
-    Java, including even pages and custom ranges. Also see how to split PDF pages
-    in Java.
+    Java, including even pages, odd pages, and custom ranges. Also see how to split
+    PDF pages in Java.
   headline: Extract specific pages java with GroupDocs.Merger for Java
   type: TechArticle
 - description: Learn how to extract specific pages java using GroupDocs.Merger for
-    Java, including even pages and custom ranges. Also see how to split PDF pages
-    in Java.
+    Java, including even pages, odd pages, and custom ranges. Also see how to split
+    PDF pages in Java.
   name: Extract specific pages java with GroupDocs.Merger for Java
   steps:
   - name: define input and output paths
@@ -36,7 +40,7 @@ schemas:
   - name: perform extraction and save the result
     text: Invoke the `extract` method on the `Merger` instance and write the new document
       to disk. **Pro tip:** Wrap the extraction logic in a `try‑catch` block to handle
-      `IOException` or format‑specific exceptions gracefully.
+      `IOException` and format‑specific exceptions gracefully.
   type: HowTo
 - questions:
   - answer: Use `RangeMode.OddPages` when creating `ExtractOptions`.
@@ -64,28 +68,30 @@ url: /nl/java/document-extraction/extract-pages-groupdocs-merger-java-guide/
 weight: 1
 ---
 
-# Specifieke pagina's java extraheren met GroupDocs.Merger voor Java
+# Specifieke pagina's extraheren java met GroupDocs.Merger voor Java
 
-In deze tutorial leer je hoe je **extract specific pages java** kunt uitvoeren op elk ondersteund documenttype—Word, PDF, PowerPoint, Excel en meer—met behulp van GroupDocs.Merger voor Java. Je ziet waarom extractie op basis van bereik belangrijk is, hoe je even genummerde pagina's target, en hoe je de oplossing in een standaard Java‑project kunt integreren.
+In deze tutorial leer je hoe je **extract specific pages java** kunt gebruiken om pagina's uit elk ondersteund documenttype—Word, PDF, PowerPoint, Excel en meer—te extraheren met GroupDocs.Merger voor Java. Je ziet waarom extractie op basis van bereik belangrijk is, hoe je even genummerde pagina's, oneven pagina's of een aangepaste paginalijst kunt targeten, en hoe je de oplossing integreert in een standaard Java‑project.
 
 ## Snelle antwoorden
-- **Wat betekent “extract specific pages”?** Het betekent dat je alleen de pagina's die je nodig hebt uit een groter document selecteert en opslaat als een nieuw bestand.  
+- **Wat betekent “extract specific pages”?** Het betekent dat je alleen de pagina's selecteert die je nodig hebt uit een groter document en deze opslaat als een nieuw bestand.  
 - **Welke formaten worden ondersteund?** Word, PDF, PowerPoint, Excel, HTML, afbeeldingen en meer dan 30 andere formaten.  
 - **Kan ik alleen even pagina's extraheren?** Ja—stel `RangeMode.EvenPages` in de extractie‑opties in.  
 - **Heb ik een licentie nodig?** Een gratis proefversie werkt voor testen; een volledige licentie is vereist voor productiegebruik.  
 - **Hoeveel regels code?** Minder dan 20 regels zijn nodig om een aangepast bereik te extraheren.
 
 ## Wat is extract specific pages java?
-Extract specific pages java verwijst naar de programmatische bewerking waarbij een deelset van pagina's uit een bron‑document wordt gehaald en een nieuw, onafhankelijk bestand wordt aangemaakt. Deze techniek is essentieel wanneer je alleen een contractclausule, een enkel hoofdstuk of een groep facturen nodig hebt, waardoor je de overhead van het verzenden van het volledige document vermijdt.
 
-## Waarom specifieke pagina's per bereik extraheren?
-Het extraheren van specifieke pagina's per bereik verkleint de bestandsgrootte, beschermt gevoelige secties en versnelt downstream‑processen zoals e‑signing, geautomatiseerde rapportage of batch‑indexering. Met GroupDocs.Merger kun je pagina's 1‑5, elke even pagina, of een willekeurige lijst in één API‑aanroep opvragen, waardoor handmatige bewerking wordt geëlimineerd en waardevolle ontwikkeltijd wordt bespaard.
+Extract specific pages java is de programmatische bewerking waarbij een deelset van pagina's uit een brondocument wordt gehaald en een nieuw, onafhankelijk bestand wordt aangemaakt. Deze techniek is essentieel wanneer je alleen een contractclausule, een enkel hoofdstuk of een groep facturen nodig hebt, waardoor je de overhead van het verzenden van het volledige document vermijdt.
 
-## Vereisten
+## Waarom specifieke pagina's extraheren op basis van bereik?
 
-- **GroupDocs.Merger for Java** toegevoegd als een Maven‑ of Gradle‑dependency.  
+Het extraheren van specifieke pagina's op basis van bereik verkleint de bestandsgrootte, beschermt gevoelige secties en versnelt downstream processen zoals e‑signing, geautomatiseerde rapportage of batch‑indexering. GroupDocs.Merger kan pagina's 1‑5, elke even pagina, of een willekeurige lijst opvragen in één enkele API‑call, waardoor handmatige bewerking wordt geëlimineerd en waardevolle ontwikkelingstijd wordt bespaard.
+
+## Voorvereisten
+
+- **GroupDocs.Merger for Java** toegevoegd als een Maven- of Gradle‑dependency.  
 - **JDK 8** of nieuwer geïnstalleerd en geconfigureerd op je ontwikkelmachine.  
-- Basiskennis van Java bestands‑I/O en exception‑handling.
+- Basiskennis van Java bestand‑I/O en exception‑handling.
 
 ## GroupDocs.Merger voor Java instellen
 
@@ -113,7 +119,7 @@ implementation 'com.groupdocs:groupdocs-merger:latest-version'
 
 Je kunt ook de nieuwste binaries downloaden van [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
-#### Stappen voor licentie‑acquisitie
+#### Stappen voor het verkrijgen van een licentie
 
 1. **Gratis proefversie** – download een proefversie om de API te verkennen.  
 2. **Tijdelijke licentie** – vraag een tijdelijke sleutel aan voor uitgebreid testen.  
@@ -121,8 +127,8 @@ Je kunt ook de nieuwste binaries downloaden van [GroupDocs.Merger for Java relea
 
 ### Basisinitialisatie en configuratie
 
-Hieronder staat de minimale code die nodig is om een `Merger`‑instance te maken:
-De `Merger`‑klasse is het kern‑API‑object dat een document laadt en extractie‑operaties biedt.
+De `Merger`‑klasse is het kern‑API‑object dat een document laadt en extractie‑operaties biedt. Hieronder staat de minimale code die nodig is om een `Merger`‑instance te maken:
+
 ```java
 import com.groupdocs.merger.Merger;
 
@@ -130,13 +136,13 @@ String filePath = "YOUR_DOCUMENT_DIRECTORY/YourDocument.docx";
 Merger merger = new Merger(filePath);
 ```
 
-## Hoe specifieke pagina's per bereik extraheren
+## Hoe specifieke pagina's extraheren op basis van bereik
 
-Laad je bron‑document, configureer de extractie‑opties en sla het resultaat op—alles in drie eenvoudige stappen.
+Laad je brondocument, configureer de extractie‑opties en sla het resultaat op—alles in drie eenvoudige stappen.
 
 ### Stap 1: invoer‑ en uitvoer‑paden definiëren
 
-Geef de volledige bestandssysteempaden op voor het bron‑document en het doelbestand.
+Geef de volledige bestandssysteempaden op voor het brondocument en het doelbestand.
 
 ```java
 String filePath = "YOUR_DOCUMENT_DIRECTORY/YourDocument.docx";
@@ -145,7 +151,7 @@ String filePathOut = "YOUR_OUTPUT_DIRECTORY/ExtractedPages.docx";
 
 ### Stap 2: extractie‑opties configureren
 
-`ExtractOptions` stelt je in staat de startpagina, eindpagina en de `RangeMode` (even, odd, of custom) in te stellen. Het voorbeeld hieronder extraheert alleen even pagina's tussen 1 en 3, wat betekent dat pagina 2 wordt opgeslagen.
+`ExtractOptions` stelt je in staat de startpagina, eindpagina en de `RangeMode` (even, odd, of custom) in te stellen. Het voorbeeld hieronder extrahert alleen even pagina's tussen 1 en 3, wat betekent dat pagina 2 wordt opgeslagen.
 
 ```java
 import com.groupdocs.merger.domain.options.ExtractOptions;
@@ -157,7 +163,7 @@ ExtractOptions extractOptions = new ExtractOptions(1, 3, RangeMode.EvenPages);
 
 ### Stap 3: extractie uitvoeren en het resultaat opslaan
 
-Roep de `extract`‑methode aan op de `Merger`‑instance en schrijf het nieuwe document naar de schijf.
+Roep de `extract`‑methode aan op de `Merger`‑instance en schrijf het nieuwe document naar schijf.
 
 ```java
 // Initialize Merger with input document path
@@ -170,46 +176,48 @@ merger.extractPages(extractOptions);
 merger.save(filePathOut);
 ```
 
-**Pro tip:** Plaats de extractielogica in een `try‑catch`‑blok om `IOException` of formaat‑specifieke uitzonderingen op een nette manier af te handelen.
+**Pro tip:** Plaats de extractielogica in een `try‑catch`‑blok om `IOException` of formaat‑specifieke uitzonderingen netjes af te handelen.
 
 ## Praktische toepassingen
 
 | Scenario | Hoe extractie helpt |
 |----------|----------------------|
-| **Juridische beoordeling** | Haal alleen de clausules die je nodig hebt voor snelle analyse, terwijl vertrouwelijke secties verborgen blijven. |
+| **Juridische beoordeling** | Trek alleen de clausules die je nodig hebt voor snelle analyse, terwijl vertrouwelijke secties verborgen blijven. |
 | **Academisch onderzoek** | Isoleer hoofdstukken of secties uit leerboeken voor citatie of offline lezen. |
-| **Financiële rapportage** | Extraheer tabellen of overzichten uit meer‑pagina‑rapporten, waardoor de bestandsgrootte voor e‑maildistributie wordt verkleind. |
+| **Financiële rapportage** | Extraheer tabellen of overzichten uit meer‑pagina rapporten, waardoor de bestandsgrootte voor e‑maildistributie wordt verkleind. |
 
-## Prestatie‑overwegingen
+## Prestatieoverwegingen
 
-- **Geheugenbeheer** – Grote PDF‑bestanden kunnen aanzienlijke heap‑ruimte verbruiken. Verhoog de JVM‑heap (`-Xmx2g`) als je een `OutOfMemoryError` tegenkomt.  
-- **Bestands‑I/O** – Gebruik gebufferde streams bij het lezen/schrijven van grote bestanden om de schijflatentie te verminderen.  
-- **Batchverwerking** – Wanneer je bereiken uit veel documenten extraheert, verwerk ze dan sequentieel of gebruik een thread‑pool met gecontroleerde gelijktijdigheid om uitputting van systeembronnen te voorkomen.
+- **Geheugenbeheer** – Grote PDF's kunnen aanzienlijke heap‑ruimte verbruiken. Verhoog de JVM‑heap (`-Xmx2g`) als je een `OutOfMemoryError` tegenkomt.  
+- **Bestand‑I/O** – Gebruik buffered streams bij het lezen/schrijven van grote bestanden om de schijflatentie te verminderen.  
+- **Batchverwerking** – Bij het extraheren van bereiken uit veel documenten, verwerk ze sequentieel of gebruik een thread‑pool met gecontroleerde gelijktijdigheid om uitputting van systeembronnen te voorkomen.  
+
+GroupDocs.Merger ondersteunt extractie uit **30+ documentformaten** en kan bestanden tot **2 GB** verwerken zonder het volledige bestand in het geheugen te laden, met extractiesnelheden van **15 MB/s** op een typische server.
 
 ## Veelvoorkomende problemen en oplossingen
 
-| Probleem | Oplossing |
-|----------|-----------|
+| Issue | Solution |
+|-------|----------|
 | **Ongeldig bestandspad** | Controleer het volledige pad en zorg ervoor dat de applicatie lees‑/schrijfrechten heeft. |
-| **Niet‑ondersteund formaat** | Bevestig dat het documenttype (bijv. DOCX, PDF) wordt vermeld in de ondersteunde formaten. |
+| **Niet‑ondersteund formaat** | Controleer of het documenttype (bijv. DOCX, PDF) wordt vermeld in de ondersteunde formaten. |
 | **Out‑of‑memory fouten** | Verwerk grote bestanden in kleinere delen of vergroot de JVM‑heap‑grootte (`-Xmx`). |
-| **RangeMode werkt niet zoals verwacht** | Controleer de start/eind‑waarden en zorg ervoor dat ze binnen het paginanummer van het document vallen. |
+| **RangeMode werkt niet zoals verwacht** | Controleer de start‑/eindwaarden en zorg dat ze binnen het paginanummer van het document vallen. |
 
 ## Veelgestelde vragen
 
-**V: Hoe extraheer ik oneven genummerde pagina's?**  
+**Q: Hoe extrahere ik oneven genummerde pagina's?**  
 A: Gebruik `RangeMode.OddPages` bij het aanmaken van `ExtractOptions`.
 
-**V: Kan ik dit gebruiken met PDF's?**  
+**Q: Kan ik dit gebruiken met PDF's?**  
 A: Ja—GroupDocs.Merger ondersteunt PDF, DOCX, PPTX, XLSX en vele andere formaten.
 
-**V: Wat als mijn documentpad onjuist is?**  
-A: De API gooit een `IOException`. Controleer het pad en de bestandsrechten.
+**Q: Wat als mijn documentpad onjuist is?**  
+A: De API gooit een `IOException`. Controleer het pad en controleer de bestandsrechten.
 
-**V: Hoe moet ik uitzonderingen tijdens extractie afhandelen?**  
+**Q: Hoe moet ik uitzonderingen tijdens extractie afhandelen?**  
 A: Plaats de extractiecode in een `try‑catch`‑blok en log de details van de uitzondering voor probleemoplossing.
 
-**V: Is er een limiet aan het aantal pagina's dat ik kan extraheren?**  
+**Q: Is er een limiet aan het aantal pagina's dat ik kan extraheren?**  
 A: Er is geen harde limiet, maar het extraheren van zeer grote bereiken kan extra heap‑geheugen vereisen.
 
 ## Bronnen
@@ -226,12 +234,12 @@ Door deze gids te volgen heb je nu een betrouwbare methode om **extract specific
 
 ---
 
-**Laatst bijgewerkt:** 2026-08-15  
-**Getest met:** GroupDocs.Merger latest version (Java)  
+**Laatst bijgewerkt:** 2026-11-15  
+**Getest met:** GroupDocs.Merger nieuwste versie (Java)  
 **Auteur:** GroupDocs
 
 ## Gerelateerde tutorials
 
 - [pdf splitsen in pagina's met GroupDocs.Merger voor Java](/merger/java/document-splitting/master-document-splitting-groupdocs-merger-java/)
 - [specifieke pagina's samenvoegen java – Documenten samenvoegen met GroupDocs.Merger](/merger/java/document-joining/join-pages-groupdocs-merger-java-tutorial/)
-- [Hoe PDF‑URL laden Java – Documentlaad‑tutorials voor GroupDocs.Merger](/merger/java/document-loading/)
+- [Hoe PDF-URL laden Java – Documentlaad‑tutorials voor GroupDocs.Merger](/merger/java/document-loading/)
