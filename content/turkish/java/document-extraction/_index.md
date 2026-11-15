@@ -1,27 +1,29 @@
 ---
-date: 2026-08-31
-description: Java için GroupDocs.Merger kullanarak belirli sayfaları çıkarmak için
-  adım adım rehber.
+date: 2026-11-15
+description: GroupDocs.Merger ile pdf java bölün – belirli sayfaları nasıl çıkaracağınızı,
+  büyük dosyaları nasıl yöneteceğinizi ve metadata'yı hızlı, bellek‑verimli bir şekilde
+  sağlam tutmayı öğrenin.
+images:
+- /java/document-extraction/og-image.png
 keywords:
+- split pdf java
 - extract specific pages java
-- split pdf pages java
-- split document java
-lastmod: 2026-08-31
-og_description: GroupDocs.Merger kullanarak Java’da belirli sayfaları nasıl çıkaracağınızı
-  öğrenin. Bu rehber, PDF, Word ve daha fazlası için adım adım çıkarma işlemini, performans
-  ipuçlarıyla gösterir.
-og_image_alt: 'GroupDocs.Merger Java tutorial: extracting specific pages from documents'
-og_title: GroupDocs.Merger ile Java’da belirli sayfaları çıkarın – Hızlı belge dilimleme
+- GroupDocs.Merger Java
+- document slicing java
+lastmod: 2026-11-15
+og_description: GroupDocs.Merger ile pdf java saniyeler içinde bölün – bu kılavuz,
+  belirli sayfaları nasıl çıkaracağınızı, büyük dosyaları nasıl yöneteceğinizi ve
+  metadata'yı verimli bir şekilde korumayı gösterir.
+og_image_alt: 'Guide: split PDF in Java using GroupDocs.Merger to extract pages'
+og_title: GroupDocs.Merger kullanarak pdf java nasıl bölünür – hızlı belge dilimleme
 schemas:
 - author: GroupDocs
-  dateModified: '2026-08-31'
-  description: Step-by-step guide to extract specific pages java using GroupDocs.Merger
-    for Java.
-  headline: How to extract specific pages java with GroupDocs.Merger
+  dateModified: '2026-11-15'
+  description: Step‑by‑step guide to split pdf java using GroupDocs.Merger for Java.
+  headline: How to split pdf java using GroupDocs.Merger
   type: TechArticle
-- description: Step-by-step guide to extract specific pages java using GroupDocs.Merger
-    for Java.
-  name: How to extract specific pages java with GroupDocs.Merger
+- description: Step‑by‑step guide to split pdf java using GroupDocs.Merger for Java.
+  name: How to split pdf java using GroupDocs.Merger
   steps:
   - name: '**Load the source document** – Create a `Merger` instance and point it
       at the file you want to slice.'
@@ -67,48 +69,58 @@ schemas:
       metadata?
   type: FAQPage
 tags:
-- extract pages
+- split pdf
 - GroupDocs.Merger
 - Java document processing
-title: GroupDocs.Merger ile Java’da belirli sayfaları nasıl çıkarabilirsiniz
+title: GroupDocs.Merger ile pdf java nasıl bölünür
 type: docs
 url: /tr/java/document-extraction/
 weight: 9
 ---
 
-# GroupDocs.Merger ile Java’da belirli sayfaları çıkarma
+# GroupDocs.Merger kullanarak pdf java nasıl bölünür
 
-Büyük bir belgeden doğru sayfaları çıkarmak, depolama maliyetlerini büyük ölçüde azaltabilir, downstream işleme hızını artırabilir ve paylaşımı daha odaklı hâle getirebilir. Bu öğreticide **Java’da belirli sayfaları nasıl çıkarılır** öğrenerek PDF, Word dosyaları ve birçok diğer formatı GroupDocs.Merger for Java kullanarak çıkaracaksınız. Tek sayfa çıkarma, sayfa aralığı çıkarma ve özel içerik seçimini adım adım inceleyecek ve tekniği projelerinizde anında uygulayabileceksiniz.
+Büyük bir PDF'den yalnızca ihtiyacınız olan sayfaları çıkarmak, depolama maliyetlerini önemli ölçüde azaltabilir, sonraki işlemeyi hızlandırabilir ve hassas bilgilerin paylaşılan dosyalarda yer almasını engelleyebilir. Bu öğreticide **pdf java nasıl bölünür** konusunu GroupDocs.Merger ile öğrenecek, tek sayfa çıkarma, sayfa aralığı dilimleme ve PDF'ler, Word belgeleri ve birçok diğer format için özel içerik seçimini kapsayacaksınız. Kılavuzun sonunda sayfa bölmeyi sadece birkaç satır kodla herhangi bir Java 8+ projesine entegre edebileceksiniz.
 
 ## Hızlı cevaplar
-- **Birincil kullanım senaryosu nedir?** Daha büyük bir belgeden belirli sayfaları veya bölümleri yeniden kullanım veya dağıtım için çekmek.  
-- **Çıkarma işlemini hangi kütüphane yönetir?** GroupDocs.Merger for Java.  
-- **Lisans gerekli mi?** Test için geçici bir lisans çalışır; üretim için tam lisans gereklidir.  
-- **Şifre korumalı PDF'lerden sayfaları çıkarabilir miyim?** Evet, belgeyi yüklerken şifreyi sağlayın.  
-- **API Java 8+ ile uyumlu mu?** Kesinlikle – Java 8 ve sonraki sürümleri destekler.
+- **Ana kullanım senaryosu nedir?** Daha büyük bir belgeden yeniden kullanım veya dağıtım için belirli sayfaları veya bölümleri çekmek.  
+- **Çıkarma işlemini hangi kütüphane yönetir?** Java için GroupDocs.Merger.  
+- **Lisans gerekir mi?** Test için geçici bir lisans çalışır; üretim için tam lisans gereklidir.  
+- **Şifre korumalı PDF'lerden sayfa çıkarabilir miyim?** Evet, belgeyi yüklerken şifreyi sağlayın.  
+- **API Java 8+ ile uyumlu mu?** Kesinlikle – Java 8 ve daha yeni sürümleri destekler.
 
-## GroupDocs.Merger kullanarak Java’da belirli sayfaları nasıl çıkarılır?
+## GroupDocs.Merger kullanarak java ile belirli sayfalar nasıl çıkarılır?
 
-`Merger` sınıfı, bir belgeyi yükleyen ve çıkarma işlemleri sağlayan temel bileşendir.  
+Kaynak dosyayı yükleyin, API'ye hangi sayfalara ihtiyacınız olduğunu söyleyin, `extract()` metodunu çağırın ve dönen akışı yeni bir dosyaya yazın. **`extract()` seçilen sayfaları çıkarır ve bir `InputStream` olarak döndürür veya doğrudan bir dosyaya yazar.** Bu tüm akış bellek içinde çalışır, tipik dosyalar için milisaniyeler içinde tamamlanır ve disk üzerinde ara geçici dosyalar oluşturmaz.
 
-Kaynak dosyayı `new Merger("source.pdf")` ile yükleyin, ihtiyacınız olan sayfaları belirtin (ör. `5` veya `10-20`), `extract()` metodunu çağırın ve dönen akışı yeni bir dosyaya yazın. `extract()` seçilen sayfalarla yeni belgeyi içeren bir `InputStream` döndürür. Tüm işlem bellekte gerçekleşir, tipik dosyalar için milisaniyeler içinde tamamlanır ve ara geçici dosyalara ihtiyaç duymaz.
+### `Merger` sınıfı
 
-## GroupDocs.Merger bağlamında “sayfaları çıkarma” nedir?
+`Merger` sınıfı, GroupDocs.Merger'ın bellekte tek bir kaynak belgeyi temsil eden temel bileşenidir. Tüm çıkarma, birleştirme ve bölme işlemleri metodları aracılığıyla sunulur.
 
-**“Sayfaları çıkarma” işlemi, bir kaynak belgeden bir veya daha fazla sayfa seçmeyi ve yalnızca bu sayfaları içeren yeni, bağımsız bir dosya oluşturmayı ifade eder.** Bu süreç tamamen bellek içinde yürütülür, disk‑I/O yükünü ortadan kaldırır ve büyük toplu senaryolar için güvenli hâle getirir. GroupDocs.Merger orijinal yapıyı ayrıştırır, seçilen sayfaları kopyalar ve meta verileri otomatik olarak korur.
+1. **Kaynak belgeyi yükle** – Bir `Merger` örneği oluşturun ve dilimlemek istediğiniz dosyayı gösterin.  
+2. **Sayfaları tanımla** – Tek bir sayfa numarası, bir aralık (`10-20`) veya bir liste (`[2,4,7]`) kullanın.  
+3. **`extract` metodunu çağır** – API yeni bir `InputStream` döndürür veya doğrudan bir dosyaya yazar.  
+4. **Sonucu kaydet** – Çıkarılan sayfaları ihtiyacınız olan yere (yerel disk, bulut depolama vb.) kaydedin.  
+5. **Kaynakları serbest bırak** – Belleği boşaltmak için `Merger` örneğini kapatın, özellikle toplu işlemde birçok dosya işlenirken.
 
-## Java’da belirli sayfaları çıkarmak neden önemlidir?
+> **Pro ipucu:** Nesne oluşturma maliyetini azaltmak için toplu işlemlerde tek bir `Merger` örneğini yeniden kullanın.
 
-Belirli sayfaları çıkarmak, yalnızca gerçekten ihtiyacınız olan içeriği tutmanızı sağlar ve bu da somut iş faydalarına dönüşür. Gereksiz sayfaları kırparak depolama maliyetlerini düşürür, yükleme/indirme hızını artırır ve dosyayı tüketen downstream hizmetlerin işleme süresini azaltırsınız.
+## GroupDocs.Merger bağlamında “sayfaları nasıl çıkarılır” ne anlama geliyor?
 
-- **Depolama verimliliği:** İhtiyacınız olan sayfaları tutarak dosya boyutunu azaltın.  
-- **Daha hızlı downstream iş akışları:** Daha küçük dosyalar daha hızlı yükleme, indirme ve işleme anlamına gelir.  
+Bu, bir kaynak belgeden bir veya daha fazla sayfa seçmek ve yalnızca bu sayfaları içeren yeni, bağımsız bir dosya oluşturmaktır. İşlem tamamen bellek içinde gerçekleştirilir, disk‑I/O yükünü ortadan kaldırır ve büyük toplu senaryolar için güvenli hâle getirir. GroupDocs.Merger, orijinal yapıyı ayrıştırır, seçilen sayfaları kopyalar ve meta verileri otomatik olarak korur.
+
+## Neden belirli sayfaları java ile çıkarmak önemlidir?
+
+Belirli sayfaları java ile çıkarmak, yalnızca gerçekten ihtiyacınız olan içeriği tutmanıza olanak tanır; bu da somut iş faydalarına dönüşür. Gereksiz sayfaları kırparak depolama maliyetlerini düşürür, yükleme/indirmeleri hızlandırır ve dosyayı tüketen sonraki hizmetlerin işlem süresini azaltırsınız.
+
+- **Depolama verimliliği:** İhtiyacınız olan sayfaları tutun, tipik raporlar için dosya boyutunu %80'e kadar azaltın.  
+- **Daha hızlı sonraki iş akışları:** Daha küçük dosyalar daha hızlı yükleme, indirme ve işlem anlamına gelir.  
 - **Hedefli paylaşım:** Tüm belgeyi ortaya çıkarmadan sadece ilgili bölümü paydaşlara gönderin.  
 - **Uyumluluk:** Gizli sayfaları dağıtımdan önce kaldırarak gizlilik düzenlemelerine uyun.
 
 ## Sayfaları çıkarmak için Java için GroupDocs.Merger neden kullanılmalı?
 
-GroupDocs.Merger for Java, çoğu belge için belirli sayfaları bir saniyeden kısa sürede çıkarabilir, **70+ giriş ve çıkış formatını** destekler ve **2 GB**'a kadar dosyaları tüm belgeyi belleğe yüklemeden işleyebilir. API kasıtlı olarak basittir; birkaç satır kodla karmaşık dilimleme işlemlerini gerçekleştirebilir ve yine de kurumsal düzeyde güvenilirlik sunar.
+Java için GroupDocs.Merger, çoğu belge için pdf java'yı bir saniyeden kısa sürede bölebilir, **70+ giriş ve çıkış formatını** destekler ve **2 GB**'a kadar dosyaları tüm belgeyi belleğe yüklemeden işler. API'si kasıtlı olarak basittir, böylece sadece birkaç satır kodla karmaşık dilimleme yapabilir ve yine de kurumsal düzeyde güvenilirliğe sahip olursunuz.
 
 ## Önkoşullar
 - Java 8 veya daha yeni bir sürüm yüklü.  
@@ -117,83 +129,80 @@ GroupDocs.Merger for Java, çoğu belge için belirli sayfaları bir saniyeden k
 
 ## Mevcut öğreticiler
 
-### [GroupDocs.Merger for Java ile Aralık Kullanarak Sayfaları Çıkarma: Tam Kılavuz](./extract-pages-groupdocs-merger-java-guide/)
-GroupDocs.Merger for Java kullanarak sayfa aralıklarıyla belgelerden belirli sayfaları verimli bir şekilde çıkarmayı öğrenin. Seçici veri manipülasyonu ve belge işleme konularında uzmanlaşın.
+### [GroupDocs.Merger for Java Kullanarak Aralıkla Sayfa Çıkarma: Tam Kılavuz](./extract-pages-groupdocs-merger-java-guide/)
+GroupDocs.Merger for Java ile sayfa aralıklarını kullanarak belgelerden belirli sayfaları verimli bir şekilde nasıl çıkaracağınızı öğrenin. Seçimli veri manipülasyonu ve belge işleme konusunda uzmanlaşın.
 
 ### [GroupDocs.Merger for Java Kullanarak Belgelerden Belirli Sayfaları Nasıl Çıkarılır](./extract-pages-groupdocs-merger-java/)
-PDF, Word belgeleri ve daha fazlasından GroupDocs.Merger for Java ile belirli sayfaları verimli bir şekilde çıkarmayı öğrenin. Bu kılavuz kurulum, uygulama ve pratik kullanım senaryolarını kapsar.
+GroupDocs.Merger for Java kullanarak PDF'lerden, Word belgelerinden ve daha fazlasından belirli sayfaları verimli bir şekilde nasıl çıkaracağınızı öğrenin. Bu kılavuz kurulum, uygulama ve pratik kullanım senaryolarını kapsar.
 
 ## Yaygın çıkarma senaryoları
 
-### Tek bir sayfa çıkarma
-Bir PDF'den yalnızca 5. sayfaya ihtiyacınız varsa, API'yi tek bir sayfa numarasıyla çağırabilirsiniz. Bu, faturalar, makbuzlar veya tek sayfalık raporlar oluşturmak için kullanışlıdır.
+### Tek bir sayfa çıkar
+Bir PDF'den yalnızca 5. sayfaya ihtiyacınız varsa, API'yi tek bir sayfa numarasıyla çağırabilirsiniz. Bu, faturalar, makbuzlar veya tek sayfalık raporlar oluşturmak için faydalıdır.
 
-### Sayfa aralığı çıkarma
-10‑20 sayfalarına ihtiyacınız olduğunda, aralık özelliği her sayfayı tek tek döngüye almanızı önler. Bu, e‑kitap bölümlerini ayırmak veya bir sözleşmenin bölümlerini çıkarmak için idealdir.
+### Sayfa aralığı çıkar
+10‑20 sayfalarına ihtiyacınız olduğunda, aralık özelliği her sayfayı tek tek döngüye almanızı önler. Bu, e‑kitaplardan bölümleri ayırmak veya bir sözleşmenin bölümlerini çıkarmak için idealdir.
 
-### Özel içerik çıkarma (ör. belirli tablolar veya görseller)
-GroupDocs.Merger, belge yapısına dayalı içerik seçmenize de izin verir; böylece manuel sayfa sayma yapmadan tabloları, görselleri veya başlıkları izole edebilirsiniz.
+### Özel içerik çıkar (ör. belirli tablolar veya görseller)
+GroupDocs.Merger ayrıca belge yapısına göre içerik seçmenize izin verir; böylece tabloları, görselleri veya başlıkları manuel sayfa sayımı yapmadan izole edebilirsiniz.
 
-## Java’da belirli sayfaları çıkarma adım adım rehberi
+## Belirli sayfaları java ile çıkarma adım adım rehberi
 
-**`Merger` sınıfı, bir kaynak belgeyi yükleyen ve çıkarma metodları sağlayan GroupDocs.Merger'ın temel bileşenidir.** Tek bir örneği birden çok işlemde kullanmak nesne‑oluşturma yükünü azaltır ve verimliliği artırır.
+`Merger` sınıfı, bir kaynak belgeyi yükleyen ve çıkarma metodları sağlayan GroupDocs.Merger'ın temel bileşenidir. Birden fazla işlem için tek bir örnek kullanmak nesne oluşturma maliyetini azaltır ve verimliliği artırır.
 
-1. **Kaynak belgeyi yükleyin** – Dilimlemek istediğiniz dosyaya işaret eden bir `Merger` örneği oluşturun.  
-2. **Sayfaları tanımlayın** – Tek bir sayfa numarası, bir aralık (`10-20`) veya bir liste (`[2,4,7]`) kullanın.  
-3. **`extract` metodunu çağırın** – API yeni bir `InputStream` döndürür veya doğrudan bir dosyaya yazar.  
-4. **Sonucu kaydedin** – Çıkarılan sayfaları ihtiyacınız olan yere (yerel disk, bulut depolama vb.) kalıcı olarak kaydedin.  
-5. **Kaynakları serbest bırakın** – Özellikle toplu işlemde birçok dosya işliyorsanız, belleği boşaltmak için `Merger` örneğini kapatın.
-
-> **Pro ipucu:** Nesne oluşturma yükünü azaltmak için toplu işlemlerde tek bir `Merger` örneğini yeniden kullanın.
+1. **Kaynak belgeyi yükle** – Bir `Merger` örneği oluşturun ve dilimlemek istediğiniz dosyayı gösterin.  
+2. **Sayfaları tanımla** – Tek bir sayfa numarası, bir aralık (`10-20`) veya bir liste (`[2,4,7]`) kullanın.  
+3. **`extract` metodunu çağır** – API yeni bir `InputStream` döndürür veya doğrudan bir dosyaya yazar.  
+4. **Sonucu kaydet** – Çıkarılan sayfaları ihtiyacınız olan yere (yerel disk, bulut depolama vb.) kaydedin.  
+5. **Kaynakları serbest bırak** – Belleği boşaltmak için `Merger` örneğini kapatın, özellikle toplu işlemde birçok dosya işlenirken.
 
 ## İpuçları ve en iyi uygulamalar
-- **Sayfa numaralarını** kaynak belgenin toplam sayfa sayısına karşı doğrulayın, `IndexOutOfBoundsException` hatasından kaçının.  
+- **Sayfa numaralarını** kaynak belgenin toplam sayfa sayısına karşı doğrulayın, `IndexOutOfBoundsException` hatasından kaçınmak için.  
 - **Performans ipucu:** Toplu işlemde birçok dosya işlenirken tek bir `Merger` örneğini yeniden kullanın.  
 - **Güvenlik ipucu:** Lisans dosyanızı web kökünün dışına depolayın ve çalışma zamanında güvenli bir şekilde yükleyin.
 
 ## Ek kaynaklar
-
-- [GroupDocs.Merger for Java Dokümantasyonu](https://docs.groupdocs.com/merger/java/)
-- [GroupDocs.Merger for Java API Referansı](https://reference.groupdocs.com/merger/java/)
-- [GroupDocs.Merger for Java'ı İndir](https://releases.groupdocs.com/merger/java/)
+- [Java için GroupDocs.Merger Dokümantasyonu](https://docs.groupdocs.com/merger/java/)
+- [Java için GroupDocs.Merger API Referansı](https://reference.groupdocs.com/merger/java/)
+- [Java için GroupDocs.Merger'ı İndir](https://releases.groupdocs.com/merger/java/)
 - [GroupDocs.Merger Forum](https://forum.groupdocs.com/c/merger)
 - [Ücretsiz Destek](https://forum.groupdocs.com/)
 - [Geçici Lisans](https://purchase.groupdocs.com/temporary-license/)
 
-## Sıkça Sorulan Sorular
+## Sıkça sorulan sorular
 
-**S: Şifre korumalı PDF'lerden sayfaları çıkarabilir miyim?**  
-C: Evet. Belgeyi `Merger` yapıcı ile açarken şifreyi sağlayın.
+**Q:** Şifre korumalı bir PDF'den sayfa çıkarabilir miyim?  
+**A:** Evet. Belgeyi `Merger` yapıcısı ile açarken şifreyi sağlayın.
 
-**S: API PDF'lerin yanı sıra Word belgelerinden de sayfa çıkarmayı destekliyor mu?**  
-C: Kesinlikle. Aynı `extract` metodları DOCX, PPTX ve diğer desteklenen formatlarda da çalışır.
+**Q:** API, PDF'lerin yanı sıra Word belgelerinden sayfa çıkarmayı da destekliyor mu?  
+**A:** Kesinlikle. Aynı `extract` metodları DOCX, PPTX ve diğer desteklenen formatlar için çalışır.
 
-**S: Büyük belgeleri belleği doldurmadan nasıl yönetebilirim?**  
-C: Dosyayı parçalara ayırarak işleyen streaming API (`Merger.open(..., LoadOptions)`) kullanın.  
-`LoadOptions` büyük dosyaları tamamen belleğe yüklemeden işlemek için streaming modunu yapılandırmanıza olanak tanır.
+**Q:** Büyük belgeleri bellek tükenmeden nasıl yönetebilirim?  
+**A:** Akış (streaming) API'sini (`Merger.open(..., LoadOptions)`) kullanın; bu, dosyayı parçalar halinde işler. `LoadOptions`, büyük dosyaları tamamen belleğe yüklemeden işlemek için akış modunu yapılandırmanıza izin verir.
 
-**S: “java extract pdf pages” ile “extract pdf pages java” arasındaki fark nedir?**  
-C: İkisi de aynı kavramın sözcük varyasyonlarıdır—her ikisi de Java kodu kullanarak bir PDF dosyasından sayfa çekmeyi ifade eder. API bunları aynı şekilde işler.
+**Q:** “java extract pdf pages” ile “extract pdf pages java” arasındaki fark nedir?  
+**A:** Aynı kavramın anlamsal varyasyonlarıdır—her ikisi de Java kodu kullanarak bir PDF dosyasından sayfa çekmeyi ifade eder. API bunları aynı şekilde işler.
 
-**S: Sayfaları çıkarırken orijinal belgenin meta verilerini korumanın bir yolu var mı?**  
-C: Evet. Varsayılan olarak meta veriler yeni dosyaya kopyalanır; gerekirse `DocumentInfo` nesnesi aracılığıyla da değiştirilebilir.  
-`DocumentInfo` bir belgenin meta verilerine erişim sağlar ve değişiklik yapılmasına izin verir.
+**Q:** Sayfaları çıkarırken orijinal belgenin meta verilerini korumanın bir yolu var mı?  
+**A:** Evet. Varsayılan olarak meta veriler yeni dosyaya kopyalanır; gerektiğinde `DocumentInfo` nesnesi aracılığıyla da değiştirebilirsiniz. `DocumentInfo`, bir belgenin meta verilerine erişim sağlar ve değişiklik yapmanıza izin verir.
 
 ## Yaygın sorunlar ve çözümler
 
 | Sorun | Neden | Çözüm |
 |-------|-------|----------|
-| `IndexOutOfBoundsException` | İstenen sayfa numarası belge uzunluğunu aşıyor | Çıkarma işleminden önce `document.getPageCount()` kontrol edin |
-| Boş çıktı dosyası | Yanlış sayfa aralığı formatı (ör. “5‑”) | Kapsayıcı aralık sözdizimini (`5-5`) veya bir tam sayı listesi kullanın |
-| Lisans bulunamadı | Lisans dosyası yolu hatalı veya eksik | `License` API'ye lisansı uygulayan sınıftır. Lisansı şu şekilde yükleyin: `License license = new License(); license.setLicense("path/to/license.lic");` |
-| Büyük PDF'lerde yavaş performans | Tüm dosya belleğe yükleniyor | `LoadOptions` ile streaming moda geçin ve `useMemoryCache = false` ayarlayın |
+| `IndexOutOfBoundsException` | İstenen sayfa numarası belge uzunluğunu aşıyor | Çıkarma işleminden önce `document.getPageCount()` metodunu doğrulayın |
+| Boş çıktı dosyası | Yanlış sayfa aralık formatı (ör. “5‑”) | Kapsayıcı aralık sözdizimini (`5-5`) veya tam sayı listesi kullanın |
+| Lisans bulunamadı | Lisans dosyası yolu hatalı veya eksik | `License` sınıfı, API'ye bir GroupDocs lisansı uygulamak için kullanılır. Lisansı şu şekilde yükleyin: `License license = new License(); license.setLicense("path/to/license.lic");` |
+| Büyük PDF'lerde yavaş performans | Tüm dosyanın belleğe yüklenmesi | `LoadOptions` ile akış moduna geçin ve `useMemoryCache = false` olarak ayarlayın |
 
-**Son güncelleme:** 2026-08-31  
-**Test edildiği sürüm:** GroupDocs.Merger for Java 23.9  
+---
+
+**Son güncelleme:** 2026-11-15  
+**Test edilen sürüm:** GroupDocs.Merger for Java 23.9  
 **Yazar:** GroupDocs
 
-## İlgili Öğreticiler
+## İlgili öğreticiler
 
-- [Java’da PDF URL Yükleme – GroupDocs.Merger için Belge Yükleme Öğreticileri](/merger/java/document-loading/)
+- [PDF URL'si Java ile Nasıl Yüklenir – GroupDocs.Merger için Belge Yükleme Öğreticileri](/merger/java/document-loading/)
 - [GroupDocs.Merger for Java ile PDF'yi sayfalara böl](/merger/java/document-splitting/master-document-splitting-groupdocs-merger-java/)
-- [Java’da belirli sayfaları birleştir – GroupDocs.Merger ile Belgeleri Birleştirme](/merger/java/document-joining/join-pages-groupdocs-merger-java-tutorial/)
+- [Belirli sayfaları java ile birleştir – GroupDocs.Merger ile Belgeleri Birleştir](/merger/java/document-joining/join-pages-groupdocs-merger-java-tutorial/)

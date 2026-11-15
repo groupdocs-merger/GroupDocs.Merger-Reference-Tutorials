@@ -1,28 +1,29 @@
 ---
-date: 2026-08-31
-description: Guía paso a paso para extraer páginas específicas en Java usando GroupDocs.Merger
-  para Java.
+date: 2026-11-15
+description: Divida PDF Java con GroupDocs.Merger – aprenda cómo extraer páginas específicas,
+  manejar archivos grandes y mantener los metadatos intactos de manera rápida y eficiente
+  en memoria.
+images:
+- /java/document-extraction/og-image.png
 keywords:
+- split pdf java
 - extract specific pages java
-- split pdf pages java
-- split document java
-lastmod: 2026-08-31
-og_description: Aprende cómo extraer páginas específicas en Java usando GroupDocs.Merger.
-  Esta guía muestra la extracción paso a paso para PDFs, Word y más, con consejos
-  de rendimiento.
-og_image_alt: 'GroupDocs.Merger Java tutorial: extracting specific pages from documents'
-og_title: Extraer páginas específicas en Java con GroupDocs.Merger – Corte rápido
-  de documentos
+- GroupDocs.Merger Java
+- document slicing java
+lastmod: 2026-11-15
+og_description: Divida PDF Java con GroupDocs.Merger en segundos – esta guía muestra
+  cómo extraer páginas específicas, manejar archivos grandes y preservar los metadatos
+  de manera eficiente.
+og_image_alt: 'Guide: split PDF in Java using GroupDocs.Merger to extract pages'
+og_title: Cómo dividir PDF Java usando GroupDocs.Merger – segmentación rápida de documentos
 schemas:
 - author: GroupDocs
-  dateModified: '2026-08-31'
-  description: Step-by-step guide to extract specific pages java using GroupDocs.Merger
-    for Java.
-  headline: How to extract specific pages java with GroupDocs.Merger
+  dateModified: '2026-11-15'
+  description: Step‑by‑step guide to split pdf java using GroupDocs.Merger for Java.
+  headline: How to split pdf java using GroupDocs.Merger
   type: TechArticle
-- description: Step-by-step guide to extract specific pages java using GroupDocs.Merger
-    for Java.
-  name: How to extract specific pages java with GroupDocs.Merger
+- description: Step‑by‑step guide to split pdf java using GroupDocs.Merger for Java.
+  name: How to split pdf java using GroupDocs.Merger
   steps:
   - name: '**Load the source document** – Create a `Merger` instance and point it
       at the file you want to slice.'
@@ -68,18 +69,18 @@ schemas:
       metadata?
   type: FAQPage
 tags:
-- extract pages
+- split pdf
 - GroupDocs.Merger
 - Java document processing
-title: Cómo extraer páginas específicas en Java con GroupDocs.Merger
+title: Cómo dividir PDF Java con GroupDocs.Merger
 type: docs
 url: /es/java/document-extraction/
 weight: 9
 ---
 
-# Cómo extraer páginas específicas java con GroupDocs.Merger
+# Cómo dividir PDF Java usando GroupDocs.Merger
 
-Extraer las páginas correctas de un documento grande puede reducir drásticamente los costos de almacenamiento, acelerar el procesamiento posterior y hacer que el intercambio sea más focalizado. En este tutorial aprenderá **cómo extraer páginas específicas java** de PDFs, archivos Word y muchos otros formatos usando GroupDocs.Merger para Java. Recorreremos la extracción de una sola página, la extracción por rango de páginas y la selección de contenido personalizado para que pueda aplicar la técnica al instante en sus propios proyectos.
+Extraer solo las páginas que necesita de un PDF grande puede reducir drásticamente los costos de almacenamiento, acelerar el procesamiento posterior y mantener la información sensible fuera de los archivos compartidos. En este tutorial aprenderá **cómo dividir PDF Java** con GroupDocs.Merger, cubriendo la extracción de una sola página, el recorte por rango de páginas y la selección de contenido personalizado para PDFs, documentos Word y muchos otros formatos. Al final de la guía podrá integrar la división de páginas en cualquier proyecto Java 8+ con solo unas pocas líneas de código.
 
 ## Respuestas rápidas
 - **¿Cuál es el caso de uso principal?** Extraer páginas o secciones específicas de un documento más grande para reutilización o distribución.  
@@ -88,28 +89,38 @@ Extraer las páginas correctas de un documento grande puede reducir drásticamen
 - **¿Puedo extraer páginas de PDFs protegidos con contraseña?** Sí, proporcione la contraseña al cargar el documento.  
 - **¿Es la API compatible con Java 8+?** Absolutamente, soporta Java 8 y versiones posteriores.
 
-## Cómo extraer páginas específicas java usando GroupDocs.Merger?
+## Cómo extraer páginas específicas Java usando GroupDocs.Merger?
 
-La clase `Merger` es el componente central que carga un documento y proporciona operaciones de extracción.  
+Cargue el archivo fuente, indique a la API qué páginas necesita, llame a `extract()` y escriba el flujo devuelto en un nuevo archivo. **`extract()` extrae las páginas seleccionadas y las devuelve como un `InputStream` o las escribe directamente en un archivo.** Todo este flujo se ejecuta en memoria, finaliza en milisegundos para archivos típicos y nunca crea archivos temporales intermedios en disco.
 
-Cargue el archivo fuente con `new Merger("source.pdf")`, indique las páginas que necesita (p. ej., `5` o `10-20`), llame a `extract()` y escriba el flujo devuelto en un nuevo archivo. `extract()` devuelve un `InputStream` que contiene el nuevo documento con las páginas seleccionadas. Toda la operación se ejecuta en memoria, finaliza en milisegundos para archivos típicos y no requiere archivos temporales intermedios.
+### La clase `Merger`
 
-## ¿Qué significa “how to extract pages” en el contexto de GroupDocs.Merger?
+La clase `Merger` es el componente central de GroupDocs.Merger que representa un documento fuente único en memoria. Todas las operaciones de extracción, fusión y división se exponen a través de sus métodos.
 
-**La operación “how to extract pages” consiste en seleccionar una o más páginas de un documento fuente y crear un nuevo archivo independiente que contenga solo esas páginas.** Este proceso se realiza completamente en memoria, lo que elimina la sobrecarga de E/S de disco y lo hace seguro para escenarios de lotes grandes. GroupDocs.Merger analiza la estructura original, copia las páginas seleccionadas y preserva automáticamente los metadatos.
+1. **Cargar el documento fuente** – Crear una instancia de `Merger` y apuntarla al archivo que desea dividir.  
+2. **Definir las páginas** – Use un número de página único, un rango (`10-20`) o una lista (`[2,4,7]`).  
+3. **Llamar al método `extract`** – La API devuelve un nuevo `InputStream` o escribe directamente a un archivo.  
+4. **Guardar el resultado** – Persistir las páginas extraídas donde las necesite (disco local, almacenamiento en la nube, etc.).  
+5. **Liberar recursos** – Cerrar la instancia `Merger` para liberar memoria, especialmente al procesar muchos archivos en lote.
 
-## ¿Por qué es importante extraer páginas específicas java?
+> **Consejo profesional:** Reutilice una única instancia `Merger` para operaciones por lotes y reducir la sobrecarga de creación de objetos.
 
-Extraer páginas específicas java le permite conservar solo el contenido que realmente necesita, lo que se traduce en beneficios comerciales tangibles. Al recortar páginas innecesarias reduce los costos de almacenamiento, acelera las cargas/descargas y disminuye el tiempo de procesamiento para los servicios posteriores que consumen el archivo.
+## Qué significa “how to extract pages” en el contexto de GroupDocs.Merger?
 
-- **Eficiencia de almacenamiento:** Mantenga solo las páginas que necesita, reduciendo el tamaño del archivo.  
-- **Flujos de trabajo posteriores más rápidos:** Los archivos más pequeños significan cargas, descargas y procesamiento más rápidos.  
-- **Compartir dirigido:** Envíe solo la sección relevante a los interesados sin exponer todo el documento.  
+Significa seleccionar una o más páginas de un documento fuente y crear un nuevo archivo independiente que contenga solo esas páginas. La operación se realiza completamente en memoria, eliminando la sobrecarga de I/O en disco y haciéndola segura para escenarios de gran lote. GroupDocs.Merger analiza la estructura original, copia las páginas seleccionadas y preserva automáticamente los metadatos.
+
+## Por qué extraer páginas específicas Java es importante?
+
+Extraer páginas específicas Java le permite conservar solo el contenido que realmente necesita, lo que se traduce en beneficios comerciales tangibles. Al recortar páginas innecesarias reduce los costos de almacenamiento, acelera cargas/descargas y disminuye el tiempo de procesamiento para los servicios posteriores que consumen el archivo.
+
+- **Eficiencia de almacenamiento:** Mantenga solo las páginas que necesita, reduciendo el tamaño del archivo hasta un 80 % en informes típicos.  
+- **Flujos de trabajo posteriores más rápidos:** Archivos más pequeños significan cargas, descargas y procesamiento más rápidos.  
+- **Compartir de forma selectiva:** Envíe solo la sección relevante a los interesados sin exponer todo el documento.  
 - **Cumplimiento:** Elimine páginas sensibles antes de la distribución para cumplir con las regulaciones de privacidad.
 
-## ¿Por qué usar GroupDocs.Merger para Java para extraer páginas?
+## Por qué usar GroupDocs.Merger para Java para extraer páginas?
 
-GroupDocs.Merger for Java puede extraer páginas específicas java en menos de un segundo para la mayoría de los documentos, soporta **70+ input and output formats** y procesa archivos de hasta **2 GB** sin cargar todo el documento en memoria. Su API es deliberadamente simple, de modo que puede lograr cortes complejos con solo unas pocas líneas de código y aun así contar con una fiabilidad de nivel empresarial.
+GroupDocs.Merger for Java puede dividir PDF Java en menos de un segundo para la mayoría de los documentos, soporta **70+ input and output formats** y procesa archivos de hasta **2 GB** sin cargar todo el documento en memoria. Su API es deliberadamente simple, de modo que puede lograr recortes complejos con solo unas pocas líneas de código y aun así contar con una fiabilidad de nivel empresarial.
 
 ## Requisitos previos
 - Java 8 o posterior instalado.  
@@ -122,7 +133,7 @@ GroupDocs.Merger for Java puede extraer páginas específicas java en menos de u
 Aprenda a extraer de manera eficiente páginas específicas de documentos usando rangos de páginas con GroupDocs.Merger para Java. Domine la manipulación selectiva de datos y el procesamiento de documentos.
 
 ### [Cómo extraer páginas específicas de documentos usando GroupDocs.Merger para Java](./extract-pages-groupdocs-merger-java/)
-Aprenda a extraer de manera eficiente páginas específicas de PDFs, documentos Word y más usando GroupDocs.Merger para Java. Esta guía cubre la configuración, la implementación y casos de uso prácticos.
+Aprenda a extraer de manera eficiente páginas específicas de PDFs, documentos Word y más usando GroupDocs.Merger para Java. Esta guía cubre la configuración, implementación y casos de uso prácticos.
 
 ## Escenarios comunes de extracción
 
@@ -130,27 +141,25 @@ Aprenda a extraer de manera eficiente páginas específicas de PDFs, documentos 
 Si solo necesita la página 5 de un PDF, puede llamar a la API con un número de página único. Esto es útil para generar facturas, recibos o cualquier informe de una sola página.
 
 ### Extraer un rango de páginas
-Cuando necesita las páginas 10‑20, la función de rango le ahorra el bucle por cada página individualmente. Es ideal para dividir capítulos de libros electrónicos o extraer secciones de un contrato.
+Cuando necesita las páginas 10‑20, la función de rango le ahorra recorrer cada página individualmente. Es ideal para dividir capítulos de libros electrónicos o extraer secciones de un contrato.
 
 ### Extraer contenido personalizado (p. ej., tablas o imágenes específicas)
 GroupDocs.Merger también le permite seleccionar contenido basado en la estructura del documento, lo que le permite aislar tablas, imágenes o encabezados sin contar manualmente las páginas.
 
-## Guía paso a paso para extraer páginas específicas java
+## Guía paso a paso para extraer páginas específicas Java
 
-**La clase `Merger` es el componente central de GroupDocs.Merger que carga un documento fuente y proporciona métodos de extracción.** Usar una única instancia para múltiples operaciones reduce la sobrecarga de creación de objetos y mejora el rendimiento.
+La clase `Merger` es el componente central de GroupDocs.Merger que carga un documento fuente y proporciona métodos de extracción. Usar una única instancia para múltiples operaciones reduce la sobrecarga de creación de objetos y mejora el rendimiento.
 
-1. **Cargar el documento fuente** – Cree una instancia `Merger` y apúntela al archivo que desea dividir.  
+1. **Cargar el documento fuente** – Crear una instancia de `Merger` y apuntarla al archivo que desea dividir.  
 2. **Definir las páginas** – Use un número de página único, un rango (`10-20`) o una lista (`[2,4,7]`).  
 3. **Llamar al método `extract`** – La API devuelve un nuevo `InputStream` o escribe directamente a un archivo.  
-4. **Guardar el resultado** – Persista las páginas extraídas donde las necesite (disco local, almacenamiento en la nube, etc.).  
-5. **Liberar recursos** – Cierre la instancia `Merger` para liberar memoria, especialmente al procesar muchos archivos en lote.  
+4. **Guardar el resultado** – Persistir las páginas extraídas donde las necesite (disco local, almacenamiento en la nube, etc.).  
+5. **Liberar recursos** – Cerrar la instancia `Merger` para liberar memoria, especialmente al procesar muchos archivos en lote.
 
-> **Pro tip:** Reutilice una única instancia `Merger` para operaciones por lotes y reduzca la sobrecarga de creación de objetos.
-
-## Consejos y buenas prácticas
+## Consejos y mejores prácticas
 - **Validar los números de página** contra el recuento total de páginas del documento fuente para evitar `IndexOutOfBoundsException`.  
 - **Consejo de rendimiento:** Reutilice una única instancia `Merger` al procesar muchos archivos en lote.  
-- **Consejo de seguridad:** Almacene su archivo de licencia fuera del directorio raíz web y cárguelo de forma segura en tiempo de ejecución.
+- **Consejo de seguridad:** Guarde su archivo de licencia fuera del directorio raíz web y cárguelo de forma segura en tiempo de ejecución.
 
 ## Recursos adicionales
 
@@ -170,33 +179,31 @@ A: Sí. Proporcione la contraseña al abrir el documento con el constructor `Mer
 A: Absolutamente. Los mismos métodos `extract` funcionan para DOCX, PPTX y otros formatos compatibles.
 
 **Q: ¿Cómo manejo documentos grandes sin quedarme sin memoria?**  
-A: Use la API de transmisión (`Merger.open(..., LoadOptions)`), que procesa el archivo en fragmentos.  
-`LoadOptions` permite configurar el modo de transmisión para procesar archivos grandes sin cargarlos completamente en memoria.
+A: Use la API de streaming (`Merger.open(..., LoadOptions)`), que procesa el archivo en fragmentos. `LoadOptions` permite configurar el modo de streaming para procesar archivos grandes sin cargarlos completamente en memoria.
 
 **Q: ¿Cuál es la diferencia entre “java extract pdf pages” y “extract pdf pages java”?**  
-A: Son variaciones semánticas del mismo concepto—ambas se refieren a usar código Java para extraer páginas de un archivo PDF. La API las trata idénticamente.
+A: Son variaciones semánticas del mismo concepto: ambos se refieren a usar código Java para extraer páginas de un archivo PDF. La API los trata idénticamente.
 
 **Q: ¿Existe una forma de extraer páginas y preservar los metadatos del documento original?**  
-A: Sí. Por defecto, los metadatos se copian al nuevo archivo; también puede modificarlos mediante el objeto `DocumentInfo` si es necesario.  
-`DocumentInfo` brinda acceso a los metadatos de un documento y permite modificaciones.
+A: Sí. Por defecto, los metadatos se copian al nuevo archivo; también puede modificarlos mediante el objeto `DocumentInfo` si es necesario. `DocumentInfo` brinda acceso a los metadatos de un documento y permite modificaciones.
 
 ## Problemas comunes y soluciones
 
-| Problema | Causa | Solución |
-|----------|-------|----------|
-| `IndexOutOfBoundsException` | El número de página solicitado supera la longitud del documento | Verifique `document.getPageCount()` antes de la extracción |
-| Empty output file | Formato de rango de página incorrecto (p. ej., “5‑”) | Utilice la sintaxis de rango inclusivo (`5-5`) o una lista de enteros |
-| License not found | Ruta del archivo de licencia incorrecta o falta | `License` es la clase utilizada para aplicar una licencia GroupDocs a la API. Cargue la licencia con `License license = new License(); license.setLicense("path/to/license.lic");` |
-| Slow performance on large PDFs | Cargar todo el archivo en memoria | Cambie al modo de transmisión con `LoadOptions` y establezca `useMemoryCache = false` |
+| Issue | Cause | Solution |
+|-------|-------|----------|
+| `IndexOutOfBoundsException` | Requested page number exceeds document length | Verify `document.getPageCount()` before extraction |
+| Empty output file | Wrong page range format (e.g., “5‑”) | Use inclusive range syntax (`5-5`) or a list of integers |
+| License not found | License file path incorrect or missing | `License` is the class used to apply a GroupDocs license to the API. Load the license with `License license = new License(); license.setLicense("path/to/license.lic");` |
+| Slow performance on large PDFs | Loading entire file into memory | Switch to streaming mode with `LoadOptions` and set `useMemoryCache = false` |
 
 ---
 
-**Última actualización:** 2026-08-31  
+**Última actualización:** 2026-11-15  
 **Probado con:** GroupDocs.Merger for Java 23.9  
 **Autor:** GroupDocs
 
 ## Tutoriales relacionados
 
-- [Cómo cargar PDF URL Java – Tutoriales de carga de documentos para GroupDocs.Merger](/merger/java/document-loading/)
+- [Cómo cargar PDF desde URL Java – Tutoriales de carga de documentos para GroupDocs.Merger](/merger/java/document-loading/)
 - [Dividir PDF en páginas con GroupDocs.Merger para Java](/merger/java/document-splitting/master-document-splitting-groupdocs-merger-java/)
 - [Combinar páginas específicas java – Unir documentos con GroupDocs.Merger](/merger/java/document-joining/join-pages-groupdocs-merger-java-tutorial/)

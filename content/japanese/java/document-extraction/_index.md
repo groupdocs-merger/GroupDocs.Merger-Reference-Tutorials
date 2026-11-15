@@ -1,25 +1,25 @@
 ---
-date: 2026-08-31
-description: Java 用 GroupDocs.Merger を使用して特定ページを抽出する手順ガイド
+date: 2026-11-15
+description: GroupDocs.Merger で pdf java を分割 – 特定のページを抽出し、大容量ファイルを処理し、メタデータをそのまま保持する、迅速でメモリ効率の高い方法をご紹介します。
+images:
+- /java/document-extraction/og-image.png
 keywords:
+- split pdf java
 - extract specific pages java
-- split pdf pages java
-- split document java
-lastmod: 2026-08-31
-og_description: GroupDocs.Merger を使用して Java の特定ページを抽出する方法を学びましょう。このガイドでは、PDF、Word
-  などのステップバイステップ抽出手順とパフォーマンス向上のヒントを紹介します。
-og_image_alt: 'GroupDocs.Merger Java tutorial: extracting specific pages from documents'
-og_title: GroupDocs.Merger で Java の特定ページを抽出 – 高速ドキュメントスライシング
+- GroupDocs.Merger Java
+- document slicing java
+lastmod: 2026-11-15
+og_description: 数秒で pdf java を分割 – 本ガイドでは、特定のページを抽出し、大容量ファイルを処理し、メタデータを効率的に保持する方法を示します。
+og_image_alt: 'Guide: split PDF in Java using GroupDocs.Merger to extract pages'
+og_title: GroupDocs.Merger を使用した pdf java の分割 – fast document slicing
 schemas:
 - author: GroupDocs
-  dateModified: '2026-08-31'
-  description: Step-by-step guide to extract specific pages java using GroupDocs.Merger
-    for Java.
-  headline: How to extract specific pages java with GroupDocs.Merger
+  dateModified: '2026-11-15'
+  description: Step‑by‑step guide to split pdf java using GroupDocs.Merger for Java.
+  headline: How to split pdf java using GroupDocs.Merger
   type: TechArticle
-- description: Step-by-step guide to extract specific pages java using GroupDocs.Merger
-    for Java.
-  name: How to extract specific pages java with GroupDocs.Merger
+- description: Step‑by‑step guide to split pdf java using GroupDocs.Merger for Java.
+  name: How to split pdf java using GroupDocs.Merger
   steps:
   - name: '**Load the source document** – Create a `Merger` instance and point it
       at the file you want to slice.'
@@ -65,61 +65,71 @@ schemas:
       metadata?
   type: FAQPage
 tags:
-- extract pages
+- split pdf
 - GroupDocs.Merger
 - Java document processing
-title: GroupDocs.Merger を使用した Java の特定ページ抽出方法
+title: GroupDocs.Merger を使用した pdf java の分割方法
 type: docs
 url: /ja/java/document-extraction/
 weight: 9
 ---
 
-# GroupDocs.Merger を使用した Java で特定ページの抽出方法
+# GroupDocs.Merger を使用した pdf java の分割方法
 
-大きなドキュメントから適切なページを抽出することで、ストレージコストを大幅に削減し、下流処理を高速化し、共有をより的確にできます。このチュートリアルでは、GroupDocs.Merger for Java を使用して PDF、Word ファイル、その他多数のフォーマットから **how to extract specific pages java** を学びます。単一ページ抽出、ページ範囲抽出、カスタムコンテンツ選択を順に解説し、すぐに自分のプロジェクトで技術を適用できるようにします。
+大きな PDF から必要なページだけを抽出することで、ストレージコストを大幅に削減し、下流の処理を高速化し、機密情報が共有ファイルに含まれないようにできます。このチュートリアルでは GroupDocs.Merger を使用して **how to split pdf java** を学び、単一ページの抽出、ページ範囲のスライシング、PDF、Word ドキュメント、その他多数のフォーマット向けのカスタムコンテンツ選択をカバーします。ガイドの最後までに、数行のコードだけで任意の Java 8+ プロジェクトにページ分割を統合できるようになります。
 
-## 簡単な回答
-- **主なユースケースは何ですか？** 大きなドキュメントから特定のページやセクションを抽出し、再利用または配布することです。  
+## クイック回答
+- **主な使用ケースは何ですか？** 大きなドキュメントから特定のページやセクションを抽出し、再利用または配布するために使用します。  
 - **抽出を処理するライブラリはどれですか？** GroupDocs.Merger for Java。  
-- **ライセンスは必要ですか？** テスト用には一時ライセンスで動作しますが、本番環境ではフルライセンスが必要です。  
-- **パスワードで保護された PDF からページを抽出できますか？** はい、ドキュメントを読み込む際にパスワードを指定してください。  
+- **ライセンスは必要ですか？** テスト用の一時ライセンスで動作しますが、本番環境ではフルライセンスが必要です。  
+- **パスワード保護された PDF からページを抽出できますか？** はい、ドキュメントをロードする際にパスワードを指定してください。  
 - **API は Java 8+ と互換性がありますか？** もちろんです – Java 8 以降をサポートしています。
 
-## GroupDocs.Merger を使用して Java で特定ページを抽出する方法？
+## GroupDocs.Merger を使用した特定ページの抽出方法（java）
 
-`Merger` クラスは、ドキュメントを読み込み抽出操作を提供するコアコンポーネントです。  
+ソースファイルをロードし、必要なページを API に指示し、`extract()` を呼び出して、返されたストリームを新しいファイルに書き込みます。**`extract()` は選択したページを抽出し、`InputStream` として返すか、直接ファイルに書き込みます。** この全体のフローはメモリ上で実行され、典型的なファイルではミリ秒単位で完了し、ディスク上に中間の一時ファイルを作成しません。
 
-`new Merger("source.pdf")` でソースファイルをロードし、必要なページ（例: `5` または `10-20`）を指定して `extract()` を呼び出し、返されたストリームを新しいファイルに書き込みます。`extract()` は選択したページを含む新しいドキュメントを保持する `InputStream` を返します。全操作はメモリ内で実行され、典型的なファイルでは数ミリ秒で完了し、途中の一時ファイルは不要です。
+### `Merger` クラス
+
+`Merger` クラスは GroupDocs.Merger のコアコンポーネントで、メモリ内の単一ソースドキュメントを表します。すべての抽出、マージ、分割操作はそのメソッドを通じて利用できます。
+
+1. **ソースドキュメントをロード** – `Merger` インスタンスを作成し、スライスしたいファイルを指定します。  
+2. **ページを定義** – 単一ページ番号、範囲 (`10-20`) またはリスト (`[2,4,7]`) を使用します。  
+3. **`extract` メソッドを呼び出す** – API は新しい `InputStream` を返すか、直接ファイルに書き込みます。  
+4. **結果を保存** – 抽出したページを必要な場所（ローカルディスク、クラウドストレージ等）に永続化します。  
+5. **リソースを解放** – `Merger` インスタンスを閉じてメモリを解放します。特にバッチで多数のファイルを処理する場合は重要です。  
+
+> **Pro tip:** バッチ処理でオブジェクト生成のオーバーヘッドを減らすために、単一の `Merger` インスタンスを再利用してください。
 
 ## GroupDocs.Merger のコンテキストで「how to extract pages」とは何ですか？
 
-**The “how to extract pages” operation means selecting one or more pages from a source document and creating a new, standalone file that contains only those pages.** このプロセスは完全にメモリ内で実行され、ディスク I/O のオーバーヘッドを排除し、大規模バッチシナリオでも安全です。GroupDocs.Merger は元の構造を解析し、選択したページをコピーし、メタデータを自動的に保持します。
+これは、ソースドキュメントから1ページまたは複数ページを選択し、それらのページだけを含む新しい単独ファイルを作成することを意味します。この操作は完全にメモリ上で実行され、ディスク I/O のオーバーヘッドを排除し、大規模バッチシナリオでも安全です。GroupDocs.Merger は元の構造を解析し、選択したページをコピーし、メタデータを自動的に保持します。
 
-## Java で特定ページを抽出することが重要な理由は？
+## 特定ページを抽出する（java）が重要な理由は何ですか？
 
-Java で特定ページを抽出することで、実際に必要なコンテンツだけを保持でき、具体的なビジネス上のメリットにつながります。不要なページを削減することで、ストレージコストを下げ、アップロード/ダウンロードを高速化し、ファイルを利用する下流サービスの処理時間を短縮します。
+特定ページを抽出する（java）ことで、実際に必要なコンテンツだけを保持でき、具体的なビジネス上のメリットにつながります。不要なページを削減することで、ストレージコストを下げ、アップロード/ダウンロードを高速化し、ファイルを利用する下流サービスの処理時間を短縮できます。
 
-- **ストレージ効率:** 必要なページだけを保持し、ファイルサイズを削減します。  
-- **下流ワークフローの高速化:** 小さなファイルはアップロード、ダウンロード、処理が迅速になります。  
-- **ターゲット共有:** 全体ドキュメントを公開せず、関係者に関連部分だけを送信できます。  
-- **コンプライアンス:** 配布前に機密ページを削除し、プライバシー規制に対応します。
+- **Storage efficiency:** 必要なページだけを保持し、典型的なレポートでファイルサイズを最大 80 % 短縮します。  
+- **Faster downstream workflows:** ファイルが小さいほど、アップロード、ダウンロード、処理が迅速になります。  
+- **Targeted sharing:** 関係者に全体文書を公開せず、関連するセクションだけを送信できます。  
+- **Compliance:** 配布前に機密ページを削除し、プライバシー規制に準拠します。
 
-## ページ抽出に GroupDocs.Merger for Java を使用する理由は？
+## ページ抽出に GroupDocs.Merger for Java を使用する理由は何ですか？
 
-GroupDocs.Merger for Java は、ほとんどのドキュメントで 1 秒未満で特定ページを抽出でき、**70 以上の入力および出力フォーマット**をサポートし、**2 GB**までのファイルをドキュメント全体をメモリにロードせずに処理します。その API は意図的にシンプルで、数行のコードだけで高度なスライシングが可能でありながら、エンタープライズレベルの信頼性を備えています。
+GroupDocs.Merger for Java はほとんどのドキュメントで pdf java を 1 秒未満で分割でき、**70 以上の入力および出力フォーマット**をサポートし、**2 GB** までのファイルをメモリに全体をロードせずに処理できます。その API は意図的にシンプルで、数行のコードだけで高度なスライシングを実現でき、エンタープライズレベルの信頼性も備えています。
 
 ## 前提条件
 - Java 8 以降がインストールされていること。  
-- プロジェクトに GroupDocs.Merger for Java ライブラリを追加 (Maven/Gradle)。  
-- 有効な（または一時的な）GroupDocs ライセンスファイル。  
+- プロジェクトに GroupDocs.Merger for Java ライブラリが追加されていること（Maven/Gradle）。  
+- 有効な（または一時的な）GroupDocs ライセンスファイル。
 
 ## 利用可能なチュートリアル
 
 ### [GroupDocs.Merger for Java を使用した範囲指定ページ抽出：完全ガイド](./extract-pages-groupdocs-merger-java-guide/)
-GroupDocs.Merger for Java を使用してページ範囲でドキュメントから特定ページを効率的に抽出する方法を学びます。選択的データ操作とドキュメント処理のマスターになります。
+GroupDocs.Merger for Java を使用してページ範囲でドキュメントから特定のページを効率的に抽出する方法を学びます。選択的データ操作とドキュメント処理をマスターしましょう。
 
-### [GroupDocs.Merger for Java を使用してドキュメントから特定ページを抽出する方法](./extract-pages-groupdocs-merger-java/)
-GroupDocs.Merger for Java を使用して PDF、Word ドキュメントなどから特定ページを効率的に抽出する方法を学びます。このガイドではセットアップ、実装、実用的なユースケースをカバーします。
+### [GroupDocs.Merger for Java を使用したドキュメントから特定ページを抽出する方法](./extract-pages-groupdocs-merger-java/)
+GroupDocs.Merger for Java を使用して、PDF、Word ドキュメントなどから特定のページを効率的に抽出する方法を学びます。このガイドではセットアップ、実装、実用的なユースケースをカバーします。
 
 ## 一般的な抽出シナリオ
 
@@ -127,27 +137,25 @@ GroupDocs.Merger for Java を使用して PDF、Word ドキュメントなどか
 PDF のページ 5 だけが必要な場合、単一のページ番号で API を呼び出すことができます。請求書、領収書、または任意の 1 ページレポートの生成に便利です。
 
 ### ページ範囲の抽出
-ページ 10‑20 が必要な場合、範囲機能を使用すると各ページを個別にループする手間が省けます。電子書籍の章分割や契約書のセクション抽出に最適です。
+ページ 10‑20 が必要な場合、範囲機能を使用すると各ページを個別にループする手間が省けます。電子書籍の章を分割したり、契約書のセクションを抽出したりするのに最適です。
 
 ### カスタムコンテンツの抽出（例：特定のテーブルや画像）
-GroupDocs.Merger はドキュメント構造に基づいてコンテンツを選択でき、手動でページを数えることなくテーブル、画像、見出しなどを抽出できます。
+GroupDocs.Merger はドキュメント構造に基づいてコンテンツを選択でき、手動でページを数えることなくテーブル、画像、見出しなどを分離できます。
 
-## Java で特定ページを抽出するステップバイステップガイド
+## 特定ページ抽出（java）のステップバイステップガイド
 
-**The `Merger` class is GroupDocs.Merger's core component that loads a source document and provides extraction methods.** 複数の操作で単一インスタンスを使用することで、オブジェクト生成のオーバーヘッドを削減し、スループットが向上します。
+`Merger` クラスは GroupDocs.Merger のコアコンポーネントで、ソースドキュメントをロードし抽出メソッドを提供します。単一インスタンスを複数の操作で使用することで、オブジェクト生成のオーバーヘッドを削減し、スループットが向上します。
 
-1. **ソースドキュメントをロード** – スライスしたいファイルを指す `Merger` インスタンスを作成します。  
-2. **ページを定義** – 単一ページ番号、範囲 (`10-20`)、またはリスト (`[2,4,7]`) を使用します。  
+1. **ソースドキュメントをロード** – `Merger` インスタンスを作成し、スライスしたいファイルを指定します。  
+2. **ページを定義** – 単一ページ番号、範囲 (`10-20`) またはリスト (`[2,4,7]`) を使用します。  
 3. **`extract` メソッドを呼び出す** – API は新しい `InputStream` を返すか、直接ファイルに書き込みます。  
 4. **結果を保存** – 抽出したページを必要な場所（ローカルディスク、クラウドストレージ等）に永続化します。  
-5. **リソースを解放** – バッチで多数のファイルを処理する際は、メモリ解放のために `Merger` インスタンスを閉じます。  
-
-> **プロのコツ:** バッチ操作で単一の `Merger` インスタンスを再利用し、オブジェクト生成のオーバーヘッドを削減します。
+5. **リソースを解放** – `Merger` インスタンスを閉じてメモリを解放します。特にバッチで多数のファイルを処理する場合は重要です。
 
 ## ヒントとベストプラクティス
-- **ページ番号を検証** – ソースドキュメントの総ページ数と照らし合わせて `IndexOutOfBoundsException` を回避します。  
-- **パフォーマンスのコツ:** バッチで多数のファイルを処理する際は単一の `Merger` インスタンスを再利用します。  
-- **セキュリティのコツ:** ライセンスファイルをウェブルート外に保存し、実行時に安全にロードします。
+- **ページ番号を検証** ソースドキュメントの総ページ数と照らし合わせて `IndexOutOfBoundsException` を回避してください。  
+- **パフォーマンスのヒント:** バッチで多数のファイルを処理する際は単一の `Merger` インスタンスを再利用してください。  
+- **セキュリティのヒント:** ライセンスファイルをウェブルート外に保存し、実行時に安全にロードしてください。
 
 ## 追加リソース
 - [GroupDocs.Merger for Java ドキュメント](https://docs.groupdocs.com/merger/java/)
@@ -159,36 +167,38 @@ GroupDocs.Merger はドキュメント構造に基づいてコンテンツを選
 
 ## よくある質問
 
-**Q: パスワードで保護された PDF からページを抽出できますか？**  
+**Q: パスワード保護された PDF からページを抽出できますか？**  
 A: はい。`Merger` コンストラクタでドキュメントを開く際にパスワードを指定してください。
 
 **Q: API は PDF だけでなく Word ドキュメントからのページ抽出もサポートしていますか？**  
-A: もちろんです。同じ `extract` メソッドは DOCX、PPTX、その他のサポートフォーマットでも機能します。
+A: もちろんです。同じ `extract` メソッドは DOCX、PPTX などの他のサポートフォーマットでも機能します。
 
 **Q: 大きなドキュメントでメモリ不足にならないようにするには？**  
-A: ストリーミング API (`Merger.open(..., LoadOptions)`) を使用し、ファイルをチャンクで処理します。`LoadOptions` でストリーミングモードを設定でき、ファイル全体をメモリに読み込まずに処理できます。
+A: ストリーミング API（`Merger.open(..., LoadOptions)`）を使用し、ファイルをチャンク単位で処理します。`LoadOptions` でストリーミングモードを設定でき、ファイル全体をメモリにロードせずに大きなファイルを処理できます。
 
 **Q: “java extract pdf pages” と “extract pdf pages java” の違いは何ですか？**  
-A: 同じ概念の表現の違いで、どちらも Java コードで PDF のページを抽出することを指します。API は同様に扱います。
+A: 同じ概念の表現の違いであり、どちらも Java コードで PDF ファイルからページを抽出することを指します。API は同様に扱います。
 
 **Q: ページを抽出し、元のドキュメントのメタデータを保持する方法はありますか？**  
-A: はい。デフォルトでメタデータは新しいファイルにコピーされ、必要に応じて `DocumentInfo` オブジェクトで変更可能です。`DocumentInfo` はドキュメントのメタデータへのアクセスと変更を提供します。
+A: はい。デフォルトでメタデータは新しいファイルにコピーされます。必要に応じて `DocumentInfo` オブジェクトを使用して変更することも可能です。`DocumentInfo` はドキュメントのメタデータへのアクセスと変更を提供します。
 
 ## 一般的な問題と解決策
 
 | 問題 | 原因 | 解決策 |
 |------|------|--------|
 | `IndexOutOfBoundsException` | 要求されたページ番号がドキュメントの長さを超えています | 抽出前に `document.getPageCount()` を確認してください |
-| 出力ファイルが空 | ページ範囲の形式が間違っている（例: “5‑”） | 包括的な範囲構文 (`5-5`) または整数のリストを使用してください |
-| ライセンスが見つからない | ライセンスファイルのパスが間違っているか、存在しません | `License` は API に GroupDocs ライセンスを適用するためのクラスです。以下のようにライセンスをロードしてください: `License license = new License(); license.setLicense("path/to/license.lic");` |
+| 出力ファイルが空 | ページ範囲の形式が間違っています（例: “5‑”） | 包括的な範囲構文（`5-5`）または整数のリストを使用してください |
+| ライセンスが見つかりません | ライセンスファイルのパスが間違っているか、存在しません | `License` は API に GroupDocs ライセンスを適用するためのクラスです。以下のようにライセンスをロードしてください：`License license = new License(); license.setLicense("path/to/license.lic");` |
 | 大きな PDF でのパフォーマンス低下 | ファイル全体をメモリにロードしている | `LoadOptions` を使用してストリーミングモードに切り替え、`useMemoryCache = false` を設定してください |
 
-**最終更新日:** 2026-08-31  
+---
+
+**最終更新日:** 2026-11-15  
 **テスト環境:** GroupDocs.Merger for Java 23.9  
 **作者:** GroupDocs
 
 ## 関連チュートリアル
 
-- [GroupDocs.Merger 用 PDF URL のロード方法 – ドキュメントロードチュートリアル](/merger/java/document-loading/)
-- [GroupDocs.Merger for Java で PDF をページに分割](/merger/java/document-splitting/master-document-splitting-groupdocs-merger-java/)
-- [特定ページを Java で結合 – GroupDocs.Merger でドキュメント結合](/merger/java/document-joining/join-pages-groupdocs-merger-java-tutorial/)
+- [GroupDocs.Merger のドキュメントロードチュートリアル – PDF URL を Java でロードする方法](/merger/java/document-loading/)
+- [GroupDocs.Merger for Java を使用した PDF のページ分割](/merger/java/document-splitting/master-document-splitting-groupdocs-merger-java/)
+- [特定ページを Java でマージ – GroupDocs.Merger でドキュメントを結合](/merger/java/document-joining/join-pages-groupdocs-merger-java-tutorial/)

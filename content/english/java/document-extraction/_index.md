@@ -1,28 +1,28 @@
 ---
-date: 2026-08-31
-description: Step-by-step guide to extract specific pages java using GroupDocs.Merger
-  for Java.
+date: 2026-11-15
+description: Split pdf java with GroupDocs.Merger – learn how to extract specific
+  pages, handle large files, and keep metadata intact in a fast, memory‑efficient
+  way.
 images:
 - /java/document-extraction/og-image.png
 keywords:
+- split pdf java
 - extract specific pages java
-- split pdf pages java
-- split document java
-lastmod: 2026-08-31
-og_description: Learn how to extract specific pages java using GroupDocs.Merger. This
-  guide shows step‑by‑step extraction for PDFs, Word, and more, with performance tips.
-og_image_alt: 'GroupDocs.Merger Java tutorial: extracting specific pages from documents'
-og_title: Extract specific pages java with GroupDocs.Merger – Fast document slicing
+- GroupDocs.Merger Java
+- document slicing java
+lastmod: 2026-11-15
+og_description: Split pdf java with GroupDocs.Merger in seconds – this guide shows
+  how to extract specific pages, handle large files, and preserve metadata efficiently.
+og_image_alt: 'Guide: split PDF in Java using GroupDocs.Merger to extract pages'
+og_title: How to split pdf java using GroupDocs.Merger – fast document slicing
 schemas:
 - author: GroupDocs
-  dateModified: '2026-08-31'
-  description: Step-by-step guide to extract specific pages java using GroupDocs.Merger
-    for Java.
-  headline: How to extract specific pages java with GroupDocs.Merger
+  dateModified: '2026-11-15'
+  description: Step‑by‑step guide to split pdf java using GroupDocs.Merger for Java.
+  headline: How to split pdf java using GroupDocs.Merger
   type: TechArticle
-- description: Step-by-step guide to extract specific pages java using GroupDocs.Merger
-    for Java.
-  name: How to extract specific pages java with GroupDocs.Merger
+- description: Step‑by‑step guide to split pdf java using GroupDocs.Merger for Java.
+  name: How to split pdf java using GroupDocs.Merger
   steps:
   - name: '**Load the source document** – Create a `Merger` instance and point it
       at the file you want to slice.'
@@ -68,18 +68,18 @@ schemas:
       metadata?
   type: FAQPage
 tags:
-- extract pages
+- split pdf
 - GroupDocs.Merger
 - Java document processing
-title: How to extract specific pages java with GroupDocs.Merger
+title: How to split pdf java using GroupDocs.Merger
 type: docs
 url: /java/document-extraction/
 weight: 9
 ---
 
-# How to extract specific pages java with GroupDocs.Merger
+# How to split pdf java using GroupDocs.Merger
 
-Extracting the right pages from a large document can dramatically reduce storage costs, speed up downstream processing, and make sharing more focused. In this tutorial you’ll learn **how to extract specific pages java** from PDFs, Word files, and many other formats using GroupDocs.Merger for Java. We’ll walk through single‑page extraction, page‑range extraction, and custom content selection so you can apply the technique instantly in your own projects.
+Extracting only the pages you need from a large PDF can dramatically cut storage costs, speed up downstream processing, and keep sensitive information out of shared files. In this tutorial you’ll learn **how to split pdf java** with GroupDocs.Merger, covering single‑page extraction, page‑range slicing, and custom content selection for PDFs, Word documents, and many other formats. By the end of the guide you’ll be able to integrate page‑splitting into any Java 8+ project with just a few lines of code.
 
 ## Quick answers
 - **What is the primary use case?** Pulling specific pages or sections from a larger document for reuse or distribution.  
@@ -90,26 +90,36 @@ Extracting the right pages from a large document can dramatically reduce storage
 
 ## How to extract specific pages java using GroupDocs.Merger?
 
-The `Merger` class is the core component that loads a document and provides extraction operations.  
+Load the source file, tell the API which pages you need, call `extract()`, and write the returned stream to a new file. **`extract()` extracts the selected pages and returns them as an `InputStream` or writes them directly to a file.** This whole flow runs in memory, finishes in milliseconds for typical files, and never creates intermediate temporary files on disk.
 
-Load the source file with `new Merger("source.pdf")`, specify the pages you need (e.g., `5` or `10-20`), call `extract()` and write the returned stream to a new file. `extract()` returns an `InputStream` containing the new document with the selected pages. The whole operation runs in memory, finishes in milliseconds for typical files, and requires no intermediate temporary files.
+### The `Merger` class
+
+The `Merger` class is GroupDocs.Merger's core component that represents a single source document in memory. All extraction, merging, and splitting operations are exposed through its methods.
+
+1. **Load the source document** – Create a `Merger` instance and point it at the file you want to slice.  
+2. **Define the pages** – Use a single‑page number, a range (`10-20`), or a list (`[2,4,7]`).  
+3. **Call the `extract` method** – The API returns a new `InputStream` or writes directly to a file.  
+4. **Save the result** – Persist the extracted pages wherever you need them (local disk, cloud storage, etc.).  
+5. **Dispose resources** – Close the `Merger` instance to free memory, especially when processing many files in a batch.
+
+> **Pro tip:** Reuse a single `Merger` instance for batch operations to reduce object‑creation overhead.
 
 ## What is “how to extract pages” in the context of GroupDocs.Merger?
 
-**The “how to extract pages” operation means selecting one or more pages from a source document and creating a new, standalone file that contains only those pages.** This process is performed entirely in memory, which eliminates disk‑I/O overhead and makes it safe for large‑batch scenarios. GroupDocs.Merger parses the original structure, copies the selected pages, and preserves metadata automatically.
+It means selecting one or more pages from a source document and creating a new, standalone file that contains only those pages. The operation is performed entirely in memory, eliminating disk‑I/O overhead and making it safe for large‑batch scenarios. GroupDocs.Merger parses the original structure, copies the selected pages, and automatically preserves metadata.
 
 ## Why extract specific pages java matters?
 
 Extracting specific pages java lets you keep only the content you actually need, which translates into tangible business benefits. By trimming unnecessary pages you lower storage costs, accelerate uploads/downloads, and reduce processing time for downstream services that consume the file.
 
-- **Storage efficiency:** Keep only the pages you need, cutting down file size.  
+- **Storage efficiency:** Keep only the pages you need, cutting down file size by up to 80 % for typical reports.  
 - **Faster downstream workflows:** Smaller files mean quicker uploads, downloads, and processing.  
 - **Targeted sharing:** Send just the relevant section to stakeholders without exposing the whole document.  
 - **Compliance:** Remove sensitive pages before distribution to meet privacy regulations.
 
 ## Why use GroupDocs.Merger for Java to extract pages?
 
-GroupDocs.Merger for Java can extract specific pages java in under a second for most documents, supports **70+ input and output formats**, and processes files up to **2 GB** without loading the entire document into memory. Its API is deliberately simple, so you can achieve complex slicing with just a few lines of code while still having enterprise‑grade reliability.
+GroupDocs.Merger for Java can split pdf java in under a second for most documents, supports **70+ input and output formats**, and processes files up to **2 GB** without loading the entire document into memory. Its API is deliberately simple, so you can achieve complex slicing with just a few lines of code while still having enterprise‑grade reliability.
 
 ## Prerequisites
 - Java 8 or later installed.  
@@ -137,15 +147,13 @@ GroupDocs.Merger also allows you to select content based on document structure, 
 
 ## Step‑by‑step guide to extract specific pages java
 
-**The `Merger` class is GroupDocs.Merger's core component that loads a source document and provides extraction methods.** Using a single instance for multiple operations reduces object‑creation overhead and improves throughput.
+The `Merger` class is GroupDocs.Merger's core component that loads a source document and provides extraction methods. Using a single instance for multiple operations reduces object‑creation overhead and improves throughput.
 
 1. **Load the source document** – Create a `Merger` instance and point it at the file you want to slice.  
 2. **Define the pages** – Use a single‑page number, a range (`10-20`), or a list (`[2,4,7]`).  
 3. **Call the `extract` method** – The API returns a new `InputStream` or writes directly to a file.  
 4. **Save the result** – Persist the extracted pages wherever you need them (local disk, cloud storage, etc.).  
 5. **Dispose resources** – Close the `Merger` instance to free memory, especially when processing many files in a batch.
-
-> **Pro tip:** Reuse a single `Merger` instance for batch operations to reduce object‑creation overhead.
 
 ## Tips & best practices
 - **Validate page numbers** against the source document’s total page count to avoid `IndexOutOfBoundsException`.  
@@ -170,15 +178,13 @@ A: Yes. Provide the password when opening the document with the `Merger` constru
 A: Absolutely. The same `extract` methods work for DOCX, PPTX, and other supported formats.
 
 **Q: How do I handle large documents without running out of memory?**  
-A: Use the streaming API (`Merger.open(..., LoadOptions)`), which processes the file in chunks.  
-`LoadOptions` allows configuring streaming mode to process large files without loading them entirely into memory.
+A: Use the streaming API (`Merger.open(..., LoadOptions)`), which processes the file in chunks. `LoadOptions` allows configuring streaming mode to process large files without loading them entirely into memory.
 
 **Q: What is the difference between “java extract pdf pages” and “extract pdf pages java”?**  
 A: They are semantic variations of the same concept—both refer to using Java code to pull pages from a PDF file. The API treats them identically.
 
 **Q: Is there a way to extract pages and preserve the original document’s metadata?**  
-A: Yes. By default, metadata is copied to the new file; you can also modify it via the `DocumentInfo` object if needed.  
-`DocumentInfo` provides access to a document’s metadata and allows modifications.
+A: Yes. By default, metadata is copied to the new file; you can also modify it via the `DocumentInfo` object if needed. `DocumentInfo` provides access to a document’s metadata and allows modifications.
 
 ## Common issues and solutions
 
@@ -191,11 +197,11 @@ A: Yes. By default, metadata is copied to the new file; you can also modify it v
 
 ---
 
-**Last updated:** 2026-08-31  
+**Last updated:** 2026-11-15  
 **Tested with:** GroupDocs.Merger for Java 23.9  
 **Author:** GroupDocs
 
-## Related Tutorials
+## Related tutorials
 
 - [How to Load PDF URL Java – Document Loading Tutorials for GroupDocs.Merger](/merger/java/document-loading/)
 - [split pdf into pages with GroupDocs.Merger for Java](/merger/java/document-splitting/master-document-splitting-groupdocs-merger-java/)
