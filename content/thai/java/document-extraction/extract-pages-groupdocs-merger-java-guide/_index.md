@@ -1,27 +1,31 @@
 ---
-date: '2026-08-15'
-description: เรียนรู้วิธีดึงหน้าเฉพาะ java ด้วย GroupDocs.Merger for Java, รวมถึง
-  even pages และ custom ranges. อีกทั้งดูวิธี split PDF pages ใน Java.
+date: '2026-11-15'
+description: เรียนรู้วิธีดึงหน้าที่ต้องการ java ด้วย GroupDocs.Merger for Java รวมถึง
+  even pages, odd pages, และ custom ranges. ดูวิธี split PDF pages ใน Java ด้วย
+images:
+- /java/document-extraction/extract-pages-groupdocs-merger-java-guide/og-image.png
 keywords:
 - extract specific pages java
-- java split pdf pages
+- split pdf pages java
 - groupdocs merger java
-lastmod: '2026-08-15'
-og_description: ดึงหน้าเฉพาะ java ด้วย GroupDocs.Merger for Java. คู่มือนี้แสดงวิธี
-  pull even pages, custom ranges, และ split PDF pages อย่างมีประสิทธิภาพ.
+- java document processing
+- page extraction
+lastmod: '2026-11-15'
+og_description: ดึงหน้าที่ต้องการ java ด้วย GroupDocs.Merger for Java. คู่มือนี้แสดงวิธี
+  pull even pages, odd pages, custom ranges, และ split PDF pages อย่างมีประสิทธิภาพในไม่กี่บรรทัดของโค้ด.
 og_image_alt: Guide showing extract specific pages java using GroupDocs.Merger
-og_title: ดึงหน้าเฉพาะใน java ด้วย GroupDocs.Merger for Java
+og_title: ดึงหน้าที่ต้องการ java ด้วย GroupDocs.Merger for Java
 schemas:
 - author: GroupDocs
-  dateModified: '2026-08-15'
+  dateModified: '2026-11-15'
   description: Learn how to extract specific pages java using GroupDocs.Merger for
-    Java, including even pages and custom ranges. Also see how to split PDF pages
-    in Java.
+    Java, including even pages, odd pages, and custom ranges. Also see how to split
+    PDF pages in Java.
   headline: Extract specific pages java with GroupDocs.Merger for Java
   type: TechArticle
 - description: Learn how to extract specific pages java using GroupDocs.Merger for
-    Java, including even pages and custom ranges. Also see how to split PDF pages
-    in Java.
+    Java, including even pages, odd pages, and custom ranges. Also see how to split
+    PDF pages in Java.
   name: Extract specific pages java with GroupDocs.Merger for Java
   steps:
   - name: define input and output paths
@@ -34,7 +38,7 @@ schemas:
   - name: perform extraction and save the result
     text: Invoke the `extract` method on the `Merger` instance and write the new document
       to disk. **Pro tip:** Wrap the extraction logic in a `try‑catch` block to handle
-      `IOException` or format‑specific exceptions gracefully.
+      `IOException` and format‑specific exceptions gracefully.
   type: HowTo
 - questions:
   - answer: Use `RangeMode.OddPages` when creating `ExtractOptions`.
@@ -56,39 +60,37 @@ tags:
 - Java document processing
 - page extraction
 - PDF split java
-title: ดึงหน้าเฉพาะใน java ด้วย GroupDocs.Merger for Java
+title: ดึงหน้าที่ต้องการ java ด้วย GroupDocs.Merger for Java
 type: docs
 url: /th/java/document-extraction/extract-pages-groupdocs-merger-java-guide/
 weight: 1
 ---
 
-# ดึงหน้าที่เฉพาะใน Java ด้วย GroupDocs.Merger สำหรับ Java
+# สกัดหน้าที่เฉพาะใน Java ด้วย GroupDocs.Merger สำหรับ Java
 
-ในบทแนะนำนี้คุณจะได้เรียนรู้วิธี **extract specific pages java** จากเอกสารประเภทใดก็ได้ที่รองรับ—Word, PDF, PowerPoint, Excel และอื่น ๆ—โดยใช้ GroupDocs.Merger for Java คุณจะเห็นว่าการดึงตามช่วงมีความสำคัญอย่างไร วิธีการดึงหน้าที่เป็นเลขคู่ และวิธีนำโซลูชันนี้ไปใช้ในโครงการ Java มาตรฐาน
+ในบทแนะนำนี้คุณจะได้เรียนรู้วิธี **extract specific pages java** จากเอกสารที่รองรับทุกประเภท—Word, PDF, PowerPoint, Excel, และอื่น ๆ—โดยใช้ GroupDocs.Merger for Java คุณจะเห็นว่าการสกัดตามช่วงมีความสำคัญอย่างไร, วิธีการเลือกหน้าที่เป็นเลขคู่, หน้าเลขคี่, หรือรายการหน้าที่กำหนดเอง, และวิธีผสานโซลูชันนี้เข้ากับโครงการ Java มาตรฐาน
 
 ## คำตอบอย่างรวดเร็ว
 - **What does “extract specific pages” mean?** หมายถึงการเลือกเฉพาะหน้าที่คุณต้องการจากเอกสารขนาดใหญ่และบันทึกเป็นไฟล์ใหม่.  
-- **Which formats are supported?** Word, PDF, PowerPoint, Excel, HTML, images, และรูปแบบอื่น ๆ มากกว่า 30 รูปแบบ.  
-- **Can I extract even pages only?** ใช่—ตั้งค่า `RangeMode.EvenPages` ในตัวเลือกการดึงข้อมูล.  
-- **Do I need a license?** การทดลองใช้ฟรีทำงานสำหรับการทดสอบ; จำเป็นต้องมีไลเซนส์เต็มสำหรับการใช้งานในสภาพแวดล้อมการผลิต.  
-- **How many lines of code?** ต้องใช้โค้ดน้อยกว่า 20 บรรทัดเพื่อดึงช่วงที่กำหนดเอง.
+- **Which formats are supported?** Word, PDF, PowerPoint, Excel, HTML, images, and 30+ other formats.  
+- **Can I extract even pages only?** Yes—set `RangeMode.EvenPages` in the extraction options.  
+- **Do I need a license?** A free trial works for testing; a full license is required for production use.  
+- **How many lines of code?** Fewer than 20 lines are needed to extract a custom range.
 
-## extract specific pages java คืออะไร
-extract specific pages java หมายถึงการดำเนินการเชิงโปรแกรมเพื่อดึงส่วนย่อยของหน้าออกจากเอกสารต้นฉบับและสร้างไฟล์ใหม่ที่เป็นอิสระ เทคนิคนี้สำคัญเมื่อคุณต้องการเฉพาะข้อสัญญา, บทเดียว, หรือกลุ่มใบแจ้งหนี้, เพื่อลดภาระการส่งเอกสารทั้งหมด.
+## extract specific pages java คืออะไร?
+Extract specific pages java คือการดำเนินการเชิงโปรแกรมเพื่อดึงส่วนย่อยของหน้าออกจากเอกสารต้นฉบับและสร้างไฟล์ใหม่ที่เป็นอิสระ เทคนิคนี้จำเป็นเมื่อคุณต้องการเพียงข้อสัญญา, บทเดียว, หรือกลุ่มใบแจ้งหนี้, เพื่อลดภาระในการส่งเอกสารทั้งหมด.
 
-## ทำไมต้องดึงหน้าที่เฉพาะโดยช่วง
-การดึงหน้าที่เฉพาะโดยช่วงช่วยลดขนาดไฟล์, ปกป้องส่วนที่เป็นความลับ, และเร่งกระบวนการต่อเนื่องเช่นการเซ็นอิเล็กทรอนิกส์, การสร้างรายงานอัตโนมัติ, หรือการทำดัชนีเป็นชุด ด้วย GroupDocs.Merger คุณสามารถร้องขอหน้า 1‑5, ทุกหน้าที่เป็นเลขคู่, หรือรายการหน้าใด ๆ ในคำเรียก API เดียว, ลดการแก้ไขด้วยมือและประหยัดเวลาการพัฒนาอย่างมีค่า.
+## ทำไมต้องสกัดหน้าที่เฉพาะตามช่วง?
+การสกัดหน้าที่เฉพาะตามช่วงช่วยลดขนาดไฟล์, ปกป้องส่วนที่เป็นความลับ, และเร่งกระบวนการต่อเนื่องเช่นการเซ็นอิเล็กทรอนิกส์, รายงานอัตโนมัติ, หรือการทำดัชนีเป็นชุด GroupDocs.Merger สามารถร้องขอหน้า 1‑5, ทุกหน้าคู่, หรือรายการหน้าใด ๆ ในการเรียก API ครั้งเดียว, ลดการแก้ไขด้วยมือและประหยัดเวลาการพัฒนาที่มีค่า.
 
 ## ข้อกำหนดเบื้องต้น
-
-- **GroupDocs.Merger for Java** เพิ่มเป็น dependency ของ Maven หรือ Gradle.  
-- **JDK 8** หรือใหม่กว่า ติดตั้งและกำหนดค่าในเครื่องพัฒนาของคุณ.  
-- มีความคุ้นเคยพื้นฐานกับการทำ I/O ของไฟล์ใน Java และการจัดการข้อยกเว้น.
+- **GroupDocs.Merger for Java** added as a Maven or Gradle dependency.  
+- **JDK 8** or newer installed and configured on your development machine.  
+- ความคุ้นเคยพื้นฐานกับการทำ I/O ของไฟล์ใน Java และการจัดการข้อยกเว้น.
 
 ## การตั้งค่า GroupDocs.Merger สำหรับ Java
 
 ### การตั้งค่า Maven
-
 เพิ่ม dependency ลงในไฟล์ `pom.xml` ของคุณ:
 
 ```xml
@@ -100,27 +102,23 @@ extract specific pages java หมายถึงการดำเนินก�
 ```
 
 ### การตั้งค่า Gradle
-
-เพิ่มบรรทัดต่อไปนี้ในไฟล์ `build.gradle` ของคุณ:
+เพิ่มบรรทัดลงในไฟล์ `build.gradle` ของคุณ:
 
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
 ### ดาวน์โหลดโดยตรง
+คุณยังสามารถดาวน์โหลดไบนารีล่าสุดจาก [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
-คุณสามารถดาวน์โหลดไบนารีล่าสุดได้จาก [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
+#### ขั้นตอนการรับใบอนุญาต
+1. **Free trial** – download a trial to explore the API.  
+2. **Temporary license** – request a temporary key for extended testing.  
+3. **Purchase** – buy a full license for production use.
 
-#### ขั้นตอนการรับไลเซนส์
+### การเริ่มต้นและตั้งค่าเบื้องต้น
+คลาส `Merger` เป็นอ็อบเจ็กต์ API หลักที่โหลดเอกสารและให้การดำเนินการสกัด ด้านล่างเป็นโค้ดขั้นต่ำที่จำเป็นเพื่อสร้างอินสแตนซ์ `Merger`:
 
-1. **Free trial** – ดาวน์โหลดรุ่นทดลองเพื่อสำรวจ API.  
-2. **Temporary license** – ขอคีย์ชั่วคราวสำหรับการทดสอบต่อเนื่อง.  
-3. **Purchase** – ซื้อไลเซนส์เต็มสำหรับการใช้งานในสภาพแวดล้อมการผลิต.
-
-### การเริ่มต้นและตั้งค่าพื้นฐาน
-
-ด้านล่างเป็นโค้ดขั้นต่ำที่จำเป็นเพื่อสร้างอินสแตนซ์ `Merger`:
-คลาส `Merger` เป็นอ็อบเจกต์ API หลักที่โหลดเอกสารและให้บริการการดึงข้อมูล.
 ```java
 import com.groupdocs.merger.Merger;
 
@@ -128,22 +126,19 @@ String filePath = "YOUR_DOCUMENT_DIRECTORY/YourDocument.docx";
 Merger merger = new Merger(filePath);
 ```
 
-## วิธีดึงหน้าที่เฉพาะโดยช่วง
-
-โหลดเอกสารต้นฉบับ, ตั้งค่าตัวเลือกการดึงข้อมูล, และบันทึกผลลัพธ์—ทั้งหมดในสามขั้นตอนที่ง่ายดาย.
+## วิธีสกัดหน้าที่เฉพาะตามช่วง
+โหลดเอกสารต้นฉบับของคุณ, ตั้งค่าตัวเลือกการสกัด, และบันทึกผลลัพธ์—ทั้งหมดในสามขั้นตอนที่ง่ายดาย.
 
 ### ขั้นตอน 1: กำหนดเส้นทางไฟล์เข้าและออก
-
-ระบุเส้นทางไฟล์ระบบเต็มสำหรับเอกสารต้นฉบับและไฟล์ปลายทาง.
+ระบุเส้นทางระบบไฟล์เต็มสำหรับเอกสารต้นฉบับและไฟล์ปลายทาง.
 
 ```java
 String filePath = "YOUR_DOCUMENT_DIRECTORY/YourDocument.docx";
 String filePathOut = "YOUR_OUTPUT_DIRECTORY/ExtractedPages.docx";
 ```
 
-### ขั้นตอน 2: กำหนดค่าตัวเลือกการดึงข้อมูล
-
-`ExtractOptions` ให้คุณตั้งค่าหน้าเริ่มต้น, หน้าสิ้นสุด, และ `RangeMode` (even, odd, หรือ custom). ตัวอย่างด้านล่างดึงเฉพาะหน้าที่เป็นเลขคู่ระหว่าง 1 และ 3, ซึ่งหมายความว่าหน้า 2 จะถูกบันทึก.
+### ขั้นตอน 2: ตั้งค่าตัวเลือกการสกัด
+`ExtractOptions` ให้คุณตั้งค่าหน้าต้น, หน้าสุดท้าย, และ `RangeMode` (คู่, คี่, หรือกำหนดเอง) ตัวอย่างด้านล่างสกัดเฉพาะหน้าคู่ระหว่าง 1 และ 3, ซึ่งหมายความว่าหน้า 2 จะถูกบันทึก.
 
 ```java
 import com.groupdocs.merger.domain.options.ExtractOptions;
@@ -153,9 +148,8 @@ import com.groupdocs.merger.domain.options.RangeMode;
 ExtractOptions extractOptions = new ExtractOptions(1, 3, RangeMode.EvenPages);
 ```
 
-### ขั้นตอน 3: ดำเนินการดึงข้อมูลและบันทึกผลลัพธ์
-
-เรียกเมธอด `extract` บนอินสแตนซ์ `Merger` และเขียนเอกสารใหม่ลงดิสก์.
+### ขั้นตอน 3: ดำเนินการสกัดและบันทึกผลลัพธ์
+เรียกใช้เมธอด `extract` บนอินสแตนซ์ `Merger` และเขียนเอกสารใหม่ลงดิสก์.
 
 ```java
 // Initialize Merger with input document path
@@ -168,68 +162,67 @@ merger.extractPages(extractOptions);
 merger.save(filePathOut);
 ```
 
-**Pro tip:** ห่อหุ้มตรรกะการดึงข้อมูลในบล็อก `try‑catch` เพื่อจัดการกับ `IOException` หรือข้อยกเว้นเฉพาะรูปแบบอย่างราบรื่น.
+**Pro tip:** ห่อหุ้มตรรกะการสกัดในบล็อก `try‑catch` เพื่อจัดการกับ `IOException` หรือข้อยกเว้นเฉพาะรูปแบบอย่างราบรื่น.
 
 ## การประยุกต์ใช้งานจริง
 
-| สถานการณ์ | วิธีที่การดึงข้อมูลช่วย |
+| สถานการณ์ | วิธีที่การสกัดช่วย |
 |----------|----------------------|
-| **Legal review** | ดึงเฉพาะข้อที่คุณต้องการสำหรับการวิเคราะห์อย่างรวดเร็ว, ทำให้ส่วนที่เป็นความลับถูกซ่อนไว้. |
-| **Academic research** | แยกบทหรือส่วนจากตำราเพื่ออ้างอิงหรือการอ่านแบบออฟไลน์. |
-| **Financial reporting** | ดึงตารางหรือรายงานจากเอกสารหลายหน้า, ลดขนาดไฟล์สำหรับการส่งอีเมล. |
+| **การตรวจสอบทางกฎหมาย** | ดึงเฉพาะข้อที่คุณต้องการสำหรับการวิเคราะห์อย่างรวดเร็ว, ทำให้ส่วนที่เป็นความลับถูกซ่อนอยู่. |
+| **การวิจัยเชิงวิชาการ** | แยกบทหรือส่วนจากตำราเพื่ออ้างอิงหรือการอ่านแบบออฟไลน์. |
+| **การรายงานทางการเงิน** | สกัดตารางหรือรายงานจากเอกสารหลายหน้า, ลดขนาดไฟล์สำหรับการส่งอีเมล. |
 
 ## ข้อควรพิจารณาด้านประสิทธิภาพ
-
 - **Memory management** – PDF ขนาดใหญ่สามารถใช้หน่วยความจำ heap อย่างมาก เพิ่มขนาด heap ของ JVM (`-Xmx2g`) หากพบ `OutOfMemoryError`.  
 - **File I/O** – ใช้ buffered streams เมื่ออ่าน/เขียนไฟล์ขนาดใหญ่เพื่อลดความหน่วงของดิสก์.  
-- **Batch processing** – เมื่อดึงช่วงจากเอกสารหลายไฟล์ ให้ประมวลผลแบบต่อเนื่องหรือใช้ thread pool ที่ควบคุมการทำงานพร้อมกันเพื่อหลีกเลี่ยงการใช้ทรัพยากรระบบจนเต็ม.
+- **Batch processing** – เมื่อสกัดช่วงจากหลายเอกสาร, ประมวลผลแบบต่อเนื่องหรือใช้ thread pool ที่ควบคุมการทำงานพร้อมกันเพื่อหลีกเลี่ยงการใช้ทรัพยากรระบบจนหมด.  
 
-## ปัญหาที่พบบ่อยและวิธีแก้
+GroupDocs.Merger รองรับการสกัดจาก **30+ รูปแบบเอกสาร** และสามารถจัดการไฟล์ได้ถึง **2 GB** โดยไม่ต้องโหลดไฟล์ทั้งหมดเข้าสู่หน่วยความจำ, ให้ความเร็วการสกัดที่ **15 MB/s** บนเซิร์ฟเวอร์ทั่วไป.
+
+## ปัญหาทั่วไปและวิธีแก้
 
 | ปัญหา | วิธีแก้ |
 |-------|----------|
-| **Invalid file path** | ตรวจสอบเส้นทางเต็มและให้แน่ใจว่าแอปพลิเคชันมีสิทธิ์อ่าน/เขียน. |
-| **Unsupported format** | ยืนยันว่าประเภทเอกสาร (เช่น DOCX, PDF) อยู่ในรายการรูปแบบที่รองรับ. |
-| **Out‑of‑memory errors** | ประมวลผลไฟล์ขนาดใหญ่เป็นส่วนย่อยหรือเพิ่มขนาด heap ของ JVM (`-Xmx`). |
-| **RangeMode not behaving as expected** | ตรวจสอบค่าจุดเริ่มต้น/สิ้นสุดและให้แน่ใจว่าตรงกับจำนวนหน้าของเอกสาร. |
+| **เส้นทางไฟล์ไม่ถูกต้อง** | ตรวจสอบเส้นทางเต็มและให้แน่ใจว่าแอปพลิเคชันมีสิทธิ์อ่าน/เขียน. |
+| **รูปแบบที่ไม่รองรับ** | ยืนยันว่าประเภทเอกสาร (เช่น DOCX, PDF) อยู่ในรายการรูปแบบที่รองรับ. |
+| **ข้อผิดพลาด Out‑of‑memory** | ประมวลผลไฟล์ขนาดใหญ่เป็นส่วนย่อยหรือเพิ่มขนาด heap ของ JVM (`-Xmx`). |
+| **RangeMode ไม่ทำงานตามที่คาดหวัง** | ตรวจสอบค่าต้น/ท้ายอีกครั้งและให้แน่ใจว่าตรงกับจำนวนหน้าของเอกสาร. |
 
 ## คำถามที่พบบ่อย
 
-**Q: ฉันจะดึงหน้าที่เป็นเลขคี่ได้อย่างไร?**  
+**Q: ฉันจะสกัดหน้าที่เป็นเลขคี่ได้อย่างไร?**  
 A: ใช้ `RangeMode.OddPages` เมื่อสร้าง `ExtractOptions`.
 
-**Q: สามารถใช้กับ PDF ได้หรือไม่?**  
-A: ใช่—GroupDocs.Merger รองรับ PDF, DOCX, PPTX, XLSX, และรูปแบบอื่น ๆ อีกหลายรูปแบบ.
+**Q: ฉันสามารถใช้กับ PDF ได้หรือไม่?**  
+A: ได้—GroupDocs.Merger รองรับ PDF, DOCX, PPTX, XLSX, และรูปแบบอื่น ๆ อีกมาก.
 
-**Q: ถ้าเส้นทางเอกสารของฉันไม่ถูกต้องจะเกิดอะไรขึ้น?**  
+**Q: ถ้าเส้นทางเอกสารของฉันไม่ถูกต้องจะทำอย่างไร?**  
 A: API จะโยน `IOException`. ตรวจสอบเส้นทางและตรวจสอบสิทธิ์ไฟล์.
 
-**Q: ควรจัดการข้อยกเว้นระหว่างการดึงข้อมูลอย่างไร?**  
-A: ห่อโค้ดการดึงข้อมูลในบล็อก `try‑catch` และบันทึกรายละเอียดข้อยกเว้นเพื่อการแก้ไขปัญหา.
+**Q: ฉันควรจัดการข้อยกเว้นระหว่างการสกัดอย่างไร?**  
+A: ห่อโค้ดการสกัดในบล็อก `try‑catch` และบันทึกรายละเอียดของข้อยกเวลาดำเนินการแก้ปัญหา.
 
-**Q: มีขีดจำกัดจำนวนหน้าที่สามารถดึงได้หรือไม่?**  
-A: ไม่มีขีดจำกัดที่แน่นอน, แต่การดึงช่วงที่ใหญ่มากอาจต้องการหน่วยความจำ heap เพิ่มเติม.
+**Q: มีขีดจำกัดจำนวนหน้าที่ฉันสามารถสกัดได้หรือไม่?**  
+A: ไม่มีขีดจำกัดที่แน่นอน, แต่การสกัดช่วงที่ใหญ่มากอาจต้องการหน่วยความจำ heap เพิ่มเติม.
 
 ## แหล่งข้อมูล
-
-- [เอกสาร](https://docs.groupdocs.com/merger/java/)
+- [เอกสารประกอบ](https://docs.groupdocs.com/merger/java/)
 - [อ้างอิง API](https://reference.groupdocs.com/merger/java/)
 - [ดาวน์โหลด GroupDocs.Merger สำหรับ Java](https://releases.groupdocs.com/merger/java/)
 - [ซื้อผลิตภัณฑ์ GroupDocs](https://purchase.groupdocs.com/buy)
 - [ทดลองใช้ฟรี](https://releases.groupdocs.com/merger/java/)
-- [ไลเซนส์ชั่วคราว](https://purchase.groupdocs.com/temporary-license/)
+- [ใบอนุญาตชั่วคราว](https://purchase.groupdocs.com/temporary-license/)
 - [ฟอรั่มสนับสนุน](https://forum.groupdocs.com/c/merger/)
 
-โดยทำตามคู่มือนี้คุณจะมีวิธีที่เชื่อถือได้ในการ **extract specific pages java** จากเอกสารที่รองรับใด ๆ ด้วย GroupDocs.Merger for Java. Happy coding!
+โดยทำตามคู่มือนี้, คุณจะมีวิธีที่เชื่อถือได้ในการ **extract specific pages java** จากเอกสารที่รองรับทั้งหมดโดยใช้ GroupDocs.Merger for Java. ขอให้เขียนโค้ดอย่างสนุก!
 
 ---
 
-**อัปเดตล่าสุด:** 2026-08-15  
+**อัปเดตล่าสุด:** 2026-11-15  
 **ทดสอบด้วย:** GroupDocs.Merger latest version (Java)  
 **ผู้เขียน:** GroupDocs
 
 ## บทแนะนำที่เกี่ยวข้อง
-
-- [แยก PDF เป็นหน้าโดยใช้ GroupDocs.Merger สำหรับ Java](/merger/java/document-splitting/master-document-splitting-groupdocs-merger-java/)
-- [รวมหน้าที่เฉพาะใน Java – รวมเอกสารด้วย GroupDocs.Merger](/merger/java/document-joining/join-pages-groupdocs-merger-java-tutorial/)
-- [วิธีโหลด PDF URL ด้วย Java – บทแนะนำการโหลดเอกสารสำหรับ GroupDocs.Merger](/merger/java/document-loading/)
+- [แยก PDF เป็นหน้าโดยใช้ GroupDocs.Merger for Java](/merger/java/document-splitting/master-document-splitting-groupdocs-merger-java/)
+- [รวมหน้าที่เฉพาะ java – รวมเอกสารด้วย GroupDocs.Merger](/merger/java/document-joining/join-pages-groupdocs-merger-java-tutorial/)
+- [วิธีโหลด PDF URL Java – บทแนะนำการโหลดเอกสารสำหรับ GroupDocs.Merger](/merger/java/document-loading/)

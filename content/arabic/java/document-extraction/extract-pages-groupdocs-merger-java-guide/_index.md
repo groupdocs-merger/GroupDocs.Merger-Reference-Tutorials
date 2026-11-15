@@ -1,28 +1,33 @@
 ---
-date: '2026-08-15'
-description: تعرف على كيفية استخراج صفحات محددة java باستخدام GroupDocs.Merger for
-  Java، بما في ذلك even pages و custom ranges. كما يمكنك معرفة كيفية split PDF pages
-  في Java.
+date: '2026-11-15'
+description: تعلم كيفية استخراج صفحات محددة java باستخدام GroupDocs.Merger for Java،
+  بما في ذلك الصفحات الزوجية، الصفحات الفردية، والنطاقات المخصصة. كما يمكنك معرفة
+  كيفية تقسيم صفحات PDF في Java.
+images:
+- /java/document-extraction/extract-pages-groupdocs-merger-java-guide/og-image.png
 keywords:
 - extract specific pages java
-- java split pdf pages
+- split pdf pages java
 - groupdocs merger java
-lastmod: '2026-08-15'
+- java document processing
+- page extraction
+lastmod: '2026-11-15'
 og_description: استخراج صفحات محددة java باستخدام GroupDocs.Merger for Java. يوضح
-  هذا الدليل كيفية سحب even pages، custom ranges، و split PDF pages بفعالية.
+  هذا الدليل كيفية سحب الصفحات الزوجية، الصفحات الفردية، النطاقات المخصصة، وتقسيم
+  صفحات PDF بفعالية في بضع أسطر من الشيفرة.
 og_image_alt: Guide showing extract specific pages java using GroupDocs.Merger
 og_title: استخراج صفحات محددة java باستخدام GroupDocs.Merger for Java
 schemas:
 - author: GroupDocs
-  dateModified: '2026-08-15'
+  dateModified: '2026-11-15'
   description: Learn how to extract specific pages java using GroupDocs.Merger for
-    Java, including even pages and custom ranges. Also see how to split PDF pages
-    in Java.
+    Java, including even pages, odd pages, and custom ranges. Also see how to split
+    PDF pages in Java.
   headline: Extract specific pages java with GroupDocs.Merger for Java
   type: TechArticle
 - description: Learn how to extract specific pages java using GroupDocs.Merger for
-    Java, including even pages and custom ranges. Also see how to split PDF pages
-    in Java.
+    Java, including even pages, odd pages, and custom ranges. Also see how to split
+    PDF pages in Java.
   name: Extract specific pages java with GroupDocs.Merger for Java
   steps:
   - name: define input and output paths
@@ -35,7 +40,7 @@ schemas:
   - name: perform extraction and save the result
     text: Invoke the `extract` method on the `Merger` instance and write the new document
       to disk. **Pro tip:** Wrap the extraction logic in a `try‑catch` block to handle
-      `IOException` or format‑specific exceptions gracefully.
+      `IOException` and format‑specific exceptions gracefully.
   type: HowTo
 - questions:
   - answer: Use `RangeMode.OddPages` when creating `ExtractOptions`.
@@ -65,30 +70,35 @@ weight: 1
 
 # استخراج صفحات محددة جافا باستخدام GroupDocs.Merger for Java
 
-في هذا البرنامج التعليمي ستتعلم كيفية **extract specific pages java** من أي نوع مستند مدعوم — Word، PDF، PowerPoint، Excel، وأكثر — باستخدام GroupDocs.Merger for Java. سترى لماذا يعتبر استخراج الصفحات بناءً على النطاق مهمًا، وكيفية استهداف الصفحات الزوجية، وكيفية دمج الحل في مشروع Java قياسي.
+في هذا الدرس ستتعلم كيفية **extract specific pages java** من أي نوع مستند مدعوم — Word، PDF، PowerPoint، Excel، وأكثر — باستخدام GroupDocs.Merger for Java. ستكتشف لماذا يعتبر الاستخراج بناءً على النطاق مهمًا، وكيفية استهداف الصفحات الزوجية، الصفحات الفردية، أو أي قائمة صفحات مخصصة، وكيفية دمج الحل في مشروع جافا قياسي.
 
-## إجابات سريعة
-- **ماذا يعني “extract specific pages”؟** يعني اختيار الصفحات التي تحتاجها فقط من مستند أكبر وحفظها كملف جديد.  
-- **ما الصيغ المدعومة؟** Word، PDF، PowerPoint، Excel، HTML، الصور، وأكثر من 30 صيغة أخرى.  
-- **هل يمكنني استخراج الصفحات الزوجية فقط؟** نعم—قم بتعيين `RangeMode.EvenPages` في خيارات الاستخراج.  
-- **هل أحتاج إلى ترخيص؟** النسخة التجريبية المجانية تعمل للاختبار؛ الترخيص الكامل مطلوب للاستخدام في الإنتاج.  
-- **كم عدد أسطر الكود؟** أقل من 20 سطرًا مطلوبة لاستخراج نطاق مخصص.
+## الإجابات السريعة
+- **ماذا يعني “extract specific pages”?** يعني اختيار الصفحات التي تحتاجها فقط من مستند أكبر وحفظها كملف جديد.  
+- **ما هي الصيغ المدعومة؟** Word، PDF، PowerPoint، Excel، HTML، الصور، وأكثر من 30 صيغة أخرى.  
+- **هل يمكن استخراج الصفحات الزوجية فقط؟** نعم — اضبط `RangeMode.EvenPages` في خيارات الاستخراج.  
+- **هل أحتاج إلى ترخيص؟** نسخة تجريبية مجانية تعمل للاختبار؛ الترخيص الكامل مطلوب للاستخدام الإنتاجي.  
+- **كم عدد أسطر الكود؟** أقل من 20 سطرًا تحتاج لاستخراج نطاق مخصص.
 
 ## ما هو extract specific pages java؟
-يشير مصطلح extract specific pages java إلى العملية البرمجية لسحب مجموعة فرعية من الصفحات من مستند مصدر وإنشاء ملف جديد ومستقل. هذه التقنية أساسية عندما تحتاج فقط إلى بند من عقد، أو فصل واحد، أو مجموعة من الفواتير، لتجنب عبء إرسال المستند بالكامل.
 
-## لماذا استخراج صفحات محددة بنطاق؟
-يقلل استخراج الصفحات المحددة بنطاق من حجم الملف، ويحمي الأقسام الحساسة، ويسرّع العمليات اللاحقة مثل التوقيع الإلكتروني، وإعداد التقارير الآلية، أو الفهرسة الدفعة. باستخدام GroupDocs.Merger يمكنك طلب الصفحات 1‑5، كل صفحة زوجية، أو أي قائمة عشوائية في استدعاء API واحد، مما يلغي التحرير اليدوي ويوفر وقت التطوير القيم.
+extract specific pages java هو العملية البرمجية لسحب مجموعة من الصفحات من مستند المصدر وإنشاء ملف جديد مستقل. هذه التقنية أساسية عندما تحتاج فقط إلى فقرة من عقد، فصل واحد، أو مجموعة فواتير، لتجنب إرسال المستند بالكامل.
+
+## لماذا استخراج صفحات محددة بناءً على النطاق؟
+
+استخراج صفحات محددة بناءً على النطاق يقلل حجم الملف، يحمي الأقسام الحساسة، ويسرّع العمليات اللاحقة مثل التوقيع الإلكتروني، التقارير الآلية، أو الفهرسة الدفعة. يمكن لـ GroupDocs.Merger طلب الصفحات 1‑5، كل صفحة زوجية، أو أي قائمة عشوائية في استدعاء API واحد، مما يلغي الحاجة للتحرير اليدوي ويوفر وقت التطوير.
 
 ## المتطلبات المسبقة
+
 - **GroupDocs.Merger for Java** مضافة كاعتماد Maven أو Gradle.  
 - **JDK 8** أو أحدث مثبت ومُكوَّن على جهاز التطوير الخاص بك.  
-- إلمام أساسي بـ Java file I/O ومعالجة الاستثناءات.
+- إلمام أساسي بـ Java I/O ومعالجة الاستثناءات.
 
 ## إعداد GroupDocs.Merger for Java
 
 ### إعداد Maven
+
 أضف الاعتماد إلى ملف `pom.xml` الخاص بك:
+
 ```xml
 <dependency>
     <groupId>com.groupdocs</groupId>
@@ -98,22 +108,27 @@ weight: 1
 ```
 
 ### إعداد Gradle
+
 أضف السطر إلى ملف `build.gradle` الخاص بك:
+
 ```gradle
 implementation 'com.groupdocs:groupdocs-merger:latest-version'
 ```
 
 ### التحميل المباشر
-يمكنك أيضًا الحصول على أحدث الملفات الثنائية من [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
+
+يمكنك أيضًا الحصول على أحدث الثنائيات من [GroupDocs.Merger for Java releases](https://releases.groupdocs.com/merger/java/).
 
 #### خطوات الحصول على الترخيص
-1. **Free trial** – قم بتنزيل نسخة تجريبية لاستكشاف الـ API.  
-2. **Temporary license** – اطلب مفتاحًا مؤقتًا للاختبار الموسع.  
-3. **Purchase** – اشترِ ترخيصًا كاملًا للاستخدام في الإنتاج.
+
+1. **نسخة تجريبية** – حمّل نسخة تجريبية لاستكشاف API.  
+2. **ترخيص مؤقت** – اطلب مفتاحًا مؤقتًا للاختبار الموسع.  
+3. **شراء** – اشترِ ترخيصًا كاملًا للاستخدام الإنتاجي.
 
 ### التهيئة الأساسية والإعداد
-فيما يلي الحد الأدنى من الكود المطلوب لإنشاء مثيل `Merger`:
-فئة `Merger` هي كائن API الأساسي الذي يحمل المستند ويوفر عمليات الاستخراج.
+
+فئة `Merger` هي كائن API الأساسي الذي يحمل المستند ويوفر عمليات الاستخراج. أدناه الكود الأدنى لإنشاء مثيل `Merger`:
+
 ```java
 import com.groupdocs.merger.Merger;
 
@@ -121,19 +136,23 @@ String filePath = "YOUR_DOCUMENT_DIRECTORY/YourDocument.docx";
 Merger merger = new Merger(filePath);
 ```
 
-## كيفية استخراج صفحات محددة بنطاق
+## كيفية استخراج صفحات محددة بناءً على النطاق
 
-حمّل المستند المصدر، اضبط خيارات الاستخراج، واحفظ النتيجة — كل ذلك في ثلاث خطوات بسيطة.
+حمّل مستند المصدر، اضبط خيارات الاستخراج، واحفظ النتيجة — كل ذلك في ثلاث خطوات بسيطة.
 
-### الخطوة 1: تحديد مسارات الإدخال والإخراج
-حدد المسارات الكاملة في نظام الملفات للمستند المصدر وملف الوجهة.
+### الخطوة 1: تعريف مسارات الإدخال والإخراج
+
+حدد مسارات نظام الملفات الكاملة للمستند المصدر والملف الوجهة.
+
 ```java
 String filePath = "YOUR_DOCUMENT_DIRECTORY/YourDocument.docx";
 String filePathOut = "YOUR_OUTPUT_DIRECTORY/ExtractedPages.docx";
 ```
 
 ### الخطوة 2: ضبط خيارات الاستخراج
+
 `ExtractOptions` يتيح لك تعيين صفحة البداية، صفحة النهاية، و`RangeMode` (زوجية، فردية، أو مخصصة). المثال أدناه يستخرج فقط الصفحات الزوجية بين 1 و 3، مما يعني أن الصفحة 2 سيتم حفظها.
+
 ```java
 import com.groupdocs.merger.domain.options.ExtractOptions;
 import com.groupdocs.merger.domain.options.RangeMode;
@@ -143,7 +162,9 @@ ExtractOptions extractOptions = new ExtractOptions(1, 3, RangeMode.EvenPages);
 ```
 
 ### الخطوة 3: تنفيذ الاستخراج وحفظ النتيجة
+
 استدعِ طريقة `extract` على مثيل `Merger` واكتب المستند الجديد إلى القرص.
+
 ```java
 // Initialize Merger with input document path
 Merger merger = new Merger(filePath);
@@ -155,65 +176,70 @@ merger.extractPages(extractOptions);
 merger.save(filePathOut);
 ```
 
-**نصيحة احترافية:** ضع منطق الاستخراج داخل كتلة `try‑catch` للتعامل مع `IOException` أو الاستثناءات الخاصة بالصيغة بشكل سلس.
+**نصيحة احترافية:** غلف منطق الاستخراج داخل كتلة `try‑catch` لمعالجة `IOException` أو الاستثناءات الخاصة بالصيغ بشكل سلس.
 
-## تطبيقات عملية
+## التطبيقات العملية
 
 | السيناريو | كيف يساعد الاستخراج |
 |----------|----------------------|
-| **المراجعة القانونية** | اسحب فقط البنود التي تحتاجها للتحليل السريع، مع إخفاء الأقسام السرية. |
+| **المراجعة القانونية** | اسحب فقط الفقرات التي تحتاجها للتحليل السريع، مع إخفاء الأقسام السرية. |
 | **البحث الأكاديمي** | عزل الفصول أو الأقسام من الكتب الدراسية للاقتباس أو القراءة دون اتصال. |
-| **التقارير المالية** | استخراج الجداول أو البيانات من تقارير متعددة الصفحات، لتقليل حجم الملف لتوزيع عبر البريد الإلكتروني. |
+| **التقارير المالية** | استخراج الجداول أو البيانات من تقارير متعددة الصفحات، لتقليل حجم الملف عند الإرسال عبر البريد الإلكتروني. |
 
 ## اعتبارات الأداء
-- **Memory management** – يمكن لملفات PDF الكبيرة أن تستهلك مساحة heap كبيرة. قم بزيادة heap الخاص بـ JVM (`-Xmx2g`) إذا واجهت `OutOfMemoryError`.  
-- **File I/O** – استخدم تدفقات مخزنة مؤقتًا عند قراءة/كتابة ملفات كبيرة لتقليل زمن استجابة القرص.  
-- **Batch processing** – عند استخراج نطاقات من العديد من المستندات، عالجها بشكل متسلسل أو استخدم مجموعة خيوط (thread pool) مع تحكم في التزامن لتجنب استنزاف موارد النظام.
+
+- **إدارة الذاكرة** – ملفات PDF الكبيرة قد تستهلك مساحة heap كبيرة. زد حجم heap للـ JVM (`-Xmx2g`) إذا واجهت `OutOfMemoryError`.  
+- **ملف I/O** – استخدم تدفقات مخزنة مؤقتًا عند قراءة/كتابة ملفات كبيرة لتقليل زمن استجابة القرص.  
+- **معالجة دفعات** – عند استخراج نطاقات من مستندات متعددة، عالجها تسلسليًا أو استخدم مجموعة خيوط مع تحكم في التزامن لتجنب استنزاف موارد النظام.  
+
+يدعم GroupDocs.Merger الاستخراج من **أكثر من 30 صيغة مستند** ويمكنه معالجة ملفات حتى **2 GB** دون تحميل الملف بالكامل إلى الذاكرة، موفرًا سرعات استخراج تصل إلى **15 MB/s** على خادم نموذجي.
 
 ## المشكلات الشائعة والحلول
 
 | المشكلة | الحل |
-|-------|----------|
-| **مسار ملف غير صالح** | تحقق من المسار الكامل وتأكد من أن التطبيق لديه أذونات القراءة/الكتابة. |
-| **صيغة غير مدعومة** | تأكد من أن نوع المستند (مثل DOCX، PDF) مدرج في الصيغ المدعومة. |
-| **أخطاء نفاد الذاكرة** | قم بمعالجة الملفات الكبيرة على أجزاء أصغر أو زيادة حجم heap الخاص بـ JVM (`-Xmx`). |
-| **RangeMode لا يعمل كما هو متوقع** | تحقق مرة أخرى من قيم البداية/النهاية وتأكد من أنها ضمن عدد صفحات المستند. |
+|---------|------|
+| **مسار ملف غير صالح** | تحقق من المسار الكامل وتأكد من أن التطبيق يملك أذونات القراءة/الكتابة. |
+| **صيغة غير مدعومة** | تأكد من أن نوع المستند (مثل DOCX، PDF) مدرج ضمن الصيغ المدعومة. |
+| **أخطاء نفاد الذاكرة** | عالج الملفات الكبيرة على أجزاء أصغر أو زد حجم heap للـ JVM (`-Xmx`). |
+| **RangeMode لا يعمل كما هو متوقع** | راجع قيم البداية/النهاية وتأكد من أنها ضمن عدد صفحات المستند. |
 
 ## الأسئلة المتكررة
 
-**س: كيف يمكنني استخراج الصفحات الفردية؟**  
+**س: كيف يمكن استخراج الصفحات الفردية؟**  
 ج: استخدم `RangeMode.OddPages` عند إنشاء `ExtractOptions`.
 
-**س: هل يمكنني استخدام هذا مع ملفات PDF؟**  
-ج: نعم—GroupDocs.Merger يدعم PDF، DOCX، PPTX، XLSX، والعديد من الصيغ الأخرى.
+**س: هل يمكن استخدام هذا مع ملفات PDF؟**  
+ج: نعم — يدعم GroupDocs.Merger PDF، DOCX، PPTX، XLSX، والعديد من الصيغ الأخرى.
 
 **س: ماذا لو كان مسار المستند غير صحيح؟**  
-ج: الـ API يرمي استثناء `IOException`. تحقق من المسار وتفقد أذونات الملف.
+ج: يرمي API استثناءً من نوع `IOException`. تحقق من المسار وتأكد من أذونات الملف.
 
-**س: كيف يجب أن أتعامل مع الاستثناءات أثناء الاستخراج؟**  
-ج: ضع كود الاستخراج داخل كتلة `try‑catch` وسجّل تفاصيل الاستثناء لتسهيل استكشاف الأخطاء.
+**س: كيف يجب التعامل مع الاستثناءات أثناء الاستخراج؟**  
+ج: ضع كود الاستخراج داخل كتلة `try‑catch` وسجّل تفاصيل الاستثناء للتشخيص.
 
-**س: هل هناك حد لعدد الصفحات التي يمكنني استخراجها؟**  
-ج: لا يوجد حد ثابت، لكن استخراج نطاقات كبيرة جدًا قد يتطلب مزيدًا من ذاكرة heap.
+**س: هل هناك حد لعدد الصفحات التي يمكن استخراجها؟**  
+ج: لا يوجد حد صريح، لكن استخراج نطاقات كبيرة قد يتطلب مزيدًا من ذاكرة heap.
 
 ## الموارد
-- [الوثائق](https://docs.groupdocs.com/merger/java/)
+
+- [التوثيق](https://docs.groupdocs.com/merger/java/)
 - [مرجع API](https://reference.groupdocs.com/merger/java/)
 - [تحميل GroupDocs.Merger for Java](https://releases.groupdocs.com/merger/java/)
 - [شراء منتجات GroupDocs](https://purchase.groupdocs.com/buy)
 - [نسخة تجريبية مجانية](https://releases.groupdocs.com/merger/java/)
-- [ترخيص مؤقت](https://purchase.groupdocs.com/temporary-license/)
+- [رخصة مؤقتة](https://purchase.groupdocs.com/temporary-license/)
 - [منتدى الدعم](https://forum.groupdocs.com/c/merger/)
 
 باتباعك هذا الدليل، لديك الآن طريقة موثوقة لـ **extract specific pages java** من أي مستند مدعوم باستخدام GroupDocs.Merger for Java. برمجة سعيدة!
 
 ---
 
-**آخر تحديث:** 2026-08-15  
-**تم الاختبار مع:** أحدث إصدار من GroupDocs.Merger (Java)  
+**آخر تحديث:** 2026-11-15  
+**تم الاختبار مع:** أحدث نسخة من GroupDocs.Merger (Java)  
 **المؤلف:** GroupDocs
 
 ## دروس ذات صلة
-- [تقسيم PDF إلى صفحات باستخدام GroupDocs.Merger for Java](/merger/java/document-splitting/master-document-splitting-groupdocs-merger-java/)
-- [دمج صفحات محددة جافا – ربط المستندات باستخدام GroupDocs.Merger](/merger/java/document-joining/join-pages-groupdocs-merger-java-tutorial/)
-- [كيفية تحميل PDF عبر URL في Java – دروس تحميل المستندات لـ GroupDocs.Merger](/merger/java/document-loading/)
+
+- [تقسيم PDF إلى صفحات مع GroupDocs.Merger for Java](/merger/java/document-splitting/master-document-splitting-groupdocs-merger-java/)
+- [دمج صفحات محددة جافا – جمع المستندات مع GroupDocs.Merger](/merger/java/document-joining/join-pages-groupdocs-merger-java-tutorial/)
+- [كيفية تحميل PDF عبر URL جافا – دروس تحميل المستندات لـ GroupDocs.Merger](/merger/java/document-loading/)

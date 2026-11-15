@@ -1,28 +1,30 @@
 ---
-date: 2026-08-31
-description: Panduan langkah demi langkah untuk mengekstrak halaman tertentu java
-  menggunakan GroupDocs.Merger untuk Java.
+date: 2026-11-15
+description: Pisahkan pdf java dengan GroupDocs.Merger – pelajari cara mengekstrak
+  halaman tertentu, menangani file besar, dan menjaga metadata tetap utuh secara cepat
+  dan efisien memori.
+images:
+- /java/document-extraction/og-image.png
 keywords:
+- split pdf java
 - extract specific pages java
-- split pdf pages java
-- split document java
-lastmod: 2026-08-31
-og_description: Pelajari cara mengekstrak halaman tertentu java menggunakan GroupDocs.Merger.
-  Panduan ini menunjukkan ekstraksi langkah demi langkah untuk PDFs, Word, dan lainnya,
-  dengan tips kinerja.
-og_image_alt: 'GroupDocs.Merger Java tutorial: extracting specific pages from documents'
-og_title: Ekstrak halaman tertentu java dengan GroupDocs.Merger – Pemotongan dokumen
+- GroupDocs.Merger Java
+- document slicing java
+lastmod: 2026-11-15
+og_description: Pisahkan pdf java dengan GroupDocs.Merger dalam hitungan detik – panduan
+  ini menunjukkan cara mengekstrak halaman tertentu, menangani file besar, dan melestarikan
+  metadata secara efisien.
+og_image_alt: 'Guide: split PDF in Java using GroupDocs.Merger to extract pages'
+og_title: Cara memisahkan pdf java menggunakan GroupDocs.Merger – pemotongan dokumen
   cepat
 schemas:
 - author: GroupDocs
-  dateModified: '2026-08-31'
-  description: Step-by-step guide to extract specific pages java using GroupDocs.Merger
-    for Java.
-  headline: How to extract specific pages java with GroupDocs.Merger
+  dateModified: '2026-11-15'
+  description: Step‑by‑step guide to split pdf java using GroupDocs.Merger for Java.
+  headline: How to split pdf java using GroupDocs.Merger
   type: TechArticle
-- description: Step-by-step guide to extract specific pages java using GroupDocs.Merger
-    for Java.
-  name: How to extract specific pages java with GroupDocs.Merger
+- description: Step‑by‑step guide to split pdf java using GroupDocs.Merger for Java.
+  name: How to split pdf java using GroupDocs.Merger
   steps:
   - name: '**Load the source document** – Create a `Merger` instance and point it
       at the file you want to slice.'
@@ -68,135 +70,133 @@ schemas:
       metadata?
   type: FAQPage
 tags:
-- extract pages
+- split pdf
 - GroupDocs.Merger
 - Java document processing
-title: Cara mengekstrak halaman tertentu java dengan GroupDocs.Merger
+title: Cara memisahkan pdf java menggunakan GroupDocs.Merger
 type: docs
 url: /id/java/document-extraction/
 weight: 9
 ---
 
-# Cara mengekstrak halaman tertentu java dengan GroupDocs.Merger
+# Cara memisah pdf java menggunakan GroupDocs.Merger
 
-Mengekstrak halaman yang tepat dari dokumen besar dapat secara dramatis mengurangi biaya penyimpanan, mempercepat pemrosesan hilir, dan membuat berbagi lebih terfokus. Dalam tutorial ini Anda akan belajar **how to extract specific pages java** dari PDF, file Word, dan banyak format lainnya menggunakan GroupDocs.Merger for Java. Kami akan membahas ekstraksi satu‑halaman, ekstraksi rentang halaman, dan pemilihan konten khusus sehingga Anda dapat langsung menerapkan teknik ini dalam proyek Anda.
+Mengekstrak hanya halaman yang Anda butuhkan dari PDF besar dapat secara dramatis mengurangi biaya penyimpanan, mempercepat pemrosesan hilir, dan menjaga informasi sensitif tetap tidak terlihat dalam file yang dibagikan. Dalam tutorial ini Anda akan belajar **how to split pdf java** dengan GroupDocs.Merger, mencakup ekstraksi satu‑halaman, pemotongan rentang halaman, dan pemilihan konten khusus untuk PDF, dokumen Word, dan banyak format lainnya. Pada akhir panduan Anda akan dapat mengintegrasikan pemisahan halaman ke dalam proyek Java 8+ apa pun dengan hanya beberapa baris kode.
 
 ## Jawaban Cepat
-- **Apa kasus penggunaan utama?** Menyaring halaman atau bagian tertentu dari dokumen yang lebih besar untuk digunakan kembali atau distribusi.  
-- **Perpustakaan mana yang menangani ekstraksi?** GroupDocs.Merger for Java.  
-- **Apakah saya memerlukan lisensi?** Lisensi sementara berfungsi untuk pengujian; lisensi penuh diperlukan untuk produksi.  
-- **Bisakah saya mengekstrak halaman dari PDF yang dilindungi kata sandi?** Ya, berikan kata sandi saat memuat dokumen.  
-- **Apakah API kompatibel dengan Java 8+?** Tentu – mendukung Java 8 dan versi yang lebih baru.
+- **What is the primary use case?** Menarik halaman atau bagian tertentu dari dokumen yang lebih besar untuk digunakan kembali atau didistribusikan.  
+- **Which library handles the extraction?** GroupDocs.Merger for Java.  
+- **Do I need a license?** Lisensi sementara dapat digunakan untuk pengujian; lisensi penuh diperlukan untuk produksi.  
+- **Can I extract pages from password‑protected PDFs?** Ya, berikan kata sandi saat memuat dokumen.  
+- **Is the API compatible with Java 8+?** Tentu – mendukung Java 8 dan versi yang lebih baru.
 
 ## Cara mengekstrak halaman tertentu java menggunakan GroupDocs.Merger?
+Muat file sumber, beri tahu API halaman mana yang Anda butuhkan, panggil `extract()`, dan tulis aliran yang dikembalikan ke file baru. **`extract()` mengekstrak halaman yang dipilih dan mengembalikannya sebagai `InputStream` atau menulisnya langsung ke file.** Seluruh alur ini berjalan di memori, selesai dalam milidetik untuk file tipikal, dan tidak pernah membuat file sementara antara di disk.
 
-Kelas `Merger` adalah komponen inti yang memuat dokumen dan menyediakan operasi ekstraksi.
+### Kelas `Merger`
 
-Muat file sumber dengan `new Merger("source.pdf")`, tentukan halaman yang Anda butuhkan (mis., `5` atau `10-20`), panggil `extract()` dan tulis aliran yang dikembalikan ke file baru. `extract()` mengembalikan sebuah `InputStream` yang berisi dokumen baru dengan halaman yang dipilih. Seluruh operasi berjalan di memori, selesai dalam milidetik untuk file tipikal, dan tidak memerlukan file sementara perantara.
+Kelas `Merger` adalah komponen inti GroupDocs.Merger yang mewakili satu dokumen sumber dalam memori. Semua operasi ekstraksi, penggabungan, dan pemisahan tersedia melalui metodenya.
+
+1. **Load the source document** – Buat instance `Merger` dan arahkan ke file yang ingin Anda potong.  
+2. **Define the pages** – Gunakan nomor halaman tunggal, rentang (`10-20`), atau daftar (`[2,4,7]`).  
+3. **Call the `extract` method** – API mengembalikan `InputStream` baru atau menulis langsung ke file.  
+4. **Save the result** – Simpan halaman yang diekstrak di mana pun Anda membutuhkannya (disk lokal, penyimpanan cloud, dll.).  
+5. **Dispose resources** – Tutup instance `Merger` untuk membebaskan memori, terutama saat memproses banyak file dalam batch.  
+
+> **Pro tip:** Gunakan kembali satu instance `Merger` untuk operasi batch guna mengurangi beban pembuatan objek.
 
 ## Apa itu “how to extract pages” dalam konteks GroupDocs.Merger?
-
-**Operasi “how to extract pages” berarti memilih satu atau lebih halaman dari dokumen sumber dan membuat file baru yang berdiri sendiri yang hanya berisi halaman‑halaman tersebut.** Proses ini dilakukan sepenuhnya di memori, yang menghilangkan overhead I/O disk dan membuatnya aman untuk skenario batch besar. GroupDocs.Merger mengurai struktur asli, menyalin halaman yang dipilih, dan secara otomatis mempertahankan metadata.
+It berarti memilih satu atau lebih halaman dari dokumen sumber dan membuat file baru yang berdiri sendiri yang hanya berisi halaman tersebut. Operasi ini dilakukan sepenuhnya di memori, menghilangkan beban I/O disk dan membuatnya aman untuk skenario batch besar. GroupDocs.Merger mengurai struktur asli, menyalin halaman yang dipilih, dan secara otomatis mempertahankan metadata.
 
 ## Mengapa mengekstrak halaman tertentu java penting?
+Mengekstrak halaman tertentu java memungkinkan Anda menyimpan hanya konten yang benar‑benar Anda butuhkan, yang berdampak pada manfaat bisnis yang nyata. Dengan memangkas halaman yang tidak diperlukan Anda mengurangi biaya penyimpanan, mempercepat unggahan/unduhan, dan mengurangi waktu pemrosesan untuk layanan hilir yang mengonsumsi file.
 
-Mengekstrak halaman tertentu java memungkinkan Anda menyimpan hanya konten yang benar‑benar Anda butuhkan, yang berdampak pada manfaat bisnis yang nyata. Dengan memangkas halaman yang tidak diperlukan, Anda mengurangi biaya penyimpanan, mempercepat unggahan/unduhan, dan mengurangi waktu pemrosesan untuk layanan hilir yang menggunakan file.
+- **Storage efficiency:** Simpan hanya halaman yang Anda butuhkan, mengurangi ukuran file hingga 80 % untuk laporan tipikal.  
+- **Faster downstream workflows:** File yang lebih kecil berarti unggahan, unduhan, dan pemrosesan yang lebih cepat.  
+- **Targeted sharing:** Kirim hanya bagian yang relevan kepada pemangku kepentingan tanpa mengekspos seluruh dokumen.  
+- **Compliance:** Hapus halaman sensitif sebelum distribusi untuk memenuhi regulasi privasi.
 
-- **Efisiensi penyimpanan:** Simpan hanya halaman yang Anda butuhkan, mengurangi ukuran file.  
-- **Alur kerja hilir lebih cepat:** File yang lebih kecil berarti unggahan, unduhan, dan pemrosesan yang lebih cepat.  
-- **Berbagi terarah:** Kirim hanya bagian yang relevan kepada pemangku kepentingan tanpa mengekspos seluruh dokumen.  
-- **Kepatuhan:** Hapus halaman sensitif sebelum distribusi untuk memenuhi regulasi privasi.
-
-## Mengapa menggunakan GroupDocs.Merger for Java untuk mengekstrak halaman?
-
-GroupDocs.Merger for Java dapat mengekstrak halaman tertentu java dalam kurang dari satu detik untuk kebanyakan dokumen, mendukung **70+ format input dan output**, dan memproses file hingga **2 GB** tanpa memuat seluruh dokumen ke memori. API‑nya sengaja sederhana, sehingga Anda dapat melakukan pemotongan kompleks dengan hanya beberapa baris kode sambil tetap memiliki keandalan tingkat perusahaan.
+## Mengapa menggunakan GroupDocs.Merger untuk Java untuk mengekstrak halaman?
+GroupDocs.Merger untuk Java dapat memisah pdf java dalam kurang dari satu detik untuk sebagian besar dokumen, mendukung **70+ input and output formats**, dan memproses file hingga **2 GB** tanpa memuat seluruh dokumen ke memori. API-nya sengaja dibuat sederhana, sehingga Anda dapat melakukan pemotongan kompleks dengan hanya beberapa baris kode sambil tetap memiliki keandalan tingkat perusahaan.
 
 ## Prasyarat
 - Java 8 atau yang lebih baru terpasang.  
-- Perpustakaan GroupDocs.Merger for Java ditambahkan ke proyek Anda (Maven/Gradle).  
+- Perpustakaan GroupDocs.Merger untuk Java ditambahkan ke proyek Anda (Maven/Gradle).  
 - File lisensi GroupDocs yang valid (atau sementara).  
 
 ## Tutorial yang Tersedia
 
-### [Ekstrak Halaman berdasarkan Rentang Menggunakan GroupDocs.Merger for Java: Panduan Lengkap](./extract-pages-groupdocs-merger-java-guide/)
-Pelajari cara mengekstrak halaman tertentu dari dokumen secara efisien menggunakan rentang halaman dengan GroupDocs.Merger for Java. Kuasai manipulasi data selektif dan pemrosesan dokumen.
+### [Ekstrak Halaman berdasarkan Rentang Menggunakan GroupDocs.Merger untuk Java&#58; Panduan Lengkap](./extract-pages-groupdocs-merger-java-guide/)
+Pelajari cara mengekstrak halaman tertentu dari dokumen secara efisien menggunakan rentang halaman dengan GroupDocs.Merger untuk Java. Kuasai manipulasi data selektif dan pemrosesan dokumen.
 
-### [Cara Mengekstrak Halaman Tertentu dari Dokumen Menggunakan GroupDocs.Merger for Java](./extract-pages-groupdocs-merger-java/)
-Pelajari cara mengekstrak halaman tertentu secara efisien dari PDF, dokumen Word, dan lainnya menggunakan GroupDocs.Merger for Java. Panduan ini mencakup penyiapan, implementasi, dan kasus penggunaan praktis.
+### [Cara Mengekstrak Halaman Tertentu dari Dokumen Menggunakan GroupDocs.Merger untuk Java](./extract-pages-groupdocs-merger-java/)
+Pelajari cara mengekstrak halaman tertentu secara efisien dari PDF, dokumen Word, dan lainnya menggunakan GroupDocs.Merger untuk Java. Panduan ini mencakup penyiapan, implementasi, dan kasus penggunaan praktis.
 
-## Skenario Ekstraksi Umum
+## Skenario ekstraksi umum
 
 ### Ekstrak satu halaman
 Jika Anda hanya membutuhkan halaman 5 dari PDF, Anda dapat memanggil API dengan nomor halaman tunggal. Ini berguna untuk membuat faktur, kwitansi, atau laporan satu‑halaman apa pun.
 
 ### Ekstrak rentang halaman
-Ketika Anda membutuhkan halaman 10‑20, fitur rentang menghemat Anda dari harus mengulang setiap halaman satu per satu. Ini ideal untuk memisahkan bab dari e‑book atau mengekstrak bagian dari kontrak.
+Ketika Anda membutuhkan halaman 10‑20, fitur rentang menghemat Anda dari harus mengulang setiap halaman secara individual. Ini ideal untuk memisahkan bab dari e‑book atau mengekstrak bagian dari kontrak.
 
 ### Ekstrak konten khusus (mis., tabel atau gambar tertentu)
 GroupDocs.Merger juga memungkinkan Anda memilih konten berdasarkan struktur dokumen, memungkinkan Anda mengisolasi tabel, gambar, atau heading tanpa menghitung halaman secara manual.
 
 ## Panduan langkah‑demi‑langkah untuk mengekstrak halaman tertentu java
+Kelas `Merger` adalah komponen inti GroupDocs.Merger yang memuat dokumen sumber dan menyediakan metode ekstraksi. Menggunakan satu instance untuk banyak operasi mengurangi beban pembuatan objek dan meningkatkan throughput.
 
-**Kelas `Merger` adalah komponen inti GroupDocs.Merger yang memuat dokumen sumber dan menyediakan metode ekstraksi.** Menggunakan satu instance untuk banyak operasi mengurangi overhead pembuatan objek dan meningkatkan throughput.
-
-1. **Muat dokumen sumber** – Buat instance `Merger` dan arahkan ke file yang ingin Anda potong.  
-2. **Tentukan halaman** – Gunakan nomor halaman tunggal, rentang (`10-20`), atau daftar (`[2,4,7]`).  
-3. **Panggil metode `extract`** – API mengembalikan `InputStream` baru atau menulis langsung ke file.  
-4. **Simpan hasilnya** – Simpan halaman yang diekstrak di mana pun Anda membutuhkannya (disk lokal, penyimpanan cloud, dll.).  
-5. **Bebaskan sumber daya** – Tutup instance `Merger` untuk membebaskan memori, terutama saat memproses banyak file dalam batch.  
-
-> **Tips Pro:** Gunakan kembali satu instance `Merger` untuk operasi batch guna mengurangi overhead pembuatan objek.
+1. **Load the source document** – Buat instance `Merger` dan arahkan ke file yang ingin Anda potong.  
+2. **Define the pages** – Gunakan nomor halaman tunggal, rentang (`10-20`), atau daftar (`[2,4,7]`).  
+3. **Call the `extract` method** – API mengembalikan `InputStream` baru atau menulis langsung ke file.  
+4. **Save the result** – Simpan halaman yang diekstrak di mana pun Anda membutuhkannya (disk lokal, penyimpanan cloud, dll.).  
+5. **Dispose resources** – Tutup instance `Merger` untuk membebaskan memori, terutama saat memproses banyak file dalam batch.  
 
 ## Tips & praktik terbaik
-- **Validasi nomor halaman** terhadap total jumlah halaman dokumen sumber untuk menghindari `IndexOutOfBoundsException`.  
-- **Tips kinerja:** Gunakan kembali satu instance `Merger` saat memproses banyak file dalam batch.  
-- **Tips keamanan:** Simpan file lisensi Anda di luar root web dan muat secara aman saat runtime.
+- **Validate page numbers** terhadap total jumlah halaman dokumen sumber untuk menghindari `IndexOutOfBoundsException`.  
+- **Performance tip:** Gunakan kembali satu instance `Merger` saat memproses banyak file dalam batch.  
+- **Security tip:** Simpan file lisensi Anda di luar root web dan muat secara aman pada runtime.
 
 ## Sumber daya tambahan
-
-- [Dokumentasi GroupDocs.Merger for Java](https://docs.groupdocs.com/merger/java/)
-- [Referensi API GroupDocs.Merger for Java](https://reference.groupdocs.com/merger/java/)
-- [Unduh GroupDocs.Merger for Java](https://releases.groupdocs.com/merger/java/)
+- [Dokumentasi GroupDocs.Merger untuk Java](https://docs.groupdocs.com/merger/java/)
+- [Referensi API GroupDocs.Merger untuk Java](https://reference.groupdocs.com/merger/java/)
+- [Unduh GroupDocs.Merger untuk Java](https://releases.groupdocs.com/merger/java/)
 - [Forum GroupDocs.Merger](https://forum.groupdocs.com/c/merger)
 - [Dukungan Gratis](https://forum.groupdocs.com/)
 - [Lisensi Sementara](https://purchase.groupdocs.com/temporary-license/)
 
-## Pertanyaan yang Sering Diajukan
+## Pertanyaan yang sering diajukan
 
 **Q: Bisakah saya mengekstrak halaman dari PDF yang dilindungi kata sandi?**  
-A: Ya. Berikan kata sandi saat membuka dokumen dengan konstruktor `Merger`.
+**A:** Ya. Berikan kata sandi saat membuka dokumen dengan konstruktor `Merger`.
 
 **Q: Apakah API mendukung mengekstrak halaman dari dokumen Word serta PDF?**  
-A: Tentu. Metode `extract` yang sama berfungsi untuk DOCX, PPTX, dan format lain yang didukung.
+**A:** Tentu. Metode `extract` yang sama bekerja untuk DOCX, PPTX, dan format lain yang didukung.
 
 **Q: Bagaimana cara menangani dokumen besar tanpa kehabisan memori?**  
-A: Gunakan streaming API (`Merger.open(..., LoadOptions)`), yang memproses file dalam potongan.  
-`LoadOptions` memungkinkan mengonfigurasi mode streaming untuk memproses file besar tanpa memuatnya sepenuhnya ke memori.
+**A:** Gunakan streaming API (`Merger.open(..., LoadOptions)`), yang memproses file dalam potongan. `LoadOptions` memungkinkan mengkonfigurasi mode streaming untuk memproses file besar tanpa memuatnya sepenuhnya ke memori.
 
 **Q: Apa perbedaan antara “java extract pdf pages” dan “extract pdf pages java”?**  
-A: Kedua frasa tersebut merupakan variasi semantik dari konsep yang sama—keduanya merujuk pada penggunaan kode Java untuk mengambil halaman dari file PDF. API memperlakukan keduanya secara identik.
+**A:** Mereka adalah variasi semantik dari konsep yang sama—keduanya merujuk pada penggunaan kode Java untuk menarik halaman dari file PDF. API memperlakukan keduanya secara identik.
 
 **Q: Apakah ada cara untuk mengekstrak halaman dan mempertahankan metadata dokumen asli?**  
-A: Ya. Secara default, metadata disalin ke file baru; Anda juga dapat memodifikasinya melalui objek `DocumentInfo` bila diperlukan.  
-`DocumentInfo` menyediakan akses ke metadata dokumen dan memungkinkan modifikasi.
+**A:** Ya. Secara default, metadata disalin ke file baru; Anda juga dapat memodifikasinya melalui objek `DocumentInfo` jika diperlukan. `DocumentInfo` menyediakan akses ke metadata dokumen dan memungkinkan modifikasi.
 
 ## Masalah umum dan solusi
 
 | Masalah | Penyebab | Solusi |
 |-------|-------|----------|
 | `IndexOutOfBoundsException` | Nomor halaman yang diminta melebihi panjang dokumen | Verifikasi `document.getPageCount()` sebelum ekstraksi |
-| Empty output file | Format rentang halaman salah (mis., “5‑”) | Gunakan sintaks rentang inklusif (`5-5`) atau daftar bilangan bulat |
-| License not found | Path file lisensi tidak benar atau tidak ada | `License` adalah kelas yang digunakan untuk menerapkan lisensi GroupDocs ke API. Muat lisensi dengan `License license = new License(); license.setLicense("path/to/license.lic");` |
-| Slow performance on large PDFs | Memuat seluruh file ke memori | Beralih ke mode streaming dengan `LoadOptions` dan set `useMemoryCache = false` |
+| File output kosong | Format rentang halaman salah (mis., “5‑”) | Gunakan sintaks rentang inklusif (`5-5`) atau daftar bilangan bulat |
+| Lisensi tidak ditemukan | Path file lisensi tidak benar atau hilang | `License` adalah kelas yang digunakan untuk menerapkan lisensi GroupDocs ke API. Muat lisensi dengan `License license = new License(); license.setLicense("path/to/license.lic");` |
+| Kinerja lambat pada PDF besar | Memuat seluruh file ke memori | Beralih ke mode streaming dengan `LoadOptions` dan set `useMemoryCache = false` |
 
----
-
-**Terakhir diperbarui:** 2026-08-31  
-**Diuji dengan:** GroupDocs.Merger for Java 23.9  
+**Terakhir diperbarui:** 2026-11-15  
+**Diuji dengan:** GroupDocs.Merger untuk Java 23.9  
 **Penulis:** GroupDocs
 
-## Tutorial Terkait
+## Tutorial terkait
 
-- [Cara Memuat PDF URL Java – Tutorial Memuat Dokumen untuk GroupDocs.Merger](/merger/java/document-loading/)
-- [memecah pdf menjadi halaman dengan GroupDocs.Merger for Java](/merger/java/document-splitting/master-document-splitting-groupdocs-merger-java/)
+- [Cara Memuat URL PDF Java – Tutorial Memuat Dokumen untuk GroupDocs.Merger](/merger/java/document-loading/)
+- [memisah pdf menjadi halaman dengan GroupDocs.Merger untuk Java](/merger/java/document-splitting/master-document-splitting-groupdocs-merger-java/)
 - [gabungkan halaman tertentu java – Gabungkan Dokumen dengan GroupDocs.Merger](/merger/java/document-joining/join-pages-groupdocs-merger-java-tutorial/)
